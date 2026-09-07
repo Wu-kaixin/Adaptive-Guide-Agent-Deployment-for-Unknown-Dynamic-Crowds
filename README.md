@@ -1,6 +1,6 @@
 # Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds
 
-##Background:
+Background:
 In disaster response, large events, and public safety incidents, uncontrolled crowd dispersion may cause serious risks, such as people entering dangerous areas, blocking rescue routes, or causing stampedes. Therefore, it is important to quickly form temporary safety boundaries around crowds. This study aims to enable multiple guide agents to autonomously find unknown crowds and adaptively distribute themselves around them according to crowd size, shape, and motion, so that dynamic crowd containment can be achieved.
 
 Problem statement:

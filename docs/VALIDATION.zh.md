@@ -59,6 +59,18 @@ udc-analyze --result runs/static50 --output runs/static50_analysis
 udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 ```
 
+## DistMesh 停止条件（2026-10-14，Windows）
+
+`src/udc/controller/coverage.py`：DistMesh-inspired 只在目标移动小于 `1e-5` 时标记 `CONVERGED`，或达到原迭代上限。CVT 代价停滞不再作为它的停止条件。另外三种方法的停止条件未改。人数固定为 8，规划间隙上限仍为 3.90 m。
+
+| 检查 | 结果 |
+|---|---|
+| `python -m pytest -q` | 34/34 PASS |
+| `runs/exp03_distmesh_stopfix` | `PLAN_SEARCH_EXHAUSTED`，`success=false`，仿真时间 0 s |
+| 四相位规划 | 均 `CONVERGED`，25–27 次迭代，`max_gap=4.0250 m`，`min_separation=3.2093 m`，均未接受 |
+
+充分迭代后间隙仍超过 3.90 m，保留为有效失败。Mass CVT 结果未重跑。
+
 ## 尚未完成
 
 Crowd-Management 的非凸估计器比较、完整主要实验、动态多人群、crowd–guide 交互、风险模型、

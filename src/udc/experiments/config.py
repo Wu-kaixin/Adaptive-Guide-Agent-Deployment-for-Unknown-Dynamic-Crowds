@@ -26,7 +26,7 @@ def load_config(path, seed=None):
     if not isinstance(config, dict) or set(config) != {'step', *sections} or config['step'] != 1:
         raise ValueError('Only strict Step-1 schema is supported')
     for section, fields in sections.items():
-        optional = {'source', 'grid', 'trajectory_file'} if section == 'crowd' else set()
+        optional = {'source', 'grid', 'trajectory_file', 'demand_profile'} if section == 'crowd' else set()
         if not isinstance(config[section], dict) or not fields <= set(config[section]) or set(config[section]) - fields - optional:
             raise ValueError(f'{section} requires exactly: {sorted(fields)}')
     if seed is not None:
@@ -73,6 +73,23 @@ def load_config(path, seed=None):
                 or distribution['min'] <= 0 \
                 or not distribution['min'] <= distribution['mean'] <= distribution['max']:
             raise ValueError(f'Invalid crowd.{name} distribution')
+    
+    profile = config['crowd'].get('demand_profile')
+    if profile is not None:
+        required = {'type', 'axis', 'quantile', 'ratio'}
+        if not isinstance(profile, dict) or set(profile) != required:
+            raise ValueError('Invalid crowd.demand_profile fields')
+        if profile['type'] != 'quantile_hotspot':
+            raise ValueError('Unsupported demand_profile type')
+        if profile['axis'] not in {'x', 'y'}:
+            raise ValueError('demand_profile.axis must be x or y')
+        for key in ['quantile', 'ratio']:
+            value = profile[key]
+            if isinstance(value, bool) or not isinstance(value, (int, float)) \
+                    or not np.isfinite(value):
+                raise ValueError(f'Invalid demand_profile.{key}')
+        if not 0 < profile['quantile'] < 1 or profile['ratio'] < 1:
+            raise ValueError('Require 0 < quantile < 1 and ratio >= 1')
     vertices = np.asarray(config['crowd']['spawn_vertices'])
     if vertices.ndim != 2 or vertices.shape[1] != 2 or len(vertices) < 3 \
             or not np.issubdtype(vertices.dtype, np.number) or not np.isfinite(vertices).all():

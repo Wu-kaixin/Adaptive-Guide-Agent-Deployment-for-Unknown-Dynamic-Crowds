@@ -42,6 +42,16 @@ class Environment:
         np.fill_diagonal(distances, np.inf)
         if np.any(distances < self._radii[:, None]+self._radii[None, :]-1e-8):
             raise ValueError('INITIALIZATION_INVALID: overlapping pedestrian disks')
+        profile = raw.get('demand_profile')
+        if profile is not None:
+            axis = 0 if profile['axis'] == 'x' else 1
+            coordinates = self._positions[:, axis]
+            threshold = np.quantile(coordinates, profile['quantile'])
+            hotspot = coordinates >= threshold
+            self._demand = np.where(
+                hotspot, float(profile['ratio']), 1.0
+            )
+            self._demand /= self._demand.mean()
         for data in [self._positions, self._radii, self._demand]:
             data.setflags(write=False)
 

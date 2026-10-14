@@ -90,7 +90,12 @@ def plan_coverage(boundary, people, demand, count, bandwidth, method='average_cv
         if method != 'distmesh' and next_cost > cost+1e-9:
             raise ValueError('PLAN_INVALID: coverage cost increased')
         history.append(next_cost)
-        if np.max(np.abs(move)) < 1e-5 or cost-next_cost <= 1e-8*max(1., cost):
+        movement_small = np.max(np.abs(move)) < 1e-5
+        cvt_cost_stalled = (
+            method != 'distmesh'
+            and cost-next_cost <= 1e-8*max(1., cost)
+        )
+        if movement_small or cvt_cost_stalled:
             exit_reason = 'CONVERGED'
             break
         cost = next_cost

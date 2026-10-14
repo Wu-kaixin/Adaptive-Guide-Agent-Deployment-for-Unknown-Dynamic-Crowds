@@ -1,0 +1,77 @@
+# 框架逻辑与代码位置
+
+## 当前研究契约
+
+Step 1：单一静态人群、已知封闭场地、全局观测、无限通信、无 crowd–guide 动力学交互。
+人群初始化区域由仿真器持有。控制器从人员位置、半径和需求权重建立保守包络。
+当前凸包会填平凹陷，不能据此声称准确重建非凸边界。需求权重还不是经验证的行为风险。
+
+## 数据流
+
+```mermaid
+flowchart TD
+    A["场景配置与静态人群源"] --> B["人员观测"]
+    B --> C["边界、覆盖目标与可达分配"]
+    C --> D["路径跟踪与速度安全过滤"]
+    D --> E["Guide 状态"]
+    E --> D
+    D --> F["保存完整执行轨迹"]
+    F --> G["独立验收"]
+    F --> H["PedPy 人群分析"]
+    G --> I["成功、失败与统计报告"]
+```
+
+人员位置在初始化后冻结；反馈回路更新的是 Guide 状态。验收不依赖控制器的 settled 标志。
+PedPy 负责人群密度等分析，专用 evaluator 负责 Guide 的覆盖、到达与安全。
+
+## 按责任查找代码
+
+| 层 | 位置 | 输入 → 输出 |
+|---|---|---|
+| 配置 | `src/udc/experiments/config.py` | YAML → 严格校验后的配置 |
+| 已知场地 | `src/udc/scene.py` | 场地尺寸 → 方形／矩形与墙边界 |
+| 人群源 | `src/udc/crowd/sources.py` | JuPedSim 放置／网格／SQLite 首帧 → 冻结人员位置 |
+| 环境与观测 | `src/udc/environment.py`, `interfaces.py` | 仿真私有数据 → 位置、半径、demand 的复制快照 |
+| 边界 | `src/udc/controller/boundary.py` | 人员圆盘 → 凸包、外偏移曲线、弧长 |
+| 部署规划 | `src/udc/controller/coverage.py` | 曲线、权重、数量 → 周期覆盖目标与优化历史 |
+| 路径与指派 | `src/udc/controller/navigation.py` | 初态、目标、障碍 → 可见图路径与可达匹配 |
+| 总控制器 | `src/udc/controller/abcg.py` | 观测、Guide 状态 → 期望速度、安全速度与恢复状态 |
+| 安全 | `src/udc/controller/safety.py` | 当前状态、速度 → 过滤速度与整段距离诊断 |
+| 实验编排 | `src/udc/experiments/runner.py` | 完整配置 → 执行、结果、resume、离线复判 |
+| 来源追溯 | `src/udc/experiments/provenance.py` | 代码、配置、输入 → commit 和 SHA-256 |
+| 独立评价 | `src/udc/evaluation/acceptance.py` | 保存轨迹 → 九类验收条件 |
+| 批量协议 | `src/udc/experiments/validation.py` | manifest → 独立任务、多进程、CSV／JSON |
+| 人群分析 | `src/udc/analysis/pedestrian.py` | 快照或 SQLite → 密度、邻域与分析配置 |
+| 实验统计 | `src/udc/analysis/summary.py` | 全部结果 → 成功率、Wilson 区间、成功任务时间统计 |
+| 可视化 | `src/udc/visualization/` | 保存结果或实时状态 → 图像与演示 |
+
+根目录 `run.py`、`live_demo.py`、`visualization.py` 和 `experiments/validation_runner.py`
+只调用包内的 CLI。开发时修改对应模块，避免在入口中新增控制算法。
+
+## 数据与失败记录
+
+每次运行生成 `config.yaml`、`trajectory.npz`、`planning.json`、`metrics.json`、`state.json`。
+NPZ 禁用 pickle；人群行索引是冻结快照中的稳定人员身份，SQLite 首帧按原始 id 排序。
+记录三类净距离：Guide–Guide、Guide–human、Guide–wall。人员半径按最大半径保守处理。
+成功同时要求几何、资源、规划、路径、安全、到达保持、曲线距离和最大间隙通过。
+
+资源不足、非法偏移、路径不可达、超时、恢复预算耗尽是科学失败。
+程序异常保存 `runner_error.txt`，单独记为 `EXPERIMENT_ERROR`，不会被删除。
+统计时间时注明仅成功任务，成功率的分母保留全部任务。
+
+## 现有示例与后续阶段
+
+`ABCG-Simulation/` 与 `Test/` 保存原有脚本、数据和 Notebook；主实验不依赖它们的执行顺序。
+`configs/step1/static_50.yaml` 固定相同 5×10 网格，关闭人员动力学，改用统一部署与验收。
+它的 Guide 初态、偏移和控制器与旧 CSV 案例不同，因此不直接比较历史耗时。
+
+下一步将 Crowd-Management 的 alpha／radial／bootstrap 接入边界接口，做固定运动层的模块比较。
+本次未迁入其双环、未闭合 safe-geodesic、简化 gather 模型和静态多群实验，避免改变首轮基线。
+Step 2 再加入动态群体 ID、分裂／合并、跨群分配和 crowd–guide 响应；Step 3 才限制感知与通信。
+Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
+
+## 源码依据
+
+部署、导航、恢复和独立验收基于 `Wu-kaixin/ABCG-controller` 的 `a18480c`（MIT）。
+原仓库冻结统计属于原实现；本次改变模块路径、Mass CVT 核密度和实验追溯，必须重新验证。
+主仓库分支基于 `6d9bc09`，保留该提交的依赖与 Notebook 修改。

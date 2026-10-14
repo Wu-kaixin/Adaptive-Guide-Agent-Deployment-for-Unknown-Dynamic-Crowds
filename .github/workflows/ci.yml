@@ -1,0 +1,19 @@
+name: Step 1 framework
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -e ".[dev,analysis]"
+      - run: python -m pytest -q
+      - run: python -m pip check
+      - run: python run.py --config configs/step1/static_50.yaml --output runs/ci50 --no-plots
+      - run: python run.py --reevaluate runs/ci50

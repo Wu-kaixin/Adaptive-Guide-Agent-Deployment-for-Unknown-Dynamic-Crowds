@@ -1,6 +1,9 @@
 # Python 3.12 (tested with 3.12.15; JuPedSim requires >=3.10,<3.15, PedPy requires >=3.11)
 # Versions match the project .venv.
 
+# Install the unified framework and its configuration/analysis dependencies.
+-e .[analysis]
+
 # Crowd simulation (ABCG-Simulation) and trajectory analysis
 jupedsim==1.4.2
 PedPy==1.5.1

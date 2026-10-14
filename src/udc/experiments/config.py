@@ -1,0 +1,109 @@
+"""Strict Step 1 configuration contract."""
+from pathlib import Path
+import numpy as np
+import yaml
+
+METHODS = {"equal_arc", "average_cvt", "mass_cvt", "distmesh"}
+PROTOCOLS = {"fixed_n", "adaptive_resource"}
+
+def load_config(path, seed=None):
+    with Path(path).open(encoding='utf-8') as stream:
+        config = yaml.safe_load(stream)
+    sections = {
+        'scene': {'type', 'width', 'height', 'openings'},
+        'crowd': {'count', 'spawn_vertices', 'spacing', 'radius', 'demand'},
+        'guides': {'count', 'radius', 'max_speed', 'initial_inset'},
+        'controller': {
+            'method', 'offset', 'sample_spacing', 'budget_gap', 'max_gap_limit',
+            'position_tolerance', 'speed_tolerance', 'curve_tolerance',
+            'arc_tolerance', 'safety_numeric_tolerance', 'demand_bandwidth',
+            'gain', 'hold_steps', 'clearance', 'waypoint_tolerance', 'phases',
+            'quadrature_samples', 'planner_max_iterations', 'stall_window',
+            'max_replans',
+        },
+        'simulation': {'seed', 'dt', 'max_steps'},
+    }
+    if not isinstance(config, dict) or set(config) != {'step', *sections} or config['step'] != 1:
+        raise ValueError('Only strict Step-1 schema is supported')
+    for section, fields in sections.items():
+        optional = {'source', 'grid', 'trajectory_file'} if section == 'crowd' else set()
+        if not isinstance(config[section], dict) or not fields <= set(config[section]) or set(config[section]) - fields - optional:
+            raise ValueError(f'{section} requires exactly: {sorted(fields)}')
+    if seed is not None:
+        config['simulation']['seed'] = seed
+    integers = [
+        ('crowd', 'count', 3), ('guides', 'count', 3),
+        ('simulation', 'seed', 0), ('simulation', 'max_steps', 1),
+        ('controller', 'hold_steps', 1), ('controller', 'quadrature_samples', 32),
+        ('controller', 'planner_max_iterations', 1), ('controller', 'stall_window', 2),
+        ('controller', 'max_replans', 0),
+    ]
+    for section, key, minimum in integers:
+        if type(config[section][key]) is not int or config[section][key] < minimum:
+            raise ValueError(f'{section}.{key} must be integer >= {minimum}')
+    numeric = {
+        'scene': ['width', 'height'], 'crowd': ['spacing'],
+        'guides': ['radius', 'max_speed', 'initial_inset'],
+        'controller': [
+            'offset', 'sample_spacing', 'budget_gap', 'max_gap_limit',
+            'position_tolerance', 'speed_tolerance', 'curve_tolerance',
+            'arc_tolerance', 'safety_numeric_tolerance', 'demand_bandwidth',
+            'gain', 'clearance', 'waypoint_tolerance',
+        ],
+        'simulation': ['dt'],
+    }
+    for section, keys in numeric.items():
+        for key in keys:
+            value = config[section][key]
+            if isinstance(value, bool) or not isinstance(value, (int, float)) \
+                    or not np.isfinite(value) or value <= 0:
+                raise ValueError(f'{section}.{key} must be finite positive')
+    if config['controller']['method'] not in METHODS:
+        raise ValueError('Invalid method')
+    phases = config['controller']['phases']
+    if not isinstance(phases, list) or not phases or not np.isfinite(phases).all():
+        raise ValueError('phases must be a nonempty finite list')
+    for name in ['radius', 'demand']:
+        distribution = config['crowd'][name]
+        if not isinstance(distribution, dict) or set(distribution) != {'mean', 'std', 'min', 'max'}:
+            raise ValueError(f'Invalid crowd.{name}')
+        values = [distribution[key] for key in ['mean', 'std', 'min', 'max']]
+        if any(isinstance(value, bool) or not isinstance(value, (int, float)) for value in values) \
+                or not np.isfinite(values).all() or distribution['std'] < 0 \
+                or distribution['min'] <= 0 \
+                or not distribution['min'] <= distribution['mean'] <= distribution['max']:
+            raise ValueError(f'Invalid crowd.{name} distribution')
+    vertices = np.asarray(config['crowd']['spawn_vertices'])
+    if vertices.ndim != 2 or vertices.shape[1] != 2 or len(vertices) < 3 \
+            or not np.issubdtype(vertices.dtype, np.number) or not np.isfinite(vertices).all():
+        raise ValueError('crowd.spawn_vertices must be finite (N,2), N >= 3')
+    crowd = config['crowd']
+    source = crowd.get('source', 'jupedsim')
+    if source not in {'jupedsim', 'grid', 'sqlite'}:
+        raise ValueError('crowd.source must be jupedsim, grid or sqlite')
+    if source == 'grid':
+        grid = crowd.get('grid')
+        if not isinstance(grid, dict) or set(grid) != {'rows', 'columns', 'origin', 'spacing'}:
+            raise ValueError('grid requires rows/columns/origin/spacing')
+        if any(type(grid[k]) is not int or grid[k] < 1 for k in ['rows', 'columns']):
+            raise ValueError('grid dimensions must be positive integers')
+        if grid['rows'] * grid['columns'] != crowd['count']:
+            raise ValueError('grid dimensions must match crowd.count')
+        origin = np.asarray(grid['origin'], dtype=float)
+        if origin.shape != (2,) or not np.isfinite(origin).all() or not np.isfinite(grid['spacing']) or grid['spacing'] <= 0:
+            raise ValueError('Invalid grid origin or spacing')
+    elif 'grid' in crowd:
+        raise ValueError('grid settings are only valid for crowd.source=grid')
+    if source == 'sqlite':
+        filename = crowd.get('trajectory_file')
+        if not isinstance(filename, str) or not filename:
+            raise ValueError('sqlite source requires trajectory_file')
+        filename = Path(filename)
+        if not filename.is_absolute():
+            filename = Path(path).resolve().parent / filename
+        crowd['trajectory_file'] = str(filename.resolve())
+    elif 'trajectory_file' in crowd:
+        raise ValueError('trajectory_file is only valid for crowd.source=sqlite')
+    if config['simulation']['dt'] * config['controller']['gain'] > 1:
+        raise ValueError('Conservative tracker requires dt * gain <= 1')
+    return config

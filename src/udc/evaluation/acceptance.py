@@ -33,6 +33,31 @@ def classify_outcome(status, failure_stage=None):
     return 'unclassified'
 
 
+def diagnose_stages(status, failure_stage, feasibility, plan_found, assignment_found):
+    """Finer stage label: resource bound, certified infeasibility, search, assignment, execution.
+
+    ``no_plan_found`` means the bounded search returned nothing while the
+    necessary count conditions hold; it is not a proof that no plan exists.
+    """
+    if status == 'SUCCESS':
+        return 'accepted'
+    if status == 'EXPERIMENT_ERROR':
+        return 'experiment_error'
+    if failure_stage == 'initialization' or status == 'INITIALIZATION_INVALID':
+        return 'not_evaluated'
+    if status in {'BOUNDARY_INVALID', 'OFFSET_INVALID'}:
+        return 'geometry_invalid'
+    if status == 'CAPACITY_SHORTFALL':
+        return 'resource_shortfall'
+    if feasibility and feasibility.get('infeasibility_certificate'):
+        return 'certified_infeasible'
+    if not plan_found:
+        return 'no_plan_found'
+    if not assignment_found:
+        return 'plan_found_assignment_failed'
+    return 'plan_found_execution_failed'
+
+
 def evaluate(trajectory, velocities, active, targets, assignment, boundary, safety, cfg,
              planned_ok=True, path_ok=True):
     names=['geometry_ok','resource_ok','plan_ok','path_ok','safety_ok','arrival_ok','curve_ok','gap_ok','coverage_ok']
@@ -102,4 +127,10 @@ def evaluate(trajectory, velocities, active, targets, assignment, boundary, safe
           'minimum_center_distances':{k:(None if not np.isfinite(v) else float(v)) for k,v in minima.items()},
           'minimum_net_clearances':{k:(None if v is None or not np.isfinite(v) else float(v)) for k,v in net.items()},
           'most_dangerous_step':dangerous}
+    demand=cfg.get('_demand')
+    if demand is not None and len(demand)==len(people) and 'demand_bandwidth' in cfg:
+        from udc.evaluation.coverage import coverage_diagnostics
+        diag.update(coverage_diagnostics(boundary,people,demand,cfg.get('_hotspot_mask'),
+            cfg['demand_bandwidth'],cfg.get('quadrature_samples',2048),cfg['max_gap_limit'],
+            targets,selected[-1]))
     return criteria,diag

@@ -67,10 +67,120 @@ def plot_saved_result(result_dir, path=None):
     return destination
 
 
+def plot_demand_profile(result_dir, path=None):
+    """People, boundary demand curve and planned vs actual deployment from saved evidence.
+
+    Panel A: crowd coloured by frozen demand, declared hotspot disk, boundary,
+    targets and final guides. Panel B: the two curve densities that planners
+    consume, with target and final arc positions. Panel C: consecutive gaps
+    against the planned and acceptance limits.
+    """
+    import yaml
+    from udc.boundary import Boundary
+    from udc.deployment import demand_profile, periodic_gaps, quadrature_mass
+    from udc.evaluation.coverage import arc_positions, hotspot_window
+    result_dir=Path(result_dir); data=np.load(result_dir/'trajectory.npz',allow_pickle=False)
+    metrics=json.loads((result_dir/'metrics.json').read_text(encoding='utf-8'))
+    config=yaml.safe_load((result_dir/'config.yaml').read_text(encoding='utf-8'))
+    if config is None or not len(data['boundary_deployment']):
+        raise ValueError('Saved result has no boundary to plot')
+    control=config['controller']; room=data['room']
+    boundary=Boundary(data['boundary_crowd'],data['boundary_deployment'],data['boundary_arc'],float(data['boundary_length']))
+    people=data['crowd_positions']; demand=data['crowd_demand']
+    mask=data['crowd_hotspot_mask'] if 'crowd_hotspot_mask' in data.files and len(data['crowd_hotspot_mask']) else None
+    mass_rho=demand_profile(boundary,people,demand,control['demand_bandwidth'],'mass_cvt')
+    mean_rho=demand_profile(boundary,people,demand,control['demand_bandwidth'],'average_cvt')
+    quadrature,_,length=quadrature_mass(boundary,mass_rho,control['quadrature_samples'])
+    window=None if mask is None else hotspot_window(boundary,quadrature,people,mask)
+    targets=data['targets']; trajectory=data['positions']; active=data['active_mask']
+    final=trajectory[-1][active] if len(trajectory) and active.any() else np.empty((0,2))
+    planned_arcs=np.sort(arc_positions(boundary,targets)) if len(targets) else np.empty(0)
+    actual_arcs=np.sort(arc_positions(boundary,final)) if len(final) else np.empty(0)
+    fig,axes=plt.subplots(1,3,figsize=(18,5.5),constrained_layout=True,gridspec_kw={'width_ratios':[1.15,1,1]})
+    ax=axes[0]
+    ax.plot(*np.array([[0,0],[room[0],0],room,[0,room[1]],[0,0]]).T,color='#24344d')
+    scatter=ax.scatter(*people.T,c=demand,cmap='YlOrRd',s=22,edgecolors='#555',linewidths=.3,label='People (demand)')
+    fig.colorbar(scatter,ax=ax,label='Demand weight',shrink=.7)
+    region=(config.get('crowd') or {}).get('demand_region')
+    if region:
+        ax.add_patch(Circle(region['center'],region['radius'],fill=False,color='#c0392b',linestyle=':',linewidth=1.5,label='Declared hotspot disk'))
+    for key,label,color in [('boundary_crowd','Estimated boundary','#8b6c56'),('boundary_deployment','Deployment curve','#159a8c')]:
+        curve=data[key]; ax.plot(*np.vstack([curve,curve[0]]).T,'--',color=color,linewidth=1,label=label)
+    if window is not None:
+        curve=np.column_stack([np.interp(quadrature,np.r_[boundary.arc,length],np.r_[boundary.deployment[:,d],boundary.deployment[0,d]]) for d in range(2)])
+        ax.plot(*curve[window].T,'.',color='#c0392b',markersize=2,label='Hotspot arc window')
+    if len(targets): ax.scatter(*targets.T,marker='+',color='#159a8c',s=60,label='Planned targets')
+    if len(final): ax.scatter(*final.T,marker='^',color='#3778bf',s=30,label='Final guides')
+    ax.set(aspect='equal',xlabel='x [m]',ylabel='y [m]',title=f"{metrics['method']} | N={metrics.get('fixed_n') or metrics['active_guides']} | {metrics['termination_status']}")
+    ax.legend(fontsize=7,loc='upper left'); ax.grid(alpha=.15)
+    ax=axes[1]
+    ax.plot(boundary.arc,mass_rho,color='#c0392b',label='Mass density (Mass CVT / RA-ABDC)')
+    ax.plot(boundary.arc,mean_rho/mean_rho.max(),color='#8e44ad',alpha=.8,label='Average density / max (Average CVT)')
+    if window is not None:
+        ax.fill_between(quadrature,0,1.05,where=window,color='#c0392b',alpha=.08,label='Hotspot window')
+    ax.vlines(planned_arcs,1.0,1.08,color='#159a8c',linewidth=1,label='Planned target arcs')
+    ax.vlines(actual_arcs,-0.08,0.0,color='#3778bf',linewidth=1,label='Final guide arcs')
+    ax.set(xlabel='arc length s [m]',ylabel='normalised curve density',xlim=(0,length),ylim=(-0.1,1.12),title='Boundary demand curve')
+    ax.legend(fontsize=7,loc='lower left'); ax.grid(alpha=.15)
+    ax=axes[2]
+    planned_limit=control['max_gap_limit']-2*control['arc_tolerance']
+    for arcs,label,color,marker in [(planned_arcs,'Planned gaps','#159a8c','+'),(actual_arcs,'Actual gaps','#3778bf','^')]:
+        if len(arcs)>1:
+            gaps=periodic_gaps(arcs,length); mid=(arcs+gaps/2)%length
+            order=np.argsort(mid); ax.plot(mid[order],gaps[order],marker=marker,color=color,linewidth=.8,label=label)
+    ax.axhline(planned_limit,color='#159a8c',linestyle='--',linewidth=1,label=f'Planned limit {planned_limit:.2f} m')
+    ax.axhline(control['max_gap_limit'],color='#c0392b',linestyle='--',linewidth=1,label=f"Acceptance limit {control['max_gap_limit']:.2f} m")
+    if window is not None:
+        ax.fill_between(quadrature,0,control['max_gap_limit']*1.1,where=window,color='#c0392b',alpha=.08)
+    ax.set(xlabel='gap midpoint arc [m]',ylabel='consecutive gap [m]',xlim=(0,length),ylim=(0,control['max_gap_limit']*1.1),title='Gaps along the curve')
+    ax.legend(fontsize=7,loc='lower left'); ax.grid(alpha=.15)
+    fig.suptitle(f"{metrics['scene']} seed {metrics['seed']} | demand: {metrics.get('demand_kind')} | planned conc. {metrics.get('planned_hotspot_concentration')} | actual conc. {metrics.get('actual_hotspot_concentration')}",fontsize=10)
+    destination=Path(path) if path else result_dir/'demand_profile.png'
+    fig.savefig(destination,dpi=150); plt.close(fig)
+    return destination
+
+
+def plot_comparison_summary(summary_path, path=None):
+    """Grouped bars per cell and method from comparison_summary.json (all tasks in denominators)."""
+    summary_path=Path(summary_path)
+    summary=json.loads(summary_path.read_text(encoding='utf-8'))
+    groups=list(summary['groups'].values())
+    cells=sorted({g['cell'] for g in groups}); methods=sorted({g['method'] for g in groups})
+    lookup={(g['cell'],g['method']):g for g in groups}
+    panels=[('Success rate (all tasks)',lambda g:g['success_rate']),
+            ('Actual max gap [m], mean over defined',lambda g:g['metrics']['actual_max_gap']['mean']),
+            ('Actual demand-weighted cost [m^2]',lambda g:g['metrics']['actual_demand_weighted_cost']['mean']),
+            ('Actual hotspot concentration (1 = unbiased)',lambda g:g['metrics']['actual_hotspot_concentration']['mean'])]
+    fig,axes=plt.subplots(2,2,figsize=(16,9),constrained_layout=True)
+    width=0.8/len(methods); x=np.arange(len(cells))
+    colors=plt.get_cmap('tab10')
+    for ax,(title,getter) in zip(axes.ravel(),panels):
+        for k,method in enumerate(methods):
+            values=[]
+            for cell in cells:
+                g=lookup.get((cell,method)); value=None if g is None else getter(g)
+                values.append(np.nan if value is None else value)
+            ax.bar(x+(k-len(methods)/2+.5)*width,values,width,label=method,color=colors(k))
+        ax.set(title=title,xticks=x,xticklabels=[c.replace('square_circle_medium_','') for c in cells])
+        ax.tick_params(axis='x',labelsize=8); ax.grid(axis='y',alpha=.2)
+    axes[0,0].legend(fontsize=8); axes[0,0].set_ylim(0,1.05)
+    fig.suptitle(f"Step 1 pilot: {summary['tasks']} tasks, reference {summary.get('reference_method')}",fontsize=11)
+    destination=Path(path) if path else summary_path.with_name('comparison_summary.png')
+    fig.savefig(destination,dpi=150); plt.close(fig)
+    return destination
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--result',required=True); parser.add_argument('--output')
-    args=parser.parse_args(); print(plot_saved_result(args.result,args.output))
+    group=parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--result',help='Saved task directory')
+    group.add_argument('--comparison-summary',help='comparison_summary.json from udc.experiments.comparison')
+    parser.add_argument('--demand-profile',action='store_true',help='Plot the demand curve and gaps instead of the scene')
+    parser.add_argument('--output')
+    args=parser.parse_args()
+    if args.comparison_summary:
+        print(plot_comparison_summary(args.comparison_summary,args.output)); return
+    print(plot_demand_profile(args.result,args.output) if args.demand_profile else plot_saved_result(args.result,args.output))
 
 
 if __name__=='__main__':

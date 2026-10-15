@@ -3,7 +3,8 @@ import numpy as np
 from shapely.geometry import Polygon
 
 from udc.boundary import estimate_boundary
-from udc.deployment import plan_coverage
+from udc.deployment import (feasibility_bounds, infeasibility_certificate, plan_coverage,
+                            plan_risk_aware)
 from udc.navigation import navigate_and_assign, route_assigned
 from udc.safety import safe_velocity
 
@@ -16,6 +17,18 @@ class ABCGController:
         self.protocol=protocol; self.fixed_n=fixed_n
         self.priority_order=[]; self.priority_index=0; self.priority_mode=False
         self._observation=None
+        # Stage diagnostics. They never change a termination status.
+        self.feasibility=None; self.plan_found=False; self.assignment_found=False
+
+    def _plan(self, observation, n, phase, planned_limit):
+        c=self.config
+        if c['method'] == 'ra_abdc':
+            return plan_risk_aware(self.boundary,observation.positions,observation.demand,n,
+                c['demand_bandwidth'],planned_limit,self.safety.guide_distance,phase,
+                c['quadrature_samples'],c['planner_max_iterations'],
+                c.get('concentration',1.0))
+        return plan_coverage(self.boundary,observation.positions,observation.demand,n,
+            c['demand_bandwidth'],c['method'],phase,c['quadrature_samples'],c['planner_max_iterations'])
 
     def _install_navigation(self, nav):
         self.assignment=nav.assignment
@@ -33,9 +46,14 @@ class ABCGController:
             self.safety.wall_distance,self.safety.crowd_distance,observation.radii)
         planned_limit=c['max_gap_limit']-2*c['arc_tolerance']
         if planned_limit <= 0: raise ValueError('PLAN_INVALID: max_gap_limit - 2*arc_tolerance must be positive')
-        lower=max(3,int(np.ceil(self.boundary.length/planned_limit)))
+        bounds=feasibility_bounds(self.boundary.length,planned_limit,self.safety.guide_distance)
+        lower=bounds['necessary_min_count']
         start=max(3,int(np.ceil(self.boundary.length/c['budget_gap'])))
+        self.feasibility={**bounds,'available_guides':len(guides),'requested_count':None,
+            'necessary_condition_met':None,'infeasibility_certificate':None}
         if lower > len(guides):
+            self.feasibility.update(requested_count=lower,necessary_condition_met=False,
+                                    infeasibility_certificate='GAP_BOUND')
             raise ValueError(f'CAPACITY_SHORTFALL: necessary planning bound requires {lower}, have {len(guides)}')
         chosen=None
         # Search every N: the budget recommendation must not suppress a smaller feasible N.
@@ -49,23 +67,38 @@ class ABCGController:
             order=list(range(lower,len(guides)+1)); order.sort(key=lambda n:(n<start,abs(n-start)))
         else:
             raise ValueError(f'PLAN_INVALID: unsupported protocol {self.protocol}')
+        certificates={n:infeasibility_certificate(bounds,n) for n in order}
+        self.feasibility.update(
+            requested_count=order[0] if self.protocol == 'fixed_n' else [order[0],max(order)],
+            necessary_condition_met=any(cert is None for cert in certificates.values()),
+            infeasibility_certificate=(None if any(cert is None for cert in certificates.values())
+                                       else certificates[order[0]]))
         for n in order:
             for phase in c['phases']:
-                plan=plan_coverage(self.boundary,observation.positions,observation.demand,n,
-                    c['demand_bandwidth'],c['method'],phase,c['quadrature_samples'],c['planner_max_iterations'])
+                plan=self._plan(observation,n,phase,planned_limit)
                 distances=np.linalg.norm(plan.positions[:,None]-plan.positions[None,:],axis=2)
                 np.fill_diagonal(distances,np.inf); separation=float(distances.min())
                 accepted=plan.max_gap <= planned_limit+1e-9 and separation >= self.safety.guide_distance
-                self.attempts.append({'n':n,'phase':phase,'max_gap':plan.max_gap,'min_separation':separation,
-                    'cost':plan.cost.tolist(),'iterations':plan.iterations,'exit_reason':plan.exit_reason,'accepted':accepted})
+                record={'n':n,'phase':phase,'max_gap':plan.max_gap,'min_separation':separation,
+                    'cost':plan.cost.tolist(),'iterations':plan.iterations,'exit_reason':plan.exit_reason,'accepted':accepted}
+                if plan.method == 'ra_abdc':
+                    record.update(concentration=plan.concentration,equal_arc_fallback=plan.equal_arc_fallback,
+                                  adjustments=list(plan.adjustments))
+                self.attempts.append(record)
                 if accepted: chosen=plan; break
             if chosen is not None: break
-        if chosen is None: raise ValueError('PLAN_SEARCH_EXHAUSTED: bounded CVT/spacing search found no admissible target set')
-        self.plan=chosen
+        if chosen is None:
+            certificate=self.feasibility['infeasibility_certificate']
+            detail=(f'; necessary condition violated ({certificate}: N={order[0]}, '
+                    f'ceil(L/H_p)={lower}, floor(L/d_min)={bounds["necessary_max_count"]})'
+                    if certificate else '; necessary count conditions hold, so infeasibility is not proven')
+            raise ValueError('PLAN_SEARCH_EXHAUSTED: bounded CVT/spacing search found no admissible target set'+detail)
+        self.plan=chosen; self.plan_found=True
         crowd=Polygon(self.boundary.crowd)
         nav=navigate_and_assign(guides,chosen.positions,self.room,self.safety.wall_distance,
                                 crowd,self.safety.wall_distance)
         self._install_navigation(nav)
+        self.assignment_found=True
 
     def errors(self, positions):
         active=self.assignment>=0

@@ -12,6 +12,7 @@ from udc.navigation import navigate_and_assign
 from udc.safety import Safety
 from udc.environment import Environment
 from udc.evaluation.acceptance import evaluate
+from udc.experiments.config import METHODS
 from udc.experiments.runner import load_config
 from udc.experiments.validation import build_tasks, load_manifest
 
@@ -124,5 +125,5 @@ def test_manifest_keeps_deterministic_fixture_seed_fixed(tmp_path):
     tasks=build_tasks(manifest,tmp_path,'validation',smoke=True)
     deterministic=[task for task in tasks if task['scenario'] in {
         'near_wall_invalid','insufficient_guides'}]
-    assert len(deterministic)==16
+    assert len(deterministic)==2*len(METHODS)*2
     assert {task['seed'] for task in deterministic}=={0}

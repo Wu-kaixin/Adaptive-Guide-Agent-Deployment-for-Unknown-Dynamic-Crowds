@@ -31,9 +31,9 @@ PedPy 负责人群密度等分析，专用 evaluator 负责 Guide 的覆盖、�
 | 配置 | `src/udc/experiments/config.py` | YAML → 严格校验后的配置 |
 | 已知场地 | `src/udc/scene.py` | 场地尺寸 → 方形／矩形与墙边界 |
 | 人群源 | `src/udc/crowd/sources.py` | JuPedSim 放置／网格／SQLite 首帧 → 冻结人员位置 |
-| 环境与感知 | `src/udc/environment.py`, `interfaces.py` | 仿真私有数据 → 行人 ID、位置、半径、demand、零速度、时间；控制器仍只收 `Observation` |
+| 环境与感知 | `src/udc/environment.py`, `interfaces.py` | 仿真私有数据 → 行人 ID、位置、半径、demand、零速度、时间；`demand_region` 只在初始化时冻结；控制器仍只收 `Observation` |
 | 边界 | `src/udc/boundary/` | 人员圆盘 → 凸包、外偏移曲线、弧长 |
-| 部署 | `src/udc/deployment/` | 曲线、权重、数量 → Equal Arc、Average CVT、Mass CVT、DistMesh-inspired |
+| 部署 | `src/udc/deployment/` | 曲线、权重、数量 → Equal Arc、Average CVT、Mass CVT、DistMesh-inspired、RA-ABDC 候选 |
 | 路径与指派 | `src/udc/navigation/` | 初态、目标、障碍 → 可见图路径与可达匹配 |
 | 安全 | `src/udc/safety/` | 当前状态、速度 → 过滤速度与整段距离诊断 |
 | 总控制器 | `src/udc/controller/abcg.py` | 观测、Guide 状态 → 期望速度、安全速度与恢复状态 |
@@ -41,7 +41,7 @@ PedPy 负责人群密度等分析，专用 evaluator 负责 Guide 的覆盖、�
 | 实验编排 | `src/udc/experiments/runner.py` | 完整配置 → 执行、结果、resume、离线复判 |
 | 公平比较 | `src/udc/experiments/comparison.py` | 因子表 → 仅方法不同的 fixed-N 任务 |
 | 来源追溯 | `src/udc/experiments/provenance.py` | 代码、配置、输入 → commit 和 SHA-256 |
-| 独立评价 | `src/udc/evaluation/acceptance.py` | 保存轨迹 → 九类验收条件；另给失败类别标签 |
+| 独立评价 | `src/udc/evaluation/acceptance.py`, `coverage.py` | 保存轨迹 → 九类验收；阶段诊断；共享的需求加权覆盖与热点诊断（不进入验收） |
 | 批量协议 | `src/udc/experiments/validation.py` | manifest → 独立任务、多进程、CSV／JSON |
 | 人群分析 | `src/udc/analysis/pedestrian.py` | 快照或 SQLite → 密度、邻域与分析配置 |
 | 实验统计 | `src/udc/analysis/summary.py` | 全部结果 → 成功率、Wilson 区间、成功任务时间统计 |
@@ -56,6 +56,7 @@ PedPy 负责人群密度等分析，专用 evaluator 负责 Guide 的覆盖、�
 NPZ 禁用 pickle；人群行索引是冻结快照中的稳定人员身份，SQLite 首帧按原始 id 排序。
 记录三类净距离：Guide–Guide、Guide–human、Guide–wall。人员半径按最大半径保守处理。
 成功同时要求几何、资源、规划、路径、安全、到达保持、曲线距离和最大间隙通过。
+`ceil(L/H_p)` 只是数量下界；满足它不能证明存在可行方案。搜索耗尽记录为未找到方案，除非下界或间距上界被违反。
 
 资源不足、非法偏移、路径不可达、超时、恢复预算耗尽是科学失败。
 程序异常保存 `runner_error.txt`，单独记为 `EXPERIMENT_ERROR`，不会被删除。
@@ -68,11 +69,12 @@ NPZ 禁用 pickle；人群行索引是冻结快照中的稳定人员身份，SQL
 
 `Perception` 在 Step 1 提供稳定行人 ID、冻结位置和零速度。控制器消费的仍是 `Observation(positions, radii, demand)`。
 `ResourceAllocator` 与 `LocalPolicy` 没有实现，Step 1 运行不会调用它们。
-下一步先用公平比较因子表比较四种部署方法，再把 Crowd-Management 的 alpha／radial／bootstrap 接到边界接口。
+公平比较因子表现为五种方法、4050 个任务，尚未整表运行。受控热点试点（150 任务）已跑完，只用于诊断。
+下一步仍是把 Crowd-Management 的 alpha／radial／bootstrap 接到边界接口。
 本次未迁入其双环、未闭合 safe-geodesic、简化 gather 模型和静态多群实验。
 Step 2 再加入动态群体 ID、分裂／合并、跨群分配和 crowd–guide 响应；Step 3 才限制感知与通信。
 Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
-RA-ABDC 要等 Step 1 比较有实验证据后再研究，当前没有风险控制算法。
+RA-ABDC 目前只是带间隙投影的需求加权候选；demand 仍不是经验证风险。
 
 ## 源码依据
 

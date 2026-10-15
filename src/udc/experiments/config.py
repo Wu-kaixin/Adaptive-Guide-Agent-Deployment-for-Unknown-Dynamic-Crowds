@@ -3,8 +3,17 @@ from pathlib import Path
 import numpy as np
 import yaml
 
-METHODS = {"equal_arc", "average_cvt", "mass_cvt", "distmesh"}
+METHODS = {"equal_arc", "average_cvt", "mass_cvt", "distmesh", "ra_abdc"}
+BASELINES = {"equal_arc", "average_cvt", "mass_cvt", "distmesh"}
 PROTOCOLS = {"fixed_n", "adaptive_resource"}
+
+
+def demand_kind(crowd):
+    """Name the demand field: uniform, independent per person, or spatial hotspot."""
+    independent = float(crowd['demand']['std']) > 0
+    if crowd.get('demand_region') is None:
+        return 'independent' if independent else 'uniform'
+    return 'hotspot_on_independent' if independent else 'hotspot'
 
 def load_config(path, seed=None):
     with Path(path).open(encoding='utf-8') as stream:
@@ -26,7 +35,8 @@ def load_config(path, seed=None):
     if not isinstance(config, dict) or set(config) != {'step', *sections} or config['step'] != 1:
         raise ValueError('Only strict Step-1 schema is supported')
     for section, fields in sections.items():
-        optional = {'source', 'grid', 'trajectory_file', 'demand_region'} if section == 'crowd' else set()
+        optional = ({'source', 'grid', 'trajectory_file', 'demand_region'} if section == 'crowd'
+                    else {'concentration'} if section == 'controller' else set())
         if not isinstance(config[section], dict) or not fields <= set(config[section]) or set(config[section]) - fields - optional:
             raise ValueError(f'{section} requires exactly: {sorted(fields)}')
     if seed is not None:
@@ -60,6 +70,10 @@ def load_config(path, seed=None):
                 raise ValueError(f'{section}.{key} must be finite positive')
     if config['controller']['method'] not in METHODS:
         raise ValueError('Invalid method')
+    concentration = config['controller'].get('concentration', 1.0)
+    if isinstance(concentration, bool) or not isinstance(concentration, (int, float)) \
+            or not np.isfinite(concentration) or not 0 < concentration <= 1:
+        raise ValueError('controller.concentration must lie in (0, 1]; it only affects ra_abdc')
     phases = config['controller']['phases']
     if not isinstance(phases, list) or not phases or not np.isfinite(phases).all():
         raise ValueError('phases must be a nonempty finite list')

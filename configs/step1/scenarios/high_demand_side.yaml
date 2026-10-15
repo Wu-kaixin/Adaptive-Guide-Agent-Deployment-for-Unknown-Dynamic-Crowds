@@ -21,6 +21,8 @@ crowd:
     std: 0.015
     min: 0.17
     max: 0.23
+  # Independent per-person draw. This is not a spatial hotspot; the controlled
+  # spatial disk lives in configs/step1/scenarios/spatial_hotspot.yaml.
   demand:
     mean: 1.5
     std: 0.4

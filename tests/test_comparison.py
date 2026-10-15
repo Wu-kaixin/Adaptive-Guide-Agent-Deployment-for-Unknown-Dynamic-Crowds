@@ -25,7 +25,7 @@ def test_outcome_labels_keep_resource_planning_and_execution_apart():
 def test_fair_grid_pairs_methods_and_reserves_validation_seeds():
     spec = load_spec(SPEC)
     tasks = build_tasks(spec, 'runs/unused')
-    assert len(tasks) == 2 * 3 * 3 * 3 * 3 * 4 * 5
+    assert len(tasks) == 2 * 3 * 3 * 3 * 3 * len(METHODS) * 5
     assert {task['seed'] for task in tasks} == {0, 1, 2, 3, 4}
     assert RESERVED_VALIDATION.start == 5000
     with pytest.raises(ValueError, match='5000-5029'):

@@ -45,20 +45,41 @@ class Environment:
         if np.any(distances < self._radii[:, None]+self._radii[None, :]-1e-8):
             raise ValueError('INITIALIZATION_INVALID: overlapping pedestrian disks')
         self._ids.setflags(write=False)
-        for data in [self._positions, self._radii, self._demand]:
+        for data in [self._positions, self._radii, self._demand, self._hotspot_mask]:
             data.setflags(write=False)
 
     def _apply_demand_region(self, raw):
-        """Raise planning weight inside a declared disk. This is not a risk model."""
+        """Raise planning weight inside a declared disk. This is not a risk model.
+
+        ``demand_i = clip(base_i * multiplier, min, max)`` for people whose
+        centre lies within ``radius`` of ``center``; everyone else keeps the
+        base draw. The field is computed once here and frozen afterwards.
+        """
         region = raw.get('demand_region')
+        self._hotspot_mask = np.zeros(len(self._positions), dtype=bool)
+        self._demand_clipped = 0
         if region is None:
             return
         center = np.asarray(region['center'], dtype=float)
         distance = np.linalg.norm(self._positions - center, axis=1)
+        inside = distance <= float(region['radius'])
         adjusted = np.array(self._demand, copy=True)
-        adjusted[distance <= float(region['radius'])] *= float(region['multiplier'])
+        adjusted[inside] *= float(region['multiplier'])
         low, high = float(raw['demand']['min']), float(raw['demand']['max'])
-        self._demand = np.clip(adjusted, low, high)
+        clipped = np.clip(adjusted, low, high)
+        self._demand_clipped = int(np.sum(clipped != adjusted))
+        self._demand = clipped
+        self._hotspot_mask = inside
+
+    @property
+    def hotspot_mask(self):
+        """People inside the declared demand region (all False without one)."""
+        return self._hotspot_mask.copy()
+
+    @property
+    def demand_clipped(self):
+        """How many hotspot weights were cut by crowd.demand.max."""
+        return self._demand_clipped
 
     def perceive(self, time, guides=None, guide_velocities=None):
         people = PedestrianState(

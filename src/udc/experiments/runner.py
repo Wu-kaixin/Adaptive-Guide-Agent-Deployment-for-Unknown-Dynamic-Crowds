@@ -16,8 +16,8 @@ from udc.boundary import Boundary
 from udc.controller import ABCGController
 from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
-from udc.evaluation.acceptance import evaluate
-from .config import load_config, METHODS, PROTOCOLS
+from udc.evaluation.acceptance import diagnose_stages, evaluate
+from .config import demand_kind, load_config, METHODS, PROTOCOLS
 from .provenance import provenance as _provenance
 
 
@@ -234,6 +234,7 @@ def experiment(config_path, output, seed=None, plots=True,
         evaluation_config = dict(
             config['controller'], _people=observation.positions,
             _radii=observation.radii, _room=env.scene.size,
+            _demand=observation.demand, _hotspot_mask=env.hotspot_mask,
         )
         criteria, diagnostics = evaluate(
             trajectory, velocities, active, targets, assignment,
@@ -261,13 +262,30 @@ def experiment(config_path, output, seed=None, plots=True,
         'task_sha256': None, 'python': platform.python_version(),
         'platform': platform.platform(), 'dependencies': None,
     }
+    feasibility = controller.feasibility if controller is not None else None
+    plan_found = bool(controller is not None and controller.plan_found)
+    assignment_found = bool(controller is not None and controller.assignment_found)
     metrics = {
-        'schema_version': '1.1.0', **(provenance_fields | provenance),
+        'schema_version': '1.2.0', **(provenance_fields | provenance),
         'scene': scene_name, 'method': method_name, 'protocol': protocol,
         'fixed_n': fixed_n, 'seed': seed_value,
         'termination_status': termination, 'motion_status': motion_status,
         'failure_reason': failure_reason, 'failure_stage': failure_stage,
         'success': success, 'criteria': criteria,
+        # Stage diagnostics (schema 1.2.0). Statuses and thresholds are unchanged.
+        'stage_diagnosis': diagnose_stages(termination, failure_stage, feasibility,
+                                           plan_found, assignment_found),
+        'feasibility': feasibility,
+        'plan_found': plan_found,
+        'assignment_found': assignment_found,
+        'demand_kind': None if config is None else demand_kind(config['crowd']),
+        'demand_region': None if config is None else config['crowd'].get('demand_region'),
+        'demand_clipped_count': None if env is None else env.demand_clipped,
+        'hotspot_people': None if env is None else int(env.hotspot_mask.sum()),
+        'planned_concentration': (None if plan is None or plan.method != 'ra_abdc'
+                                  else plan.concentration),
+        'equal_arc_fallback': (None if plan is None or plan.method != 'ra_abdc'
+                               else bool(plan.equal_arc_fallback)),
         'active_guides': int(active.sum()),
         'reserve_guides': int(guide_count - active.sum()),
         'steps': len(executed),
@@ -321,6 +339,7 @@ def experiment(config_path, output, seed=None, plots=True,
                          else np.empty((0, 2))),
         crowd_radii=(observation.radii if observation is not None else np.empty(0)),
         crowd_demand=(observation.demand if observation is not None else np.empty(0)),
+        crowd_hotspot_mask=(env.hotspot_mask if env is not None else np.empty(0, dtype=bool)),
         crowd_velocities=(perception.pedestrians.velocities if perception is not None
                           else np.empty((0, 2))),
         boundary_crowd=(boundary.crowd if boundary is not None else np.empty((0, 2))),
@@ -351,17 +370,30 @@ def reevaluate_result(result_dir):
         boundary = Boundary(data['boundary_crowd'], data['boundary_deployment'],
                             data['boundary_arc'], float(data['boundary_length']))
         limits = Safety(**metrics['safety_limits'])
+        # Older archives (schema < 1.2.0) have no hotspot mask; diagnostics then skip it.
+        mask = data['crowd_hotspot_mask'] if 'crowd_hotspot_mask' in data.files else None
         criteria, diagnostics = evaluate(
             data['positions'], data['safe_velocity'], data['active_mask'],
             data['targets'], data['assignment'], boundary, limits,
             dict(config['controller'], _people=data['crowd_positions'],
-                 _radii=data['crowd_radii'], _room=data['room']),
+                 _radii=data['crowd_radii'], _room=data['room'],
+                 _demand=data['crowd_demand'],
+                 _hotspot_mask=None if mask is None or not len(mask) else mask),
         )
+    compared = {}
+    for key in ['actual_max_gap', 'mean_curve_distance', 'tracking_rmse',
+                'actual_demand_weighted_cost', 'actual_hotspot_concentration',
+                'planned_demand_weighted_cost']:
+        online, offline = metrics.get(key), diagnostics.get(key)
+        compared[key] = (online == offline if online is None or offline is None
+                         else bool(abs(float(online)-float(offline)) <= 1e-9))
     result = {
         'schema_version': metrics['schema_version'],
         'source_task_sha256': metrics.get('task_sha256'),
         'criteria': criteria, 'diagnostics': diagnostics,
         'success': all(criteria.values()),
+        'criteria_consistent': criteria == metrics.get('criteria'),
+        'diagnostics_consistent': compared,
     }
     _atomic_text(result_dir / 'reevaluated_metrics.json', json.dumps(
         result, indent=2, allow_nan=False

@@ -1,8 +1,85 @@
 # 验证记录
 
-当前重构检查写在第一节。第二节是提交 `56f0197` 的历史记录，不能当作当前工作树的证据。
+当前热点试点与 RA-ABDC 候选检查写在第一节。其后两节是更早的重构与迁移记录，不能当作当前工作树的证据。
 
-## 2026-10-16 重构检查
+## 2026-10-16 受控热点试点
+
+分支 `Major-Research-Branches`，父提交 `4fbc5a0`，检查时工作树为 dirty。本机 PATH 上没有 `uv`；使用已有 `.venv`。环境：Windows 11、Python 3.13.13（Anaconda）、NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1、pytest 9.1.1。验收阈值没有改动。validation seeds 5000–5029 没有运行。
+
+| 检查 | 结果 |
+|---|---|
+| `python -m pytest -q` | 53 passed |
+| `python -m pip check` | No broken requirements found |
+| 50 人网格，Equal Arc，8 Guide | SUCCESS，仿真时间 23.0 s，实际最大间隙 3.741 m，路径总长 134.33 m |
+| 50 人轨迹独立复判 | 与在线九类验收一致；需求加权覆盖也一致 |
+| `high_demand_side` 的 20／24 Guide，五方法，seed 0 | 10/10 轨迹复判与在线结果一致。见下表 |
+| 热点试点 smoke，seed 0，30 任务 | 30 completed，25 SUCCESS，5 `no_plan_found`，配对哈希一致 |
+| 热点试点 150 任务，seed 0–4 | 150 completed，0 experiment error，125 SUCCESS，25 `no_plan_found`，30/30 配对一致 |
+| 抽查复判（热点 15 个保存轨迹） | 15/15 在线与离线一致 |
+
+50 人运行的最小净裕量：人 0.200 m，Guide 1.743 m，墙 0.750 m。复判跟踪 RMSE 0.00416 m。
+
+### 需求场
+
+`demand_kind` 区分为 `uniform`、`independent`、`hotspot`、`hotspot_on_independent`。空间热点是场景坐标中的固定圆盘：背景需求恒为 1，圆内乘 3 后再按 `[min,max]` 截断，生成后冻结。试点里 seed 0–4 的热点人数为 10–12／50。`high_demand_side` 仍是逐人独立抽样。人员需求只通过 Gaussian 曲线密度进入规划。
+
+三档 Guide 数量相对生成多边形必要下界 15：tight 14、moderate 17、ample 19。实现凸包更短，因此实现下界 `ceil(L/1.94)` 对 seed 0–4 都是 14。它们是几何预算，不是充足／临界／不足的证明。
+
+### 20／24 Guide 诊断
+
+配置是 `configs/step1/scenarios/high_demand_side.yaml`。demand 按人独立抽样。曲线长 37.321 m，规划间隙上限 1.94 m，必要下界 20，可用 24。Guide 中心间距阈值 0.75 m。所有 10 个任务都满足必要数量条件；失败都是 `no_plan_found`，不是不可行证书，也没有进入执行。
+
+| 指定数量 | 方法 | 阶段 | 终止状态 |
+|---|---|---|---|
+| 20 | Equal Arc | accepted | SUCCESS，7.8 s，实际最大间隙 1.867 m |
+| 20 | RA-ABDC | accepted | SUCCESS，7.8 s，实际最大间隙 1.940 m，浓度 1.0，无 Equal Arc 回退 |
+| 20 | Average CVT | no_plan_found | PLAN_SEARCH_EXHAUSTED |
+| 20 | Mass CVT | no_plan_found | PLAN_SEARCH_EXHAUSTED |
+| 20 | DistMesh-inspired | no_plan_found | PLAN_SEARCH_EXHAUSTED。预测最大间隙 2.770 m，观测约 2.437 m |
+| 24 | Equal Arc | accepted | SUCCESS，8.6 s，实际最大间隙 1.556 m |
+| 24 | Average CVT | accepted | SUCCESS，8.6 s，实际最大间隙 1.626 m |
+| 24 | Mass CVT | accepted | SUCCESS，8.6 s，实际最大间隙 1.836 m |
+| 24 | RA-ABDC | accepted | SUCCESS，8.6 s，实际最大间隙 1.836 m，与 Mass CVT 相同 |
+| 24 | DistMesh-inspired | no_plan_found | PLAN_SEARCH_EXHAUSTED。预测 2.308 m，观测约 2.08–2.12 m |
+
+20 Guide 的 Equal Arc／RA-ABDC 成功只使用 20/24，不能解释成资源不足已经排除。RA-ABDC 在 N=24 与 Mass CVT 重合，因为无约束方案已经满足间隙上限。
+
+### 150 任务热点试点
+
+场景：square、circle、50 人。需求：均匀与空间热点。数量：14／17／19。方法：五种。seed：0–4。失败全部计入分母。规划指标与轨迹指标分开保存。五个开发 seed 只用于诊断。
+
+| 方法 | 成功 | 说明 |
+|---|---|---|
+| Equal Arc | 30/30 | 所有单元格都找到方案并被独立验收 |
+| RA-ABDC | 30/30 | 浓度始终为 1.0，没有 Equal Arc 回退 |
+| Average CVT | 25/30 | 只在热点 × N=14 上 `no_plan_found` |
+| Mass CVT | 20/30 | 热点 × N=14 与均匀 × N=14 上都未找到方案 |
+| DistMesh-inspired | 20/30 | 与 Mass CVT 同一组失败；N=14 时预测最大间隙 2.14–2.60 m，观测 2.02–2.35 m，都超过 1.94 m |
+
+N=17／19 时 RA-ABDC 的轨迹间隙、需求加权代价和热点浓度与 Mass CVT 相同：约束未激活时该候选就是带记录的 Mass CVT。N=14 热点 seed 0：Equal Arc 实际间隙 1.902 m、热点浓度 1.000；RA-ABDC 把间隙投影到 1.940 m，热点浓度 1.059，需求加权代价从 0.299 降到 0.284。这不能外推成一般优势。
+
+DistMesh-inspired 没有调参。间隙过大由其 $\sqrt{\rho}$ 不动点解释，不是阻尼过小。若要把最宽间隙压到 $H_p$，需要的数量下界是 `count_for_limit`（本试点约 16–19），对相关方法没有另设规则。
+
+人员分布、边界需求曲线和部署目标图在 `runs/pilot/hotspot/figures/`。热点圆盘在人群 +x 侧，曲线密度在对应弧段升高。
+
+### 本轮没有完成的运行
+
+完整因子表 4050 个任务没有运行。development smoke（现为 110 任务）没有重跑。validation seeds 5000–5029 没有运行。
+
+本轮复现（现有 `.venv`，仓库根目录）：
+
+```bash
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe run.py --config configs/step1/static_50.yaml --output runs/pilot/static50 --no-plots
+.\.venv\Scripts\python.exe run.py --reevaluate runs/pilot/static50
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --hotspot --output runs/pilot/high_demand_20_24 --workers 8
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/pilot/hotspot_smoke --seeds 0 --workers 8
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/pilot/hotspot --workers 8
+.\.venv\Scripts\python.exe visualization.py --result runs/pilot/hotspot/square_circle_medium_hotspot_moderate/ra_abdc/seed_0 --demand-profile
+```
+
+## 2026-10-16 重构检查（历史）
 
 分支 `refactor/step1-modular`，父提交 `56f0197`，检查时工作树为 dirty。
 本机没有 Python 3.12，也没有已存在的 uv 虚拟环境。检查使用由 Python 3.13.13 新建的 `.venv`：Windows 11、NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1。
@@ -106,6 +183,6 @@ udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 
 ## 尚未完成
 
-Crowd-Management 的非凸估计器比较、完整主要实验、动态多人群、crowd–guide 交互、风险模型、
+Crowd-Management 的非凸估计器比较、完整 4050 任务因子表、动态多人群、crowd–guide 交互、经验证风险模型、
 去中心化部署和 Vadere backend 尚未完成。预留 validation seeds 5000–5029 没有运行。
-本地检查在 Linux 上进行；Windows 验证由新增 Actions 工作流承担，须查看在线运行结果。
+150 任务试点不能替代正式比较。RA-ABDC 候选尚未证明优于基线。

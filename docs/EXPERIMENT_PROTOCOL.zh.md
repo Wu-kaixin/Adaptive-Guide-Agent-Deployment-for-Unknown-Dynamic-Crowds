@@ -9,18 +9,18 @@ Equal Arc 与 Average CVT 的迁移结果与来源仓库逐数组比较；Mass C
 ## 后续主要实验
 
 1. 固定部署、导航与安全层，比较凸包和后续 alpha／radial 边界。
-2. 固定边界，比较 Equal Arc、Average CVT、Mass CVT、DistMesh-inspired。
+2. 固定边界，比较 Equal Arc、Average CVT、Mass CVT、DistMesh-inspired 和 RA-ABDC 候选。
 3. 固定目标，比较路径与协调方式。
 4. 两群静态过渡实验后，再逐项增加移动、扩散、分裂和合并。
 5. 群体数量扩展至 1、2、3、5，规模扩展至小／中／大，资源扩展至充足／适中／严重不足。
 6. 完整方法稳定后做动态分配、风险权重、重分配消融，最后测试噪声、速度和交互参数。
 
-方法比较必须共享保存的人员快照和 Guide 初态，相同 seed 字面值本身不能保证公平配对。
+方法比较必须共享保存的人员快照、需求场和 Guide 初态，相同 seed 字面值本身不能保证公平配对。
 固定 N 比较与自适应资源比较分别报告，避免更多 Guide 被误解释为算法更优。
-均匀权重 CVT 可能退化为等弧长；不把名称不同自动视为独立竞争基线。
+均匀权重 CVT 可能退化为等弧长；当约束未激活时 RA-ABDC 可以与 Mass CVT 重合。不把名称不同自动视为独立竞争基线。
 多人群时先固定总人数比较群体数量，再单独增加总规模。
 
-## 四算法公平比较
+## 方法公平比较
 
 `experiments/step1_fair_comparison.yaml` 规定场地、形状、规模、需求和资源。
 任务生成时只替换 `controller.method`。同一单元的场景、人群参数、Guide 数量、边界、导航和安全阈值相同。
@@ -29,7 +29,7 @@ Guide 数量由生成多边形的外偏移周长和规划间隙预算算出，�
 协议固定为 `fixed_n`，数量等于该单元的 Guide 数，避免自适应搜索用更多 Guide 换成功率。
 
 开发种子是 0、1、2、3、4。正式 validation 仍预留 5000–5029，这个入口拒绝运行它们。
-完整因子表有 3240 个任务。准备配置不等于已经得到比较结论。
+完整因子表现为 4050 个任务。准备配置不等于已经得到比较结论。受控试点是 `experiments/step1_hotspot_pilot.yaml`：square／circle／medium、均匀与空间热点、三档固定数量 14／17／19、五种方法、seed 0–4，共 150 个任务。这三档是相对生成多边形必要下界的几何预算，不预先称为充足、临界或不足。
 
 失败标签不改变九类验收：
 
@@ -41,7 +41,16 @@ Guide 数量由生成多边形的外偏移周长和规划间隙预算算出，�
 | `initialization_failure` | 人群或 Guide 初态无法建立 |
 | `experiment_error` | 程序异常，单独记账 |
 
-`high_demand_side` 的 20／24 Guide 诊断使用原配置。该配置的 demand 是逐人独立抽样，不是空间热点。空间热点只出现在公平比较的 `hotspot` 因子里，并且仍然只是规划权重。
+更细的阶段诊断写在 `stage_diagnosis`，也不改终止状态：
+
+| 阶段 | 含义 |
+|---|---|
+| `certified_infeasible` | `N < ceil(L/H_p)` 或 `N > floor(L/d_min)`，这是不可行证书 |
+| `no_plan_found` | 必要数量条件成立，有界搜索未找到可接受目标；不是“不存在可行方案”的证明 |
+| `plan_found_assignment_failed` | 已有目标，可达指派失败 |
+| `plan_found_execution_failed` | 指派完成后执行未通过独立验收 |
+
+`high_demand_side` 的 20／24 Guide 诊断使用原配置。该配置的 demand 是逐人独立抽样，不是空间热点。空间热点由 `demand_region` 给出：固定圆心、半径、乘数和背景需求；生成一次后冻结。人员需求映射到部署曲线的唯一途径是 Gaussian 曲线密度（Mass CVT 用需求质量，Average CVT 用局部平均）。这仍然只是规划权重。
 
 ## Seed 与版本纪律
 

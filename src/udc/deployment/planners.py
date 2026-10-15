@@ -1,7 +1,9 @@
 """Deterministic planners on a sampled periodic deployment curve."""
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import numpy as np
+
+BASELINE_METHODS = ('equal_arc', 'average_cvt', 'mass_cvt', 'distmesh')
 
 
 @dataclass(frozen=True)
@@ -14,6 +16,10 @@ class Plan:
     iterations: int
     exit_reason: str
     density_total: float
+    # RA-ABDC bookkeeping. Baselines keep the defaults.
+    concentration: float = 1.0
+    equal_arc_fallback: bool = False
+    adjustments: tuple = field(default_factory=tuple)
 
 
 def _density(points, people, demand, bandwidth, mode):
@@ -31,10 +37,113 @@ def _density(points, people, demand, bandwidth, mode):
     return np.maximum(np.exp(log_mass-log_mass.max()), np.finfo(float).tiny)
 
 
+def demand_profile(boundary, people, demand, bandwidth, mode='mass_cvt'):
+    """Demand density on the sampled deployment curve.
+
+    ``mass_cvt``: Gaussian demand mass ``sum_j d_j K(x(s), p_j)`` divided by
+    its curve-wide maximum. ``average_cvt``: kernel-weighted mean demand.
+    This is the only way person demand enters a deployment curve.
+    """
+    if mode not in {'mass_cvt', 'average_cvt'}:
+        raise ValueError(f'Unknown density mode: {mode}')
+    demand = np.asarray(demand, dtype=float)
+    return _density(np.asarray(boundary.deployment), np.asarray(people, dtype=float),
+                    demand, float(bandwidth), mode)
+
 
 def _interpolate(boundary, sites):
     return np.column_stack([np.interp(sites, np.r_[boundary.arc, boundary.length],
         np.r_[boundary.deployment[:, d], boundary.deployment[0, d]]) for d in range(2)])
+
+
+def quadrature_mass(boundary, density, samples):
+    """Midpoint quadrature of a curve density: nodes, per-node mass, length."""
+    length = boundary.length
+    quadrature = (np.arange(samples)+0.5)*length/samples
+    rho = np.interp(quadrature, np.r_[boundary.arc, length], np.r_[density, density[0]])
+    return quadrature, rho*length/samples, length
+
+
+def periodic_cells(quadrature, mass, sites, length):
+    """Nearest-site partition on the periodic curve and the weighted cost."""
+    delta = (quadrature[:, None]-sites[None, :]+length/2) % length-length/2
+    owner = np.argmin(np.abs(delta), axis=1)
+    nearest = delta[np.arange(len(delta)), owner]
+    return owner, nearest, float(np.sum(mass*nearest**2))
+
+
+def coverage_statistics(quadrature, mass, sites, length, radius):
+    """Demand-weighted mean squared arc distance and the mass farther than ``radius``."""
+    _, nearest, cost = periodic_cells(quadrature, mass, np.asarray(sites, dtype=float), length)
+    total = float(mass.sum())
+    if total <= 0:
+        return {'weighted_cost': None, 'uncovered_share': None}
+    return {'weighted_cost': cost/total,
+            'uncovered_share': float(mass[np.abs(nearest) > radius].sum()/total)}
+
+
+def periodic_gaps(sites, length):
+    """Consecutive arc gaps of sorted periodic sites; the last wraps around."""
+    sites = np.asarray(sites, dtype=float)
+    return np.diff(np.r_[sites, sites[0]+length])
+
+
+def project_gaps(gaps, low, high, length):
+    """Euclidean projection of ``gaps`` onto {low <= g <= high, sum g = length}.
+
+    The projection is ``clip(g + lam, low, high)`` with the multiplier ``lam``
+    found by bisection. Returns ``None`` when the box simplex is empty.
+    """
+    gaps = np.asarray(gaps, dtype=float)
+    count = len(gaps)
+    if count*low > length+1e-9 or count*high < length-1e-9:
+        return None
+    low_lambda, high_lambda = low-gaps.max(), high-gaps.min()
+    for _ in range(200):
+        middle = 0.5*(low_lambda+high_lambda)
+        total = np.clip(gaps+middle, low, high).sum()
+        if total < length:
+            low_lambda = middle
+        else:
+            high_lambda = middle
+    projected = np.clip(gaps+0.5*(low_lambda+high_lambda), low, high)
+    # Distribute the residual rounding on interior gaps so the sum is exact.
+    residual = length-projected.sum()
+    interior = (projected > low+1e-12) & (projected < high-1e-12)
+    if interior.any():
+        projected[interior] += residual/interior.sum()
+    else:
+        projected += residual/count
+    return projected
+
+
+def feasibility_bounds(length, gap_limit, min_separation):
+    """Necessary count conditions for a periodic curve of the given length.
+
+    ``max_gap <= gap_limit`` requires ``N >= ceil(L / gap_limit)``.
+    Euclidean separation never exceeds arc separation, so ``N <= floor(L / d_min)``
+    is necessary for ``min_separation``. Violating either is a certificate that
+    no admissible target set exists; satisfying both is not sufficient.
+    """
+    if not np.isfinite([length, gap_limit, min_separation]).all() or min(length, gap_limit, min_separation) <= 0:
+        raise ValueError('Feasibility bounds need positive finite length, gap limit and separation')
+    return {
+        'curve_length': float(length),
+        'planned_gap_limit': float(gap_limit),
+        'min_separation': float(min_separation),
+        # Same arithmetic as the controller's CAPACITY_SHORTFALL check.
+        'necessary_min_count': int(max(3, np.ceil(length/gap_limit))),
+        'necessary_max_count': int(np.floor(length/min_separation)),
+    }
+
+
+def infeasibility_certificate(bounds, count):
+    """Strict evidence that ``count`` admits no plan, or ``None`` when unknown."""
+    if count < bounds['necessary_min_count']:
+        return 'GAP_BOUND'
+    if count > bounds['necessary_max_count']:
+        return 'SEPARATION_BOUND'
+    return None
 
 
 def plan_coverage(boundary, people, demand, count, bandwidth, method='average_cvt',
@@ -47,25 +156,16 @@ def plan_coverage(boundary, people, demand, count, bandwidth, method='average_cv
     demand = np.asarray(demand, dtype=float)
     if demand.shape != (len(people),) or not np.isfinite(demand).all() or np.any(demand <= 0):
         raise ValueError('Demand must be finite, positive and match the people')
-    if method not in {'equal_arc', 'average_cvt', 'mass_cvt', 'distmesh'}:
+    if method not in BASELINE_METHODS:
         raise ValueError(f'Unknown planning method: {method}')
-    points, length = boundary.deployment, boundary.length
+    points = boundary.deployment
     density = np.ones(len(points)) if method == 'equal_arc' else _density(
         points, np.asarray(people), demand, bandwidth,
         'average_cvt' if method == 'average_cvt' else 'mass_cvt')
-    arc = boundary.arc
-    quadrature = (np.arange(samples)+0.5)*length/samples
-    rho = np.interp(quadrature, np.r_[arc, length], np.r_[density, density[0]])
-    mass = rho*length/samples
+    quadrature, mass, length = quadrature_mass(boundary, density, samples)
     sites = (np.arange(count)+phase)*length/count % length
 
-    def cells(current):
-        delta = (quadrature[:, None]-current[None, :]+length/2) % length-length/2
-        owner = np.argmin(np.abs(delta), axis=1)
-        nearest = delta[np.arange(len(delta)), owner]
-        return owner, nearest, float(np.sum(mass*nearest**2))
-
-    owner, delta, cost = cells(sites)
+    owner, delta, cost = periodic_cells(quadrature, mass, sites, length)
     history = [cost]
     if method == 'equal_arc':
         targets = _interpolate(boundary, np.sort(sites))
@@ -86,7 +186,7 @@ def plan_coverage(boundary, people, demand, count, bandwidth, method='average_cv
         else:
             move = np.bincount(owner, weights=mass*delta, minlength=count)/totals
         sites = np.sort((sites+move) % length)
-        owner, delta, next_cost = cells(sites)
+        owner, delta, next_cost = periodic_cells(quadrature, mass, sites, length)
         if method != 'distmesh' and next_cost > cost+1e-9:
             raise ValueError('PLAN_INVALID: coverage cost increased')
         history.append(next_cost)
@@ -96,5 +196,5 @@ def plan_coverage(boundary, people, demand, count, bandwidth, method='average_cv
         cost = next_cost
     targets = _interpolate(boundary, sites)
     return Plan(targets, sites, np.array(history),
-                float(np.diff(np.r_[sites, sites[0]+length]).max()), method,
+                float(periodic_gaps(sites, length).max()), method,
                 len(history)-1, exit_reason, float(mass.sum()))

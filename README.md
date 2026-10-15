@@ -47,6 +47,8 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 
 根目录脚本仅是入口；科学算法统一放在 `src/udc/`。控制器不读取人员生成多边形，也不从模拟器获取真实人群轮廓。
 
+需求有三种可区分的生成方式：均匀（`std=0`）、逐人独立抽样（`std>0`）、以及由场景坐标中固定圆盘 `demand_region` 决定的空间热点。人员需求只通过 Gaussian 曲线密度进入规划；热点配置见 `configs/step1/scenarios/spatial_hotspot.yaml`。历史场景 `high_demand_side` 是逐人独立抽样，不是空间热点。Step 1 中这些数是规划权重，不是已经验证的人群危险。
+
 ## 方法与资源协议
 
 | 方法 | 参数 | 定义 |
@@ -55,6 +57,7 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 | Average CVT | `average_cvt` | 局部平均 demand 驱动的周期 CVT |
 | Mass CVT | `mass_cvt` | Gaussian 需求质量驱动的周期 CVT，保留空间相对尺度 |
 | DistMesh-inspired | `distmesh` | 按平方根密度分位做间距松弛，并非完整 EikMesh／DistMesh 库 |
+| RA-ABDC（候选） | `ra_abdc` | 在 Mass CVT 密度的幂次上做带间隙投影的周期 CVT；找不到可行方案时明确记录 Equal Arc 回退 |
 
 `adaptive_resource` 在数量上限内搜索可接受目标；`fixed_n` 固定数量，适合公平算法对照。
 
@@ -73,19 +76,22 @@ python experiments/validation_runner.py --output runs/smoke --reevaluate
 udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 ```
 
-完整 development 会使用 0–29 seeds。未来 validation 预留 5000–5029；整合开发不运行这些 seeds。smoke 默认覆盖 11 个场景、四方法和两资源协议，共 88 个任务。
+完整 development 会使用 0–29 seeds。未来 validation 预留 5000–5029；整合开发不运行这些 seeds。smoke 现在覆盖 11 个场景、五种方法和两资源协议，共 110 个任务；本轮没有重跑这份 smoke。
 
-四算法公平比较使用另一份因子表。同一单元共享场景、人群、Guide 数量、边界、导航和安全参数，只更换部署方法。开发种子是 0–4。完整组合是 2 种场地 × 3 种形状 × 3 种规模 × 3 种需求 × 3 种资源 × 4 种方法 × 5 个种子，共 3240 个任务；默认不整表运行。
+方法比较使用因子表。同一单元共享场景、人群快照、需求场、Guide 数量、边界、导航和安全参数，只更换部署方法。开发种子是 0–4。完整组合现为 2 种场地 × 3 种形状 × 3 种规模 × 3 种需求 × 3 种资源 × 5 种方法 × 5 个种子，共 4050 个任务；默认不整表运行。受控热点试点是 1 个场景 × 2 种需求 × 3 档数量 × 5 种方法 × 5 个种子，共 150 个任务。
 
 ```bash
 python -m udc.experiments.comparison --output runs/fair --dry-run
 python -m udc.experiments.comparison --output runs/fair_cell --seeds 0 --environment square --shape circle --size small --demand uniform --resource sufficient --workers 4
-python -m udc.experiments.comparison --hotspot --output runs/hotspot_20_24 --workers 4
+python -m udc.experiments.comparison --hotspot --output runs/pilot/high_demand_20_24 --workers 4
+python -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/pilot/hotspot_smoke --seeds 0 --workers 4
+python -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/pilot/hotspot --workers 4
+python visualization.py --result runs/pilot/hotspot/square_circle_medium_hotspot_moderate/ra_abdc/seed_0 --demand-profile
 ```
 
 Step 1 研究笔记在 `notebooks/step1_static_deployment.ipynb`。算法仍在 `src/udc/`，笔记只调用已经保存的结果。
 
-任务完成、预设失败语义通过、实际 SUCCESS 分开统计；初态无效、资源不足和超时都保留。统计包含成功率 Wilson 95% 区间与成功任务部署时间均值／中位数，不用确定性重复制造独立样本。
+任务完成、预设失败语义通过、实际 SUCCESS 分开统计；初态无效、资源不足和超时都保留。规划搜索耗尽记为“未找到可行方案”；只有数量下界或间距上界被违反时才给出不可行证书。统计包含成功率 Wilson 95% 区间与成功任务部署时间均值／中位数，不用确定性重复制造独立样本。规划目标指标与轨迹指标分开报告。
 
 ## 输出与回放
 
@@ -114,7 +120,7 @@ python live_demo.py
 | PedPy | 密度、Voronoi 与邻域分析；可分析原始 SQLite 轨迹 |
 | Vadere | 后续跨模型验证，当前尚未接入运行 backend |
 
-Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重；实际人群响应与风险模型属于后续研究。下一步接入 Crowd-Management 的 alpha／radial 边界做模块对比，再推进动态多群。
+Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重；RA-ABDC 只是带约束的需求加权候选，不是已经验证的风险控制。实际人群响应与风险模型属于后续研究。下一步是否扩大场景或跑完整因子表，取决于这份 150 任务诊断是否足够回答当前问题。
 
 完整路线见 [ROADMAP](docs/ROADMAP.zh.md)，理论与实现边界见 [STEP1_THEORY](docs/STEP1_THEORY.zh.md)。
 

@@ -1,7 +1,8 @@
-"""Expand the Step 1 factor specification into paired fixed-N tasks."""
+"""Expand a Step 1 factor specification into paired fixed-N tasks."""
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -13,13 +14,31 @@ import numpy as np
 import yaml
 from shapely.geometry import Polygon
 
+from udc.analysis.summary import summarize_comparison
 from udc.evaluation.acceptance import classify_outcome
 from udc.experiments.config import METHODS, load_config
-from udc.experiments.runner import experiment
+from udc.experiments.runner import _atomic_text, experiment
 
 ROOT = Path.cwd()
 RESERVED_VALIDATION = range(5000, 5030)
+# Legacy list form of the resource factor: fractions of the spawn-based bound.
 RESOURCE_SCALE = {'sufficient': None, 'moderate': 0.85, 'severe': 0.45}
+ROW_METRICS = (
+    'actual_max_gap', 'planned_max_gap', 'target_min_euclidean_distance',
+    'mean_curve_distance', 'path_length', 'resource_utilization',
+    'minimum_net_clearances', 'replan_count', 'wall_time', 'curve_length',
+    'planned_demand_weighted_cost', 'actual_demand_weighted_cost',
+    'planned_uniform_cost', 'actual_uniform_cost',
+    'planned_uncovered_demand_share', 'actual_uncovered_demand_share',
+    'hotspot_arc_fraction', 'hotspot_demand_share', 'hotspot_people',
+    'planned_hotspot_concentration', 'actual_hotspot_concentration',
+    'planned_hotspot_mean_spacing', 'actual_hotspot_mean_spacing',
+    'planned_hotspot_max_gap', 'actual_hotspot_max_gap',
+    'planned_concentration', 'equal_arc_fallback', 'demand_kind',
+    'demand_clipped_count', 'stage_diagnosis', 'feasibility', 'plan_found',
+    'assignment_found', 'task_sha256', 'input_snapshot_sha256', 'commit',
+    'source_sha256',
+)
 
 
 def load_spec(path):
@@ -30,13 +49,23 @@ def load_spec(path):
         raise ValueError(f'Comparison spec requires {sorted(required)}')
     if spec['protocol'] != 'fixed_n':
         raise ValueError('Fair comparison uses the fixed_n protocol')
-    if set(spec['methods']) != METHODS:
-        raise ValueError('Comparison must list all four deployment methods')
+    methods = spec['methods']
+    if not methods or len(set(methods)) != len(methods) or not set(methods) <= METHODS:
+        raise ValueError(f'Comparison methods must be distinct members of {sorted(METHODS)}')
     seeds = spec['development_seeds']
     if seeds != [0, 1, 2, 3, 4]:
         raise ValueError('Development comparison uses exactly five seeds: 0, 1, 2, 3, 4')
     if any(seed in RESERVED_VALIDATION for seed in seeds):
         raise ValueError('Reserved validation seeds must not be listed as development seeds')
+    resource = spec['factors']['resource']
+    if isinstance(resource, dict):
+        for name, item in resource.items():
+            if not isinstance(item, dict) or set(item) != {'relative'} or type(item['relative']) is not int:
+                raise ValueError(f'resource.{name} must be {{relative: <int>}} offsets from the spawn-based bound')
+    elif not isinstance(resource, list) or not set(resource) <= set(RESOURCE_SCALE):
+        raise ValueError('resource must be a list of sufficient/moderate/severe or a dict of relative offsets')
+    spec['_sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+    spec['_path'] = str(path)
     return spec
 
 
@@ -75,19 +104,25 @@ def _spawn(scene, shape, count, spacing):
     polygon = Polygon(vertices)
     if not polygon.is_valid or polygon.area <= 0:
         raise ValueError(f'Invalid spawn polygon for {shape}')
-    return vertices, polygon, min(rx, ry)
+    return vertices, polygon, rx, ry
 
 
-def _guide_count(polygon, controller, resource):
+def spawn_bound(polygon, controller):
+    """Necessary count from the spawn polygon's offset perimeter (a budget, not a guarantee)."""
     offset = float(controller['offset'])
     planned = float(controller['max_gap_limit']) - 2 * float(controller['arc_tolerance'])
     if planned <= 0:
         raise ValueError('max_gap_limit - 2*arc_tolerance must be positive')
-    lower = max(3, math.ceil(polygon.buffer(offset).exterior.length / planned))
+    return max(3, math.ceil(polygon.buffer(offset).exterior.length / planned))
+
+
+def _guide_count(polygon, controller, resource, resource_spec):
+    lower = spawn_bound(polygon, controller)
+    if isinstance(resource_spec, dict):
+        return max(3, lower + int(resource_spec[resource]['relative']))
     if resource == 'sufficient':
         return lower + 4
-    count = max(3, int(round(RESOURCE_SCALE[resource] * lower)))
-    return count
+    return max(3, int(round(RESOURCE_SCALE[resource] * lower)))
 
 
 def materialize(spec, environment, shape, size, demand, resource, method, seed):
@@ -97,13 +132,13 @@ def materialize(spec, environment, shape, size, demand, resource, method, seed):
     scene['openings'] = []
     shared = spec['shared']
     count = int(factors['size'][size]['count'])
-    vertices, polygon, minor = _spawn(scene, shape, count, float(shared['spacing']))
+    vertices, polygon, rx, ry = _spawn(scene, shape, count, float(shared['spacing']))
     vertices = np.asarray(vertices, dtype=float).round(6)
     polygon = Polygon(vertices)
     if not polygon.is_valid or polygon.area <= 0:
         raise ValueError(f'Rounded spawn polygon is invalid for {shape}')
     demand_spec = factors['demand'][demand]
-    guides = int(_guide_count(polygon, shared['controller'], resource))
+    guides = int(_guide_count(polygon, shared['controller'], resource, factors['resource']))
     crowd = {
         'count': count,
         'spawn_vertices': vertices.tolist(),
@@ -111,11 +146,15 @@ def materialize(spec, environment, shape, size, demand, resource, method, seed):
         'radius': dict(shared['radius']),
         'demand': {key: demand_spec[key] for key in ('mean', 'std', 'min', 'max')},
     }
-    if demand == 'hotspot':
-        center = polygon.centroid
+    if 'multiplier' in demand_spec:
+        # Spatial hotspot: a disk fixed in scene coordinates. ``offset_scale``
+        # moves its centre along +x by that fraction of the spawn half-width so
+        # the hotspot touches one side of the crowd instead of its centre.
+        centre = polygon.centroid
+        shift = float(demand_spec.get('offset_scale', 0.0)) * rx
         crowd['demand_region'] = {
-            'center': [round(float(center.x), 6), round(float(center.y), 6)],
-            'radius': round(float(demand_spec['radius_scale']) * minor, 6),
+            'center': [round(float(centre.x) + shift, 6), round(float(centre.y), 6)],
+            'radius': round(float(demand_spec['radius_scale']) * min(rx, ry), 6),
             'multiplier': float(demand_spec['multiplier']),
         }
     controller = dict(shared['controller'])
@@ -171,7 +210,7 @@ def build_tasks(spec, output, seeds=None, methods=None, selection=None):
                     raise ValueError('Guide budget changed inside one comparison cell')
                 name = '_'.join([environment, shape, size, demand, resource])
                 tasks.append({
-                    'cell': name,
+                    'cell': name, **chosen,
                     'config': config,
                     'seed': seed,
                     'method': method,
@@ -187,7 +226,24 @@ def build_tasks(spec, output, seeds=None, methods=None, selection=None):
     return tasks
 
 
-def _run_task(task):
+def row_from_metrics(task, metrics):
+    row = {
+        **{key: task[key] for key in ('cell', 'seed', 'method', 'fixed_n', 'output')},
+        **{key: task.get(key) for key in ('environment', 'shape', 'size', 'demand', 'resource')},
+        'success': metrics['success'],
+        'termination_status': metrics['termination_status'],
+        'failure_stage': metrics['failure_stage'],
+        'failure_class': classify_outcome(metrics['termination_status'], metrics['failure_stage']),
+        'failure_reason': metrics['failure_reason'],
+        'active_guides': metrics['active_guides'],
+        'simulation_time': metrics['simulation_time'],
+    }
+    for key in ROW_METRICS:
+        row[key] = metrics.get(key)
+    return row
+
+
+def _run_task(task, resume=False):
     directory = Path(task['output'])
     directory.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=directory.parent) as temporary:
@@ -198,41 +254,53 @@ def _run_task(task):
         with threadpool_limits(limits=1):
             metrics = experiment(
                 path, directory, task['seed'], False, 'fixed_n', task['fixed_n'],
-                False, task['method'],
+                resume, task['method'],
             )
-    return {
-        'cell': task['cell'], 'seed': task['seed'], 'method': task['method'],
-        'fixed_n': task['fixed_n'], 'output': task['output'],
-        'success': metrics['success'],
-        'termination_status': metrics['termination_status'],
-        'failure_stage': metrics['failure_stage'],
-        'failure_class': classify_outcome(metrics['termination_status'], metrics['failure_stage']),
-        'failure_reason': metrics['failure_reason'],
-        'active_guides': metrics['active_guides'],
-        'simulation_time': metrics['simulation_time'],
-        'actual_max_gap': metrics.get('actual_max_gap'),
-        'mean_curve_distance': metrics.get('mean_curve_distance'),
-        'path_length': metrics.get('path_length'),
-        'resource_utilization': metrics.get('resource_utilization'),
-        'minimum_net_clearances': metrics.get('minimum_net_clearances'),
-        'task_sha256': metrics.get('task_sha256'),
-    }
+    return row_from_metrics(task, metrics)
 
 
-def run_tasks(tasks, workers='auto'):
+def run_tasks(tasks, workers='auto', resume=False):
     available = os.cpu_count() or 1
     requested = available if workers == 'auto' else int(workers)
     pool_size = max(1, min(requested, len(tasks)))
     rows = []
     with ProcessPoolExecutor(max_workers=pool_size) as pool:
-        futures = [pool.submit(_run_task, task) for task in tasks]
+        futures = [pool.submit(_run_task, task, resume) for task in tasks]
         for future in as_completed(futures):
             rows.append(future.result())
     rows.sort(key=lambda row: (row['cell'], row['seed'], row['method'], row.get('fixed_n') or 0))
     return rows
 
 
-def hotspot_tasks(output, config='configs/step1/scenarios/high_demand_side.yaml'):
+def pairing_report(rows):
+    """Every (cell, seed) pair must share one frozen input snapshot across methods."""
+    groups = {}
+    for row in rows:
+        groups.setdefault((row['cell'], row['seed']), set()).add(row.get('input_snapshot_sha256'))
+    mismatched = [f'{cell}/seed_{seed}' for (cell, seed), hashes in groups.items() if len(hashes) != 1]
+    return {'pairs': len(groups), 'consistent': not mismatched, 'mismatched': mismatched}
+
+
+def write_run_manifest(output, spec, tasks, resume):
+    frozen = {
+        'schema_version': 2, 'spec': spec['_path'], 'spec_sha256': spec['_sha256'],
+        'task_count': len(tasks), 'tasks': [
+            {key: task[key] for key in ('cell', 'seed', 'method', 'fixed_n', 'output', 'config')}
+            for task in tasks
+        ],
+    }
+    manifest = Path(output) / 'run_manifest.json'
+    if manifest.exists():
+        previous = json.loads(manifest.read_text(encoding='utf-8'))
+        if previous != frozen:
+            raise ValueError('Output contains a different frozen run manifest; use a new directory')
+        if not resume:
+            raise FileExistsError('Output already holds this run; pass --resume to continue it')
+    else:
+        _atomic_text(manifest, json.dumps(frozen, indent=2) + '\n')
+
+
+def hotspot_tasks(output, config='configs/step1/scenarios/high_demand_side.yaml', methods=None):
     """Reproduce the existing high-demand case at 20 and 24 guides."""
     path = str(Path(config))
     loaded = load_config(path)
@@ -240,7 +308,7 @@ def hotspot_tasks(output, config='configs/step1/scenarios/high_demand_side.yaml'
     for fixed_n in (20, 24):
         if fixed_n > loaded['guides']['count']:
             raise ValueError('high_demand_side does not provide enough guides')
-        for method in sorted(METHODS):
+        for method in sorted(METHODS if methods is None else methods):
             tasks.append({
                 'cell': f'high_demand_n{fixed_n}',
                 'config_path': path,
@@ -259,24 +327,55 @@ def _run_hotspot(task):
             task['config_path'], task['output'], task['seed'], False,
             'fixed_n', task['fixed_n'], False, task['method'],
         )
-    return {
-        'fixed_n': task['fixed_n'], 'method': task['method'], 'seed': task['seed'],
-        'success': metrics['success'],
-        'termination_status': metrics['termination_status'],
-        'failure_stage': metrics['failure_stage'],
-        'failure_class': classify_outcome(metrics['termination_status'], metrics['failure_stage']),
-        'failure_reason': metrics['failure_reason'],
-        'active_guides': metrics['active_guides'],
-        'simulation_time': metrics['simulation_time'],
-        'actual_max_gap': metrics.get('actual_max_gap'),
-        'mean_curve_distance': metrics.get('mean_curve_distance'),
-        'path_length': metrics.get('path_length'),
-        'resource_utilization': metrics.get('resource_utilization'),
-        'minimum_net_clearances': metrics.get('minimum_net_clearances'),
-        'replan_count': metrics.get('replan_count'),
-        'task_sha256': metrics.get('task_sha256'),
-        'output': task['output'],
-    }
+    row = row_from_metrics(task, metrics)
+    row['planning_attempts'] = [
+        {key: value for key, value in attempt.items() if key != 'cost'}
+        for attempt in metrics.get('planning_attempts', [])
+    ]
+    return row
+
+
+def distmesh_analysis(rows):
+    """Explain DistMesh-inspired gaps from its sqrt(rho) fixed point using saved evidence.
+
+    DistMesh-inspired equalises the integral of sqrt(rho) and has no gap cap, so
+    the widest planned gap grows with density contrast. The damping 0.35 and
+    iteration limit are unchanged: retuning them would not change the fixed
+    point that this prediction describes.
+    """
+    from udc.boundary import Boundary
+    from udc.evaluation.coverage import distmesh_gap_prediction
+    report = {}
+    for row in rows:
+        if row['method'] != 'distmesh':
+            continue
+        directory = Path(row['output'])
+        trajectory = directory / 'trajectory.npz'
+        if not trajectory.exists():
+            continue
+        data = np.load(trajectory, allow_pickle=False)
+        if not len(data['boundary_deployment']):
+            continue
+        config = yaml.safe_load((directory / 'config.yaml').read_text(encoding='utf-8'))
+        control = config['controller']
+        boundary = Boundary(data['boundary_crowd'], data['boundary_deployment'],
+                            data['boundary_arc'], float(data['boundary_length']))
+        prediction = distmesh_gap_prediction(
+            boundary, data['crowd_positions'], data['crowd_demand'], control['demand_bandwidth'],
+            control['quadrature_samples'], int(row['fixed_n']),
+            control['max_gap_limit'] - 2 * control['arc_tolerance'])
+        planned = [a['max_gap'] for a in row.get('planning_attempts', [])]
+        if not planned:
+            attempts_path = directory / 'planning.json'
+            if attempts_path.exists():
+                planned = [a['max_gap'] for a in json.loads(attempts_path.read_text(encoding='utf-8'))]
+        key = f"{row.get('cell', '')}/seed_{row['seed']}/n{row['fixed_n']}"
+        report[key] = {
+            **prediction, 'observed_planned_gaps': planned,
+            'termination_status': row['termination_status'],
+            'stage_diagnosis': row.get('stage_diagnosis'),
+        }
+    return report
 
 
 def run_hotspot(output, workers='auto'):
@@ -295,8 +394,11 @@ def run_hotspot(output, workers='auto'):
         'interpretation': (
             'The historical scenario draws demand independently for each person. '
             'It is not a spatial hotspot. fixed_n selects 20 or 24 of the 24 available guides. '
-            'resource_shortfall, planning_failure and execution_failure are separate labels.'
+            'stage_diagnosis separates the necessary count condition, plan search, '
+            'reachable assignment and execution; termination statuses are unchanged.'
         ),
+        'pairing': pairing_report(rows),
+        'distmesh_gap_analysis': distmesh_analysis(rows),
         'runs': rows,
     }
     destination = Path(output) / 'diagnosis.json'
@@ -317,12 +419,13 @@ def main():
     parser.add_argument('--demand')
     parser.add_argument('--resource')
     parser.add_argument('--workers', default='auto')
+    parser.add_argument('--resume', action='store_true')
     parser.add_argument('--dry-run', action='store_true')
     parser.add_argument('--hotspot', action='store_true')
     args = parser.parse_args()
     if args.hotspot:
         report = run_hotspot(args.output, args.workers)
-        print(json.dumps(report, indent=2))
+        print(json.dumps({key: value for key, value in report.items() if key != 'runs'}, indent=2))
         return
     spec = load_spec(args.spec)
     selection = {
@@ -336,17 +439,31 @@ def main():
             'cells': len({task['cell'] for task in tasks}),
             'methods': sorted({task['method'] for task in tasks}),
             'seeds': sorted({task['seed'] for task in tasks}),
+            'fixed_n': sorted({(task['cell'], task['fixed_n']) for task in tasks}),
         }, indent=2))
         return
-    rows = run_tasks(tasks, args.workers)
-    destination = Path(args.output) / 'comparison.json'
-    destination.write_text(json.dumps(rows, indent=2, allow_nan=False) + '\n', encoding='utf-8')
+    output = Path(args.output)
+    output.mkdir(parents=True, exist_ok=True)
+    write_run_manifest(output, spec, tasks, args.resume)
+    rows = run_tasks(tasks, args.workers, args.resume)
+    _atomic_text(output / 'comparison.json', json.dumps(rows, indent=2, allow_nan=False) + '\n')
+    summary = summarize_comparison(rows)
+    summary['pairing'] = pairing_report(rows)
+    summary['spec_sha256'] = spec['_sha256']
+    summary['distmesh_gap_analysis'] = distmesh_analysis(rows)
+    _atomic_text(output / 'comparison_summary.json',
+                 json.dumps(summary, indent=2, allow_nan=False) + '\n')
     print(json.dumps({
         'tasks': len(rows),
         'successful': sum(row['success'] for row in rows),
+        'pairing': summary['pairing'],
         'classes': {
             name: sum(row['failure_class'] == name for row in rows)
             for name in sorted({row['failure_class'] for row in rows})
+        },
+        'stages': {
+            name: sum(row['stage_diagnosis'] == name for row in rows)
+            for name in sorted({str(row['stage_diagnosis']) for row in rows})
         },
     }, indent=2))
 

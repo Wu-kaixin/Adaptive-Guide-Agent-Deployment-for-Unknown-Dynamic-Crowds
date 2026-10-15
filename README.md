@@ -38,10 +38,10 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 |---|---|---|
 | 1 | 定义场地、人员源与实验参数 | `configs/step1/` |
 | 2 | 初始化并提供冻结人员观测 | `src/udc/crowd/`, `environment.py`, `interfaces.py` |
-| 3 | 估计占据包络与外偏移部署曲线 | `src/udc/controller/boundary.py` |
-| 4 | 选择 Guide 数量与部署目标 | `src/udc/controller/abcg.py`, `coverage.py` |
-| 5 | 绕障路径与可达目标匹配 | `src/udc/controller/navigation.py` |
-| 6 | 反馈跟踪、安全过滤与有限停滞恢复 | `src/udc/controller/abcg.py`, `safety.py` |
+| 3 | 估计占据包络与外偏移部署曲线 | `src/udc/boundary/` |
+| 4 | 选择 Guide 数量与部署目标 | `src/udc/controller/abcg.py`, `deployment/` |
+| 5 | 绕障路径与可达目标匹配 | `src/udc/navigation/` |
+| 6 | 反馈跟踪、安全过滤与有限停滞恢复 | `src/udc/controller/abcg.py`, `safety/` |
 | 7 | 保存执行轨迹并独立验收 | `src/udc/experiments/`, `evaluation/` |
 | 8 | 汇总实验、分析人群和绘图 | `src/udc/analysis/`, `visualization/` |
 
@@ -75,6 +75,16 @@ udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 
 完整 development 会使用 0–29 seeds。未来 validation 预留 5000–5029；整合开发不运行这些 seeds。smoke 默认覆盖 11 个场景、四方法和两资源协议，共 88 个任务。
 
+四算法公平比较使用另一份因子表。同一单元共享场景、人群、Guide 数量、边界、导航和安全参数，只更换部署方法。开发种子是 0–4。完整组合是 2 种场地 × 3 种形状 × 3 种规模 × 3 种需求 × 3 种资源 × 4 种方法 × 5 个种子，共 3240 个任务；默认不整表运行。
+
+```bash
+python -m udc.experiments.comparison --output runs/fair --dry-run
+python -m udc.experiments.comparison --output runs/fair_cell --seeds 0 --environment square --shape circle --size small --demand uniform --resource sufficient --workers 4
+python -m udc.experiments.comparison --hotspot --output runs/hotspot_20_24 --workers 4
+```
+
+Step 1 研究笔记在 `notebooks/step1_static_deployment.ipynb`。算法仍在 `src/udc/`，笔记只调用已经保存的结果。
+
 任务完成、预设失败语义通过、实际 SUCCESS 分开统计；初态无效、资源不足和超时都保留。统计包含成功率 Wilson 95% 区间与成功任务部署时间均值／中位数，不用确定性重复制造独立样本。
 
 ## 输出与回放
@@ -103,8 +113,6 @@ python live_demo.py
 | JuPedSim | Step 1 物理间隔放置；后续负责动态人群仿真 |
 | PedPy | 密度、Voronoi 与邻域分析；可分析原始 SQLite 轨迹 |
 | Vadere | 后续跨模型验证，当前尚未接入运行 backend |
-| `ABCG-Simulation/` | 保留原有 50 人与顺序／同时部署示例 |
-| `Test/` | 保留原有 Notebook 和行人轨迹分析数据 |
 
 Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重；实际人群响应与风险模型属于后续研究。下一步接入 Crowd-Management 的 alpha／radial 边界做模块对比，再推进动态多群。
 

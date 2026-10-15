@@ -1,8 +1,36 @@
 """Controller-independent evaluation from saved execution data."""
 import numpy as np
 from shapely.geometry import LineString, Point, Polygon
-from udc.controller.navigation import route_assigned
-from udc.controller.safety import path_clearances
+from udc.navigation import route_assigned
+from udc.safety import path_clearances
+
+
+RESOURCE_STATUSES = {'CAPACITY_SHORTFALL'}
+PLANNING_STATUSES = {
+    'BOUNDARY_INVALID', 'OFFSET_INVALID', 'PLAN_INVALID', 'PLAN_SEARCH_EXHAUSTED',
+    'TARGET_SEPARATION_INVALID', 'PATH_UNREACHABLE',
+}
+EXECUTION_STATUSES = {
+    'DEADLOCK', 'REPLAN_EXHAUSTED', 'TIMEOUT', 'COVERAGE_NOT_MET',
+    'SAFETY_VIOLATION', 'NUMERICAL_FAILURE',
+}
+
+
+def classify_outcome(status, failure_stage=None):
+    """Separate resource, planning and execution failures without changing acceptance."""
+    if status == 'SUCCESS':
+        return 'success'
+    if status == 'EXPERIMENT_ERROR':
+        return 'experiment_error'
+    if status in RESOURCE_STATUSES:
+        return 'resource_shortfall'
+    if status in PLANNING_STATUSES or failure_stage == 'planning':
+        return 'planning_failure'
+    if status == 'INITIALIZATION_INVALID' or failure_stage == 'initialization':
+        return 'initialization_failure'
+    if status in EXECUTION_STATUSES or failure_stage == 'execution':
+        return 'execution_failure'
+    return 'unclassified'
 
 
 def evaluate(trajectory, velocities, active, targets, assignment, boundary, safety, cfg,

@@ -10,7 +10,7 @@ import yaml
 
 from udc.analysis.pedestrian import analyze
 from udc.analysis.summary import summarize_results
-from udc.controller.coverage import _density
+from udc.deployment.planners import _density
 from udc.environment import Environment
 from udc.experiments.config import load_config
 from udc.experiments.runner import experiment, reevaluate_result

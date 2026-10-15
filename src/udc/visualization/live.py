@@ -23,7 +23,7 @@ from pathlib import Path
 import numpy as np
 
 from udc.controller import ABCGController
-from udc.controller.safety import Safety, is_safe, path_clearances
+from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
 from udc.experiments.runner import load_config
 

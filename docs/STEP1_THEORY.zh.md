@@ -25,7 +25,7 @@ $\rho=\sum K_jd_j/\sum K_j$，mass 使用 $\rho=\sum K_jd_j$；Average 的核按
 |---|---|---|---|
 | 静态人群 | `Environment.advance` 冻结 | `crowd_static` | 非动态遏制 |
 | 保守几何有效 | `boundary.estimate_boundary` | geometry criterion | 凸包丢失凹陷 |
-| 固定 N 离散下降 | `coverage.plan_coverage` | 每次 attempt 的 cost | 仅 CVT 离散目标 |
+| 固定 N 离散下降 | `deployment.plan_coverage` | 每次 attempt 的 cost | 仅 CVT 离散目标 |
 | 静态路径存在 | `navigation.navigate_and_assign` | path criterion | 非联合 MAPF 证明 |
 | 每段采样安全 | `path_clearances` + evaluator | minima/危险步 | 浮点软件验算 |
 | 有界停滞恢复 | `remaining_path_lengths` + `recover` | deadlock events/replan count | 非全局完备性证明 |

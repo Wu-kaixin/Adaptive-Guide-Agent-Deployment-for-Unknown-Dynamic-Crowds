@@ -2,7 +2,7 @@
 import numpy as np
 from shapely.geometry import Polygon
 
-from udc.interfaces import Observation
+from udc.interfaces import GuideState, PedestrianState, Perception
 from udc.scene import build_scene
 from udc.crowd.sources import static_positions
 
@@ -34,6 +34,8 @@ class Environment:
         self._positions = np.asarray(generated, dtype=float)
         if self._positions.shape != (count, 2) or not np.isfinite(self._positions).all():
             raise ValueError('JuPedSim could not generate the requested crowd')
+        self._ids = np.arange(count, dtype=int)
+        self._apply_demand_region(raw)
         from shapely.geometry import Point
         if not all(self.scene.polygon.covers(Point(p).buffer(float(r)))
                    for p, r in zip(self._positions, self._radii)):
@@ -42,11 +44,39 @@ class Environment:
         np.fill_diagonal(distances, np.inf)
         if np.any(distances < self._radii[:, None]+self._radii[None, :]-1e-8):
             raise ValueError('INITIALIZATION_INVALID: overlapping pedestrian disks')
+        self._ids.setflags(write=False)
         for data in [self._positions, self._radii, self._demand]:
             data.setflags(write=False)
 
+    def _apply_demand_region(self, raw):
+        """Raise planning weight inside a declared disk. This is not a risk model."""
+        region = raw.get('demand_region')
+        if region is None:
+            return
+        center = np.asarray(region['center'], dtype=float)
+        distance = np.linalg.norm(self._positions - center, axis=1)
+        adjusted = np.array(self._demand, copy=True)
+        adjusted[distance <= float(region['radius'])] *= float(region['multiplier'])
+        low, high = float(raw['demand']['min']), float(raw['demand']['max'])
+        self._demand = np.clip(adjusted, low, high)
+
+    def perceive(self, time, guides=None, guide_velocities=None):
+        people = PedestrianState(
+            self._ids.copy(), self._positions.copy(), self._radii.copy(),
+            self._demand.copy(), np.zeros_like(self._positions),
+        )
+        guide_state = None
+        if guides is not None:
+            guides = np.asarray(guides, dtype=float)
+            if guide_velocities is None:
+                guide_velocities = np.zeros_like(guides)
+            else:
+                guide_velocities = np.asarray(guide_velocities, dtype=float)
+            guide_state = GuideState(guides.copy(), guide_velocities.copy())
+        return Perception(float(time), people, guide_state)
+
     def observe(self):
-        return Observation(self._positions.copy(), self._radii.copy(), self._demand.copy())
+        return self.perceive(0.0).observation()
 
     def advance(self, dt):
         """Step 1 is frozen. Step 2 will add human dynamics here."""

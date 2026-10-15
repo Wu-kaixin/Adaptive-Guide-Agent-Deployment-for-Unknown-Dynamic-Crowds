@@ -20,6 +20,29 @@ Equal Arc 与 Average CVT 的迁移结果与来源仓库逐数组比较；Mass C
 均匀权重 CVT 可能退化为等弧长；不把名称不同自动视为独立竞争基线。
 多人群时先固定总人数比较群体数量，再单独增加总规模。
 
+## 四算法公平比较
+
+`experiments/step1_fair_comparison.yaml` 规定场地、形状、规模、需求和资源。
+任务生成时只替换 `controller.method`。同一单元的场景、人群参数、Guide 数量、边界、导航和安全阈值相同。
+资源水平改变的是 Guide 数量，因此初态不同；方法对比必须留在同一资源水平内。
+Guide 数量由生成多边形的外偏移周长和规划间隙预算算出，只作为实验预算，不保证成功。
+协议固定为 `fixed_n`，数量等于该单元的 Guide 数，避免自适应搜索用更多 Guide 换成功率。
+
+开发种子是 0、1、2、3、4。正式 validation 仍预留 5000–5029，这个入口拒绝运行它们。
+完整因子表有 3240 个任务。准备配置不等于已经得到比较结论。
+
+失败标签不改变九类验收：
+
+| 标签 | 含义 |
+|---|---|
+| `resource_shortfall` | `CAPACITY_SHORTFALL`，必要数量或指定数量超过可用 Guide |
+| `planning_failure` | 边界、间隙、间距或路径在执行前没有可接受目标 |
+| `execution_failure` | 已有目标之后的超时、恢复耗尽、安全拒绝或终端覆盖未通过 |
+| `initialization_failure` | 人群或 Guide 初态无法建立 |
+| `experiment_error` | 程序异常，单独记账 |
+
+`high_demand_side` 的 20／24 Guide 诊断使用原配置。该配置的 demand 是逐人独立抽样，不是空间热点。空间热点只出现在公平比较的 `hotspot` 因子里，并且仍然只是规划权重。
+
 ## Seed 与版本纪律
 
 `experiments/acceptance_manifest.yaml` 保留全部四方法与两资源协议。

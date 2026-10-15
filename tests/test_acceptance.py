@@ -5,11 +5,11 @@ import numpy as np
 import pytest
 from shapely.geometry import Polygon
 
-from udc.controller.boundary import Boundary
+from udc.boundary import Boundary
 from udc.controller.abcg import ABCGController
-from udc.controller.coverage import plan_coverage
-from udc.controller.navigation import navigate_and_assign
-from udc.controller.safety import Safety
+from udc.deployment import plan_coverage
+from udc.navigation import navigate_and_assign
+from udc.safety import Safety
 from udc.environment import Environment
 from udc.evaluation.acceptance import evaluate
 from udc.experiments.runner import load_config

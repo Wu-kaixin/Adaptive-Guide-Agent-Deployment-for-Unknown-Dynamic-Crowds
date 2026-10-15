@@ -2,10 +2,10 @@
 import numpy as np
 from shapely.geometry import Polygon
 
-from .boundary import estimate_boundary
-from .coverage import plan_coverage
-from .navigation import navigate_and_assign, route_assigned
-from .safety import safe_velocity
+from udc.boundary import estimate_boundary
+from udc.deployment import plan_coverage
+from udc.navigation import navigate_and_assign, route_assigned
+from udc.safety import safe_velocity
 
 
 class ABCGController:

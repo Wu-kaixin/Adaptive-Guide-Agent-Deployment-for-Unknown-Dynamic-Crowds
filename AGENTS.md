@@ -27,6 +27,5 @@ Small smoke: `python experiments/validation_runner.py --phase development --smok
 Replay: `python experiments/validation_runner.py --reevaluate --output runs/smoke`.
 Use process parallelism across episodes and cap numerical threads within workers.
 
-Existing `ABCG-Simulation/` and `Test/` are historical examples. Preserve their
-tracked data and scripts. New experiments use `configs/`, `src/udc/`, and `runs/`.
+New experiments use `configs/`, `src/udc/`, and `runs/`.
 After changes, document measured checks and limits in `docs/VALIDATION.zh.md`.

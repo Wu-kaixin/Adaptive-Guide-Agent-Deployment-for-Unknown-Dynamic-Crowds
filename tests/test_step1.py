@@ -6,9 +6,9 @@ import numpy as np
 import pytest
 import yaml
 
-from udc.controller.boundary import estimate_boundary
-from udc.controller.coverage import plan_coverage
-from udc.controller.safety import Safety, is_safe, path_clearances, safe_velocity
+from udc.boundary import estimate_boundary
+from udc.deployment import plan_coverage
+from udc.safety import Safety, is_safe, path_clearances, safe_velocity
 from udc.environment import Environment
 from udc.interfaces import Observation
 from udc.experiments.runner import experiment, load_config, reevaluate_result
@@ -25,6 +25,32 @@ def write_config(tmp_path, value):
     path = tmp_path/'case.yaml'
     path.write_text(yaml.safe_dump(value), encoding='utf-8')
     return path
+
+
+def test_perception_keeps_stable_ids_and_zero_velocity():
+    env = Environment(config('static_50'))
+    seen = env.perceive(0.0)
+    assert np.array_equal(seen.pedestrians.ids, np.arange(50))
+    assert seen.pedestrians.velocities.shape == (50, 2)
+    assert np.all(seen.pedestrians.velocities == 0)
+    assert seen.guides is None
+    seen.pedestrians.positions[:] = 0
+    assert np.any(env.perceive(1.0).pedestrians.positions != 0)
+
+
+def test_demand_region_is_a_planning_weight_not_a_new_threshold(tmp_path):
+    cfg = config('static_50')
+    cfg['crowd']['demand'] = {'mean': 1.0, 'std': 0.0, 'min': 0.5, 'max': 3.0}
+    cfg['crowd']['demand_region'] = {'center': [20.0, 19.5], 'radius': 1.2, 'multiplier': 2.0}
+    env = Environment(cfg)
+    positions, demand = env.observe().positions, env.observe().demand
+    inside = np.linalg.norm(positions - np.array([20.0, 19.5]), axis=1) <= 1.2
+    assert inside.any() and (~inside).any()
+    assert np.all(demand[inside] == 2.0)
+    assert np.all(demand[~inside] == 1.0)
+    cfg['crowd']['demand_region']['multiplier'] = 1.0
+    with pytest.raises(ValueError):
+        load_config(write_config(tmp_path, cfg))
 
 
 def test_static_observation_contains_no_spawn_geometry():

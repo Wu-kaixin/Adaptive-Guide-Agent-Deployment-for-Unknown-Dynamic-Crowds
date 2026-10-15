@@ -26,7 +26,7 @@ def load_config(path, seed=None):
     if not isinstance(config, dict) or set(config) != {'step', *sections} or config['step'] != 1:
         raise ValueError('Only strict Step-1 schema is supported')
     for section, fields in sections.items():
-        optional = {'source', 'grid', 'trajectory_file'} if section == 'crowd' else set()
+        optional = {'source', 'grid', 'trajectory_file', 'demand_region'} if section == 'crowd' else set()
         if not isinstance(config[section], dict) or not fields <= set(config[section]) or set(config[section]) - fields - optional:
             raise ValueError(f'{section} requires exactly: {sorted(fields)}')
     if seed is not None:
@@ -104,6 +104,18 @@ def load_config(path, seed=None):
         crowd['trajectory_file'] = str(filename.resolve())
     elif 'trajectory_file' in crowd:
         raise ValueError('trajectory_file is only valid for crowd.source=sqlite')
+    region = crowd.get('demand_region')
+    if region is not None:
+        if not isinstance(region, dict) or set(region) != {'center', 'radius', 'multiplier'}:
+            raise ValueError('demand_region requires center, radius and multiplier')
+        center = np.asarray(region['center'], dtype=float)
+        if center.shape != (2,) or not np.isfinite(center).all():
+            raise ValueError('demand_region.center must be a finite point')
+        radius, multiplier = region['radius'], region['multiplier']
+        if any(isinstance(value, bool) or not isinstance(value, (int, float))
+               for value in (radius, multiplier)) or not np.isfinite([radius, multiplier]).all() \
+                or radius <= 0 or multiplier <= 1:
+            raise ValueError('demand_region radius and multiplier must be finite, with radius > 0 and multiplier > 1')
     if config['simulation']['dt'] * config['controller']['gain'] > 1:
         raise ValueError('Conservative tracker requires dt * gain <= 1')
     return config

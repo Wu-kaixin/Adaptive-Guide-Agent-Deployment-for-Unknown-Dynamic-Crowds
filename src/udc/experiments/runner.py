@@ -12,9 +12,9 @@ from time import perf_counter
 import numpy as np
 import yaml
 
+from udc.boundary import Boundary
 from udc.controller import ABCGController
-from udc.controller.boundary import Boundary
-from udc.controller.safety import Safety, is_safe, path_clearances
+from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
 from udc.evaluation.acceptance import evaluate
 from .config import load_config, METHODS, PROTOCOLS
@@ -107,7 +107,7 @@ def experiment(config_path, output, seed=None, plots=True,
         raise FileExistsError(f'Use an empty output directory or --resume: {output}')
     output.mkdir(parents=True, exist_ok=True)
 
-    config = env = observation = initial = safety = controller = None
+    config = env = observation = perception = initial = safety = controller = None
     provenance = {}
     positions = []
     nominal = []
@@ -134,8 +134,9 @@ def experiment(config_path, output, seed=None, plots=True,
             if result is not None:
                 return result
         env = Environment(config)
-        observation = env.observe()
         initial = env.initialize_guides(config['guides'])
+        perception = env.perceive(0.0, initial)
+        observation = perception.observation()
         positions = [initial]
         guide = config['guides']; control = config['controller']; sim = config['simulation']
         safety = Safety(
@@ -164,7 +165,8 @@ def experiment(config_path, output, seed=None, plots=True,
         termination = 'TIMEOUT'
         progress = [float(controller.remaining_path_lengths(initial).mean())]
         for step in range(sim['max_steps']):
-            requested, result = controller.step(env.observe(), positions[-1], sim['dt'])
+            perceived = env.perceive((step + 1) * sim['dt'], positions[-1])
+            requested, result = controller.step(perceived.observation(), positions[-1], sim['dt'])
             next_position = positions[-1] + sim['dt'] * result.velocity
             clearances = path_clearances(
                 positions[-1], next_position, observation.positions, env.scene.size
@@ -198,7 +200,10 @@ def experiment(config_path, output, seed=None, plots=True,
                        and errors.max(initial=0.) > control['position_tolerance']
                        and active_speed.mean() <= control['speed_tolerance'])
             if stalled:
-                strategy = controller.recover(env.observe(), next_position)
+                strategy = controller.recover(
+                    env.perceive((step + 1) * sim['dt'], next_position).observation(),
+                    next_position,
+                )
                 event = {'step': step, 'remaining_path': progress[-1],
                          'strategy': strategy or 'exhausted'}
                 deadlocks.append(event)
@@ -283,6 +288,10 @@ def experiment(config_path, output, seed=None, plots=True,
         'planning_attempts': attempts,
         'total_demand': (None if observation is None
                          else float(observation.demand.sum())),
+        'path_length': (None if controller is None or getattr(controller, 'navigation', None) is None
+                        else float(np.sum(controller.navigation.lengths))),
+        'resource_utilization': (None if guide_count == 0
+                                 else float(active.sum()) / guide_count),
         'safety_limits': None if safety is None else asdict(safety),
         'safety_diagnostics': safety_log,
         'fallback_count': sum(item['fallback_used'] for item in safety_log),
@@ -306,10 +315,14 @@ def experiment(config_path, output, seed=None, plots=True,
         active_mask=active, targets=targets, assignment=assignment,
         waypoint_index=(np.asarray(waypoint_history).reshape(-1, guide_count)
                         if guide_count else np.empty((0, 0), int)),
+        crowd_ids=(perception.pedestrians.ids if perception is not None
+                   else np.empty(0, dtype=int)),
         crowd_positions=(observation.positions if observation is not None
                          else np.empty((0, 2))),
         crowd_radii=(observation.radii if observation is not None else np.empty(0)),
         crowd_demand=(observation.demand if observation is not None else np.empty(0)),
+        crowd_velocities=(perception.pedestrians.velocities if perception is not None
+                          else np.empty((0, 2))),
         boundary_crowd=(boundary.crowd if boundary is not None else np.empty((0, 2))),
         boundary_deployment=(boundary.deployment if boundary is not None else np.empty((0, 2))),
         boundary_arc=(boundary.arc if boundary is not None else np.empty(0)),

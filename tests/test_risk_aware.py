@@ -6,8 +6,9 @@ import pytest
 import yaml
 
 from udc.boundary import Boundary, estimate_boundary
-from udc.deployment import (feasibility_bounds, infeasibility_certificate, periodic_gaps,
-                            plan_coverage, plan_risk_aware, project_gaps, quadrature_mass)
+from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
+                            periodic_gaps, plan_coverage, plan_projected_mass, plan_risk_aware,
+                            project_gaps, quadrature_mass)
 from udc.deployment import risk_aware
 from udc.environment import Environment
 from udc.evaluation.acceptance import diagnose_stages
@@ -114,6 +115,61 @@ def test_ra_abdc_respects_gap_limit_where_mass_cvt_breaks_it_and_concentrates_ve
     assert unconstrained['planned_hotspot_concentration'] > diag['planned_hotspot_concentration']
 
 
+def test_uniform_person_demand_still_has_a_nonuniform_curve_density():
+    boundary, people, _, _ = hotspot_case()
+    demand = np.ones(len(people))
+    rho = demand_profile(boundary, people, demand, 1.2, 'mass_cvt')
+    assert np.allclose(demand, 1.0)
+    assert rho.max() / rho.min() > 1.2
+
+
+def test_evaluation_density_ignores_the_planning_exponent():
+    boundary, people, demand, mask = hotspot_case()
+    rho = demand_profile(boundary, people, demand, 1.2, 'mass_cvt')
+    sites = (np.arange(12) + 0.5) * boundary.length / 12
+    positions_even = boundary.deployment[np.linspace(0, len(boundary.deployment) - 1, 12).astype(int)]
+    original = coverage_diagnostics(boundary, people, demand, mask, 1.2, 512, 2.0,
+                                    positions_even, positions_even)
+    peaked = quadrature_mass(boundary, rho ** 0.25, 512)[1]
+    flat = quadrature_mass(boundary, rho, 512)[1]
+    assert not np.allclose(peaked / peaked.sum(), flat / flat.sum())
+    assert original['planned_demand_weighted_cost'] == pytest.approx(
+        coverage_diagnostics(boundary, people, demand, mask, 1.2, 512, 2.0,
+                             positions_even, positions_even)['planned_demand_weighted_cost'])
+    assert original['coverage_density'].startswith('mass_cvt')
+
+
+def test_projected_mass_matches_ra_abdc_when_unit_concentration_is_feasible():
+    boundary, people, demand, _ = hotspot_case()
+    limit, separation = 1.94, .75
+    count = feasibility_bounds(boundary.length, limit, separation)['necessary_min_count'] + 1
+    risk = plan_risk_aware(boundary, people, demand, count, 1.2, limit, separation)
+    projected = plan_projected_mass(boundary, people, demand, count, 1.2, limit, separation)
+    np.testing.assert_allclose(projected.arc_positions, risk.arc_positions, atol=1e-8)
+    assert risk.concentration == 1.0 and projected.concentration == 1.0
+    assert projected.adapt_concentration is False and risk.adapt_concentration is True
+    assert len(projected.adjustments) == 1
+    assert projected.adjustments[0]['same_path_as_ra_abdc_unit_concentration']
+    assert projected.adjustments[0]['before_projection']['max_gap'] >= projected.max_gap - 1e-9
+    assert projected.adjustments[0]['original_density_contrast'] > 1
+    assert projected.adjustments[0]['evaluation_density'].startswith('original')
+
+
+def test_projected_mass_does_not_fall_back_when_separation_fails(monkeypatch):
+    boundary, people, demand, _ = hotspot_case()
+    original = risk_aware._min_separation
+
+    def always_too_close(bnd, sites):
+        points, _ = original(bnd, sites)
+        return points, 0.1
+    monkeypatch.setattr(risk_aware, '_min_separation', always_too_close)
+    projected = plan_projected_mass(boundary, people, demand, 17, 1.2, 1.94, .75)
+    assert len(projected.adjustments) == 1
+    assert projected.concentration == 1.0 and not projected.equal_arc_fallback
+    assert not projected.adjustments[0]['accepted']
+    assert projected.adjustments[0]['fallback_reason'] is None
+
+
 def test_ra_abdc_reduces_concentration_and_records_equal_arc_fallback(monkeypatch):
     boundary, people, demand, _ = hotspot_case()
     original = risk_aware._min_separation
@@ -179,6 +235,49 @@ def test_hotspot_window_follows_nearest_person_and_fractional_counts():
                                 right, right)
     assert diag['actual_hotspot_concentration'] > 1.5
     assert diag['actual_hotspot_mean_spacing'] < length/len(right)
+
+
+def test_ablation_spec_uses_curve_based_counts_and_shared_hotspot_geometry():
+    spec = load_spec(ROOT/'experiments/step1_projection_ablation.yaml')
+    tasks = build_tasks(spec, 'runs/unused')
+    assert len(tasks) == 2*3*3*4*5
+    counts = {(task['shape'], task['resource']): task['fixed_n'] for task in tasks}
+    assert counts[('circle', 'near')] == 14 and counts[('circle', 'ample')] == 20
+    assert counts[('ellipse', 'near')] == 16 and counts[('ellipse', 'ample')] == 22
+    assert counts[('circle', 'near')] < counts[('circle', 'margin')] < counts[('circle', 'ample')]
+    weak = next(task for task in tasks if task['shape'] == 'ellipse' and task['demand'] == 'weak')
+    strong = next(task for task in tasks if task['shape'] == 'ellipse' and task['demand'] == 'strong'
+                  and task['seed'] == weak['seed'] and task['resource'] == weak['resource']
+                  and task['method'] == weak['method'])
+    assert weak['config']['crowd']['demand_region']['radius'] == strong['config']['crowd']['demand_region']['radius']
+    assert weak['config']['crowd']['demand_region']['center'] == strong['config']['crowd']['demand_region']['center']
+    assert strong['config']['crowd']['demand_region']['multiplier'] > weak['config']['crowd']['demand_region']['multiplier']
+    by_cell = {}
+    for task in tasks:
+        if task['seed'] == 0:
+            by_cell.setdefault(task['cell'], []).append(task)
+    for members in by_cell.values():
+        reference = {key: value for key, value in members[0]['config'].items() if key != 'controller'}
+        assert all({key: value for key, value in member['config'].items() if key != 'controller'} == reference
+                   for member in members)
+        assert {member['method'] for member in members} == {
+            'equal_arc', 'mass_cvt', 'projected_mass', 'ra_abdc'}
+
+
+def test_plan_only_then_resume_executes_without_changing_the_task(tmp_path):
+    output = tmp_path/'planned'
+    planned = experiment(ROOT/'configs/step1/square.yaml', output, plots=False,
+                         protocol='fixed_n', fixed_n=20, method='equal_arc', execute=False)
+    assert planned['termination_status'] == 'NOT_EXECUTED'
+    assert planned['stage_diagnosis'] == 'not_executed' and planned['plan_found']
+    repeated = experiment(ROOT/'configs/step1/square.yaml', output, plots=False,
+                          protocol='fixed_n', fixed_n=20, method='equal_arc',
+                          execute=False, resume=True)
+    assert repeated['task_sha256'] == planned['task_sha256']
+    done = experiment(ROOT/'configs/step1/square.yaml', output, plots=False,
+                      protocol='fixed_n', fixed_n=20, method='equal_arc', resume=True)
+    assert done['success'] and done['task_sha256'] == planned['task_sha256']
+    assert done['stage_diagnosis'] == 'accepted'
 
 
 def test_pilot_spec_pairs_five_methods_shares_inputs_and_shifts_the_hotspot():

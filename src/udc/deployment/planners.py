@@ -16,10 +16,11 @@ class Plan:
     iterations: int
     exit_reason: str
     density_total: float
-    # RA-ABDC bookkeeping. Baselines keep the defaults.
+    # Constrained-planner bookkeeping. Baselines keep the defaults.
     concentration: float = 1.0
     equal_arc_fallback: bool = False
     adjustments: tuple = field(default_factory=tuple)
+    adapt_concentration: bool = False
 
 
 def _density(points, people, demand, bandwidth, mode):
@@ -120,10 +121,13 @@ def project_gaps(gaps, low, high, length):
 def feasibility_bounds(length, gap_limit, min_separation):
     """Necessary count conditions for a periodic curve of the given length.
 
-    ``max_gap <= gap_limit`` requires ``N >= ceil(L / gap_limit)``.
-    Euclidean separation never exceeds arc separation, so ``N <= floor(L / d_min)``
-    is necessary for ``min_separation``. Violating either is a certificate that
-    no admissible target set exists; satisfying both is not sufficient.
+    ``max_gap <= gap_limit`` requires ``N >= ceil(L / gap_limit)`` only if every
+    feasible plan is a set of arc sites on this one closed curve. Euclidean
+    chord length never exceeds arc length, so ``N <= floor(L / d_min)`` is
+    necessary for a positive minimum separation. Violating either certifies
+    that no admissible target set exists. Satisfying both does not: curvature
+    can make a chord shorter than its arc, and obstacles or reachability are
+    outside this count.
     """
     if not np.isfinite([length, gap_limit, min_separation]).all() or min(length, gap_limit, min_separation) <= 0:
         raise ValueError('Feasibility bounds need positive finite length, gap limit and separation')

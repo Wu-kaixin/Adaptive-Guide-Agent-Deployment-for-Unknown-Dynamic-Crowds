@@ -4,7 +4,7 @@ frozen_protocol:
   development_seeds: [0, 29]
   # Reserved for a future frozen validation; not executed during integration.
   validation_seeds: [5000, 5029]
-  methods: [equal_arc, average_cvt, mass_cvt, distmesh, ra_abdc]
+  methods: [equal_arc, average_cvt, mass_cvt, distmesh, projected_mass, ra_abdc]
   protocols: [fixed_n, adaptive_resource]
 gates:
   G1: {required: true, evidence: [pyproject.toml, run.py]}

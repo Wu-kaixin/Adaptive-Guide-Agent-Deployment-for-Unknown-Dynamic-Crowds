@@ -1,8 +1,58 @@
 # 验证记录
 
-当前热点试点与 RA-ABDC 候选检查写在第一节。其后两节是更早的重构与迁移记录，不能当作当前工作树的证据。
+当前投影消融写在第一节。其后各节是更早的热点试点、重构和迁移记录，不能当作这一轮的结果。
 
-## 2026-10-16 受控热点试点
+## 2026-10-16 投影与浓度消融
+
+起始提交是上一轮成果 `b6a37b6`（父提交 `4fbc5a0`）。本轮检查时分支为 `Major-Research-Branches`，工作树在消融修改之后为 dirty。没有推送，没有改 `main`。`runs/` 被忽略，实验数据留在磁盘。
+
+环境沿用已有 `.venv`，没有重装依赖：Windows 11、Python 3.13.13（Anaconda）、NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1、pytest 9.1.1。验收阈值没有改动。validation seeds 5000–5029 没有运行。
+
+### 上一轮轨迹复核
+
+`runs/pilot` 下 191 份保存结果全部独立复判：157 份有执行轨迹，34 份在规划失败时停止，没有伪造执行轨迹。在线与离线的九类验收和覆盖诊断一致，差异数为 0。30 个试点配对的输入哈希一致。规划失败的尝试都未被标成接受，间隙都超过 1.94 m，阶段都是 `no_plan_found`，没有 `certified_infeasible`。
+
+均匀人员需求（每人权重 1）经过 Gaussian 映射后，seed 0 的曲线密度最大／最小约为 1.58。这是人群相对曲线的占据，不是需求抽样。Mass CVT 在“均匀”单元格失败，原因是这条曲线密度，不是人员权重的方差。评价密度对所有方法都是这份原始 Mass CVT 密度；浓度指数只进入规划。
+
+`certified_infeasible` 只在 `ceil(L/H_p)` 或 `floor(L/d_min)` 被违反时出现。它假设目标在这一条闭合曲线上，并且弦长不超过弧长。它不包含曲率造成的额外弦缩短、障碍和可达性。必要条件成立仍只记 `no_plan_found`。单独诊断：圆形 N=13（下界 14）和椭圆 seed 0 的 N=14（下界 15），可用 Guide 都多于下界，终止状态仍是 `PLAN_SEARCH_EXHAUSTED`，阶段是 `certified_infeasible`，证书是 `GAP_BOUND`。这两条不进入 360 任务表。
+
+### 360 任务消融
+
+配置 `experiments/step1_projection_ablation.yaml`。先做 seed 0 的 72 任务规划扫描，再规划全部 360 个，然后只对找到方案的任务执行。输出目录 `runs/ablation/projection_matrix`。90／90 配对输入哈希一致。360／360 复判与在线结果一致。没有指派失败，没有执行失败。
+
+| 方法 | 成功 | 规划未找到 | 浓度 | Equal Arc 回退 |
+|---|---|---|---|---|
+| Equal Arc | 90/90 | 0 | — | — |
+| Mass CVT | 62/90 | 28 | — | — |
+| projected_mass | 90/90 | 0 | 固定 1 | 无此机制 |
+| RA-ABDC | 90/90 | 0 | 始终 1.0 | 0／90 |
+
+28 次 Mass CVT 失败全部在数量下界附近（圆形 N=14 的三种需求各 5／5；椭圆 N=16 的强热点 5／5，均匀和弱热点各 4／5）。`projected_mass` 把这 28 次都变成可执行并被验收的方案，没有把任何一次已成功的 Mass CVT 变成失败。余量档和较多余量档上，四种方法都是 5／5。该模式在 seed 0–4、两种形状和三种需求强度上重复出现，但只出现在贴近下界的那一档。
+
+在 90 对已保存目标里，`projected_mass` 与 RA-ABDC 的目标坐标全部一致，调整记录长度都是 1。浓度减半和回退没有发生。因此本轮完整 RA-ABDC 没有超出间隙投影的行为；那部分机制尚未得到实验检验。原因是投影已经把弧间隙放进 `[0.75, 1.94]`，这些凸曲线上的弦长没有再跌破 0.75 m。
+
+Mass CVT 被拒绝的方案，重新由保存的人群算出的规划间隙均值 2.15 m（2.01–2.52）。投影后的实际间隙均值 1.74 m，最大 1.940 m。成功任务的最小净距裕量是 0.192 m。两者都已执行时，仿真时间差的均值是 0 s；规划失败的仿真时间是 0，分析时视为缺失，不把它当成更快。规划耗时均值 0.036 s，最大 0.145 s。
+
+需求加权代价（原始密度，28 个被投影挽救的任务）：无约束 Mass CVT 均值 0.277，投影后实际 0.283，Equal Arc 实际 0.288。相对 Equal Arc，投影留下约 44% 的代价改进。圆形上最近人员窗口能定义热点浓度：无约束均值 1.23，投影后 1.04，Equal Arc 1.00，超出等弧长的集中约留下 16%。椭圆上该窗口弧长比例为 0，因为热点人员不在曲线的最近点上；椭圆不报告这个浓度，需求曲线上的峰仍在图里。
+
+图在 `runs/ablation/projection_matrix/figures/`。
+
+### 本轮没有做的事
+
+4860 任务因子表没有运行。development smoke 没有按新的六方法清单重跑。不为了触发浓度调节而修改验收阈值。
+
+本轮复现：
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/ablation/projection_smoke --seeds 0 --plan-only --workers 8
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/ablation/projection_matrix --plan-only --workers 8
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/ablation/projection_matrix --resume --workers 8
+```
+
+## 2026-10-16 受控热点试点（上一轮）
+
+不能当作上面消融的结果。
 
 分支 `Major-Research-Branches`，父提交 `4fbc5a0`，检查时工作树为 dirty。本机 PATH 上没有 `uv`；使用已有 `.venv`。环境：Windows 11、Python 3.13.13（Anaconda）、NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1、pytest 9.1.1。验收阈值没有改动。validation seeds 5000–5029 没有运行。
 
@@ -183,6 +233,6 @@ udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 
 ## 尚未完成
 
-Crowd-Management 的非凸估计器比较、完整 4050 任务因子表、动态多人群、crowd–guide 交互、经验证风险模型、
+Crowd-Management 的非凸估计器比较、完整 4860 任务因子表、动态多人群、crowd–guide 交互、经验证风险模型、
 去中心化部署和 Vadere backend 尚未完成。预留 validation seeds 5000–5029 没有运行。
-150 任务试点不能替代正式比较。RA-ABDC 候选尚未证明优于基线。
+360 任务消融只说明间隙投影在这些凸曲线、开发 seed 上恢复了贴近下界时的可行性。它不是正式验证，也不说明浓度调节有贡献。

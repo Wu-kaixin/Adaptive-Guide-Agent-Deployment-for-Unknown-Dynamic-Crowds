@@ -57,7 +57,8 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 | Average CVT | `average_cvt` | 局部平均 demand 驱动的周期 CVT |
 | Mass CVT | `mass_cvt` | Gaussian 需求质量驱动的周期 CVT，保留空间相对尺度 |
 | DistMesh-inspired | `distmesh` | 按平方根密度分位做间距松弛，并非完整 EikMesh／DistMesh 库 |
-| RA-ABDC（候选） | `ra_abdc` | 在 Mass CVT 密度的幂次上做带间隙投影的周期 CVT；找不到可行方案时明确记录 Equal Arc 回退 |
+| Mass CVT + 间隙投影 | `projected_mass` | 与 RA-ABDC 相同的间隙投影，浓度固定为 1，没有回退 |
+| RA-ABDC（候选） | `ra_abdc` | 在投影之上按浓度减半重试；仍失败则记录 Equal Arc 回退 |
 
 `adaptive_resource` 在数量上限内搜索可接受目标；`fixed_n` 固定数量，适合公平算法对照。
 
@@ -78,7 +79,7 @@ udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 
 完整 development 会使用 0–29 seeds。未来 validation 预留 5000–5029；整合开发不运行这些 seeds。smoke 现在覆盖 11 个场景、五种方法和两资源协议，共 110 个任务；本轮没有重跑这份 smoke。
 
-方法比较使用因子表。同一单元共享场景、人群快照、需求场、Guide 数量、边界、导航和安全参数，只更换部署方法。开发种子是 0–4。完整组合现为 2 种场地 × 3 种形状 × 3 种规模 × 3 种需求 × 3 种资源 × 5 种方法 × 5 个种子，共 4050 个任务；默认不整表运行。受控热点试点是 1 个场景 × 2 种需求 × 3 档数量 × 5 种方法 × 5 个种子，共 150 个任务。
+方法比较使用因子表。同一单元共享场景、人群快照、需求场、Guide 数量、边界、导航和安全参数，只更换部署方法。开发种子是 0–4。完整组合现为 2 种场地 × 3 种形状 × 3 种规模 × 3 种需求 × 3 种资源 × 6 种方法 × 5 个种子，共 4860 个任务；默认不整表运行。投影消融是圆形／椭圆 × 均匀／弱热点／强热点 × 三档曲线数量 × 四种方法 × seed 0–4，共 360 个任务。
 
 ```bash
 python -m udc.experiments.comparison --output runs/fair --dry-run
@@ -86,6 +87,8 @@ python -m udc.experiments.comparison --output runs/fair_cell --seeds 0 --environ
 python -m udc.experiments.comparison --hotspot --output runs/pilot/high_demand_20_24 --workers 4
 python -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/pilot/hotspot_smoke --seeds 0 --workers 4
 python -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/pilot/hotspot --workers 4
+python -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/ablation/projection_matrix --plan-only --workers 8
+python -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/ablation/projection_matrix --resume --workers 8
 python visualization.py --result runs/pilot/hotspot/square_circle_medium_hotspot_moderate/ra_abdc/seed_0 --demand-profile
 ```
 
@@ -120,7 +123,7 @@ python live_demo.py
 | PedPy | 密度、Voronoi 与邻域分析；可分析原始 SQLite 轨迹 |
 | Vadere | 后续跨模型验证，当前尚未接入运行 backend |
 
-Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重；RA-ABDC 只是带约束的需求加权候选，不是已经验证的风险控制。实际人群响应与风险模型属于后续研究。下一步是否扩大场景或跑完整因子表，取决于这份 150 任务诊断是否足够回答当前问题。
+Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重。在本轮凸曲线上，完整 RA-ABDC 与 Mass CVT＋间隙投影给出相同目标；浓度调节和 Equal Arc 回退没有被触发。实际人群响应与风险模型属于后续研究。
 
 完整路线见 [ROADMAP](docs/ROADMAP.zh.md)，理论与实现边界见 [STEP1_THEORY](docs/STEP1_THEORY.zh.md)。
 

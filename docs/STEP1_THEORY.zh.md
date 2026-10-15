@@ -8,9 +8,9 @@
 $J_h=\sum_q w_q d_L(s_q,z_{a(q)})^2$。average 使用
 $\rho=\sum K_jd_j/\sum K_j$，mass 使用 $\rho=\sum K_jd_j$；Average 的核按行平移，比例中的共同尺度抵消；Mass 用 logsumexp 并仅减去全曲线共同尺度，保留各位置的相对 Gaussian 质量。此归一化后的积分不解释为物理人数。固定分区时，周期展开后的加权质心最小化对应二次子问题；重新分区是逐点取最近站点。因此 CVT 更新只在数值接受检查通过时非增。ties 由 `argmin` 的最小索引确定。这不是连续目标、唯一极限或全局最优证明。Equal Arc 是直接构造；DistMesh-inspired 是 $\sqrt\rho$ 累计质量分位的阻尼松弛，明确没有 Lloyd 下降声明。
 
-人员需求进入曲线的唯一映射是 Gaussian 密度。Mass／RA-ABDC 使用 $\rho(s)=\sum_j d_j K(x(s),p_j)$；Average 使用核加权均值。空间热点只改变部分 $d_j$，不另建第二条边界。
+人员需求进入曲线的唯一映射是 Gaussian 密度。Mass、`projected_mass` 与 RA-ABDC 使用同一份 $\rho(s)=\sum_j d_j K(x(s),p_j)$；Average 使用核加权均值。人员权重全部为 1 时，$\rho$ 仍随人群相对曲线的位置变化，不是平的。评价始终用这份原始 $\rho$，不用规划时的 $\rho^a$。空间热点只改变部分 $d_j$，不另建第二条边界。
 
-RA-ABDC 候选在固定 $N$ 下最小化 $J_a=\sum_q w_q\rho_q^a d_L(s_q,S)^2$，$a\in[0,1]$，约束为弧间隙 $\le H_p$、弧间隙 $\ge d_{\min}$ 以及欧氏间距 $\ge d_{\min}$。算法对每次 Lloyd 步做间隙投影；若仍不可行则把 $a$ 减半，直到 $a=0$ 的 Equal Arc。投影迭代没有下降或最优性声明。Equal Arc 回退必须写进 `adjustments`。
+`projected_mass` 与 RA-ABDC 最小化同一个 $J_a=\sum_q w_q\rho_q^a d_L(s_q,S)^2$。前者固定 $a=1$ 并做间隙投影，没有浓度日程，也没有回退。后者从 $a=1$ 开始；只有投影后的欧氏间距仍违反时才把 $a$ 减半，直到记录在案的 $a=0$ Equal Arc。投影后的第一步就是 `projected_mass`。投影迭代没有下降或最优性声明。
 
 规划要求 $H_p=H-2\epsilon_s>0$，必要的规划规范下界为 $\lceil L/H_p\rceil$，欧氏间距的必要上界为 $\lfloor L/d_{\min}\rfloor$。违反其中之一才是不可行证书。搜索耗尽只叫 `PLAN_SEARCH_EXHAUSTED`／`no_plan_found`；只有下界超过可用数才叫 `CAPACITY_SHORTFALL`。实际 gap 永远独立测量。桥接式 $H_{actual}\le H_{targets}+2e_s$ 只在目标身份的相容周期 lift、投影有效且环向顺序保持时适用；欧氏误差不替代弧长误差。
 

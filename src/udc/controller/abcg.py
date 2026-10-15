@@ -1,10 +1,12 @@
 """ABCG planning, reachable assignment, waypoint tracking and safe feedback."""
+from time import perf_counter
+
 import numpy as np
 from shapely.geometry import Polygon
 
 from udc.boundary import estimate_boundary
-from udc.deployment import (feasibility_bounds, infeasibility_certificate, plan_coverage,
-                            plan_risk_aware)
+from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
+                            plan_coverage, plan_risk_aware)
 from udc.navigation import navigate_and_assign, route_assigned
 from udc.safety import safe_velocity
 
@@ -22,11 +24,13 @@ class ABCGController:
 
     def _plan(self, observation, n, phase, planned_limit):
         c=self.config
-        if c['method'] == 'ra_abdc':
+        if c['method'] in {'ra_abdc', 'projected_mass'}:
+            # projected_mass is the a=1 projected attempt with the schedule disabled.
             return plan_risk_aware(self.boundary,observation.positions,observation.demand,n,
                 c['demand_bandwidth'],planned_limit,self.safety.guide_distance,phase,
                 c['quadrature_samples'],c['planner_max_iterations'],
-                c.get('concentration',1.0))
+                c.get('concentration',1.0), adapt_concentration=c['method']=='ra_abdc',
+                method=c['method'])
         return plan_coverage(self.boundary,observation.positions,observation.demand,n,
             c['demand_bandwidth'],c['method'],phase,c['quadrature_samples'],c['planner_max_iterations'])
 
@@ -75,14 +79,22 @@ class ABCGController:
                                        else certificates[order[0]]))
         for n in order:
             for phase in c['phases']:
+                started=perf_counter()
                 plan=self._plan(observation,n,phase,planned_limit)
                 distances=np.linalg.norm(plan.positions[:,None]-plan.positions[None,:],axis=2)
                 np.fill_diagonal(distances,np.inf); separation=float(distances.min())
                 accepted=plan.max_gap <= planned_limit+1e-9 and separation >= self.safety.guide_distance
+                rho=demand_profile(self.boundary,observation.positions,observation.demand,
+                                   c['demand_bandwidth'],'mass_cvt')
                 record={'n':n,'phase':phase,'max_gap':plan.max_gap,'min_separation':separation,
-                    'cost':plan.cost.tolist(),'iterations':plan.iterations,'exit_reason':plan.exit_reason,'accepted':accepted}
-                if plan.method == 'ra_abdc':
+                    'cost':plan.cost.tolist(),'iterations':plan.iterations,'exit_reason':plan.exit_reason,
+                    'accepted':accepted,'planner_seconds':perf_counter()-started,
+                    # Same original density for every method. Concentration never replaces it.
+                    'evaluation_density':'mass_cvt gaussian demand mass',
+                    'evaluation_density_contrast':float(rho.max()/max(float(rho.min()),1e-30))}
+                if plan.method in {'ra_abdc','projected_mass'}:
                     record.update(concentration=plan.concentration,equal_arc_fallback=plan.equal_arc_fallback,
+                                  adapt_concentration=plan.adapt_concentration,
                                   adjustments=list(plan.adjustments))
                 self.attempts.append(record)
                 if accepted: chosen=plan; break

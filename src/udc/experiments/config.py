@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 import yaml
 
-METHODS = {"equal_arc", "average_cvt", "mass_cvt", "distmesh", "ra_abdc"}
+METHODS = {"equal_arc", "average_cvt", "mass_cvt", "distmesh", "projected_mass", "ra_abdc"}
 BASELINES = {"equal_arc", "average_cvt", "mass_cvt", "distmesh"}
 PROTOCOLS = {"fixed_n", "adaptive_resource"}
 

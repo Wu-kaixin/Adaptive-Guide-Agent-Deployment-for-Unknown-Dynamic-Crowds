@@ -1,8 +1,9 @@
 """Demand-weighted coverage and hotspot diagnostics shared by every method.
 
 These numbers are diagnostics. They do not enter the nine acceptance
-criteria and they use one common definition for all deployment methods:
-the Mass-CVT Gaussian demand density on the deployment curve.
+criteria. Every method is scored on the same original Mass-CVT Gaussian
+demand density. A planner may concentrate that density with an exponent;
+the exponent is not applied here.
 """
 import numpy as np
 from shapely.geometry import Point, Polygon

@@ -26,7 +26,7 @@ STATUSES = {
     'CAPACITY_SHORTFALL', 'PLAN_INVALID', 'PLAN_SEARCH_EXHAUSTED',
     'TARGET_SEPARATION_INVALID', 'PATH_UNREACHABLE', 'NUMERICAL_FAILURE',
     'DEADLOCK', 'REPLAN_EXHAUSTED', 'TIMEOUT', 'COVERAGE_NOT_MET',
-    'SAFETY_VIOLATION', 'SUCCESS',
+    'SAFETY_VIOLATION', 'SUCCESS', 'NOT_EXECUTED',
 }
 RESULT_FILES = {'metrics.json', 'config.yaml', 'trajectory.npz', 'planning.json', 'state.json'}
 
@@ -95,10 +95,22 @@ def _resume_initialization_failure(output, request_hash):
     return None
 
 
+def _saved_state(output):
+    try:
+        return json.loads((output / 'state.json').read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+
+
 def experiment(config_path, output, seed=None, plots=True,
                protocol='adaptive_resource', fixed_n=None, resume=False,
-               method=None):
-    """Run one task and always emit a structured result for expected failures."""
+               method=None, execute=True):
+    """Run one task and always emit a structured result for expected failures.
+
+    ``execute=False`` stops after a feasible plan is saved (``NOT_EXECUTED``).
+    Resuming with ``execute=True`` replans deterministically and then tracks.
+    A completed planning failure is not run again.
+    """
     started = perf_counter()
     output = Path(output)
     if protocol not in PROTOCOLS:
@@ -150,7 +162,13 @@ def experiment(config_path, output, seed=None, plots=True,
             result = _resume_result(output, provenance['task_sha256'])
             if result is not None:
                 return result
-            raise FileExistsError(f'Existing result is incomplete or hash-mismatched: {output}')
+            state = _saved_state(output)
+            same_plan = (state.get('status') == 'planned'
+                         and state.get('task_sha256') == provenance['task_sha256'])
+            if same_plan and not execute:
+                return json.loads((output / 'metrics.json').read_text(encoding='utf-8'))
+            if not (execute and same_plan):
+                raise FileExistsError(f'Existing result is incomplete or hash-mismatched: {output}')
         _atomic_text(output / 'state.json', json.dumps({
             'status': 'started', 'task_sha256': provenance['task_sha256']
         }, indent=2) + '\n')
@@ -161,10 +179,15 @@ def experiment(config_path, output, seed=None, plots=True,
         failure_stage = 'planning'
         controller = ABCGController(control, safety, env.scene.size, protocol, fixed_n)
         controller.prepare(observation, initial)
-        failure_stage = 'execution'
-        termination = 'TIMEOUT'
+        if not execute:
+            termination = 'NOT_EXECUTED'
+            failure_stage = None
+            failure_reason = 'Feasible plan saved; execution was not requested'
+        else:
+            failure_stage = 'execution'
+            termination = 'TIMEOUT'
         progress = [float(controller.remaining_path_lengths(initial).mean())]
-        for step in range(sim['max_steps']):
+        for step in range(0 if execute else sim['max_steps'], sim['max_steps']):
             perceived = env.perceive((step + 1) * sim['dt'], positions[-1])
             requested, result = controller.step(perceived.observation(), positions[-1], sim['dt'])
             next_position = positions[-1] + sim['dt'] * result.velocity
@@ -282,10 +305,12 @@ def experiment(config_path, output, seed=None, plots=True,
         'demand_region': None if config is None else config['crowd'].get('demand_region'),
         'demand_clipped_count': None if env is None else env.demand_clipped,
         'hotspot_people': None if env is None else int(env.hotspot_mask.sum()),
-        'planned_concentration': (None if plan is None or plan.method != 'ra_abdc'
+        'planned_concentration': (None if plan is None or plan.method not in {'ra_abdc', 'projected_mass'}
                                   else plan.concentration),
-        'equal_arc_fallback': (None if plan is None or plan.method != 'ra_abdc'
+        'equal_arc_fallback': (None if plan is None or plan.method not in {'ra_abdc', 'projected_mass'}
                                else bool(plan.equal_arc_fallback)),
+        'adapt_concentration': (None if plan is None or plan.method not in {'ra_abdc', 'projected_mass'}
+                                else bool(plan.adapt_concentration)),
         'active_guides': int(active.sum()),
         'reserve_guides': int(guide_count - active.sum()),
         'steps': len(executed),
@@ -349,7 +374,8 @@ def experiment(config_path, output, seed=None, plots=True,
         room=(env.scene.size if env is not None else np.empty(0)),
     )
     _atomic_text(output / 'state.json', json.dumps({
-        'status': 'completed', 'success': success,
+        'status': 'planned' if termination == 'NOT_EXECUTED' else 'completed',
+        'success': success,
         'task_sha256': provenance.get('task_sha256'),
     }, indent=2) + '\n')
     if plots and env is not None and controller is not None and len(trajectory):

@@ -20,6 +20,7 @@ def test_outcome_labels_keep_resource_planning_and_execution_apart():
     assert classify_outcome('REPLAN_EXHAUSTED', 'execution') == 'execution_failure'
     assert classify_outcome('TIMEOUT', 'execution') == 'execution_failure'
     assert classify_outcome('INITIALIZATION_INVALID', 'initialization') == 'initialization_failure'
+    assert classify_outcome('NOT_EXECUTED') == 'not_executed'
 
 
 def test_fair_grid_pairs_methods_and_reserves_validation_seeds():

@@ -36,7 +36,7 @@ def load_manifest(path):
     config_root = (path.resolve().parent / manifest.get('config_root', '..')).resolve()
     manifest['_config_root'] = str(config_root)
     if set(frozen['methods']) != METHODS or set(frozen['protocols']) != PROTOCOLS:
-        raise ValueError('Manifest must freeze all five methods and both protocols')
+        raise ValueError('Manifest must freeze every method and both protocols')
     names = set()
     for item in manifest['scenarios']:
         if not isinstance(item, dict) or not {'name', 'config', 'fixed_n', 'stochastic'} <= set(item):

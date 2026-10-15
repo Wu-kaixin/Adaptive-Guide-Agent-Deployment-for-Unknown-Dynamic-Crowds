@@ -3,7 +3,7 @@
 # validation seeds 5000-5029.
 schema_version: 1
 protocol: fixed_n
-methods: [equal_arc, average_cvt, mass_cvt, distmesh, ra_abdc]
+methods: [equal_arc, average_cvt, mass_cvt, distmesh, projected_mass, ra_abdc]
 development_seeds: [0, 1, 2, 3, 4]
 reserved_validation_seeds: [5000, 5029]
 notes:
@@ -12,7 +12,7 @@ notes:
   - Guide counts are budgets from the spawn polygon. They are not a claim that the run will succeed.
   - Demand values are planning weights. The hotspot disk is not a validated risk model.
   - The hotspot disk is shifted to the +x side of the crowd (offset_scale). A disk at the centroid of a symmetric crowd raises no side of the deployment curve over another and is not a spatial hotspot for the boundary.
-  - This table has 2 x 3 x 3 x 3 x 3 x 5 x 5 = 4050 tasks and has not been run; the controlled pilot is experiments/step1_hotspot_pilot.yaml.
+  - This table has 2 x 3 x 3 x 3 x 3 x 6 x 5 = 4860 tasks and has not been run. The projection ablation is experiments/step1_projection_ablation.yaml.
 shared:
   spacing: 0.55
   radius: {mean: 0.20, std: 0.015, min: 0.17, max: 0.23}

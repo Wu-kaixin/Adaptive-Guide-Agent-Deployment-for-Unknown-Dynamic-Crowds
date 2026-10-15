@@ -20,6 +20,8 @@ def classify_outcome(status, failure_stage=None):
     """Separate resource, planning and execution failures without changing acceptance."""
     if status == 'SUCCESS':
         return 'success'
+    if status == 'NOT_EXECUTED':
+        return 'not_executed'
     if status == 'EXPERIMENT_ERROR':
         return 'experiment_error'
     if status in RESOURCE_STATUSES:
@@ -41,6 +43,8 @@ def diagnose_stages(status, failure_stage, feasibility, plan_found, assignment_f
     """
     if status == 'SUCCESS':
         return 'accepted'
+    if status == 'NOT_EXECUTED':
+        return 'not_executed'
     if status == 'EXPERIMENT_ERROR':
         return 'experiment_error'
     if failure_stage == 'initialization' or status == 'INITIALIZATION_INVALID':

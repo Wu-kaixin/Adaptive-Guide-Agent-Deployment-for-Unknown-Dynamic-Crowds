@@ -34,7 +34,7 @@ ROW_METRICS = (
     'planned_hotspot_concentration', 'actual_hotspot_concentration',
     'planned_hotspot_mean_spacing', 'actual_hotspot_mean_spacing',
     'planned_hotspot_max_gap', 'actual_hotspot_max_gap',
-    'planned_concentration', 'equal_arc_fallback', 'demand_kind',
+    'planned_concentration', 'equal_arc_fallback', 'adapt_concentration', 'demand_kind',
     'demand_clipped_count', 'stage_diagnosis', 'feasibility', 'plan_found',
     'assignment_found', 'task_sha256', 'input_snapshot_sha256', 'commit',
     'source_sha256',
@@ -59,8 +59,17 @@ def load_spec(path):
         raise ValueError('Reserved validation seeds must not be listed as development seeds')
     resource = spec['factors']['resource']
     if isinstance(resource, dict):
+        shapes = set(spec['factors']['shape'])
         for name, item in resource.items():
-            if not isinstance(item, dict) or set(item) != {'relative'} or type(item['relative']) is not int:
+            if not isinstance(item, dict):
+                raise ValueError(f'resource.{name} must be a mapping')
+            if 'count_by_shape' in item:
+                counts = item['count_by_shape']
+                if set(item) != {'count_by_shape'} or not isinstance(counts, dict) or set(counts) != shapes:
+                    raise ValueError(f'resource.{name}.count_by_shape must name every shape')
+                if any(type(value) is not int or value < 3 for value in counts.values()):
+                    raise ValueError(f'resource.{name} counts must be integers >= 3')
+            elif set(item) != {'relative'} or type(item['relative']) is not int:
                 raise ValueError(f'resource.{name} must be {{relative: <int>}} offsets from the spawn-based bound')
     elif not isinstance(resource, list) or not set(resource) <= set(RESOURCE_SCALE):
         raise ValueError('resource must be a list of sufficient/moderate/severe or a dict of relative offsets')
@@ -116,10 +125,15 @@ def spawn_bound(polygon, controller):
     return max(3, math.ceil(polygon.buffer(offset).exterior.length / planned))
 
 
-def _guide_count(polygon, controller, resource, resource_spec):
+def _guide_count(polygon, controller, resource, resource_spec, shape=None):
     lower = spawn_bound(polygon, controller)
     if isinstance(resource_spec, dict):
-        return max(3, lower + int(resource_spec[resource]['relative']))
+        item = resource_spec[resource]
+        if 'count_by_shape' in item:
+            if shape not in item['count_by_shape']:
+                raise ValueError(f'No guide count for shape {shape}')
+            return int(item['count_by_shape'][shape])
+        return max(3, lower + int(item['relative']))
     if resource == 'sufficient':
         return lower + 4
     return max(3, int(round(RESOURCE_SCALE[resource] * lower)))
@@ -138,7 +152,7 @@ def materialize(spec, environment, shape, size, demand, resource, method, seed):
     if not polygon.is_valid or polygon.area <= 0:
         raise ValueError(f'Rounded spawn polygon is invalid for {shape}')
     demand_spec = factors['demand'][demand]
-    guides = int(_guide_count(polygon, shared['controller'], resource, factors['resource']))
+    guides = int(_guide_count(polygon, shared['controller'], resource, factors['resource'], shape))
     crowd = {
         'count': count,
         'spawn_vertices': vertices.tolist(),
@@ -243,7 +257,7 @@ def row_from_metrics(task, metrics):
     return row
 
 
-def _run_task(task, resume=False):
+def _run_task(task, resume=False, execute=True):
     directory = Path(task['output'])
     directory.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=directory.parent) as temporary:
@@ -254,18 +268,18 @@ def _run_task(task, resume=False):
         with threadpool_limits(limits=1):
             metrics = experiment(
                 path, directory, task['seed'], False, 'fixed_n', task['fixed_n'],
-                resume, task['method'],
+                resume, task['method'], execute=execute,
             )
     return row_from_metrics(task, metrics)
 
 
-def run_tasks(tasks, workers='auto', resume=False):
+def run_tasks(tasks, workers='auto', resume=False, execute=True):
     available = os.cpu_count() or 1
     requested = available if workers == 'auto' else int(workers)
     pool_size = max(1, min(requested, len(tasks)))
     rows = []
     with ProcessPoolExecutor(max_workers=pool_size) as pool:
-        futures = [pool.submit(_run_task, task, resume) for task in tasks]
+        futures = [pool.submit(_run_task, task, resume, execute) for task in tasks]
         for future in as_completed(futures):
             rows.append(future.result())
     rows.sort(key=lambda row: (row['cell'], row['seed'], row['method'], row.get('fixed_n') or 0))
@@ -421,6 +435,8 @@ def main():
     parser.add_argument('--workers', default='auto')
     parser.add_argument('--resume', action='store_true')
     parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--plan-only', action='store_true',
+                        help='Stop after planning. Resume without this flag to execute feasible plans.')
     parser.add_argument('--hotspot', action='store_true')
     args = parser.parse_args()
     if args.hotspot:
@@ -445,7 +461,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     write_run_manifest(output, spec, tasks, args.resume)
-    rows = run_tasks(tasks, args.workers, args.resume)
+    rows = run_tasks(tasks, args.workers, args.resume, execute=not args.plan_only)
     _atomic_text(output / 'comparison.json', json.dumps(rows, indent=2, allow_nan=False) + '\n')
     summary = summarize_comparison(rows)
     summary['pairing'] = pairing_report(rows)

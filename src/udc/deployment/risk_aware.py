@@ -9,12 +9,13 @@ Variables are arc sites. Constraints are consecutive arc gaps in
 ``[d_min, H_p]`` and Euclidean separation ``>= d_min``. Reachability is
 checked later by the shared navigation layer.
 
-* ``projected_mass`` fixes ``a = 1`` and applies the gap projection. It has
-  no concentration schedule and no Equal Arc fallback. Its single attempt is
-  exactly the first attempt of ``ra_abdc``.
+* ``projected_mass`` fixes ``a = 1`` and applies the gap projection. It is the
+  candidate checked on the convex ablation: demand-weighted placement with an
+  explicit arc-gap constraint. It has no concentration schedule and no fallback.
 * ``ra_abdc`` starts at ``a = 1``. If the projected plan still violates the
   Euclidean separation, ``a`` is halved and the attempt is repeated. ``a = 0``
-  is the explicit Equal Arc fallback and is recorded as such.
+  is the explicit Equal Arc fallback. That schedule did not run in the convex
+  ablation, so it is not evidence of an extra capability.
 
 The projection removes the Lloyd descent guarantee, so neither method claims
 optimality. Evaluation always uses the original ``rho``, never ``rho^a``.

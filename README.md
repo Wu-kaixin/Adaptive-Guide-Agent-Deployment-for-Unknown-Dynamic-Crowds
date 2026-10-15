@@ -57,8 +57,8 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 | Average CVT | `average_cvt` | 局部平均 demand 驱动的周期 CVT |
 | Mass CVT | `mass_cvt` | Gaussian 需求质量驱动的周期 CVT，保留空间相对尺度 |
 | DistMesh-inspired | `distmesh` | 按平方根密度分位做间距松弛，并非完整 EikMesh／DistMesh 库 |
-| Mass CVT + 间隙投影 | `projected_mass` | 与 RA-ABDC 相同的间隙投影，浓度固定为 1，没有回退 |
-| RA-ABDC（候选） | `ra_abdc` | 在投影之上按浓度减半重试；仍失败则记录 Equal Arc 回退 |
+| 带间隙约束的需求加权部署 | `projected_mass` | 原始需求密度上的周期 CVT，每步把弧间隙投影回上下界；这是当前有实验支持的候选 |
+| RA-ABDC（兼容入口） | `ra_abdc` | 与上者同一投影；浓度减半和 Equal Arc 回退仍在代码中，凸曲线实验里没有触发 |
 
 `adaptive_resource` 在数量上限内搜索可接受目标；`fixed_n` 固定数量，适合公平算法对照。
 

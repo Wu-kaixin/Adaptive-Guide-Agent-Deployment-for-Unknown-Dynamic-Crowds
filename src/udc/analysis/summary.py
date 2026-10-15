@@ -79,6 +79,35 @@ LOWER_IS_BETTER = {
 }
 
 
+def executed_metric(row, name):
+    """Trajectory quantities are missing when planning never produced an execution.
+
+    A stored simulation time of 0 means no steps were taken. It is not a measured
+    deployment time and must not enter a mean.
+    """
+    if name in {'simulation_time', 'path_length', 'actual_max_gap', 'actual_demand_weighted_cost',
+                'actual_excess_weighted_cost', 'actual_hotspot_concentration'} and not row.get('plan_found'):
+        return None
+    value = row.get(name)
+    if name == 'simulation_time' and not row.get('success') and value == 0:
+        return None
+    return _number(value) if name != 'simulation_time' else value
+
+
+def retained_improvement(reference, candidate, unconstrained):
+    """Share of the unconstrained improvement over ``reference`` that ``candidate`` keeps.
+
+    This is not the candidate's improvement relative to ``reference``. The result
+    is undefined when the unconstrained cost is not better than the reference.
+    """
+    if None in (reference, candidate, unconstrained):
+        return None
+    span = float(reference) - float(unconstrained)
+    if span <= 1e-12:
+        return None
+    return (float(reference) - float(candidate)) / span
+
+
 def _number(value):
     if value is None or isinstance(value, bool):
         return None

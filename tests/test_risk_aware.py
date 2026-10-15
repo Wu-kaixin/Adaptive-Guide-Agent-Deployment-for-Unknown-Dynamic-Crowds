@@ -6,13 +6,15 @@ import pytest
 import yaml
 
 from udc.boundary import Boundary, estimate_boundary
-from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
-                            periodic_gaps, plan_coverage, plan_projected_mass, plan_risk_aware,
-                            project_gaps, quadrature_mass)
+from udc.analysis.summary import executed_metric, retained_improvement
+from udc.deployment import (demand_profile, feasibility_bounds, independent_feasibility,
+                            infeasibility_certificate, periodic_gaps, plan_coverage,
+                            plan_projected_mass, plan_risk_aware, project_gaps, quadrature_mass)
 from udc.deployment import risk_aware
 from udc.environment import Environment
 from udc.evaluation.acceptance import diagnose_stages
-from udc.evaluation.coverage import coverage_diagnostics, distmesh_gap_prediction, hotspot_window
+from udc.evaluation.coverage import (coverage_diagnostics, distmesh_gap_prediction, excess_coverage,
+                                     hotspot_window)
 from udc.experiments.comparison import build_tasks, load_spec
 from udc.experiments.config import demand_kind, load_config
 from udc.experiments.runner import experiment, reevaluate_result
@@ -278,6 +280,53 @@ def test_plan_only_then_resume_executes_without_changing_the_task(tmp_path):
                       protocol='fixed_n', fixed_n=20, method='equal_arc', resume=True)
     assert done['success'] and done['task_sha256'] == planned['task_sha256']
     assert done['stage_diagnosis'] == 'accepted'
+
+
+def test_excess_arc_is_fixed_before_guides_and_sees_an_interior_ellipse_hotspot():
+    boundary = circle_boundary()
+    rim = np.linspace(0, 2 * np.pi, 24, endpoint=False)
+    people = np.vstack([np.c_[10 + 3.7 * np.cos(rim), 10 + 3.7 * np.sin(rim)], [[13.0, 10.0]]])
+    demand = np.r_[np.ones(24), 9.0]
+    mask = np.r_[np.zeros(24, dtype=bool), True]
+    quadrature, _, _ = quadrature_mass(boundary, np.ones(len(boundary.arc)), 512)
+    nearest = hotspot_window(boundary, quadrature, people, mask)
+    assert nearest is not None and float(nearest.mean()) == 0.0
+    even = boundary.deployment[::32]
+    report = excess_coverage(boundary, people, demand, mask, 1.2, 512, even, even, multiplier=9.0)
+    assert report['excess_applicable'] and report['excess_arc_fraction'] > 0
+    assert report['excess_demand_share'] > 0
+    shifted = np.roll(even, 3, axis=0)
+    other = excess_coverage(boundary, people, demand, mask, 1.2, 512, shifted, shifted, multiplier=9.0)
+    assert report['excess_arc_fraction'] == other['excess_arc_fraction']
+    assert report['planned_demand_weighted_cost'] != pytest.approx(report['planned_excess_weighted_cost'])
+    uniform = excess_coverage(boundary, people, np.ones(len(people)), None, 1.2, 512, even, even)
+    assert uniform['excess_applicable'] is False
+    assert uniform['planned_excess_weighted_cost'] is None
+    assert uniform['excess_arc_fraction'] is None
+
+
+def test_same_sites_share_one_original_density_cost():
+    boundary, people, demand, mask = hotspot_case()
+    sites = boundary.deployment[::40]
+    first = excess_coverage(boundary, people, demand, mask, 1.2, 256, sites, multiplier=3.0)
+    second = coverage_diagnostics(boundary, people, demand, mask, 1.2, 256, 2.0, sites, sites)
+    assert first['planned_demand_weighted_cost'] == pytest.approx(second['planned_demand_weighted_cost'], rel=1e-6)
+
+
+def test_pairwise_euclidean_check_is_not_replaced_by_arc_gaps():
+    boundary = circle_boundary(n=256, radius=1.0)
+    sites = np.array([0.0, 0.75, np.pi])
+    report = independent_feasibility(boundary, sites, gap_limit=5.0, min_separation=0.75)
+    assert report['min_gap'] >= 0.75 - 1e-9
+    assert report['min_euclidean'] < 0.75
+    assert report['feasible'] is False and report['separation_violation'] > 0
+
+
+def test_retention_is_not_an_improvement_rate_and_missing_time_stays_missing():
+    assert retained_improvement(0.288, 0.283, 0.277) == pytest.approx((0.288 - 0.283) / (0.288 - 0.277))
+    assert retained_improvement(0.2, 0.2, 0.2) is None
+    assert executed_metric({'plan_found': False, 'success': False, 'simulation_time': 0.0}, 'simulation_time') is None
+    assert executed_metric({'plan_found': True, 'success': True, 'simulation_time': 8.6}, 'simulation_time') == 8.6
 
 
 def test_pilot_spec_pairs_five_methods_shares_inputs_and_shifts_the_hotspot():

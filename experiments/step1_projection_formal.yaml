@@ -1,0 +1,77 @@
+# Formal Step 1 validation. Same frozen scene as the confirmation protocol.
+# 2 shapes x 3 demands x 3 guide tiers x 3 methods x 30 seeds = 1620.
+# Seeds 5000-5029 only. Development and confirmation specs still reject these seeds.
+# RA-ABDC is not repeated.
+schema_version: 1
+protocol: fixed_n
+seed_role: formal
+methods: [equal_arc, mass_cvt, projected_mass]
+development_seeds: [5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5014, 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026, 5027, 5028, 5029]
+analysis:
+  bootstrap_replicates: 10000
+  bootstrap_rng_seed: 20261016
+  cluster: seed
+  primary: [success_and_stage, planned_demand_cost_delta, executed_acceptance]
+  missing_metrics: omit
+  slices: [all, by_shape, by_demand, by_resource, mass_cvt_succeeded, projection_rescued, projected_failed_or_worse_cost]
+  cases: [median_planned_cost_delta, worst_planned_cost_delta, projected_failure_where_equal_arc_succeeded]
+notes:
+  - Guide counts stay at the values frozen from seeds 0-4: circle 14/17/20 and ellipse 16/18/22. They are not recomputed on seeds 5000-5029.
+  - A seed that violates the necessary count stays in the table. N is not increased and the seed is not replaced.
+  - planned cost uses the shared original demand density. A failed method remains in the success denominator. Its missing trajectory metrics are omitted, not filled with zero.
+  - Intervals resample whole seeds with 10000 draws and rng seed 20261016. Cells inside one seed are not independent replicates.
+  - Case figures use the median planned-cost delta, the worst planned-cost delta, and every unit where Equal Arc succeeds while projected_mass does not.
+  - Demand is a planning weight. Thresholds, optimizer budgets and the deployment algorithm are unchanged from the confirmation protocol.
+shared:
+  spacing: 0.55
+  radius: {mean: 0.20, std: 0.015, min: 0.17, max: 0.23}
+  guides: {radius: 0.20, max_speed: 1.0, initial_inset: 1.0}
+  controller:
+    offset: 1.3
+    sample_spacing: 0.1
+    budget_gap: 2.0
+    max_gap_limit: 2.0
+    position_tolerance: 0.03
+    speed_tolerance: 0.03
+    curve_tolerance: 0.04
+    arc_tolerance: 0.03
+    safety_numeric_tolerance: 1.0e-7
+    demand_bandwidth: 1.2
+    gain: 1.5
+    hold_steps: 10
+    clearance: 0.35
+    waypoint_tolerance: 0.05
+    phases: [0.0, 0.25, 0.5, 0.75]
+    quadrature_samples: 2048
+    planner_max_iterations: 300
+    stall_window: 20
+    max_replans: 3
+  simulation: {dt: 0.1, max_steps: 400}
+factors:
+  environment:
+    square: {type: square, width: 20.0, height: 20.0}
+  shape: [circle, ellipse]
+  size:
+    medium: {count: 50}
+  demand:
+    uniform: {mean: 1.0, std: 0.0, min: 1.0, max: 1.0}
+    weak:
+      mean: 1.0
+      std: 0.0
+      min: 1.0
+      max: 2.0
+      multiplier: 2.0
+      radius_scale: 0.45
+      offset_scale: 0.55
+    strong:
+      mean: 1.0
+      std: 0.0
+      min: 1.0
+      max: 5.0
+      multiplier: 5.0
+      radius_scale: 0.45
+      offset_scale: 0.55
+  resource:
+    near: {count_by_shape: {circle: 14, ellipse: 16}}
+    margin: {count_by_shape: {circle: 17, ellipse: 18}}
+    ample: {count_by_shape: {circle: 20, ellipse: 22}}

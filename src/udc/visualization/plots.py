@@ -194,6 +194,52 @@ def plot_seed_deltas(report, path):
     return destination
 
 
+def _seed_bar(ax, seed_means, ylabel, title):
+    seeds = list(seed_means)
+    values = [seed_means[seed] for seed in seeds]
+    ax.bar(range(len(seeds)), values, color='#1d4e89')
+    ax.axhline(0.0, color='#333', lw=0.8)
+    ax.set_xticks(range(len(seeds)), [str(seed) for seed in seeds], fontsize=7, rotation=60)
+    ax.set(ylabel=ylabel, title=title)
+    ax.grid(axis='y', alpha=0.2)
+
+
+def plot_formal_summary(report, destination):
+    """Four frozen formal figures. Panels are not chosen from the outcome."""
+    destination = Path(destination)
+    destination.mkdir(parents=True, exist_ok=True)
+    overall = report['overall']
+    paired = overall['paired']['projected_mass']
+    methods = ['equal_arc', 'mass_cvt', 'projected_mass']
+    fig, ax = plt.subplots(figsize=(7, 4), constrained_layout=True)
+    rates = [overall['methods'][name]['successful'] / overall['methods'][name]['tasks'] for name in methods]
+    ax.bar(methods, rates, color=['#8aa0b8', '#c47b4a', '#1d4e89'])
+    ax.set_ylim(0, 1.05)
+    ax.set(ylabel='Success rate', title='Full-task success')
+    ax.grid(axis='y', alpha=0.2)
+    fig.savefig(destination / 'success_stages.png', dpi=150)
+    plt.close(fig)
+    fig, ax = plt.subplots(figsize=(10, 4), constrained_layout=True)
+    _seed_bar(ax, paired['planned_demand_weighted_cost']['seed_means'],
+              'planned cost difference [m$^2$]', 'projected_mass minus Equal Arc')
+    fig.savefig(destination / 'demand_cost_deltas.png', dpi=150)
+    plt.close(fig)
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4), constrained_layout=True)
+    _seed_bar(axes[0], paired['planned_excess_weighted_cost']['seed_means'],
+              'excess cost difference [m$^2$]', 'Hotspot excess')
+    _seed_bar(axes[1], paired['planned_background_weighted_cost']['seed_means'],
+              'background cost difference [m$^2$]', 'Background arc')
+    fig.savefig(destination / 'hotspot_background.png', dpi=150)
+    plt.close(fig)
+    fig, axes = plt.subplots(1, 3, figsize=(12, 4), constrained_layout=True)
+    _seed_bar(axes[0], paired['path_length']['seed_means'], 'path difference [m]', 'Path length')
+    _seed_bar(axes[1], paired['simulation_time']['seed_means'], 'time difference [s]', 'Deployment time')
+    _seed_bar(axes[2], paired['planner_seconds']['seed_means'], 'planner difference [s]', 'Planning time')
+    fig.savefig(destination / 'cost_of_deployment.png', dpi=150)
+    plt.close(fig)
+    return destination
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     group=parser.add_mutually_exclusive_group(required=True)

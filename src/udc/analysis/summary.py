@@ -388,6 +388,126 @@ def seed_cluster_report(rows, reference='equal_arc', candidates=('mass_cvt', 'pr
     }
 
 
+def _units(rows):
+    units = {}
+    for row in rows:
+        units.setdefault((row['cell'], row['seed']), {})[row['method']] = row
+    return units
+
+
+def _planned_delta(methods):
+    projected = methods.get('projected_mass') or {}
+    base = methods.get('equal_arc') or {}
+    mine = _number(projected.get('planned_demand_weighted_cost'))
+    theirs = _number(base.get('planned_demand_weighted_cost'))
+    if mine is None or theirs is None:
+        return None
+    return mine - theirs
+
+
+def _case_record(delta, key, methods):
+    projected = methods.get('projected_mass') or {}
+    return {
+        'cell': key[0], 'seed': key[1], 'planned_cost_delta': delta,
+        'projected_output': projected.get('output'),
+        'equal_output': (methods.get('equal_arc') or {}).get('output'),
+        'projected_success': projected.get('success'),
+        'equal_success': (methods.get('equal_arc') or {}).get('success'),
+        'mass_success': (methods.get('mass_cvt') or {}).get('success'),
+        'shape': projected.get('shape'), 'demand': projected.get('demand'),
+        'resource': projected.get('resource'), 'fixed_n': projected.get('fixed_n'),
+    }
+
+
+def formal_projection_report(rows, replicates=10000, rng_seed=20261016):
+    """Formal Step 1 summary. The slices and case rules are fixed before the run.
+
+    Bootstrap draws whole seeds. ``replicates`` and ``rng_seed`` are part of the
+    protocol. A failed method stays in the success denominator. Missing costs are
+    not replaced by zero. The median and worst cases use the planned demand-cost
+    delta of projected_mass minus Equal Arc. Ties break by cell name, then seed.
+    """
+    units = _units(rows)
+
+    def selected(predicate):
+        chosen = []
+        for methods in units.values():
+            if predicate(methods):
+                chosen.extend(methods.values())
+        return chosen
+
+    def slice_report(chosen):
+        if not chosen:
+            return {'tasks': 0, 'pairs': 0}
+        return seed_cluster_report(chosen, replicates=replicates, rng_seed=rng_seed)
+
+    def mass_succeeded(methods):
+        return bool((methods.get('mass_cvt') or {}).get('success'))
+
+    def rescued_unit(methods):
+        return (methods.get('mass_cvt') or {}).get('success') is False and bool(
+            (methods.get('projected_mass') or {}).get('success'))
+
+    def worse_unit(methods):
+        projected = methods.get('projected_mass') or {}
+        base = methods.get('equal_arc') or {}
+        delta = _planned_delta(methods)
+        return bool(base.get('success') and not projected.get('success')) or (
+            delta is not None and delta > 1e-9)
+
+    mass_ok = selected(mass_succeeded)
+    rescued = selected(rescued_unit)
+    deteriorated = selected(worse_unit)
+    defined = []
+    failures = []
+    for key in sorted(units):
+        methods = units[key]
+        delta = _planned_delta(methods)
+        if delta is not None:
+            defined.append((delta, key, methods))
+        projected = methods.get('projected_mass') or {}
+        base = methods.get('equal_arc') or {}
+        if base.get('success') and not projected.get('success'):
+            failures.append(_case_record(delta, key, methods))
+    median_case = worst_case = None
+    if defined:
+        median_value = float(np.median([item[0] for item in defined]))
+        median = min(defined, key=lambda item: (abs(item[0] - median_value), item[1][0], item[1][1]))
+        worst = max(defined, key=lambda item: (item[0], item[1][0], item[1][1]))
+        median_case = _case_record(median[0], median[1], median[2])
+        worst_case = _case_record(worst[0], worst[1], worst[2])
+    return {
+        'replicates': replicates,
+        'rng_seed': rng_seed,
+        'reference': 'equal_arc',
+        'candidate': 'projected_mass',
+        'overall': seed_cluster_report(rows, replicates=replicates, rng_seed=rng_seed),
+        'slices': {
+            'mass_cvt_succeeded': slice_report(mass_ok),
+            'projection_rescued': slice_report(rescued),
+            'projected_failed_or_worse_cost': slice_report(deteriorated),
+        },
+        'slice_counts': {
+            'units': len(units),
+            'mass_cvt_succeeded_units': sum(1 for methods in units.values() if mass_succeeded(methods)),
+            'projection_rescued_units': sum(1 for methods in units.values() if rescued_unit(methods)),
+            'projected_failed_or_worse_cost_units': sum(1 for methods in units.values() if worse_unit(methods)),
+            'planned_cost_pairs': len(defined),
+        },
+        'cases': {
+            'rule': (
+                'median: planned cost delta closest to the median, ties by cell then seed; '
+                'worst: largest planned cost delta, ties by cell then seed; '
+                'new failure: every unit where Equal Arc succeeds and projected_mass does not, '
+                'sorted by cell then seed'
+            ),
+            'median_planned_cost_delta': median_case,
+            'worst_planned_cost_delta': worst_case,
+            'projected_failures_where_equal_arc_succeeded': failures,
+        },
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--results', required=True)

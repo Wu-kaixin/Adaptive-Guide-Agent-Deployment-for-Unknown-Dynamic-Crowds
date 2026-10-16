@@ -55,10 +55,13 @@ def load_spec(path):
     seeds = spec['development_seeds']
     if any(type(seed) is not int or seed < 0 for seed in seeds) or len(seeds) != len(set(seeds)):
         raise ValueError('Seeds must be distinct nonnegative integers')
-    if any(seed in RESERVED_VALIDATION for seed in seeds):
-        raise ValueError('Reserved validation seeds must not be listed as development seeds')
     role = spec.get('seed_role', 'development')
-    if role == 'development':
+    if role == 'formal':
+        if seeds != list(range(5000, 5030)):
+            raise ValueError('Formal comparison uses seeds 5000 through 5029 and no others')
+    elif any(seed in RESERVED_VALIDATION for seed in seeds):
+        raise ValueError('Reserved validation seeds must not be listed as development seeds')
+    elif role == 'development':
         if seeds != [0, 1, 2, 3, 4]:
             raise ValueError('Development comparison uses exactly five seeds: 0, 1, 2, 3, 4')
     elif role == 'confirmation':
@@ -204,7 +207,11 @@ def iter_cells(spec):
 
 def build_tasks(spec, output, seeds=None, methods=None, selection=None):
     seeds = list(spec['development_seeds'] if seeds is None else seeds)
-    if any(seed in RESERVED_VALIDATION for seed in seeds):
+    role = spec.get('seed_role', 'development')
+    if role == 'formal':
+        if any(seed not in RESERVED_VALIDATION for seed in seeds):
+            raise ValueError('Formal comparison executes only seeds 5000-5029')
+    elif any(seed in RESERVED_VALIDATION for seed in seeds):
         raise ValueError('validation seeds 5000-5029 are reserved and are not executed here')
     if any(type(seed) is not int or seed < 0 for seed in seeds) or len(seeds) != len(set(seeds)):
         raise ValueError('Seeds must be distinct nonnegative integers')

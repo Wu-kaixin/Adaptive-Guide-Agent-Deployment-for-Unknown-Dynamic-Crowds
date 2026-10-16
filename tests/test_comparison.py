@@ -5,7 +5,7 @@ import pytest
 
 from udc.environment import Environment
 from udc.evaluation.acceptance import classify_outcome
-from udc.analysis.summary import seed_cluster_report
+from udc.analysis.summary import formal_projection_report, seed_cluster_report
 from udc.experiments.comparison import RESERVED_VALIDATION, build_tasks, hotspot_tasks, load_spec
 from udc.experiments.config import METHODS
 
@@ -80,6 +80,50 @@ def test_confirmation_protocol_freezes_counts_and_seeds():
     assert counts == {'circle': {14, 17, 20}, 'ellipse': {16, 18, 22}}
     with pytest.raises(ValueError, match='5000-5029'):
         build_tasks(spec, 'runs/unused', seeds=[5005])
+
+
+def test_formal_protocol_is_the_only_entry_for_reserved_seeds():
+    spec = load_spec(ROOT / 'experiments' / 'step1_projection_formal.yaml')
+    tasks = build_tasks(spec, 'runs/unused')
+    assert len(tasks) == 2 * 3 * 3 * 3 * 30
+    assert len({(task['cell'], task['seed'], task['method']) for task in tasks}) == 1620
+    assert {task['seed'] for task in tasks} == set(range(5000, 5030))
+    assert {task['method'] for task in tasks} == {'equal_arc', 'mass_cvt', 'projected_mass'}
+    counts = {}
+    for task in tasks:
+        counts.setdefault(task['shape'], set()).add(task['fixed_n'])
+    assert counts == {'circle': {14, 17, 20}, 'ellipse': {16, 18, 22}}
+    subset = build_tasks(spec, 'runs/unused', seeds=[5000])
+    assert len(subset) == 54
+    with pytest.raises(ValueError, match='5000-5029'):
+        build_tasks(spec, 'runs/unused', seeds=[4])
+    developed = load_spec(ROOT / 'experiments' / 'step1_projection_ablation.yaml')
+    with pytest.raises(ValueError, match='5000-5029'):
+        build_tasks(developed, 'runs/unused', seeds=[5000])
+
+
+def test_formal_case_rules_are_deterministic():
+    rows = []
+    for seed, projected_cost, projected_ok in ((5000, 0.4, True), (5001, 1.4, False)):
+        for method, cost, success in (
+            ('equal_arc', 1.0, True),
+            ('projected_mass', projected_cost, projected_ok),
+            ('mass_cvt', None, False),
+        ):
+            rows.append({
+                'cell': 'square_circle_medium_strong_near', 'seed': seed, 'method': method,
+                'shape': 'circle', 'demand': 'strong', 'resource': 'near', 'fixed_n': 14,
+                'success': success, 'plan_found': success,
+                'stage_diagnosis': 'accepted' if success else 'no_plan_found',
+                'planned_demand_weighted_cost': cost, 'output': f'{method}-{seed}',
+                'feasibility': {'necessary_condition_met': True},
+                'criteria': {'safety_ok': True, 'gap_ok': True, 'curve_ok': True, 'coverage_ok': True},
+            })
+    report = formal_projection_report(rows, replicates=20, rng_seed=1)
+    assert report['slice_counts']['projection_rescued_units'] == 1
+    assert report['slice_counts']['projected_failed_or_worse_cost_units'] == 1
+    assert report['cases']['worst_planned_cost_delta']['seed'] == 5001
+    assert report['cases']['projected_failures_where_equal_arc_succeeded'][0]['seed'] == 5001
 
 
 def test_seed_cluster_keeps_missing_metrics_out_of_the_mean():

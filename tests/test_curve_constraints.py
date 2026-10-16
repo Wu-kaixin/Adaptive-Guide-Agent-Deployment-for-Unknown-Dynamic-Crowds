@@ -63,7 +63,8 @@ def test_saved_float64_round_trip_and_arc_projection(tmp_path):
     error = ((projected - sites + boundary.length / 2) % boundary.length) - boundary.length / 2
     assert np.max(np.abs(error)) < 1e-8
     seam = 0.5 * (boundary.deployment[-1] + boundary.deployment[0])
-    assert line.distance(Point(seam)) == 0.0
+    # GEOS on Linux can leave the closing midpoint a couple of ulps off the ring.
+    assert line.distance(Point(seam)) <= 1e-9
 
 
 def test_evaluator_does_not_snap_or_zero_an_off_curve_target():

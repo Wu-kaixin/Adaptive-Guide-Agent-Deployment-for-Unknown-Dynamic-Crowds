@@ -1,8 +1,69 @@
 # 验证记录
 
-当前一节是贴线交接、成对欧氏约束和有效人群场景。它不改写后面的正式种子结果，也不改写一般曲线诊断的原始失败记录。
+当前一节是宽 U 执行中路径重算。它不改写后面的正式种子结果，也不覆盖 `runs/step1_scene_closure/` 里的原始失败轨迹。
+
+## 2026-10-16 宽 U 重算修复
+
+### 保存的起点
+
+分支 `Major-Research-Branches`。本轮开始时 HEAD 是 `3b920bd`，贴线修复、成对约束和场景闭环都还在工作区。这些改动先提交为 `a3ec5ba`。没有改 `main`，没有推送。原始宽 U 轨迹仍在 `runs/step1_scene_closure/execution/wide_u/`。
+
+### 调用链
+
+人员位置和半径进入圆盘并集，得到占据多边形和 1.3 m 外偏部署曲线。目标配置来自已保存的 float64 轨迹，不重新优化。初始指派和执行中重算都调用 `navigation_domain`：房间内缩 0.55 m，占据多边形再缓冲 0.55 m，然后 `simplify(0.10)` 和向外 `buffer(0.11)`。0.55 m 是 Guide 半径加间隙，占据多边形已经含人员半径 0.20 m，所以这一层对应中心距 0.75 m。0.11 m 是简化之后的规划裕度，不是安全距离。安全过滤检查的是中心距：Guide–人 0.75 m，Guide–Guide 0.75 m，Guide–墙 0.55 m。自由空间不包含 Guide。重算由停滞窗口触发，在 `recover` 里调用 `route_assigned`。异常若在死锁事件写入之前抛出，事件表就是空的。
+
+### 原始失败
+
+固定案例是宽 U、Equal Arc、已保存目标和初态。诊断在原始轨迹上复算，没有改随机数顺序。
+
+第一次离开保守自由空间是第 141 帧，仿真时间 14.1 s，Guide 4。位置 `[11.129121154713031, 17.201941216232697]`，保守自由空间有符号距离 −0.00397 m，物理自由空间仍是 +0.062 m。人员中心距 0.812 m，高于 0.75 m。名义速度约 `[0.234, 0.002]`，过滤后变成 `[0.096, -0.262]`，这一步跨过规划边界。目标 13 的有符号距离是 +0.673 m。
+
+第一次重算失败是第 238 帧，仿真时间 23.8 s，也是第一次停滞步 237。Guide 9 的起点有符号距离 −0.0460 m，目标 12 仍是 +0.679 m。`route_assigned` 抛出 `ValueError: PATH_UNREACHABLE: assigned endpoint is outside conservative free space`。`replan_count` 仍是 0，因为异常发生在计数之前。Guide 9 从第 170 帧起一直在规划壳层里。旧路径顶点贴在保守障碍边界上，有符号距离是 0。当时的物理检查仍然通过。
+
+因此不是两套缓冲规则，也不是六位小数截断，也不是把 Guide 自己放进障碍。自由空间只有一个连通分量，几何在初态和重算时相同。变化的是 Guide 的实际位置：安全过滤只保证物理中心距，路径又贴着额外的 0.11 m 规划边界，分离其他 Guide 时会把当前 Guide 推进这层壳。严格的 `covers` 然后拒绝这个起点。沿法向退回 0.046 m 会把 Guide–Guide 中心距从 0.750 m 降到 0.710 m，所以这条恢复段不能当作物理上安全的连接。
+
+### 修复
+
+初始指派和重算共用 `navigation_domain`。安全过滤增加保守障碍的外法向半平面，执行段不得比起点更深地进入该障碍；做不到时速度改为 0，不返回未过滤的名义速度。已分配重算把其他 Guide 当作半径 0.75 m 的障碍，自身不计入。边界上 1e-7 m 以内的浮点偏差可以接到被自由空间接受的节点，真实位置仍是路径起点。更深的规划壳层只有在同一套 `path_clearances` 通过后才允许作为前缀；通不过就保持 `PATH_UNREACHABLE`，不把失败记成成功，也不证明路径不存在。航点跳过前要检查直连段仍在自由空间内。
+
+安全中心距没有改。0.11 m 没有当成安全距离。障碍没有删除。
+
+### 九次执行
+
+目标、人员和初态与原始运行的 float64 轨迹一致，最大坐标差是 0。原始 `runs/step1_scene_closure/` 没有覆盖。新结果在 `runs/step1_wide_u_replan_repair/`，副本在 `reports/step1_wide_u_replan_cases/`。九次离线复判都与在线验收一致。
+
+| 场景 | 方法 | 修复前 | 修复后 | 重算 | 仿真时间 | 执行路程 | 最大跟踪误差 | 最小净距 人 / Guide / 墙 |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 宽 U | Equal Arc | `PATH_UNREACHABLE` | `SUCCESS` | 1 | 36.2 s | 245.04 → 253.24 m | 0.00373 m | 0.0302 / 1e-8 / 0.450 m |
+| 宽 U | projected_mass | `PATH_UNREACHABLE` | `SUCCESS` | 1 | 36.2 s | 245.04 → 253.24 m | 0.00375 m | 0.0301 / 1e-8 / 0.450 m |
+| 宽 U | 成对欧氏 | `PATH_UNREACHABLE` | `SUCCESS` | 1 | 36.2 s | 245.04 → 253.24 m | 0.00375 m | 0.0301 / 1e-8 / 0.450 m |
+| 细长 | Equal Arc | `SUCCESS` | `SUCCESS` | 0 | 18.8 s | 144.07 m | 0.00354 m | 0.749 / 0.890 / 0.450 m |
+| 细长 | projected_mass | `SUCCESS` | `SUCCESS` | 0 | 18.8 s | 144.06 m | 0.00352 m | 0.749 / 0.890 / 0.450 m |
+| 细长 | 成对欧氏 | `SUCCESS` | `SUCCESS` | 0 | 18.8 s | 144.06 m | 0.00352 m | 0.749 / 0.890 / 0.450 m |
+| 窄 U | Equal Arc | `SUCCESS` | `SUCCESS` | 0 | 18.1 s | 164.63 m | 0.00363 m | 0.749 / 0.624 / 0.450 m |
+| 窄 U | projected_mass | `SUCCESS` | `SUCCESS` | 0 | 18.1 s | 164.63 m | 0.00362 m | 0.749 / 0.623 / 0.450 m |
+| 窄 U | 成对欧氏 | `SUCCESS` | `SUCCESS` | 0 | 18.1 s | 164.63 m | 0.00362 m | 0.749 / 0.623 / 0.450 m |
+
+九次都是完整部署成功，不是“到达了但其他验收失败”。宽 U 的三次都在第 210 步做了一次 `path_recompute`，Guide 4 位于规划边界上；之后没有再重算。`metrics.json` 里的 `path_length` 仍是初始指派长度，三次都约 244.79–244.80 m，与修复前相同。上表的路程是实际轨迹长度。细长和窄 U 的步数、路程、跟踪误差和净距与修复前逐项相同，重算次数是 0。
+
+宽 U 修复后的最小 Guide 净距约是 0，因为轨迹贴着原有的 0.75 m 中心距，没有低于 `1e-7` m 的数值容差。人的最小净距约 0.030 m，墙是 0.450 m。
+
+`python -m pytest -q`：87 passed。`python -m pip check`：No broken requirements found。
+
+### 判断
+
+这九个已保存目标都可以执行通过。失败原因是规划边界上的速度被安全过滤推进额外规划壳层，以及随后的重算没有把相邻 Guide 当作障碍。它不是“宽 U 没有安全路径”的证明。正式 1620 个任务没有重跑。成对约束求解器、新的边界估计器、新 seed 和非凸场景矩阵都没有做。下一步可以在同样的 1.3 m 圆盘并集和安全距离下，用新的开发 seed 检查非凸场景；那一步仍应先冻结场景和数量，不要同时进入 Step 2/3。
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe -m udc.experiments.replan_repair --diagnose runs/step1_scene_closure/execution/wide_u/disk_union_primary/equal_arc/run --diagnosis-json reports/step1_wide_u_replan_diagnosis.json --diagnosis-npz reports/step1_wide_u_replan_failure_window.npz --diagnosis-figure reports/step1_wide_u_replan_failure.png
+.\.venv\Scripts\python.exe -m udc.experiments.replan_repair --source-root runs/step1_scene_closure/execution --output-root runs/step1_wide_u_replan_repair --scenes wide_u elongated tight_u --summary reports/step1_wide_u_replan_summary.json --comparison-figure reports/step1_wide_u_replan_comparison.png
+```
 
 ## 2026-10-16 成对间距与场景可实现性
+
+下面是宽 U 修复之前的记录。它不改写本节的重算结果，也不改写后面的正式种子结果。
 
 ### 核实
 

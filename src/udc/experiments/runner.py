@@ -355,6 +355,8 @@ def experiment(config_path, output, seed=None, plots=True,
         'safety_diagnostics': safety_log,
         'fallback_count': sum(item['fallback_used'] for item in safety_log),
         'replan_count': 0 if controller is None else controller.replans,
+        'planning_margin_connections': ([] if controller is None
+                                        else list(getattr(controller, 'margin_connections', []))),
         'deadlock_events': deadlocks,
         'crowd_static': (False if env is None or observation is None else bool(
             np.array_equal(observation.positions, env.observe().positions)

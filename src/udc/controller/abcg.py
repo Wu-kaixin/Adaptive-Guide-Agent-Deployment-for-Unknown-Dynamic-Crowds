@@ -2,12 +2,12 @@
 from time import perf_counter
 
 import numpy as np
-from shapely.geometry import Polygon
+from shapely.geometry import Point, Polygon
 
 from udc.boundary import estimate_boundary
 from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
                             plan_coverage, plan_risk_aware)
-from udc.navigation import navigate_and_assign, route_assigned
+from udc.navigation import navigate_and_assign, navigation_domain, route_assigned, segment_in_free
 from udc.safety import safe_velocity
 
 
@@ -19,6 +19,8 @@ class ABCGController:
         self.protocol=protocol; self.fixed_n=fixed_n
         self.priority_order=[]; self.priority_index=0; self.priority_mode=False
         self._observation=None
+        self.navigation_domain=None
+        self.margin_connections=[]
         # Stage diagnostics. They never change a termination status.
         self.feasibility=None; self.plan_found=False; self.assignment_found=False
         self.boundary_source=None
@@ -48,6 +50,7 @@ class ABCGController:
     def prepare(self, observation, guides):
         c=self.config
         self._observation=observation
+        self.navigation_domain=None
         self.boundary_source='estimated_convex_offset'
         self.prescribed_plan_installed=False
         self.boundary=estimate_boundary(observation.positions,c['offset'],c['sample_spacing'],self.room,
@@ -67,6 +70,7 @@ class ABCGController:
         if boundary is None:
             raise ValueError('PLAN_INVALID: a caller-supplied curve is required')
         self._observation=observation
+        self.navigation_domain=None
         self.boundary=boundary
         self.boundary_source=boundary_source
         self.prescribed_plan_installed=plan is not None
@@ -185,6 +189,12 @@ class ABCGController:
             remaining.append(value)
         return np.asarray(remaining)
 
+    def _domain(self):
+        if self.navigation_domain is None:
+            self.navigation_domain=navigation_domain(
+                self.room,self.safety.wall_distance,Polygon(self.boundary.crowd),self.safety.wall_distance)
+        return self.navigation_domain
+
     def recover(self, observation, positions):
         """Finite deterministic recovery: reroute, reassign, then priority yield."""
         if self.replans >= self.config['max_replans']:
@@ -192,12 +202,23 @@ class ABCGController:
         strategy=('path_recompute','reachable_reassignment','priority_yield')[min(self.replans,2)]
         crowd=Polygon(self.boundary.crowd)
         if strategy == 'path_recompute':
+            domain=self._domain()
+            outside=[int(guide) for guide in np.flatnonzero(self.assignment>=0)
+                     if not domain.free.covers(Point(positions[guide]))]
             paths,_=route_assigned(positions,self.plan.positions,self.assignment,self.room,
-                                   self.safety.wall_distance,crowd,self.safety.wall_distance)
+                                   self.safety.wall_distance,crowd,self.safety.wall_distance,
+                                   people=observation.positions,limits=self.safety)
             self.paths=paths; self.waypoint={i:1 for i in paths}
+            if outside:
+                self.margin_connections.append({
+                    'guides':outside,
+                    'replans_before':self.replans,
+                    'geometry_sha256':domain.geometry_sha256,
+                })
         elif strategy == 'reachable_reassignment':
             nav=navigate_and_assign(positions,self.plan.positions,self.room,
-                                    self.safety.wall_distance,crowd,self.safety.wall_distance)
+                                    self.safety.wall_distance,crowd,self.safety.wall_distance,
+                                    people=observation.positions,limits=self.safety)
             self._install_navigation(nav)
         else:
             active=np.flatnonzero(self.assignment>=0)
@@ -224,10 +245,16 @@ class ABCGController:
             if priority is not None and i != priority:
                 continue
             path=self.paths[int(i)]; k=self.waypoint[int(i)]
+            domain=self._domain()
             while k < len(path)-1 and np.linalg.norm(path[k]-positions[i]) <= self.config['waypoint_tolerance']:
+                # Do not skip a gate when the shortcut leaves conservative free space.
+                if not segment_in_free(positions[i], path[k+1], domain):
+                    break
                 k+=1
             self.waypoint[int(i)]=k
             nominal[i]=self.config['gain']*(path[k]-positions[i])
         speed=np.linalg.norm(nominal,axis=1)
         nominal*=np.minimum(1.,self.safety.max_speed/np.maximum(speed,1e-30))[:,None]
-        return nominal,safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety)
+        obstacle=self._domain().conservative_obstacle
+        return nominal,safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety,
+                                     navigation_obstacle=obstacle)

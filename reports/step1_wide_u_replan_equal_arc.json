@@ -1,0 +1,66 @@
+[
+  {
+    "scene": "square",
+    "method": "equal_arc",
+    "termination_status": "SUCCESS",
+    "failure_stage": null,
+    "failure_reason": "",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "steps": 362,
+    "simulation_time": 36.2,
+    "wall_time": 2.1628491999999824,
+    "replan_count": 1,
+    "planning_margin_connections": [
+      {
+        "guides": [
+          4
+        ],
+        "replans_before": 0,
+        "geometry_sha256": "504eba69f0746c0b142a700c45fe9432a61d0a0738aa6416a7d08367734ace8d"
+      }
+    ],
+    "deadlock_events": [
+      {
+        "step": 210,
+        "remaining_path": 0.3893332495829449,
+        "strategy": "path_recompute"
+      }
+    ],
+    "path_length": 244.78999307803423,
+    "max_tracking_error": 0.00372958384004586,
+    "minimum_net_clearances": {
+      "crowd": 0.03019727757286883,
+      "guides": 1.0230633340491124e-08,
+      "walls": 0.44999999999999996
+    },
+    "actual_max_gap": 1.8779570475718828,
+    "reevaluation_criteria_consistent": true,
+    "reevaluation_success": true,
+    "offline_criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "initial_position_max_abs_delta_m": 0.0,
+    "target_max_abs_delta_m": 0.0,
+    "source_trajectory_sha256": "68944838dd4f7a0c0c495ba5a9984282a965a8b68500f09806d929e48c3aa50f",
+    "output": "runs\\step1_wide_u_replan_repair\\wide_u\\equal_arc\\run"
+  }
+]

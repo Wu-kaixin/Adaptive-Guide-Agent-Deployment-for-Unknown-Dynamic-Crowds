@@ -1,0 +1,222 @@
+[
+  {
+    "path": "reports/step1_wide_u_replan_cases.json",
+    "bytes": 10231,
+    "sha256": "06d8626b092f0857de5195385c4050013b85724b740063761ea11ff1fd3e7681"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_comparison.png",
+    "bytes": 213714,
+    "sha256": "c537d97d3a64ad75506e6a0c396b21bb6f741064d83b9c55a13aaf40a3b22434"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_diagnosis.json",
+    "bytes": 8326,
+    "sha256": "662d867feac0249ae2328a4913e623c8f22fa4209158b214ac3e3a64546effad"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_equal_arc.json",
+    "bytes": 1839,
+    "sha256": "efc53b3c21a351f50bd629e844ca28b6d0d35f7556fbbb292d5224108df8e2e3"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_failure.png",
+    "bytes": 170447,
+    "sha256": "e320cb234c81498096dbb009a6199f16b91791b3473c52e086582b88eb720a2f"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_failure_window.npz",
+    "bytes": 387498,
+    "sha256": "6acfb6a476c2d4f685a3aa6479951a2bac15236e7d5f92dcb4601e29812c8d8e"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_regression_raw.json",
+    "bytes": 9096,
+    "sha256": "094721bf576f25c75c1f6a41ad336c85b45297002da788bed66cdf48ea2df40f"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_rest.json",
+    "bytes": 3706,
+    "sha256": "884c1101cd33afa414f6b0f66f56b01893b88efef3bb9b74801b331d2fc25aa9"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/equal_arc/config.yaml",
+    "bytes": 11335,
+    "sha256": "de76cc06e3ae02cdcbf11436f8590db3b8148c9fc6b19adce2b8a32b90976cd8"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/equal_arc/metrics.json",
+    "bytes": 49856,
+    "sha256": "026b180739bfb4a5fd11d57a67088b210ac23a99cd3f1285ddc48a0e7f919abc"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/equal_arc/reevaluated_metrics.json",
+    "bytes": 2196,
+    "sha256": "e26edbc4c873afd49f60d199a43ee870df50d4e9c463f56d47a18a093f00ba49"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/equal_arc/trajectory.npz",
+    "bytes": 88878,
+    "sha256": "59356f5f49fb9c3d9887bc9907fcc9113f39ec4ed5d93904a243b4539f072814"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/pairwise_euclidean/config.yaml",
+    "bytes": 11344,
+    "sha256": "8294d14eb76a4e9d63a12842702086a993dc9f51de13846a5bc669a5f4777b4b"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/pairwise_euclidean/metrics.json",
+    "bytes": 50064,
+    "sha256": "0c9c1a9beb3225000d58ecb29bfb9619808d5e7ae580c21217876cadbc0e92cd"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/pairwise_euclidean/reevaluated_metrics.json",
+    "bytes": 2201,
+    "sha256": "3474be915b850f533e661b546d31d4bffd9b26da215002a3972d2dae0427f5ab"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/pairwise_euclidean/trajectory.npz",
+    "bytes": 89060,
+    "sha256": "ed60d128d17ea5871c3e3483faeab248478821e98fb6860fb0463c7edbef7770"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/projected_mass/config.yaml",
+    "bytes": 11340,
+    "sha256": "cab4c68e5493a73cca0668bb9ffb720255be09bcca796164a7f91d6c0e4e50b2"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/projected_mass/metrics.json",
+    "bytes": 50045,
+    "sha256": "831321e00910c8770c9dc1a0d32680a89f1bc79bd7ed4757c1cbc1ca37a295d1"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/projected_mass/reevaluated_metrics.json",
+    "bytes": 2201,
+    "sha256": "f6194d0342c81ea7cefe5da69d9336009b20b61b758167ba99b8f7f4a78cdfe3"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/elongated/projected_mass/trajectory.npz",
+    "bytes": 89060,
+    "sha256": "ed60d128d17ea5871c3e3483faeab248478821e98fb6860fb0463c7edbef7770"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/equal_arc/config.yaml",
+    "bytes": 12950,
+    "sha256": "80f82d41c5debf6af26d8e46de96609625c3f5c783b8a9a2bc10988e6a996c67"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/equal_arc/metrics.json",
+    "bytes": 48421,
+    "sha256": "427425e09eddc0d62f35cf9f0779eb852d2994175a5c40343a44af6286cd70a9"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/equal_arc/reevaluated_metrics.json",
+    "bytes": 2203,
+    "sha256": "490cf5e1a0a38e1b6a4d53f0473bf948e2cfc9ddf7982f6a70f9fd14a3b7c59f"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/equal_arc/trajectory.npz",
+    "bytes": 108035,
+    "sha256": "3bf30562cf2d4b48e389907822fd266233c6e42662bf62c379bd798b61d4d60f"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/pairwise_euclidean/config.yaml",
+    "bytes": 12959,
+    "sha256": "767358502da59e4599db25e490ef925ce20cfbe640d415fb15550216cac8a18b"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/pairwise_euclidean/metrics.json",
+    "bytes": 48469,
+    "sha256": "9534c196e44d00c6a2ea6e1ea6710a29f98cf54388c38494da43cd00d2dfdfb4"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/pairwise_euclidean/reevaluated_metrics.json",
+    "bytes": 2205,
+    "sha256": "6aec0568704daa74fe347fd5f0985559ed73b50aa406a0d0fb8f53f7379e4dff"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/pairwise_euclidean/trajectory.npz",
+    "bytes": 108144,
+    "sha256": "33c68f6830ab268339693725367d10eb1b6f92549d538fb704c74a3ea7797536"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/projected_mass/config.yaml",
+    "bytes": 12955,
+    "sha256": "248b8eca663eab46a089d91c35c9d3d3772db2d39ca55dbe36c7692e9b520b12"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/projected_mass/metrics.json",
+    "bytes": 48480,
+    "sha256": "a766bc3c2415e119fc5cb35771b2731186d8d0a54c3bdfa750115ecd8d03a3bc"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/projected_mass/reevaluated_metrics.json",
+    "bytes": 2205,
+    "sha256": "ec199242136c7ada1baaabd8d02f5ddd76d8f5fbd49ed1c8d13a4bc001f9f693"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/tight_u/projected_mass/trajectory.npz",
+    "bytes": 108144,
+    "sha256": "33c68f6830ab268339693725367d10eb1b6f92549d538fb704c74a3ea7797536"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/equal_arc/config.yaml",
+    "bytes": 18654,
+    "sha256": "bae0e9aa0a9a45abb9be99a240ec745f5f16cf10c156ae0f7875513b7b3ed9ed"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/equal_arc/metrics.json",
+    "bytes": 97363,
+    "sha256": "34194517257824e3d68103d96d72af265e38718024537aa1fdf80db192c48290"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/equal_arc/reevaluated_metrics.json",
+    "bytes": 2208,
+    "sha256": "539c4ca5c2810c2d9e5b22b79f69f2823f820c1892503ad4499a258a64d26460"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/equal_arc/trajectory.npz",
+    "bytes": 244852,
+    "sha256": "2c4adfe28fa68cb3038afa5a45529835f90447825570d9b458097dc55b4217fb"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/pairwise_euclidean/config.yaml",
+    "bytes": 18663,
+    "sha256": "c9e3889f9fe45078d58c1394a5eb753a18dc6c956c1f98a79e82d4c9984492ad"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/pairwise_euclidean/metrics.json",
+    "bytes": 97407,
+    "sha256": "01573eb4fbf618caaee8ae579590c1ccbc92d4e710c7c9ee6e9079bc090ad278"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/pairwise_euclidean/reevaluated_metrics.json",
+    "bytes": 2209,
+    "sha256": "1b5ec54a377e5343c8efad913b86797689b876f8a4ae0cd42f2f02b706b59a2d"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/pairwise_euclidean/trajectory.npz",
+    "bytes": 244863,
+    "sha256": "dab9229d276cb5396dea0d300b75a90ecafd69cbd7a271efbfb091d78584a504"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/projected_mass/config.yaml",
+    "bytes": 18659,
+    "sha256": "58d5e6133663495fdd7174cd63d88f864b93069fa5968e18409eaa2947da9ba0"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/projected_mass/metrics.json",
+    "bytes": 97420,
+    "sha256": "7a9f31231e76c6cfa21e36426e213e8198d5e7cd10dda913036ed95a324e3864"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/projected_mass/reevaluated_metrics.json",
+    "bytes": 2209,
+    "sha256": "abfd7e7558ce74055ddde8d59087c9f361d9b4c680472b809219fa352b39c8de"
+  },
+  {
+    "path": "reports/step1_wide_u_replan_cases/wide_u/projected_mass/trajectory.npz",
+    "bytes": 244863,
+    "sha256": "dab9229d276cb5396dea0d300b75a90ecafd69cbd7a271efbfb091d78584a504"
+  }
+]

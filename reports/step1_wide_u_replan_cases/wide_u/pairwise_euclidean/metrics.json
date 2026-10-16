@@ -1,0 +1,3414 @@
+{
+  "schema_version": "1.2.0",
+  "commit": "a3ec5baef54afca48f0c885094fb276abd93b5c4",
+  "dirty": true,
+  "patch_sha256": "b97bc06183996639cdc84f5746a7f70112334f43bbf7343c5d04ef10fd870a43",
+  "source_sha256": "f3525f73905fa4574fe5318b433b1564a63fd776bbde18343a29b7dfe1dd02cd",
+  "input_snapshot_sha256": "c1df8212b20efa134342a693b37d3d9d5999171cf770f2552f7898280336f3f8",
+  "config_sha256": "d164d0e29cd2e33f1d599cacbca784e669ac6c87ce59846fbfed9faf08a698b3",
+  "task_request_sha256": "17ecc5dd7cd334b202fc62fb3bb9fe5324e902f090ba9c57aa710a8a06eac364",
+  "task_sha256": "3aca3387d87145bd7b6c540cea64cb8214710424f808928d043c2e626bd5c98e",
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "PyYAML": "6.0.3",
+    "jupedsim": "1.4.2"
+  },
+  "scene": "square",
+  "method": "pairwise_euclidean",
+  "protocol": "fixed_n",
+  "fixed_n": 19,
+  "seed": 15,
+  "termination_status": "SUCCESS",
+  "motion_status": "CONVERGED",
+  "failure_reason": "",
+  "failure_stage": null,
+  "success": true,
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": true,
+    "curve_ok": true,
+    "gap_ok": true,
+    "coverage_ok": true
+  },
+  "stage_diagnosis": "accepted",
+  "feasibility": {
+    "curve_length": 35.61359815876489,
+    "planned_gap_limit": 1.94,
+    "min_separation": 0.75,
+    "necessary_min_count": 19,
+    "necessary_max_count": 47,
+    "available_guides": 19,
+    "requested_count": 19,
+    "necessary_condition_met": true,
+    "infeasibility_certificate": null
+  },
+  "plan_found": true,
+  "assignment_found": true,
+  "demand_kind": "uniform",
+  "boundary_source": "estimated_disk_union",
+  "prescribed_plan_installed": true,
+  "demand_region": null,
+  "demand_clipped_count": 0,
+  "hotspot_people": 0,
+  "planned_concentration": null,
+  "equal_arc_fallback": null,
+  "adapt_concentration": null,
+  "active_guides": 19,
+  "reserve_guides": 0,
+  "steps": 362,
+  "simulation_time": 36.2,
+  "wall_time": 2.1508506000000125,
+  "curve_length": 35.61359815876489,
+  "planned_max_gap": 1.87806084040362,
+  "max_gap_limit": 2.0,
+  "target_min_euclidean_distance": 1.4319690734560517,
+  "tracking_rmse": 0.0008616999551162085,
+  "max_tracking_error": 0.0037542322108527265,
+  "mean_curve_distance": 6.324900975164521e-05,
+  "max_curve_distance": 0.0010501864773051184,
+  "actual_max_gap": 1.878060852828014,
+  "arc_projection_error_max": 0.0036043540136745378,
+  "projection_valid": true,
+  "order_preserved": true,
+  "target_actual_max_gap": 1.8780608404036485,
+  "minimum_center_distances": {
+    "crowd": 0.7800827984629849,
+    "guides": 0.750000010238239,
+    "walls": 1.0
+  },
+  "minimum_net_clearances": {
+    "crowd": 0.030082798462984894,
+    "guides": 1.0238239034343621e-08,
+    "walls": 0.44999999999999996
+  },
+  "most_dangerous_step": {
+    "crowd": 160,
+    "guides": 210,
+    "walls": 0
+  },
+  "coverage_density": "mass_cvt gaussian demand mass, shared by all methods",
+  "hotspot_arc_fraction": null,
+  "hotspot_demand_share": null,
+  "planned_demand_weighted_cost": 0.2932542998349967,
+  "planned_uncovered_demand_share": 0.0,
+  "planned_uniform_cost": 0.29276859261802374,
+  "planned_hotspot_guide_fraction": null,
+  "planned_hotspot_concentration": null,
+  "planned_hotspot_mean_spacing": null,
+  "planned_hotspot_max_gap": null,
+  "actual_demand_weighted_cost": 0.2933116688694017,
+  "actual_uncovered_demand_share": 0.0,
+  "actual_uniform_cost": 0.2927692777374762,
+  "actual_hotspot_guide_fraction": null,
+  "actual_hotspot_concentration": null,
+  "actual_hotspot_mean_spacing": null,
+  "actual_hotspot_max_gap": null,
+  "planning_attempts": [
+    {
+      "n": 19,
+      "phase": null,
+      "max_gap": 1.87806084040362,
+      "min_separation": 1.4319690734560517,
+      "accepted": true,
+      "supplied_plan": true,
+      "boundary_source": "estimated_disk_union"
+    }
+  ],
+  "total_demand": 26.0,
+  "path_length": 244.80052463492578,
+  "resource_utilization": 1.0,
+  "safety_limits": {
+    "guide_distance": 0.75,
+    "crowd_distance": 0.75,
+    "wall_distance": 0.55,
+    "max_speed": 1.0,
+    "numeric_tolerance": 1e-07
+  },
+  "safety_diagnostics": [
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.510833468576701e-16,
+      "min_predicted_clearance": 1.0,
+      "solve_time": 0.002160099999855447,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.0651382577998167,
+      "solve_time": 0.0024425999999948544,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1302765155996335,
+      "solve_time": 0.001891799999611976,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1954147733994502,
+      "solve_time": 0.0016678000001775217,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.260553031199267,
+      "solve_time": 0.0016576000002714864,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3256912889990837,
+      "solve_time": 0.0016673000000082538,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3908295467989005,
+      "solve_time": 0.002270299999963754,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.8459253727671276e-16,
+      "min_predicted_clearance": 1.4559678045987172,
+      "solve_time": 0.002098999999816442,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.521106062398534,
+      "solve_time": 0.0017356999996991362,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.5862443201983507,
+      "solve_time": 0.0016648000000714092,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.6513825779981675,
+      "solve_time": 0.002224500000011176,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.7165208357979842,
+      "solve_time": 0.0020202000000608678,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.781659093597801,
+      "solve_time": 0.0016724000001886452,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.8467973513976177,
+      "solve_time": 0.001642100000026403,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 1.9119356091974344,
+      "solve_time": 0.0016470999999000924,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.9770738669972512,
+      "solve_time": 0.002629999999953725,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.042212124797068,
+      "solve_time": 0.0017809000000852393,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.1073503825968847,
+      "solve_time": 0.001648399999794492,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.1724886403967014,
+      "solve_time": 0.0016415999998571351,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.237626898196518,
+      "solve_time": 0.00232689999984359,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.302765155996335,
+      "solve_time": 0.0021415999999589985,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.3679034137961517,
+      "solve_time": 0.001864800000021205,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.4330416715959684,
+      "solve_time": 0.0016912999999476597,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.498179929395785,
+      "solve_time": 0.0016363000004275818,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 2.563318187195602,
+      "solve_time": 0.001879599999938364,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.6284564449954186,
+      "solve_time": 0.002163500000278873,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.6935947027952354,
+      "solve_time": 0.002046399999926507,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.758732960595052,
+      "solve_time": 0.0017524999998386193,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 2.823871218394869,
+      "solve_time": 0.0023738999998386134,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.8890094761946856,
+      "solve_time": 0.001874399999906018,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.9541477339945024,
+      "solve_time": 0.0016739999996389088,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 3.019285991794319,
+      "solve_time": 0.0016544000000067172,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 3.084424249594136,
+      "solve_time": 0.0017327999998997257,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 3.1495625073939526,
+      "solve_time": 0.0022623999998359068,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 3.1883150717267204,
+      "solve_time": 0.0020144000000072992,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 3.160265801762871,
+      "solve_time": 0.0016690000002199668,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2247786310271853e-16,
+      "min_predicted_clearance": 3.132221185836743,
+      "solve_time": 0.0023016999998617393,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 3.104181350088552,
+      "solve_time": 0.002466000000367785,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.237726045655905e-16,
+      "min_predicted_clearance": 3.0761464252358164,
+      "solve_time": 0.0019081999998888932,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 3.0481165467818063,
+      "solve_time": 0.0016642000000501866,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 3.02009185523544,
+      "solve_time": 0.0016482000000905828,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.992072496343344,
+      "solve_time": 0.0019100999998045154,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.9640586213348725,
+      "solve_time": 0.0023608000001331675,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.9360503871809365,
+      "solve_time": 0.0017293999999310472,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.9080479568675472,
+      "solve_time": 0.0016377000001739361,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2247786310271853e-16,
+      "min_predicted_clearance": 2.8800514996850586,
+      "solve_time": 0.0018463000001247565,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.8520611915341583,
+      "solve_time": 0.002338300000246818,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.8240772152497486,
+      "solve_time": 0.0017029000000547967,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.7960997609439397,
+      "solve_time": 0.0016633999998703075,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.7681290263694693,
+      "solve_time": 0.0016519999999218271,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.7401652173049826,
+      "solve_time": 0.002093600000080187,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.7122085479637046,
+      "solve_time": 0.002060100000107923,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.684259241427169,
+      "solve_time": 0.001886699999886332,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.6563175301058006,
+      "solve_time": 0.00166399999989153,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.6283836562283005,
+      "solve_time": 0.0016596000000390632,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.6004578723619356,
+      "solve_time": 0.0021799000001010427,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.5725404419660207,
+      "solve_time": 0.001828399999794783,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.544631639981068,
+      "solve_time": 0.0019204000000172528,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.516731753456295,
+      "solve_time": 0.0017529000001559325,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.48884108221841,
+      "solve_time": 0.0020840999995925813,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.4609599395848485,
+      "solve_time": 0.002031699999861303,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.4330886531249254,
+      "solve_time": 0.0016848999998728686,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.405227565472655,
+      "solve_time": 0.00166159999980664,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.3773770351953454,
+      "solve_time": 0.001670399999966321,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.349537437722446,
+      "solve_time": 0.002559699999892473,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.3217091663395206,
+      "solve_time": 0.002073999999993248,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.3766115072321297e-16,
+      "min_predicted_clearance": 2.2938926332526943,
+      "solve_time": 0.0016820999999254127,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.2660882707294236,
+      "solve_time": 0.0016531999999642721,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.9373740229761033e-16,
+      "min_predicted_clearance": 2.2382965323219337,
+      "solve_time": 0.0019763000000239117,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.237726045655905e-16,
+      "min_predicted_clearance": 2.2105178941804065,
+      "solve_time": 0.0020537999998850864,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.182752856463507,
+      "solve_time": 0.0019578999999794178,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.1550019448547792,
+      "solve_time": 0.0017758000003595953,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.1272657121940823,
+      "solve_time": 0.0018786999999065301,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.0995447402343617,
+      "solve_time": 0.0025272000002587447,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.0718396415348814,
+      "solve_time": 0.0017333999999209482,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.0441510615033955,
+      "solve_time": 0.0016670999998495972,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.016479680600815,
+      "solve_time": 0.0016696000002411893,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 1.9888262167235524,
+      "solve_time": 0.0020546000000649656,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.9611914277801472,
+      "solve_time": 0.0021544000001085806,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.9335761144806747,
+      "solve_time": 0.0017214999998032,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.905981123359432,
+      "solve_time": 0.001686500000232627,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.8784073500535605,
+      "solve_time": 0.0016598000001977198,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.8508557428628643,
+      "solve_time": 0.002292199999828881,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.8233273066188878,
+      "solve_time": 0.0019857000002048153,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.7958231068944899,
+      "solve_time": 0.0016846000003170047,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.7592541636626404,
+      "solve_time": 0.0016752000001361012,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.7199766983978584,
+      "solve_time": 0.0023509000002377434,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.6866488744984842,
+      "solve_time": 0.0020460999999158958,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.6583646948170676,
+      "solve_time": 0.001758599999902799,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.6343569551652344,
+      "solve_time": 0.0016531000001123175,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.6139759063249024,
+      "solve_time": 0.0016571999999541731,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.5966711727846323,
+      "solve_time": 0.002194099999996979,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.5768139882513332,
+      "solve_time": 0.002169900000353664,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.54958853245731,
+      "solve_time": 0.0017265999999835913,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.5224025631618532,
+      "solve_time": 0.0016618999998172512,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4952582341324188,
+      "solve_time": 0.0020771999998032697,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4681578549938956,
+      "solve_time": 0.0018915000000561122,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4411039052199506,
+      "solve_time": 0.001708400000097754,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.414099049614473,
+      "solve_time": 0.0017121999999289983,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3871461554650166,
+      "solve_time": 0.00185029999965991,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.3602483115750024,
+      "solve_time": 0.0023338999999396037,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3334088494097946,
+      "solve_time": 0.001806399999622954,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.3066313666243086,
+      "solve_time": 0.001808099999834667,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.2799197532771813,
+      "solve_time": 0.0019130000000586733,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.2532782210794906,
+      "solve_time": 0.0026637000000846456,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.2267113360753135,
+      "solve_time": 0.00165610000021843,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.2002240552078727,
+      "solve_time": 0.0016558000002078188,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1738217672900888,
+      "solve_time": 0.005616299999928742,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1475103389725432,
+      "solve_time": 0.001780999999937194,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1212961663869956,
+      "solve_time": 0.001962700000149198,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.095186233240686,
+      "solve_time": 0.001679599999988568,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.0691881762468711,
+      "solve_time": 0.0022051000000828935,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.0433103589022565,
+      "solve_time": 0.0023020999997243052,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.0174157239056771,
+      "solve_time": 0.001677199999903678,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 0.9271343583224956,
+      "solve_time": 0.00164889999996376,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.8386134134473856,
+      "solve_time": 0.0028468999998949585,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7525710624515216,
+      "solve_time": 0.002034000000094238,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.5795433428238096,
+      "min_predicted_clearance": 0.7516485791018167,
+      "solve_time": 0.0017185000001518347,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.6073450821174545,
+      "min_predicted_clearance": 0.7514220599968494,
+      "solve_time": 0.0016765999998824554,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.6182560283018644,
+      "min_predicted_clearance": 0.7517223950026665,
+      "solve_time": 0.004410699999880308,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.674496137391237e-10,
+      "iterations": 13,
+      "correction_norm": 0.7074182188013116,
+      "min_predicted_clearance": 0.7501824003566298,
+      "solve_time": 0.0035499000000527303,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.6259532742711755e-10,
+      "iterations": 14,
+      "correction_norm": 0.795337543849671,
+      "min_predicted_clearance": 0.750139625889613,
+      "solve_time": 0.0032945999996627506,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.272704148295837e-10,
+      "iterations": 14,
+      "correction_norm": 0.8055915271740309,
+      "min_predicted_clearance": 0.7501281133332044,
+      "solve_time": 0.002751699999862467,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.4042681734393057e-10,
+      "iterations": 15,
+      "correction_norm": 0.7976620805260699,
+      "min_predicted_clearance": 0.7500752995360933,
+      "solve_time": 0.002867799999876297,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.924968766140125e-10,
+      "iterations": 15,
+      "correction_norm": 0.7686837284086139,
+      "min_predicted_clearance": 0.7500169442633258,
+      "solve_time": 0.0030639999999948486,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.491167213797723e-10,
+      "iterations": 15,
+      "correction_norm": 0.7121171742751867,
+      "min_predicted_clearance": 0.7500028564759903,
+      "solve_time": 0.0028373000000101456,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.914710719094444e-10,
+      "iterations": 15,
+      "correction_norm": 0.6203879851628137,
+      "min_predicted_clearance": 0.7500028250666331,
+      "solve_time": 0.0024909000003390247,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.470062180989999e-10,
+      "iterations": 15,
+      "correction_norm": 0.490171625609199,
+      "min_predicted_clearance": 0.7500547788554895,
+      "solve_time": 0.0025165000001834414,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.385014490930871e-10,
+      "iterations": 16,
+      "correction_norm": 0.3428342867972237,
+      "min_predicted_clearance": 0.7500750252350069,
+      "solve_time": 0.004725799999960145,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.554735560409085e-10,
+      "iterations": 17,
+      "correction_norm": 0.20399426561843842,
+      "min_predicted_clearance": 0.7500562327031052,
+      "solve_time": 0.0036194999997860577,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.7957901832232892e-10,
+      "iterations": 10,
+      "correction_norm": 0.16164351977614472,
+      "min_predicted_clearance": 0.7500364743262544,
+      "solve_time": 0.003469400000085443,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.18580522668822846,
+      "min_predicted_clearance": 0.7500243789348031,
+      "solve_time": 0.0022555000000465952,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.2379826141159556,
+      "min_predicted_clearance": 0.7500194968867564,
+      "solve_time": 0.002652000000125554,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.2865167611453896,
+      "min_predicted_clearance": 0.7500244278835639,
+      "solve_time": 0.0022747999996681756,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.39553447185684454,
+      "min_predicted_clearance": 0.7500846771494775,
+      "solve_time": 0.0023351999998340034,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.7425126063107832,
+      "min_predicted_clearance": 0.7500671407523447,
+      "solve_time": 0.001844500000061089,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.773616647358103,
+      "min_predicted_clearance": 0.7500852777554193,
+      "solve_time": 0.001750700000229699,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-16,
+      "iterations": 1,
+      "correction_norm": 0.81746461045269,
+      "min_predicted_clearance": 0.7501176319546233,
+      "solve_time": 0.001710400000320078,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.8582958397226701,
+      "min_predicted_clearance": 0.7501238562605682,
+      "solve_time": 0.003541999999924883,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.8955863692311609,
+      "min_predicted_clearance": 0.750130772386207,
+      "solve_time": 0.0019772999999077,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 2,
+      "correction_norm": 0.9069580890936756,
+      "min_predicted_clearance": 0.7500837117601268,
+      "solve_time": 0.0019105000001218286,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.525325207412894e-10,
+      "iterations": 18,
+      "correction_norm": 1.0093153373335992,
+      "min_predicted_clearance": 0.750005159025723,
+      "solve_time": 0.003208000000086031,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.2548501271500217e-10,
+      "iterations": 18,
+      "correction_norm": 1.0284751977884905,
+      "min_predicted_clearance": 0.7500046045270365,
+      "solve_time": 0.0038546999999198306,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.982854773197454e-10,
+      "iterations": 17,
+      "correction_norm": 1.0479923912879476,
+      "min_predicted_clearance": 0.7500101846677438,
+      "solve_time": 0.0034055999999509368,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.685949912787734e-10,
+      "iterations": 16,
+      "correction_norm": 1.1482381727682522,
+      "min_predicted_clearance": 0.7500168054463251,
+      "solve_time": 0.0037455000001500593,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.512360167640597e-10,
+      "iterations": 15,
+      "correction_norm": 1.1754829833130631,
+      "min_predicted_clearance": 0.7500253557853108,
+      "solve_time": 0.003419600000142964,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.3538658586145946e-10,
+      "iterations": 15,
+      "correction_norm": 1.1850900290889648,
+      "min_predicted_clearance": 0.7500362055784566,
+      "solve_time": 0.002863499999875785,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.469878423376907e-10,
+      "iterations": 14,
+      "correction_norm": 1.1903283192530696,
+      "min_predicted_clearance": 0.7500499153867922,
+      "solve_time": 0.00469810000004145,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.028473182057826e-10,
+      "iterations": 14,
+      "correction_norm": 1.1920465532978157,
+      "min_predicted_clearance": 0.7500672933469564,
+      "solve_time": 0.0028463999997256906,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.8351846197210987e-10,
+      "iterations": 14,
+      "correction_norm": 1.191683613802943,
+      "min_predicted_clearance": 0.7500895020492256,
+      "solve_time": 0.003973500000029162,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.196943435985554e-10,
+      "iterations": 13,
+      "correction_norm": 1.1912904658695311,
+      "min_predicted_clearance": 0.7501182273251046,
+      "solve_time": 0.0031983000003492634,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.086925101264853e-10,
+      "iterations": 19,
+      "correction_norm": 1.19952784030306,
+      "min_predicted_clearance": 0.750155954698963,
+      "solve_time": 0.004515900000114925,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.218342230024376e-10,
+      "iterations": 24,
+      "correction_norm": 1.3128415259253736,
+      "min_predicted_clearance": 0.7502064266732053,
+      "solve_time": 0.0036110000000917353,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.07860262125115e-10,
+      "iterations": 26,
+      "correction_norm": 1.3170927697665533,
+      "min_predicted_clearance": 0.7502754201379693,
+      "solve_time": 0.0037094999997862033,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.443523334943225e-10,
+      "iterations": 13,
+      "correction_norm": 1.2252342769373328,
+      "min_predicted_clearance": 0.7503721048620248,
+      "solve_time": 0.003356000000167114,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.400327155851419e-10,
+      "iterations": 13,
+      "correction_norm": 1.3778728473565716,
+      "min_predicted_clearance": 0.7504905351456131,
+      "solve_time": 0.0030342000000018743,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.867777314968717e-10,
+      "iterations": 13,
+      "correction_norm": 1.3901315060994808,
+      "min_predicted_clearance": 0.7505998458716403,
+      "solve_time": 0.002737700000125187,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.6219255733152747e-10,
+      "iterations": 14,
+      "correction_norm": 1.3906371421110741,
+      "min_predicted_clearance": 0.7507693103986247,
+      "solve_time": 0.00356869999995979,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.773268335091842e-10,
+      "iterations": 14,
+      "correction_norm": 1.3728834193497235,
+      "min_predicted_clearance": 0.751038831635909,
+      "solve_time": 0.0028956999999536492,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.940680919940377e-10,
+      "iterations": 15,
+      "correction_norm": 1.3256368870469408,
+      "min_predicted_clearance": 0.7514778133210351,
+      "solve_time": 0.002835099999629165,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.444485807690967e-10,
+      "iterations": 16,
+      "correction_norm": 1.2299355645098733,
+      "min_predicted_clearance": 0.7521957012304356,
+      "solve_time": 0.003491999999823747,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.987552593149758e-10,
+      "iterations": 16,
+      "correction_norm": 1.0612722129364,
+      "min_predicted_clearance": 0.753197153389996,
+      "solve_time": 0.0030971000001045468,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.441196187534359e-10,
+      "iterations": 16,
+      "correction_norm": 0.8198464313458412,
+      "min_predicted_clearance": 0.7538353927635111,
+      "solve_time": 0.0029459000002134417,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.4214851518090654e-10,
+      "iterations": 6,
+      "correction_norm": 0.6012277217818548,
+      "min_predicted_clearance": 0.7545183858470108,
+      "solve_time": 0.0024699999999029387,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.0943734807256078e-10,
+      "iterations": 6,
+      "correction_norm": 0.5827431869314516,
+      "min_predicted_clearance": 0.7504430655782052,
+      "solve_time": 0.002488300000095478,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.167910874907648e-11,
+      "iterations": 5,
+      "correction_norm": 0.7097233326730955,
+      "min_predicted_clearance": 0.7502853416943673,
+      "solve_time": 0.002267200000005687,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.931903910409545e-11,
+      "iterations": 4,
+      "correction_norm": 0.7450133481611317,
+      "min_predicted_clearance": 0.7501945525486434,
+      "solve_time": 0.0021061000002191577,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.42465041198901887,
+      "min_predicted_clearance": 0.750163638857685,
+      "solve_time": 0.0028796999999940454,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.609823385706477e-15,
+      "iterations": 3,
+      "correction_norm": 0.39345692522677417,
+      "min_predicted_clearance": 0.7502129555215236,
+      "solve_time": 0.0020079999999325082,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.874787654240436e-10,
+      "iterations": 34,
+      "correction_norm": 0.4424425316275,
+      "min_predicted_clearance": 0.7504109773307129,
+      "solve_time": 0.004985700000361248,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.431533916551047e-10,
+      "iterations": 29,
+      "correction_norm": 0.5950818097043292,
+      "min_predicted_clearance": 0.7506392430918118,
+      "solve_time": 0.004268199999842182,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.673535335455227e-10,
+      "iterations": 26,
+      "correction_norm": 0.5652705394761611,
+      "min_predicted_clearance": 0.7505394346522043,
+      "solve_time": 0.0037743999996564526,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.243539240642249e-10,
+      "iterations": 15,
+      "correction_norm": 0.43576239494475744,
+      "min_predicted_clearance": 0.7505251107086698,
+      "solve_time": 0.00396790000013425,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.945243546940816e-10,
+      "iterations": 15,
+      "correction_norm": 0.420092912054166,
+      "min_predicted_clearance": 0.750418407310638,
+      "solve_time": 0.003764300000057119,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.08103324639675e-10,
+      "iterations": 22,
+      "correction_norm": 0.41453908614231677,
+      "min_predicted_clearance": 0.75024567038707,
+      "solve_time": 0.004388299999845913,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.682894407473606e-10,
+      "iterations": 20,
+      "correction_norm": 0.6124311630632658,
+      "min_predicted_clearance": 0.75024567038707,
+      "solve_time": 0.0032580000001871667,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.163336342344337e-17,
+      "iterations": 1,
+      "correction_norm": 0.3069932263766571,
+      "min_predicted_clearance": 0.752183357157975,
+      "solve_time": 0.0017410000000381842,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.1965817732909855,
+      "min_predicted_clearance": 0.7549898144732516,
+      "solve_time": 0.0022945000000618165,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.09196364588812424,
+      "min_predicted_clearance": 0.7554077793943352,
+      "solve_time": 0.0023018000001684413,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7569632371940619,
+      "solve_time": 0.0017911999998432293,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7610511322765807,
+      "solve_time": 0.0017320000001745939,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7713464489185927,
+      "solve_time": 0.0018732000003183202,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7665164660801144,
+      "solve_time": 0.002168200000141951,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7624176568570755,
+      "solve_time": 0.0018743000000540633,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7589385714155126,
+      "solve_time": 0.0019274000001132663,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7559849401106619,
+      "solve_time": 0.0017671999999038235,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7534769790166631,
+      "solve_time": 0.0024405999997725303,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7513471281861882,
+      "solve_time": 0.0017560000001139997,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.4746417677452897e-10,
+      "iterations": 6,
+      "correction_norm": 0.003298734648978165,
+      "min_predicted_clearance": 0.7500005991699321,
+      "solve_time": 0.002038000000084139,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.385620451010296e-10,
+      "iterations": 6,
+      "correction_norm": 0.011659996171455788,
+      "min_predicted_clearance": 0.7500002386335163,
+      "solve_time": 0.0022160999997140607,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.62420178630294e-10,
+      "iterations": 6,
+      "correction_norm": 0.011659147804419833,
+      "min_predicted_clearance": 0.7500001597487472,
+      "solve_time": 0.0030572000000574917,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.830609018290676e-10,
+      "iterations": 6,
+      "correction_norm": 0.011657308737928015,
+      "min_predicted_clearance": 0.7500001185117631,
+      "solve_time": 0.0024887999998099986,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.221339145818022e-11,
+      "iterations": 7,
+      "correction_norm": 0.01165597524771626,
+      "min_predicted_clearance": 0.7500000886336512,
+      "solve_time": 0.0022509999998874264,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.317031046547942e-11,
+      "iterations": 7,
+      "correction_norm": 0.011655014785773165,
+      "min_predicted_clearance": 0.7500000669803696,
+      "solve_time": 0.0023810999996385362,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.39992237167324e-11,
+      "iterations": 7,
+      "correction_norm": 0.011654311857447483,
+      "min_predicted_clearance": 0.7500000512890405,
+      "solve_time": 0.0028118000000176835,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.4713882751291873e-11,
+      "iterations": 7,
+      "correction_norm": 0.011653804666535164,
+      "min_predicted_clearance": 0.7500000399184445,
+      "solve_time": 0.002495400000043446,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.532930643884796e-11,
+      "iterations": 7,
+      "correction_norm": 0.011653437015978874,
+      "min_predicted_clearance": 0.750000031678757,
+      "solve_time": 0.0022745999999642663,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.585834499006455e-11,
+      "iterations": 7,
+      "correction_norm": 0.011653170352216908,
+      "min_predicted_clearance": 0.7500000257081227,
+      "solve_time": 0.0030093999998825893,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.631242589808957e-11,
+      "iterations": 7,
+      "correction_norm": 0.01165297660757311,
+      "min_predicted_clearance": 0.7500000213817769,
+      "solve_time": 0.0024776000000201748,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.670217446485456e-11,
+      "iterations": 7,
+      "correction_norm": 0.01165284083256899,
+      "min_predicted_clearance": 0.7500000182467788,
+      "solve_time": 0.0021094000003358815,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.703537565974232e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652737130607094,
+      "min_predicted_clearance": 0.750000015975294,
+      "solve_time": 0.002683600000182196,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.7320680587837486e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652663713191864,
+      "min_predicted_clearance": 0.7500000143294902,
+      "solve_time": 0.0025946999999177933,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.756460180577728e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652610488887263,
+      "min_predicted_clearance": 0.7500000131369491,
+      "solve_time": 0.00225430000000415,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.7773005874240825e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652571865886367,
+      "min_predicted_clearance": 0.7500000122728782,
+      "solve_time": 0.0022917999999663152,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.7950953806584143e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652543763736952,
+      "min_predicted_clearance": 0.7500000116468094,
+      "solve_time": 0.0031388000002152694,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.810281836249112e-11,
+      "iterations": 7,
+      "correction_norm": 0.01165252316698273,
+      "min_predicted_clearance": 0.7500000111931923,
+      "solve_time": 0.003476500000033411,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.823234310640255e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652507772961054,
+      "min_predicted_clearance": 0.750000010864528,
+      "solve_time": 0.0029564000001300883,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.834442609299075e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652500794279468,
+      "min_predicted_clearance": 0.7500000106263583,
+      "solve_time": 0.002603099999760161,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.843724534159571e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652490917187022,
+      "min_predicted_clearance": 0.7500000104538158,
+      "solve_time": 0.002267500000016298,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.851757335686345e-11,
+      "iterations": 7,
+      "correction_norm": 0.011652485323350665,
+      "min_predicted_clearance": 0.7500000103288164,
+      "solve_time": 0.0022513999997499923,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.85860295486043e-11,
+      "iterations": 7,
+      "correction_norm": 0.01165248124632248,
+      "min_predicted_clearance": 0.750000010238239,
+      "solve_time": 0.004373999999643274,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.09976895222130003,
+      "min_predicted_clearance": 0.7500000102635503,
+      "solve_time": 0.002102800000102434,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.06388428618144365,
+      "min_predicted_clearance": 0.7512462815567775,
+      "solve_time": 0.0020702000001620036,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.04819187027683714,
+      "min_predicted_clearance": 0.750931908129805,
+      "solve_time": 0.0020010999996884493,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.03661702877759324,
+      "min_predicted_clearance": 0.7506909905431304,
+      "solve_time": 0.0017354000001432723,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.02812240506901897,
+      "min_predicted_clearance": 0.7505091474147355,
+      "solve_time": 0.0017026000000441854,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.021911128736451967,
+      "min_predicted_clearance": 0.7503734196417906,
+      "solve_time": 0.0016933000001699838,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.017381474757065193,
+      "min_predicted_clearance": 0.7502729398026472,
+      "solve_time": 0.002839399999629677,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.014084499908823798,
+      "min_predicted_clearance": 0.7501989987405666,
+      "solve_time": 0.0018440999997437757,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.469446951953614e-18,
+      "iterations": 1,
+      "correction_norm": 0.011688077076074119,
+      "min_predicted_clearance": 0.7501448243478892,
+      "solve_time": 0.0017229000000043015,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.009947972667435193,
+      "min_predicted_clearance": 0.7501052584811186,
+      "solve_time": 0.001709099999970931,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.469446951953614e-18,
+      "iterations": 1,
+      "correction_norm": 0.00868535517429783,
+      "min_predicted_clearance": 0.7500764285911891,
+      "solve_time": 0.003202299999884417,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.007769682792499254,
+      "min_predicted_clearance": 0.7500554567773481,
+      "solve_time": 0.0019294000003355904,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.007105873551680778,
+      "min_predicted_clearance": 0.7500402197650712,
+      "solve_time": 0.001713200000267534,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.3185531146729415,
+      "min_predicted_clearance": 0.7500444026680086,
+      "solve_time": 0.0016857000000527478,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.245004513516506e-17,
+      "iterations": 1,
+      "correction_norm": 0.2524822207636082,
+      "min_predicted_clearance": 0.7532401130458211,
+      "solve_time": 0.002610699999877397,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.18902140862668906,
+      "min_predicted_clearance": 0.7525677321595219,
+      "solve_time": 0.00184850000005099,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.14036642466914487,
+      "min_predicted_clearance": 0.7519900733673406,
+      "solve_time": 0.0019709999996848637,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.10364647076458805,
+      "min_predicted_clearance": 0.7515155468043812,
+      "solve_time": 0.0016946999999163381,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.326672684688674e-17,
+      "iterations": 1,
+      "correction_norm": 0.0762587744807106,
+      "min_predicted_clearance": 0.751138658777837,
+      "solve_time": 0.0017373000000588945,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.163336342344337e-17,
+      "iterations": 1,
+      "correction_norm": 0.05600861512378901,
+      "min_predicted_clearance": 0.7508467615052308,
+      "solve_time": 0.002419599999939237,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.04113129214094632,
+      "min_predicted_clearance": 0.7506248721688815,
+      "solve_time": 0.0019502999998621817,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.03025275698322502,
+      "min_predicted_clearance": 0.7504585069692702,
+      "solve_time": 0.0016949999999269494,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.02232654323301695,
+      "min_predicted_clearance": 0.7503350256042529,
+      "solve_time": 0.001691300000402407,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.01656786492428506,
+      "min_predicted_clearance": 0.7502440479751898,
+      "solve_time": 0.002149500000086846,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.012394526158256508,
+      "min_predicted_clearance": 0.750177377692921,
+      "solve_time": 0.002294999999776337,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.469446951953614e-18,
+      "iterations": 1,
+      "correction_norm": 0.009377885550810788,
+      "min_predicted_clearance": 0.7501287109536303,
+      "solve_time": 0.001973199999611097,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.007203937563600568,
+      "min_predicted_clearance": 0.7500932867467334,
+      "solve_time": 0.0017106000000239874,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.005643257577643479,
+      "min_predicted_clearance": 0.7500675546621025,
+      "solve_time": 0.0017149999998764542,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.0045282276061594535,
+      "min_predicted_clearance": 0.7500488907336272,
+      "solve_time": 0.002996799999891664,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.469446951953614e-17,
+      "iterations": 1,
+      "correction_norm": 0.38366676219177703,
+      "min_predicted_clearance": 0.7500538954644317,
+      "solve_time": 0.001779299999725481,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.25244052350596496,
+      "min_predicted_clearance": 0.7532897995201628,
+      "solve_time": 0.0019631000000117638,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.1879642000159152,
+      "min_predicted_clearance": 0.7526109343738874,
+      "solve_time": 0.001730000000407017,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.13854602510139535,
+      "min_predicted_clearance": 0.7520258165149162,
+      "solve_time": 0.0023201000003609806,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.10127189304567093,
+      "min_predicted_clearance": 0.7515440252164608,
+      "solve_time": 0.0019623999996838393,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.07349289019815598,
+      "min_predicted_clearance": 0.7511607147540234,
+      "solve_time": 0.0017051000004357775,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.05297314443125304,
+      "min_predicted_clearance": 0.7508634857713149,
+      "solve_time": 0.0016908000002331391,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.03791480237409125,
+      "min_predicted_clearance": 0.7506373562472285,
+      "solve_time": 0.001722800000152347,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.02691897328980169,
+      "min_predicted_clearance": 0.7504677187724756,
+      "solve_time": 0.0034098000000994944,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.018921894976510877,
+      "min_predicted_clearance": 0.7503415802654927,
+      "solve_time": 0.0018900999998550105,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.013128255564513521,
+      "min_predicted_clearance": 0.7502485535948138,
+      "solve_time": 0.0016983999998956278,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.00895213615940031,
+      "min_predicted_clearance": 0.750180449206489,
+      "solve_time": 0.0016921999999794934,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.005969948067620282,
+      "min_predicted_clearance": 0.7501307885193976,
+      "solve_time": 0.0027331000001140637,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.003887827710185698,
+      "min_predicted_clearance": 0.7500946811121012,
+      "solve_time": 0.0019737000002351124,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.002526139748627296,
+      "min_predicted_clearance": 0.7500684828811456,
+      "solve_time": 0.0017216999999618565,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0016967105514415876,
+      "min_predicted_clearance": 0.7500498396560978,
+      "solve_time": 0.0037630000001627195,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.37993669966133353,
+      "min_predicted_clearance": 0.750054934241462,
+      "solve_time": 0.0019857000002048153,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.85722573273506e-17,
+      "iterations": 1,
+      "correction_norm": 0.249112425146957,
+      "min_predicted_clearance": 0.7532929609359064,
+      "solve_time": 0.0017812999999478052,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.18476854703549325,
+      "min_predicted_clearance": 0.7526134360477198,
+      "solve_time": 0.001702800000202842,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.13550788467791053,
+      "min_predicted_clearance": 0.7520249875826283,
+      "solve_time": 0.001769399999830057,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.09839671112642223,
+      "min_predicted_clearance": 0.7515391021930994,
+      "solve_time": 0.002246299999569601,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.07077601323431172,
+      "min_predicted_clearance": 0.7511538103404937,
+      "solve_time": 0.0023315999997066683,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.326672684688674e-17,
+      "iterations": 1,
+      "correction_norm": 0.05040743392230383,
+      "min_predicted_clearance": 0.7508560055129107,
+      "solve_time": 0.002193400000123802,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.03549674598284907,
+      "min_predicted_clearance": 0.7506301413462474,
+      "solve_time": 0.001953800000137562,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.024654600655010173,
+      "min_predicted_clearance": 0.7504612092587968,
+      "solve_time": 0.002410200000213081,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.016834798557793886,
+      "min_predicted_clearance": 0.7503361404439061,
+      "solve_time": 0.0022358999999596563,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0112740511453073,
+      "min_predicted_clearance": 0.7502442313557499,
+      "solve_time": 0.0017392999998264713,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.007447654501589411,
+      "min_predicted_clearance": 0.7501770540620261,
+      "solve_time": 0.0017091999998228857,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.005038227534159482,
+      "min_predicted_clearance": 0.7501313097883878,
+      "solve_time": 0.0018049999998765998,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.734723475976807e-18,
+      "iterations": 1,
+      "correction_norm": 0.003467790908254073,
+      "min_predicted_clearance": 0.7500951493146533,
+      "solve_time": 0.0022770000000491564,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.734723475976807e-18,
+      "iterations": 1,
+      "correction_norm": 0.0023315437161609154,
+      "min_predicted_clearance": 0.7500688870420713,
+      "solve_time": 0.001956600000085018,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0015098299921714798,
+      "min_predicted_clearance": 0.7500498424908996,
+      "solve_time": 0.0017512999997961742,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.26246760171502265,
+      "min_predicted_clearance": 0.7500549808182256,
+      "solve_time": 0.001707099999748607,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.17216974159272364,
+      "min_predicted_clearance": 0.7532883913320015,
+      "solve_time": 0.0020011000001431967,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.1269284904302169,
+      "min_predicted_clearance": 0.7526018670012778,
+      "solve_time": 0.0021332000001166307,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.09234477448666886,
+      "min_predicted_clearance": 0.752012671405876,
+      "solve_time": 0.0020544999997582636,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.06632397207676503,
+      "min_predicted_clearance": 0.7515294717009802,
+      "solve_time": 0.001792099999875063,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.046975647628661625,
+      "min_predicted_clearance": 0.7511464858731084,
+      "solve_time": 0.0016857999999047024,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.03271274110291036,
+      "min_predicted_clearance": 0.7508505496975164,
+      "solve_time": 0.0021907000000283006,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.02226448430950624,
+      "min_predicted_clearance": 0.7506261401381003,
+      "solve_time": 0.002393000000211032,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.014645294777437281,
+      "min_predicted_clearance": 0.7504583086127319,
+      "solve_time": 0.001725099999930535,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.00910727880310788,
+      "min_predicted_clearance": 0.7503340557053239,
+      "solve_time": 0.001688800000010815,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.005091420387631584,
+      "min_predicted_clearance": 0.7502427426670153,
+      "solve_time": 0.003355099999680533,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.002184266169531999,
+      "min_predicted_clearance": 0.7501759961770214,
+      "solve_time": 0.0023589000002175453,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.0408340855860843e-17,
+      "iterations": 1,
+      "correction_norm": 8.228226771655693e-05,
+      "min_predicted_clearance": 0.7501273964259697,
+      "solve_time": 0.0017444000000068627,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7501408254253074,
+      "solve_time": 0.0016808999998829677,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7503048523095478,
+      "solve_time": 0.002231299999948533,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7506041679045207,
+      "solve_time": 0.0021343999997043284,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7509739749001738,
+      "solve_time": 0.0027924999999413558,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7807787776055609,
+      "solve_time": 0.0017103000000133761,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7792608388906989,
+      "solve_time": 0.002683400000023539,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7698075450792106,
+      "solve_time": 0.002076799999940704,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7628689055331138,
+      "solve_time": 0.0017787000001590059,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7577856165786825,
+      "solve_time": 0.0017499999999017746,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7540654879900917,
+      "solve_time": 0.0019278999998277868,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7513439425972532,
+      "solve_time": 0.002761199999895325,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.005627913223146732,
+      "min_predicted_clearance": 0.7501482273663277,
+      "solve_time": 0.001698100000339764,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.010873215372302548,
+      "min_predicted_clearance": 0.7500972315367808,
+      "solve_time": 0.001697600000170496,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.009706278850920739,
+      "min_predicted_clearance": 0.7500706264578723,
+      "solve_time": 0.0016950000003816967,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.008859606771442612,
+      "min_predicted_clearance": 0.7500512686059211,
+      "solve_time": 0.002546100000017759,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.008245518871565907,
+      "min_predicted_clearance": 0.7500371996802235,
+      "solve_time": 0.001851700000315759,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.16303611371972632,
+      "min_predicted_clearance": 0.7500411073741202,
+      "solve_time": 0.001707200000055309,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.1356195269103339,
+      "min_predicted_clearance": 0.7525316134335138,
+      "solve_time": 0.0020097999999961758,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.09656594266988355,
+      "min_predicted_clearance": 0.7519604612380606,
+      "solve_time": 0.0022653999999420193,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.07116667854386191,
+      "min_predicted_clearance": 0.7514921386208615,
+      "solve_time": 0.0017408999997314822,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.05223963990007637,
+      "min_predicted_clearance": 0.7511206569726124,
+      "solve_time": 0.0017135999996753526,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.038254321596452576,
+      "min_predicted_clearance": 0.7508331995199301,
+      "solve_time": 0.0017136999999820546,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.027983917510847396,
+      "min_predicted_clearance": 0.7506148101532292,
+      "solve_time": 0.0018631999996614468,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.938893903907228e-18,
+      "iterations": 1,
+      "correction_norm": 0.02047521420467717,
+      "min_predicted_clearance": 0.7504511257081251,
+      "solve_time": 0.0021784000000479864,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.015003262683564141,
+      "min_predicted_clearance": 0.750329655918226,
+      "solve_time": 0.001789800000096875,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.011024856581885014,
+      "min_predicted_clearance": 0.7502401656457652,
+      "solve_time": 0.001709200000277633,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.469446951953614e-18,
+      "iterations": 1,
+      "correction_norm": 0.008137189996398987,
+      "min_predicted_clearance": 0.7501745834757044,
+      "solve_time": 0.0017012999996950384,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0060437568996164915,
+      "min_predicted_clearance": 0.7501267066536751,
+      "solve_time": 0.0020853000000897737,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.00452743424157506,
+      "min_predicted_clearance": 0.7500918526739944,
+      "solve_time": 0.0018138000000362808,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.003429818741083952,
+      "min_predicted_clearance": 0.7500665305338,
+      "solve_time": 0.0017463999997744395,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.673617379884035e-19,
+      "iterations": 1,
+      "correction_norm": 0.002635653166780657,
+      "min_predicted_clearance": 0.7500481604252732,
+      "solve_time": 0.0016981999997369712,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.163336342344337e-17,
+      "iterations": 1,
+      "correction_norm": 0.31021223973986795,
+      "min_predicted_clearance": 0.7500531168996443,
+      "solve_time": 0.00217030000021623,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.22146785417769424,
+      "min_predicted_clearance": 0.7542258310562167,
+      "solve_time": 0.0024183000000448374,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.14810367737105581,
+      "min_predicted_clearance": 0.7546363497959482,
+      "solve_time": 0.0017600999999558553,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.060395832290309516,
+      "min_predicted_clearance": 0.7549695616475058,
+      "solve_time": 0.001701600000160397,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7567967385669211,
+      "solve_time": 0.001730000000407017,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7624837855449315,
+      "solve_time": 0.0023194999998850108,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7823274540924936,
+      "solve_time": 0.0019513000002007175,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 0.8151105602927234,
+      "solve_time": 0.0017574999997123086,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.8591683844107225,
+      "solve_time": 0.0016947000003710855,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.9127276507281968,
+      "solve_time": 0.0019741000000976783,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.9741136770994147,
+      "solve_time": 0.002092500000344444,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.041860898786606,
+      "solve_time": 0.001833000000260654,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.114746741844838,
+      "solve_time": 0.0017740000002959277,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1917803605798987,
+      "solve_time": 0.0018009000000347442,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.2721714667166089,
+      "solve_time": 0.002157800000077259,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3552943757877591,
+      "solve_time": 0.0018742000002021086,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4198841184672362,
+      "solve_time": 0.0017582000000402331,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4216943278559653,
+      "solve_time": 0.0016802999998617452,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4232337132941137,
+      "solve_time": 0.0023876000000200293,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.424542700383152,
+      "solve_time": 0.0018726000002970977,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4256557064756452,
+      "solve_time": 0.001727500000015425,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.426602026233848,
+      "solve_time": 0.0020838000000367174,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.427406588803527,
+      "solve_time": 0.002079600000342907,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4280906045878305,
+      "solve_time": 0.0023675000002185698,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4286721172764891,
+      "solve_time": 0.0017053000001396867,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4291664746975492,
+      "solve_time": 0.0017401000000063505,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4295867302080743,
+      "solve_time": 0.0017311000001427601,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4299439847139415,
+      "solve_time": 0.0019959999999628053,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4302476779886326,
+      "solve_time": 0.0024141999997482344,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4305058367271604,
+      "solve_time": 0.0017422999999325839,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.430725285703499,
+      "solve_time": 0.001688299999841547,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4309118274787835,
+      "solve_time": 0.0016792999999779568,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4310703953149317,
+      "solve_time": 0.002259599999888451,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4312051832677533,
+      "solve_time": 0.0019495999999890046,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4313197568501002,
+      "solve_time": 0.001812900000004447,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4314171471561479,
+      "solve_time": 0.0019631999998637184,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4314999309107352,
+      "solve_time": 0.0022195000001374865,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4315702985428707,
+      "solve_time": 0.002006499999879452,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4316301120709631,
+      "solve_time": 0.0016958000001068285,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4316809543217093,
+      "solve_time": 0.0017322999997304578,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4317241707780075,
+      "solve_time": 0.0016775999997662439,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4317609051582627,
+      "solve_time": 0.002049300000180665,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4317921296649663,
+      "solve_time": 0.0022802000003139256,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4318186707004714,
+      "solve_time": 0.0017528999997011852,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4318412307286155,
+      "solve_time": 0.0016970000001492735,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4318604068594374,
+      "solve_time": 0.00190229999998337,
+      "fallback_used": false
+    }
+  ],
+  "fallback_count": 0,
+  "replan_count": 1,
+  "planning_margin_connections": [
+    {
+      "guides": [
+        4
+      ],
+      "replans_before": 0,
+      "geometry_sha256": "504eba69f0746c0b142a700c45fe9432a61d0a0738aa6416a7d08367734ace8d"
+    }
+  ],
+  "deadlock_events": [
+    {
+      "step": 210,
+      "remaining_path": 0.38963055943284725,
+      "strategy": "path_recompute"
+    }
+  ],
+  "crowd_static": true
+}

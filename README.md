@@ -102,6 +102,8 @@ Step 1 研究笔记在 `notebooks/step1_static_deployment.ipynb`。算法仍在 
 .\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --source runs/step1_general_curve --output runs/step1_adhesion_repair --rerun-adhesion
 .\.venv\Scripts\python.exe -m udc.experiments.curve_constraints --spec experiments/step1_curve_constraints.yaml --output runs/step1_curve_constraints --workers 6
 .\.venv\Scripts\python.exe -m udc.experiments.scene_closure --spec experiments/step1_scene_closure.yaml --output runs/step1_scene_closure
+.\.venv\Scripts\python.exe -m udc.experiments.replan_repair --diagnose runs/step1_scene_closure/execution/wide_u/disk_union_primary/equal_arc/run --diagnosis-json reports/step1_wide_u_replan_diagnosis.json --diagnosis-npz reports/step1_wide_u_replan_failure_window.npz --diagnosis-figure reports/step1_wide_u_replan_failure.png
+.\.venv\Scripts\python.exe -m udc.experiments.replan_repair --source-root runs/step1_scene_closure/execution --output-root runs/step1_wide_u_replan_repair --scenes wide_u elongated tight_u --summary reports/step1_wide_u_replan_summary.json --comparison-figure reports/step1_wide_u_replan_comparison.png
 ```
 
 任务完成、预设失败语义通过、实际 SUCCESS 分开统计；初态无效、资源不足和超时都保留。规划搜索耗尽记为“未找到可行方案”；只有数量下界或间距上界被违反时才给出不可行证书。统计包含成功率 Wilson 95% 区间与成功任务部署时间均值／中位数，不用确定性重复制造独立样本。规划目标指标与轨迹指标分开报告。

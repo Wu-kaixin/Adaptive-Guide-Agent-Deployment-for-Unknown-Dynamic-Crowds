@@ -1,0 +1,359 @@
+[
+  {
+    "scene": "wide_u",
+    "method": "equal_arc",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 362,
+    "simulation_time_s": 36.2,
+    "replan_count": 1,
+    "deadlock_events": [
+      {
+        "step": 210,
+        "remaining_path": 0.3893332495829449,
+        "strategy": "path_recompute"
+      }
+    ],
+    "planning_margin_connections": [
+      {
+        "guides": [
+          4
+        ],
+        "replans_before": 0,
+        "geometry_sha256": "504eba69f0746c0b142a700c45fe9432a61d0a0738aa6416a7d08367734ace8d"
+      }
+    ],
+    "initial_assignment_path_length_m": 244.78999307803423,
+    "executed_travel_m": 253.24249761081032,
+    "previous_executed_travel_m": 245.0398821917678,
+    "max_tracking_error_m": 0.00372958384004586,
+    "minimum_net_clearances_m": {
+      "crowd": 0.03019727757286883,
+      "guides": 1.0230633340491124e-08,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "wide_u",
+    "method": "projected_mass",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 362,
+    "simulation_time_s": 36.2,
+    "replan_count": 1,
+    "deadlock_events": [
+      {
+        "step": 210,
+        "remaining_path": 0.38963055943284725,
+        "strategy": "path_recompute"
+      }
+    ],
+    "planning_margin_connections": [
+      {
+        "guides": [
+          4
+        ],
+        "replans_before": 0,
+        "geometry_sha256": "504eba69f0746c0b142a700c45fe9432a61d0a0738aa6416a7d08367734ace8d"
+      }
+    ],
+    "initial_assignment_path_length_m": 244.80052463492578,
+    "executed_travel_m": 253.23957134442975,
+    "previous_executed_travel_m": 245.03593437554025,
+    "max_tracking_error_m": 0.0037542322108527265,
+    "minimum_net_clearances_m": {
+      "crowd": 0.030082798462984894,
+      "guides": 1.0238239034343621e-08,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "wide_u",
+    "method": "pairwise_euclidean",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 362,
+    "simulation_time_s": 36.2,
+    "replan_count": 1,
+    "deadlock_events": [
+      {
+        "step": 210,
+        "remaining_path": 0.38963055943284725,
+        "strategy": "path_recompute"
+      }
+    ],
+    "planning_margin_connections": [
+      {
+        "guides": [
+          4
+        ],
+        "replans_before": 0,
+        "geometry_sha256": "504eba69f0746c0b142a700c45fe9432a61d0a0738aa6416a7d08367734ace8d"
+      }
+    ],
+    "initial_assignment_path_length_m": 244.80052463492578,
+    "executed_travel_m": 253.23957134442975,
+    "previous_executed_travel_m": 245.03593437554025,
+    "max_tracking_error_m": 0.0037542322108527265,
+    "minimum_net_clearances_m": {
+      "crowd": 0.030082798462984894,
+      "guides": 1.0238239034343621e-08,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "elongated",
+    "method": "equal_arc",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 188,
+    "simulation_time_s": 18.8,
+    "replan_count": 0,
+    "deadlock_events": [],
+    "planning_margin_connections": [],
+    "initial_assignment_path_length_m": 144.07090615725596,
+    "executed_travel_m": 144.06608694350066,
+    "previous_executed_travel_m": 144.06608694350066,
+    "max_tracking_error_m": 0.003535773398765665,
+    "minimum_net_clearances_m": {
+      "crowd": 0.748993772184477,
+      "guides": 0.8903918500319881,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "elongated",
+    "method": "projected_mass",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 188,
+    "simulation_time_s": 18.8,
+    "replan_count": 0,
+    "deadlock_events": [],
+    "planning_margin_connections": [],
+    "initial_assignment_path_length_m": 144.06206923902172,
+    "executed_travel_m": 144.0572654268753,
+    "previous_executed_travel_m": 144.0572654268753,
+    "max_tracking_error_m": 0.0035235374761236845,
+    "minimum_net_clearances_m": {
+      "crowd": 0.7489986199187697,
+      "guides": 0.8895948436247378,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "elongated",
+    "method": "pairwise_euclidean",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 188,
+    "simulation_time_s": 18.8,
+    "replan_count": 0,
+    "deadlock_events": [],
+    "planning_margin_connections": [],
+    "initial_assignment_path_length_m": 144.06206923902172,
+    "executed_travel_m": 144.0572654268753,
+    "previous_executed_travel_m": 144.0572654268753,
+    "max_tracking_error_m": 0.0035235374761236845,
+    "minimum_net_clearances_m": {
+      "crowd": 0.7489986199187697,
+      "guides": 0.8895948436247378,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "tight_u",
+    "method": "equal_arc",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 181,
+    "simulation_time_s": 18.1,
+    "replan_count": 0,
+    "deadlock_events": [],
+    "planning_margin_connections": [],
+    "initial_assignment_path_length_m": 164.6328788046652,
+    "executed_travel_m": 164.625593643544,
+    "previous_executed_travel_m": 164.625593643544,
+    "max_tracking_error_m": 0.0036267859900906262,
+    "minimum_net_clearances_m": {
+      "crowd": 0.7489033913319392,
+      "guides": 0.6241646468079176,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "tight_u",
+    "method": "projected_mass",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 181,
+    "simulation_time_s": 18.1,
+    "replan_count": 0,
+    "deadlock_events": [],
+    "planning_margin_connections": [],
+    "initial_assignment_path_length_m": 164.63394862566506,
+    "executed_travel_m": 164.62666411996602,
+    "previous_executed_travel_m": 164.62666411996602,
+    "max_tracking_error_m": 0.0036229120347465254,
+    "minimum_net_clearances_m": {
+      "crowd": 0.7489039034443177,
+      "guides": 0.6232337683922677,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  },
+  {
+    "scene": "tight_u",
+    "method": "pairwise_euclidean",
+    "termination_status": "SUCCESS",
+    "success": true,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": true,
+      "curve_ok": true,
+      "gap_ok": true,
+      "coverage_ok": true
+    },
+    "offline_match": true,
+    "offline_success": true,
+    "steps": 181,
+    "simulation_time_s": 18.1,
+    "replan_count": 0,
+    "deadlock_events": [],
+    "planning_margin_connections": [],
+    "initial_assignment_path_length_m": 164.63394862566506,
+    "executed_travel_m": 164.62666411996602,
+    "previous_executed_travel_m": 164.62666411996602,
+    "max_tracking_error_m": 0.0036229120347465254,
+    "minimum_net_clearances_m": {
+      "crowd": 0.7489039034443177,
+      "guides": 0.6232337683922677,
+      "walls": 0.44999999999999996
+    },
+    "target_max_abs_delta_m": 0.0,
+    "initial_max_abs_delta_m": 0.0
+  }
+]

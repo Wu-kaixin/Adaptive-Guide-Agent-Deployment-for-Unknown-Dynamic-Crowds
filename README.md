@@ -94,6 +94,16 @@ python visualization.py --result runs/pilot/hotspot/square_circle_medium_hotspot
 
 Step 1 研究笔记在 `notebooks/step1_static_deployment.ipynb`。算法仍在 `src/udc/`，笔记只调用已经保存的结果。
 
+给定曲线诊断使用 seed 15–19，比较高曲率胶囊、浅凹和深槽上的弧间隙与欧氏间距。它不估计未知边界。随后的成对约束诊断和场景闭环也是开发诊断，不替换正式种子结果。
+
+```powershell
+.\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --output runs/step1_general_curve --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --output runs/step1_general_curve --execute-selected --workers 1
+.\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --source runs/step1_general_curve --output runs/step1_adhesion_repair --rerun-adhesion
+.\.venv\Scripts\python.exe -m udc.experiments.curve_constraints --spec experiments/step1_curve_constraints.yaml --output runs/step1_curve_constraints --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.scene_closure --spec experiments/step1_scene_closure.yaml --output runs/step1_scene_closure
+```
+
 任务完成、预设失败语义通过、实际 SUCCESS 分开统计；初态无效、资源不足和超时都保留。规划搜索耗尽记为“未找到可行方案”；只有数量下界或间距上界被违反时才给出不可行证书。统计包含成功率 Wilson 95% 区间与成功任务部署时间均值／中位数，不用确定性重复制造独立样本。规划目标指标与轨迹指标分开报告。
 
 ## 输出与回放

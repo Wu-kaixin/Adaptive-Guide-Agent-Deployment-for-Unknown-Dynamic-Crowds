@@ -151,21 +151,33 @@ def infeasibility_certificate(bounds, count):
 
 
 def plan_coverage(boundary, people, demand, count, bandwidth, method='average_cvt',
-                  phase=0., samples=2048, max_iterations=300):
-    """Plan sites; each fixed-N history belongs to one deterministic attempt."""
+                  phase=0., samples=2048, max_iterations=300, density_override=None):
+    """Plan sites; each fixed-N history belongs to one deterministic attempt.
+
+    ``density_override`` replaces the Gaussian curve density for a diagnostic
+    call. Equal Arc still uses a constant density. The default ``None`` keeps
+    the original demand path, including its checks and the order of operations.
+    """
     if count < 3:
         raise ValueError('At least three targets are required')
-    if not np.isfinite(bandwidth) or bandwidth <= 0:
-        raise ValueError('Demand bandwidth must be positive')
-    demand = np.asarray(demand, dtype=float)
-    if demand.shape != (len(people),) or not np.isfinite(demand).all() or np.any(demand <= 0):
-        raise ValueError('Demand must be finite, positive and match the people')
     if method not in BASELINE_METHODS:
         raise ValueError(f'Unknown planning method: {method}')
     points = boundary.deployment
-    density = np.ones(len(points)) if method == 'equal_arc' else _density(
-        points, np.asarray(people), demand, bandwidth,
-        'average_cvt' if method == 'average_cvt' else 'mass_cvt')
+    if density_override is None:
+        if not np.isfinite(bandwidth) or bandwidth <= 0:
+            raise ValueError('Demand bandwidth must be positive')
+        demand = np.asarray(demand, dtype=float)
+        if demand.shape != (len(people),) or not np.isfinite(demand).all() or np.any(demand <= 0):
+            raise ValueError('Demand must be finite, positive and match the people')
+        density = np.ones(len(points)) if method == 'equal_arc' else _density(
+            points, np.asarray(people), demand, bandwidth,
+            'average_cvt' if method == 'average_cvt' else 'mass_cvt')
+    else:
+        density = np.asarray(density_override, dtype=float)
+        if density.shape != (len(points),) or not np.isfinite(density).all() or np.any(density <= 0):
+            raise ValueError('DENSITY_INVALID: override must be finite and positive on the curve')
+        if method == 'equal_arc':
+            density = np.ones(len(points))
     quadrature, mass, length = quadrature_mass(boundary, density, samples)
     sites = (np.arange(count)+phase)*length/count % length
 

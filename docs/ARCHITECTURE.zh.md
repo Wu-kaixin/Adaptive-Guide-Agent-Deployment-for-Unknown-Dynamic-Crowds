@@ -6,6 +6,10 @@ Step 1：单一静态人群、已知封闭场地、全局观测、无限通信�
 人群初始化区域由仿真器持有。控制器从人员位置、半径和需求权重建立保守包络。
 当前凸包会填平凹陷，不能据此声称准确重建非凸边界。需求权重还不是经验证的行为风险。
 
+给定曲线是另一条输入，只供几何诊断。它从 `prepare_prescribed` 进入，并标明 `prescribed_diagnostic`。
+普通 `prepare` 仍只调用 `estimate_boundary`。诊断曲线没有人员时，只评价曲线和目标几何；
+人员、墙和路径保持未评价，不记成零违反。常数曲线密度也不等于每人权重为 1 的 Gaussian 映射。
+
 ## 数据流
 
 ```mermaid
@@ -32,7 +36,7 @@ PedPy 负责人群密度等分析，专用 evaluator 负责 Guide 的覆盖、�
 | 已知场地 | `src/udc/scene.py` | 场地尺寸 → 方形／矩形与墙边界 |
 | 人群源 | `src/udc/crowd/sources.py` | JuPedSim 放置／网格／SQLite 首帧 → 冻结人员位置 |
 | 环境与感知 | `src/udc/environment.py`, `interfaces.py` | 仿真私有数据 → 行人 ID、位置、半径、demand、零速度、时间；`demand_region` 只在初始化时冻结；控制器仍只收 `Observation` |
-| 边界 | `src/udc/boundary/` | 人员圆盘 → 凸包、外偏移曲线、弧长 |
+| 边界 | `src/udc/boundary/` | 人员圆盘 → 凸包、外偏移曲线、弧长；`estimate_disk_union` 是标明参数的圆盘并集，仍只读位置和半径；诊断用的给定曲线在 `prescribed.py`，不进入普通估计 |
 | 部署 | `src/udc/deployment/` | 曲线、权重、数量 → Equal Arc、Average CVT、Mass CVT、DistMesh-inspired；`projected_mass` 与 RA-ABDC 共用同一投影规划 |
 | 路径与指派 | `src/udc/navigation/` | 初态、目标、障碍 → 可见图路径与可达匹配 |
 | 安全 | `src/udc/safety/` | 当前状态、速度 → 过滤速度与整段距离诊断 |
@@ -70,8 +74,8 @@ NPZ 禁用 pickle；人群行索引是冻结快照中的稳定人员身份，SQL
 `Perception` 在 Step 1 提供稳定行人 ID、冻结位置和零速度。控制器消费的仍是 `Observation(positions, radii, demand)`。
 `ResourceAllocator` 与 `LocalPolicy` 没有实现，Step 1 运行不会调用它们。
 公平比较因子表现为六种方法、4860 个任务，尚未整表运行。投影消融（360 任务）已跑完，只用于机制诊断。
-下一步仍是把 Crowd-Management 的 alpha／radial／bootstrap 接到边界接口。
-本次未迁入其双环、未闭合 safe-geodesic、简化 gather 模型和静态多群实验。
+`estimate_disk_union` 是一条标明闭运算半径和外偏移的非凸估计，只读人员位置和半径。它不替换凸包，也不是 alpha、radial 或 bootstrap 的比较。
+本次未迁入 Crowd-Management 的双环、未闭合 safe-geodesic、简化 gather 模型和静态多群实验。
 Step 2 再加入动态群体 ID、分裂／合并、跨群分配和 crowd–guide 响应；Step 3 才限制感知与通信。
 Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
 `projected_mass` 是固定浓度 1 的间隙投影。RA-ABDC 在此之上才减半浓度。本轮凸曲线上两者目标相同。demand 仍不是经验证风险。

@@ -1,0 +1,301 @@
+{
+  "root": "runs\\step1_curve_constraints",
+  "files": 59,
+  "entries": [
+    {
+      "path": "constant_density/deep_notch__narrow__margin__seed_15__equal_arc.json",
+      "bytes": 250744,
+      "sha256": "2d89cf2c81db43df14c6f9ccdb033a1a336ab26d1c3fe0c37055b98f2d845ed0"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 441082,
+      "sha256": "1acc0c6dc43c5fcf8cd45882e62079155b7c5f5670c91f60dc5b0117f07d3b25"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__margin__seed_15__projected_mass.json",
+      "bytes": 250763,
+      "sha256": "d4143003e176aaf101b16627d159c181030d8ada9910e1cb4d24863bf55b94a5"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__margin__seed_15__projected_mass_phase.json",
+      "bytes": 376928,
+      "sha256": "7f94ac830d10a7fd823654db20570d257f35f1279bbc36c4d0cec2a96a355123"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__near__seed_18__equal_arc.json",
+      "bytes": 95173,
+      "sha256": "8f3c739f989c94f97600ae206d722f29093e33a545ca745f1ec24f9b103763a8"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__near__seed_18__pairwise_euclidean.json",
+      "bytes": 168257,
+      "sha256": "809623da68cf2ae59196578860d190f326c51d2d6ae62001d321ed53a77030e8"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__near__seed_18__projected_mass.json",
+      "bytes": 95197,
+      "sha256": "3e9ad6e45cbfcf63949edca0d03eb1e2ae768c6a0ac81985bf4f997018d91b87"
+    },
+    {
+      "path": "constant_density/deep_notch__narrow__near__seed_18__projected_mass_phase.json",
+      "bytes": 144803,
+      "sha256": "5716933dc4594225a8a8f2170b098ea4deb2507d73909cc2d2075e253dabdfd7"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__margin__seed_15__equal_arc.json",
+      "bytes": 65987,
+      "sha256": "8703404922bbd37d2e0f83d3fe35c493e428cfc073b0b5b542f821dc0c878c5e"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 441300,
+      "sha256": "2faeb0d35f2f19654c375dafbe8fcecc0458213bb44d1f7504a3d4be7b88fdd2"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__margin__seed_15__projected_mass.json",
+      "bytes": 65990,
+      "sha256": "76ddbdf60d1b42e2316eb930a6568de78b2eb294499dd498ebf79a230b5ebaf2"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__margin__seed_15__projected_mass_phase.json",
+      "bytes": 378790,
+      "sha256": "a2203f33f63a1d1779fdb1a3ac1bfae7b9f4235493a8edab68c00a03b8b2da13"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__near__seed_15__equal_arc.json",
+      "bytes": 26097,
+      "sha256": "05d669587534251abbe2cca5f89e4a9cc282953623d1e1e029e23ca39e05dfee"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__near__seed_15__pairwise_euclidean.json",
+      "bytes": 168340,
+      "sha256": "a7125abad3864aeff72fa7ca4e75e568bf60f7eb6494e56d384b4441e1740de4"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__near__seed_15__projected_mass.json",
+      "bytes": 26105,
+      "sha256": "7474ec1a9f8d6d774f60765a1087b560cb5e4774d300ca355711074903adf420"
+    },
+    {
+      "path": "constant_density/deep_notch__wide__near__seed_15__projected_mass_phase.json",
+      "bytes": 144755,
+      "sha256": "de488bdcc96d5cf98965c2ed3fc4ec0203c1e8e46fc0a9cc440c66ee4bf29a40"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__margin__seed_15__equal_arc.json",
+      "bytes": 66063,
+      "sha256": "90ed2aacbfec1a13ff88b7b4550eb988ccd8c8043992009097083864e51b8137"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 441723,
+      "sha256": "dfe94f6da42bb84f53da2cb5cfb67cd12d7fb9dc75c2ef764d5d79df878f967f"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__margin__seed_15__projected_mass.json",
+      "bytes": 66094,
+      "sha256": "590e07b69e987afc29a714997cf8724466245924d197ad885f841c5badd6cd66"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__margin__seed_15__projected_mass_phase.json",
+      "bytes": 379243,
+      "sha256": "b3de20198977399505b295b7aff63922e68f4ebbbf2f00b98a10e579bd5a9aa3"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__near__seed_15__equal_arc.json",
+      "bytes": 26121,
+      "sha256": "e8d334d1941ca4d335188e6cb5285785344051e1a3a1f1096e39c7b6c74e048e"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__near__seed_15__pairwise_euclidean.json",
+      "bytes": 168485,
+      "sha256": "59bf97b17f7ad9722d7ee115e62737ab634f09fee0f7d0ebffd0d140d7b197c4"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__near__seed_15__projected_mass.json",
+      "bytes": 26181,
+      "sha256": "05dc19af9911bd6cd12823e2871a30a20f1980a85bdbbf15269e2722d4babe89"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__mild__near__seed_15__projected_mass_phase.json",
+      "bytes": 144896,
+      "sha256": "00e04e5fc0eb21e9766ea017a66a500d36103b64f8ada19dd70490337c424645"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__margin__seed_15__equal_arc.json",
+      "bytes": 66073,
+      "sha256": "b295058edc3eeb397d4b7fa779558561ad7660c1a1910ec67286e26aec6bcf01"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 441716,
+      "sha256": "f6bf163de168d45d0d837deb0f9a93ec539fd09841970a8802942a66a6b89caf"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__margin__seed_15__projected_mass.json",
+      "bytes": 66084,
+      "sha256": "5aaa23cb9f2ca0155143ca1900da69820a6cfc13c735389b0a57858e978db8cf"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__margin__seed_15__projected_mass_phase.json",
+      "bytes": 379175,
+      "sha256": "e151387a5fe380148f9a4eb1f611ebe89f975a94ae9c54882b79528f66dc7fd5"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__near__seed_15__equal_arc.json",
+      "bytes": 26145,
+      "sha256": "ddcb1ec9ae3637d9803122e265fb5d02cab495a677f2ef44a697a9eecae63af9"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__near__seed_15__pairwise_euclidean.json",
+      "bytes": 168484,
+      "sha256": "994518c820b52cca25f1d8667a63895a4a9711c2f6c89ead5a8d687ac5bea17e"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__near__seed_15__projected_mass.json",
+      "bytes": 26172,
+      "sha256": "368cb758ad1fd4fc2403aae1bc83c6d99670d9354dfa0ca03d27996ac0cc1226"
+    },
+    {
+      "path": "constant_density/high_curvature_convex__strong__near__seed_15__projected_mass_phase.json",
+      "bytes": 144856,
+      "sha256": "5d20ea5ed099e54ec9ee0dbce206c73e151afdb208d513a661a108a991c96116"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__margin__seed_15__equal_arc.json",
+      "bytes": 66027,
+      "sha256": "073d94a2acef9b9d71c4543f27a627acaca39a7b75a566d9d0099f6fa42bf1e1"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 441611,
+      "sha256": "1fa96da24abd850a72a83813bcac01abd5e2f3d2377a622d2eeb55556bd0286f"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__margin__seed_15__projected_mass.json",
+      "bytes": 66042,
+      "sha256": "55d8b0e4ea57a59914accf73170dc7ac443ecbfe33f049d449af13e0095c85b2"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__margin__seed_15__projected_mass_phase.json",
+      "bytes": 379093,
+      "sha256": "4c8fd151d678ed8b4f44da1902f4c5bd3f658a30bb71593d1eb5f435c71de563"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__near__seed_15__equal_arc.json",
+      "bytes": 26098,
+      "sha256": "f478250b90b7d9bd3a53053a2b1216d66fa86dacb268dbf2f4bb7168f931ab23"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__near__seed_15__pairwise_euclidean.json",
+      "bytes": 168411,
+      "sha256": "d695e93788141118e501c922788f84a0c388cad56a727222367d619d216e2f12"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__near__seed_15__projected_mass.json",
+      "bytes": 26142,
+      "sha256": "ae7a2607c9a0fb42dff8ffed42b027623ff716ae29767b2667190df120d893ce"
+    },
+    {
+      "path": "constant_density/shallow_concave__mild__near__seed_15__projected_mass_phase.json",
+      "bytes": 144800,
+      "sha256": "46f7f2b25e7a3bdb59b2af8515e9e4ceffa40ce089bb722556a3edc1b1aee68c"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__margin__seed_15__equal_arc.json",
+      "bytes": 66013,
+      "sha256": "740d615c874a0c0a089ccbea9491e8bd4382452f16c41f9a31a944c814430173"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 441556,
+      "sha256": "49dd867d4d877b62c0bd8ec9d3495201323ce906c54c400014e70cbab476c7d9"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__margin__seed_15__projected_mass.json",
+      "bytes": 66009,
+      "sha256": "deda0f6c8bdfd3e76d9e90bab5c01823db29a723fb1856616737cfa1f7630010"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__margin__seed_15__projected_mass_phase.json",
+      "bytes": 379082,
+      "sha256": "11f48ec73fdba65fce544932604a60e6557b52b4eb2c88f40ec6ea516953fde2"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__near__seed_15__equal_arc.json",
+      "bytes": 26081,
+      "sha256": "72efa86c112d585a3010d2dc951ceac53e6e08f3cbd3c3d7b8f28bff63bdd333"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__near__seed_15__pairwise_euclidean.json",
+      "bytes": 168333,
+      "sha256": "fe7cbcf5d280bec2d08e4187d954ccc0fa7366e147b24ca0f9761dd338c735ff"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__near__seed_15__projected_mass.json",
+      "bytes": 26063,
+      "sha256": "00ec70a511ca0479406dba29dcbcae576a67688e783ac23d7b804f0a7f58aa23"
+    },
+    {
+      "path": "constant_density/shallow_concave__strong__near__seed_15__projected_mass_phase.json",
+      "bytes": 144566,
+      "sha256": "21b2f5b8c202b603149121844ccc67a1e0c3f36e0ce527cbe76f096ba5fb5f3f"
+    },
+    {
+      "path": "constant_density/summary.json",
+      "bytes": 72016,
+      "sha256": "9ed9db5c7b01777427f780a65b32c1da0784eab9c11f8293d55ad4ec7d3fff89"
+    },
+    {
+      "path": "demand_supplement/deep_notch__narrow__margin__seed_15__equal_arc.json",
+      "bytes": 250756,
+      "sha256": "56f44ead67460b212526b22d20ac0d39b1c1c2a5ce24101f983e33f677127fea"
+    },
+    {
+      "path": "demand_supplement/deep_notch__narrow__margin__seed_15__pairwise_euclidean.json",
+      "bytes": 440793,
+      "sha256": "21a2269029297581becf2bc189dffcf81dcf67dfa512c777ed8d1d83f064dd87"
+    },
+    {
+      "path": "demand_supplement/deep_notch__narrow__margin__seed_15__projected_mass.json",
+      "bytes": 250782,
+      "sha256": "167ece7a39acd0a227a719e465b626dd950b5701be5ebfe249cb452a9c7b4815"
+    },
+    {
+      "path": "demand_supplement/deep_notch__narrow__people.json",
+      "bytes": 613,
+      "sha256": "b8e576bfd95ac784b5f7bb5553c6bfada07274e972020333d64f39c388d1679c"
+    },
+    {
+      "path": "demand_supplement/shallow_concave__strong__near__seed_15__equal_arc.json",
+      "bytes": 26103,
+      "sha256": "7bbd96fd92f2c5f22060ee15b3bfb6574f73db28c319b31894ff2f3df2cbaf5a"
+    },
+    {
+      "path": "demand_supplement/shallow_concave__strong__near__seed_15__pairwise_euclidean.json",
+      "bytes": 168038,
+      "sha256": "f00563ed2edd0a71c4d38baedeff4f59c203d14d2449e4ff4f6e49c277c95650"
+    },
+    {
+      "path": "demand_supplement/shallow_concave__strong__near__seed_15__projected_mass.json",
+      "bytes": 26089,
+      "sha256": "c5d1cf13a78d9fb87b8ae1ffeb0bc8cca555c5ed30945af1580d9b1ce7316201"
+    },
+    {
+      "path": "demand_supplement/shallow_concave__strong__people.json",
+      "bytes": 615,
+      "sha256": "e7ec73f5563a2df91bd084535b3c232bd397d4813e06f20c4debaadd666b839e"
+    },
+    {
+      "path": "demand_supplement/summary.json",
+      "bytes": 9408,
+      "sha256": "2fa1d123e04475916e13e218fdb5f4eace09e19cd466ef1f0e0f436aaf5f08ef"
+    },
+    {
+      "path": "selection.json",
+      "bytes": 3433,
+      "sha256": "07b1b4c0d9aa56af13439b98add1dff2bcde6215c10cd376b35d596f8a59411f"
+    }
+  ]
+}

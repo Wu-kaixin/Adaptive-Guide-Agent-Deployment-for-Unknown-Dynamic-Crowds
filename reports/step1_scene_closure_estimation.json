@@ -1,0 +1,311 @@
+[
+  {
+    "name": "compact",
+    "people": {
+      "count": 9,
+      "radius_m": 0.2,
+      "min_center_distance_m": 0.7999999999999989,
+      "bodies_overlap": false,
+      "meets_stated_separation": true,
+      "inside_room": true
+    },
+    "estimates": {
+      "convex_offset": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 159,
+        "length_m": 15.821562673915249,
+        "min_segment_m": 0.09949405884747224,
+        "max_segment_m": 0.09952107529876386,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 19.22110049996698,
+        "convex_hull_area_m2": 19.221100499966976,
+        "convexity_defect": -1.8483404104809736e-16,
+        "max_curvature_per_m": 0.7257515278643135,
+        "min_curvature_per_m": 0.0,
+        "concave_sample_fraction": 0.0,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.5930988426625072,
+        "self_approach_pair": [
+          19,
+          25
+        ],
+        "self_approach_beyond_2_00_m": 1.9247220416862718,
+        "self_approach_beyond_2_00_m_pair": [
+          136,
+          157
+        ]
+      },
+      "disk_union_primary": {
+        "valid": false,
+        "error": "BOUNDARY_INVALID: disk union is MultiPolygon at this closing radius",
+        "evaluated": true,
+        "offset_m": 1.3
+      },
+      "disk_union_safety_floor": {
+        "valid": false,
+        "error": "BOUNDARY_INVALID: disk union is MultiPolygon at this closing radius",
+        "evaluated": true,
+        "offset_m": 0.55
+      }
+    }
+  },
+  {
+    "name": "elongated",
+    "people": {
+      "count": 16,
+      "radius_m": 0.2,
+      "min_center_distance_m": 0.6999999999999993,
+      "bodies_overlap": false,
+      "meets_stated_separation": true,
+      "inside_room": true
+    },
+    "estimates": {
+      "convex_offset": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 207,
+        "length_m": 20.621563895767977,
+        "min_segment_m": 0.09960507998636339,
+        "max_segment_m": 0.09963213030194851,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 27.29109540347322,
+        "convex_hull_area_m2": 27.29109540347322,
+        "convexity_defect": 0.0,
+        "max_curvature_per_m": 0.7257827980057994,
+        "min_curvature_per_m": 0.0,
+        "concave_sample_fraction": 0.0,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.5937523611866612,
+        "self_approach_pair": [
+          187,
+          193
+        ],
+        "self_approach_beyond_2_00_m": 1.9265007942880061,
+        "self_approach_beyond_2_00_m_pair": [
+          154,
+          175
+        ]
+      },
+      "disk_union_primary": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 208,
+        "length_m": 20.707247554316822,
+        "min_segment_m": 0.09768817567655308,
+        "max_segment_m": 0.09963831392290415,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 27.132337354817555,
+        "convex_hull_area_m2": 27.286140028343283,
+        "convexity_defect": 0.005636659247734083,
+        "max_curvature_per_m": 0.7257904709983114,
+        "min_curvature_per_m": -4.1144064571400785,
+        "concave_sample_fraction": 0.11538461538461539,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.5914015225830553,
+        "self_approach_pair": [
+          153,
+          159
+        ],
+        "self_approach_beyond_2_00_m": 1.9269902572209563,
+        "self_approach_beyond_2_00_m_pair": [
+          76,
+          97
+        ],
+        "offset_m": 1.3
+      },
+      "disk_union_safety_floor": {
+        "valid": false,
+        "error": "OFFSET_INVALID: deployment curve is too close to people",
+        "evaluated": true,
+        "offset_m": 0.55
+      }
+    }
+  },
+  {
+    "name": "wide_u",
+    "people": {
+      "count": 26,
+      "radius_m": 0.2,
+      "min_center_distance_m": 0.5,
+      "bodies_overlap": false,
+      "meets_stated_separation": true,
+      "inside_room": true
+    },
+    "estimates": {
+      "convex_offset": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 281,
+        "length_m": 28.02155965641666,
+        "min_segment_m": 0.09970193039592178,
+        "max_segment_m": 0.09972900701958665,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 56.52108305670735,
+        "convex_hull_area_m2": 56.52108305670736,
+        "convexity_defect": 2.5142573260573074e-16,
+        "max_curvature_per_m": 0.7258084416901873,
+        "min_curvature_per_m": 0.0,
+        "concave_sample_fraction": 0.0,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.5943224438659838,
+        "self_approach_pair": [
+          122,
+          128
+        ],
+        "self_approach_beyond_2_00_m": 1.9280837463774632,
+        "self_approach_beyond_2_00_m_pair": [
+          258,
+          279
+        ]
+      },
+      "disk_union_primary": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 357,
+        "length_m": 35.61359815876489,
+        "min_segment_m": 0.08167165335154197,
+        "max_segment_m": 0.09994017612422956,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 47.009930333367286,
+        "convex_hull_area_m2": 56.51341500414903,
+        "convexity_defect": 0.16816334086489076,
+        "max_curvature_per_m": 0.7258644465412423,
+        "min_curvature_per_m": -17.00126353518125,
+        "concave_sample_fraction": 0.18207282913165265,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.42098169052318085,
+        "self_approach_pair": [
+          236,
+          242
+        ],
+        "self_approach_beyond_2_00_m": 1.4848332248706426,
+        "self_approach_beyond_2_00_m_pair": [
+          209,
+          230
+        ],
+        "offset_m": 1.3
+      },
+      "disk_union_safety_floor": {
+        "valid": false,
+        "error": "OFFSET_INVALID: deployment curve is too close to people",
+        "evaluated": true,
+        "offset_m": 0.55
+      }
+    }
+  },
+  {
+    "name": "tight_u",
+    "people": {
+      "count": 22,
+      "radius_m": 0.2,
+      "min_center_distance_m": 0.40000000000000213,
+      "bodies_overlap": false,
+      "meets_stated_separation": true,
+      "inside_room": true
+    },
+    "estimates": {
+      "convex_offset": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 235,
+        "length_m": 23.42155866355779,
+        "min_segment_m": 0.09964890153231361,
+        "max_segment_m": 0.09967596158512393,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 39.50108565624191,
+        "convex_hull_area_m2": 39.50108565624191,
+        "convexity_defect": 0.0,
+        "max_curvature_per_m": 0.7257945483236103,
+        "min_curvature_per_m": 0.0,
+        "concave_sample_fraction": 0.0,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.5940103275422388,
+        "self_approach_pair": [
+          29,
+          35
+        ],
+        "self_approach_beyond_2_00_m": 1.9272256016168732,
+        "self_approach_beyond_2_00_m_pair": [
+          212,
+          233
+        ]
+      },
+      "disk_union_primary": {
+        "valid": true,
+        "invalid_reasons": [],
+        "sample_count": 241,
+        "length_m": 24.00888668181308,
+        "min_segment_m": 0.09834641216102812,
+        "max_segment_m": 0.09970539992842964,
+        "duplicate_segments": 0,
+        "closed_by_ring": true,
+        "simple": true,
+        "polygon_valid": true,
+        "components": 1,
+        "holes": 0,
+        "orientation": "ccw",
+        "area_m2": 38.83278690673053,
+        "convex_hull_area_m2": 39.495438354715844,
+        "convexity_defect": 0.016777923618264877,
+        "max_curvature_per_m": 0.7258081609221,
+        "min_curvature_per_m": -20.33699052715512,
+        "concave_sample_fraction": 0.14937759336099585,
+        "discretization": null,
+        "self_approach_beyond_0_50_m": 0.3481202114844264,
+        "self_approach_pair": [
+          157,
+          163
+        ],
+        "self_approach_beyond_2_00_m": 1.570994656408245,
+        "self_approach_beyond_2_00_m_pair": [
+          150,
+          171
+        ],
+        "offset_m": 1.3
+      },
+      "disk_union_safety_floor": {
+        "valid": false,
+        "error": "OFFSET_INVALID: deployment curve is too close to people",
+        "evaluated": true,
+        "offset_m": 0.55
+      }
+    }
+  }
+]

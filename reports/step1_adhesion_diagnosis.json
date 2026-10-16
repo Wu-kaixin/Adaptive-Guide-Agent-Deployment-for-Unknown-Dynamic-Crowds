@@ -1,0 +1,56 @@
+{
+  "source": "runs\\step1_general_curve",
+  "cases": [
+    {
+      "method": "equal_arc",
+      "plan_ok": false,
+      "coverage_ok": true,
+      "curve_ok": true,
+      "arrival_ok": true,
+      "saved_target_curve_distance_max_m": 4.039896656928366e-07,
+      "sample_curve_distance_max_m": 0.0,
+      "arc_reinterpolation_curve_distance_max_m": 1.7412449465859658e-15,
+      "json_xy_rounded_to_6_decimals": true,
+      "tracking_max_m": 0.0037142989230647167,
+      "final_guide_curve_distance_max_m": 0.0036499645826526305,
+      "position_tolerance_m": 0.03,
+      "curve_tolerance_m": 0.04,
+      "plan_curve_limit_m": 1e-07
+    },
+    {
+      "method": "mass_cvt",
+      "plan_ok": false,
+      "coverage_ok": true,
+      "curve_ok": true,
+      "arrival_ok": true,
+      "saved_target_curve_distance_max_m": 1.7171267068753142e-07,
+      "sample_curve_distance_max_m": 0.0,
+      "arc_reinterpolation_curve_distance_max_m": 1.40865567801677e-15,
+      "json_xy_rounded_to_6_decimals": true,
+      "tracking_max_m": 0.0037109854620025404,
+      "final_guide_curve_distance_max_m": 0.0036466791279618697,
+      "position_tolerance_m": 0.03,
+      "curve_tolerance_m": 0.04,
+      "plan_curve_limit_m": 1e-07
+    },
+    {
+      "method": "projected_mass",
+      "plan_ok": false,
+      "coverage_ok": true,
+      "curve_ok": true,
+      "arrival_ok": true,
+      "saved_target_curve_distance_max_m": 1.7171267068753142e-07,
+      "sample_curve_distance_max_m": 0.0,
+      "arc_reinterpolation_curve_distance_max_m": 1.40865567801677e-15,
+      "json_xy_rounded_to_6_decimals": true,
+      "tracking_max_m": 0.0037109854620025404,
+      "final_guide_curve_distance_max_m": 0.0036466791279618697,
+      "position_tolerance_m": 0.03,
+      "curve_tolerance_m": 0.04,
+      "plan_curve_limit_m": 1e-07
+    }
+  ],
+  "cause": "cartesian_rounding",
+  "threshold_unchanged_m": 1e-07,
+  "original_results_modified": false
+}

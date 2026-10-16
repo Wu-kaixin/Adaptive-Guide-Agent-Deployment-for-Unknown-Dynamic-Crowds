@@ -21,6 +21,8 @@ class ABCGController:
         self._observation=None
         # Stage diagnostics. They never change a termination status.
         self.feasibility=None; self.plan_found=False; self.assignment_found=False
+        self.boundary_source=None
+        self.prescribed_plan_installed=False
 
     def _plan(self, observation, n, phase, planned_limit):
         c=self.config
@@ -46,8 +48,63 @@ class ABCGController:
     def prepare(self, observation, guides):
         c=self.config
         self._observation=observation
+        self.boundary_source='estimated_convex_offset'
+        self.prescribed_plan_installed=False
         self.boundary=estimate_boundary(observation.positions,c['offset'],c['sample_spacing'],self.room,
             self.safety.wall_distance,self.safety.crowd_distance,observation.radii)
+        self._search(observation, guides)
+
+    def prepare_prescribed(self, observation, guides, boundary, plan=None,
+                           boundary_source='prescribed_diagnostic'):
+        """Install a curve the caller already built.
+
+        ``prepare`` still estimates a convex offset and does not call this
+        method. ``prescribed_diagnostic`` is a given curve. ``estimated_disk_union``
+        is an observation-only estimate; it is not the generator's spawn polygon.
+        """
+        if boundary_source not in {'prescribed_diagnostic', 'estimated_disk_union'}:
+            raise ValueError(f'PLAN_INVALID: unknown boundary source {boundary_source}')
+        if boundary is None:
+            raise ValueError('PLAN_INVALID: a caller-supplied curve is required')
+        self._observation=observation
+        self.boundary=boundary
+        self.boundary_source=boundary_source
+        self.prescribed_plan_installed=plan is not None
+        if plan is None:
+            self._search(observation, guides)
+            return
+        self._install_supplied_plan(guides, plan)
+
+    def _install_supplied_plan(self, guides, plan):
+        c=self.config
+        planned_limit=c['max_gap_limit']-2*c['arc_tolerance']
+        if planned_limit <= 0:
+            raise ValueError('PLAN_INVALID: max_gap_limit - 2*arc_tolerance must be positive')
+        bounds=feasibility_bounds(self.boundary.length,planned_limit,self.safety.guide_distance)
+        distances=np.linalg.norm(plan.positions[:,None]-plan.positions[None,:],axis=2)
+        np.fill_diagonal(distances,np.inf)
+        separation=float(distances.min())
+        accepted=plan.max_gap <= planned_limit+1e-9 and separation >= self.safety.guide_distance
+        certificate=infeasibility_certificate(bounds,len(plan.positions))
+        self.feasibility={**bounds,'available_guides':len(guides),'requested_count':len(plan.positions),
+            'necessary_condition_met':certificate is None,'infeasibility_certificate':certificate}
+        self.attempts.append({'n':len(plan.positions),'phase':None,'max_gap':plan.max_gap,
+            'min_separation':separation,'accepted':accepted,'supplied_plan':True,
+            'boundary_source':self.boundary_source})
+        if not accepted:
+            raise ValueError('PLAN_SEARCH_EXHAUSTED: supplied diagnostic targets do not meet the arc and Euclidean checks')
+        if len(plan.positions) > len(guides):
+            raise ValueError(f'CAPACITY_SHORTFALL: supplied plan requires {len(plan.positions)}, have {len(guides)}')
+        self.plan=plan
+        self.plan_found=True
+        crowd=Polygon(self.boundary.crowd)
+        nav=navigate_and_assign(guides,plan.positions,self.room,self.safety.wall_distance,
+                                crowd,self.safety.wall_distance)
+        self._install_navigation(nav)
+        self.assignment_found=True
+
+    def _search(self, observation, guides):
+        c=self.config
         planned_limit=c['max_gap_limit']-2*c['arc_tolerance']
         if planned_limit <= 0: raise ValueError('PLAN_INVALID: max_gap_limit - 2*arc_tolerance must be positive')
         bounds=feasibility_bounds(self.boundary.length,planned_limit,self.safety.guide_distance)

@@ -104,12 +104,19 @@ def _saved_state(output):
 
 def experiment(config_path, output, seed=None, plots=True,
                protocol='adaptive_resource', fixed_n=None, resume=False,
-               method=None, execute=True):
+               method=None, execute=True, prescribed_boundary=None,
+               prescribed_plan=None, method_label=None,
+               boundary_source='prescribed_diagnostic'):
     """Run one task and always emit a structured result for expected failures.
 
     ``execute=False`` stops after a feasible plan is saved (``NOT_EXECUTED``).
     Resuming with ``execute=True`` replans deterministically and then tracks.
     A completed planning failure is not run again.
+
+    The default estimates the convex offset from the observation.
+    ``prescribed_boundary`` is used only when the caller supplies a curve.
+    ``method_label`` records which supplied plan was installed. It does not
+    select a different navigation or safety stack.
     """
     started = perf_counter()
     output = Path(output)
@@ -178,7 +185,13 @@ def experiment(config_path, output, seed=None, plots=True,
 
         failure_stage = 'planning'
         controller = ABCGController(control, safety, env.scene.size, protocol, fixed_n)
-        controller.prepare(observation, initial)
+        if prescribed_boundary is None:
+            controller.prepare(observation, initial)
+        else:
+            controller.prepare_prescribed(
+                observation, initial, prescribed_boundary, prescribed_plan,
+                boundary_source=boundary_source,
+            )
         if not execute:
             termination = 'NOT_EXECUTED'
             failure_stage = None
@@ -273,7 +286,7 @@ def experiment(config_path, output, seed=None, plots=True,
     motion_status = ('CONVERGED' if hold >= (config or {}).get('controller', {}).get('hold_steps', 1)
                      else 'TRACKING' if termination == 'TIMEOUT' else 'STOPPED')
     scene_name = env.scene.name if env is not None else None
-    method_name = config['controller']['method'] if config is not None else method
+    method_name = method_label or (config['controller']['method'] if config is not None else method)
     seed_value = config['simulation']['seed'] if config is not None else seed
     attempts = controller.attempts if controller is not None else []
     boundary = controller.boundary if controller is not None else None
@@ -302,6 +315,9 @@ def experiment(config_path, output, seed=None, plots=True,
         'plan_found': plan_found,
         'assignment_found': assignment_found,
         'demand_kind': None if config is None else demand_kind(config['crowd']),
+        'boundary_source': None if controller is None else controller.boundary_source,
+        'prescribed_plan_installed': (False if controller is None
+                                      else bool(controller.prescribed_plan_installed)),
         'demand_region': None if config is None else config['crowd'].get('demand_region'),
         'demand_clipped_count': None if env is None else env.demand_clipped,
         'hotspot_people': None if env is None else int(env.hotspot_mask.sum()),

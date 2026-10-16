@@ -1,6 +1,139 @@
 # 验证记录
 
-当前一节是种子 5000–5029 的正式验证。它与后面的新设备重跑、确认实验和旧设备记录分开，不能混成一个样本。
+当前一节是贴线交接、成对欧氏约束和有效人群场景。它不改写后面的正式种子结果，也不改写一般曲线诊断的原始失败记录。
+
+## 2026-10-16 成对间距与场景可实现性
+
+### 核实
+
+分支仍是 `Major-Research-Branches`，HEAD 为 `3b920bd`。正式备份 `backups/2026-10-16-formal-step1` 的 9740 个文件与 `reports/formal_step1_checksums.json` 一致。一般曲线备份 `backups/2026-10-16-general-curve` 的 951 个文件与 `reports/step1_general_curve_checksums.json` 一致。抽查正式圆形弱热点 seed 5000–5002 的目标到曲线距离约为 \(10^{-15}\) m。这些目录没有重跑，原始轨迹没有改。工作区在本轮开始时已有未提交的一般曲线修改，本轮在其上继续，没有改 `main`，没有推送。
+
+### 贴线失败的原因
+
+浅凹强强度、N=17、seed 15 的三次执行，原始状态仍是 `COVERAGE_NOT_MET`。独立复算把原因收窄到坐标交接，不是跟踪失败，也不是两条不同的曲线。
+
+评价曲线与重建曲线逐坐标一致。曲线采样点到 Shapely 边界的距离是 0。闭合接缝中点的距离是 0。全精度弧长插值的目标离曲线约 \(10^{-15}\) m，弧长往返误差低于 \(10^{-8}\) m。`trajectory.npz` 以 float64 保存。失败目标与 `geometry.json` 里保留六位小数的坐标加上平移完全一致。六位小数是 \(10^{-6}\) m。Equal Arc 的最大离线距离是 \(4.04\times10^{-7}\) m，Mass CVT 和 `projected_mass` 是 \(1.72\times10^{-7}\) m，都超过 \(10^{-7}\) m。用同一条弧坐标重新插值后，距离回到约 \(10^{-15}\) m。
+
+当时的实际跟踪最大误差是 0.00371 m，终端离线距离是 0.00365 m。`arrival_ok`、`curve_ok`、`coverage_ok`、路径和安全都已经通过。唯一失败的是 `plan_ok`，因为它检查的是被四舍五入后的目标，不是 Guide 的实际位置。\(10^{-7}\) m 阈值没有放宽，位置也没有被吸附到曲线上。
+
+修复是：执行时用弧坐标在评价曲线上重新插值，新的规划记录不再把执行坐标四舍五入到六位小数。受影响的三次用新代码写入 `runs/step1_adhesion_repair/`。三条都是 `SUCCESS`，离线复判一致，目标离线距离约 \(10^{-15}\) m，跟踪误差仍约为 0.0035–0.0037 m。原始 `runs/step1_general_curve/` 没有改。正式凸曲线结果不经过这份 JSON 交接，不受这个修复影响。
+
+### 48 个约束规划
+
+十二个单元在运行前写在 `experiments/step1_curve_constraints.yaml`：六条冻结曲线、near 与 margin 两档。除窄槽 near 使用 seed 18 外，其余都是 seed 15。seed 18 是原先 Equal Arc 和 `projected_mass` 欧氏失败的那条对齐。常数曲线密度。规划间隙上限 1.94 m，执行验收上限仍是 2.0 m。中心距 0.75 m。相位优化 6 个起点。成对优化 7 个起点：`projected_mass` 相位 0、Equal Arc 相位 0，以及五个正相位旋转。每个起点最多 40 次迭代、20 s。6 个进程，每进程 1 条数值线程。源码哈希 `35613526fcfeac04a48e9098b5813fbd609d13b368e891f3d6aafe11adbfea4d`，工作树为 dirty。
+
+| 路径 | 可行见证 | 未找到 |
+|---|---:|---:|
+| Equal Arc | 10 | 2 |
+| projected_mass | 10 | 2 |
+| 只调相位 | 11 | 1 |
+| 成对欧氏约束 | 12 | 0 |
+
+五次未找到都在窄槽，没有数量证书。N=28、seed 15：Equal Arc 和 `projected_mass` 的最近距离是 0.449 m，非相邻。只调相位最好到 0.721 m，仍未通过。成对约束找到距离恰好 0.750 m 的配置。常数密度代价从 0.10872 m² 增到 0.10898 m²。求解器停在迭代上限，`solver_success` 为假，独立的全部成对检查通过。N=17、seed 18：最近距离约 0.66 m。只调相位就达到 0.979 m。成对约束也通过，代价仍约为 0.29494 m²。其余十个单元四条路径都通过，成对约束相对 Equal Arc 的代价差在 \(10^{-5}\) m² 量级。
+
+48 个任务的求解尝试里，有 15 次求解器成功标志和独立验收不一致。没有把未找到写成不可行证书，也没有宣称全局最优。弧间隙下界仍然保留。
+
+补充的六个需求场任务使用曲线内六个冻结点，其中一个权重为 3，带宽 1.2 m。窄槽 N=28 上，Equal Arc 和 `projected_mass` 仍是 0.449 m；成对约束再次给出 0.750 m 的见证，需求代价 0.0951 m²，低于这两个不可行参照的约 0.109 m²。求解器超时，独立检查通过。浅凹上三条都可行，最近距离大于 1.5 m，欧氏约束没有贴住；成对优化的代价 0.240 m² 低于 `projected_mass` 的 0.295 m²，这是另一个局部解，不是距离约束的代价。
+
+Equal Arc 单任务中位耗时 0.36 s，`projected_mass` 0.36 s，只调相位 1.88 s，成对约束 71.5 s，后者最长 107 s。十二个成对任务的进程时间合计 688 s。
+
+### 这些曲线能否由有效人群产生
+
+1.6 m 内缩只出现在给定曲线的人员附着里。它不是安全定律。安全中心距是 Guide–Guide 与 Guide–人 0.75 m，Guide–墙 0.55 m。控制器的外偏移是 1.3 m。0.55 m 是 0.75 m 减去人员半径后的下界试算，采样后的曲线到人员中心不足 0.75 m，四条连通场景都因此无效。没有为了放人而减小这些距离。
+
+人员由冻结网格或 U 形排列生成，半径 0.20 m，中心距至少 0.40 m，位于 30 m 房间内。观测只有位置和半径。凸包估计会把凹陷填平。新增的圆盘并集先做半径 0.30 m 的闭运算，再外偏移。闭运算没有连上间距 0.80 m 的紧凑网格，结果是多个多边形，不称为一条边界。
+
+在 1.3 m 偏移下，细长排列、宽 U 和窄 U 的估计曲线有效。凸性亏量分别约为 0.0056、0.168 和 0.017；同一批人的凸包亏量约为 0。弧长相距超过 2 m 的曲线自接近距离分别是 1.93 m、1.48 m 和 1.57 m，都大于 0.75 m。三种方法的目标最近距离都不低于 1.37 m。0.45 m 窄槽没有在这些有效场景里再现。它仍是给定曲线上的算法限制。
+
+第一版圆盘并集把占据环按 0.10 m 重采样，弦把人员圆盘露出约 0.007 m，九次执行的 `geometry_ok` 因此失败。该结果留在 `runs/step1_scene_closure_chordal/`。修正后的占据环保留缓冲区顶点，并与原始圆盘取并，使验收用的人员圆盘被覆盖。下面的执行使用修正后的 `runs/step1_scene_closure/`，源码哈希 `8731cff0d9d6e6e6e998ba1ba55acd4499799bf616d747dd0a14dea96bd58b23`。这不是放宽安全距离。约束规划的哈希更早，因为圆盘并集的覆盖修正发生在那 48 个任务之后；那些任务不估计边界。
+
+### 九次执行
+
+选择规则事先写明：只用有效的圆盘并集曲线，先取 1.3 m 偏移，凸包曲线不执行。实际执行细长、宽 U、窄 U，各三种方法，共九次。N 为 `ceil(L/1.94)`，在方法运行前固定。规划未通过的不执行；这次九个规划都通过。
+
+细长和窄 U 的六次都是 `SUCCESS`，离线复判与在线一致。宽 U 的三次都是 `PATH_UNREACHABLE`。它们的几何、资源、规划、初始路径和安全验收通过，到达、贴线和间隙没有通过。跟踪误差约 3.4 m，仿真 238 步。独立评价认为初始指派有路径。终止来自执行中的路径重算：指定端点不在保守自由空间内。异常发生在死锁事件写入之前，所以事件表是空的，这不表示没有尝试重算，也不证明从初态不存在路径。
+
+### 性能
+
+详细计时用细长场景，不加 profiler：N=11，P=16，曲线采样 208。需求密度 0.7 ms，曲线报告 0.7 ms，Equal Arc 0.6 ms，全部成对检查 1.0 ms，指派与路径 49 ms，一段间隔检查 0.1 ms，安全过滤 0.4 ms，独立评价 7.3 ms，写文件 1.6 ms。另一次成对求解耗时 2.03 s，Python 内存峰值约 0.47 MB；随后的 cProfile 只覆盖成对检查，耗时 0.001 s，不进入上面的比较。
+
+因此当前规模的耗时集中在成对约束的 SLSQP，不在 CVT 或安全过滤。全部成对检查本身是 1 ms 量级。不能把一次 \(N^2\) 距离计算写成整个系统的复杂度。若以后扩大规模，应在 1.3 m 偏移后仍然有效的曲线上增加 N，并继续限制数值线程。不必先跑 2160 个任务，也不必把 0.45 m 的给定窄槽当作系统里的常见案例。
+
+### 判断
+
+弧间隙不能推出欧氏间距。只移动相位能修好窄槽 N=17 的那条对齐，修不好 N=28。成对约束在这两处都给出了可行见证，常数密度下的额外代价约为 0.00026 m²。求解失败和求解器的成功标志都不是不可行证明。
+
+0.45 m 窄槽在本轮的有效人群和 1.3 m 安全偏移下没有出现。下一轮应优先处理宽 U：目标几何可行，初始路径检查通过，但执行中的路径重算失败。不同时展开新的估计器比较、开发种子大表或多人群。
+
+输出在 `runs/step1_adhesion_repair/`、`runs/step1_curve_constraints/` 和 `runs/step1_scene_closure/`。备份在 `backups/2026-10-16-curve-constraints/`。摘要和校验在 `reports/step1_adhesion_*`、`reports/step1_curve_constraints_*` 和 `reports/step1_scene_closure_*`。
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --source runs/step1_general_curve --output runs/step1_adhesion_repair --rerun-adhesion
+.\.venv\Scripts\python.exe -m udc.experiments.curve_constraints --spec experiments/step1_curve_constraints.yaml --output runs/step1_curve_constraints --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.scene_closure --spec experiments/step1_scene_closure.yaml --output runs/step1_scene_closure
+```
+
+## 2026-10-16 一般曲线几何诊断
+
+### 正式成果核对
+
+分支仍是 `Major-Research-Branches`，HEAD 为 `3b920bd`，包含冻结提交 `f5b5d9c`。正式备份 `backups/2026-10-16-formal-step1` 的 9740 个文件与 `reports/formal_step1_checksums.json` 一致，没有缺失、没有哈希不符、没有多余文件。1620 个正式任务没有重跑，原始轨迹没有改。工作区在本轮开始时已有未提交的 Notebook 修改，本轮没有覆盖它，也没有改 `main`、没有推送。
+
+### 边界流程
+
+正常观测路径没有变：`estimate_boundary` 只用人员位置和半径做凸包，再外偏移、按弧长采样，并检查闭合、包围、墙距和人距。它不读生成多边形，也不读本轮的给定曲线。部署规划是周期弧长上的站点；数量界假设目标都在这一条闭合曲线上，弦长不超过对应弧长。导航把人体凸包再膨胀后做可见图，不要求部署曲线本身是凸的。给定曲线只从 `prepare_prescribed` 进入，普通 `prepare` 不会读到它。
+
+### 冻结输入
+
+三类曲线都缩放到周长 32 m，再按 0.05 m 弧长重采样。0.04 m 的外法向傅里叶扰动会让胶囊出现负曲率，所以没有使用。seed 15–19 只把参数起点旋转 0、0.05、0.10、0.15、0.20 周长，形状不变。这些 seed 不在开发比较 0–4、确认 5–14 和正式 5000–5029 里。
+
+| 曲线 | 两个强度 | 测量 |
+|---|---|---|
+| 高曲率凸胶囊 | 端帽半径 1.50 m、0.55 m | 宽度 3.00 m、1.10 m，都大于中心距 0.75 m |
+| 浅凹径向凹口 | 深度分数 0.22、0.34，角宽 0.40 rad | 简单闭合，凹口两侧远宽于 0.75 m |
+| 深槽 | 槽宽 1.20 m、0.45 m | 缩放后槽宽残差小于 10⁻¹² m |
+
+数量在运行前固定，不按方法成败修改。`H_p = 2.0 - 2×0.03 = 1.94` m。中心距 `d_min = 2×0.20 + 0.35 = 0.75` m，这是中心距离，不是净距。`near = ceil(L/1.94) = 17`，`margin = ceil(L/(0.75 π/2)) = 28`。间距上界 `floor(L/0.75) = 42`，28 没有越过它。重采样后的实际周长是 31.982–32.000 m，两档数量仍是 17 和 28。需求是曲线上的常数密度，不是“每人权重为 1”之后的 Gaussian 映射。
+
+30 条曲线全部简单、闭合、逆时针、无孔。30/30 有效。
+
+### 300 个规划任务
+
+Equal Arc、Mass CVT、`projected_mass`、Average CVT、DistMesh-inspired，共 300。规划源码哈希 `afbbad6352976c1d99b55b17041ad89056ba4ed8dbaefa66203b11cbd847b2fd`，当时工作树为 dirty。6 个进程，每个进程数值线程为 1。没有数量证书违反，没有曲线无效，没有完整部署 SUCCESS。
+
+| 结果 | 任务 |
+|---|---:|
+| 目标几何可行，`NOT_EXECUTED` | 271 |
+| 弧间隙通过、欧氏间距失败，`PLAN_SEARCH_EXHAUSTED` / `no_plan_found` | 29 |
+
+29 次失败都在窄槽。余量档 N=28 的 5 个对齐、5 种方法全部失败，最近距离约 0.45 m，等于槽宽；seed 15 的最近一对是非相邻的槽壁。贴近下界的 N=17 有 4 个对齐通过，seed 18 上 Equal Arc、Average CVT、Mass CVT 和 `projected_mass` 失败（约 0.66 m，非相邻），DistMesh 通过（0.930 m，最近一对变为相邻）。五种方法按最佳圆周移位后的平均位移中位数是 0.0029 m；DistMesh 在窄槽 N=17 上会移到 0.60–0.87 m，所以均匀密度下它们大体重合，但不是每一条窄槽都重合。
+
+高曲率胶囊和浅凹在两档数量上都 5/5 可行。强胶囊 N=17 的最近距离是宽度 1.11 m，属于非相邻；N=28 的最近距离是端帽上的相邻弦 0.948 m，仍高于 0.75 m。浅凹的非相邻距离保持在 2 m 以上。宽槽 1.20 m 两档都可行，N=28 的最近距离约 0.86 m，是相邻弦。增加 Guide 会缩小弧间隙，也会缩小欧氏裕量；只在窄槽上把“多数对齐可行”变成“全部失败”。
+
+三条距 0.75 m 不足 0.10 m 的 Equal Arc 方案，用 0.01 m 曲线独立重算，欧氏距离变化不超过 0.0005 m，通过与否没有翻转。官方标签没有放宽。
+
+### 执行
+
+事先写明只执行几何可行、并且 1.6 m 内缩后仍能放下人员的单元。强胶囊和窄槽的内缩面积是 0，没有执行，也没有补安全指标。窄槽余量档是几何拒绝案例，不进入执行。唯一执行的是浅凹强强度、N=17、seed 15 的 Equal Arc、Mass CVT 和 `projected_mass`，共 3 个任务。
+
+三条都到达并保持，路径、安全和终端间隙通过，离线复判与在线一致。最小净距约为人 1.08 m、Guide 1.09 m、墙 0.45 m。正式验收仍是 `COVERAGE_NOT_MET`：目标到 Shapely 曲线的最大距离是 1.7×10⁻⁷ 到 4.0×10⁻⁷ m，超过既有的 10⁻⁷ m 贴线检查。弧间隙和欧氏间距都满足。这个残差没有用来放宽阈值，三条都不算部署成功。
+
+### 判断
+
+`projected_mass` 在这条常数密度上的行为与等弧长相同：弧间隙已经在 `[0.75, 1.94]` 内，投影不再移动站点。它修不了槽壁两侧的非相邻接近。Equal Arc 受到同一限制。本轮参数内，高曲率凸曲线和浅凹没有产生欧氏失败；这不能推广到更细的胶囊或所有凹曲线。
+
+下一轮应在目标配置里加入全部成对欧氏间距约束。曲线生成是有效的，不需要先重修。唯一执行的浅凹案例能够到达。本轮曲线是给定的，不能据此更换边界估计器。浓度减半、多人群、动态人群和有限通信都不进入下一轮。
+
+输出在 `runs/step1_general_curve/`。备份在 `backups/2026-10-16-general-curve/`。校验清单是 `reports/step1_general_curve_checksums.json`。
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --output runs/step1_general_curve --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.curve_diagnostics --spec experiments/step1_general_curve_diagnostics.yaml --output runs/step1_general_curve --execute-selected --workers 1
+```
 
 ## 2026-10-16 正式验证：种子 5000–5029
 

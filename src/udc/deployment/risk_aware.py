@@ -111,25 +111,36 @@ def _schedule(concentration, adapt, min_concentration, boundary, count, gap_limi
 
 def plan_risk_aware(boundary, people, demand, count, bandwidth, gap_limit, min_separation,
                     phase=0., samples=2048, max_iterations=300, concentration=1.0,
-                    min_concentration=1e-2, adapt_concentration=True, method='ra_abdc'):
-    """Plan with gap projection. ``adapt_concentration=False`` is ``projected_mass``."""
+                    min_concentration=1e-2, adapt_concentration=True, method='ra_abdc',
+                    density_override=None):
+    """Plan with gap projection. ``adapt_concentration=False`` is ``projected_mass``.
+
+    ``density_override`` supplies a curve density directly. The default keeps
+    the Gaussian demand-mass path and does not change the projection loop.
+    """
     if method not in {'ra_abdc', 'projected_mass'}:
         raise ValueError(f'Unknown constrained method: {method}')
     if adapt_concentration != (method == 'ra_abdc'):
         raise ValueError('projected_mass does not adapt concentration; ra_abdc does')
     if count < 3:
         raise ValueError('At least three targets are required')
-    if not np.isfinite(bandwidth) or bandwidth <= 0:
-        raise ValueError('Demand bandwidth must be positive')
     if not np.isfinite([gap_limit, min_separation]).all() or min(gap_limit, min_separation) <= 0:
         raise ValueError('Gap limit and separation must be positive')
     if not 0 <= concentration <= 1:
         raise ValueError('Concentration exponent must lie in [0, 1]')
-    demand = np.asarray(demand, dtype=float)
-    people = np.asarray(people, dtype=float)
-    if demand.shape != (len(people),) or not np.isfinite(demand).all() or np.any(demand <= 0):
-        raise ValueError('Demand must be finite, positive and match the people')
-    rho = _density(boundary.deployment, people, demand, bandwidth, 'mass_cvt')
+    if density_override is None:
+        if not np.isfinite(bandwidth) or bandwidth <= 0:
+            raise ValueError('Demand bandwidth must be positive')
+        demand = np.asarray(demand, dtype=float)
+        people = np.asarray(people, dtype=float)
+        if demand.shape != (len(people),) or not np.isfinite(demand).all() or np.any(demand <= 0):
+            raise ValueError('Demand must be finite, positive and match the people')
+        rho = _density(boundary.deployment, people, demand, bandwidth, 'mass_cvt')
+    else:
+        rho = np.asarray(density_override, dtype=float)
+        if (rho.shape != (len(boundary.deployment),) or not np.isfinite(rho).all()
+                or np.any(rho <= 0)):
+            raise ValueError('DENSITY_INVALID: override must be finite and positive on the curve')
     original_contrast = float(rho.max() / max(rho.min(), np.finfo(float).tiny))
     adjustments = []
     last = None
@@ -193,9 +204,9 @@ def plan_risk_aware(boundary, people, demand, count, bandwidth, gap_limit, min_s
 
 
 def plan_projected_mass(boundary, people, demand, count, bandwidth, gap_limit, min_separation,
-                        phase=0., samples=2048, max_iterations=300):
+                        phase=0., samples=2048, max_iterations=300, density_override=None):
     """Mass CVT density with the RA-ABDC gap projection and no concentration schedule."""
     return plan_risk_aware(
         boundary, people, demand, count, bandwidth, gap_limit, min_separation, phase,
         samples, max_iterations, concentration=1.0, adapt_concentration=False,
-        method='projected_mass')
+        method='projected_mass', density_override=density_override)

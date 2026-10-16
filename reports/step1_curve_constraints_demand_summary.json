@@ -1,0 +1,322 @@
+{
+  "tasks": 6,
+  "outcomes": {
+    "no_plan_found": 2,
+    "feasible_witness": 4
+  },
+  "by_method": {
+    "equal_arc": {
+      "no_plan_found": 1,
+      "feasible_witness": 1
+    },
+    "pairwise_euclidean": {
+      "feasible_witness": 2
+    },
+    "projected_mass": {
+      "no_plan_found": 1,
+      "feasible_witness": 1
+    }
+  },
+  "rows": [
+    {
+      "family": "deep_notch",
+      "intensity": "narrow",
+      "tier": "margin",
+      "seed": 15,
+      "method": "equal_arc",
+      "count": 28,
+      "density": "mass_cvt gaussian of the frozen interior samples",
+      "length_m": 31.9820735906111,
+      "outcome": "no_plan_found",
+      "accepted": false,
+      "best_cost": null,
+      "selected_start": null,
+      "count_certificate": null,
+      "wall_seconds": 0.23132870020344853,
+      "cpu_seconds": 0.1875,
+      "global_optimum": false,
+      "curve_valid": true,
+      "boundary_source": "prescribed_diagnostic",
+      "planning_gap_limit_m": 1.94,
+      "acceptance_gap_limit_m": 2.0,
+      "center_separation_m": 0.75,
+      "min_euclidean_m": 0.448586,
+      "min_nonadjacent_euclidean_m": 0.448586,
+      "max_arc_gap_m": 1.142217,
+      "min_arc_gap_m": 1.142217,
+      "worst_pair": {
+        "i": 15,
+        "j": 17,
+        "adjacent": false,
+        "euclidean_m": 0.448586,
+        "arc_i_m": 17.989916,
+        "arc_j_m": 20.27435,
+        "position_i": [
+          0.225737,
+          -0.519385
+        ],
+        "position_j": [
+          -0.222846,
+          -0.521129
+        ]
+      },
+      "max_euclidean_violation_m": 0.301414,
+      "solver_status": "DIRECT",
+      "solver_success": false,
+      "solver_iterations": 0,
+      "cost_before": 0.10875984252870807,
+      "cost_after": 0.10875984252870807,
+      "all_pairs_checked": true
+    },
+    {
+      "family": "deep_notch",
+      "intensity": "narrow",
+      "tier": "margin",
+      "seed": 15,
+      "method": "pairwise_euclidean",
+      "count": 28,
+      "density": "mass_cvt gaussian of the frozen interior samples",
+      "length_m": 31.9820735906111,
+      "outcome": "feasible_witness",
+      "accepted": true,
+      "best_cost": 0.095051250696836,
+      "selected_start": "projected_mass_rotate_0.20L",
+      "count_certificate": null,
+      "wall_seconds": 128.65284529980272,
+      "cpu_seconds": 124.296875,
+      "global_optimum": false,
+      "curve_valid": true,
+      "boundary_source": "prescribed_diagnostic",
+      "planning_gap_limit_m": 1.94,
+      "acceptance_gap_limit_m": 2.0,
+      "center_separation_m": 0.75,
+      "min_euclidean_m": 0.75,
+      "min_nonadjacent_euclidean_m": 0.75,
+      "max_arc_gap_m": 1.485696,
+      "min_arc_gap_m": 0.75,
+      "worst_pair": {
+        "i": 2,
+        "j": 3,
+        "adjacent": true,
+        "euclidean_m": 0.75,
+        "arc_i_m": 1.53796,
+        "arc_j_m": 2.28796,
+        "position_i": [
+          -1.603511,
+          -2.700097
+        ],
+        "position_j": [
+          -0.853511,
+          -2.700281
+        ]
+      },
+      "max_euclidean_violation_m": 0.0,
+      "solver_status": "timeout",
+      "solver_success": false,
+      "solver_iterations": 36,
+      "cost_before": 0.1089108227508567,
+      "cost_after": 0.095051250696836,
+      "all_pairs_checked": true
+    },
+    {
+      "family": "deep_notch",
+      "intensity": "narrow",
+      "tier": "margin",
+      "seed": 15,
+      "method": "projected_mass",
+      "count": 28,
+      "density": "mass_cvt gaussian of the frozen interior samples",
+      "length_m": 31.9820735906111,
+      "outcome": "no_plan_found",
+      "accepted": false,
+      "best_cost": null,
+      "selected_start": null,
+      "count_certificate": null,
+      "wall_seconds": 0.25089829973876476,
+      "cpu_seconds": 0.234375,
+      "global_optimum": false,
+      "curve_valid": true,
+      "boundary_source": "prescribed_diagnostic",
+      "planning_gap_limit_m": 1.94,
+      "acceptance_gap_limit_m": 2.0,
+      "center_separation_m": 0.75,
+      "min_euclidean_m": 0.448587,
+      "min_nonadjacent_euclidean_m": 0.448587,
+      "max_arc_gap_m": 1.147794,
+      "min_arc_gap_m": 1.139986,
+      "worst_pair": {
+        "i": 15,
+        "j": 17,
+        "adjacent": false,
+        "euclidean_m": 0.448587,
+        "arc_i_m": 17.989916,
+        "arc_j_m": 20.277697,
+        "position_i": [
+          0.225737,
+          -0.519385
+        ],
+        "position_j": [
+          -0.222847,
+          -0.517782
+        ]
+      },
+      "max_euclidean_violation_m": 0.301413,
+      "solver_status": "CONVERGED",
+      "solver_success": false,
+      "solver_iterations": 2,
+      "cost_before": 0.10870157504596463,
+      "cost_after": 0.10870157504596463,
+      "all_pairs_checked": true
+    },
+    {
+      "family": "shallow_concave",
+      "intensity": "strong",
+      "tier": "near",
+      "seed": 15,
+      "method": "equal_arc",
+      "count": 17,
+      "density": "mass_cvt gaussian of the frozen interior samples",
+      "length_m": 31.9997845055383,
+      "outcome": "feasible_witness",
+      "accepted": true,
+      "best_cost": 0.2952734000231924,
+      "selected_start": "phase_0.00",
+      "count_certificate": null,
+      "wall_seconds": 0.21331659983843565,
+      "cpu_seconds": 0.203125,
+      "global_optimum": false,
+      "curve_valid": true,
+      "boundary_source": "prescribed_diagnostic",
+      "planning_gap_limit_m": 1.94,
+      "acceptance_gap_limit_m": 2.0,
+      "center_separation_m": 0.75,
+      "min_euclidean_m": 1.842981,
+      "min_nonadjacent_euclidean_m": 3.502126,
+      "max_arc_gap_m": 1.88234,
+      "min_arc_gap_m": 1.88234,
+      "worst_pair": {
+        "i": 1,
+        "j": 2,
+        "adjacent": true,
+        "euclidean_m": 1.842981,
+        "arc_i_m": 1.88234,
+        "arc_j_m": 3.764681,
+        "position_i": [
+          3.884906,
+          1.833012
+        ],
+        "position_j": [
+          3.481692,
+          3.631344
+        ]
+      },
+      "max_euclidean_violation_m": 0.0,
+      "solver_status": "DIRECT",
+      "solver_success": true,
+      "solver_iterations": 0,
+      "cost_before": 0.2952734000231924,
+      "cost_after": 0.2952734000231924,
+      "all_pairs_checked": true
+    },
+    {
+      "family": "shallow_concave",
+      "intensity": "strong",
+      "tier": "near",
+      "seed": 15,
+      "method": "pairwise_euclidean",
+      "count": 17,
+      "density": "mass_cvt gaussian of the frozen interior samples",
+      "length_m": 31.9997845055383,
+      "outcome": "feasible_witness",
+      "accepted": true,
+      "best_cost": 0.23999687770334371,
+      "selected_start": "projected_mass_rotate_0.25L",
+      "count_certificate": null,
+      "wall_seconds": 14.364219699986279,
+      "cpu_seconds": 14.0,
+      "global_optimum": false,
+      "curve_valid": true,
+      "boundary_source": "prescribed_diagnostic",
+      "planning_gap_limit_m": 1.94,
+      "acceptance_gap_limit_m": 2.0,
+      "center_separation_m": 0.75,
+      "min_euclidean_m": 1.537979,
+      "min_nonadjacent_euclidean_m": 3.118157,
+      "max_arc_gap_m": 1.94,
+      "min_arc_gap_m": 1.543522,
+      "worst_pair": {
+        "i": 8,
+        "j": 9,
+        "adjacent": true,
+        "euclidean_m": 1.537979,
+        "arc_i_m": 15.652833,
+        "arc_j_m": 17.196354,
+        "position_i": [
+          -5.229823,
+          0.346808
+        ],
+        "position_j": [
+          -5.105635,
+          -1.186149
+        ]
+      },
+      "max_euclidean_violation_m": 0.0,
+      "solver_status": "success",
+      "solver_success": true,
+      "solver_iterations": 11,
+      "cost_before": 0.29540435848142677,
+      "cost_after": 0.23999687770334371,
+      "all_pairs_checked": true
+    },
+    {
+      "family": "shallow_concave",
+      "intensity": "strong",
+      "tier": "near",
+      "seed": 15,
+      "method": "projected_mass",
+      "count": 17,
+      "density": "mass_cvt gaussian of the frozen interior samples",
+      "length_m": 31.9997845055383,
+      "outcome": "feasible_witness",
+      "accepted": true,
+      "best_cost": 0.29458209495836296,
+      "selected_start": "phase_0.00",
+      "count_certificate": null,
+      "wall_seconds": 0.21853870013728738,
+      "cpu_seconds": 0.21875,
+      "global_optimum": false,
+      "curve_valid": true,
+      "boundary_source": "prescribed_diagnostic",
+      "planning_gap_limit_m": 1.94,
+      "acceptance_gap_limit_m": 2.0,
+      "center_separation_m": 0.75,
+      "min_euclidean_m": 1.843407,
+      "min_nonadjacent_euclidean_m": 3.502919,
+      "max_arc_gap_m": 1.8828,
+      "min_arc_gap_m": 1.874987,
+      "worst_pair": {
+        "i": 1,
+        "j": 2,
+        "adjacent": true,
+        "euclidean_m": 1.843407,
+        "arc_i_m": 1.8828,
+        "arc_j_m": 3.7656,
+        "position_i": [
+          3.88496,
+          1.833468
+        ],
+        "position_j": [
+          3.481186,
+          3.632112
+        ]
+      },
+      "max_euclidean_violation_m": 0.0,
+      "solver_status": "CONVERGED",
+      "solver_success": true,
+      "solver_iterations": 2,
+      "cost_before": 0.29458209495836296,
+      "cost_after": 0.29458209495836296,
+      "all_pairs_checked": true
+    }
+  ]
+}

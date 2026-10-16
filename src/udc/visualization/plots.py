@@ -211,12 +211,23 @@ def plot_formal_summary(report, destination):
     overall = report['overall']
     paired = overall['paired']['projected_mass']
     methods = ['equal_arc', 'mass_cvt', 'projected_mass']
-    fig, ax = plt.subplots(figsize=(7, 4), constrained_layout=True)
+    stage_names = ['accepted', 'no_plan_found', 'certified_infeasible',
+                   'plan_found_assignment_failed', 'plan_found_execution_failed']
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4), constrained_layout=True)
     rates = [overall['methods'][name]['successful'] / overall['methods'][name]['tasks'] for name in methods]
-    ax.bar(methods, rates, color=['#8aa0b8', '#c47b4a', '#1d4e89'])
-    ax.set_ylim(0, 1.05)
-    ax.set(ylabel='Success rate', title='Full-task success')
-    ax.grid(axis='y', alpha=0.2)
+    axes[0].bar(methods, rates, color=['#8aa0b8', '#c47b4a', '#1d4e89'])
+    axes[0].set_ylim(0, 1.05)
+    axes[0].set(ylabel='Success rate', title='Full-task success')
+    axes[0].grid(axis='y', alpha=0.2)
+    bottoms = [0, 0, 0]
+    colors = ['#1d4e89', '#c47b4a', '#8a3040', '#5c4b8a', '#2f6f4e']
+    for stage, color in zip(stage_names, colors):
+        counts = [overall['methods'][name]['stages'].get(stage, 0) for name in methods]
+        axes[1].bar(methods, counts, bottom=bottoms, color=color, label=stage)
+        bottoms = [base + count for base, count in zip(bottoms, counts)]
+    axes[1].set(ylabel='Tasks', title='Failure stage')
+    axes[1].legend(fontsize=7)
+    axes[1].grid(axis='y', alpha=0.2)
     fig.savefig(destination / 'success_stages.png', dpi=150)
     plt.close(fig)
     fig, ax = plt.subplots(figsize=(10, 4), constrained_layout=True)

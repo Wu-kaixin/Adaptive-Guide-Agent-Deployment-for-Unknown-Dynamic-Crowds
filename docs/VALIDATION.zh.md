@@ -1,6 +1,43 @@
 # 验证记录
 
-当前一节是新设备上的重跑和种子 5–14 确认。它不替换后面的旧设备记录，也不能把两台机器的数字混成一个样本。
+当前一节是种子 5000–5029 的正式验证。它与后面的新设备重跑、确认实验和旧设备记录分开，不能混成一个样本。
+
+## 2026-10-16 正式验证：种子 5000–5029
+
+### 一页说明
+
+问题是单个静态人群、凸部署曲线、已知场地和全局观测。Guide 数量固定。控制器用人员位置和需求权重做需求加权边界部署。需求是规划权重，不是已经验证的危险。
+
+无约束 Mass CVT 会把站点挤向高需求弧段。数量必要条件仍成立时，弧间隙也可以超过上限，搜索就停在 `no_plan_found`。`projected_mass` 在原始需求密度上做周期 CVT，并把弧间隙投影回允许区间，浓度保持 1。
+
+Equal Arc 同样可靠。正式结果支持的说法是：投影修好了 Mass CVT 的间隙失败，并在同一约束下把需求代价降了一点。它没有相对 Equal Arc 的成功率优势，也没有证明真实风险下降。
+
+1620 个任务，提交 `f5b5d9c`，源码哈希 `90c9a762e21952e252b4e428ec926b55e12b7f6f484b59d93a2d02e14b9bc07e`。Equal Arc 540/540，`projected_mass` 540/540，Mass CVT 377/540。163 次失败都是规划搜索耗尽，投影后全部通过验收。其中 160 次在贴近下界的一档；另外 3 次是强热点的中间档：圆形 N=17 的 2 个种子，椭圆 N=18 的 1 个种子。没有 `certified_infeasible`，没有指派失败，没有执行失败。540 个配对的输入哈希一致。1620 份离线复判与在线结果一致，人群速度都是 0。已执行任务没有安全、间隙、曲线或覆盖验收违反。成功任务的最小净距是 0.196 m。
+
+规划需求代价在 540 对里都更低。种子均值差 −0.00493 m²，区间 [−0.00521, −0.00467]。逐对相对差的均值是 −2.47%；两个方法总体均值之比是 −2.30%。这两个相对数不是一回事，也都不是“性能提高 36%”。36.0% 只表示：在 163 个被修复的任务上，用三组代价的均值计算，投影留下了无约束方案相对 Equal Arc 的改进中的这一部分。三组均值是 0.276、0.284 和 0.289 m²。
+
+强热点的超额代价 180/180 更低。弱热点 169/180 更低，11 对略高。均匀需求没有超额，记为不适用。背景代价的种子均值高 0.00110 m²，区间在 0 以上。实际部署代价的种子区间是 [−0.00521, −0.00467]，方向和规划代价相同。实际最大间隙的均值从 Equal Arc 的 1.590 m 增到 1.746 m，最大 1.941 m，仍低于验收用的 2 m。路径平均长 0.324 m，部署时间平均多 0.035 s，规划时间平均多 0.047 s。
+
+代表案例按冻结规则选取，都落在圆形、弱热点、N=14：中位差值是 seed 5010 的 −0.00254 m²，最差差值是 seed 5023 的 −0.00010 m²。没有 Equal Arc 成功而投影失败的单元。
+
+一次 Windows 文件锁使 `equal_arc`、圆形、弱热点、seed 5024 的最终状态文件没有替换成功。该目录当时是未完成状态，已删除后按同一冻结输入恢复。最终 1620 份状态都是 completed，源码哈希与冻结记录一致。
+
+### 判断
+
+当前凸曲线、全局观测的 Step 1 范围已经完成这 30 个正式种子的验证。没有需要先修改的算法或阈值错误。收益小，而且依赖凸曲线。下一步应先把边界从这条凸偏移曲线扩出去，看投影是否还成立；两个人群的分配会同时引入新的决策，不适合作为这一个问题的下一步。感知限制仍在更后面。
+
+正式输出在 `runs/formal/step1_projection_v1/`。备份在 `backups/2026-10-16-formal-step1/`。校验清单是 `reports/formal_step1_checksums.json`。
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_formal.yaml --output runs/formal/step1_projection_v1_integrity --seeds 5000 --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_formal.yaml --output runs/formal/step1_projection_v1 --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_formal.yaml --output runs/formal/step1_projection_v1 --resume --workers 6
+```
+
+## 2026-10-16 新设备复现与确认
+
+下面是正式种子之前的新设备重跑和种子 5–14 确认。它不替换本节的正式结果。
 
 ## 2026-10-16 新设备复现与确认
 

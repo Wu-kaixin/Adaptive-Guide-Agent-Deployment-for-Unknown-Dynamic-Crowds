@@ -135,6 +135,7 @@ Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重。在
 .\.venv\Scripts\python.exe -m pytest -q
 .\.venv\Scripts\python.exe -m pip check
 .\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_confirmation.yaml --output runs/reproduction/Kaii/phase_f/confirmation_smoke --seeds 5 --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_formal.yaml --output runs/formal/step1_projection_v1 --workers 6
 ```
 
 ## 检查

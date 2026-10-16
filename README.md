@@ -127,6 +127,16 @@ Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重。在
 
 完整路线见 [ROADMAP](docs/ROADMAP.zh.md)，理论与实现边界见 [STEP1_THEORY](docs/STEP1_THEORY.zh.md)。
 
+## 这台机器上的复现
+
+已有 `.venv` 是 Python 3.12.15，数值库版本写在 `requirements.txt`。不要把另一台机器的 Python 3.13 记录当成必须重装的条件。新结果写到 `runs/reproduction/<device>/`，不要覆盖 `runs/` 里的旧目录。workers 先用小批量测量；这台 8 逻辑处理器的机器使用 6。完整记录见 [VALIDATION](docs/VALIDATION.zh.md)。
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_confirmation.yaml --output runs/reproduction/Kaii/phase_f/confirmation_smoke --seeds 5 --workers 6
+```
+
 ## 检查
 
 ```bash

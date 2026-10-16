@@ -53,10 +53,19 @@ def load_spec(path):
     if not methods or len(set(methods)) != len(methods) or not set(methods) <= METHODS:
         raise ValueError(f'Comparison methods must be distinct members of {sorted(METHODS)}')
     seeds = spec['development_seeds']
-    if seeds != [0, 1, 2, 3, 4]:
-        raise ValueError('Development comparison uses exactly five seeds: 0, 1, 2, 3, 4')
+    if any(type(seed) is not int or seed < 0 for seed in seeds) or len(seeds) != len(set(seeds)):
+        raise ValueError('Seeds must be distinct nonnegative integers')
     if any(seed in RESERVED_VALIDATION for seed in seeds):
         raise ValueError('Reserved validation seeds must not be listed as development seeds')
+    role = spec.get('seed_role', 'development')
+    if role == 'development':
+        if seeds != [0, 1, 2, 3, 4]:
+            raise ValueError('Development comparison uses exactly five seeds: 0, 1, 2, 3, 4')
+    elif role == 'confirmation':
+        if seeds != list(range(5, 15)):
+            raise ValueError('Confirmation comparison uses seeds 5 through 14 and no others')
+    else:
+        raise ValueError(f'Unsupported seed_role: {role}')
     resource = spec['factors']['resource']
     if isinstance(resource, dict):
         shapes = set(spec['factors']['shape'])

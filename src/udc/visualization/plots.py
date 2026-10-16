@@ -161,12 +161,36 @@ def plot_comparison_summary(summary_path, path=None):
                 g=lookup.get((cell,method)); value=None if g is None else getter(g)
                 values.append(np.nan if value is None else value)
             ax.bar(x+(k-len(methods)/2+.5)*width,values,width,label=method,color=colors(k))
-        ax.set(title=title,xticks=x,xticklabels=[c.replace('square_circle_medium_','') for c in cells])
-        ax.tick_params(axis='x',labelsize=8); ax.grid(axis='y',alpha=.2)
+        labels=[cell.replace('square_','').replace('_medium','') for cell in cells]
+        ax.set(title=title,xticks=x,xticklabels=labels)
+        ax.tick_params(axis='x',labelsize=7,labelrotation=60); ax.grid(axis='y',alpha=.2)
     axes[0,0].legend(fontsize=8); axes[0,0].set_ylim(0,1.05)
-    fig.suptitle(f"Step 1 pilot: {summary['tasks']} tasks, reference {summary.get('reference_method')}",fontsize=11)
+    fig.suptitle(f"Step 1 comparison: {summary['tasks']} tasks, reference {summary.get('reference_method')}",fontsize=11)
     destination=Path(path) if path else summary_path.with_name('comparison_summary.png')
     fig.savefig(destination,dpi=150); plt.close(fig)
+    return destination
+
+
+def plot_seed_deltas(report, path):
+    """Seed-level mean cost difference of projected_mass minus Equal Arc. Lower is better."""
+    paired = report['paired']['projected_mass']['planned_demand_weighted_cost']
+    seeds = list(paired['seed_means'])
+    values = [paired['seed_means'][seed] for seed in seeds]
+    fig, ax = plt.subplots(figsize=(8, 4), constrained_layout=True)
+    ax.bar(range(len(seeds)), values, color='#1d4e89')
+    ax.axhline(0.0, color='#333', lw=0.8)
+    cluster = paired['seed_cluster']
+    if cluster['ci95'] is not None:
+        ax.axhline(cluster['mean'], color='#c0392b', lw=1, label=f"seed mean {cluster['mean']:.5f}")
+    ax.set_xticks(range(len(seeds)), [str(seed) for seed in seeds])
+    ax.set(xlabel='seed', ylabel='planned demand-weighted cost difference [m$^2$]')
+    ax.set_title('projected_mass minus Equal Arc, mean within each seed')
+    ax.legend(fontsize=8)
+    ax.grid(axis='y', alpha=0.2)
+    destination = Path(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(destination, dpi=150)
+    plt.close(fig)
     return destination
 
 

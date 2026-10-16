@@ -1,0 +1,18 @@
+{
+  "device": "Kaii",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.15",
+  "processor": "Intel(R) Core(TM) Ultra 7 258V",
+  "logical_processors": 8,
+  "workers": 6,
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2",
+    "pedpy": "1.5.1",
+    "pytest": "9.1.1"
+  },
+  "historical_python_not_installed": "3.13.13",
+  "reason": "Existing uv environment and requirements.txt are Python 3.12.15. Library versions match the historical record."
+}

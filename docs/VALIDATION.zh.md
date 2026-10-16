@@ -1,6 +1,87 @@
 # 验证记录
 
-当前一节是热点超额重分析与数值参照。其后是投影消融、热点试点和更早的迁移记录，不能互相代替。
+当前一节是新设备上的重跑和种子 5–14 确认。它不替换后面的旧设备记录，也不能把两台机器的数字混成一个样本。
+
+## 2026-10-16 新设备复现与确认
+
+### 研究故事线
+
+问题是：一个静态人群、已知封闭场地、全局观测、没有通信限制，也没有人群与 Guide 的相互作用。Guide 数量事先固定。控制器只看见人员位置、半径和需求权重，用凸包外偏移得到部署曲线，再把 Guide 放到这条曲线上。
+
+无约束的需求加权部署会把站点挤向需求更高的弧段。人数条件 `ceil(L/H_p)` 仍然成立时，最大弧间隙也可以超过规划上限。搜索耗尽只说明这次有界搜索没有找到方案，不是“不存在方案”的证明。
+
+`projected_mass` 仍在原始需求密度上做周期 CVT，每一步把弧间隙投影回 `[d_min, H_p]`，浓度保持 1。它不减半浓度，也不回退到 Equal Arc。RA-ABDC 的那两步还在代码里；凸曲线实验没有触发，所以不是已验证的额外能力。
+
+Equal Arc 本身也能完成这些任务。已经支持的说法是：在同样的覆盖约束下，投影后的需求加权代价低于等弧长。这不是普遍提高成功率，也不是已经验证的真实风险下降。需求只是规划权重。
+
+范围停在凸部署曲线和全局观测。凹边界、人群移动、人群对 Guide 的反应、有限通信都还没有做。数值参照只比较目标位置，没有全局最优证书。
+
+### 这台机器恢复了什么
+
+分支 `Major-Research-Branches`，提交 `5147237`，与 `origin` 一致，没有未推送提交。工作区在复现实验开始时是干净的。`b6a37b6` 和 `db4e25a` 都在历史上。`5147237` 补上了超额评价、12 个规划参照和积分分辨率检查；`risk_aware.py` 相对 `db4e25a` 只有说明文字变化。
+
+旧 360 个任务的源码哈希 `32b1d46e…b3bcc2cd` 不在这台机器的字节级工作区里。当前提交在那个哈希之后增加了评价代码。规划路径与当时的算法一致，源码哈希本身不相同。
+
+没有找到 `runs/pilot/`、`runs/ablation/` 和 `backups/2026-10-16-projection-ablation/`。校验清单还在 Git 里，原始轨迹不在。下面的历史对照全部是新设备重跑，不是旧轨迹复判。没有用报告里的数字补造轨迹。
+
+### 环境
+
+Windows 11，Intel Core Ultra 7 258V，8 个逻辑处理器，约 32 GB 内存。沿用已有 `uv` 虚拟环境，没有复制旧 `.venv`。Python 3.12.15。NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1。旧报告写的是 Python 3.13.13；这台机器的项目环境声明和已有虚拟环境是 3.12.15，`uv` 没有 3.13.13。数值库版本没有改。验收阈值没有改。
+
+`python -m pip check`：No broken requirements found。`python -m pytest -q`：63 passed，随后确认协议测试加入后为 65 passed。workers 用 6：每个进程把数值库线程限制为 1，给系统留出两个逻辑处理器。没有改系统配置。
+
+阶段 A–D 的运行源码哈希是 `a2ba7ef412ccf8afb485d8adc8ab77f4537c5105bdb49fb35f8e724af05e2ba4`，dirty 为 false。确认任务开始前，比较入口已经加上种子 5–14 的协议开关，因此这 540 个任务记录为 dirty，源码哈希 `fd8cc195bb3cebbdf5080f0282b4e227540159c3ee4c302300451beadbc70515`。这次差异不包含部署规划函数的修改。
+
+### 复现（新设备重跑）
+
+| 阶段 | 任务 | 结果 | 与旧记录 |
+|---|---:|---|---|
+| A 50 人、8 Guide、Equal Arc | 1 | SUCCESS，23.0 s，实际最大间隙 3.741 m，路径 134.33 m | 分类和这些数字一致 |
+| B `high_demand_side`，20/24 Guide | 10 个指定方法 | N=20：Equal Arc、RA-ABDC 成功，其余 `no_plan_found`。N=24：除 DistMesh 外成功 | 分类一致。当前方法表还多跑了 `projected_mass`，不计入这 10 个 |
+| C 热点试点 | 150 | 125 SUCCESS，25 `no_plan_found`；Equal Arc 与 RA-ABDC 30/30，Average CVT 25/30，Mass CVT 与 DistMesh 20/30 | 一致。30 个配对输入哈希一致 |
+| D 投影消融 | 360 | Equal Arc、`projected_mass`、RA-ABDC 各 90/90；Mass CVT 62/90；28 次投影修复 | 一致。90 对目标坐标相同，浓度 1，回退 0 |
+| D 数量诊断 | 2 | 圆 N=13 下界 14；椭圆 seed 0 的 N=14 下界 15。都是 `PLAN_SEARCH_EXHAUSTED` / `certified_infeasible` / `GAP_BOUND` | 与记录一致，不进入 360 |
+
+在线与离线复判：上述保存结果 625 份全部一致，其中包含试点和规划扫描的重复目录。失败没有被漏掉。没有指派失败，没有执行失败。
+
+超额重分析与旧记录的均值一致到所写精度：投影相对 Equal Arc 的规划代价均值差 −0.00513 m²，范围 −0.02597 到 −0.00026；28/28 个无约束间隙与保存的尝试一致；三个均值 0.275789、0.282797、0.287497；比值 0.401。均匀需求 30/30 不适用。
+
+12 个参照的代价改进是 0.00020 到 0.00527 m²。强热点圆形是 0.00409 和 0.00456。椭圆强热点 seed 0 是 0.00157，大于旧文字里的“不到 0.0004”；seed 1 是 0.00020。48 次求解里 14 次达到迭代上限，检查后都可行。积分点 1024、2048、4096 的改进是 0.00402、0.00406、0.00409，与旧记录一致。没有加大迭代预算。
+
+### 种子 5–14
+
+协议 `experiments/step1_projection_confirmation.yaml` 在运行前冻结。数量仍是圆 14/17/20、椭圆 16/18/22，没有按新种子重算，也没有按方法成败改 N。先跑 seed 5 的 54 个任务，再跑 seed 6–14 的 486 个；合计 540，seed 5 只计一次。配对输入一致，180 对。
+
+全部 180 个参考单元的数量必要条件都成立，没有 `certified_infeasible`。Equal Arc 180/180，`projected_mass` 180/180，Mass CVT 124/180。56 次失败都是 `no_plan_found`。其中 54 次在贴近下界的一档；另外 2 次是圆形、强热点、N=17、seed 6 和 13。这 2 次在种子 0–4 里没有出现。投影把 56 次都变成了通过验收的方案。没有新的指派失败或执行失败。540 份复判与在线结果一致。已执行的 484 个任务没有安全、间隙、曲线或覆盖验收违反。成功任务的最小净距是 0.185 m。
+
+相对 Equal Arc，180 对规划需求代价都更低。按种子平均后的均值差是 −0.00555 m²，种子重抽样 95% 区间 [−0.00613, −0.00499]。实际部署代价的区间是 [−0.00614, −0.00499]。强热点的差值大于均匀需求。圆形大于椭圆。三档数量的区间都在 0 以下。
+
+有超额的 120 对里，117 对超额代价更低，3 对弱热点略高。种子均值 −0.0248 m²，区间 [−0.0264, −0.0233]。均匀需求不适用。背景弧段的代价种子均值高 0.00104 m²，区间在 0 以上：站点向热点移动时，其余弧段付出少量代价。路径平均长 0.385 m，部署时间平均多 0.03 s，规划时间平均多 0.038 s。这些辅助量和覆盖收益不是同一件事。
+
+### 判断
+
+同一研究版本的规划算法已经在这台机器上复现；旧轨迹文件没有迁过来，所以不能称为旧轨迹复判。新种子支持“保持覆盖约束，并降低需求加权代价”。Equal Arc 仍然全部成功。下一步可以按这份冻结协议做正式种子 5000–5029，不必先改算法或阈值。正式种子本轮没有跑。没有推送，没有合并 main，没有进入 Step 2/3。
+
+输出在 `runs/reproduction/Kaii/`。备份在 `backups/2026-10-16-kaii-reproduction/`。校验清单是 `reports/reproduction_kaii_checksums.json`。
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe run.py --config configs/step1/static_50.yaml --output runs/reproduction/Kaii/phase_a/static50 --no-plots
+.\.venv\Scripts\python.exe run.py --reevaluate runs/reproduction/Kaii/phase_a/static50
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --hotspot --output runs/reproduction/Kaii/phase_b/high_demand_20_24 --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/reproduction/Kaii/phase_c/hotspot_smoke --seeds 0 --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_hotspot_pilot.yaml --output runs/reproduction/Kaii/phase_c/hotspot --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/reproduction/Kaii/phase_d/projection_smoke --seeds 0 --plan-only --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/reproduction/Kaii/phase_d/projection_matrix --plan-only --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_ablation.yaml --output runs/reproduction/Kaii/phase_d/projection_matrix --resume --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_confirmation.yaml --output runs/reproduction/Kaii/phase_f/confirmation_smoke --seeds 5 --workers 6
+.\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_confirmation.yaml --output runs/reproduction/Kaii/phase_f/confirmation --seeds 6 7 8 9 10 11 12 13 14 --workers 6
+```
+
+## 2026-10-16 超额评价与数值参照（旧设备）
+
+当前一节之前的文字是旧设备记录。其后是投影消融、热点试点和更早的迁移记录，不能互相代替。
 
 ## 2026-10-16 超额评价与数值参照
 

@@ -5,6 +5,7 @@ import pytest
 
 from udc.environment import Environment
 from udc.evaluation.acceptance import classify_outcome
+from udc.analysis.summary import seed_cluster_report
 from udc.experiments.comparison import RESERVED_VALIDATION, build_tasks, hotspot_tasks, load_spec
 from udc.experiments.config import METHODS
 
@@ -64,6 +65,48 @@ def test_resource_budgets_are_ordered_and_one_cell_initializes():
     env = Environment(config)
     assert len(env.observe().positions) == 20
     assert len(env.initialize_guides(config['guides'])) == counts['sufficient']
+
+
+def test_confirmation_protocol_freezes_counts_and_seeds():
+    spec = load_spec(ROOT / 'experiments' / 'step1_projection_confirmation.yaml')
+    tasks = build_tasks(spec, 'runs/unused')
+    assert len(tasks) == 2 * 3 * 3 * 3 * 10
+    assert {task['seed'] for task in tasks} == set(range(5, 15))
+    assert {task['method'] for task in tasks} == {'equal_arc', 'mass_cvt', 'projected_mass'}
+    counts = {}
+    for task in tasks:
+        counts.setdefault(task['shape'], set()).add(task['fixed_n'])
+        assert task['fixed_n'] == task['config']['guides']['count']
+    assert counts == {'circle': {14, 17, 20}, 'ellipse': {16, 18, 22}}
+    with pytest.raises(ValueError, match='5000-5029'):
+        build_tasks(spec, 'runs/unused', seeds=[5005])
+
+
+def test_seed_cluster_keeps_missing_metrics_out_of_the_mean():
+    rows = []
+    for seed in (5, 6):
+        for method, cost, success in (
+            ('equal_arc', 1.0, True),
+            ('projected_mass', 0.5, True),
+            ('mass_cvt', None, False),
+        ):
+            rows.append({
+                'cell': 'square_circle_medium_uniform_near', 'seed': seed, 'method': method,
+                'shape': 'circle', 'demand': 'uniform', 'resource': 'near',
+                'success': success, 'plan_found': success, 'stage_diagnosis': 'accepted' if success else 'no_plan_found',
+                'planned_demand_weighted_cost': cost,
+                'feasibility': {'necessary_condition_met': True},
+                'criteria': {'safety_ok': True, 'gap_ok': True, 'curve_ok': True, 'coverage_ok': True},
+            })
+    report = seed_cluster_report(rows, replicates=200, rng_seed=1)
+    paired = report['paired']['projected_mass']['planned_demand_weighted_cost']
+    assert paired['pairs_defined'] == 2
+    assert paired['better'] == 2
+    assert report['paired']['mass_cvt']['planned_demand_weighted_cost']['pairs_defined'] == 0
+    assert report['methods']['mass_cvt']['successful'] == 0
+    assert report['methods']['mass_cvt']['tasks'] == 2
+    assert report['constraints']['safety_violations'] == 0
+    assert report['necessary_condition_pairs']['met'] == 2
 
 
 def test_hotspot_reproduction_lists_both_guide_budgets():

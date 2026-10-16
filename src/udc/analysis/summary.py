@@ -75,7 +75,7 @@ LOWER_IS_BETTER = {
     'planned_demand_weighted_cost', 'actual_uniform_cost',
     'actual_uncovered_demand_share', 'planned_uncovered_demand_share',
     'actual_hotspot_mean_spacing', 'actual_hotspot_max_gap',
-    'simulation_time', 'path_length', 'wall_time',
+    'simulation_time', 'path_length', 'wall_time', 'mean_curve_distance', 'planner_seconds',
 }
 
 
@@ -86,7 +86,8 @@ def executed_metric(row, name):
     deployment time and must not enter a mean.
     """
     if name in {'simulation_time', 'path_length', 'actual_max_gap', 'actual_demand_weighted_cost',
-                'actual_excess_weighted_cost', 'actual_hotspot_concentration'} and not row.get('plan_found'):
+                'actual_excess_weighted_cost', 'actual_hotspot_concentration',
+                'mean_curve_distance'} and not row.get('plan_found'):
         return None
     value = row.get(name)
     if name == 'simulation_time' and not row.get('success') and value == 0:
@@ -209,6 +210,181 @@ def summarize_comparison(rows, reference='equal_arc'):
         'groups': groups, 'paired': paired,
         'scope': ('development seeds only; success rates keep every task in the denominator; '
                   'metric means cover the tasks where the metric is defined (see "defined")'),
+    }
+
+
+def _criteria(row):
+    criteria = row.get('criteria')
+    if isinstance(criteria, dict):
+        return criteria
+    output = row.get('output')
+    if not output:
+        return None
+    path = Path(output) / 'metrics.json'
+    if not path.is_file():
+        return None
+    return json.loads(path.read_text(encoding='utf-8')).get('criteria')
+
+
+def _bootstrap_mean(values, replicates, rng):
+    sample = np.asarray(list(values), dtype=float)
+    if len(sample) == 0:
+        return {'seeds': 0, 'mean': None, 'ci95': None}
+    draws = rng.integers(0, len(sample), size=(replicates, len(sample)))
+    means = sample[draws].mean(axis=1)
+    return {
+        'seeds': int(len(sample)),
+        'mean': float(sample.mean()),
+        'ci95': [float(np.quantile(means, 0.025)), float(np.quantile(means, 0.975))],
+    }
+
+
+def _paired_delta(rows, reference, candidate, metric, require_plan=False):
+    by_seed = {}
+    defined = missing = better = worse = tie = 0
+    for row in rows:
+        if row.get('method') != candidate:
+            continue
+        base = next((item for item in rows
+                     if item.get('method') == reference and item.get('cell') == row.get('cell')
+                     and item.get('seed') == row.get('seed')), None)
+        if base is None:
+            continue
+        if require_plan and not (row.get('plan_found') and base.get('plan_found')):
+            missing += 1
+            continue
+        tracked = {
+            'simulation_time', 'path_length', 'actual_max_gap', 'actual_demand_weighted_cost',
+            'actual_excess_weighted_cost', 'actual_hotspot_concentration', 'mean_curve_distance',
+        }
+        mine = executed_metric(row, metric) if metric in tracked else _number(row.get(metric))
+        theirs = executed_metric(base, metric) if metric in tracked else _number(base.get(metric))
+        if mine is None or theirs is None:
+            missing += 1
+            continue
+        delta = mine - theirs
+        defined += 1
+        by_seed.setdefault(row['seed'], []).append(delta)
+        if abs(delta) <= 1e-9:
+            tie += 1
+        elif (delta < 0) == (metric in LOWER_IS_BETTER or metric.endswith('_cost') or metric.endswith('_gap')):
+            better += 1
+        else:
+            worse += 1
+    return {
+        'pairs_defined': defined,
+        'pairs_missing': missing,
+        'better': better,
+        'worse': worse,
+        'tie': tie,
+        'seed_means': {str(seed): float(np.mean(values)) for seed, values in sorted(by_seed.items())},
+    }
+
+
+def _stratum_cluster(rows, reference, candidate, metric, key, replicates, rng, require_plan=False):
+    labels = sorted({row.get(key) for row in rows if row.get('method') == candidate})
+    report = {}
+    for label in labels:
+        selected = [row for row in rows if row.get(key) == label]
+        paired = _paired_delta(selected, reference, candidate, metric, require_plan)
+        paired['seed_cluster'] = _bootstrap_mean(paired['seed_means'].values(), replicates, rng)
+        report[str(label)] = paired
+    return report
+
+
+def seed_cluster_report(rows, reference='equal_arc', candidates=('mass_cvt', 'projected_mass'),
+                        replicates=10000, rng_seed=20261016):
+    """Paired confirmation summary. Resampling draws whole seeds, not cells inside a seed.
+
+    Planning failures stay in the success denominator. A missing trajectory metric is
+    omitted from that metric's mean; it is not replaced by zero. Demand remains a
+    planning weight. The interval is a percentile bootstrap of seed-level means.
+    """
+    rng = np.random.default_rng(rng_seed)
+    methods = sorted({row['method'] for row in rows})
+    by_method = {}
+    for method in methods:
+        selected = [row for row in rows if row['method'] == method]
+        by_seed = {}
+        stages = {}
+        for row in selected:
+            bucket = by_seed.setdefault(row['seed'], [0, 0])
+            bucket[1] += 1
+            bucket[0] += int(bool(row['success']))
+            label = str(row.get('stage_diagnosis'))
+            stages[label] = stages.get(label, 0) + 1
+        rates = [successes / count for successes, count in by_seed.values() if count]
+        by_method[method] = {
+            'tasks': len(selected),
+            'successful': sum(int(bool(row['success'])) for row in selected),
+            'stages': stages,
+            'seed_success_rate': _bootstrap_mean(rates, replicates, rng),
+        }
+    necessary = {'met': 0, 'violated': 0, 'unknown': 0}
+    for row in rows:
+        if row.get('method') != reference:
+            continue
+        flag = (row.get('feasibility') or {}).get('necessary_condition_met')
+        if flag is True:
+            necessary['met'] += 1
+        elif flag is False:
+            necessary['violated'] += 1
+        else:
+            necessary['unknown'] += 1
+    constraints = {
+        'tasks_with_criteria': 0,
+        'safety_violations': 0,
+        'gap_violations': 0,
+        'curve_violations': 0,
+        'coverage_violations': 0,
+    }
+    for row in rows:
+        # A planning failure has no executed trajectory. Its false criteria record
+        # the missing plan; they are not a safety or coverage breach of a deployment.
+        if not row.get('plan_found'):
+            continue
+        criteria = _criteria(row)
+        if not criteria:
+            continue
+        constraints['tasks_with_criteria'] += 1
+        constraints['safety_violations'] += int(criteria.get('safety_ok') is False)
+        constraints['gap_violations'] += int(criteria.get('gap_ok') is False)
+        constraints['curve_violations'] += int(criteria.get('curve_ok') is False)
+        constraints['coverage_violations'] += int(criteria.get('coverage_ok') is False)
+    metrics = (
+        'planned_demand_weighted_cost', 'actual_demand_weighted_cost',
+        'planned_excess_weighted_cost', 'actual_excess_weighted_cost',
+        'planned_background_weighted_cost', 'actual_background_weighted_cost',
+        'path_length', 'simulation_time', 'wall_time', 'actual_max_gap',
+        'mean_curve_distance', 'planner_seconds',
+    )
+    paired = {}
+    for candidate in candidates:
+        entry = {}
+        for metric in metrics:
+            require_plan = metric.startswith('actual_') or metric in {
+            'path_length', 'simulation_time', 'mean_curve_distance'}
+            overall = _paired_delta(rows, reference, candidate, metric, require_plan)
+            overall['seed_cluster'] = _bootstrap_mean(overall['seed_means'].values(), replicates, rng)
+            overall['by_shape'] = _stratum_cluster(
+                rows, reference, candidate, metric, 'shape', replicates, rng, require_plan)
+            overall['by_demand'] = _stratum_cluster(
+                rows, reference, candidate, metric, 'demand', replicates, rng, require_plan)
+            overall['by_resource'] = _stratum_cluster(
+                rows, reference, candidate, metric, 'resource', replicates, rng, require_plan)
+            entry[metric] = overall
+        paired[candidate] = entry
+    return {
+        'tasks': len(rows),
+        'reference': reference,
+        'methods': by_method,
+        'necessary_condition_pairs': necessary,
+        'constraints': constraints,
+        'paired': paired,
+        'interval': (
+            'percentile bootstrap of seed-level means; cells that share a seed are not '
+            'independent replicates. replicates=%d, rng_seed=%d' % (replicates, rng_seed)
+        ),
     }
 
 

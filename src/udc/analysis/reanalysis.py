@@ -116,7 +116,7 @@ def reanalyze(comparison_json, output):
         extra = _report_row(row['output']) if (Path(row['output']) / 'trajectory.npz').exists() else {}
         enriched.append({**{key: row.get(key) for key in (
             'cell', 'shape', 'demand', 'resource', 'fixed_n', 'seed', 'method', 'success',
-            'plan_found', 'stage_diagnosis', 'output')}, **extra,
+            'plan_found', 'stage_diagnosis', 'output', 'feasibility')}, **extra,
             'simulation_time': executed_metric(row, 'simulation_time')})
     by = {(item['cell'], item['seed'], item['method']): item for item in enriched}
     rescued = []
@@ -182,11 +182,13 @@ def _figures(rows, destination):
     destination.mkdir(parents=True, exist_ok=True)
     import matplotlib.pyplot as plt
     from matplotlib.patches import Circle
+    present = {item['seed'] for item in rows}
+    seed = 0 if 0 in present else min(present)
     for shape in ('circle', 'ellipse'):
         equal = next(item for item in rows if item['shape'] == shape and item['demand'] == 'strong'
-                     and item['resource'] == 'near' and item['seed'] == 0 and item['method'] == 'equal_arc')
+                     and item['resource'] == 'near' and item['seed'] == seed and item['method'] == 'equal_arc')
         projected = next(item for item in rows if item['shape'] == shape and item['demand'] == 'strong'
-                         and item['resource'] == 'near' and item['seed'] == 0 and item['method'] == 'projected_mass')
+                         and item['resource'] == 'near' and item['seed'] == seed and item['method'] == 'projected_mass')
         data = np.load(Path(equal['output']) / 'trajectory.npz')
         config = yaml.safe_load((Path(equal['output']) / 'config.yaml').read_text(encoding='utf-8'))
         boundary = _boundary(data)
@@ -199,7 +201,7 @@ def _figures(rows, destination):
         ax.scatter(*data['targets'].T, marker='+', color='#1d4ed8', label='Equal Arc')
         other = np.load(Path(projected['output']) / 'trajectory.npz')
         ax.scatter(*other['targets'].T, marker='x', color='#c0392b', label='projected_mass')
-        ax.set(aspect='equal', title=f'{shape} strong, near, seed 0')
+        ax.set(aspect='equal', title=f'{shape} strong, near, seed {seed}')
         ax.legend(fontsize=8)
         ax = axes[1]
         from udc.evaluation.coverage import _log_gaussian_mass, excess_weights
@@ -213,7 +215,7 @@ def _figures(rows, destination):
         ax.plot(boundary.arc, extra / max(total.max(), 1e-12), color='#c0392b', label='hotspot excess')
         ax.set(xlabel='arc [m]', ylabel='mass / max original', title='Frozen curve contributions')
         ax.legend(fontsize=8)
-        fig.savefig(destination / f'{shape}_strong_near_seed0.png', dpi=140)
+        fig.savefig(destination / f'{shape}_strong_near_seed{seed}.png', dpi=140)
         plt.close(fig)
 
 

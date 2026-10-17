@@ -106,7 +106,7 @@ def experiment(config_path, output, seed=None, plots=True,
                protocol='adaptive_resource', fixed_n=None, resume=False,
                method=None, execute=True, prescribed_boundary=None,
                prescribed_plan=None, method_label=None,
-               boundary_source='prescribed_diagnostic'):
+               boundary_source='prescribed_diagnostic', initial_guides=None):
     """Run one task and always emit a structured result for expected failures.
 
     ``execute=False`` stops after a feasible plan is saved (``NOT_EXECUTED``).
@@ -117,6 +117,8 @@ def experiment(config_path, output, seed=None, plots=True,
     ``prescribed_boundary`` is used only when the caller supplies a curve.
     ``method_label`` records which supplied plan was installed. It does not
     select a different navigation or safety stack.
+    ``initial_guides`` replaces the inset-perimeter start when a caller has
+    already drawn one shared guide state. The default keeps that placement.
     """
     started = perf_counter()
     output = Path(output)
@@ -153,7 +155,13 @@ def experiment(config_path, output, seed=None, plots=True,
             if result is not None:
                 return result
         env = Environment(config)
-        initial = env.initialize_guides(config['guides'])
+        if initial_guides is None:
+            initial = env.initialize_guides(config['guides'])
+        else:
+            initial = np.asarray(initial_guides, dtype=float).copy()
+            expected = (int(config['guides']['count']), 2)
+            if initial.shape != expected or not np.isfinite(initial).all():
+                raise ValueError('INITIALIZATION_INVALID: supplied guide state has the wrong shape')
         perception = env.perceive(0.0, initial)
         observation = perception.observation()
         positions = [initial]

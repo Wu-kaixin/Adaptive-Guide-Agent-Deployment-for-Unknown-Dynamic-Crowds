@@ -139,9 +139,9 @@ Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重。在
 
 完整路线见 [ROADMAP](docs/ROADMAP.zh.md)，理论与实现边界见 [STEP1_THEORY](docs/STEP1_THEORY.zh.md)。
 
-## 这台机器上的复现
+## 上一台复现主机
 
-已有 `.venv` 是 Python 3.12.15，数值库版本写在 `requirements.txt`。不要把另一台机器的 Python 3.13 记录当成必须重装的条件。新结果写到 `runs/reproduction/<device>/`，不要覆盖 `runs/` 里的旧目录。workers 先用小批量测量；这台 8 逻辑处理器的机器使用 6。完整记录见 [VALIDATION](docs/VALIDATION.zh.md)。
+下面这一段记录的是上一台 8 逻辑处理器的机器，不是 2026-10-17 的 i9-14900KF。已有 `.venv` 在那台机器上是 Python 3.12.15，数值库版本写在 `requirements.txt`。不要把另一台机器的 Python 3.13 记录当成必须重装的条件。新结果写到 `runs/reproduction/<device>/`，不要覆盖 `runs/` 里的旧目录。workers 先用小批量测量；那台机器使用 6。完整记录见 [VALIDATION](docs/VALIDATION.zh.md)。
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
@@ -149,6 +149,24 @@ Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重。在
 .\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_confirmation.yaml --output runs/reproduction/Kaii/phase_f/confirmation_smoke --seeds 5 --workers 6
 .\.venv\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_formal.yaml --output runs/formal/step1_projection_v1 --workers 6
 ```
+
+## 2026-10-17 新主机 kai-14900kf
+
+这台机器是 Windows 11、Intel Core i9-14900KF、32 个逻辑处理器、约 64 GB 内存。官方解释器是 `uv` 安装的 Python 3.12.15，虚拟环境在 `E:\udc-wt\venv312`，不覆盖仓库里由 Conda 建的 `.venv`。依赖钉在 `requirements.txt`：NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1。`uv pip check` 通过。`pytest` 89 项通过，其中 2 项是新的种子探测测试。
+
+历史复现写到 `runs/reproduction/kai-14900kf/`，正式 1620 用冻结提交 `f5b5d9c` 的独立 worktree。凸边界分类和正式规划代价的种子均值与已记录摘要一致。宽 U 修复前的九次执行在 `a3ec5ba` 上仍是三次 `PATH_UNREACHABLE`；当前稳定源码上九次都是 `SUCCESS`，仿真时间和跟踪误差与 `reports/step1_wide_u_replan_cases/` 里保存的数字一致。
+
+新的 45 个任务使用种子 20–24，协议是 `experiments/step1_nonconvex_seed_probe.yaml`。人员位置加一次标准差 0.04 m 的高斯扰动，Guide 初态沿内缩边界做一次幅度 0.35 m 的弧长扰动。四种场景—种子组合的人员间距低于 0.40 m，记为输入失败。有效输入都生成了部署曲线并找到目标；11 次停在 `PATH_UNREACHABLE`。这 45 个任务不是正式种子，也不与 1620 个凸边界任务合并。
+
+```powershell
+$env:PYTHONPATH = 'E:\udc-wt\f5b5d9c\src'
+$env:OMP_NUM_THREADS = '1'
+E:\udc-wt\venv312\Scripts\python.exe -m udc.experiments.comparison --spec experiments/step1_projection_formal.yaml --output runs/reproduction/kai-14900kf/convex_f5b5d9c/formal --workers 20
+$env:PYTHONPATH = 'E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\src'
+E:\udc-wt\venv312\Scripts\python.exe -m udc.experiments.scene_closure --spec experiments/step1_nonconvex_seed_probe.yaml --output runs/reproduction/kai-14900kf/probe_v1 --seeds 20 21 22 23 24
+```
+
+备份在 `backups/2026-10-17-kai-14900kf/`。校验清单是 `reports/kai_14900kf_checksums.json`。
 
 ## 检查
 

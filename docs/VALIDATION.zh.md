@@ -1,8 +1,92 @@
 # 验证记录
 
-当前一节是宽 U 执行中路径重算。它不改写后面的正式种子结果，也不覆盖 `runs/step1_scene_closure/` 里的原始失败轨迹。
+当前一节是 2026-10-17 新主机 `kai-14900kf` 的迁移、复现和 45 个新种子任务。它不改写后面的历史记录，也不覆盖旧轨迹。
+
+## 2026-10-17 新主机复现与非凸种子探测
+
+### 迁移
+
+仓库已在 `E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds`，分支 `Major-Research-Branches`，与 `origin` 同步。工作区在复现开始时是干净的。`814489d` 存在。其后只有 `c61e69d`（CI 日志）和 `b5eb341`（曲线接缝测试容差 1e-9）。这两笔不改变 `src/udc/`。稳定源码哈希是 `f3525f73905fa4574fe5318b433b1564a63fd776bbde18343a29b7dfe1dd02cd`，与九案例副本里记录的 dirty 源码哈希相同。
+
+没有找到 Git bundle。没有找到正式 1620、Kaii 复现、一般曲线、贴线修复、约束规划和场景闭环的原始 `runs/` 与对应备份。`backups/2026-10-16-projection-ablation` 的 2546 个文件与 `reports/projection_ablation_checksums.json` 一致。`reports/step1_wide_u_replan_cases/` 里的九份轨迹副本在 Git 中。被中途停止的“其他 Guide 进入全配对可见图”探索不在当前树里，没有恢复。
+
+因此下面的凸边界和一般曲线数字是新主机重跑。正式批次用的就是冻结提交 `f5b5d9c`，源码哈希 `90c9a762e21952e252b4e428ec926b55e12b7f6f484b59d93a2d02e14b9bc07e` 与记录一致。场景闭环修复前的哈希 `8731cff0d9d6e6e6e998ba1ba55acd4499799bf616d747dd0a14dea96bd58b23` 等于提交 `a3ec5ba`。一般曲线规划时的 dirty 哈希 `afbbad63…` 和约束规划时的 dirty 哈希 `35613526…` 没有源码快照；重跑使用 `a3ec5ba`，不能称为逐字节历史复现。贴线失败前的源码也没有单独提交，不能再要求那三次失败。
+
+### 环境
+
+Windows 11，Intel Core i9-14900KF，24 核、32 逻辑处理器，约 64 GB 内存。`uv` 0.13.1 安装 Python 3.12.15 到 `E:\udc-wt\venv312`。NumPy 2.5.4、SciPy 1.18.1、Shapely 2.2.0、JuPedSim 1.4.2、PedPy 1.5.1、pytest 9.1.1。仓库里的 `.venv` 是本机 Conda 建的 Python 3.13.13，没有拿来跑正式复现，也没有把虚拟环境加入 Git。`uv pip check`：All installed packages are compatible。`pytest`：89 passed。其中 87 项是稳定树原有测试，`tests/test_scene_probe.py` 新增 2 项。没有为了凑 87 或旧的 37 项记录去增删测试。
+
+导入路径按 worktree 分开：正式批次是 `E:\udc-wt\f5b5d9c\src\udc\__init__.py`，修复前场景是 `E:\udc-wt\a3ec5ba\src`，稳定九案例是 `E:\udc-wt\b5eb341\src`，新探测是当前仓库的 `src`。每个 worker 的数值线程是 1。先用 16 个进程跑确认协议的 seed 5（54 个任务，4.9 s），随后正式复现用 20 个进程。成对约束单独用 12 个进程，耗时 213.6 s。
+
+### 复现分类
+
+| 阶段 | 任务 | 新主机结果 | 与已记录分类 |
+|---|---:|---|---|
+| 50 人 Equal Arc | 1 | SUCCESS，23.0 s，间隙 3.741 m，路径 134.33 m | 一致 |
+| 20/24 Guide | 12 | N=20：Equal Arc、projected_mass、RA-ABDC 成功，其余 `no_plan_found`。N=24：除 DistMesh 外成功 | 原五方法的 10 个分类一致；projected_mass 是后来多出的两行 |
+| 热点试点 | 150 | 125 SUCCESS，25 `no_plan_found`，30 对输入一致 | 一致 |
+| 投影消融 | 360 | Equal Arc、projected_mass、RA-ABDC 各 90/90，Mass CVT 62/90 | 一致 |
+| 数量下界诊断 | 2 | 圆 N=13 下界 14；椭圆 N=14 下界 15。都是 `GAP_BOUND` | 一致。另一次误用自适应协议的运行已改名为 `infeasible_count_wrong_protocol`，不进入这 2 项 |
+| 确认种子 5–14 | 540 | Equal Arc 180/180，projected_mass 180/180，Mass CVT 124/180，56 次 `no_plan_found` | 一致。中间档多出的两次仍是圆形强热点 seed 6 和 13 |
+| 正式种子 5000–5029 | 1620 | Equal Arc 540/540，projected_mass 540/540，Mass CVT 377/540，163 次 `no_plan_found` | 一致。160 次在近下界档，3 次在强热点中间档 |
+| 一般曲线规划 | 300 | 271 个几何可行未执行，29 次欧氏间距失败，都在窄槽 | 分类一致。源码是 `a3ec5ba`，不是当时的 dirty 哈希 |
+| 浅凹三次执行 | 3 | 都是 `SUCCESS` | 这是贴线修复之后的行为。修复前的 `COVERAGE_NOT_MET` 没有源码可重放 |
+| 约束规划 | 48 | 可行见证 43，未找到 5 | 四条路径的计数与记录一致 |
+| 需求补充 | 6 | 窄槽 Equal Arc 与 projected_mass 仍约 0.449 m。成对约束七个起点的独立距离都低于 0.75 m | 成对约束这一次没有再现 0.750 m 的见证 |
+| 修复前九次执行 | 9 | 细长和窄 U 成功，宽 U 三次 `PATH_UNREACHABLE` | 与修复前记录一致，源码哈希相同 |
+| 稳定九案例 | 9 | 全部 `SUCCESS` | 仿真时间、重算次数和最大跟踪误差与保存的九份 metrics 相同 |
+
+正式 540 对的规划代价种子均值差是 −0.004932182635013109 m²，与 `reports/formal_step1_summary.json` 里的数字相同。积分点 1024、2048、4096 的参照改进是 0.004016、0.004062、0.004086。12 个参照没有全局最优证书；椭圆强热点 seed 0 的改进是 0.00157 m²，和上一台新主机的重跑相同。
+
+1620+540+360+150+12+1 份有轨迹的结果都做了离线复判，准则差异为 0，人群速度最大绝对值是 0。一般曲线 3 份、修复前 9 份和稳定 9 份同样一致。规划失败没有填仿真时间或路径。正式原始轨迹不在这台机器上，所以上面是新主机重跑，不是旧文件复判。稳定九案例可以和 Git 里的 metrics 副本直接对照。
+
+需求补充里的窄槽成对约束停在迭代上限。保存的六位小数距离写成 0.75 m 的四个起点，用六位弧坐标重算后比 0.75 m 低约 10⁻¹³ 到 10⁻¹¹ m，严格的 `>= 0.75` 因此不通过。常数密度的同一窄槽仍有通过的起点。没有放宽阈值，也没有加大 40 次迭代或 20 s 的预算。
+
+### 45 个新任务
+
+种子先对照已用清单：0–4、5–14、15–19 和 5000–5029。冻结的未用开发种子是 20、21、22、23、24。每个场景—种子只抽一次：人员流 `SeedSequence([20261017, seed, 1])`，各坐标独立高斯，标准差 0.04 m；Guide 流 `SeedSequence([20261017, seed, 2])`，在 1.0 m 内缩边界上做 ±0.35 m 的独立弧长平移。间距低于 0.40 m 或越出房间就停止，不重抽，也不因为某个方法失败而换种子。Guide 数量保持细长 11、窄 U 13、宽 U 19。边界只来自这一次人员观测的 1.3 m 圆盘并集。
+
+45 行都在 `reports/kai_14900kf_reproduction.json`。
+
+| 结果 | 行数 |
+|---|---:|
+| 输入生成失败 | 12 |
+| 边界无效 | 0 |
+| 数量必要条件违反 | 0 |
+| 目标规划未接受 | 0 |
+| `PATH_UNREACHABLE` | 11 |
+| 完整部署成功 | 22 |
+| 程序错误 | 0 |
+
+12 次输入失败是 4 个场景—种子单元各 3 种方法：窄 U 的 seed 20、22、24，宽 U 的 seed 24。最近中心距分别是 0.394 m、0.358 m、0.336 m 和 0.389 m。其余 11 个单元三种方法的输入哈希一致。33 份已执行轨迹的离线复判与在线一致，人群速度为 0。
+
+11 次路径失败都发生在计划已经被接受之后。细长 seed 23 的三种方法都是目标不在保守自由空间的连通路径上。宽 U 的 seed 22 和 23 三种方法都失败。宽 U seed 21 的 Equal Arc 和 projected_mass 失败，成对欧氏目标成功，三者输入哈希相同。有效单元上的成对求解离线时间中位数 3.43 s，最长 13.2 s，11 次合计 68.2 s。没有为了成功增加预算。
+
+这五个种子只说明当前流程在预先规定的扰动下会在哪里停下。不能把它说成一般性能优势，也不能和正式 1620 混成一个样本。
+
+### 判断
+
+边界估计和目标的弧间隙、欧氏检查都没有成为这 45 行的失败来源。约束求解在这台机器上不是当前规模的阻塞。下一轮应优先处理导航：扰动后的人员和 Guide 初态会让已接受的目标在保守自由空间里没有路径。宽 U seed 21 说明换一组目标有时能避开，但这不是新的部署算法，也没有证明成对约束更优。不要同时更换边界估计器、扩大因子表或进入 Step 2/3。
+
+输出在 `runs/reproduction/kai-14900kf/`。备份在 `backups/2026-10-17-kai-14900kf/reproduction/`，17900 个文件、364468817 字节，校验是 `reports/kai_14900kf_checksums.json`。代表图在 `reports/kai_14900kf_figures/`。
+
+```powershell
+$env:Path = "C:\Users\kai\.local\bin;" + $env:Path
+uv venv --python 3.12.15 E:\udc-wt\venv312
+uv pip install --python E:\udc-wt\venv312\Scripts\python.exe -r requirements.txt
+uv pip install --python E:\udc-wt\venv312\Scripts\python.exe pytest==9.1.1
+$env:PYTHONPATH = 'E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\src'
+$env:OMP_NUM_THREADS = '1'
+E:\udc-wt\venv312\Scripts\python.exe -m pytest -q
+E:\udc-wt\venv312\Scripts\python.exe -m udc.experiments.scene_closure --spec experiments/step1_nonconvex_seed_probe.yaml --output runs/reproduction/kai-14900kf/probe_v1 --seeds 20
+E:\udc-wt\venv312\Scripts\python.exe -m udc.experiments.scene_closure --spec experiments/step1_nonconvex_seed_probe.yaml --output runs/reproduction/kai-14900kf/probe_v1 --seeds 21 22 23 24
+```
+
+历史复现的分阶段命令在 `E:\udc-wt\reproduce_history.ps1`。运行前要把 `PYTHONPATH` 指到对应 worktree 的 `src`，否则会导入当前可编辑安装。
 
 ## 2026-10-16 宽 U 重算修复
+
+下面是宽 U 修复的原始记录。它不改写上面的新主机结果。
 
 ### 保存的起点
 

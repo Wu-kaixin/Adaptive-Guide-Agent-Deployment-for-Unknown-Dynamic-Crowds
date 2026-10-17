@@ -174,10 +174,13 @@ def _near_count(length, gap):
     return max(3, int(np.ceil(float(length) / float(gap) - 1e-12)))
 
 
-def _plan_methods(spec, boundary):
+def _plan_methods(spec, boundary, count=None):
     gap = float(spec['gap_limit_m'])
     separation = float(spec['center_separation_m'])
-    count = _near_count(boundary.length, gap)
+    if count is None:
+        count = _near_count(boundary.length, gap)
+    else:
+        count = int(count)
     samples = int(spec['quadrature_samples'])
     density = np.ones(len(boundary.deployment))
     quadrature, mass, length = quadrature_mass(boundary, density, samples)
@@ -422,11 +425,363 @@ def _profile_case(spec, boundary, people, radii, output):
     })
 
 
+FROZEN_PROBE_SEEDS = (20, 21, 22, 23, 24)
+USED_DEVELOPMENT_SEEDS = set(range(0, 20))
+RESERVED_FORMAL_SEEDS = set(range(5000, 5030))
+
+
+def load_probe_spec(path):
+    path = Path(path)
+    spec = yaml.safe_load(path.read_text(encoding='utf-8'))
+    if spec.get('protocol') != 'scene_closure_seed_probe':
+        raise ValueError('Unsupported scene-closure seed probe')
+    if tuple(int(seed) for seed in spec['seeds']) != FROZEN_PROBE_SEEDS:
+        raise ValueError('The frozen probe seeds are 20, 21, 22, 23 and 24')
+    spec['_sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+    spec['_path'] = str(path)
+    return spec
+
+
+def resolve_probe_seeds(spec, requested):
+    frozen = [int(seed) for seed in spec['seeds']]
+    if requested is None:
+        return frozen
+    requested = [int(seed) for seed in requested]
+    unknown = sorted(set(requested) - set(frozen))
+    if unknown:
+        raise ValueError(f'Seed is outside the frozen probe list: {unknown}')
+    blocked = sorted(set(requested) & (USED_DEVELOPMENT_SEEDS | RESERVED_FORMAL_SEEDS))
+    if blocked:
+        raise ValueError(f'Seed collides with a used or reserved seed: {blocked}')
+    return [seed for seed in frozen if seed in set(requested)]
+
+
+def _probe_streams(seed):
+    return {
+        'people': [20261017, int(seed), 1],
+        'guides': [20261017, int(seed), 2],
+        'people_distribution': 'independent gaussian, one draw, no redraw',
+        'guide_distribution': 'independent uniform arc shift on the inset perimeter, one draw',
+    }
+
+
+def perturb_people(points, seed, sigma):
+    """One reproducible displacement. The caller checks physics and does not redraw."""
+    rng = np.random.default_rng(np.random.SeedSequence([20261017, int(seed), 1]))
+    return np.asarray(points, dtype=float) + rng.normal(0.0, float(sigma), size=np.shape(points))
+
+
+def perturb_guides(room, inset, count, seed, amplitude):
+    """Move each guide along the same inset perimeter used by Environment."""
+    polygon = Polygon([(0.0, 0.0), (room, 0.0), (room, room), (0.0, room)])
+    line = polygon.buffer(-float(inset), join_style='mitre').exterior
+    rng = np.random.default_rng(np.random.SeedSequence([20261017, int(seed), 2]))
+    shifts = rng.uniform(-float(amplitude), float(amplitude), size=int(count))
+    length = float(line.length)
+    positions = [
+        line.interpolate(((index / count + 0.012) * length + float(shift)) % length).coords[0]
+        for index, shift in enumerate(shifts)
+    ]
+    return np.asarray(positions, dtype=float), np.asarray(shifts, dtype=float)
+
+
+def _input_hash(points, radii, guides):
+    raw = np.ascontiguousarray(np.c_[points, radii]).tobytes()
+    raw += np.ascontiguousarray(guides).tobytes()
+    return hashlib.sha256(raw).hexdigest()
+
+
+def _blank_row(scene, seed, method, count, stage, detail):
+    return {
+        'scene': scene, 'seed': int(seed), 'method': method, 'count': count,
+        'stage': stage, 'detail': detail, 'executed': False, 'success': False,
+        'termination_status': None, 'program_error': stage == 'program_error',
+        'input_generation_failed': stage == 'input_generation_failed',
+        'boundary_invalid': stage == 'boundary_invalid',
+        'necessary_count_met': None, 'plan_accepted': False,
+        'input_sha256': None,
+        'planned_demand_weighted_cost': None,
+        'actual_demand_weighted_cost': None,
+        'actual_max_gap': None,
+        'target_min_euclidean_distance': None,
+        'minimum_net_clearances': None,
+        'minimum_center_distances': None,
+        'max_tracking_error': None,
+        'max_curve_distance': None,
+        'simulation_time': None,
+        'trajectory_length_m': None,
+        'path_length': None,
+        'replan_count': None,
+        'plan_wall_seconds': None,
+        'execution_wall_seconds': None,
+        'pairwise_attempt_seconds': None,
+    }
+
+
+def _metrics_fields(row, metrics, offline):
+    trajectory = None
+    online = metrics.get('criteria')
+    row.update({
+        'executed': True,
+        'termination_status': metrics.get('termination_status'),
+        'success': bool(metrics.get('success')),
+        'stage': 'success' if metrics.get('success') else 'execution_or_acceptance_failed',
+        'criteria': online,
+        'reevaluation_criteria': None if offline is None else offline.get('criteria'),
+        'reevaluation_match': None if offline is None else offline.get('criteria') == online,
+        'planned_demand_weighted_cost': metrics.get('planned_demand_weighted_cost'),
+        'actual_demand_weighted_cost': metrics.get('actual_demand_weighted_cost'),
+        'actual_max_gap': metrics.get('actual_max_gap'),
+        'target_min_euclidean_distance': metrics.get('target_min_euclidean_distance'),
+        'minimum_net_clearances': metrics.get('minimum_net_clearances'),
+        'minimum_center_distances': metrics.get('minimum_center_distances'),
+        'max_tracking_error': metrics.get('max_tracking_error'),
+        'max_curve_distance': metrics.get('max_curve_distance'),
+        'simulation_time': metrics.get('simulation_time'),
+        'path_length': metrics.get('path_length'),
+        'replan_count': metrics.get('replan_count'),
+        'execution_wall_seconds': metrics.get('wall_time'),
+        'failure_reason': metrics.get('failure_reason'),
+        'stage_diagnosis': metrics.get('stage_diagnosis'),
+    })
+    return trajectory
+
+
+def _trajectory_length(directory):
+    path = Path(directory) / 'trajectory.npz'
+    if not path.is_file():
+        return None
+    with np.load(path) as data:
+        if 'positions' not in data:
+            return None
+        positions = np.asarray(data['positions'], dtype=float)
+    if positions.ndim != 3 or len(positions) < 2:
+        return None
+    return float(np.linalg.norm(np.diff(positions, axis=0), axis=2).sum())
+
+
+def _probe_figures(output, rows):
+    import matplotlib
+    matplotlib.use('Agg', force=False)
+    import matplotlib.pyplot as plt
+    figures = output / 'figures'
+    figures.mkdir(parents=True, exist_ok=True)
+    chosen = []
+    for row in rows:
+        if row.get('executed') and (row.get('success') or row.get('stage') != 'success'):
+            chosen.append(row)
+    # One panel per executed scene-seed, preferring equal_arc when it ran.
+    panels = {}
+    for row in rows:
+        if not row.get('executed'):
+            continue
+        key = (row['scene'], row['seed'])
+        panels.setdefault(key, row)
+        if row['method'] == 'equal_arc':
+            panels[key] = row
+    for (scene, seed), row in panels.items():
+        directory = output / 'execution' / scene / f'seed_{seed}' / row['method'] / 'run'
+        trajectory = directory / 'trajectory.npz'
+        if not trajectory.is_file():
+            continue
+        with np.load(trajectory) as data:
+            people = np.asarray(data['crowd_positions'])
+            guides = np.asarray(data['positions'])
+            targets = np.asarray(data['targets']) if 'targets' in data else None
+            curve = np.asarray(data['boundary_deployment']) if 'boundary_deployment' in data else None
+        figure, axis = plt.subplots(figsize=(6, 6))
+        if curve is not None and len(curve):
+            closed = np.vstack([curve, curve[0]])
+            axis.plot(closed[:, 0], closed[:, 1], color='#159a8c', lw=1)
+        axis.scatter(people[:, 0], people[:, 1], s=12, c='#24344d', label='people')
+        if guides.ndim == 3 and len(guides):
+            for agent in range(guides.shape[1]):
+                axis.plot(guides[:, agent, 0], guides[:, agent, 1], color='#c0392b', lw=0.8, alpha=0.8)
+        if targets is not None:
+            axis.scatter(targets[:, 0], targets[:, 1], marker='+', c='#1d4ed8', label='targets')
+        axis.set_aspect('equal')
+        axis.set_title(f'{scene} seed {seed} {row["method"]} {row.get("termination_status")}')
+        figure.savefig(figures / f'{scene}_seed_{seed}.png', dpi=120)
+        plt.close(figure)
+    return str(figures)
+
+
+def run_seed_probe(spec_path, output, requested_seeds=None):
+    spec = load_probe_spec(spec_path)
+    base = load_spec(spec['base_spec'])
+    seeds = resolve_probe_seeds(spec, requested_seeds)
+    output = Path(output)
+    output.mkdir(parents=True, exist_ok=True)
+    scenes = {scene['name']: scene for scene in base['scenes']}
+    order = list(spec['scenes'])
+    counts = {name: int(value) for name, value in spec['guide_counts'].items()}
+    if set(order) != set(counts):
+        raise ValueError('Probe scenes and guide counts do not match')
+    sigma = float(spec['perturbation']['people_sigma_m'])
+    amplitude = float(spec['perturbation']['guide_amplitude_m'])
+    if int(spec['perturbation']['draws']) != 1 or spec['perturbation'].get('resample_on_failure'):
+        raise ValueError('The probe draws each stream once and does not resample')
+    source = provenance({'spec': spec['_sha256'], 'base_spec': base['_sha256']}, None,
+                        'scene_closure_seed_probe', None)
+    rows = []
+    for seed in seeds:
+        for name in order:
+            scene = scenes[name]
+            count = counts[name]
+            points, radii = scene_people(scene, base['person_radius_m'])
+            perturbed = perturb_people(points, seed, sigma)
+            report = _people_report(
+                perturbed, radii, base['room_m'], base['minimum_center_distance_m'],
+            )
+            guides, shifts = perturb_guides(
+                float(base['room_m']), float(base['guides']['initial_inset']), count, seed, amplitude,
+            )
+            valid_people = bool(report['meets_stated_separation'] and report['inside_room']
+                                and not report['bodies_overlap'])
+            input_dir = output / 'inputs' / name / f'seed_{seed}'
+            input_dir.mkdir(parents=True, exist_ok=True)
+            np.savez(
+                input_dir / 'input.npz',
+                base_positions=points, positions=perturbed, radii=radii,
+                guides=guides, guide_arc_shifts=shifts,
+                demand=np.ones(len(perturbed)),
+            )
+            shared = {
+                'input_sha256': _input_hash(perturbed, radii, guides) if valid_people else None,
+                'people_report': report,
+                'guide_shift_min_m': float(shifts.min()),
+                'guide_shift_max_m': float(shifts.max()),
+                'streams': _probe_streams(seed),
+            }
+            if not valid_people:
+                for method in spec['methods']:
+                    row = _blank_row(name, seed, method, count, 'input_generation_failed',
+                                     'one perturbation draw violated separation or the room')
+                    row.update(shared)
+                    rows.append(row)
+                continue
+            started = perf_counter()
+            estimates = _estimate_all(base, perturbed, radii)
+            estimate_seconds = perf_counter() - started
+            primary = estimates['disk_union_primary']
+            _write(input_dir / 'estimates.json', {
+                name: _public_estimate(record) for name, record in estimates.items()
+            })
+            if not primary.get('valid'):
+                for method in spec['methods']:
+                    row = _blank_row(name, seed, method, count, 'boundary_invalid',
+                                     primary.get('error', 'disk-union primary curve was rejected'))
+                    row.update(shared)
+                    row['estimate_wall_seconds'] = estimate_seconds
+                    rows.append(row)
+                continue
+            boundary = primary['boundary']
+            from udc.deployment.geometry import count_rule
+            rule = count_rule(boundary.length, base['gap_limit_m'], base['center_separation_m'])
+            necessary = int(rule['near'])
+            necessary_met = count >= necessary
+            plan_started = perf_counter()
+            fixed_count, plans = _plan_methods(base, boundary, count=count)
+            plan_seconds = perf_counter() - plan_started
+            if fixed_count != count:
+                raise RuntimeError('Probe guide count changed during planning')
+            public_plans = {
+                method: {key: value for key, value in plan.items() if key != 'plan_object'}
+                for method, plan in plans.items()
+            }
+            _write(output / 'plans' / f'{name}__seed_{seed}.json', {
+                'scene': name, 'seed': seed, 'count': count,
+                'necessary_min_count': necessary, 'necessary_count_met': necessary_met,
+                'curve_length_m': float(boundary.length),
+                'plan_wall_seconds': plan_seconds,
+                'methods': public_plans,
+            })
+            for method in spec['methods']:
+                plan = plans[method]
+                row = _blank_row(name, seed, method, count, 'planned', '')
+                row.update(shared)
+                row['necessary_count_met'] = necessary_met
+                row['necessary_min_count'] = necessary
+                row['curve_length_m'] = float(boundary.length)
+                row['plan_accepted'] = bool(plan.get('accepted'))
+                row['plan_outcome'] = plan.get('outcome')
+                row['planned_demand_weighted_cost'] = plan.get('best_cost')
+                row['target_min_euclidean_distance'] = plan.get('min_euclidean_m')
+                row['plan_wall_seconds'] = plan_seconds
+                row['estimate_wall_seconds'] = estimate_seconds
+                attempts = plan.get('attempts') or []
+                row['pairwise_attempt_seconds'] = [
+                    attempt.get('solver_seconds')
+                    for attempt in attempts if isinstance(attempt, dict)
+                ] or None
+                if not plan.get('accepted') or plan.get('plan_object') is None:
+                    row['stage'] = 'necessary_count_violation' if not necessary_met else 'plan_not_accepted'
+                    row['detail'] = (
+                        f'fixed N={count} is below ceil(L/1.94)={necessary}'
+                        if not necessary_met else plan.get('outcome')
+                    )
+                    rows.append(row)
+                    continue
+                directory = output / 'execution' / name / f'seed_{seed}' / method
+                try:
+                    config_path = _execution_config(
+                        directory, perturbed, boundary.deployment, count, seed, base,
+                    )
+                    metrics = experiment(
+                        config_path, directory / 'run', seed=int(seed), plots=False,
+                        protocol='fixed_n', fixed_n=int(count), method='projected_mass',
+                        method_label=method, prescribed_boundary=boundary,
+                        prescribed_plan=plan['plan_object'],
+                        boundary_source='estimated_disk_union',
+                        initial_guides=guides,
+                    )
+                    offline = reevaluate_result(directory / 'run')
+                    _metrics_fields(row, metrics, offline)
+                    row['trajectory_length_m'] = _trajectory_length(directory / 'run')
+                    if not necessary_met and row['stage'] != 'success':
+                        row['stage'] = 'necessary_count_violation'
+                except Exception as error:
+                    row['stage'] = 'program_error'
+                    row['program_error'] = True
+                    row['detail'] = f'{type(error).__name__}: {error}'
+                    row['executed'] = False
+                rows.append(row)
+            for method in plans:
+                plans[method].pop('plan_object', None)
+    _write(output / 'probe_summary.json', {
+        'protocol': spec['protocol'],
+        'spec_sha256': spec['_sha256'],
+        'base_spec_sha256': base['_sha256'],
+        'seeds': seeds,
+        'provenance': source,
+        'perturbation': spec['perturbation'],
+        'guide_counts': counts,
+        'formal_validation': False,
+        'rows': rows,
+    })
+    if any(row.get('executed') for row in rows):
+        _probe_figures(output, rows)
+    print(json.dumps({
+        'seeds': seeds,
+        'rows': len(rows),
+        'success': sum(bool(row.get('success')) for row in rows),
+        'input_generation_failed': sum(row.get('stage') == 'input_generation_failed' for row in rows),
+        'boundary_invalid': sum(row.get('stage') == 'boundary_invalid' for row in rows),
+        'plan_not_accepted': sum(row.get('stage') == 'plan_not_accepted' for row in rows),
+    }, indent=2))
+    return rows
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description='Scene realizability of narrow deployment curves')
     parser.add_argument('--spec', default='experiments/step1_scene_closure.yaml')
     parser.add_argument('--output', default='runs/step1_scene_closure')
+    parser.add_argument('--seeds', type=int, nargs='*')
     args = parser.parse_args(argv)
+    preview = yaml.safe_load(Path(args.spec).read_text(encoding='utf-8'))
+    if preview.get('protocol') == 'scene_closure_seed_probe':
+        run_seed_probe(args.spec, args.output, args.seeds or None)
+        return
     spec = load_spec(args.spec)
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)

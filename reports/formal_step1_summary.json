@@ -1,0 +1,23 @@
+{
+  "commit": "f5b5d9c1ad39d2410a0872574c3384c991d70ad2",
+  "source_sha256": "90c9a762e21952e252b4e428ec926b55e12b7f6f484b59d93a2d02e14b9bc07e",
+  "spec_sha256": "0769b5cc24ecd805867ba218dd94cee9ae6ff616c60f978b8bef9383ab11b3b8",
+  "tasks": 1620,
+  "equal_arc_success": "540/540",
+  "mass_cvt_success": "377/540",
+  "projected_mass_success": "540/540",
+  "planning_failures": 163,
+  "assignment_failures": 0,
+  "execution_failures": 0,
+  "reevaluation_mismatches": 0,
+  "planned_cost_seed_mean": -0.004932182635013109,
+  "planned_cost_seed_ci95": [
+    -0.005204773706388359,
+    -0.004665340880981976
+  ],
+  "analysis": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_rng_seed": 20261016,
+    "cluster": "seed"
+  }
+}

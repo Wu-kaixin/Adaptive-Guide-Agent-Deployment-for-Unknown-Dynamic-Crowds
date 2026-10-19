@@ -1,0 +1,61 @@
+# Step 1 fair comparison. This file is the factor specification.
+# The runner writes one strict Step 1 config per task. It does not execute
+# validation seeds 5000-5029.
+schema_version: 1
+protocol: fixed_n
+methods: [equal_arc, average_cvt, mass_cvt, distmesh, projected_mass, ra_abdc]
+development_seeds: [0, 1, 2, 3, 4]
+reserved_validation_seeds: [5000, 5029]
+notes:
+  - Same scene, crowd sample, guide count, boundary settings, navigation and safety limits are shared inside one cell. Only the deployment method changes.
+  - Resource levels change the guide count, so their initial positions differ. Compare methods inside one resource level.
+  - Guide counts are budgets from the spawn polygon. They are not a claim that the run will succeed.
+  - Demand values are planning weights. The hotspot disk is not a validated risk model.
+  - The hotspot disk is shifted to the +x side of the crowd (offset_scale). A disk at the centroid of a symmetric crowd raises no side of the deployment curve over another and is not a spatial hotspot for the boundary.
+  - This table has 2 x 3 x 3 x 3 x 3 x 6 x 5 = 4860 tasks and has not been run. The projection ablation is experiments/step1_projection_ablation.yaml.
+shared:
+  spacing: 0.55
+  radius: {mean: 0.20, std: 0.015, min: 0.17, max: 0.23}
+  guides: {radius: 0.20, max_speed: 1.0, initial_inset: 1.0}
+  controller:
+    offset: 1.3
+    sample_spacing: 0.1
+    budget_gap: 2.0
+    max_gap_limit: 2.0
+    position_tolerance: 0.03
+    speed_tolerance: 0.03
+    curve_tolerance: 0.04
+    arc_tolerance: 0.03
+    safety_numeric_tolerance: 1.0e-7
+    demand_bandwidth: 1.2
+    gain: 1.5
+    hold_steps: 10
+    clearance: 0.35
+    waypoint_tolerance: 0.05
+    phases: [0.0, 0.25, 0.5, 0.75]
+    quadrature_samples: 2048
+    planner_max_iterations: 300
+    stall_window: 20
+    max_replans: 3
+  simulation: {dt: 0.1, max_steps: 400}
+factors:
+  environment:
+    square: {type: square, width: 20.0, height: 20.0}
+    rectangle: {type: rectangle, width: 28.0, height: 16.0}
+  shape: [circle, ellipse, nonconvex]
+  size:
+    small: {count: 20}
+    medium: {count: 50}
+    large: {count: 80}
+  demand:
+    uniform: {mean: 1.0, std: 0.0, min: 1.0, max: 1.0}
+    weak: {mean: 0.55, std: 0.05, min: 0.4, max: 0.8}
+    hotspot:
+      mean: 0.8
+      std: 0.05
+      min: 0.4
+      max: 3.0
+      multiplier: 2.5
+      radius_scale: 0.35
+      offset_scale: 0.55
+  resource: [sufficient, moderate, severe]

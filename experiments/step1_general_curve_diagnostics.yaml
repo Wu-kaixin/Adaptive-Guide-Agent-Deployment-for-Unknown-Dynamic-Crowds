@@ -1,0 +1,84 @@
+# Diagnostic planning on prescribed curves.
+# 3 families x 2 intensities x 2 count tiers x 5 origin seeds x 5 methods = 300.
+# Seeds 15-19 are unused by the development (0-4), confirmation (5-14) and formal
+# (5000-5029) protocols. They rotate the parameter origin. They do not redraw the shape.
+schema_version: 1
+protocol: prescribed_curve_diagnostic
+seed_role: parameter_origin
+development_seeds: [15, 16, 17, 18, 19]
+reserved_validation_seeds: [5000, 5029]
+methods: [equal_arc, mass_cvt, projected_mass, average_cvt, distmesh]
+core_methods: [equal_arc, mass_cvt, projected_mass]
+notes:
+  - This is a geometry diagnostic. It is not evidence that an unknown boundary has been estimated.
+  - The curve is prescribed. Normal observations still go through the convex-offset estimator.
+  - Demand on the curve is an explicit constant. Unit person weights are not used as a substitute.
+  - near = ceil(L / 1.94). margin = ceil(L / (0.75 * pi / 2)). Counts are not reduced when a method fails.
+  - 1.94 m is max_gap_limit 2.0 minus two arc tolerances of 0.03. 0.75 m is the center distance 2*0.20 + 0.35.
+  - A 0.04 m Fourier perturbation made the capsules non-convex, so it is not part of this matrix.
+  - Pure planning tasks are not deployment successes. People, walls and paths stay unevaluated there.
+  - Execution, if a unit can hold people, reuses assignment, navigation, the safety filter and recovery.
+    The inward offset stays 1.6 m. It is not reduced to force a case to run.
+geometry:
+  target_length_m: 32.0
+  planner_spacing_m: 0.05
+  fine_spacing_m: 0.01
+  gap_limit_m: 1.94
+  center_separation_m: 0.75
+  seed_origin_step: 0.05
+  families:
+    high_curvature_convex:
+      mild: {cap_radius_m: 1.50}
+      strong: {cap_radius_m: 0.55}
+    shallow_concave:
+      mild: {depth_fraction: 0.22, sigma_rad: 0.40}
+      strong: {depth_fraction: 0.34, sigma_rad: 0.40}
+    deep_notch:
+      wide: {slot_width_m: 1.20, depth_fraction: 0.72, fillet_m: 0.18}
+      narrow: {slot_width_m: 0.45, depth_fraction: 0.78, fillet_m: 0.10}
+planner:
+  phases: [0.0, 0.25, 0.5, 0.75]
+  quadrature_samples: 2048
+  planner_max_iterations: 300
+  max_gap_limit: 2.0
+  arc_tolerance: 0.03
+execution_attachment:
+  room_m: 30.0
+  curve_room_clearance_m: 1.0
+  inward_offset_m: 1.6
+  minimum_interior_area_m2: 1.0
+  grid_spacing_m: 0.8
+  person_radius_m: 0.20
+  maximum_people: 16
+  minimum_people: 3
+  methods: [equal_arc, mass_cvt, projected_mass]
+  max_units: 6
+  max_tasks: 18
+  simulation: {dt: 0.1, max_steps: 400}
+  guides: {radius: 0.20, max_speed: 1.0, initial_inset: 1.0}
+  controller:
+    offset: 1.3
+    sample_spacing: 0.1
+    budget_gap: 2.0
+    max_gap_limit: 2.0
+    position_tolerance: 0.03
+    speed_tolerance: 0.03
+    curve_tolerance: 0.04
+    arc_tolerance: 0.03
+    safety_numeric_tolerance: 1.0e-7
+    demand_bandwidth: 1.2
+    gain: 1.5
+    hold_steps: 10
+    clearance: 0.35
+    waypoint_tolerance: 0.05
+    phases: [0.0, 0.25, 0.5, 0.75]
+    quadrature_samples: 2048
+    planner_max_iterations: 300
+    stall_window: 20
+    max_replans: 3
+selection_rules:
+  - One feasible near-tier unit for each family's second intensity, lowest seed. If that alignment is not feasible, use the margin tier of the same intensity. Skip the family when neither is feasible.
+  - Among the remaining feasible units, the smallest positive Euclidean margin.
+  - Among arc-pass and Euclidean-fail units, the largest Euclidean violation. That unit is shown and is not executed.
+  - Fill any remaining display slots with feasible near-tier units whose family is not yet included, lowest seed.
+  - Execute only target_geometry_feasible units that can hold the frozen people attachment. Planning failures stay out of execution.

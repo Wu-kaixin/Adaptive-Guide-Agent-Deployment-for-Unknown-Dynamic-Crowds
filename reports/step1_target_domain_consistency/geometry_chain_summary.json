@@ -1,0 +1,666 @@
+{
+  "schema_version": 1,
+  "data_origin": "reconstructed_from_frozen_protocol_not_original_raw_data",
+  "input_array_sha256": "32acb4bd28019d0457b9bcd2c632026b8724719cd6032137cb5cfa1c0bb17597",
+  "input_file_sha256": "b0ae3197c1417b8cb5d075b520bfd320c0935aa8a720cfc52290a020ce546f97",
+  "boundary_file_sha256": "1c53b78468ff43d8e53d350084e749384567a21a0b6b52f51204d3a92238bcce",
+  "boundary_array_sha256": "8bd0eb91a034ad4950bcc87075136642cc50d3fee9aaabf61663d076e3779608",
+  "domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+  "common_target": [
+    10.502248302340506,
+    14.811495174001504
+  ],
+  "stages": [
+    {
+      "name": "01_observed_disks",
+      "wkb_sha256": "cbee87a411906653183591697bfa7e2e8027960f9ff29c26e93028cc285e05d4",
+      "type": "MultiPolygon",
+      "area_m2": 2.009811940451039,
+      "length_m": 20.104174405969733,
+      "covers_common_target": false,
+      "boundary_distance_m": 1.2996424142016045,
+      "signed_outside_clearance_m": 1.2996424142016045
+    },
+    {
+      "name": "02_closing_dilation",
+      "wkb_sha256": "30d3455fc5a701f679713e76d1214ea8eee8ae790f55b81b49cc3d5aba6c1328",
+      "type": "Polygon",
+      "area_m2": 9.298873556619846,
+      "length_m": 16.39228117302929,
+      "covers_common_target": false,
+      "boundary_distance_m": 0.9997008827612475,
+      "signed_outside_clearance_m": 0.9997008827612475
+    },
+    {
+      "name": "03_closing_erosion",
+      "wkb_sha256": "56a6a01da77f9f8a3e02ebb58b92f745e00f1d8bf67ffdfb218f1a6908b1e485",
+      "type": "Polygon",
+      "area_m2": 4.129496470377525,
+      "length_m": 17.21250649389518,
+      "covers_common_target": false,
+      "boundary_distance_m": 1.299711375703177,
+      "signed_outside_clearance_m": 1.299711375703177
+    },
+    {
+      "name": "04_closed_union_original",
+      "wkb_sha256": "43b3b7a3d6cd2f3b047b78e022e4c42be96388e72a34c1de73cc57da20dc7cb7",
+      "type": "Polygon",
+      "area_m2": 4.129719953938188,
+      "length_m": 17.21399041881992,
+      "covers_common_target": false,
+      "boundary_distance_m": 1.2996424142016045,
+      "signed_outside_clearance_m": 1.2996424142016045
+    },
+    {
+      "name": "05_controller_crowd_exterior",
+      "wkb_sha256": "6aeabcb0b4b1ec8c7420141f50bca7a49c9f8437b9f9ad6eb30afb7570cb3da1",
+      "type": "Polygon",
+      "area_m2": 4.1297199539382055,
+      "length_m": 17.213990418819968,
+      "covers_common_target": false,
+      "boundary_distance_m": 1.2996424142016045,
+      "signed_outside_clearance_m": 1.2996424142016045
+    },
+    {
+      "name": "06_raw_offset_1p3",
+      "wkb_sha256": "0e15b289c111144616983ea6c6adfeb54e6d26595346808aac869288c72ca6b5",
+      "type": "Polygon",
+      "area_m2": 27.18260185505207,
+      "length_m": 20.764853051098108,
+      "covers_common_target": true,
+      "boundary_distance_m": 0.0,
+      "signed_outside_clearance_m": -0.0
+    },
+    {
+      "name": "07_sampled_deployment",
+      "wkb_sha256": "af5e672813987ae7c9b25ba03091b6b7bfc7140a406ef0208e5b776338c7c29a",
+      "type": "LineString",
+      "area_m2": 0.0,
+      "length_m": 20.735250954732287,
+      "covers_common_target": true,
+      "boundary_distance_m": 0.0,
+      "signed_outside_clearance_m": null
+    },
+    {
+      "name": "08_inset_room",
+      "wkb_sha256": "ba220ce20233f2df96d9f86b58c982ae71197041e44094bcd153061a374ddd3e",
+      "type": "Polygon",
+      "area_m2": 835.2099999999999,
+      "length_m": 115.6,
+      "covers_common_target": true,
+      "boundary_distance_m": 9.952248302340506,
+      "signed_outside_clearance_m": -9.952248302340506
+    },
+    {
+      "name": "09_physical_mitre_0p55",
+      "wkb_sha256": "33e2813ab8919395f9711ea15a583992dfdf7ed762a55d6a6bbc18dc0b7452e2",
+      "type": "Polygon",
+      "area_m2": 13.373769292601766,
+      "length_m": 17.20763428987494,
+      "covers_common_target": false,
+      "boundary_distance_m": 0.34595252777361607,
+      "signed_outside_clearance_m": 0.34595252777361607
+    },
+    {
+      "name": "10_simplify_0p10",
+      "wkb_sha256": "ba2774ce3ff780afd0537085607947f519db6774c09b3351c65e173b819bc81c",
+      "type": "Polygon",
+      "area_m2": 12.981052071923488,
+      "length_m": 16.735072937518442,
+      "covers_common_target": false,
+      "boundary_distance_m": 0.34595252777361607,
+      "signed_outside_clearance_m": 0.34595252777361607
+    },
+    {
+      "name": "11_conservative_mitre_0p11",
+      "wkb_sha256": "bd03e5c834a5794f08173057a07c8aef56a4c4a2e5efdf46b6e9720ab70fb491",
+      "type": "Polygon",
+      "area_m2": 14.892325713301679,
+      "length_m": 18.015356905721408,
+      "covers_common_target": true,
+      "boundary_distance_m": 0.005461995844437837,
+      "signed_outside_clearance_m": -0.005461995844437837
+    },
+    {
+      "name": "12_navigation_free",
+      "wkb_sha256": "7b6a05ab64cdd0284e1fb8137d38401f395f67b4da34f18d63107e2bd99169d6",
+      "type": "Polygon",
+      "area_m2": 820.3176742866982,
+      "length_m": 133.6153569057214,
+      "covers_common_target": false,
+      "boundary_distance_m": 0.00546199584443784,
+      "signed_outside_clearance_m": 0.00546199584443784
+    }
+  ],
+  "methods": {
+    "equal_arc": {
+      "accepted": false,
+      "invalid_target_indices": [
+        0
+      ],
+      "query_domain": "static_conservative_navigation",
+      "geometry_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+      "endpoint_tolerance_m": 1e-07,
+      "targets": [
+        {
+          "target": 0,
+          "coordinates": [
+            10.502248302340506,
+            14.811495174001504
+          ],
+          "arc_m": 0.0,
+          "signed_free_distance_m": -0.00546199584443784,
+          "accepted": false,
+          "reason": "inside_conservative_obstacle"
+        },
+        {
+          "target": 1,
+          "coordinates": [
+            11.151302090169242,
+            13.171843712764797
+          ],
+          "arc_m": 1.8850228140665715,
+          "signed_free_distance_m": 0.6959569105849153,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 2,
+          "coordinates": [
+            12.975735395479138,
+            12.84902886472005
+          ],
+          "arc_m": 3.770045628133143,
+          "signed_free_distance_m": 0.6848343133776088,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 3,
+          "coordinates": [
+            14.834602023574709,
+            12.868301998955173
+          ],
+          "arc_m": 5.655068442199714,
+          "signed_free_distance_m": 0.48280704059354995,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 4,
+          "coordinates": [
+            16.699429239675023,
+            12.870507803225596
+          ],
+          "arc_m": 7.540091256266286,
+          "signed_free_distance_m": 0.6456715802612607,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 5,
+          "coordinates": [
+            18.22992162002718,
+            13.744895632213657
+          ],
+          "arc_m": 9.425114070332858,
+          "signed_free_distance_m": 0.6347291965013583,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 6,
+          "coordinates": [
+            18.2836603904595,
+            15.596368341484899
+          ],
+          "arc_m": 11.310136884399428,
+          "signed_free_distance_m": 0.6739950016655631,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 7,
+          "coordinates": [
+            16.83682994674308,
+            16.603224505636113
+          ],
+          "arc_m": 13.195159698466,
+          "signed_free_distance_m": 0.6489924192294007,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 8,
+          "coordinates": [
+            14.972253569690569,
+            16.534258205757993
+          ],
+          "arc_m": 15.080182512532572,
+          "signed_free_distance_m": 0.7178393954017538,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 9,
+          "coordinates": [
+            13.105984958017018,
+            16.63908606729936
+          ],
+          "arc_m": 16.965205326599143,
+          "signed_free_distance_m": 0.6714584427077945,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 10,
+          "coordinates": [
+            11.264437790110486,
+            16.401662484793917
+          ],
+          "arc_m": 18.850228140665717,
+          "signed_free_distance_m": 0.7156630418170777,
+          "accepted": true,
+          "reason": "covered"
+        }
+      ],
+      "target_array_sha256": "c80a2a8d1ce4408a891a40388ed82c1f7e47d3d3de21fc6f667f4d2c27a564c4",
+      "target_file_sha256": "953cb3251cc550deb2891cecb98e17dc715c33f62bde490067e31df03b57f9dd",
+      "max_interpolation_error_m": 0.0,
+      "max_distance_to_original_polyline_m": 1.788100691828535e-15,
+      "containing_illegal_intervals": [
+        {
+          "target": 0,
+          "interval_indices": [
+            0
+          ]
+        }
+      ],
+      "navigation_read_exact_targets": true,
+      "navigation_read_exact_crowd": true
+    },
+    "projected_mass": {
+      "accepted": false,
+      "invalid_target_indices": [
+        0
+      ],
+      "query_domain": "static_conservative_navigation",
+      "geometry_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+      "endpoint_tolerance_m": 1e-07,
+      "targets": [
+        {
+          "target": 0,
+          "coordinates": [
+            10.502248302340506,
+            14.811495174001504
+          ],
+          "arc_m": 0.0,
+          "signed_free_distance_m": -0.00546199584443784,
+          "accepted": false,
+          "reason": "inside_conservative_obstacle"
+        },
+        {
+          "target": 1,
+          "coordinates": [
+            11.14977462211907,
+            13.172871108892739
+          ],
+          "arc_m": 1.88318197147471,
+          "signed_free_distance_m": 0.6958609590484375,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 2,
+          "coordinates": [
+            12.972228556118898,
+            12.850149972874304
+          ],
+          "arc_m": 3.7663639429494196,
+          "signed_free_distance_m": 0.6850648526333116,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 3,
+          "coordinates": [
+            14.834141997523119,
+            12.868288965446101
+          ],
+          "arc_m": 5.65460823155175,
+          "signed_free_distance_m": 0.48296356105177174,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 4,
+          "coordinates": [
+            16.70217033212586,
+            12.870174650957097
+          ],
+          "arc_m": 7.542852520154079,
+          "signed_free_distance_m": 0.6458486967848496,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 5,
+          "coordinates": [
+            18.230300324559575,
+            13.745734535211117
+          ],
+          "arc_m": 9.426034491628789,
+          "signed_free_distance_m": 0.634686479258511,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 6,
+          "coordinates": [
+            18.28396211128573,
+            15.59549877843082
+          ],
+          "arc_m": 11.309216463103496,
+          "signed_free_distance_m": 0.6738959679491595,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 7,
+          "coordinates": [
+            16.839590049704466,
+            16.60330456749096
+          ],
+          "arc_m": 13.192398434578205,
+          "signed_free_distance_m": 0.6486212695576067,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 8,
+          "coordinates": [
+            14.971796911204734,
+            16.534315274732183
+          ],
+          "arc_m": 15.080642723180535,
+          "signed_free_distance_m": 0.7178760501674906,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 9,
+          "coordinates": [
+            13.10237532461252,
+            16.638361255270485
+          ],
+          "arc_m": 16.96888701178287,
+          "signed_free_distance_m": 0.6717567747946429,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 10,
+          "coordinates": [
+            11.262840007466902,
+            16.40074826815008
+          ],
+          "arc_m": 18.852068983257578,
+          "signed_free_distance_m": 0.7157454725375343,
+          "accepted": true,
+          "reason": "covered"
+        }
+      ],
+      "target_array_sha256": "881126ace7c1f7ff190411618d18aa844c4e1b5fa1bc9d5cb40dee974cf6270d",
+      "target_file_sha256": "da7e184a0b3b30995819df2fcad160fbc50d77ffd498dae73c06a501adeb18de",
+      "max_interpolation_error_m": 0.0,
+      "max_distance_to_original_polyline_m": 8.505921290079656e-16,
+      "containing_illegal_intervals": [
+        {
+          "target": 0,
+          "interval_indices": [
+            0
+          ]
+        }
+      ],
+      "navigation_read_exact_targets": true,
+      "navigation_read_exact_crowd": true
+    },
+    "pairwise_euclidean": {
+      "accepted": false,
+      "invalid_target_indices": [
+        0
+      ],
+      "query_domain": "static_conservative_navigation",
+      "geometry_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+      "endpoint_tolerance_m": 1e-07,
+      "targets": [
+        {
+          "target": 0,
+          "coordinates": [
+            10.502248302340506,
+            14.811495174001504
+          ],
+          "arc_m": 0.0,
+          "signed_free_distance_m": -0.00546199584443784,
+          "accepted": false,
+          "reason": "inside_conservative_obstacle"
+        },
+        {
+          "target": 1,
+          "coordinates": [
+            11.14977462211907,
+            13.172871108892739
+          ],
+          "arc_m": 1.88318197147471,
+          "signed_free_distance_m": 0.6958609590484375,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 2,
+          "coordinates": [
+            12.972228556118898,
+            12.850149972874304
+          ],
+          "arc_m": 3.7663639429494196,
+          "signed_free_distance_m": 0.6850648526333116,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 3,
+          "coordinates": [
+            14.834141997523119,
+            12.868288965446101
+          ],
+          "arc_m": 5.65460823155175,
+          "signed_free_distance_m": 0.48296356105177174,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 4,
+          "coordinates": [
+            16.70217033212586,
+            12.870174650957097
+          ],
+          "arc_m": 7.542852520154079,
+          "signed_free_distance_m": 0.6458486967848496,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 5,
+          "coordinates": [
+            18.230300324559575,
+            13.745734535211117
+          ],
+          "arc_m": 9.426034491628789,
+          "signed_free_distance_m": 0.634686479258511,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 6,
+          "coordinates": [
+            18.28396211128573,
+            15.59549877843082
+          ],
+          "arc_m": 11.309216463103496,
+          "signed_free_distance_m": 0.6738959679491595,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 7,
+          "coordinates": [
+            16.839590049704466,
+            16.60330456749096
+          ],
+          "arc_m": 13.192398434578205,
+          "signed_free_distance_m": 0.6486212695576067,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 8,
+          "coordinates": [
+            14.971796911204734,
+            16.534315274732183
+          ],
+          "arc_m": 15.080642723180535,
+          "signed_free_distance_m": 0.7178760501674906,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 9,
+          "coordinates": [
+            13.10237532461252,
+            16.638361255270485
+          ],
+          "arc_m": 16.96888701178287,
+          "signed_free_distance_m": 0.6717567747946429,
+          "accepted": true,
+          "reason": "covered"
+        },
+        {
+          "target": 10,
+          "coordinates": [
+            11.262840007466902,
+            16.40074826815008
+          ],
+          "arc_m": 18.852068983257578,
+          "signed_free_distance_m": 0.7157454725375343,
+          "accepted": true,
+          "reason": "covered"
+        }
+      ],
+      "target_array_sha256": "881126ace7c1f7ff190411618d18aa844c4e1b5fa1bc9d5cb40dee974cf6270d",
+      "target_file_sha256": "27a9a27064f65bbd89fb18493d15f87a79b1198ec88f7ea3929bce102a5f86bd",
+      "max_interpolation_error_m": 0.0,
+      "max_distance_to_original_polyline_m": 8.505921290079656e-16,
+      "containing_illegal_intervals": [
+        {
+          "target": 0,
+          "interval_indices": [
+            0
+          ]
+        }
+      ],
+      "navigation_read_exact_targets": true,
+      "navigation_read_exact_crowd": true
+    }
+  },
+  "parameters": {
+    "room_m": [
+      30.0,
+      30.0
+    ],
+    "person_radius_m": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "closing_radius_m": 0.3,
+    "disk_quad_segs": 32,
+    "offset_m": 1.3,
+    "sample_spacing_upper_m": 0.1,
+    "sample_count": 208,
+    "wall_and_crowd_buffer_m": 0.55,
+    "join_style": "mitre",
+    "mitre_limit": 5.0,
+    "simplify_m": 0.1,
+    "planning_margin_m": 0.11,
+    "tolerance_m": 1e-07
+  },
+  "representation": {
+    "coordinates": "room metres throughout, no transforms",
+    "target_serialization": "float64 compressed NPZ; JSON uses round-trip Python floats",
+    "sampling_rule": "equal raw-exterior arc samples; then piecewise linear interpolation on sampled chord arc lengths",
+    "raw_offset_length_m": 20.764853051098108,
+    "sampled_curve_length_m": 20.735250954732287,
+    "sampled_to_raw_hausdorff_m": 0.012559839527507659,
+    "frozen_crowd_exterior_matches_rebuilt": true
+  },
+  "mitre_diagnosis": {
+    "simplified_corner_vertices": [
+      [
+        11.215445495999454,
+        14.564556261252905
+      ],
+      [
+        10.838825206250451,
+        14.731500554011468
+      ],
+      [
+        11.279125772546898,
+        14.763979074983338
+      ]
+    ],
+    "interior_angle_degrees": 28.125000000010928,
+    "theoretical_unclipped_mitre_extension_m": 0.45271182218957823,
+    "mitre_limit_extension_m": 0.55,
+    "without_simplification_signed_clearance_m": -0.005461995844437614,
+    "round_second_buffer_signed_clearance_m": 0.23596502393411203,
+    "physical_round_buffer_signed_clearance_m": 0.7497741140221559,
+    "counterfactual_geometries_are_diagnostic_only": true
+  },
+  "historical_comparison": {
+    "full_precision_original_input_curve_target_hashes_available": false,
+    "available_evidence": "historical rounded coordinate and signed distance match; original raw hashes unavailable",
+    "original_confirmation_unchanged": true
+  },
+  "provenance": {
+    "commit": "ad56e9ad2776cd5135c51729b006259453839a45",
+    "dirty": true,
+    "patch_sha256": "041f9cd3aa9b9357b25311e2552ac427dd3fa02adba16e2a9de461aca903dd3c",
+    "source_sha256": "5d9f04f3ea3f3dbebcb11a019d0397df25bc33bb1ad620a25b1159bb662bb513",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "7441376fa9c1e6e32ea1cdae2b92443000f1d4b7bcc6b14751ac1eec493c8df7",
+    "task_sha256": "fc01b26e1cf5f2a70a4322a30a6a9e5279d70512eb434562ad6ee18f390a08fb",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  }
+}

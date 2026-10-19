@@ -1,0 +1,136 @@
+{
+  "root": "runs\\step1_adhesion_repair",
+  "files": 26,
+  "entries": [
+    {
+      "path": "adhesion_diagnosis.json",
+      "bytes": 1979,
+      "sha256": "be29e5a65feea8cec0bbd8467d943448a28e25ab36adb7eba444f400edb987ec"
+    },
+    {
+      "path": "adhesion_rerun.json",
+      "bytes": 2027,
+      "sha256": "1a4a2cd403d948d03884292504f850a60eb15eec67ef2f71c787a6a8138b80e1"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/input.yaml",
+      "bytes": 22675,
+      "sha256": "06a67a69b33478896ef1a082d9304e1bd22e393127c42bb402ca5430c75821cb"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/people.sqlite",
+      "bytes": 8192,
+      "sha256": "cf185d6affd2eefe8ddb6208d5bd6dccf68be517e43df6c699a0dac9481736c5"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/config.yaml",
+      "bytes": 21339,
+      "sha256": "182663d5a69f376ef36cf0b8ee666692a4479d69cb28284c8d2458ae32ba9171"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/metrics.json",
+      "bytes": 46165,
+      "sha256": "1605640e6eb43b1122a468dc561a964d8da7ee9377f86b6cbfbc0ac588284563"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/planning.json",
+      "bytes": 217,
+      "sha256": "7a3b13cbc58925886cecd55d4b2505f398a63b9762cc9768601bcca7652511ac"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/reevaluated_metrics.json",
+      "bytes": 2203,
+      "sha256": "b354625a92e0cc1d70c7754e1226dec405724ff3342003895f56feb0eb6c1166"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/state.json",
+      "bytes": 132,
+      "sha256": "4fa535d29912c2279d13accfc6fbe7303a4342104354f1c54547530e9acd4e5d"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/trajectory.npz",
+      "bytes": 105924,
+      "sha256": "6c6bad8df9396c0a40a7f01ad5d0874ea44f973a30a0585af0323642d0fc99a9"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/input.yaml",
+      "bytes": 22673,
+      "sha256": "ded495558718d6791365a0a4edee608458f41d5f0ea57b7d1a81cd3a81cfba1a"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/people.sqlite",
+      "bytes": 8192,
+      "sha256": "cf185d6affd2eefe8ddb6208d5bd6dccf68be517e43df6c699a0dac9481736c5"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/config.yaml",
+      "bytes": 21337,
+      "sha256": "dd9dc339e9e93b2a0fe537923f053223da466fb7fbdfdfa61179491a0bacd031"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/metrics.json",
+      "bytes": 46139,
+      "sha256": "7d1856646e69b4823d74701d6d179298b0e80a80fbbde02da3103865e22b411b"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/planning.json",
+      "bytes": 217,
+      "sha256": "bfd736f16c9bd9d416cf7adcb93ecefc813627395d4cc8eacfac54387949d080"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/reevaluated_metrics.json",
+      "bytes": 2202,
+      "sha256": "6e80d69c8e51eb027d6c2ca7a50b730b2241d9d3bd1d53b22e91ae9c7339a06d"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/state.json",
+      "bytes": 132,
+      "sha256": "d1ebc5585db3d9197b0daded24757b1d89a3a55ffd2650551d8e847564afb29d"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/trajectory.npz",
+      "bytes": 106473,
+      "sha256": "e8e9ff213f5360189e0a664098f182dd88438a70a480335695855b9bc9c23ff9"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/input.yaml",
+      "bytes": 22685,
+      "sha256": "47d870005f2e5df87dd87c83893f92e315a587167c6dd7d2323ac83932b7f974"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/people.sqlite",
+      "bytes": 8192,
+      "sha256": "cf185d6affd2eefe8ddb6208d5bd6dccf68be517e43df6c699a0dac9481736c5"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/config.yaml",
+      "bytes": 21349,
+      "sha256": "d28f3c49b3ae4b93583b2fbfef78bb0f103e687a72c7002378ad220bb006038d"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/metrics.json",
+      "bytes": 46142,
+      "sha256": "5988003cf75c6da2dea8a7ccf91f7ca0f1fce2ef6986736150324e1b1eb4003d"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/planning.json",
+      "bytes": 217,
+      "sha256": "bfd736f16c9bd9d416cf7adcb93ecefc813627395d4cc8eacfac54387949d080"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/reevaluated_metrics.json",
+      "bytes": 2202,
+      "sha256": "c701d1b609ceea0c9390ff953d50209ef53fc1ec25b625bd4dbfd6e60b36c5cf"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/state.json",
+      "bytes": 132,
+      "sha256": "4013a872063a6880bfe73523f5086561df4078dc50cfc29e3e71d5ab58d1c521"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/trajectory.npz",
+      "bytes": 106473,
+      "sha256": "e8e9ff213f5360189e0a664098f182dd88438a70a480335695855b9bc9c23ff9"
+    }
+  ]
+}

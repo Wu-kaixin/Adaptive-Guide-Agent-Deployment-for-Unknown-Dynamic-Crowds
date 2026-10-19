@@ -1,0 +1,4322 @@
+[
+  {
+    "unit": "elongated__seed_55",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_55",
+    "input_file_sha256": "faccadbb0afa59760d49cee674b7ba3202a6f9c986394b5622202e370b125a09",
+    "input_sha256": "7215312acd2f5618952418aa29bd8c06526ba6c3bfc56458f3512d40378fc1ed",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5792892460711654
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_55\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "65e291af5de9ef0ad996c30bdaad91116f7d1ea07ebfb34281a6b2bce03a2b7e",
+    "people_sqlite_sha256": "1673b920b88128d4333f84ba2128736280faeaa7eaf7f3efd83337f70a349840",
+    "array_byte_sha256": {
+      "people": "23b22347831036101103842cf6851a275c81b4c7f6682f36ef3cf13e82f78a0d",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "ac20b4bfa889c961e13553dcdb4e81eb6a0385ee86e6bc6b9900ac9170c61b27",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "002a4ad67dbf040a8a5f95efe70d9577492fb5c164648c9f88b25610ee5ddaf4",
+      "guide_arc_jitter": "b55b496b38f12364040383180ac495aab8eea15e3c8b8e3f3d74c6c646cdf5d6",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "84c2c89537ff57ef9a4f6dba0817f1338ba16fe691261ddfbbefcb270c5d7e6e",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        55
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_55__convex_hull",
+      "elongated__seed_55__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_56",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_56",
+    "input_file_sha256": "c698ea58f863640a584e3db071135e8f530ee6d07ad45f2f94500fe38b8871ce",
+    "input_sha256": "61b7b9903210e80328ceb1aab239fd9975e283390b1b9dde49437a919f4de3a3",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6129107395322674
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_56\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "9b930547cbe717e0b8f0fa7ddcc4ae043d12a0aca055355977c384db0ae58530",
+    "people_sqlite_sha256": "f6f1e648f418335d070b0563ee5bc985425f6d46124d7172615ab64cd9faa512",
+    "array_byte_sha256": {
+      "people": "e305b3aa31b19d8ea65f3101f488f4420181ee7ff724de7fd09f5ff21df211d1",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "95ef5814aca9d83c658bee694d270142d359a780ab580c891fb8613cfb8842a4",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "101306848dac2190208d16e837e8494df59d6cc0faa97a7942c62bed4c342d36",
+      "guide_arc_jitter": "0f299ffa17ae6bf88e3440a6ee78957ece46351ab84cea425626111481562b8b",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "52267d0c72733d8183b8e1fd1abbde85bc4f6f70a6de5899a99fb6df5597f262",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        56
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_56__convex_hull",
+      "elongated__seed_56__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_57",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_57",
+    "input_file_sha256": "c8aa6a32baaa01894e100867e66c9e8496d4ab9c451e3c979cdf4c76b2b1d3cb",
+    "input_sha256": "85bf4063f4ef3dbacea4a1cc9aa32522aafa44656d40b3174efd0277854abb47",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.549885717205447
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_57\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "c744974e312f87067b6765980ebe5f056cba3d98dbf7d53d167f698117bd8625",
+    "people_sqlite_sha256": "31ba578504d1c354bd284bdaafca34543aa110213e7d8a9df2bae3b29500c68b",
+    "array_byte_sha256": {
+      "people": "1fc76ba3cbafa7321ef5ca0615a05409eafb17eefe7927db8547be64783a1c51",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "9b1f5936376848318f50adb8de0e18fdc864ccaa21e6514d4cdf843259c45c9e",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "c9b7c3bf5c212e30f4b8d04d0d36267f492a044c3c1b6f4f836fcc725b4aec8f",
+      "guide_arc_jitter": "42686ab7cf00ec9c20a9c2c13264859280feebdeb1373f26ac61b6f195b2b80b",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "7955df6f93f87f787076ffb7e111d6f2866304b51666f92ed4e9fc6a3e8e6a3d",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        57
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_57__convex_hull",
+      "elongated__seed_57__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_58",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_58",
+    "input_file_sha256": "a62e10af127b1d52494ddaf9a5407fd6c4b8eeb77e685db91e66ce2c373e0744",
+    "input_sha256": "95299f4c1073905abc8918074d2cbae4a86a100225600e552b688448fe270f08",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5894832378125536
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_58\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "140702d1085ed911dda7cc453d4d07cfe1dd14e86d0368bdb03dcbf9192c0b1d",
+    "people_sqlite_sha256": "63dd37b3c3346111d8578e71c1eb6fa70f4d84d39183d071c429b2c0a20ec843",
+    "array_byte_sha256": {
+      "people": "825fcc7430fcb92ecf55bd40966af076cc62dd7616c60344bd2d1c6a7b15dbde",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "01fbf6250a0ce273b86693c5dc772b82ba374307635a8238d51768ef1cafc9c4",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "ad0eed2e8736fa97ab0b8d2340a3c88503708dac41183f8feab314f9ec474d4f",
+      "guide_arc_jitter": "3eec1907b0bdeb8d3d97047a5b3067ca240a5205029214711ba08eb87d4bf6b1",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "5922a7c60d572f67881d190a8365980e0d9e8d8e69331f295e445ffc13d79a31",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        58
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_58__convex_hull",
+      "elongated__seed_58__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_59",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_59",
+    "input_file_sha256": "492bfcbd579277cc3718e778038a7485bb5862159c9b8e77549e47d5979df36c",
+    "input_sha256": "4ac2b9e621148afa0fd38c787541fc7efc757e8205db2eb885e49c366bc2ad8c",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6082458573909278
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_59\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "e0a761bd0254d9b066a6b471d33338597ffeabb1663a5c4b2ac559b5f1b58c25",
+    "people_sqlite_sha256": "dc02a93ba5f6053b0e0cc3b5a30009b341f6c477958669be68695e1c76eb189a",
+    "array_byte_sha256": {
+      "people": "a06263184e03f5390c41aaca991efd57d9c6f86879af04b2546b48589cd81cf3",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "1778d5050f21a5996cf45f544fb5d3953705f521e6d126ca0ae904f49fb42e5a",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "071aacf8b7666120bdb3b0f29c81b4304b3ec1695950170dcf8c8a0f9d72c351",
+      "guide_arc_jitter": "4074a04fbd35bca30578420e7cbe1e8613c363ebfd20cee5cdf8c02a13caed77",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "cfcdd9ece7d1d71ccfdf21aeb1f934fe169f56aefe8283fb8cb761fdb97fb94a",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        59
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_59__convex_hull",
+      "elongated__seed_59__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_60",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_60",
+    "input_file_sha256": "215c23478a28faf28f3fddde935738b560ff6412a97bbe6ee5901bdcdd3a2c80",
+    "input_sha256": "a6bec244e40e3bf16850c1cd4cae638f9d62a762157e5975906324f6e9f6b496",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5350707457410808
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_60\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "28abc170882378631d3268bd943892e00984b613df676a182bb016cb6d154471",
+    "people_sqlite_sha256": "38f9ce46dc3bd8b44d571b8b0a8e16eac0777fa534e5fa2ada2ae992d3e83633",
+    "array_byte_sha256": {
+      "people": "4aa688a0a8f3ddb05c37b70f49ea0174fa3f4e5eb6ecfc8bb41844f95d070e89",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "e03ba5811bb962b53472809f54edf8e8858bed5b85d92823e25455a27a2871a7",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "ea27d798965f4db00215142046a6c90b8e0f4e68131f13088189bad87336516e",
+      "guide_arc_jitter": "760813892c9337d8f025dcb7f4b8001358d952b74df82de360a8e68993c59662",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "1940d230ef0f23756f1760680caa8d330d367cf60129b97b0e12e4c07de114e0",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        60
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_60__convex_hull",
+      "elongated__seed_60__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_61",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_61",
+    "input_file_sha256": "c76f09c1dee13e3ec37f98f275a571b75a7f0a1782762ded8b2ba96f6fd9a0c7",
+    "input_sha256": "962bef554889bd8685e234e7a9632470b3746be81b3ee600a09a985c831fc5f4",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5897301761807027
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_61\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "32e902285ac949d6ba6bc09e87d0bbe0821cb3c692da7e71e4021c7b62b698b3",
+    "people_sqlite_sha256": "d7258279fb1edecc73994ec31ac2b428e48d555a91292e8e3e088c4207aa4400",
+    "array_byte_sha256": {
+      "people": "a01610f61e271cc825e3cbbbca1996197d7c8fd4e6a5bb22377d9919409b883f",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "5b1a21296927c548d08633b935041fb6bd00babdd168095af820b3ff90349bbe",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "40ed1db77bc72f664e2379aa3c12434dbf851da0d430a2d9a5b399b727807931",
+      "guide_arc_jitter": "5f1b0ffc3064c74e6b36890620e80b187a8825220681f20073409e59a56959b6",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "a0d79ad66b3ef1bb3b73d48fa41314ff153d8c8f032a01d58442520dafb650b0",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        61
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_61__convex_hull",
+      "elongated__seed_61__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_62",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_62",
+    "input_file_sha256": "9be87a9f0e7e3fca1b9b1edf5714a162150734f150096e44e6f68ba5f8dcf190",
+    "input_sha256": "40f103a7fa00695fdfc11e56f782634c4e7c411a68fe0554b172ef1a0c933359",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.592440051999153
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_62\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "6bbefeee9a97db9dd168e043872358e3f263b1d4912cc3d9f3191ccc5e7d3f8b",
+    "people_sqlite_sha256": "e471090dc9d64fca5738d8f4701881e3a908023dba22a03aa8d88bb9032fcf50",
+    "array_byte_sha256": {
+      "people": "f05ae583bd63be2eddb875c6ef67575c51ad4f02004cdfbebd5d9a5ff3d47d37",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "4485173d4a2dbebad1b96c1d5e9e021a1b2f3b35008b4189647b6535c0125809",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "f238e671043a061497cfac7769d0a77feef385be6c0b9e6396e71d9a0069289f",
+      "guide_arc_jitter": "f12e189d12abdf8b2ab54a877e9e15d564b5d0021b066ea2f9e8ef0395ef81c4",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "6577297cbef578b1f476f1a5eb2187ce94112c7f9596d6e9e41a76897942b72c",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        62
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_62__convex_hull",
+      "elongated__seed_62__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_63",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_63",
+    "input_file_sha256": "6f5e74a1e1e1d8304e6506629425ba045e31df1f5fb5a274e417c242fb0737ad",
+    "input_sha256": "358e44ac12a6d3369f86a47f4b7efa8a33baf33224a0061224f37bfc35e6987f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5943517028331972
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_63\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "7d4c2750fd7eea94927ca785147c767fed3f420d5eedc4a6290c2a7e695d6dda",
+    "people_sqlite_sha256": "9f0cf2bdfee4af2a68c560251d45077b3e7883b49d457af596c3841877d8939a",
+    "array_byte_sha256": {
+      "people": "7a160d416bfa1c7f54e00c7dd89c35f79d803186075473caed66b7f499ad9521",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "26d3e6151b40594db6e9e84afd3ffd3b42506ff72fd8f896c8c60cb43c8bce30",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "a7391958c8c1ce9661e831a11219ff667bda25f574e9fca2d4a10a9ef4fd482f",
+      "guide_arc_jitter": "ad348c07f574ad89d9c7d7f19d7a5fa43b5b9af4d4e2c9df2a51b6be6fb6a00d",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "0d95d02bc9e73a9f3a60fcc8d4a6f7198f92c2daa020240ecc583947297cb17c",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        63
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_63__convex_hull",
+      "elongated__seed_63__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_64",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_64",
+    "input_file_sha256": "7b6d59c67ce2b4029c8e3e1fefeba925dd391fdf7dee725002a917032b1d46b9",
+    "input_sha256": "e62daf48ca273b3d28a46c6b8f4720824ca56ee4b0d9571b4354ebe2bb69d479",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.563696987719284
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_64\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "daee6393cb67f0775f3e0b1f39ac550208ead0f5690dbe5b0e912fcebd5a6b7e",
+    "people_sqlite_sha256": "42964bc6e9c49064a1bd0bbb5a7ffd5e66f029571f7c666637d987337e7c38af",
+    "array_byte_sha256": {
+      "people": "eef8f954f90fa5735a7d181f2327a298ad8f4e5f72e46a463b84b2decd25e026",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "0aa5db24f33ccfd6b7edfd2c6ff949d734c70056bb85bec24a014f8c7ac77eee",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "9385daaf1ee12161c72da5a991900fc2c2a48b606063fa3d932fc4deea696f05",
+      "guide_arc_jitter": "d2ce87ac775a25189474b662d78623fb1e6ea9cb9c2cdbc6cb86e88ea4e9c911",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "8774c1fd7ed84ccbeb4f7c8aa22e484c0f79360dc9dd929242d14336ff03faba",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        64
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_64__convex_hull",
+      "elongated__seed_64__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_65",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_65",
+    "input_file_sha256": "0527e555d0891c39b8f54fd665bcc5bc0bde79597425ab7ee303788962010d5a",
+    "input_sha256": "858c27daf8806d2ad8267853b7fc664f3a21df7d305a2a25f2c802dc1a163e0b",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5971457346220679
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_65\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "5d8437f2b8a925756cc618d782a0213d07421aff686d285d8478841de6d8b6ae",
+    "people_sqlite_sha256": "b6e59296395679a7c942c2390e12fbcc704c93e01363199640087dda8b1188d3",
+    "array_byte_sha256": {
+      "people": "0b0c44c801c4f44821d87e6174f8d9d73b614a703671d297cc7fa8c872df5564",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "912c96c130b01ac44ee9ae9e157a14ee8a50e2886b7f0e854df10b3150abc9b7",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "6f8059c99e5b8018e507ecbf1c898258534987b3898b08d1f1d29d5687b97a85",
+      "guide_arc_jitter": "7a1a0e63afcf6a8854e454d48a1c50ddf5b581545e9c2e7e39cbac964ffdc616",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "cfb99f5126e007e61ddca1c188f9df3d299decf8d8ce8452302416fbcfdad27f",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        65
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_65__convex_hull",
+      "elongated__seed_65__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_66",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_66",
+    "input_file_sha256": "45c90bf05d9a1f622ff0e765adb1194cf573106b9cbdfa5bcc9feb3af47a9abe",
+    "input_sha256": "58dca1d41eb9946278decff70ee942d6915d8bc5e0816436918e6474b8e555cd",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5825857112964362
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_66\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "00314e7aabd83f737badb25528f3263513d299d6158d00ba6503dca91aa76560",
+    "people_sqlite_sha256": "b3f0565e4d724c0f98dbadfa9d71a1929d2d45c542cb91c6a4374bff80c38cb5",
+    "array_byte_sha256": {
+      "people": "026456e4ffdfa2bb790d838b263b9bae8ec6216af3caecf4fe669aab5cdde297",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "366ac0898f19d87419c6706195f1e2a13f9d47856850d56708daa5efc2226f88",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "f3b4a200f7b4cd99fd1b7856b906174aa3146a0af1539c25b67cb9d6b4f8ef84",
+      "guide_arc_jitter": "c2ceb4e7fa4b83c692da3fe2270b7831bb03c8c6e278789cca9f6d76c12a4895",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "d88cb4440b277d8a8e686a7b0c548f284e50aa71f2b0c4b7402c753888d54f35",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        66
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_66__convex_hull",
+      "elongated__seed_66__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_67",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_67",
+    "input_file_sha256": "9ebec11cc4d21e15d864ff2dac2fe6cd974feaeed2b378665679d1e0a2b5fbc5",
+    "input_sha256": "759f8851cd2efe8baa718eedac75d32074870772a0c0a3ee2a24f4f3d01e8714",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6352441576639564
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_67\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "316432734b11d38a299d216ed5888bcc8b6df95f5a21e1ae5ca26a26e853dcb0",
+    "people_sqlite_sha256": "8d0363967a340418df9d27f1d11b1aa115a330f5e208265d29d736a0e8247be6",
+    "array_byte_sha256": {
+      "people": "cdb6c0c159a7d935b2efb2dcca4e28582b180203b66b9987de2d318bae534735",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "ea7887276eaf09d3a032567f995fdbdb1b30c41229352f8f67e1b1da20bacef0",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "d953dbc1671e48cb0592247a0b1fb187ed209a49324c2732f4b13f6a3a7c9214",
+      "guide_arc_jitter": "b2ea7c70c8c892c3e50f88c3dc8c3c56e71ee66de16ff7c72fac5a5990a37469",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "773da9b2cf5834a4d935c6678d6701155dbc460a802464cc116166cb403d516b",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        67
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_67__convex_hull",
+      "elongated__seed_67__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_68",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_68",
+    "input_file_sha256": "d914a675db3ed64bef87b4742f0e74fb51f837ce8e930aefb5f181446a0361f1",
+    "input_sha256": "daf221b27a6e0bab3f0cc777a7f37b3f234f1ec4add5b4bef1f86f648b0d4bdb",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5919500921976932
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_68\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "324b45efd9097edcc84c30f3859021da9ae3ce3e276913365fabdebb7f3c859c",
+    "people_sqlite_sha256": "d2a18d2899d1a6c2777dc4f7b7e54ee79581f911cdb364b79af107fb72470d01",
+    "array_byte_sha256": {
+      "people": "93efbab5f71894e150b25f4e12c8a321917c5319bb717c645d3c6fbdb1c1369b",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "c344c32bfbe0597a1a343d283f6e9ee9dea24c65bd60d83432ca1300f664899e",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "959a379093181343cc1792ddbce4afc41853d706e57d12d55398da1919caefdd",
+      "guide_arc_jitter": "7f7c3a0dc80ac575467fb9d7cd5a84892c78bbe839209a7809013cec870acd8f",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "ed844783442b71e90a6e58e4ba325af0069295b162e28839e45c7e8990d300d7",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        68
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_68__convex_hull",
+      "elongated__seed_68__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_69",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_69",
+    "input_file_sha256": "cc6009c6a94b88cc9810eaf88f1609522b0cae9faaec29e487c2e35ea225e492",
+    "input_sha256": "f96de3074f1e239a35c7ca83a20fb8666c38dfb8806be885d6bf120500666f9c",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5837236662482256
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_69\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d06089c79a462775622854ee96607376e95ebd1f312394ccf47863419186cf87",
+    "people_sqlite_sha256": "f7895e317e46d2a521423caa55956eb3b5814b1f7229c8052a9a0fc711b2f7c4",
+    "array_byte_sha256": {
+      "people": "f3cd309a600e7bf56d853401bb2c15710b996c710e30b317ecb446ae3c49db07",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "c2db8d7eeb1579207ea124ed54c4f5e6b72be01ff71b704af6d36d285b2fc4a0",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "1d64420ddd872c739f581cfc8e86b7ced6de39e1583c0695d1d733082ac3d8dc",
+      "guide_arc_jitter": "ac251f061c39341674bb079f1ec0535d615366cc26b1ba868e49a0701b453df2",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "1a047793cfe72d363af659408fbfeaf3bb87884e9c9e1276cce9d3ac9f4d5956",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        69
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_69__convex_hull",
+      "elongated__seed_69__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_70",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_70",
+    "input_file_sha256": "6102702020e27d3278cd0091269550fc7a1a9b5463313875d4d31abc541a5a27",
+    "input_sha256": "91dbce28e1c48c908130e155dbee4d27a5aaa9006fa425809bd79e1d6e81c4f5",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.634727304056613
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_70\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "a62be4fcb835e9e9053bc8517b601806436b5d089f174924cac22324f0159555",
+    "people_sqlite_sha256": "5bd9979d90e8d741c1550913639c516a75086f1e7330f31f68c1ee133b859f3e",
+    "array_byte_sha256": {
+      "people": "72c8f2c998c9c6435fc9c44919ba67ae429a9d9e507699ac0009741b2e8f7259",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "3eef810840bcbc28cbe5695963dd0a8451f0c1bfe6f1db5c11b45fc29445366d",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "f665ac4dd8854ddbf08d5a2dffc99dbf94fe01c8aad79f4a4046e9ba3dbfac16",
+      "guide_arc_jitter": "fb8003887e1e9f45bcd35cafb8a9ba4e7170449f13410c1c455f991f0082356d",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "713e028dff69d8cb2314b35ff32e2bd60e604c86aac56285ea13a1c6a715ba8a",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        70
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_70__convex_hull",
+      "elongated__seed_70__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_71",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_71",
+    "input_file_sha256": "b7a3b766194976e8180c0ad41e060944b9a0199d26b01a20649d640c533b2f4f",
+    "input_sha256": "c2cdb7163dc46d871de47a74b080bd635ca64fc398790d27824e01c12fcebb3f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5658170007492275
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_71\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "41c4b6ba93c01bfac5539691552aeaf4ec4450babaf779c92078d043be081686",
+    "people_sqlite_sha256": "f325dacc08883b93355cb66bda8d9d556b721db933d2b8163b9efbc1a7f6e886",
+    "array_byte_sha256": {
+      "people": "53784631d189476da50cc833a116f415a36d663cd42e6882bc83d28c2d441262",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "8dc7ed71ff9bc6d6c26ec3fb5c1e7509a488e4a88fd1395e58ed428028ba1df2",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "2af1db89ba2888b74fdcb10989672e6098c376a3c3d4fa715451d634fe25d03e",
+      "guide_arc_jitter": "fbcb182ed485498b0c329fa4c4767d7cb7a29710c8ddb363965a030d7cd720ec",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "e25970425c572b6fd742330c47cbf1dbefbc988561f40948765b960a222fc522",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        71
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_71__convex_hull",
+      "elongated__seed_71__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_72",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_72",
+    "input_file_sha256": "581200084906dc68452310c44c3a52501e2392ce04ba8839d6887b5121d7164c",
+    "input_sha256": "f6b02fbc2505a71c4fe0f6aea5f2470f28fc1ab9671d5b32cc0e8ac5f9954480",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6178030064362209
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_72\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "379389bce07b817700bc800d8726a4dd2840a21775d16add9825a7d2b3b7fd96",
+    "people_sqlite_sha256": "6560f20b4742d6482bf2e378febc8a6d001fa548c9a14c941e988c84305e2257",
+    "array_byte_sha256": {
+      "people": "ef2d5d65c819e953aa346c3af6d0495063057cf81a2cc0117049a459d6d0dc31",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "8c3720a5b4e4540e85886688f933765d8e97b19206f3dd30f24098b21bf3cc40",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "fed69832fca59d5bd9241307b3d555495e048f11b26158dfb7cbdc89236814d1",
+      "guide_arc_jitter": "726e5565e711134095338f9b5b9ad02fbf1c4361dd0ff32bab927dd691017548",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "6978d0b6886de7076f7c6de40edc23fca31c1eaa9533fa64f13f600e01afaf4d",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        72
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_72__convex_hull",
+      "elongated__seed_72__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_73",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_73",
+    "input_file_sha256": "ab341aa0f7bca3006ce785eea4374cefe7ef4e364475a7b1b20238c6b8408af0",
+    "input_sha256": "38ffd32221a281b748ad84a7f6566813a08d37e09f2c01a5036af88a92e89a4f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5252631348599076
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_73\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "43f3d43ff5c4970c252589d3b80559e43200ab978eb0f5a7c51ab5f08f8d7227",
+    "people_sqlite_sha256": "47e874d6f3987c6068a3414b1ebb863b6f8e74686651c30df7aadde4e5c1f6b6",
+    "array_byte_sha256": {
+      "people": "a8118ce17d6c0231dc7117d5ed2b75bfd83aa1047533e78fdc1bfad2df751032",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "3ba64daabb78ad0ab90167436b3d9ac33f0912d8a52fc377449f60ba85785f64",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "3e041bd3009920146cb206870788ee15d422a86ed0d773a0525f8323e5ff21c5",
+      "guide_arc_jitter": "acbc9f4d3bd07e76f64f52e6cf293a924f52dd47c3b107b4ff07b0f7c08f3998",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "8c6b7edfdba91bcec1c618dc7e1a45f84b63feb74451c49a40ab4ba304287948",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        73
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_73__convex_hull",
+      "elongated__seed_73__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "elongated__seed_74",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_74",
+    "input_file_sha256": "c29d999e48dad2ae68a071ce83d823c70413bce35386d990ce4eba0a1b9dbf6a",
+    "input_sha256": "6672497b9e9f581b86d50a3dbb9d359470b22597d7d6440a8587060ae50bee02",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6019816896153639
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_74\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "7f0e346c8432535808d72a1a62f6ed7c78caa8665504cc359a33008e4a2a64e7",
+    "people_sqlite_sha256": "9db07f26a8e4669854174336c94938e45907df61eb5503bf597bd5040a3c8dec",
+    "array_byte_sha256": {
+      "people": "7053379c5b81f3b51195d9f07e6181dd31b11048b7bf77dc3d86203d41552f40",
+      "radii": "82ccee04acad3558e051c69d1b6d0e2b974f4a6a64c10d045bd72346450b41c6",
+      "demand": "dbd8ebb4d364765882694170cedf5afc7702dd5338a7198705c45b613f6e1c9d",
+      "guides": "1f7d81297f39cb44fd4c55ddbdd2fb8f53401c689a2c1de1fe88d771e7c0dcf1",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "55bcfe134bbd20aad95108a096767ef798ebfc99cd6c5034391f140e596b7360",
+      "guide_arc_jitter": "7572187e8091a341ca98d8ca993c1043e5b1f55ac40541a6a675a301ed5eef3e",
+      "base_people": "c63224328bcee4514dac750bf920cd892ea52f4f462536fc8fcfaac77b3b7a8f"
+    },
+    "streams_sha256": "b88868d1452a73fe8ef117fe58b8626446516b58ae4b8f5434548bdb73a448b4",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        74
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "elongated__seed_74__convex_hull",
+      "elongated__seed_74__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_55",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_55",
+    "input_file_sha256": "93d3de6132b379381044b955de1fd0f9a85ad5a2c25d04b7352c5d9155c2369d",
+    "input_sha256": "96239cd97742de1188aedaf2abb3e34b3349990bb9f0c0c0f5bd9a5d20866379",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4233663113765017
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_55\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "4c2954537cdb1efbe6a6e57cf2f1fd9e4aa7e190abc709f812440be6cef6d375",
+    "people_sqlite_sha256": "931a5eeacc406f7a3e3866ec5d06ab641193d5bbc5a5d00fcf5cb287465cf1de",
+    "array_byte_sha256": {
+      "people": "c51d93c61dd30150bd9733103ecdf54a47285610dd548447aff14db47a10ad3a",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "cb8f37e03247b03edeee780271aec4e2790a6723ede9839d8e84da03a294bcd6",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "2d05aaf67f1b3cccfa457e8dd0561c6d1f7d0292634a3616e8754f0d4ff03969",
+      "guide_arc_jitter": "d9544f3451164e681cbcffed99954b0dbf093dee7f9bd19fb0139de574d64fb6",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "c82dda3f78fc25e0ef13d6da74565bdc0e4fbe6073e7f8a82371cf32f7be4b12",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        55
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_55__convex_hull",
+      "tight_u__seed_55__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_56",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_56",
+    "input_file_sha256": "c78a49c9d82f3c0b9acfc271902c9d4c712ebcf2c1a2cda87ccaa26c9b042f0d",
+    "input_sha256": "236df63f6d9273d1eac14beb242a3725e6d7f5c0ebf142f694332059611cd63d",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3264930285213158
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_56\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "9654ccab62179a643d29cf8124fc4bce9f68a2b75f8f82cc19988853fb04a5f9",
+    "people_sqlite_sha256": "58c3079b8584b58c1189d06290890e38f3e7711d83a75e045551a4031c6a0baf",
+    "array_byte_sha256": {
+      "people": "5ebf32cf68b868c4490bb46c3f0ad314f5c4cc68c6ae6e55bebaa81125f4db2f",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "f53a3ced32fc13c749269bbd7916cc4a19ff431eeef7be63bd3e1b6dd2ac0e1b",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "ccb97a19306b2f7f473cade00c2b247e63b2406c3b3647e47b86bac3de58c417",
+      "guide_arc_jitter": "53cf6523646f0d1237964a57bd764d0720345631c39918db0423f3ce200a917e",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "76c63e444211017005ad3013616961df76a1c301e6acd3892d88a066ea75870c",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        56
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_56__convex_hull",
+      "tight_u__seed_56__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_57",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_57",
+    "input_file_sha256": "a09caa0e8b60d2dc2d21430f2ab108d9445a32b9af0b35d1bb8cfa2e65600f80",
+    "input_sha256": "961362a85e3c1cbd7516ef9eb1fd75fd49f62f7129d4665c8f78bf9149efeb88",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.39030686674874376
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_57\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "669b95e908cfba8aeaf178712ba199da6362fc2dba0b3b794a8aa654be443521",
+    "people_sqlite_sha256": "a935d247e9c56e52c468dde237debbbf5b74f53a02da0488b94e6feb047930a3",
+    "array_byte_sha256": {
+      "people": "d28225395c31347f893e2bd2e9b50251c689bc88d1f13c6eb51560657601fcd0",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "3ce4a8f30a0ac40f2389e0ddb6b05b038f38dcc754de67409c4b5afbea308447",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "da465bc7e3ab2e2f4779e2f0c7b8e7203e41533d152ab40be7d5b082ca02a78e",
+      "guide_arc_jitter": "f972ba13620c327e10f10dc0a5ed520f0a38c6569bfe9dc6d001922745ce1b46",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "5413a6fa0aaf85aa526d96975d803f04971ba27276486510f9de8a9c1e4e7cf8",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        57
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_57__convex_hull",
+      "tight_u__seed_57__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_58",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_58",
+    "input_file_sha256": "682dae63a2381033de819c7510ab30a5fc4e64030f6f8186051f3dedc7aa6885",
+    "input_sha256": "d3193429fe8cc62aec9d75898e19ec3c2254fa054fe398f2515c07f042be29d1",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3718626339378456
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_58\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "13fd0ba27c5851d38544074303e776aa5a2cda9e38c2d66fe31104b441d60d1d",
+    "people_sqlite_sha256": "1dcf4f8a135995b9699630b4183e8ee2ef26f471ca604bf3bda3faef1fe5c00e",
+    "array_byte_sha256": {
+      "people": "3f82a55c50a4c6e224f19289b6401e4e1d5a6a95162b720899133afc703e77df",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "1294f80d9c7793fffc56c66214c04ab6566a000a9cd1593fddbeaf3720fe8716",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "29bf5cef915f301bcbe9181e75a081f01b221a8f3698bd1b00da5c2329cb1f30",
+      "guide_arc_jitter": "5287bb5513f90588ee7778b73dc6d5e561df4a79e96821365bc72668427d96b7",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "3a98ce5975e249320c2257abfb7760170d3dee0291da3e72045572b7093ac4dc",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        58
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_58__convex_hull",
+      "tight_u__seed_58__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_59",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_59",
+    "input_file_sha256": "e6f5cb8c95204a50cba43329f4b0b245fc0f6085975eeb4d4c2ce07ad1c26c51",
+    "input_sha256": "1a529660c54850e3d07bb7e3c4d5657b3427dba49ad67bc7c9b92be4bdb0a004",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40992938021037395
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_59\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "198edc5bb8262a583ccae9b6799c4d26a6d54bbd5ff932fa3a210e4a6fbef3fa",
+    "people_sqlite_sha256": "ff23f2e88c423c986626606af124c10b01316123933174aac8bb8287db566b97",
+    "array_byte_sha256": {
+      "people": "e667dd44f7fef1825b85e30a1a1f0bf3db4bfe6954ddbc74690dd5e8fdb2f1e6",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "427c85337d5dbd2b709bc7cb01745e15c171abbfb917e8490086181725367cca",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "44f0aa0d2da4e952404d5ebeecb9eab13745322b8e7773ef62eed3c289e65960",
+      "guide_arc_jitter": "6c93da2ad62fdbc30eb460f3a2ffe198a7039588efe0ef762978f03624fd55d7",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "b7bcc133d8f6a955ad0250b0a9b162e42ec69fd563667befdcfb32ead5ca6a32",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        59
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_59__convex_hull",
+      "tight_u__seed_59__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_60",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_60",
+    "input_file_sha256": "eb682693e7e82da29edadbaa91fa70b7849655438ac66a960282ea786ff10f25",
+    "input_sha256": "c15cfb8b65826a80789105a957a43e7faf4cc8364e4493ea5e63a7ba5b521c8b",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.41624491688367726
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_60\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "b4697215205d2af5faf6cffa9cd27091932abe2c6ae69b4b7f7958ff1fc667e9",
+    "people_sqlite_sha256": "91791efe08c1e369c85335b7e8be1790703fdd135b1b0bfe5508fc4a42ab060d",
+    "array_byte_sha256": {
+      "people": "d2dbeb14f3665776a2d433bc54ce582bc08e820a90c849a20fe9ace94e2b1814",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "aacfdca0c784c047f6ea0f78cbb88fd1f90f024341b6e7e08d4a4c05311b5a0b",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "484ed554b5b3b4169ff4274003c4ce42f04b99ec0bde973db6d99202c7786503",
+      "guide_arc_jitter": "3c15fb4ba7160d9dcde040ae62a6950f483a35594572d878d8e5577c172aa5b1",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "98bf148b51cf35140c3d92975f60a176f0ae544e9696eb38fe48beeb846a9159",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        60
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_60__convex_hull",
+      "tight_u__seed_60__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_61",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_61",
+    "input_file_sha256": "e69e08db9a62ab24716ad2bff4fb069a1859b87ea6bab8d3b9284121fc19a7d5",
+    "input_sha256": "441b6407f0f4dacb739510e23c8c14cd9a3d9856c46dc61502d49e3822dfc295",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.37024554899712914
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_61\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "b7f786c0c4c9bc1f8cb8f699192a88f553dc1c7a6b5d855a88f580eb3811d293",
+    "people_sqlite_sha256": "7f986f565a08208436dffe38a7a363ecde3eecd97d6c1750da96e7a192e6bba1",
+    "array_byte_sha256": {
+      "people": "5139808b497664a82590e1eb922f94fbab3a569f6e3c7b81c19f0ff32a5563e6",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "7bb046f3b0ee0dcde8e90b5ac4fed589d1362788943763e11c79ca14a38f9213",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "c230eea0121aa58cd89fc593d09066054d489c4599f3d3f27f37108f2742b2b1",
+      "guide_arc_jitter": "0cf76b855c3c4245356d3a23d0a298a8bd63f7427a5be61efd9b390a2d670472",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "2cfb4d5187335d3c845483f2d58396a2b0df017d8912f7d515ea199cac5f85e2",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        61
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_61__convex_hull",
+      "tight_u__seed_61__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_62",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_62",
+    "input_file_sha256": "180486850d17c505ef51b08435f2fea588a2e23ce21a88e4ec1d2c323d7a313b",
+    "input_sha256": "688594c0962eae5e20f58636d7d92b46e3e216214cb0aa6e644d86b864db7cff",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4313631693847846
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_62\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ae663380e25bf8b4427dc1209dfbc15ad387c9b1823f02dbca4579feafa902a2",
+    "people_sqlite_sha256": "ccf0b2779248ab4972a3d9407863a87c94fcc54869c2a595ec71f0d5bd0663b8",
+    "array_byte_sha256": {
+      "people": "4dd601d1a041a0b764d60c12243dfba529af7e0adb599d0c919f108c7806f64a",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "c96927d86c9414236afc180d449f468f1350b13f5bab238daac81bc4bcdb352c",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "4788e597429de1cfe27d53ec2d2518feabad825e53d230060a87b9f331a06282",
+      "guide_arc_jitter": "7833a1cc1c9044c9e8395ecb73520b809291b53dbf500a9b0f93149544dc1077",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "1c351c4ef8b7a9302ebdfef10e50a8d90a441a73a32be6bad1ec32cc50da7413",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        62
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_62__convex_hull",
+      "tight_u__seed_62__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_63",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_63",
+    "input_file_sha256": "f5096ab2f019a06bfffa93d8f10af587e5052a38188dd35e9fa06b994d4967ba",
+    "input_sha256": "2f8624933613447b2c60916683c165fdf55b0e3bf005752677524a378ff22fb0",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.42491468468579563
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_63\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ac69cef5d053a88ffb6c5286cdf49c342506d8d1af7ec9ecd8cf34f5f105c172",
+    "people_sqlite_sha256": "16b686edc61b6530691d9431912b373db9a0a7f55985d01d178c1e6a12148cf4",
+    "array_byte_sha256": {
+      "people": "665d6429d0379efe8ce48c4f26eae0e04fc1a8fef7e34e1b8ebea8a88e713269",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "0ddce80d1a0748967798d16e33f35d8d167e73c9d24239a0c4f812c5825712f3",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "c59c45e8b9ddcf6dd1bda09bf8950c2cfe4c3e159283db7e760b3d9e7a7adfe5",
+      "guide_arc_jitter": "777331c74e54663bb10b9b84d93a326ace79d7bda5ec9251d6ec33f021341352",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "1acb64f83f729e1f8b52f46459f134b46acacb6979014129bce724e8565690c0",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        63
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_63__convex_hull",
+      "tight_u__seed_63__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_64",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_64",
+    "input_file_sha256": "fe7699d0369c45619daeb4b97be83634605643418d55ec81ea04ab603ced3c5e",
+    "input_sha256": "65bd0f420cd00e7092583740fff5347689dc6cf664af8fce318ed93f78a23776",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4810101857060844
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_64\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "952a873a1fdb53f1009e70e56e8c2bd55b51d70bfc0c6d4590a018593e406f69",
+    "people_sqlite_sha256": "fcede54605e06cc92bc0668a155b7f852a7e022b794ed2e55dafc881316b5aba",
+    "array_byte_sha256": {
+      "people": "593b9d1482c245fcc98838265523eb699df0f56041df677b9217abe5860f01a0",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "385b48e026ef36036ef64339b38c4002b8197462d4254f47dc50f5993492a464",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "c73b2205deea74db8b1361cfa3a1a332c5fbc10edbf1206b79aec4357d3d5a20",
+      "guide_arc_jitter": "7e91a9eec25432ef4f1e1235f5f8505b4de667a13d149b8d5a03d676f2ffd957",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "9fdf9915952b5691a396b6e0d247ee759a3970020b518d853853ec3b92f1410a",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        64
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_64__convex_hull",
+      "tight_u__seed_64__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_65",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_65",
+    "input_file_sha256": "04f0251dda527ebc032a9d7d4a84d9f49efed73725ddb1beda3e8a4fd25bff68",
+    "input_sha256": "2166936083e339856244c7cc12f8b83b3849521931cb59bca86ecce8a29642bd",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3859999471759797
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_65\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d79c720bac7beaa6eba6403f3d3b29fa276e600ada76de173fc009d1ebd04e45",
+    "people_sqlite_sha256": "f3d1d0880198fa5b1e5aade72269fd5579b275df7b00cb48eb6fe28b76cea48c",
+    "array_byte_sha256": {
+      "people": "a26dabc8478e01fbb52339babc3d33943cd12a7644888c5a90081f473cdc9710",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "75973d4063cdddb7505a9405d405e51fe4e500e7f5d8cc7391022514d38e75c0",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "61640eddcca0bb0242d0180f42018ec225f15b8ca09aaebb09ccec6c316f1026",
+      "guide_arc_jitter": "89892f9926208894497cd3498b26e27b190d4b0c3866cc7d673f55a625e81dbb",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "8d34c229f657f96509391e6ccbefe3da81e45d9dc285cedf3cf100f046ede55d",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        65
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_65__convex_hull",
+      "tight_u__seed_65__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_66",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_66",
+    "input_file_sha256": "abe343e98c39d46d458fc50475b3f4f1845d4e067cef2f69390322e2184cbb47",
+    "input_sha256": "8234e8e8500babe6921f9b13ef7bea5273cf29d9b4524c07177773f8e9f2d11d",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4280921785136861
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_66\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "038ded7a32ec5af61719937ae0305674dc40f7974fa2ab28570f267bbe0cba12",
+    "people_sqlite_sha256": "70df6a9e849ca777ef6ca0cc84e2a638a879eacdb1294a62f173ff00c3d2bde9",
+    "array_byte_sha256": {
+      "people": "87bbb0dbaea0003d92b06e4b8e773fe72c0b9065d5a1930481fba1cbe0d7787d",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "612599c7be292485fcaef693be9baf663fd0e16dde9f83764ee6b7df61c271fd",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "d4f6c184dea25733bd0a2cc1f9e321cada6c01df67ad2839fc50eb237c3921ac",
+      "guide_arc_jitter": "bfe6b6fbb056e595246e73d874eae2b57cfc98f3ea20ac90d599f5329e32c2c7",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "dd1655f3fd26aaf421a48da61be131bca1f0fba770a3edef4bf7ed30dfd3aa2a",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        66
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_66__convex_hull",
+      "tight_u__seed_66__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_67",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_67",
+    "input_file_sha256": "83c40392d6bc13887d50cd60b8cf58975eae817848955a86a4902b4068beb4ed",
+    "input_sha256": "88b1fe69c8ac269bf66475ef97acf94bd4c5aaee06abcc28cb02d91d594d727e",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40522933063296984
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_67\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d433746b4a2d4e7f218541d02944996fcb308420b0632bb87920fb1f6b6115fa",
+    "people_sqlite_sha256": "963517b5e31cad5c02945bcad06ec480459b738a2cadb5364c6e75c377311f7b",
+    "array_byte_sha256": {
+      "people": "19dc62d0653f04d9ecf9d59f3b73c0cb52d10b80307aba426a30b7a353c786e5",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "4bc498ec994fb2766a22d67787dbf54277eb28b976f13a0bf7d64a5bf686af3a",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "98f20f347ebcac898b1e09ed9c68da0987dd249edabfa52b429040436401fce1",
+      "guide_arc_jitter": "844cb7ffe755a8b35174bd63042467797ecbca812d29c379d3621c446380d06f",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "de03181fc5becaa3bd6f830139fdee949a0709f9476a0ec74910d38551f5fd21",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        67
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_67__convex_hull",
+      "tight_u__seed_67__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_68",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_68",
+    "input_file_sha256": "1cf73f868329168d7f9fa9d8e1c79ae9f1f7cef40e4047145236afe5d123f8e4",
+    "input_sha256": "887f7921d0c1cf506fae53aa5335c7c88385b62e8560f1b8e2f4d3e15d9affc5",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3670320256178391
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_68\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "faee64b83b3ed72ec4f4aa7e901f2a8a130e0002acc0ed5cb93c3abd7cb50737",
+    "people_sqlite_sha256": "778f67baa1e42fccff2b0a25f2f12dc5f8a5501f30addec3d7a4e51e03c3d9c1",
+    "array_byte_sha256": {
+      "people": "74940283cc4f307762c1cedadebc5992e528597e051400ab2edbf40545d876f1",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "5ab40df795fd7edbf4c5c4734734f6f30d477255862432d1b6f33d89852f3bc6",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "befbee27cd3bb94aa00bcd6b73ab89e2f20415f5265e4a382843958c90c94f41",
+      "guide_arc_jitter": "18f67de9ef390684a36a967c3043d188ad2ad2ce081e32925bbf468d2b7082ee",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "ff8dae0181260bd6d528bf60fbbb944aee9a598b443a233dda4fce1b65247ff0",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        68
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_68__convex_hull",
+      "tight_u__seed_68__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_69",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_69",
+    "input_file_sha256": "12819bc56fe8e6e9456edbffe4f39072183afb5d433805d9a5e054f7bd95d174",
+    "input_sha256": "2d57ad979a73a88c5941e5f40d47e4f8ec5e0dbbac48a21da75c9816940353f4",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4007794285534384
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_69\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "b07a874dc4ed4132d8a2eda5fa173ac4e7f72088541ea41dbd6e9df888ea0b31",
+    "people_sqlite_sha256": "68ca2a95d0ad376372f8164762c9353ef386e0dc3620dfcf634e0077cce055d8",
+    "array_byte_sha256": {
+      "people": "399a8c1ffdaf9ba2a39149d7eb539395fbb504ea7bdd84afaa6334a72ad89835",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "31d4bdcd11ac1a5fa0fcf35913c82d7bd11728c49a4e3059cdaad1e797519bc6",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "3542ba6ec8bf503b9dde87287ed59d85331c8b0f8fa092cfe90d8a5b502c7618",
+      "guide_arc_jitter": "daac4c1926be50bf7eeb471e9b7a30fc8b02f07f01400319e4375c25a625f072",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "acf9ac496e4a831e844e7212c6b33fa2b41b629e3ccea38bea9732761089ca42",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        69
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_69__convex_hull",
+      "tight_u__seed_69__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_70",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_70",
+    "input_file_sha256": "6e731ae595b671c22499173cd7937fff3627f63242f94cd3b85e3fe37117c026",
+    "input_sha256": "ee1a4ff8d15e10c36570facbd2f53528b8c6f3809d37cfea018abf6b1ba1b32d",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.36530204135716393
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_70\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "87fc68319d3f31f8db7f27b897da6914d2e183f177f417187fa1a5cdc5d82da5",
+    "people_sqlite_sha256": "b909c34207b156fe7f33992a4d546593293c49950fddd62e7b786d0076bd9513",
+    "array_byte_sha256": {
+      "people": "f056cf32063d13717e75e51f19f25ff34ff939296b6fdf202de7711801286608",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "f89c3903d28707f2900012ecbea9bd721e84eacea1f591a0d433e6ef41fbba24",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "095c9399976b1304f921c03954dd99aa0c13c65b80010a9d39e742aadef1f58a",
+      "guide_arc_jitter": "1d60b79094ea07bb6991dbc2e5104bb289404a936d35b38db29bf83a9703c8c5",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "ada2ae8b21622229bc21c5e670524dcd991f883b6e8de2f75885e188651ce3bb",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        70
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_70__convex_hull",
+      "tight_u__seed_70__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_71",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_71",
+    "input_file_sha256": "3da6fbaaea2e4d40cb43983247c0bb89b358d2fc6031c3cc58d003db70dda2df",
+    "input_sha256": "3423b245a5307cdbfc42831894edbf24f4e00d50f876f54bdf7948a3163fb7dc",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46125775344180975
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_71\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "14a299e4f3f7cbd1f7c3adbb33d7617abe33b35c4e903e2716c06830fb76a153",
+    "people_sqlite_sha256": "26702254047cdc223f38fe27763de5932e046fbfee7207ae78f349c31c61d991",
+    "array_byte_sha256": {
+      "people": "7410f85e9a06cb3ab07d7c522c2ac5c6a9fcab6f5be7373eb886a653ef6df7e3",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "27e77943f9f46f44905f787ecaccbf17eee96b53d0091d94de5d42a53ec95ea4",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "e5bb3dfa57d48c8a4ba3b181b9985b12539003701337cc8a72ffdd660775bddf",
+      "guide_arc_jitter": "266d6b8fcde444d363a871acb0cad81d928d9f329bfa323ddbf1e76d20d3455d",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "27660f5d561a8c116a66b4df87aad9bb8f3da0dee78390b77df7a8799732f2ba",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        71
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_71__convex_hull",
+      "tight_u__seed_71__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_72",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_72",
+    "input_file_sha256": "940bcd97cc304d0ed742e86b893c7b22dbfe0f42d513ec7a78d9417788555c52",
+    "input_sha256": "1f11a9f491b9ab6228520a0d3bc13d8dfad62be1bfaf8cf32bb574c1e5fce127",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4251058780911844
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_72\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "3e93e4b0469ff4d21c0f70e3cff66e52852397ebc3f1a368d47ea197fec4a15f",
+    "people_sqlite_sha256": "9ecc34dea7754eaa997ee5dd97fa45485d6e01793fc26a40e68746baaa07effd",
+    "array_byte_sha256": {
+      "people": "96e6cbd44b978587a42dd8ad9a3afe2834d9ef23606acdca5e92992a5563f124",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "362129b6ccee82d0b72c7bdfcb2a162f3d15f0953e87980a4f606e7b14c05b22",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "03cb82d0282ef7b5e69f94bafe061d32e3563a13f6efd6c69e8c202699d377a3",
+      "guide_arc_jitter": "4e2952c55c3ead0e53adcea9dcf0b4c9304cf35116e01c916e19d70b1005f869",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "d7ed90430ed448a98cc24aab4fd0662c6ae74c8e285cb240f22d3e5ae184b871",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        72
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_72__convex_hull",
+      "tight_u__seed_72__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_73",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_73",
+    "input_file_sha256": "eeb29076a7e9715ed327bd050af7d984a41d2f4fdb7a8847a9602807dcd3ea42",
+    "input_sha256": "d2a04e1776580c3e297b1b2f3859133b1f7e1fc628240ac70bf516a3f90aac72",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40206955592726656
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_73\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "c61e0f452328527fcc373885c0f296afe5774d028b20e4d4d1c0c53270073f2e",
+    "people_sqlite_sha256": "c76b481301e417fedace4202686645e009eb950ff5d1a9aefb12f1387ebb544b",
+    "array_byte_sha256": {
+      "people": "ab50d1b69e30b88e5618b9bb4520b5c792309ae7856ad0d0c758f8c9ad248357",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "6f25c3fd207bb911dd2cdc60149da8b7a9420315bb4717208f2a692648bf3c72",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "1975cf3b6a555ab832476224714155bd5237a7485240aa3c3db9cfec65ae0afc",
+      "guide_arc_jitter": "6623d7984ffef011d365e8f0916468ff64003289780882fa2cd171efcf5a72a9",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "d703ff359eb0f932aa10b0482229290b7bde8aac6d008b188cc56a027c88d162",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        73
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_73__convex_hull",
+      "tight_u__seed_73__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "tight_u__seed_74",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_74",
+    "input_file_sha256": "c07b48827d1a033c8b119768e0faffa48cf7fabe946fcbdd55a1a4baa1dceb5d",
+    "input_sha256": "337b78bee52c6902c18021feaeb93ba21f95536552fa32a375c219fd5aca0952",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3257635870258432
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_74\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "c84177eaf2545c9b254870c9902e4380d99cc0ab01696d3c9fbbe4d0bd2ecd24",
+    "people_sqlite_sha256": "a47431aa4308e7a65cb4dfbef8d4b96ee643349d8873bca7fc6fa84dabcc7525",
+    "array_byte_sha256": {
+      "people": "217e2fa683e28fe41daf2893108d8f8d02148b19683fe343c94c4384ecc9a4c5",
+      "radii": "42a426d9d1d747b97d48b8a7731565d7751516b6e918495832a04305c4d51624",
+      "demand": "66d7963060f5d31ea8bd1978ed0de9b63df266e8070fecf8b4d7fd7741db0f7c",
+      "guides": "d9128ba6790f7fba3f04b2502f46b95e8466e3e704a647f464ad377fff172015",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "4ad6992e901010ceb746c72e6f08067798e72b8ac914e3b9dc1f9d07e7caa86e",
+      "guide_arc_jitter": "041063c5233f5f1992519d90151dc63595f2c75061519cd0139820dbd83d592d",
+      "base_people": "95854eed1295fb544402498e3d1cd9d850d069257e21dbcc24e37d0eba474ec5"
+    },
+    "streams_sha256": "18f7a247470984f35fd756f2dfd7423243b51d05b52ec9706adfcb46476691d1",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        74
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "tight_u__seed_74__convex_hull",
+      "tight_u__seed_74__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_55",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_55",
+    "input_file_sha256": "447e2488b693f9ce9a0d958e3151fce9b1bf00aa3e6e0ecbb337f06178c1e89c",
+    "input_sha256": "741568d016ddfdbde489fe92519e10c00e3fb488fe57c3357e32ccddab3e306d",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4455263629445757
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_55\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "3495bc0661274bb45982b7e02ac2ddf8ca5d80c339d299bb75feda8d69fc9548",
+    "people_sqlite_sha256": "12881fe7bb9fc444dafcd4914748d0cfcd2d7f0fac1ccfbabb7144f2a069d7e2",
+    "array_byte_sha256": {
+      "people": "4909c85f38690f1c8c5ac73210fb467a7a97c0c0c3b5a6e1a77c70645df0a464",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "6f308f7eb9a37a18d6e05fb8616c138b589de67098128473da4b5e9d7a689b62",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "22cccff54a9960a4c9769e599de8d97cb491ee75f234dc9ba3beb37acda761b9",
+      "guide_arc_jitter": "d3826635592fcf445c24808ce3eee0cffc487df7cfada6559ebf471d2e05fb42",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "afe1a3c54f269947460ad64cfe112326de811ac621ad50733c9eb4a446fd8ca9",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        55
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_55__convex_hull",
+      "wide_u__seed_55__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_56",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_56",
+    "input_file_sha256": "71699cb2af2cf00abcf93155fc1f453a0eb52a3dc3f64cc5b25849334337fd71",
+    "input_sha256": "56b5da66872be07cbc813cf6efc5872c1b368a3ac353e01cb5cafa2535867eec",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40990136068128474
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_56\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "7bbfb84c572a8ee7a98eb677daff516f1154b3cfe5e7be395430de54b9e66764",
+    "people_sqlite_sha256": "cf67f561087240a62e7d5757f1cd135bd716ddb49f63d04f60e106718410b3b2",
+    "array_byte_sha256": {
+      "people": "c0f8d396b311f1dd914ecc18e97fbeafa75b9c08857f87868692bc941c2f7805",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "ea83571fbcd452430e52927e956c4c4c9a42b312183b394adc27b391fe76e692",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "8a7671a75889201d2a6c0da5b4cbb21949c8e9e00ee78150607dd7c834031064",
+      "guide_arc_jitter": "00a2950d48b80117e8b5ec46be80b1fc8d47484b44f80f55f4c0b207f1ca0bdc",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "4a5c92a348147564352fea6807f939a2ef30e8106cc6396811d8feaf752144e5",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        56
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_56__convex_hull",
+      "wide_u__seed_56__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_57",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_57",
+    "input_file_sha256": "2fe577f34846fcb19783ebe5bc29c3e970620f0156e571e73d07a3b44547efbf",
+    "input_sha256": "6711d13c630301349d05d397b0e1b4d8c83b505e96ea5eb997d5687d17ef4a07",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4325876201591308
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_57\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d3307bd477bc98ee8ac86513e081dbf539440226c7bdb9d539509cf0b2507c54",
+    "people_sqlite_sha256": "7a82220dd70e34d774aa5c35f832bc4bc5b5f17d522510a0a5706efba8c3ced3",
+    "array_byte_sha256": {
+      "people": "1da56ac26575102833641a8500f4b8433902351f90758f69c9dba71bd2f783f8",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "89f8ad668264ad728d029223fc32384e3a815c52e275882ff7709d7cda3cc943",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "e09c8bcc7cc353c5b6768280669c5a87b00a8b162d1c611c2a2da76f1d82a562",
+      "guide_arc_jitter": "b903c636c06ddacf7beb1e03e29a0b38b686a310feb6116e8a879aa0827a3674",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "e0611f8f1f549d7cf8b332d1fdf77becba137727d747179a7fe8e327114d1c9b",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        57
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_57__convex_hull",
+      "wide_u__seed_57__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_58",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_58",
+    "input_file_sha256": "1e1783d9f0686bd754a88896069dc16f12edc348c35355dc1fb582e9498802e3",
+    "input_sha256": "0f393f04d3b96de48b35c3685c7cf4539e722b781308b5c719ed9306d2c16625",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4287718150888774
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_58\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "e222cf49ca5c376715d3dcae05f67d67677f5a44edcda97fa6aaa6b87c912eb0",
+    "people_sqlite_sha256": "dce5b8445364769aaed7f1845621326d447640f4ac0f098625ba54d82d28c336",
+    "array_byte_sha256": {
+      "people": "2da701e96cf2c7a43264dd31d6862cfa95d858e63d2076cd60f2189d44a82e69",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "fd424d1a05abb41e9bc6cefb2268a395212fb22cb042b0d89b37d73b215d4cdc",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "1fde5c557e536238e21ef90c28526234824cbb57bd074b1d9fe6d26ff570177d",
+      "guide_arc_jitter": "6aef9dd77c5e33bff8d275b3e4411f6a0f057c5d89f0af0fc7879ef0afd0849f",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "eec08647d4a055c6b89e3131c3ab386dc750c16108629558a96a3f34c62b6f54",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        58
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_58__convex_hull",
+      "wide_u__seed_58__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_59",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_59",
+    "input_file_sha256": "402766d94f8883a67051aec9485f6f06b1f4d2cded95d1539d811d110e7ffd7e",
+    "input_sha256": "d611b16792be45ac1efaab6235bdb33a655e304a248fb8afe25d9144259fc66c",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.457083228174854
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_59\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "f1223a364f1ff942df63ccf9e053fd0b50acbe95cef52070e5979ae4082aa8cf",
+    "people_sqlite_sha256": "79abbfaf766d8e4fd8973f8828c2babd415fc4761910d68f616a6e277158d64b",
+    "array_byte_sha256": {
+      "people": "c7d9569d90ff5af08ebf76956c9df3e5fcc9b00b0ec081cc1c74533b1364a6a9",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "3e48e370e5f92ecee561394192143a8187cc82118f280bc02493e97060c7724e",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "9ab8628c0635fa92b13cce2766bee9f62cd675b8d77ac9e8f989ef7de9b7ece4",
+      "guide_arc_jitter": "136345917236c79ca2832fb6731ed51ef898473244c079f530ac0ac52fe7bc2b",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "9956b2d87a24fe9f9d2bb24c080ef83afc4c13878feed721fb7b4fe15e727556",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        59
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_59__convex_hull",
+      "wide_u__seed_59__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_60",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_60",
+    "input_file_sha256": "ddb4f46850ff360d5a27ec516448de15bd85e30c3d949c0ac4d0414088df909a",
+    "input_sha256": "08dc7e8f37fec3bd84bc6316bd574690104032a992d8856f4655325a1acaa194",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4710613274002435
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_60\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "f0b354c2783a8b38af2cf45906eccc46fe8027f81dd791433447c58a0bb30904",
+    "people_sqlite_sha256": "793487776189f322640130d33f3f755a48276d6feb28d79212967575925ffb1e",
+    "array_byte_sha256": {
+      "people": "9e231fc71cd16200005be9f286f79af0df0cfd46e55f3417cbefb3b1fc4a6f5c",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "60bafcca8eb99a4465b5145fb2dd7ef51e0b38e6d9215f17803c32fbcfa9e551",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "fe8a4e0d7265a4b6e110d423629ef56b5f349f545d3013d7b8bc8ff9b40a299a",
+      "guide_arc_jitter": "be278567a2a97a4f763de242e0faedfb4aba0d8605217603f6ed326f082e6001",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "365f5e106166c2c18ff1ce064a02cc3812971e0687edfec9310032009a5232d3",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        60
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_60__convex_hull",
+      "wide_u__seed_60__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_61",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_61",
+    "input_file_sha256": "4e421f745635c2e1f627cd32f1a05f25b5ef883187d27c25a643702d53fac312",
+    "input_sha256": "64bdd64a2c52bcee3c487906a49bce3e743862abd1c26e3efee57a6d0f9e11ab",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45514584963672516
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_61\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "34dd6912cb3262f1fc05c679a5342f2c724f9c900703afe42d3c835b9beb69cc",
+    "people_sqlite_sha256": "9ac8faca0f66989937d00b794b8a29d624e3bf6908f95f42ec4d19391dba316e",
+    "array_byte_sha256": {
+      "people": "2bbd3c8375ed71b8d2af8e3c1784c58e35edef177b3a5ee5e3d4be5afc4c0067",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "be491ddf21d9bfbe98006a66962c917eb795828dfa5a04beec5d2dca2f60c9b8",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "b5aa7c7f0cf944e0ed1a78e810f87de30dcd4bda1bcf567ce61966c91d18167e",
+      "guide_arc_jitter": "39d9ea873539e06d90f46d6cf41bed7c28488930f4a259ad07c5eb9c71aee4c6",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "db65df4b52c9418bbb206b271441ad91863868d05318f1f81b78be178b43683a",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        61
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_61__convex_hull",
+      "wide_u__seed_61__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_62",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_62",
+    "input_file_sha256": "1c4db3f06af301ac84c86e54643604c5d8dd765a57751383a23961c6d731ef25",
+    "input_sha256": "a7570cb1d449ff7f952646260ac056bf6d2a04726230d2fe087df6483072e837",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4913148924479291
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_62\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "fdd50f3dc8febdd959ada4541709d86c162d25a8ca990debf4c7c57c1fb8049a",
+    "people_sqlite_sha256": "13480d62a9e91e5bf717498f3f7b110e4074ef3c4f5dce8c38dec929b1f1b19c",
+    "array_byte_sha256": {
+      "people": "f30c06b4ba69e31cf2420a9c97c7140ce7f48cbfd0d5019af4f6a2dd98e6f526",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "99b113f45db0ce79240ba4917574202e431a1912e931db71ca6487db4b2f31a2",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "0da99ee1940a02bcaf630f613c57d82c9d63304511bbf74f1128a33bfae10025",
+      "guide_arc_jitter": "007644686f1844703d8b26006f78c884c79ac8944c2347a7b7a936bceb4f315c",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "9bbacf280486df4d5420d1ff97821e395aac5b5565cf438bb567c32775bd226a",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        62
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_62__convex_hull",
+      "wide_u__seed_62__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_63",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_63",
+    "input_file_sha256": "cef6bcaa7b8b242030442dd6a48be29c9e4f3ba17357445ff61c63243ea82d02",
+    "input_sha256": "306e052c9c78a6aebf573961411ae9eca26f14d1d43d1a747ce9636c82010f9e",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.42139233938426485
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_63\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "25170cbff0da346af19296c34ebd70d86800e614a448b72e36e821c8a65a7cc2",
+    "people_sqlite_sha256": "3d538350c7249aa1cdd914ada3546cc960f51dd4d7a7db9c68e6986316a529c4",
+    "array_byte_sha256": {
+      "people": "9b7d05103653483a877521f3db1cf33b32f2667debd7b886a0917e147f256102",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "17d67d0d817add944bd4f3653c997b17499b32d6e3730c14b187e69f117b037c",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "f0664911a93fe4502e8a43e322e2eccefb682a2e6d6c0331cf854c061aa8fd7a",
+      "guide_arc_jitter": "38cdad3eef5af34c78191f4c395675ca1695e6ee3542e142b1995f06219e7c0f",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "6af35df84233f25c1e7f5d72a779ae55428aeefd0d3b7e52f8f55525305967ed",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        63
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_63__convex_hull",
+      "wide_u__seed_63__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_64",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_64",
+    "input_file_sha256": "c09da16dc3e534c67c230bc4f4a6cfd6cb4bb6d360231af1e09e313bbf48521b",
+    "input_sha256": "b2b9ec7467fc4de84e2592273de688df3571e96521065bc6a41d278cc81ff626",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4872850551548571
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_64\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "08080839f34da3495e36ccc96d4e70b8a1136be6bf93c71c0c4bd3376c5350c2",
+    "people_sqlite_sha256": "990bb10a00fa046c17958bb037febe6bf1954f7362e64a5714e054a9bf23dd69",
+    "array_byte_sha256": {
+      "people": "b88c888f37dc8ae5df1bb31981b21a24c4b356e9cbbf63b4d476ffe57e6ab573",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "40499c9643db6c38d496c735e6a14d8f716658fea763a97c7ea437dcab0bb993",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "667f4abbe72d0f1521558efab32e38e5822f3f2482cf57f053003ab76336eecb",
+      "guide_arc_jitter": "e0b92f31bea82e5d074fb88c00127c5833d6976dc710b424f2b49ed0a1057501",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "18d5d7adc0db90664aeb197b90355009dd3e8fcb55e384342d0ea5d83be233d9",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        64
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_64__convex_hull",
+      "wide_u__seed_64__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_65",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_65",
+    "input_file_sha256": "918658aea96765102943a2faaa45b01a12cb83469c910bdc26af6a9d7f3a8fde",
+    "input_sha256": "4dcdfe1318108c8eb8a12c2694d048dfae673018e0de183d95981623ba78043f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46211345329972925
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_65\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "2e44956c45ea7a47384277ce657e7010003df1132a53c97fac8511671fdf694d",
+    "people_sqlite_sha256": "daaf35c0ccd0ddff104fcd4204ee0f67499c23d640faf98fc95d4ccc35f648d4",
+    "array_byte_sha256": {
+      "people": "8255304208f5102832beb0281f3bd895f32fc9c1eff2460d828c1cced47da641",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "50961f6bad926618fc52d8a714d87301b8ea7db0d95c519e20a641509ff1c241",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "c25652bf7b02c454d9f277df098c4ab56e906b09e5c917dee609681fa54a6605",
+      "guide_arc_jitter": "40465e0fb3b0bfadc784fcd3c0a61067b98ced120a260e3937acda0e03b4c952",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "ca65608d0b07e63917d8825805934f84e9a42ba5594249096fb1e891ad82a84e",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        65
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_65__convex_hull",
+      "wide_u__seed_65__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_66",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_66",
+    "input_file_sha256": "154bcabd613ca93426f0a0967aee1b9e104727679f653011c811867cf5c1ea6d",
+    "input_sha256": "b156ff14a183c8bdfc9a3b3a98536dfc181e84edc890d74505477a285a27ed53",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.42861027128235396
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_66\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "1e06568549a56e82fe8d6e60edba03f575756a2a2ff73e05b8de52237b4bcded",
+    "people_sqlite_sha256": "7f8e03fea9979edb111acb7da0b13302bbf5687d207be8928bf8a2b161505535",
+    "array_byte_sha256": {
+      "people": "0ce42c421644f8e127a8e4aa85d21a3ddfcc8a2203c9544040203d96b265c686",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "a08ec763db86e739157165f748fabbab58f80206c5f53047d6abd242c55d2a05",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "9d567310f473cfea89eaa950c9b88ea5df10df3f75ed99a6301ff88cc98bf72c",
+      "guide_arc_jitter": "745fde1c4af9804b32f109f008ce714d93804cac9247b6c0ee908ceae4e7c9bf",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "37be4fbdd2c43dfb7278509e8bc1d765a93013bb13e467365421827300201f54",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        66
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_66__convex_hull",
+      "wide_u__seed_66__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_67",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_67",
+    "input_file_sha256": "f0b521e2d3e8e66345626d6445ef702ffb68ee56f011fade0d260cad8fa2b018",
+    "input_sha256": "ac12f6135c001317fec3f16770feb668223df87da7abc1c3a76cc5a7a89512ba",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4675515832186747
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_67\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "59986ab75a3bbed965442f513c9cf6ae27b6c2c778b7ef6c36a1b4a4dd3d0ce5",
+    "people_sqlite_sha256": "9a1ad67a7f053865b8360002bec43f81869b6b794e9b9f589930ba6026b03cdb",
+    "array_byte_sha256": {
+      "people": "4bb91dc24609194a84a71f3fcffd2b06463e18d01ee7af18eed41f860e861936",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "3bab0a4d1de98fcc36d0bfa3e481ef09deb4c42c9ec6dea20fb3c1172a8d0532",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "09ab4153025cc649ace7ec90131c76796c1d652612c7a12ac3d20a400f0719b6",
+      "guide_arc_jitter": "a28ab110422d439927ab6a8a41f94a336fe17eca25066e503376b11b6a674cef",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "15b96e04528d151ea10b86368c30d62cfc2003a70511427059c798f15ae8f3d1",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        67
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_67__convex_hull",
+      "wide_u__seed_67__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_68",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_68",
+    "input_file_sha256": "eb7f36c6706bce78b2cd946fcf48e334861a2f4e4ddbfb71c2256bef83280ddb",
+    "input_sha256": "fe1a01d4be25433fc88b8abf6b9a30f9b66f8ca2c2f59fd67fa51be9c45d6a28",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.41054779093926647
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_68\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "0b0a156302cb3fcd395bb270f532ee9e25c9483e298471f4d86f09a0539aaf92",
+    "people_sqlite_sha256": "53cc27b85129c417330bdcb8eeac0ce01dcc8f4ee398ec433128b46a2c046a91",
+    "array_byte_sha256": {
+      "people": "4b3224d9667b99cc1d1af9e968718b62feca6156e2af3df465ba195b3a37b8c7",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "18b34076ae5286611394f731378acb298ce44b55868919df52c36e788ef01f89",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "007a784389a152b3c7328da092cbfd91915de97abff8dd7580941bfd1f9f2a53",
+      "guide_arc_jitter": "9c96836dac387e3249d82b33c6186c149799e181a810f0e790e47e1dbfff88c7",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "9a332f6cdcce869c540096a1d68f971e0e650a26a5ee1e8558e9ebc06d7d1c16",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        68
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_68__convex_hull",
+      "wide_u__seed_68__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_69",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_69",
+    "input_file_sha256": "f030744de6eae3401e389382118f2c3d2e8611c21f452a919ff0d7a485fd69c4",
+    "input_sha256": "a6a76635990c7f4b59c8909555cc1faa8eb9d0fa877a9b97348593d291f7bda5",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3329572862131169
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_69\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "36ac50039e620f5618c60a1690dcf33e2979af5b5a47173be98c70a24d873472",
+    "people_sqlite_sha256": "f3a72012b178bda7d3ec12c3da5ce8671224f326c5790065dd9e661f751e7246",
+    "array_byte_sha256": {
+      "people": "3fa03ec9f63490d9da8e50414779c08bb8669b3de4ab25539e9045bcf555d056",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "15af301a961c2eff13f5a5577d46f10754cfcd7b7cd0e5e7f753581bf6df25d2",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "506779d26fef05463575478d9c23f5ad09f5b0142503f35751fa36ca5714d965",
+      "guide_arc_jitter": "fa21927ae9b8a915221e11e1529249db020b056e27af9bc7d736f33697f05c6d",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "89f877dfde6b3479c4e41d54f8728df1489165ed44e36d2bc61b9fcc65970967",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        69
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_69__convex_hull",
+      "wide_u__seed_69__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_70",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_70",
+    "input_file_sha256": "619c23c6d286238655fcc7e55ac845dd2166b1fc7553e17747360fbcb035ad06",
+    "input_sha256": "1d0f38a3c93625fd6ec0f54630aebee080e15bd8b3f5bb70b60b5bb9ce4f99c7",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4774948724557971
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_70\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "9ac914455fa6464743447426a72164fcd7cff3ab1a7b2864cf8ec2feaa965bac",
+    "people_sqlite_sha256": "4d335df93cc73bbc3acfff34ef080e3760a86ac1d228cb15861ba8bc76159359",
+    "array_byte_sha256": {
+      "people": "15016e6d9c11420c303aa940f08461d5753e18064a980c3e89592fb7f4a4be96",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "a4bfd1fcff8520a46c5f963b47358d374704b3e1a0bfb185ef62a2f2b25133fe",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "ee27adceefcb51790b019e94ca4fb313d626bcadef73c970c32c936cfdb632bf",
+      "guide_arc_jitter": "8ba9296a2f828bf11e589fe4b4e7d3dcc4479e2c45381c0a48eed11b9e047951",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "09a0443d1645fd4c0ff3e59cb21d67f794e6dd06aac1f52bddfa2e952479c7d4",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        70
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_70__convex_hull",
+      "wide_u__seed_70__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_71",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_71",
+    "input_file_sha256": "e22453948e69dc4f9ee604f4a9d82a07ffad0e7f4911290b694ae6d9baff7500",
+    "input_sha256": "94a86a5c8dd0a131c5678209a1dbee8bb5e36b428c2d4d15a5c82f0e279743b1",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45957322544730805
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_71\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ffd76d79c00438325eb482b695345e58656222abe763441ff74bacc27134ec5f",
+    "people_sqlite_sha256": "f483c3fed453c7ecf9e16e12730d2dcc81aba472f04a73852ec9462a86fe6790",
+    "array_byte_sha256": {
+      "people": "8e7e7a7729eafab9f5e1c29807e27976a2cce0a6f2779f04bf10bb2ef42e7bcd",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "e49754233a95ea367b5d09e81631e1859843a089c24fa1623b483f996d64ce73",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "ee185b0eaa7261bfe293f7c929e6bac0850b53579f2e51742fac87d997d44483",
+      "guide_arc_jitter": "f4a939b2ba80c3ce1ac3b354452f29a3934dd65c47f8bfc67af873129cba3bd0",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "be1cf93a9a5e81fa31acadf2cb1ca0092546afd4da3efeaff3d7068849fa002c",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        71
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_71__convex_hull",
+      "wide_u__seed_71__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_72",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_72",
+    "input_file_sha256": "910f685ade2d1a6265b5d3ac435269d414f3a579e1ed6e7d53ed72ecb2e8e28e",
+    "input_sha256": "4a91e246752fc9a34f74c074f0ac0e7258411301001b1828638c1403d44b5ab1",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.47103927283303193
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_72\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "2ebd96c837d4e72bcd424f283a3183c6e22e20bc0138d8a45dfa4d8dad45b85e",
+    "people_sqlite_sha256": "6e4a2f2d9151ef48465602b3d28bac5142f0c06ccd57736cbee386072ea044e1",
+    "array_byte_sha256": {
+      "people": "ee7051a6fa2b5c8dc432212e82438e34fc1488ce81f1868ee492945f7f671ba7",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "2d301e9cb6c76e9ae093344dd673b6dcada501c7ff2cba9979c5f59d88c7900b",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "8408dda2f60b82492a5f050d697092a89088b2fb848baaa5fe2b4e0daffe4943",
+      "guide_arc_jitter": "3843ba7ea7741aa58d92fba9489d689d8cdd7b8ad4a26b6f2c4f28e583928beb",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "b4c2ae5f25bd4a01c567e9d233fd13aca0938fea1e4b58c222f55e2a9097f4db",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        72
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_72__convex_hull",
+      "wide_u__seed_72__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_73",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_73",
+    "input_file_sha256": "142a86991b32acb994b924bea51582f4e59234e647beb17e4f81206f9186a010",
+    "input_sha256": "f3916c22551c8b2327617a238e6bd5c6fa3bc0fa6b9677239a505b3cf27c4652",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40042351671182314
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_73\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "a955eb8ecd12a168dab0acbd13dee0828a48eae57b97b5b3865f7b99f9bf657e",
+    "people_sqlite_sha256": "25ed1ff2558955c8eea911f1caa67a7d14ddef06baa85e8a793147b5cf3b3530",
+    "array_byte_sha256": {
+      "people": "c6c8819649b3c5bc7d1abcc9a6d3001a6d6028a5c26f4a8c5bcb9cbe72308aa6",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "72bd5cd26b6bad8b3b4962aa8d4b8c36d09ddc82553bc288ba894c0bb0e27fc7",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "ec1f24064dab9b9047540e36e3e75d295f911e4f0a65c982ff93cd3c27f7434d",
+      "guide_arc_jitter": "430e6e3bcbbc66d310702af6b605e0bc9a365837242fe24a708b0ecfb769df22",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "c88ed20b2519ad62c9bafac2596f1145e900cb550596f6c93ebe348e481c19d2",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        73
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_73__convex_hull",
+      "wide_u__seed_73__disk_union_closed"
+    ]
+  },
+  {
+    "unit": "wide_u__seed_74",
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_74",
+    "input_file_sha256": "03cad76909323790ce79422af45bfec59d12796e65b9e4cf57e3a8c7f1e04fda",
+    "input_sha256": "f22b08e88200aaa961a455b74704ee4bf461d40cbbfdd0599e5850d6dc6d9655",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46450825767858106
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_74\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ac00006443b24f74915744b62ef395dd6fa3728cf030e8e8bfe96e91aa25621b",
+    "people_sqlite_sha256": "12841484a924a4081bfe327b52988ef5f38938920372d2d07185db46af007b39",
+    "array_byte_sha256": {
+      "people": "2af903b339ec22be2c26475a536ec73bfb55d37627b5f046243ed70301b77e22",
+      "radii": "f5975490b2147e40dccf975bda777000a538d7726d1349bc552650ce0e74a7cf",
+      "demand": "e13df150f83aa72bbae2f96ec689e5b580021cf33cae213c9afac3ca1ba6af96",
+      "guides": "a8c58892c7fe9dd235c80e08e0dcf46c8891d0881ecb12f6275276ac91816db2",
+      "room": "cc9f2a90f6a647b213d1f6b2118491e578d14170402e2c368d05e8772bcb6842",
+      "guide_arcs": "70fb9e5af28695c9052304097cf0024d10a0ae5749ddbdae1f0f7d389cbc3784",
+      "guide_arc_jitter": "baf61d59082f360778c22b54228cacc9ce3c87d1ec7343c195b2d37d52ec8465",
+      "base_people": "596c024f9316db359a594bfc9846c004599c7e86216210d1989092d49e7198f4"
+    },
+    "streams_sha256": "211b7abb32e35ffa850fc6870e17c03c5f0f3d4a75a15a63e38d1861d22eee06",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        74
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "task_ids": [
+      "wide_u__seed_74__convex_hull",
+      "wide_u__seed_74__disk_union_closed"
+    ]
+  }
+]

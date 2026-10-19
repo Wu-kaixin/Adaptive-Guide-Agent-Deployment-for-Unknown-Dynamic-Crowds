@@ -1,0 +1,1611 @@
+[
+  {
+    "task_id": "elongated__seed_55__convex_hull",
+    "scene": "elongated",
+    "seed": 55,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_55__disk_union_closed",
+    "scene": "elongated",
+    "seed": 55,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_56__convex_hull",
+    "scene": "elongated",
+    "seed": 56,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_56__disk_union_closed",
+    "scene": "elongated",
+    "seed": 56,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_57__convex_hull",
+    "scene": "elongated",
+    "seed": 57,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_57__disk_union_closed",
+    "scene": "elongated",
+    "seed": 57,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_58__convex_hull",
+    "scene": "elongated",
+    "seed": 58,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_58__disk_union_closed",
+    "scene": "elongated",
+    "seed": 58,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_59__convex_hull",
+    "scene": "elongated",
+    "seed": 59,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_59__disk_union_closed",
+    "scene": "elongated",
+    "seed": 59,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_60__convex_hull",
+    "scene": "elongated",
+    "seed": 60,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_60__disk_union_closed",
+    "scene": "elongated",
+    "seed": 60,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_61__convex_hull",
+    "scene": "elongated",
+    "seed": 61,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_61__disk_union_closed",
+    "scene": "elongated",
+    "seed": 61,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_62__convex_hull",
+    "scene": "elongated",
+    "seed": 62,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_62__disk_union_closed",
+    "scene": "elongated",
+    "seed": 62,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_63__convex_hull",
+    "scene": "elongated",
+    "seed": 63,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_63__disk_union_closed",
+    "scene": "elongated",
+    "seed": 63,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_64__convex_hull",
+    "scene": "elongated",
+    "seed": 64,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_64__disk_union_closed",
+    "scene": "elongated",
+    "seed": 64,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_65__convex_hull",
+    "scene": "elongated",
+    "seed": 65,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_65__disk_union_closed",
+    "scene": "elongated",
+    "seed": 65,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_66__convex_hull",
+    "scene": "elongated",
+    "seed": 66,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_66__disk_union_closed",
+    "scene": "elongated",
+    "seed": 66,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_67__convex_hull",
+    "scene": "elongated",
+    "seed": 67,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_67__disk_union_closed",
+    "scene": "elongated",
+    "seed": 67,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_68__convex_hull",
+    "scene": "elongated",
+    "seed": 68,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_68__disk_union_closed",
+    "scene": "elongated",
+    "seed": 68,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_69__convex_hull",
+    "scene": "elongated",
+    "seed": 69,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_69__disk_union_closed",
+    "scene": "elongated",
+    "seed": 69,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_70__convex_hull",
+    "scene": "elongated",
+    "seed": 70,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_70__disk_union_closed",
+    "scene": "elongated",
+    "seed": 70,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_71__convex_hull",
+    "scene": "elongated",
+    "seed": 71,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_71__disk_union_closed",
+    "scene": "elongated",
+    "seed": 71,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_72__convex_hull",
+    "scene": "elongated",
+    "seed": 72,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_72__disk_union_closed",
+    "scene": "elongated",
+    "seed": 72,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_73__convex_hull",
+    "scene": "elongated",
+    "seed": 73,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_73__disk_union_closed",
+    "scene": "elongated",
+    "seed": 73,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_74__convex_hull",
+    "scene": "elongated",
+    "seed": 74,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "elongated__seed_74__disk_union_closed",
+    "scene": "elongated",
+    "seed": 74,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_55__convex_hull",
+    "scene": "tight_u",
+    "seed": 55,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_55__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 55,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_59__convex_hull",
+    "scene": "tight_u",
+    "seed": 59,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_59__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 59,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_60__convex_hull",
+    "scene": "tight_u",
+    "seed": 60,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_60__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 60,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_62__convex_hull",
+    "scene": "tight_u",
+    "seed": 62,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_62__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 62,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_63__convex_hull",
+    "scene": "tight_u",
+    "seed": 63,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_63__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 63,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_64__convex_hull",
+    "scene": "tight_u",
+    "seed": 64,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_64__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 64,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_66__convex_hull",
+    "scene": "tight_u",
+    "seed": 66,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_66__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 66,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_67__convex_hull",
+    "scene": "tight_u",
+    "seed": 67,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_67__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 67,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_69__convex_hull",
+    "scene": "tight_u",
+    "seed": 69,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_69__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 69,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_71__convex_hull",
+    "scene": "tight_u",
+    "seed": 71,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_71__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 71,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_72__convex_hull",
+    "scene": "tight_u",
+    "seed": 72,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_72__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 72,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_73__convex_hull",
+    "scene": "tight_u",
+    "seed": 73,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "tight_u__seed_73__disk_union_closed",
+    "scene": "tight_u",
+    "seed": 73,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_55__convex_hull",
+    "scene": "wide_u",
+    "seed": 55,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_55__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 55,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_56__convex_hull",
+    "scene": "wide_u",
+    "seed": 56,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_56__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 56,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 188,
+        "remaining_path": 0.46588354001521176,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 208,
+        "remaining_path": 0.46560095574038113,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 97,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_57__convex_hull",
+    "scene": "wide_u",
+    "seed": 57,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_57__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 57,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 221,
+        "remaining_path": 0.3566326613550559,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 241,
+        "remaining_path": 0.3555542152562518,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 81,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_58__convex_hull",
+    "scene": "wide_u",
+    "seed": 58,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_58__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 58,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_59__convex_hull",
+    "scene": "wide_u",
+    "seed": 59,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_59__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 59,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 214,
+        "remaining_path": 0.18795331924335112,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 234,
+        "remaining_path": 0.18719476829973217,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 52,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_60__convex_hull",
+    "scene": "wide_u",
+    "seed": 60,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_60__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 60,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 212,
+        "remaining_path": 0.11300028295650454,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 232,
+        "remaining_path": 0.11190001437606747,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 23,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_61__convex_hull",
+    "scene": "wide_u",
+    "seed": 61,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_61__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 61,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 188,
+        "remaining_path": 0.46729343039324733,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 208,
+        "remaining_path": 0.4670426723284314,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 129,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_62__convex_hull",
+    "scene": "wide_u",
+    "seed": 62,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_62__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 62,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 229,
+        "remaining_path": 0.19577158522223193,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 249,
+        "remaining_path": 0.1946853215238406,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 45,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_63__convex_hull",
+    "scene": "wide_u",
+    "seed": 63,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_63__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 63,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 211,
+        "remaining_path": 0.11696878313141482,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 231,
+        "remaining_path": 0.11595155804226093,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 24,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_64__convex_hull",
+    "scene": "wide_u",
+    "seed": 64,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_64__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 64,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 211,
+        "remaining_path": 0.09648053741006497,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 231,
+        "remaining_path": 0.09548243546296793,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 23,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_65__convex_hull",
+    "scene": "wide_u",
+    "seed": 65,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_65__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 65,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 212,
+        "remaining_path": 0.3721022823511429,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 232,
+        "remaining_path": 0.37132238939085566,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 98,
+    "coordination_exit_reason": "queue_finished_with_guides_outside_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_66__convex_hull",
+    "scene": "wide_u",
+    "seed": 66,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_66__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 66,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 225,
+        "remaining_path": 0.0948608750303333,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 245,
+        "remaining_path": 0.0937185757015175,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 21,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_67__convex_hull",
+    "scene": "wide_u",
+    "seed": 67,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_67__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 67,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 213,
+        "remaining_path": 0.1580789621359604,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 233,
+        "remaining_path": 0.1570755699491063,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 35,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_68__convex_hull",
+    "scene": "wide_u",
+    "seed": 68,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_68__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 68,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 187,
+        "remaining_path": 0.5169252042882437,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 207,
+        "remaining_path": 0.516625479928036,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 112,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_70__convex_hull",
+    "scene": "wide_u",
+    "seed": 70,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_71__convex_hull",
+    "scene": "wide_u",
+    "seed": 71,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_71__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 71,
+    "estimator": "disk_union_closed",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_72__convex_hull",
+    "scene": "wide_u",
+    "seed": 72,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_72__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 72,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 241,
+        "remaining_path": 0.11227856267799334,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 261,
+        "remaining_path": 0.11116633209170405,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 23,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_73__convex_hull",
+    "scene": "wide_u",
+    "seed": 73,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_73__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 73,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 218,
+        "remaining_path": 0.1842146968139781,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 238,
+        "remaining_path": 0.18302103385927396,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 58,
+    "coordination_exit_reason": "queue_finished_with_guides_outside_tolerance",
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_74__convex_hull",
+    "scene": "wide_u",
+    "seed": 74,
+    "estimator": "convex_hull",
+    "recovery_count": 0,
+    "recovery_attempt_count": 0,
+    "recovery_triggers": {},
+    "deadlock_events": [],
+    "coordination_activated": false,
+    "coordination_steps": 0,
+    "coordination_exit_reason": null,
+    "counterfactual": false
+  },
+  {
+    "task_id": "wide_u__seed_74__disk_union_closed",
+    "scene": "wide_u",
+    "seed": 74,
+    "estimator": "disk_union_closed",
+    "recovery_count": 3,
+    "recovery_attempt_count": 3,
+    "recovery_triggers": {
+      "stall_window": 3
+    },
+    "deadlock_events": [
+      {
+        "step": 214,
+        "remaining_path": 0.19421762237400544,
+        "strategy": "reachable_reassignment"
+      },
+      {
+        "step": 234,
+        "remaining_path": 0.19320809489037516,
+        "strategy": "priority_yield"
+      }
+    ],
+    "coordination_activated": true,
+    "coordination_steps": 40,
+    "coordination_exit_reason": "priority_order_within_tolerance",
+    "counterfactual": false
+  }
+]

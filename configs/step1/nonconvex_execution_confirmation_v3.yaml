@@ -1,0 +1,34 @@
+schema_version: 1
+protocol: nonconvex_execution_confirmation_v3
+base_spec: experiments/step1_scene_closure.yaml
+scenes: [elongated, tight_u, wide_u]
+methods: [equal_arc, projected_mass, pairwise_euclidean]
+seeds: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+guide_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+people_jitter_std_m: 0.04
+guide_arc_jitter_half_width_m: 0.35
+guide_phase_fraction: 0.012
+random_namespace: 20261019
+density: constant_curve_density_matching_scene_closure
+solver_maxiter: 40
+per_start_timeout_s: 20
+phase_fractions: [0.0, 0.05, 0.10, 0.15, 0.20, 0.25]
+statistics:
+  purpose: independent_confirmation_of_frozen_execution_candidate
+  task_denominator: 180
+  paired_input_units: 60
+  tasks_per_method: 60
+  primary: full_task_success_fraction_with_all_input_failures_in_denominator
+  secondary: success_fraction_conditional_on_valid_input
+  independent_unit: scene_seed_shared_by_three_methods
+  summaries: [stage_counts, method_counts, paired_input_hashes, simulation_time, actual_trajectory_length, safety_margins, coverage, planning_time, navigation_time, recovery_events]
+  uncertainty: paired_scene_seeds_only_no_row_bootstrap_and_no_method_ranking
+  stopping: exactly_180_tasks_no_added_seeds_after_outcomes
+notes:
+  - Seeds 35-54 have no nonconvex cell in configs, manifests, reports, or run directories.
+  - Integer 42 also names the separate static_50 example. It is not this SeedSequence or these scenes, so the contiguous block stays 35-54.
+  - Formal seeds 5000-5029 are not used.
+  - Same generator, namespace, jitter, disk union, constant density, and frozen guide counts as confirmation v2.
+  - One draw per cell. Invalid input keeps three rows and is not redrawn.
+  - Fixed counts stay even when a necessary gap bound fails.
+  - UDC_PRIORITY_STALL_COUNTERFACTUAL is forced off before workers start.

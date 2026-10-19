@@ -1,0 +1,367 @@
+{
+  "common_legal_denominator": 51,
+  "joint_outcomes": {
+    "both_success": 50,
+    "convex_only_success": 1
+  },
+  "success_fraction_difference_disk_minus_convex": -0.0196078431372549,
+  "paired_units": [
+    {
+      "scene": "elongated",
+      "seed": 55,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 56,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 57,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 58,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 59,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 60,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 61,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 62,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 63,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 64,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 65,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 66,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 67,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 68,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 69,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 70,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 71,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 72,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 73,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "elongated",
+      "seed": 74,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 55,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 59,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 60,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 62,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 63,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 64,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 66,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 67,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 69,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 71,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 72,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 73,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 55,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 56,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 57,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 58,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 59,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 60,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 61,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 62,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 63,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 64,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 65,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 66,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 67,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 68,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 70,
+      "joint_status": "convex_only_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "BOUNDARY_INVALID"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 71,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 72,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 73,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 74,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "scenario": "configs/step1/scenarios/high_demand_side.yaml",
+  "seed": 0,
+  "available_guides": 24,
+  "planned_gap_limit_m": 1.94,
+  "guide_separation_limit_m": 0.75,
+  "demand": "independent draw per person; not a spatial hotspot",
+  "reevaluation_consistent": "8/8",
+  "runs": [
+    {"fixed_n": 20, "method": "equal_arc", "failure_class": "success", "termination_status": "SUCCESS", "simulation_time_s": 7.8, "actual_max_gap_m": 1.867, "resource_utilization": 0.833},
+    {"fixed_n": 20, "method": "average_cvt", "failure_class": "planning_failure", "termination_status": "PLAN_SEARCH_EXHAUSTED", "note": "converged planned gaps 1.969-1.983 m"},
+    {"fixed_n": 20, "method": "mass_cvt", "failure_class": "planning_failure", "termination_status": "PLAN_SEARCH_EXHAUSTED", "note": "converged planned gaps 2.183-2.413 m"},
+    {"fixed_n": 20, "method": "distmesh", "failure_class": "planning_failure", "termination_status": "PLAN_SEARCH_EXHAUSTED", "note": "converged planned gap 2.437 m"},
+    {"fixed_n": 24, "method": "equal_arc", "failure_class": "success", "termination_status": "SUCCESS", "simulation_time_s": 8.6, "actual_max_gap_m": 1.556},
+    {"fixed_n": 24, "method": "average_cvt", "failure_class": "success", "termination_status": "SUCCESS", "simulation_time_s": 8.6, "actual_max_gap_m": 1.626},
+    {"fixed_n": 24, "method": "mass_cvt", "failure_class": "success", "termination_status": "SUCCESS", "simulation_time_s": 8.6, "actual_max_gap_m": 1.836},
+    {"fixed_n": 24, "method": "distmesh", "failure_class": "planning_failure", "termination_status": "PLAN_SEARCH_EXHAUSTED", "note": "planned gaps about 2.08-2.12 m"}
+  ]
+}

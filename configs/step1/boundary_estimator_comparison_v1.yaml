@@ -1,0 +1,58 @@
+schema_version: 1
+protocol: step1_boundary_estimator_comparison_v1
+research_question: Effect of boundary construction on the fixed-resource deployment pipeline under identical exact global observations
+baseline_commit: 0ef6e1f
+estimators: [convex_hull, disk_union_closed]
+scenes: [elongated, tight_u, wide_u]
+guide_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+input_generator_spec: configs/step1/nonconvex_execution_confirmation_v3.yaml
+smoke_input_root: runs/step1_target_domain_consistency/reconstructed_v3
+smoke_input_origin: saved_protocol_reconstruction_not_original_confirmation
+smoke_units:
+  - [elongated, 36]
+  - [tight_u, 36]
+  - [wide_u, 36]
+  - [elongated, 51]
+  - [wide_u, 35]
+  - [elongated, 35]
+  - [tight_u, 35]
+  - [tight_u, 41]
+smoke_execute_units: [[elongated, 51], [wide_u, 35]]
+smoke_max_executions: 4
+boundary:
+  offset: 1.3
+  spacing: 0.10
+  wall_margin: 0.55
+  crowd_distance: 0.75
+  closing_radius: 0.30
+  quad_segs: 16  # Existing implementation uses max(quad_segs, 32).
+deployment:
+  method: equal_arc
+  density: constant_curve_density
+  phases: [0.0, 0.25, 0.5, 0.75]
+  quadrature_samples: 2048
+  max_iterations: 300
+  planning_gap_m: 1.94
+  minimum_separation_m: 0.75
+  phase_postprocessing: static_domain_phase_v1
+  phase_bins: 256
+  trigger: original_static_targets_invalid_only
+evaluation:
+  primary_unit: scene_seed
+  primary_denominator: all_people_and_room_legal_shared_inputs
+  unexecuted_deployment_success: null
+  paired_continuous_subset: both_estimators_executed_and_successful
+  physical_reference: identical_observed_people_radii_room
+  boundary_descriptors_are_not_estimation_error: true
+  curve_internal_costs_are_not_cross_curve_rankings: true
+future:
+  seeds: [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74]
+  input_units: 60
+  task_rows: 120
+  freeze_all_inputs_before_any_estimator_result: true
+  redraw: false
+  candidate_source_and_config_lock: true
+  seed_audit_again_at_freeze: true
+  run_in_this_round: false
+workers_max: 6
+numerical_threads_per_worker: 1

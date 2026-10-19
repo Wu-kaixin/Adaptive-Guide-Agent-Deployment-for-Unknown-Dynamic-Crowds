@@ -1,0 +1,17 @@
+schema_version: 1
+purpose: development_regression_not_independent_confirmation
+source_protocol: configs/step1/nonconvex_execution_confirmation_v3.yaml
+input_root: runs/step1_target_domain_consistency/reconstructed_v3
+data_origin: protocol_reconstruction_original_v3_raw_files_not_available
+algorithm: static_domain_phase_v1
+phase_bins: 256
+selection: exact_constant_density_cost_then_smallest_absolute_phase_then_signed_phase
+apply_only_if_original_target_domain_invalid: true
+original_curve_and_density_unchanged: true
+workers: 6
+numerical_threads_per_worker: 1
+small_cases: [[elongated, 36], [tight_u, 36], [wide_u, 35]]
+notes:
+  - Grid covers the full original period including zero; no adaptive extension.
+  - Original planner budgets and v3 generator are unchanged.
+  - Original targets and postprocessed targets are stored separately.

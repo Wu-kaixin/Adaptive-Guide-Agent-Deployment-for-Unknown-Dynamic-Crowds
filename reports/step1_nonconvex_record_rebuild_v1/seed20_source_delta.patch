@@ -1,0 +1,21 @@
+--- a/src/udc/experiments/nonconvex_rebuild.py
++++ b/src/udc/experiments/nonconvex_rebuild.py
+@@ -13,0 +14 @@
++import sqlite3
+@@ -29 +30 @@
+-from udc.experiments.runner import experiment, reevaluate_result, _atomic_npz, _atomic_text, _empty_criteria
++from udc.experiments.runner import experiment, reevaluate_result, _atomic_npz, _atomic_text
+@@ -155,0 +157 @@
++    common = dict(boundary=boundary, points=None, weights=None)
+@@ -202,3 +204 @@
+-               'schema_version': '1.2.0', 'steps': 0, 'executed': False,
+-               'wall_time': None, 'criteria': _empty_criteria(),
+-               'task_sha256': row['input_sha256'],
++               'steps': 0, 'executed': False, 'wall_time': 0., 'criteria': {},
+@@ -212,5 +212 @@
+-                crowd_radii=data['radii'], crowd_demand=data['demand'], room=data['room'], time=np.array([0.]),
+-                safe_velocity=np.empty((0, row['count'], 2)), active_mask=np.zeros(row['count'], bool),
+-                boundary_crowd=np.empty((0, 2)), boundary_deployment=np.empty((0, 2)),
+-                boundary_arc=np.empty(0), boundary_length=np.array(np.nan))
+-    reevaluate_result(directory)
++                crowd_radii=data['radii'], crowd_demand=data['demand'], room=data['room'], time=np.array([0.]))

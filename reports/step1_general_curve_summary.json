@@ -1,0 +1,53 @@
+{
+  "commit_at_planning": "3b920bd7735ab265d0f14322d656dab02f6f7f74",
+  "planning_source_sha256": "afbbad6352976c1d99b55b17041ad89056ba4ed8dbaefa66203b11cbd847b2fd",
+  "planning_dirty": true,
+  "python": "3.12.15",
+  "tasks": 300,
+  "valid_curves": 30,
+  "curve_slots": 30,
+  "counts": [
+    [
+      "margin",
+      28
+    ],
+    [
+      "near",
+      17
+    ]
+  ],
+  "classes": {
+    "arc_pass_euclidean_fail": 29,
+    "target_geometry_feasible": 271
+  },
+  "statuses": {
+    "PLAN_SEARCH_EXHAUSTED": 29,
+    "NOT_EXECUTED": 271
+  },
+  "deployment_successes_in_planning": 0,
+  "by_method": {
+    "average_cvt": {
+      "arc_pass_euclidean_fail": 6,
+      "target_geometry_feasible": 54
+    },
+    "distmesh": {
+      "arc_pass_euclidean_fail": 5,
+      "target_geometry_feasible": 55
+    },
+    "equal_arc": {
+      "arc_pass_euclidean_fail": 6,
+      "target_geometry_feasible": 54
+    },
+    "mass_cvt": {
+      "arc_pass_euclidean_fail": 6,
+      "target_geometry_feasible": 54
+    },
+    "projected_mass": {
+      "arc_pass_euclidean_fail": 6,
+      "target_geometry_feasible": 54
+    }
+  },
+  "high_resolution_pass_changed": 0,
+  "execution_tasks": 3,
+  "scope": "prescribed curves, uniform arc density, single static step-1 setting; not an unknown-boundary result"
+}

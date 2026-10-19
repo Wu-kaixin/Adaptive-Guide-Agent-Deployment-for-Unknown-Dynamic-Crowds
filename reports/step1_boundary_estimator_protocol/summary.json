@@ -1,0 +1,4196 @@
+{
+  "planned_rows": 16,
+  "completed_rows": 16,
+  "planned_input_units": 8,
+  "people_legal_common_units": 7,
+  "people_invalid_common_units": 1,
+  "estimators": {
+    "convex_hull": {
+      "primary_denominator": 7,
+      "observed_complete_successes": 2,
+      "unexecuted_unresolved": 5,
+      "observed_stage_or_execution_failures": 0,
+      "complete_deployment_success_fraction": null,
+      "preflight_path_passes": 7,
+      "outcomes_in_primary_denominator": {
+        "NOT_EXECUTED": 5,
+        "SUCCESS": 2
+      }
+    },
+    "disk_union_closed": {
+      "primary_denominator": 7,
+      "observed_complete_successes": 2,
+      "unexecuted_unresolved": 3,
+      "observed_stage_or_execution_failures": 2,
+      "complete_deployment_success_fraction": null,
+      "preflight_path_passes": 5,
+      "outcomes_in_primary_denominator": {
+        "NOT_EXECUTED": 3,
+        "SUCCESS": 2,
+        "BOUNDARY_INVALID": 2
+      }
+    }
+  },
+  "both_successful_executed_pairs": [
+    {
+      "unit": "elongated__seed_51",
+      "convex_hull": {
+        "executed_intervals": 185,
+        "simulation_time_s": 18.5,
+        "actual_trajectory_length_m": 143.362602704062,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 1.4988737772575242,
+          "guides": 1.7359301551837767,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.7488737772575242,
+          "guides": 0.9859301551837767,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0036550843861741316,
+        "complete_deployment_success": true,
+        "recovery_count": 0
+      },
+      "disk_union_closed": {
+        "executed_intervals": 189,
+        "simulation_time_s": 18.900000000000002,
+        "actual_trajectory_length_m": 144.39111491498505,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 1.4989219515912406,
+          "guides": 1.6291252533764522,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.7489219515912406,
+          "guides": 0.8791252533764522,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0036583605699883758,
+        "complete_deployment_success": true,
+        "recovery_count": 0
+      },
+      "disk_minus_convex_time_s": 0.40000000000000213,
+      "disk_minus_convex_travel_m": 1.0285122109230542
+    },
+    {
+      "unit": "wide_u__seed_35",
+      "convex_hull": {
+        "executed_intervals": 183,
+        "simulation_time_s": 18.3,
+        "actual_trajectory_length_m": 226.9985777607157,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 1.4989038194619655,
+          "guides": 1.3846868606852445,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.7489038194619655,
+          "guides": 0.6346868606852445,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0036964696832202677,
+        "complete_deployment_success": true,
+        "recovery_count": 0
+      },
+      "disk_union_closed": {
+        "executed_intervals": 277,
+        "simulation_time_s": 27.700000000000003,
+        "actual_trajectory_length_m": 245.79821163803922,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 0.8109935880965321,
+          "guides": 0.7500000099999979,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.0609935880965321,
+          "guides": 9.999997940823846e-09,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0023743203694403517,
+        "complete_deployment_success": true,
+        "recovery_count": 3
+      },
+      "disk_minus_convex_time_s": 9.400000000000002,
+      "disk_minus_convex_travel_m": 18.799633877323515
+    }
+  ],
+  "paired_continuous_unit_count": 2,
+  "executed_rows": 4,
+  "offline_inconsistent": 0,
+  "phase_trigger_rows": [
+    "elongated__seed_51__disk_union_closed"
+  ],
+  "outcomes_all_planned_rows": {
+    "NOT_EXECUTED": 8,
+    "SUCCESS": 4,
+    "BOUNDARY_INVALID": 2,
+    "INITIALIZATION_INVALID": 2
+  },
+  "no_formal_ranking": true,
+  "rows": [
+    {
+      "task_id": "elongated__seed_36__convex_hull",
+      "scene": "elongated",
+      "seed": 36,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11,
+      "common_input_legal": true,
+      "input_sha256": "f6c55c14ba79c9809ab02e8bf5ec5e49b3faeafcf7899509096b95edb5ab0a2f",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 20.367736805211507,
+        "arc_positions_m": [
+          0.0,
+          1.8516124368374098,
+          3.7032248736748197,
+          5.554837310512229,
+          7.406449747349639,
+          9.258062184187049,
+          11.109674621024459,
+          12.961287057861869,
+          14.812899494699279,
+          16.664511931536687,
+          18.516124368374097
+        ],
+        "max_gap_m": 1.8516124368374098,
+        "min_gap_m": 1.8516124368374083,
+        "constant_density_quadrature_cost": 0.28570564990336295,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.002215899992734194,
+        "description_seconds": 0.0023936000070534647,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 6.068086740862068,
+        "occupied_perimeter_m": 12.202591802982075,
+        "observed_disk_union_area_m2": 2.009811940451039,
+        "extra_envelope_area_m2": 4.058274800411029,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 4.058274800411029,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 20.367736805211507,
+        "curve_area_m2": 27.233569406096777,
+        "sample_count": 204,
+        "occupied_wkb_sha256": "9e02795bb85643a83083026ecfbbaccc712a81bd77b017fefb50dcabf5174eb3",
+        "reference_wkb_sha256": "f6bd6314fb79cc17ee276f26fa2dcea70dbdc49968ef87a4bb40c94ba6b3f732"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 20.367736805211507,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 11,
+        "necessary_max_count": 27,
+        "fixed_count": 11,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "1a03fbf35fd568566ea61c82a89d6d30189e29ba9bc3afb6c3be09acabfe4a75",
+      "curve_domain": {
+        "curve_length_m": 20.367736805211507,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 20.367736805211496,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.7359971883156924,
+          "min_arc_gap_m": 1.8516124368374083,
+          "max_arc_gap_m": 1.85161243683741
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "1a03fbf35fd568566ea61c82a89d6d30189e29ba9bc3afb6c3be09acabfe4a75",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              15.52173809717592,
+              12.833116733412218
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6397631104072894,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              17.350809681749592,
+              13.07866272865515
+            ],
+            "arc_m": 1.8516124368374098,
+            "signed_free_distance_m": 0.6654019887823969,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              18.315932202290618,
+              14.5443173137484
+            ],
+            "arc_m": 3.7032248736748197,
+            "signed_free_distance_m": 0.6817195308119063,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              17.90236599203021,
+              16.24768816122322
+            ],
+            "arc_m": 5.554837310512229,
+            "signed_free_distance_m": 0.6301736965516749,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              16.148121246576213,
+              16.67030448013638
+            ],
+            "arc_m": 7.406449747349639,
+            "signed_free_distance_m": 0.6699895213979191,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              14.296512259776001,
+              16.666740231161103
+            ],
+            "arc_m": 9.258062184187049,
+            "signed_free_distance_m": 0.6503625179835658,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              12.446426327555812,
+              16.61151791771912
+            ],
+            "arc_m": 11.109674621024459,
+            "signed_free_distance_m": 0.6475823689042147,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              10.816710562119747,
+              15.92760525639616
+            ],
+            "arc_m": 12.961287057861869,
+            "signed_free_distance_m": 0.6674990078703916,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              10.55463931395528,
+              14.131130947297114
+            ],
+            "arc_m": 14.812899494699279,
+            "signed_free_distance_m": 0.6336582935622675,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              11.821181983391801,
+              12.943883751327968
+            ],
+            "arc_m": 16.664511931536687,
+            "signed_free_distance_m": 0.6786381495526813,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              13.670488157463877,
+              12.85561593554666
+            ],
+            "arc_m": 18.516124368374097,
+            "signed_free_distance_m": 0.6911577515762268,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.2866807609405954e-15,
+        "min_domain_signed_m": 0.6301736965516749,
+        "min_pair_m": 1.7359971883156924,
+        "min_arc_gap_m": 1.8516124368373994,
+        "max_arc_gap_m": 1.851612436837411,
+        "seam_gap_m": 1.8516124368373994,
+        "cyclic_gap_pattern_error_m": 8.881784197001252e-15,
+        "original_length_m": 20.367736805211507,
+        "evaluated_length_m": 20.367736805211496,
+        "static_domain_sha256": "1a03fbf35fd568566ea61c82a89d6d30189e29ba9bc3afb6c3be09acabfe4a75"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.002215899992734194,
+        "boundary_descriptors_s": 0.0023936000070534647,
+        "curve_domain_diagnostic_s": 0.002331600000616163,
+        "equal_arc_planning_s": 0.00047879997873678803,
+        "phase_policy_s": 0.0004969000001437962,
+        "preflight_navigation_s": 0.011777799983974546,
+        "runner_wall_s": 0.3170665999641642,
+        "offline_reevaluation_s": 0.007841100043151528
+      },
+      "total_wall_s": 0.36431209999136627
+    },
+    {
+      "task_id": "elongated__seed_36__disk_union_closed",
+      "scene": "elongated",
+      "seed": 36,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11,
+      "common_input_legal": true,
+      "input_sha256": "f6c55c14ba79c9809ab02e8bf5ec5e49b3faeafcf7899509096b95edb5ab0a2f",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 20.487884791937013,
+        "arc_positions_m": [
+          0.0,
+          1.862534981085183,
+          3.725069962170366,
+          5.587604943255549,
+          7.450139924340732,
+          9.312674905425915,
+          11.175209886511098,
+          13.037744867596281,
+          14.900279848681464,
+          16.762814829766647,
+          18.62534981085183
+        ],
+        "max_gap_m": 1.862534981085183,
+        "min_gap_m": 1.862534981085183,
+        "constant_density_quadrature_cost": 0.2890863107236014,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.02243859996087849,
+        "description_seconds": 0.01581930002430454,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 2,
+        "occupied_valid": true,
+        "occupied_area_m2": 4.221609684227759,
+        "occupied_perimeter_m": 17.538394861870803,
+        "observed_disk_union_area_m2": 2.009811940451039,
+        "extra_envelope_area_m2": 2.211797743776721,
+        "concavity_area_m2": 1.8464770566343045,
+        "area_over_convex_hull_area": 0.695706878380584,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 2.882000059394618,
+        "controller_filled_hole_area_m2": 0.6702023156178973,
+        "curve_valid": true,
+        "curve_length_m": 20.487884791937013,
+        "curve_area_m2": 26.799690731900434,
+        "sample_count": 206,
+        "occupied_wkb_sha256": "9f3febb688c5c32bdce974d89710c6fb805adf431293a32526e91d1ec2dd43d4",
+        "reference_wkb_sha256": "f6bd6314fb79cc17ee276f26fa2dcea70dbdc49968ef87a4bb40c94ba6b3f732"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 20.487884791937013,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 11,
+        "necessary_max_count": 27,
+        "fixed_count": 11,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "bdb6481aaf887473fe3e9cb83409f2ad8b1e1afcc923c5459ed3644e51ce65f9",
+      "curve_domain": {
+        "curve_length_m": 20.487884791937013,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 20.48788479193701,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.744880024483618,
+          "min_arc_gap_m": 1.862534981085183,
+          "max_arc_gap_m": 1.862534981085183
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "bdb6481aaf887473fe3e9cb83409f2ad8b1e1afcc923c5459ed3644e51ce65f9",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              10.579034500142045,
+              14.833397012255244
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6833654598357768,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              11.175810818426292,
+              13.193542074865599
+            ],
+            "arc_m": 1.862534981085183,
+            "signed_free_distance_m": 0.6971634402343521,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              12.978108679061076,
+              12.933702236738927
+            ],
+            "arc_m": 3.725069962170366,
+            "signed_free_distance_m": 0.6582849212311797,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              14.80133613298662,
+              12.937990525831859
+            ],
+            "arc_m": 5.587604943255549,
+            "signed_free_distance_m": 0.638668225322125,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              16.63740407259871,
+              12.949029841271047
+            ],
+            "arc_m": 7.450139924340732,
+            "signed_free_distance_m": 0.6953652080863828,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              18.144283739544832,
+              13.84868917610585
+            ],
+            "arc_m": 9.312674905425915,
+            "signed_free_distance_m": 0.6498786508290154,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              18.30007764135432,
+              15.665175778086773
+            ],
+            "arc_m": 11.175209886511098,
+            "signed_free_distance_m": 0.6867000476288208,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              16.848545365106258,
+              16.633504415922125
+            ],
+            "arc_m": 13.037744867596281,
+            "signed_free_distance_m": 0.4513549441370136,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              15.007164874900743,
+              16.53302675618092
+            ],
+            "arc_m": 14.900279848681464,
+            "signed_free_distance_m": 0.681918232733886,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              13.161436781277091,
+              16.6438921541234
+            ],
+            "arc_m": 16.762814829766647,
+            "signed_free_distance_m": 0.6701241143263427,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              11.341406919603752,
+              16.403153340735656
+            ],
+            "arc_m": 18.62534981085183,
+            "signed_free_distance_m": 0.7261055378340868,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 6.432705069791634e-16,
+        "min_domain_signed_m": 0.4513549441370136,
+        "min_pair_m": 1.744880024483618,
+        "min_arc_gap_m": 1.8625349810851795,
+        "max_arc_gap_m": 1.8625349810851848,
+        "seam_gap_m": 1.8625349810851795,
+        "cyclic_gap_pattern_error_m": 3.552713678800501e-15,
+        "original_length_m": 20.487884791937013,
+        "evaluated_length_m": 20.48788479193701,
+        "static_domain_sha256": "bdb6481aaf887473fe3e9cb83409f2ad8b1e1afcc923c5459ed3644e51ce65f9"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.02243859996087849,
+        "boundary_descriptors_s": 0.01581930002430454,
+        "curve_domain_diagnostic_s": 0.0023717000149190426,
+        "equal_arc_planning_s": 0.00041939999209716916,
+        "phase_policy_s": 0.00045759999193251133,
+        "preflight_navigation_s": 0.02309839997906238,
+        "runner_wall_s": 0.3316445000236854,
+        "offline_reevaluation_s": 0.009852499992121011
+      },
+      "total_wall_s": 0.46556919999420643
+    },
+    {
+      "task_id": "tight_u__seed_36__convex_hull",
+      "scene": "tight_u",
+      "seed": 36,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13,
+      "common_input_legal": true,
+      "input_sha256": "701d246d9d213ac27b6f82ce02fcc6d36546c1b07d56071da9ec698f3fa46967",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 23.4693981902404,
+        "arc_positions_m": [
+          0.0,
+          1.8053383223261847,
+          3.6106766446523695,
+          5.416014966978555,
+          7.221353289304739,
+          9.026691611630923,
+          10.83202993395711,
+          12.637368256283292,
+          14.442706578609478,
+          16.248044900935664,
+          18.053383223261847,
+          19.85872154558803,
+          21.66405986791422
+        ],
+        "max_gap_m": 1.8053383223261847,
+        "min_gap_m": 1.8053383223261825,
+        "constant_density_quadrature_cost": 0.2716038067495512,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.002563700021710247,
+        "description_seconds": 0.0028821000014431775,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 14.805276363713181,
+        "occupied_perimeter_m": 15.304313026056453,
+        "observed_disk_union_area_m2": 2.7634914181201795,
+        "extra_envelope_area_m2": 12.041784945592998,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 12.041784945592998,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 23.4693981902404,
+        "curve_area_m2": 40.00287731825113,
+        "sample_count": 235,
+        "occupied_wkb_sha256": "a1bdaa5b0064249d273446a12706b43e156a4c3f84cb972ee9a6fe15691b5747",
+        "reference_wkb_sha256": "b600e7d8f8ba1901eb58e5c1b407d9287cc1a3fae9cdc47688a02f389326a683"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 23.4693981902404,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 13,
+        "necessary_max_count": 31,
+        "fixed_count": 13,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "5c782cf060a53a9f0345b3a209f84c4d498b0793b76372b09c3ea3806d5ee48c",
+      "curve_domain": {
+        "curve_length_m": 23.4693981902404,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 23.469398190240376,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.6976977967488924,
+          "min_arc_gap_m": 1.8053383223261825,
+          "max_arc_gap_m": 1.8053383223261896
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "5c782cf060a53a9f0345b3a209f84c4d498b0793b76372b09c3ea3806d5ee48c",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              14.19613147582847,
+              10.476403496840593
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6395872791890057,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              15.796756843431702,
+              11.14375487821285
+            ],
+            "arc_m": 1.8053383223261847,
+            "signed_free_distance_m": 0.7025594329453556,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              16.143219985984697,
+              12.887058985142518
+            ],
+            "arc_m": 3.6106766446523695,
+            "signed_free_distance_m": 0.7015256767891619,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              16.185698664231673,
+              14.691841946100471
+            ],
+            "arc_m": 5.416014966978555,
+            "signed_free_distance_m": 0.704180318724049,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              16.218582046005864,
+              16.49670135078199
+            ],
+            "arc_m": 7.221353289304739,
+            "signed_free_distance_m": 0.6972403128805403,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              15.173832233670346,
+              17.834862641027282
+            ],
+            "arc_m": 9.026691611630923,
+            "signed_free_distance_m": 0.6631021488733844,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              13.375803917629666,
+              17.91499077634919
+            ],
+            "arc_m": 10.83202993395711,
+            "signed_free_distance_m": 0.6690082542752595,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              11.578015236932231,
+              17.852386258459436
+            ],
+            "arc_m": 12.637368256283292,
+            "signed_free_distance_m": 0.6387644354972113,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              10.53661958714443,
+              16.511107939303056
+            ],
+            "arc_m": 14.442706578609478,
+            "signed_free_distance_m": 0.6405748819663751,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              10.453574218579796,
+              14.708008729618133
+            ],
+            "arc_m": 16.248044900935664,
+            "signed_free_distance_m": 0.7340311876474488,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              10.484526909549924,
+              12.902988804342847
+            ],
+            "arc_m": 18.053383223261847,
+            "signed_free_distance_m": 0.7135024260713141,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              10.789987548967991,
+              11.157304069203771
+            ],
+            "arc_m": 19.85872154558803,
+            "signed_free_distance_m": 0.6769474041907988,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              12.391362300625854,
+              10.52038863692654
+            ],
+            "arc_m": 21.66405986791422,
+            "signed_free_distance_m": 0.649146612883526,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 78,
+        "curve_error_m": 1.6786064678726625e-15,
+        "min_domain_signed_m": 0.6387644354972113,
+        "min_pair_m": 1.6976977967488924,
+        "min_arc_gap_m": 1.8053383223261577,
+        "max_arc_gap_m": 1.8053383223261896,
+        "seam_gap_m": 1.8053383223261577,
+        "cyclic_gap_pattern_error_m": 2.4868995751603507e-14,
+        "original_length_m": 23.4693981902404,
+        "evaluated_length_m": 23.469398190240376,
+        "static_domain_sha256": "5c782cf060a53a9f0345b3a209f84c4d498b0793b76372b09c3ea3806d5ee48c"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.002563700021710247,
+        "boundary_descriptors_s": 0.0028821000014431775,
+        "curve_domain_diagnostic_s": 0.0026373000000603497,
+        "equal_arc_planning_s": 0.00044819997856393456,
+        "phase_policy_s": 0.0005168999778106809,
+        "preflight_navigation_s": 0.01662070001475513,
+        "runner_wall_s": 0.3244602999766357,
+        "offline_reevaluation_s": 0.008222800039220601
+      },
+      "total_wall_s": 0.37724709999747574
+    },
+    {
+      "task_id": "tight_u__seed_36__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 36,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13,
+      "common_input_legal": true,
+      "input_sha256": "701d246d9d213ac27b6f82ce02fcc6d36546c1b07d56071da9ec698f3fa46967",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 24.173036127180048,
+        "arc_positions_m": [
+          0.0,
+          1.8594643174753882,
+          3.7189286349507764,
+          5.5783929524261655,
+          7.437857269901553,
+          9.29732158737694,
+          11.156785904852331,
+          13.016250222327718,
+          14.875714539803106,
+          16.735178857278495,
+          18.59464317475388,
+          20.454107492229273,
+          22.313571809704662
+        ],
+        "max_gap_m": 1.8594643174753882,
+        "min_gap_m": 1.8594643174753855,
+        "constant_density_quadrature_cost": 0.28813389363386105,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.04324169998290017,
+        "description_seconds": 0.02618009998695925,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 3.7737189597700773,
+        "occupied_perimeter_m": 24.867220884743013,
+        "observed_disk_union_area_m2": 2.7634914181201795,
+        "extra_envelope_area_m2": 1.0102275416498947,
+        "concavity_area_m2": 11.03155740394309,
+        "area_over_convex_hull_area": 0.2548901396409748,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 1.0102275416498947,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 24.173036127180048,
+        "curve_area_m2": 38.99585833821964,
+        "sample_count": 243,
+        "occupied_wkb_sha256": "76afb3dc7c720215b3bc5ba91055f90cbd3a4a626e28ca1b74293178fb034d9a",
+        "reference_wkb_sha256": "b600e7d8f8ba1901eb58e5c1b407d9287cc1a3fae9cdc47688a02f389326a683"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 24.173036127180048,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 13,
+        "necessary_max_count": 32,
+        "fixed_count": 13,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "7ee04c82a4b131c60977dee970b881b790514a1fa528d2f2c0944f43777394f0",
+      "curve_domain": {
+        "curve_length_m": 24.173036127180048,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 24.173036127180033,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.4310781142111546,
+          "min_arc_gap_m": 1.8594643174753855,
+          "max_arc_gap_m": 1.8594643174753926
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "7ee04c82a4b131c60977dee970b881b790514a1fa528d2f2c0944f43777394f0",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              10.48259003539843,
+              14.412873559297594
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6596688979437608,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              10.531708486759385,
+              12.563037881190262
+            ],
+            "arc_m": 1.8594643174753882,
+            "signed_free_distance_m": 0.45146946074408845,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              11.057516132632985,
+              10.872343717574603
+            ],
+            "arc_m": 3.7189286349507764,
+            "signed_free_distance_m": 0.6545569903861252,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              12.824006448713359,
+              10.54841350781462
+            ],
+            "arc_m": 5.5783929524261655,
+            "signed_free_distance_m": 0.6515390930682321,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              14.674256464518859,
+              10.52477069495528
+            ],
+            "arc_m": 7.437857269901553,
+            "signed_free_distance_m": 0.6852941710606466,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              16.026027818950705,
+              11.623641055991067
+            ],
+            "arc_m": 9.29732158737694,
+            "signed_free_distance_m": 0.6356217565476137,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              16.082969713088584,
+              13.466296907218036
+            ],
+            "arc_m": 11.156785904852331,
+            "signed_free_distance_m": 0.6360342249955937,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              16.135770982783352,
+              15.30695780544575
+            ],
+            "arc_m": 13.016250222327718,
+            "signed_free_distance_m": 0.6480690910445499,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              16.042131272859613,
+              17.11636421646369
+            ],
+            "arc_m": 14.875714539803106,
+            "signed_free_distance_m": 0.6538143794610041,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              14.47847208530316,
+              17.88505644470529
+            ],
+            "arc_m": 16.735178857278495,
+            "signed_free_distance_m": 0.6355394830957126,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              13.108859643781964,
+              17.47015123986387
+            ],
+            "arc_m": 18.59464317475388,
+            "signed_free_distance_m": 0.6418503608385774,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              11.394134040930057,
+              17.7801794868983
+            ],
+            "arc_m": 20.454107492229273,
+            "signed_free_distance_m": 0.6324442291278415,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              10.541494303732224,
+              16.259470831899986
+            ],
+            "arc_m": 22.313571809704662,
+            "signed_free_distance_m": 0.6532849591400777,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 78,
+        "curve_error_m": 1.7400073540484893e-15,
+        "min_domain_signed_m": 0.45146946074408845,
+        "min_pair_m": 1.4310781142111546,
+        "min_arc_gap_m": 1.8594643174753713,
+        "max_arc_gap_m": 1.8594643174753926,
+        "seam_gap_m": 1.8594643174753713,
+        "cyclic_gap_pattern_error_m": 1.4210854715202004e-14,
+        "original_length_m": 24.173036127180048,
+        "evaluated_length_m": 24.173036127180033,
+        "static_domain_sha256": "7ee04c82a4b131c60977dee970b881b790514a1fa528d2f2c0944f43777394f0"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.04324169998290017,
+        "boundary_descriptors_s": 0.02618009998695925,
+        "curve_domain_diagnostic_s": 0.0029469000292010605,
+        "equal_arc_planning_s": 0.0005248999805189669,
+        "phase_policy_s": 0.0005181999877095222,
+        "preflight_navigation_s": 0.05909200001042336,
+        "runner_wall_s": 0.4184633999830112,
+        "offline_reevaluation_s": 0.02651330002117902
+      },
+      "total_wall_s": 0.670147700002417
+    },
+    {
+      "task_id": "wide_u__seed_36__convex_hull",
+      "scene": "wide_u",
+      "seed": 36,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19,
+      "common_input_legal": true,
+      "input_sha256": "15321640a0a46c3b0f61aa160c5fe84804c5b2fdbe8e46d9c30f39f652afa872",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 28.07841675138728,
+        "arc_positions_m": [
+          0.0,
+          1.4778114079677516,
+          2.955622815935503,
+          4.433434223903255,
+          5.911245631871006,
+          7.389057039838758,
+          8.86686844780651,
+          10.34467985577426,
+          11.822491263742013,
+          13.300302671709765,
+          14.778114079677517,
+          16.255925487645268,
+          17.73373689561302,
+          19.21154830358077,
+          20.68935971154852,
+          22.167171119516272,
+          23.644982527484025,
+          25.122793935451778,
+          26.60060534341953
+        ],
+        "max_gap_m": 1.4778114079677516,
+        "min_gap_m": 1.4778114079677493,
+        "constant_density_quadrature_cost": 0.18199383640258004,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.004367499961517751,
+        "description_seconds": 0.003849900036584586,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 25.781413208471054,
+        "occupied_perimeter_m": 19.913334986738814,
+        "observed_disk_union_area_m2": 3.2659444032329414,
+        "extra_envelope_area_m2": 22.515468805238125,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 22.515468805238125,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 28.07841675138728,
+        "curve_area_m2": 56.9707625134827,
+        "sample_count": 281,
+        "occupied_wkb_sha256": "895e1889268e8cba4d25a6f91056067f3ab3f6b649e26361f122fbb394c7612a",
+        "reference_wkb_sha256": "245c4a94fa9a51ddd75b5247c27815e93b7f02fb9bb13d93df06bcc424c1a2df"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 28.07841675138728,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 15,
+        "necessary_max_count": 37,
+        "fixed_count": 19,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "952f8dd3b6fdc4664a9cd7dc9d4cf968d3e892f3c58c056af7f060d4af55127f",
+      "curve_domain": {
+        "curve_length_m": 28.07841675138728,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 28.07841675138731,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.418504849177248,
+          "min_arc_gap_m": 1.4778114079677493,
+          "max_arc_gap_m": 1.477811407967753
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "952f8dd3b6fdc4664a9cd7dc9d4cf968d3e892f3c58c056af7f060d4af55127f",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              11.516401904751284,
+              10.441173750797164
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6400522583691212,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              12.994150185875547,
+              10.454833002384042
+            ],
+            "arc_m": 1.4778114079677516,
+            "signed_free_distance_m": 0.652803555793497,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              14.471795324924567,
+              10.474816304817933
+            ],
+            "arc_m": 2.955622815935503,
+            "signed_free_distance_m": 0.659229969060729,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              15.948903588934355,
+              10.520357558301145
+            ],
+            "arc_m": 4.433434223903255,
+            "signed_free_distance_m": 0.6400929183914508,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              17.1871744321049,
+              11.212894424834449
+            ],
+            "arc_m": 5.911245631871006,
+            "signed_free_distance_m": 0.6473498014118217,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              17.42697348133017,
+              12.645435639331952
+            ],
+            "arc_m": 7.389057039838758,
+            "signed_free_distance_m": 0.6405664775700752,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              17.434817842714455,
+              14.123226227850534
+            ],
+            "arc_m": 8.86686844780651,
+            "signed_free_distance_m": 0.6406024462059676,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              17.410492512197326,
+              15.600568341258585
+            ],
+            "arc_m": 10.34467985577426,
+            "signed_free_distance_m": 0.6420559095197518,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              17.239753811868564,
+              17.057072237442146
+            ],
+            "arc_m": 11.822491263742013,
+            "signed_free_distance_m": 0.6846038837164484,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              16.10314620860113,
+              17.90576485749609
+            ],
+            "arc_m": 13.300302671709765,
+            "signed_free_distance_m": 0.6538274448749435,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              14.626261485837706,
+              17.90764854198668
+            ],
+            "arc_m": 14.778114079677517,
+            "signed_free_distance_m": 0.6400829390775641,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              13.148560764896756,
+              17.88956161714507
+            ],
+            "arc_m": 16.255925487645268,
+            "signed_free_distance_m": 0.6401810435900385,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              11.670860043955818,
+              17.871474692303458
+            ],
+            "arc_m": 17.73373689561302,
+            "signed_free_distance_m": 0.6402791481025132,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 13,
+            "coordinates": [
+              10.227962112933087,
+              17.66379054696835
+            ],
+            "arc_m": 19.21154830358077,
+            "signed_free_distance_m": 0.7011515693643604,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 14,
+            "coordinates": [
+              9.476312119609025,
+              16.460599990783166
+            ],
+            "arc_m": 20.68935971154852,
+            "signed_free_distance_m": 0.6385288948645413,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 15,
+            "coordinates": [
+              9.46806539426102,
+              14.98285979284084
+            ],
+            "arc_m": 22.167171119516272,
+            "signed_free_distance_m": 0.6488804410682181,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 16,
+            "coordinates": [
+              9.46664337465034,
+              13.505054836096072
+            ],
+            "arc_m": 23.644982527484025,
+            "signed_free_distance_m": 0.6537974727069048,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 17,
+            "coordinates": [
+              9.470046296892994,
+              12.027247347316404
+            ],
+            "arc_m": 25.122793935451778,
+            "signed_free_distance_m": 0.6538895819741019,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 18,
+            "coordinates": [
+              10.09842114090806,
+              10.75468269542628
+            ],
+            "arc_m": 26.60060534341953,
+            "signed_free_distance_m": 0.6588772804079578,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 171,
+        "curve_error_m": 1.875224813736784e-15,
+        "min_domain_signed_m": 0.6385288948645413,
+        "min_pair_m": 1.418504849177248,
+        "min_arc_gap_m": 1.4778114079677493,
+        "max_arc_gap_m": 1.4778114079677778,
+        "seam_gap_m": 1.4778114079677778,
+        "cyclic_gap_pattern_error_m": 2.4868995751603507e-14,
+        "original_length_m": 28.07841675138728,
+        "evaluated_length_m": 28.07841675138731,
+        "static_domain_sha256": "952f8dd3b6fdc4664a9cd7dc9d4cf968d3e892f3c58c056af7f060d4af55127f"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.004367499961517751,
+        "boundary_descriptors_s": 0.003849900036584586,
+        "curve_domain_diagnostic_s": 0.008655400015413761,
+        "equal_arc_planning_s": 0.0011907999869436026,
+        "phase_policy_s": 0.001914000022225082,
+        "preflight_navigation_s": 0.12951920001069084,
+        "runner_wall_s": 0.3869848000467755,
+        "offline_reevaluation_s": 0.012866000004578382
+      },
+      "total_wall_s": 0.5911599000100978
+    },
+    {
+      "task_id": "wide_u__seed_36__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 36,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19,
+      "common_input_legal": true,
+      "input_sha256": "15321640a0a46c3b0f61aa160c5fe84804c5b2fdbe8e46d9c30f39f652afa872",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 35.72381193984236,
+        "arc_positions_m": [
+          0.0,
+          1.880200628412756,
+          3.760401256825512,
+          5.640601885238268,
+          7.520802513651024,
+          9.40100314206378,
+          11.281203770476536,
+          13.161404398889292,
+          15.041605027302047,
+          16.921805655714802,
+          18.80200628412756,
+          20.682206912540316,
+          22.56240754095307,
+          24.442608169365826,
+          26.322808797778585,
+          28.20300942619134,
+          30.083210054604095,
+          31.96341068301685,
+          33.843611311429605
+        ],
+        "max_gap_m": 1.880200628412756,
+        "min_gap_m": 1.880200628412755,
+        "constant_density_quadrature_cost": 0.29459613001976953,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.05669370002578944,
+        "description_seconds": 0.033662599977105856,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 4.494567297383398,
+        "occupied_perimeter_m": 29.946436930492148,
+        "observed_disk_union_area_m2": 3.2659444032329414,
+        "extra_envelope_area_m2": 1.228622894150438,
+        "concavity_area_m2": 21.28684591108775,
+        "area_over_convex_hull_area": 0.1743336279140279,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 1.228622894150438,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 35.72381193984236,
+        "curve_area_m2": 47.1485411484721,
+        "sample_count": 359,
+        "occupied_wkb_sha256": "84c790e016b32dfb0794bb85b77438a2bf4a4a70120ad3ce08f96350b43e7cef",
+        "reference_wkb_sha256": "245c4a94fa9a51ddd75b5247c27815e93b7f02fb9bb13d93df06bcc424c1a2df"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 35.72381193984236,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 19,
+        "necessary_max_count": 47,
+        "fixed_count": 19,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "a6d8c52f8752bf58a13d053cac79375583c87f76f5f5a0e80e6bb0481c0e231e",
+      "curve_domain": {
+        "curve_length_m": 35.72381193984236,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 35.723811939842356,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.6206041288978192,
+          "min_arc_gap_m": 1.880200628412755,
+          "max_arc_gap_m": 1.8802006284127586
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "a6d8c52f8752bf58a13d053cac79375583c87f76f5f5a0e80e6bb0481c0e231e",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              9.493074551330784,
+              16.11857573022807
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.571611565309614,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              9.469830213672946,
+              14.259105948879938
+            ],
+            "arc_m": 1.880200628412756,
+            "signed_free_distance_m": 0.7201015665929017,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              9.530788251780207,
+              12.393930891355254
+            ],
+            "arc_m": 3.760401256825512,
+            "signed_free_distance_m": 0.6374042069781897,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              10.12310300386437,
+              10.737674055088432
+            ],
+            "arc_m": 5.640601885238268,
+            "signed_free_distance_m": 0.6280579323571897,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              11.940685169329237,
+              10.507049015639659
+            ],
+            "arc_m": 7.520802513651024,
+            "signed_free_distance_m": 0.6436075221536237,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              13.805775067084653,
+              10.463698358759455
+            ],
+            "arc_m": 9.40100314206378,
+            "signed_free_distance_m": 0.6912640424677575,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              15.668922930579754,
+              10.5379152172902
+            ],
+            "arc_m": 11.281203770476536,
+            "signed_free_distance_m": 0.6489868743463233,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              17.24840830503456,
+              11.318014514221073
+            ],
+            "arc_m": 13.161404398889292,
+            "signed_free_distance_m": 0.6557890993311384,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              17.42562667727297,
+              13.161215208644224
+            ],
+            "arc_m": 15.041605027302047,
+            "signed_free_distance_m": 0.7184054218784364,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              17.417050770541085,
+              15.017725923630048
+            ],
+            "arc_m": 16.921805655714802,
+            "signed_free_distance_m": 0.6285675898754056,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              17.308261230247652,
+              16.88297426940883
+            ],
+            "arc_m": 18.80200628412756,
+            "signed_free_distance_m": 0.6871506076329635,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              15.888841125786278,
+              17.92191270450979
+            ],
+            "arc_m": 20.682206912540316,
+            "signed_free_distance_m": 0.7122866614991763,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              14.45949725844348,
+              16.897096247277485
+            ],
+            "arc_m": 22.56240754095307,
+            "signed_free_distance_m": 0.6352488308553048,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 13,
+            "coordinates": [
+              14.438425986354318,
+              15.032409916265385
+            ],
+            "arc_m": 24.442608169365826,
+            "signed_free_distance_m": 0.6024166548761418,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 14,
+            "coordinates": [
+              14.063911481912658,
+              13.45567384812859
+            ],
+            "arc_m": 26.322808797778585,
+            "signed_free_distance_m": 0.6023857462130506,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 15,
+            "coordinates": [
+              12.478269470032233,
+              13.821332765587293
+            ],
+            "arc_m": 28.20300942619134,
+            "signed_free_distance_m": 0.6686742379972187,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 16,
+            "coordinates": [
+              12.504598700145273,
+              15.682352188579756
+            ],
+            "arc_m": 30.083210054604095,
+            "signed_free_distance_m": 0.6226849259548399,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 17,
+            "coordinates": [
+              12.020029058514726,
+              17.43537839498584
+            ],
+            "arc_m": 31.96341068301685,
+            "signed_free_distance_m": 0.6922627071580394,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 18,
+            "coordinates": [
+              10.279813526187914,
+              17.692513881797797
+            ],
+            "arc_m": 33.843611311429605,
+            "signed_free_distance_m": 0.6408179756287674,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 171,
+        "curve_error_m": 1.5763343276675707e-15,
+        "min_domain_signed_m": 0.571611565309614,
+        "min_pair_m": 1.6206041288978192,
+        "min_arc_gap_m": 1.8802006284127515,
+        "max_arc_gap_m": 1.8802006284127586,
+        "seam_gap_m": 1.8802006284127515,
+        "cyclic_gap_pattern_error_m": 3.552713678800501e-15,
+        "original_length_m": 35.72381193984236,
+        "evaluated_length_m": 35.723811939842356,
+        "static_domain_sha256": "a6d8c52f8752bf58a13d053cac79375583c87f76f5f5a0e80e6bb0481c0e231e"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.05669370002578944,
+        "boundary_descriptors_s": 0.033662599977105856,
+        "curve_domain_diagnostic_s": 0.005002299963962287,
+        "equal_arc_planning_s": 0.0010225000442005694,
+        "phase_policy_s": 0.0009427000186406076,
+        "preflight_navigation_s": 0.11576989997411147,
+        "runner_wall_s": 0.4799290999653749,
+        "offline_reevaluation_s": 0.0353136999765411
+      },
+      "total_wall_s": 0.8940220000222325
+    },
+    {
+      "task_id": "elongated__seed_51__convex_hull",
+      "scene": "elongated",
+      "seed": 51,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11,
+      "common_input_legal": true,
+      "input_sha256": "32acb4bd28019d0457b9bcd2c632026b8724719cd6032137cb5cfa1c0bb17597",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": true,
+      "common_task": {
+        "executed_intervals": 185,
+        "simulation_time_s": 18.5,
+        "actual_trajectory_length_m": 143.362602704062,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 1.4988737772575242,
+          "guides": 1.7359301551837767,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.7488737772575242,
+          "guides": 0.9859301551837767,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0036550843861741316,
+        "complete_deployment_success": true,
+        "recovery_count": 0
+      },
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 20.621298746205355,
+        "arc_positions_m": [
+          0.0,
+          1.874663522382305,
+          3.74932704476461,
+          5.623990567146915,
+          7.49865408952922,
+          9.373317611911524,
+          11.24798113429383,
+          13.122644656676135,
+          14.99730817905844,
+          16.871971701440746,
+          18.74663522382305
+        ],
+        "max_gap_m": 1.874663522382305,
+        "min_gap_m": 1.8746635223823027,
+        "constant_density_quadrature_cost": 0.2928635403551101,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.0032414000015705824,
+        "description_seconds": 0.0027552000246942043,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 6.284984659750446,
+        "occupied_perimeter_m": 12.456228362885511,
+        "observed_disk_union_area_m2": 2.009811940451039,
+        "extra_envelope_area_m2": 4.2751727192993885,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 4.2751727192993885,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 20.621298746205355,
+        "curve_area_m2": 27.780097780814966,
+        "sample_count": 207,
+        "occupied_wkb_sha256": "1e7b308639fbc517ef0ed745ec0cb91c909c86979a8af4ad26b1831a6ee9e6d1",
+        "reference_wkb_sha256": "cbee87a411906653183591697bfa7e2e8027960f9ff29c26e93028cc285e05d4"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "execution",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 20.621298746205355,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 11,
+        "necessary_max_count": 27,
+        "fixed_count": 11,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "0f58b082b99557f971cec278b782f8043e03d8abc2de7481f82bec7b3746d52b",
+      "curve_domain": {
+        "curve_length_m": 20.621298746205355,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 20.62129874620536,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.7543324664585933,
+          "min_arc_gap_m": 1.8746635223823027,
+          "max_arc_gap_m": 1.8746635223823063
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "0f58b082b99557f971cec278b782f8043e03d8abc2de7481f82bec7b3746d52b",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              13.41740838714683,
+              12.788313342664868
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6400631915293116,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              15.291832816560774,
+              12.818252958010504
+            ],
+            "arc_m": 1.874663522382305,
+            "signed_free_distance_m": 0.681457393009161,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              17.163693271932456,
+              12.89181968824409
+            ],
+            "arc_m": 3.74932704476461,
+            "signed_free_distance_m": 0.6791585182272027,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              18.351567605041158,
+              14.182802636083544
+            ],
+            "arc_m": 5.623990567146915,
+            "signed_free_distance_m": 0.6408953097459628,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              18.074530714553678,
+              15.994023801091615
+            ],
+            "arc_m": 7.49865408952922,
+            "signed_free_distance_m": 0.6618023953793714,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              16.396125255885515,
+              16.612735044740244
+            ],
+            "arc_m": 9.373317611911524,
+            "signed_free_distance_m": 0.6403514120890795,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              14.521726411824197,
+              16.644235767468707
+            ],
+            "arc_m": 11.24798113429383,
+            "signed_free_distance_m": 0.6409073364766158,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              12.648312581171922,
+              16.6240462557272
+            ],
+            "arc_m": 13.122644656676135,
+            "signed_free_distance_m": 0.6412393878776448,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              10.900085652007334,
+              16.124971594689416
+            ],
+            "arc_m": 14.99730817905844,
+            "signed_free_distance_m": 0.6356568671779871,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              10.45752282399309,
+              14.361481433880849
+            ],
+            "arc_m": 16.871971701440746,
+            "signed_free_distance_m": 0.6455782388245414,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              11.555439269629785,
+              12.99286458223987
+            ],
+            "arc_m": 18.74663522382305,
+            "signed_free_distance_m": 0.6407979535506736,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.73066612563567e-15,
+        "min_domain_signed_m": 0.6356568671779871,
+        "min_pair_m": 1.7543324664585933,
+        "min_arc_gap_m": 1.8746635223823027,
+        "max_arc_gap_m": 1.8746635223823098,
+        "seam_gap_m": 1.8746635223823098,
+        "cyclic_gap_pattern_error_m": 3.552713678800501e-15,
+        "original_length_m": 20.621298746205355,
+        "evaluated_length_m": 20.62129874620536,
+        "static_domain_sha256": "0f58b082b99557f971cec278b782f8043e03d8abc2de7481f82bec7b3746d52b"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "SUCCESS",
+      "offline_consistent": true,
+      "failure_reason": "",
+      "timing": {
+        "boundary_construction_s": 0.0032414000015705824,
+        "boundary_descriptors_s": 0.0027552000246942043,
+        "curve_domain_diagnostic_s": 0.006965800013858825,
+        "equal_arc_planning_s": 0.0008378999773412943,
+        "phase_policy_s": 0.0008440999663434923,
+        "preflight_navigation_s": 0.03595599997788668,
+        "runner_wall_s": 1.2493569999933243,
+        "offline_reevaluation_s": 0.11042039998574182
+      },
+      "total_wall_s": 1.4732586999889463
+    },
+    {
+      "task_id": "elongated__seed_51__disk_union_closed",
+      "scene": "elongated",
+      "seed": 51,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11,
+      "common_input_legal": true,
+      "input_sha256": "32acb4bd28019d0457b9bcd2c632026b8724719cd6032137cb5cfa1c0bb17597",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": true,
+      "common_task": {
+        "executed_intervals": 189,
+        "simulation_time_s": 18.900000000000002,
+        "actual_trajectory_length_m": 144.39111491498505,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 1.4989219515912406,
+          "guides": 1.6291252533764522,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.7489219515912406,
+          "guides": 0.8791252533764522,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0036583605699883758,
+        "complete_deployment_success": true,
+        "recovery_count": 0
+      },
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 20.735250954732287,
+        "arc_positions_m": [
+          1.8040257400246484,
+          3.68904855409122,
+          5.574071368157791,
+          7.459094182224363,
+          9.344116996290936,
+          11.229139810357506,
+          13.114162624424077,
+          14.999185438490649,
+          16.88420825255722,
+          18.769231066623792,
+          20.654253880690362
+        ],
+        "max_gap_m": 1.8850228140665735,
+        "min_gap_m": 1.88502281406657,
+        "constant_density_quadrature_cost": 0.29610918019800775,
+        "selected_phase_m": -0.080997074041923
+      },
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.04686930001480505,
+        "description_seconds": 0.020153600024059415,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 4.129719953938188,
+        "occupied_perimeter_m": 17.21399041881992,
+        "observed_disk_union_area_m2": 2.009811940451039,
+        "extra_envelope_area_m2": 2.119908013487156,
+        "concavity_area_m2": 2.1552647058122485,
+        "area_over_convex_hull_area": 0.6570771732165476,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 2.119908013487158,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 20.735250954732287,
+        "curve_area_m2": 27.176819071161788,
+        "sample_count": 208,
+        "occupied_wkb_sha256": "43b3b7a3d6cd2f3b047b78e022e4c42be96388e72a34c1de73cc57da20dc7cb7",
+        "reference_wkb_sha256": "cbee87a411906653183591697bfa7e2e8027960f9ff29c26e93028cc285e05d4"
+      },
+      "phase_triggered": true,
+      "phase_selected_m": -0.080997074041923,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "execution",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 20.735250954732287,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 11,
+        "necessary_max_count": 27,
+        "fixed_count": 11,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+      "curve_domain": {
+        "curve_length_m": 20.735250954732287,
+        "strict_illegal_length_m": 0.053147609654287976,
+        "strict_legal_length_m": 20.682103345077994,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [
+          {
+            "start_arc_m": 0.0,
+            "end_arc_m": 0.04767000609617557,
+            "length_m": 0.04767000609617556
+          },
+          {
+            "start_arc_m": 20.729773351174174,
+            "end_arc_m": 20.735250954732287,
+            "length_m": 0.005477603558112414
+          }
+        ],
+        "per_edge_intersections": [
+          {
+            "start_arc_m": 0.0,
+            "end_arc_m": 0.04767000609617557,
+            "length_m": 0.04767000609617556,
+            "original_edge": 0,
+            "coordinates": [
+              [
+                10.502248302340506,
+                14.811495174001504
+              ],
+              [
+                10.49188862049943,
+                14.764964469371538
+              ]
+            ],
+            "max_penetration_lower_m": 0.025851797077277864,
+            "max_penetration_upper_m": 0.025856796029259426,
+            "maximum_sample_step_m": 9.997903963124069e-06
+          },
+          {
+            "start_arc_m": 20.729773351174174,
+            "end_arc_m": 20.735250954732287,
+            "length_m": 0.005477603558112414,
+            "original_edge": 207,
+            "coordinates": [
+              [
+                10.501434403055415,
+                14.816911972751095
+              ],
+              [
+                10.502248302340506,
+                14.811495174001504
+              ]
+            ],
+            "max_penetration_lower_m": 0.00546199584443784,
+            "max_penetration_upper_m": 0.005466993657903271,
+            "maximum_sample_step_m": 9.99562693086207e-06
+          }
+        ],
+        "isolated_contacts": [],
+        "wraps_seam": true,
+        "max_penetration_lower_m": 0.025851797077277864,
+        "max_penetration_upper_m": 0.025856796029259426,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.7626573693711627,
+          "min_arc_gap_m": 1.88502281406657,
+          "max_arc_gap_m": 1.8850228140665735
+        }
+      ],
+      "original_target_domain": {
+        "accepted": false,
+        "invalid_target_indices": [
+          0
+        ],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              10.502248302340506,
+              14.811495174001504
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": -0.00546199584443784,
+            "accepted": false,
+            "reason": "inside_conservative_obstacle"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              11.151302090169242,
+              13.171843712764797
+            ],
+            "arc_m": 1.8850228140665715,
+            "signed_free_distance_m": 0.6959569105849153,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              12.975735395479138,
+              12.84902886472005
+            ],
+            "arc_m": 3.770045628133143,
+            "signed_free_distance_m": 0.6848343133776088,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              14.834602023574709,
+              12.868301998955173
+            ],
+            "arc_m": 5.655068442199714,
+            "signed_free_distance_m": 0.48280704059354995,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              16.699429239675023,
+              12.870507803225596
+            ],
+            "arc_m": 7.540091256266286,
+            "signed_free_distance_m": 0.6456715802612607,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              18.22992162002718,
+              13.744895632213657
+            ],
+            "arc_m": 9.425114070332858,
+            "signed_free_distance_m": 0.6347291965013583,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              18.2836603904595,
+              15.596368341484899
+            ],
+            "arc_m": 11.310136884399428,
+            "signed_free_distance_m": 0.6739950016655631,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              16.83682994674308,
+              16.603224505636113
+            ],
+            "arc_m": 13.195159698466,
+            "signed_free_distance_m": 0.6489924192294007,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              14.972253569690569,
+              16.534258205757993
+            ],
+            "arc_m": 15.080182512532572,
+            "signed_free_distance_m": 0.7178393954017538,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              13.105984958017018,
+              16.63908606729936
+            ],
+            "arc_m": 16.965205326599143,
+            "signed_free_distance_m": 0.6714584427077945,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              11.264437790110486,
+              16.401662484793917
+            ],
+            "arc_m": 18.850228140665717,
+            "signed_free_distance_m": 0.7156630418170777,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.5295558958544798e-15,
+        "min_domain_signed_m": 0.07530428764707787,
+        "min_pair_m": 1.7626613685688641,
+        "min_arc_gap_m": 1.8850228140665681,
+        "max_arc_gap_m": 1.8850228140665735,
+        "seam_gap_m": 1.8850228140665735,
+        "cyclic_gap_pattern_error_m": 1.9984014443252818e-15,
+        "original_length_m": 20.735250954732287,
+        "evaluated_length_m": 20.735250954732287,
+        "static_domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "SUCCESS",
+      "offline_consistent": true,
+      "failure_reason": "",
+      "timing": {
+        "boundary_construction_s": 0.04686930001480505,
+        "boundary_descriptors_s": 0.020153600024059415,
+        "curve_domain_diagnostic_s": 0.011204099981114268,
+        "equal_arc_planning_s": 0.0010938000050373375,
+        "phase_policy_s": 0.11456790001830086,
+        "preflight_navigation_s": 0.031019799993373454,
+        "runner_wall_s": 1.2715325999888591,
+        "offline_reevaluation_s": 0.12072760000592098
+      },
+      "total_wall_s": 1.804928400029894
+    },
+    {
+      "task_id": "wide_u__seed_35__convex_hull",
+      "scene": "wide_u",
+      "seed": 35,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19,
+      "common_input_legal": true,
+      "input_sha256": "27644dbf123a43447df8cfb8e353079a4076c4f939cb1c030fbd047815f1b1f5",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": true,
+      "common_task": {
+        "executed_intervals": 183,
+        "simulation_time_s": 18.3,
+        "actual_trajectory_length_m": 226.9985777607157,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 1.4989038194619655,
+          "guides": 1.3846868606852445,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.7489038194619655,
+          "guides": 0.6346868606852445,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0036964696832202677,
+        "complete_deployment_success": true,
+        "recovery_count": 0
+      },
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 28.03465026337696,
+        "arc_positions_m": [
+          0.0,
+          1.4755079085987874,
+          2.951015817197575,
+          4.426523725796362,
+          5.90203163439515,
+          7.3775395429939365,
+          8.853047451592724,
+          10.328555360191512,
+          11.8040632687903,
+          13.279571177389087,
+          14.755079085987873,
+          16.23058699458666,
+          17.70609490318545,
+          19.181602811784238,
+          20.657110720383024,
+          22.13261862898181,
+          23.6081265375806,
+          25.08363444617939,
+          26.559142354778174
+        ],
+        "max_gap_m": 1.4755079085987874,
+        "min_gap_m": 1.4755079085987859,
+        "constant_density_quadrature_cost": 0.1814269224392379,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.0035920999944210052,
+        "description_seconds": 0.00373659998876974,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 25.73671258493635,
+        "occupied_perimeter_m": 19.869556421866804,
+        "observed_disk_union_area_m2": 3.265944403232941,
+        "extra_envelope_area_m2": 22.470768181703423,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 22.470768181703423,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 28.03465026337696,
+        "curve_area_m2": 56.86916251524543,
+        "sample_count": 281,
+        "occupied_wkb_sha256": "017137c190cd32ccc87c34fa127bb51776e7e7962a43ae0e4ec7aca125000456",
+        "reference_wkb_sha256": "93c804f874306ceb40f10ad8bd449ffe9d03d76b440d0a530d1b567ef13dc3d3"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "execution",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 28.03465026337696,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 15,
+        "necessary_max_count": 37,
+        "fixed_count": 19,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "a47b05be22f754decfccb2b0187dc9c8d4be23492b42c7af066b44555061167e",
+      "curve_domain": {
+        "curve_length_m": 28.03465026337696,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 28.03465026337695,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.416314715105518,
+          "min_arc_gap_m": 1.4755079085987859,
+          "max_arc_gap_m": 1.4755079085987894
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "a47b05be22f754decfccb2b0187dc9c8d4be23492b42c7af066b44555061167e",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              14.89389877057088,
+              10.433709220600665
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6919044865831225,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              16.362296202636188,
+              10.523247145219809
+            ],
+            "arc_m": 1.4755079085987874,
+            "signed_free_distance_m": 0.6306604981125528,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              17.354994414530754,
+              11.533532774083147
+            ],
+            "arc_m": 2.951015817197575,
+            "signed_free_distance_m": 0.6314891752226708,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              17.429924665084997,
+              13.003053337006284
+            ],
+            "arc_m": 4.426523725796362,
+            "signed_free_distance_m": 0.6589111493572106,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              17.448805984788102,
+              14.478440433365686
+            ],
+            "arc_m": 5.90203163439515,
+            "signed_free_distance_m": 0.6468233088694757,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              17.44115813301574,
+              15.953619165731752
+            ],
+            "arc_m": 7.3775395429939365,
+            "signed_free_distance_m": 0.6917398495491883,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              17.060941437108635,
+              17.339813341178125
+            ],
+            "arc_m": 8.853047451592724,
+            "signed_free_distance_m": 0.6309485323427519,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              15.737054238910783,
+              17.856580942388952
+            ],
+            "arc_m": 10.328555360191512,
+            "signed_free_distance_m": 0.6400205238457883,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              14.261571444275056,
+              17.847972163641117
+            ],
+            "arc_m": 11.8040632687903,
+            "signed_free_distance_m": 0.6401781668776908,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              12.786088649639328,
+              17.839363384893282
+            ],
+            "arc_m": 13.279571177389087,
+            "signed_free_distance_m": 0.6403358099095933,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              11.310605855003603,
+              17.830754606145447
+            ],
+            "arc_m": 14.755079085987873,
+            "signed_free_distance_m": 0.6404934529414956,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              9.94530365901944,
+              17.407249267126886
+            ],
+            "arc_m": 16.23058699458666,
+            "signed_free_distance_m": 0.6499461503349151,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              9.474497492541245,
+              16.057699384300847
+            ],
+            "arc_m": 17.70609490318545,
+            "signed_free_distance_m": 0.6449444663951145,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 13,
+            "coordinates": [
+              9.445645801026574,
+              14.582507234510807
+            ],
+            "arc_m": 19.181602811784238,
+            "signed_free_distance_m": 0.6407297638961098,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 14,
+            "coordinates": [
+              9.422043297542116,
+              13.107206926909292
+            ],
+            "arc_m": 20.657110720383024,
+            "signed_free_distance_m": 0.6399137844380375,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 15,
+            "coordinates": [
+              9.54393139341667,
+              11.637687350165626
+            ],
+            "arc_m": 22.13261862898181,
+            "signed_free_distance_m": 0.7233048628115764,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 16,
+            "coordinates": [
+              10.479218776045231,
+              10.574115592304295
+            ],
+            "arc_m": 23.6081265375806,
+            "signed_free_distance_m": 0.684487898346257,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 17,
+            "coordinates": [
+              11.94307506030425,
+              10.467195491215438
+            ],
+            "arc_m": 25.08363444617939,
+            "signed_free_distance_m": 0.6554265952882377,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 18,
+            "coordinates": [
+              13.418484188050261,
+              10.45012229288231
+            ],
+            "arc_m": 26.559142354778174,
+            "signed_free_distance_m": 0.6739956010266818,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 171,
+        "curve_error_m": 1.2930364316346995e-15,
+        "min_domain_signed_m": 0.6306604981125528,
+        "min_pair_m": 1.416314715105518,
+        "min_arc_gap_m": 1.4755079085987752,
+        "max_arc_gap_m": 1.475507908598793,
+        "seam_gap_m": 1.4755079085987752,
+        "cyclic_gap_pattern_error_m": 1.0658141036401503e-14,
+        "original_length_m": 28.03465026337696,
+        "evaluated_length_m": 28.03465026337695,
+        "static_domain_sha256": "a47b05be22f754decfccb2b0187dc9c8d4be23492b42c7af066b44555061167e"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "SUCCESS",
+      "offline_consistent": true,
+      "failure_reason": "",
+      "timing": {
+        "boundary_construction_s": 0.0035920999944210052,
+        "boundary_descriptors_s": 0.00373659998876974,
+        "curve_domain_diagnostic_s": 0.003302199998870492,
+        "equal_arc_planning_s": 0.0006122000049799681,
+        "phase_policy_s": 0.0006586999516002834,
+        "preflight_navigation_s": 0.11093159997835755,
+        "runner_wall_s": 0.8778955999878235,
+        "offline_reevaluation_s": 0.17814169998746365
+      },
+      "total_wall_s": 1.2416618000133894
+    },
+    {
+      "task_id": "wide_u__seed_35__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 35,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19,
+      "common_input_legal": true,
+      "input_sha256": "27644dbf123a43447df8cfb8e353079a4076c4f939cb1c030fbd047815f1b1f5",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": true,
+      "common_task": {
+        "executed_intervals": 277,
+        "simulation_time_s": 27.700000000000003,
+        "actual_trajectory_length_m": 245.79821163803922,
+        "interval_safety_ok": true,
+        "unsafe_interval_count": 0,
+        "minimum_center_distances_m": {
+          "crowd": 0.8109935880965321,
+          "guides": 0.7500000099999979,
+          "walls": 1.0
+        },
+        "minimum_net_clearances_m": {
+          "crowd": 0.0609935880965321,
+          "guides": 9.999997940823846e-09,
+          "walls": 0.44999999999999996
+        },
+        "terminal_arrival_ok": true,
+        "final_max_target_error_m": 0.0023743203694403517,
+        "complete_deployment_success": true,
+        "recovery_count": 3
+      },
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 35.616713420306645,
+        "arc_positions_m": [
+          0.0,
+          1.8745638642266655,
+          3.749127728453331,
+          5.623691592679997,
+          7.498255456906662,
+          9.372819321133328,
+          11.247383185359993,
+          13.121947049586659,
+          14.996510913813324,
+          16.87107477803999,
+          18.745638642266655,
+          20.62020250649332,
+          22.494766370719987,
+          24.369330234946652,
+          26.243894099173318,
+          28.118457963399987,
+          29.99302182762665,
+          31.86758569185331,
+          33.74214955607998
+        ],
+        "max_gap_m": 1.8745638642266655,
+        "min_gap_m": 1.874563864226662,
+        "constant_density_quadrature_cost": 0.29283240360533175,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.05180600000312552,
+        "description_seconds": 0.03173919999971986,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 4.490043968269644,
+        "occupied_perimeter_m": 29.781397908217834,
+        "observed_disk_union_area_m2": 3.265944403232941,
+        "extra_envelope_area_m2": 1.2240995650367108,
+        "concavity_area_m2": 21.2466686166667,
+        "area_over_convex_hull_area": 0.17446066405923424,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 1.2240995650367112,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 35.616713420306645,
+        "curve_area_m2": 47.05675059116271,
+        "sample_count": 357,
+        "occupied_wkb_sha256": "4d6aaa03d1f423d5ccae46153456909b0f51ddf576c37affa8a62bcc91a7f34b",
+        "reference_wkb_sha256": "93c804f874306ceb40f10ad8bd449ffe9d03d76b440d0a530d1b567ef13dc3d3"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "execution",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 35.616713420306645,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 19,
+        "necessary_max_count": 47,
+        "fixed_count": 19,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "081487ebeca3cf30b99c216df6d77311b026219dc7acc7afeb3cdc6ea15d30c6",
+      "curve_domain": {
+        "curve_length_m": 35.616713420306645,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 35.61671342030664,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.2565961981482883,
+          "min_arc_gap_m": 1.874563864226662,
+          "max_arc_gap_m": 1.874563864226669
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "081487ebeca3cf30b99c216df6d77311b026219dc7acc7afeb3cdc6ea15d30c6",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              9.466457112239462,
+              13.508742672300668
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.7192099224693062,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              9.541262297974358,
+              11.649735283478313
+            ],
+            "arc_m": 1.8745638642266655,
+            "signed_free_distance_m": 0.6332136081287021,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              10.85466464946455,
+              10.486623302795095
+            ],
+            "arc_m": 3.749127728453331,
+            "signed_free_distance_m": 0.6760248582303708,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              12.716352443678119,
+              10.475184337060105
+            ],
+            "arc_m": 5.623691592679997,
+            "signed_free_distance_m": 0.7025670370386795,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              14.561631635063074,
+              10.465500857236174
+            ],
+            "arc_m": 7.498255456906662,
+            "signed_free_distance_m": 0.6834038675409974,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              16.40518574137899,
+              10.53732099853845
+            ],
+            "arc_m": 9.372819321133328,
+            "signed_free_distance_m": 0.65719757108426,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              17.41532919585368,
+              11.97185740547587
+            ],
+            "arc_m": 11.247383185359993,
+            "signed_free_distance_m": 0.640422534389953,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              17.392429662803803,
+              13.831262372560952
+            ],
+            "arc_m": 13.121947049586659,
+            "signed_free_distance_m": 0.6468703536904366,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              17.414537129704332,
+              15.681812316820066
+            ],
+            "arc_m": 14.996510913813324,
+            "signed_free_distance_m": 0.6981798208752754,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              16.98084289490473,
+              17.42601458840651
+            ],
+            "arc_m": 16.87107477803999,
+            "signed_free_distance_m": 0.671741115751407,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              15.246503719442714,
+              17.69267079738552
+            ],
+            "arc_m": 18.745638642266655,
+            "signed_free_distance_m": 0.6626109308650202,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              14.397178897482688,
+              16.133873389383627
+            ],
+            "arc_m": 20.62020250649332,
+            "signed_free_distance_m": 0.7021044778965185,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              14.424415606744013,
+              14.287976464776033
+            ],
+            "arc_m": 22.494766370719987,
+            "signed_free_distance_m": 0.6263112045649133,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 13,
+            "coordinates": [
+              13.309606586421184,
+              13.535366112251653
+            ],
+            "arc_m": 24.369330234946652,
+            "signed_free_distance_m": 0.709506513595683,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 14,
+            "coordinates": [
+              12.520195567199039,
+              14.513049214249119
+            ],
+            "arc_m": 26.243894099173318,
+            "signed_free_distance_m": 0.4731993229085048,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 15,
+            "coordinates": [
+              12.485004134151843,
+              16.377369801270945
+            ],
+            "arc_m": 28.118457963399987,
+            "signed_free_distance_m": 0.661209053102588,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 16,
+            "coordinates": [
+              11.41258405596919,
+              17.766065407445605
+            ],
+            "arc_m": 29.99302182762665,
+            "signed_free_distance_m": 0.6500851081447793,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 17,
+            "coordinates": [
+              9.756893350091909,
+              17.186204909235965
+            ],
+            "arc_m": 31.86758569185331,
+            "signed_free_distance_m": 0.6810980454330935,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 18,
+            "coordinates": [
+              9.485388970933455,
+              15.370678719931977
+            ],
+            "arc_m": 33.74214955607998,
+            "signed_free_distance_m": 0.4454910216370775,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 171,
+        "curve_error_m": 1.9270025241191093e-15,
+        "min_domain_signed_m": 0.4454910216370775,
+        "min_pair_m": 1.2565961981482883,
+        "min_arc_gap_m": 1.8745638642266584,
+        "max_arc_gap_m": 1.874563864226669,
+        "seam_gap_m": 1.8745638642266584,
+        "cyclic_gap_pattern_error_m": 3.552713678800501e-15,
+        "original_length_m": 35.616713420306645,
+        "evaluated_length_m": 35.61671342030664,
+        "static_domain_sha256": "081487ebeca3cf30b99c216df6d77311b026219dc7acc7afeb3cdc6ea15d30c6"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "SUCCESS",
+      "offline_consistent": true,
+      "failure_reason": "",
+      "timing": {
+        "boundary_construction_s": 0.05180600000312552,
+        "boundary_descriptors_s": 0.03173919999971986,
+        "curve_domain_diagnostic_s": 0.012098100036382675,
+        "equal_arc_planning_s": 0.0012129999813623726,
+        "phase_policy_s": 0.0013537000049836934,
+        "preflight_navigation_s": 0.26554239995311946,
+        "runner_wall_s": 4.462888500012923,
+        "offline_reevaluation_s": 0.3023757999762893
+      },
+      "total_wall_s": 5.364706800028216
+    },
+    {
+      "task_id": "elongated__seed_35__convex_hull",
+      "scene": "elongated",
+      "seed": 35,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11,
+      "common_input_legal": true,
+      "input_sha256": "c95a2bbd8c5c59c28abcb446a32e5c5ca09ee920d6ae7c6e23794049cc2eebbf",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 20.760697207939106,
+        "arc_positions_m": [
+          0.0,
+          1.887336109812646,
+          3.774672219625292,
+          5.662008329437938,
+          7.549344439250584,
+          9.43668054906323,
+          11.324016658875877,
+          13.211352768688522,
+          15.098688878501168,
+          16.986024988313815,
+          18.87336109812646
+        ],
+        "max_gap_m": 1.887336109812646,
+        "min_gap_m": 1.8873361098126438,
+        "constant_density_quadrature_cost": 0.2968363951788992,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.0019643999985419214,
+        "description_seconds": 0.0020838999771513045,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 6.294849495326459,
+        "occupied_perimeter_m": 12.59564724458004,
+        "observed_disk_union_area_m2": 2.0098119404510384,
+        "extra_envelope_area_m2": 4.2850375548754105,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 4.2850375548754105,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 20.760697207939106,
+        "curve_area_m2": 27.971190339148308,
+        "sample_count": 208,
+        "occupied_wkb_sha256": "5ebbd38f9b9f5d12677d92d67ff9b7586078d4361c6172eeb72ea66c68d64fe6",
+        "reference_wkb_sha256": "3c6ebeaf50a7ca7bf934762d5f78cec01e7493a84494b3da2d54d64ca6013d3c"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 20.760697207939106,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 11,
+        "necessary_max_count": 27,
+        "fixed_count": 11,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "173d335a932910e2599022b4ade08aa5bd9d735afd978234eb24e406f32bd36e",
+      "curve_domain": {
+        "curve_length_m": 20.760697207939106,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 20.760697207939092,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.7645803010572059,
+          "min_arc_gap_m": 1.8873361098126438,
+          "max_arc_gap_m": 1.8873361098126473
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "173d335a932910e2599022b4ade08aa5bd9d735afd978234eb24e406f32bd36e",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              12.732647676102653,
+              12.832191776163128
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.7039010013354511,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              14.619863581134801,
+              12.853492461514199
+            ],
+            "arc_m": 1.887336109812646,
+            "signed_free_distance_m": 0.6940614070224727,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              16.507079486166948,
+              12.874793146865269
+            ],
+            "arc_m": 3.774672219625292,
+            "signed_free_distance_m": 0.6842218127094941,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              18.1546143282332,
+              13.57241053995987
+            ],
+            "arc_m": 5.662008329437938,
+            "signed_free_distance_m": 0.7063955802014249,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              18.31991723332754,
+              15.411274142253038
+            ],
+            "arc_m": 7.549344439250584,
+            "signed_free_distance_m": 0.6550269941187323,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              17.023123703524128,
+              16.607965489234015
+            ],
+            "arc_m": 9.43668054906323,
+            "signed_free_distance_m": 0.6370007605838908,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              15.13662733097703,
+              16.6544500090404
+            ],
+            "arc_m": 11.324016658875877,
+            "signed_free_distance_m": 0.682393784715543,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              13.249338775250369,
+              16.660901771151398
+            ],
+            "arc_m": 13.211352768688522,
+            "signed_free_distance_m": 0.6927412394333924,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              11.387566732816147,
+              16.49976008164786
+            ],
+            "arc_m": 15.098688878501168,
+            "signed_free_distance_m": 0.6340470135302143,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              10.487648274940835,
+              14.936747883838853
+            ],
+            "arc_m": 16.986024988313815,
+            "signed_free_distance_m": 0.6971695895574006,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              10.9304829794999,
+              13.213976339784118
+            ],
+            "arc_m": 18.87336109812646,
+            "signed_free_distance_m": 0.7106918904924204,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.4883520867180184e-15,
+        "min_domain_signed_m": 0.6340470135302143,
+        "min_pair_m": 1.7645803010572059,
+        "min_arc_gap_m": 1.8873361098126331,
+        "max_arc_gap_m": 1.887336109812649,
+        "seam_gap_m": 1.8873361098126331,
+        "cyclic_gap_pattern_error_m": 1.0658141036401503e-14,
+        "original_length_m": 20.760697207939106,
+        "evaluated_length_m": 20.760697207939092,
+        "static_domain_sha256": "173d335a932910e2599022b4ade08aa5bd9d735afd978234eb24e406f32bd36e"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.0019643999985419214,
+        "boundary_descriptors_s": 0.0020838999771513045,
+        "curve_domain_diagnostic_s": 0.002360599988605827,
+        "equal_arc_planning_s": 0.00044030003482475877,
+        "phase_policy_s": 0.00041509995935484767,
+        "preflight_navigation_s": 0.02764520002529025,
+        "runner_wall_s": 0.36366849998012185,
+        "offline_reevaluation_s": 0.007923200028017163
+      },
+      "total_wall_s": 0.4319793000468053
+    },
+    {
+      "task_id": "elongated__seed_35__disk_union_closed",
+      "scene": "elongated",
+      "seed": 35,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11,
+      "common_input_legal": true,
+      "input_sha256": "c95a2bbd8c5c59c28abcb446a32e5c5ca09ee920d6ae7c6e23794049cc2eebbf",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": null,
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "BOUNDARY_INVALID",
+        "failure_reason": "BOUNDARY_INVALID: disk union is MultiPolygon at this closing radius",
+        "construction_seconds": 0.014705799985677004,
+        "description_seconds": 0.01793510001152754,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "MultiPolygon",
+        "component_count": 2,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 4.104031130821694,
+        "occupied_perimeter_m": 17.532085380048848,
+        "observed_disk_union_area_m2": 2.0098119404510384,
+        "extra_envelope_area_m2": 2.094219190370655,
+        "concavity_area_m2": 2.1908183645047625,
+        "area_over_convex_hull_area": 0.6519665218157613,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": null,
+        "controller_extra_area_m2": null,
+        "controller_filled_hole_area_m2": null,
+        "curve_valid": false,
+        "curve_length_m": null,
+        "curve_area_m2": null,
+        "sample_count": null,
+        "occupied_wkb_sha256": "ee5aa0473a83982ec7db08de603ef55a1077d1a70cbe3b808aa33acd03d20a7a",
+        "reference_wkb_sha256": "3c6ebeaf50a7ca7bf934762d5f78cec01e7493a84494b3da2d54d64ca6013d3c"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": null,
+      "initial_paths_ok": false,
+      "target_geometry_ok": false,
+      "static_targets_ok": false,
+      "stage": "boundary",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "failure_evidence": null,
+      "termination_status": "BOUNDARY_INVALID",
+      "offline_consistent": true,
+      "failure_reason": "BOUNDARY_INVALID: disk union is MultiPolygon at this closing radius",
+      "timing": {
+        "boundary_construction_s": 0.014705799985677004,
+        "boundary_descriptors_s": 0.01793510001152754,
+        "offline_reevaluation_s": 0.001781500002834946
+      },
+      "total_wall_s": 0.23481230001198128
+    },
+    {
+      "task_id": "tight_u__seed_35__convex_hull",
+      "scene": "tight_u",
+      "seed": 35,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13,
+      "common_input_legal": false,
+      "input_sha256": "5ab938b2488fdbff25987c397f4bc24f2a9bd9e943057d427848b93d4fd95544",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": null,
+      "boundary_description": null,
+      "phase_triggered": false,
+      "phase_selected_m": null,
+      "initial_paths_ok": false,
+      "target_geometry_ok": false,
+      "static_targets_ok": false,
+      "stage": "initialization",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "failure_evidence": null,
+      "termination_status": "INITIALIZATION_INVALID",
+      "offline_consistent": true,
+      "failure_reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+      "timing": {
+        "offline_reevaluation_s": 0.0016760999569669366
+      },
+      "total_wall_s": 0.19139069999800995
+    },
+    {
+      "task_id": "tight_u__seed_35__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 35,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13,
+      "common_input_legal": false,
+      "input_sha256": "5ab938b2488fdbff25987c397f4bc24f2a9bd9e943057d427848b93d4fd95544",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": null,
+      "boundary_description": null,
+      "phase_triggered": false,
+      "phase_selected_m": null,
+      "initial_paths_ok": false,
+      "target_geometry_ok": false,
+      "static_targets_ok": false,
+      "stage": "initialization",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "failure_evidence": null,
+      "termination_status": "INITIALIZATION_INVALID",
+      "offline_consistent": true,
+      "failure_reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+      "timing": {
+        "offline_reevaluation_s": 0.0010297999833710492
+      },
+      "total_wall_s": 0.1594010000117123
+    },
+    {
+      "task_id": "tight_u__seed_41__convex_hull",
+      "scene": "tight_u",
+      "seed": 41,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13,
+      "common_input_legal": true,
+      "input_sha256": "b11b0829fe3044ab14f5b6fff88d4d5bf566cf5be96cb4b19630857c08cb627d",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": {
+        "scope": "within_this_original_curve_only_not_a_cross_estimator_ranking",
+        "curve_length_m": 23.66072208082975,
+        "arc_positions_m": [
+          0.0,
+          1.8200555446792115,
+          3.640111089358423,
+          5.460166634037635,
+          7.280222178716846,
+          9.100277723396058,
+          10.92033326807527,
+          12.740388812754482,
+          14.560444357433692,
+          16.380499902112902,
+          18.200555446792116,
+          20.020610991471326,
+          21.84066653615054
+        ],
+        "max_gap_m": 1.8200555446792115,
+        "min_gap_m": 1.8200555446792102,
+        "constant_density_quadrature_cost": 0.2760501163276362,
+        "selected_phase_m": 0.0
+      },
+      "boundary_description": {
+        "estimator": "convex_hull",
+        "implementation": "estimate_boundary",
+        "boundary_source": "estimated_convex_offset",
+        "status": "ACCEPTED",
+        "failure_reason": null,
+        "construction_seconds": 0.0028602000093087554,
+        "description_seconds": 0.0030137000139802694,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": null,
+        "closing_radius_m": null,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 14.931356867468644,
+        "occupied_perimeter_m": 15.495667197875395,
+        "observed_disk_union_area_m2": 2.7634914181201804,
+        "extra_envelope_area_m2": 12.167865449348447,
+        "concavity_area_m2": 0.0,
+        "area_over_convex_hull_area": 1.0,
+        "covers_observed_disks_32_strict": true,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": true,
+        "controller_extra_area_m2": 12.167865449348447,
+        "controller_filled_hole_area_m2": 0.0,
+        "curve_valid": true,
+        "curve_length_m": 23.66072208082975,
+        "curve_area_m2": 40.37774162025269,
+        "sample_count": 237,
+        "occupied_wkb_sha256": "adc8cf8145caed5dd0e7f7af7e96af3725a144aad216d60cc97d01163be21732",
+        "reference_wkb_sha256": "f4becaf7160b2a2a0707cc76c5578968f496dc936d48c14ed68fd429fc456e57"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": 0.0,
+      "initial_paths_ok": true,
+      "target_geometry_ok": true,
+      "static_targets_ok": true,
+      "stage": "planning_only",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "resource": {
+        "curve_length": 23.66072208082975,
+        "planned_gap_limit": 1.94,
+        "min_separation": 0.75,
+        "necessary_min_count": 13,
+        "necessary_max_count": 31,
+        "fixed_count": 13,
+        "necessary_condition_met": true,
+        "count_certificate": null
+      },
+      "domain_sha256": "a76ee3753a03a9615f1e2124d880a7211ba83cce52a43a17161cb6099fd4ca67",
+      "curve_domain": {
+        "curve_length_m": 23.66072208082975,
+        "strict_illegal_length_m": 0.0,
+        "strict_legal_length_m": 23.660722080829725,
+        "intersection_length_residual_m": 0.0,
+        "intervals": [],
+        "per_edge_intersections": [],
+        "isolated_contacts": [],
+        "wraps_seam": false,
+        "max_penetration_lower_m": 0.0,
+        "max_penetration_upper_m": 0.0,
+        "distance_resolution_m": 1e-05,
+        "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+      },
+      "equal_arc_attempts": [
+        {
+          "legacy_phase": 0.0,
+          "accepted_geometry": true,
+          "min_pair_m": 1.7103909780923934,
+          "min_arc_gap_m": 1.8200555446792102,
+          "max_arc_gap_m": 1.8200555446792137
+        }
+      ],
+      "original_target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "a76ee3753a03a9615f1e2124d880a7211ba83cce52a43a17161cb6099fd4ca67",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              14.654066045673138,
+              10.462380880157903
+            ],
+            "arc_m": 0.0,
+            "signed_free_distance_m": 0.6393127830748425,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              16.037529819391384,
+              11.468097184465
+            ],
+            "arc_m": 1.8200555446792115,
+            "signed_free_distance_m": 0.6764008457977737,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              16.134454171131335,
+              13.278549428311802
+            ],
+            "arc_m": 3.640111089358423,
+            "signed_free_distance_m": 0.6833070937204052,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              16.1410961977407,
+              15.09851341639859
+            ],
+            "arc_m": 5.460166634037635,
+            "signed_free_distance_m": 0.7262414357082378,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              16.023733043002885,
+              16.908375468720326
+            ],
+            "arc_m": 7.280222178716846,
+            "signed_free_distance_m": 0.6491354291486892,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              14.636230218976104,
+              17.90878583428015
+            ],
+            "arc_m": 9.100277723396058,
+            "signed_free_distance_m": 0.6435771999619865,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              12.81651444447153,
+              17.943951180523865
+            ],
+            "arc_m": 10.92033326807527,
+            "signed_free_distance_m": 0.6981424104484676,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              11.05518688281025,
+              17.681415719713037
+            ],
+            "arc_m": 12.740388812754482,
+            "signed_free_distance_m": 0.6399728709479223,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              10.430226491059766,
+              16.06763222649695
+            ],
+            "arc_m": 14.560444357433692,
+            "signed_free_distance_m": 0.6482989769120369,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              10.453845549683717,
+              14.247729941815917
+            ],
+            "arc_m": 16.380499902112902,
+            "signed_free_distance_m": 0.6792377415573084,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              10.477464608307667,
+              12.427827657134877
+            ],
+            "arc_m": 18.200555446792116,
+            "signed_free_distance_m": 0.7101765062025803,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              11.080644649004526,
+              10.797507683662797
+            ],
+            "arc_m": 20.020610991471326,
+            "signed_free_distance_m": 0.718111841080747,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              12.834089486058906,
+              10.473296374156757
+            ],
+            "arc_m": 21.84066653615054,
+            "signed_free_distance_m": 0.6548225406548127,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      },
+      "target_geometry": {
+        "accepted": true,
+        "all_pairs": 78,
+        "curve_error_m": 9.558334341977833e-16,
+        "min_domain_signed_m": 0.6393127830748425,
+        "min_pair_m": 1.7103909780923934,
+        "min_arc_gap_m": 1.8200555446791853,
+        "max_arc_gap_m": 1.8200555446792137,
+        "seam_gap_m": 1.8200555446791853,
+        "cyclic_gap_pattern_error_m": 2.4868995751603507e-14,
+        "original_length_m": 23.66072208082975,
+        "evaluated_length_m": 23.660722080829725,
+        "static_domain_sha256": "a76ee3753a03a9615f1e2124d880a7211ba83cce52a43a17161cb6099fd4ca67"
+      },
+      "exact_shared_input_and_target_pairing": true,
+      "termination_status": "NOT_EXECUTED",
+      "offline_consistent": true,
+      "failure_reason": "Feasible plan saved; execution was not requested",
+      "timing": {
+        "boundary_construction_s": 0.0028602000093087554,
+        "boundary_descriptors_s": 0.0030137000139802694,
+        "curve_domain_diagnostic_s": 0.0027584999916143715,
+        "equal_arc_planning_s": 0.0005129000055603683,
+        "phase_policy_s": 0.0005097999819554389,
+        "preflight_navigation_s": 0.015676600043661892,
+        "runner_wall_s": 0.3402722000028007,
+        "offline_reevaluation_s": 0.008573099970817566
+      },
+      "total_wall_s": 0.3981499999645166
+    },
+    {
+      "task_id": "tight_u__seed_41__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 41,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13,
+      "common_input_legal": true,
+      "input_sha256": "b11b0829fe3044ab14f5b6fff88d4d5bf566cf5be96cb4b19630857c08cb627d",
+      "input_origin": "saved_protocol_reconstruction_not_original_confirmation",
+      "execution_authorized_for_row": false,
+      "common_task": null,
+      "curve_internal": null,
+      "boundary_description": {
+        "estimator": "disk_union_closed",
+        "implementation": "estimate_disk_union",
+        "boundary_source": "estimated_disk_union",
+        "status": "BOUNDARY_INVALID",
+        "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+        "construction_seconds": 0.07003129995428026,
+        "description_seconds": 0.034477700013667345,
+        "input_semantics": "observed centres plus per-person physical radii",
+        "disk_quad_segs_effective": 32,
+        "disk_quad_segs_configured": 16,
+        "closing_radius_m": 0.3,
+        "offset_m": 1.3,
+        "offset_quad_segs": 32,
+        "offset_join": "round",
+        "sample_spacing_m": 0.1,
+        "occupied_type": "Polygon",
+        "component_count": 1,
+        "occupied_holes": 0,
+        "occupied_valid": true,
+        "occupied_area_m2": 3.8228732965985492,
+        "occupied_perimeter_m": 25.180165252592378,
+        "observed_disk_union_area_m2": 2.7634914181201804,
+        "extra_envelope_area_m2": 1.0593818784783817,
+        "concavity_area_m2": 11.108483570870094,
+        "area_over_convex_hull_area": 0.25602986590773613,
+        "covers_observed_disks_32_strict": false,
+        "uncovered_disk_area_m2": 0.0,
+        "controller_covers_acceptance_disks_16": null,
+        "controller_extra_area_m2": null,
+        "controller_filled_hole_area_m2": null,
+        "curve_valid": false,
+        "curve_length_m": null,
+        "curve_area_m2": null,
+        "sample_count": null,
+        "occupied_wkb_sha256": "d9d2ba1f7066edc0a8ec5aa1b27ab48c91474283ec403a756a7076cf580d1756",
+        "reference_wkb_sha256": "f4becaf7160b2a2a0707cc76c5578968f496dc936d48c14ed68fd429fc456e57"
+      },
+      "phase_triggered": false,
+      "phase_selected_m": null,
+      "initial_paths_ok": false,
+      "target_geometry_ok": false,
+      "static_targets_ok": false,
+      "stage": "boundary",
+      "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+      "failure_evidence": null,
+      "termination_status": "BOUNDARY_INVALID",
+      "offline_consistent": true,
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "timing": {
+        "boundary_construction_s": 0.07003129995428026,
+        "boundary_descriptors_s": 0.034477700013667345,
+        "offline_reevaluation_s": 0.0015289000002667308
+      },
+      "total_wall_s": 0.3363907999591902
+    }
+  ],
+  "wall_s": 17.58271370001603
+}

@@ -1,0 +1,77 @@
+{
+  "original_comparison_commit": "aa51c2b",
+  "original_comparison_files_unchanged": true,
+  "historical_files_checked": 2798,
+  "source_provenance_at_delivery": {
+    "commit": "aa51c2b5dd615b5918308c67d09753827500bc69",
+    "dirty": true,
+    "patch_sha256": "62551b5f38421f6b7ffb65c90c974b5476593866e4f87a1829547b9ad5b8daeb",
+    "source_sha256": "83207e67b5feede1d5c8449053d8f764a5f09f9c50cf2d7bd21ff31acc9cf767",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "cc51fc0ce5320c5d30fa2291398149bbe32ddbac187323808052c1159a2b7bb6",
+    "task_sha256": "fba33830a9a60302d0b69f5d536a08d1d79b8323c8bb3d3950885f0182943171",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "python_executable": "E:\\udc-wt\\venv312\\Scripts\\python.exe",
+  "udc_import": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "default_algorithms_and_thresholds_unchanged": true,
+  "coverage_acceptance_tolerance_m": 0.0,
+  "coordinate_displacement_m": 0.0,
+  "controller_executions": 0,
+  "tests": {
+    "complete_suite_passed": 175,
+    "complete_suite_seconds": 24.34,
+    "new_contract_cases_passed": 27,
+    "record": "final python -m pytest -q: 175 passed in 24.34s; 27 coverage-contract cases included in full suite"
+  },
+  "pip_check": "No broken requirements found.",
+  "compileall_and_diff_check": "passed",
+  "audit_source_provenance": {
+    "commit": "aa51c2b5dd615b5918308c67d09753827500bc69",
+    "dirty": true,
+    "patch_sha256": "2b318625b4733d9002389507d04b721fd96682107e60b7e9a2fa2468cf8d5f4d",
+    "source_sha256": "df873d0f8fca657b806ca79db16efd165635186390e63882ec5dca57f6f2348c",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "40b645f0e7294342dab399c768deca7156ed73d9bfa1aed0149fa7b7ef8012b0",
+    "task_sha256": "f1f90a1a5cb9adbe8474c10880e6d2746469c3debac6e2d812226db16a8cfa78",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "exact_enclosure_source_provenance": {
+    "commit": "aa51c2b5dd615b5918308c67d09753827500bc69",
+    "dirty": true,
+    "patch_sha256": "2b318625b4733d9002389507d04b721fd96682107e60b7e9a2fa2468cf8d5f4d",
+    "source_sha256": "c5d83a3e10a68dc13d5a5b0f4b83c3b704b2925966d3c6294c4600b872f70d8c",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "e0c55d2d3408c00f98ca098cdc085492462da07aab3e57202b869540df6ed86e",
+    "task_sha256": "e9968b0582c830440233c4a2a30e94afbc5dc66a4da94823f26e22cb8ec660af",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "source_phase_note": "Full audit preceded extra exact all-edge evidence and diagnostic config validation; coverage predicates unchanged, all phase hashes retained; no deployment execution or mixed comparison result"
+}

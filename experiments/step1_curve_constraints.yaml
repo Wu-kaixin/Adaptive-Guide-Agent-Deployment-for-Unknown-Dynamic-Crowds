@@ -1,0 +1,50 @@
+# Development diagnostic: 6 geometries x 2 counts x 4 planners = 48 tasks.
+# Not a formal validation and not 30 independent shapes.
+# Seed 15 is the unrotated parameter origin. The narrow near tier uses seed 18
+# because that alignment is the recorded Euclidean failure of Equal Arc and
+# projected_mass; the other five alignments of the same narrow shape pass.
+schema_version: 1
+protocol: curve_constraint_diagnostic
+objective: demand-weighted mean squared arc distance
+density: constant curve density for the 48 tasks
+gap_limit_m: 1.94
+acceptance_gap_limit_m: 2.0
+center_separation_m: 0.75
+quadrature_samples: 2048
+legacy_phases: [0.0, 0.25, 0.5, 0.75]
+legacy_max_iterations: 300
+phase_fractions: [0.0, 0.05, 0.10, 0.15, 0.20, 0.25]
+solver_maxiter: 40
+per_start_timeout_s: 20
+paths: [equal_arc, projected_mass, projected_mass_phase, pairwise_euclidean]
+units:
+  - {family: high_curvature_convex, intensity: mild, tier: near, seed: 15}
+  - {family: high_curvature_convex, intensity: mild, tier: margin, seed: 15}
+  - {family: high_curvature_convex, intensity: strong, tier: near, seed: 15}
+  - {family: high_curvature_convex, intensity: strong, tier: margin, seed: 15}
+  - {family: shallow_concave, intensity: mild, tier: near, seed: 15}
+  - {family: shallow_concave, intensity: mild, tier: margin, seed: 15}
+  - {family: shallow_concave, intensity: strong, tier: near, seed: 15}
+  - {family: shallow_concave, intensity: strong, tier: margin, seed: 15}
+  - {family: deep_notch, intensity: wide, tier: near, seed: 15}
+  - {family: deep_notch, intensity: wide, tier: margin, seed: 15}
+  - {family: deep_notch, intensity: narrow, tier: near, seed: 18}
+  - {family: deep_notch, intensity: narrow, tier: margin, seed: 15}
+demand_supplement:
+  density: mass_cvt gaussian of frozen interior samples
+  bandwidth: 1.2
+  inset_m: 0.5
+  maximum_people: 6
+  hotspot_demand: 3.0
+  background_demand: 1.0
+  paths: [equal_arc, projected_mass, pairwise_euclidean]
+  cases:
+    - {family: deep_notch, intensity: narrow, tier: margin, seed: 15}
+    - {family: shallow_concave, intensity: strong, tier: near, seed: 15}
+notes:
+  - Phase-only starts are the six phase fractions, with projected_mass phase-0 gaps held fixed.
+  - Pairwise starts are projected_mass phase 0, equal_arc phase 0, and projected_mass rotated by each positive phase fraction. That is 7 starts. The same 40 iterations and 20 s apply to every start.
+  - Planning gap limit is 1.94 m. Execution acceptance still uses 2.0 m. They are not the same threshold.
+  - 0.75 m is the center distance 2*0.20+0.35.
+  - Solver success is not acceptance. Iteration limit is not an infeasibility certificate.
+  - People, walls, paths and safety stay unevaluated in this file's planning tasks.

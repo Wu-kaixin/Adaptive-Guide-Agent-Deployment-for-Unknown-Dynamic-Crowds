@@ -1,0 +1,320 @@
+{
+  "source_run": "runs\\step1_scene_closure\\execution\\wide_u\\disk_union_primary\\equal_arc\\run",
+  "source_trajectory_sha256": "68944838dd4f7a0c0c495ba5a9984282a965a8b68500f09806d929e48c3aa50f",
+  "source_metrics_sha256": "7f6994c71b3b535d3b94b008ee474e70d7f0dc6041f274493d42d1aff01b6630",
+  "saved_termination": "PATH_UNREACHABLE",
+  "saved_failure_reason": "PATH_UNREACHABLE: assigned endpoint is outside conservative free space",
+  "saved_failure_stage": "execution",
+  "saved_steps": 238,
+  "saved_replan_count": 0,
+  "saved_deadlock_events": [],
+  "geometry": {
+    "wall_margin_m": 0.55,
+    "crowd_margin_m": 0.55,
+    "simplify_tolerance_m": 0.1,
+    "planning_margin_m": 0.11,
+    "planning_margin_is_safety_distance": false,
+    "geometry_sha256": "504eba69f0746c0b142a700c45fe9432a61d0a0738aa6416a7d08367734ace8d",
+    "free_type": "Polygon",
+    "component_count": 1,
+    "guides_included_in_obstacle": false,
+    "initial_and_replan_builder": "navigation_domain"
+  },
+  "initial_positions_outside": 0,
+  "targets_outside": 0,
+  "target_min_conservative_signed_m": 0.6211508534079577,
+  "first_exit": {
+    "kind": "first_left_conservative_free_space",
+    "frame": 141,
+    "time_s": 14.100000000000001,
+    "guide": 4,
+    "target_index": 13,
+    "start": {
+      "position": [
+        11.129121154713031,
+        17.201941216232697
+      ],
+      "conservative_signed_m": -0.003967016789013544,
+      "physical_free_signed_m": 0.06226978361368543,
+      "occupied_boundary_distance_m": 0.06226978361368543,
+      "covered_by_conservative_free": false,
+      "covered_by_physical_free": true,
+      "component": null,
+      "min_person_center_m": 0.812269651585732
+    },
+    "target": {
+      "position": [
+        12.48741644284818,
+        14.01470651422811
+      ],
+      "conservative_signed_m": 0.6733660629614511,
+      "physical_free_signed_m": 0.7489725159165425,
+      "occupied_boundary_distance_m": 0.7489725159165426,
+      "covered_by_conservative_free": true,
+      "covered_by_physical_free": true,
+      "component": 0,
+      "min_person_center_m": 1.4989133898676845
+    },
+    "waypoint_index": 1,
+    "waypoint_position": [
+      11.27537006232371,
+      17.22932425869398
+    ],
+    "waypoint_conservative_signed_m": 0.0,
+    "executed_step_m": [
+      0.009623640544234036,
+      -0.02623485924179647
+    ],
+    "nominal_velocity": [
+      0.2338088222323682,
+      0.001722274829226933
+    ],
+    "safe_velocity": [
+      0.09623640544233891,
+      -0.26234859241795916
+    ],
+    "physical_clearances_m": {
+      "crowd": 0.812269651585732,
+      "guides": 0.7501934668203921,
+      "walls": 9.49724319103123
+    },
+    "physical_safe": true,
+    "old_path": [
+      [
+        1.0,
+        25.922947368421053
+      ],
+      [
+        11.27537006232371,
+        17.22932425869398
+      ],
+      [
+        11.828101684596948,
+        16.66225844512043
+      ],
+      [
+        12.48741644284818,
+        14.01470651422811
+      ]
+    ],
+    "remaining_old_segment_in_free": false
+  },
+  "replan_failure": {
+    "kind": "first_replan_rejection",
+    "frame": 238,
+    "time_s": 23.8,
+    "guide": 9,
+    "target_index": 12,
+    "start": {
+      "position": [
+        15.12486813375339,
+        16.64696441646046
+      ],
+      "conservative_signed_m": -0.04599345093679922,
+      "physical_free_signed_m": 0.06353801490950393,
+      "occupied_boundary_distance_m": 0.06353801490950392,
+      "covered_by_conservative_free": false,
+      "covered_by_physical_free": true,
+      "component": null,
+      "min_person_center_m": 0.8135237138944441
+    },
+    "target": {
+      "position": [
+        13.847311529129255,
+        13.495757106966348
+      ],
+      "conservative_signed_m": 0.6786830283538917,
+      "physical_free_signed_m": 0.7489232047212355,
+      "occupied_boundary_distance_m": 0.7489232047212355,
+      "covered_by_conservative_free": true,
+      "covered_by_physical_free": true,
+      "component": 0,
+      "min_person_center_m": 1.4989192295590223
+    },
+    "waypoint_index": 2,
+    "waypoint_position": [
+      15.072251405408272,
+      16.649842972075298
+    ],
+    "waypoint_conservative_signed_m": 0.0,
+    "executed_step_m": [
+      -7.361455169885289e-06,
+      -3.264734974095518e-05
+    ],
+    "nominal_velocity": [
+      -0.07893613470043181,
+      0.004268862397646345
+    ],
+    "safe_velocity": [
+      -7.36145516995329e-05,
+      -0.0003264734973977062
+    ],
+    "physical_clearances_m": {
+      "crowd": 0.8135237138944441,
+      "guides": 0.7500000114869961,
+      "walls": 9.501811045382425
+    },
+    "physical_safe": true,
+    "old_path": [
+      [
+        27.396631578947364,
+        29.0
+      ],
+      [
+        15.319951441312648,
+        17.04100407385824
+      ],
+      [
+        15.072251405408272,
+        16.649842972075298
+      ],
+      [
+        13.847311529129255,
+        13.495757106966348
+      ]
+    ],
+    "remaining_old_segment_in_free": false
+  },
+  "failing_guides_at_rejection": [
+    9
+  ],
+  "strict_route_assigned_error": {
+    "type": "ValueError",
+    "message": "PATH_UNREACHABLE: assigned endpoint is outside conservative free space (guide 9 signed_distance=-0.0459935)"
+  },
+  "first_stall_step": 237,
+  "stall_matches_rejection_frame": true,
+  "deadlock_not_recorded_because": "route_assigned raised inside recover before the deadlock event was appended and before replans was incremented",
+  "windows": {
+    "first_exit": {
+      "frame_start": 139,
+      "frame_stop_exclusive": 144,
+      "guide": 4,
+      "time_s": [
+        13.9,
+        14.0,
+        14.100000000000001,
+        14.200000000000001,
+        14.3
+      ],
+      "positions": [
+        [
+          11.107094630788046,
+          17.257269597634608
+        ],
+        [
+          11.119497514168797,
+          17.228176075474494
+        ],
+        [
+          11.129121154713031,
+          17.201941216232697
+        ],
+        [
+          11.136322464327186,
+          17.17820876663061
+        ],
+        [
+          11.141399594147227,
+          17.15666870846299
+        ]
+      ],
+      "nominal_velocity": [
+        [
+          0.27582428452252117,
+          -0.09046327259120979
+        ],
+        [
+          0.2524131473034954,
+          -0.04191800841094384
+        ],
+        [
+          0.2338088222323682,
+          0.001722274829226933
+        ],
+        [
+          0.21937336141601715,
+          0.04107456369192164
+        ],
+        [
+          0.20857139699478466,
+          0.07667323809505078
+        ]
+      ],
+      "safe_velocity": [
+        [
+          0.15607424812683776,
+          -0.32363509453509764
+        ],
+        [
+          0.12402883380751642,
+          -0.2909352216011224
+        ],
+        [
+          0.09623640544233891,
+          -0.26234859241795916
+        ],
+        [
+          0.07201309614155874,
+          -0.23732449602086503
+        ],
+        [
+          0.0507712982004056,
+          -0.2154005816761923
+        ]
+      ]
+    },
+    "replan_failure": {
+      "frame_start": 236,
+      "frame_stop_exclusive": 239,
+      "guide": 9,
+      "time_s": [
+        23.6,
+        23.700000000000003,
+        23.8
+      ],
+      "positions": [
+        [
+          15.12488411484308,
+          16.64703480184447
+        ],
+        [
+          15.12487549520856,
+          16.6469970638102
+        ],
+        [
+          15.12486813375339,
+          16.64696441646046
+        ]
+      ],
+      "nominal_velocity": [
+        [
+          -0.07896420445936503,
+          0.00414681360745206
+        ],
+        [
+          -0.07894906415221303,
+          0.004212255346242699
+        ],
+        [
+          -0.07893613470043181,
+          0.004268862397646345
+        ]
+      ],
+      "safe_velocity": [
+        [
+          -0.00010093538100643118,
+          -0.0004362782586125125
+        ],
+        [
+          -8.61963452112452e-05,
+          -0.00037738034270240906
+        ],
+        [
+          -7.36145516995329e-05,
+          -0.0003264734973977062
+        ]
+      ]
+    }
+  }
+}

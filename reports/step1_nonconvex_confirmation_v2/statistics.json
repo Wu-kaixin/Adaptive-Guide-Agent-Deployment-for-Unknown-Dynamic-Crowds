@@ -1,0 +1,216 @@
+{
+  "tasks_expected": 90,
+  "tasks_completed": 90,
+  "input_units": 30,
+  "valid_input_units": 21,
+  "overall_success": {
+    "success": 59,
+    "denominator": 90,
+    "fraction": 0.6555555555555556
+  },
+  "valid_input_success": {
+    "success": 59,
+    "denominator": 63,
+    "fraction": 0.9365079365079365
+  },
+  "outcomes": {
+    "SUCCESS": 59,
+    "REPLAN_EXHAUSTED": 4,
+    "INITIALIZATION_INVALID": 27
+  },
+  "stage_counts": {
+    "success": 59,
+    "execution": 4,
+    "input": 27
+  },
+  "by_method": {
+    "equal_arc": {
+      "SUCCESS": 20,
+      "INITIALIZATION_INVALID": 9,
+      "REPLAN_EXHAUSTED": 1
+    },
+    "projected_mass": {
+      "SUCCESS": 20,
+      "INITIALIZATION_INVALID": 9,
+      "REPLAN_EXHAUSTED": 1
+    },
+    "pairwise_euclidean": {
+      "SUCCESS": 19,
+      "REPLAN_EXHAUSTED": 2,
+      "INITIALIZATION_INVALID": 9
+    }
+  },
+  "executed_trajectories": 63,
+  "verdict_mismatches": 0,
+  "interval_safety_check": "Exact constant-velocity closest approach on every executed interval, not only frames",
+  "performance": {
+    "simulation_time_s": {
+      "n": 63,
+      "min": 18.0,
+      "median": 19.0,
+      "max": 38.300000000000004
+    },
+    "actual_trajectory_length_m": {
+      "n": 63,
+      "min": 143.5893865247033,
+      "median": 163.80784887246512,
+      "max": 253.9804716785414
+    },
+    "execution_wall_s": {
+      "n": 63,
+      "min": 0.5862194000510499,
+      "median": 0.9479307000292465,
+      "max": 2.8031529000145383
+    },
+    "navigation_wall_s": {
+      "n": 63,
+      "min": 0.01461299997754395,
+      "median": 0.07113290001871064,
+      "max": 0.5200983000104316
+    },
+    "actual_max_gap_m": {
+      "n": 63,
+      "min": 1.839434703758224,
+      "median": 1.8838704691490573,
+      "max": 3.750947265331501
+    },
+    "max_curve_distance_m": {
+      "n": 63,
+      "min": 0.0009869892789591988,
+      "median": 0.0025976340825002286,
+      "max": 0.6426680947533452
+    }
+  },
+  "planning_by_method": {
+    "equal_arc": {
+      "n": 21,
+      "min": 0.003888899984303862,
+      "median": 0.00680789997568354,
+      "max": 0.01067350001540035
+    },
+    "projected_mass": {
+      "n": 21,
+      "min": 0.003911599982529879,
+      "median": 0.005582300014793873,
+      "max": 0.010769399988930672
+    },
+    "pairwise_euclidean": {
+      "n": 21,
+      "min": 1.961971300013829,
+      "median": 4.919214599998668,
+      "max": 21.424598500016145
+    }
+  },
+  "minimum_net_clearances": {
+    "crowd": 0.02158708166738932,
+    "guides": 9.922461408073957e-09,
+    "walls": 0.44999999999999996
+  },
+  "recovery_query_wall_s": {
+    "n": 23,
+    "min": 0.015246499970089644,
+    "median": 0.29094029997941107,
+    "max": 0.5166131000150926
+  },
+  "recovery_validation_wall_s": {
+    "n": 19,
+    "min": 0.0006505000055767596,
+    "median": 0.0012771000037901103,
+    "max": 0.002372700022533536
+  },
+  "external_interruptions": 0,
+  "recovery": {
+    "trigger_count": 27,
+    "accepted_trigger_count": 23,
+    "verified_installations": 19,
+    "budget_exhausted_events": 4,
+    "classifications": {
+      "verified_path_set_installed": 19,
+      "priority_yield": 4,
+      "budget_exhausted": 4,
+      "current_guide_occupation": 4
+    },
+    "episodes_with_events": 18,
+    "episodes_succeeded_after_trigger": 14,
+    "total_wall_s": 6.6924673996982165
+  },
+  "by_scene": {
+    "elongated": {
+      "SUCCESS": 29,
+      "REPLAN_EXHAUSTED": 1
+    },
+    "tight_u": {
+      "INITIALIZATION_INVALID": 21,
+      "SUCCESS": 9
+    },
+    "wide_u": {
+      "INITIALIZATION_INVALID": 6,
+      "SUCCESS": 21,
+      "REPLAN_EXHAUSTED": 3
+    }
+  },
+  "successful": {
+    "simulation_time_s": {
+      "min": 18.0,
+      "median": 18.900000000000002,
+      "max": 38.300000000000004
+    },
+    "actual_trajectory_length_m": {
+      "min": 143.5893865247033,
+      "median": 163.80784887246512,
+      "max": 253.9804716785414
+    },
+    "execution_wall_s": {
+      "min": 0.5862194000510499,
+      "median": 0.8376081999740563,
+      "max": 2.643234500021208
+    },
+    "navigation_wall_s": {
+      "min": 0.01461299997754395,
+      "median": 0.06719819997670129,
+      "max": 0.5200983000104316
+    },
+    "actual_max_gap_m": {
+      "min": 1.839434703758224,
+      "median": 1.8837647782529947,
+      "max": 1.9096701498193154
+    },
+    "max_curve_distance_m": {
+      "min": 0.0009869892789591988,
+      "median": 0.0025636066674097403,
+      "max": 0.0034976328336919784
+    }
+  },
+  "failed_executions": {
+    "simulation_time_s": {
+      "min": 26.8,
+      "median": 29.3,
+      "max": 30.3
+    },
+    "actual_trajectory_length_m": {
+      "min": 147.52550008504568,
+      "median": 242.30612214742087,
+      "max": 243.8431928253367
+    },
+    "execution_wall_s": {
+      "min": 1.0352667000261135,
+      "median": 2.4699324499815702,
+      "max": 2.8031529000145383
+    },
+    "navigation_wall_s": {
+      "min": 0.04821759997867048,
+      "median": 0.2029556999914348,
+      "max": 0.22726849996251985
+    },
+    "actual_max_gap_m": {
+      "min": 2.680416913917232,
+      "median": 3.7464044265849186,
+      "max": 3.750947265331501
+    },
+    "max_curve_distance_m": {
+      "min": 0.10000240092679727,
+      "median": 0.6379985049078486,
+      "max": 0.6426680947533452
+    }
+  }
+}

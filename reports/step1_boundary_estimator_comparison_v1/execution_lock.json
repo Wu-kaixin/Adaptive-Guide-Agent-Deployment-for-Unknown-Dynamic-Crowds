@@ -1,0 +1,21 @@
+{
+  "actual_execution_commit": "3220233acf75dbd2a3a9cc28b8f91fab9f2e1255",
+  "historical_algorithm_baseline": "0ef6e1f",
+  "scientific_source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+  "locked_file_sha256": {
+    "spec_sha256": "1c1650a80b2e653e560fc7b5f37301bd32918a9f1bb75a5b266fcec1a03d33b3",
+    "generator_spec_sha256": "da5f865559db28095175ef6992cd1744319219251c7b21a2c6fdb7a60736c3f7",
+    "base_spec_sha256": "63c2b5392d3162b4984583fc4c1fa1136645f2ff9faa95509efc3924caffd89f"
+  },
+  "freeze_file_sha256": {
+    "future_inputs_frozen.json": "dd6d122e2961527be91f9a218f4923f7886de58ee20773a0134eece3f0aa1910",
+    "future_manifest_120.json": "6ee50b8306f59ba6e3cb6ab4fc5ef3e0be4ee90a4ed8a4945f4fb1012fb8ac87",
+    "future_freeze.json": "9acc0f56cf6c1f0c2624927a310c21987b748e523f3577117b6f508f6da0d565",
+    "future_freeze_verified_before_results.json": "a81d94a1a45a97108523785792b179d35ea34f965dcdd0b2fcf290e90b4bad32"
+  },
+  "cpu_name_registry": "Intel(R) Core(TM) i9-14900KF",
+  "GEOS": "3.14.1",
+  "scope_authorization": "Full 120 rows explicitly authorized; historical run_in_this_round=false unchanged",
+  "new_input_origin": "prospectively frozen new inputs, not reconstruction of historical originals",
+  "reservation_manifest_metadata": "inputs_generated=false describes preparation time; actual completion is in future_inputs_frozen.json and future_summary.json"
+}

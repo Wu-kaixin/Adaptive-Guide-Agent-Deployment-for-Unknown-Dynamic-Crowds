@@ -1,0 +1,83 @@
+{
+  "scope": "integration development smoke; not held-out validation",
+  "unit_tests": {
+    "passed": 34,
+    "total": 34
+  },
+  "batch": {
+    "schema_version": 1,
+    "phase": "development",
+    "generated_at": "2026-10-14T00:23:52.146518+00:00",
+    "manifest_sha256": "1c4b57bf00e5937cfce5e1cd4a619a6d2ff687d0bc1f356f34c7ae4061fedf78",
+    "workers": 4,
+    "tasks": 88,
+    "completed": 88,
+    "experiment_errors": 0,
+    "expectations_met": 88,
+    "successful": 56,
+    "termination_counts": {
+      "CAPACITY_SHORTFALL": 8,
+      "OFFSET_INVALID": 8,
+      "PATH_UNREACHABLE": 1,
+      "PLAN_SEARCH_EXHAUSTED": 15,
+      "SUCCESS": 56
+    }
+  },
+  "offline_reevaluation": {
+    "runs": 88,
+    "consistent": 88
+  },
+  "static_50": {
+    "termination_status": "SUCCESS",
+    "active_guides": 8,
+    "simulation_time": 23.0,
+    "steps": 230,
+    "crowd_static": true,
+    "max_tracking_error": 0.01101588083179778,
+    "minimum_net_clearances": {
+      "crowd": 0.20009252274673073,
+      "guides": 1.7433876535071713,
+      "walls": 0.75
+    },
+    "source_sha256": "d8adf8ca3d6dd4344f76fd994bc81c7fce36e5b8a97aaf51eb5735d0669cc914"
+  },
+  "parity": [
+    {
+      "scene": "square",
+      "method": "equal_arc",
+      "different_arrays": [],
+      "status_equal": true,
+      "criteria_equal": true,
+      "steps": 78
+    },
+    {
+      "scene": "square",
+      "method": "average_cvt",
+      "different_arrays": [],
+      "status_equal": true,
+      "criteria_equal": true,
+      "steps": 78
+    },
+    {
+      "scene": "rectangle",
+      "method": "equal_arc",
+      "different_arrays": [],
+      "status_equal": true,
+      "criteria_equal": true,
+      "steps": 90
+    },
+    {
+      "scene": "rectangle",
+      "method": "average_cvt",
+      "different_arrays": [],
+      "status_equal": true,
+      "criteria_equal": true,
+      "steps": 91
+    }
+  ],
+  "source_sha256_values": [
+    "d8adf8ca3d6dd4344f76fd994bc81c7fce36e5b8a97aaf51eb5735d0669cc914"
+  ],
+  "prepublication_git_parent": "6d9bc09dd56942fa7d45e1907ab09121f37d8a6f",
+  "prepublication_worktree_dirty": true
+}

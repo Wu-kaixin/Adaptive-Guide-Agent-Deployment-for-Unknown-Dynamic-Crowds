@@ -1,0 +1,24 @@
+{
+  "occupied_corner_vertices": [
+    [
+      13.074392124753853,
+      14.344911579194214
+    ],
+    [
+      13.069059390493154,
+      14.344518213083013
+    ],
+    [
+      13.07469602142274,
+      14.342019666430872
+    ]
+  ],
+  "incident_edge_lengths_m": [
+    0.005347222792504453,
+    0.006165577313545055
+  ],
+  "interior_angle_degrees": 28.12500000001098,
+  "physical_mitre_extension_m": 2.2635591109478868,
+  "01_observed_disks.wkb_distance_to_corner_m": 0.1324617552423221,
+  "03_closing_erosion.wkb_distance_to_corner_m": 0.0
+}

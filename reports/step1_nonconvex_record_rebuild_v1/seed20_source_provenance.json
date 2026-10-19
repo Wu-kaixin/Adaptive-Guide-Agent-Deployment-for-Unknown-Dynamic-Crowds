@@ -1,0 +1,9 @@
+{
+  "base_commit": "2c12886ca2775d4ae9a3827237547d9869dfb37d",
+  "delta": "seed20_source_delta.patch",
+  "source_sha256": "580cfdc2b7756ec576221f58538483ec544d577a462ce0f31f9c60bb335c95e1",
+  "apply_to_base": "git apply --unidiff-zero seed20_source_delta.patch",
+  "matches_all_pilot_metrics": true,
+  "byte_encoding": "Git LF normalized; original tracked files used CRLF, new nonconvex_rebuild.py used LF. pyproject.toml used CRLF.",
+  "difference_scope": "Unused imports and unexecuted rejected-input artifact writer; navigation and safety identical."
+}

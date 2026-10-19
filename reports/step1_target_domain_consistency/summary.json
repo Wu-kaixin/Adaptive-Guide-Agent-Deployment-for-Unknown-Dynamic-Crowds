@@ -1,0 +1,401 @@
+{
+  "stage": "regression",
+  "tasks_expected": 180,
+  "tasks_completed": 180,
+  "wall_s": 245.74060870002722,
+  "outcomes": {
+    "BOUNDARY_INVALID": 6,
+    "SUCCESS": 141,
+    "INITIALIZATION_INVALID": 33
+  },
+  "offline_inconsistent": 0,
+  "input_or_target_mismatches": 0,
+  "postprocessed_targets": 3,
+  "date_local": "2026-10-19",
+  "timezone": "Asia/Tokyo",
+  "origin": "reconstruction_development_regression",
+  "original_confirmation_unchanged": true,
+  "original_73_reproduced": false,
+  "original_rejection": {
+    "rows": [
+      {
+        "method": "equal_arc",
+        "status": "TARGET_DOMAIN_INVALID",
+        "success": false,
+        "steps": 0,
+        "offline_consistent": true
+      },
+      {
+        "method": "projected_mass",
+        "status": "TARGET_DOMAIN_INVALID",
+        "success": false,
+        "steps": 0,
+        "offline_consistent": true
+      },
+      {
+        "method": "pairwise_euclidean",
+        "status": "TARGET_DOMAIN_INVALID",
+        "success": false,
+        "steps": 0,
+        "offline_consistent": true
+      }
+    ],
+    "new_successes": 0,
+    "outcomes": {
+      "TARGET_DOMAIN_INVALID": 3
+    }
+  },
+  "seed51": [
+    {
+      "method": "equal_arc",
+      "geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.5295558958544798e-15,
+        "min_domain_signed_m": 0.07530428764707787,
+        "min_pair_m": 1.7626613685688641,
+        "min_arc_gap_m": 1.8850228140665681,
+        "max_arc_gap_m": 1.8850228140665735,
+        "seam_gap_m": 1.8850228140665735,
+        "cyclic_gap_pattern_error_m": 1.9984014443252818e-15,
+        "original_length_m": 20.735250954732287,
+        "evaluated_length_m": 20.735250954732287,
+        "static_domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c"
+      },
+      "selected_phase_m": -0.080997074041923,
+      "feasible_grid_count": 249,
+      "phase_bins": 256,
+      "cost_before": 0.2961091801980078,
+      "cost_after": 0.29610918019800775,
+      "exact_constant_density_cost": 0.2961092507959546,
+      "execution": {
+        "task_id": "elongated__seed_51__equal_arc",
+        "scene": "elongated",
+        "seed": 51,
+        "method": "equal_arc",
+        "count": 11,
+        "cell": "inputs/elongated/seed_51",
+        "input_sha256": "32acb4bd28019d0457b9bcd2c632026b8724719cd6032137cb5cfa1c0bb17597",
+        "input_status": "ACCEPTED",
+        "data_origin": "protocol_reconstruction",
+        "recomputed_target": false,
+        "candidate_target_changed": true,
+        "reason": "reused_saved_reconstructed_original_targets",
+        "candidate_source_sha256": "1e35312e4871afa1005f520cfa4a8f89238883c0f648403bc6f8c9cbbec7a2c4",
+        "original_targets_array_sha256": "c80a2a8d1ce4408a891a40388ed82c1f7e47d3d3de21fc6f667f4d2c27a564c4",
+        "algorithm": "equal_arc+static_domain_phase_v1",
+        "candidate_targets_array_sha256": "e92833ebea1aa23a036c3d47adf14e065cfec318d5d576db2fde4b7d0aae9cc5",
+        "exact_input_and_targets": true,
+        "offline_consistent": true,
+        "wall_s": 1.9410624000011012,
+        "termination_status": "SUCCESS",
+        "success": true,
+        "simulation_time": 18.900000000000002,
+        "replan_count": 0,
+        "minimum_net_clearances": {
+          "crowd": 0.7489219515912406,
+          "guides": 0.8791252533764522,
+          "walls": 0.44999999999999996
+        },
+        "final_source_sha256": "62ed86ff66f411ef00d14d151bba0884ca0736c92da7d1e4989dce1d96381ee9",
+        "final_targets_reused": true
+      }
+    },
+    {
+      "method": "projected_mass",
+      "geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.531728560479273e-15,
+        "min_domain_signed_m": 0.07530428764707787,
+        "min_pair_m": 1.7611689816825267,
+        "min_arc_gap_m": 1.8831819714747056,
+        "max_arc_gap_m": 1.8882442886023316,
+        "seam_gap_m": 1.8831819714747127,
+        "cyclic_gap_pattern_error_m": 2.6645352591003757e-15,
+        "original_length_m": 20.735250954732287,
+        "evaluated_length_m": 20.735250954732287,
+        "static_domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c"
+      },
+      "selected_phase_m": -0.080997074041923,
+      "feasible_grid_count": 249,
+      "phase_bins": 256,
+      "cost_before": 0.2961045250769452,
+      "cost_after": 0.2961045250769451,
+      "exact_constant_density_cost": 0.2961107337147906,
+      "execution": {
+        "task_id": "elongated__seed_51__projected_mass",
+        "scene": "elongated",
+        "seed": 51,
+        "method": "projected_mass",
+        "count": 11,
+        "cell": "inputs/elongated/seed_51",
+        "input_sha256": "32acb4bd28019d0457b9bcd2c632026b8724719cd6032137cb5cfa1c0bb17597",
+        "input_status": "ACCEPTED",
+        "data_origin": "protocol_reconstruction",
+        "recomputed_target": false,
+        "candidate_target_changed": true,
+        "reason": "reused_saved_reconstructed_original_targets",
+        "candidate_source_sha256": "1e35312e4871afa1005f520cfa4a8f89238883c0f648403bc6f8c9cbbec7a2c4",
+        "original_targets_array_sha256": "881126ace7c1f7ff190411618d18aa844c4e1b5fa1bc9d5cb40dee974cf6270d",
+        "algorithm": "projected_mass+static_domain_phase_v1",
+        "candidate_targets_array_sha256": "e51879a5e590c8bf6bf3398ef8148949f39ee819e93b21f659912bb0d03ebc04",
+        "exact_input_and_targets": true,
+        "offline_consistent": true,
+        "wall_s": 1.953030899981968,
+        "termination_status": "SUCCESS",
+        "success": true,
+        "simulation_time": 18.900000000000002,
+        "replan_count": 0,
+        "minimum_net_clearances": {
+          "crowd": 0.7489129330160273,
+          "guides": 0.8786003581444455,
+          "walls": 0.44999999999999996
+        },
+        "final_source_sha256": "62ed86ff66f411ef00d14d151bba0884ca0736c92da7d1e4989dce1d96381ee9",
+        "final_targets_reused": true
+      }
+    },
+    {
+      "method": "pairwise_euclidean",
+      "geometry": {
+        "accepted": true,
+        "all_pairs": 55,
+        "curve_error_m": 1.531728560479273e-15,
+        "min_domain_signed_m": 0.07530428764707787,
+        "min_pair_m": 1.7611689816825267,
+        "min_arc_gap_m": 1.8831819714747056,
+        "max_arc_gap_m": 1.8882442886023316,
+        "seam_gap_m": 1.8831819714747127,
+        "cyclic_gap_pattern_error_m": 2.6645352591003757e-15,
+        "original_length_m": 20.735250954732287,
+        "evaluated_length_m": 20.735250954732287,
+        "static_domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c"
+      },
+      "selected_phase_m": -0.080997074041923,
+      "feasible_grid_count": 249,
+      "phase_bins": 256,
+      "cost_before": 0.2961045250769452,
+      "cost_after": 0.2961045250769451,
+      "exact_constant_density_cost": 0.2961107337147906,
+      "execution": {
+        "task_id": "elongated__seed_51__pairwise_euclidean",
+        "scene": "elongated",
+        "seed": 51,
+        "method": "pairwise_euclidean",
+        "count": 11,
+        "cell": "inputs/elongated/seed_51",
+        "input_sha256": "32acb4bd28019d0457b9bcd2c632026b8724719cd6032137cb5cfa1c0bb17597",
+        "input_status": "ACCEPTED",
+        "data_origin": "protocol_reconstruction",
+        "recomputed_target": false,
+        "candidate_target_changed": true,
+        "reason": "reused_saved_reconstructed_original_targets",
+        "candidate_source_sha256": "1e35312e4871afa1005f520cfa4a8f89238883c0f648403bc6f8c9cbbec7a2c4",
+        "original_targets_array_sha256": "881126ace7c1f7ff190411618d18aa844c4e1b5fa1bc9d5cb40dee974cf6270d",
+        "algorithm": "pairwise_euclidean+static_domain_phase_v1",
+        "candidate_targets_array_sha256": "e51879a5e590c8bf6bf3398ef8148949f39ee819e93b21f659912bb0d03ebc04",
+        "exact_input_and_targets": true,
+        "offline_consistent": true,
+        "wall_s": 1.9614890999509953,
+        "termination_status": "SUCCESS",
+        "success": true,
+        "simulation_time": 18.900000000000002,
+        "replan_count": 0,
+        "minimum_net_clearances": {
+          "crowd": 0.7489129330160273,
+          "guides": 0.8786003581444455,
+          "walls": 0.44999999999999996
+        },
+        "final_source_sha256": "62ed86ff66f411ef00d14d151bba0884ca0736c92da7d1e4989dce1d96381ee9",
+        "final_targets_reused": true
+      }
+    }
+  ],
+  "small": {
+    "stage": "small",
+    "tasks_expected": 9,
+    "tasks_completed": 9,
+    "wall_s": 37.313636099977884,
+    "outcomes": {
+      "SUCCESS": 9
+    },
+    "offline_inconsistent": 0,
+    "input_or_target_mismatches": 0,
+    "postprocessed_targets": 0
+  },
+  "legacy": {
+    "scope": "19 limited legacy cases; NOT previous 73/73",
+    "wall_s": 41.69785880000563,
+    "tasks": 19,
+    "successes": 19,
+    "offline_inconsistent": 0
+  },
+  "per_scene_method": [
+    {
+      "scene": "elongated",
+      "method": "equal_arc",
+      "status": "BOUNDARY_INVALID",
+      "count": 1
+    },
+    {
+      "scene": "elongated",
+      "method": "equal_arc",
+      "status": "SUCCESS",
+      "count": 19
+    },
+    {
+      "scene": "elongated",
+      "method": "pairwise_euclidean",
+      "status": "BOUNDARY_INVALID",
+      "count": 1
+    },
+    {
+      "scene": "elongated",
+      "method": "pairwise_euclidean",
+      "status": "SUCCESS",
+      "count": 19
+    },
+    {
+      "scene": "elongated",
+      "method": "projected_mass",
+      "status": "BOUNDARY_INVALID",
+      "count": 1
+    },
+    {
+      "scene": "elongated",
+      "method": "projected_mass",
+      "status": "SUCCESS",
+      "count": 19
+    },
+    {
+      "scene": "tight_u",
+      "method": "equal_arc",
+      "status": "BOUNDARY_INVALID",
+      "count": 1
+    },
+    {
+      "scene": "tight_u",
+      "method": "equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "count": 9
+    },
+    {
+      "scene": "tight_u",
+      "method": "equal_arc",
+      "status": "SUCCESS",
+      "count": 10
+    },
+    {
+      "scene": "tight_u",
+      "method": "pairwise_euclidean",
+      "status": "BOUNDARY_INVALID",
+      "count": 1
+    },
+    {
+      "scene": "tight_u",
+      "method": "pairwise_euclidean",
+      "status": "INITIALIZATION_INVALID",
+      "count": 9
+    },
+    {
+      "scene": "tight_u",
+      "method": "pairwise_euclidean",
+      "status": "SUCCESS",
+      "count": 10
+    },
+    {
+      "scene": "tight_u",
+      "method": "projected_mass",
+      "status": "BOUNDARY_INVALID",
+      "count": 1
+    },
+    {
+      "scene": "tight_u",
+      "method": "projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "count": 9
+    },
+    {
+      "scene": "tight_u",
+      "method": "projected_mass",
+      "status": "SUCCESS",
+      "count": 10
+    },
+    {
+      "scene": "wide_u",
+      "method": "equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "count": 2
+    },
+    {
+      "scene": "wide_u",
+      "method": "equal_arc",
+      "status": "SUCCESS",
+      "count": 18
+    },
+    {
+      "scene": "wide_u",
+      "method": "pairwise_euclidean",
+      "status": "INITIALIZATION_INVALID",
+      "count": 2
+    },
+    {
+      "scene": "wide_u",
+      "method": "pairwise_euclidean",
+      "status": "SUCCESS",
+      "count": 18
+    },
+    {
+      "scene": "wide_u",
+      "method": "projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "count": 2
+    },
+    {
+      "scene": "wide_u",
+      "method": "projected_mass",
+      "status": "SUCCESS",
+      "count": 18
+    }
+  ],
+  "source_sha256": "1e35312e4871afa1005f520cfa4a8f89238883c0f648403bc6f8c9cbbec7a2c4",
+  "new_target_planning_rows": 129,
+  "original_target_reuse_rows": 12,
+  "phase_solver_uses_no_iterative_optimization": true,
+  "pairwise_solver": {
+    "attempts": 329,
+    "statuses": {
+      "success": 329
+    },
+    "iterations": 4351,
+    "max_iterations": 29,
+    "total_attempt_wall_s": 875.1212484002463
+  },
+  "execution": {
+    "min_time_s": 17.900000000000002,
+    "max_time_s": 33.4,
+    "max_replans": 3,
+    "minimum_net_clearances": {
+      "crowd": 0.016370116330858164,
+      "guides": 9.909206344360655e-09,
+      "walls": 0.44999999999999996
+    }
+  },
+  "final_verification": {
+    "stage": "regression_final",
+    "tasks_expected": 180,
+    "tasks_completed": 180,
+    "wall_s": 85.29581380001036,
+    "outcomes": {
+      "BOUNDARY_INVALID": 6,
+      "SUCCESS": 141,
+      "INITIALIZATION_INVALID": 33
+    },
+    "offline_inconsistent": 0,
+    "input_or_target_mismatches": 0,
+    "postprocessed_targets": 3,
+    "trajectory_array_mismatches": 0
+  },
+  "final_source_sha256": "62ed86ff66f411ef00d14d151bba0884ca0736c92da7d1e4989dce1d96381ee9"
+}

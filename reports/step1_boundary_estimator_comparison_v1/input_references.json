@@ -1,0 +1,962 @@
+{
+  "elongated__seed_55": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_55",
+    "input_file_sha256": "faccadbb0afa59760d49cee674b7ba3202a6f9c986394b5622202e370b125a09",
+    "input_sha256": "7215312acd2f5618952418aa29bd8c06526ba6c3bfc56458f3512d40378fc1ed",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5792892460711654
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_55\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "65e291af5de9ef0ad996c30bdaad91116f7d1ea07ebfb34281a6b2bce03a2b7e",
+    "people_sqlite_sha256": "1673b920b88128d4333f84ba2128736280faeaa7eaf7f3efd83337f70a349840"
+  },
+  "elongated__seed_56": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_56",
+    "input_file_sha256": "c698ea58f863640a584e3db071135e8f530ee6d07ad45f2f94500fe38b8871ce",
+    "input_sha256": "61b7b9903210e80328ceb1aab239fd9975e283390b1b9dde49437a919f4de3a3",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6129107395322674
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_56\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "9b930547cbe717e0b8f0fa7ddcc4ae043d12a0aca055355977c384db0ae58530",
+    "people_sqlite_sha256": "f6f1e648f418335d070b0563ee5bc985425f6d46124d7172615ab64cd9faa512"
+  },
+  "elongated__seed_57": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_57",
+    "input_file_sha256": "c8aa6a32baaa01894e100867e66c9e8496d4ab9c451e3c979cdf4c76b2b1d3cb",
+    "input_sha256": "85bf4063f4ef3dbacea4a1cc9aa32522aafa44656d40b3174efd0277854abb47",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.549885717205447
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_57\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "c744974e312f87067b6765980ebe5f056cba3d98dbf7d53d167f698117bd8625",
+    "people_sqlite_sha256": "31ba578504d1c354bd284bdaafca34543aa110213e7d8a9df2bae3b29500c68b"
+  },
+  "elongated__seed_58": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_58",
+    "input_file_sha256": "a62e10af127b1d52494ddaf9a5407fd6c4b8eeb77e685db91e66ce2c373e0744",
+    "input_sha256": "95299f4c1073905abc8918074d2cbae4a86a100225600e552b688448fe270f08",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5894832378125536
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_58\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "140702d1085ed911dda7cc453d4d07cfe1dd14e86d0368bdb03dcbf9192c0b1d",
+    "people_sqlite_sha256": "63dd37b3c3346111d8578e71c1eb6fa70f4d84d39183d071c429b2c0a20ec843"
+  },
+  "elongated__seed_59": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_59",
+    "input_file_sha256": "492bfcbd579277cc3718e778038a7485bb5862159c9b8e77549e47d5979df36c",
+    "input_sha256": "4ac2b9e621148afa0fd38c787541fc7efc757e8205db2eb885e49c366bc2ad8c",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6082458573909278
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_59\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "e0a761bd0254d9b066a6b471d33338597ffeabb1663a5c4b2ac559b5f1b58c25",
+    "people_sqlite_sha256": "dc02a93ba5f6053b0e0cc3b5a30009b341f6c477958669be68695e1c76eb189a"
+  },
+  "elongated__seed_60": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_60",
+    "input_file_sha256": "215c23478a28faf28f3fddde935738b560ff6412a97bbe6ee5901bdcdd3a2c80",
+    "input_sha256": "a6bec244e40e3bf16850c1cd4cae638f9d62a762157e5975906324f6e9f6b496",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5350707457410808
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_60\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "28abc170882378631d3268bd943892e00984b613df676a182bb016cb6d154471",
+    "people_sqlite_sha256": "38f9ce46dc3bd8b44d571b8b0a8e16eac0777fa534e5fa2ada2ae992d3e83633"
+  },
+  "elongated__seed_61": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_61",
+    "input_file_sha256": "c76f09c1dee13e3ec37f98f275a571b75a7f0a1782762ded8b2ba96f6fd9a0c7",
+    "input_sha256": "962bef554889bd8685e234e7a9632470b3746be81b3ee600a09a985c831fc5f4",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5897301761807027
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_61\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "32e902285ac949d6ba6bc09e87d0bbe0821cb3c692da7e71e4021c7b62b698b3",
+    "people_sqlite_sha256": "d7258279fb1edecc73994ec31ac2b428e48d555a91292e8e3e088c4207aa4400"
+  },
+  "elongated__seed_62": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_62",
+    "input_file_sha256": "9be87a9f0e7e3fca1b9b1edf5714a162150734f150096e44e6f68ba5f8dcf190",
+    "input_sha256": "40f103a7fa00695fdfc11e56f782634c4e7c411a68fe0554b172ef1a0c933359",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.592440051999153
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_62\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "6bbefeee9a97db9dd168e043872358e3f263b1d4912cc3d9f3191ccc5e7d3f8b",
+    "people_sqlite_sha256": "e471090dc9d64fca5738d8f4701881e3a908023dba22a03aa8d88bb9032fcf50"
+  },
+  "elongated__seed_63": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_63",
+    "input_file_sha256": "6f5e74a1e1e1d8304e6506629425ba045e31df1f5fb5a274e417c242fb0737ad",
+    "input_sha256": "358e44ac12a6d3369f86a47f4b7efa8a33baf33224a0061224f37bfc35e6987f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5943517028331972
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_63\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "7d4c2750fd7eea94927ca785147c767fed3f420d5eedc4a6290c2a7e695d6dda",
+    "people_sqlite_sha256": "9f0cf2bdfee4af2a68c560251d45077b3e7883b49d457af596c3841877d8939a"
+  },
+  "elongated__seed_64": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_64",
+    "input_file_sha256": "7b6d59c67ce2b4029c8e3e1fefeba925dd391fdf7dee725002a917032b1d46b9",
+    "input_sha256": "e62daf48ca273b3d28a46c6b8f4720824ca56ee4b0d9571b4354ebe2bb69d479",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.563696987719284
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_64\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "daee6393cb67f0775f3e0b1f39ac550208ead0f5690dbe5b0e912fcebd5a6b7e",
+    "people_sqlite_sha256": "42964bc6e9c49064a1bd0bbb5a7ffd5e66f029571f7c666637d987337e7c38af"
+  },
+  "elongated__seed_65": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_65",
+    "input_file_sha256": "0527e555d0891c39b8f54fd665bcc5bc0bde79597425ab7ee303788962010d5a",
+    "input_sha256": "858c27daf8806d2ad8267853b7fc664f3a21df7d305a2a25f2c802dc1a163e0b",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5971457346220679
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_65\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "5d8437f2b8a925756cc618d782a0213d07421aff686d285d8478841de6d8b6ae",
+    "people_sqlite_sha256": "b6e59296395679a7c942c2390e12fbcc704c93e01363199640087dda8b1188d3"
+  },
+  "elongated__seed_66": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_66",
+    "input_file_sha256": "45c90bf05d9a1f622ff0e765adb1194cf573106b9cbdfa5bcc9feb3af47a9abe",
+    "input_sha256": "58dca1d41eb9946278decff70ee942d6915d8bc5e0816436918e6474b8e555cd",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5825857112964362
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_66\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "00314e7aabd83f737badb25528f3263513d299d6158d00ba6503dca91aa76560",
+    "people_sqlite_sha256": "b3f0565e4d724c0f98dbadfa9d71a1929d2d45c542cb91c6a4374bff80c38cb5"
+  },
+  "elongated__seed_67": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_67",
+    "input_file_sha256": "9ebec11cc4d21e15d864ff2dac2fe6cd974feaeed2b378665679d1e0a2b5fbc5",
+    "input_sha256": "759f8851cd2efe8baa718eedac75d32074870772a0c0a3ee2a24f4f3d01e8714",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6352441576639564
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_67\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "316432734b11d38a299d216ed5888bcc8b6df95f5a21e1ae5ca26a26e853dcb0",
+    "people_sqlite_sha256": "8d0363967a340418df9d27f1d11b1aa115a330f5e208265d29d736a0e8247be6"
+  },
+  "elongated__seed_68": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_68",
+    "input_file_sha256": "d914a675db3ed64bef87b4742f0e74fb51f837ce8e930aefb5f181446a0361f1",
+    "input_sha256": "daf221b27a6e0bab3f0cc777a7f37b3f234f1ec4add5b4bef1f86f648b0d4bdb",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5919500921976932
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_68\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "324b45efd9097edcc84c30f3859021da9ae3ce3e276913365fabdebb7f3c859c",
+    "people_sqlite_sha256": "d2a18d2899d1a6c2777dc4f7b7e54ee79581f911cdb364b79af107fb72470d01"
+  },
+  "elongated__seed_69": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_69",
+    "input_file_sha256": "cc6009c6a94b88cc9810eaf88f1609522b0cae9faaec29e487c2e35ea225e492",
+    "input_sha256": "f96de3074f1e239a35c7ca83a20fb8666c38dfb8806be885d6bf120500666f9c",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5837236662482256
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_69\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d06089c79a462775622854ee96607376e95ebd1f312394ccf47863419186cf87",
+    "people_sqlite_sha256": "f7895e317e46d2a521423caa55956eb3b5814b1f7229c8052a9a0fc711b2f7c4"
+  },
+  "elongated__seed_70": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_70",
+    "input_file_sha256": "6102702020e27d3278cd0091269550fc7a1a9b5463313875d4d31abc541a5a27",
+    "input_sha256": "91dbce28e1c48c908130e155dbee4d27a5aaa9006fa425809bd79e1d6e81c4f5",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.634727304056613
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_70\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "a62be4fcb835e9e9053bc8517b601806436b5d089f174924cac22324f0159555",
+    "people_sqlite_sha256": "5bd9979d90e8d741c1550913639c516a75086f1e7330f31f68c1ee133b859f3e"
+  },
+  "elongated__seed_71": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_71",
+    "input_file_sha256": "b7a3b766194976e8180c0ad41e060944b9a0199d26b01a20649d640c533b2f4f",
+    "input_sha256": "c2cdb7163dc46d871de47a74b080bd635ca64fc398790d27824e01c12fcebb3f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5658170007492275
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_71\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "41c4b6ba93c01bfac5539691552aeaf4ec4450babaf779c92078d043be081686",
+    "people_sqlite_sha256": "f325dacc08883b93355cb66bda8d9d556b721db933d2b8163b9efbc1a7f6e886"
+  },
+  "elongated__seed_72": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_72",
+    "input_file_sha256": "581200084906dc68452310c44c3a52501e2392ce04ba8839d6887b5121d7164c",
+    "input_sha256": "f6b02fbc2505a71c4fe0f6aea5f2470f28fc1ab9671d5b32cc0e8ac5f9954480",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6178030064362209
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_72\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "379389bce07b817700bc800d8726a4dd2840a21775d16add9825a7d2b3b7fd96",
+    "people_sqlite_sha256": "6560f20b4742d6482bf2e378febc8a6d001fa548c9a14c941e988c84305e2257"
+  },
+  "elongated__seed_73": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_73",
+    "input_file_sha256": "ab341aa0f7bca3006ce785eea4374cefe7ef4e364475a7b1b20238c6b8408af0",
+    "input_sha256": "38ffd32221a281b748ad84a7f6566813a08d37e09f2c01a5036af88a92e89a4f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5252631348599076
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_73\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "43f3d43ff5c4970c252589d3b80559e43200ab978eb0f5a7c51ab5f08f8d7227",
+    "people_sqlite_sha256": "47e874d6f3987c6068a3414b1ebb863b6f8e74686651c30df7aadde4e5c1f6b6"
+  },
+  "elongated__seed_74": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_74",
+    "input_file_sha256": "c29d999e48dad2ae68a071ce83d823c70413bce35386d990ce4eba0a1b9dbf6a",
+    "input_sha256": "6672497b9e9f581b86d50a3dbb9d359470b22597d7d6440a8587060ae50bee02",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6019816896153639
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\elongated\\seed_74\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "7f0e346c8432535808d72a1a62f6ed7c78caa8665504cc359a33008e4a2a64e7",
+    "people_sqlite_sha256": "9db07f26a8e4669854174336c94938e45907df61eb5503bf597bd5040a3c8dec"
+  },
+  "tight_u__seed_55": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_55",
+    "input_file_sha256": "93d3de6132b379381044b955de1fd0f9a85ad5a2c25d04b7352c5d9155c2369d",
+    "input_sha256": "96239cd97742de1188aedaf2abb3e34b3349990bb9f0c0c0f5bd9a5d20866379",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4233663113765017
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_55\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "4c2954537cdb1efbe6a6e57cf2f1fd9e4aa7e190abc709f812440be6cef6d375",
+    "people_sqlite_sha256": "931a5eeacc406f7a3e3866ec5d06ab641193d5bbc5a5d00fcf5cb287465cf1de"
+  },
+  "tight_u__seed_56": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_56",
+    "input_file_sha256": "c78a49c9d82f3c0b9acfc271902c9d4c712ebcf2c1a2cda87ccaa26c9b042f0d",
+    "input_sha256": "236df63f6d9273d1eac14beb242a3725e6d7f5c0ebf142f694332059611cd63d",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3264930285213158
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_56\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "9654ccab62179a643d29cf8124fc4bce9f68a2b75f8f82cc19988853fb04a5f9",
+    "people_sqlite_sha256": "58c3079b8584b58c1189d06290890e38f3e7711d83a75e045551a4031c6a0baf"
+  },
+  "tight_u__seed_57": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_57",
+    "input_file_sha256": "a09caa0e8b60d2dc2d21430f2ab108d9445a32b9af0b35d1bb8cfa2e65600f80",
+    "input_sha256": "961362a85e3c1cbd7516ef9eb1fd75fd49f62f7129d4665c8f78bf9149efeb88",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.39030686674874376
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_57\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "669b95e908cfba8aeaf178712ba199da6362fc2dba0b3b794a8aa654be443521",
+    "people_sqlite_sha256": "a935d247e9c56e52c468dde237debbbf5b74f53a02da0488b94e6feb047930a3"
+  },
+  "tight_u__seed_58": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_58",
+    "input_file_sha256": "682dae63a2381033de819c7510ab30a5fc4e64030f6f8186051f3dedc7aa6885",
+    "input_sha256": "d3193429fe8cc62aec9d75898e19ec3c2254fa054fe398f2515c07f042be29d1",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3718626339378456
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_58\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "13fd0ba27c5851d38544074303e776aa5a2cda9e38c2d66fe31104b441d60d1d",
+    "people_sqlite_sha256": "1dcf4f8a135995b9699630b4183e8ee2ef26f471ca604bf3bda3faef1fe5c00e"
+  },
+  "tight_u__seed_59": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_59",
+    "input_file_sha256": "e6f5cb8c95204a50cba43329f4b0b245fc0f6085975eeb4d4c2ce07ad1c26c51",
+    "input_sha256": "1a529660c54850e3d07bb7e3c4d5657b3427dba49ad67bc7c9b92be4bdb0a004",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40992938021037395
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_59\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "198edc5bb8262a583ccae9b6799c4d26a6d54bbd5ff932fa3a210e4a6fbef3fa",
+    "people_sqlite_sha256": "ff23f2e88c423c986626606af124c10b01316123933174aac8bb8287db566b97"
+  },
+  "tight_u__seed_60": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_60",
+    "input_file_sha256": "eb682693e7e82da29edadbaa91fa70b7849655438ac66a960282ea786ff10f25",
+    "input_sha256": "c15cfb8b65826a80789105a957a43e7faf4cc8364e4493ea5e63a7ba5b521c8b",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.41624491688367726
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_60\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "b4697215205d2af5faf6cffa9cd27091932abe2c6ae69b4b7f7958ff1fc667e9",
+    "people_sqlite_sha256": "91791efe08c1e369c85335b7e8be1790703fdd135b1b0bfe5508fc4a42ab060d"
+  },
+  "tight_u__seed_61": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_61",
+    "input_file_sha256": "e69e08db9a62ab24716ad2bff4fb069a1859b87ea6bab8d3b9284121fc19a7d5",
+    "input_sha256": "441b6407f0f4dacb739510e23c8c14cd9a3d9856c46dc61502d49e3822dfc295",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.37024554899712914
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_61\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "b7f786c0c4c9bc1f8cb8f699192a88f553dc1c7a6b5d855a88f580eb3811d293",
+    "people_sqlite_sha256": "7f986f565a08208436dffe38a7a363ecde3eecd97d6c1750da96e7a192e6bba1"
+  },
+  "tight_u__seed_62": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_62",
+    "input_file_sha256": "180486850d17c505ef51b08435f2fea588a2e23ce21a88e4ec1d2c323d7a313b",
+    "input_sha256": "688594c0962eae5e20f58636d7d92b46e3e216214cb0aa6e644d86b864db7cff",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4313631693847846
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_62\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ae663380e25bf8b4427dc1209dfbc15ad387c9b1823f02dbca4579feafa902a2",
+    "people_sqlite_sha256": "ccf0b2779248ab4972a3d9407863a87c94fcc54869c2a595ec71f0d5bd0663b8"
+  },
+  "tight_u__seed_63": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_63",
+    "input_file_sha256": "f5096ab2f019a06bfffa93d8f10af587e5052a38188dd35e9fa06b994d4967ba",
+    "input_sha256": "2f8624933613447b2c60916683c165fdf55b0e3bf005752677524a378ff22fb0",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.42491468468579563
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_63\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ac69cef5d053a88ffb6c5286cdf49c342506d8d1af7ec9ecd8cf34f5f105c172",
+    "people_sqlite_sha256": "16b686edc61b6530691d9431912b373db9a0a7f55985d01d178c1e6a12148cf4"
+  },
+  "tight_u__seed_64": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_64",
+    "input_file_sha256": "fe7699d0369c45619daeb4b97be83634605643418d55ec81ea04ab603ced3c5e",
+    "input_sha256": "65bd0f420cd00e7092583740fff5347689dc6cf664af8fce318ed93f78a23776",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4810101857060844
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_64\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "952a873a1fdb53f1009e70e56e8c2bd55b51d70bfc0c6d4590a018593e406f69",
+    "people_sqlite_sha256": "fcede54605e06cc92bc0668a155b7f852a7e022b794ed2e55dafc881316b5aba"
+  },
+  "tight_u__seed_65": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_65",
+    "input_file_sha256": "04f0251dda527ebc032a9d7d4a84d9f49efed73725ddb1beda3e8a4fd25bff68",
+    "input_sha256": "2166936083e339856244c7cc12f8b83b3849521931cb59bca86ecce8a29642bd",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3859999471759797
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_65\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d79c720bac7beaa6eba6403f3d3b29fa276e600ada76de173fc009d1ebd04e45",
+    "people_sqlite_sha256": "f3d1d0880198fa5b1e5aade72269fd5579b275df7b00cb48eb6fe28b76cea48c"
+  },
+  "tight_u__seed_66": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_66",
+    "input_file_sha256": "abe343e98c39d46d458fc50475b3f4f1845d4e067cef2f69390322e2184cbb47",
+    "input_sha256": "8234e8e8500babe6921f9b13ef7bea5273cf29d9b4524c07177773f8e9f2d11d",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4280921785136861
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_66\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "038ded7a32ec5af61719937ae0305674dc40f7974fa2ab28570f267bbe0cba12",
+    "people_sqlite_sha256": "70df6a9e849ca777ef6ca0cc84e2a638a879eacdb1294a62f173ff00c3d2bde9"
+  },
+  "tight_u__seed_67": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_67",
+    "input_file_sha256": "83c40392d6bc13887d50cd60b8cf58975eae817848955a86a4902b4068beb4ed",
+    "input_sha256": "88b1fe69c8ac269bf66475ef97acf94bd4c5aaee06abcc28cb02d91d594d727e",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40522933063296984
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_67\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d433746b4a2d4e7f218541d02944996fcb308420b0632bb87920fb1f6b6115fa",
+    "people_sqlite_sha256": "963517b5e31cad5c02945bcad06ec480459b738a2cadb5364c6e75c377311f7b"
+  },
+  "tight_u__seed_68": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_68",
+    "input_file_sha256": "1cf73f868329168d7f9fa9d8e1c79ae9f1f7cef40e4047145236afe5d123f8e4",
+    "input_sha256": "887f7921d0c1cf506fae53aa5335c7c88385b62e8560f1b8e2f4d3e15d9affc5",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3670320256178391
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_68\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "faee64b83b3ed72ec4f4aa7e901f2a8a130e0002acc0ed5cb93c3abd7cb50737",
+    "people_sqlite_sha256": "778f67baa1e42fccff2b0a25f2f12dc5f8a5501f30addec3d7a4e51e03c3d9c1"
+  },
+  "tight_u__seed_69": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_69",
+    "input_file_sha256": "12819bc56fe8e6e9456edbffe4f39072183afb5d433805d9a5e054f7bd95d174",
+    "input_sha256": "2d57ad979a73a88c5941e5f40d47e4f8ec5e0dbbac48a21da75c9816940353f4",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4007794285534384
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_69\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "b07a874dc4ed4132d8a2eda5fa173ac4e7f72088541ea41dbd6e9df888ea0b31",
+    "people_sqlite_sha256": "68ca2a95d0ad376372f8164762c9353ef386e0dc3620dfcf634e0077cce055d8"
+  },
+  "tight_u__seed_70": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_70",
+    "input_file_sha256": "6e731ae595b671c22499173cd7937fff3627f63242f94cd3b85e3fe37117c026",
+    "input_sha256": "ee1a4ff8d15e10c36570facbd2f53528b8c6f3809d37cfea018abf6b1ba1b32d",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.36530204135716393
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_70\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "87fc68319d3f31f8db7f27b897da6914d2e183f177f417187fa1a5cdc5d82da5",
+    "people_sqlite_sha256": "b909c34207b156fe7f33992a4d546593293c49950fddd62e7b786d0076bd9513"
+  },
+  "tight_u__seed_71": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_71",
+    "input_file_sha256": "3da6fbaaea2e4d40cb43983247c0bb89b358d2fc6031c3cc58d003db70dda2df",
+    "input_sha256": "3423b245a5307cdbfc42831894edbf24f4e00d50f876f54bdf7948a3163fb7dc",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46125775344180975
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_71\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "14a299e4f3f7cbd1f7c3adbb33d7617abe33b35c4e903e2716c06830fb76a153",
+    "people_sqlite_sha256": "26702254047cdc223f38fe27763de5932e046fbfee7207ae78f349c31c61d991"
+  },
+  "tight_u__seed_72": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_72",
+    "input_file_sha256": "940bcd97cc304d0ed742e86b893c7b22dbfe0f42d513ec7a78d9417788555c52",
+    "input_sha256": "1f11a9f491b9ab6228520a0d3bc13d8dfad62be1bfaf8cf32bb574c1e5fce127",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4251058780911844
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_72\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "3e93e4b0469ff4d21c0f70e3cff66e52852397ebc3f1a368d47ea197fec4a15f",
+    "people_sqlite_sha256": "9ecc34dea7754eaa997ee5dd97fa45485d6e01793fc26a40e68746baaa07effd"
+  },
+  "tight_u__seed_73": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_73",
+    "input_file_sha256": "eeb29076a7e9715ed327bd050af7d984a41d2f4fdb7a8847a9602807dcd3ea42",
+    "input_sha256": "d2a04e1776580c3e297b1b2f3859133b1f7e1fc628240ac70bf516a3f90aac72",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40206955592726656
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_73\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "c61e0f452328527fcc373885c0f296afe5774d028b20e4d4d1c0c53270073f2e",
+    "people_sqlite_sha256": "c76b481301e417fedace4202686645e009eb950ff5d1a9aefb12f1387ebb544b"
+  },
+  "tight_u__seed_74": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_74",
+    "input_file_sha256": "c07b48827d1a033c8b119768e0faffa48cf7fabe946fcbdd55a1a4baa1dceb5d",
+    "input_sha256": "337b78bee52c6902c18021feaeb93ba21f95536552fa32a375c219fd5aca0952",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3257635870258432
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\tight_u\\seed_74\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "c84177eaf2545c9b254870c9902e4380d99cc0ab01696d3c9fbbe4d0bd2ecd24",
+    "people_sqlite_sha256": "a47431aa4308e7a65cb4dfbef8d4b96ee643349d8873bca7fc6fa84dabcc7525"
+  },
+  "wide_u__seed_55": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_55",
+    "input_file_sha256": "447e2488b693f9ce9a0d958e3151fce9b1bf00aa3e6e0ecbb337f06178c1e89c",
+    "input_sha256": "741568d016ddfdbde489fe92519e10c00e3fb488fe57c3357e32ccddab3e306d",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4455263629445757
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_55\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "3495bc0661274bb45982b7e02ac2ddf8ca5d80c339d299bb75feda8d69fc9548",
+    "people_sqlite_sha256": "12881fe7bb9fc444dafcd4914748d0cfcd2d7f0fac1ccfbabb7144f2a069d7e2"
+  },
+  "wide_u__seed_56": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_56",
+    "input_file_sha256": "71699cb2af2cf00abcf93155fc1f453a0eb52a3dc3f64cc5b25849334337fd71",
+    "input_sha256": "56b5da66872be07cbc813cf6efc5872c1b368a3ac353e01cb5cafa2535867eec",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40990136068128474
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_56\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "7bbfb84c572a8ee7a98eb677daff516f1154b3cfe5e7be395430de54b9e66764",
+    "people_sqlite_sha256": "cf67f561087240a62e7d5757f1cd135bd716ddb49f63d04f60e106718410b3b2"
+  },
+  "wide_u__seed_57": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_57",
+    "input_file_sha256": "2fe577f34846fcb19783ebe5bc29c3e970620f0156e571e73d07a3b44547efbf",
+    "input_sha256": "6711d13c630301349d05d397b0e1b4d8c83b505e96ea5eb997d5687d17ef4a07",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4325876201591308
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_57\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "d3307bd477bc98ee8ac86513e081dbf539440226c7bdb9d539509cf0b2507c54",
+    "people_sqlite_sha256": "7a82220dd70e34d774aa5c35f832bc4bc5b5f17d522510a0a5706efba8c3ced3"
+  },
+  "wide_u__seed_58": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_58",
+    "input_file_sha256": "1e1783d9f0686bd754a88896069dc16f12edc348c35355dc1fb582e9498802e3",
+    "input_sha256": "0f393f04d3b96de48b35c3685c7cf4539e722b781308b5c719ed9306d2c16625",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4287718150888774
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_58\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "e222cf49ca5c376715d3dcae05f67d67677f5a44edcda97fa6aaa6b87c912eb0",
+    "people_sqlite_sha256": "dce5b8445364769aaed7f1845621326d447640f4ac0f098625ba54d82d28c336"
+  },
+  "wide_u__seed_59": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_59",
+    "input_file_sha256": "402766d94f8883a67051aec9485f6f06b1f4d2cded95d1539d811d110e7ffd7e",
+    "input_sha256": "d611b16792be45ac1efaab6235bdb33a655e304a248fb8afe25d9144259fc66c",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.457083228174854
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_59\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "f1223a364f1ff942df63ccf9e053fd0b50acbe95cef52070e5979ae4082aa8cf",
+    "people_sqlite_sha256": "79abbfaf766d8e4fd8973f8828c2babd415fc4761910d68f616a6e277158d64b"
+  },
+  "wide_u__seed_60": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_60",
+    "input_file_sha256": "ddb4f46850ff360d5a27ec516448de15bd85e30c3d949c0ac4d0414088df909a",
+    "input_sha256": "08dc7e8f37fec3bd84bc6316bd574690104032a992d8856f4655325a1acaa194",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4710613274002435
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_60\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "f0b354c2783a8b38af2cf45906eccc46fe8027f81dd791433447c58a0bb30904",
+    "people_sqlite_sha256": "793487776189f322640130d33f3f755a48276d6feb28d79212967575925ffb1e"
+  },
+  "wide_u__seed_61": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_61",
+    "input_file_sha256": "4e421f745635c2e1f627cd32f1a05f25b5ef883187d27c25a643702d53fac312",
+    "input_sha256": "64bdd64a2c52bcee3c487906a49bce3e743862abd1c26e3efee57a6d0f9e11ab",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45514584963672516
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_61\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "34dd6912cb3262f1fc05c679a5342f2c724f9c900703afe42d3c835b9beb69cc",
+    "people_sqlite_sha256": "9ac8faca0f66989937d00b794b8a29d624e3bf6908f95f42ec4d19391dba316e"
+  },
+  "wide_u__seed_62": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_62",
+    "input_file_sha256": "1c4db3f06af301ac84c86e54643604c5d8dd765a57751383a23961c6d731ef25",
+    "input_sha256": "a7570cb1d449ff7f952646260ac056bf6d2a04726230d2fe087df6483072e837",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4913148924479291
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_62\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "fdd50f3dc8febdd959ada4541709d86c162d25a8ca990debf4c7c57c1fb8049a",
+    "people_sqlite_sha256": "13480d62a9e91e5bf717498f3f7b110e4074ef3c4f5dce8c38dec929b1f1b19c"
+  },
+  "wide_u__seed_63": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_63",
+    "input_file_sha256": "cef6bcaa7b8b242030442dd6a48be29c9e4f3ba17357445ff61c63243ea82d02",
+    "input_sha256": "306e052c9c78a6aebf573961411ae9eca26f14d1d43d1a747ce9636c82010f9e",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.42139233938426485
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_63\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "25170cbff0da346af19296c34ebd70d86800e614a448b72e36e821c8a65a7cc2",
+    "people_sqlite_sha256": "3d538350c7249aa1cdd914ada3546cc960f51dd4d7a7db9c68e6986316a529c4"
+  },
+  "wide_u__seed_64": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_64",
+    "input_file_sha256": "c09da16dc3e534c67c230bc4f4a6cfd6cb4bb6d360231af1e09e313bbf48521b",
+    "input_sha256": "b2b9ec7467fc4de84e2592273de688df3571e96521065bc6a41d278cc81ff626",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4872850551548571
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_64\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "08080839f34da3495e36ccc96d4e70b8a1136be6bf93c71c0c4bd3376c5350c2",
+    "people_sqlite_sha256": "990bb10a00fa046c17958bb037febe6bf1954f7362e64a5714e054a9bf23dd69"
+  },
+  "wide_u__seed_65": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_65",
+    "input_file_sha256": "918658aea96765102943a2faaa45b01a12cb83469c910bdc26af6a9d7f3a8fde",
+    "input_sha256": "4dcdfe1318108c8eb8a12c2694d048dfae673018e0de183d95981623ba78043f",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46211345329972925
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_65\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "2e44956c45ea7a47384277ce657e7010003df1132a53c97fac8511671fdf694d",
+    "people_sqlite_sha256": "daaf35c0ccd0ddff104fcd4204ee0f67499c23d640faf98fc95d4ccc35f648d4"
+  },
+  "wide_u__seed_66": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_66",
+    "input_file_sha256": "154bcabd613ca93426f0a0967aee1b9e104727679f653011c811867cf5c1ea6d",
+    "input_sha256": "b156ff14a183c8bdfc9a3b3a98536dfc181e84edc890d74505477a285a27ed53",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.42861027128235396
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_66\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "1e06568549a56e82fe8d6e60edba03f575756a2a2ff73e05b8de52237b4bcded",
+    "people_sqlite_sha256": "7f8e03fea9979edb111acb7da0b13302bbf5687d207be8928bf8a2b161505535"
+  },
+  "wide_u__seed_67": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_67",
+    "input_file_sha256": "f0b521e2d3e8e66345626d6445ef702ffb68ee56f011fade0d260cad8fa2b018",
+    "input_sha256": "ac12f6135c001317fec3f16770feb668223df87da7abc1c3a76cc5a7a89512ba",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4675515832186747
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_67\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "59986ab75a3bbed965442f513c9cf6ae27b6c2c778b7ef6c36a1b4a4dd3d0ce5",
+    "people_sqlite_sha256": "9a1ad67a7f053865b8360002bec43f81869b6b794e9b9f589930ba6026b03cdb"
+  },
+  "wide_u__seed_68": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_68",
+    "input_file_sha256": "eb7f36c6706bce78b2cd946fcf48e334861a2f4e4ddbfb71c2256bef83280ddb",
+    "input_sha256": "fe1a01d4be25433fc88b8abf6b9a30f9b66f8ca2c2f59fd67fa51be9c45d6a28",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.41054779093926647
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_68\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "0b0a156302cb3fcd395bb270f532ee9e25c9483e298471f4d86f09a0539aaf92",
+    "people_sqlite_sha256": "53cc27b85129c417330bdcb8eeac0ce01dcc8f4ee398ec433128b46a2c046a91"
+  },
+  "wide_u__seed_69": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_69",
+    "input_file_sha256": "f030744de6eae3401e389382118f2c3d2e8611c21f452a919ff0d7a485fd69c4",
+    "input_sha256": "a6a76635990c7f4b59c8909555cc1faa8eb9d0fa877a9b97348593d291f7bda5",
+    "quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3329572862131169
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_69\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "36ac50039e620f5618c60a1690dcf33e2979af5b5a47173be98c70a24d873472",
+    "people_sqlite_sha256": "f3a72012b178bda7d3ec12c3da5ce8671224f326c5790065dd9e661f751e7246"
+  },
+  "wide_u__seed_70": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_70",
+    "input_file_sha256": "619c23c6d286238655fcc7e55ac845dd2166b1fc7553e17747360fbcb035ad06",
+    "input_sha256": "1d0f38a3c93625fd6ec0f54630aebee080e15bd8b3f5bb70b60b5bb9ce4f99c7",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4774948724557971
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_70\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "9ac914455fa6464743447426a72164fcd7cff3ab1a7b2864cf8ec2feaa965bac",
+    "people_sqlite_sha256": "4d335df93cc73bbc3acfff34ef080e3760a86ac1d228cb15861ba8bc76159359"
+  },
+  "wide_u__seed_71": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_71",
+    "input_file_sha256": "e22453948e69dc4f9ee604f4a9d82a07ffad0e7f4911290b694ae6d9baff7500",
+    "input_sha256": "94a86a5c8dd0a131c5678209a1dbee8bb5e36b428c2d4d15a5c82f0e279743b1",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45957322544730805
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_71\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ffd76d79c00438325eb482b695345e58656222abe763441ff74bacc27134ec5f",
+    "people_sqlite_sha256": "f483c3fed453c7ecf9e16e12730d2dcc81aba472f04a73852ec9462a86fe6790"
+  },
+  "wide_u__seed_72": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_72",
+    "input_file_sha256": "910f685ade2d1a6265b5d3ac435269d414f3a579e1ed6e7d53ed72ecb2e8e28e",
+    "input_sha256": "4a91e246752fc9a34f74c074f0ac0e7258411301001b1828638c1403d44b5ab1",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.47103927283303193
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_72\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "2ebd96c837d4e72bcd424f283a3183c6e22e20bc0138d8a45dfa4d8dad45b85e",
+    "people_sqlite_sha256": "6e4a2f2d9151ef48465602b3d28bac5142f0c06ccd57736cbee386072ea044e1"
+  },
+  "wide_u__seed_73": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_73",
+    "input_file_sha256": "142a86991b32acb994b924bea51582f4e59234e647beb17e4f81206f9186a010",
+    "input_sha256": "f3916c22551c8b2327617a238e6bd5c6fa3bc0fa6b9677239a505b3cf27c4652",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40042351671182314
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_73\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "a955eb8ecd12a168dab0acbd13dee0828a48eae57b97b5b3865f7b99f9bf657e",
+    "people_sqlite_sha256": "25ed1ff2558955c8eea911f1caa67a7d14ddef06baa85e8a793147b5cf3b3530"
+  },
+  "wide_u__seed_74": {
+    "cell": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_74",
+    "input_file_sha256": "03cad76909323790ce79422af45bfec59d12796e65b9e4cf57e3a8c7f1e04fda",
+    "input_sha256": "f22b08e88200aaa961a455b74704ee4bf461d40cbbfdd0599e5850d6dc6d9655",
+    "quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46450825767858106
+    },
+    "input_config": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_boundary_estimator_protocol\\future_inputs\\wide_u\\seed_74\\input.yaml",
+    "origin": "new_future_confirmation_one_draw_frozen_before_results",
+    "config_sha256": "ac00006443b24f74915744b62ef395dd6fa3728cf030e8e8bfe96e91aa25621b",
+    "people_sqlite_sha256": "12841484a924a4081bfe327b52988ef5f38938920372d2d07185db46af007b39"
+  }
+}

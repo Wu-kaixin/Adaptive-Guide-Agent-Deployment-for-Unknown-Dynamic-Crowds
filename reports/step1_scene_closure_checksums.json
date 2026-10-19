@@ -1,0 +1,411 @@
+{
+  "root": "runs\\step1_scene_closure",
+  "files": 81,
+  "entries": [
+    {
+      "path": "estimation.json",
+      "bytes": 9628,
+      "sha256": "64fb85acd1c809c04c05fe2825856874be1be1fff398dc200cc76ba0f2a5528b"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/input.yaml",
+      "bytes": 11807,
+      "sha256": "6e8a74e806bbf70d72c309ce4b0d792af5c3a044a7ec6fd7a8aa4dcad3ba6c16"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/people.sqlite",
+      "bytes": 8192,
+      "sha256": "b79a851ab4e6ddf30c11e2998c134903fc45ecae81e1cb07bf6a897869e457be"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/run/config.yaml",
+      "bytes": 11335,
+      "sha256": "de76cc06e3ae02cdcbf11436f8590db3b8148c9fc6b19adce2b8a32b90976cd8"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/run/metrics.json",
+      "bytes": 49922,
+      "sha256": "26320d0700f2a0ebfbde1ab42c81643bf40822cf27ff35dbcf1d8357d57cc7c6"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/run/planning.json",
+      "bytes": 216,
+      "sha256": "6e57a3d9e47e4ab0e98548a3acd04a277e9a2959ebb776d800b3b870e4737bea"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/run/reevaluated_metrics.json",
+      "bytes": 2196,
+      "sha256": "e4b7352f16689c3c1cbdb0f573c8e18669eb7693e9d808391eb212678c64f727"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/run/state.json",
+      "bytes": 132,
+      "sha256": "cbb617c65174d3f11a85f6be039b7a87a85d26b8226847f19f92b4b2d826e166"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/equal_arc/run/trajectory.npz",
+      "bytes": 88878,
+      "sha256": "59356f5f49fb9c3d9887bc9907fcc9113f39ec4ed5d93904a243b4539f072814"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/input.yaml",
+      "bytes": 11816,
+      "sha256": "39366d2fbc7da3282aa7e008cb41c81da3ffe72d8f05945254027320ce0a7eab"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/people.sqlite",
+      "bytes": 8192,
+      "sha256": "b79a851ab4e6ddf30c11e2998c134903fc45ecae81e1cb07bf6a897869e457be"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/run/config.yaml",
+      "bytes": 11344,
+      "sha256": "8294d14eb76a4e9d63a12842702086a993dc9f51de13846a5bc669a5f4777b4b"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/run/metrics.json",
+      "bytes": 50104,
+      "sha256": "2c8f1f3e70924f975e94d9f8fb696d79f7d3a3db5abc418447ca7dcff0db443a"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/run/planning.json",
+      "bytes": 216,
+      "sha256": "2c20e7e19bc780a1d854c9622d743e5e87f93ec2e258fccef5dd7ff738a3b1ad"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/run/reevaluated_metrics.json",
+      "bytes": 2201,
+      "sha256": "ad9052173fecdc0c4bd5e5de7d63e02e02d191a50e2632fcd57e75cc81da02db"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/run/state.json",
+      "bytes": 132,
+      "sha256": "d5996e7d08a79dfa7e1c5ed5314032043eb75084b3d21c4db5a25441aaa3b5d1"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/pairwise_euclidean/run/trajectory.npz",
+      "bytes": 89060,
+      "sha256": "ed60d128d17ea5871c3e3483faeab248478821e98fb6860fb0463c7edbef7770"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/input.yaml",
+      "bytes": 11812,
+      "sha256": "d9b77527c29f9a7e58348b50f81d0e58b049e7f059e2a01de5abe67728ebd5ad"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/people.sqlite",
+      "bytes": 8192,
+      "sha256": "b79a851ab4e6ddf30c11e2998c134903fc45ecae81e1cb07bf6a897869e457be"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/run/config.yaml",
+      "bytes": 11340,
+      "sha256": "cab4c68e5493a73cca0668bb9ffb720255be09bcca796164a7f91d6c0e4e50b2"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/run/metrics.json",
+      "bytes": 50102,
+      "sha256": "0bfca7d414545aedfac8c2ee652a3a6cc37570d10730f4ac0c9f49b475aae1ec"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/run/planning.json",
+      "bytes": 216,
+      "sha256": "2c20e7e19bc780a1d854c9622d743e5e87f93ec2e258fccef5dd7ff738a3b1ad"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/run/reevaluated_metrics.json",
+      "bytes": 2201,
+      "sha256": "10d5943fd31e8ba9b021591a45c4b4435a2f17d429efd3be2b394dfcbf529083"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/run/state.json",
+      "bytes": 132,
+      "sha256": "e6dee41294d81d5415b630258a4c608120fcb159457a9a74b3f49c039d5c5208"
+    },
+    {
+      "path": "execution/elongated/disk_union_primary/projected_mass/run/trajectory.npz",
+      "bytes": 89060,
+      "sha256": "ed60d128d17ea5871c3e3483faeab248478821e98fb6860fb0463c7edbef7770"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/input.yaml",
+      "bytes": 13488,
+      "sha256": "c560134d9322cc01b6407195916f434899b96d02a44764d9c5db6b8fbd6e5cec"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/people.sqlite",
+      "bytes": 8192,
+      "sha256": "ff69eb2c78c92f8294d7ff5dcea933c00430a441cf5d80f1213793e5f2f675c7"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/run/config.yaml",
+      "bytes": 12950,
+      "sha256": "80f82d41c5debf6af26d8e46de96609625c3f5c783b8a9a2bc10988e6a996c67"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/run/metrics.json",
+      "bytes": 48471,
+      "sha256": "0bdca1a786be14ec649a108f41e1b20c3eda22f57d4af87079d0c67d42f218d1"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/run/planning.json",
+      "bytes": 216,
+      "sha256": "484a4ac0e57bda259d242ac41e829d75cc4eae2d18a96984f21716691b5eb1c9"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/run/reevaluated_metrics.json",
+      "bytes": 2203,
+      "sha256": "696c36e30bbf3dc5737b6c7ea60a46284b7898a91014c00c8966cef605981f0f"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/run/state.json",
+      "bytes": 132,
+      "sha256": "57fd4874292902c704e89db13ec815abd38ab8cd135801a617a4753f409ae2f1"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/equal_arc/run/trajectory.npz",
+      "bytes": 108035,
+      "sha256": "3bf30562cf2d4b48e389907822fd266233c6e42662bf62c379bd798b61d4d60f"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/input.yaml",
+      "bytes": 13497,
+      "sha256": "7e4b636d18d729d0093ed248c3f2012c7d997709f3bbdda2430e92974aa3ff70"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/people.sqlite",
+      "bytes": 8192,
+      "sha256": "ff69eb2c78c92f8294d7ff5dcea933c00430a441cf5d80f1213793e5f2f675c7"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/run/config.yaml",
+      "bytes": 12959,
+      "sha256": "767358502da59e4599db25e490ef925ce20cfbe640d415fb15550216cac8a18b"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/run/metrics.json",
+      "bytes": 48521,
+      "sha256": "fa7c49eae58ef42e6a9bf1af60c6777510a5f7f12a1a61c6e5b11c146b7fad98"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/run/planning.json",
+      "bytes": 216,
+      "sha256": "bc86340dd79c3d713dab8c823065eb0ca4d493c2efaca7258f0e11aaa6b84172"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/run/reevaluated_metrics.json",
+      "bytes": 2205,
+      "sha256": "6bcc37c3d9af0191430c15dd6e059da71e6f512256892dc6cbbccb5d5c770c5a"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/run/state.json",
+      "bytes": 132,
+      "sha256": "aa3fff5624dc7ce2762dcea33fa12fa4684dc84bc9533f5127a6f07b359c45c6"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/pairwise_euclidean/run/trajectory.npz",
+      "bytes": 108144,
+      "sha256": "33c68f6830ab268339693725367d10eb1b6f92549d538fb704c74a3ea7797536"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/input.yaml",
+      "bytes": 13493,
+      "sha256": "57d0bcde31dea490ab289c68e1f9e0e5a60fbfdb2e41a2b06252b632b7131d22"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/people.sqlite",
+      "bytes": 8192,
+      "sha256": "ff69eb2c78c92f8294d7ff5dcea933c00430a441cf5d80f1213793e5f2f675c7"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/run/config.yaml",
+      "bytes": 12955,
+      "sha256": "248b8eca663eab46a089d91c35c9d3d3772db2d39ca55dbe36c7692e9b520b12"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/run/metrics.json",
+      "bytes": 48511,
+      "sha256": "fcc029af03448e57b9dc5fddf41c0a195b51d3134f2fb89b3e0dd5065a1584f8"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/run/planning.json",
+      "bytes": 216,
+      "sha256": "bc86340dd79c3d713dab8c823065eb0ca4d493c2efaca7258f0e11aaa6b84172"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/run/reevaluated_metrics.json",
+      "bytes": 2205,
+      "sha256": "c7946e5bfb8915a3eb494064d8013d84c625332af51f719de0e055968da9957b"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/run/state.json",
+      "bytes": 132,
+      "sha256": "a24f0112add6ae41bd5be3407c0a29e3c5b6d60643baddc9c0f697676f5211f9"
+    },
+    {
+      "path": "execution/tight_u/disk_union_primary/projected_mass/run/trajectory.npz",
+      "bytes": 108144,
+      "sha256": "33c68f6830ab268339693725367d10eb1b6f92549d538fb704c74a3ea7797536"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/input.yaml",
+      "bytes": 19424,
+      "sha256": "1e6f257f407d0318fe5c97ecb9c36a93bb9e0a345fc7aa885da03df7d8dff914"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/people.sqlite",
+      "bytes": 8192,
+      "sha256": "09eca1fd4723138170fa04c88b1ed32777c911388c986a21b33a4bace807e8e3"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/run/config.yaml",
+      "bytes": 18654,
+      "sha256": "bae0e9aa0a9a45abb9be99a240ec745f5f16cf10c156ae0f7875513b7b3ed9ed"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/run/metrics.json",
+      "bytes": 65407,
+      "sha256": "7f6994c71b3b535d3b94b008ee474e70d7f0dc6041f274493d42d1aff01b6630"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/run/planning.json",
+      "bytes": 216,
+      "sha256": "b49552597c92df25195dc5281abbec0f085b8ca7e26b4e4c6830e0b0a680d1d8"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/run/reevaluated_metrics.json",
+      "bytes": 2218,
+      "sha256": "0c990999ece6bb1051655bc8537eab901e774b683d7aa51de8d8bf72b11836cb"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/run/state.json",
+      "bytes": 133,
+      "sha256": "2c7c9abab2d55d363389945c55ecc13d6c824b903cd49b1e4f9688b60ee79367"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/equal_arc/run/trajectory.npz",
+      "bytes": 192605,
+      "sha256": "68944838dd4f7a0c0c495ba5a9984282a965a8b68500f09806d929e48c3aa50f"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/input.yaml",
+      "bytes": 19433,
+      "sha256": "c4fb4993f7c757f11b5bc37eeaa19d961588246563daf36b7911a2aec07a2b21"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/people.sqlite",
+      "bytes": 8192,
+      "sha256": "09eca1fd4723138170fa04c88b1ed32777c911388c986a21b33a4bace807e8e3"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/run/config.yaml",
+      "bytes": 18663,
+      "sha256": "c9e3889f9fe45078d58c1394a5eb753a18dc6c956c1f98a79e82d4c9984492ad"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/run/metrics.json",
+      "bytes": 65247,
+      "sha256": "4100fc2eb7e49bf89ec3279d40a0f749cb47ba3b81e0cd2a048281e29cc557ea"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/run/planning.json",
+      "bytes": 214,
+      "sha256": "f312e3ab0ab0316db1fbf66335bf3842906add4cd14b4095dd533d76479966bd"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/run/reevaluated_metrics.json",
+      "bytes": 2221,
+      "sha256": "763aec1715dabd8e2fd6d854dd06b7c0213d5e3457568a2d6cd8b888526145f3"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/run/state.json",
+      "bytes": 133,
+      "sha256": "a42b917cd17e2b68626a5734746141ddb2b0196733a85c048a4b0a8a1e1917c3"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/pairwise_euclidean/run/trajectory.npz",
+      "bytes": 192700,
+      "sha256": "f3a3b86b9c4c7e4234057c540d0ef7991b9875bbacafd80eab901faaaedfeaaa"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/input.yaml",
+      "bytes": 19429,
+      "sha256": "33d9dcb47d1a942cd4e64115c65534ceb9871b0af33201dbc3c9dc5e4503f295"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/people.sqlite",
+      "bytes": 8192,
+      "sha256": "09eca1fd4723138170fa04c88b1ed32777c911388c986a21b33a4bace807e8e3"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/run/config.yaml",
+      "bytes": 18659,
+      "sha256": "58d5e6133663495fdd7174cd63d88f864b93069fa5968e18409eaa2947da9ba0"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/run/metrics.json",
+      "bytes": 65245,
+      "sha256": "5e88a29128abdf5bc302460c87030f7021e1f7b828011d7c00aab5387e8059fe"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/run/planning.json",
+      "bytes": 214,
+      "sha256": "f312e3ab0ab0316db1fbf66335bf3842906add4cd14b4095dd533d76479966bd"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/run/reevaluated_metrics.json",
+      "bytes": 2221,
+      "sha256": "457063f03a0efd313a0a2fd588379459ee7e2f087e7259f8fef024ea650083c7"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/run/state.json",
+      "bytes": 133,
+      "sha256": "26c8a907f0479a7ab8c03cafbb2f8f65da918052f496f8c6d3d2772f4dfe22ae"
+    },
+    {
+      "path": "execution/wide_u/disk_union_primary/projected_mass/run/trajectory.npz",
+      "bytes": 192700,
+      "sha256": "f3a3b86b9c4c7e4234057c540d0ef7991b9875bbacafd80eab901faaaedfeaaa"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 8690,
+      "sha256": "02438b86f3ea7e90b8406c017e6bc0d0da2a29ee22f9719132b4f2d32dd9b6f6"
+    },
+    {
+      "path": "plans/elongated__disk_union_primary.json",
+      "bytes": 93192,
+      "sha256": "92efdc2e4b31e39a584dfd604b26b1f1382ebca9a98f3b45e865fbaa99567e73"
+    },
+    {
+      "path": "plans/tight_u__disk_union_primary.json",
+      "bytes": 124583,
+      "sha256": "172b9cb6a146abcde33bfef39b30a7a6bbed5d813de7e64e4b6121c60d7cb0ee"
+    },
+    {
+      "path": "plans/wide_u__disk_union_primary.json",
+      "bytes": 250179,
+      "sha256": "c3cd17bcaae98c6b765a59475154a079d2935a1431dc5bd205c526c45585bac4"
+    },
+    {
+      "path": "profile/profile_pairwise.json",
+      "bytes": 3019,
+      "sha256": "ef6ed45fb5e6e405e15d3ecab1d569dc60cf2381885ade1dee5a74ec7bc31010"
+    },
+    {
+      "path": "profile/stage_timings.json",
+      "bytes": 1198,
+      "sha256": "ee43ed25e5ac4962f859fd7c0696a071d1483105bbcc3c1220ae94e4542b1060"
+    },
+    {
+      "path": "profile/stage_touch.json",
+      "bytes": 20,
+      "sha256": "e46048bdda148176042803a18a63011fac0ff89139c7668ccba1b1ee0e7535e5"
+    },
+    {
+      "path": "selection.json",
+      "bytes": 2245,
+      "sha256": "bb7e8b4f38c1e474289485a791ea34c9111bd05880636d37ca1e787aa3199df1"
+    }
+  ]
+}

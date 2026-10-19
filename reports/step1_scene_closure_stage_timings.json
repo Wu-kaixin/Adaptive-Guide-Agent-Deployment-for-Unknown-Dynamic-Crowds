@@ -1,0 +1,52 @@
+{
+  "demand_density": {
+    "wall_seconds": 0.0006515998393297195,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "curve_report": {
+    "wall_seconds": 0.0006840000860393047,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "equal_arc_plan": {
+    "wall_seconds": 0.0006374996155500412,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "pairwise_check": {
+    "wall_seconds": 0.0009603002108633518,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "assignment_and_paths": {
+    "wall_seconds": 0.04908200027421117,
+    "cpu_seconds": 0.046875,
+    "error": null
+  },
+  "execution_interval_check": {
+    "wall_seconds": 0.0001468001864850521,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "safety_filter": {
+    "wall_seconds": 0.0004072999581694603,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "independent_evaluation": {
+    "wall_seconds": 0.007306099869310856,
+    "cpu_seconds": 0.015625,
+    "error": null
+  },
+  "json_write": {
+    "wall_seconds": 0.001589599996805191,
+    "cpu_seconds": 0.0,
+    "error": null
+  },
+  "curve_samples": 208,
+  "people": 16,
+  "guides": 11,
+  "pair_constraints": 55,
+  "cprofile_included": false
+}

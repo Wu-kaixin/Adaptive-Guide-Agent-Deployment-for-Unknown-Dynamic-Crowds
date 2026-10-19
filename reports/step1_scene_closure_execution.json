@@ -1,0 +1,302 @@
+{
+  "tasks_executed": 9,
+  "rows": [
+    {
+      "scene": "elongated",
+      "estimate": "disk_union_primary",
+      "method": "equal_arc",
+      "count": 11,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.2953099166971303,
+      "min_euclidean_m": 1.760701,
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 0.748993772184477,
+        "guides": 0.8903918500319881,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 0.7512449999339879
+    },
+    {
+      "scene": "elongated",
+      "estimate": "disk_union_primary",
+      "method": "projected_mass",
+      "count": 11,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.2953052741412585,
+      "min_euclidean_m": 1.759229,
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 0.7489986199187697,
+        "guides": 0.8895948436247378,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 0.6406612996943295
+    },
+    {
+      "scene": "elongated",
+      "estimate": "disk_union_primary",
+      "method": "pairwise_euclidean",
+      "count": 11,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.2953052741412585,
+      "min_euclidean_m": 1.763339,
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 0.7489986199187697,
+        "guides": 0.8895948436247378,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 0.6655474998988211
+    },
+    {
+      "scene": "wide_u",
+      "estimate": "disk_union_primary",
+      "method": "equal_arc",
+      "count": 19,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.29278117992172975,
+      "min_euclidean_m": 1.436976,
+      "executed": true,
+      "termination_status": "PATH_UNREACHABLE",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "success": false,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 3.940065884666666e-07,
+        "guides": 1.1314060022193928e-08,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 1.3902894998900592
+    },
+    {
+      "scene": "wide_u",
+      "estimate": "disk_union_primary",
+      "method": "projected_mass",
+      "count": 19,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.2927685926180238,
+      "min_euclidean_m": 1.431969,
+      "executed": true,
+      "termination_status": "PATH_UNREACHABLE",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "success": false,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 1.2086526779420126e-07,
+        "guides": 1.1300773761213634e-08,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 1.3494322998449206
+    },
+    {
+      "scene": "wide_u",
+      "estimate": "disk_union_primary",
+      "method": "pairwise_euclidean",
+      "count": 19,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.2927685926180238,
+      "min_euclidean_m": 1.750643,
+      "executed": true,
+      "termination_status": "PATH_UNREACHABLE",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "success": false,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 1.2086526779420126e-07,
+        "guides": 1.1300773761213634e-08,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 1.4502149997279048
+    },
+    {
+      "scene": "tight_u",
+      "estimate": "disk_union_primary",
+      "method": "equal_arc",
+      "count": 13,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.28423397547796914,
+      "min_euclidean_m": 1.37416,
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 0.7489033913319392,
+        "guides": 0.6241646468079176,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 0.7916473001241684
+    },
+    {
+      "scene": "tight_u",
+      "estimate": "disk_union_primary",
+      "method": "projected_mass",
+      "count": 13,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.28423112788780047,
+      "min_euclidean_m": 1.373229,
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 0.7489039034443177,
+        "guides": 0.6232337683922677,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 0.783975400030613
+    },
+    {
+      "scene": "tight_u",
+      "estimate": "disk_union_primary",
+      "method": "pairwise_euclidean",
+      "count": 13,
+      "curve_valid": true,
+      "plan_outcome": "feasible_witness",
+      "plan_accepted": true,
+      "best_cost": 0.28423112788780047,
+      "min_euclidean_m": 1.367363,
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_match": true,
+      "path_reachable": true,
+      "minimum_net_clearances": {
+        "crowd": 0.7489039034443177,
+        "guides": 0.6232337683922677,
+        "walls": 0.44999999999999996
+      },
+      "wall_seconds": 0.7741164998151362
+    }
+  ]
+}

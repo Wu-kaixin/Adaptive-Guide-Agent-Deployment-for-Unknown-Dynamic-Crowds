@@ -1,0 +1,16 @@
+{
+  "scientific_source_unchanged": true,
+  "all_frozen_input_files_unchanged": true,
+  "historical_protocol_and_smoke_files_unchanged": true,
+  "historical_files_checked": 274,
+  "unique_planned_task_count": 120,
+  "unique_input_count": 60,
+  "actual_executed_rows": 101,
+  "not_executed_rows": 0,
+  "program_errors": 0,
+  "all_execution_commit": "3220233acf75dbd2a3a9cc28b8f91fab9f2e1255",
+  "counterfactual_off_in_execution_metrics": true,
+  "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+  "input_file_map_sha256": "c5c079066f56aa34048c3e7b1bde4a0985ddd0e4895d63f7c0d82fcf6bf4d02f",
+  "read_only_analysis_seconds": 2.7162152999662794
+}

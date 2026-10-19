@@ -1,0 +1,4761 @@
+{
+  "root": "runs\\step1_general_curve",
+  "files": 951,
+  "entries": [
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/input.yaml",
+      "bytes": 22673,
+      "sha256": "5162bfe682e4f5b420ad09798b8afbe4b160c3a48d3bad51233864a479736ac8"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/people.sqlite",
+      "bytes": 8192,
+      "sha256": "cf185d6affd2eefe8ddb6208d5bd6dccf68be517e43df6c699a0dac9481736c5"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/config.yaml",
+      "bytes": 21337,
+      "sha256": "5ea46d7c57021b214fa14eea6d40e576024313b466a4f89c3b4316df9ffd448f"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/metrics.json",
+      "bytes": 46239,
+      "sha256": "fba4b2a5e9478db53b53595c0cd2073a997c328a7b2b1071c8230eab785145f0"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/planning.json",
+      "bytes": 206,
+      "sha256": "babb90b5a9e7e2ad3b8a5b0b35ea04a640bdca6eac33e8cc9cb0b17a4fb6af47"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/reevaluated_metrics.json",
+      "bytes": 2205,
+      "sha256": "c5a2df31056346ba84aea45bd9ff95edbc3c58b43003eb9e82428bd918ea2b38"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/state.json",
+      "bytes": 133,
+      "sha256": "730fcfcbbfcf4006967bad0aec48188e03e13f0f11d988ae597ab280228b1271"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/equal_arc/seed_15/run/trajectory.npz",
+      "bytes": 105675,
+      "sha256": "6fa481560f8c40b8fd2735fd4c4e1f3f8c1b19ec7400b102b361905dafb45f34"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/input.yaml",
+      "bytes": 22671,
+      "sha256": "cebc39d29f2c21f40592bf5143bb27ec8a5100291db5ceeae34a5ca6e89911be"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/people.sqlite",
+      "bytes": 8192,
+      "sha256": "cf185d6affd2eefe8ddb6208d5bd6dccf68be517e43df6c699a0dac9481736c5"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/config.yaml",
+      "bytes": 21335,
+      "sha256": "b6b572740a232684a71f3138ead5008ff5899985bdf72387a4f5ed7220bc0329"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/metrics.json",
+      "bytes": 46239,
+      "sha256": "958b038a7a0e391092e9b56214266c9d253604b8eca0f34551919b9a19f2ba0a"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/planning.json",
+      "bytes": 205,
+      "sha256": "e8274b10727ed6c6fd7b70ee98b512155c527a712b9667d6fc23743b8b19c615"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/reevaluated_metrics.json",
+      "bytes": 2205,
+      "sha256": "5ccce2ce191313940eff0d04501f36ddc8fcce08eec109d76d70f8c32a0672ad"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/state.json",
+      "bytes": 133,
+      "sha256": "ccf88bd6ea4f8e9225ebfeffeee9ae4f998ef2790805c523a48d388d0d9891e4"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/mass_cvt/seed_15/run/trajectory.npz",
+      "bytes": 105835,
+      "sha256": "f19832d622c8c5ff0145493175cb903ab71d64e2070aed4dfcb67b62e17eb618"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/input.yaml",
+      "bytes": 22683,
+      "sha256": "261cd5703e096632f82495ba720079f8cb0662cb127d687f10eedfe38b1ff6d9"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/people.sqlite",
+      "bytes": 8192,
+      "sha256": "cf185d6affd2eefe8ddb6208d5bd6dccf68be517e43df6c699a0dac9481736c5"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/config.yaml",
+      "bytes": 21347,
+      "sha256": "a11b9590e6838913dbc88e9aa3d6325d3ec67b2e061d22c2c295a3aa26238195"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/metrics.json",
+      "bytes": 46249,
+      "sha256": "9f7cd405cfd451a443813aafd3b49a3323ea00558f39321e9e782e477d6a1ec8"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/planning.json",
+      "bytes": 205,
+      "sha256": "e8274b10727ed6c6fd7b70ee98b512155c527a712b9667d6fc23743b8b19c615"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/reevaluated_metrics.json",
+      "bytes": 2205,
+      "sha256": "b6aff8f33e7fa0ca842a84b5191a4311c1369770836059dec93b75fb2083baa8"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/state.json",
+      "bytes": 133,
+      "sha256": "530d6bc6a2bf13987c2c31f7e4d3aa97421526409fc580013987fcb61eb2982f"
+    },
+    {
+      "path": "execution/shallow_concave__strong__near/projected_mass/seed_15/run/trajectory.npz",
+      "bytes": 105835,
+      "sha256": "f19832d622c8c5ff0145493175cb903ab71d64e2070aed4dfcb67b62e17eb618"
+    },
+    {
+      "path": "execution_results.json",
+      "bytes": 6478,
+      "sha256": "ba67b9d9469de50c2e8825570315f3e8ec358184e32d93d4633a90c593620702"
+    },
+    {
+      "path": "execution_selection.json",
+      "bytes": 1930,
+      "sha256": "90173b0d20ca47a0cd234191b0e547c65226648eccf5f7f6c7631082fd873e23"
+    },
+    {
+      "path": "figures/conflict_0_deep_notch_narrow_margin_seed15.png",
+      "bytes": 46416,
+      "sha256": "2699eb4b9ec03800e14b70e31c351a6fc381a95c23fba55629640962ac9c881f"
+    },
+    {
+      "path": "figures/conflict_1_deep_notch_narrow_margin_seed16.png",
+      "bytes": 43952,
+      "sha256": "b3b371797ae0c0d30cc26a86150f09398ec9a522f3da181ee5518c728a54f81d"
+    },
+    {
+      "path": "figures/conflict_2_deep_notch_narrow_margin_seed17.png",
+      "bytes": 45149,
+      "sha256": "edbd470372e780b4fa7c9d814a8e0f4dada17ced9f453165986bcbd2a13b3a7a"
+    },
+    {
+      "path": "figures/conflict_3_deep_notch_narrow_margin_seed18.png",
+      "bytes": 45205,
+      "sha256": "ee1e1d21607c221a1d8f4aa468cca99e13df3c89b4c2a19c690595312049629f"
+    },
+    {
+      "path": "figures/conflict_4_deep_notch_narrow_margin_seed19.png",
+      "bytes": 43815,
+      "sha256": "6704ffad43eae9c7458366373f3279dc53ca7daae74d3cc158246dca21d1c9e3"
+    },
+    {
+      "path": "figures/conflict_5_deep_notch_narrow_near_seed15.png",
+      "bytes": 43736,
+      "sha256": "fc920b97e65153a39c8de9b02ce4d5e9e978277d4673c3ad7f9958d1ade4186b"
+    },
+    {
+      "path": "figures/conflict_6_deep_notch_wide_margin_seed15.png",
+      "bytes": 48885,
+      "sha256": "778c7dec06b938cb156e4b4fe963d6ab2912dcdb64ffb782cbfb51886160e809"
+    },
+    {
+      "path": "figures/conflict_7_high_curvature_convex_strong_margin_seed15.png",
+      "bytes": 49301,
+      "sha256": "434785f148462706fd34b413bdadcde48b93904556245546bf52643f812152da"
+    },
+    {
+      "path": "figures/conflict_8_shallow_concave_strong_margin_seed15.png",
+      "bytes": 63739,
+      "sha256": "5552025b967bee719ed5985f921a529c572628228772879a4ad813c3097bd0bc"
+    },
+    {
+      "path": "figures/execution_shallow_strong_near_seed15.png",
+      "bytes": 67465,
+      "sha256": "daf61a72d1d448936f651afea6cf27a115ae1cd6a041cf980bf20d5a3af9f336"
+    },
+    {
+      "path": "figures/geometry_classes.png",
+      "bytes": 45235,
+      "sha256": "72330fc71680daf351876eeb00a2774f631d9224ce19bbd03b22186297b8d238"
+    },
+    {
+      "path": "figures/prescribed_curves.png",
+      "bytes": 122138,
+      "sha256": "7c58e70cd7102325ad2acb7fd611674c188f7a30d0fd46b4519c70d6d7d8280e"
+    },
+    {
+      "path": "frozen_curves.json",
+      "bytes": 72604,
+      "sha256": "7a2d890106d7ba1b0b53c9896138e9b10412e4d0900d38779d5e4b21b5baddd3"
+    },
+    {
+      "path": "high_resolution_check.py",
+      "bytes": 2093,
+      "sha256": "1e18f1c876dae46fe76c44f9f6f4abe525a7bde7a5a1302900c2af398f2790c7"
+    },
+    {
+      "path": "high_resolution_near_cases.json",
+      "bytes": 2197,
+      "sha256": "e37942522f41cdb6f45c26740f2fc2ed612a2fd09ac33da295006fe1d9a78a41"
+    },
+    {
+      "path": "inspect_execution.py",
+      "bytes": 1694,
+      "sha256": "1f6edb399a50bbbb501ad7e74090f4a7e1c1bf586562ad1e1e6988b487471916"
+    },
+    {
+      "path": "inspect_methods.py",
+      "bytes": 2426,
+      "sha256": "19cdcae4040ce92ee09ab51c088efab1b0982ded03541bfc7bb8c8e0272a7fb5"
+    },
+    {
+      "path": "inspect_summary.py",
+      "bytes": 2360,
+      "sha256": "9b139480ff2a7d4c6b915f535d2a96d2047c54a4ea631342591b9b444d3c001f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_15/geometry.json",
+      "bytes": 271863,
+      "sha256": "49677e56c43252ce7ad71d3e276c569a6ec45b91ff38eccf2bb65a505a307432"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_15/state.json",
+      "bytes": 167,
+      "sha256": "57fdb70263797dd04ba72af562797ff866895540e6b8e07ef33ae110e9155443"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_15/summary.json",
+      "bytes": 2586,
+      "sha256": "de6b6eaed307cdf40cc968f673a1db94ff8c72bbdcfdaee684831e4c19e31a69"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_16/geometry.json",
+      "bytes": 272878,
+      "sha256": "8ebc838964e0a07449f835c740d68a69406f1f03c5b06ffdfec7a4444b0d67ef"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_16/state.json",
+      "bytes": 167,
+      "sha256": "17a9177b86ca472f2b7acfb86633f7b2639a6962e0958059b9fd49442fba5a85"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_16/summary.json",
+      "bytes": 2586,
+      "sha256": "b25731fd5f5aef3684dafd096208c2627ad5e39b406d730b4808bc069f86134b"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_17/geometry.json",
+      "bytes": 271770,
+      "sha256": "308ba02698d72e0085394f0373a670db7c8448b92eb0a3240a6dc66f843545dc"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_17/state.json",
+      "bytes": 167,
+      "sha256": "4240a9c92e32e554f5387605eda2719e1c5252480e7c79491629b4b92d7d675d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_17/summary.json",
+      "bytes": 2587,
+      "sha256": "3b7ffa4fdd998506c477b9be92c34933458d21c93c94fd117ffb05d392db1ac5"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_18/geometry.json",
+      "bytes": 272868,
+      "sha256": "516387db5072216124660c577562a489d57646c17c5f950db56847bf9e730989"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "e015fa0a491d1bad8268ca9ca58ff47aa9b8fba3ef170a936618eea61a7f9ded"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_18/summary.json",
+      "bytes": 2588,
+      "sha256": "1eeee00ff26f7540ff0d8b9a4fcc6203e78726c93981e4521576e9aa6b3c882e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_19/geometry.json",
+      "bytes": 272316,
+      "sha256": "20af6c2084ea2fd8c0c7df3feef91d3a44928d3e13358cc71ab17e6bc1964898"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_19/state.json",
+      "bytes": 167,
+      "sha256": "34f9356f41dee88dd38010288920d8aa62ba9cace1c8b3ac14a416e723e75b6f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/average_cvt/seed_19/summary.json",
+      "bytes": 2581,
+      "sha256": "9e069786adf41901be06e954e5b84edc1df064bb00130188604699f9fadaf461"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_15/geometry.json",
+      "bytes": 271361,
+      "sha256": "3041caa1ab2e0752416057a6d07385edbf9ec571de35ad5b7a5f2ea6b0a9a1c5"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_15/state.json",
+      "bytes": 167,
+      "sha256": "b6ee70dd47dac2680dbc42000bc2e285ea2c115d486c516237f7bf59b676650d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_15/summary.json",
+      "bytes": 2583,
+      "sha256": "eb2101f96377f06f48eb63c23135e326e3b51c643a85a95db27847432da58558"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_16/geometry.json",
+      "bytes": 272331,
+      "sha256": "81817935526e4763ef8c51b12e2c2ac32b81cfbcbf5feffe282cf97c4a620604"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_16/state.json",
+      "bytes": 167,
+      "sha256": "757974262bcbbb38f254c95748bb7a61fedb16c3df9fd383d44c79cb0acd4063"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_16/summary.json",
+      "bytes": 2580,
+      "sha256": "44b6fe761b83133661cd0aa86e6f87dcbf996db91036471ff05c6e4f9612ba85"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_17/geometry.json",
+      "bytes": 271340,
+      "sha256": "1f2c5a1cf3e553e009b978ab87d47a8088f03e01ec25f4515562e40d10cea402"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_17/state.json",
+      "bytes": 167,
+      "sha256": "e5fe6102f4dba54ab1e1fb883d73f9b1cbd4c955715de2f29fef7ac0f8216d46"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_17/summary.json",
+      "bytes": 2585,
+      "sha256": "4c267a0a8f080a6a96c90188915e5dcf9a3c03276d51c107f0e66da4d758902a"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_18/geometry.json",
+      "bytes": 272339,
+      "sha256": "146302fb10404f318af5ccaf0ce3eb15c4472ba135892287e60ea76a0e6fe557"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "fb4a12517c93d99da99b29fd521757d0b913ccb7249135e9c3406f9155c6d3f8"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_18/summary.json",
+      "bytes": 2583,
+      "sha256": "61d2953e6784294e487efd40392504480417aed7b612da1dba896462d6691738"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_19/geometry.json",
+      "bytes": 271823,
+      "sha256": "c9bc2adef21588eb67c033e7f5c744112ec07591db93a5fa6feb36fbaa5bbddb"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_19/state.json",
+      "bytes": 167,
+      "sha256": "8db2b35025757781f5f0f4ef35e7e3f4dd404663abb7b97f4cb968c11d46108a"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/distmesh/seed_19/summary.json",
+      "bytes": 2584,
+      "sha256": "7625002c23d6434e46a6fa8a801a67005c8f396f0cab08bb01a52590b3d177fd"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_15/geometry.json",
+      "bytes": 271732,
+      "sha256": "ecc93db4c762fb970bf9470a5a166753d0c50b70a5b4e313bbaaa4e8ce60c235"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_15/state.json",
+      "bytes": 167,
+      "sha256": "beedf4f065e625bc20945b105dec0f4e368e09aa14551efebc40f99a630910ba"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_15/summary.json",
+      "bytes": 2582,
+      "sha256": "a910689013dc798e874e72933bf617e7f7215c515903bae350b826481e18db12"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_16/geometry.json",
+      "bytes": 271753,
+      "sha256": "ae947effc3b4ad4c627653d4a3f8b57f1d75008eb294d431104e2f41c25fffbf"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_16/state.json",
+      "bytes": 167,
+      "sha256": "c1a2699449637db7f413694dbda8747d9c1050b2e4af9bb641c0788c37c19197"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_16/summary.json",
+      "bytes": 2581,
+      "sha256": "be901a281804aae412031a724e8554c7b7bb6c82b1a2547c7ef1d95c3142e97e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_17/geometry.json",
+      "bytes": 271625,
+      "sha256": "e43c7f65be88c8c8af177b63caef3f8264ec6bc6062cdbb6beb97bb1808074f4"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_17/state.json",
+      "bytes": 167,
+      "sha256": "fc72e090367513a76adc731496363519f50d1fd52fff532555867298fac0e8e2"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_17/summary.json",
+      "bytes": 2583,
+      "sha256": "ac9ac78ba56efafb1993d47539d8557a8543fb593eda3bc0408e8482eb1533f8"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_18/geometry.json",
+      "bytes": 271727,
+      "sha256": "4b7757ff4e97f556c6a549576ddf81516d4d2f75fccde557c9a27b84343fde86"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "da8869ad12d4d85b90395817f83475489bb9a6bda45d5546568189d757d0a2a6"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_18/summary.json",
+      "bytes": 2584,
+      "sha256": "e4fda6cee6bc3d3662275b9efe4821e865aa7dee5fd4d4c5d617ed1d7e5ab715"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_19/geometry.json",
+      "bytes": 271709,
+      "sha256": "cf2d50bdd9cdaacf671f25b0438f7fee8fbe058c4823aa57edf3f666d1d1cbe2"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_19/state.json",
+      "bytes": 167,
+      "sha256": "7ac4ddc0cb40ce3b2a38f6af0886938b7f54da61727840e17a9bac810194311f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/equal_arc/seed_19/summary.json",
+      "bytes": 2584,
+      "sha256": "76453cd0bc09943b49faf5e6e14989f0fbc90d9a7ffd558b29b631a1c68c46aa"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_15/geometry.json",
+      "bytes": 271858,
+      "sha256": "f032189641519e5f661aa88bfdbdb5e46d551d654e60938a0dc63f5f5ef50943"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_15/state.json",
+      "bytes": 167,
+      "sha256": "b81ddec79a6e4869f83c2486a82ab11d2ff528b67d04bdf18379152dbf3618ed"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_15/summary.json",
+      "bytes": 2582,
+      "sha256": "bb828648d58c21a4218ade948213ed7cbfdcc2db88ac0499a438d16913fc1874"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_16/geometry.json",
+      "bytes": 272872,
+      "sha256": "6253c57138a28ec2635d8d8f871f96a9f523100b14ea1e70802205adb12a0811"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_16/state.json",
+      "bytes": 167,
+      "sha256": "01e09a0e111ef2c759d04dd940eee771d9c6de9c09f2f5e8e9cd31b1aae577dd"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_16/summary.json",
+      "bytes": 2581,
+      "sha256": "f0f13fb32286f7d4cac5a1407af6d72c07c4dbfffe7dc20800290a49b1f553ab"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_17/geometry.json",
+      "bytes": 271765,
+      "sha256": "091243470a2f62044dc693238d2d85ce16179a70c30e790ef2793079d467182a"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_17/state.json",
+      "bytes": 167,
+      "sha256": "28f860cd6676c6946bb81ecf792b940905d27fb1eda7215c836401cfd7375c93"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_17/summary.json",
+      "bytes": 2583,
+      "sha256": "3e0b7dc85be74575f13253cd7c18d8ecc4baba6072f6a1b101352aa032783e6b"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_18/geometry.json",
+      "bytes": 272863,
+      "sha256": "4784b95f739d6bd621b174b9c98638a6c8e543598b4f9ee51bbc75e082ecab02"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "2ae9a5d67d5d5364a01f335d3b83bd86a95c118454907a91014711972de657a2"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_18/summary.json",
+      "bytes": 2585,
+      "sha256": "a5e159d48badcf97df856442dd3a7c17fc714ef5bdb1837202034897c3c3878c"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_19/geometry.json",
+      "bytes": 272312,
+      "sha256": "efd44c4596a2368bb46d4f3a7de687386d1a0aa82c8d4b01c459bfcb68f79549"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_19/state.json",
+      "bytes": 167,
+      "sha256": "b2c5d797a4ab3c0d5443be1d69eaa5a4dfdf2ea559ad263cd4f49cd77fb20b22"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/mass_cvt/seed_19/summary.json",
+      "bytes": 2578,
+      "sha256": "d3ce9b3eb734fafbdb1c513fa4f3cd6e348b5af5303db56baf611d5b94186ea1"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_15/geometry.json",
+      "bytes": 303547,
+      "sha256": "b4bd05aa1b7d02f61d893c66ef4511da58a96591cd50eb146b017b66ccbd72fc"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_15/state.json",
+      "bytes": 167,
+      "sha256": "a829ed9d226285caa4bb271f3d6811bb9058e186b7741b803472857a3d8725f6"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_15/summary.json",
+      "bytes": 2590,
+      "sha256": "efbc9fb703809785a3ce6536bf42ad266981ccf8c50194bbd6a1e4f30cbd6322"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_16/geometry.json",
+      "bytes": 304534,
+      "sha256": "e2f3bb3b0b4baab353115bac61dc897bcc58cf47f0b2909569c7baf7fc09da2f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_16/state.json",
+      "bytes": 167,
+      "sha256": "26ea2f12c5bd84c226005de7497001fdbeacf3507afcb89f33f2d696a62c6687"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_16/summary.json",
+      "bytes": 2588,
+      "sha256": "a00d66522cc59b20132526bee347ceb6f5019a78e2957b2f15ec8578a770c88e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_17/geometry.json",
+      "bytes": 303464,
+      "sha256": "7a5c31d96891f5cc146fc44ae0f19669285de6893a41947bd1578221b839725d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_17/state.json",
+      "bytes": 167,
+      "sha256": "f2fa3555ea179e205e85e98c11e5668a298a8f6a25154ba34a5d40a28299d69d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_17/summary.json",
+      "bytes": 2591,
+      "sha256": "7490279b325c526b5374d2196447bec834bcb06f51a1dadb3f708cb6594b59ca"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_18/geometry.json",
+      "bytes": 304566,
+      "sha256": "28f2f07f6ee43a55976b4dfebd404cd7d5919f97da12de11c54b0e2623b8978e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "0b6e527f6247423b449f979678c50059cba2f6adf526d733f5d4867ca5b8ede5"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_18/summary.json",
+      "bytes": 2591,
+      "sha256": "a1c657e28159faccd407e3664e9ef1d9183e693d3478c269c9848ea22153caab"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_19/geometry.json",
+      "bytes": 303982,
+      "sha256": "641df8dd3506a41f6e7fcc02dfe4e213ede255559bcfbe61d3ed8c5b88d666a9"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_19/state.json",
+      "bytes": 167,
+      "sha256": "6dcfbc04ed5e9ff84fbf601d07fddbbf7067c0f2f20e2a879afea279abda6dd7"
+    },
+    {
+      "path": "planning/deep_notch__narrow__margin/projected_mass/seed_19/summary.json",
+      "bytes": 2585,
+      "sha256": "5d50b9cb64e757a1906f3dcb9188cf7f4209b125f0d478ea236b142f04f57c55"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_15/geometry.json",
+      "bytes": 32175,
+      "sha256": "eb2f00e276dc26a1c7e2de34ff68bd0b597734a376adc96f072cc30ecc55eaa3"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "3f711c3922a5086ed216580f4afc441628635a532174e9ed5b8a3fb5c82daa3f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_15/summary.json",
+      "bytes": 2568,
+      "sha256": "b739b5b1abb5cd8d68f790d44df32405203cf1997b2ce34046711fe88a2523b9"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_16/geometry.json",
+      "bytes": 32231,
+      "sha256": "871f1f509e74aa30e5568310be2a531188cec6b29b48a668787155833a76fdc6"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "86d3e8363ffd86e451128b74439342e0a674c9c7707067d0bfc473fcdc96d00c"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_16/summary.json",
+      "bytes": 2569,
+      "sha256": "f7933ae8db9a37523020befa39b65261028d548d7a542ecd5af894482d60b39c"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_17/geometry.json",
+      "bytes": 60696,
+      "sha256": "01640308459ef45eeb9618fd4889d619d1396b5d54ba48dc7fd243db287837d4"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "5d09d864205539a7725a5226a95785ad5d3a14c4836537a39d5eb788eec90095"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_17/summary.json",
+      "bytes": 2567,
+      "sha256": "d21c79ea16b10ac8a3fe1111b47c12b715fa43fa038d89e016e7d91d67981171"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_18/geometry.json",
+      "bytes": 116615,
+      "sha256": "f15d862eb027359a35f014070f2c46a66f3280b9491f5dcdb41b585f2880a51e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "d3ad1963af54ad0c3bc668de95b876def65fa3f405a9451dab30e792918008ff"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_18/summary.json",
+      "bytes": 2581,
+      "sha256": "d119434d5512986a9c9c0c49a0e12ea18d7ae62b76dcd46b2b72d514cfe4d015"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_19/geometry.json",
+      "bytes": 32176,
+      "sha256": "227c8cd852373d4871315d0f9b3cdc07fe0edaaeb3bf706260aa6ecdc1d08732"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "caf2cf63e69d2d09b63e9bd66eaf36917595f62e1f144b65a9f81500f764063f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/average_cvt/seed_19/summary.json",
+      "bytes": 2568,
+      "sha256": "360952c65dfe039eed902a731c2e1d7d5fd4ee50da4ce06cc329e9909c4774ae"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_15/geometry.json",
+      "bytes": 61034,
+      "sha256": "66f9964ed2e5729887ca11ab38ec8fc39178f25ecc5090463bf7b072c959d5a2"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "10d9f8ceac389ab1681b9c38b66a89ef138e43761b003433480234248aa65bea"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_15/summary.json",
+      "bytes": 2973,
+      "sha256": "42346b78d38c7f3fe589ea6524303160562299df92fe9984931632cbec773137"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_16/geometry.json",
+      "bytes": 89094,
+      "sha256": "f93f44630674b94e7e024e600d449b4c6b97639ce44107fde76de498d62872c8"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "522de95c222a94d71c275fafac6a7fc0de9c1ba0bfa4e658bf5f93da29263ce7"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_16/summary.json",
+      "bytes": 2565,
+      "sha256": "02a842bb3d0152b7513dc442881423ca1f0b045f459c156dcf9bb87f55ecb34b"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_17/geometry.json",
+      "bytes": 32215,
+      "sha256": "2bd59cc9ffb02bc05787044bd39eb8d61d141e49825694b823cb0664051a7f2e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "3eb83cb5dc46eb17781b705585aeaffb7d27cf300f907b9891712000e0701a1a"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_17/summary.json",
+      "bytes": 2566,
+      "sha256": "4e3edf031209b0ca00f0342515528fd72b4e821f6fa7cd9c49d86267a0c15cae"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_18/geometry.json",
+      "bytes": 60702,
+      "sha256": "2ee780a2548b98d3a483458bcf946220572e0a18a4cfaea49231e8f7000c1ac5"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "c963c3b558fcaeb30ac32d0992775989df262bf1ea5f0facac5f1ed80d874260"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_18/summary.json",
+      "bytes": 2565,
+      "sha256": "07fa8da4834e914fd735b1f553e66221421c9279957237dedea1c6a76ac0501f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_19/geometry.json",
+      "bytes": 89197,
+      "sha256": "a53669da66fdb486210530ed3834f9ffdfaeeb2683b8868983e2ebedba191253"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "ae0cc064a7de071d253579e880825b334f3ab41b28989d95e56542cce75c0578"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/distmesh/seed_19/summary.json",
+      "bytes": 2562,
+      "sha256": "e93e4039512ec2a26a6a0f19b8bbb2a5cac36f4b7b5a2899ab767b0dddecc725"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_15/geometry.json",
+      "bytes": 32153,
+      "sha256": "4ff7bfd65da0ec5b706211d044b167dbaf7d8f663358b2791abe41bd094f3f8f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "238d9d49f0eab6e40b79f6963a6d84f01f6f3486a084b50e79b498afdc3918f0"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_15/summary.json",
+      "bytes": 2566,
+      "sha256": "746baf5448c224f00150ad9d153c98964644465864c873b56bc23941032b6e7c"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_16/geometry.json",
+      "bytes": 32181,
+      "sha256": "8eb93b1bdcfc0509a634477344b80ce88560393525d7afc87e8b1cc846ba4e59"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "45bdf9da05f1e27b3acbb253615a747ee5a26dfa0de0d8c6c6013ca9ac6b1639"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_16/summary.json",
+      "bytes": 2566,
+      "sha256": "a778659fa1a1e5243bd0e269c16c01b3d55794cebb4d51b52b00cdcab7145a21"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_17/geometry.json",
+      "bytes": 60621,
+      "sha256": "95a70029231bdb7351e4ecf5c0f54f425d05e2c2c99736020e610cb5e45133e1"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "0ff185dbcd290e399c5f4b66d22cc8b05f469427b60a70fe07b140422feeb263"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_17/summary.json",
+      "bytes": 2566,
+      "sha256": "8fe9ff95828c56355245d02da1c8cf41378371a6ecc62bcd74d206bc66e77f72"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_18/geometry.json",
+      "bytes": 116419,
+      "sha256": "ff9078815c9e92597929ff9298770a8dbc7de4a952f0e1866c3b24fe175bc44e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "3a89090d56596bf494dcc5ab62fbb857d589ac19432d9f8fb39f34768e000a8a"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_18/summary.json",
+      "bytes": 2575,
+      "sha256": "ad883f63a3f8efc8498e842969bc2d2230f4a6f8dbb1b989bb52dfff8965829d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_19/geometry.json",
+      "bytes": 32139,
+      "sha256": "86e88acef837f7250d96e417bd71effeb1dd58eb7129a5777fd7da25598c9a22"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "6e8b387345c07dc6ab6c8ae856ac8beef35ca6d12db96b790d16c75006112c3f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/equal_arc/seed_19/summary.json",
+      "bytes": 2561,
+      "sha256": "256a1570a9721ce5b07336270dcfb5eb8bae5d9f304ba28d09d2cfd57c96ec88"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_15/geometry.json",
+      "bytes": 32172,
+      "sha256": "62dc3966d3ae4f431bcf9e6ae3590d6d93fb80cfa10f83d4d92bf21bc5e95c6f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "a7504f6cf099aa7695266316b8b8761910c25d7e59fe6bfdbf6a41a0d24ff114"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_15/summary.json",
+      "bytes": 2565,
+      "sha256": "3c0398879406a61891a2822b132571d1b6c724cea37903b99c54ee7468fad8d9"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_16/geometry.json",
+      "bytes": 32228,
+      "sha256": "95ed86604a5975a5aebf9ac71acc1cc63dfd64bad81d11eac582c6fbcc33b857"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "8f8cca361f24843761803067d98122f21149a023d8aa9b6a7bc91974f3ba02e9"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_16/summary.json",
+      "bytes": 2566,
+      "sha256": "1c78a2075f946b7490d894946e94dd36a4047318fae08c6490c84d82f41aeddc"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_17/geometry.json",
+      "bytes": 60696,
+      "sha256": "cdf783dacbb517d3344b9ea8007fd57104625a610d6121c517fcac215fad1e4f"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "78e3f01a07497b09ff9698236a0e0646dc9d30a4981984960e1f0c8d893d7e7a"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_17/summary.json",
+      "bytes": 2565,
+      "sha256": "c3a2f5eda6cb371ef1b9b564bf3adb72d1c9dcd0c589b5d15cd582fc85f3a91e"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_18/geometry.json",
+      "bytes": 116611,
+      "sha256": "4b8b5ff1e9ec7087d5f330fa290166aa25cd06c08f44ae7b69b5bb651bac8bc3"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "4880f33a9896c465fa5f07c7c151fdfa2a7568d9133928aa13c87e181b934bb5"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_18/summary.json",
+      "bytes": 2578,
+      "sha256": "8a4b5613f5b495ddd113bb013521f765b299d9632956ce6da2a675beb64f7d8d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_19/geometry.json",
+      "bytes": 32169,
+      "sha256": "03f24fe761165944775154a8f3b698e40dc5676a19a637b6ea967fab9dd24bb0"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "beff9f26ce9bd755152467f7e3f65657bb73b4450f45042fdf53398fd846324d"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/mass_cvt/seed_19/summary.json",
+      "bytes": 2563,
+      "sha256": "4738114b20c6f88cbb35eaf19bdd4852790916ff7ca4270eb5f663374df04c1b"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_15/geometry.json",
+      "bytes": 37345,
+      "sha256": "bb84a0f1162575a6b4c66509a96173b1c9a3d63b9b061f5b882b4b2457e71a71"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "de9410ae066581ea51b35ea7ecf85f81583f373d488e0961ea7de5936ffd4005"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_15/summary.json",
+      "bytes": 2571,
+      "sha256": "5089447b35f20aea5cb1c3dbb5596320d33d8442b28cd724b448d69da6d669f9"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_16/geometry.json",
+      "bytes": 37380,
+      "sha256": "0e63486c412dcef373d277ec05dca82bb187c41cdfb10e7ebecbf8d4e2b5284b"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "6b05bb7431b1b093a706951f76c18f2640cd3983470594efbbe3a0fcbfe60fce"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_16/summary.json",
+      "bytes": 2572,
+      "sha256": "7d68a3caf67ad9631f2d35c75597d678c91ff1fa8ef0505ff61811ee851f9457"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_17/geometry.json",
+      "bytes": 71058,
+      "sha256": "4157fc18c4a3e100bb08b682049e8685a3f1e32784a5fce945dfc65520c98e1c"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "c1c1bea52f3839b919674f5594e26786521ad3cc705572a46e33ed06406bdf30"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_17/summary.json",
+      "bytes": 2571,
+      "sha256": "d479033d4308052c13df16e4a1a64498965ae6670bc80be7af28d714b0443570"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_18/geometry.json",
+      "bytes": 137379,
+      "sha256": "3f3e923b58f30e0ef11e2287ebea8722add9fa47477707621949e41f43b29bb0"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_18/state.json",
+      "bytes": 167,
+      "sha256": "a64c9491c57d2a6ebe8ed70be4148ad1981d24b38b274dd294f238d0ded94669"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_18/summary.json",
+      "bytes": 2584,
+      "sha256": "853913cb96955e9b7f8f6a2775586d3c436bae3330fdaf1dabb26054a7fc0240"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_19/geometry.json",
+      "bytes": 37353,
+      "sha256": "90e8932ab359914cdd8fe730805a857f2173c55771431d075d835b36a592cba0"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "491bda9c259b36c43ecb1ce0ee94cab56138bfe8cf6a20f04758b898682c1aa7"
+    },
+    {
+      "path": "planning/deep_notch__narrow__near/projected_mass/seed_19/summary.json",
+      "bytes": 2571,
+      "sha256": "d31dc6cf322b40c6124eb7dd8a4beef9ee2b5a2af3c0680f8e1ea6671dbcf9c8"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_15/geometry.json",
+      "bytes": 71319,
+      "sha256": "e3ad1f302e4daaf8fce1f614522c93d68ff7fc3d9646e518cc46b43c0d61d85c"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "baa292b96a8a48b5e661fbfe5d6dbab5b688f323709a5999ed439090337a5f86"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_15/summary.json",
+      "bytes": 2567,
+      "sha256": "1e10a1e65d3067370a33eac44952b962d245a7906b858798357af3df82159959"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_16/geometry.json",
+      "bytes": 71392,
+      "sha256": "5308663e5d7a47faf8f9e5c1b18e8efbb92f8d7369b8f4b7d23843c062752538"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "2a9f0ed4de40d9e2bd333d67b78f274ad3849d2e7c3c2a730f771de68283f536"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_16/summary.json",
+      "bytes": 2570,
+      "sha256": "c3225dece48f3f2733dad8265805ad76ac7215a66d5f98f3474db2374a5fc16c"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_17/geometry.json",
+      "bytes": 71499,
+      "sha256": "45312397361aa178ea1dde2db60339422e9df21830b2b23e378abdd8bee5e479"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "988ee61a4a94ffd59522cf4a0ee69bb3fd264fd5453451fb9c1755421c83a462"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_17/summary.json",
+      "bytes": 2571,
+      "sha256": "654a5615d0c3d2adf8f14f9c0bfb931d54445f756168a90373ee159141faeff9"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_18/geometry.json",
+      "bytes": 71430,
+      "sha256": "30d4828440e90ca4743b613b255016bd35caa076f495e56a6491e3bde9f63e99"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "2d60cb116788aba82ca7a00fb694dc1d5ea439ba5f207be20adabb071c1f5197"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_18/summary.json",
+      "bytes": 2563,
+      "sha256": "bbe072e1ee67ff2a58c10c743874c16e99a44cbe021275eadc43974665588cf6"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_19/geometry.json",
+      "bytes": 71504,
+      "sha256": "9b6d4d1b96276d5f7a59d5146c4fe58939197f6f54f608986a4d1f1a62bcef29"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "e1b2ee466acdff5f0455c00ee2fa8a670c960f932a80ba1de8a1b6ab01e84c56"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/average_cvt/seed_19/summary.json",
+      "bytes": 2572,
+      "sha256": "0b7eed5c5cb94925cecc02210b482a59ed9fbb03434d4765c67deab0928a9bca"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_15/geometry.json",
+      "bytes": 71460,
+      "sha256": "065d1369b90f5604e4d2eb110e0c3b60edc178af5a53030e7179a90f00c727cf"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "ad183931c841fc9bf7400362997c0f0475ae8f2925ee956130c1b0b9eb8f35e9"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_15/summary.json",
+      "bytes": 2565,
+      "sha256": "76b793bebd2122eb223e8fc6bc73e52f5a352df18df4a0cff762f96d1e9f5518"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_16/geometry.json",
+      "bytes": 71522,
+      "sha256": "c02bc9cb79414f0034ed93a9c607a26bd538f213e376053731e1d617ca56dba0"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "17ed960203c11cd83ffd7307d9a06049e5400c2e0f2c51359cd67ea624d761ad"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_16/summary.json",
+      "bytes": 2571,
+      "sha256": "42bd0da6fb08a91c36963ff73860aa6dd16464872a0fbdd1073b58583d4f4e5d"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_17/geometry.json",
+      "bytes": 71480,
+      "sha256": "cbfc38ed08e68d9a63ae0366df18c87846549235de5de64a3ffff8aa120ddf7a"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "8984cd8ec93a4613916497e610c75c77a482a9cec797ada3ea72dd5be89d83a9"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_17/summary.json",
+      "bytes": 2571,
+      "sha256": "77111291a0f4dc875ae04f2296e750b6e2a5012feafde6168faf7f16f18421b9"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_18/geometry.json",
+      "bytes": 71455,
+      "sha256": "70b20cbf35c5e8ee00e1938952beb1a3c4d29bc2b10a33b69f8d630a064b136f"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "bbc4e8a8be7a2de2f9d99454ca996ffeb2db595cf804ec12b8fc1a57a0e8fcfc"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_18/summary.json",
+      "bytes": 2570,
+      "sha256": "d9a54484a437227578a9f908531ee47ed9ee9b3acaacc7404aa002123829a1df"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_19/geometry.json",
+      "bytes": 71494,
+      "sha256": "4a4eb4a2077de83b2534c85c56abe06896e5b318eef0284a7819122c2795ca52"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "2756e4deff887d80014c3c42b91634a7551d021ef716dd1c76f95eb6526da2dc"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/distmesh/seed_19/summary.json",
+      "bytes": 2570,
+      "sha256": "3dba4cd24b7eced9c6f747965f7a62b06933e495dc19505421cca31e5a81a27b"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_15/geometry.json",
+      "bytes": 71300,
+      "sha256": "bb32124346d56cad2d7356ce61c642a1400688537468c4f6c9c4c19f22e13b71"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "2cdec5a70eebb9f28fd197782e563ab7e8ecb402ba5521b97bd5c79b4f9fc137"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_15/summary.json",
+      "bytes": 2563,
+      "sha256": "3a2c34f7513c9b4da6bd7ad40e04c2133f759269b3ee6c306c3cf569be3513b6"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_16/geometry.json",
+      "bytes": 71403,
+      "sha256": "4b4b51eb3b5311ea4b0e5a6334d729462492e11d41f0a907de9bf90dabdb0955"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "bc3f6c5be651c862ce5675c0b796ef06fd2e394c56272355246a111ed2d17052"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_16/summary.json",
+      "bytes": 2566,
+      "sha256": "5c878249f54f7d492b32acca89e00d6d723a8f7e77004255afaf456cd9bc95c2"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_17/geometry.json",
+      "bytes": 71453,
+      "sha256": "caceecd7f45ab5cfbf1eca93e741fa6dcd8f82ac40652f4d6441f55d09bf7641"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "59585f2b0fffb8422de8a90bf640ce10917ea15344bb5c85a625531aab06653c"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_17/summary.json",
+      "bytes": 2569,
+      "sha256": "a44cb2b6cfea3dd7cbca7071c773ef6c42f85b9d99b8f38e836aed09a9e9b7e1"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_18/geometry.json",
+      "bytes": 71409,
+      "sha256": "7054030a7b050dedf48cdc0972a58a0d1aafbc8ee3492664ed21ee2eb5cc258d"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "286f6cb15d1ab279ee4ffa5292d817ad0e896858bd4135a2cdf07fa5e7ce9727"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_18/summary.json",
+      "bytes": 2561,
+      "sha256": "468e2c4486431ef97cbe46626fdfb9568bc04021b4f77926658a3b56d6e7079b"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_19/geometry.json",
+      "bytes": 71465,
+      "sha256": "7a4cd09a9981b678277c920bf805a5464ccd3ea3ced684cbdabb4aac9631a249"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "4230d478c7fd8761a216a847261d44cfa594381b64ed624c7aea3e1cd5dc2516"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/equal_arc/seed_19/summary.json",
+      "bytes": 2566,
+      "sha256": "4b2b32283ab7e9ec23052be2695c7ef87f6cde65ed752a816f2aaad384b04741"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_15/geometry.json",
+      "bytes": 71316,
+      "sha256": "b597b264ba0fad316eb87aa14343d93003ef63f48ba71f45f2e017135b1bcb0c"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "cb444aceb697148705734c11c45a352076c0070ac70790399759094e0895973c"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_15/summary.json",
+      "bytes": 2564,
+      "sha256": "1201e7c74e0be93569d962b16fbd4b937671372e335c21734fe561cd4bab9ed1"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_16/geometry.json",
+      "bytes": 71389,
+      "sha256": "bb69b181fe4104b99070202474151c3d14f84ca85413431753f3c8cfea8d6efe"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "652e7744f53e75892112444014d1be1b5b93fbba3d6df045afaa1b98f203f2b4"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_16/summary.json",
+      "bytes": 2567,
+      "sha256": "82a47d7cdc4b2d2c1d2d33cbc9644d1d7e06dac28bdadbd88ea0b728a5b0418b"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_17/geometry.json",
+      "bytes": 71496,
+      "sha256": "07265c71f8390b1f28323a224102fcf64df4a10026845bc7b39f6bd7ed93f9b8"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "0832d4fa54148b8445d6f6797a4b4796d2fefea80f728e3103ea68b94a6713e4"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_17/summary.json",
+      "bytes": 2568,
+      "sha256": "af34dc7f5fa0e7f1056325be92c4c3502fc8251ac726fbfdf306520548e1d180"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_18/geometry.json",
+      "bytes": 71427,
+      "sha256": "951da06c0f347601b23fa5edceb202a762116ed89bced8b88f1cffb5a79480c6"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "51ea4a7591c4b6764d763dd7faf8f7eaf1a7b53611f70a5f3e3530af3d459d86"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_18/summary.json",
+      "bytes": 2560,
+      "sha256": "07fb87a40dfab111eb777867785062cc2962abffeeb8ad165198f2538b84f339"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_19/geometry.json",
+      "bytes": 71503,
+      "sha256": "7402777952095ca7a55f22f452c1e0feff2b7a28d4d06f0cffe7ece85c045e7b"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "02397eb68e538ddcab937a0938c7ce4be62411a1338d45e3af700fedab926bf6"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/mass_cvt/seed_19/summary.json",
+      "bytes": 2570,
+      "sha256": "5438ad518dfba1afb62402b90650153d415b848cea7e03900298a850cbbb437c"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_15/geometry.json",
+      "bytes": 79221,
+      "sha256": "deadbbc5b4ac8896db050fe35d19be99448fb5c9dbbdafa979037bda871f86de"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "1c941e13ddd7fbc2cc2ee1c73092f65ecfa798e5b36ff0e0fa50585c29d5ec69"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_15/summary.json",
+      "bytes": 2570,
+      "sha256": "8c724fe2916dd5378b8a2155c6a2a0d0468c00f12fb050d5d12a7c2d7e4f5d73"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_16/geometry.json",
+      "bytes": 79296,
+      "sha256": "f1cc2bca31358625238208c4b4079072c276ff58b6f4ab8a5aa2c4c8dc6fea70"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "efe8fc42e49fc5674bb5346f2a37b71a90161970aa0fcde25b751d0e91f17972"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_16/summary.json",
+      "bytes": 2573,
+      "sha256": "12cffd04b4cae4b5afa53e784e728f23ff967f2f12603f86207ec0783e2efd39"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_17/geometry.json",
+      "bytes": 79416,
+      "sha256": "0655ee319a47732f47eaa4aad4fc6de9886ef001c108f3a7630dbf37b4e9edfb"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "d45b4a4c2722b404e5ba27c59c4b0d6345ac78471e4542112f4c8a715b06c092"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_17/summary.json",
+      "bytes": 2575,
+      "sha256": "ed9d9f8e46ab0232e2ed9fa818775b4fe0dd46d3ec523bafb967933a537c0f0b"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_18/geometry.json",
+      "bytes": 79309,
+      "sha256": "4a115bb607dd3e8e51a900c99899405d6de32a1f2ced17da2aa2e6ede4829071"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ea24ead331403dec06bedb35b92c3137023101fed87c75d8efbe7b1d7d86fbf4"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_18/summary.json",
+      "bytes": 2566,
+      "sha256": "50735602609b375f3c36a828b94c8171a60c9d7116c552945a4b8e1ac10cc7ce"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_19/geometry.json",
+      "bytes": 79395,
+      "sha256": "dbf050765772ba674462e6f30b84f01cd7a6b63b5f0b005fca45960175d91cec"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "9aac33b27a03786e16e0748c74e57cae8a859216b2b3e56cce79b6cdebee4045"
+    },
+    {
+      "path": "planning/deep_notch__wide__margin/projected_mass/seed_19/summary.json",
+      "bytes": 2575,
+      "sha256": "3436f4f07ab7ae415ef82652ca7e1d26bfb3a6ff479da05e011bc893159736e0"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_15/geometry.json",
+      "bytes": 32240,
+      "sha256": "8e312a8e881db4b03431ac5e07887a3561235971b440f593376afae42f4d6899"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "c97404bdf1bfad4fb3b03ae68f85130017cbe0d89b29257ebc0e6088636d1262"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_15/summary.json",
+      "bytes": 2572,
+      "sha256": "a29b38384ccace43df8b1e6d0eabc372d46e9ca86cf72fbf1767d84f79d7f7f8"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_16/geometry.json",
+      "bytes": 32242,
+      "sha256": "007d9da85abafb08a981b9e975ddcf8541c21e16ebac48cf0241f3d8fa7de477"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "ee49e8fa23540c3da2f51015397326af9caa1eed134a123298e0f079dc05bd61"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_16/summary.json",
+      "bytes": 2568,
+      "sha256": "152bb4c653753aea660a22c23a95d2e27d44fb9ccf87236869590a7e36969cc6"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_17/geometry.json",
+      "bytes": 32238,
+      "sha256": "546b8045841e7ca50de230b7df1a3baf5d45b155edcdf9d64bd50483ddadc9a2"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "7180a8788a839d443fb665a2f8ae9444a3d93beaffdb177d42da42c800accd7b"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_17/summary.json",
+      "bytes": 2565,
+      "sha256": "ac2a3032451430c68e86af6ebc229e5232f681e880e9e606be258dd2c567b6a3"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_18/geometry.json",
+      "bytes": 32220,
+      "sha256": "1d07cdfed1a6b6feb5b5001a07663cd98915e0c8d9fffe92f8a2238059cfb9aa"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "75541d665942c2527c1d925eaba6a31e4a36c39c2e44a33d6845df77b97998d2"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_18/summary.json",
+      "bytes": 2565,
+      "sha256": "d188ae1f504068bc6b3be0b59a7172897fd8a060df65774cb4997dcbc7fb7994"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_19/geometry.json",
+      "bytes": 32166,
+      "sha256": "2cf1afbb65b0040b9c5c3f6c2105dad1a127677feb167b7cd0ec6a81bdf3e50f"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "306814878c0cbfafaeb756fd32b470378f10302ff6c6613e37ce73645db6d4a6"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/average_cvt/seed_19/summary.json",
+      "bytes": 2565,
+      "sha256": "6d9d3fc19a6a08f0cef81ede0258f42f87eceea095c08530f741a5f2dcccffe6"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_15/geometry.json",
+      "bytes": 32186,
+      "sha256": "521e6b9c7e19babfb5eb72428353090f553d4afb080b0c3cd1b6e2f7125382f2"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "974aab9aa33957344a59f9e852a5e8c0b49d1d9e95de7aa2ce20656dded553f7"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_15/summary.json",
+      "bytes": 2567,
+      "sha256": "4d9694a8312fed51da2bb66e4c651b0cda1be0cee67be7bb1110f0b28881ec0e"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_16/geometry.json",
+      "bytes": 32228,
+      "sha256": "e2b52568abbc9bc0de320fad1b70b40ec6e9747e858261cccb372452364bee84"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "d06b713104a0999d93a3957efca91147d7def03e591ed6a02650a587c7b16940"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_16/summary.json",
+      "bytes": 2565,
+      "sha256": "3e5691e4a4c3b1e39553ee2747caa86fa0467af6fdde2b9def4223ad92e091ad"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_17/geometry.json",
+      "bytes": 32216,
+      "sha256": "930c576d3344a76f9e0c12ddac3b1678c8ede51e8eed1d65a81d1564fb171fa0"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "ab143e533bde8df4e453a54e1c202955ed74f525cff20d46ac0170d569c42b18"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_17/summary.json",
+      "bytes": 2564,
+      "sha256": "168463160a51098b8c1a99b7407da40581ec53201594d20aa39b024559b1c92d"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_18/geometry.json",
+      "bytes": 32215,
+      "sha256": "6776690518ca4f5714ab2ae498a6523e78292165d0dc60e3508ecb7e36cf8b6e"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "1003c67b9b6c645f3d4b8cf7057050b051b9d83e165b63e0238cf7f21afdf5c8"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_18/summary.json",
+      "bytes": 2564,
+      "sha256": "6d6d58a4534175929c67de42e7effc175e6db40c1a25429a92d3bd0e35df0462"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_19/geometry.json",
+      "bytes": 32205,
+      "sha256": "4cab2bc1b0e60c3dec2f9113d9b5a901679753976bd071f07685d80935000c8e"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "84e9460ee0c40eacdc688954c4ac47280078f42875131deaedf25d48aef065b2"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/distmesh/seed_19/summary.json",
+      "bytes": 2564,
+      "sha256": "503c28e2da37df9a8c3f34c0cbf7a6f0d5785b78849e19b70394dbc7b8a5b915"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_15/geometry.json",
+      "bytes": 32177,
+      "sha256": "e02afa7c7ee3d5a6ae985d9ea0e9ee2bca35b0df51561f44339665d17a4f3fb8"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "b8d69a0f9a1faa9f5e6e78ca61a0ca501ca577ef90d2e73d4da4be36efeb312a"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_15/summary.json",
+      "bytes": 2566,
+      "sha256": "65acaffa34c3f3130718e86f524e0fa75d7920b131800f0d75e0bd8a385e29dd"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_16/geometry.json",
+      "bytes": 32188,
+      "sha256": "9c799244403968ae04fccdf9f658ebc77669ebd5f8eefa6e48465ca017eb6cb8"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "3c904954ca83668b34a41871cdcf1862ff636d2f38fca2b482895b824b84cae6"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_16/summary.json",
+      "bytes": 2564,
+      "sha256": "988a431045ab008038f7e84ae734f3e82f00cb45f9cf27b87aab61c8a5a6adf2"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_17/geometry.json",
+      "bytes": 32189,
+      "sha256": "191eb07bbdb85bf258da1ab85b6d8d350f71c254c5337c1268c3c118a72c92e7"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "2968657cbd57f84e2133a5e5b5dd7355aae16c360e65ad8b252c443597f7f8c6"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_17/summary.json",
+      "bytes": 2563,
+      "sha256": "3f25d66acb0ed93041f934f551f101c041df611c476321d836ffe97de772f21c"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_18/geometry.json",
+      "bytes": 32182,
+      "sha256": "158536ce339dc44c057365634083c9901f06f209afb7978b0d351b7778729253"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "3dc63b2518d72db9b966ac12573172ce6ec21c2577692834bdd6c69ce8f4d9fa"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_18/summary.json",
+      "bytes": 2562,
+      "sha256": "cce8f70f75e438ec2b4932f0391dda7301aa9ced47f93b7b16c24fb6f0eca1ef"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_19/geometry.json",
+      "bytes": 32153,
+      "sha256": "bfeeb4449bec26f301185fff0a9dda81df1ed2ed86052143d956244350d7c03f"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "22cdb7739c7fb28ee6ad2b78768bb351883cf179573586ac9c0f5cf076e0d1c6"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/equal_arc/seed_19/summary.json",
+      "bytes": 2561,
+      "sha256": "24c5374a363da292b9a4fd53e28795f32058dbde97969275c2860cf34cf7e2de"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_15/geometry.json",
+      "bytes": 32239,
+      "sha256": "1a03a5babb058867e45e7452d8972ebb4dbab9005939eaaf93c65adc827d8e40"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "44962b8a7211d7b8c6920180993bb0173fa46ccbe13c92fae3ec913275868433"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_15/summary.json",
+      "bytes": 2570,
+      "sha256": "cae6f0af1a0219f385e54317f095715801762fa232d6ad2f300fffa7160c43c0"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_16/geometry.json",
+      "bytes": 32239,
+      "sha256": "f832228185db82ac6c8558dca9d1e4b8174c94cb78cb8ee88f80dc64258e0e8f"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "3864c65f3c80bb1f5909692aecf5f99c7c23543186569a93948e4125b76f2b23"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_16/summary.json",
+      "bytes": 2565,
+      "sha256": "e23327ce458c1f22f244e12618c6c45f57cf5affca74c0454eb40d23bfe66fb7"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_17/geometry.json",
+      "bytes": 32237,
+      "sha256": "18c8b1fb5d83ca4c1d49f7e72cc38bdd8f479918ff62a4680d6d3a09c2ccce3f"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "86f9a54878cd878bac0a383a8942bb8bc433c620cadfe3abf528b7662b7bcb0f"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_17/summary.json",
+      "bytes": 2563,
+      "sha256": "32b9090a514f9517d41d0ee0bef587dfd602e7056335dbf964eb987f3a173134"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_18/geometry.json",
+      "bytes": 32217,
+      "sha256": "6861d3108a13c3124fc6453f6b2ef2ca15d199918c02af101da2e975b6bedabe"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "8abab521fe8cd3b23f70d32eae570ee8a34656ad63879b80d07aa6a07376e20b"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_18/summary.json",
+      "bytes": 2562,
+      "sha256": "224bba53b34d7d5e5367724a0128c01ec7ff57f228960eb58e3d9b0fd7aa86ba"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_19/geometry.json",
+      "bytes": 32163,
+      "sha256": "32bfd7b2a0597320925c06b0be0f299453f8f0dd4136ab708852ea20939a78d3"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "48dca3742541bf0cea8792d1fb84813e22a452edfa3772c6bbf6281143bf96e0"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/mass_cvt/seed_19/summary.json",
+      "bytes": 2562,
+      "sha256": "ef47edb9297fa519e52c39520904db23b944f850eb9ccb4fcef7d2fb5bd70401"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_15/geometry.json",
+      "bytes": 37410,
+      "sha256": "0d9954c27b6b6f5669baf781c07d3bf841ed941277442e18226b76ba3e730d1b"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "80f0b9e484cf5e2591642d3b6a6068795272921583f4bbc55485fb346e5e5fd3"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_15/summary.json",
+      "bytes": 2575,
+      "sha256": "0328c7efb931c08083f92b07f43ae0889fc5c526f3d25305847673fab1b8107a"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_16/geometry.json",
+      "bytes": 37416,
+      "sha256": "cf89ed89a60484952a7bef11aff9646303b5ab325d1556053b4aba05f7c5dc25"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "7f0343afe3f4c5cda7386e73c286b5a959c7c4af9dba76212cf5bcaca3d236d0"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_16/summary.json",
+      "bytes": 2571,
+      "sha256": "1f602221d88b2b8e83619f381dee9a280e39abba64b0281834ee314d26cae843"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_17/geometry.json",
+      "bytes": 37418,
+      "sha256": "a0d7aa090e7a10be65be565ebef4692a4e73eec52fc0dc048af500eedf2c76f4"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "8315da4c14ace00f83e4d702f50048a8cef8fbdb2ae24dc39fea1a56cb355a80"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_17/summary.json",
+      "bytes": 2569,
+      "sha256": "12a33829c8ce1da8335aaa1a9f8883cedfa8897c7de3dca27018e3dccde7b06b"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_18/geometry.json",
+      "bytes": 37402,
+      "sha256": "18112d21166edb95b5ac25facbe4a38f3c3e92305a12c98f3e3fac80b03a8daa"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ba3da318dc841069e3f2dfcba09048db5c4397a548d8d203f627c691276d9dcc"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_18/summary.json",
+      "bytes": 2568,
+      "sha256": "f33247a4e279b45aee354ea5f6badd1876143fbf11b10964ceaedb44173c4034"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_19/geometry.json",
+      "bytes": 37340,
+      "sha256": "ff26caca2659eae591a6f5cdad2e3cae3916cf6f7d8eaa31ac1eaf9f025d9dfc"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "6dd9c43f3fe42cfbbfab99c89a117d494b7c6d9aa85f1f15e8a038830f08e51b"
+    },
+    {
+      "path": "planning/deep_notch__wide__near/projected_mass/seed_19/summary.json",
+      "bytes": 2568,
+      "sha256": "b5972d9670a6445ebc461e5503d572042186b885b4ed24330c93abc6f38e8bce"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_15/geometry.json",
+      "bytes": 71529,
+      "sha256": "2d811a3a16931d41514f8a1f59ef0dc8624c021351574a99294b7e59169d647c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "3ec6d30f3b263193e714deb8fb4b2748508c28b975856615e933f29ad1a150f1"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_15/summary.json",
+      "bytes": 2585,
+      "sha256": "8c607175187df8bc59bba93fe9af4aae74206699f48ce0be1752235d5dc58b49"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_16/geometry.json",
+      "bytes": 71462,
+      "sha256": "139f2e83607a5625a5aefde1849a0fc17b864b3e4ad177fa2d006b00f421e12c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "84d8f4b01a3953bd8dbe52433bbed37876cf601f7eaef4365999611327b7bc8f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_16/summary.json",
+      "bytes": 2573,
+      "sha256": "80a66d037e08b0fd74ef73b86cba6d265eef9a9cfb113454b4831a22eb8af74c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_17/geometry.json",
+      "bytes": 71534,
+      "sha256": "7b9981d5968317dea5616309e2c419f2f7d6d2e7f9f49d3835e8c282efe2f1a6"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "886b884ef2c5eb2e87d3334a8d6bc38d7cd0b1fc15bc072d0dc518be8f1e7a61"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_17/summary.json",
+      "bytes": 2584,
+      "sha256": "dcfe330f71e7ab781443552f0b431d2d7f613f3bc7318baf2d513d8b6b109112"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_18/geometry.json",
+      "bytes": 71478,
+      "sha256": "30c4a72b653ad2151c5ac34dad0a68addc9ba5e27e2ca7826cd5b72c812657c6"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "15245bd9885db622fc15e67ffc378e6b974aada90613802834f8068b8172665e"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_18/summary.json",
+      "bytes": 2586,
+      "sha256": "f0915c6f972a905fecb29e6a11db617da51321a0f3bdb06acb1de576761d6d63"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_19/geometry.json",
+      "bytes": 71500,
+      "sha256": "8578db9bce6b18d63d47632c6f48ab7219707e24feacbd9b98a513f105fedc4b"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "2a43b1181325136e29ab36a5865b3f7cd6b98f327d15c0f51af1b756d875146a"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/average_cvt/seed_19/summary.json",
+      "bytes": 2583,
+      "sha256": "a724230ed87d8aa5ce759fda1d39feb69bd47b719d8ea8c631ac472f428d0b26"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_15/geometry.json",
+      "bytes": 71484,
+      "sha256": "2cdc95046928e7789a4568a58619fd0ad7a525c6ff80f8869f318622336cc8ae"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "88fdbde2d45a6a69f9f6921557df20081e928ddb43fc649c096ec60a05a24004"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_15/summary.json",
+      "bytes": 2571,
+      "sha256": "5acf4cf51a5f5d83cd5c0b23fc68cb0ea63a2e845a8cafa5494c7f1846fef274"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_16/geometry.json",
+      "bytes": 71597,
+      "sha256": "c6482ec11663793ddc2543127a148e5df47471b2c8d4a552c22a460c9d7fb40c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "3cbac46b68ab53f324f2726a41eea3958e6d64927f4f2252027ea5a4bb41720d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_16/summary.json",
+      "bytes": 2584,
+      "sha256": "13c57f908105d100b8e4bbb25d7f46a0c99b8dba6576650b060d61d02ec24615"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_17/geometry.json",
+      "bytes": 71542,
+      "sha256": "28e701516e689084053010e4a50188465201445ef5ec2c1548cafdaa2b5645fd"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "84b5d83c813f2816e9f5b4d24db3e32b0662c8836f781b697a3986171a3f5df9"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_17/summary.json",
+      "bytes": 2581,
+      "sha256": "9098d966cc2f5afaa82df8e10b8eb0424798b1b0b34b7d77f92c98734ef4f9fe"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_18/geometry.json",
+      "bytes": 71478,
+      "sha256": "6fb7af62bc11275a11233d0c5b671aba121880d13f62699284d2a9af0dfd6011"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ea12e3094483715730e845e55163c4e25934060e691b008302d48d4afcd9d6e4"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_18/summary.json",
+      "bytes": 2581,
+      "sha256": "7f2825854a65f90c833c1892e5936241b80e25f1f34a507619b7fe6209494f9c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_19/geometry.json",
+      "bytes": 71413,
+      "sha256": "f6e459f3d21e113e10cc89799fb3993289461b6b65ef0810d5df31947102b911"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "917c3d17bb34586c9f132e143996484033b95d38ce621847a70649826f535074"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/distmesh/seed_19/summary.json",
+      "bytes": 2579,
+      "sha256": "5b7e96661eec0a9d731da63a5a9abd7dab0fb2ea81494f9e41a2c1648562cebf"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_15/geometry.json",
+      "bytes": 71499,
+      "sha256": "d700af4b582d19248f85cc2ab417e07267d024b177813e4eaa98959f567e2e9f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "919735eb7f8c21981305a0203140ab98c428e68759e64864010292b406b3b270"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_15/summary.json",
+      "bytes": 2581,
+      "sha256": "9a4d8969166e4548b511d40ee3d52e8d5e9c509fdfa8e0cb292ce77536504316"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_16/geometry.json",
+      "bytes": 71526,
+      "sha256": "ab5fa1d025910fc75256ddfd3ba4f2adaace4b7f6d8e0e0a9094def3191acf1d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "5b9e3b945c73319495eff7f7fedcbf16950bf4e1e873d704c48254a0f889a31d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_16/summary.json",
+      "bytes": 2579,
+      "sha256": "c3dddd410f9c0bf5ab2030d5ff65dd2b1685fc884c1786d5d02821a72e1f5e12"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_17/geometry.json",
+      "bytes": 71468,
+      "sha256": "c8084ba86d008d40db49c5249f53b9b06281d20f8054a80317ac37e10123cc78"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "7f060b6cafc853c1cb492be4c76497cff73254f558db56be9254543f99fd2d46"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_17/summary.json",
+      "bytes": 2578,
+      "sha256": "90239cd1c77cb3b94f5edcaf5b995b890f8559104a4a1fa9a44dae412f89f5c8"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_18/geometry.json",
+      "bytes": 71443,
+      "sha256": "80ca11b36f08777cd173ad9affd2f22093f555791107b642ff79e98d77d9c1fc"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "68274c0230364434c41ff8d3f0434263832fa0bcd6e9250675329a5649e586b5"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_18/summary.json",
+      "bytes": 2580,
+      "sha256": "398940ea49006cbd93c6da62ce5ecfc587669c300b9a9c703d96e980ba409a3c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_19/geometry.json",
+      "bytes": 71473,
+      "sha256": "15f9ccbe610c089fe9db6f58bbcecb9cbfcad8664b109d9df77aed5630d9676b"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "3ad09cb1b4a7a19020d126014b52f8d5a5903590abc82e6e15457adbece306a5"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/equal_arc/seed_19/summary.json",
+      "bytes": 2580,
+      "sha256": "8880e0bded63527f416628f8645f0058d86ee5bef1a4f5620becb54b246593aa"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_15/geometry.json",
+      "bytes": 71526,
+      "sha256": "c689566d5e8437aa13fad27f62352378acf2557725e21516d643e092d540b336"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "04764f1c57c6b7e5321bfa77c74e36165dcb518e2190f817d06fb8c463a3e03f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_15/summary.json",
+      "bytes": 2582,
+      "sha256": "3cd28c96febba4faf2ee04e7766e35b01c1f1c85b3831fd544aff3b5d3d33953"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_16/geometry.json",
+      "bytes": 71459,
+      "sha256": "1191b756880060989f05db47c0a9d2c53240fb150e309446afeb6efa662c99b7"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "03f78aba3fb25b6d5940a058bba0daa96de31c58237672b1e04f69c0af07aadf"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_16/summary.json",
+      "bytes": 2570,
+      "sha256": "004b7d50df9369f5fafff944e130a2d52c081ccf6284535f6c0e12d9b8cad4d8"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_17/geometry.json",
+      "bytes": 71531,
+      "sha256": "858cce5742bf86816403337366f7b61b95960b82347de8bbadd6fece8670b671"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "ac7c3b45fc1527d96956ce44be9c53ebbcdff7c0e76bbd4745ff8c75be5ec2ca"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_17/summary.json",
+      "bytes": 2581,
+      "sha256": "a22850622d429bf9a987224a4f8f8f13d4a10ee3d38c5e8aded35202c6a140b6"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_18/geometry.json",
+      "bytes": 71473,
+      "sha256": "c10a9ad9d69e898278e0d015119b80680d81657d9883d7aeba09cf92ae1b46c5"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "328a1dff3a912370d8f3d1becd0301d79477098fb07cd269ce9640b66d5fdda6"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_18/summary.json",
+      "bytes": 2582,
+      "sha256": "0e17a185b335756e7445443fbe6be898e371448579c8d66ad1af08b2d0eedd43"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_19/geometry.json",
+      "bytes": 71497,
+      "sha256": "f66c7c711e2bc730055171225a95dfb10a60874a35079510d85db3de53ca143f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "3df109c1c661142f4d9198af6c3b01bae0ad5c7332dca2f3828a3408aeeef564"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/mass_cvt/seed_19/summary.json",
+      "bytes": 2580,
+      "sha256": "63a23f356ca1c3e2f8b18521eec8b1deee90dc9da7ff97d994c7e6b72357403c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_15/geometry.json",
+      "bytes": 79451,
+      "sha256": "5528d74276771cd889bfa18e4e1e6f48d46a4a9ce8711abe7c1c5f5d1ad754ab"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "44e6af140600c19e6f436413a0c820049a562a002a19c4b2f237ed66b7ded119"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_15/summary.json",
+      "bytes": 2588,
+      "sha256": "d8722fb5531e8f61f21d8d0d1537d0f004c1facab0801b9ee3bf3d515ededb5e"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_16/geometry.json",
+      "bytes": 79361,
+      "sha256": "33f30bca9871a0e791e00eefe01143395d456ece8df2b36bdb0ca1e3ca755a8d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "2d907e446ea53a59e8c3cd99421cf496c64fa47abbe47a142147c940b362df10"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_16/summary.json",
+      "bytes": 2576,
+      "sha256": "bdb3bc6ca2c267b0f8c2edb6ac0700788661ec2289749726f04a3febd5296a45"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_17/geometry.json",
+      "bytes": 79448,
+      "sha256": "0567f10b893058b70a3b06b3b2d5ad46fa5b140a97c223c521cbc0ef21563cf2"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "19eedb105d27a659eca13675c542ead46ad55de86a846e65aaf92996f6c86007"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_17/summary.json",
+      "bytes": 2586,
+      "sha256": "f791465b874e7365d990c2bbce4945c61ab98cefcc80fa9e0cea21c8876261f2"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_18/geometry.json",
+      "bytes": 79371,
+      "sha256": "4f3d80c592999b8e3d8b2061b411e50804f00c07d4d2c7f7f10ab69cb8de2e16"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "46b222c1d4f256a17050c9262be9b7ec71c0876fcdcb78d44e4a923bbf76f791"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_18/summary.json",
+      "bytes": 2588,
+      "sha256": "3863550fac6bb8174d01529ec6ac6b39f5a4a112856efd3a7037618411be0be6"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_19/geometry.json",
+      "bytes": 79416,
+      "sha256": "f597711dbde42145a6eb3fa4b73230f6faaec6b5d61ab23a74f0dc09dcac549e"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "5dbd6246c65c4d9fe7d9e9fcafa40326431042cf3d24ee7ccff99ec382ac6c30"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__margin/projected_mass/seed_19/summary.json",
+      "bytes": 2586,
+      "sha256": "974494ca91b5cae4cef422af2d64f7e089bd7f0676396c8db894512c985b82f8"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_15/geometry.json",
+      "bytes": 32200,
+      "sha256": "705cce0552769cce724f7c23632364e7e8d5e87d7d043e8073f8801c47cc2543"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "eeb846b21296fbf372c24f7ec9b9923577f7646940528656ff1f023f8cf96e8a"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_15/summary.json",
+      "bytes": 2572,
+      "sha256": "941faab92b27f8dea73cacdda7fa2cebe52e447c76326eadaa13e3afa399c1b2"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_16/geometry.json",
+      "bytes": 32252,
+      "sha256": "de97c82d67b062d1423f9ae999dc94f1d2bb6e49ab515d0f9162db127a6a54dc"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "832a9a600cc690325bc4d6432811ff71af88aadc0bb19528ed9421ce7b0c9034"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_16/summary.json",
+      "bytes": 2578,
+      "sha256": "4cb9ee7b32036f1356c7c2df83ce0bb0c8f48a309d03b3b906ee4f0d0ecefa89"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_17/geometry.json",
+      "bytes": 32289,
+      "sha256": "433dc27aac90fdb6fe07721d23f1e0f4b8552ddd4978fc8a29578aedb60d15d9"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "2477dfde4665119a2e215ee830af646594025bc0aea06a8680aa3b355c9d272f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_17/summary.json",
+      "bytes": 2576,
+      "sha256": "99c607aef00e470ec8a26fbf23bd1e242b91bfc2df4d9e9f90aacf5f1a05022b"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_18/geometry.json",
+      "bytes": 32212,
+      "sha256": "fac6757a69611f779050042edb9817847cbd33c1cb1c0cd1adb968234a705817"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "e8f090c1e0d61792883e30fe6922502728fea57e7e49352e498751b7ddc24236"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_18/summary.json",
+      "bytes": 2579,
+      "sha256": "01e75808482db3be94f69c6ef3393e9594de4429dd239ad0fda40e351b719c2e"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_19/geometry.json",
+      "bytes": 32186,
+      "sha256": "9467e4795aaa71ef1f9084b6c029ac9bb644ac5a9c98eb5b8f07b84ffa32ccc0"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "4dbccfe6e84dbddac074d2a2ab8396c04dae65e9238313abfe91c62588741829"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/average_cvt/seed_19/summary.json",
+      "bytes": 2580,
+      "sha256": "fc0fa204ca2d380fbb0edd344996e306fbce23ca1163c1b806eb7c9fd311223d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_15/geometry.json",
+      "bytes": 32278,
+      "sha256": "7b5a3ad4dd0cae9354f822ab45edc2c8bc238c0bd6d78b0a482f1edecb8bcc4c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "c72eb0bc23ae92ba14e2a57c9821a7266d4da1b90c71e6378656d2b0645ba103"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_15/summary.json",
+      "bytes": 2571,
+      "sha256": "0459431f82b0b55930f63f44952c798c9ceff110d6ebb85ca69446ab1027ac58"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_16/geometry.json",
+      "bytes": 32251,
+      "sha256": "5fc9730f1848e4f80de010c5942a1a075a326c0e1fc997dd5c406e78a11f2756"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "a3efb16da54aad8eb776a9f83c4f42befdaf297fdc38bbc5786f7edc4ce8bdc1"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_16/summary.json",
+      "bytes": 2577,
+      "sha256": "3ef346f5d59ca983e29c32570b1bb7cce20d2f212fbd9c9660b6684db28ddc1c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_17/geometry.json",
+      "bytes": 32294,
+      "sha256": "c0d0a53651ce5a9924f43ac9e12e2da6a902bb5c51fd8dc163cc6e2f34053240"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "d5ad54253397d95117d618ddf4b735411fe70ab5bdca934a83770d16e3a59bba"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_17/summary.json",
+      "bytes": 2576,
+      "sha256": "bab92cf7dabbe3e4e149f0ae377ee6b6f9de3371bd6d6c56eb5af4a00192fd31"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_18/geometry.json",
+      "bytes": 32243,
+      "sha256": "4e1eddff39741fbcdba78259cd1d9a252972a8db30a73dfb8750cbe5998ea976"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "698d78e04256088fdeeb35f7f54c43845204f67e56dc1593962245987a10f3c2"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_18/summary.json",
+      "bytes": 2575,
+      "sha256": "fc6a99cb2687ff58cb26c7aefc83133adc44f9ea988055b0c6afd69ada13f02c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_19/geometry.json",
+      "bytes": 32197,
+      "sha256": "29e13f77118216f01057b31755f4da44fee064cc231b85ec6d9ef14f0afe4875"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "be9a2ec674f4101d7f24f74315a7f614364ff028c884ae1ee02463de7fde3023"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/distmesh/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "10292a66a5fb6063629cdd54959eac7a6ab9dae7d40d502dbbe7610cf9c0d6c7"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_15/geometry.json",
+      "bytes": 32138,
+      "sha256": "4ce23c29fc2e0b22230a49770809fe643efaa6f776d41c78a3daefeb6146b9bb"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "e0c2368049e6bd1ab8c16e7cba8c3bc3a9f6f387ee2a5922d6997884f3f1a4da"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_15/summary.json",
+      "bytes": 2569,
+      "sha256": "109aedd0c2da34990e2d759c7b030945fbcb43a0320e7cdd3468afcca5aad2ed"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_16/geometry.json",
+      "bytes": 32235,
+      "sha256": "8ac31a1f42ef198f0764d828568682deb3acc1018fbcb1a0ccb2edc2366302cf"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "ee510fbb200b511c86308ed91bce3ae98bcb64226ab5f78618bc5a0f645a5a9a"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_16/summary.json",
+      "bytes": 2577,
+      "sha256": "fc4c633049c74a95c6c6b7e7f445982bcb3de6335b34b69fe3ce0e616e7727c8"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_17/geometry.json",
+      "bytes": 32205,
+      "sha256": "102816ae8381d81229a40ee32d658a6dcb5c8d476edfce244029323781d924ba"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "b3b7e592af4df133fa11eb5d029b6328fea7c6b440ab1ae21682e39391ff06fb"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_17/summary.json",
+      "bytes": 2572,
+      "sha256": "a2acd8c418f71ea1d6b596f92f3eade265e193fdae0e994af3e930a6ca929d5b"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_18/geometry.json",
+      "bytes": 32165,
+      "sha256": "35e023e90c94aa33f8df4f5d1a2cbd759de562056be035c8e9ef008b7086e93f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "e12aa6ddcb68426426b2dba22902f7dce826438e011fa75a9a0fb44705c1a4c1"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_18/summary.json",
+      "bytes": 2575,
+      "sha256": "024431e91e180498dc5698079e97e702f28183056420e8685f07cd852ad9f795"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_19/geometry.json",
+      "bytes": 32136,
+      "sha256": "0337a746c2b8e70f04aa3e2f0c5c7ca12df1f0a8fbcc4de1c960d9a04960503d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "add324983df718eff10324abb3de7af4a399e8b3b67429d3783e265d4a881d1e"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/equal_arc/seed_19/summary.json",
+      "bytes": 2576,
+      "sha256": "505739364c62d178a28ed9be107ae59742c4926dd05bacdc096d559d5d126f16"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_15/geometry.json",
+      "bytes": 32197,
+      "sha256": "4d176ab9ad2cce8f21acf60e5576159fc8eb10166b95dd1664712325fe402c34"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "ec8b4d517b0634fe557608ee54d21e6ce7010aac6fb438bb88815a0e300eef66"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_15/summary.json",
+      "bytes": 2569,
+      "sha256": "20e35435220676d48591f342483c5415a1c2be5930a2736206b45f140a501984"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_16/geometry.json",
+      "bytes": 32247,
+      "sha256": "c1a446001f41fa600a548168678e0d7ecd85ca8273b98c3583a7e39189be1814"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "4d7dcdfccf787b424e7d182e99e44371e09d4076d70fd95fe1481d38fe26452d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_16/summary.json",
+      "bytes": 2574,
+      "sha256": "a9d0a5ea6a50c1d07e7680434c998549c55f4e6c9bdc0a26b731aa5906bec18f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_17/geometry.json",
+      "bytes": 32284,
+      "sha256": "91e5d390a6d783b1012efd09828a691e8104d38dee14f3f38bfca7f61a8bcd1f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "d988b757b4541a5210642681963068283caff73a7ae4e3ed4c43ac14b55431d9"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_17/summary.json",
+      "bytes": 2572,
+      "sha256": "cecc117eaaa4e54de6d6eb30bc6a6c324d80fcae01a5a2b18b24496ab44abb09"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_18/geometry.json",
+      "bytes": 32209,
+      "sha256": "528e3118e4a4d2303d9d0ed72d26afc93ec9f3c7e82bec116bb015ee36e106ce"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "cd79595dcb8f42117bd55c6271187ea303325c657c6f7a0f5a506cb6869c706d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_18/summary.json",
+      "bytes": 2576,
+      "sha256": "ccfca89569fbc436a6385554edb7c66af89b62cc7625cbd1510b322c2d74a164"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_19/geometry.json",
+      "bytes": 32185,
+      "sha256": "16b27e51dc365af2e9fcf8e00e3495490bd01f1ac97ea00ef396a0e795cb4fa9"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "780947bf4b610f985b5c47554d4451d448503f14e2ccf41851afad5959ca54e8"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/mass_cvt/seed_19/summary.json",
+      "bytes": 2578,
+      "sha256": "1a6362d3c5a42fd974ca604d94da1b2e8df8a6574e09563e8b64ded59d8ea82f"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_15/geometry.json",
+      "bytes": 37361,
+      "sha256": "5ab877b8b541664479b2032e5b8105b54e2291f096309d6b97af8c11d4a8d8ef"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "f9018fa24400de0412acfb538269383618692fe6c1f0d69d8c8d5e9d8918d4c7"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_15/summary.json",
+      "bytes": 2575,
+      "sha256": "40cd231b4a91a0c328459657c43dfb2a2ed3df0cc2cb70ee0a864ae513acb2f5"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_16/geometry.json",
+      "bytes": 37405,
+      "sha256": "af661fe46e861688c086af3fc4bfd0d95ffdfbd46810546bae4b5eb8bb25e74d"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "ea04b7b95e10d239fc9cc72cbf4101d81e8d43341ec03f47e792b434193c0f54"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_16/summary.json",
+      "bytes": 2581,
+      "sha256": "9c1118b5e80daed8891cd6ad27575dde6d97b6e8377974f0a2486dd7668f0a27"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_17/geometry.json",
+      "bytes": 37440,
+      "sha256": "a735a8b9a31c5f53295302d613460d128728acec3545fa0fc381675e6e8920d4"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "4b2cbb10298f3bc651a01a3c85f56bbcfc6cdd5ad5c1a4c64205b1becb7ab091"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_17/summary.json",
+      "bytes": 2578,
+      "sha256": "9a6d4b4d7c18ae9da699213db38eca757c54d9b4774c21947e8923ab0c097c83"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_18/geometry.json",
+      "bytes": 37369,
+      "sha256": "9c44966a46d136384dd7c1903bfde73163977b34a481f7b6d9a5b45157edc93c"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ef767d6d4d0d9260b6f69642e136e4bfaf1a3673523fcddb2ab55afb2aedb643"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_18/summary.json",
+      "bytes": 2582,
+      "sha256": "c708031dbccf9eff5c393cf38870f77916992e043b3369c3c67e62f17f930ab3"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_19/geometry.json",
+      "bytes": 37341,
+      "sha256": "34981a7ded5151887661f84f812878ede0bb10e4a99a8570fc17cfb38b5aa356"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "08f642b31b7cc771dac0105a4714644a5839b6ce2df9510fec53942c890b41b4"
+    },
+    {
+      "path": "planning/high_curvature_convex__mild__near/projected_mass/seed_19/summary.json",
+      "bytes": 2583,
+      "sha256": "7c6eee88977b96d9bdd7923b7d3f82650bab4d3429076df3a1d0d2c9a9e1997e"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_15/geometry.json",
+      "bytes": 71538,
+      "sha256": "a79b636b3ad785e6bdf1218a8aff77df68be9b036e71746abeab2990351d33c6"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "64b3f15771e26a9204fa62b3c0ed7625380756f517dd25f530026eef8ab90379"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_15/summary.json",
+      "bytes": 2581,
+      "sha256": "e2637ad5a2fe88fa7a6e61c6d7eb465d04f590965d1c44b150eec90f6017b2f3"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_16/geometry.json",
+      "bytes": 71549,
+      "sha256": "566ecba09635d6468aa41ee859a0aa6f0960c3e5caca4c94bba9a3032522788a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "65d0707fa3cd40ad90b42b30293975e07ae6ab30f50fc262554229044d183d6f"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_16/summary.json",
+      "bytes": 2584,
+      "sha256": "1ea9f5dd4e4891b2d6ff942bb139d9641c57de067fb47860ff45ac588e78838a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_17/geometry.json",
+      "bytes": 71540,
+      "sha256": "ddb9e89367750cbcddf071945fb8f4e6d182195f42aceb069053774b71983133"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "7df3c9f4ef956c4e162ff5dacf258b23faa4ea3e1415a6f54e43316a105ddab5"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_17/summary.json",
+      "bytes": 2586,
+      "sha256": "e42d5c2f2866cf1d2783802a0ec228206aa9a3a11c95fc2407ef64f44ad3772c"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_18/geometry.json",
+      "bytes": 71479,
+      "sha256": "6496a54e02c7223bcd6676b0fc82ff6b885765c606bfedd15329d251634437c5"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "bd6297ba8fb4d2f5be9a7748e9e567c404094862b9c0556b5b12ba300688738d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_18/summary.json",
+      "bytes": 2585,
+      "sha256": "38ee77db7b40abb1e7949b1f213cf39cef1472b9f1fab6ccc0d6a8a8525600db"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_19/geometry.json",
+      "bytes": 71458,
+      "sha256": "40b0016fa81ad7b5bc419d2d2062b51556890f53e4d0f177ae6bff049063b5d6"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "5151855dd0981313f1f8a21d0437f35f17e2d65ad60b29e883755a945342d922"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/average_cvt/seed_19/summary.json",
+      "bytes": 2583,
+      "sha256": "6abb008394a40b695ea91229dc66bd1a4c06eeb5f587ce190e8f7a5ed640e49e"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_15/geometry.json",
+      "bytes": 71582,
+      "sha256": "05c8262c9c763f1c5c1de078180d2e130d79d58e320c082633fd45eb10bf2a83"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "646a5dbb78cd6bac2c8be3902d5d68847370563547731161ab962aee5d78669a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_15/summary.json",
+      "bytes": 2582,
+      "sha256": "5d1289a225450b42c248a9a49a3c0c14484f5ba688dcbd7e82550ebf3fbdd932"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_16/geometry.json",
+      "bytes": 71570,
+      "sha256": "ed21048ade93d37c2255a574698d4f90c08b846c0d50261bfe9fd51a571acfbe"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "a3d44fc3d6c374aeaa8a1a23bed56d469fe2c724d3ffa19d0074f3171b005a76"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_16/summary.json",
+      "bytes": 2583,
+      "sha256": "bc5886acd65e7e69832c46f0cab408a64174ac02cda9ffdef8262f67ee6704dc"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_17/geometry.json",
+      "bytes": 71563,
+      "sha256": "975c4ccceb1435363d8468b1b8f0a299f47b89c9a099200a4b6765966443c5af"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "8ffaa66a04f47889e688b39b6fb14e58a42c3de1c4409547300c32ab689eb059"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_17/summary.json",
+      "bytes": 2582,
+      "sha256": "66bb93a8aacfd0ff516261a6fa26e283b2d613659eab0edd309b1cd40be94a16"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_18/geometry.json",
+      "bytes": 71499,
+      "sha256": "e5fc83fd28cb0b674c0aada0915f3a8ab18142167cd958ad37558257dd3edfa6"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "2abb4185a2d230b3b60b7cddba12fc75e66aa5bf52c0f4b77ff382475c035c33"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_18/summary.json",
+      "bytes": 2584,
+      "sha256": "0fccb6f5ffb079b652db4377326384bf3fd7662c5c5d947dc0d1b75ea644972a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_19/geometry.json",
+      "bytes": 71551,
+      "sha256": "74c8ecb10aeaea663ed868feef355413e4b9ba2d9bb3a8d920775661163950ab"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "a426b14cb7dee6ec90ff0371638db8ea6c22dbad00dd6d4dc5367525b33575fa"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/distmesh/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "cb455693ccff43efd06823da3f9fafa8501d404d55166af611a9d6c454d5ff17"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_15/geometry.json",
+      "bytes": 71551,
+      "sha256": "1641951d717937dce46ad4d8242be9482a81eb6b396d9a6ab4ae094d6f274426"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "7132adcd8530f0383998b536443001b98e94e734b1d99a4856ecf80fafefddcf"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_15/summary.json",
+      "bytes": 2580,
+      "sha256": "e54af920d7c3a02df5ef11813aa8c8496ba3c2188c5e2e1c65ca1b25d0a466ae"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_16/geometry.json",
+      "bytes": 71532,
+      "sha256": "c667c8fddd15dcff288ecc074f8d67d8fefd5c010ad1cac4a49c9d1760e9ee50"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "84842c942362bbcb319cbc27da3ffc511da3c0b0252cb44cd4521f9be4741f28"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_16/summary.json",
+      "bytes": 2580,
+      "sha256": "c3a9f201b6f7f9bc5f186a3f13b2e2b358b4a7ab9afd08837215f8e7129b4386"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_17/geometry.json",
+      "bytes": 71551,
+      "sha256": "10e13b6bf494cf03afb33f53812789015540360de818cda9ea6f2316e13d1a28"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "c6c3d71bb30ca02099b1e9174d638512dc3584fe44cbdd49e9eeda24c0a09093"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_17/summary.json",
+      "bytes": 2584,
+      "sha256": "bc79fdc0c88c5629a179a23cffcd5775af6be79a07fb6875680138030fc755e6"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_18/geometry.json",
+      "bytes": 71463,
+      "sha256": "958ab62c8be61fe71934dab094f60dd36baa8f62bfe05f2ef74e79b7b88a1637"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "3f6a0ee2fefb4e66c0fb03ef4ce809cc0a3fb32b2b8c24d89217b7f26fe933f5"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_18/summary.json",
+      "bytes": 2580,
+      "sha256": "2eb2f9c2dde360988f5df0112c9f9ccfc3363476178db39765771a53a143c412"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_19/geometry.json",
+      "bytes": 71461,
+      "sha256": "9d5bb346819142887c7971c55d8b69e5d5a7562247c82be8e7b73db70e103732"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "7e0da107ecdbeeb55c551b47c625dc54b199d96b4ffdcff3b10a8ecb8cd136f9"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/equal_arc/seed_19/summary.json",
+      "bytes": 2573,
+      "sha256": "0e084cd821bb9d1747afdfaa69ad9a8e76d9d01d87d3771f7c74551ead320332"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_15/geometry.json",
+      "bytes": 71535,
+      "sha256": "6eda081c99677e49c67b2123aaad346e0a4fb3cfef02167fd505874400c725bd"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "ecc85df41a847eea9c478c5da7d6f7e95621339917a83685809c5632ba98e885"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_15/summary.json",
+      "bytes": 2578,
+      "sha256": "adab70158da5a9673d38d1a78a61b56eddeab77417dd577a7be835cfbfdf2835"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_16/geometry.json",
+      "bytes": 71546,
+      "sha256": "22930924d56ed5aa37436207537eb57bb52693a623696d507c2f32b0c21e8817"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "f3446522820504c0a2369a5f2cbb71e861e6afc26133b1a3b4e472d8566875de"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_16/summary.json",
+      "bytes": 2581,
+      "sha256": "cdb900db250dd9832c19fb85ddfb2e01c03f771921544d1396b21875e59a2019"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_17/geometry.json",
+      "bytes": 71539,
+      "sha256": "9cc8bdf01091c4f05851daf7d3937c4db478bad90ae92b0a795eb0ee482fc86d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "8f39fb113f11af9ebf1786bc08d9dc532c36b30ba7761da3453844cab39d4aa5"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_17/summary.json",
+      "bytes": 2584,
+      "sha256": "22ae26bfb762000c6b191852cedf229630acf3bafa757637cc1f6b614a77588d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_18/geometry.json",
+      "bytes": 71476,
+      "sha256": "19901f11886863e8bc8e3f3775522b1a1472a7b3baa91a21aee8abe7c27f112a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "11e059f044a017a3e5616a69b4cf1040a89c8616c692a6336bd82ab493adb9fc"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_18/summary.json",
+      "bytes": 2582,
+      "sha256": "50c3151511b6e06e060b87060150a358531a861cac04fc7ee872cb0e9a2bc669"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_19/geometry.json",
+      "bytes": 71453,
+      "sha256": "cdfddc15c2d49f9a072e3c5588f73ce508adcaa6971571da872c3e4218e8d0d2"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "c6738ea22edb9a8572deeccb7d66d821f10ab934a7ab10c01c395ef5dcd7449d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/mass_cvt/seed_19/summary.json",
+      "bytes": 2579,
+      "sha256": "fa3a0720c14dcca4f0430ed107e56d42ee4651ad98d8ffc61e5532470db3d44f"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_15/geometry.json",
+      "bytes": 79419,
+      "sha256": "03ab1080ca90f6e5add20045c2118135a348ab75256605fe01f9bae9e77e60df"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "64f1b0c9c74716e3ad2c361ea5de88e736d38200041a478cd486840f6564ac93"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_15/summary.json",
+      "bytes": 2584,
+      "sha256": "a145ce5969e9bcf76b817748e16d45dfc0681517682d75b8b409fcf06001a5d7"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_16/geometry.json",
+      "bytes": 79440,
+      "sha256": "2e966a053ab8c5f758d06921afd402f3b12d55a4b7174e7706ea84773e86f4c5"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "3e4a83548ff3419dd6589b267b2401a7a5401fdbf1deaa70180ad7f61bf6786d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_16/summary.json",
+      "bytes": 2587,
+      "sha256": "7f0d6bffb8a2cc0974a3f7ea0310c3a31646bf63d5097e9464d24a6648a8b76d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_17/geometry.json",
+      "bytes": 79445,
+      "sha256": "558afb504373160cf5a11495c6184265ffa2e8ba44f94fa707c67496fb38dfca"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "a3f187fe916fadd122777fdbcfd90d8f28331a6bf51dffb60d725ab56544c3bf"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_17/summary.json",
+      "bytes": 2590,
+      "sha256": "b7d6b83cc25a2ac179663de2bffb1bca5be50ba1b6ad96b688c04d3781088504"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_18/geometry.json",
+      "bytes": 79380,
+      "sha256": "20c2cf87f84b72298ef85157fa2b58d092f7eaac0748a43a4fa7895c23c513c4"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "be3baf36d74262428c72d7c3f3f7559324c40b945338a5fe970c8b628d8c5585"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_18/summary.json",
+      "bytes": 2588,
+      "sha256": "fbd6c01b038d65d6b9e68be6c40cc747af322e30e771d5b5b050d9b4e848a02f"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_19/geometry.json",
+      "bytes": 79335,
+      "sha256": "076ca1e2360ef7aed38d960ecc8ab0e82e4e156060eacf1a83f65a6376661d77"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "89450734a5fb67b737e397467bbe298608c7f01eda5abcf9b98aff2fc1c542c0"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__margin/projected_mass/seed_19/summary.json",
+      "bytes": 2585,
+      "sha256": "527d60b1a5866682ddee8425884d292f2829cfb3ce5b65456aaa1ba70caf0491"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_15/geometry.json",
+      "bytes": 32205,
+      "sha256": "1f8fc8dfee30075e9e2fcc9fd0567b99c5ab7366ea5567c95bf896d8f285f22b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "316489dbdb9c6d2ebfd236f5a2f2741c914603ca8ca91bdbb2cafc5cec026427"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_15/summary.json",
+      "bytes": 2577,
+      "sha256": "b8c66745ec15aa25425b1f792137f26fe5af159fd6fc617da911c2222e541d03"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_16/geometry.json",
+      "bytes": 32259,
+      "sha256": "ea56a841cfcc8c836b2c3382e4f0d1f264128723cc220c2ac77c66f8f48ee59a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "78f1600587b0f08065185a9b78e2e0fc2eb401ee4a783ff10f3ca0d538f7c525"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_16/summary.json",
+      "bytes": 2572,
+      "sha256": "1aa1286ee50f8560802a6ccaac15f311d6f178756a731c96ff7fc968b649777f"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_17/geometry.json",
+      "bytes": 32269,
+      "sha256": "872b4d29c8ebf4328da44e25e94999ef78908dfc89553b020862b6ee81903997"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "8d0fcdadd3380b92b7d27bea6c9bdfcc591a8c9294d7a24f9d17f5454dda8eea"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_17/summary.json",
+      "bytes": 2580,
+      "sha256": "63f16c4e68414785833a2e2460125546844b3245de87b9f90faa7e7b22239a64"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_18/geometry.json",
+      "bytes": 32254,
+      "sha256": "c9d8ee65cef77f8103040b9a5c99b260f924e8f19a1b4331e1e8146a7ad552e6"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "1ad2b005de9661701890145b3d373aa46b74f00a1d72442092647e38884d46b4"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_18/summary.json",
+      "bytes": 2578,
+      "sha256": "19c9e1b163f815257f18b17c3d4ca4d6545d937fd706d283b15c1ec8b68cd23b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_19/geometry.json",
+      "bytes": 32241,
+      "sha256": "eee33bdebe0d9ba06228c6399ba719e4500a4ef9eef3a6c1cf0245b38527f7f7"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "da8441591e984e087ab8883a92859785ad0753778b853c9075f635dbce71ed9f"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/average_cvt/seed_19/summary.json",
+      "bytes": 2575,
+      "sha256": "194d2599e4b369289701ca412b135886b0fc2c3af720103eb2eb3aa4e611ee29"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_15/geometry.json",
+      "bytes": 32253,
+      "sha256": "6df5a1345828545bca1b4033809851a68fe220a3718bd70e378beb014f06147c"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "57d162d23d70b81273514b8854d522951fa5f59eb84b474178b296fb8b2c33d5"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_15/summary.json",
+      "bytes": 2573,
+      "sha256": "63170f73076bec18eb644d340ab174790ffd0c6616f15f98e78d9453b686ac87"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_16/geometry.json",
+      "bytes": 32257,
+      "sha256": "0b17cf306aa24bdb750d5a1cba226d6c19bc3693b99bf1fed7c24ca2e6a24dc9"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "db16841c6deabd86904d612908d3f5b7bf4d05dce43a5c96a9ed180d79b3a938"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_16/summary.json",
+      "bytes": 2570,
+      "sha256": "69cb126546aecf946aa1130e562043c473a2c5bd8c032f16129d568dedc86632"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_17/geometry.json",
+      "bytes": 32204,
+      "sha256": "2cf38d2918169a1577cd893252ffdd1329194022acdf50b476f41c112eee6536"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "576b6d840ae7f1ff4c993b78d6077c8a2e3f301f1e7bdf689b3bd9584c5ad48d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_17/summary.json",
+      "bytes": 2576,
+      "sha256": "8363e3ce38eaccebdccfd4524941d5740794c4d3bc66af5063aa246262f25d0d"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_18/geometry.json",
+      "bytes": 32205,
+      "sha256": "05335a4974e79a981f7522740e1f974fb3e82dafe5e04085732e400d6fc3bcea"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "7c4c6dba3da3126f2aa494cd4b45cb6e9d9e231843761307dd37b63d62b91786"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_18/summary.json",
+      "bytes": 2577,
+      "sha256": "455e527d9d0e4f5f839687e2c2ee94b6df454169c03ae0294666fc612876bc9a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_19/geometry.json",
+      "bytes": 32262,
+      "sha256": "cf75ca8ce320e35189618e51eb5d72e734f11e9511fe22233cc31a91e1f1d5a7"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "12033f01ba613a8196f938981cb17c12b10688bd1fd7a33076a41439efee7da1"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/distmesh/seed_19/summary.json",
+      "bytes": 2576,
+      "sha256": "49067d0768eba8301c97b491f185a9d8e34bbc8500e8f9d85c75fb5a63b44d7e"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_15/geometry.json",
+      "bytes": 32182,
+      "sha256": "21f35f958b70ed892901d285369c6f683ac5b5703eb32422c6a0168582b011c6"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "61ab45133f98f42860a8547a0da159f528b0c98c6a4bdfd8c4f59a40def0df49"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_15/summary.json",
+      "bytes": 2573,
+      "sha256": "07328b3ad719c25877b4a34dcb8c05aae230b762d596fcc24d76dc0149727f95"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_16/geometry.json",
+      "bytes": 32213,
+      "sha256": "b82dc446f042629303fd35060f1cb3145ceff873d912dd86343a4f4e735ad51b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "53d6109f8b8f7cd776f7d6f799128fc41f3b12fc379f4852288ec999b2a47bf9"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_16/summary.json",
+      "bytes": 2563,
+      "sha256": "86e4b577aa8006b9207d5e58f73cd06b15ec7885123ad80a3f1bd0b11c51be37"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_17/geometry.json",
+      "bytes": 32251,
+      "sha256": "7a8bbc71ebe1516c46cb09e2be779d552459d5099833a854f6f109981c75745b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "d96493ac96f7190dfa7eb04505f3d2e52a7e10a57c0829bb6a47d6e3bd35028e"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_17/summary.json",
+      "bytes": 2577,
+      "sha256": "4274dcb83b955f55135bfec039d5baefc135bf0deab0b322f184cbe6d8154ae4"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_18/geometry.json",
+      "bytes": 32238,
+      "sha256": "0ff62b3557fffc6ff7365c1ae546bc03400ef29717a8ea16f28869ae82f18735"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ceaaa6de86d525b02ab4c80844f75cb1b567ddb23d1f571575a6b3775ffee1b2"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_18/summary.json",
+      "bytes": 2577,
+      "sha256": "52a8a0cee544c2d417f6a2102b73bec335bab896840bba737223de20b0f08188"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_19/geometry.json",
+      "bytes": 32217,
+      "sha256": "411e0cd171ff6f35c5ba533a082e4da487bc7a8da8e0f5ff99af33e0e01cac12"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "5aec6e02e89f1c00eebf506351378c5a8598aeb8e3a6ff4094314bb237a75f3a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/equal_arc/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "e745e3296fc3b0746373d8190ee8bc4cfb694379aa11ea7ddc4a6608a3ab45b7"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_15/geometry.json",
+      "bytes": 32204,
+      "sha256": "70ac611d6c9bde05f09a25e41ccc698ad4f52d7f8d3ebf178683003e7976f1b0"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "58534085ed4dbab502023b38000d65c2b6b85e579b9e4c0ed83af9ac90311d17"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_15/summary.json",
+      "bytes": 2575,
+      "sha256": "98ed43b150b45c2c7249613f32feee8792354cf9dda36cb6586653171212f624"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_16/geometry.json",
+      "bytes": 32258,
+      "sha256": "76dc4bc627b3dacab778416083826b0bf1835ed05d1cf0c5292d1be897b943db"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "d5f91fdb347a84d8b750150dcae61f80ff43ae925382162a78f6271489d8525e"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_16/summary.json",
+      "bytes": 2570,
+      "sha256": "b1378e46cd3bc6fe8270f9e90a05d92d019b656e9c33a6840e3a2baab6fd18a4"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_17/geometry.json",
+      "bytes": 32266,
+      "sha256": "192aa90c9c46318cfe11033dabef6fa8c056a53b54f12b6ca0014883e40eeba2"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "82a649043ef298c639e6b4581e7f7d0b17b2b64b650c04b61b70781a72d70e22"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_17/summary.json",
+      "bytes": 2577,
+      "sha256": "f71a1fb33ceef9fa298e07bf59ca3327631508b57377e3b1ecfe1d482559ed0a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_18/geometry.json",
+      "bytes": 32255,
+      "sha256": "34a0d42dcf90c3caf73768755f6881b56e9b030e26812476936e3a1561534102"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "4fb711ee47eaf15e0a855ce35148e1136cf37b3655845e0e99d3f0b433738d46"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_18/summary.json",
+      "bytes": 2577,
+      "sha256": "369486c0a5702bb66a00736f5d513b947c6ea7c9b6b68c06946fe20bb977ae9b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_19/geometry.json",
+      "bytes": 32238,
+      "sha256": "45e13132eed50a5d51a93606e5fbfa83d5b27d5729bfe431509bfc35ec416954"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "f70e1c130b22970cc40947e83535ebc11bce59194fc16eb8b526f460511db64b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/mass_cvt/seed_19/summary.json",
+      "bytes": 2572,
+      "sha256": "855a98666b294da66d1fd694e1e7f2006faca04523d621965b3b1b7901f6765c"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_15/geometry.json",
+      "bytes": 37354,
+      "sha256": "b7472438c08986f89973bf1fd944859b35a909fb7b85cfa1f4d32298e937b4b4"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "87462b4164d002ac920f6e9df107162cb9cb45cf26a5fe2ac204bcc77c60471f"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_15/summary.json",
+      "bytes": 2580,
+      "sha256": "ae824f6e121ededcd35bf219b2079c333bc46654fa10a0646e7238afc6ff2413"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_16/geometry.json",
+      "bytes": 37408,
+      "sha256": "8fa8d8bdfc2d1a0be01138f8279d1acf7f5f95f6afbc4bfc482ea4497823b42a"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "d7c049df02706ccc9aca05eff4364bb71369d3a9faf6f5dcd8c49b22c78bd371"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_16/summary.json",
+      "bytes": 2575,
+      "sha256": "ef7f28d15714a690bce54ebe30f329339c1ab8677f11e28509ccbe6490071655"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_17/geometry.json",
+      "bytes": 37432,
+      "sha256": "1b6b0f9f73308d358d571663120359eda3b2fe57dd2ecd32d1b9cc938a2c1941"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "262540150250b9c39e127ffbc242b498e06de0cd2f21320a0ed2a5a0e4414220"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_17/summary.json",
+      "bytes": 2582,
+      "sha256": "01705269a01fb9f0dd3ad583ed826f71a297c7b57ec19c7144e6a4e8cc14496e"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_18/geometry.json",
+      "bytes": 37417,
+      "sha256": "bf5812881f6d2010e4d80a4edc58ae91c1a99e49053371f4300165111e30f502"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "3d18ceaa51739e31b4889eb9806addd3ab520ac4b3ee5bc55553e92b713cd416"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_18/summary.json",
+      "bytes": 2582,
+      "sha256": "fecc1207544f0bf71bff2b3819939359ac9e8cd1e6b9d2edf3748fd07671f29b"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_19/geometry.json",
+      "bytes": 37416,
+      "sha256": "af0b93afc004ccec31950930a3b2446d33a98f1f1cefec1d3ff8760cc2719970"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "25fda228bf18af91a4f13ef06824f2be2bf95ed0707c50b9f356bd7988ccaad9"
+    },
+    {
+      "path": "planning/high_curvature_convex__strong__near/projected_mass/seed_19/summary.json",
+      "bytes": 2578,
+      "sha256": "8b62b6c1a84bc18a705538c9603de328af576a2c00d83a00666d374c1312ba6e"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_15/geometry.json",
+      "bytes": 71486,
+      "sha256": "689a031989b5fd489c7202a7fdbabc64b1968fe39315a08e7109929f80e66407"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "a8ed03e7647064a16257524c77e9f254ec9be7799a6a811676dfdc4ee089f53d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_15/summary.json",
+      "bytes": 2578,
+      "sha256": "7f00054c4cc1a93c6f6a284b6d7c6e62f9f11169b6dd04c4189cd8ff51dd9e2c"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_16/geometry.json",
+      "bytes": 71432,
+      "sha256": "e6d956ee25a399c7ec02e1de6090d53cf538bcd40afb76d50e97105203ed23f7"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "c785f012875793277d7914574110d97b554b9d74a7db2a736481e58b828437f2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_16/summary.json",
+      "bytes": 2569,
+      "sha256": "bda3b8831b19f8ea96988c9979c42be2e782a8c2385334d579505b67e71b0e3e"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_17/geometry.json",
+      "bytes": 71524,
+      "sha256": "c7f3fedd163ca600868c2b35f50d2a3d8b98fc3f38db8e8f3c892b190ae2d36a"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "f13ef24dbf5320a1b4098ae622938916fc46cb28b0b9b533a26ba213830dd4bf"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_17/summary.json",
+      "bytes": 2578,
+      "sha256": "e4a80e41653855c2927f0fcc938a49878b58dc296925cce859f1fd06b296bcca"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_18/geometry.json",
+      "bytes": 71452,
+      "sha256": "c5639587b0f0a25d71100fe693527e594b478504ca7ef6231b6853248e386fef"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ffe4d4bb1fa8bcf24ec3f2b1fe9ec362c6f3c9fe0ed5360f2d0fdec8d0faaaa6"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_18/summary.json",
+      "bytes": 2576,
+      "sha256": "bf97735ae95d4cd748c9bbaaeacf7de374cef567c23ce93a4888c2a5c814d1bb"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_19/geometry.json",
+      "bytes": 71500,
+      "sha256": "0e6ff1a93e057cedb37ce12be4d30fed252da91bc520b92b5bb6368b8d47fd3d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "a4f1cc23261d356098cd0c33718b00663bc7384de22c1f05b8951de6642e7c75"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/average_cvt/seed_19/summary.json",
+      "bytes": 2577,
+      "sha256": "f54f6d1f15f462d6125986a2d8541058a56f2c2351e5bcc8c486455a7e915b11"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_15/geometry.json",
+      "bytes": 71428,
+      "sha256": "8b2ed3c2c246f4f8952c429b3f6076d74479d96795ba956a1c79431cca38f8ba"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "9eeaacd542e8c296dd74c97fce54cdabff568c19f975628772621d7418c0aa42"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_15/summary.json",
+      "bytes": 2567,
+      "sha256": "9c406a21fc1863a194483b7bb604dda4f493b4568257cf2b61bcdb15abd59411"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_16/geometry.json",
+      "bytes": 71491,
+      "sha256": "9e99a5e4df889e79c24c8269546b5f70794091637449f6d736225de2e98af813"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "8744ae5a554a6d10c9de04e8c80befe7443d98e63c6fa91789d6cbeb4aec97e1"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_16/summary.json",
+      "bytes": 2574,
+      "sha256": "7ca87a1f9100ab12d18973ce393e3a9ae76c71391d79d8cf26f2d67d2c6b9186"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_17/geometry.json",
+      "bytes": 71496,
+      "sha256": "f4f35f825ed1700f62f52a465ccf8374e44dd57bdd47a6fd6d4042a718b8916d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "1b375bdcdb7bd4661b8249de8baf60c1f6616c9439bfcc0facd5fa3a1ed9ce45"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_17/summary.json",
+      "bytes": 2576,
+      "sha256": "ae3a069aea78fe28b25197de6b38c4e1b226113b4022577493615996e2cfc6e7"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_18/geometry.json",
+      "bytes": 71459,
+      "sha256": "228a968e96c52a08fa28bb2c225d8b156741e043a4417d755c37d97e3477a9de"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "39dceade37322368c9f4564e0bda154f451228f49de6cde5cba5b148a9d33a18"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_18/summary.json",
+      "bytes": 2575,
+      "sha256": "47e0d81d728f8a0c20dad01ccd5c93844e0acc348096eadb3fbb4566f3130692"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_19/geometry.json",
+      "bytes": 71501,
+      "sha256": "cbc0de49379ee8759d6a79c672033be33d22fdb2311378340c945ce53d2d48fb"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "9ad4c07cb4b9834a8b34db9409faacda97271142d8f269e1bcb429474d5e8720"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/distmesh/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "0d9d67b41b617e8d6c18b5097923bab26ca6517ab24e2ad1a2cf8c78ba5c0de1"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_15/geometry.json",
+      "bytes": 71425,
+      "sha256": "22f033c13a171431fb67161dce15b6dc77aea179296b71acd862ebcd51bdeaa7"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "3c6cbebe4f3e8dc2c07a0c944e565250001870f1aef6e189e1aa4d0706c0d651"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_15/summary.json",
+      "bytes": 2570,
+      "sha256": "b149f30d9d300b5f6ed88ccd0b4e9a34b20fcd89192f265c58adf147eaf227c2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_16/geometry.json",
+      "bytes": 71408,
+      "sha256": "d30be6108750ff60907e56ae65825ee817df4f43a169a6673a06119a1a26d088"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "027accfc0da9418c7f531b307c7fe96fd5af37e796481b85f2b94a5d06eedc0a"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_16/summary.json",
+      "bytes": 2565,
+      "sha256": "9db567985b584c5171e1a11805e4c28c41c274cddc17b31c2f2a2d950dd93a4e"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_17/geometry.json",
+      "bytes": 71475,
+      "sha256": "f33479749b6d46fa4430b6875cb14ea62a3ed98d37c0c6c56efb5d416d34239a"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "209348c1935cb5da0f1e70b35e7326471a6a6355657ff780255663ab7ff2163b"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_17/summary.json",
+      "bytes": 2573,
+      "sha256": "0aa24ec74585ae0b2a4a092f3c2b8b47af052a356307a7289dea7415286e257f"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_18/geometry.json",
+      "bytes": 71410,
+      "sha256": "836b48580dae8f9bfd60aeaa7ad1661f3498b4175bc769eff9496ecdf57c58f4"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "151d78b2799de6d6ad7e0d9b6ad794309025c22998e36b89a209e993786795dc"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_18/summary.json",
+      "bytes": 2571,
+      "sha256": "06af0b0e7a7f02a611c6d42d97943223ce49e48bc9ab4ad49cfef395d8981fe7"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_19/geometry.json",
+      "bytes": 71466,
+      "sha256": "91b3f1077d6f035218cea4e901b2587989e285ad4bc59ef86b496d2b11bf3bb9"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "2c1fe17d5ebbbe20f6e5bfea4086d9e97039cfd7bd62ed2d69647eab98a1ea6d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/equal_arc/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "d1e51c044767445ee07ff9316f6f996c39298f7bd669617bfa971d95b018fd86"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_15/geometry.json",
+      "bytes": 71481,
+      "sha256": "47c16dfa651091c223b4fe5e5e7c90647e6cd6f2c3565bdce1babeedc69730fc"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "492d04f720ff6ff96ac0613916f2265da66ae3354d03af42df779d367f6fafbf"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_15/summary.json",
+      "bytes": 2574,
+      "sha256": "86529968c2f2b46c266067fad6447d4af1ff291167df9ef7bc0d0c967d172ce2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_16/geometry.json",
+      "bytes": 71431,
+      "sha256": "e9a9c8e65b086bb109ebcab22225dda0ae25a615a47848c439fd8470fe2dfc58"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "84ea795ee66acb1a7ba18cc4f6d780fbb2e80beaab14346b2a996b66a30ff7fe"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_16/summary.json",
+      "bytes": 2567,
+      "sha256": "08c7bce033e91c69b6831fdbb344abcaf9cf7cd792a38b502288eec390652051"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_17/geometry.json",
+      "bytes": 71521,
+      "sha256": "bdaf94e948d379586b828f6a50e46046c30509c66c347146d3ef3f3e68299a90"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "6412a6d214dff81e60d0bb5967ae190ceae7ec52a9be0a896f3c8731090b5cdb"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_17/summary.json",
+      "bytes": 2575,
+      "sha256": "a7b2a67f99a476a1c1fa606a3f6a6a3d1c33cdf2a3d60d51a5c9e55b9ba988ed"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_18/geometry.json",
+      "bytes": 71449,
+      "sha256": "149cbc421b70296b3796c3bee56020fca0a8a209eb230a4a9829a998a19ad10b"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "7f81a5c5894554fde03527166de53f8e3e1f1941aee28034a266a01d67997903"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_18/summary.json",
+      "bytes": 2573,
+      "sha256": "7689a75ddb7df9d86a2ef84335038ae1fd93452bea17424ab340b6f2bea776a5"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_19/geometry.json",
+      "bytes": 71493,
+      "sha256": "fe082031d9d2cde14c664aa4a3e689ec1fbb5c9e0ffed387f33a595fba8c534d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "b97de52c9f96bb3dc4d44fc0d294777e11513ccfc0bf6738ca0be87441449dc6"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/mass_cvt/seed_19/summary.json",
+      "bytes": 2572,
+      "sha256": "8d7ca81019192cfdda1025918398471723f65867389dbdff38a3ea11517610e0"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_15/geometry.json",
+      "bytes": 79367,
+      "sha256": "e1a428e69f6d7ee095fc56cd14e99fd471e0099ca019e4c5b9f246dca2b3584f"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "1abbcefba76812bb1a9363359c632ea855d136615742cd42b7223734bfeca776"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_15/summary.json",
+      "bytes": 2580,
+      "sha256": "c62e6a36573eb748a372187a8647108a5a5749537f3fd4ced49154dab6bc8752"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_16/geometry.json",
+      "bytes": 79311,
+      "sha256": "674034302dda8b4aa68b7531abd54a766c74f7a38711f69c90f9973a418d12a2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "9ffb9b567feb1346e54a459427a27017305b32f3d72e92ee119d4800e3e6ce21"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_16/summary.json",
+      "bytes": 2572,
+      "sha256": "662086f7550f2a71b778a061c417e5e8fb79bea4942b251943f507cf18f4f295"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_17/geometry.json",
+      "bytes": 79409,
+      "sha256": "7c0bf7e1e4fcc5f5964ae86f341714dd35efd22f3c1ebd90cb1779ccfb5fe2fa"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "b8180a312da2423a107c8873f5e2300440d23767f5e23c1350976e43e8c50875"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_17/summary.json",
+      "bytes": 2579,
+      "sha256": "67c99bbae2de4b7dd24b2c5197692de9310dac1e34850e11150decf7ed2fd506"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_18/geometry.json",
+      "bytes": 79356,
+      "sha256": "f5af624fab95b81a69f705f800d292bf28d6800c19b47c9923342ccf44bed28d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "363206db3038ae54cefac1f4649b799f4305b3a383d94c92277d5e4089972208"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_18/summary.json",
+      "bytes": 2579,
+      "sha256": "6ba24156bc1897477eb1ac42fdac1f7e9f468a85831684f6b2e6fc4e3d33777e"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_19/geometry.json",
+      "bytes": 79396,
+      "sha256": "854e6706b82caff2c2a9c4f9443d6f6b8544689f339d12b36cc0d538461c09f1"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "c17fa045ab26fe822cce57fd8311a725f326256d370b851698ad8d1eb4b8b6d5"
+    },
+    {
+      "path": "planning/shallow_concave__mild__margin/projected_mass/seed_19/summary.json",
+      "bytes": 2579,
+      "sha256": "61d5b58174619d22d0af31b0bec5a1ae52a9c0cb8466bf4983a7bbe41cb6902f"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_15/geometry.json",
+      "bytes": 32143,
+      "sha256": "3e3952bc310a471c81d55960be17a8424a51711b19b33850d82147506ed9d144"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "3b552fe6c50642f36d838b38ba1981e987f2759fec8a75dacf5bd2d9f1d4d79c"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_15/summary.json",
+      "bytes": 2564,
+      "sha256": "ad39058ed97994102b4f8b70a2494da3fef01c5522d44ad99b7afd76f3113504"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_16/geometry.json",
+      "bytes": 32244,
+      "sha256": "cd7186a3f86409fbdd556e915636a4a128f8d221f7d59c3b6a32ab0b382fefee"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "a99ee7f5b2c7a12960aec5e05b8d435555857ac89e26af4d1aba0795b8bc369e"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_16/summary.json",
+      "bytes": 2574,
+      "sha256": "ff59c4156d6b7e6e24fc8f12d29b7129900eff09a3a3e4defda13834f83293da"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_17/geometry.json",
+      "bytes": 32239,
+      "sha256": "2f3a051a00bee610e60ebcf07dcb65156efef23507ad5ec3e7715980cd239380"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "dc70d7f1e855cf5628592fea796c189e07bdc8ae20fe7b762ac1abdace9dcbe1"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_17/summary.json",
+      "bytes": 2575,
+      "sha256": "464dfdd8ce69ed5c944ef6ba9136ec57323d6e5c47c4c3340dca8680404d323b"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_18/geometry.json",
+      "bytes": 32236,
+      "sha256": "0e670128cd41a75734ce736e4a6d3bddc7e8461c35a0bb59c72b81f2fdfbbbf8"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "0edf32556b86b65d32492a6c9cb1b821e1d220674af9e6f75135338c5e53eb25"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_18/summary.json",
+      "bytes": 2576,
+      "sha256": "eea7860a75fb08a4ea4057192aeb49c35317cdec7d9b5505971c04d485fb79b6"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_19/geometry.json",
+      "bytes": 32182,
+      "sha256": "a5dd93dd689c03bab0dcfde6a1a218806df26b88085699e8dee53d1f178d6589"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "194a0e4803c1d7b3dd58cf8063f98e9ac02f8bf1f03e855cdd2abfefa632dabb"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/average_cvt/seed_19/summary.json",
+      "bytes": 2575,
+      "sha256": "21dfc1a70c7e1f885c6419ec08af145d1e5fec26cbc56286811410529cdd1856"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_15/geometry.json",
+      "bytes": 32149,
+      "sha256": "3f8b2398c3977563729da025d2b2f7c6ca15711de13373d219bcc0906ba9d515"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "c671ac5a7f56a78b4e564efd42dcb811590cd455f2a74e1154104115d20b296f"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_15/summary.json",
+      "bytes": 2566,
+      "sha256": "a1e9c0ebb4b585470a4ea0083cdbacc62d7f2bb0710d72cb1c1a2093fbb3bf94"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_16/geometry.json",
+      "bytes": 32220,
+      "sha256": "e03b397ef799792afa55632890f3a2d4f97777e9bf6a347f772e66d881d46127"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "dad29ebb777572090e999c0e57242b6572b6baaa01eaff1d85468262126fa9e2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_16/summary.json",
+      "bytes": 2567,
+      "sha256": "0b9f9bec10460b51687599931fbc863fda47ac6cd822fd1835fd96da374334ee"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_17/geometry.json",
+      "bytes": 32214,
+      "sha256": "d045cd191e759ebd987aa2948f1c62f6a65608085092728706f856232363cdc3"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "3bb7531e5376cb4c2e5355f20c78140c6351fc8adb91d7eb32a468daaacdeac4"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_17/summary.json",
+      "bytes": 2572,
+      "sha256": "00812b449f620072123b5c9630bf319f4ece6176f344d9ea7a079ab8e46ddb55"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_18/geometry.json",
+      "bytes": 32214,
+      "sha256": "5d17b7a4f292e52687da9d0dc0631ad23e72dbc57b6a7837c214683fade461e2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "9b32fe14ed165485a315e7feeaaccdc8ae4a54ef250ae4518b51a57f57ea3df9"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_18/summary.json",
+      "bytes": 2573,
+      "sha256": "2bb643b518d0c21a757a85f7cda533998d5147031f84d331eef08f5116f86251"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_19/geometry.json",
+      "bytes": 32218,
+      "sha256": "a114e2a0bec6295447867a06099720f79a4f2d59962c94324573a3b40fc8589d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "ff47812dea75084a04a91bca213e796be756e5a48a450b3c1dd66f4ffe290d49"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/distmesh/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "03d47219f68d0fc1ad572ef79bd1eae21d6e8cdf2205ff03aa97c863d6ec614d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_15/geometry.json",
+      "bytes": 32099,
+      "sha256": "90aea7a54a64f2689e8993ec0b783e028344f114edf77d48486dcef8009993bb"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "99589e2490482c408af59196cb53c0c128981450c020d10999769ea5e8bc0368"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_15/summary.json",
+      "bytes": 2560,
+      "sha256": "bbb2b58ee24bd73bba3c6025ba62012f5dcf4f10f573980072acea0630699ad0"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_16/geometry.json",
+      "bytes": 32182,
+      "sha256": "c09b9ab8a07ea57f2af631873a643b5f0e93b0d2113a37defd3a3083befb20ba"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "1e700ef330b73307d98392e3bb626b3587702e15511c83271457edb17a6c5e97"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_16/summary.json",
+      "bytes": 2570,
+      "sha256": "6a89a1d2d1e0ccfe687f6b39b23a0059249fe2ae8e8d9586e4b2436b3b563ead"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_17/geometry.json",
+      "bytes": 32195,
+      "sha256": "a0262fa3c4f07ef73f7a16db77a5044625d3217d8a8268552b1618b5aa78fb6d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "d3119a1d6a6362bc6e68a8c26dabe806e429205922add7b6ad44f485aca7e91c"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_17/summary.json",
+      "bytes": 2571,
+      "sha256": "b99aa0fda106a82719287e83282a32d79f499f36b3a8dbbe69e4147a9e5961d4"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_18/geometry.json",
+      "bytes": 32184,
+      "sha256": "f0bc67a7189a2c91364aee953e15a48079d6c29ef20b4539bf3c698d0a03cdda"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "061c50f7a226ca9fdc7ade4534216e6bb685aac3cead29ad79501434f55fafc5"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_18/summary.json",
+      "bytes": 2571,
+      "sha256": "344e3cffd218302407a6c9e285ec92f92a6c322f39b005db01e20f90b4be851e"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_19/geometry.json",
+      "bytes": 32126,
+      "sha256": "5c9408c2560db83b1acb30b1f164a657331ca7e6e70b08452cc76606ee1172b8"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "1aa4a222366caac8ad9b975c18d1ed07966c8d534e6f4df5630c3a45d7e2a935"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/equal_arc/seed_19/summary.json",
+      "bytes": 2569,
+      "sha256": "021f57b3c5cd125e3b402a482a76b13bfd6d1b92b45e014e101594b00e3d6079"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_15/geometry.json",
+      "bytes": 32140,
+      "sha256": "d9756c75ccecd8844f166b96f265abc025ae84189923e9309fad6f86a26dbb82"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "5c77a6970604ca5305e87c163a8ddff9b2460ada78ddab3ff179a98218b4b1fe"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_15/summary.json",
+      "bytes": 2561,
+      "sha256": "1e3cfac299fd0ff46c80c9c51c2f07b46c2fb505f545bfd2a4241c398da4da1f"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_16/geometry.json",
+      "bytes": 32241,
+      "sha256": "7f435df1ef277f6c5304cc8a9c4fa107ad516594df2086779dccf161575b23ff"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "acc768c6e1ea4611e2665d84415ef5057510407035c6bdb72457f8bbd6ddee1b"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_16/summary.json",
+      "bytes": 2571,
+      "sha256": "008f04a2faf7c869912e85e9df5b351e0bb74f440982ca9251f0b2eb0f20b4d8"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_17/geometry.json",
+      "bytes": 32234,
+      "sha256": "f75705048121b03493155f38d030abf0c97c9d2b11f80c3dee88f4d1e3a12a46"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "b9e3e45a55597da4fe91f36d4c328709cc053aa620e6c503a204d2d587cdb55c"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_17/summary.json",
+      "bytes": 2571,
+      "sha256": "5afde2c2300c3bbe1772b8e0fadbd36edea99bccc6515cd4c3fea42e98f00e1d"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_18/geometry.json",
+      "bytes": 32233,
+      "sha256": "0df1f56154f3aaa774b13e069be8a7ead1cc8c09e935b6f288995914b19a76b8"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "b3dce07eed8b19a36e7408e1d048250e8f8cc912b9af4a9a33905ed91ae761b2"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_18/summary.json",
+      "bytes": 2573,
+      "sha256": "a3de5f76a04f7617c919ea1c9f6fa5b3b09f708bedf8e62ffc4b809ea280be9a"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_19/geometry.json",
+      "bytes": 32177,
+      "sha256": "5309f0571bff12f4e9dad47133ae85da5e88ae0653c7497f7617ee27d1e3a396"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "f62d20bea6f97992a3fd526cd2f64e66ed93954acbe69bc605e38dfc047f9528"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/mass_cvt/seed_19/summary.json",
+      "bytes": 2571,
+      "sha256": "dc3b12da9dd327e837f2e360e6faec84e8320875fe995c509d63d50687a7c5b3"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_15/geometry.json",
+      "bytes": 37282,
+      "sha256": "fbdd5c3342b45614229f411027175aefeca294727379fb1920725e13c0d4b809"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "b0a54d6a1c05e1464d1dfa3c9b23a8977169a8a3c56a72c2ffb9e95316495858"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_15/summary.json",
+      "bytes": 2566,
+      "sha256": "57a6e3bd312b69e60d545fe4193122daacc65cdafd7e7af02cca5535c45664a1"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_16/geometry.json",
+      "bytes": 37405,
+      "sha256": "1dc3b53c361654f6a721eca194450d63ca1dbb217a747b211fc1a125eb705cec"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "3ad7e35b96f05f127fbdb321e3325d0d13f58fa2620117dbe0803adf1010afb4"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_16/summary.json",
+      "bytes": 2575,
+      "sha256": "811fbd9c63f9158c3e85445e39133d918cd10d45a246934311adbfc45752ac7c"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_17/geometry.json",
+      "bytes": 37394,
+      "sha256": "a0b74aee77866643b14aec183c7fe3d5cafca5049e23341a9dbf873da51bfc63"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "7793325afa55b2fb84e5e082d7828b4f0c937016e6412f88bf55c1ed6651a93b"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_17/summary.json",
+      "bytes": 2576,
+      "sha256": "86bae3b53ca20b6833a54ae10bb937abf12bd58ae346f1a8519cf5be34eaa081"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_18/geometry.json",
+      "bytes": 37389,
+      "sha256": "c985f5d50ead046a402f1ba0f7d211b352da91f3d9919e4ff15733bfcfe0ae35"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "b486a184be885ed18c49c225e65d4f4eef2dfa1e10f3426029ce6852cb230772"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_18/summary.json",
+      "bytes": 2578,
+      "sha256": "f493ee145a09f0d8202d1848eaea4fda4940ddc07a97cb023e3e256e985467e7"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_19/geometry.json",
+      "bytes": 37357,
+      "sha256": "c424de0a6fd06efdf11a0af366020f1cc946a18612460cc548d2b214a90a7ad0"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "9d1eb6b937cb73d7cbea69bb4d5353565a4e0fcb75d1c70c0050cddb22a9bc36"
+    },
+    {
+      "path": "planning/shallow_concave__mild__near/projected_mass/seed_19/summary.json",
+      "bytes": 2577,
+      "sha256": "7b08d5d035fb9f5ed5cb0fc201a97b49b27236f61a11074d2d6bff1d8c8f5202"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_15/geometry.json",
+      "bytes": 71473,
+      "sha256": "8207f32bd248ff0749d6b1cfd753397cbe11fdfdbf6b9ae6eed23abaf5d53b93"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "96448de9d2d27100fc88797c73026a8b0421c2f09a25f0f111058260008ddc30"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_15/summary.json",
+      "bytes": 2573,
+      "sha256": "6596cbbb7cfc17ea8fd97a6d3cdb505aecfd905ce055a098ca0555f724e46be5"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_16/geometry.json",
+      "bytes": 71488,
+      "sha256": "dfe628d60e3916aaf2778bcfcb97a9bb98df299ae837ca997bdeb86ea6ee41b6"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "720fdeafad8a2662bf2fcbb29ff852ea36ec3346dd9dcd04ca37a2e46c214f44"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_16/summary.json",
+      "bytes": 2577,
+      "sha256": "dcf033226c2fc7cc6f753ad37eb0e77f98330f60e737f9775ddfb31384990b2a"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_17/geometry.json",
+      "bytes": 71451,
+      "sha256": "0ef73e4cc56172215327a3d0fea0617000b2fcff4a49dfb14d657e7e3b33f8b3"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "29ecca0f329f56d7834d40d9b83182870b4fd219e68cd1c95611d8532b998519"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_17/summary.json",
+      "bytes": 2575,
+      "sha256": "c1e5fa6e36656093b9072e3ab33aa17b2c64e5be264d862c5853e78e44cc19c5"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_18/geometry.json",
+      "bytes": 71470,
+      "sha256": "a81f4ef2dff8f598413c23047f0b60c6dc1664491b050f54776837062c7d20c4"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "30257ed3fc67755d5f510ce1fd8841184ebd2b35ad5559719de2c7bd71e696c1"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_18/summary.json",
+      "bytes": 2578,
+      "sha256": "e8af996eab73e10c1e4e1ca44527322ae902ba9fbaff993450085b393fe74314"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_19/geometry.json",
+      "bytes": 71480,
+      "sha256": "5287c76d5c3ff1859fed3371d429832883a76e7d265203aa64ba56301838e80a"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "61efa0e19080fd1295862bdfd5e6ca4c8b5d2d346ec541ea178e66162e97b7b9"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/average_cvt/seed_19/summary.json",
+      "bytes": 2578,
+      "sha256": "67940e795a760480d3842db3421abe372cc8917197e34b023e075215acb67e3d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_15/geometry.json",
+      "bytes": 71532,
+      "sha256": "95b9355c206104ddd0cd2478d9dda762a8277ee269b1257adef0345d2e36779e"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "3d613ab43bb11a9df39d6f1c17db588d92df28c78d133f806d8f80cd2bc1bfaf"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_15/summary.json",
+      "bytes": 2571,
+      "sha256": "6edbd88bf8516ed902012e81d3cf0f5cb6bb84a284b69f05f53562f8626ded0f"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_16/geometry.json",
+      "bytes": 71465,
+      "sha256": "847b9676b2b9ddcb1220302ac0adcf3505e88b716c4bb1b533fdd5a81056a8bb"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "830ced8ed1ccf04da1367b643eed6dbe0370aaae4e4f49cc03c45e131ae6fc9d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_16/summary.json",
+      "bytes": 2572,
+      "sha256": "566a1e97204603a0a8e4359fdc51a281b886fca4f1730aeb103724742d693bd4"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_17/geometry.json",
+      "bytes": 71472,
+      "sha256": "5770be583db9cc43640ff38db8d4004046f1d1cec9e5bcd88e9a7b9094d737c0"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "e61081a832de142af3a7c7c25337ece31739bea64f056176bb3f88625edcf7a3"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_17/summary.json",
+      "bytes": 2575,
+      "sha256": "df1c83b72c3c96e6db272dc95594f26279b7a66ae1a351faae50cd50963b61d1"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_18/geometry.json",
+      "bytes": 71475,
+      "sha256": "2985eb2699a77e6117d0e5f21d8dcb74f7341639ec4881a19504d8e45346676a"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "463509b052b58d2df546e292f72411d54f1094322d8f9c9d669c032ab86dc9d5"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_18/summary.json",
+      "bytes": 2577,
+      "sha256": "58224647198b34d6044eb57d70a34126ab66844185f31c1574bc4ba30b44cbe7"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_19/geometry.json",
+      "bytes": 71465,
+      "sha256": "b3e0d1f1d7947c295c163feeb24b23926fbf25fea55973a546913568ddc5f687"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "3594ac6451f8ac5e166d2b78e47fb6b70a33a16f0c20471a3aa7891a3485356d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/distmesh/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "b08c4f45d09d9817aedbe2f19a80c8c0f94f7541192f7e68eb882939be89a35c"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_15/geometry.json",
+      "bytes": 71427,
+      "sha256": "97e4a115eeb052a3ffe6d3330e79602f1f8873ca7851d64a0b897496a33dce5d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "b630603b26f75ec0639c978de8defd1ef0d74f97c2bb16072842796d70b9268d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_15/summary.json",
+      "bytes": 2567,
+      "sha256": "47e02574db9ea51bd7ba8d8cad5076ac2dcd8829b2990d9b929e4a26f0a1d679"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_16/geometry.json",
+      "bytes": 71440,
+      "sha256": "aecb3cb5baa3c1aad05c8e27a1e8feb78d805890e786cf446163b1acc0087456"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "e5c9069bf12fd852deb6c3d89c43c231c115e0cc9e26f18d56e44320d45d227a"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_16/summary.json",
+      "bytes": 2574,
+      "sha256": "e30aa332ef94b905066a36e7c07a354184a33543f49d7e43de498a88127918c5"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_17/geometry.json",
+      "bytes": 71420,
+      "sha256": "b2a15c37cbf929d0915ef6dc7e9234110b66a76ee8b3bd6907bd6d4b1995b7e3"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "68e35ad5f46cd140dee38cf0a5510b8b465180e9d7310ca6b251ca725922ab7d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_17/summary.json",
+      "bytes": 2574,
+      "sha256": "c8ee5e368d28aab69e0afe174ec8947ca89d338c8b3c08cb37a184f8705c0ea8"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_18/geometry.json",
+      "bytes": 71467,
+      "sha256": "48687c6bc1d0f074d38bbeac17a4f9b6bfb58a034f57c651cc2189ffc68a58a3"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "1fe2c97968f5572f16f14d7f1008c20c5ba3f331233794a0db12f1f546019472"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_18/summary.json",
+      "bytes": 2576,
+      "sha256": "3ed785e9d9efa99a097c252713ed69417a9971e229ede4c59cadef557824c0c5"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_19/geometry.json",
+      "bytes": 71444,
+      "sha256": "e736b7a5069ae2573a1cd7788401bc4547561b8ae6c4a4cd18f08fee8de7470d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "0a360a292b9199295d39c045db36fd61ecf2d4a937171d5717506a63eaeb8dc0"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/equal_arc/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "748f41bad1d767d842bc986a2020d632740585db95d2104b59e3d68248fee774"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_15/geometry.json",
+      "bytes": 71470,
+      "sha256": "7aa277fe4a50bae2f2f4fa39a4d4ddab8d71f85bb41e55adc5880ac4692c6b8b"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "dd283022beb95788210c43b3bb55942938c6c1788103f3e7eaa5aa861d1e0409"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_15/summary.json",
+      "bytes": 2570,
+      "sha256": "6b87ede47a7a07dafa1e6eb1a9373274042e235a004dc38b193920d181c6ff39"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_16/geometry.json",
+      "bytes": 71481,
+      "sha256": "1f63cb5a0c5386657d8e7859ed0f6191d285aad98cb909c6dd6ab607c8468998"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "ebe7213f1da00d9f4a3514e1ddafdd3ca7a2585f58839826322e524f04b1e544"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_16/summary.json",
+      "bytes": 2572,
+      "sha256": "790ab1336730f039dbbfcb1c93fc9584a71b41b4022acf2fad8981357e352e67"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_17/geometry.json",
+      "bytes": 71448,
+      "sha256": "bb66ab309fdd5ff47e22ea1af3294f770ad560ad7d02299e6fc3fc90df34ff71"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "f35425aa6201976c1e06388141ba4f39f502a41e54eb619febb2f71e46f8bd23"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_17/summary.json",
+      "bytes": 2572,
+      "sha256": "70b6ef12e9ecb295c95baae3e15ff5ad90da09ed67f357f60e6a11222eb3c790"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_18/geometry.json",
+      "bytes": 71467,
+      "sha256": "621824550e0e7370cce20a81f1813bc86e81991235fe44fbbe6ed74781b9aa3e"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "0983f83228b091ca11c2871b8bd4e8f01a1d34aac713fb762f3ee76832da0b26"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_18/summary.json",
+      "bytes": 2575,
+      "sha256": "3513038a3400f17a84b881433b3e4d02ce27eea4d90ab1b0b025d255d11a3691"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_19/geometry.json",
+      "bytes": 71475,
+      "sha256": "99b027adda6de314950e9545cb00383934f39d387fcdf48560afa5946f9c92ec"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "7d4b2cfb69dea9147d360db70e0a7c178beb6b26c4551775c8e3b62d4a0f78b3"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/mass_cvt/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "7092a3dd4a085c057169a8c02275740f6ea8fe0eb4cafa8cdcb8bd3b8fa813f1"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_15/geometry.json",
+      "bytes": 79367,
+      "sha256": "879909ae1728e65da674fa96e6ed40cf9ad43cd7c0ceccba93ee5769e36b69dd"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "fc6c4779d3a3ce64498c2ebf7078c7c3491b7cd7d77589a5aeeed6b2dec62454"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_15/summary.json",
+      "bytes": 2576,
+      "sha256": "7715271510e892ccd5d6da446082053d484b7eb59b23f0443e425a008e8aab14"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_16/geometry.json",
+      "bytes": 79381,
+      "sha256": "2010b7e553933fb601b7c37f3a9b7fae8f26ae2942e9f4aa9aa169513f4a4795"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "93396601864ca776b9bfebd53078a7dc22dc69e3ec98577acf72d5f13f3fd990"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_16/summary.json",
+      "bytes": 2580,
+      "sha256": "988ca69b99b82197cbf4f98b8bc5e323494fdf22145863d98d8f3e3563049f69"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_17/geometry.json",
+      "bytes": 79346,
+      "sha256": "bb15a165dbf0e476c5e704c539d3d44c29f9738f711247df7692438366f557cc"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "e45146ae2c05db9c07e201ceaf4b8b6082c5c961d7937d2e0aba0f8e07ca5bf0"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_17/summary.json",
+      "bytes": 2579,
+      "sha256": "38f42ab0c6c9336cd1d845ca4def59e571720827ec61a1a3a6008fb60a88aaec"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_18/geometry.json",
+      "bytes": 79370,
+      "sha256": "3632b7830ca223e18de029e288efe89b4e4aa8051569b9267784895fe9fff659"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "db17d02d9b612007a8c26480e408940434e354c51a08e3aabe77846a09b5a93b"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_18/summary.json",
+      "bytes": 2581,
+      "sha256": "6fe002336c060f566d42134e84691af825b2453611552846bce84d87def7802d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_19/geometry.json",
+      "bytes": 79398,
+      "sha256": "0ce8d2331d798e3d265b7a9e358271f64c93af001693be703bcda22e7ceccc37"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "fab9da31b7be53bbd889cc8dc3dfce9d0c701965091a8ef843f82184a50ae63f"
+    },
+    {
+      "path": "planning/shallow_concave__strong__margin/projected_mass/seed_19/summary.json",
+      "bytes": 2581,
+      "sha256": "8e50529bc73874042cb7d7ec304c2b17ee26badf1a4e5fe842b5f85ce8a5ecdc"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_15/geometry.json",
+      "bytes": 32063,
+      "sha256": "972bdb6da9e92658ad17de248013422e02f426d7df5ebfbb75615343ee0f8cc4"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "a19e0a6f635ae695d421ef46752db1ba6a5b07de67e2b4808db26545c52a4cca"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_15/summary.json",
+      "bytes": 2558,
+      "sha256": "7445f026ef3c69b0a286e2792e05462498826d5d2976bf8bdb03990b85c63a7c"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_16/geometry.json",
+      "bytes": 32168,
+      "sha256": "b3b5516785f64fbb30ce1cb9f2b05c8df64f783f37ffc157a0e57361d5b89d25"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "6cda9d063e4eab1c2b0484b4f48e8254d4f3090df66e4855702e26ba70fcbdfc"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_16/summary.json",
+      "bytes": 2572,
+      "sha256": "a4a4fd5acb2a358c56634b34fecc0eac32336c9646305fd04cea60b273adff88"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_17/geometry.json",
+      "bytes": 32176,
+      "sha256": "faf80ad2c98703453973eb8a9982737bddfa1cf5be49d80555a2c1c56f4469c6"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "62c6f6d3c1698253d3eb6af6282819c08eecd57c77218f5a5dd00d0b70da65fe"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_17/summary.json",
+      "bytes": 2574,
+      "sha256": "2e21f57ae656fec84c5d204fdbe447d72045dcd48eaa1b60ee2c41fec07f68c6"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_18/geometry.json",
+      "bytes": 32150,
+      "sha256": "88d3edcfcafefceaee0943677c356741008266d8f3aca32c17d5f9cd12f33948"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "8700d2c55dd7e20cc806720101d9525ff30e16e4db302840ef120200b33337f7"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_18/summary.json",
+      "bytes": 2572,
+      "sha256": "96fbfa9d6ae10ea8bfb3537d24320be93c750232cdac295b2e627ea430c59228"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_19/geometry.json",
+      "bytes": 32151,
+      "sha256": "31b30b74c78fcb4ada9f71461f4cbc11dacf1dc6ea07f9058a9efb9133eddf8f"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "907ffd656ef3f54cd9afa1fd09fcc36f3f6712f4744f12c4dae51e99ea01e2bc"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/average_cvt/seed_19/summary.json",
+      "bytes": 2574,
+      "sha256": "b79a4988efeeeb3f91398cc0d994b3dd93133aa5060000db685b4be4198432c1"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_15/geometry.json",
+      "bytes": 32114,
+      "sha256": "3cf655537a337b996a511907faf1107d8052d8438da6dfbea9328e4e19af3109"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "e095c24387fdac031429c9faa1d2ccd21210036d3cb4f88b1f07932981009d66"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_15/summary.json",
+      "bytes": 2562,
+      "sha256": "343db25a073b82613ac95827a9cc41de0f0d36f2fac6b8d4bdcb9c634150c642"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_16/geometry.json",
+      "bytes": 32176,
+      "sha256": "09842712a1f52401d6a4e4985e1d8d2851a0136a8d372384e168e94d6b3931fa"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "c27e11278a7e7d85cb3e9b3412866874d7dde5b9cd6712150d66631576c45540"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_16/summary.json",
+      "bytes": 2565,
+      "sha256": "3b8b14dcca44222e9a11803f67da0df2689a813e477ad4888b31918e3e9ad7a9"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_17/geometry.json",
+      "bytes": 32189,
+      "sha256": "7a0717e188d4559afbe0b16ddd9e3e88924282e870f344ca31af39be55fb8951"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "3e2449bc6d6ef2b67a620d6b88e832470381475007daeaed14a6732e3779b511"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_17/summary.json",
+      "bytes": 2573,
+      "sha256": "d257525de1064abbc2634251fd438d52acbc07105eef0078ec0d55e4eab9aaa0"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_18/geometry.json",
+      "bytes": 32194,
+      "sha256": "66e20efad2c8819a0a73ad5ad2b9476350f37a53dcdd701e8680f8ccedc4dd63"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "b254a6365202017fe09d56fd53a85e15522ac30f0c27083165979e64edf5eb1e"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_18/summary.json",
+      "bytes": 2571,
+      "sha256": "0ff496681ddbe78f2128b846cb8e71c85f3317901fd1b6640af47e2b800fe27b"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_19/geometry.json",
+      "bytes": 32161,
+      "sha256": "e6c048eceeae51c1018c1b2554cce23910488da63e1af1514bcc25f6a3c42133"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "4c23561d3e37ef24ac7d06b88a686c6cdaba226045940ecd467f76120b85f811"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/distmesh/seed_19/summary.json",
+      "bytes": 2569,
+      "sha256": "b607d9a6d9400d3989cedf65e0c51d18b696ddfea5f705954be176f3612ff0a1"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_15/geometry.json",
+      "bytes": 32064,
+      "sha256": "6ca6025950e1a8f7e0a0a1571f64e13991deea19ec963f56dbaa602665922c7d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "f581d88f2309f03937de24873a2d7ea03a32e00630cbe80b2a363aff9756c653"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_15/summary.json",
+      "bytes": 2557,
+      "sha256": "6e76da33cc28e6c82d138e771f4846735364d8e3602d28d3c13847161233b307"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_16/geometry.json",
+      "bytes": 32131,
+      "sha256": "02337950563a0cc513ceed2c5d71510f621633901480f6ceb367cbc65c537f2d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "d3abff2de370e5467dab197a75bf5bbd1782b2cc80322523f824358ba4475968"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_16/summary.json",
+      "bytes": 2564,
+      "sha256": "6ce0eb10210426f62c9a4394066458f38bc68203051a6ee55cac68d14737354d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_17/geometry.json",
+      "bytes": 32156,
+      "sha256": "fffc579985d2e493811372b3972b63c78f271432f2e34faab418bd743ff861be"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "1f92b58f426f6e613a57096415d98d8860446166227042e355ab6581b17df779"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_17/summary.json",
+      "bytes": 2569,
+      "sha256": "4eee1a404443d6093a4250900c7724dd428bf8f3b2c991b065b9c1811f490299"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_18/geometry.json",
+      "bytes": 32133,
+      "sha256": "998e658077bd025229c20d677f2fc87e2a4f114b0889119dea4a9d95c902f39b"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "ef46178c55fd4e02679e4e2083ef9c35f405192269591a69144d6049edb78bb8"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_18/summary.json",
+      "bytes": 2566,
+      "sha256": "d28c5a0243345f0c71960ec75b82344d85b09dd8c56c2378fad19b64a63bce1a"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_19/geometry.json",
+      "bytes": 32120,
+      "sha256": "1be0fb92609b474dd1e5f698ffd84d0c3b6f5275a4402e22d83a32591cb032a3"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "5955a26e1a8254e98356d09f622d9f803d207fe3c093852e78a503487e8cf5ca"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/equal_arc/seed_19/summary.json",
+      "bytes": 2565,
+      "sha256": "ad359f3e7341a9e5f2e5c7c9b04d32f86b41cf15a6f4da70b7aeb22ca590b84d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_15/geometry.json",
+      "bytes": 32062,
+      "sha256": "c1133f11949ab69d3c9af39bed0257b981b63a50dab53195c7ec52223f70ba2f"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "bf14a1c315ba794cb57fb7016954a7ef59c6fa4953a3e984c53f6578c6702963"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_15/summary.json",
+      "bytes": 2556,
+      "sha256": "4adc21d0fe3df8b006b9a319d8a683181699054beb3e3ea864bf66a3db3e19a4"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_16/geometry.json",
+      "bytes": 32169,
+      "sha256": "1c917bbdbb463c6cf7dbf8f7a737e6c3f8f0f9b6e7bd82877434e134f10b97e8"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "b45a62eaaeb4c2dde00d1d3708e7437462fe9291566db6f8221b6063ced62bab"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_16/summary.json",
+      "bytes": 2571,
+      "sha256": "6916e9d751f2a8888bd112dd503577ef5073a97e1b85062af4792352f5d61733"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_17/geometry.json",
+      "bytes": 32173,
+      "sha256": "b2343c7a4a55c0b96c59fa9675b202a98b0bd04fb7504cfde5c73d97affd5124"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "32176153719d31d93c5dae85b11daf66c70a15904d2e9c80ddd14865fd122c78"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_17/summary.json",
+      "bytes": 2571,
+      "sha256": "f145f628733df59cc6c3e048d7c9e412875900083872606d406fed4302054f66"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_18/geometry.json",
+      "bytes": 32151,
+      "sha256": "8b7a088c33c465279283d1f82fecd60c62c09b455e89acba5f8a9ccb6d26cc6f"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "5551af45b27bdfd6c942de463fc34165018f794b896a7a4a6a382407ed55d852"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_18/summary.json",
+      "bytes": 2571,
+      "sha256": "a9420dddc7a771eb012f66fb509e61780af5b5282d679c3c752e39842d75e479"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_19/geometry.json",
+      "bytes": 32146,
+      "sha256": "b6b7478052cc50754397e6a6b5afce663dfd15ccc553696ca8e889dede799750"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "b131b45c0b5afa8cf11bc10d5d989cd5f6283a0728b78da702b97c0b31a6ca7c"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/mass_cvt/seed_19/summary.json",
+      "bytes": 2570,
+      "sha256": "20c7708d3c2239f1164cb529c30210cdc70fc845ef5557a1e8fd2515c3a26812"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_15/geometry.json",
+      "bytes": 37219,
+      "sha256": "b9030aff9d7cb9b032fc15a1c06c3ed3e3fe3260be126c31767cc70b510a16ca"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_15/state.json",
+      "bytes": 158,
+      "sha256": "5733390738a2d9c901af7f2e649bc890f251d0255c9159f1eb1cfc9eb8f46b3d"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_15/summary.json",
+      "bytes": 2561,
+      "sha256": "337fd42fb62d2b82d123ec92e2c1a597cdb067fb27d202392ab78c06d4069f90"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_16/geometry.json",
+      "bytes": 37313,
+      "sha256": "754f4707aebe2baf63887725a84f2e1607a118c02bd61539c0fe493b710869c2"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_16/state.json",
+      "bytes": 158,
+      "sha256": "bf785f69b07ce42dbbe34a56045880d406aa78817712bd4800102dccbef4ca7c"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_16/summary.json",
+      "bytes": 2575,
+      "sha256": "08eabd67719237eaf0580894ce65139cf3386b93e211991410b2074d2f2142b6"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_17/geometry.json",
+      "bytes": 37329,
+      "sha256": "c3b1e3d33e6934b12364b7d7bd78ba53c95b25a13e3282f95595a0c6811484ff"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_17/state.json",
+      "bytes": 158,
+      "sha256": "e85cbae7ff5e991306b529164fd2d85bda349c6cc95fbb43b452d70c482cf762"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_17/summary.json",
+      "bytes": 2577,
+      "sha256": "f49b30764fa1a4b345b2ad1c863f1b824c53c89df55dbf537c3c3f3ec2176e21"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_18/geometry.json",
+      "bytes": 37325,
+      "sha256": "f078b3b9890257c62230d8b661619c57378b2d7d7a37b93a0db671b70c28f747"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_18/state.json",
+      "bytes": 158,
+      "sha256": "1529b92808b5bee87aca820e133cd1b6c134f361f25a94ca31a3ba8e843a9e4c"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_18/summary.json",
+      "bytes": 2576,
+      "sha256": "caf2268659553cc3e7c30d0d6ea6e9a5ba3b6646a8e87daf22a834b30385d818"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_19/geometry.json",
+      "bytes": 37327,
+      "sha256": "5852eb4f33f7375a0ae75f742e88017a78981cafa1d790b1729093a01212b4da"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_19/state.json",
+      "bytes": 158,
+      "sha256": "66c959419e7d7bcdab45228f079db60468439387d4790a0e9c495cee128daa59"
+    },
+    {
+      "path": "planning/shallow_concave__strong__near/projected_mass/seed_19/summary.json",
+      "bytes": 2576,
+      "sha256": "8e41a6ec8a53b04b68bea333522f07e72996bd099b2eb24ad3a9b3f03d7b0c83"
+    },
+    {
+      "path": "planning_rows.json",
+      "bytes": 825194,
+      "sha256": "d4e1bc0290bb99157b79429c7369ae3d661732e8e66f8d09c20b11a50aa551f5"
+    },
+    {
+      "path": "planning_summary.json",
+      "bytes": 41997,
+      "sha256": "a15a0f5b1b53c1e55bc135c803d27d039c01e7c195d1db43dcb464d8523b6426"
+    },
+    {
+      "path": "plot_execution.py",
+      "bytes": 1635,
+      "sha256": "a130985a7ad4ecb436c40b0c408f566f5aed937bb93b9bde8c7e8633f2b36aa7"
+    },
+    {
+      "path": "preview/nominal_families.png",
+      "bytes": 109358,
+      "sha256": "c503b46834a38a11d642261bb66d2ae1eefff948fdaa383760bf760db581f899"
+    },
+    {
+      "path": "preview/perturbed_seed15.png",
+      "bytes": 133669,
+      "sha256": "f15d558d437aad344ce39c00ffa2403d42f0cef1105b7cd6958b76f5f70c2bc8"
+    },
+    {
+      "path": "preview_probe.py",
+      "bytes": 4144,
+      "sha256": "3d54d825a0a428bf446366bc350cbf86be9c377c32daca0e7f1444d3b6e2c219"
+    },
+    {
+      "path": "write_manifest.py",
+      "bytes": 2351,
+      "sha256": "75a24db91743d06219116f649d3104418d3c57c941d649ec4c2c79503de4a11b"
+    }
+  ]
+}

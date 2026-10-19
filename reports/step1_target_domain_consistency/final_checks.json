@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-10-19",
+  "timezone": "Asia/Tokyo",
+  "source_sha256": "62ed86ff66f411ef00d14d151bba0884ca0736c92da7d1e4989dce1d96381ee9",
+  "baseline_pytest": {"passed": 135, "wall_s": 25.55},
+  "candidate_pytest": {"passed": 140, "wall_s": 20.58},
+  "final_pytest": {"passed": 141, "wall_s": 20.63},
+  "pip_check": "No broken requirements found.",
+  "uv_pip_check": {"packages": 64, "result": "All installed packages are compatible"},
+  "compileall_src_tests": "passed",
+  "git_diff_check": "passed",
+  "final_180": {"SUCCESS": 141, "INITIALIZATION_INVALID": 33, "BOUNDARY_INVALID": 6},
+  "final_180_wall_s": 85.29581380001036,
+  "trajectory_array_mismatches_against_initial_development_regression": 0,
+  "offline_inconsistent": 0,
+  "input_or_target_mismatches": 0,
+  "original_73_reproduced": false,
+  "limited_legacy_supplement": {"tasks": 19, "successes": 19, "offline_inconsistent": 0},
+  "pushed": false,
+  "main_merged": false
+}

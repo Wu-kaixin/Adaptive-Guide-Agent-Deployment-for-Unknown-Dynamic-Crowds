@@ -1,0 +1,68 @@
+# Projection ablation. 2 shapes x 3 demands x 3 guide tiers x 4 methods x 5 seeds = 360.
+# Development seeds only. Validation seeds 5000-5029 are reserved and are not run.
+schema_version: 1
+protocol: fixed_n
+methods: [equal_arc, mass_cvt, projected_mass, ra_abdc]
+development_seeds: [0, 1, 2, 3, 4]
+reserved_validation_seeds: [5000, 5029]
+notes:
+  - projected_mass is Mass CVT density with the RA-ABDC gap projection and no concentration schedule. ra_abdc adds the schedule and the recorded Equal Arc fallback.
+  - When the a=1 projected plan meets the Euclidean separation, the two constrained methods are the same attempt.
+  - Guide counts come from the realised deployment curve on seeds 0-4, not from the previous 14/17/19 table.
+  - near = max over seeds of ceil(L / 1.94). margin = ceil(Lmax / (0.85*1.94)). ample = ceil(Lmax / (0.70*1.94)).
+  - Measured circle L in [26.402, 26.835], so counts are 14 / 17 / 20. Ellipse L in [28.603, 29.107], so counts are 16 / 18 / 22.
+  - Weak and strong hotspots share the disk centre rule and radius_scale. Only the multiplier changes. Demand is a planning weight.
+  - These tiers meet the necessary count condition on seeds 0-4. They are not claims of feasibility.
+shared:
+  spacing: 0.55
+  radius: {mean: 0.20, std: 0.015, min: 0.17, max: 0.23}
+  guides: {radius: 0.20, max_speed: 1.0, initial_inset: 1.0}
+  controller:
+    offset: 1.3
+    sample_spacing: 0.1
+    budget_gap: 2.0
+    max_gap_limit: 2.0
+    position_tolerance: 0.03
+    speed_tolerance: 0.03
+    curve_tolerance: 0.04
+    arc_tolerance: 0.03
+    safety_numeric_tolerance: 1.0e-7
+    demand_bandwidth: 1.2
+    gain: 1.5
+    hold_steps: 10
+    clearance: 0.35
+    waypoint_tolerance: 0.05
+    phases: [0.0, 0.25, 0.5, 0.75]
+    quadrature_samples: 2048
+    planner_max_iterations: 300
+    stall_window: 20
+    max_replans: 3
+  simulation: {dt: 0.1, max_steps: 400}
+factors:
+  environment:
+    square: {type: square, width: 20.0, height: 20.0}
+  shape: [circle, ellipse]
+  size:
+    medium: {count: 50}
+  demand:
+    uniform: {mean: 1.0, std: 0.0, min: 1.0, max: 1.0}
+    weak:
+      mean: 1.0
+      std: 0.0
+      min: 1.0
+      max: 2.0
+      multiplier: 2.0
+      radius_scale: 0.45
+      offset_scale: 0.55
+    strong:
+      mean: 1.0
+      std: 0.0
+      min: 1.0
+      max: 5.0
+      multiplier: 5.0
+      radius_scale: 0.45
+      offset_scale: 0.55
+  resource:
+    near: {count_by_shape: {circle: 14, ellipse: 16}}
+    margin: {count_by_shape: {circle: 17, ellipse: 18}}
+    ample: {count_by_shape: {circle: 20, ellipse: 22}}

@@ -1,0 +1,482 @@
+[
+  {
+    "scene": "elongated",
+    "seed": 25,
+    "input_sha256": "3590873d02f09270a2ac49210c8d88d4ea5e6b558e287cc0cfb65a912a872cd4",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "53eedfe1b74be3ee96fd70065e17d629a8f7f1d7bc66c4e215a025b30a79c373",
+      "projected_mass": "e3f5654f3b19f330840ed0a9d4116f5b9984529eb090d1d729452a56f9e7714f",
+      "pairwise_euclidean": "2833749350d28383d36c0cc075281026d467ef46107fd4e956ee802f7a868f66"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 26,
+    "input_sha256": "f1fa24dbc347e40e43ff176f62a920334ae45d2b05dca1ccf4283ba9240015f2",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "109427ab1865b7bf579bbd737ae2938fc5b875e60852dfea6444a94df4f25139",
+      "projected_mass": "fc37201dfff25413317fb90d2d156590f31df54cf562c6e9b31db6098f534548",
+      "pairwise_euclidean": "73688b3229b3d59f007e0f936d77dc104fa6dc28365737e065a977d3848707a9"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 27,
+    "input_sha256": "cc037435b983bb2e602ce01cbb0b5e694fdea67e09f62401e79a758219da7b40",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "4e5ae8e54bd1b58c9f73a64c832e02ad6ec97391bf6f850f362fedffa8686653",
+      "projected_mass": "65ba47a16ed7f4cb462aa4ad868db59dc773a2bf9edda4983484ddd27773f866",
+      "pairwise_euclidean": "498be7899f19a5f40d4d639ce2b4dffd10d6ca85e15c78ba66b8979b2abc8d1b"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 28,
+    "input_sha256": "a705499062af869610ed407c5bc0b3da433c147ca47354dd118f5cb3568ba531",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "e8a1bdee68f4a01906f178a16f0ee1949ec09d30d36f06f2ab654ccc233fbb7d",
+      "projected_mass": "809df7342cfda932b4a9196d05d6ea8a539f6acdf9e41b21ae12d4697612577c",
+      "pairwise_euclidean": "5e038e6bcecec75e92f18ef75d2b7fc608993ba01ac7ea3ad0f65b52c120a04d"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 29,
+    "input_sha256": "7ea1c68c3f2b16ea9d16527b3e3dfa2e67c8e49b9cd3911c3b30cd1fcf9e2a54",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "b1f784ec7ca0a708278c4666313b1265206b23988afa46d00efb8bf5a673a117",
+      "projected_mass": "466d9128d6ff9c23c572fb295c19c293766d67fff05b020924958a79623d0b1a",
+      "pairwise_euclidean": "63f6cd6181a47cdc6ced1d8a914cfa8832c8e2c0edc74f638c7c51a5c030533d"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 30,
+    "input_sha256": "390c1a47d996d9167b738fcad6353dde78bbde069d8a450007258a2370123d51",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "17c15f57a3bac967228c2463da198f60243c2bd023203f41270bd8d2dafa8b96",
+      "projected_mass": "e608e063f5bdfcb216c8cd8eeb1ed3617cb31a5b93c6907127923965106efad1",
+      "pairwise_euclidean": "b22222d04bbd7220710046a512b91fc6aa4490c45792099a175ea1730a51190b"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "REPLAN_EXHAUSTED"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 31,
+    "input_sha256": "f945a71868a7394bffafda7d3f34cd71d78e9e46461fa23646454448313ef0a1",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "d0b9642c020dbf17d521ef274c3a341f030f8ebebdb05fdf9b284e30abbf563f",
+      "projected_mass": "59b33725f4e0e5fc490cf3c2fae9e24bbeebd61d3516ddc6015e2626e6e1db23",
+      "pairwise_euclidean": "e937ef5a35ef3266fc3f46a9bf5858c550f608c939226397ea72b7638ad0bf86"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 32,
+    "input_sha256": "0c3598fb2905103b1747218fb7a25054a6a42992863708b71623a01ace5b119c",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "e1748f55ddf3858951e238efb7ab7fc9401dd7f8cf5384cbc5cf2aedad7586f8",
+      "projected_mass": "bfe3e2ae292f3092ca3a5f3eee1a8ea1d405754d5a767d312868f5065b1ce842",
+      "pairwise_euclidean": "06fd25b1e85e2ffb7b0354a8db4e97fdfd9c42cdb08e755740fd1c4197414981"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 33,
+    "input_sha256": "60de3210934333b24b25ebaf0eb170594f7b067de07d0922e3c247c1c2997466",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "13f3a294bf7d40a1f81054508eee722be7728275d5e9b9c573571d0e45cb89a1",
+      "projected_mass": "c5387fec098790d4cdd5bf9f2741d023f5d71f33c3cd11f1d9cc293b6b6c0c65",
+      "pairwise_euclidean": "5dc80ee84e5572a5f8f66d06b4a37f0562f604a32871f837183d7446a5fed5db"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "elongated",
+    "seed": 34,
+    "input_sha256": "8b80a31c9efb67b31fd3470691051e6267f08cae55c792198c3ad29b20f69dbc",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "101dbba4d39139c1026ebd244ce64b602870666e7a1238435c5d948de383b763",
+      "projected_mass": "c5ac4ed2138b8b91b0b9b364d795ffa45cac27862e968b996d432a18b5c7d86d",
+      "pairwise_euclidean": "aa7b9893add568b6091d2b95928284c6bc027d53926aecd87759a81305956e8a"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 25,
+    "input_sha256": "383fadadd9591612861eee172c88b0d9c7248f63f58714561d9d9dcb10bc132f",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 26,
+    "input_sha256": "826abb8fd580e98001919dea2c9202f351fee0c04f8611a258ceebaf60aaa1ea",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 27,
+    "input_sha256": "561a93291ab5495b56653abf84c186cc58820a55a4e37bae41086e63bad73968",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 28,
+    "input_sha256": "783452eebc3ac4e24488edfde6aae25ac419af06643ea7176e2ffa6793416e51",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 29,
+    "input_sha256": "64139cc22388dd50d96e8274ffe7757af19931765eba45d7d1787b9bc17768cf",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "a3e2ee730438a6bf60a0002b7be057f315e0fe203d60901375ce80458313f30d",
+      "projected_mass": "bf1ad63c814e20894cb90e4949a34e8decff2701c2ace43ca5a9c4f861cd7739",
+      "pairwise_euclidean": "3bb080de5534a36402a9f31473562a4ae55054b96b6676ec37703df665f65aaa"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 30,
+    "input_sha256": "e72b8066adedbefe674d1457d2c80d3e317b048d7fe9212d9faec5a2603c74c3",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "fd95e4bbe8935203fd58a824dd9d1600e83a706996aefe722223857635874945",
+      "projected_mass": "e94f5cba77586b5d1b7b59d366853f9f171a81d52566e7694eb4f3a3ed32ef97",
+      "pairwise_euclidean": "16acb8b8676cbbb81ac4538799604f93eb01250d06606a102c6c950e95cd9aca"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 31,
+    "input_sha256": "0f3283b221b442ebbf94b615eebd2e3c487058142a9daef123188b99a7067d90",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 32,
+    "input_sha256": "42fe9116deee3cf2d13fd3feed6312a26d8161f6fb39d2fbf1c33ade80509359",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 33,
+    "input_sha256": "ccd55130750e4abcedce3550ff93634bca2b7ef1320fa2ec5106f6e2a5434e98",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "tight_u",
+    "seed": 34,
+    "input_sha256": "c630303c5ee067bc482266c85f2698cb94a6bfa0d535d70fe85d72cc7d6ac7a2",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "9f924caf4172f9e3b939c550def3b09395bd3b120f4c84f163b42908a11d6bd9",
+      "projected_mass": "c049390e12e93b38100202eb46bd4c58260c28d2f6b7da4b980049b681a5940e",
+      "pairwise_euclidean": "44d43d6a479d1002aaff0fd52cc9a18a0ebc272c1f8cba334a256d9fa67e6255"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 25,
+    "input_sha256": "a63f6e1cd7cb2198a53bc7581a26352f66d703e4916a50f98be8632f403c50e3",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 26,
+    "input_sha256": "af649beaa7b1964d231adeb7b04b676f4e44844c1334a1851d43d033084094b1",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "b5798fc815743f7e45c24f39e089a1abaee509bd3e488588a93b113d93d8ad13",
+      "projected_mass": "005c0d318521b696c91beb393c5cd98a5c52a7ad022d54e256a2c66c43db592d",
+      "pairwise_euclidean": "487a102dc70e2d77a8018bfbcda7f97f6849d0303cabf586d5a6ab88eb956a41"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 27,
+    "input_sha256": "bb85467ad1c4079a9a75afb565d67c36b29ae61fa727fb0d498d9f631ca9ed97",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "102cf5f2ace5f5960bfa7b33ca54663fd939b4fbe71c3d805de72b0a33b7600b",
+      "projected_mass": "4ff78addb2eb7cc34b26048998b1484dc26cc0d056d83d1b277edd21acf8d2bc",
+      "pairwise_euclidean": "b3a788048368d43bf92234be12ac6383c2b0ef1cb6ce127061fbb049472b8a68"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 28,
+    "input_sha256": "81f8dca5fd0a3e5c202ebfd1551874be96c9dd982a457ad24e9d72fe0fe0722a",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "2b94770d3da6f78cb53249ef649be0d29aef330c01951880ae74255c073d8ab6",
+      "projected_mass": "77d164def251c0a1c9af03264ab45a9c00d5e7afcfe5d766d5968e8d0082742a",
+      "pairwise_euclidean": "924073753ef6f78dd0e04a5a55593383efcc27b706d4961472722315ee03bd29"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 29,
+    "input_sha256": "752aae97a6261017aeab266aa799248e2818a72f3a986dd0b6391d9892dbc662",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "138e86d738b57b9a9b50bf687a46d07cc61f06621437fc64e8ceced3b2aabc9b",
+      "projected_mass": "ae4c68c539049fb9696c2340903f2e67692a0c9e2bf0e88203802937f1f1da19",
+      "pairwise_euclidean": "0509c188bfaa6beac10b93d139caeff70adf028d62b47c054437979be613c9e1"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 30,
+    "input_sha256": "d22615f33d4475d02d00abc8d85ae2efd5dc5e83f9c4ce9baf00d050727c0f6c",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "6c7a3aab29581f73cc014d9a5eb0c0aeae34ed47b46eadab1de2eb3ba4778d16",
+      "projected_mass": "468ab47a9c5cc78fe33bd13bc7593c0812a9fb69338813b3063885aeed659eec",
+      "pairwise_euclidean": "3fb9a9f1b2a7109c7cb41039adadb99ced3cf767f7a4755db045a5d79e2cdf34"
+    },
+    "outcomes": {
+      "equal_arc": "REPLAN_EXHAUSTED",
+      "projected_mass": "REPLAN_EXHAUSTED",
+      "pairwise_euclidean": "REPLAN_EXHAUSTED"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 31,
+    "input_sha256": "257cf1a54a33674819020abea7d500dfad7357a1593a2fe77478998bdbd4b4ae",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "d8b183dbb17b4b3a5efb4e7df9b35c936191a391ca565e5d9081b4fde214e07e",
+      "projected_mass": "acdb42282d9fd916265bafbcae70b54e7a9a380b6c9d83ace9301972a4da5a74",
+      "pairwise_euclidean": "9cf40c2e126b47cb576966f1b84aa4d4fb4b7fc007a9b52457742c380ceba637"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 32,
+    "input_sha256": "25bbd138e061105baafdb1ae6126b8a3f6a64f830756cbae6d62468f71650282",
+    "valid_input": false,
+    "targets": {
+      "equal_arc": null,
+      "projected_mass": null,
+      "pairwise_euclidean": null
+    },
+    "outcomes": {
+      "equal_arc": "INITIALIZATION_INVALID",
+      "projected_mass": "INITIALIZATION_INVALID",
+      "pairwise_euclidean": "INITIALIZATION_INVALID"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 33,
+    "input_sha256": "7187217f5523a48f0cb7ea6e60fe8b45e2328adb5273aebbc839fa901ab2c005",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "8b06c54fcbb65c69e60c2a5e35f1089643ba3680508c9a57a0a69f83657318be",
+      "projected_mass": "d48b59cf152a51a899dbd039736f2741f445afa926d8b22575eed143d8569253",
+      "pairwise_euclidean": "09c44d593139ba7cb0c23127e74cdfbeddca79646571016606f33bbc54d5d5cc"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  },
+  {
+    "scene": "wide_u",
+    "seed": 34,
+    "input_sha256": "fc6615cc977e20adc8bff4ab49c361f558cf558841fe82222ffb118c6b637786",
+    "valid_input": true,
+    "targets": {
+      "equal_arc": "912a4e6872655c2670a2509fc4c5ff13931492b8f70d69335325020ca994c9f8",
+      "projected_mass": "2ead309851f81453a2517577680a901f817397688042faf6d36c396cb9be11a9",
+      "pairwise_euclidean": "b9de9380a14e2f8b56a4ea6dd575565f18dc7877b650242e83e3f83d3533e84c"
+    },
+    "outcomes": {
+      "equal_arc": "SUCCESS",
+      "projected_mass": "SUCCESS",
+      "pairwise_euclidean": "SUCCESS"
+    }
+  }
+]

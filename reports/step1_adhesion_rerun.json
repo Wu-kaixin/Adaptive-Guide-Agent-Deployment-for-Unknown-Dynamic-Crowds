@@ -1,0 +1,70 @@
+{
+  "diagnosis_cause": "cartesian_rounding",
+  "original_source": "runs\\step1_general_curve",
+  "original_results_modified": false,
+  "results": [
+    {
+      "method": "equal_arc",
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_criteria_match": true,
+      "max_curve_distance": 0.0036499186547479063,
+      "max_tracking_error": 0.003714298690233855,
+      "target_curve_distance_max_m": 1.7412449465859658e-15
+    },
+    {
+      "method": "mass_cvt",
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_criteria_match": true,
+      "max_curve_distance": 0.003646789659169749,
+      "max_tracking_error": 0.003710985297256229,
+      "target_curve_distance_max_m": 1.40865567801677e-15
+    },
+    {
+      "method": "projected_mass",
+      "executed": true,
+      "termination_status": "SUCCESS",
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "success": true,
+      "reevaluation_criteria_match": true,
+      "max_curve_distance": 0.003646789659169749,
+      "max_tracking_error": 0.003710985297256229,
+      "target_curve_distance_max_m": 1.40865567801677e-15
+    }
+  ]
+}

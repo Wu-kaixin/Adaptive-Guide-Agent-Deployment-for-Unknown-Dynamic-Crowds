@@ -1,0 +1,116 @@
+{
+  "processes": [
+    {
+      "pid": 3728,
+      "ppid": 42460,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -c from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=42460, pipe_handle=1232) --multiprocessing-fork",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 96223232
+    },
+    {
+      "pid": 14776,
+      "ppid": 42460,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -c from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=42460, pipe_handle=1228) --multiprocessing-fork",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 95924224
+    },
+    {
+      "pid": 15268,
+      "ppid": 42460,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -c from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=42460, pipe_handle=1324) --multiprocessing-fork",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 98091008
+    },
+    {
+      "pid": 25820,
+      "ppid": 42460,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -c from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=42460, pipe_handle=1092) --multiprocessing-fork",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 96677888
+    },
+    {
+      "pid": 29764,
+      "ppid": 42460,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -c from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=42460, pipe_handle=1256) --multiprocessing-fork",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 96112640
+    },
+    {
+      "pid": 36212,
+      "ppid": 42460,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -c from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=42460, pipe_handle=1244) --multiprocessing-fork",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 95522816
+    },
+    {
+      "pid": 41960,
+      "ppid": 11408,
+      "command": "E:\\udc-wt\\venv312\\Scripts\\python.exe -m udc.experiments.boundary_comparison --run-future --output runs/step1_boundary_estimator_protocol --workers 6",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 5492736
+    },
+    {
+      "pid": 42460,
+      "ppid": 41960,
+      "command": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe -m udc.experiments.boundary_comparison --run-future --output runs/step1_boundary_estimator_protocol --workers 6",
+      "environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+      },
+      "rss_bytes": 88924160
+    }
+  ],
+  "completed_at_capture": 79,
+  "system_memory": {
+    "total": 68463685632,
+    "available": 52156239872,
+    "percent": 23.8,
+    "used": 16307445760,
+    "free": 52156239872
+  }
+}

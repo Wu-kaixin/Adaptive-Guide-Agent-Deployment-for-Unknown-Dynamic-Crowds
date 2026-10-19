@@ -1,0 +1,64 @@
+{
+  "curve_length_m": 20.735250954732287,
+  "strict_illegal_length_m": 0.053147609654287976,
+  "strict_legal_length_m": 20.682103345077994,
+  "intersection_length_residual_m": 0.0,
+  "intervals": [
+    {
+      "start_arc_m": 0.0,
+      "end_arc_m": 0.04767000609617557,
+      "length_m": 0.04767000609617556
+    },
+    {
+      "start_arc_m": 20.729773351174174,
+      "end_arc_m": 20.735250954732287,
+      "length_m": 0.005477603558112414
+    }
+  ],
+  "per_edge_intersections": [
+    {
+      "start_arc_m": 0.0,
+      "end_arc_m": 0.04767000609617557,
+      "length_m": 0.04767000609617556,
+      "original_edge": 0,
+      "coordinates": [
+        [
+          10.502248302340506,
+          14.811495174001504
+        ],
+        [
+          10.49188862049943,
+          14.764964469371538
+        ]
+      ],
+      "max_penetration_lower_m": 0.025851797077277864,
+      "max_penetration_upper_m": 0.025856796029259426,
+      "maximum_sample_step_m": 9.997903963124069e-06
+    },
+    {
+      "start_arc_m": 20.729773351174174,
+      "end_arc_m": 20.735250954732287,
+      "length_m": 0.005477603558112414,
+      "original_edge": 207,
+      "coordinates": [
+        [
+          10.501434403055415,
+          14.816911972751095
+        ],
+        [
+          10.502248302340506,
+          14.811495174001504
+        ]
+      ],
+      "max_penetration_lower_m": 0.00546199584443784,
+      "max_penetration_upper_m": 0.005466993657903271,
+      "maximum_sample_step_m": 9.99562693086207e-06
+    }
+  ],
+  "isolated_contacts": [],
+  "wraps_seam": true,
+  "max_penetration_lower_m": 0.025851797077277864,
+  "max_penetration_upper_m": 0.025856796029259426,
+  "distance_resolution_m": 1e-05,
+  "scope": "all original polygonal edges intersected; only depth maximum is bounded by discretization"
+}

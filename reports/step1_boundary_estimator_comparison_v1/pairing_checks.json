@@ -1,0 +1,635 @@
+[
+  {
+    "unit": "elongated__seed_55",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "65e291af5de9ef0ad996c30bdaad91116f7d1ea07ebfb34281a6b2bce03a2b7e",
+    "reference_disk_hashes": [
+      "644ded4960af79c5aa73f3adf12420d105f891505433aca434a9bcd222f2fda6",
+      "644ded4960af79c5aa73f3adf12420d105f891505433aca434a9bcd222f2fda6"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_56",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "9b930547cbe717e0b8f0fa7ddcc4ae043d12a0aca055355977c384db0ae58530",
+    "reference_disk_hashes": [
+      "65a14d2493e3258140b3401d7d71e228889a9bd852898b7d780393a4de537e9c",
+      "65a14d2493e3258140b3401d7d71e228889a9bd852898b7d780393a4de537e9c"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_57",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "c744974e312f87067b6765980ebe5f056cba3d98dbf7d53d167f698117bd8625",
+    "reference_disk_hashes": [
+      "a2a1c5713d50330d2be8a9b53150a922f5c7ed8511e22f988565f346ae8168aa",
+      "a2a1c5713d50330d2be8a9b53150a922f5c7ed8511e22f988565f346ae8168aa"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_58",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "140702d1085ed911dda7cc453d4d07cfe1dd14e86d0368bdb03dcbf9192c0b1d",
+    "reference_disk_hashes": [
+      "7a8b9915deed9f9fff0059b6570de22437187d57a2ad8e5748e7a4ba8288c878",
+      "7a8b9915deed9f9fff0059b6570de22437187d57a2ad8e5748e7a4ba8288c878"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_59",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "e0a761bd0254d9b066a6b471d33338597ffeabb1663a5c4b2ac559b5f1b58c25",
+    "reference_disk_hashes": [
+      "707cff2157e14c8d58c69e21d384254f65c6a64e07d85d0b488b9e185786971e",
+      "707cff2157e14c8d58c69e21d384254f65c6a64e07d85d0b488b9e185786971e"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_60",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "28abc170882378631d3268bd943892e00984b613df676a182bb016cb6d154471",
+    "reference_disk_hashes": [
+      "205ab313123e027d677d9c79a70e5b972ed651d3f5aa5af935427441fa416229",
+      "205ab313123e027d677d9c79a70e5b972ed651d3f5aa5af935427441fa416229"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_61",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "32e902285ac949d6ba6bc09e87d0bbe0821cb3c692da7e71e4021c7b62b698b3",
+    "reference_disk_hashes": [
+      "ba14e0b52a8cdcb13f073c6197e1aabf783fafe04024b9b55e7f06f5c6f058ff",
+      "ba14e0b52a8cdcb13f073c6197e1aabf783fafe04024b9b55e7f06f5c6f058ff"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_62",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "6bbefeee9a97db9dd168e043872358e3f263b1d4912cc3d9f3191ccc5e7d3f8b",
+    "reference_disk_hashes": [
+      "95e76b198602a4b7a525ff211fb63538ff8489081db21c2022c1f98599cecf6a",
+      "95e76b198602a4b7a525ff211fb63538ff8489081db21c2022c1f98599cecf6a"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_63",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "7d4c2750fd7eea94927ca785147c767fed3f420d5eedc4a6290c2a7e695d6dda",
+    "reference_disk_hashes": [
+      "fd6c402801306046831b77a26318c610ba364462987be1420180bbe641645530",
+      "fd6c402801306046831b77a26318c610ba364462987be1420180bbe641645530"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_64",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "daee6393cb67f0775f3e0b1f39ac550208ead0f5690dbe5b0e912fcebd5a6b7e",
+    "reference_disk_hashes": [
+      "034d87e2b84bf22b4845bf885000afc6b6757c5e33dacea9c16cc996da694cb2",
+      "034d87e2b84bf22b4845bf885000afc6b6757c5e33dacea9c16cc996da694cb2"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_65",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "5d8437f2b8a925756cc618d782a0213d07421aff686d285d8478841de6d8b6ae",
+    "reference_disk_hashes": [
+      "2c8a5a05b992e9734c272e821aa3b55472642df5747de681318424ffcca8d30c",
+      "2c8a5a05b992e9734c272e821aa3b55472642df5747de681318424ffcca8d30c"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_66",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "00314e7aabd83f737badb25528f3263513d299d6158d00ba6503dca91aa76560",
+    "reference_disk_hashes": [
+      "3f6f78824dcb62b3361338681d10bd5fc72804eab1ed508a3a136f3b990b150f",
+      "3f6f78824dcb62b3361338681d10bd5fc72804eab1ed508a3a136f3b990b150f"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_67",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "316432734b11d38a299d216ed5888bcc8b6df95f5a21e1ae5ca26a26e853dcb0",
+    "reference_disk_hashes": [
+      "1ded67af50bfe761aee4add63bc6db2ad86c3750726f26ba16565952468ba1bb",
+      "1ded67af50bfe761aee4add63bc6db2ad86c3750726f26ba16565952468ba1bb"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_68",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "324b45efd9097edcc84c30f3859021da9ae3ce3e276913365fabdebb7f3c859c",
+    "reference_disk_hashes": [
+      "bd7d026e9e79f907b82cc1b14ad706f966304fb2a558f0a6c7d45911f751e177",
+      "bd7d026e9e79f907b82cc1b14ad706f966304fb2a558f0a6c7d45911f751e177"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_69",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "d06089c79a462775622854ee96607376e95ebd1f312394ccf47863419186cf87",
+    "reference_disk_hashes": [
+      "7e90faff75962a05eeb80c83a1e62ba5bd525d79c1bdff49245d864cad56a859",
+      "7e90faff75962a05eeb80c83a1e62ba5bd525d79c1bdff49245d864cad56a859"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_70",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "a62be4fcb835e9e9053bc8517b601806436b5d089f174924cac22324f0159555",
+    "reference_disk_hashes": [
+      "9798bc8b2b72c65c8f29343d0dc1c02d28a7e993ba3f07f617d38a6f4545d09d",
+      "9798bc8b2b72c65c8f29343d0dc1c02d28a7e993ba3f07f617d38a6f4545d09d"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_71",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "41c4b6ba93c01bfac5539691552aeaf4ec4450babaf779c92078d043be081686",
+    "reference_disk_hashes": [
+      "1ffd67acceebf5489993e6400e672d14fb0beaad47b5f1dbb3cd3ef682264f58",
+      "1ffd67acceebf5489993e6400e672d14fb0beaad47b5f1dbb3cd3ef682264f58"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_72",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "379389bce07b817700bc800d8726a4dd2840a21775d16add9825a7d2b3b7fd96",
+    "reference_disk_hashes": [
+      "7455d39ee9786316284cb6375e784ac3c6bd506419565b8f926db3545660abaa",
+      "7455d39ee9786316284cb6375e784ac3c6bd506419565b8f926db3545660abaa"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_73",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "43f3d43ff5c4970c252589d3b80559e43200ab978eb0f5a7c51ab5f08f8d7227",
+    "reference_disk_hashes": [
+      "c15bf452d923ade9f3819ce37f1f9deb0276b6d1404a4608ebe95677f0a4b816",
+      "c15bf452d923ade9f3819ce37f1f9deb0276b6d1404a4608ebe95677f0a4b816"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "elongated__seed_74",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "7f0e346c8432535808d72a1a62f6ed7c78caa8665504cc359a33008e4a2a64e7",
+    "reference_disk_hashes": [
+      "92a0ef2da83cc637ca49b0f1352c02d33c5d81bb505b00c050327d9a8271f196",
+      "92a0ef2da83cc637ca49b0f1352c02d33c5d81bb505b00c050327d9a8271f196"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_55",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "4c2954537cdb1efbe6a6e57cf2f1fd9e4aa7e190abc709f812440be6cef6d375",
+    "reference_disk_hashes": [
+      "48a1c1222e5cbce24adefdd8df224103ae8724907a83381f73f3e21c46b46346",
+      "48a1c1222e5cbce24adefdd8df224103ae8724907a83381f73f3e21c46b46346"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_56",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "9654ccab62179a643d29cf8124fc4bce9f68a2b75f8f82cc19988853fb04a5f9",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_57",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "669b95e908cfba8aeaf178712ba199da6362fc2dba0b3b794a8aa654be443521",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_58",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "13fd0ba27c5851d38544074303e776aa5a2cda9e38c2d66fe31104b441d60d1d",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_59",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "198edc5bb8262a583ccae9b6799c4d26a6d54bbd5ff932fa3a210e4a6fbef3fa",
+    "reference_disk_hashes": [
+      "760a127807ad3c359657b069adb402b041bf9b82c6231e85fd983baf6127a88d",
+      "760a127807ad3c359657b069adb402b041bf9b82c6231e85fd983baf6127a88d"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_60",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "b4697215205d2af5faf6cffa9cd27091932abe2c6ae69b4b7f7958ff1fc667e9",
+    "reference_disk_hashes": [
+      "16dee8532ec5bc7968f357e260bbf6a2393f4453dd4fbffd3cc8d1804a6c3e4f",
+      "16dee8532ec5bc7968f357e260bbf6a2393f4453dd4fbffd3cc8d1804a6c3e4f"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_61",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "b7f786c0c4c9bc1f8cb8f699192a88f553dc1c7a6b5d855a88f580eb3811d293",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_62",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "ae663380e25bf8b4427dc1209dfbc15ad387c9b1823f02dbca4579feafa902a2",
+    "reference_disk_hashes": [
+      "7a24a27a8563ad8017b988ff5321b228c8ee6806b929fddd444851bcf9384f5f",
+      "7a24a27a8563ad8017b988ff5321b228c8ee6806b929fddd444851bcf9384f5f"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_63",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "ac69cef5d053a88ffb6c5286cdf49c342506d8d1af7ec9ecd8cf34f5f105c172",
+    "reference_disk_hashes": [
+      "4a8d11ad3637f3c5cb2b125f4844eb91cc21f269670ea7297a5d33fc34612357",
+      "4a8d11ad3637f3c5cb2b125f4844eb91cc21f269670ea7297a5d33fc34612357"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_64",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "952a873a1fdb53f1009e70e56e8c2bd55b51d70bfc0c6d4590a018593e406f69",
+    "reference_disk_hashes": [
+      "051281df60a50e17225c252afefb01f8f389bb0957420932c8e72123c838fe64",
+      "051281df60a50e17225c252afefb01f8f389bb0957420932c8e72123c838fe64"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_65",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "d79c720bac7beaa6eba6403f3d3b29fa276e600ada76de173fc009d1ebd04e45",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_66",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "038ded7a32ec5af61719937ae0305674dc40f7974fa2ab28570f267bbe0cba12",
+    "reference_disk_hashes": [
+      "d230b7cf4ed055649f887885d1d35730e48eae13a664bac698683bf978adeafe",
+      "d230b7cf4ed055649f887885d1d35730e48eae13a664bac698683bf978adeafe"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_67",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "d433746b4a2d4e7f218541d02944996fcb308420b0632bb87920fb1f6b6115fa",
+    "reference_disk_hashes": [
+      "beb4bb523c21542d0bc339a45b74452404d79cf456f0c568253e851f691a185e",
+      "beb4bb523c21542d0bc339a45b74452404d79cf456f0c568253e851f691a185e"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_68",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "faee64b83b3ed72ec4f4aa7e901f2a8a130e0002acc0ed5cb93c3abd7cb50737",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_69",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "b07a874dc4ed4132d8a2eda5fa173ac4e7f72088541ea41dbd6e9df888ea0b31",
+    "reference_disk_hashes": [
+      "c9730bd75d5be588227c8ef29378da6a0e42c4906c658172b0df8f89fc7fbe88",
+      "c9730bd75d5be588227c8ef29378da6a0e42c4906c658172b0df8f89fc7fbe88"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_70",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "87fc68319d3f31f8db7f27b897da6914d2e183f177f417187fa1a5cdc5d82da5",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_71",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "14a299e4f3f7cbd1f7c3adbb33d7617abe33b35c4e903e2716c06830fb76a153",
+    "reference_disk_hashes": [
+      "b3ff51590428f82d3c53c15b10106c4607dca9ba58caf531a03efb57a86ae7bd",
+      "b3ff51590428f82d3c53c15b10106c4607dca9ba58caf531a03efb57a86ae7bd"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_72",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "3e93e4b0469ff4d21c0f70e3cff66e52852397ebc3f1a368d47ea197fec4a15f",
+    "reference_disk_hashes": [
+      "a6e22689bff2a4f77d270cf246508ba6d360f33e92801186ba1cf6727b0f4613",
+      "a6e22689bff2a4f77d270cf246508ba6d360f33e92801186ba1cf6727b0f4613"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_73",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "c61e0f452328527fcc373885c0f296afe5774d028b20e4d4d1c0c53270073f2e",
+    "reference_disk_hashes": [
+      "e704bb3f722207db7b8ceb6f07c61213121fa011f83fc927af72407acf4dfddf",
+      "e704bb3f722207db7b8ceb6f07c61213121fa011f83fc927af72407acf4dfddf"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "tight_u__seed_74",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "c84177eaf2545c9b254870c9902e4380d99cc0ab01696d3c9fbbe4d0bd2ecd24",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_55",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "3495bc0661274bb45982b7e02ac2ddf8ca5d80c339d299bb75feda8d69fc9548",
+    "reference_disk_hashes": [
+      "88d5f66366c4e6856f98bf22026cb07693ecad16f23dfe804183e57ca1ac1db1",
+      "88d5f66366c4e6856f98bf22026cb07693ecad16f23dfe804183e57ca1ac1db1"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_56",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "7bbfb84c572a8ee7a98eb677daff516f1154b3cfe5e7be395430de54b9e66764",
+    "reference_disk_hashes": [
+      "2f1e9322b4600efba53027a42e7bad3dfc11aef8b3cd38008fab1aa009c40147",
+      "2f1e9322b4600efba53027a42e7bad3dfc11aef8b3cd38008fab1aa009c40147"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_57",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "d3307bd477bc98ee8ac86513e081dbf539440226c7bdb9d539509cf0b2507c54",
+    "reference_disk_hashes": [
+      "f385b0f5c1cd7090e106ff3c603a7554fbc4f0a3eb71401c5d5bbb7ec1460f5c",
+      "f385b0f5c1cd7090e106ff3c603a7554fbc4f0a3eb71401c5d5bbb7ec1460f5c"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_58",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "e222cf49ca5c376715d3dcae05f67d67677f5a44edcda97fa6aaa6b87c912eb0",
+    "reference_disk_hashes": [
+      "8c289366c9baa030fa9af81c28eb1064486ed33eac7c9db9d7f672754b4299ba",
+      "8c289366c9baa030fa9af81c28eb1064486ed33eac7c9db9d7f672754b4299ba"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_59",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "f1223a364f1ff942df63ccf9e053fd0b50acbe95cef52070e5979ae4082aa8cf",
+    "reference_disk_hashes": [
+      "13ffe4e0d9ef141fbe2b956e72854cc641e913357233a4d711309bd272e551f5",
+      "13ffe4e0d9ef141fbe2b956e72854cc641e913357233a4d711309bd272e551f5"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_60",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "f0b354c2783a8b38af2cf45906eccc46fe8027f81dd791433447c58a0bb30904",
+    "reference_disk_hashes": [
+      "1de18a77e902491a0c715e8c4a24503e66f2d30683c73a58643f3e43d6f6cafc",
+      "1de18a77e902491a0c715e8c4a24503e66f2d30683c73a58643f3e43d6f6cafc"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_61",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "34dd6912cb3262f1fc05c679a5342f2c724f9c900703afe42d3c835b9beb69cc",
+    "reference_disk_hashes": [
+      "738f0f4e77ee9af7a5ae40ec4b51f63e75f41de4f34d1a0cad7afd0cc0364559",
+      "738f0f4e77ee9af7a5ae40ec4b51f63e75f41de4f34d1a0cad7afd0cc0364559"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_62",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "fdd50f3dc8febdd959ada4541709d86c162d25a8ca990debf4c7c57c1fb8049a",
+    "reference_disk_hashes": [
+      "541c0d4b4137d8b74753cb0757ee0c92e19066280fe80ffdf0b8e28b309f9c5c",
+      "541c0d4b4137d8b74753cb0757ee0c92e19066280fe80ffdf0b8e28b309f9c5c"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_63",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "25170cbff0da346af19296c34ebd70d86800e614a448b72e36e821c8a65a7cc2",
+    "reference_disk_hashes": [
+      "a1d0b00ed31426ec361020321ef63a873817ba6dc51e0272a50dbd030aeac0be",
+      "a1d0b00ed31426ec361020321ef63a873817ba6dc51e0272a50dbd030aeac0be"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_64",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "08080839f34da3495e36ccc96d4e70b8a1136be6bf93c71c0c4bd3376c5350c2",
+    "reference_disk_hashes": [
+      "177bb341fbdeeb9c8c44f033ee11df4358b929394404a63feae2662b67ca4cb8",
+      "177bb341fbdeeb9c8c44f033ee11df4358b929394404a63feae2662b67ca4cb8"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_65",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "2e44956c45ea7a47384277ce657e7010003df1132a53c97fac8511671fdf694d",
+    "reference_disk_hashes": [
+      "d39ae745077518e11ede28aa9bf1ad94e9d5da42885e4528a48be1badcbc2c5d",
+      "d39ae745077518e11ede28aa9bf1ad94e9d5da42885e4528a48be1badcbc2c5d"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_66",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "1e06568549a56e82fe8d6e60edba03f575756a2a2ff73e05b8de52237b4bcded",
+    "reference_disk_hashes": [
+      "f019a0165d56567711dd375204e814984c417726260ab6f42f172978763323f9",
+      "f019a0165d56567711dd375204e814984c417726260ab6f42f172978763323f9"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_67",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "59986ab75a3bbed965442f513c9cf6ae27b6c2c778b7ef6c36a1b4a4dd3d0ce5",
+    "reference_disk_hashes": [
+      "21813865794eb8a17f801952fffcf2203934a1a1f0f68b2947016f55161b4d14",
+      "21813865794eb8a17f801952fffcf2203934a1a1f0f68b2947016f55161b4d14"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_68",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "0b0a156302cb3fcd395bb270f532ee9e25c9483e298471f4d86f09a0539aaf92",
+    "reference_disk_hashes": [
+      "6bf17a2f6b605d6ee5a61a65e1cd810cc3c12e565ba67f3450cf280cafc41f04",
+      "6bf17a2f6b605d6ee5a61a65e1cd810cc3c12e565ba67f3450cf280cafc41f04"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_69",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "36ac50039e620f5618c60a1690dcf33e2979af5b5a47173be98c70a24d873472",
+    "reference_disk_hashes": [],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_70",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "9ac914455fa6464743447426a72164fcd7cff3ab1a7b2864cf8ec2feaa965bac",
+    "reference_disk_hashes": [
+      "5fbdf0d010794fe6bd4e151d3be130e23b34fcef25bbec0fb00c6f6c4f3ae293",
+      "5fbdf0d010794fe6bd4e151d3be130e23b34fcef25bbec0fb00c6f6c4f3ae293"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_71",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "ffd76d79c00438325eb482b695345e58656222abe763441ff74bacc27134ec5f",
+    "reference_disk_hashes": [
+      "ec1e77cf69ce6a7bd1836ec84b60a4b0220ccd85823d2f131aaba7ab7854e7f9",
+      "ec1e77cf69ce6a7bd1836ec84b60a4b0220ccd85823d2f131aaba7ab7854e7f9"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_72",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "2ebd96c837d4e72bcd424f283a3183c6e22e20bc0138d8a45dfa4d8dad45b85e",
+    "reference_disk_hashes": [
+      "bb3819d1c84b7eaef0f132fcbb2774d90cbbe878b01fc23f5e0591f132eadb6f",
+      "bb3819d1c84b7eaef0f132fcbb2774d90cbbe878b01fc23f5e0591f132eadb6f"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_73",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "a955eb8ecd12a168dab0acbd13dee0828a48eae57b97b5b3865f7b99f9bf657e",
+    "reference_disk_hashes": [
+      "e72ea8bda649ab02c3291a3ea4bf26ebec5f0e7c7e96327989bbf451cba46255",
+      "e72ea8bda649ab02c3291a3ea4bf26ebec5f0e7c7e96327989bbf451cba46255"
+    ],
+    "paired_physical_reference_equal": true
+  },
+  {
+    "unit": "wide_u__seed_74",
+    "same_input_sha256": true,
+    "same_fixed_count": true,
+    "common_config_sha256": "ac00006443b24f74915744b62ef395dd6fa3728cf030e8e8bfe96e91aa25621b",
+    "reference_disk_hashes": [
+      "5cbb0a962ae457b62a4668a609b3e81da8883977d835e4d3ef046fe2f86f544f",
+      "5cbb0a962ae457b62a4668a609b3e81da8883977d835e4d3ef046fe2f86f544f"
+    ],
+    "paired_physical_reference_equal": true
+  }
+]

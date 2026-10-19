@@ -1,0 +1,68 @@
+# Can a valid static crowd produce the narrow-slot geometry?
+# Four frozen crowds. One disk-union estimator. Two stated offsets.
+# Execution uses at most six valid estimated curves and three planners.
+schema_version: 1
+protocol: scene_closure_diagnostic
+room_m: 30.0
+person_radius_m: 0.20
+minimum_center_distance_m: 0.40
+closing_radius_m: 0.30
+primary_offset_m: 1.3
+safety_floor_offset_m: 0.55
+sample_spacing_m: 0.10
+quad_segs: 16
+crowd_distance_m: 0.75
+wall_distance_m: 0.55
+gap_limit_m: 1.94
+acceptance_gap_limit_m: 2.0
+center_separation_m: 0.75
+guide_seed: 15
+max_execution_curves: 6
+max_execution_tasks: 18
+execution_methods: [equal_arc, projected_mass, pairwise_euclidean]
+solver_maxiter: 40
+per_start_timeout_s: 20
+phase_fractions: [0.0, 0.05, 0.10, 0.15, 0.20, 0.25]
+legacy_phases: [0.0, 0.25, 0.5, 0.75]
+legacy_max_iterations: 300
+quadrature_samples: 2048
+scenes:
+  - {name: compact, kind: grid, origin: [14.0, 14.0], spacing: [0.8, 0.8], rows: 3, columns: 3}
+  - {name: elongated, kind: grid, origin: [12.0, 14.4], spacing: [0.7, 0.7], rows: 2, columns: 8}
+  - {name: wide_u, kind: u, origin: [11.0, 12.0], arm_spacing: 0.55, arm_length: 4.4, body_gap: 4.5}
+  - {name: tight_u, kind: u, origin: [12.0, 12.0], arm_spacing: 0.55, arm_length: 4.4, body_gap: 2.2}
+execution_controller:
+  offset: 1.3
+  sample_spacing: 0.1
+  budget_gap: 2.0
+  max_gap_limit: 2.0
+  position_tolerance: 0.03
+  speed_tolerance: 0.03
+  curve_tolerance: 0.04
+  arc_tolerance: 0.03
+  safety_numeric_tolerance: 1.0e-7
+  demand_bandwidth: 1.2
+  gain: 1.5
+  hold_steps: 10
+  clearance: 0.35
+  waypoint_tolerance: 0.05
+  phases: [0.0, 0.25, 0.5, 0.75]
+  quadrature_samples: 2048
+  planner_max_iterations: 300
+  stall_window: 20
+  max_replans: 3
+guides: {radius: 0.20, max_speed: 1.0, initial_inset: 1.0}
+simulation: {dt: 0.1, max_steps: 400}
+selection_rules:
+  - Estimate every scene with the convex offset and with disk-union at 1.3 m and 0.55 m. Record all of them.
+  - Execute disk-union curves only. A convex hull is not called a non-convex boundary.
+  - Take valid primary-offset curves in scene order, then a safety-floor curve when its primary curve is invalid or its convexity defect is below 0.001.
+  - Stop at six curves. Do not drop a curve because a planner failed, and do not add a curve because a planner succeeded.
+  - N is ceil(L / 1.94) and is fixed before the three planners run.
+  - Execute a planner only when its independent arc-box and Euclidean check passes.
+  - Stop at 18 executions.
+offset_notes:
+  primary: Controller planning offset, metres beyond the closed occupied set.
+  safety_floor: crowd center distance 0.75 m minus the person radius 0.20 m. Locally this puts the curve 0.75 m from a person centre. It is not the controller offset.
+  closing: Estimator length. Body-surface gaps below 0.60 m can join. It is not a safety distance.
+  inward_1_6: The earlier prescribed-curve attachment inset. It is not used here and is not a safety law.

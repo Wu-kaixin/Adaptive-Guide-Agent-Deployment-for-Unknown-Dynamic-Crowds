@@ -1,0 +1,29 @@
+{
+  "device_id": "kai-14900kf",
+  "hostname": "KAI",
+  "manufacturer": "ASUS",
+  "cpu": "Intel(R) Core(TM) i9-14900KF",
+  "cores": 24,
+  "logical_processors": 32,
+  "memory_bytes": 68463685632,
+  "os": "Windows 11 10.0.26200",
+  "uv": "0.13.1",
+  "python": "3.12.15",
+  "venv": "E:\\udc-wt\\venv312",
+  "official_interpreter": "E:\\udc-wt\\venv312\\Scripts\\python.exe",
+  "unused_local_venv": ".venv is Python 3.13.13 created from D:\\miniconda on this machine; it was not the official reproduction interpreter",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2",
+    "PedPy": "1.5.1",
+    "pytest": "9.1.1"
+  },
+  "pip_check": "All installed packages are compatible",
+  "pytest": "89 passed",
+  "pytest_note": "87 passed on the unchanged scientific tree. tests/test_scene_probe.py adds 2 tests for the frozen seed probe. The older 37-test record was not reconstructed by deleting tests.",
+  "workers": 20,
+  "numerical_threads_per_worker": 1,
+  "benchmark": "confirmation seed 5, 54 tasks, 16 workers, 4.9 s on the unused 3.13.13 venv"
+}

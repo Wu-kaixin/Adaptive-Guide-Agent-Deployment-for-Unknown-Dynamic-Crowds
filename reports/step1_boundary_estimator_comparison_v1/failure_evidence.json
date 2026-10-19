@@ -1,0 +1,510 @@
+[
+  {
+    "task_id": "tight_u__seed_56__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3264930285213158
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_56__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_56__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3264930285213158
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_56__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_57__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.39030686674874376
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_57__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_57__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.39030686674874376
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_57__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_58__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3718626339378456
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_58__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_58__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3718626339378456
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_58__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_61__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.37024554899712914
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_61__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_61__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.37024554899712914
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_61__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_65__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3859999471759797
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_65__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_65__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3859999471759797
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_65__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_68__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3670320256178391
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_68__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_68__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3670320256178391
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_68__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_70__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.36530204135716393
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_70__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_70__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.36530204135716393
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_70__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_74__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3257635870258432
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_74__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "tight_u__seed_74__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3257635870258432
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\tight_u__seed_74__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "wide_u__seed_69__convex_hull",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3329572862131169
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\wide_u__seed_69__convex_hull",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "wide_u__seed_69__disk_union_closed",
+    "failure_layer": "common_input_rejection",
+    "status": "INITIALIZATION_INVALID",
+    "first_recorded_stage": "initialization",
+    "reason": "INITIALIZATION_INVALID: shared people or room constraints invalid; no estimator called",
+    "input_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3329572862131169
+    },
+    "boundary_description": null,
+    "coverage_audit": null,
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\wide_u__seed_69__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  },
+  {
+    "task_id": "wide_u__seed_70__disk_union_closed",
+    "failure_layer": "boundary_or_curve_invalid",
+    "status": "BOUNDARY_INVALID",
+    "first_recorded_stage": "boundary",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "input_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4774948724557971
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.09396999998716637,
+      "description_seconds": 0.04937249998329207,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.477993368828508,
+      "occupied_perimeter_m": 29.963348150620952,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.2120489655955795,
+      "concavity_area_m2": 21.383415556643673,
+      "area_over_convex_hull_area": 0.1731534960733677,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "6022e10833ce7fc5d003e0e82fb3b95edfb7328a9569c2a752ea765604a29f3a",
+      "reference_wkb_sha256": "5fbdf0d010794fe6bd4e151d3be130e23b34fcef25bbec0fb00c6f6c4f3ae293"
+    },
+    "coverage_audit": {
+      "task_id": "wide_u__seed_70__disk_union_closed",
+      "strict_full_occupied_covers_reference32": false,
+      "full_occupied_reference32_difference_area_m2": 0.0,
+      "controller_outer_ring_installed": false,
+      "extracted_outer_covers_all_acceptance_disks16": false,
+      "extracted_outer_ring_sha256": "6022e10833ce7fc5d003e0e82fb3b95edfb7328a9569c2a752ea765604a29f3a",
+      "controller_outer_ring_sha256": null,
+      "controller_outer_representation": "not installed; extracted exterior used for refusal diagnosis only",
+      "full_occupied_sha256": "6022e10833ce7fc5d003e0e82fb3b95edfb7328a9569c2a752ea765604a29f3a",
+      "reference32_sha256": "5fbdf0d010794fe6bd4e151d3be130e23b34fcef25bbec0fb00c6f6c4f3ae293",
+      "acceptance16_noncovered_people": [
+        {
+          "person_index": 16,
+          "position": [
+            15.931227462464868,
+            15.838028154200485
+          ],
+          "radius": 0.2,
+          "strict_covers": false,
+          "de9im": "212101212",
+          "difference_type": "Polygon",
+          "difference_area_m2": 1.5777218104420236e-29,
+          "difference_length_m": 7.948233542814273e-14,
+          "difference_wkt": "POLYGON ((15.754843209595197 15.932307501565685, 15.754843209595203 15.932307501565694, 15.754843209595185 15.932307501565658, 15.754843209595197 15.932307501565685))",
+          "noncovered_disk_vertices": [
+            [
+              15.754843209595197,
+              15.932307501565685
+            ]
+          ],
+          "maximum_noncovered_vertex_distance_m": 7.240456129215212e-16
+        }
+      ]
+    },
+    "common_motion": null,
+    "state": {
+      "status": "completed",
+      "success": false
+    },
+    "result_path": "runs\\step1_boundary_estimator_protocol\\future\\results\\wide_u__seed_70__disk_union_closed",
+    "no_confirmation_rerun_or_algorithm_change": true
+  }
+]

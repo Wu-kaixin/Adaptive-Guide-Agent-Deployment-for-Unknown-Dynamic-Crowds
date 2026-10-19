@@ -8,7 +8,7 @@ import yaml
 
 from udc.environment import Environment
 from udc.experiments.config import load_config
-from udc.experiments.nonconvex_rebuild import draw_cell, load_protocol, array_hash, rejected_result
+from udc.experiments.nonconvex_rebuild import draw_cell, load_protocol, array_hash, rejected_result, run_task
 
 
 def test_rebuild_draw_is_shared_and_does_not_couple_people_to_guide_jitter():
@@ -68,3 +68,23 @@ def test_rejected_input_keeps_artifacts_and_three_failure_rows(tmp_path):
                    ('metrics.json', 'state.json', 'trajectory.npz', 'planning.json', 'config.yaml', 'reevaluated_metrics.json'))
         offline = json.loads((target / 'reevaluated_metrics.json').read_text(encoding='utf-8'))
         assert offline['criteria_consistent'] and not offline['success']
+
+
+def test_existing_evidence_is_not_overwritten_when_source_changes(tmp_path):
+    from udc.experiments.nonconvex_rebuild import sha
+    cell=tmp_path/'inputs/cell'
+    cell.mkdir(parents=True)
+    (tmp_path/'protocol.json').write_text(json.dumps({'spec':{},'base_spec':{}}))
+    (cell/'input.npz').write_bytes(b'frozen')
+    (cell/'input.yaml').write_text('frozen')
+    (cell/'input_record.json').write_text(json.dumps({'input_file_sha256':sha(cell/'input.npz'),
+                                                    'config_sha256':sha(cell/'input.yaml')}))
+    run=tmp_path/'baseline/wide_u/seed_22/equal_arc'
+    run.mkdir(parents=True)
+    (run/'state.json').write_text('{"status":"completed"}')
+    saved='{"source_sha256":"historic","termination_status":"PATH_UNREACHABLE"}'
+    (run/'metrics.json').write_text(saved)
+    row={'cell':'inputs/cell','scene':'wide_u','seed':22,'method':'equal_arc','count':19}
+    with pytest.raises(FileExistsError,match='choose a new --tag'):
+        run_task((str(tmp_path),row,'baseline'))
+    assert (run/'metrics.json').read_text()==saved

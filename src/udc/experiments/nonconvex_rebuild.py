@@ -225,7 +225,15 @@ def run_task(arguments):
     cell = output / row['cell']
     directory = output / tag / row['scene'] / f"seed_{row['seed']}" / row['method']
     if (directory / 'state.json').is_file():
-        return json.loads((directory / 'metrics.json').read_text(encoding='utf-8'))
+        # Never overwrite old evidence or silently reuse it for a new source.
+        record=json.loads((cell/'input_record.json').read_text(encoding='utf-8'))
+        old=json.loads((directory/'metrics.json').read_text(encoding='utf-8'))
+        old_source=old.get('source_sha256',old.get('provenance',{}).get('source_sha256'))
+        if (sha(cell/'input.npz')!=record['input_file_sha256']
+                or sha(cell/'input.yaml')!=record['config_sha256']
+                or old_source!=provenance({},None,'fixed_n',row['count'])['source_sha256']):
+            raise FileExistsError('Existing tag has different source or inputs; choose a new --tag. Evidence is unchanged.')
+        return old
     try:
         with threadpool_limits(limits=1):
             record = json.loads((cell / 'input_record.json').read_text(encoding='utf-8'))

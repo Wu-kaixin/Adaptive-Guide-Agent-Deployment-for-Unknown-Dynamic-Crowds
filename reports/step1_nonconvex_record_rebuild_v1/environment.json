@@ -1,0 +1,24 @@
+{
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "udc_import": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "uv": "uv 0.13.0 (4ecd0eff2 2026-10-09 x86_64-pc-windows-msvc)",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2",
+    "pedpy": "1.5.1",
+    "pytest": "9.1.1",
+    "PyYAML": "6.0.3"
+  },
+  "editable_direct_url": {
+    "url": "file:///C:/Users/kai/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds",
+    "dir_info": {
+      "editable": true
+    }
+  },
+  "max_episode_processes": 2,
+  "numerical_threads_per_worker": 1
+}

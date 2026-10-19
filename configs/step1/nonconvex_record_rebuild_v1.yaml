@@ -1,0 +1,22 @@
+schema_version: 1
+protocol: nonconvex_record_rebuild_v1
+base_spec: experiments/step1_scene_closure.yaml
+scenes: [elongated, tight_u, wide_u]
+methods: [equal_arc, projected_mass, pairwise_euclidean]
+seeds: [20, 21, 22, 23, 24]
+guide_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+people_jitter_std_m: 0.04
+guide_arc_jitter_half_width_m: 0.35
+guide_phase_fraction: 0.012
+random_namespace: 20261019
+density: constant_curve_density_matching_scene_closure
+solver_maxiter: 40
+per_start_timeout_s: 20
+phase_fractions: [0.0, 0.05, 0.10, 0.15, 0.20, 0.25]
+notes:
+  - New recorded-protocol reconstruction, not recovery of the missing historical 45 inputs.
+  - The 1 m inset belongs to the known square room; orientation and phase follow Environment.initialize_guides.
+  - Spawn the people/guide/optimizer streams from SeedSequence([20261019, scene_index, seed]); optimizer is currently deterministic.
+  - Use one Gaussian draw per person coordinate and one uniform arc draw per guide. Never resample a rejected cell.
+  - Demand and radii remain 1.0 and 0.20 m. Constant curve density follows the stable scene_closure diagnostic, not a Gaussian demand interpretation.
+  - Fixed counts are retained even when the necessary gap bound fails. All three method rows remain in the denominator.

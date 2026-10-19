@@ -36,6 +36,7 @@ def load_config(path, seed=None):
         raise ValueError('Only strict Step-1 schema is supported')
     for section, fields in sections.items():
         optional = ({'source', 'grid', 'trajectory_file', 'demand_region'} if section == 'crowd'
+                    else {'initial_positions'} if section == 'guides'
                     else {'concentration'} if section == 'controller' else set())
         if not isinstance(config[section], dict) or not fields <= set(config[section]) or set(config[section]) - fields - optional:
             raise ValueError(f'{section} requires exactly: {sorted(fields)}')
@@ -70,6 +71,10 @@ def load_config(path, seed=None):
                 raise ValueError(f'{section}.{key} must be finite positive')
     if config['controller']['method'] not in METHODS:
         raise ValueError('Invalid method')
+    if 'initial_positions' in config['guides']:
+        positions = np.asarray(config['guides']['initial_positions'], dtype=float)
+        if positions.shape != (config['guides']['count'], 2) or not np.isfinite(positions).all():
+            raise ValueError('guides.initial_positions must be finite (count, 2)')
     concentration = config['controller'].get('concentration', 1.0)
     if isinstance(concentration, bool) or not isinstance(concentration, (int, float)) \
             or not np.isfinite(concentration) or not 0 < concentration <= 1:

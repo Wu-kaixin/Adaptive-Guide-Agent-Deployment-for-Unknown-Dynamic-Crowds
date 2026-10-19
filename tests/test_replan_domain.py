@@ -85,6 +85,53 @@ def test_nanometre_boundary_point_is_planned_without_opening_the_shell():
     assert not segment_in_free(deep, target[0], domain)
 
 
+def test_boundary_coincident_start_remains_in_the_static_matching():
+    """A guide exactly on a boundary sample must not be dropped from the graph.
+
+    ``free.covers`` can reject that coordinate even though its distance to the
+    boundary is zero. The planner node may move by the existing 1e-8 m nudge.
+    """
+    from udc.navigation.paths import NavigationDomain, _prepare_start, _shortest, _visibility_graph
+    ring = np.array([
+        [9.8450668907, 16.2464465278], [10.2655901822, 16.9712208456],
+        [10.7736559579, 17.2427876605], [11.3451080894, 17.1291187642],
+        [11.6970822464, 16.7210829001], [11.9375904938, 15.3407889487],
+        [11.7982006625, 13.9925218082], [11.91171919, 12.8019885281],
+        [12.5957192443, 12.9298280313], [14.9221608457, 12.8106426951],
+        [15.0649894975, 12.905466915], [14.9769620801, 15.8879790438],
+        [15.0781078471, 16.255477155], [14.9285098179, 16.7083168527],
+        [15.7388649664, 17.2232815482], [16.4622845032, 17.0793844555],
+        [16.8032453345, 16.4414916066], [16.662216238, 12.7534496464],
+        [16.8728627661, 12.083183816], [16.7022445105, 11.5667149849],
+        [16.2280630939, 11.2498770918], [14.8560498077, 11.101698248],
+        [12.8157119439, 11.2366393085], [12.1610403782, 11.0889180525],
+        [10.4481173596, 11.302152284], [10.0982130555, 11.9567771937],
+        [10.2279512141, 12.43096426], [10.1140769632, 14.2273055348],
+        [10.2413137819, 15.4876061992], [10.1642873313, 15.9115019264],
+        [9.8450668907, 16.2464465278],
+    ])
+    obstacle = Polygon(ring)
+    room = Polygon([(0.55, 0.55), (29.45, 0.55), (29.45, 29.45), (0.55, 29.45)])
+    domain = NavigationDomain(
+        room, obstacle, obstacle, room.difference(obstacle), room,
+        0.55, 0.0, 0.10, 0.11, 'boundary-coincident-fixture',
+    )
+    start = np.array([15.05083706117742, 16.78605340029187])
+    assert abs(domain.signed_free_distance(start)) <= 1e-7
+    assert domain.free.covers(Point(start)) is False
+    prepared = _prepare_start(start, domain)
+    assert prepared is not None
+    planner, prefix = prepared
+    assert prefix is not None
+    np.testing.assert_allclose(prefix, start)
+    assert domain.free.covers(Point(planner))
+    assert float(np.linalg.norm(planner - start)) <= 1e-8 + 1e-12
+    target = np.array([20.0, 20.0])
+    graph = _visibility_graph(domain.free, obstacle)
+    path, _length = _shortest(planner, target, domain.free, obstacle, graph=graph)
+    assert path is not None
+
+
 def test_shell_connection_keeps_the_true_start_and_rejects_an_unsafe_segment():
     domain, crowd = _domain()
     start = _inward(domain, 0.04)

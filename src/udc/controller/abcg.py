@@ -342,7 +342,7 @@ class ABCGController:
         for guide in active:
             path=np.asarray(paths[int(guide)])
             if (path.ndim!=2 or path.shape[1]!=2 or len(path)<2 or not np.isfinite(path).all()
-                    or not np.array_equal(path[0],positions[guide])
+                    or np.linalg.norm(path[0]-positions[guide])>ENDPOINT_TOLERANCE_M
                     or np.linalg.norm(path[-1]-self.plan.positions[int(assignment[guide])])>ENDPOINT_TOLERANCE_M):
                 raise NavigationFailure('invalid_candidate_path','candidate path endpoints do not match actual state and assigned target',guide=int(guide))
             for a,b in zip(path[:-1],path[1:]):

@@ -1,5 +1,6 @@
 """Complete segment predicate against the five-point sample."""
 import numpy as np
+import pytest
 from shapely.geometry import Point, Polygon
 
 from udc.navigation import segment_in_free, segment_in_free_sampled
@@ -48,6 +49,64 @@ def test_installed_boundary_edge_and_closing_seam_stay_legal():
     # The hole ring is a boundary. Crossing the hole is not.
     assert segment_in_free(np.array([6.2, 0.4]), np.array([6.4, 0.4]), domain)
     assert segment_in_free(np.array([6.2, 0.4]), np.array([6.4, 0.8]), domain) is False
+
+
+def _axis_aligned_penetration(start, end, bounds):
+    """Exact max penetration of a horizontal or vertical chord into an AABB.
+
+    This is the reference. It does not call the segment predicate.
+    """
+    xmin, ymin, xmax, ymax = bounds
+    start = np.asarray(start, float)
+    end = np.asarray(end, float)
+    if abs(start[1] - end[1]) < 1e-15:
+        y = float(start[1])
+        x0, x1 = sorted((float(start[0]), float(end[0])))
+        if y < ymin or y > ymax:
+            return 0.0
+        left, right = max(x0, xmin), min(x1, xmax)
+    elif abs(start[0] - end[0]) < 1e-15:
+        x = float(start[0])
+        y0, y1 = sorted((float(start[1]), float(end[1])))
+        if x < xmin or x > xmax:
+            return 0.0
+        left, right = max(y0, ymin), min(y1, ymax)
+        xmin, xmax, ymin, ymax = ymin, ymax, xmin, xmax
+        y = x
+    else:
+        raise ValueError('reference only covers axis-aligned chords')
+    if left >= right - 1e-15:
+        return 0.0
+    center = 0.5 * (xmin + xmax)
+    if left <= center <= right:
+        horizontal = center - xmin
+    else:
+        horizontal = max(min(left - xmin, xmax - left), min(right - xmin, xmax - right))
+    vertical = min(y - ymin, ymax - y)
+    return float(min(horizontal, vertical))
+
+
+def test_exact_rectangle_penetration_agrees_with_the_complete_predicate():
+    from shapely.geometry import Polygon
+    obstacle = Polygon([(3.0, 0.0), (4.0, 0.0), (4.0, 1.0), (3.0, 1.0)])
+    room = Polygon([(-1.0, -1.0), (10.0, -1.0), (10.0, 3.0), (-1.0, 3.0)])
+    domain = type('Domain', (), {})()
+    domain.free = room.difference(obstacle)
+    domain.physical_free = room
+    domain.conservative_obstacle = obstacle
+    bounds = (3.0, 0.0, 4.0, 1.0)
+    chord = (np.array([0.0, 0.5]), np.array([8.0, 0.5]))
+    edge = (np.array([3.0, 0.0]), np.array([4.0, 0.0]))
+    shallow = (np.array([3.0 + 1e-9, 0.5]), np.array([1.0, 0.5]))
+    deep = (np.array([3.0 + 1e-6, 0.5]), np.array([1.0, 0.5]))
+    assert _axis_aligned_penetration(*chord, bounds) == pytest.approx(0.5)
+    assert segment_in_free(*chord, domain) is False
+    assert _axis_aligned_penetration(*edge, bounds) == pytest.approx(0.0)
+    assert segment_in_free(*edge, domain) is True
+    assert _axis_aligned_penetration(*shallow, bounds) <= 1e-7
+    assert segment_in_free(*shallow, domain) is True
+    assert _axis_aligned_penetration(*deep, bounds) > 1e-7
+    assert segment_in_free(*deep, domain) is False
 
 
 def test_tolerance_accepts_a_nanometre_contact_and_rejects_a_micrometre_penetration():

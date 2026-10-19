@@ -202,8 +202,10 @@ def _shortest(start, target, free, obstacle, extra_nodes=(), graph=None):
 def _prepare_start(point, domain, guides=None, guide=None, people=None, limits=None, room=None):
     """Return the visibility-graph start and an optional true-state prefix.
 
-    A point on the numerical boundary is not passed into the graph. A point in
-    the planning shell is connected only when the physical segment check passes.
+    A point ``free.covers`` rejects but that lies on the boundary sample is
+    connected through the existing 1e-8 m planner node. The executed state stays
+    at ``point``. A point in the planning shell is connected only when the
+    physical segment check passes.
     """
     point = np.asarray(point, dtype=float)
     if domain.free.covers(Point(point)):
@@ -220,9 +222,12 @@ def _prepare_start(point, domain, guides=None, guide=None, people=None, limits=N
         clearances = path_clearances(np.asarray(guides, dtype=float), end, np.asarray(people, dtype=float), np.asarray(room, dtype=float))
         if not is_safe(clearances, limits):
             return None
-    if np.linalg.norm(contact - point) <= 1e-12:
-        return contact, None
-    return contact, point
+    # A covered sample a few ulps from the true state is a planner node only.
+    # The executed path still begins at ``point``; dropping it makes installation
+    # reject an otherwise valid route.
+    if float(np.linalg.norm(contact - point)) <= 1e-15:
+        return np.asarray(point, dtype=float), None
+    return contact, np.asarray(point, dtype=float)
 
 
 def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd_margin,
@@ -452,20 +457,63 @@ def segment_in_free(start, end, domain, audit=None):
     return bool(accepted)
 
 
+def _outward_free_direction(nearest, domain):
+    """Unit step from an obstacle-boundary sample into conservative free space.
+
+    Used only when the guide is already numerically on that sample, so the
+    vector from the guide to the sample has no direction. The executed state
+    is not moved.
+    """
+    boundary = domain.conservative_obstacle.boundary
+    pieces = [boundary] if boundary.geom_type == 'LineString' else list(getattr(boundary, 'geoms', []))
+    nearest = np.asarray(nearest, dtype=float)
+    best = None
+    best_distance = np.inf
+    for piece in pieces:
+        coords = np.asarray(piece.coords, dtype=float)
+        for start, end in zip(coords[:-1], coords[1:]):
+            edge = end - start
+            length = float(np.linalg.norm(edge))
+            if length <= 1e-12:
+                continue
+            tangent = edge / length
+            projected = float(np.clip(np.dot(nearest - start, tangent), 0.0, length))
+            closest = start + projected * tangent
+            distance = float(np.linalg.norm(closest - nearest))
+            if distance < best_distance:
+                best_distance = distance
+                best = np.array([tangent[1], -tangent[0]], dtype=float)
+    if best is None:
+        return None
+    if domain.conservative_obstacle.covers(Point(nearest + 1e-4 * best)):
+        best = -best
+    norm = float(np.linalg.norm(best))
+    if norm <= 1e-15:
+        return None
+    return best / norm
+
+
 def _boundary_node(point, domain):
     """Closest conservative-obstacle boundary sample that free space accepts.
 
     The sample is a planner node. The guide state stays at ``point``.
+    A sample that coincides with ``point`` is stepped 1e-8 m into free space;
+    ``free.covers`` can reject that exact boundary coordinate.
     """
     boundary = domain.conservative_obstacle.boundary
     nearest = np.asarray(boundary.interpolate(boundary.project(Point(point))).coords[0], dtype=float)
     if domain.free.covers(Point(nearest)):
         return nearest
-    direction = nearest - np.asarray(point, dtype=float)
+    point = np.asarray(point, dtype=float)
+    direction = nearest - point
     length = float(np.linalg.norm(direction))
     if length <= 1e-15:
-        return None
-    nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction / length
+        direction = _outward_free_direction(nearest, domain)
+        if direction is None:
+            return None
+        nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction
+    else:
+        nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction / length
     if domain.free.covers(Point(nudged)) and domain.physical_free.covers(LineString([point, nudged])):
         return nudged
     return None

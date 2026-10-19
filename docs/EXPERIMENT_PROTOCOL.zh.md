@@ -1,5 +1,20 @@
 # 分阶段实验协议
 
+## 当前协议入口与历史边界（2026-10-19）
+
+当前基线包含完整线段判定、统一静态目标域、安全过滤、有界恢复和独立验收。边界比较只在显式协议中固定Equal Arc、常曲线密度及 `static_domain_phase_v1`，不将后处理设为所有方法的隐含默认。
+
+| 协议 | 状态与依据 |
+|---|---|
+| 边界比较v1，seed55–74 | 60共享输入／120行已完成；合法M=51，凸包51成功、圆盘50成功，101执行复判通过；[协议](../reports/step1_boundary_estimator_protocol/REPORT.zh.md)与[完整结果](../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md)分别保留 |
+| 覆盖几何契约v1 | 仅离线诊断，原严格模式不变；构造实际q32，原覆盖验收q16，[契约](COVERAGE_GEOMETRY_CONTRACT.zh.md)不等同解析圆盘严格包含 |
+| v3目标域开发回归 | 重建输入上的141／33／6，不是原180行独立确认的复判；见[来源限制](../reports/step1_target_domain_consistency/REPORT.zh.md) |
+| 历史凸曲线正式1620 | 属于原冻结版本f5b5d9c，不是当前源码全量回归；5000–5029不得转作开发seed |
+
+以下各节保留各轮历史冻结定义，不把旧参数文字、命令、成功率或“下一步”当作当前推荐入口。完整4860因子表和Step2/3尚未开展。旧文中圆盘 `quad_segs:16` 是配置值，既有构造实际分辨率为 `max(16,32)`；原配置及报告不改写。
+
+首次克隆可运行的示例与依赖本机冻结输入的历史审计分开，见[数据说明](DATA_AVAILABILITY.zh.md)。`--prepare`、`--freeze-future`、`--run-future`不是读取旧报告的命令；本批55–74已经使用，不得重新生成充当独立样本。
+
 ## 2026-10-19 非凸开发确认 v2
 
 恢复语义模块验收通过后，冻结 `configs/step1/nonconvex_confirmation_v2.yaml`：细长/窄U/宽U，Guide11/13/19，三方法，各seed25–34，90行、30个共享输入单元、每方法30行。已在本地metrics记录中检查未使用这些seed。生成器、SeedSequence命名空间和流分工完全沿用重建v1，人员N(0,0.04²)m、房间1m内缩周界Guide弧扰动±0.35m、半径0.20m、demand1、30m房间、1.3m圆盘并集、常数曲线密度均不变。人员中心距不足0.40m保留三行输入失败，绝不重抽。

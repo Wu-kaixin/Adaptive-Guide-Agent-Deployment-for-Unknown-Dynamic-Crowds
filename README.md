@@ -2,11 +2,13 @@
 
 面向未知人群周围自适应 Guide 部署的统一研究框架。
 
-当前整合分支实现 **Step 1：单个静态人群、已知封闭场地、全局观测、无限通信、无人群与 Guide 动力学交互**。项目最终研究多个人群的移动、扩散、分裂、合并，以及有限通信下的搜索与去中心化部署。
+当前基线实现 **Step 1：单个静态人群、已知封闭场地、全局观测、无限通信、无人群与 Guide 动力学交互**。项目最终研究多个人群的移动、扩散、分裂、合并，以及有限通信下的搜索与去中心化部署；这些后续能力尚未实现。
 
-先读 [框架逻辑与代码位置](docs/ARCHITECTURE.zh.md)，再看 [实验协议](docs/EXPERIMENT_PROTOCOL.zh.md)和 [本分支验证记录](docs/VALIDATION.zh.md)。
+先读 [框架逻辑与代码位置](docs/ARCHITECTURE.zh.md)，再看 [数据可用性与复现范围](docs/DATA_AVAILABILITY.zh.md)、[实验协议](docs/EXPERIMENT_PROTOCOL.zh.md)和 [验证记录](docs/VALIDATION.zh.md)。
 
-2026-10-19 边界构造比较协议已完成小规模检验：凸包与圆盘闭运算共用固定 Equal Arc、相位政策、人员观测和 Guide 数。指定 16 行中 4 条授权部署全部成功、8 行仅规划、2 行构造失败、2 行共同输入拒绝，全部独立复判一致。完整测试 148 项通过；未来 seed55–74 的 120 行仅准备清单，尚未生成输入或执行，不作正式估计器排名。见 [已试运行的比较协议](reports/step1_boundary_estimator_protocol/REPORT.zh.md)。
+截至2026-10-19，seed55–74的边界构造比较已完成：60个共享输入、120行；共同人员／房间合法分母M=51，凸包51/51、圆盘闭运算50/51成功，另有18行共同输入拒绝、1行边界拒绝。101条实际轨迹全部独立复判通过。固定Equal Arc、常数曲线密度、Guide数量与下游规则，结果描述整个流程的影响，不代表一般估计器排名。见[完整比较](reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md)。
+
+唯一边界拒绝wide_u seed70的保存坐标缺口已有精确证据。当前构造使用32段／象限圆盘多边形，原验收使用16段；新增覆盖契约只作诊断，保持原严格模式，不设epsilon放行，也不承诺解析圆盘严格包含。当前本机完整测试记录为 **175 passed**；跨平台状态以[GitHub Actions](https://github.com/Wu-kaixin/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/actions/workflows/ci.yml)为准。见[覆盖几何报告](reports/step1_coverage_geometry_contract/REPORT.zh.md)与[契约](docs/COVERAGE_GEOMETRY_CONTRACT.zh.md)。
 
 此前的目标入域修复基线：细长 seed51 的共同目标与导航保守域冲突来自闭运算尖角经 mitre 缓冲放大。统一静态目标检查已接入部署和导航；在原曲线上显式进行有限整体相位后处理后，三方法均执行成功。i9 上重建的 v3 开发回归为 141 成功、33 人员输入无效、6 曲线无效，180 行全部保留并独立复判；原 138 成功的独立确认不改写。该轮最终 141 项测试通过。原始 v3 数据和旧完整 73 输入未迁入，重建及实际覆盖限制见 [目标域报告](reports/step1_target_domain_consistency/REPORT.zh.md)。这些结果作为本轮比较协议的前置基线。
 
@@ -36,6 +38,8 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 
 每次使用新输出目录；已完成同一任务可加 `--resume`。只有代码、配置与输入 hash 一致才会跳过。
 
+上述示例和测试可从新克隆的仓库运行；不会恢复历史确认输入。`runs/`不随Git分发，历史比较的原始轨迹、SQLite与绝对路径引用需要对应主机上的冻结工件。代码可运行、报告可阅读、原实验可逐轨迹复判是三个不同范围，详见[数据说明](docs/DATA_AVAILABILITY.zh.md)。旧目录删除与分块审查入口见[基线整合说明](docs/STEP1_INTEGRATION_REVIEW.zh.md)。
+
 ## 逻辑顺序
 
 | 顺序 | 处理 | 去哪里修改 |
@@ -61,10 +65,12 @@ python run.py --config configs/step1/rectangle.yaml --output runs/rectangle
 | Average CVT | `average_cvt` | 局部平均 demand 驱动的周期 CVT |
 | Mass CVT | `mass_cvt` | Gaussian 需求质量驱动的周期 CVT，保留空间相对尺度 |
 | DistMesh-inspired | `distmesh` | 按平方根密度分位做间距松弛，并非完整 EikMesh／DistMesh 库 |
-| 带间隙约束的需求加权部署 | `projected_mass` | 原始需求密度上的周期 CVT，每步把弧间隙投影回上下界；这是当前有实验支持的候选 |
-| RA-ABDC（兼容入口） | `ra_abdc` | 与上者同一投影；浓度减半和 Equal Arc 回退仍在代码中，凸曲线实验里没有触发 |
+| 带间隙约束的需求加权部署（研究候选） | `projected_mass` | 原始需求密度上的周期CVT，每步投影弧间隙；证据限于已记录协议，不外推需求与非凸构造的交互 |
+| RA-ABDC（研究兼容入口） | `ra_abdc` | 与上者同一投影；浓度减半和Equal Arc回退在凸曲线实验里没有触发，未证明新增收益 |
 
 `adaptive_resource` 在数量上限内搜索可接受目标；`fixed_n` 固定数量，适合公平算法对照。
+
+`pairwise_euclidean`用于显式研究协议中的成对几何求解，不是普通配置的默认方法。圆盘闭运算通过边界比较／场景诊断入口选择，普通 `prepare`仍用凸包。`static_domain_phase_v1`仅在明确选择它的协议中触发，不静默改写所有部署方法。
 
 ```bash
 python run.py --config configs/step1/square.yaml --output runs/fixed24 --method equal_arc --protocol fixed_n --fixed-n 24
@@ -81,7 +87,7 @@ python experiments/validation_runner.py --output runs/smoke --reevaluate
 udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 ```
 
-完整 development 会使用 0–29 seeds。未来 validation 预留 5000–5029；整合开发不运行这些 seeds。smoke 现在覆盖 11 个场景、五种方法和两资源协议，共 110 个任务；本轮没有重跑这份 smoke。
+完整development会使用0–29 seeds；smoke覆盖11场景、五方法和两资源协议，共110任务，不默认整表运行。5000–5029属于历史正式协议，已有冻结结果，不得转作新的开发seed或通过重复使用提供独立确认。本次合并准备不重跑该smoke、正式1620任务或120行比较。
 
 方法比较使用因子表。同一单元共享场景、人群快照、需求场、Guide 数量、边界、导航和安全参数，只更换部署方法。开发种子是 0–4。完整组合现为 2 种场地 × 3 种形状 × 3 种规模 × 3 种需求 × 3 种资源 × 6 种方法 × 5 个种子，共 4860 个任务；默认不整表运行。投影消融是圆形／椭圆 × 均匀／弱热点／强热点 × 三档曲线数量 × 四种方法 × seed 0–4，共 360 个任务。
 
@@ -153,6 +159,8 @@ Step 1 凸包提供保守包络，会丢失凹陷。demand 是规划权重。在
 完整路线见 [ROADMAP](docs/ROADMAP.zh.md)，理论与实现边界见 [STEP1_THEORY](docs/STEP1_THEORY.zh.md)。
 
 ## 上一台复现主机
+
+以下两个主机章节是历史记录，含旧源码、测试数量与当时执行命令，不是当前推荐运行步骤，也不代表当前代码的验证覆盖。原始数据可用性见[数据说明](docs/DATA_AVAILABILITY.zh.md)；首次运行使用前面的50人示例。本次整合不重新执行这里的正式协议或历史探测。
 
 下面这一段记录的是上一台 8 逻辑处理器的机器，不是 2026-10-17 的 i9-14900KF。已有 `.venv` 在那台机器上是 Python 3.12.15，数值库版本写在 `requirements.txt`。不要把另一台机器的 Python 3.13 记录当成必须重装的条件。新结果写到 `runs/reproduction/<device>/`，不要覆盖 `runs/` 里的旧目录。workers 先用小批量测量；那台机器使用 6。完整记录见 [VALIDATION](docs/VALIDATION.zh.md)。
 

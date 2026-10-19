@@ -1,0 +1,581 @@
+{
+  "base": "6d9bc09dd56942fa7d45e1907ab09121f37d8a6f",
+  "scientific_candidate": "f9743abf8e36f32c8baa8c39c567697702dc1715",
+  "source_sha256": "83207e67b5feede1d5c8449053d8f764a5f09f9c50cf2d7bd21ff31acc9cf767",
+  "scope": "fixed pre-documentation Git trees; not final PR head/merge CI",
+  "commits_ahead": 31,
+  "changed_files": 327,
+  "deleted_files": [
+    {
+      "path": "ABCG-Simulation/analyze.py",
+      "bytes": 1243,
+      "git_blob": "a3207496d36c3d136117bb74663e2cbc58ad175a"
+    },
+    {
+      "path": "ABCG-Simulation/analyze_voronoi.py",
+      "bytes": 3011,
+      "git_blob": "2a6f4878c78717ef1d206a006a11647372b72380"
+    },
+    {
+      "path": "ABCG-Simulation/control_guides.py",
+      "bytes": 6202,
+      "git_blob": "f4937a1f5aa69706b9e9f10bf9e00e7320f2718b"
+    },
+    {
+      "path": "ABCG-Simulation/generate_boundary.py",
+      "bytes": 4994,
+      "git_blob": "ad378bc2db9e630d41516aba06425a1bbe24df3a"
+    },
+    {
+      "path": "ABCG-Simulation/results/density.csv",
+      "bytes": 2167,
+      "git_blob": "74f3368b414a12a33540b6fbd0de8d3a389e151c"
+    },
+    {
+      "path": "ABCG-Simulation/results/density.png",
+      "bytes": 115418,
+      "git_blob": "e9549003cda804fde2f93ac56d6fe7c376a5f240"
+    },
+    {
+      "path": "ABCG-Simulation/results/guide_deployment.png",
+      "bytes": 85355,
+      "git_blob": "c3c0b1e79341e6ef2a4bac6a768637214d1413cf"
+    },
+    {
+      "path": "ABCG-Simulation/results/guide_safe_routes.csv",
+      "bytes": 425501,
+      "git_blob": "93e7d680e9e285629eed0074f3e4254a59b7749d"
+    },
+    {
+      "path": "ABCG-Simulation/results/guide_targets.csv",
+      "bytes": 237,
+      "git_blob": "cfd7cbe0bffbc30993b23d68e556f14ff2093ce6"
+    },
+    {
+      "path": "ABCG-Simulation/results/guide_trajectories.csv",
+      "bytes": 21457,
+      "git_blob": "d4fe417351d5e160f16e0012dad20e06cc1df5af"
+    },
+    {
+      "path": "ABCG-Simulation/results/neighborhood.png",
+      "bytes": 60646,
+      "git_blob": "5461a82314b4521e7774fb9874a864f1a32da829"
+    },
+    {
+      "path": "ABCG-Simulation/results/neighbors.csv",
+      "bytes": 209085,
+      "git_blob": "7c7a3398b6f3454d4dc2b3d37a31e315f43a6c08"
+    },
+    {
+      "path": "ABCG-Simulation/results/safe_deployment.png",
+      "bytes": 123857,
+      "git_blob": "051ae95b2804a6390c666f104c0ff78fa4fbcd53"
+    },
+    {
+      "path": "ABCG-Simulation/results/simultaneous_deployment.png",
+      "bytes": 121727,
+      "git_blob": "d1cf77b10ca0bf060666c3daa0a8a9d1adf054bb"
+    },
+    {
+      "path": "ABCG-Simulation/results/simultaneous_trajectories.csv",
+      "bytes": 84418,
+      "git_blob": "f5682e99a1c6b95d4c87c38f20ed2ecda02f3cea"
+    },
+    {
+      "path": "ABCG-Simulation/results/static_50.sqlite",
+      "bytes": 327680,
+      "git_blob": "e32e22b29fa432e8a52b1aedeaccec13083b52b2"
+    },
+    {
+      "path": "ABCG-Simulation/results/static_crowd.png",
+      "bytes": 41375,
+      "git_blob": "d82b75ca002f12fabc48091a296e63bb40947fc2"
+    },
+    {
+      "path": "ABCG-Simulation/results/step1_boundary_and_targets.png",
+      "bytes": 81156,
+      "git_blob": "b663d0a1b77a60023a03ad803971172ffe879758"
+    },
+    {
+      "path": "ABCG-Simulation/results/voronoi.png",
+      "bytes": 66336,
+      "git_blob": "21a73995127ba855a6d4e9f5545bd8e52bc42c00"
+    },
+    {
+      "path": "ABCG-Simulation/run_simulation.py",
+      "bytes": 1950,
+      "git_blob": "f84fe9ea91a98662a17c65ce58d15137e74723ea"
+    },
+    {
+      "path": "ABCG-Simulation/safe_deployment.py",
+      "bytes": 9963,
+      "git_blob": "cf1a8d57df62c9ac420c3d4e6b431ea57abcbb86"
+    },
+    {
+      "path": "ABCG-Simulation/simultaneous_deployment.py",
+      "bytes": 14116,
+      "git_blob": "90587f70b91369b6e6ea3a7430ece52ec79df0dc"
+    },
+    {
+      "path": "Test/bottleneck_cfsm.sqlite",
+      "bytes": 4313088,
+      "git_blob": "b445e2589bc8812de554029fcb5c85d6da3d757a"
+    },
+    {
+      "path": "Test/demo-data/bottleneck/040_c_56_h-.txt",
+      "bytes": 1657928,
+      "git_blob": "2e8d40d220be6008c37e7c038a3dad812b896c41"
+    },
+    {
+      "path": "Test/getting_started.ipynb",
+      "bytes": 467119,
+      "git_blob": "c09da10d6485a29b4222bb23e05d4174d23787dd"
+    },
+    {
+      "path": "Test/sim1.ipynb",
+      "bytes": 1645837,
+      "git_blob": "7b96d540976db918683c406dcb35cd2ab86d5191"
+    }
+  ],
+  "deletion_groups": {
+    "ABCG-Simulation": 22,
+    "Test": 4
+  },
+  "candidate_tree_bytes": 21566872,
+  "reports_tree_bytes": 19783332,
+  "largest_tracked_files": [
+    {
+      "path": "reports/kai_14900kf_checksums.json",
+      "bytes": 4048794,
+      "git_blob": "70734744c49e6e149437c77d57b4b6655029373c"
+    },
+    {
+      "path": "reports/formal_step1_checksums.json",
+      "bytes": 1991990,
+      "git_blob": "34fd32ab90f9ec3b3118f2bee2966b9c1956b499"
+    },
+    {
+      "path": "reports/reproduction_kaii_checksums.json",
+      "bytes": 1572510,
+      "git_blob": "6f7622b13575971bb142c6557d23e65b7e9654a4"
+    },
+    {
+      "path": "reports/step1_boundary_estimator_comparison_v1/summary.json",
+      "bytes": 1276382,
+      "git_blob": "ca95465ca3629b01546b0ca8245b0c13f192cb83"
+    },
+    {
+      "path": "reports/step1_target_domain_consistency/raw_checksums.json",
+      "bytes": 926537,
+      "git_blob": "356c39dddb72c196dde2aca482f961058cfc3129"
+    },
+    {
+      "path": "notebooks/step1_static_deployment.ipynb",
+      "bytes": 675346,
+      "git_blob": "dc092f58b33f38211d96ae05c6e22b7ee0a39f50"
+    },
+    {
+      "path": "reports/projection_ablation_checksums.json",
+      "bytes": 553222,
+      "git_blob": "0f72ab050367c8669a808e0a1ec528a2d1f6a93b"
+    },
+    {
+      "path": "reports/step1_nonconvex_confirmation_v2/summary.json",
+      "bytes": 550314,
+      "git_blob": "4be4c2d84dccdd75d8294e28cf2f6b972bb6eb2b"
+    },
+    {
+      "path": "reports/step1_nonconvex_record_rebuild_v1/wide_u_comparison.png",
+      "bytes": 519001,
+      "git_blob": "39a344aae098d5f27ca7bb270ac15c0cb647959a"
+    },
+    {
+      "path": "reports/step1_boundary_estimator_comparison_v1/raw_checksums.json",
+      "bytes": 511245,
+      "git_blob": "34de60da324c6224cd1cf65a5e5447d9b2a7c8af"
+    },
+    {
+      "path": "reports/step1_nonconvex_confirmation_v2/execution_failures_seed30.png",
+      "bytes": 450875,
+      "git_blob": "78e4465651daadfa89e70bf180795cc8ba96182c"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_failure_window.npz",
+      "bytes": 387498,
+      "git_blob": "6e5ef34a3433c7abf5f188ec1e1d5fd2a46456a4"
+    },
+    {
+      "path": "reports/step1_nonconvex_record_rebuild_v1/diagnostics.json",
+      "bytes": 317459,
+      "git_blob": "26025e81c37daf113eb86159f33b34caf0eb1076"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/wide_u/pairwise_euclidean/trajectory.npz",
+      "bytes": 244863,
+      "git_blob": "aeb9b661ef67c8f339c0cc3a8ecd30da3aa72edd"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/wide_u/projected_mass/trajectory.npz",
+      "bytes": 244863,
+      "git_blob": "aeb9b661ef67c8f339c0cc3a8ecd30da3aa72edd"
+    }
+  ],
+  "historical_npz_retained": [
+    {
+      "path": "reports/step1_wide_u_replan_cases/elongated/equal_arc/trajectory.npz",
+      "bytes": 88878,
+      "git_blob": "d5b211b572fa56aacc2d5cf5963f8ba0e972657a"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/elongated/pairwise_euclidean/trajectory.npz",
+      "bytes": 89060,
+      "git_blob": "1704ae35f849c8095d7dfd933870fd413ae102d5"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/elongated/projected_mass/trajectory.npz",
+      "bytes": 89060,
+      "git_blob": "1704ae35f849c8095d7dfd933870fd413ae102d5"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/tight_u/equal_arc/trajectory.npz",
+      "bytes": 108035,
+      "git_blob": "7d686d244be9e7d2703421aea0a3883c9cb50261"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/tight_u/pairwise_euclidean/trajectory.npz",
+      "bytes": 108144,
+      "git_blob": "ecf87cb9a1d7a27bcf9a360511a86512ecfac53c"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/tight_u/projected_mass/trajectory.npz",
+      "bytes": 108144,
+      "git_blob": "ecf87cb9a1d7a27bcf9a360511a86512ecfac53c"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/wide_u/equal_arc/trajectory.npz",
+      "bytes": 244852,
+      "git_blob": "6e91e4c7f63be32694576a9fc6aa7469e0d76cb2"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/wide_u/pairwise_euclidean/trajectory.npz",
+      "bytes": 244863,
+      "git_blob": "aeb9b661ef67c8f339c0cc3a8ecd30da3aa72edd"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_cases/wide_u/projected_mass/trajectory.npz",
+      "bytes": 244863,
+      "git_blob": "aeb9b661ef67c8f339c0cc3a8ecd30da3aa72edd"
+    },
+    {
+      "path": "reports/step1_wide_u_replan_failure_window.npz",
+      "bytes": 387498,
+      "git_blob": "6e5ef34a3433c7abf5f188ec1e1d5fd2a46456a4"
+    }
+  ],
+  "tracked_json_checked": 119,
+  "json_errors": [],
+  "document_links": [
+    {
+      "document": "README.md",
+      "target": "docs/ARCHITECTURE.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/EXPERIMENT_PROTOCOL.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/VALIDATION.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/step1_coverage_geometry_contract/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/COVERAGE_GEOMETRY_CONTRACT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/step1_target_domain_consistency/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/STEP1_INTEGRATION_REVIEW.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/step1_execution_progress_repair/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/step1_nonconvex_record_rebuild_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/ROADMAP.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/STEP1_THEORY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/VALIDATION.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARCHITECTURE.zh.md",
+      "target": "../reports/step1_target_domain_consistency/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARCHITECTURE.zh.md",
+      "target": "../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARCHITECTURE.zh.md",
+      "target": "../reports/step1_boundary_estimator_protocol/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARCHITECTURE.zh.md",
+      "target": "DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARCHITECTURE.zh.md",
+      "target": "COVERAGE_GEOMETRY_CONTRACT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ROADMAP.zh.md",
+      "target": "DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EXPERIMENT_PROTOCOL.zh.md",
+      "target": "../reports/step1_boundary_estimator_protocol/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EXPERIMENT_PROTOCOL.zh.md",
+      "target": "../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EXPERIMENT_PROTOCOL.zh.md",
+      "target": "COVERAGE_GEOMETRY_CONTRACT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EXPERIMENT_PROTOCOL.zh.md",
+      "target": "../reports/step1_target_domain_consistency/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EXPERIMENT_PROTOCOL.zh.md",
+      "target": "DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/DATA_AVAILABILITY.zh.md",
+      "target": "../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/DATA_AVAILABILITY.zh.md",
+      "target": "../reports/step1_coverage_geometry_contract/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/DATA_AVAILABILITY.zh.md",
+      "target": "../reports/step1_target_domain_consistency/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/DATA_AVAILABILITY.zh.md",
+      "target": "../reports/formal_step1_summary.json",
+      "exists": true
+    },
+    {
+      "document": "docs/DATA_AVAILABILITY.zh.md",
+      "target": "VALIDATION.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/DATA_AVAILABILITY.zh.md",
+      "target": "STEP1_INTEGRATION_REVIEW.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/STEP1_INTEGRATION_REVIEW.zh.md",
+      "target": "COVERAGE_GEOMETRY_CONTRACT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/STEP1_INTEGRATION_REVIEW.zh.md",
+      "target": "DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "STEP1_INTEGRATION_REVIEW.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "DATA_AVAILABILITY.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "COVERAGE_GEOMETRY_CONTRACT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_coverage_geometry_contract/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_boundary_estimator_protocol/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_target_domain_consistency/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_execution_confirmation_v3/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_priority_progress_monitor/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_joint_progress_diagnostics/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_navigation_control_consistency/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_corner_handoff_repair/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_execution_progress_repair/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_confirmation_v2/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_confirmation_v2/tasks_90.csv",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_confirmation_v2/summary.json",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_record_rebuild_v1/REPORT.zh.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_record_rebuild_v1/summary.json",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_nonconvex_record_rebuild_v1/tasks_45.csv",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_reachability_diagnostics.md",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/step1_reachability_diagnostics.json",
+      "exists": true
+    },
+    {
+      "document": "docs/VALIDATION.zh.md",
+      "target": "../reports/integration/verification.json",
+      "exists": true
+    }
+  ],
+  "removed_runtime_path_reference_count": 0,
+  "scientific_source_and_configs_unchanged": true,
+  "frozen_comparison_files_unchanged": 2798,
+  "reused_local_tests": {
+    "passed": 175,
+    "seconds": 24.34,
+    "source": "reports/step1_coverage_geometry_contract/verification.json"
+  },
+  "candidate_cross_platform_ci": {
+    "run_id": 39255838311,
+    "ubuntu": "success",
+    "windows": "success",
+    "url": "https://github.com/Wu-kaixin/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/actions/runs/39255838311"
+  },
+  "new_experiment_rows": 0,
+  "new_input_draws": 0,
+  "historical_reports_deleted_or_rewritten": false
+}

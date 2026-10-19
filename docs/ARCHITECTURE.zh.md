@@ -98,7 +98,7 @@ Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
 
 `experiments.boundary_comparison` 冻结固定 N、Equal Arc legacy phase 和共用静态域相位政策。两构造的曲线和导航域可以不同，这属于实验效应；`evaluation.comparison.common_motion_metrics` 不接收估计器几何，只按共同人员／半径／房间及真实运动区间评价。各自曲线覆盖仍由原独立验收检查，内部代价不用于跨曲线排名。未执行行的运动指标为 null，构造失败留在共同合法输入分母。
 
-协议将清单准备、未来输入冻结、实际执行分为独立操作。默认小检查仅 16 行、最多四条执行；准备 120 行未来清单不调用生成器。源码、配置、原快照和 SQLite 均以哈希锁定。详细契约与统计口径见 [边界比较协议](../reports/step1_boundary_estimator_protocol/REPORT.zh.md)。
+协议将清单准备、输入冻结、实际执行分为独立操作。最初16行是协议开发检查；随后seed55–74的60共享输入／120行已全部完成，见[完整比较](../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md)。源码、配置、原快照和SQLite均以哈希锁定，不能在新源码上改写旧锁来重跑。详细定义见[比较协议](../reports/step1_boundary_estimator_protocol/REPORT.zh.md)，本机原始工件依赖见[数据说明](DATA_AVAILABILITY.zh.md)。
 
 ## 人员圆盘覆盖的表示契约（2026-10-19）
 

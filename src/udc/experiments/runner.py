@@ -236,10 +236,15 @@ def experiment(config_path, output, seed=None, plots=True,
                        and errors.max(initial=0.) > control['position_tolerance']
                        and active_speed.mean() <= control['speed_tolerance'])
             if stalled:
-                strategy = controller.recover(
-                    env.perceive((step + 1) * sim['dt'], next_position).observation(),
-                    next_position,
-                )
+                attempts_before = len(controller.recovery_attempts)
+                try:
+                    strategy = controller.recover(
+                        env.perceive((step + 1) * sim['dt'], next_position).observation(),
+                        next_position,
+                    )
+                finally:
+                    for attempt in controller.recovery_attempts[attempts_before:]:
+                        attempt.update(frame=step + 1, time_s=(step + 1) * sim['dt'])
                 event = {'step': step, 'remaining_path': progress[-1],
                          'strategy': strategy or 'exhausted'}
                 deadlocks.append(event)
@@ -355,6 +360,7 @@ def experiment(config_path, output, seed=None, plots=True,
         'safety_diagnostics': safety_log,
         'fallback_count': sum(item['fallback_used'] for item in safety_log),
         'replan_count': 0 if controller is None else controller.replans,
+        'recovery_attempts': [] if controller is None else controller.recovery_attempts,
         'planning_margin_connections': ([] if controller is None
                                         else list(getattr(controller, 'margin_connections', []))),
         'deadlock_events': deadlocks,

@@ -131,21 +131,38 @@ def _other_guide_space(domain, guides, index, radius):
     return free, nodes
 
 
-def _shortest(start, target, free, obstacle, extra_nodes=()):
+def _visibility_graph(free, obstacle, extra_nodes=()):
+    """Build static edges once for all guide–target queries on this exact domain."""
+    nodes=[]
+    if obstacle is not None and not obstacle.is_empty and obstacle.geom_type == 'Polygon':
+        nodes.extend(np.asarray(p) for p in obstacle.exterior.coords[:-1])
+    nodes.extend(np.asarray(point, dtype=float) for point in extra_nodes)
+    edges=[[] for _ in nodes]
+    for i in range(len(nodes)):
+        for j in range(i):
+            segment=LineString([nodes[i],nodes[j]])
+            if free.covers(segment) and (obstacle is None or not segment.crosses(obstacle)):
+                length=float(np.linalg.norm(nodes[i]-nodes[j]))
+                edges[i].append((j,length)); edges[j].append((i,length))
+    return nodes,edges
+
+
+def _shortest(start, target, free, obstacle, extra_nodes=(), graph=None):
     direct = LineString([start, target])
     if free.covers(direct) and (obstacle is None or not direct.crosses(obstacle)):
         return np.asarray([start, target], dtype=float), float(direct.length)
-    nodes = [np.asarray(start), np.asarray(target)]
-    if obstacle is not None and not obstacle.is_empty and obstacle.geom_type == 'Polygon':
-        coords = list(obstacle.exterior.coords[:-1])
-        nodes += [np.asarray(p) for p in coords]
-    nodes.extend(np.asarray(point, dtype=float) for point in extra_nodes)
+    base_nodes,base_edges=(_visibility_graph(free,obstacle,extra_nodes) if graph is None else graph)
+    nodes = [np.asarray(start), np.asarray(target), *base_nodes]
     n = len(nodes); edges = [[] for _ in nodes]
-    for i in range(n):
-        for j in range(i):
-            segment = LineString([nodes[i], nodes[j]])
+    for i,neighbors in enumerate(base_edges):
+        edges[i+2]=[(j+2,length) for j,length in neighbors]
+    for i in range(2,n):
+        for j in (0,1):
+            segment=LineString([nodes[i],nodes[j]])
             if free.covers(segment) and (obstacle is None or not segment.crosses(obstacle)):
-                d = float(np.linalg.norm(nodes[i]-nodes[j])); edges[i].append((j,d)); edges[j].append((i,d))
+                d=float(np.linalg.norm(nodes[i]-nodes[j])); edges[i].append((j,d)); edges[j].append((i,d))
+    for neighbors in edges:
+        neighbors.sort(key=lambda edge:edge[0])
     dist=[float('inf')]*n; prev=[-1]*n; dist[0]=0.; queue=[(0.,0)]
     while queue:
         d,u=heapq.heappop(queue)
@@ -188,6 +205,8 @@ def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd
                         people=None, limits=None):
     domain = navigation_domain(room, wall_margin, crowd_polygon, crowd_margin)
     free, obstacle = domain.free, domain.conservative_obstacle
+    # Call-local reuse: geometry changes cannot accidentally reuse stale edges.
+    graph = _visibility_graph(free, obstacle)
     paths={}; cost=np.full((len(guides),len(targets)), np.inf)
     guides = np.asarray(guides, dtype=float)
     for i,g in enumerate(guides):
@@ -202,7 +221,7 @@ def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd
             planner_target = target_ready[0]
             # Pairwise assignment keeps the crowd-only graph. Other guides are
             # excluded from that graph; an assigned replan adds them one guide at a time.
-            path, length = _shortest(planner_start, planner_target, free, obstacle)
+            path, length = _shortest(planner_start, planner_target, free, obstacle, graph=graph)
             if path is None:
                 continue
             if prefix is not None:
@@ -316,9 +335,14 @@ def route_assigned(guides, targets, assignment, room, wall_margin,
                 'PATH_UNREACHABLE: assigned endpoint is outside conservative free space '
                 f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
             )
+        if not _within_free(free_i, target_ready[0]):
+            raise ValueError(
+                'PATH_UNREACHABLE: assigned target temporarily occupied by other guides '
+                f'(guide {int(guide)} target {target})'
+            )
         path, length = _shortest(planner_start, target_ready[0], free_i, obstacle, extra)
         if path is None:
-            raise ValueError('PATH_UNREACHABLE: assigned guide-target path does not exist')
+            raise ValueError('PATH_UNREACHABLE: assigned path search found no route in current conservative free space')
         if prefix is not None:
             path = np.vstack([prefix, path])
             length = float(length + np.linalg.norm(path[1] - path[0]))

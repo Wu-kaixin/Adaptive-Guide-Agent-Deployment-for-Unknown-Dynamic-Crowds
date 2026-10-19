@@ -8,7 +8,7 @@ from udc.boundary import estimate_boundary
 from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
                             plan_coverage, plan_risk_aware)
 from udc.navigation import navigate_and_assign, navigation_domain, route_assigned, segment_in_free
-from udc.safety import safe_velocity
+from udc.safety import safe_velocity, path_clearances, is_safe
 
 
 class ABCGController:
@@ -21,6 +21,7 @@ class ABCGController:
         self._observation=None
         self.navigation_domain=None
         self.margin_connections=[]
+        self.recovery_attempts=[]
         # Stage diagnostics. They never change a termination status.
         self.feasibility=None; self.plan_found=False; self.assignment_found=False
         self.boundary_source=None
@@ -199,7 +200,53 @@ class ABCGController:
         """Finite deterministic recovery: reroute, reassign, then priority yield."""
         if self.replans >= self.config['max_replans']:
             return None
-        strategy=('path_recompute','reachable_reassignment','priority_yield')[min(self.replans,2)]
+        # A temporarily occupied assigned target may reject a fixed-identity
+        # replan while a complete static-domain reassignment remains available.
+        # Count the rejected attempt against the same budget. Install no partial
+        # paths and never continue on the old paths merely because we caught it.
+        first_error=None
+        while self.replans < self.config['max_replans']:
+            started=perf_counter()
+            strategy=('path_recompute','reachable_reassignment','priority_yield')[min(self.replans,2)]
+            try:
+                accepted=self._recover_strategy(observation, positions, strategy)
+            except ValueError as error:
+                if not str(error).startswith('PATH_UNREACHABLE'):
+                    raise
+                self.recovery_attempts.append({
+                    'strategy':strategy, 'accepted':False, 'error':str(error),
+                    'wall_seconds':perf_counter()-started,
+                    'positions':np.asarray(positions).tolist(),
+                    'targets':self.plan.positions.tolist(),
+                    'assignment':self.assignment.tolist(),
+                    'paths':{str(i):path.tolist() for i,path in self.paths.items()},
+                    'waypoints':dict(self.waypoint),
+                    'geometry_sha256':self._domain().geometry_sha256,
+                })
+                self.replans += 1
+                if first_error is None:
+                    first_error=error
+                domain=self._domain()
+                safe_state=(all(domain.physical_free.covers(Point(point)) for point in positions)
+                            and is_safe(path_clearances(positions,positions,observation.positions,self.room),self.safety))
+                if strategy == 'path_recompute' and safe_state and self.replans < self.config['max_replans']:
+                    continue
+                raise first_error from error
+            self.recovery_attempts.append({
+                'strategy':strategy, 'accepted':True,
+                'wall_seconds':perf_counter()-started,
+                'assignment':self.assignment.tolist(),
+                'paths':{str(i):path.tolist() for i,path in self.paths.items()},
+                'path_validation':getattr(self,'_recovery_path_validation',[]),
+            })
+            self.replans += 1
+            return accepted
+        if first_error is not None:
+            raise first_error
+        return None
+
+    def _recover_strategy(self, observation, positions, strategy):
+        """Build a complete replacement before changing the installed navigation."""
         crowd=Polygon(self.boundary.crowd)
         if strategy == 'path_recompute':
             domain=self._domain()
@@ -219,13 +266,25 @@ class ABCGController:
             nav=navigate_and_assign(positions,self.plan.positions,self.room,
                                     self.safety.wall_distance,crowd,self.safety.wall_distance,
                                     people=observation.positions,limits=self.safety)
+            validation=[]
+            # Independently verify each replacement leg against frozen people
+            # and walls before installing any path. Simultaneous guide–guide
+            # motion still goes through the unchanged velocity/segment filter.
+            for guide,path in zip(np.flatnonzero(nav.assignment>=0),nav.paths):
+                if not np.array_equal(path[0],positions[guide]):
+                    raise ValueError('PATH_UNREACHABLE: replacement path does not start at actual state')
+                for a,b in zip(path[:-1],path[1:]):
+                    clearance=path_clearances(a[None,:],b[None,:],observation.positions,self.room)
+                    if not is_safe(clearance,self.safety):
+                        raise ValueError('PATH_UNREACHABLE: replacement path failed independent physical validation')
+                    validation.append({'guide':int(guide),'clearances':clearance})
+            self._recovery_path_validation=validation
             self._install_navigation(nav)
         else:
             active=np.flatnonzero(self.assignment>=0)
             remaining=self.remaining_path_lengths(positions)
             self.priority_order=[int(active[k]) for k in np.argsort(-remaining,kind='stable')]
             self.priority_index=0; self.priority_mode=True
-        self.replans += 1
         return strategy
 
     def step(self, observation, positions, dt):

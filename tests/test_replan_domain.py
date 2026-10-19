@@ -138,7 +138,8 @@ def test_rejected_replan_does_not_replace_the_path_or_command_unfiltered_motion(
     positions[active] = np.asarray(Polygon(controller.boundary.crowd).representative_point().coords[0])
     with pytest.raises(ValueError, match='outside conservative free space'):
         controller.recover(observation, positions)
-    assert controller.replans == 0
+    # Failed queries now consume the existing recovery budget; no path is installed.
+    assert controller.replans == 1
     assert controller.paths is paths
     assert controller.margin_connections == []
 
@@ -158,6 +159,64 @@ def test_rejected_replan_does_not_replace_the_path_or_command_unfiltered_motion(
     end = probe[0] + 0.1 * result.velocity[0]
     assert domain.signed_free_distance(end) + 1e-7 >= min(0.0, domain.signed_free_distance(probe[0]))
     assert not np.allclose(result.velocity[0], nominal[0])
+
+
+@pytest.mark.parametrize('budget',[1,3])
+def test_occupied_target_replan_can_reach_existing_reassignment_with_same_targets(budget):
+    from udc.boundary import Boundary
+    from udc.deployment import Plan
+    cfg=load_config(ROOT / 'configs/step1/static_50.yaml')['controller']
+    cfg['max_replans']=budget
+    controller=ABCGController(cfg,Safety(0.75,0.75,0.55,1.,1e-7),np.array([10.,10.]))
+    crowd=np.array([[2.,2.],[3.,2.],[3.,3.],[2.,3.]])
+    ring=np.array([[1.,1.],[9.,1.],[9.,9.],[1.,9.]])
+    controller.boundary=Boundary(crowd,ring,np.arange(4)*8.,32.)
+    positions=np.array([[4.,8.],[5.,8.]])
+    targets=np.array([[5.,8.],[4.,8.]])
+    controller.plan=Plan(targets,np.array([0.,1.]),np.array([0.]),1.,'equal_arc',0,'fixture',1.)
+    controller.assignment=np.array([0,1])
+    controller.paths={i:np.array([positions[i],targets[i]]) for i in range(2)}
+    controller.waypoint={0:1,1:1}
+    from udc.interfaces import Observation
+    obs=Observation(np.array([[2.5,2.5]]),np.array([0.2]),np.ones(1))
+    if budget==1:
+        old_paths=controller.paths
+        with pytest.raises(ValueError,match='PATH_UNREACHABLE'):
+            controller.recover(obs,positions)
+        assert controller.paths is old_paths
+        assert controller.replans==1
+        np.testing.assert_array_equal(controller.assignment,[0,1])
+        return
+    assert controller.recover(obs,positions)=='reachable_reassignment'
+    assert controller.replans==2 <= cfg['max_replans']
+    np.testing.assert_array_equal(controller.assignment,[1,0])
+    np.testing.assert_array_equal(controller.plan.positions,targets)
+    np.testing.assert_array_equal(positions,[[4.,8.],[5.,8.]])
+    assert [a['accepted'] for a in controller.recovery_attempts]==[False,True]
+    assert controller.recovery_attempts[1]['path_validation']
+    for guide,path in controller.paths.items():
+        np.testing.assert_array_equal(path[0],positions[guide])
+        np.testing.assert_array_equal(path[-1],targets[controller.assignment[guide]])
+
+
+def test_static_visibility_edges_are_shared_per_assignment_and_rebuilt_for_changed_geometry(monkeypatch):
+    import udc.navigation.paths as module
+    calls=[]
+    original=module._visibility_graph
+    def record(*args,**kwargs):
+        calls.append(args[0].wkb)
+        return original(*args,**kwargs)
+    monkeypatch.setattr(module,'_visibility_graph',record)
+    _,crowd=_domain()
+    guides=np.array([[2.,4.],[2.,6.]])
+    targets=np.array([[8.,4.],[8.,6.]])
+    first=navigate_and_assign(guides,targets,np.array([10.,10.]),0.2,crowd,0.2)
+    assert len(calls)==1
+    assert first.reachable.all()
+    assert len(first.paths)==2
+    changed=crowd.buffer(0.1)
+    navigate_and_assign(guides,targets,np.array([10.,10.]),0.2,changed,0.2)
+    assert len(calls)==2 and calls[0]!=calls[1]
 
 
 def _npz(point):

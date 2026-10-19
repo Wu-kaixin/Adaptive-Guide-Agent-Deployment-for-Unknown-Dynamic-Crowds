@@ -161,6 +161,10 @@ def safe_velocity(positions, nominal, people, room, dt, limits, navigation_obsta
 
     for i in range(n):
         for j in range(i):
+            # Linear separation h = ||p_i-p_j|| - d_min, not a squared barrier.
+            # n = (p_i-p_j)/||p_i-p_j|| gives n·(v_i-v_j) >= (d_min+1e-8-||p_i-p_j||)/dt.
+            # The row is (n, -n), so a violated pair is split equally. Neither
+            # guide's velocity is held fixed.
             delta = positions[i]-positions[j]
             distance = np.linalg.norm(delta)
             if distance < 1e-12:

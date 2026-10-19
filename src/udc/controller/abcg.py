@@ -13,6 +13,7 @@ from udc.navigation import (navigate_and_assign, navigation_domain, route_assign
                             segment_in_free, segment_in_free_sampled)
 from udc.navigation.paths import NavigationFailure, ENDPOINT_TOLERANCE_M
 from udc.safety import safe_velocity, path_clearances, is_safe
+from udc.safety.coordinate import joint_progress_velocity
 from udc.safety.filter import binding_constraints
 
 
@@ -58,6 +59,14 @@ class ABCGController:
         self.feasibility=None; self.plan_found=False; self.assignment_found=False
         self.boundary_source=None
         self.prescribed_plan_installed=False
+        # Priority mode only. The law does not add a recovery or a second solver.
+        self.coordination={
+            'law':'along_current_legal_segment','activated':False,'order':[],
+            'steps':0,'illegal_aim_steps':0,'fallback_steps':0,
+            'enforce_attempts':0,'enforce_installed':0,'enforce_rejected':0,
+            'max_other_filtered_speed_m_s':0.0,'filter_seconds':0.0,'enforce_seconds':0.0,
+            'exit_step':None,'exit_reason':None,
+        }
 
     def _plan(self, observation, n, phase, planned_limit):
         c=self.config
@@ -404,6 +413,14 @@ class ABCGController:
             remaining=self.remaining_path_lengths(positions)
             self.priority_order=[int(active[k]) for k in np.argsort(-remaining,kind='stable')]
             self.priority_index=0; self.priority_mode=True
+            # Same frozen order and the same single budget count. While this
+            # mode is active the priority guide requests along-path progress;
+            # a blocking guide is not given a nominal, and the joint filter
+            # may move it. Leaving the mode does not restore the budget.
+            self.coordination.update(activated=True,order=list(self.priority_order),
+                                     exit_step=None,exit_reason=None)
+            self._recovery_phase['coordination_law']=self.coordination['law']
+            self._recovery_phase['priority_order']=list(self.priority_order)
         return strategy
 
     def _priority_guide(self, positions):
@@ -417,6 +434,9 @@ class ABCGController:
             else:
                 return candidate
         self.priority_mode=False
+        if self.coordination['exit_step'] is None:
+            self.coordination.update(exit_step=int(self._control_step),
+                                     exit_reason='priority_order_within_tolerance')
         return None
 
     def _note_disagreement(self, record):
@@ -541,11 +561,31 @@ class ABCGController:
             return k, delta/float(dt)
         return k, self._proportional(delta)
 
+    def _priority_progress_command(self, position, path, index, domain, dt):
+        """Request min(v_max, distance/dt) along the current legal aim.
+
+        Priority mode already selected this guide and left every other nominal
+        at zero. The direction is the installed aim, not the final target. An
+        illegal segment keeps the tracker's slower command. Blocking motion,
+        if required, comes from the joint projection in ``safe_velocity``.
+        """
+        aim = np.asarray(path[int(index)], dtype=float)
+        delta = aim - np.asarray(position, dtype=float)
+        distance = float(np.linalg.norm(delta))
+        if distance <= 1e-12:
+            return None, 'at_aim'
+        if not self._segment_checker()(position, aim, domain):
+            return None, 'illegal_aim'
+        speed = min(float(self.safety.max_speed), distance / float(dt))
+        return (delta / distance) * speed, 'along_segment'
+
     def step(self, observation, positions, dt):
         nominal=np.zeros_like(positions)
         priority=self._priority_guide(positions)
         domain=self._domain()
         notes=[]
+        progress_request=None
+        progress_tangent=None
         self._control_step += 1
         for i in np.flatnonzero(self.assignment>=0):
             if priority is not None and i != priority:
@@ -554,6 +594,14 @@ class ABCGController:
             before=int(self.waypoint[int(i)])
             index, velocity=self._tracking_velocity(positions[i], path, before, domain, dt)
             self.waypoint[int(i)]=index
+            if priority is not None and int(i)==int(priority):
+                boosted, reason=self._priority_progress_command(positions[i], path, index, domain, dt)
+                if reason == 'illegal_aim':
+                    self.coordination['illegal_aim_steps']+=1
+                elif boosted is not None:
+                    velocity=boosted
+                    progress_request=float(np.linalg.norm(boosted))
+                    progress_tangent=boosted/max(progress_request,1e-30)
             nominal[i]=velocity
             if self._track_note is not None:
                 note=self._track_note
@@ -575,6 +623,31 @@ class ABCGController:
         nominal*=np.minimum(1.,self.safety.max_speed/np.maximum(speed,1e-30))[:,None]
         result=safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety,
                              navigation_obstacle=domain.conservative_obstacle)
+        if priority is not None and progress_request is not None and progress_request > 1e-4:
+            achieved=float(progress_tangent @ result.velocity[int(priority)])
+            # The Euclidean projection can cut an arrival step in half and leave
+            # the guide short of a corner vertex. One fixed-budget solve restores
+            # that progress only when the executed segment is independently safe.
+            if achieved < 0.9 * progress_request:
+                self.coordination['enforce_attempts'] += 1
+                enforced, elapsed=joint_progress_velocity(
+                    positions, nominal, observation.positions, self.room, dt, self.safety,
+                    domain.conservative_obstacle, int(priority), progress_tangent, progress_request)
+                self.coordination['enforce_seconds'] += float(elapsed)
+                if enforced is None:
+                    self.coordination['enforce_rejected'] += 1
+                else:
+                    self.coordination['enforce_installed'] += 1
+                    result=enforced
+        if priority is not None:
+            others=np.flatnonzero(np.arange(len(positions))!=priority)
+            other_speed=float(np.linalg.norm(result.velocity[others],axis=1).max()) if len(others) else 0.0
+            self.coordination['steps']+=1
+            self.coordination['filter_seconds']+=float(result.solve_time)
+            self.coordination['max_other_filtered_speed_m_s']=max(
+                float(self.coordination['max_other_filtered_speed_m_s']), other_speed)
+            if result.fallback_used:
+                self.coordination['fallback_steps']+=1
         if notes:
             active=binding_constraints(
                 positions, result.velocity, observation.positions, self.room, dt, self.safety,

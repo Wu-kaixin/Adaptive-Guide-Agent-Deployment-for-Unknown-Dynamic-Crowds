@@ -2,6 +2,7 @@
 from dataclasses import dataclass
 import hashlib
 import heapq
+import weakref
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
@@ -264,8 +265,13 @@ def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd
     return NavigationResult(assignment,ordered,cost[rows,cols],finite)
 
 
-def segment_in_free(start, end, domain):
-    """True when the segment stays in free space, including the boundary tolerance."""
+def segment_in_free_sampled(start, end, domain):
+    """Historical five-sample predicate.
+
+    Retained so a penetrating chord can be shown to pass the old test, and so
+    the vertex-arrival ablation can run without the complete check. It is not
+    the predicate used for control.
+    """
     start = np.asarray(start, dtype=float)
     end = np.asarray(end, dtype=float)
     if domain.free.covers(LineString([start, end])):
@@ -277,6 +283,173 @@ def segment_in_free(start, end, domain):
         if domain.signed_free_distance(sample) < -ENDPOINT_TOLERANCE_M:
             return False
     return True
+
+
+_EDGE_CACHE = weakref.WeakKeyDictionary()
+
+
+def _boundary_edges(obstacle):
+    """Edge endpoints of a polygonal obstacle, including holes. No buffer."""
+    if obstacle is None or obstacle.is_empty:
+        return np.zeros((0, 2)), np.zeros((0, 2))
+    polygons = []
+    if obstacle.geom_type == 'Polygon':
+        polygons = [obstacle]
+    elif obstacle.geom_type == 'MultiPolygon':
+        polygons = list(obstacle.geoms)
+    else:
+        polygons = [piece for piece in getattr(obstacle, 'geoms', []) if piece.geom_type == 'Polygon']
+    starts, ends = [], []
+    for polygon in polygons:
+        for ring in (polygon.exterior, *list(polygon.interiors)):
+            coords = np.asarray(ring.coords, dtype=float)
+            for first, second in zip(coords[:-1], coords[1:]):
+                if float(np.linalg.norm(second - first)) > 1e-15:
+                    starts.append(first)
+                    ends.append(second)
+    if not starts:
+        return np.zeros((0, 2)), np.zeros((0, 2))
+    return np.asarray(starts, dtype=float), np.asarray(ends, dtype=float)
+
+
+def _obstacle_edges(domain):
+    """Reuse one domain's boundary edges across steps. This is not a visibility graph."""
+    try:
+        cached = _EDGE_CACHE.get(domain)
+    except TypeError:
+        cached = None
+    if cached is None:
+        cached = _boundary_edges(domain.conservative_obstacle)
+        try:
+            _EDGE_CACHE[domain] = cached
+        except TypeError:
+            pass
+    return cached
+
+
+def _point_edge_distances(point, starts, ends):
+    if len(starts) == 0:
+        return np.zeros(0)
+    point = np.asarray(point, dtype=float)
+    edges = ends - starts
+    length2 = np.sum(edges * edges, axis=1)
+    scale = np.clip(np.sum((point - starts) * edges, axis=1) / np.maximum(length2, 1e-30), 0.0, 1.0)
+    closest = starts + scale[:, None] * edges
+    return np.linalg.norm(closest - point, axis=1)
+
+
+def _flatten_intersection(geometry):
+    if geometry.is_empty:
+        return
+    kind = geometry.geom_type
+    if kind in ('Point', 'LineString', 'Polygon'):
+        yield geometry
+        return
+    for piece in getattr(geometry, 'geoms', ()):
+        yield from _flatten_intersection(piece)
+
+
+def _portion_within_tolerance(start, end, starts, ends, tolerance):
+    """Whether every point of a straight piece inside the obstacle is within tolerance.
+
+    Distance to one edge is convex, so an edge that covers both endpoints covers
+    the piece. Otherwise the 1-Lipschitz bound or bisection certifies the claim.
+    ``witness`` is a lower bound on the deepest point found.
+    """
+    stack = [(np.asarray(start, dtype=float), np.asarray(end, dtype=float))]
+    witness = 0.0
+    visits = 0
+    while stack:
+        first, second = stack.pop()
+        distance_first = _point_edge_distances(first, starts, ends)
+        distance_second = _point_edge_distances(second, starts, ends)
+        if len(distance_first) == 0:
+            return False, np.inf
+        pen_first = float(distance_first.min())
+        pen_second = float(distance_second.min())
+        witness = max(witness, pen_first, pen_second)
+        if pen_first > tolerance or pen_second > tolerance:
+            return False, witness
+        if np.any((distance_first <= tolerance) & (distance_second <= tolerance)):
+            continue
+        length = float(np.linalg.norm(second - first))
+        if (pen_first + pen_second + length) / 2.0 <= tolerance:
+            continue
+        midpoint = (first + second) * 0.5
+        pen_mid = float(_point_edge_distances(midpoint, starts, ends).min())
+        witness = max(witness, pen_mid)
+        if pen_mid > tolerance:
+            return False, witness
+        visits += 1
+        if visits > 8192:
+            return False, max(witness, tolerance + length / 2.0)
+        stack.append((first, midpoint))
+        stack.append((midpoint, second))
+    return True, witness
+
+
+def _penetration_within_tolerance(segment, domain):
+    """Complete tolerance test for a segment already known to lie in physical free space."""
+    inside = segment.intersection(domain.conservative_obstacle)
+    if inside.is_empty:
+        return True, 0.0
+    starts, ends = _obstacle_edges(domain)
+    witness = 0.0
+    for piece in _flatten_intersection(inside):
+        if piece.geom_type == 'Point':
+            pen = float(_point_edge_distances(np.asarray(piece.coords[0]), starts, ends).min()) if len(starts) else np.inf
+            witness = max(witness, pen)
+            if pen > ENDPOINT_TOLERANCE_M:
+                return False, witness
+        elif piece.geom_type == 'LineString':
+            coords = np.asarray(piece.coords, dtype=float)
+            for first, second in zip(coords[:-1], coords[1:]):
+                accepted, pen = _portion_within_tolerance(first, second, starts, ends, ENDPOINT_TOLERANCE_M)
+                witness = max(witness, pen)
+                if not accepted:
+                    return False, witness
+        else:
+            return False, np.inf
+    return True, witness
+
+
+def segment_in_free(start, end, domain, audit=None):
+    """True when the whole segment stays in free space, up to the existing 1e-7 m tolerance.
+
+    ``free.covers`` accepts a segment on the boundary. A segment that leaves
+    physical free space is rejected. The remaining case is contact with the
+    conservative obstacle: the old five-point sample is not used. No extra
+    free-space buffer is added. ``audit``, when callable, receives disagreements
+    with the five-point predicate and does not change the returned decision.
+    """
+    start = np.asarray(start, dtype=float)
+    end = np.asarray(end, dtype=float)
+    segment = LineString([start, end])
+    if domain.free.covers(segment):
+        return True
+    if not domain.physical_free.covers(segment):
+        return False
+    accepted, witness = _penetration_within_tolerance(segment, domain)
+    if audit is not None:
+        sampled = segment_in_free_sampled(start, end, domain)
+        if bool(sampled) != bool(accepted):
+            worst_sample = 0.0
+            for fraction in (0.0, 0.25, 0.5, 0.75, 1.0):
+                sample = (1.0 - fraction) * start + fraction * end
+                worst_sample = max(worst_sample, max(0.0, -float(domain.signed_free_distance(sample))))
+            if sampled and not accepted:
+                reason = 'five_samples_within_tolerance_but_segment_penetrates'
+            else:
+                reason = 'sample_deeper_than_tolerance_but_segment_within_tolerance'
+            audit({
+                'start': start.tolist(), 'end': end.tolist(),
+                'sampled': bool(sampled), 'complete': bool(accepted),
+                'sample_penetration_m': float(worst_sample),
+                'witness_penetration_m': None if not np.isfinite(witness) else float(witness),
+                'tolerance_m': ENDPOINT_TOLERANCE_M,
+                'reason': reason,
+            })
+    return bool(accepted)
 
 
 def _boundary_node(point, domain):

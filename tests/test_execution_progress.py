@@ -1,7 +1,9 @@
-"""Path-following consistency at a free-space gate.
+"""Path-following consistency at a corner gate.
 
 Recovery accounting and unsafe installation are covered by test_replan_domain.
-These tests only add the gate decision introduced for the elongated stall.
+Boundary contact used to keep the proportional command. That was an
+implementation choice. A legal connection may use the limited vertex command;
+an illegal chord still must not be followed.
 """
 from types import SimpleNamespace
 
@@ -62,14 +64,19 @@ def test_free_space_gate_does_not_take_an_illegal_immediate_step():
     index, velocity = controller._tracking_velocity(position, controller.paths[0], 1, domain, 0.1)
     assert index == 1
     np.testing.assert_allclose(velocity, (gate - position) / 0.1)
-    # The same illegal shortcut on the boundary keeps the proportional command.
-    boundary = np.array([0.96, 1.03])
+    # The same illegal shortcut on the boundary still must not be taken.
+    # The vertex command is allowed because the connection to the vertex is legal.
+    boundary = np.array([0.97, 1.03])
     assert domain.signed_free_distance(boundary) <= controller.safety.numeric_tolerance
+    assert segment_in_free(boundary, gate, domain)
     assert not segment_in_free(boundary, nxt, domain)
     legacy_index, legacy_velocity = controller._tracking_velocity(
         boundary, controller.paths[0], 1, domain, 0.1)
     assert legacy_index == 1
-    np.testing.assert_allclose(legacy_velocity, 1.5 * (gate - boundary))
+    distance = float(np.linalg.norm(gate - boundary))
+    expected = (gate - boundary) / distance * min(controller.safety.max_speed, distance / 0.1)
+    np.testing.assert_allclose(legacy_velocity, expected)
+    assert np.linalg.norm(legacy_velocity) > np.linalg.norm(1.5 * (gate - boundary))
 
 
 def test_a_guide_on_the_vertex_takes_the_legal_installed_edge():
@@ -120,3 +127,57 @@ def test_budget_exhaustion_is_recorded_without_installing_another_path():
     assert event['installation_succeeded'] is False
     assert event['trigger_reason'] == 'stall_window'
     assert controller.paths[0].shape == (3, 2)
+
+
+def test_vertex_command_is_capped_by_the_existing_max_speed():
+    domain = _Domain()
+    controller, gate, _nxt = _controller(domain)
+    position = np.array([0.96, 1.0])
+    _index, velocity = controller._tracking_velocity(position, controller.paths[0], 1, domain, 0.01)
+    assert np.linalg.norm(velocity) == controller.safety.max_speed
+    assert controller.config['max_replans'] == 3
+    assert controller.safety.numeric_tolerance == 1e-7
+
+
+def test_illegal_vertex_connection_does_not_use_the_direct_command():
+    domain = _Domain()
+    controller, _gate, _nxt = _controller(domain)
+    vertex = np.array([1.02, 1.03])
+    outside = np.array([1.05, 1.05])
+    controller.paths[0] = np.vstack([np.array([0.2, 1.0]), vertex, np.array([1.0, 2.0])])
+    assert not segment_in_free(outside, vertex, domain)
+    index, velocity = controller._tracking_velocity(outside, controller.paths[0], 1, domain, 0.1)
+    assert index == 1
+    distance = float(np.linalg.norm(vertex - outside))
+    np.testing.assert_allclose(velocity, 1.5 * (vertex - outside))
+    direct = min(controller.safety.max_speed, distance / 0.1)
+    assert abs(np.linalg.norm(velocity) - direct) > 1e-6
+
+
+def test_filtered_shortfall_does_not_hand_off_before_arrival():
+    domain = _Domain()
+    controller, gate, _nxt = _controller(domain)
+    position = np.array([0.96, 1.0])
+    blocker = np.array([position[0] + 0.76, position[1]])
+    positions = np.array([position, blocker])
+    observation = Observation(np.array([[5.0, 5.0]]), np.array([0.2]), np.ones(1))
+    nominal, result = controller.step(observation, positions, 0.1)
+    displacement = 0.1 * result.velocity[0]
+    assert np.linalg.norm(displacement) < np.linalg.norm(gate - position) - 1e-6
+    assert controller.waypoint[0] == 1
+    assert controller.vertex_arrivals
+    assert controller.vertex_arrivals[0]['filter_reached_vertex'] is False
+    assert np.linalg.norm(nominal[0]) <= controller.safety.max_speed + 1e-12
+
+
+def test_a_straight_free_segment_keeps_the_proportional_command():
+    domain = _Domain()
+    controller, gate, _nxt = _controller(domain)
+    position = np.array([0.2, 1.0])
+    index, velocity = controller._tracking_velocity(position, controller.paths[0], 1, domain, 0.1)
+    controller.follow_valid_step = False
+    legacy_index, legacy_velocity = controller._tracking_velocity(
+        position, controller.paths[0], 1, domain, 0.1)
+    assert index == legacy_index == 1
+    np.testing.assert_allclose(velocity, legacy_velocity)
+    np.testing.assert_allclose(velocity, 1.5 * (gate - position))

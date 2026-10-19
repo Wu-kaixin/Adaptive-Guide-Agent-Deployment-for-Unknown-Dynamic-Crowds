@@ -1,5 +1,7 @@
 """ABCG planning, reachable assignment, waypoint tracking and safe feedback."""
 from time import perf_counter
+import hashlib
+import os
 
 import numpy as np
 from shapely.geometry import Point, Polygon
@@ -7,16 +9,31 @@ from shapely.geometry import Point, Polygon
 from udc.boundary import estimate_boundary
 from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
                             plan_coverage, plan_risk_aware)
-from udc.navigation import navigate_and_assign, navigation_domain, route_assigned, segment_in_free
+from udc.navigation import (navigate_and_assign, navigation_domain, route_assigned,
+                            segment_in_free, segment_in_free_sampled)
 from udc.navigation.paths import NavigationFailure, ENDPOINT_TOLERANCE_M
-import hashlib
 from udc.safety import safe_velocity, path_clearances, is_safe
+from udc.safety.filter import binding_constraints
+
+
+def _env_flag(name, default):
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    if value not in {'0', '1'}:
+        raise ValueError(f'{name} must be unset, 0, or 1')
+    return value == '1'
 
 
 class ABCGController:
-    # Disabled only by the path-following ablation. Boundary contact keeps the
-    # previous command so a guide already on the planning shell is unchanged.
+    # follow_valid_step False restores proportional tracking and the five-point
+    # predicate. It is the ablation switch, not a safety requirement.
+    # complete_segment and vertex_arrival are the two repairs under test.
+    # Near a planning boundary the vertex command is still eligible; the
+    # connection check and the unchanged safety filter decide whether it runs.
     follow_valid_step=True
+    complete_segment=True
+    vertex_arrival=True
 
     def __init__(self, config, safety, room, protocol='adaptive_resource', fixed_n=None):
         self.config=config; self.safety=safety; self.room=np.asarray(room,float)
@@ -25,6 +42,14 @@ class ABCGController:
         self.protocol=protocol; self.fixed_n=fixed_n
         self.priority_order=[]; self.priority_index=0; self.priority_mode=False
         self.follow_valid_step=type(self).follow_valid_step
+        self.complete_segment=_env_flag('UDC_COMPLETE_SEGMENT', type(self).complete_segment)
+        self.vertex_arrival=_env_flag('UDC_VERTEX_ARRIVAL', type(self).vertex_arrival)
+        self.segment_audits=[]
+        self.segment_disagreement_count=0
+        self._audit_keys=set()
+        self.vertex_arrivals=[]
+        self._vertex_pending=set()
+        self._control_step=0
         self._observation=None
         self.navigation_domain=None
         self.margin_connections=[]
@@ -394,66 +419,180 @@ class ABCGController:
         self.priority_mode=False
         return None
 
-    def _command_reaches(self, position, aim, domain, dt):
+    def _note_disagreement(self, record):
+        """Store a segment-check disagreement. Recording does not change the decision."""
+        self.segment_disagreement_count += 1
+        key=(tuple(np.round(record['start'], 5)), tuple(np.round(record['end'], 5)), record['reason'])
+        if key in self._audit_keys or len(self.segment_audits) >= 24:
+            return
+        self._audit_keys.add(key)
+        self.segment_audits.append(record)
+
+    def _segment_checker(self):
+        if self.complete_segment:
+            audit=self._note_disagreement
+            def check(start, end, domain, _audit=audit):
+                return segment_in_free(start, end, domain, audit=_audit)
+            return check
+        return segment_in_free_sampled
+
+    def _command_reaches(self, position, aim, domain, dt, checker):
         """The one execution sample toward ``aim`` stays in conservative free space."""
         delta=np.asarray(aim,float)-np.asarray(position,float)
         distance=float(np.linalg.norm(delta))
         if distance <= 1e-12:
             return True
         length=min(distance, float(dt)*self.safety.max_speed)
-        return segment_in_free(position, position+delta/distance*length, domain)
+        return checker(position, position+delta/distance*length, domain)
 
-    def _legacy_tracking(self, position, path, index, domain):
+    def _legacy_tracking(self, position, path, index, domain, checker):
         k=index
         while k < len(path)-1 and np.linalg.norm(path[k]-position) <= self.config['waypoint_tolerance']:
-            if not segment_in_free(position, path[k+1], domain):
+            if not checker(position, path[k+1], domain):
                 break
             k+=1
         return k, self.config['gain']*(path[k]-position)
 
+    def _proportional(self, delta):
+        return self.config['gain']*delta
+
+    def _finite_vertex_velocity(self, delta, distance, dt):
+        """Nominal speed min(v_max, distance/dt) toward the vertex. Not a teleport."""
+        direction=delta/distance
+        speed=min(float(self.safety.max_speed), distance/float(dt))
+        return speed*direction
+
     def _tracking_velocity(self, position, path, index, domain, dt):
-        # A guide already on the planning boundary keeps the previous rule.
-        # The immediate-step check is for a free-space approach that would
-        # otherwise accept a corner shortcut the next sample cannot follow.
-        if (not self.follow_valid_step
-                or domain.signed_free_distance(position) <= self.safety.numeric_tolerance):
-            return self._legacy_tracking(position, path, index, domain)
+        self._track_note=None
+        # The disabled switch is the old proportional tracker, including on the
+        # boundary. It is not evidence that boundary contact forbids arrival.
+        if not self.follow_valid_step:
+            return self._legacy_tracking(position, path, index, domain, segment_in_free_sampled)
+        checker=self._segment_checker()
+        if not self.vertex_arrival:
+            if domain.signed_free_distance(position) <= self.safety.numeric_tolerance:
+                return self._legacy_tracking(position, path, index, domain, checker)
+            return self._gated_tracking(position, path, index, domain, dt, checker, cap_speed=False)
+        return self._gated_tracking(position, path, index, domain, dt, checker, cap_speed=True)
+
+    def _gated_tracking(self, position, path, index, domain, dt, checker, cap_speed):
         k=index
         tolerance=self.config['waypoint_tolerance']
         while k < len(path)-1 and np.linalg.norm(path[k]-position) <= tolerance:
-            if not segment_in_free(position, path[k+1], domain):
+            # Exactly on the vertex: hand off along the installed edge.
+            # A later frame repeats the test from the true position.
+            if (cap_speed and np.linalg.norm(path[k]-position) <= 1e-12
+                    and checker(path[k], path[k+1], domain)):
+                k+=1
+                continue
+            if not checker(position, path[k+1], domain):
                 break
-            if not self._command_reaches(position, path[k+1], domain, dt):
+            if not self._command_reaches(position, path[k+1], domain, dt, checker):
                 break
             k+=1
-        aim=path[k]
-        delta=aim-position
+        aim=np.asarray(path[k], dtype=float)
+        delta=aim-np.asarray(position, dtype=float)
         distance=float(np.linalg.norm(delta))
-        # The accepted gate is inside the existing radius, but proportional
-        # gain would stop short of the vertex and leave the installed edge
-        # invisible. One capped step reaches that vertex; it does not move
-        # the guide by assignment or enlarge the radius.
-        gate=(k < len(path)-1 and 1e-12 < distance <= tolerance
-              and segment_in_free(aim, path[k+1], domain)
-              and segment_in_free(position, aim, domain)
-              and not (segment_in_free(position, path[k+1], domain)
-                       and self._command_reaches(position, path[k+1], domain, dt)))
-        if gate:
+        if distance <= 1e-12:
+            return k, np.zeros(2)
+        next_index=k+1 if k < len(path)-1 else None
+        connection=checker(position, aim, domain)
+        next_from_vertex=(next_index is not None and checker(aim, path[next_index], domain))
+        next_from_here=(next_index is not None and checker(position, path[next_index], domain)
+                        and self._command_reaches(position, path[next_index], domain, dt, checker))
+        immediate=self._command_reaches(position, aim, domain, dt, checker)
+        near=distance <= tolerance
+        # Finite-time arrival only when the whole segment to this vertex is legal
+        # and the next installed edge is legal from the vertex but not from here.
+        # Boundary proximity does not remove the candidate. An illegal connection
+        # keeps the proportional command and the existing recovery budget.
+        use_vertex=(cap_speed and near and connection and next_from_vertex and not next_from_here)
+        if use_vertex:
+            velocity=self._finite_vertex_velocity(delta, distance, dt)
+            self._track_note={
+                'vertex_index': int(k),
+                'vertex': aim.tolist(),
+                'next_waypoint': None if next_index is None else np.asarray(path[next_index], dtype=float).tolist(),
+                'distance_m': distance,
+                'connection_legal': True,
+                'immediate_step_legal': bool(immediate),
+                'next_edge_from_vertex_legal': True,
+                'next_edge_from_here_legal': False,
+                'nominal_velocity': velocity.tolist(),
+                'nominal_speed_m_s': float(np.linalg.norm(velocity)),
+                'signed_free_distance_m': float(domain.signed_free_distance(position)),
+            }
+            return k, velocity
+        if cap_speed and near and next_from_vertex and not next_from_here and not connection:
+            self._track_note={
+                'vertex_index': int(k), 'vertex': aim.tolist(),
+                'next_waypoint': None if next_index is None else np.asarray(path[next_index], dtype=float).tolist(),
+                'distance_m': distance, 'connection_legal': False,
+                'immediate_step_legal': bool(immediate),
+                'next_edge_from_vertex_legal': True, 'next_edge_from_here_legal': False,
+                'nominal_velocity': self._proportional(delta).tolist(),
+                'nominal_speed_m_s': float(np.linalg.norm(self._proportional(delta))),
+                'signed_free_distance_m': float(domain.signed_free_distance(position)),
+                'rejected_direct_command': True,
+            }
+        if (not cap_speed) and near and connection and next_from_vertex and not next_from_here and k < len(path)-1:
+            # Previous free-space gate: one uncapped step, then the outer speed limit.
+            # Kept only for the ablation that disables vertex arrival.
             return k, delta/float(dt)
-        return k, self.config['gain']*delta
+        return k, self._proportional(delta)
 
     def step(self, observation, positions, dt):
         nominal=np.zeros_like(positions)
         priority=self._priority_guide(positions)
         domain=self._domain()
+        notes=[]
+        self._control_step += 1
         for i in np.flatnonzero(self.assignment>=0):
             if priority is not None and i != priority:
                 continue
             path=self.paths[int(i)]
-            index, velocity=self._tracking_velocity(positions[i], path, self.waypoint[int(i)], domain, dt)
+            before=int(self.waypoint[int(i)])
+            index, velocity=self._tracking_velocity(positions[i], path, before, domain, dt)
             self.waypoint[int(i)]=index
             nominal[i]=velocity
+            if self._track_note is not None:
+                note=self._track_note
+                note.update(guide=int(i), step=int(self._control_step),
+                            position=np.asarray(positions[i], dtype=float).tolist(),
+                            waypoint_before=before, waypoint_after=int(index),
+                            handoff=int(index)!=before)
+                notes.append(note)
+                if not note.get('rejected_direct_command'):
+                    self._vertex_pending.add(int(i))
+            elif int(i) in self._vertex_pending and int(index)!=before:
+                self.vertex_arrivals.append({
+                    'guide': int(i), 'step': int(self._control_step), 'handoff': True,
+                    'waypoint_before': before, 'waypoint_after': int(index),
+                    'position': np.asarray(positions[i], dtype=float).tolist(),
+                })
+                self._vertex_pending.discard(int(i))
         speed=np.linalg.norm(nominal,axis=1)
         nominal*=np.minimum(1.,self.safety.max_speed/np.maximum(speed,1e-30))[:,None]
-        return nominal,safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety,
-                                     navigation_obstacle=domain.conservative_obstacle)
+        result=safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety,
+                             navigation_obstacle=domain.conservative_obstacle)
+        if notes:
+            active=binding_constraints(
+                positions, result.velocity, observation.positions, self.room, dt, self.safety,
+                domain.conservative_obstacle)
+            for note in notes:
+                guide=note['guide']
+                filtered=np.asarray(result.velocity[guide], dtype=float)
+                vertex=np.asarray(note.get('vertex', note['position']), dtype=float)
+                predicted=np.asarray(positions[guide], dtype=float)+float(dt)*filtered
+                note['nominal_velocity']=np.asarray(nominal[guide], dtype=float).tolist()
+                note['nominal_speed_m_s']=float(np.linalg.norm(nominal[guide]))
+                note['filtered_velocity']=filtered.tolist()
+                note['filtered_speed_m_s']=float(np.linalg.norm(filtered))
+                note['predicted_distance_to_vertex_m']=float(np.linalg.norm(predicted-vertex))
+                note['filter_reached_vertex']=bool(note['predicted_distance_to_vertex_m'] <= 1e-9)
+                note['active_constraints']=[
+                    item for item in active if item['guide']==guide or item.get('other_guide')==guide
+                ]
+                if len(self.vertex_arrivals) < 64:
+                    self.vertex_arrivals.append(note)
+        return nominal, result

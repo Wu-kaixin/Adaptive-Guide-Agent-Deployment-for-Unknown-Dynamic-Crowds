@@ -267,15 +267,16 @@ def test_occupied_target_replan_can_reach_existing_reassignment_with_same_target
         np.testing.assert_array_equal(path[-1],targets[controller.assignment[guide]])
 
 
-@pytest.mark.parametrize('target,kind',[([5.,5.],'static_endpoint_invalid'),
+@pytest.mark.parametrize('target,kind',[([5.,5.],'static_target_invalid'),
                                       ([8.,5.],'static_components_disconnected')])
 def test_static_failures_are_not_current_guide_occupation(target,kind):
-    from udc.navigation.paths import NavigationFailure
+    from udc.navigation.paths import NavigationFailure, TargetDomainFailure
     barrier=Polygon([(4.,-1.),(6.,-1.),(6.,11.),(4.,11.)])
-    with pytest.raises(NavigationFailure) as captured:
+    with pytest.raises((NavigationFailure, TargetDomainFailure)) as captured:
         route_assigned(np.array([[2.,5.]]),np.array([target]),np.array([0]),np.array([10.,10.]),0.2,barrier,0.2)
     assert captured.value.diagnosis['kind']==kind
-    assert captured.value.diagnosis['query_domain']=='static'
+    assert captured.value.diagnosis['query_domain']==('static_conservative_navigation'
+        if kind=='static_target_invalid' else 'static')
 
 
 def test_only_search_failure_does_not_certify_infeasibility(monkeypatch):

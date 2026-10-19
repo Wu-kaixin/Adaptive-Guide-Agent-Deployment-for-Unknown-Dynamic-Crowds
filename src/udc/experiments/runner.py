@@ -17,6 +17,7 @@ from udc.controller import ABCGController
 from udc.controller.progress import stalled_this_step
 from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
+from udc.navigation.paths import target_domain_check
 from udc.evaluation.acceptance import diagnose_stages, evaluate
 from .config import demand_kind, load_config, METHODS, PROTOCOLS
 from .provenance import provenance as _provenance
@@ -25,7 +26,7 @@ from .provenance import provenance as _provenance
 STATUSES = {
     'INITIALIZATION_INVALID', 'BOUNDARY_INVALID', 'OFFSET_INVALID',
     'CAPACITY_SHORTFALL', 'PLAN_INVALID', 'PLAN_SEARCH_EXHAUSTED',
-    'TARGET_SEPARATION_INVALID', 'PATH_UNREACHABLE', 'NUMERICAL_FAILURE',
+    'TARGET_SEPARATION_INVALID', 'TARGET_DOMAIN_INVALID', 'PATH_UNREACHABLE', 'NUMERICAL_FAILURE',
     'DEADLOCK', 'REPLAN_EXHAUSTED', 'TIMEOUT', 'COVERAGE_NOT_MET',
     'SAFETY_VIOLATION', 'SUCCESS', 'NOT_EXECUTED',
 }
@@ -394,6 +395,8 @@ def experiment(config_path, output, seed=None, plots=True,
         'feasibility': feasibility,
         'plan_found': plan_found,
         'assignment_found': assignment_found,
+        'target_domain': (None if plan is None else target_domain_check(
+                controller._domain(), plan.positions, plan.arc_positions)),
         'demand_kind': None if config is None else demand_kind(config['crowd']),
         'boundary_source': None if controller is None else controller.boundary_source,
         'prescribed_plan_installed': (False if controller is None

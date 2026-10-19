@@ -1,0 +1,740 @@
+{
+  "source_sha256": "62ed86ff66f411ef00d14d151bba0884ca0736c92da7d1e4989dce1d96381ee9",
+  "summary": {
+    "stage": "regression_final",
+    "tasks_expected": 180,
+    "tasks_completed": 180,
+    "wall_s": 85.29581380001036,
+    "outcomes": {
+      "BOUNDARY_INVALID": 6,
+      "SUCCESS": 141,
+      "INITIALIZATION_INVALID": 33
+    },
+    "offline_inconsistent": 0,
+    "input_or_target_mismatches": 0,
+    "postprocessed_targets": 3,
+    "trajectory_array_mismatches": 0
+  },
+  "comparisons": [
+    {
+      "task_id": "elongated__seed_35__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_35__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_35__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_36__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_36__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_36__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_37__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_37__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_37__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_38__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_38__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_38__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_39__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_39__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_39__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_40__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_40__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_40__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_41__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_41__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_41__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_42__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_42__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_42__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_43__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_43__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_43__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_44__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_44__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_44__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_45__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_45__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_45__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_46__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_46__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_46__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_47__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_47__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_47__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_48__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_48__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_48__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_49__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_49__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_49__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_50__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_50__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_50__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_51__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_51__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_51__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_52__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_52__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_52__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_53__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_53__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_53__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_54__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_54__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "elongated__seed_54__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_35__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_35__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_35__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_36__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_36__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_36__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_37__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_37__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_37__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_38__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_38__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_38__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_39__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_39__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_39__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_40__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_40__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_40__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_41__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_41__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_41__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_42__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_42__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_42__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_43__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_43__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_43__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_44__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_44__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_44__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_45__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_45__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_45__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_46__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_46__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_46__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_47__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_47__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_47__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_48__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_48__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_48__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_49__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_49__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_49__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_50__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_50__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_50__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_51__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_51__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_51__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_52__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_52__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_52__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_53__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_53__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_53__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_54__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_54__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "tight_u__seed_54__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_35__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_35__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_35__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_36__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_36__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_36__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_37__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_37__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_37__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_38__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_38__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_38__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_39__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_39__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_39__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_40__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_40__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_40__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_41__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_41__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_41__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_42__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_42__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_42__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_43__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_43__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_43__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_44__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_44__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_44__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_45__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_45__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_45__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_46__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_46__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_46__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_47__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_47__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_47__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_48__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_48__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_48__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_49__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_49__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_49__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_50__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_50__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_50__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_51__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_51__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_51__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_52__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_52__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_52__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_53__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_53__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_53__projected_mass",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_54__equal_arc",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_54__pairwise_euclidean",
+      "all_trajectory_arrays_equal": true
+    },
+    {
+      "task_id": "wide_u__seed_54__projected_mass",
+      "all_trajectory_arrays_equal": true
+    }
+  ]
+}

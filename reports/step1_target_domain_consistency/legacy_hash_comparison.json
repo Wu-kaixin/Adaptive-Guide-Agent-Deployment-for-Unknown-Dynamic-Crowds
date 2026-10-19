@@ -1,0 +1,104 @@
+{
+  "nonconvex_confirmation_v2": [
+    {
+      "scene": "elongated",
+      "seed": 30,
+      "origin": "protocol_reconstruction",
+      "input_array_sha256": "390c1a47d996d9167b738fcad6353dde78bbde069d8a450007258a2370123d51",
+      "historical_input_array_sha256": "390c1a47d996d9167b738fcad6353dde78bbde069d8a450007258a2370123d51",
+      "input_array_hash_matches": true,
+      "input_file_hash_matches": true,
+      "boundary_file_hash_matches": true,
+      "target_file_comparisons": {
+        "equal_arc": {
+          "sha256": "17c15f57a3bac967228c2463da198f60243c2bd023203f41270bd8d2dafa8b96",
+          "historical_sha256": "17c15f57a3bac967228c2463da198f60243c2bd023203f41270bd8d2dafa8b96",
+          "matches": true
+        },
+        "pairwise_euclidean": {
+          "sha256": "b22222d04bbd7220710046a512b91fc6aa4490c45792099a175ea1730a51190b",
+          "historical_sha256": "b22222d04bbd7220710046a512b91fc6aa4490c45792099a175ea1730a51190b",
+          "matches": true
+        },
+        "projected_mass": {
+          "sha256": "e608e063f5bdfcb216c8cd8eeb1ed3617cb31a5b93c6907127923965106efad1",
+          "historical_sha256": "e608e063f5bdfcb216c8cd8eeb1ed3617cb31a5b93c6907127923965106efad1",
+          "matches": true
+        }
+      }
+    },
+    {
+      "scene": "tight_u",
+      "seed": 30,
+      "origin": "protocol_reconstruction",
+      "input_array_sha256": "e72b8066adedbefe674d1457d2c80d3e317b048d7fe9212d9faec5a2603c74c3",
+      "historical_input_array_sha256": "e72b8066adedbefe674d1457d2c80d3e317b048d7fe9212d9faec5a2603c74c3",
+      "input_array_hash_matches": true,
+      "input_file_hash_matches": true,
+      "boundary_file_hash_matches": true,
+      "target_file_comparisons": {
+        "equal_arc": {
+          "sha256": "fd95e4bbe8935203fd58a824dd9d1600e83a706996aefe722223857635874945",
+          "historical_sha256": "fd95e4bbe8935203fd58a824dd9d1600e83a706996aefe722223857635874945",
+          "matches": true
+        },
+        "pairwise_euclidean": {
+          "sha256": "16acb8b8676cbbb81ac4538799604f93eb01250d06606a102c6c950e95cd9aca",
+          "historical_sha256": "16acb8b8676cbbb81ac4538799604f93eb01250d06606a102c6c950e95cd9aca",
+          "matches": true
+        },
+        "projected_mass": {
+          "sha256": "e94f5cba77586b5d1b7b59d366853f9f171a81d52566e7694eb4f3a3ed32ef97",
+          "historical_sha256": "e94f5cba77586b5d1b7b59d366853f9f171a81d52566e7694eb4f3a3ed32ef97",
+          "matches": true
+        }
+      }
+    },
+    {
+      "scene": "wide_u",
+      "seed": 30,
+      "origin": "protocol_reconstruction",
+      "input_array_sha256": "d22615f33d4475d02d00abc8d85ae2efd5dc5e83f9c4ce9baf00d050727c0f6c",
+      "historical_input_array_sha256": "d22615f33d4475d02d00abc8d85ae2efd5dc5e83f9c4ce9baf00d050727c0f6c",
+      "input_array_hash_matches": true,
+      "input_file_hash_matches": true,
+      "boundary_file_hash_matches": true,
+      "target_file_comparisons": {
+        "equal_arc": {
+          "sha256": "6c7a3aab29581f73cc014d9a5eb0c0aeae34ed47b46eadab1de2eb3ba4778d16",
+          "historical_sha256": "6c7a3aab29581f73cc014d9a5eb0c0aeae34ed47b46eadab1de2eb3ba4778d16",
+          "matches": true
+        },
+        "pairwise_euclidean": {
+          "sha256": "3fb9a9f1b2a7109c7cb41039adadb99ced3cf767f7a4755db045a5d79e2cdf34",
+          "historical_sha256": "3fb9a9f1b2a7109c7cb41039adadb99ced3cf767f7a4755db045a5d79e2cdf34",
+          "matches": true
+        },
+        "projected_mass": {
+          "sha256": "468ab47a9c5cc78fe33bd13bc7593c0812a9fb69338813b3063885aeed659eec",
+          "historical_sha256": "468ab47a9c5cc78fe33bd13bc7593c0812a9fb69338813b3063885aeed659eec",
+          "matches": true
+        }
+      }
+    }
+  ],
+  "nonconvex_record_rebuild_v1": [
+    {
+      "scene": "wide_u",
+      "seed": 22,
+      "origin": "protocol_reconstruction",
+      "input_array_sha256": "92b3bd8ec118f5e4b42cf53b72b1c06d27000e58f54a7adcbc8a1912c4d42197",
+      "historical_input_array_sha256": "92b3bd8ec118f5e4b42cf53b72b1c06d27000e58f54a7adcbc8a1912c4d42197",
+      "input_array_hash_matches": true,
+      "input_file_hash_matches": true,
+      "boundary_file_hash_matches": true,
+      "target_file_comparisons": {
+        "equal_arc": {
+          "sha256": "50a9a843dc2c9c23599a9e04d1a4f95225cb1a165d7c42558b76f41baeee96bd",
+          "historical_sha256": "50a9a843dc2c9c23599a9e04d1a4f95225cb1a165d7c42558b76f41baeee96bd",
+          "matches": true
+        }
+      }
+    }
+  ]
+}

@@ -87,7 +87,7 @@ def test_visibility_navigation_routes_around_obstacle_and_detects_unreachable():
     crowd=Polygon([(4,3),(6,3),(6,7),(4,7)])
     result=navigate_and_assign(np.array([[2.,5.]]),np.array([[8.,5.]]),np.array([10.,10.]),.1,crowd,.2)
     assert len(result.paths[0])>2 and result.lengths[0]>6
-    with pytest.raises(ValueError,match='PATH_UNREACHABLE'):
+    with pytest.raises(ValueError,match='TARGET_DOMAIN_INVALID'):
         navigate_and_assign(np.array([[2.,5.]]),np.array([[5.,5.]]),np.array([10.,10.]),.1,crowd,.2)
 
 

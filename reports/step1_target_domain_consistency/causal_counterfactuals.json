@@ -1,0 +1,11 @@
+{
+  "raw_offset_illegal_length_m": 0.052966853249459135,
+  "sampled_illegal_length_m": 0.053147609654287976,
+  "sampled_physical_illegal_length_m": 0.0,
+  "sampled_simplified_illegal_length_m": 0.0,
+  "predicted_parent_corner_if_same_mitre_vertex": [
+    13.069059390493162,
+    14.344518213083013
+  ],
+  "predicted_parent_distance_to_occupied_boundary_m": 6.534253467653844e-16
+}

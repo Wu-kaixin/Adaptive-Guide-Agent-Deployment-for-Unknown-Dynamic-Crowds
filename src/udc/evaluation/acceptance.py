@@ -8,7 +8,7 @@ from udc.safety import path_clearances
 RESOURCE_STATUSES = {'CAPACITY_SHORTFALL'}
 PLANNING_STATUSES = {
     'BOUNDARY_INVALID', 'OFFSET_INVALID', 'PLAN_INVALID', 'PLAN_SEARCH_EXHAUSTED',
-    'TARGET_SEPARATION_INVALID', 'PATH_UNREACHABLE',
+    'TARGET_SEPARATION_INVALID', 'TARGET_DOMAIN_INVALID', 'PATH_UNREACHABLE',
 }
 EXECUTION_STATUSES = {
     'DEADLOCK', 'REPLAN_EXHAUSTED', 'TIMEOUT', 'COVERAGE_NOT_MET',
@@ -51,6 +51,8 @@ def diagnose_stages(status, failure_stage, feasibility, plan_found, assignment_f
         return 'not_evaluated'
     if status in {'BOUNDARY_INVALID', 'OFFSET_INVALID'}:
         return 'geometry_invalid'
+    if status == 'TARGET_DOMAIN_INVALID':
+        return 'target_domain_invalid'
     if status == 'CAPACITY_SHORTFALL':
         return 'resource_shortfall'
     if feasibility and feasibility.get('infeasibility_certificate'):

@@ -11,7 +11,8 @@ from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_ce
                             plan_coverage, plan_risk_aware)
 from udc.navigation import (navigate_and_assign, navigation_domain, route_assigned,
                             segment_in_free, segment_in_free_sampled)
-from udc.navigation.paths import NavigationFailure, ENDPOINT_TOLERANCE_M
+from udc.navigation.paths import (NavigationFailure, ENDPOINT_TOLERANCE_M,
+                                  target_domain_check, require_target_domain)
 from udc.controller.progress import priority_path_stall
 from udc.safety import safe_velocity, path_clearances, is_safe
 from udc.safety.coordinate import joint_progress_velocity
@@ -148,6 +149,10 @@ class ABCGController:
             raise ValueError(f'CAPACITY_SHORTFALL: supplied plan requires {len(plan.positions)}, have {len(guides)}')
         self.plan=plan
         self.plan_found=True
+        admission = target_domain_check(self._domain(), plan.positions, plan.arc_positions)
+        self.attempts[-1]['target_domain'] = admission
+        self.attempts[-1]['accepted'] = accepted and admission['accepted']
+        require_target_domain(self._domain(), plan.positions, plan.arc_positions)
         crowd=Polygon(self.boundary.crowd)
         started=perf_counter()
         nav=navigate_and_assign(guides,plan.positions,self.room,self.safety.wall_distance,
@@ -194,11 +199,14 @@ class ABCGController:
                 distances=np.linalg.norm(plan.positions[:,None]-plan.positions[None,:],axis=2)
                 np.fill_diagonal(distances,np.inf); separation=float(distances.min())
                 accepted=plan.max_gap <= planned_limit+1e-9 and separation >= self.safety.guide_distance
+                admission = target_domain_check(self._domain(), plan.positions, plan.arc_positions)
+                accepted = accepted and admission['accepted']
                 rho=demand_profile(self.boundary,observation.positions,observation.demand,
                                    c['demand_bandwidth'],'mass_cvt')
                 record={'n':n,'phase':phase,'max_gap':plan.max_gap,'min_separation':separation,
                     'cost':plan.cost.tolist(),'iterations':plan.iterations,'exit_reason':plan.exit_reason,
                     'accepted':accepted,'planner_seconds':perf_counter()-started,
+                    'target_domain':admission,
                     # Same original density for every method. Concentration never replaces it.
                     'evaluation_density':'mass_cvt gaussian demand mass',
                     'evaluation_density_contrast':float(rho.max()/max(float(rho.min()),1e-30))}

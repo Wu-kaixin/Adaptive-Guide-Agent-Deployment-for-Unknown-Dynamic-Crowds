@@ -134,6 +134,56 @@ def _within_free(geometry, point):
     return float(geometry.boundary.distance(sample)) <= ENDPOINT_TOLERANCE_M
 
 
+class TargetDomainFailure(ValueError):
+    """Static target rejection, distinct from a failed path search."""
+
+    def __init__(self, report):
+        super().__init__('TARGET_DOMAIN_INVALID: target outside static conservative navigation domain')
+        self.diagnosis = {'kind': 'static_target_invalid', **report}
+
+
+def target_domain_check(domain, targets, arc_positions=None):
+    """One target contract for deployment acceptance and navigation entrances.
+
+    Other guides are deliberately absent. The existing endpoint tolerance only
+    admits numerical contact with the conservative boundary, inside physical
+    free space. It never admits a physically invalid endpoint.
+    """
+    targets = np.asarray(targets, dtype=float)
+    if targets.ndim != 2 or targets.shape[1] != 2 or not np.isfinite(targets).all():
+        raise ValueError('PLAN_INVALID: targets must be finite Nx2 coordinates')
+    arcs = None if arc_positions is None else np.asarray(arc_positions, dtype=float)
+    if arcs is not None and (arcs.shape != (len(targets),) or not np.isfinite(arcs).all()):
+        raise ValueError('PLAN_INVALID: target arc coordinates must be finite and paired')
+    records = []
+    for index, target in enumerate(targets):
+        point = Point(target)
+        physical = bool(domain.physical_free.covers(point))
+        signed = domain.signed_free_distance(target)
+        covered = bool(domain.free.covers(point))
+        accepted = physical and (covered or signed >= -ENDPOINT_TOLERANCE_M)
+        records.append({
+            'target': index, 'coordinates': target.tolist(),
+            'arc_m': None if arcs is None else float(arcs[index]),
+            'signed_free_distance_m': signed, 'accepted': accepted,
+            'reason': ('covered' if covered and accepted else 'numerical_boundary_contact' if accepted
+                       else 'outside_physical_free' if not physical
+                       else 'inside_conservative_obstacle'),
+        })
+    invalid = [record['target'] for record in records if not record['accepted']]
+    return {'accepted': not invalid, 'invalid_target_indices': invalid,
+            'query_domain': 'static_conservative_navigation',
+            'geometry_sha256': domain.geometry_sha256,
+            'endpoint_tolerance_m': ENDPOINT_TOLERANCE_M, 'targets': records}
+
+
+def require_target_domain(domain, targets, arc_positions=None):
+    report = target_domain_check(domain, targets, arc_positions)
+    if not report['accepted']:
+        raise TargetDomainFailure(report)
+    return report
+
+
 def _other_guide_space(domain, guides, index, radius):
     """Free space with every other guide removed. The guide being planned is absent."""
     if radius is None or radius <= 0 or guides is None:
@@ -233,6 +283,7 @@ def _prepare_start(point, domain, guides=None, guide=None, people=None, limits=N
 def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd_margin,
                         people=None, limits=None):
     domain = navigation_domain(room, wall_margin, crowd_polygon, crowd_margin)
+    require_target_domain(domain, targets)
     free, obstacle = domain.free, domain.conservative_obstacle
     # Call-local reuse: geometry changes cannot accidentally reuse stale edges.
     graph = _visibility_graph(free, obstacle)
@@ -548,6 +599,7 @@ def route_assigned(guides, targets, assignment, room, wall_margin,
     segment check used for execution. Without that evidence the start is rejected.
     """
     domain = navigation_domain(room, wall_margin, crowd_polygon, crowd_margin)
+    require_target_domain(domain, targets)
     free, obstacle = domain.free, domain.conservative_obstacle
     paths = {}
     lengths = {}

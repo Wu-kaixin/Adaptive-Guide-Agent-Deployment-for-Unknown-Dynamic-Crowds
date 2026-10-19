@@ -92,6 +92,14 @@ Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
 
 当前适用限制：闭运算产生的短尖角可能经 mitre 缓冲远距离伸出，使 1.3 m 偏移曲线局部不能进入保守导航域。单个非法目标不是整体不可行证明。seed51 已找到合法相位；非恒定需求和其他曲线上的效果不由本轮结果保证。运行与重建限制见 [目标域一致性报告](../reports/step1_target_domain_consistency/REPORT.zh.md)。
 
+## 边界构造比较接口（2026-10-19）
+
+`boundary.construct_boundary` 映射 `convex_hull` 到既有 `estimate_boundary`，映射 `disk_union_closed` 到既有 `estimate_disk_union`。两者读取同一位置、半径和房间；构造报告分开保存完整占据几何、外环控制几何和人员圆盘物理参考。圆盘闭运算步骤由原函数抽取为 `disk_occupancy`，几何计算未改变。多分量不选最大分量、不丢人员、不回退；孔洞及外环填孔明确记账。
+
+`experiments.boundary_comparison` 冻结固定 N、Equal Arc legacy phase 和共用静态域相位政策。两构造的曲线和导航域可以不同，这属于实验效应；`evaluation.comparison.common_motion_metrics` 不接收估计器几何，只按共同人员／半径／房间及真实运动区间评价。各自曲线覆盖仍由原独立验收检查，内部代价不用于跨曲线排名。未执行行的运动指标为 null，构造失败留在共同合法输入分母。
+
+协议将清单准备、未来输入冻结、实际执行分为独立操作。默认小检查仅 16 行、最多四条执行；准备 120 行未来清单不调用生成器。源码、配置、原快照和 SQLite 均以哈希锁定。详细契约与统计口径见 [边界比较协议](../reports/step1_boundary_estimator_protocol/REPORT.zh.md)。
+
 ## 源码依据
 
 部署、导航、恢复和独立验收基于 `Wu-kaixin/ABCG-controller` 的 `a18480c`（MIT）。

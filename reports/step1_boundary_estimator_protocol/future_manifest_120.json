@@ -1,0 +1,970 @@
+{
+  "tasks": [
+    {
+      "task_id": "elongated__seed_55__convex_hull",
+      "scene": "elongated",
+      "seed": 55,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_55__disk_union_closed",
+      "scene": "elongated",
+      "seed": 55,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_56__convex_hull",
+      "scene": "elongated",
+      "seed": 56,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_56__disk_union_closed",
+      "scene": "elongated",
+      "seed": 56,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_57__convex_hull",
+      "scene": "elongated",
+      "seed": 57,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_57__disk_union_closed",
+      "scene": "elongated",
+      "seed": 57,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_58__convex_hull",
+      "scene": "elongated",
+      "seed": 58,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_58__disk_union_closed",
+      "scene": "elongated",
+      "seed": 58,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_59__convex_hull",
+      "scene": "elongated",
+      "seed": 59,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_59__disk_union_closed",
+      "scene": "elongated",
+      "seed": 59,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_60__convex_hull",
+      "scene": "elongated",
+      "seed": 60,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_60__disk_union_closed",
+      "scene": "elongated",
+      "seed": 60,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_61__convex_hull",
+      "scene": "elongated",
+      "seed": 61,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_61__disk_union_closed",
+      "scene": "elongated",
+      "seed": 61,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_62__convex_hull",
+      "scene": "elongated",
+      "seed": 62,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_62__disk_union_closed",
+      "scene": "elongated",
+      "seed": 62,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_63__convex_hull",
+      "scene": "elongated",
+      "seed": 63,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_63__disk_union_closed",
+      "scene": "elongated",
+      "seed": 63,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_64__convex_hull",
+      "scene": "elongated",
+      "seed": 64,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_64__disk_union_closed",
+      "scene": "elongated",
+      "seed": 64,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_65__convex_hull",
+      "scene": "elongated",
+      "seed": 65,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_65__disk_union_closed",
+      "scene": "elongated",
+      "seed": 65,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_66__convex_hull",
+      "scene": "elongated",
+      "seed": 66,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_66__disk_union_closed",
+      "scene": "elongated",
+      "seed": 66,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_67__convex_hull",
+      "scene": "elongated",
+      "seed": 67,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_67__disk_union_closed",
+      "scene": "elongated",
+      "seed": 67,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_68__convex_hull",
+      "scene": "elongated",
+      "seed": 68,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_68__disk_union_closed",
+      "scene": "elongated",
+      "seed": 68,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_69__convex_hull",
+      "scene": "elongated",
+      "seed": 69,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_69__disk_union_closed",
+      "scene": "elongated",
+      "seed": 69,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_70__convex_hull",
+      "scene": "elongated",
+      "seed": 70,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_70__disk_union_closed",
+      "scene": "elongated",
+      "seed": 70,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_71__convex_hull",
+      "scene": "elongated",
+      "seed": 71,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_71__disk_union_closed",
+      "scene": "elongated",
+      "seed": 71,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_72__convex_hull",
+      "scene": "elongated",
+      "seed": 72,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_72__disk_union_closed",
+      "scene": "elongated",
+      "seed": 72,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_73__convex_hull",
+      "scene": "elongated",
+      "seed": 73,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_73__disk_union_closed",
+      "scene": "elongated",
+      "seed": 73,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_74__convex_hull",
+      "scene": "elongated",
+      "seed": 74,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "elongated__seed_74__disk_union_closed",
+      "scene": "elongated",
+      "seed": 74,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 11
+    },
+    {
+      "task_id": "tight_u__seed_55__convex_hull",
+      "scene": "tight_u",
+      "seed": 55,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_55__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 55,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_56__convex_hull",
+      "scene": "tight_u",
+      "seed": 56,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_56__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 56,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_57__convex_hull",
+      "scene": "tight_u",
+      "seed": 57,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_57__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 57,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_58__convex_hull",
+      "scene": "tight_u",
+      "seed": 58,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_58__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 58,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_59__convex_hull",
+      "scene": "tight_u",
+      "seed": 59,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_59__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 59,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_60__convex_hull",
+      "scene": "tight_u",
+      "seed": 60,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_60__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 60,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_61__convex_hull",
+      "scene": "tight_u",
+      "seed": 61,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_61__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 61,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_62__convex_hull",
+      "scene": "tight_u",
+      "seed": 62,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_62__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 62,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_63__convex_hull",
+      "scene": "tight_u",
+      "seed": 63,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_63__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 63,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_64__convex_hull",
+      "scene": "tight_u",
+      "seed": 64,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_64__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 64,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_65__convex_hull",
+      "scene": "tight_u",
+      "seed": 65,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_65__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 65,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_66__convex_hull",
+      "scene": "tight_u",
+      "seed": 66,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_66__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 66,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_67__convex_hull",
+      "scene": "tight_u",
+      "seed": 67,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_67__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 67,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_68__convex_hull",
+      "scene": "tight_u",
+      "seed": 68,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_68__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 68,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_69__convex_hull",
+      "scene": "tight_u",
+      "seed": 69,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_69__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 69,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_70__convex_hull",
+      "scene": "tight_u",
+      "seed": 70,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_70__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 70,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_71__convex_hull",
+      "scene": "tight_u",
+      "seed": 71,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_71__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 71,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_72__convex_hull",
+      "scene": "tight_u",
+      "seed": 72,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_72__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 72,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_73__convex_hull",
+      "scene": "tight_u",
+      "seed": 73,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_73__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 73,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_74__convex_hull",
+      "scene": "tight_u",
+      "seed": 74,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "tight_u__seed_74__disk_union_closed",
+      "scene": "tight_u",
+      "seed": 74,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 13
+    },
+    {
+      "task_id": "wide_u__seed_55__convex_hull",
+      "scene": "wide_u",
+      "seed": 55,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_55__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 55,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_56__convex_hull",
+      "scene": "wide_u",
+      "seed": 56,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_56__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 56,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_57__convex_hull",
+      "scene": "wide_u",
+      "seed": 57,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_57__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 57,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_58__convex_hull",
+      "scene": "wide_u",
+      "seed": 58,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_58__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 58,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_59__convex_hull",
+      "scene": "wide_u",
+      "seed": 59,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_59__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 59,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_60__convex_hull",
+      "scene": "wide_u",
+      "seed": 60,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_60__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 60,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_61__convex_hull",
+      "scene": "wide_u",
+      "seed": 61,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_61__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 61,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_62__convex_hull",
+      "scene": "wide_u",
+      "seed": 62,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_62__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 62,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_63__convex_hull",
+      "scene": "wide_u",
+      "seed": 63,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_63__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 63,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_64__convex_hull",
+      "scene": "wide_u",
+      "seed": 64,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_64__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 64,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_65__convex_hull",
+      "scene": "wide_u",
+      "seed": 65,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_65__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 65,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_66__convex_hull",
+      "scene": "wide_u",
+      "seed": 66,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_66__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 66,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_67__convex_hull",
+      "scene": "wide_u",
+      "seed": 67,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_67__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 67,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_68__convex_hull",
+      "scene": "wide_u",
+      "seed": 68,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_68__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 68,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_69__convex_hull",
+      "scene": "wide_u",
+      "seed": 69,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_69__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 69,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_70__convex_hull",
+      "scene": "wide_u",
+      "seed": 70,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_70__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 70,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_71__convex_hull",
+      "scene": "wide_u",
+      "seed": 71,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_71__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 71,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_72__convex_hull",
+      "scene": "wide_u",
+      "seed": 72,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_72__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 72,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_73__convex_hull",
+      "scene": "wide_u",
+      "seed": 73,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_73__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 73,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_74__convex_hull",
+      "scene": "wide_u",
+      "seed": 74,
+      "estimator": "convex_hull",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    },
+    {
+      "task_id": "wide_u__seed_74__disk_union_closed",
+      "scene": "wide_u",
+      "seed": 74,
+      "estimator": "disk_union_closed",
+      "method": "equal_arc+static_domain_phase_v1",
+      "count": 19
+    }
+  ],
+  "task_count": 120,
+  "input_units": 60,
+  "inputs_generated": false,
+  "source_sha256_lock": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+  "spec_sha256_lock": "1c1650a80b2e653e560fc7b5f37301bd32918a9f1bb75a5b266fcec1a03d33b3",
+  "preparation_only": true
+}

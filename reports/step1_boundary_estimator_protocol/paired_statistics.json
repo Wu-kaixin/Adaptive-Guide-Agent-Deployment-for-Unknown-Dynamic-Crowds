@@ -1,0 +1,59 @@
+{
+  "common_legal_denominator": 7,
+  "joint_outcomes": {
+    "unresolved_due_to_nonexecution": 5,
+    "both_success": 2
+  },
+  "success_fraction_difference_disk_minus_convex": null,
+  "paired_units": [
+    {
+      "scene": "elongated",
+      "seed": 35,
+      "joint_status": "unresolved_due_to_nonexecution",
+      "convex_hull": "NOT_EXECUTED",
+      "disk_union_closed": "BOUNDARY_INVALID"
+    },
+    {
+      "scene": "elongated",
+      "seed": 36,
+      "joint_status": "unresolved_due_to_nonexecution",
+      "convex_hull": "NOT_EXECUTED",
+      "disk_union_closed": "NOT_EXECUTED"
+    },
+    {
+      "scene": "elongated",
+      "seed": 51,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 36,
+      "joint_status": "unresolved_due_to_nonexecution",
+      "convex_hull": "NOT_EXECUTED",
+      "disk_union_closed": "NOT_EXECUTED"
+    },
+    {
+      "scene": "tight_u",
+      "seed": 41,
+      "joint_status": "unresolved_due_to_nonexecution",
+      "convex_hull": "NOT_EXECUTED",
+      "disk_union_closed": "BOUNDARY_INVALID"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 35,
+      "joint_status": "both_success",
+      "convex_hull": "SUCCESS",
+      "disk_union_closed": "SUCCESS"
+    },
+    {
+      "scene": "wide_u",
+      "seed": 36,
+      "joint_status": "unresolved_due_to_nonexecution",
+      "convex_hull": "NOT_EXECUTED",
+      "disk_union_closed": "NOT_EXECUTED"
+    }
+  ]
+}

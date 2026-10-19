@@ -1,0 +1,44 @@
+{
+  "python": "3.12.15 (main, Oct 14 2026, 01:08:45) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "E:\\udc-wt\\venv312\\Scripts\\python.exe",
+  "udc_import_path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_processors": 32,
+  "physical_cores": 24,
+  "memory_total_bytes": 68463685632,
+  "workers": 1,
+  "numerical_threads_per_worker": 1,
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2",
+    "PedPy": "1.5.1",
+    "pytest": "9.1.1"
+  },
+  "baseline_commit": "0ef6e1f",
+  "provenance": {
+    "commit": "0ef6e1f765b57bf4dce6c9cf1f28e909c07d2201",
+    "dirty": true,
+    "patch_sha256": "245e2aa7f975c7afdf5d78f1034940c153f76cf118cafaeb4f969b77a70800ce",
+    "source_sha256": "002fde3c5310dc6e32a67d16d760061a6f1919dde1a0de0e74894819532ce448",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "fa24504e54757ed0dd696c95f2c628123f50833feed400df12e61f74684ee625",
+    "task_sha256": "161db1ce7ee9bfb5ae24f7b35bb79f92677b1046db787920bcbc239eaaabb7da",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "spec_sha256": "1c1650a80b2e653e560fc7b5f37301bd32918a9f1bb75a5b266fcec1a03d33b3",
+  "generator_spec_sha256": "da5f865559db28095175ef6992cd1744319219251c7b21a2c6fdb7a60736c3f7",
+  "base_spec_sha256": "63c2b5392d3162b4984583fc4c1fa1136645f2ff9faa95509efc3924caffd89f",
+  "future_inputs_exist": false,
+  "future_execution_exists": false
+}

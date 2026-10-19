@@ -68,6 +68,25 @@ def _sample_exterior(polygon, spacing):
     return np.array([line.interpolate(i * line.length / count).coords[0] for i in range(count)]), float(line.length)
 
 
+def disk_occupancy(points, radii, closing_radius=0.30, quad_segs=16):
+    """Existing disk/closing construction, exposed for auditable descriptions.
+
+    Returns the unclosed reference and the full constructed geometry, including
+    holes and all components. Selection of an exterior is left to the existing
+    estimator, which rejects a MultiPolygon instead of discarding people.
+    """
+    resolution = max(int(quad_segs), 32)
+    original = unary_union([Point(point).buffer(float(radius), quad_segs=resolution)
+                            for point, radius in zip(points, radii)])
+    occupied = original
+    if closing_radius > 0:
+        closed = original.buffer(float(closing_radius), quad_segs=resolution)
+        closed = closed.buffer(-float(closing_radius), quad_segs=resolution)
+        if not closed.is_empty:
+            occupied = unary_union([original, closed])
+    return original, occupied
+
+
 def estimate_disk_union(points, offset, spacing, room, wall_margin, crowd_distance,
                         radii=None, closing_radius=0.30, quad_segs=16):
     """Observation-only non-convex envelope.
@@ -92,18 +111,7 @@ def estimate_disk_union(points, offset, spacing, room, wall_margin, crowd_distan
     # The acceptance check covers disks drawn with 16 segments per quarter.
     # A coarser or chordal ring lies inside those disks, so the occupied ring
     # keeps the buffer vertices and uses at least 32 segments per quarter.
-    disk_quad_segs = max(int(quad_segs), 32)
-    disks = [Point(point).buffer(float(radius), quad_segs=disk_quad_segs)
-             for point, radius in zip(points, radii)]
-    original = unary_union(disks)
-    occupied = original
-    if closing_radius > 0:
-        closed = original.buffer(float(closing_radius), quad_segs=disk_quad_segs)
-        closed = closed.buffer(-float(closing_radius), quad_segs=disk_quad_segs)
-        if not closed.is_empty:
-            # Closing can shave the disk arcs. Union with the original disks
-            # restores coverage without reopening a gap the closing filled.
-            occupied = unary_union([original, closed])
+    original, occupied = disk_occupancy(points, radii, closing_radius, quad_segs)
     if occupied.is_empty or occupied.geom_type != 'Polygon':
         kind = 'empty' if occupied.is_empty else occupied.geom_type
         raise ValueError(f'BOUNDARY_INVALID: disk union is {kind} at this closing radius')

@@ -1,0 +1,22 @@
+[
+  {
+    "task_id": "elongated__seed_36__disk_union_closed",
+    "same_boundary_arrays": true
+  },
+  {
+    "task_id": "tight_u__seed_36__disk_union_closed",
+    "same_boundary_arrays": true
+  },
+  {
+    "task_id": "wide_u__seed_36__disk_union_closed",
+    "same_boundary_arrays": true
+  },
+  {
+    "task_id": "elongated__seed_51__disk_union_closed",
+    "same_boundary_arrays": true
+  },
+  {
+    "task_id": "wide_u__seed_35__disk_union_closed",
+    "same_boundary_arrays": true
+  }
+]

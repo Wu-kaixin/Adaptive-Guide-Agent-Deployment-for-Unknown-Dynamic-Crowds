@@ -113,7 +113,7 @@ class ABCGController:
         method. ``prescribed_diagnostic`` is a given curve. ``estimated_disk_union``
         is an observation-only estimate; it is not the generator's spawn polygon.
         """
-        if boundary_source not in {'prescribed_diagnostic', 'estimated_disk_union'}:
+        if boundary_source not in {'prescribed_diagnostic', 'estimated_disk_union', 'estimated_convex_offset'}:
             raise ValueError(f'PLAN_INVALID: unknown boundary source {boundary_source}')
         if boundary is None:
             raise ValueError('PLAN_INVALID: a caller-supplied curve is required')

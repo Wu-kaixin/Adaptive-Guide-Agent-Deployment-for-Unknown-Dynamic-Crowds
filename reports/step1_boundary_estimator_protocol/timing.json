@@ -1,0 +1,170 @@
+[
+  {
+    "task_id": "elongated__seed_36__convex_hull",
+    "boundary_construction_s": 0.002215899992734194,
+    "boundary_descriptors_s": 0.0023936000070534647,
+    "curve_domain_diagnostic_s": 0.002331600000616163,
+    "equal_arc_planning_s": 0.00047879997873678803,
+    "phase_policy_s": 0.0004969000001437962,
+    "preflight_navigation_s": 0.011777799983974546,
+    "runner_wall_s": 0.3170665999641642,
+    "offline_reevaluation_s": 0.007841100043151528,
+    "total_wall_s": 0.36431209999136627
+  },
+  {
+    "task_id": "elongated__seed_36__disk_union_closed",
+    "boundary_construction_s": 0.02243859996087849,
+    "boundary_descriptors_s": 0.01581930002430454,
+    "curve_domain_diagnostic_s": 0.0023717000149190426,
+    "equal_arc_planning_s": 0.00041939999209716916,
+    "phase_policy_s": 0.00045759999193251133,
+    "preflight_navigation_s": 0.02309839997906238,
+    "runner_wall_s": 0.3316445000236854,
+    "offline_reevaluation_s": 0.009852499992121011,
+    "total_wall_s": 0.46556919999420643
+  },
+  {
+    "task_id": "tight_u__seed_36__convex_hull",
+    "boundary_construction_s": 0.002563700021710247,
+    "boundary_descriptors_s": 0.0028821000014431775,
+    "curve_domain_diagnostic_s": 0.0026373000000603497,
+    "equal_arc_planning_s": 0.00044819997856393456,
+    "phase_policy_s": 0.0005168999778106809,
+    "preflight_navigation_s": 0.01662070001475513,
+    "runner_wall_s": 0.3244602999766357,
+    "offline_reevaluation_s": 0.008222800039220601,
+    "total_wall_s": 0.37724709999747574
+  },
+  {
+    "task_id": "tight_u__seed_36__disk_union_closed",
+    "boundary_construction_s": 0.04324169998290017,
+    "boundary_descriptors_s": 0.02618009998695925,
+    "curve_domain_diagnostic_s": 0.0029469000292010605,
+    "equal_arc_planning_s": 0.0005248999805189669,
+    "phase_policy_s": 0.0005181999877095222,
+    "preflight_navigation_s": 0.05909200001042336,
+    "runner_wall_s": 0.4184633999830112,
+    "offline_reevaluation_s": 0.02651330002117902,
+    "total_wall_s": 0.670147700002417
+  },
+  {
+    "task_id": "wide_u__seed_36__convex_hull",
+    "boundary_construction_s": 0.004367499961517751,
+    "boundary_descriptors_s": 0.003849900036584586,
+    "curve_domain_diagnostic_s": 0.008655400015413761,
+    "equal_arc_planning_s": 0.0011907999869436026,
+    "phase_policy_s": 0.001914000022225082,
+    "preflight_navigation_s": 0.12951920001069084,
+    "runner_wall_s": 0.3869848000467755,
+    "offline_reevaluation_s": 0.012866000004578382,
+    "total_wall_s": 0.5911599000100978
+  },
+  {
+    "task_id": "wide_u__seed_36__disk_union_closed",
+    "boundary_construction_s": 0.05669370002578944,
+    "boundary_descriptors_s": 0.033662599977105856,
+    "curve_domain_diagnostic_s": 0.005002299963962287,
+    "equal_arc_planning_s": 0.0010225000442005694,
+    "phase_policy_s": 0.0009427000186406076,
+    "preflight_navigation_s": 0.11576989997411147,
+    "runner_wall_s": 0.4799290999653749,
+    "offline_reevaluation_s": 0.0353136999765411,
+    "total_wall_s": 0.8940220000222325
+  },
+  {
+    "task_id": "elongated__seed_51__convex_hull",
+    "boundary_construction_s": 0.0032414000015705824,
+    "boundary_descriptors_s": 0.0027552000246942043,
+    "curve_domain_diagnostic_s": 0.006965800013858825,
+    "equal_arc_planning_s": 0.0008378999773412943,
+    "phase_policy_s": 0.0008440999663434923,
+    "preflight_navigation_s": 0.03595599997788668,
+    "runner_wall_s": 1.2493569999933243,
+    "offline_reevaluation_s": 0.11042039998574182,
+    "total_wall_s": 1.4732586999889463
+  },
+  {
+    "task_id": "elongated__seed_51__disk_union_closed",
+    "boundary_construction_s": 0.04686930001480505,
+    "boundary_descriptors_s": 0.020153600024059415,
+    "curve_domain_diagnostic_s": 0.011204099981114268,
+    "equal_arc_planning_s": 0.0010938000050373375,
+    "phase_policy_s": 0.11456790001830086,
+    "preflight_navigation_s": 0.031019799993373454,
+    "runner_wall_s": 1.2715325999888591,
+    "offline_reevaluation_s": 0.12072760000592098,
+    "total_wall_s": 1.804928400029894
+  },
+  {
+    "task_id": "wide_u__seed_35__convex_hull",
+    "boundary_construction_s": 0.0035920999944210052,
+    "boundary_descriptors_s": 0.00373659998876974,
+    "curve_domain_diagnostic_s": 0.003302199998870492,
+    "equal_arc_planning_s": 0.0006122000049799681,
+    "phase_policy_s": 0.0006586999516002834,
+    "preflight_navigation_s": 0.11093159997835755,
+    "runner_wall_s": 0.8778955999878235,
+    "offline_reevaluation_s": 0.17814169998746365,
+    "total_wall_s": 1.2416618000133894
+  },
+  {
+    "task_id": "wide_u__seed_35__disk_union_closed",
+    "boundary_construction_s": 0.05180600000312552,
+    "boundary_descriptors_s": 0.03173919999971986,
+    "curve_domain_diagnostic_s": 0.012098100036382675,
+    "equal_arc_planning_s": 0.0012129999813623726,
+    "phase_policy_s": 0.0013537000049836934,
+    "preflight_navigation_s": 0.26554239995311946,
+    "runner_wall_s": 4.462888500012923,
+    "offline_reevaluation_s": 0.3023757999762893,
+    "total_wall_s": 5.364706800028216
+  },
+  {
+    "task_id": "elongated__seed_35__convex_hull",
+    "boundary_construction_s": 0.0019643999985419214,
+    "boundary_descriptors_s": 0.0020838999771513045,
+    "curve_domain_diagnostic_s": 0.002360599988605827,
+    "equal_arc_planning_s": 0.00044030003482475877,
+    "phase_policy_s": 0.00041509995935484767,
+    "preflight_navigation_s": 0.02764520002529025,
+    "runner_wall_s": 0.36366849998012185,
+    "offline_reevaluation_s": 0.007923200028017163,
+    "total_wall_s": 0.4319793000468053
+  },
+  {
+    "task_id": "elongated__seed_35__disk_union_closed",
+    "boundary_construction_s": 0.014705799985677004,
+    "boundary_descriptors_s": 0.01793510001152754,
+    "offline_reevaluation_s": 0.001781500002834946,
+    "total_wall_s": 0.23481230001198128
+  },
+  {
+    "task_id": "tight_u__seed_35__convex_hull",
+    "offline_reevaluation_s": 0.0016760999569669366,
+    "total_wall_s": 0.19139069999800995
+  },
+  {
+    "task_id": "tight_u__seed_35__disk_union_closed",
+    "offline_reevaluation_s": 0.0010297999833710492,
+    "total_wall_s": 0.1594010000117123
+  },
+  {
+    "task_id": "tight_u__seed_41__convex_hull",
+    "boundary_construction_s": 0.0028602000093087554,
+    "boundary_descriptors_s": 0.0030137000139802694,
+    "curve_domain_diagnostic_s": 0.0027584999916143715,
+    "equal_arc_planning_s": 0.0005129000055603683,
+    "phase_policy_s": 0.0005097999819554389,
+    "preflight_navigation_s": 0.015676600043661892,
+    "runner_wall_s": 0.3402722000028007,
+    "offline_reevaluation_s": 0.008573099970817566,
+    "total_wall_s": 0.3981499999645166
+  },
+  {
+    "task_id": "tight_u__seed_41__disk_union_closed",
+    "boundary_construction_s": 0.07003129995428026,
+    "boundary_descriptors_s": 0.034477700013667345,
+    "offline_reevaluation_s": 0.0015289000002667308,
+    "total_wall_s": 0.3363907999591902
+  }
+]

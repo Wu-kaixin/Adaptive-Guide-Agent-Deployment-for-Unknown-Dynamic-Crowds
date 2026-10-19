@@ -109,6 +109,8 @@ Step 1 研究笔记在 `notebooks/step1_static_deployment.ipynb`。算法仍在 
 任务完成、预设失败语义通过、实际 SUCCESS 分开统计；初态无效、资源不足和超时都保留。规划搜索耗尽记为“未找到可行方案”；只有数量下界或间距上界被违反时才给出不可行证书。统计包含成功率 Wilson 95% 区间与成功任务部署时间均值／中位数，不用确定性重复制造独立样本。规划目标指标与轨迹指标分开报告。
 
 
+非凸确认 v2 的后续执行修复只改变自由空间内的航点切换：细长 seed30 成对方法由恢复耗尽变为 19.1 s 成功，宽 U seed30 三方法仍耗尽。90 行新标签为 60 成功、27 输入失败、3 次恢复耗尽。记录见 [执行跟随修复](reports/step1_execution_progress_repair/REPORT.zh.md)。
+
 非凸记录重建的新批次为 `configs/step1/nonconvex_record_rebuild_v1.yaml`（三场景×三方法×seed20–24，45行）。它与丢失的旧45输入不同。当前批次基线35成功/9输入失败/1路径失败，固定目标恢复后36成功/9输入失败，原九案例回归9/9。完整记录、输入规则和可复制命令见 [重建报告](reports/step1_nonconvex_record_rebuild_v1/REPORT.zh.md)。已有结果可运行：
 
 ```powershell

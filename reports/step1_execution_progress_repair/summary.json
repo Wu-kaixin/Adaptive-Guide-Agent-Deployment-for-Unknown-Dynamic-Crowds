@@ -1,0 +1,25 @@
+{
+  "frozen_execution": "a0781c56",
+  "previous_delivery": "1e84283e",
+  "v2_tag": "execution_progress",
+  "v2_outcomes": {"SUCCESS": 60, "INITIALIZATION_INVALID": 27, "REPLAN_EXHAUSTED": 3},
+  "previous_v2_outcomes": {"SUCCESS": 59, "INITIALIZATION_INVALID": 27, "REPLAN_EXHAUSTED": 4},
+  "executed_tasks": 63,
+  "identical_executed_trajectories": 41,
+  "changed_successful_trajectories": 21,
+  "new_success": "elongated__seed_30__pairwise_euclidean",
+  "unresolved": [
+    "wide_u__seed_30__equal_arc",
+    "wide_u__seed_30__projected_mass",
+    "wide_u__seed_30__pairwise_euclidean"
+  ],
+  "assignment_changed_tasks": [
+    "wide_u__seed_28__equal_arc",
+    "wide_u__seed_28__projected_mass",
+    "wide_u__seed_28__pairwise_euclidean"
+  ],
+  "tests_passed": 107,
+  "regression_wall_s": 61.9,
+  "workers": 2,
+  "numeric_threads_per_worker": 1
+}

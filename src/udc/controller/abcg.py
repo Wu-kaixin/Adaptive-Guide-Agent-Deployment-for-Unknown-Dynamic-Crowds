@@ -14,12 +14,17 @@ from udc.safety import safe_velocity, path_clearances, is_safe
 
 
 class ABCGController:
+    # Disabled only by the path-following ablation. Boundary contact keeps the
+    # previous command so a guide already on the planning shell is unchanged.
+    follow_valid_step=True
+
     def __init__(self, config, safety, room, protocol='adaptive_resource', fixed_n=None):
         self.config=config; self.safety=safety; self.room=np.asarray(room,float)
         self.boundary=self.plan=self.assignment=None
         self.attempts=[]; self.paths={}; self.waypoint={}; self.replans=0
         self.protocol=protocol; self.fixed_n=fixed_n
         self.priority_order=[]; self.priority_index=0; self.priority_mode=False
+        self.follow_valid_step=type(self).follow_valid_step
         self._observation=None
         self.navigation_domain=None
         self.margin_connections=[]
@@ -376,33 +381,79 @@ class ABCGController:
             self.priority_index=0; self.priority_mode=True
         return strategy
 
+    def _priority_guide(self, positions):
+        if not (self.priority_mode and self.priority_order):
+            return None
+        while self.priority_index < len(self.priority_order):
+            candidate=self.priority_order[self.priority_index]
+            target=self.plan.positions[self.assignment[candidate]]
+            if np.linalg.norm(target-positions[candidate]) <= self.config['position_tolerance']:
+                self.priority_index += 1
+            else:
+                return candidate
+        self.priority_mode=False
+        return None
+
+    def _command_reaches(self, position, aim, domain, dt):
+        """The one execution sample toward ``aim`` stays in conservative free space."""
+        delta=np.asarray(aim,float)-np.asarray(position,float)
+        distance=float(np.linalg.norm(delta))
+        if distance <= 1e-12:
+            return True
+        length=min(distance, float(dt)*self.safety.max_speed)
+        return segment_in_free(position, position+delta/distance*length, domain)
+
+    def _legacy_tracking(self, position, path, index, domain):
+        k=index
+        while k < len(path)-1 and np.linalg.norm(path[k]-position) <= self.config['waypoint_tolerance']:
+            if not segment_in_free(position, path[k+1], domain):
+                break
+            k+=1
+        return k, self.config['gain']*(path[k]-position)
+
+    def _tracking_velocity(self, position, path, index, domain, dt):
+        # A guide already on the planning boundary keeps the previous rule.
+        # The immediate-step check is for a free-space approach that would
+        # otherwise accept a corner shortcut the next sample cannot follow.
+        if (not self.follow_valid_step
+                or domain.signed_free_distance(position) <= self.safety.numeric_tolerance):
+            return self._legacy_tracking(position, path, index, domain)
+        k=index
+        tolerance=self.config['waypoint_tolerance']
+        while k < len(path)-1 and np.linalg.norm(path[k]-position) <= tolerance:
+            if not segment_in_free(position, path[k+1], domain):
+                break
+            if not self._command_reaches(position, path[k+1], domain, dt):
+                break
+            k+=1
+        aim=path[k]
+        delta=aim-position
+        distance=float(np.linalg.norm(delta))
+        # The accepted gate is inside the existing radius, but proportional
+        # gain would stop short of the vertex and leave the installed edge
+        # invisible. One capped step reaches that vertex; it does not move
+        # the guide by assignment or enlarge the radius.
+        gate=(k < len(path)-1 and 1e-12 < distance <= tolerance
+              and segment_in_free(aim, path[k+1], domain)
+              and segment_in_free(position, aim, domain)
+              and not (segment_in_free(position, path[k+1], domain)
+                       and self._command_reaches(position, path[k+1], domain, dt)))
+        if gate:
+            return k, delta/float(dt)
+        return k, self.config['gain']*delta
+
     def step(self, observation, positions, dt):
         nominal=np.zeros_like(positions)
-        priority=None
-        if self.priority_mode and self.priority_order:
-            while self.priority_index < len(self.priority_order):
-                candidate=self.priority_order[self.priority_index]
-                target=self.plan.positions[self.assignment[candidate]]
-                if np.linalg.norm(target-positions[candidate]) <= self.config['position_tolerance']:
-                    self.priority_index += 1
-                else:
-                    priority=candidate; break
-            if self.priority_index >= len(self.priority_order):
-                self.priority_mode=False
+        priority=self._priority_guide(positions)
+        domain=self._domain()
         for i in np.flatnonzero(self.assignment>=0):
             if priority is not None and i != priority:
                 continue
-            path=self.paths[int(i)]; k=self.waypoint[int(i)]
-            domain=self._domain()
-            while k < len(path)-1 and np.linalg.norm(path[k]-positions[i]) <= self.config['waypoint_tolerance']:
-                # Do not skip a gate when the shortcut leaves conservative free space.
-                if not segment_in_free(positions[i], path[k+1], domain):
-                    break
-                k+=1
-            self.waypoint[int(i)]=k
-            nominal[i]=self.config['gain']*(path[k]-positions[i])
+            path=self.paths[int(i)]
+            index, velocity=self._tracking_velocity(positions[i], path, self.waypoint[int(i)], domain, dt)
+            self.waypoint[int(i)]=index
+            nominal[i]=velocity
         speed=np.linalg.norm(nominal,axis=1)
         nominal*=np.minimum(1.,self.safety.max_speed/np.maximum(speed,1e-30))[:,None]
-        obstacle=self._domain().conservative_obstacle
         return nominal,safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety,
-                                     navigation_obstacle=obstacle)
+                                     navigation_obstacle=domain.conservative_obstacle)

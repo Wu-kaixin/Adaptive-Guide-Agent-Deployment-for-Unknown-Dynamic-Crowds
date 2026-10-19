@@ -14,6 +14,7 @@ import yaml
 
 from udc.boundary import Boundary
 from udc.controller import ABCGController
+from udc.controller.progress import stalled_this_step
 from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
 from udc.evaluation.acceptance import diagnose_stages, evaluate
@@ -29,6 +30,20 @@ STATUSES = {
     'SAFETY_VIOLATION', 'SUCCESS', 'NOT_EXECUTED',
 }
 RESULT_FILES = {'metrics.json', 'config.yaml', 'trajectory.npz', 'planning.json', 'state.json'}
+
+
+def _priority_stall_counterfactual():
+    """Continue an already active priority yield after its stall would stop the run.
+
+    This is a causal diagnostic. It does not add a recovery, reset the budget,
+    or change any velocity computed before that stall. Official runs leave it unset.
+    """
+    value = os.environ.get('UDC_PRIORITY_STALL_COUNTERFACTUAL')
+    if value is None or value == '0':
+        return False
+    if value == '1':
+        return True
+    raise ValueError('UDC_PRIORITY_STALL_COUNTERFACTUAL must be unset, 0, or 1')
 
 
 
@@ -134,6 +149,8 @@ def experiment(config_path, output, seed=None, plots=True,
     waypoint_history = []
     safety_log = []
     deadlocks = []
+    priority_stall_suppressed = []
+    priority_stall_counterfactual = _priority_stall_counterfactual()
     termination = 'INITIALIZATION_INVALID'
     failure_reason = ''
     failure_stage = 'initialization'
@@ -240,11 +257,46 @@ def experiment(config_path, output, seed=None, plots=True,
                 break
             window = control['stall_window']
             active_speed = np.linalg.norm(result.velocity[controller.assignment >= 0], axis=1)
-            stalled = (len(progress) >= window + 1
-                       and progress[-window - 1] - progress[-1] < control['position_tolerance']
-                       and errors.max(initial=0.) > control['position_tolerance']
-                       and active_speed.mean() <= control['speed_tolerance'])
-            if stalled:
+            max_error = float(errors.max(initial=0.0))
+            # Priority yield watches that guide's polyline. The mean path and
+            # the mean speed stay in force only after the mode has exited.
+            priority_stalled = controller.observe_priority_progress(
+                next_position, max_error, window, float(control['position_tolerance']))
+            mean_speed = float(active_speed.mean()) if len(active_speed) else float('nan')
+            stalled = stalled_this_step(
+                controller.priority_mode, priority_stalled, progress, window,
+                float(control['position_tolerance']), max_error, mean_speed,
+                float(control['speed_tolerance']))
+            # The diagnostic keeps the third strategy past this branch. It still
+            # records the original mean-path and mean-speed inputs, and it does
+            # not open a fourth recovery or clear the stall samples.
+            continue_priority = (
+                stalled and priority_stall_counterfactual and controller.priority_mode
+                and controller.replans >= control['max_replans']
+            )
+            if continue_priority:
+                guide = (int(controller.priority_order[controller.priority_index])
+                         if controller.priority_index < len(controller.priority_order) else None)
+                priority_stall_suppressed.append({
+                    'step': int(step),
+                    'time_s': float((step + 1) * sim['dt']),
+                    'mean_remaining_m': float(progress[-1]),
+                    'window_decrease_m': float(progress[-window - 1] - progress[-1]),
+                    'window_steps': int(window),
+                    'mean_active_speed_m_s': float(active_speed.mean()),
+                    'max_target_error_m': float(errors.max(initial=0.0)),
+                    'position_tolerance_m': float(control['position_tolerance']),
+                    'speed_tolerance_m_s': float(control['speed_tolerance']),
+                    'priority_guide': guide,
+                    'priority_index': int(controller.priority_index),
+                    'priority_remaining_m': (None if guide is None else float(
+                        controller.guide_remaining_path(guide, next_position))),
+                    'priority_filtered_speed_m_s': (None if guide is None else float(
+                        np.linalg.norm(result.velocity[guide]))),
+                    'replans': int(controller.replans),
+                    'action': 'continue_priority_yield_without_fourth_recovery',
+                })
+            elif stalled:
                 attempts_before = len(controller.recovery_attempts)
                 try:
                     strategy = controller.recover(
@@ -381,6 +433,8 @@ def experiment(config_path, output, seed=None, plots=True,
         'planning_margin_connections': ([] if controller is None
                                         else list(getattr(controller, 'margin_connections', []))),
         'deadlock_events': deadlocks,
+        'diagnostic_priority_stall_counterfactual': priority_stall_counterfactual,
+        'priority_stall_suppressed_events': priority_stall_suppressed,
         'crowd_static': (False if env is None or observation is None else bool(
             np.array_equal(observation.positions, env.observe().positions)
         )),

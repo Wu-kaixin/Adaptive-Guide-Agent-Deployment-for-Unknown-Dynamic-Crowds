@@ -12,6 +12,7 @@ from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_ce
 from udc.navigation import (navigate_and_assign, navigation_domain, route_assigned,
                             segment_in_free, segment_in_free_sampled)
 from udc.navigation.paths import NavigationFailure, ENDPOINT_TOLERANCE_M
+from udc.controller.progress import priority_path_stall
 from udc.safety import safe_velocity, path_clearances, is_safe
 from udc.safety.coordinate import joint_progress_velocity
 from udc.safety.filter import binding_constraints
@@ -65,8 +66,12 @@ class ABCGController:
             'steps':0,'illegal_aim_steps':0,'fallback_steps':0,
             'enforce_attempts':0,'enforce_installed':0,'enforce_rejected':0,
             'max_other_filtered_speed_m_s':0.0,'filter_seconds':0.0,'enforce_seconds':0.0,
-            'exit_step':None,'exit_reason':None,
+            'exit_step':None,'exit_reason':None,'exit_outside_tolerance':[],
+            'progress_decisions':[],'progress_reference_changes':[],
         }
+        self._priority_reference=None
+        self._priority_samples=[]
+        self._priority_token=None
 
     def _plan(self, observation, n, phase, planned_limit):
         c=self.config
@@ -224,16 +229,20 @@ class ABCGController:
         vectors=self.plan.positions[self.assignment[active]]-positions[active]
         return np.linalg.norm(vectors,axis=1)
 
+    def guide_remaining_path(self, guide, position):
+        """Remaining polyline distance of one guide. Waypoint changes are not motion."""
+        guide=int(guide)
+        path=self.paths[guide]; k=int(self.waypoint[guide])
+        value=float(np.linalg.norm(path[k]-position))
+        if k < len(path)-1:
+            value += float(np.linalg.norm(np.diff(path[k:],axis=0),axis=1).sum())
+        return value
+
     def remaining_path_lengths(self, positions):
         """Remaining polyline distance; unlike target distance it decreases on detours."""
-        remaining=[]
-        for i in np.flatnonzero(self.assignment>=0):
-            path=self.paths[int(i)]; k=self.waypoint[int(i)]
-            value=float(np.linalg.norm(path[k]-positions[i]))
-            if k < len(path)-1:
-                value += float(np.linalg.norm(np.diff(path[k:],axis=0),axis=1).sum())
-            remaining.append(value)
-        return np.asarray(remaining)
+        return np.asarray([
+            self.guide_remaining_path(i, positions[i]) for i in np.flatnonzero(self.assignment>=0)
+        ])
 
     def _domain(self):
         if self.navigation_domain is None:
@@ -434,10 +443,60 @@ class ABCGController:
             else:
                 return candidate
         self.priority_mode=False
+        # The queue walking forward is not a completion flag. Recheck every
+        # assigned guide at the positions that produced this exit. Guides still
+        # outside the arrival tolerance stay assigned; ordinary tracking resumes.
+        outside=[]
+        tolerance=float(self.config['position_tolerance'])
+        for guide in np.flatnonzero(self.assignment>=0):
+            target=self.plan.positions[self.assignment[guide]]
+            distance=float(np.linalg.norm(target-positions[guide]))
+            if distance > tolerance:
+                outside.append({'guide':int(guide),'distance_m':distance})
         if self.coordination['exit_step'] is None:
-            self.coordination.update(exit_step=int(self._control_step),
-                                     exit_reason='priority_order_within_tolerance')
+            reason=('priority_order_within_tolerance' if not outside
+                    else 'queue_finished_with_guides_outside_tolerance')
+            self.coordination.update(exit_step=int(self._control_step), exit_reason=reason,
+                                     exit_outside_tolerance=outside)
         return None
+
+    def _path_sha256(self, guide):
+        path=np.ascontiguousarray(self.paths[int(guide)], dtype=np.float64)
+        return hashlib.sha256(path.tobytes()).hexdigest()
+
+    def observe_priority_progress(self, next_positions, max_error, window, position_tolerance):
+        """Fold the step that just ran into the priority guide's path window.
+
+        A new guide, a new waypoint, or a path reload starts a new window and
+        is recorded. The jump itself is not progress. The same reference does
+        not clear the window. This does not change the recovery budget.
+        Returns whether that priority window is stalled. Ordinary mode returns
+        False; the caller keeps the mean-path test.
+        """
+        if not self.priority_mode or self._priority_reference is None:
+            self._priority_samples=[]
+            self._priority_token=None
+            return False
+        ref=self._priority_reference
+        guide=int(ref['guide'])
+        after=self.guide_remaining_path(guide, next_positions[guide])
+        token=(guide, int(ref['waypoint']), ref['path_sha256'])
+        continuous=(token==self._priority_token and len(self._priority_samples)>=1
+                    and abs(float(ref['remaining_before_m'])-self._priority_samples[-1])<=1e-6)
+        if not continuous:
+            self.coordination['progress_reference_changes'].append({
+                'step':int(self._control_step),'guide':guide,'waypoint':int(ref['waypoint']),
+                'kind':'initial' if self._priority_token is None else 'reference_changed',
+                'remaining_before_m':float(ref['remaining_before_m']),
+                'previous_remaining_m':(None if not self._priority_samples
+                                        else float(self._priority_samples[-1])),
+            })
+            self._priority_samples=[float(ref['remaining_before_m']), float(after)]
+            self._priority_token=token
+        else:
+            self._priority_samples.append(float(after))
+        return priority_path_stall(
+            self._priority_samples, int(window), float(position_tolerance), float(max_error))
 
     def _note_disagreement(self, record):
         """Store a segment-check disagreement. Recording does not change the decision."""
@@ -623,6 +682,8 @@ class ABCGController:
         nominal*=np.minimum(1.,self.safety.max_speed/np.maximum(speed,1e-30))[:,None]
         result=safe_velocity(positions,nominal,observation.positions,self.room,dt,self.safety,
                              navigation_obstacle=domain.conservative_obstacle)
+        decision=None
+        achieved=None
         if priority is not None and progress_request is not None and progress_request > 1e-4:
             achieved=float(progress_tangent @ result.velocity[int(priority)])
             # The Euclidean projection can cut an arrival step in half and leave
@@ -636,9 +697,22 @@ class ABCGController:
                 self.coordination['enforce_seconds'] += float(elapsed)
                 if enforced is None:
                     self.coordination['enforce_rejected'] += 1
+                    decision='rejected'
                 else:
                     self.coordination['enforce_installed'] += 1
                     result=enforced
+                    decision='installed'
+                    achieved=float(progress_tangent @ result.velocity[int(priority)])
+            else:
+                decision='projection_sufficient'
+        elif priority is not None:
+            decision='not_requested'
+        if priority is not None:
+            self.coordination['progress_decisions'].append({
+                'step':int(self._control_step),'guide':int(priority),'decision':decision,
+                'request_m_s':None if progress_request is None else float(progress_request),
+                'achieved_m_s':None if achieved is None else float(achieved),
+            })
         if priority is not None:
             others=np.flatnonzero(np.arange(len(positions))!=priority)
             other_speed=float(np.linalg.norm(result.velocity[others],axis=1).max()) if len(others) else 0.0
@@ -648,6 +722,16 @@ class ABCGController:
                 float(self.coordination['max_other_filtered_speed_m_s']), other_speed)
             if result.fallback_used:
                 self.coordination['fallback_steps']+=1
+        if priority is None:
+            self._priority_reference=None
+        else:
+            guide=int(priority)
+            self._priority_reference={
+                'guide':guide,
+                'waypoint':int(self.waypoint[guide]),
+                'path_sha256':self._path_sha256(guide),
+                'remaining_before_m':self.guide_remaining_path(guide, positions[guide]),
+            }
         if notes:
             active=binding_constraints(
                 positions, result.velocity, observation.positions, self.room, dt, self.safety,

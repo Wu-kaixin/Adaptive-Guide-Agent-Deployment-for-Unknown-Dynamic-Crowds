@@ -23,6 +23,7 @@ from pathlib import Path
 import numpy as np
 
 from udc.controller import ABCGController
+from udc.controller.progress import stalled_this_step
 from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
 from udc.experiments.runner import load_config
@@ -185,12 +186,14 @@ class LiveCase:
         active_speed = np.linalg.norm(
             result.velocity[self.controller.assignment >= 0], axis=1
         )
-        stalled = (
-            len(self.progress) >= window + 1
-            and self.progress[-window - 1] - self.progress[-1] < control['position_tolerance']
-            and errors.max(initial=0.) > control['position_tolerance']
-            and active_speed.mean() <= control['speed_tolerance']
-        )
+        max_error = float(errors.max(initial=0.0))
+        priority_stalled = self.controller.observe_priority_progress(
+            next_position, max_error, window, float(control['position_tolerance']))
+        mean_speed = float(active_speed.mean()) if len(active_speed) else float('nan')
+        stalled = stalled_this_step(
+            self.controller.priority_mode, priority_stalled, self.progress, window,
+            float(control['position_tolerance']), max_error, mean_speed,
+            float(control['speed_tolerance']))
         if stalled:
             strategy = self.controller.recover(self.env.observe(), next_position)
             if strategy is None:

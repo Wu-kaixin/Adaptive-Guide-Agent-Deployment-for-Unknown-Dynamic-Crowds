@@ -1,0 +1,35 @@
+{
+  "protocol": "nonconvex_execution_confirmation_v3",
+  "seeds": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54],
+  "parent_commit": "208080a9d1f97a1525de73b91fe03388b07b2766",
+  "parent_source_sha256": "da157bf08718455d9f01da25323df0a1469a26cbb4bf8c520321dbbbce6280b0",
+  "run_source_sha256": "a36e8f76eaa0145ea0b386302985ef77f333c422bcdb20b98bd0985b2bc68747",
+  "counterfactual": "forced_off",
+  "tasks": 180,
+  "cells": 60,
+  "outcomes": {
+    "SUCCESS": 138,
+    "INITIALIZATION_INVALID": 33,
+    "BOUNDARY_INVALID": 6,
+    "PATH_UNREACHABLE": 3
+  },
+  "cells_by_pattern": {
+    "all_methods_success": 46,
+    "initialization_invalid": 11,
+    "boundary_invalid": 2,
+    "all_methods_path_unreachable": 1
+  },
+  "accepted_rows": 141,
+  "accepted_row_successes": 138,
+  "offline_inconsistent": 0,
+  "safety_violations": 0,
+  "program_errors": 0,
+  "joint_progress": {
+    "attempts": 332,
+    "installed": 304,
+    "rejected": 28,
+    "filter_seconds": 8.787442300468683,
+    "solve_seconds": 5.084340400644578,
+    "priority_steps": 2116
+  }
+}

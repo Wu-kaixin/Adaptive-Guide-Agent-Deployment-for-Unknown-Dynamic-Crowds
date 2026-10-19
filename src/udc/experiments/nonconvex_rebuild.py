@@ -10,6 +10,7 @@ from collections import Counter
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import hashlib
 import json
+import os
 from pathlib import Path
 import traceback
 from time import perf_counter
@@ -53,7 +54,8 @@ def load_protocol(path):
     path = Path(path)
     spec = yaml.safe_load(path.read_text(encoding='utf-8'))
     protocols={'nonconvex_record_rebuild_v1':list(range(20,25)),
-               'nonconvex_confirmation_v2':list(range(25,35))}
+               'nonconvex_confirmation_v2':list(range(25,35)),
+               'nonconvex_execution_confirmation_v3':list(range(35,55))}
     if spec['protocol'] not in protocols or spec['seeds']!=protocols[spec['protocol']]:
         raise ValueError('Unsupported or changed frozen nonconvex protocol seeds')
     base_path = Path(spec['base_spec'])
@@ -219,7 +221,22 @@ def rejected_result(directory, row, cell, status, reason):
     return metrics
 
 
+def _official_monitor():
+    """Workers inherit this process environment. The diagnostic stall bypass stays off."""
+    value = os.environ.get('UDC_PRIORITY_STALL_COUNTERFACTUAL')
+    if value not in (None, '0'):
+        raise RuntimeError('UDC_PRIORITY_STALL_COUNTERFACTUAL must be unset or 0')
+    os.environ['UDC_PRIORITY_STALL_COUNTERFACTUAL'] = '0'
+
+
+def _safety_violation(result):
+    status = str(result.get('termination_status') or '')
+    reason = str(result.get('failure_reason') or '')
+    return status == 'SAFETY_VIOLATION' or reason.startswith('SAFETY_VIOLATION')
+
+
 def run_task(arguments):
+    _official_monitor()
     output, row, tag = arguments[:3]
     resume_interrupted=bool(arguments[3]) if len(arguments)>3 else False
     output = Path(output)
@@ -341,18 +358,34 @@ def main():
             raise ValueError('Requested seeds are outside the frozen manifest')
         if not 1<=args.workers<=2:
             raise ValueError('This notebook protocol uses one or two episode workers')
+        _official_monitor()
         tasks = [(str(output), row, args.tag,args.resume_interrupted) for row in manifest['tasks'] if row['seed'] in seeds]
+        stopped = None
         if args.workers == 1:
             for task in tasks:
                 result = run_task(task)
                 print(json.dumps({'task': task[1]['task_id'], 'status': result['termination_status']}), flush=True)
+                if _safety_violation(result):
+                    stopped = {'task_id': task[1]['task_id'], 'status': result['termination_status']}
+                    break
         else:
-            with ProcessPoolExecutor(max_workers=args.workers) as pool:
-                futures = {pool.submit(run_task, task): task for task in tasks}
+            pool = ProcessPoolExecutor(max_workers=args.workers)
+            futures = {pool.submit(run_task, task): task for task in tasks}
+            try:
                 for future in as_completed(futures):
                     task = futures[future]
                     result = future.result()
                     print(json.dumps({'task': task[1]['task_id'], 'status': result['termination_status']}), flush=True)
+                    if _safety_violation(result):
+                        stopped = {'task_id': task[1]['task_id'], 'status': result['termination_status']}
+                        for pending in futures:
+                            pending.cancel()
+                        break
+            finally:
+                pool.shutdown(wait=True, cancel_futures=True)
+        if stopped is not None:
+            write(output / 'safety_stop.json', stopped)
+            raise RuntimeError(f"Safety violation stops the batch at {stopped['task_id']}")
     if Path(args.output, 'manifest.json').is_file():
         summarize(args.output, args.tag)
 

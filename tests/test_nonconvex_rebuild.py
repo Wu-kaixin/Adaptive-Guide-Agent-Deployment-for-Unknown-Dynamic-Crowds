@@ -99,6 +99,15 @@ def test_confirmation_protocol_changes_only_seeds_and_recorded_statistics():
         assert confirmation[key]==previous[key]
     assert confirmation['statistics']['task_denominator']==90
     assert len(confirmation['scenes'])*len(confirmation['methods'])*len(confirmation['seeds'])==90
+    execution,_=load_protocol('configs/step1/nonconvex_execution_confirmation_v3.yaml')
+    assert execution['seeds']==list(range(35,55))
+    assert set(execution['seeds']).isdisjoint(confirmation['seeds'])
+    assert set(execution['seeds']).isdisjoint(range(5000,5030))
+    for key in ('scenes','methods','guide_counts','people_jitter_std_m','guide_arc_jitter_half_width_m',
+                'guide_phase_fraction','random_namespace','density','solver_maxiter','per_start_timeout_s','phase_fractions'):
+        assert execution[key]==confirmation[key]
+    assert execution['statistics']['task_denominator']==180
+    assert len(execution['scenes'])*len(execution['methods'])*len(execution['seeds'])==180
 
 
 def test_explicit_interruption_resume_restarts_only_identical_inputs(tmp_path,monkeypatch):

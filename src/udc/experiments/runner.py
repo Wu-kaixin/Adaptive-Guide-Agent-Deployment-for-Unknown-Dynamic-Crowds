@@ -106,7 +106,7 @@ def experiment(config_path, output, seed=None, plots=True,
                protocol='adaptive_resource', fixed_n=None, resume=False,
                method=None, execute=True, prescribed_boundary=None,
                prescribed_plan=None, method_label=None,
-               boundary_source='prescribed_diagnostic'):
+               boundary_source='prescribed_diagnostic', restart_interrupted=False):
     """Run one task and always emit a structured result for expected failures.
 
     ``execute=False`` stops after a feasible plan is saved (``NOT_EXECUTED``).
@@ -137,6 +137,7 @@ def experiment(config_path, output, seed=None, plots=True,
     termination = 'INITIALIZATION_INVALID'
     failure_reason = ''
     failure_stage = 'initialization'
+    failure_diagnosis = None
     hold = 0
 
     try:
@@ -172,12 +173,20 @@ def experiment(config_path, output, seed=None, plots=True,
             state = _saved_state(output)
             same_plan = (state.get('status') == 'planned'
                          and state.get('task_sha256') == provenance['task_sha256'])
+            same_interruption=(restart_interrupted and state.get('status') in ('started','interrupted')
+                               and state.get('source_sha256')==provenance['source_sha256']
+                               and state.get('config_sha256')==provenance['config_sha256']
+                               and state.get('input_snapshot_sha256')==provenance['input_snapshot_sha256']
+                               and not (output/'metrics.json').exists())
             if same_plan and not execute:
                 return json.loads((output / 'metrics.json').read_text(encoding='utf-8'))
-            if not (execute and same_plan):
+            if not (execute and (same_plan or same_interruption)):
                 raise FileExistsError(f'Existing result is incomplete or hash-mismatched: {output}')
+            if same_interruption:
+                _atomic_text(output/'resumed_interruption.json',json.dumps(state,indent=2)+'\n')
         _atomic_text(output / 'state.json', json.dumps({
-            'status': 'started', 'task_sha256': provenance['task_sha256']
+            'status': 'started', 'task_sha256': provenance['task_sha256'],
+            **{key:provenance[key] for key in ('source_sha256','config_sha256','input_snapshot_sha256')}
         }, indent=2) + '\n')
         if not is_safe(path_clearances(initial, initial, observation.positions,
                                        env.scene.size), safety):
@@ -241,6 +250,7 @@ def experiment(config_path, output, seed=None, plots=True,
                     strategy = controller.recover(
                         env.perceive((step + 1) * sim['dt'], next_position).observation(),
                         next_position,
+                        trigger_reason='stall_window',
                     )
                 finally:
                     for attempt in controller.recovery_attempts[attempts_before:]:
@@ -255,6 +265,7 @@ def experiment(config_path, output, seed=None, plots=True,
                 progress = [float(controller.remaining_path_lengths(next_position).mean())]
     except ValueError as error:
         failure_reason = str(error)
+        failure_diagnosis = getattr(error,'diagnosis',None)
         termination = _status_from_error(error, failure_stage)
 
     trajectory = np.asarray(positions) if positions else np.empty((0, 0, 2))
@@ -312,6 +323,7 @@ def experiment(config_path, output, seed=None, plots=True,
         'fixed_n': fixed_n, 'seed': seed_value,
         'termination_status': termination, 'motion_status': motion_status,
         'failure_reason': failure_reason, 'failure_stage': failure_stage,
+        'failure_diagnosis':failure_diagnosis,
         'success': success, 'criteria': criteria,
         # Stage diagnostics (schema 1.2.0). Statuses and thresholds are unchanged.
         'stage_diagnosis': diagnose_stages(termination, failure_stage, feasibility,
@@ -361,6 +373,7 @@ def experiment(config_path, output, seed=None, plots=True,
         'fallback_count': sum(item['fallback_used'] for item in safety_log),
         'replan_count': 0 if controller is None else controller.replans,
         'recovery_attempts': [] if controller is None else controller.recovery_attempts,
+        'initial_navigation_wall_seconds':(None if controller is None else getattr(controller,'initial_navigation_wall_seconds',None)),
         'planning_margin_connections': ([] if controller is None
                                         else list(getattr(controller, 'margin_connections', []))),
         'deadlock_events': deadlocks,

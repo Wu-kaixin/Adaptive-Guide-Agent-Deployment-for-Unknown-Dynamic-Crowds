@@ -24,6 +24,29 @@ BOUNDARY_NODE_NUDGE_M = 1e-8
 ENDPOINT_TOLERANCE_M = 1e-7
 
 
+class NavigationFailure(ValueError):
+    """Expected query failure with evidence, never an unqualified no-path proof."""
+    def __init__(self, kind, message, **evidence):
+        super().__init__('PATH_UNREACHABLE: '+message)
+        self.diagnosis={'kind':kind,**evidence}
+
+
+def _component(geometry, point):
+    parts=[geometry] if geometry.geom_type=='Polygon' else getattr(geometry,'geoms',[])
+    for index,part in enumerate(parts):
+        if part.geom_type=='Polygon' and part.covers(Point(point)):
+            return index
+    return None
+
+
+def _occupation(guides, point, exclude, radius):
+    if radius is None:
+        return []
+    return [{'guide':int(i),'center_distance_m':float(np.linalg.norm(g-point)),
+             'threshold_m':float(radius)} for i,g in enumerate(guides)
+            if i!=exclude and np.linalg.norm(g-point)<radius]
+
+
 @dataclass(frozen=True)
 class NavigationResult:
     assignment: np.ndarray
@@ -312,37 +335,60 @@ def route_assigned(guides, targets, assignment, room, wall_margin,
         target = int(assignment[guide])
         start = guides[guide]
         if target >= len(targets):
-            raise ValueError('PATH_UNREACHABLE: assigned endpoint is outside conservative free space')
+            raise NavigationFailure('static_endpoint_invalid','assigned endpoint is outside conservative free space',
+                                    guide=int(guide),target=target,query_domain='static')
         target_ready = _prepare_start(targets[target], domain)
         prepared = _prepare_start(start, domain, guides, guide, people, limits, room)
         if target_ready is None or prepared is None:
             found = None if target_ready is None else _margin_contact(start, domain)
             checked = found is not None and found[1] > ENDPOINT_TOLERANCE_M and people is not None and limits is not None
             if checked:
-                raise ValueError(
-                    'PATH_UNREACHABLE: planning-margin connection fails physical clearance '
-                    f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
+                raise NavigationFailure(
+                    'unsafe_connection','planning-margin connection fails physical clearance '
+                    f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})',
+                    guide=int(guide),target=target,query_domain='static',
                 )
-            raise ValueError(
-                'PATH_UNREACHABLE: assigned endpoint is outside conservative free space '
-                f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
+            raise NavigationFailure(
+                'static_endpoint_invalid','assigned endpoint is outside conservative free space '
+                f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})',
+                guide=int(guide),target=target,query_domain='static',
+                start=start.tolist(),end=np.asarray(targets[target]).tolist(),
+                start_signed_m=domain.signed_free_distance(start),
+                target_signed_m=domain.signed_free_distance(targets[target]),
             )
         planner_start, prefix = prepared
+        static_components=[domain.component_index(planner_start),domain.component_index(target_ready[0])]
+        if static_components[0]!=static_components[1]:
+            raise NavigationFailure('static_components_disconnected',
+                'assigned endpoints belong to different static planning components',
+                guide=int(guide),target=target,query_domain='static',components=static_components,
+                geometry_sha256=domain.geometry_sha256,proof_scope='current conservative planning domain only')
         guide_radius = None if limits is None else limits.guide_distance
         free_i, extra = _other_guide_space(domain, guides, int(guide), guide_radius)
         if not _within_free(free_i, planner_start):
-            raise ValueError(
-                'PATH_UNREACHABLE: assigned endpoint is outside conservative free space '
-                f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
+            raise NavigationFailure(
+                'current_guide_occupation','assigned start is currently occupied by other guides',
+                guide=int(guide),target=target,query_domain='static_with_current_guides',endpoint='start',
+                occupants=_occupation(guides,planner_start,guide,guide_radius),release_guaranteed=False,
             )
         if not _within_free(free_i, target_ready[0]):
-            raise ValueError(
-                'PATH_UNREACHABLE: assigned target temporarily occupied by other guides '
-                f'(guide {int(guide)} target {target})'
+            raise NavigationFailure(
+                'current_guide_occupation','assigned target temporarily occupied by other guides '
+                f'(guide {int(guide)} target {target})',
+                guide=int(guide),target=target,query_domain='static_with_current_guides',endpoint='target',
+                occupants=_occupation(guides,target_ready[0],guide,guide_radius),release_guaranteed=False,
             )
+        dynamic_components=[_component(free_i,planner_start),_component(free_i,target_ready[0])]
+        if dynamic_components[0] is not None and dynamic_components[1] is not None and dynamic_components[0]!=dynamic_components[1]:
+            raise NavigationFailure('current_guide_barrier',
+                'current guide obstacles separate assigned endpoints in the temporary domain',
+                guide=int(guide),target=target,query_domain='static_with_current_guides',
+                components=dynamic_components,release_guaranteed=False)
         path, length = _shortest(planner_start, target_ready[0], free_i, obstacle, extra)
         if path is None:
-            raise ValueError('PATH_UNREACHABLE: assigned path search found no route in current conservative free space')
+            raise NavigationFailure('search_not_found','assigned path search found no route in current conservative free space',
+                                    guide=int(guide),target=target,query_domain='static_with_current_guides' if limits else 'static',
+                                    infeasibility_proven=False)
         if prefix is not None:
             path = np.vstack([prefix, path])
             length = float(length + np.linalg.norm(path[1] - path[0]))

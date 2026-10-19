@@ -8,6 +8,8 @@ from udc.boundary import estimate_boundary
 from udc.deployment import (demand_profile, feasibility_bounds, infeasibility_certificate,
                             plan_coverage, plan_risk_aware)
 from udc.navigation import navigate_and_assign, navigation_domain, route_assigned, segment_in_free
+from udc.navigation.paths import NavigationFailure, ENDPOINT_TOLERANCE_M
+import hashlib
 from udc.safety import safe_velocity, path_clearances, is_safe
 
 
@@ -103,8 +105,10 @@ class ABCGController:
         self.plan=plan
         self.plan_found=True
         crowd=Polygon(self.boundary.crowd)
+        started=perf_counter()
         nav=navigate_and_assign(guides,plan.positions,self.room,self.safety.wall_distance,
                                 crowd,self.safety.wall_distance)
+        self.initial_navigation_wall_seconds=perf_counter()-started
         self._install_navigation(nav)
         self.assignment_found=True
 
@@ -169,8 +173,10 @@ class ABCGController:
             raise ValueError('PLAN_SEARCH_EXHAUSTED: bounded CVT/spacing search found no admissible target set'+detail)
         self.plan=chosen; self.plan_found=True
         crowd=Polygon(self.boundary.crowd)
+        started=perf_counter()
         nav=navigate_and_assign(guides,chosen.positions,self.room,self.safety.wall_distance,
                                 crowd,self.safety.wall_distance)
+        self.initial_navigation_wall_seconds=perf_counter()-started
         self._install_navigation(nav)
         self.assignment_found=True
 
@@ -196,10 +202,60 @@ class ABCGController:
                 self.room,self.safety.wall_distance,Polygon(self.boundary.crowd),self.safety.wall_distance)
         return self.navigation_domain
 
-    def recover(self, observation, positions):
+    def _navigation_hashes(self):
+        def digest(value):
+            return hashlib.sha256(np.ascontiguousarray(value).tobytes()).hexdigest()
+        paths=hashlib.sha256()
+        for guide,path in sorted(self.paths.items()):
+            paths.update(np.asarray([guide,*np.asarray(path).shape],dtype=np.int64).tobytes())
+            paths.update(np.asarray(path,dtype=np.float64).tobytes())
+        return {'targets_sha256':digest(np.asarray(self.plan.positions,dtype=np.float64)),
+                'assignment_sha256':digest(np.asarray(self.assignment,dtype=np.int64)),
+                'paths_sha256':paths.hexdigest()}
+
+    def _recovery_event(self, positions, trigger, strategy):
+        occupations=[]
+        for guide in np.flatnonzero(self.assignment>=0):
+            target=int(self.assignment[guide])
+            distance=np.linalg.norm(positions-self.plan.positions[target],axis=1)
+            occupants=[{'guide':int(i),'center_distance_m':float(d),'threshold_m':self.safety.guide_distance}
+                       for i,d in enumerate(distance) if i!=guide and d<self.safety.guide_distance]
+            if occupants:
+                occupations.append({'guide':int(guide),'target':target,'occupants':occupants})
+        return {'strategy':strategy,'trigger_reason':trigger,'positions':np.asarray(positions).tolist(),
+                'targets':self.plan.positions.tolist(),'assignment':self.assignment.tolist(),
+                'geometry_sha256':self._domain().geometry_sha256,
+                'query_domain':('static_with_current_guides' if strategy=='path_recompute' else
+                                'static' if strategy=='reachable_reassignment' else 'installed_paths'),
+                'query_succeeded':False,'validation_succeeded':False,'installation_succeeded':False,
+                'budget_before':self.replans,'budget_limit':self.config['max_replans'],
+                'before':self._navigation_hashes(),'current_occupations':occupations,'release_guaranteed':False,
+                'guide_center_threshold_m':self.safety.guide_distance,
+                'crowd_center_threshold_m':self.safety.crowd_distance,
+                'wall_threshold_m':self.safety.wall_distance,'numeric_tolerance_m':self.safety.numeric_tolerance}
+
+    def _finish_recovery_event(self,event,started):
+        event.update(wall_seconds=perf_counter()-started,budget_consumed=self.replans,
+                     budget_remaining=max(0,self.config['max_replans']-self.replans),after=self._navigation_hashes())
+        self.recovery_attempts.append(event)
+
+    def recover(self, observation, positions, trigger_reason='explicit_recovery_request'):
         """Finite deterministic recovery: reroute, reassign, then priority yield."""
         if self.replans >= self.config['max_replans']:
+            started=perf_counter()
+            event=self._recovery_event(positions,trigger_reason,'none')
+            event.update(accepted=False,classification='budget_exhausted',query_domain='not_queried')
+            self._finish_recovery_event(event,started)
             return None
+        current_clearances=path_clearances(positions,positions,observation.positions,self.room)
+        if not is_safe(current_clearances,self.safety):
+            started=perf_counter()
+            event=self._recovery_event(positions,trigger_reason,'none')
+            event.update(accepted=False,classification='unsafe_actual_state',query_domain='not_queried',
+                         actual_clearances=current_clearances)
+            self._finish_recovery_event(event,started)
+            raise NavigationFailure('unsafe_actual_state','unsafe actual state; recovery not executed',
+                                    query_domain='not_queried',actual_clearances=current_clearances)
         # A temporarily occupied assigned target may reject a fixed-identity
         # replan while a complete static-domain reassignment remains available.
         # Count the rejected attempt against the same budget. Install no partial
@@ -208,22 +264,21 @@ class ABCGController:
         while self.replans < self.config['max_replans']:
             started=perf_counter()
             strategy=('path_recompute','reachable_reassignment','priority_yield')[min(self.replans,2)]
+            event=self._recovery_event(positions,trigger_reason,strategy)
+            self._recovery_phase=event
+            self._recovery_path_validation=[]
             try:
                 accepted=self._recover_strategy(observation, positions, strategy)
             except ValueError as error:
                 if not str(error).startswith('PATH_UNREACHABLE'):
+                    event.update(accepted=False,classification='program_error',error=str(error))
+                    self._finish_recovery_event(event,started)
                     raise
-                self.recovery_attempts.append({
-                    'strategy':strategy, 'accepted':False, 'error':str(error),
-                    'wall_seconds':perf_counter()-started,
-                    'positions':np.asarray(positions).tolist(),
-                    'targets':self.plan.positions.tolist(),
-                    'assignment':self.assignment.tolist(),
-                    'paths':{str(i):path.tolist() for i,path in self.paths.items()},
-                    'waypoints':dict(self.waypoint),
-                    'geometry_sha256':self._domain().geometry_sha256,
-                })
+                diagnosis=getattr(error,'diagnosis',{'kind':'search_not_found','infeasibility_proven':False})
+                event.update(accepted=False,error=str(error),classification=diagnosis['kind'],diagnosis=diagnosis,
+                             paths={str(i):path.tolist() for i,path in self.paths.items()},waypoints=dict(self.waypoint))
                 self.replans += 1
+                self._finish_recovery_event(event,started)
                 if first_error is None:
                     first_error=error
                 domain=self._domain()
@@ -232,18 +287,42 @@ class ABCGController:
                 if strategy == 'path_recompute' and safe_state and self.replans < self.config['max_replans']:
                     continue
                 raise first_error from error
-            self.recovery_attempts.append({
-                'strategy':strategy, 'accepted':True,
-                'wall_seconds':perf_counter()-started,
-                'assignment':self.assignment.tolist(),
-                'paths':{str(i):path.tolist() for i,path in self.paths.items()},
-                'path_validation':getattr(self,'_recovery_path_validation',[]),
-            })
+            except Exception as error:
+                event.update(accepted=False,classification='program_error',error=str(error))
+                self._finish_recovery_event(event,started)
+                raise
+            event.update(accepted=True,classification='verified_path_set_installed' if strategy!='priority_yield' else 'priority_yield',
+                         assignment=self.assignment.tolist(),paths={str(i):path.tolist() for i,path in self.paths.items()},
+                         path_validation=self._recovery_path_validation)
             self.replans += 1
+            self._finish_recovery_event(event,started)
             return accepted
         if first_error is not None:
             raise first_error
         return None
+
+    def _validate_recovery_paths(self, paths, assignment, positions, observation):
+        validation_started=perf_counter()
+        active=np.flatnonzero(np.asarray(assignment)>=0)
+        ids=np.asarray(assignment)[active]
+        if (set(paths)!=set(map(int,active)) or len(ids)!=len(self.plan.positions)
+                or not np.array_equal(np.sort(ids),np.arange(len(self.plan.positions)))):
+            raise NavigationFailure('incomplete_path_set','candidate path set or matching is incomplete')
+        validation=[]
+        for guide in active:
+            path=np.asarray(paths[int(guide)])
+            if (path.ndim!=2 or path.shape[1]!=2 or len(path)<2 or not np.isfinite(path).all()
+                    or not np.array_equal(path[0],positions[guide])
+                    or np.linalg.norm(path[-1]-self.plan.positions[int(assignment[guide])])>ENDPOINT_TOLERANCE_M):
+                raise NavigationFailure('invalid_candidate_path','candidate path endpoints do not match actual state and assigned target',guide=int(guide))
+            for a,b in zip(path[:-1],path[1:]):
+                clearance=path_clearances(a[None,:],b[None,:],observation.positions,self.room)
+                if not is_safe(clearance,self.safety):
+                    raise NavigationFailure('unsafe_candidate_path','replacement path failed independent physical validation',
+                                            guide=int(guide),clearances=clearance)
+                validation.append({'guide':int(guide),'clearances':clearance})
+        self._recovery_phase['validation_wall_seconds']=perf_counter()-validation_started
+        return validation
 
     def _recover_strategy(self, observation, positions, strategy):
         """Build a complete replacement before changing the installed navigation."""
@@ -252,10 +331,18 @@ class ABCGController:
             domain=self._domain()
             outside=[int(guide) for guide in np.flatnonzero(self.assignment>=0)
                      if not domain.free.covers(Point(positions[guide]))]
-            paths,_=route_assigned(positions,self.plan.positions,self.assignment,self.room,
-                                   self.safety.wall_distance,crowd,self.safety.wall_distance,
-                                   people=observation.positions,limits=self.safety)
+            query_started=perf_counter()
+            try:
+                paths,_=route_assigned(positions,self.plan.positions,self.assignment,self.room,
+                                       self.safety.wall_distance,crowd,self.safety.wall_distance,
+                                       people=observation.positions,limits=self.safety)
+            finally:
+                self._recovery_phase['query_wall_seconds']=perf_counter()-query_started
+            self._recovery_phase['query_succeeded']=True
+            self._recovery_path_validation=self._validate_recovery_paths(paths,self.assignment,positions,observation)
+            self._recovery_phase['validation_succeeded']=True
             self.paths=paths; self.waypoint={i:1 for i in paths}
+            self._recovery_phase['installation_succeeded']=True
             if outside:
                 self.margin_connections.append({
                     'guides':outside,
@@ -263,23 +350,25 @@ class ABCGController:
                     'geometry_sha256':domain.geometry_sha256,
                 })
         elif strategy == 'reachable_reassignment':
-            nav=navigate_and_assign(positions,self.plan.positions,self.room,
-                                    self.safety.wall_distance,crowd,self.safety.wall_distance,
-                                    people=observation.positions,limits=self.safety)
-            validation=[]
+            query_started=perf_counter()
+            try:
+                nav=navigate_and_assign(positions,self.plan.positions,self.room,
+                                        self.safety.wall_distance,crowd,self.safety.wall_distance,
+                                        people=observation.positions,limits=self.safety)
+            finally:
+                self._recovery_phase['query_wall_seconds']=perf_counter()-query_started
+            self._recovery_phase['query_succeeded']=True
             # Independently verify each replacement leg against frozen people
             # and walls before installing any path. Simultaneous guide–guide
             # motion still goes through the unchanged velocity/segment filter.
-            for guide,path in zip(np.flatnonzero(nav.assignment>=0),nav.paths):
-                if not np.array_equal(path[0],positions[guide]):
-                    raise ValueError('PATH_UNREACHABLE: replacement path does not start at actual state')
-                for a,b in zip(path[:-1],path[1:]):
-                    clearance=path_clearances(a[None,:],b[None,:],observation.positions,self.room)
-                    if not is_safe(clearance,self.safety):
-                        raise ValueError('PATH_UNREACHABLE: replacement path failed independent physical validation')
-                    validation.append({'guide':int(guide),'clearances':clearance})
-            self._recovery_path_validation=validation
+            active=np.flatnonzero(nav.assignment>=0)
+            if len(nav.paths)!=len(active):
+                raise NavigationFailure('incomplete_path_set','candidate path set is incomplete')
+            self._recovery_path_validation=self._validate_recovery_paths(
+                {int(i):path for i,path in zip(active,nav.paths)},nav.assignment,positions,observation)
+            self._recovery_phase['validation_succeeded']=True
             self._install_navigation(nav)
+            self._recovery_phase['installation_succeeded']=True
         else:
             active=np.flatnonzero(self.assignment>=0)
             remaining=self.remaining_path_lengths(positions)

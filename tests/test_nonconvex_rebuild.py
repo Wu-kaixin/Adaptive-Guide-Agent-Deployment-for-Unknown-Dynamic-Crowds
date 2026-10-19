@@ -88,3 +88,32 @@ def test_existing_evidence_is_not_overwritten_when_source_changes(tmp_path):
     with pytest.raises(FileExistsError,match='choose a new --tag'):
         run_task((str(tmp_path),row,'baseline'))
     assert (run/'metrics.json').read_text()==saved
+
+
+def test_confirmation_protocol_changes_only_seeds_and_recorded_statistics():
+    previous,_=load_protocol('configs/step1/nonconvex_record_rebuild_v1.yaml')
+    confirmation,_=load_protocol('configs/step1/nonconvex_confirmation_v2.yaml')
+    assert confirmation['seeds']==list(range(25,35))
+    for key in ('scenes','methods','guide_counts','people_jitter_std_m','guide_arc_jitter_half_width_m',
+                'guide_phase_fraction','random_namespace','density','solver_maxiter','per_start_timeout_s','phase_fractions'):
+        assert confirmation[key]==previous[key]
+    assert confirmation['statistics']['task_denominator']==90
+    assert len(confirmation['scenes'])*len(confirmation['methods'])*len(confirmation['seeds'])==90
+
+
+def test_explicit_interruption_resume_restarts_only_identical_inputs(tmp_path,monkeypatch):
+    from udc.controller import ABCGController
+    from udc.experiments.runner import experiment
+    destination=tmp_path/'interrupted'
+    def interrupt(*a,**k):
+        raise KeyboardInterrupt()
+    with monkeypatch.context() as patch:
+        patch.setattr(ABCGController,'step',interrupt)
+        with pytest.raises(KeyboardInterrupt):
+            experiment('configs/step1/static_50.yaml',destination,plots=False,protocol='fixed_n',fixed_n=8,method='equal_arc')
+    state=json.loads((destination/'state.json').read_text())
+    assert state['status']=='started' and 'source_sha256' in state
+    result=experiment('configs/step1/static_50.yaml',destination,plots=False,protocol='fixed_n',fixed_n=8,
+                      method='equal_arc',resume=True,restart_interrupted=True)
+    assert result['success']
+    assert (destination/'resumed_interruption.json').is_file()

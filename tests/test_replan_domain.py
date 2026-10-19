@@ -136,10 +136,13 @@ def test_rejected_replan_does_not_replace_the_path_or_command_unfiltered_motion(
     active = int(np.flatnonzero(controller.assignment >= 0)[0])
     positions = np.array(guides, copy=True)
     positions[active] = np.asarray(Polygon(controller.boundary.crowd).representative_point().coords[0])
-    with pytest.raises(ValueError, match='outside conservative free space'):
+    with pytest.raises(ValueError, match='unsafe actual state'):
         controller.recover(observation, positions)
-    # Failed queries now consume the existing recovery budget; no path is installed.
-    assert controller.replans == 1
+    # Preflight rejects this actual state before any query or budget consumption.
+    assert controller.replans == 0
+    assert controller.recovery_attempts[-1]['classification']=='unsafe_actual_state'
+    assert controller.recovery_attempts[-1]['query_domain']=='not_queried'
+    assert controller.recovery_attempts[-1]['before']==controller.recovery_attempts[-1]['after']
     assert controller.paths is paths
     assert controller.margin_connections == []
 
@@ -161,8 +164,7 @@ def test_rejected_replan_does_not_replace_the_path_or_command_unfiltered_motion(
     assert not np.allclose(result.velocity[0], nominal[0])
 
 
-@pytest.mark.parametrize('budget',[1,3])
-def test_occupied_target_replan_can_reach_existing_reassignment_with_same_targets(budget):
+def _recovery_fixture(budget=3):
     from udc.boundary import Boundary
     from udc.deployment import Plan
     cfg=load_config(ROOT / 'configs/step1/static_50.yaml')['controller']
@@ -179,6 +181,12 @@ def test_occupied_target_replan_can_reach_existing_reassignment_with_same_target
     controller.waypoint={0:1,1:1}
     from udc.interfaces import Observation
     obs=Observation(np.array([[2.5,2.5]]),np.array([0.2]),np.ones(1))
+    return controller,obs,positions,targets
+
+
+@pytest.mark.parametrize('budget',[1,3])
+def test_occupied_target_replan_can_reach_existing_reassignment_with_same_targets(budget):
+    controller,obs,positions,targets=_recovery_fixture(budget)
     if budget==1:
         old_paths=controller.paths
         with pytest.raises(ValueError,match='PATH_UNREACHABLE'):
@@ -186,17 +194,91 @@ def test_occupied_target_replan_can_reach_existing_reassignment_with_same_target
         assert controller.paths is old_paths
         assert controller.replans==1
         np.testing.assert_array_equal(controller.assignment,[0,1])
+        assert controller.recover(obs,positions) is None
+        assert controller.recovery_attempts[-1]['classification']=='budget_exhausted'
+        assert controller.recovery_attempts[-1]['budget_remaining']==0
         return
     assert controller.recover(obs,positions)=='reachable_reassignment'
-    assert controller.replans==2 <= cfg['max_replans']
+    assert controller.replans==2 <= controller.config['max_replans']
     np.testing.assert_array_equal(controller.assignment,[1,0])
     np.testing.assert_array_equal(controller.plan.positions,targets)
     np.testing.assert_array_equal(positions,[[4.,8.],[5.,8.]])
     assert [a['accepted'] for a in controller.recovery_attempts]==[False,True]
     assert controller.recovery_attempts[1]['path_validation']
+    failed,accepted=controller.recovery_attempts
+    assert failed['classification']=='current_guide_occupation'
+    assert failed['diagnosis']['release_guaranteed'] is False
+    assert failed['diagnosis']['occupants'][0]['guide']==1
+    assert failed['query_domain']=='static_with_current_guides'
+    assert accepted['query_domain']=='static'
+    assert accepted['query_succeeded'] and accepted['validation_succeeded'] and accepted['installation_succeeded']
+    assert accepted['budget_consumed']==2 and accepted['budget_remaining']==1
+    assert failed['before']==failed['after']
+    assert accepted['before']['targets_sha256']==accepted['after']['targets_sha256']
     for guide,path in controller.paths.items():
         np.testing.assert_array_equal(path[0],positions[guide])
         np.testing.assert_array_equal(path[-1],targets[controller.assignment[guide]])
+
+
+@pytest.mark.parametrize('target,kind',[([5.,5.],'static_endpoint_invalid'),
+                                      ([8.,5.],'static_components_disconnected')])
+def test_static_failures_are_not_current_guide_occupation(target,kind):
+    from udc.navigation.paths import NavigationFailure
+    barrier=Polygon([(4.,-1.),(6.,-1.),(6.,11.),(4.,11.)])
+    with pytest.raises(NavigationFailure) as captured:
+        route_assigned(np.array([[2.,5.]]),np.array([target]),np.array([0]),np.array([10.,10.]),0.2,barrier,0.2)
+    assert captured.value.diagnosis['kind']==kind
+    assert captured.value.diagnosis['query_domain']=='static'
+
+
+def test_only_search_failure_does_not_certify_infeasibility(monkeypatch):
+    import udc.navigation.paths as module
+    _,crowd=_domain()
+    monkeypatch.setattr(module,'_shortest',lambda *a,**k:(None,float('inf')))
+    with pytest.raises(module.NavigationFailure) as captured:
+        route_assigned(np.array([[2.,8.5]]),np.array([[8.,8.5]]),np.array([0]),np.array([10.,10.]),0.2,crowd,0.2)
+    assert captured.value.diagnosis['kind']=='search_not_found'
+    assert captured.value.diagnosis['infeasibility_proven'] is False
+
+
+@pytest.mark.parametrize('kind',['incomplete_path_set','unsafe_candidate_path'])
+def test_failed_candidate_validation_never_partially_installs(monkeypatch,kind):
+    import udc.controller.abcg as module
+    from udc.navigation.paths import NavigationResult,NavigationFailure
+    controller,obs,positions,targets=_recovery_fixture()
+    old_paths=controller.paths
+    if kind=='incomplete_path_set':
+        candidate={0:old_paths[0]}
+    else:
+        candidate={i:np.array([positions[i],obs.positions[0],targets[i]]) for i in range(2)}
+    monkeypatch.setattr(module,'route_assigned',lambda *a,**k:(candidate,{}))
+    nav=NavigationResult(controller.assignment.copy(),tuple(candidate.values()),np.ones(len(candidate)),np.ones((2,2),bool))
+    monkeypatch.setattr(module,'navigate_and_assign',lambda *a,**k:nav)
+    with pytest.raises(NavigationFailure) as captured:
+        controller.recover(obs,positions)
+    assert captured.value.diagnosis['kind']==kind
+    assert controller.paths is old_paths
+    assert controller.replans==2
+    assert len(controller.recovery_attempts)==2
+    assert all(attempt['query_succeeded'] and not attempt['installation_succeeded']
+               and attempt['before']==attempt['after'] for attempt in controller.recovery_attempts)
+
+
+def test_persistent_query_failures_terminate_with_accounted_budget(monkeypatch):
+    import udc.controller.abcg as module
+    from udc.navigation.paths import NavigationFailure
+    controller,obs,positions,_=_recovery_fixture()
+    calls=[]
+    def fail(*a,**k):
+        calls.append(1)
+        raise NavigationFailure('search_not_found','no route found in bounded query',infeasibility_proven=False)
+    monkeypatch.setattr(module,'route_assigned',fail)
+    monkeypatch.setattr(module,'navigate_and_assign',fail)
+    with pytest.raises(NavigationFailure):
+        controller.recover(obs,positions)
+    assert len(calls)==2 and controller.replans==2
+    assert controller.recovery_attempts[-1]['budget_remaining']==1
+    assert all(not attempt['accepted'] for attempt in controller.recovery_attempts)
 
 
 def test_static_visibility_edges_are_shared_per_assignment_and_rebuilt_for_changed_geometry(monkeypatch):

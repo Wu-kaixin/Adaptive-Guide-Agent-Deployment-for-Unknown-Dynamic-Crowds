@@ -314,12 +314,155 @@ def plot_recovery(output,destination):
     fig.savefig(destination,dpi=180);plt.close(fig)
 
 
+def confirmation_audit(output, report_dir):
+    """Descriptive new-seed confirmation; shared method rows are not independent crowds."""
+    manifest=json.loads((output/'manifest.json').read_text())
+    protocol=json.loads((output/'protocol.json').read_text())
+    rows=[]; events=[]; valid_cells=set(); input_cells={}; verdicts=[]
+    frozen_source=protocol['provenance']['source_sha256']
+    for task in manifest['tasks']:
+        cell=output/task['cell']; key=(task['scene'],task['seed'])
+        record=json.loads((cell/'input_record.json').read_text())
+        assert sha(cell/'input.npz')==record['input_file_sha256'] and sha(cell/'input.yaml')==record['config_sha256']
+        if record['boundary_sha256'] is not None:
+            assert sha(cell/'boundary.npz')==record['boundary_sha256']
+        quality=record['people_quality']
+        valid_input=quality['meets_stated_separation'] and quality['inside_room']
+        if valid_input:
+            valid_cells.add(key)
+        input_cells[key]=record
+        frozen=np.load(cell/'input.npz',allow_pickle=False)
+        assert array_hash(**{name:frozen[name] for name in ('people','radii','demand','guides','room')})==task['input_sha256']
+        run=output/'baseline'/task['scene']/f"seed_{task['seed']}"/task['method']
+        metric=json.loads((run/'metrics.json').read_text())
+        provenance=metric.get('provenance',metric)
+        if metric['termination_status']!='EXPERIMENT_ERROR':
+            assert provenance['source_sha256']==frozen_source
+        executed=metric.get('steps',0)>0
+        stage=('input' if not valid_input else 'boundary' if metric['termination_status'] in ('BOUNDARY_INVALID','OFFSET_INVALID')
+               else 'quantity' if (metric.get('feasibility') or {}).get('infeasibility_certificate') else
+               'initial_path' if metric.get('plan_found') and not metric.get('assignment_found') else
+               'execution' if metric.get('failure_stage')=='execution' else 'planning')
+        if metric['success']:
+            stage='success'
+        if metric['termination_status']=='EXPERIMENT_ERROR':
+            stage='program_error'
+        offline=json.loads((run/'reevaluated_metrics.json').read_text()) if (run/'reevaluated_metrics.json').is_file() else None
+        data=np.load(run/'trajectory.npz',allow_pickle=False) if (run/'trajectory.npz').is_file() else None
+        if offline is not None:
+            assert offline['criteria_consistent']
+            if metric['termination_status']!='EXPERIMENT_ERROR':
+                assert offline['success']==metric['success']
+        if data is not None:
+            assert np.array_equal(data['positions'][0],frozen['guides'])
+            for actual,name in (('crowd_positions','people'),('crowd_radii','radii'),('crowd_demand','demand'),('room','room')):
+                assert np.array_equal(data[actual],frozen[name])
+        if executed:
+            assert offline is not None
+            verdicts.append({'task_id':task['task_id'],'success':offline['success'],'criteria_consistent':True})
+        target_dir=output/'targets'/task['scene']/f"seed_{task['seed']}"/task['method']
+        planning_time=None; target_hash=None
+        if (target_dir/'solver.json').is_file():
+            solver=json.loads((target_dir/'solver.json').read_text())
+            planning_time=solver.get('planning_wall_s')
+        if (target_dir/'targets.npz').is_file():
+            plan_info=json.loads((target_dir/'plan.json').read_text())
+            target_hash=sha(target_dir/'targets.npz'); assert target_hash==plan_info['targets_sha256']
+            if metric.get('plan_found'):
+                assert np.array_equal(data['targets'],np.load(target_dir/'targets.npz',allow_pickle=False)['targets'])
+        attempts=metric.get('recovery_attempts',[])
+        for event in attempts:
+            required={'trigger_reason','positions','query_domain','current_occupations','classification','query_succeeded',
+                      'validation_succeeded','installation_succeeded','budget_consumed','budget_remaining','before','after'}
+            assert required<=event.keys()
+            assert event['budget_consumed']<=3 and event['budget_remaining']==3-event['budget_consumed']
+            assert event['before']['targets_sha256']==event['after']['targets_sha256']
+            if not event['accepted']:
+                assert event['before']==event['after']
+            if event['installation_succeeded']:
+                assert event['query_succeeded'] and event['validation_succeeded']
+            events.append({'task_id':task['task_id'],**event})
+        actual_length=float(np.linalg.norm(np.diff(data['positions'],axis=0),axis=2).sum()) if executed else None
+        diagnostic={} if offline is None else offline['diagnostics']
+        rows.append({**task,'valid_input':bool(valid_input),'status':metric['termination_status'],'success':metric['success'],
+                     'failure_stage_category':stage,'failure_reason':metric.get('failure_reason'),
+                     'failure_diagnosis':metric.get('failure_diagnosis'),'executed':executed,
+                     'offline_consistent':None if offline is None else offline['criteria_consistent'],
+                     'source_sha256':provenance.get('source_sha256'),'commit':provenance.get('commit'),
+                     'target_sha256':target_hash,'planning_wall_s':planning_time,
+                     'navigation_wall_s':metric.get('initial_navigation_wall_seconds'),
+                     'execution_wall_s':metric.get('wall_time'),'simulation_time_s':metric.get('simulation_time') if executed else None,
+                     'actual_trajectory_length_m':actual_length,'installed_navigation_length_m':metric.get('path_length'),
+                     'actual_max_gap_m':diagnostic.get('actual_max_gap'),'max_curve_distance_m':diagnostic.get('max_curve_distance'),
+                     'minimum_net_clearances':diagnostic.get('minimum_net_clearances'),
+                     'recovery_trigger_frames':sorted({e.get('frame') for e in attempts}),
+                     'recovery_installations':sum(e['installation_succeeded'] for e in attempts),
+                     'recovery_budget_consumed':metric.get('replan_count',0)})
+    success=sum(row['success'] for row in rows)
+    valid_rows=[row for row in rows if row['valid_input']]
+    def stats(values):
+        values=[float(v) for v in values if v is not None]
+        return None if not values else {'n':len(values),'min':min(values),'median':float(np.median(values)),'max':max(values)}
+    executed_rows=[row for row in rows if row['executed']]
+    triggers={(e['task_id'],e.get('frame')) for e in events}
+    accepted_triggers={(e['task_id'],e.get('frame')) for e in events if e['accepted']}
+    summary={'protocol':protocol,'tasks_expected':manifest['task_count'],'tasks_completed':len(rows),'rows':rows,
+             'input_units':len(input_cells),'valid_input_units':len(valid_cells),
+             'input_failures':[record for record in input_cells.values() if not (record['people_quality']['meets_stated_separation'] and record['people_quality']['inside_room'])],
+             'overall_success':{'success':success,'denominator':len(rows),'fraction':success/len(rows)},
+             'valid_input_success':{'success':sum(row['success'] for row in valid_rows),'denominator':len(valid_rows),
+                                    'fraction':None if not valid_rows else sum(row['success'] for row in valid_rows)/len(valid_rows)},
+             'outcomes':dict(Counter(row['status'] for row in rows)),
+             'stage_counts':dict(Counter(row['failure_stage_category'] for row in rows)),
+             'by_method':{method:dict(Counter(row['status'] for row in rows if row['method']==method)) for method in METHODS},
+             'executed_trajectories':len(verdicts),'independent_verdicts':verdicts,'verdict_mismatches':0,
+             'recovery':{'trigger_count':len(triggers),'accepted_trigger_count':len(accepted_triggers),
+                         'verified_installations':sum(e['installation_succeeded'] for e in events),
+                         'budget_exhausted_events':sum(e['classification']=='budget_exhausted' for e in events),
+                         'classifications':dict(Counter(e['classification'] for e in events)),'events':events},
+             'interval_safety_check':'Exact constant-velocity closest approach on every executed interval, not only frames',
+             'performance':{key:stats(row[key] for row in executed_rows) for key in
+                ('simulation_time_s','actual_trajectory_length_m','execution_wall_s','navigation_wall_s','actual_max_gap_m','max_curve_distance_m')},
+             'planning_by_method':{method:stats(row['planning_wall_s'] for row in rows if row['method']==method) for method in METHODS},
+             'minimum_net_clearances':{key:min(row['minimum_net_clearances'][key] for row in executed_rows) for key in ('crowd','guides','walls')} if executed_rows else None,
+             'recovery_query_wall_s':stats(e.get('query_wall_seconds') for e in events),
+             'recovery_validation_wall_s':stats(e.get('validation_wall_seconds') for e in events),
+             'external_interruptions':len(list((output/'baseline').rglob('interruption.json')))}
+    write(report_dir/'summary.json',summary)
+    write(output/'confirmation_audit.json',summary)
+    # A fixed scene-by-seed outcome panel avoids selecting favorable tasks.
+    fig,axes=plt.subplots(1,3,figsize=(14,4.3),layout='constrained')
+    seeds=protocol['spec']['seeds']
+    for axis,method in zip(axes,METHODS):
+        matrix=np.zeros((3,len(seeds)))
+        labels=np.empty_like(matrix,dtype=object)
+        for i,scene in enumerate(protocol['spec']['scenes']):
+            for j,seed in enumerate(seeds):
+                row=next(row for row in rows if row['scene']==scene and row['seed']==seed and row['method']==method)
+                matrix[i,j]=2 if row['success'] else 0 if not row['valid_input'] else 1
+                labels[i,j]='S' if row['success'] else 'I' if not row['valid_input'] else 'F'
+        axis.imshow(matrix,vmin=0,vmax=2,cmap=matplotlib.colors.ListedColormap(['#b7bec8','#d98e69','#92c5ad']),aspect='auto')
+        for i in range(3):
+            for j in range(len(seeds)):
+                axis.text(j,i,labels[i,j],ha='center',va='center',fontsize=10)
+        axis.set_xticks(range(len(seeds)),seeds);axis.set_yticks(range(3),protocol['spec']['scenes'])
+        axis.set_title(method);axis.set_xlabel('new development seed')
+    fig.suptitle('Nonconvex confirmation v2: S success / I invalid input / F other failure (shared inputs across methods)')
+    fig.savefig(report_dir/'outcomes_90.png',dpi=180);plt.close(fig)
+    print(json.dumps({'outcomes':summary['outcomes'],'valid_units':len(valid_cells),
+                      'executed':len(verdicts),'recovery_triggers':len(triggers)}))
+    return summary
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',default='runs/step1_nonconvex_record_rebuild_v1')
     parser.add_argument('--report-dir',default='reports/step1_nonconvex_record_rebuild_v1')
     args=parser.parse_args()
     output=Path(args.output); report_dir=Path(args.report_dir)
+    if json.loads((output/'protocol.json').read_text())['spec']['protocol']=='nonconvex_confirmation_v2':
+        confirmation_audit(output,report_dir)
+        return
     audit=audit_results(output)
     comparison=[compare_targets(output,seed) for seed in (21,22)]
     diagnosis=failure_diagnosis(output)

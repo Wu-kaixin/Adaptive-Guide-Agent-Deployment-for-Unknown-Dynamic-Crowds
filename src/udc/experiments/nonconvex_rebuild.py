@@ -52,8 +52,10 @@ def array_hash(**arrays):
 def load_protocol(path):
     path = Path(path)
     spec = yaml.safe_load(path.read_text(encoding='utf-8'))
-    if spec['protocol'] != 'nonconvex_record_rebuild_v1' or spec['seeds'] != [20, 21, 22, 23, 24]:
-        raise ValueError('The reconstruction protocol is frozen to seeds 20–24')
+    protocols={'nonconvex_record_rebuild_v1':list(range(20,25)),
+               'nonconvex_confirmation_v2':list(range(25,35))}
+    if spec['protocol'] not in protocols or spec['seeds']!=protocols[spec['protocol']]:
+        raise ValueError('Unsupported or changed frozen nonconvex protocol seeds')
     base_path = Path(spec['base_spec'])
     base = yaml.safe_load(base_path.read_text(encoding='utf-8'))
     spec['protocol_sha256'] = sha(path)
@@ -140,7 +142,7 @@ def freeze(spec_path, output):
                     'seed': seed, 'method': method, 'count': record['count'],
                     'cell': cell.relative_to(output).as_posix(), 'input_sha256': digest,
                     'input_status': status})
-    write(output / 'manifest.json', {'tasks': rows, 'task_count': len(rows), 'cell_count': 15,
+    write(output / 'manifest.json', {'tasks': rows, 'task_count': len(rows), 'cell_count': len(spec['scenes'])*len(spec['seeds']),
                                    'protocol_sha256': spec['protocol_sha256']})
     print(json.dumps({'frozen_tasks': len(rows), 'input_status_rows': dict(Counter(row['input_status'] for row in rows))}))
 
@@ -218,13 +220,20 @@ def rejected_result(directory, row, cell, status, reason):
 
 
 def run_task(arguments):
-    output, row, tag = arguments
+    output, row, tag = arguments[:3]
+    resume_interrupted=bool(arguments[3]) if len(arguments)>3 else False
     output = Path(output)
     spec_record = json.loads((output / 'protocol.json').read_text(encoding='utf-8'))
     spec, base = spec_record['spec'], spec_record['base_spec']
     cell = output / row['cell']
     directory = output / tag / row['scene'] / f"seed_{row['seed']}" / row['method']
-    if (directory / 'state.json').is_file():
+    partial=False
+    if (directory/'state.json').is_file() and not (directory/'metrics.json').is_file():
+        state=json.loads((directory/'state.json').read_text(encoding='utf-8'))
+        if not resume_interrupted or state.get('status') not in ('started','interrupted'):
+            raise FileExistsError('Incomplete attempt requires explicit --resume-interrupted; evidence is unchanged.')
+        partial=True
+    if (directory / 'state.json').is_file() and not partial:
         # Never overwrite old evidence or silently reuse it for a new source.
         record=json.loads((cell/'input_record.json').read_text(encoding='utf-8'))
         old=json.loads((directory/'metrics.json').read_text(encoding='utf-8'))
@@ -250,6 +259,8 @@ def run_task(arguments):
                     raise RuntimeError('Regression must reuse frozen targets')
                 started = perf_counter()
                 plan, details = plan_target(boundary, row['method'], row['count'], spec, base)
+                planning_wall_s=perf_counter()-started
+                details['planning_wall_s']=planning_wall_s
                 plans.mkdir(parents=True, exist_ok=True)
                 write(plans / 'solver.json', details)
                 if plan is None:
@@ -258,19 +269,29 @@ def run_task(arguments):
                 _atomic_npz(plans / 'targets.npz', targets=plan.positions, arc_positions=plan.arc_positions, cost=plan.cost)
                 write(plans / 'plan.json', {'method': plan.method, 'iterations': plan.iterations,
                       'exit_reason': plan.exit_reason, 'max_gap': float(plan.max_gap),
-                      'density_total': float(plan.density_total), 'planning_wall_s': perf_counter() - started,
+                      'density_total': float(plan.density_total), 'planning_wall_s': planning_wall_s,
                       'targets_sha256': sha(plans / 'targets.npz')})
             metrics = experiment(cell / 'input.yaml', directory, plots=False, protocol='fixed_n',
                 fixed_n=row['count'], prescribed_boundary=boundary, prescribed_plan=plan,
-                boundary_source='estimated_disk_union', method_label=row['method'])
+                boundary_source='estimated_disk_union', method_label=row['method'],
+                resume=partial,restart_interrupted=partial)
             offline = reevaluate_result(directory)
             with np.load(directory / 'trajectory.npz', allow_pickle=False) as actual, np.load(cell / 'input.npz', allow_pickle=False) as frozen:
+                installed=metrics.get('plan_found',False)
                 paired = (np.array_equal(actual['positions'][0], frozen['guides'])
                           and np.array_equal(actual['crowd_positions'], frozen['people'])
-                          and np.array_equal(actual['targets'], plan.positions))
+                          and (not installed or np.array_equal(actual['targets'], plan.positions)))
             write(directory / 'pairing.json', {'input_sha256': row['input_sha256'], 'exact_input_and_targets': paired,
-                  'targets_sha256': sha(plans / 'targets.npz'), 'offline_criteria_consistent': offline['criteria_consistent']})
+                  'targets_installed':installed,'targets_sha256': sha(plans / 'targets.npz'),
+                  'offline_criteria_consistent': offline['criteria_consistent']})
             return metrics
+    except KeyboardInterrupt:
+        directory.mkdir(parents=True,exist_ok=True)
+        state_path=directory/'state.json'
+        state=json.loads(state_path.read_text()) if state_path.is_file() else {}
+        write(directory/'interruption.json',{'type':'external_interrupt','state':state,'task_id':row['task_id']})
+        write(state_path,{**state,'status':'interrupted'})
+        raise
     except Exception:
         directory.mkdir(parents=True, exist_ok=True)
         _atomic_text(directory / 'runner_error.txt', traceback.format_exc())
@@ -292,7 +313,7 @@ def summarize(output, tag):
         rows.append({**row, **{key: metrics.get(key) for key in
             ('termination_status', 'success', 'steps', 'failure_stage', 'failure_reason', 'wall_time',
              'replan_count', 'simulation_time', 'path_length', 'minimum_net_clearances')}, 'pairing': pairing})
-    summary = {'tasks_expected': 45, 'tasks_completed': len(rows),
+    summary = {'tasks_expected': manifest['task_count'], 'tasks_completed': len(rows),
                'outcomes': dict(Counter(row['termination_status'] for row in rows)), 'rows': rows}
     write(output / f'{tag}_summary.json', summary)
     print(json.dumps({key: value for key, value in summary.items() if key != 'rows'}))
@@ -305,16 +326,22 @@ def main():
     parser.add_argument('--output', default='runs/step1_nonconvex_record_rebuild_v1')
     parser.add_argument('--freeze', action='store_true')
     parser.add_argument('--run', action='store_true')
-    parser.add_argument('--seeds', nargs='+', type=int, default=[20, 21, 22, 23, 24])
+    parser.add_argument('--seeds', nargs='+', type=int)
     parser.add_argument('--workers', type=int, default=1)
     parser.add_argument('--tag', default='baseline')
+    parser.add_argument('--resume-interrupted',action='store_true')
     args = parser.parse_args()
     if args.freeze:
         freeze(args.spec, args.output)
     if args.run:
         output = Path(args.output).resolve()
         manifest = json.loads((output / 'manifest.json').read_text(encoding='utf-8'))
-        tasks = [(str(output), row, args.tag) for row in manifest['tasks'] if row['seed'] in args.seeds]
+        seeds=sorted({row['seed'] for row in manifest['tasks']}) if args.seeds is None else args.seeds
+        if not set(seeds)<={row['seed'] for row in manifest['tasks']}:
+            raise ValueError('Requested seeds are outside the frozen manifest')
+        if not 1<=args.workers<=2:
+            raise ValueError('This notebook protocol uses one or two episode workers')
+        tasks = [(str(output), row, args.tag,args.resume_interrupted) for row in manifest['tasks'] if row['seed'] in seeds]
         if args.workers == 1:
             for task in tasks:
                 result = run_task(task)

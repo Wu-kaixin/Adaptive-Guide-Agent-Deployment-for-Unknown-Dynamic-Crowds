@@ -1,0 +1,8 @@
+{
+  "attempt": "initial_partial",
+  "status": "AUDIT_PROGRAM_ERROR",
+  "reason": "AttributeError: MultiPolygon intermediate has no interiors; trace metadata assumed a single Polygon",
+  "original_comparison_untouched": true,
+  "retained_partial_evidence": true,
+  "resolution": "Count component and hole metadata over all intermediate parts; continue in a new explicit attempt directory, no controller execution"
+}

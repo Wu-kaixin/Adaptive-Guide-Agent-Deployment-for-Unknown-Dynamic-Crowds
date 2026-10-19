@@ -1,0 +1,53 @@
+{
+  "spec": {
+    "protocol": "step1_coverage_geometry_contract_v1",
+    "frozen_comparison_commit": "aa51c2b",
+    "input_root": "runs/step1_boundary_estimator_protocol",
+    "output": "runs/step1_coverage_geometry_contract",
+    "input_selection": "all_51_common_legal_inputs_both_estimators",
+    "contract_version": "observed_disk_polygon_coverage_v1",
+    "canonical_reference_quad_segs": 32,
+    "legacy_reference_quad_segs": 16,
+    "candidate_mode": "strict_diagnostic_only",
+    "default_estimator_acceptance_change": false,
+    "default_evaluator_acceptance_change": false,
+    "approximate_acceptance_enabled": false,
+    "coverage_acceptance_tolerance_m": 0.0,
+    "geometry_coordinate_displacement_m": 0.0,
+    "analytic_disk_strict_containment_claim": false,
+    "redraw_inputs": false,
+    "controller_executions": 0,
+    "workers": 1,
+    "numerical_threads": 1
+  },
+  "spec_sha256": "87fdb392cb5c02c5ec99bc595a9a8b2e0544ad85992be27521ba376cf370d50b",
+  "provenance": {
+    "commit": "aa51c2b5dd615b5918308c67d09753827500bc69",
+    "dirty": true,
+    "patch_sha256": "2b318625b4733d9002389507d04b721fd96682107e60b7e9a2fa2468cf8d5f4d",
+    "source_sha256": "df873d0f8fca657b806ca79db16efd165635186390e63882ec5dca57f6f2348c",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "40b645f0e7294342dab399c768deca7156ed73d9bfa1aed0149fa7b7ef8012b0",
+    "task_sha256": "f1f90a1a5cb9adbe8474c10880e6d2746469c3debac6e2d812226db16a8cfa78",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "python_executable": "E:\\udc-wt\\venv312\\Scripts\\python.exe",
+  "GEOS": "3.14.1",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2"
+  },
+  "historical_files_checked": 2798,
+  "original_files_unchanged_before": true
+}

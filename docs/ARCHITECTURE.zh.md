@@ -100,6 +100,10 @@ Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
 
 协议将清单准备、未来输入冻结、实际执行分为独立操作。默认小检查仅 16 行、最多四条执行；准备 120 行未来清单不调用生成器。源码、配置、原快照和 SQLite 均以哈希锁定。详细契约与统计口径见 [边界比较协议](../reports/step1_boundary_estimator_protocol/REPORT.zh.md)。
 
+## 人员圆盘覆盖的表示契约（2026-10-19）
+
+解析物理圆盘、构造用32段／象限多边形、原验收用16段／象限多边形是三个对象。默认估计器与独立验收保持原规则；`boundary.audit_person_disk_coverage` 提供 `observed_disk_polygon_coverage_v1` 的统一32段诊断候选和16段对照，分别审计完整占据集与控制器实际外环，保留原covers、关系矩阵、差集和精确保存坐标证据。诊断不修改几何、不做近似放行，也不参与物理安全评价。严格覆盖的操作性承诺、局部有理数证书及误差量纲见[覆盖几何契约](COVERAGE_GEOMETRY_CONTRACT.zh.md)。
+
 ## 源码依据
 
 部署、导航、恢复和独立验收基于 `Wu-kaixin/ABCG-controller` 的 `a18480c`（MIT）。

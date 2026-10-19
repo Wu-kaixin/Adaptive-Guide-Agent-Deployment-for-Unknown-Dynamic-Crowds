@@ -1,0 +1,103 @@
+{
+  "reference_edges_examined": 64,
+  "region_edges_examined": 5920,
+  "reference_outside_open_subsegments": 2,
+  "region_boundary_subsegments_in_reference_interior": 1,
+  "gap_enclosing_box_exact": {
+    "minimum": [
+      {
+        "numerator": "346067671975986938984210216139465316317",
+        "denominator": "21965796001398545716997820248334794752"
+      },
+      {
+        "numerator": "1049897449232828959736371645388746595293",
+        "denominator": "65897388004195637150993460745004384256"
+      }
+    ],
+    "maximum": [
+      {
+        "numerator": "24896863406523039388369247743694536263493",
+        "denominator": "1580267291480251283175836691853809287168"
+      },
+      {
+        "numerator": "25177304422529707376762391364293930554577",
+        "denominator": "1580267291480251283175836691853809287168"
+      }
+    ],
+    "display_minimum": [
+      15.754843209595185,
+      15.932307501565658
+    ],
+    "display_maximum": [
+      15.754843209595203,
+      15.932307501565694
+    ]
+  },
+  "global_box_diagonal_bound": {
+    "lower_m": "0.00000000000003931205709738261890738981603204137993342324627713097359901945915975",
+    "upper_m": "0.00000000000003931205709738261890738981603204137993342324627713097359901945915976",
+    "interval_width_m": "1e-80"
+  },
+  "gap_boundary_components": [
+    {
+      "boundary_graph_vertices": 3,
+      "has_region_boundary_anchor": true,
+      "box_minimum": [
+        {
+          "numerator": "346067671975986938984210216139465316317",
+          "denominator": "21965796001398545716997820248334794752"
+        },
+        {
+          "numerator": "1049897449232828959736371645388746595293",
+          "denominator": "65897388004195637150993460745004384256"
+        }
+      ],
+      "box_maximum": [
+        {
+          "numerator": "24896863406523039388369247743694536263493",
+          "denominator": "1580267291480251283175836691853809287168"
+        },
+        {
+          "numerator": "25177304422529707376762391364293930554577",
+          "denominator": "1580267291480251283175836691853809287168"
+        }
+      ],
+      "box_diagonal_bound": {
+        "lower_m": "0.00000000000003931205709738261890738981603204137993342324627713097359901945915975",
+        "upper_m": "0.00000000000003931205709738261890738981603204137993342324627713097359901945915976",
+        "interval_width_m": "1e-80"
+      }
+    }
+  ],
+  "entire_reference_gap_distance_upper_bound": {
+    "lower_m": "0.00000000000003931205709738261890738981603204137993342324627713097359901945915975",
+    "upper_m": "0.00000000000003931205709738261890738981603204137993342324627713097359901945915976",
+    "interval_width_m": "1e-80"
+  },
+  "no_gap_boundaries_found": false,
+  "proof_scope": "all finite polygonal edges and region holes; exact saved-coordinate rational intersections; convex reference only; no acceptance change",
+  "provenance": {
+    "commit": "aa51c2b5dd615b5918308c67d09753827500bc69",
+    "dirty": true,
+    "patch_sha256": "2b318625b4733d9002389507d04b721fd96682107e60b7e9a2fa2468cf8d5f4d",
+    "source_sha256": "c5d83a3e10a68dc13d5a5b0f4b83c3b704b2925966d3c6294c4600b872f70d8c",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "e0c55d2d3408c00f98ca098cdc085492462da07aab3e57202b869540df6ed86e",
+    "task_sha256": "e9968b0582c830440233c4a2a30e94afbc5dc66a4da94823f26e22cb8ec660af",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "source_input_sha256": "619c23c6d286238655fcc7e55ac845dd2166b1fc7553e17747360fbcb035ad06",
+  "source_occupied_sha256": "6022e10833ce7fc5d003e0e82fb3b95edfb7328a9569c2a752ea765604a29f3a",
+  "person_index": 16,
+  "reference_quad_segs": 16,
+  "wall_seconds": 2.814468000025954
+}

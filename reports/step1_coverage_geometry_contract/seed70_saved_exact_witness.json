@@ -1,0 +1,41 @@
+{
+  "point": [
+    15.754843209595197,
+    15.932307501565685
+  ],
+  "exact_location": -1,
+  "distance_squared_m2": {
+    "numerator": "1981758272352009765800761",
+    "denominator": "3779838726911952661527962195273676953500135670526509056"
+  },
+  "distance_bracket": {
+    "lower_m": "0.00000000000000072408358928642605533022118876182200289469928727862558951803146148",
+    "upper_m": "0.00000000000000072408358928642605533022118876182200289469928727862558951803146149",
+    "interval_width_m": "1e-80"
+  },
+  "closest_segment": {
+    "part": 0,
+    "ring": 0,
+    "edge": 3888,
+    "start": [
+      15.752084955278768,
+      15.926827791376427
+    ],
+    "end": [
+      15.75484320959521,
+      15.932307501565708
+    ],
+    "projection_fraction": {
+      "numerator": "11927067998753827504641960",
+      "denominator": "11927067998804799252360349"
+    },
+    "orientation_determinant_m2": {
+      "numerator": "1407749364181",
+      "denominator": "316912650057057350374175801344"
+    }
+  },
+  "scope": "exact rational geometry of saved binary64 coordinates, not ideal pre-overlay geometry",
+  "reference_person_index": 16,
+  "reference_q16_vertex_index": 37,
+  "reference_q32_vertex_index": 74
+}

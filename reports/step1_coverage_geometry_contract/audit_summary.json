@@ -1,0 +1,911 @@
+{
+  "audited_legal_input_units": 51,
+  "audited_estimator_rows": 102,
+  "region_reference_checks": 408,
+  "counts": {
+    "convex_hull/full/q16": {
+      "rows": 51,
+      "strict_accept": 51,
+      "strict_reject": 0,
+      "exact_outside_vertex_certificates": 0,
+      "failed_people": 0,
+      "failed_people_empty_difference": 0
+    },
+    "convex_hull/full/q32": {
+      "rows": 51,
+      "strict_accept": 51,
+      "strict_reject": 0,
+      "exact_outside_vertex_certificates": 0,
+      "failed_people": 0,
+      "failed_people_empty_difference": 0
+    },
+    "convex_hull/outer/q16": {
+      "rows": 51,
+      "strict_accept": 51,
+      "strict_reject": 0,
+      "exact_outside_vertex_certificates": 0,
+      "failed_people": 0,
+      "failed_people_empty_difference": 0
+    },
+    "convex_hull/outer/q32": {
+      "rows": 51,
+      "strict_accept": 51,
+      "strict_reject": 0,
+      "exact_outside_vertex_certificates": 0,
+      "failed_people": 0,
+      "failed_people_empty_difference": 0
+    },
+    "disk_union_closed/full/q16": {
+      "rows": 51,
+      "strict_accept": 50,
+      "strict_reject": 1,
+      "exact_outside_vertex_certificates": 1,
+      "failed_people": 1,
+      "failed_people_empty_difference": 0
+    },
+    "disk_union_closed/full/q32": {
+      "rows": 51,
+      "strict_accept": 0,
+      "strict_reject": 51,
+      "exact_outside_vertex_certificates": 2,
+      "failed_people": 1078,
+      "failed_people_empty_difference": 1078
+    },
+    "disk_union_closed/outer/q16": {
+      "rows": 51,
+      "strict_accept": 50,
+      "strict_reject": 1,
+      "exact_outside_vertex_certificates": 1,
+      "failed_people": 1,
+      "failed_people_empty_difference": 0
+    },
+    "disk_union_closed/outer/q32": {
+      "rows": 51,
+      "strict_accept": 0,
+      "strict_reject": 51,
+      "exact_outside_vertex_certificates": 1,
+      "failed_people": 1078,
+      "failed_people_empty_difference": 1078
+    }
+  },
+  "classification_changes": [
+    {
+      "task_id": "wide_u__seed_70__disk_union_closed",
+      "legacy_q16": false,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_55__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_55__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_56__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_56__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_57__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_57__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_58__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_58__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_59__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_59__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_60__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_60__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_61__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_61__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_62__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_62__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_63__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_63__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_64__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_64__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_65__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_65__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_66__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_66__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_67__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_67__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_68__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_68__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_69__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_69__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_70__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_70__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_71__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_71__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_72__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_72__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_73__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_73__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "elongated__seed_74__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "elongated__seed_74__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_55__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_55__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_59__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_59__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_60__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_60__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_62__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_62__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_63__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_63__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_64__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_64__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_66__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_66__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_67__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_67__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_69__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_69__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_71__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_71__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_72__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_72__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "tight_u__seed_73__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "tight_u__seed_73__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_55__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_55__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_56__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_56__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_57__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_57__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_58__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_58__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_59__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_59__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_60__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_60__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_61__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_61__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_62__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_62__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_63__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_63__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_64__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_64__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_65__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_65__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_66__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_66__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_67__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_67__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_68__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_68__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_70__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_71__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_71__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_72__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_72__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_73__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_73__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    },
+    {
+      "task_id": "wide_u__seed_74__convex_hull",
+      "legacy_q16": true,
+      "candidate_q32": true,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": false
+    },
+    {
+      "task_id": "wide_u__seed_74__disk_union_closed",
+      "legacy_q16": true,
+      "candidate_q32": false,
+      "default_behavior_changed": false,
+      "geometry_changed": false,
+      "classification_change": true
+    }
+  ],
+  "changed_default_classifications": 0,
+  "changed_geometries": 0,
+  "controller_executions": 0,
+  "approximate_acceptance_enabled": false,
+  "decision": "retain legacy default; canonical q32 strict is a diagnostic candidate, no tolerance-based repair",
+  "historical_files_unchanged_after": true,
+  "historical_file_count": 2798,
+  "radial_discretization_error_m": {
+    "0.05": {
+      "16": 6.022718974138037e-05,
+      "32": 1.5059065189788993e-05
+    },
+    "0.2": {
+      "16": 0.00024090875896552147,
+      "32": 6.023626075915597e-05
+    },
+    "0.5": {
+      "16": 0.0006022718974138037,
+      "32": 0.00015059065189788992
+    }
+  },
+  "wall_seconds": 16.385752400034107
+}

@@ -161,6 +161,10 @@ def safe_velocity(positions, nominal, people, room, dt, limits, navigation_obsta
 
     for i in range(n):
         for j in range(i):
+            # Linear separation h = ||p_i-p_j|| - d_min, not a squared barrier.
+            # n = (p_i-p_j)/||p_i-p_j|| gives n·(v_i-v_j) >= (d_min+1e-8-||p_i-p_j||)/dt.
+            # The row is (n, -n), so a violated pair is split equally. Neither
+            # guide's velocity is held fixed.
             delta = positions[i]-positions[j]
             distance = np.linalg.norm(delta)
             if distance < 1e-12:
@@ -221,3 +225,66 @@ def safe_velocity(positions, nominal, people, room, dt, limits, navigation_obsta
             200, float(np.linalg.norm(nominal)), float(min(v for v in checked.values() if v is not None)),
             perf_counter()-started, True)
     raise ValueError('NUMERICAL_FAILURE: projection failed and stopped fallback is unsafe')
+
+
+def binding_constraints(positions, velocity, people, room, dt, limits, navigation_obstacle=None, slack=1e-5):
+    """Name inequalities that are tight for an already chosen velocity.
+
+    This rebuilds the same half-planes the filter uses and does not project or
+    replace ``velocity``. A constraint is reported when its slack is below
+    ``slack``. The physical interval check stays in ``path_clearances``.
+    """
+    positions = np.asarray(positions, dtype=float)
+    velocity = np.asarray(velocity, dtype=float)
+    people = np.asarray(people, dtype=float)
+    room = np.asarray(room, dtype=float)
+    n = len(positions)
+    named = []
+
+    def add(kind, guide, normal, bound, other=None):
+        row = np.zeros(2 * n)
+        row[2 * guide:2 * guide + 2] = normal
+        if other is not None:
+            row[2 * other:2 * other + 2] = -normal
+        named.append((kind, guide, other, row, float(bound)))
+
+    for i in range(n):
+        for j in range(i):
+            delta = positions[i] - positions[j]
+            distance = float(np.linalg.norm(delta))
+            if distance < 1e-12:
+                continue
+            bound = (limits.guide_distance + 1e-8 - distance) / dt
+            if bound > -2 * limits.max_speed:
+                add('guide_guide', i, delta / distance, bound, j)
+        deltas = positions[i] - people
+        distances = np.linalg.norm(deltas, axis=1)
+        for delta, distance in zip(deltas, distances):
+            distance = float(distance)
+            if distance < 1e-12:
+                continue
+            bound = (limits.crowd_distance + 1e-8 - distance) / dt
+            if bound > -limits.max_speed:
+                add('guide_human', i, delta / distance, bound)
+        for axis in range(2):
+            normal = np.eye(2)[axis]
+            for direction, gap in ((normal, positions[i, axis]), (-normal, room[axis] - positions[i, axis])):
+                bound = (limits.wall_distance + 1e-8 - float(gap)) / dt
+                if bound > -limits.max_speed:
+                    add('guide_wall', i, direction, bound)
+        if navigation_obstacle is not None and not navigation_obstacle.is_empty:
+            normal, signed = _obstacle_support(positions[i], navigation_obstacle)
+            bound = -signed / dt
+            if bound > -limits.max_speed:
+                add('planning_boundary', i, normal, bound)
+    flat = velocity.ravel()
+    active = []
+    for kind, guide, other, row, bound in named:
+        gap = float(row @ flat - bound)
+        if gap < slack:
+            active.append({
+                'kind': kind, 'guide': int(guide),
+                'other_guide': None if other is None else int(other),
+                'slack_m_s': gap, 'bound_m_s': bound,
+            })
+    return active

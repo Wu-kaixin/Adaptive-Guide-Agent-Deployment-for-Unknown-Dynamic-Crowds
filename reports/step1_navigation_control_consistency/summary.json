@@ -1,0 +1,41 @@
+{
+  "baseline_for_63": "b6c9e0df execution_progress",
+  "developed_from": "ba9bd191",
+  "complete_segment_check_retained": true,
+  "five_point_sampling_restored": false,
+  "planning_margin_m": 0.11,
+  "rates_versus_execution_progress": {
+    "success": 48,
+    "valid_tasks": 63,
+    "all_tasks": 90,
+    "initialization_invalid_retained": 27,
+    "replan_exhausted": 15,
+    "path_unreachable": 0,
+    "previous_success": 60,
+    "successes_regressed": 12,
+    "coordinate_identical_successes": 39
+  },
+  "matching": {
+    "dropped_start": "guide 9 on the obstacle boundary, free.covers false, boundary distance 0",
+    "edges_unqueried_not_unreachable": 19,
+    "static_paths_found_for_original_assignment_after_fix": true
+  },
+  "corner": {
+    "frame": 240,
+    "case": "wide_u seed30 equal_arc vertex-only ablation",
+    "nominal_speed_m_s": 0.06113407638477357,
+    "single_guide_filtered_speed_m_s": 0.06113407638477357,
+    "joint_filtered_speed_m_s": 7.687696147465944e-09,
+    "blocking_constraint": "guide_guide between guides 4 and 5 at the 0.75 m threshold"
+  },
+  "nine_and_seed22": {
+    "b6c9e0df_wide_u_nine_s": 28.1,
+    "this_round_wide_u_nine_s": 31.1,
+    "b6c9e0df_seed22_s": 26.3,
+    "this_round_seed22_s": 29.0,
+    "older_saved_sources_not_used_as_this_baseline": {"wide_u_nine_s": 36.2, "seed22_s": 33.7}
+  },
+  "tests": {"pytest": "117 passed", "pytest_s": 18.75, "pip_check": "No broken requirements found"},
+  "full_regression_wall_s": 75.48057899996638,
+  "workers": 2
+}

@@ -1,0 +1,32 @@
+schema_version: 1
+protocol: nonconvex_confirmation_v2
+base_spec: experiments/step1_scene_closure.yaml
+scenes: [elongated, tight_u, wide_u]
+methods: [equal_arc, projected_mass, pairwise_euclidean]
+seeds: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+guide_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+people_jitter_std_m: 0.04
+guide_arc_jitter_half_width_m: 0.35
+guide_phase_fraction: 0.012
+random_namespace: 20261019
+density: constant_curve_density_matching_scene_closure
+solver_maxiter: 40
+per_start_timeout_s: 20
+phase_fractions: [0.0, 0.05, 0.10, 0.15, 0.20, 0.25]
+statistics:
+  purpose: execution_stability_development_confirmation
+  task_denominator: 90
+  paired_input_units: 30
+  tasks_per_method: 30
+  primary: full_task_success_fraction_with_all_input_failures_in_denominator
+  secondary: success_fraction_conditional_on_valid_input
+  independent_unit: scene_seed_shared_by_three_methods
+  summaries: [stage_counts, method_counts, paired_input_hashes, simulation_time, actual_trajectory_length, safety_margins, coverage, planning_time, navigation_time, recovery_events]
+  uncertainty: descriptive_only_no_independent_method_row_sampling_or_ranking
+  stopping: exactly_90_tasks_no_added_seeds_to_seek_recovery_events
+notes:
+  - Same generator and independent SeedSequence streams as reconstruction v1, new unused seeds only.
+  - One draw per cell. Keep all three method records for failed input, without resampling.
+  - Current guide occupation never guarantees future release.
+  - All thresholds and the seven-start pairwise budget remain unchanged.
+  - This is not an expansion of the formal convex experiment or evidence of demand-weighted advantage.

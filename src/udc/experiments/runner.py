@@ -14,6 +14,7 @@ import yaml
 
 from udc.boundary import Boundary
 from udc.controller import ABCGController
+from udc.controller.progress import stalled_this_step
 from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
 from udc.evaluation.acceptance import diagnose_stages, evaluate
@@ -29,6 +30,20 @@ STATUSES = {
     'SAFETY_VIOLATION', 'SUCCESS', 'NOT_EXECUTED',
 }
 RESULT_FILES = {'metrics.json', 'config.yaml', 'trajectory.npz', 'planning.json', 'state.json'}
+
+
+def _priority_stall_counterfactual():
+    """Continue an already active priority yield after its stall would stop the run.
+
+    This is a causal diagnostic. It does not add a recovery, reset the budget,
+    or change any velocity computed before that stall. Official runs leave it unset.
+    """
+    value = os.environ.get('UDC_PRIORITY_STALL_COUNTERFACTUAL')
+    if value is None or value == '0':
+        return False
+    if value == '1':
+        return True
+    raise ValueError('UDC_PRIORITY_STALL_COUNTERFACTUAL must be unset, 0, or 1')
 
 
 
@@ -106,7 +121,8 @@ def experiment(config_path, output, seed=None, plots=True,
                protocol='adaptive_resource', fixed_n=None, resume=False,
                method=None, execute=True, prescribed_boundary=None,
                prescribed_plan=None, method_label=None,
-               boundary_source='prescribed_diagnostic', initial_guides=None):
+               boundary_source='prescribed_diagnostic', initial_guides=None,
+               restart_interrupted=False):
     """Run one task and always emit a structured result for expected failures.
 
     ``execute=False`` stops after a feasible plan is saved (``NOT_EXECUTED``).
@@ -119,6 +135,8 @@ def experiment(config_path, output, seed=None, plots=True,
     select a different navigation or safety stack.
     ``initial_guides`` replaces the inset-perimeter start when a caller has
     already drawn one shared guide state. The default keeps that placement.
+    ``restart_interrupted`` resumes a started or interrupted run when the
+    source, config, and input snapshot hashes still match.
     """
     started = perf_counter()
     output = Path(output)
@@ -136,9 +154,12 @@ def experiment(config_path, output, seed=None, plots=True,
     waypoint_history = []
     safety_log = []
     deadlocks = []
+    priority_stall_suppressed = []
+    priority_stall_counterfactual = _priority_stall_counterfactual()
     termination = 'INITIALIZATION_INVALID'
     failure_reason = ''
     failure_stage = 'initialization'
+    failure_diagnosis = None
     hold = 0
 
     try:
@@ -180,12 +201,20 @@ def experiment(config_path, output, seed=None, plots=True,
             state = _saved_state(output)
             same_plan = (state.get('status') == 'planned'
                          and state.get('task_sha256') == provenance['task_sha256'])
+            same_interruption=(restart_interrupted and state.get('status') in ('started','interrupted')
+                               and state.get('source_sha256')==provenance['source_sha256']
+                               and state.get('config_sha256')==provenance['config_sha256']
+                               and state.get('input_snapshot_sha256')==provenance['input_snapshot_sha256']
+                               and not (output/'metrics.json').exists())
             if same_plan and not execute:
                 return json.loads((output / 'metrics.json').read_text(encoding='utf-8'))
-            if not (execute and same_plan):
+            if not (execute and (same_plan or same_interruption)):
                 raise FileExistsError(f'Existing result is incomplete or hash-mismatched: {output}')
+            if same_interruption:
+                _atomic_text(output/'resumed_interruption.json',json.dumps(state,indent=2)+'\n')
         _atomic_text(output / 'state.json', json.dumps({
-            'status': 'started', 'task_sha256': provenance['task_sha256']
+            'status': 'started', 'task_sha256': provenance['task_sha256'],
+            **{key:provenance[key] for key in ('source_sha256','config_sha256','input_snapshot_sha256')}
         }, indent=2) + '\n')
         if not is_safe(path_clearances(initial, initial, observation.positions,
                                        env.scene.size), safety):
@@ -239,15 +268,56 @@ def experiment(config_path, output, seed=None, plots=True,
                 break
             window = control['stall_window']
             active_speed = np.linalg.norm(result.velocity[controller.assignment >= 0], axis=1)
-            stalled = (len(progress) >= window + 1
-                       and progress[-window - 1] - progress[-1] < control['position_tolerance']
-                       and errors.max(initial=0.) > control['position_tolerance']
-                       and active_speed.mean() <= control['speed_tolerance'])
-            if stalled:
-                strategy = controller.recover(
-                    env.perceive((step + 1) * sim['dt'], next_position).observation(),
-                    next_position,
-                )
+            max_error = float(errors.max(initial=0.0))
+            # Priority yield watches that guide's polyline. The mean path and
+            # the mean speed stay in force only after the mode has exited.
+            priority_stalled = controller.observe_priority_progress(
+                next_position, max_error, window, float(control['position_tolerance']))
+            mean_speed = float(active_speed.mean()) if len(active_speed) else float('nan')
+            stalled = stalled_this_step(
+                controller.priority_mode, priority_stalled, progress, window,
+                float(control['position_tolerance']), max_error, mean_speed,
+                float(control['speed_tolerance']))
+            # The diagnostic keeps the third strategy past this branch. It still
+            # records the original mean-path and mean-speed inputs, and it does
+            # not open a fourth recovery or clear the stall samples.
+            continue_priority = (
+                stalled and priority_stall_counterfactual and controller.priority_mode
+                and controller.replans >= control['max_replans']
+            )
+            if continue_priority:
+                guide = (int(controller.priority_order[controller.priority_index])
+                         if controller.priority_index < len(controller.priority_order) else None)
+                priority_stall_suppressed.append({
+                    'step': int(step),
+                    'time_s': float((step + 1) * sim['dt']),
+                    'mean_remaining_m': float(progress[-1]),
+                    'window_decrease_m': float(progress[-window - 1] - progress[-1]),
+                    'window_steps': int(window),
+                    'mean_active_speed_m_s': float(active_speed.mean()),
+                    'max_target_error_m': float(errors.max(initial=0.0)),
+                    'position_tolerance_m': float(control['position_tolerance']),
+                    'speed_tolerance_m_s': float(control['speed_tolerance']),
+                    'priority_guide': guide,
+                    'priority_index': int(controller.priority_index),
+                    'priority_remaining_m': (None if guide is None else float(
+                        controller.guide_remaining_path(guide, next_position))),
+                    'priority_filtered_speed_m_s': (None if guide is None else float(
+                        np.linalg.norm(result.velocity[guide]))),
+                    'replans': int(controller.replans),
+                    'action': 'continue_priority_yield_without_fourth_recovery',
+                })
+            elif stalled:
+                attempts_before = len(controller.recovery_attempts)
+                try:
+                    strategy = controller.recover(
+                        env.perceive((step + 1) * sim['dt'], next_position).observation(),
+                        next_position,
+                        trigger_reason='stall_window',
+                    )
+                finally:
+                    for attempt in controller.recovery_attempts[attempts_before:]:
+                        attempt.update(frame=step + 1, time_s=(step + 1) * sim['dt'])
                 event = {'step': step, 'remaining_path': progress[-1],
                          'strategy': strategy or 'exhausted'}
                 deadlocks.append(event)
@@ -258,6 +328,7 @@ def experiment(config_path, output, seed=None, plots=True,
                 progress = [float(controller.remaining_path_lengths(next_position).mean())]
     except ValueError as error:
         failure_reason = str(error)
+        failure_diagnosis = getattr(error,'diagnosis',None)
         termination = _status_from_error(error, failure_stage)
 
     trajectory = np.asarray(positions) if positions else np.empty((0, 0, 2))
@@ -315,6 +386,7 @@ def experiment(config_path, output, seed=None, plots=True,
         'fixed_n': fixed_n, 'seed': seed_value,
         'termination_status': termination, 'motion_status': motion_status,
         'failure_reason': failure_reason, 'failure_stage': failure_stage,
+        'failure_diagnosis':failure_diagnosis,
         'success': success, 'criteria': criteria,
         # Stage diagnostics (schema 1.2.0). Statuses and thresholds are unchanged.
         'stage_diagnosis': diagnose_stages(termination, failure_stage, feasibility,
@@ -363,9 +435,17 @@ def experiment(config_path, output, seed=None, plots=True,
         'safety_diagnostics': safety_log,
         'fallback_count': sum(item['fallback_used'] for item in safety_log),
         'replan_count': 0 if controller is None else controller.replans,
+        'recovery_attempts': [] if controller is None else controller.recovery_attempts,
+        'coordination': None if controller is None else getattr(controller, 'coordination', None),
+        'segment_disagreement_count': 0 if controller is None else int(getattr(controller, 'segment_disagreement_count', 0)),
+        'segment_disagreements': [] if controller is None else list(getattr(controller, 'segment_audits', [])),
+        'vertex_arrival_events': [] if controller is None else list(getattr(controller, 'vertex_arrivals', [])),
+        'initial_navigation_wall_seconds':(None if controller is None else getattr(controller,'initial_navigation_wall_seconds',None)),
         'planning_margin_connections': ([] if controller is None
                                         else list(getattr(controller, 'margin_connections', []))),
         'deadlock_events': deadlocks,
+        'diagnostic_priority_stall_counterfactual': priority_stall_counterfactual,
+        'priority_stall_suppressed_events': priority_stall_suppressed,
         'crowd_static': (False if env is None or observation is None else bool(
             np.array_equal(observation.positions, env.observe().positions)
         )),

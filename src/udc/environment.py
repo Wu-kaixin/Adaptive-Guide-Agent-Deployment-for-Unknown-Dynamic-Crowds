@@ -105,6 +105,12 @@ class Environment:
             raise ValueError('dt must be finite and positive')
 
     def initialize_guides(self, config):
+        if 'initial_positions' in config:
+            positions = np.asarray(config['initial_positions'], dtype=float)
+            if positions.shape != (config['count'], 2) or not np.isfinite(positions).all():
+                raise ValueError('INITIALIZATION_INVALID: guide snapshot must be finite (count, 2)')
+            # The runner applies the unchanged human/guide/wall safety checks.
+            return np.array(positions, copy=True)
         inset = config['initial_inset']
         if 2*inset >= min(self.scene.width, self.scene.height):
             raise ValueError('Guide initialization inset is too large')

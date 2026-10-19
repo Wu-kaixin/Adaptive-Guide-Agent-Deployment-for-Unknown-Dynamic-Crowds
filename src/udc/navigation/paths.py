@@ -2,6 +2,7 @@
 from dataclasses import dataclass
 import hashlib
 import heapq
+import weakref
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
@@ -22,6 +23,29 @@ BOUNDARY_NODE_NUDGE_M = 1e-8
 # GEOS can report a boundary point as outside by a fraction of a nanometre.
 # This is not a safety distance and it does not admit the planning-margin shell.
 ENDPOINT_TOLERANCE_M = 1e-7
+
+
+class NavigationFailure(ValueError):
+    """Expected query failure with evidence, never an unqualified no-path proof."""
+    def __init__(self, kind, message, **evidence):
+        super().__init__('PATH_UNREACHABLE: '+message)
+        self.diagnosis={'kind':kind,**evidence}
+
+
+def _component(geometry, point):
+    parts=[geometry] if geometry.geom_type=='Polygon' else getattr(geometry,'geoms',[])
+    for index,part in enumerate(parts):
+        if part.geom_type=='Polygon' and part.covers(Point(point)):
+            return index
+    return None
+
+
+def _occupation(guides, point, exclude, radius):
+    if radius is None:
+        return []
+    return [{'guide':int(i),'center_distance_m':float(np.linalg.norm(g-point)),
+             'threshold_m':float(radius)} for i,g in enumerate(guides)
+            if i!=exclude and np.linalg.norm(g-point)<radius]
 
 
 @dataclass(frozen=True)
@@ -131,21 +155,38 @@ def _other_guide_space(domain, guides, index, radius):
     return free, nodes
 
 
-def _shortest(start, target, free, obstacle, extra_nodes=()):
+def _visibility_graph(free, obstacle, extra_nodes=()):
+    """Build static edges once for all guide–target queries on this exact domain."""
+    nodes=[]
+    if obstacle is not None and not obstacle.is_empty and obstacle.geom_type == 'Polygon':
+        nodes.extend(np.asarray(p) for p in obstacle.exterior.coords[:-1])
+    nodes.extend(np.asarray(point, dtype=float) for point in extra_nodes)
+    edges=[[] for _ in nodes]
+    for i in range(len(nodes)):
+        for j in range(i):
+            segment=LineString([nodes[i],nodes[j]])
+            if free.covers(segment) and (obstacle is None or not segment.crosses(obstacle)):
+                length=float(np.linalg.norm(nodes[i]-nodes[j]))
+                edges[i].append((j,length)); edges[j].append((i,length))
+    return nodes,edges
+
+
+def _shortest(start, target, free, obstacle, extra_nodes=(), graph=None):
     direct = LineString([start, target])
     if free.covers(direct) and (obstacle is None or not direct.crosses(obstacle)):
         return np.asarray([start, target], dtype=float), float(direct.length)
-    nodes = [np.asarray(start), np.asarray(target)]
-    if obstacle is not None and not obstacle.is_empty and obstacle.geom_type == 'Polygon':
-        coords = list(obstacle.exterior.coords[:-1])
-        nodes += [np.asarray(p) for p in coords]
-    nodes.extend(np.asarray(point, dtype=float) for point in extra_nodes)
+    base_nodes,base_edges=(_visibility_graph(free,obstacle,extra_nodes) if graph is None else graph)
+    nodes = [np.asarray(start), np.asarray(target), *base_nodes]
     n = len(nodes); edges = [[] for _ in nodes]
-    for i in range(n):
-        for j in range(i):
-            segment = LineString([nodes[i], nodes[j]])
+    for i,neighbors in enumerate(base_edges):
+        edges[i+2]=[(j+2,length) for j,length in neighbors]
+    for i in range(2,n):
+        for j in (0,1):
+            segment=LineString([nodes[i],nodes[j]])
             if free.covers(segment) and (obstacle is None or not segment.crosses(obstacle)):
-                d = float(np.linalg.norm(nodes[i]-nodes[j])); edges[i].append((j,d)); edges[j].append((i,d))
+                d=float(np.linalg.norm(nodes[i]-nodes[j])); edges[i].append((j,d)); edges[j].append((i,d))
+    for neighbors in edges:
+        neighbors.sort(key=lambda edge:edge[0])
     dist=[float('inf')]*n; prev=[-1]*n; dist[0]=0.; queue=[(0.,0)]
     while queue:
         d,u=heapq.heappop(queue)
@@ -161,8 +202,10 @@ def _shortest(start, target, free, obstacle, extra_nodes=()):
 def _prepare_start(point, domain, guides=None, guide=None, people=None, limits=None, room=None):
     """Return the visibility-graph start and an optional true-state prefix.
 
-    A point on the numerical boundary is not passed into the graph. A point in
-    the planning shell is connected only when the physical segment check passes.
+    A point ``free.covers`` rejects but that lies on the boundary sample is
+    connected through the existing 1e-8 m planner node. The executed state stays
+    at ``point``. A point in the planning shell is connected only when the
+    physical segment check passes.
     """
     point = np.asarray(point, dtype=float)
     if domain.free.covers(Point(point)):
@@ -179,15 +222,20 @@ def _prepare_start(point, domain, guides=None, guide=None, people=None, limits=N
         clearances = path_clearances(np.asarray(guides, dtype=float), end, np.asarray(people, dtype=float), np.asarray(room, dtype=float))
         if not is_safe(clearances, limits):
             return None
-    if np.linalg.norm(contact - point) <= 1e-12:
-        return contact, None
-    return contact, point
+    # A covered sample a few ulps from the true state is a planner node only.
+    # The executed path still begins at ``point``; dropping it makes installation
+    # reject an otherwise valid route.
+    if float(np.linalg.norm(contact - point)) <= 1e-15:
+        return np.asarray(point, dtype=float), None
+    return contact, np.asarray(point, dtype=float)
 
 
 def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd_margin,
                         people=None, limits=None):
     domain = navigation_domain(room, wall_margin, crowd_polygon, crowd_margin)
     free, obstacle = domain.free, domain.conservative_obstacle
+    # Call-local reuse: geometry changes cannot accidentally reuse stale edges.
+    graph = _visibility_graph(free, obstacle)
     paths={}; cost=np.full((len(guides),len(targets)), np.inf)
     guides = np.asarray(guides, dtype=float)
     for i,g in enumerate(guides):
@@ -202,7 +250,7 @@ def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd
             planner_target = target_ready[0]
             # Pairwise assignment keeps the crowd-only graph. Other guides are
             # excluded from that graph; an assigned replan adds them one guide at a time.
-            path, length = _shortest(planner_start, planner_target, free, obstacle)
+            path, length = _shortest(planner_start, planner_target, free, obstacle, graph=graph)
             if path is None:
                 continue
             if prefix is not None:
@@ -222,8 +270,13 @@ def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd
     return NavigationResult(assignment,ordered,cost[rows,cols],finite)
 
 
-def segment_in_free(start, end, domain):
-    """True when the segment stays in free space, including the boundary tolerance."""
+def segment_in_free_sampled(start, end, domain):
+    """Historical five-sample predicate.
+
+    Retained so a penetrating chord can be shown to pass the old test, and so
+    the vertex-arrival ablation can run without the complete check. It is not
+    the predicate used for control.
+    """
     start = np.asarray(start, dtype=float)
     end = np.asarray(end, dtype=float)
     if domain.free.covers(LineString([start, end])):
@@ -237,20 +290,230 @@ def segment_in_free(start, end, domain):
     return True
 
 
+_EDGE_CACHE = weakref.WeakKeyDictionary()
+
+
+def _boundary_edges(obstacle):
+    """Edge endpoints of a polygonal obstacle, including holes. No buffer."""
+    if obstacle is None or obstacle.is_empty:
+        return np.zeros((0, 2)), np.zeros((0, 2))
+    polygons = []
+    if obstacle.geom_type == 'Polygon':
+        polygons = [obstacle]
+    elif obstacle.geom_type == 'MultiPolygon':
+        polygons = list(obstacle.geoms)
+    else:
+        polygons = [piece for piece in getattr(obstacle, 'geoms', []) if piece.geom_type == 'Polygon']
+    starts, ends = [], []
+    for polygon in polygons:
+        for ring in (polygon.exterior, *list(polygon.interiors)):
+            coords = np.asarray(ring.coords, dtype=float)
+            for first, second in zip(coords[:-1], coords[1:]):
+                if float(np.linalg.norm(second - first)) > 1e-15:
+                    starts.append(first)
+                    ends.append(second)
+    if not starts:
+        return np.zeros((0, 2)), np.zeros((0, 2))
+    return np.asarray(starts, dtype=float), np.asarray(ends, dtype=float)
+
+
+def _obstacle_edges(domain):
+    """Reuse one domain's boundary edges across steps. This is not a visibility graph."""
+    try:
+        cached = _EDGE_CACHE.get(domain)
+    except TypeError:
+        cached = None
+    if cached is None:
+        cached = _boundary_edges(domain.conservative_obstacle)
+        try:
+            _EDGE_CACHE[domain] = cached
+        except TypeError:
+            pass
+    return cached
+
+
+def _point_edge_distances(point, starts, ends):
+    if len(starts) == 0:
+        return np.zeros(0)
+    point = np.asarray(point, dtype=float)
+    edges = ends - starts
+    length2 = np.sum(edges * edges, axis=1)
+    scale = np.clip(np.sum((point - starts) * edges, axis=1) / np.maximum(length2, 1e-30), 0.0, 1.0)
+    closest = starts + scale[:, None] * edges
+    return np.linalg.norm(closest - point, axis=1)
+
+
+def _flatten_intersection(geometry):
+    if geometry.is_empty:
+        return
+    kind = geometry.geom_type
+    if kind in ('Point', 'LineString', 'Polygon'):
+        yield geometry
+        return
+    for piece in getattr(geometry, 'geoms', ()):
+        yield from _flatten_intersection(piece)
+
+
+def _portion_within_tolerance(start, end, starts, ends, tolerance):
+    """Whether every point of a straight piece inside the obstacle is within tolerance.
+
+    Distance to one edge is convex, so an edge that covers both endpoints covers
+    the piece. Otherwise the 1-Lipschitz bound or bisection certifies the claim.
+    ``witness`` is a lower bound on the deepest point found.
+    """
+    stack = [(np.asarray(start, dtype=float), np.asarray(end, dtype=float))]
+    witness = 0.0
+    visits = 0
+    while stack:
+        first, second = stack.pop()
+        distance_first = _point_edge_distances(first, starts, ends)
+        distance_second = _point_edge_distances(second, starts, ends)
+        if len(distance_first) == 0:
+            return False, np.inf
+        pen_first = float(distance_first.min())
+        pen_second = float(distance_second.min())
+        witness = max(witness, pen_first, pen_second)
+        if pen_first > tolerance or pen_second > tolerance:
+            return False, witness
+        if np.any((distance_first <= tolerance) & (distance_second <= tolerance)):
+            continue
+        length = float(np.linalg.norm(second - first))
+        if (pen_first + pen_second + length) / 2.0 <= tolerance:
+            continue
+        midpoint = (first + second) * 0.5
+        pen_mid = float(_point_edge_distances(midpoint, starts, ends).min())
+        witness = max(witness, pen_mid)
+        if pen_mid > tolerance:
+            return False, witness
+        visits += 1
+        if visits > 8192:
+            return False, max(witness, tolerance + length / 2.0)
+        stack.append((first, midpoint))
+        stack.append((midpoint, second))
+    return True, witness
+
+
+def _penetration_within_tolerance(segment, domain):
+    """Complete tolerance test for a segment already known to lie in physical free space."""
+    inside = segment.intersection(domain.conservative_obstacle)
+    if inside.is_empty:
+        return True, 0.0
+    starts, ends = _obstacle_edges(domain)
+    witness = 0.0
+    for piece in _flatten_intersection(inside):
+        if piece.geom_type == 'Point':
+            pen = float(_point_edge_distances(np.asarray(piece.coords[0]), starts, ends).min()) if len(starts) else np.inf
+            witness = max(witness, pen)
+            if pen > ENDPOINT_TOLERANCE_M:
+                return False, witness
+        elif piece.geom_type == 'LineString':
+            coords = np.asarray(piece.coords, dtype=float)
+            for first, second in zip(coords[:-1], coords[1:]):
+                accepted, pen = _portion_within_tolerance(first, second, starts, ends, ENDPOINT_TOLERANCE_M)
+                witness = max(witness, pen)
+                if not accepted:
+                    return False, witness
+        else:
+            return False, np.inf
+    return True, witness
+
+
+def segment_in_free(start, end, domain, audit=None):
+    """True when the whole segment stays in free space, up to the existing 1e-7 m tolerance.
+
+    ``free.covers`` accepts a segment on the boundary. A segment that leaves
+    physical free space is rejected. The remaining case is contact with the
+    conservative obstacle: the old five-point sample is not used. No extra
+    free-space buffer is added. ``audit``, when callable, receives disagreements
+    with the five-point predicate and does not change the returned decision.
+    """
+    start = np.asarray(start, dtype=float)
+    end = np.asarray(end, dtype=float)
+    segment = LineString([start, end])
+    if domain.free.covers(segment):
+        return True
+    if not domain.physical_free.covers(segment):
+        return False
+    accepted, witness = _penetration_within_tolerance(segment, domain)
+    if audit is not None:
+        sampled = segment_in_free_sampled(start, end, domain)
+        if bool(sampled) != bool(accepted):
+            worst_sample = 0.0
+            for fraction in (0.0, 0.25, 0.5, 0.75, 1.0):
+                sample = (1.0 - fraction) * start + fraction * end
+                worst_sample = max(worst_sample, max(0.0, -float(domain.signed_free_distance(sample))))
+            if sampled and not accepted:
+                reason = 'five_samples_within_tolerance_but_segment_penetrates'
+            else:
+                reason = 'sample_deeper_than_tolerance_but_segment_within_tolerance'
+            audit({
+                'start': start.tolist(), 'end': end.tolist(),
+                'sampled': bool(sampled), 'complete': bool(accepted),
+                'sample_penetration_m': float(worst_sample),
+                'witness_penetration_m': None if not np.isfinite(witness) else float(witness),
+                'tolerance_m': ENDPOINT_TOLERANCE_M,
+                'reason': reason,
+            })
+    return bool(accepted)
+
+
+def _outward_free_direction(nearest, domain):
+    """Unit step from an obstacle-boundary sample into conservative free space.
+
+    Used only when the guide is already numerically on that sample, so the
+    vector from the guide to the sample has no direction. The executed state
+    is not moved.
+    """
+    boundary = domain.conservative_obstacle.boundary
+    pieces = [boundary] if boundary.geom_type == 'LineString' else list(getattr(boundary, 'geoms', []))
+    nearest = np.asarray(nearest, dtype=float)
+    best = None
+    best_distance = np.inf
+    for piece in pieces:
+        coords = np.asarray(piece.coords, dtype=float)
+        for start, end in zip(coords[:-1], coords[1:]):
+            edge = end - start
+            length = float(np.linalg.norm(edge))
+            if length <= 1e-12:
+                continue
+            tangent = edge / length
+            projected = float(np.clip(np.dot(nearest - start, tangent), 0.0, length))
+            closest = start + projected * tangent
+            distance = float(np.linalg.norm(closest - nearest))
+            if distance < best_distance:
+                best_distance = distance
+                best = np.array([tangent[1], -tangent[0]], dtype=float)
+    if best is None:
+        return None
+    if domain.conservative_obstacle.covers(Point(nearest + 1e-4 * best)):
+        best = -best
+    norm = float(np.linalg.norm(best))
+    if norm <= 1e-15:
+        return None
+    return best / norm
+
+
 def _boundary_node(point, domain):
     """Closest conservative-obstacle boundary sample that free space accepts.
 
     The sample is a planner node. The guide state stays at ``point``.
+    A sample that coincides with ``point`` is stepped 1e-8 m into free space;
+    ``free.covers`` can reject that exact boundary coordinate.
     """
     boundary = domain.conservative_obstacle.boundary
     nearest = np.asarray(boundary.interpolate(boundary.project(Point(point))).coords[0], dtype=float)
     if domain.free.covers(Point(nearest)):
         return nearest
-    direction = nearest - np.asarray(point, dtype=float)
+    point = np.asarray(point, dtype=float)
+    direction = nearest - point
     length = float(np.linalg.norm(direction))
     if length <= 1e-15:
-        return None
-    nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction / length
+        direction = _outward_free_direction(nearest, domain)
+        if direction is None:
+            return None
+        nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction
+    else:
+        nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction / length
     if domain.free.covers(Point(nudged)) and domain.physical_free.covers(LineString([point, nudged])):
         return nudged
     return None
@@ -293,32 +556,60 @@ def route_assigned(guides, targets, assignment, room, wall_margin,
         target = int(assignment[guide])
         start = guides[guide]
         if target >= len(targets):
-            raise ValueError('PATH_UNREACHABLE: assigned endpoint is outside conservative free space')
+            raise NavigationFailure('static_endpoint_invalid','assigned endpoint is outside conservative free space',
+                                    guide=int(guide),target=target,query_domain='static')
         target_ready = _prepare_start(targets[target], domain)
         prepared = _prepare_start(start, domain, guides, guide, people, limits, room)
         if target_ready is None or prepared is None:
             found = None if target_ready is None else _margin_contact(start, domain)
             checked = found is not None and found[1] > ENDPOINT_TOLERANCE_M and people is not None and limits is not None
             if checked:
-                raise ValueError(
-                    'PATH_UNREACHABLE: planning-margin connection fails physical clearance '
-                    f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
+                raise NavigationFailure(
+                    'unsafe_connection','planning-margin connection fails physical clearance '
+                    f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})',
+                    guide=int(guide),target=target,query_domain='static',
                 )
-            raise ValueError(
-                'PATH_UNREACHABLE: assigned endpoint is outside conservative free space '
-                f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
+            raise NavigationFailure(
+                'static_endpoint_invalid','assigned endpoint is outside conservative free space '
+                f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})',
+                guide=int(guide),target=target,query_domain='static',
+                start=start.tolist(),end=np.asarray(targets[target]).tolist(),
+                start_signed_m=domain.signed_free_distance(start),
+                target_signed_m=domain.signed_free_distance(targets[target]),
             )
         planner_start, prefix = prepared
+        static_components=[domain.component_index(planner_start),domain.component_index(target_ready[0])]
+        if static_components[0]!=static_components[1]:
+            raise NavigationFailure('static_components_disconnected',
+                'assigned endpoints belong to different static planning components',
+                guide=int(guide),target=target,query_domain='static',components=static_components,
+                geometry_sha256=domain.geometry_sha256,proof_scope='current conservative planning domain only')
         guide_radius = None if limits is None else limits.guide_distance
         free_i, extra = _other_guide_space(domain, guides, int(guide), guide_radius)
         if not _within_free(free_i, planner_start):
-            raise ValueError(
-                'PATH_UNREACHABLE: assigned endpoint is outside conservative free space '
-                f'(guide {int(guide)} signed_distance={domain.signed_free_distance(start):.6g})'
+            raise NavigationFailure(
+                'current_guide_occupation','assigned start is currently occupied by other guides',
+                guide=int(guide),target=target,query_domain='static_with_current_guides',endpoint='start',
+                occupants=_occupation(guides,planner_start,guide,guide_radius),release_guaranteed=False,
             )
+        if not _within_free(free_i, target_ready[0]):
+            raise NavigationFailure(
+                'current_guide_occupation','assigned target temporarily occupied by other guides '
+                f'(guide {int(guide)} target {target})',
+                guide=int(guide),target=target,query_domain='static_with_current_guides',endpoint='target',
+                occupants=_occupation(guides,target_ready[0],guide,guide_radius),release_guaranteed=False,
+            )
+        dynamic_components=[_component(free_i,planner_start),_component(free_i,target_ready[0])]
+        if dynamic_components[0] is not None and dynamic_components[1] is not None and dynamic_components[0]!=dynamic_components[1]:
+            raise NavigationFailure('current_guide_barrier',
+                'current guide obstacles separate assigned endpoints in the temporary domain',
+                guide=int(guide),target=target,query_domain='static_with_current_guides',
+                components=dynamic_components,release_guaranteed=False)
         path, length = _shortest(planner_start, target_ready[0], free_i, obstacle, extra)
         if path is None:
-            raise ValueError('PATH_UNREACHABLE: assigned guide-target path does not exist')
+            raise NavigationFailure('search_not_found','assigned path search found no route in current conservative free space',
+                                    guide=int(guide),target=target,query_domain='static_with_current_guides' if limits else 'static',
+                                    infeasibility_proven=False)
         if prefix is not None:
             path = np.vstack([prefix, path])
             length = float(length + np.linalg.norm(path[1] - path[0]))

@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "b6c9e0df0e6491a7ac38cdda85a0012092193271",
+  "candidate": "complete_segment_and_vertex_arrival",
+  "thresholds_unchanged": true,
+  "ablation": {
+    "new_executions": 12,
+    "baseline_reused": "runs/step1_nonconvex_confirmation_v2/execution_progress",
+    "wall_s": 15.128,
+    "elongated_pairwise_coordinate_identical": ["segment", "vertex", "both"]
+  },
+  "rates": {
+    "all_tasks_success": 48,
+    "all_tasks": 90,
+    "valid_input_success": 48,
+    "valid_input_tasks": 63,
+    "initialization_invalid_retained": 27,
+    "path_unreachable": 6,
+    "replan_exhausted": 9,
+    "previous_all_tasks_success": 60,
+    "previous_valid_input_success": 60
+  },
+  "regression": {
+    "executed": 73,
+    "breakdown": "63 v2 valid tasks + 9 saved scene-closure cases + 1 wide-U seed 22",
+    "workers": 2,
+    "numeric_threads_per_worker": 1,
+    "wall_s": 84.743,
+    "offline_mismatches": 0,
+    "targets_changed": 0,
+    "previous_successes_now_failed": 12,
+    "previous_successes_coordinate_identical": 39,
+    "previous_successes_changed_but_passed": 9,
+    "original_three_failures_resolved": 0,
+    "nine_case_success": "6/9; wide U equal_arc, projected_mass and pairwise_euclidean exhausted at 31.1 s",
+    "seed22": "REPLAN_EXHAUSTED at 29.0 s, previously SUCCESS at 33.7 s"
+  },
+  "tests": {"pytest": "115 passed", "pytest_s": 26.39, "pip_check": "No broken requirements found"},
+  "chord_counterexample_m": {
+    "length": 13.945327399267153,
+    "sample_penetration": 0.0,
+    "obstacle_intersection_length": 0.6912840040444613,
+    "signed_distance_penetration": 0.08073041875424938
+  }
+}

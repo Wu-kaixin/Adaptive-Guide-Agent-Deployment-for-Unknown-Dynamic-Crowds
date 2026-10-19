@@ -1,0 +1,1846 @@
+{
+  "scope": "Frozen evidence only; no counterfactual reruns or proof of physical infeasibility",
+  "failures": [
+    {
+      "task_id": "elongated__seed_30__pairwise_euclidean",
+      "input_sha256": "390c1a47d996d9167b738fcad6353dde78bbde069d8a450007258a2370123d51",
+      "target_sha256": "b22222d04bbd7220710046a512b91fc6aa4490c45792099a175ea1730a51190b",
+      "status": "REPLAN_EXHAUSTED",
+      "simulation_time_s": 28.3,
+      "failure_reason": "Progress stalled and the finite recovery budget was exhausted",
+      "classification": "execution_stall_budget_exhausted",
+      "static_geometry_sha256": "ccfa950ddc5e2eb26b25d7c9054b460979705021338e9e249b6ad08491e75354",
+      "geometry_parameters": {
+        "wall_margin_m": 0.55,
+        "crowd_margin_m": 0.55,
+        "simplify_tolerance_m": 0.1,
+        "planning_margin_m": 0.11
+      },
+      "conservative_free_space": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.55,
+              29.45
+            ],
+            [
+              29.45,
+              29.45
+            ],
+            [
+              29.45,
+              0.55
+            ],
+            [
+              0.55,
+              0.55
+            ],
+            [
+              0.55,
+              29.45
+            ]
+          ],
+          [
+            [
+              11.446463531491302,
+              13.672466900964233
+            ],
+            [
+              11.65177171084972,
+              11.86900424043757
+            ],
+            [
+              12.239185665257585,
+              13.560492786974953
+            ],
+            [
+              12.331827813509213,
+              13.602141946281119
+            ],
+            [
+              12.698368371865191,
+              13.503734063299051
+            ],
+            [
+              13.071348030591652,
+              13.610285388778513
+            ],
+            [
+              13.411091957862165,
+              13.360400817582514
+            ],
+            [
+              13.722931067034983,
+              13.60376244696053
+            ],
+            [
+              17.002639261901304,
+              13.468526710748225
+            ],
+            [
+              17.51962953980917,
+              13.713044901676932
+            ],
+            [
+              17.765483034262203,
+              14.232858441680396
+            ],
+            [
+              17.656747660795084,
+              15.38149340080787
+            ],
+            [
+              17.10812533886092,
+              15.903825272935974
+            ],
+            [
+              15.458127127950362,
+              15.960466251662092
+            ],
+            [
+              14.53373128490011,
+              15.818277420007139
+            ],
+            [
+              13.369597071151624,
+              16.005167118417507
+            ],
+            [
+              12.540402779409636,
+              15.840767249121274
+            ],
+            [
+              12.497363297089818,
+              15.872125867978374
+            ],
+            [
+              12.294469814536274,
+              17.654377412914346
+            ],
+            [
+              11.700232127473065,
+              15.943239578945953
+            ],
+            [
+              11.2027304665542,
+              15.468806193978972
+            ],
+            [
+              11.076351549483483,
+              14.22019604401759
+            ],
+            [
+              11.446463531491302,
+              13.672466900964233
+            ]
+          ]
+        ]
+      },
+      "first_frame_outside_static_domain_beyond_tolerance": null,
+      "first_interval_outside_static_domain_plus_tolerance": null,
+      "min_signed_static_distance_m": -4.0478423265956956e-08,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "current_occupations_final": [],
+      "targets_unchanged": true,
+      "assignment_changes": 0,
+      "recovery_events": [
+        {
+          "frame": 181,
+          "time_s": 18.1,
+          "strategy": "path_recompute",
+          "classification": "verified_path_set_installed",
+          "query_domain": "static_with_current_guides",
+          "query_succeeded": true,
+          "validation_succeeded": true,
+          "installation_succeeded": true,
+          "budget_consumed": 1,
+          "budget_remaining": 2,
+          "query_wall_seconds": 0.08158369996817783,
+          "validation_wall_seconds": 0.0006505000055767596,
+          "wall_seconds": 0.08247069997014478,
+          "before": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "2b9c347ff1beb7b8267dea7948431e36848f6e6860e4eebdd2c86214bdeb0718"
+          },
+          "after": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "f1db380e3aaddd9a7c5656f7c662554d68598cbdae94cbbd81b830c3b2c148b2"
+          }
+        },
+        {
+          "frame": 222,
+          "time_s": 22.200000000000003,
+          "strategy": "reachable_reassignment",
+          "classification": "verified_path_set_installed",
+          "query_domain": "static",
+          "query_succeeded": true,
+          "validation_succeeded": true,
+          "installation_succeeded": true,
+          "budget_consumed": 2,
+          "budget_remaining": 1,
+          "query_wall_seconds": 0.05106920003890991,
+          "validation_wall_seconds": 0.0010510999709367752,
+          "wall_seconds": 0.0524291000328958,
+          "before": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "f1db380e3aaddd9a7c5656f7c662554d68598cbdae94cbbd81b830c3b2c148b2"
+          },
+          "after": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "475cfe61bd8eae52e5773adab9cff6c9d78b521374720627a7a49c5af1be2a16"
+          }
+        },
+        {
+          "frame": 263,
+          "time_s": 26.3,
+          "strategy": "priority_yield",
+          "classification": "priority_yield",
+          "query_domain": "installed_paths",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.00026729999808594584,
+          "before": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "475cfe61bd8eae52e5773adab9cff6c9d78b521374720627a7a49c5af1be2a16"
+          },
+          "after": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "475cfe61bd8eae52e5773adab9cff6c9d78b521374720627a7a49c5af1be2a16"
+          }
+        },
+        {
+          "frame": 283,
+          "time_s": 28.3,
+          "strategy": "none",
+          "classification": "budget_exhausted",
+          "query_domain": "not_queried",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 9.859999408945441e-05,
+          "before": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "475cfe61bd8eae52e5773adab9cff6c9d78b521374720627a7a49c5af1be2a16"
+          },
+          "after": {
+            "targets_sha256": "697755406a12cd68c13034f1b32469521888022d22a71e79f9a6054e969c406c",
+            "assignment_sha256": "35489abac9878a29fb86cf6a0f0fbb801a8c742dce6312c71e674c0b92559850",
+            "paths_sha256": "475cfe61bd8eae52e5773adab9cff6c9d78b521374720627a7a49c5af1be2a16"
+          }
+        }
+      ],
+      "final_safety": {
+        "status": "SOLVED",
+        "residual": 3.528188823885985e-17,
+        "iterations": 1,
+        "correction_norm": 0.999977578709801,
+        "min_predicted_clearance": 1.134993712687459,
+        "solve_time": 0.0017636999837122858,
+        "fallback_used": false
+      },
+      "guides": [
+        {
+          "guide": 0,
+          "actual": [
+            11.544950795857446,
+            12.80733768703419
+          ],
+          "target_id": 1,
+          "target": [
+            12.341535524483954,
+            12.902754932623914
+          ],
+          "target_error_m": 0.8022790540933352,
+          "installed_path": [
+            [
+              11.551992172337473,
+              12.745485023478741
+            ],
+            [
+              11.55199216140681,
+              12.7454850222344
+            ],
+            [
+              11.65177171084972,
+              11.86900424043757
+            ],
+            [
+              12.341535524483954,
+              12.902754932623914
+            ]
+          ],
+          "waypoint_index": 3,
+          "waypoint_distance_m": 0.8022790540933352,
+          "actual_signed_static_m": -7.492781342136095e-16,
+          "target_component": 0,
+          "current_to_waypoint_clear": false,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.9928026993691244,
+            0.11976143004064288
+          ],
+          "last_safe": [
+            -0.0007574358479512933,
+            0.006653447874296253
+          ],
+          "waypoint_transitions_after_last_install": [
+            {
+              "interval": 222,
+              "time_s": 22.200000000000003,
+              "from": 1,
+              "to": 2,
+              "actual": [
+                11.551992172337473,
+                12.745485023478741
+              ],
+              "segment_to_selected_waypoint_clear": true
+            },
+            {
+              "interval": 241,
+              "time_s": 24.1,
+              "from": 2,
+              "to": 3,
+              "actual": [
+                11.64688253647245,
+                11.911951517608324
+              ],
+              "segment_to_selected_waypoint_clear": true
+            }
+          ],
+          "first_unclear_current_to_waypoint_interval_after_last_install": 244
+        }
+      ]
+    },
+    {
+      "task_id": "wide_u__seed_30__equal_arc",
+      "input_sha256": "d22615f33d4475d02d00abc8d85ae2efd5dc5e83f9c4ce9baf00d050727c0f6c",
+      "target_sha256": "6c7a3aab29581f73cc014d9a5eb0c0aeae34ed47b46eadab1de2eb3ba4778d16",
+      "status": "REPLAN_EXHAUSTED",
+      "simulation_time_s": 26.8,
+      "failure_reason": "Progress stalled and the finite recovery budget was exhausted",
+      "classification": "execution_stall_budget_exhausted",
+      "static_geometry_sha256": "41565c13bd6186209a7cbd328ee4bf1b989518e66beb016e7401059566ff7106",
+      "geometry_parameters": {
+        "wall_margin_m": 0.55,
+        "crowd_margin_m": 0.55,
+        "simplify_tolerance_m": 0.1,
+        "planning_margin_m": 0.11
+      },
+      "conservative_free_space": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.55,
+              29.45
+            ],
+            [
+              29.45,
+              29.45
+            ],
+            [
+              29.45,
+              0.55
+            ],
+            [
+              0.55,
+              0.55
+            ],
+            [
+              0.55,
+              29.45
+            ]
+          ],
+          [
+            [
+              10.164287331313089,
+              15.911501926438822
+            ],
+            [
+              10.241313781870243,
+              15.487606199184656
+            ],
+            [
+              10.114076963167,
+              14.227305534817255
+            ],
+            [
+              10.227951214052348,
+              12.430964260006869
+            ],
+            [
+              10.098213055482363,
+              11.956777193736091
+            ],
+            [
+              10.448117359621365,
+              11.302152283973276
+            ],
+            [
+              12.161040378237733,
+              11.088918052498613
+            ],
+            [
+              12.815711943891019,
+              11.23663930854127
+            ],
+            [
+              14.85604980772134,
+              11.101698247953781
+            ],
+            [
+              16.228063093854182,
+              11.249877091786555
+            ],
+            [
+              16.702244510510496,
+              11.566714984894563
+            ],
+            [
+              16.872862766110504,
+              12.083183816041048
+            ],
+            [
+              16.662216237950275,
+              12.753449646388647
+            ],
+            [
+              16.80324533451876,
+              16.4414916065543
+            ],
+            [
+              16.462284503215443,
+              17.079384455497152
+            ],
+            [
+              15.738864966417786,
+              17.223281548170245
+            ],
+            [
+              14.92850981792757,
+              16.708316852698623
+            ],
+            [
+              15.078107847129745,
+              16.25547715502246
+            ],
+            [
+              14.976962080065002,
+              15.887979043786796
+            ],
+            [
+              15.064989497507858,
+              12.905466915018145
+            ],
+            [
+              14.92216084571086,
+              12.810642695092046
+            ],
+            [
+              12.595719244295754,
+              12.929828031268544
+            ],
+            [
+              11.911719190002026,
+              12.801988528114855
+            ],
+            [
+              11.79820066253268,
+              13.992521808206513
+            ],
+            [
+              11.937590493849362,
+              15.340788948660808
+            ],
+            [
+              11.697082246356663,
+              16.72108290009734
+            ],
+            [
+              11.345108089412436,
+              17.129118764195095
+            ],
+            [
+              10.773655957878596,
+              17.242787660522673
+            ],
+            [
+              10.265590182231774,
+              16.971220845643998
+            ],
+            [
+              9.845066890720755,
+              16.24644652783702
+            ],
+            [
+              10.164287331313089,
+              15.911501926438822
+            ]
+          ]
+        ]
+      },
+      "first_frame_outside_static_domain_beyond_tolerance": null,
+      "first_interval_outside_static_domain_plus_tolerance": null,
+      "min_signed_static_distance_m": -1.9032775743650894e-09,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "current_occupations_final": [
+        {
+          "guide": 5,
+          "target": 17,
+          "occupants": [
+            {
+              "guide": 4,
+              "center_distance_m": 0.6333446731732478,
+              "threshold_m": 0.75
+            }
+          ]
+        },
+        {
+          "guide": 7,
+          "target": 12,
+          "occupants": [
+            {
+              "guide": 9,
+              "center_distance_m": 0.5960806718298872,
+              "threshold_m": 0.75
+            }
+          ]
+        }
+      ],
+      "targets_unchanged": true,
+      "assignment_changes": 0,
+      "recovery_events": [
+        {
+          "frame": 228,
+          "time_s": 22.8,
+          "strategy": "path_recompute",
+          "classification": "current_guide_occupation",
+          "query_domain": "static_with_current_guides",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 1,
+          "budget_remaining": 2,
+          "query_wall_seconds": 0.29533280001487583,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.2956935000256635,
+          "before": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "17d462dc64d8ef5a189694e179dd9063f24e2aaa847618d073c0163b5b599f9b"
+          },
+          "after": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "17d462dc64d8ef5a189694e179dd9063f24e2aaa847618d073c0163b5b599f9b"
+          }
+        },
+        {
+          "frame": 228,
+          "time_s": 22.8,
+          "strategy": "reachable_reassignment",
+          "classification": "verified_path_set_installed",
+          "query_domain": "static",
+          "query_succeeded": true,
+          "validation_succeeded": true,
+          "installation_succeeded": true,
+          "budget_consumed": 2,
+          "budget_remaining": 1,
+          "query_wall_seconds": 0.3025492000160739,
+          "validation_wall_seconds": 0.0010774999973364174,
+          "wall_seconds": 0.3040418999735266,
+          "before": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "17d462dc64d8ef5a189694e179dd9063f24e2aaa847618d073c0163b5b599f9b"
+          },
+          "after": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "1af6d25d16c18c46238cf42598d50522eb3b815375e9fb75ce2b7430c800b82b"
+          }
+        },
+        {
+          "frame": 248,
+          "time_s": 24.8,
+          "strategy": "priority_yield",
+          "classification": "priority_yield",
+          "query_domain": "installed_paths",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.0005072999629192054,
+          "before": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "1af6d25d16c18c46238cf42598d50522eb3b815375e9fb75ce2b7430c800b82b"
+          },
+          "after": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "1af6d25d16c18c46238cf42598d50522eb3b815375e9fb75ce2b7430c800b82b"
+          }
+        },
+        {
+          "frame": 268,
+          "time_s": 26.8,
+          "strategy": "none",
+          "classification": "budget_exhausted",
+          "query_domain": "not_queried",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.00014929997269064188,
+          "before": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "1af6d25d16c18c46238cf42598d50522eb3b815375e9fb75ce2b7430c800b82b"
+          },
+          "after": {
+            "targets_sha256": "b9ab1d5fee87973756bedabedd8090ca81bfdbc94d44dc7985a5552c6e7fda48",
+            "assignment_sha256": "5b5175325fe59568b0baa82a9ea1788ac7d8680fd38938ee4161755a5b894fd8",
+            "paths_sha256": "1af6d25d16c18c46238cf42598d50522eb3b815375e9fb75ce2b7430c800b82b"
+          }
+        }
+      ],
+      "final_safety": {
+        "status": "SOLVED",
+        "residual": 5.26273944500812e-10,
+        "iterations": 18,
+        "correction_norm": 0.0013992086286491858,
+        "min_predicted_clearance": 0.7500000100000331,
+        "solve_time": 0.004649799957405776,
+        "fallback_used": false
+      },
+      "guides": [
+        {
+          "guide": 4,
+          "actual": [
+            11.342743653359207,
+            17.129589079309223
+          ],
+          "target_id": 15,
+          "target": [
+            12.474147432590044,
+            14.213414370322717
+          ],
+          "target_error_m": 3.1279625069668526,
+          "installed_path": [
+            [
+              11.305009933383872,
+              17.137094783209868
+            ],
+            [
+              11.305009933408446,
+              17.13709478333341
+            ],
+            [
+              11.345108089412436,
+              17.129118764195095
+            ],
+            [
+              11.697082246356663,
+              16.72108290009734
+            ],
+            [
+              12.474147432590044,
+              14.213414370322717
+            ]
+          ],
+          "waypoint_index": 2,
+          "waypoint_distance_m": 0.0024107580045262538,
+          "actual_signed_static_m": -4.4992269684908584e-10,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": false,
+          "last_nominal": [
+            0.004091243509955156,
+            -0.0008137986282825693
+          ],
+          "last_safe": [
+            0.0036305962007450515,
+            -0.0007221730472708654
+          ],
+          "waypoint_transitions_after_last_install": [
+            {
+              "interval": 228,
+              "time_s": 22.8,
+              "from": 1,
+              "to": 2,
+              "actual": [
+                11.305009933383872,
+                17.137094783209868
+              ],
+              "segment_to_selected_waypoint_clear": true
+            }
+          ],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 5,
+          "actual": [
+            11.741286437987828,
+            17.76493448414678
+          ],
+          "target_id": 17,
+          "target": [
+            11.674854378802129,
+            17.668873736130372
+          ],
+          "target_error_m": 0.11679420275477835,
+          "installed_path": [
+            [
+              11.733237468360315,
+              17.752822964543338
+            ],
+            [
+              11.674854378802129,
+              17.668873736130372
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.11679420275477835,
+          "actual_signed_static_m": 0.7491454555809615,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0007009012968146216,
+            0.0011162127790128884
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 7,
+          "actual": [
+            14.319147137510106,
+            16.621115007019046
+          ],
+          "target_id": 12,
+          "target": [
+            14.469300055101195,
+            16.65495675648722
+          ],
+          "target_error_m": 0.15391933818784168,
+          "installed_path": [
+            [
+              14.31919182890375,
+              16.621164450780917
+            ],
+            [
+              14.469300055101195,
+              16.65495675648722
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.15391933818784168,
+          "actual_signed_static_m": 0.6155704981360629,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0,
+            0.0
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 9,
+          "actual": [
+            15.050792347890049,
+            16.786024985880662
+          ],
+          "target_id": 13,
+          "target": [
+            14.401111574500758,
+            14.805806086791476
+          ],
+          "target_error_m": 2.0840710150140507,
+          "installed_path": [
+            [
+              15.05084118790407,
+              16.786056022675588
+            ],
+            [
+              15.050841182509162,
+              16.786056031165167
+            ],
+            [
+              14.92850981792757,
+              16.708316852698623
+            ],
+            [
+              14.401111574500758,
+              14.805806086791476
+            ]
+          ],
+          "waypoint_index": 2,
+          "waypoint_distance_m": 0.14488468206357152,
+          "actual_signed_static_m": 1.0985008132304738e-15,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": true,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0,
+            0.0
+          ],
+          "waypoint_transitions_after_last_install": [
+            {
+              "interval": 228,
+              "time_s": 22.8,
+              "from": 1,
+              "to": 2,
+              "actual": [
+                15.05084118790407,
+                16.786056022675588
+              ],
+              "segment_to_selected_waypoint_clear": true
+            }
+          ],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        }
+      ]
+    },
+    {
+      "task_id": "wide_u__seed_30__projected_mass",
+      "input_sha256": "d22615f33d4475d02d00abc8d85ae2efd5dc5e83f9c4ce9baf00d050727c0f6c",
+      "target_sha256": "468ab47a9c5cc78fe33bd13bc7593c0812a9fb69338813b3063885aeed659eec",
+      "status": "REPLAN_EXHAUSTED",
+      "simulation_time_s": 30.3,
+      "failure_reason": "Progress stalled and the finite recovery budget was exhausted",
+      "classification": "execution_stall_budget_exhausted",
+      "static_geometry_sha256": "41565c13bd6186209a7cbd328ee4bf1b989518e66beb016e7401059566ff7106",
+      "geometry_parameters": {
+        "wall_margin_m": 0.55,
+        "crowd_margin_m": 0.55,
+        "simplify_tolerance_m": 0.1,
+        "planning_margin_m": 0.11
+      },
+      "conservative_free_space": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.55,
+              29.45
+            ],
+            [
+              29.45,
+              29.45
+            ],
+            [
+              29.45,
+              0.55
+            ],
+            [
+              0.55,
+              0.55
+            ],
+            [
+              0.55,
+              29.45
+            ]
+          ],
+          [
+            [
+              10.164287331313089,
+              15.911501926438822
+            ],
+            [
+              10.241313781870243,
+              15.487606199184656
+            ],
+            [
+              10.114076963167,
+              14.227305534817255
+            ],
+            [
+              10.227951214052348,
+              12.430964260006869
+            ],
+            [
+              10.098213055482363,
+              11.956777193736091
+            ],
+            [
+              10.448117359621365,
+              11.302152283973276
+            ],
+            [
+              12.161040378237733,
+              11.088918052498613
+            ],
+            [
+              12.815711943891019,
+              11.23663930854127
+            ],
+            [
+              14.85604980772134,
+              11.101698247953781
+            ],
+            [
+              16.228063093854182,
+              11.249877091786555
+            ],
+            [
+              16.702244510510496,
+              11.566714984894563
+            ],
+            [
+              16.872862766110504,
+              12.083183816041048
+            ],
+            [
+              16.662216237950275,
+              12.753449646388647
+            ],
+            [
+              16.80324533451876,
+              16.4414916065543
+            ],
+            [
+              16.462284503215443,
+              17.079384455497152
+            ],
+            [
+              15.738864966417786,
+              17.223281548170245
+            ],
+            [
+              14.92850981792757,
+              16.708316852698623
+            ],
+            [
+              15.078107847129745,
+              16.25547715502246
+            ],
+            [
+              14.976962080065002,
+              15.887979043786796
+            ],
+            [
+              15.064989497507858,
+              12.905466915018145
+            ],
+            [
+              14.92216084571086,
+              12.810642695092046
+            ],
+            [
+              12.595719244295754,
+              12.929828031268544
+            ],
+            [
+              11.911719190002026,
+              12.801988528114855
+            ],
+            [
+              11.79820066253268,
+              13.992521808206513
+            ],
+            [
+              11.937590493849362,
+              15.340788948660808
+            ],
+            [
+              11.697082246356663,
+              16.72108290009734
+            ],
+            [
+              11.345108089412436,
+              17.129118764195095
+            ],
+            [
+              10.773655957878596,
+              17.242787660522673
+            ],
+            [
+              10.265590182231774,
+              16.971220845643998
+            ],
+            [
+              9.845066890720755,
+              16.24644652783702
+            ],
+            [
+              10.164287331313089,
+              15.911501926438822
+            ]
+          ]
+        ]
+      },
+      "first_frame_outside_static_domain_beyond_tolerance": null,
+      "first_interval_outside_static_domain_plus_tolerance": null,
+      "min_signed_static_distance_m": -2.6770752163113053e-09,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "current_occupations_final": [
+        {
+          "guide": 5,
+          "target": 17,
+          "occupants": [
+            {
+              "guide": 4,
+              "center_distance_m": 0.6437280554417804,
+              "threshold_m": 0.75
+            }
+          ]
+        }
+      ],
+      "targets_unchanged": true,
+      "assignment_changes": 0,
+      "recovery_events": [
+        {
+          "frame": 213,
+          "time_s": 21.3,
+          "strategy": "path_recompute",
+          "classification": "current_guide_occupation",
+          "query_domain": "static_with_current_guides",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 1,
+          "budget_remaining": 2,
+          "query_wall_seconds": 0.26821009995182976,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.2685905999969691,
+          "before": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "0eeb085c57debbc8f4c1866c8fe2ef3cebb5b9bb36fa1fb118a81f06be2ea009"
+          },
+          "after": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "0eeb085c57debbc8f4c1866c8fe2ef3cebb5b9bb36fa1fb118a81f06be2ea009"
+          }
+        },
+        {
+          "frame": 213,
+          "time_s": 21.3,
+          "strategy": "reachable_reassignment",
+          "classification": "verified_path_set_installed",
+          "query_domain": "static",
+          "query_succeeded": true,
+          "validation_succeeded": true,
+          "installation_succeeded": true,
+          "budget_consumed": 2,
+          "budget_remaining": 1,
+          "query_wall_seconds": 0.2591942000435665,
+          "validation_wall_seconds": 0.002008100040256977,
+          "wall_seconds": 0.2616381000261754,
+          "before": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "0eeb085c57debbc8f4c1866c8fe2ef3cebb5b9bb36fa1fb118a81f06be2ea009"
+          },
+          "after": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "1ea9c81026a341829b069aecbd7307a07eec3cb99edd32f12c2c8beaf780b67f"
+          }
+        },
+        {
+          "frame": 233,
+          "time_s": 23.3,
+          "strategy": "priority_yield",
+          "classification": "priority_yield",
+          "query_domain": "installed_paths",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.0007486999966204166,
+          "before": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "1ea9c81026a341829b069aecbd7307a07eec3cb99edd32f12c2c8beaf780b67f"
+          },
+          "after": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "1ea9c81026a341829b069aecbd7307a07eec3cb99edd32f12c2c8beaf780b67f"
+          }
+        },
+        {
+          "frame": 303,
+          "time_s": 30.3,
+          "strategy": "none",
+          "classification": "budget_exhausted",
+          "query_domain": "not_queried",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.0004918000195175409,
+          "before": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "1ea9c81026a341829b069aecbd7307a07eec3cb99edd32f12c2c8beaf780b67f"
+          },
+          "after": {
+            "targets_sha256": "d607b2dd31241edcd4ca6b7cef2863a2122d8edf17eb97c975ca625b474c0bdc",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "1ea9c81026a341829b069aecbd7307a07eec3cb99edd32f12c2c8beaf780b67f"
+          }
+        }
+      ],
+      "final_safety": {
+        "status": "SOLVED",
+        "residual": 7.652325517901756e-10,
+        "iterations": 20,
+        "correction_norm": 0.01925115658942962,
+        "min_predicted_clearance": 0.7500105532317883,
+        "solve_time": 0.003487400012090802,
+        "fallback_used": false
+      },
+      "guides": [
+        {
+          "guide": 4,
+          "actual": [
+            11.314866090986941,
+            17.13513427144059
+          ],
+          "target_id": 15,
+          "target": [
+            12.47416975250992,
+            14.216153338986983
+          ],
+          "target_error_m": 3.140769756548278,
+          "installed_path": [
+            [
+              11.30517500934449,
+              17.13706194629709
+            ],
+            [
+              11.305175011561573,
+              17.13706195744308
+            ],
+            [
+              11.345108089412436,
+              17.129118764195095
+            ],
+            [
+              11.697082246356663,
+              16.72108290009734
+            ],
+            [
+              12.47416975250992,
+              14.216153338986983
+            ]
+          ],
+          "waypoint_index": 2,
+          "waypoint_distance_m": 0.030834474151317844,
+          "actual_signed_static_m": -2.5070043078544276e-10,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": false,
+          "last_nominal": [
+            0.0521528211969553,
+            -0.01037384099662475
+          ],
+          "last_safe": [
+            0.045265490391423566,
+            -0.009003867522535207
+          ],
+          "waypoint_transitions_after_last_install": [
+            {
+              "interval": 213,
+              "time_s": 21.3,
+              "from": 1,
+              "to": 2,
+              "actual": [
+                11.30517500934449,
+                17.13706194629709
+              ],
+              "segment_to_selected_waypoint_clear": true
+            }
+          ],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 5,
+          "actual": [
+            11.734158375702684,
+            17.756996013435216
+          ],
+          "target_id": 17,
+          "target": [
+            11.673682625387341,
+            17.66958399218497
+          ],
+          "target_error_m": 0.10629288703980862,
+          "installed_path": [
+            [
+              11.731945785956505,
+              17.753800723445565
+            ],
+            [
+              11.673682625387341,
+              17.66958399218497
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.10629288703980862,
+          "actual_signed_static_m": 0.7386406199065048,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.010104740297239843,
+            0.014805036325910901
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 7,
+          "actual": [
+            14.102791073756979,
+            16.587986432442186
+          ],
+          "target_id": 12,
+          "target": [
+            14.469225262993998,
+            16.65450618586204
+          ],
+          "target_error_m": 0.37242300229286257,
+          "installed_path": [
+            [
+              14.319890843253413,
+              16.620958200255703
+            ],
+            [
+              14.469225262993998,
+              16.65450618586204
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.37242300229286257,
+          "actual_signed_static_m": 0.8344404439585531,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0,
+            0.0
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 10,
+          "actual": [
+            14.565193484086501,
+            14.10684829382709
+          ],
+          "target_id": 13,
+          "target": [
+            14.40147655034707,
+            14.810358840616242
+          ],
+          "target_error_m": 0.7223090223973486,
+          "installed_path": [
+            [
+              14.408544326698447,
+              14.831447791979466
+            ],
+            [
+              14.40147655034707,
+              14.810358840616242
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.7223090223973486,
+          "actual_signed_static_m": 0.46413570533532855,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0,
+            0.0
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        }
+      ]
+    },
+    {
+      "task_id": "wide_u__seed_30__pairwise_euclidean",
+      "input_sha256": "d22615f33d4475d02d00abc8d85ae2efd5dc5e83f9c4ce9baf00d050727c0f6c",
+      "target_sha256": "3fb9a9f1b2a7109c7cb41039adadb99ced3cf767f7a4755db045a5d79e2cdf34",
+      "status": "REPLAN_EXHAUSTED",
+      "simulation_time_s": 30.3,
+      "failure_reason": "Progress stalled and the finite recovery budget was exhausted",
+      "classification": "execution_stall_budget_exhausted",
+      "static_geometry_sha256": "41565c13bd6186209a7cbd328ee4bf1b989518e66beb016e7401059566ff7106",
+      "geometry_parameters": {
+        "wall_margin_m": 0.55,
+        "crowd_margin_m": 0.55,
+        "simplify_tolerance_m": 0.1,
+        "planning_margin_m": 0.11
+      },
+      "conservative_free_space": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.55,
+              29.45
+            ],
+            [
+              29.45,
+              29.45
+            ],
+            [
+              29.45,
+              0.55
+            ],
+            [
+              0.55,
+              0.55
+            ],
+            [
+              0.55,
+              29.45
+            ]
+          ],
+          [
+            [
+              10.164287331313089,
+              15.911501926438822
+            ],
+            [
+              10.241313781870243,
+              15.487606199184656
+            ],
+            [
+              10.114076963167,
+              14.227305534817255
+            ],
+            [
+              10.227951214052348,
+              12.430964260006869
+            ],
+            [
+              10.098213055482363,
+              11.956777193736091
+            ],
+            [
+              10.448117359621365,
+              11.302152283973276
+            ],
+            [
+              12.161040378237733,
+              11.088918052498613
+            ],
+            [
+              12.815711943891019,
+              11.23663930854127
+            ],
+            [
+              14.85604980772134,
+              11.101698247953781
+            ],
+            [
+              16.228063093854182,
+              11.249877091786555
+            ],
+            [
+              16.702244510510496,
+              11.566714984894563
+            ],
+            [
+              16.872862766110504,
+              12.083183816041048
+            ],
+            [
+              16.662216237950275,
+              12.753449646388647
+            ],
+            [
+              16.80324533451876,
+              16.4414916065543
+            ],
+            [
+              16.462284503215443,
+              17.079384455497152
+            ],
+            [
+              15.738864966417786,
+              17.223281548170245
+            ],
+            [
+              14.92850981792757,
+              16.708316852698623
+            ],
+            [
+              15.078107847129745,
+              16.25547715502246
+            ],
+            [
+              14.976962080065002,
+              15.887979043786796
+            ],
+            [
+              15.064989497507858,
+              12.905466915018145
+            ],
+            [
+              14.92216084571086,
+              12.810642695092046
+            ],
+            [
+              12.595719244295754,
+              12.929828031268544
+            ],
+            [
+              11.911719190002026,
+              12.801988528114855
+            ],
+            [
+              11.79820066253268,
+              13.992521808206513
+            ],
+            [
+              11.937590493849362,
+              15.340788948660808
+            ],
+            [
+              11.697082246356663,
+              16.72108290009734
+            ],
+            [
+              11.345108089412436,
+              17.129118764195095
+            ],
+            [
+              10.773655957878596,
+              17.242787660522673
+            ],
+            [
+              10.265590182231774,
+              16.971220845643998
+            ],
+            [
+              9.845066890720755,
+              16.24644652783702
+            ],
+            [
+              10.164287331313089,
+              15.911501926438822
+            ]
+          ]
+        ]
+      },
+      "first_frame_outside_static_domain_beyond_tolerance": null,
+      "first_interval_outside_static_domain_plus_tolerance": null,
+      "min_signed_static_distance_m": -2.6770752163113053e-09,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "current_occupations_final": [
+        {
+          "guide": 5,
+          "target": 17,
+          "occupants": [
+            {
+              "guide": 4,
+              "center_distance_m": 0.6437280554417804,
+              "threshold_m": 0.75
+            }
+          ]
+        }
+      ],
+      "targets_unchanged": true,
+      "assignment_changes": 0,
+      "recovery_events": [
+        {
+          "frame": 213,
+          "time_s": 21.3,
+          "strategy": "path_recompute",
+          "classification": "current_guide_occupation",
+          "query_domain": "static_with_current_guides",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 1,
+          "budget_remaining": 2,
+          "query_wall_seconds": 0.236441399960313,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.23693179996917024,
+          "before": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "2038c8c22ac969160050eef7085733c7de20d2e126b7bf9179b726e3e8839494"
+          },
+          "after": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "2038c8c22ac969160050eef7085733c7de20d2e126b7bf9179b726e3e8839494"
+          }
+        },
+        {
+          "frame": 213,
+          "time_s": 21.3,
+          "strategy": "reachable_reassignment",
+          "classification": "verified_path_set_installed",
+          "query_domain": "static",
+          "query_succeeded": true,
+          "validation_succeeded": true,
+          "installation_succeeded": true,
+          "budget_consumed": 2,
+          "budget_remaining": 1,
+          "query_wall_seconds": 0.22568600001977757,
+          "validation_wall_seconds": 0.0009811000199988484,
+          "wall_seconds": 0.22698579996358603,
+          "before": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "2038c8c22ac969160050eef7085733c7de20d2e126b7bf9179b726e3e8839494"
+          },
+          "after": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "35a3f154f38337dbd983e2fa540389baa323f5aa813fe0cdcfdda61c1d9426c1"
+          }
+        },
+        {
+          "frame": 233,
+          "time_s": 23.3,
+          "strategy": "priority_yield",
+          "classification": "priority_yield",
+          "query_domain": "installed_paths",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.0005568999913521111,
+          "before": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "35a3f154f38337dbd983e2fa540389baa323f5aa813fe0cdcfdda61c1d9426c1"
+          },
+          "after": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "35a3f154f38337dbd983e2fa540389baa323f5aa813fe0cdcfdda61c1d9426c1"
+          }
+        },
+        {
+          "frame": 303,
+          "time_s": 30.3,
+          "strategy": "none",
+          "classification": "budget_exhausted",
+          "query_domain": "not_queried",
+          "query_succeeded": false,
+          "validation_succeeded": false,
+          "installation_succeeded": false,
+          "budget_consumed": 3,
+          "budget_remaining": 0,
+          "query_wall_seconds": null,
+          "validation_wall_seconds": null,
+          "wall_seconds": 0.0001433999859727919,
+          "before": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "35a3f154f38337dbd983e2fa540389baa323f5aa813fe0cdcfdda61c1d9426c1"
+          },
+          "after": {
+            "targets_sha256": "fedae25780bb6b5b81405c890f5f9d2a47eacd3dbd2073ca24aa2824f8e148c9",
+            "assignment_sha256": "213c14ce1494f0e7fa69b2e1b5edc7dd328c32706fa981ec1c7e16de991eed9c",
+            "paths_sha256": "35a3f154f38337dbd983e2fa540389baa323f5aa813fe0cdcfdda61c1d9426c1"
+          }
+        }
+      ],
+      "final_safety": {
+        "status": "SOLVED",
+        "residual": 7.652325517901756e-10,
+        "iterations": 20,
+        "correction_norm": 0.01925115658942962,
+        "min_predicted_clearance": 0.7500105532317883,
+        "solve_time": 0.0032383999787271023,
+        "fallback_used": false
+      },
+      "guides": [
+        {
+          "guide": 4,
+          "actual": [
+            11.314866090986941,
+            17.13513427144059
+          ],
+          "target_id": 15,
+          "target": [
+            12.47416975250992,
+            14.216153338986983
+          ],
+          "target_error_m": 3.140769756548278,
+          "installed_path": [
+            [
+              11.30517500934449,
+              17.13706194629709
+            ],
+            [
+              11.305175011561573,
+              17.13706195744308
+            ],
+            [
+              11.345108089412436,
+              17.129118764195095
+            ],
+            [
+              11.697082246356663,
+              16.72108290009734
+            ],
+            [
+              12.47416975250992,
+              14.216153338986983
+            ]
+          ],
+          "waypoint_index": 2,
+          "waypoint_distance_m": 0.030834474151317844,
+          "actual_signed_static_m": -2.5070043078544276e-10,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": false,
+          "last_nominal": [
+            0.0521528211969553,
+            -0.01037384099662475
+          ],
+          "last_safe": [
+            0.045265490391423566,
+            -0.009003867522535207
+          ],
+          "waypoint_transitions_after_last_install": [
+            {
+              "interval": 213,
+              "time_s": 21.3,
+              "from": 1,
+              "to": 2,
+              "actual": [
+                11.30517500934449,
+                17.13706194629709
+              ],
+              "segment_to_selected_waypoint_clear": true
+            }
+          ],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 5,
+          "actual": [
+            11.734158375702684,
+            17.756996013435216
+          ],
+          "target_id": 17,
+          "target": [
+            11.673682625387341,
+            17.66958399218497
+          ],
+          "target_error_m": 0.10629288703980862,
+          "installed_path": [
+            [
+              11.731945785956505,
+              17.753800723445565
+            ],
+            [
+              11.673682625387341,
+              17.66958399218497
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.10629288703980862,
+          "actual_signed_static_m": 0.7386406199065048,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.010104740297239843,
+            0.014805036325910901
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 7,
+          "actual": [
+            14.102791073756979,
+            16.587986432442186
+          ],
+          "target_id": 12,
+          "target": [
+            14.469225262993998,
+            16.65450618586204
+          ],
+          "target_error_m": 0.37242300229286257,
+          "installed_path": [
+            [
+              14.319890843253413,
+              16.620958200255703
+            ],
+            [
+              14.469225262993998,
+              16.65450618586204
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.37242300229286257,
+          "actual_signed_static_m": 0.8344404439585531,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0,
+            0.0
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        },
+        {
+          "guide": 10,
+          "actual": [
+            14.565193484086501,
+            14.10684829382709
+          ],
+          "target_id": 13,
+          "target": [
+            14.40147655034707,
+            14.810358840616242
+          ],
+          "target_error_m": 0.7223090223973486,
+          "installed_path": [
+            [
+              14.408544326698447,
+              14.831447791979466
+            ],
+            [
+              14.40147655034707,
+              14.810358840616242
+            ]
+          ],
+          "waypoint_index": 1,
+          "waypoint_distance_m": 0.7223090223973486,
+          "actual_signed_static_m": 0.46413570533532855,
+          "target_component": 0,
+          "current_to_waypoint_clear": true,
+          "next_shortcut_clear": null,
+          "last_nominal": [
+            0.0,
+            0.0
+          ],
+          "last_safe": [
+            0.0,
+            0.0
+          ],
+          "waypoint_transitions_after_last_install": [],
+          "first_unclear_current_to_waypoint_interval_after_last_install": null
+        }
+      ]
+    }
+  ]
+}

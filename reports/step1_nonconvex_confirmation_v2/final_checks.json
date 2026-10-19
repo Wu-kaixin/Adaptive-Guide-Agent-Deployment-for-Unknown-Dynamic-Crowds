@@ -1,0 +1,38 @@
+{
+  "frozen_commit": "a0781c56fdbc5eadddd9f7f84df721b6272f763b",
+  "source_sha256": "222c501c170877429f77276c72c1bdbded1e4fa625743237522e71ca4f559a3d",
+  "prior_v1_artifacts_still_matching": 923,
+  "notebook_new_cell_executed": true,
+  "notebook_validated": true,
+  "tests": {
+    "passed": 102,
+    "seconds": 15.93,
+    "scope": "complete suite before freeze"
+  },
+  "scientific_changes_after_freeze": "",
+  "outputs": "63 independently evaluated new trajectories, 27 input-rejection rows, 2 separate saved-case acceptance trajectories",
+  "remaining_failures": [
+    "elongated seed30 pairwise_euclidean",
+    "wide_u seed30 equal_arc",
+    "wide_u seed30 projected_mass",
+    "wide_u seed30 pairwise_euclidean"
+  ],
+  "delivery_validation": {
+    "json_files_validated": 8,
+    "checked_run_files": 950,
+    "complete_tasks": 90,
+    "input_snapshots": 30,
+    "target_snapshots": 63,
+    "executed_trajectories": 63,
+    "initial_only_rejection_snapshots": 27,
+    "independent_executed_verdicts": 63,
+    "editable": {
+      "url": "file:///C:/Users/kai/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds",
+      "dir_info": {
+        "editable": true
+      }
+    },
+    "frozen_scientific_files_unchanged": true,
+    "backups_present": false
+  }
+}

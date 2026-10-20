@@ -1,0 +1,43 @@
+schema_version: 1
+protocol: step1_nonconvex_demand_confirmation_v1
+scientific_baseline: e7abbc12
+generator_spec: configs/step1/nonconvex_execution_confirmation_v3.yaml
+demand_spec: configs/step1/nonconvex_demand_pilot_v1.yaml
+phase_spec: configs/step1/nonconvex_phase_attribution_v1.yaml
+scenes: [elongated, tight_u, wide_u]
+methods: [equal_arc, projected_mass]
+method_suffix: +all_phase_256
+demands: [ones, hotspot5]
+seed_selection:
+  start: 75
+  length: 20
+  rule: first_contiguous_interval_with_all_three_scene_seed_units_unexposed_in_local_audit
+  maximum_seed: 4999
+  exclusions: generated_or_development_exposed_same_namespace_and_scene_templates_including_estimator_comparisons
+  ambiguous_same_family_records: conservatively_exclude
+  other_protocol_same_integer: record_without_automatic_exclusion
+statistics:
+  primary: hotspot5_final_planned_total_demand_cost_projected_minus_equal_m2
+  target_subset: both_final_targets_geometry_valid_regardless_of_path_or_execution_outcome
+  scene_weighting: equal_mean_of_three_within_scene_paired_means
+  physical_unit: scene_seed_all_demands_methods_and_stage_states_together
+  missing: keep_failed_units_in_full_ledger_and_resample_them_as_missing_pairs
+  bootstrap_repetitions: 10000
+  bootstrap_rng_seed: 2026102001
+  confidence: 0.95
+  interval: stratified_paired_percentile
+  minimum_valid_pairs_per_scene_for_interval: 2
+  maximum_uncalculable_bootstrap_share: 0.01
+  secondary: [excess, background_mass, background_arc, ones_total, actual_cost, complete_success, time, travel, recovery, compute]
+evaluation:
+  primary_samples: 2048
+  fine_samples: 8192
+  fine_window: fixed_original_2048_arc_bins
+  fine_evaluator: reports/step1_nonconvex_phase_attribution_v1/summarize.py
+runtime:
+  first_seed_workers: 1
+  maximum_workers: 2
+  numerical_threads: 1
+  counterfactual: 0
+  stop_on: [SAFETY_VIOLATION, EXPERIMENT_ERROR]
+  no_retry_or_budget_extension: true

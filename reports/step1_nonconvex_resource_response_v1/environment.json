@@ -1,0 +1,27 @@
+{
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "provenance": {
+    "commit": "57688a1a0750ea7dbc090b0c7a4398672a585472",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "e33ef05457a5e7f939a3f2172b4faff1f299182a7ee50918aeef812890cefcec",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "8253ac19c74f7fbf700d8a34ac412aad707cf46957ecc5fa8db74326a2c1997a",
+    "task_sha256": "a6a5c719f7964296477ae545950c99b3a36eb600d6c48cdad280f633db276461",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "freeze_modes": {
+    "reference": 120,
+    "new_execution": 240
+  }
+}

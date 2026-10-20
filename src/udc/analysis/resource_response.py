@@ -3,15 +3,41 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 from pathlib import Path
+import subprocess
 import numpy as np
 
 from udc.analysis.demand_confirmation import csv_write
 from udc.experiments.demand_pilot import read
 from udc.experiments.nonconvex_rebuild import sha, write
-from udc.experiments.resource_response import locked, OUTPUT
+from udc.experiments.resource_response import locked, verify_files, OUTPUT
+from udc.experiments.provenance import provenance
 
 SCENES=['elongated','tight_u','wide_u']; METHODS=['equal_arc','projected_mass']
 METRICS=['demand','excess','background_mass','background_arc']
+
+
+def analysis_locked(root):
+    """Read-only export may fix its own serialization, never execution sources."""
+    lock=read(root/'protocol.json')
+    amendment=read(root/'orchestration_amendment.json') if (root/'orchestration_amendment.json').exists() else None
+    execution=(amendment or lock)['provenance']
+    own='src/udc/analysis/resource_response.py'
+    names=subprocess.check_output(['git','ls-tree','-r','--name-only',execution['commit'],'src/udc'],text=True).splitlines()
+    for name in names:
+        if name==own or not name.endswith('.py'): continue
+        frozen=subprocess.check_output(['git','show',execution['commit']+':'+name])
+        if Path(name).read_bytes().replace(b'\r\n',b'\n')!=frozen.replace(b'\r\n',b'\n'):
+            raise RuntimeError('Execution source changed; analysis refuses: '+name)
+    verify_files(lock['protocol_files']); verify_files(lock['historical_files'])
+    verify_files(read(root/'inputs_frozen.json')['files'])
+    if sha(root/'manifest_360.json')!=lock['manifest_sha256']: raise RuntimeError('Manifest changed')
+    if amendment:
+        verify_files(amendment['completed_files']); verify_files(amendment['amendment_files'])
+        if sha(root/'protocol.json')!=amendment['original_protocol_sha256']: raise RuntimeError('Original protocol changed')
+    return {**lock,'provenance':execution,'analysis_provenance':provenance({},None,'read_only_analysis',None),
+        'analysis_compatibility':{'allowed_changed_file':own,'current_file_sha256':sha(own),
+            'reason':'post-execution CSV column union for rejected/valid quantity rows; estimands unchanged',
+            'all_other_execution_sources_match_commit':execution['commit']}}
 
 
 def units(rows):
@@ -94,7 +120,7 @@ def bootstrap(all_units,settings):
 
 def summarize(output,report):
     root=Path(output).resolve(); report=Path(report); report.mkdir(parents=True,exist_ok=True)
-    lock=locked(root,full=True); frozen=read(root/'inputs_frozen.json'); manifest=read(root/'manifest_360.json')
+    lock=analysis_locked(root); frozen=read(root/'inputs_frozen.json'); manifest=read(root/'manifest_360.json')
     rows=[read(root/'results'/r['task_id']/'protocol_metrics.json') for r in manifest['rows']]
     us=units(rows); contrasts={}; pair_rows=[]; interaction_rows=[]
     for n in (0,2,4):
@@ -169,6 +195,7 @@ def summarize(output,report):
     checks=read(root/'all_independent_checks.json'); executed=[r for r in flat if r['executed']]
     summary={'scope':'exposed inputs; resource response development, not new independent confirmation',
         'source':lock['provenance'],'baseline_source':lock['baseline_source'],'all_rows':len(rows),'physical_units':len(us),
+        'analysis_provenance':lock['analysis_provenance'],'analysis_compatibility':lock['analysis_compatibility'],
         'outcomes':dict(Counter(r['status'] for r in rows)), 'modes':dict(Counter(r['mode'] for r in rows)),
         'executed_rows':len(executed),'new_executed_rows':sum(r['executed'] and r['mode']!='reference' for r in rows),
         'reused_executed_rows':sum(r['executed'] and r['mode']=='reference' for r in rows),
@@ -191,12 +218,14 @@ def summarize(output,report):
     csv_write(report/'tasks_360.csv',flat); csv_write(report/'pairs_all_metrics.csv',pair_rows)
     csv_write(report/'interactions_common.csv',interaction_rows); csv_write(report/'resource_changes.csv',resource_changes)
     csv_write(report/'fine_integration.csv',fine)
-    diagnostics=read(root/'quantity_diagnostics_60.json'); csv_write(report/'quantity_diagnostics_60.csv',diagnostics)
+    diagnostics=read(root/'quantity_diagnostics_60.json')
+    columns=list(dict.fromkeys(k for r in diagnostics for k in r))
+    csv_write(report/'quantity_diagnostics_60.csv',[{k:r.get(k) for k in columns} for r in diagnostics])
     for name in ('manifest_360.json','inputs_frozen.json','reuse_decisions_120.json','all_independent_checks.json','environment.json','protocol.json'):
         write(report/name,read(root/name))
     write(report/'analysis.json',summary)
     plots(flat,cost_response,report)
-    locked(root,full=True)
+    analysis_locked(root)
     write(report/'raw_checksums.json',{'run_files':{p.relative_to(root).as_posix():sha(p) for p in root.rglob('*') if p.is_file()},
         'historical_verified_files':len(lock['historical_files']),'historical_unchanged':True,
         'frozen_input_files':len(frozen['files']),'manifest_sha256':sha(root/'manifest_360.json')})
@@ -215,10 +244,13 @@ def plots(flat,costs,report):
             for method in METHODS:
                 selected=[r for r in costs if r['scene']==scene and r['method']==method and r['metric']==metric]
                 ax.plot([r['count'] for r in selected],[r['mean'] for r in selected],'-o',label=method)
-                failed=[r for r in flat if r['scene']==scene and r['method']==method and r['target_valid'] and not r['success']]
-                ax.scatter([r['count'] for r in failed],[r['planned_'+metric] for r in failed],marker='x',color='red')
+                for program,color,marker,label in ((False,'red','x','execution failure target'),(True,'purple','+','program-error target')):
+                    failed=[r for r in flat if r['scene']==scene and r['method']==method and r['target_valid']
+                        and not r['success'] and (r['status']=='EXPERIMENT_ERROR')==program]
+                    ax.scatter([r['count'] for r in failed],[r['planned_'+metric] for r in failed],marker=marker,color=color,
+                        label=label if failed else None)
             ax.set(title=scene+' / '+metric,xlabel='N',ylabel='planned cost (m²)'); ax.grid(alpha=.2)
-            if i==0 and j==0: ax.legend()
+            if i==0: ax.legend(fontsize=7)
     fig.savefig(report/'planning_response.png',dpi=160); plt.close(fig)
     fig,axes=plt.subplots(5,3,figsize=(13,15),constrained_layout=True)
     keys=['success','cutoff_margin_s','actual_trajectory_length_m','per_guide_travel_m','recoveries']
@@ -245,10 +277,11 @@ def plots(flat,costs,report):
             for method in METHODS:
                 selected=[r for r in flat if r['scene']==scene and r['increment']==n and r['method']==method]
                 labels.append(str(selected[0]['count'])+' '+method[:4])
-                counts.append([sum(r['success'] for r in selected),sum(r['executed'] and not r['success'] for r in selected),
+                counts.append([sum(r['success'] for r in selected),sum(r['executed'] and not r['success'] and r['status']!='EXPERIMENT_ERROR' for r in selected),
+                    sum(r['status']=='EXPERIMENT_ERROR' for r in selected),
                     sum(not r['executed'] for r in selected)])
         base=np.zeros(len(labels))
-        for k,label in enumerate(('complete success','execution failure','not executed')):
+        for k,label in enumerate(('complete success','execution failure','program error','not executed')):
             values=np.array(counts)[:,k]; ax.bar(labels,values,bottom=base,label=label); base+=values
         ax.set(title=scene,ylabel='tasks'); ax.tick_params(axis='x',rotation=60)
     axes[0].legend(); fig.savefig(report/'stage_accounting.png',dpi=160); plt.close(fig)

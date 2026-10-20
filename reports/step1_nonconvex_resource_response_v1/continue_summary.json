@@ -1,0 +1,12 @@
+{
+  "expected": 308,
+  "completed": 308,
+  "wall_s": 247.93071540000074,
+  "outcomes": {
+    "SUCCESS": 241,
+    "INITIALIZATION_INVALID": 36,
+    "BOUNDARY_INVALID": 30,
+    "PATH_UNREACHABLE": 1
+  },
+  "stop_task": null
+}

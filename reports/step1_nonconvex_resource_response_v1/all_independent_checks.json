@@ -1,0 +1,3242 @@
+[
+  {
+    "task_id": "elongated__seed_75__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_75__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_75__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_75__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_75__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_75__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_75__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_77__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_77__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_77__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_77__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_77__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_77__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_77__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_77__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_77__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_77__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_77__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_77__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_77__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": false,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": false,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_81__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_81__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_81__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_81__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_81__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_81__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_81__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_82__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_82__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_82__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_82__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_82__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_82__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_82__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_82__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_82__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_82__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_82__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_82__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_82__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_83__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_84__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_84__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_84__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_84__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_84__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_84__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_85__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_86__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_86__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_86__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_86__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_86__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_86__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_86__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_86__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_86__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_86__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_86__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_86__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_87__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_87__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_87__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_87__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_87__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_87__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_87__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_87__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_88__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_88__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_88__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_88__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_88__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_88__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_88__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_90__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_90__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_90__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_90__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_90__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_90__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_90__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_92__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_92__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_92__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_92__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_92__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_92__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_92__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": false
+  },
+  {
+    "task_id": "elongated__seed_93__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_11__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_11__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_13__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_13__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "tight_u__seed_94__N_13__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_94__N_13__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_94__N_15__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_94__N_15__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_94__N_17__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "tight_u__seed_94__N_17__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": false,
+    "success": false
+  },
+  {
+    "task_id": "wide_u__seed_94__N_19__equal_arc",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_19__projected_mass",
+    "mode": "reference",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_21__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_21__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_23__equal_arc",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_23__projected_mass",
+    "mode": "new_execution",
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "success_consistent": true,
+    "executed": true,
+    "success": true
+  }
+]

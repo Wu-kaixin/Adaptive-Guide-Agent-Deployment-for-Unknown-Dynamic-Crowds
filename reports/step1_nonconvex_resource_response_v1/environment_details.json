@@ -1,0 +1,21 @@
+{
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel",
+  "os_cpu_count": 8,
+  "installed_packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "PyYAML": "6.0.3",
+    "jupedsim": "1.4.2",
+    "pedpy": "1.5.1",
+    "pytest": "9.1.1",
+    "threadpoolctl": "3.7.0",
+    "matplotlib": "3.11.2"
+  },
+  "machine_cim_query": "sandbox unavailable; no elevated hardware query; prior machine record referenced",
+  "prior_environment_path": "reports/step1_nonconvex_demand_confirmation_v1/environment.json",
+  "prior_environment_sha256": "f448c437210b0dbcd02f5cac1a5fef30e171dd343fe8630ff78fe7645f1a59ff"
+}

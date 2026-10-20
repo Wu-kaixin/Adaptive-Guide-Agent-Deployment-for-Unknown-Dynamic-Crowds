@@ -1,0 +1,43 @@
+{
+  "main_rows": 360,
+  "common_quantity_diagnostics": 60,
+  "nested_initial_sets": 180,
+  "physical_people_draws": 0,
+  "historical_files_verified": 6115,
+  "frozen_files_verified": 708,
+  "checkpoint_original_52_rows_unchanged": true,
+  "all_other_execution_sources_match": true,
+  "new_task_source_counts": {
+    "57688a1a0750ea7dbc090b0c7a4398672a585472": 34,
+    "125fd6536e90f577a0dba89ac9b657ba7616617f": 206
+  },
+  "new_task_source_dirty_count": 0,
+  "main_and_fine_independent_integrations": 276,
+  "integral_mismatches": 0,
+  "independent_criteria_mismatches": 0,
+  "independent_diagnostic_mismatches": 0,
+  "accounting_success_mismatches": [
+    "wide_u__seed_77__N_21__equal_arc",
+    "wide_u__seed_77__N_21__projected_mass"
+  ],
+  "independent_physical_success_trajectories": 275,
+  "actual_motion_trajectories": 276,
+  "unsafe_intervals": 0,
+  "new_unexecuted_null_motion_rows": 56,
+  "tests": "201 passed in 26.12s after final export/plot correction",
+  "pip_check": "No broken requirements found",
+  "compileall": true,
+  "protocol_sha256": "f33862cd44549f098b0b8b09c11baad435e532f29356cca073cffe8543603ef8",
+  "manifest_sha256": "57a6b568013dcd971b13d2ef2c0822304b3bd450e8989eb01793843e56866899",
+  "inputs_frozen_sha256": "d126e415fea6afbcd309a018940beef6d9ea37028bc449aac05a62926d92830f",
+  "amendment_sha256": "05eaf88040e2e711252dc965352166aec1436deae22ac4efb46fac4822d9f4a6",
+  "analysis_compatibility": {
+    "allowed_changed_file": "src/udc/analysis/resource_response.py",
+    "current_file_sha256": "1f5d16310b4d026a4781fe0b951832a9c3e3a6a0227e3f7cd2d0e0d08d6f4de1",
+    "reason": "post-execution CSV column union for rejected/valid quantity rows; estimands unchanged",
+    "all_other_execution_sources_match_commit": "125fd6536e90f577a0dba89ac9b657ba7616617f"
+  },
+  "all_unexecuted_motion_rows_null": 84,
+  "readonly_analysis_source_sha256": "020b8f3c951859808c8000df033cc0ebae2327de892dfa9feba37247057c4a06",
+  "all_report_local_links_exist": true
+}

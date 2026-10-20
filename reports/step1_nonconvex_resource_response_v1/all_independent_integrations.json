@@ -1,0 +1,4694 @@
+[
+  {
+    "task_id": "tight_u__seed_75__N_13__equal_arc",
+    "main": {
+      "demand": 0.2819696252606595,
+      "excess": 0.28013925348843877,
+      "background_mass": 0.28313888958489686,
+      "background_arc": 0.2936437070168364
+    },
+    "fine": {
+      "demand": 0.28197042592655586,
+      "excess": 0.2801413205205635,
+      "background_mass": 0.28313888146506394,
+      "background_arc": 0.2936424422237001
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_13__projected_mass",
+    "main": {
+      "demand": 0.2771578190158005,
+      "excess": 0.2704613616408856,
+      "background_mass": 0.28143559953345154,
+      "background_arc": 0.2951560152953808
+    },
+    "fine": {
+      "demand": 0.2771609177387889,
+      "excess": 0.27046762636913324,
+      "background_mass": 0.28143667644908626,
+      "background_arc": 0.2951559592039911
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_15__equal_arc",
+    "main": {
+      "demand": 0.21092274526705765,
+      "excess": 0.21059872403039995,
+      "background_mass": 0.21112973407559868,
+      "background_arc": 0.21001443977384388
+    },
+    "fine": {
+      "demand": 0.21092352251726046,
+      "excess": 0.21060011826269628,
+      "background_mass": 0.21113011722262007,
+      "background_arc": 0.21001632687520086
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_15__projected_mass",
+    "main": {
+      "demand": 0.19613197591155068,
+      "excess": 0.15782431656172438,
+      "background_mass": 0.22060338663946255,
+      "background_arc": 0.25278111241965656
+    },
+    "fine": {
+      "demand": 0.19613396949626127,
+      "excess": 0.15782593436887798,
+      "background_mass": 0.2206056241462987,
+      "background_arc": 0.2527844294083883
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_17__equal_arc",
+    "main": {
+      "demand": 0.16554694888523544,
+      "excess": 0.16492229842840792,
+      "background_mass": 0.1659459833903409,
+      "background_arc": 0.16962979352345667
+    },
+    "fine": {
+      "demand": 0.16554756486844363,
+      "excess": 0.16492413482001497,
+      "background_mass": 0.16594581982443063,
+      "background_arc": 0.16962811281555829
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_75__N_17__projected_mass",
+    "main": {
+      "demand": 0.15052837491648133,
+      "excess": 0.11634522116116582,
+      "background_mass": 0.17236500001233124,
+      "background_arc": 0.20383532959427197
+    },
+    "fine": {
+      "demand": 0.15052260243773571,
+      "excess": 0.11633879453487098,
+      "background_mass": 0.17235964886521363,
+      "background_arc": 0.20383073465488857
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_19__equal_arc",
+    "main": {
+      "demand": 0.29289098762075616,
+      "excess": 0.29370198301852574,
+      "background_mass": 0.29244259660327443,
+      "background_arc": 0.2989870977839226
+    },
+    "fine": {
+      "demand": 0.29289339391920316,
+      "excess": 0.2937015529077041,
+      "background_mass": 0.29244657028308885,
+      "background_arc": 0.29898768917509794
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_19__projected_mass",
+    "main": {
+      "demand": 0.28878169773476936,
+      "excess": 0.28264225512473284,
+      "background_mass": 0.2921761324334804,
+      "background_arc": 0.3035073270157444
+    },
+    "fine": {
+      "demand": 0.28879299795557206,
+      "excess": 0.2826548793664322,
+      "background_mass": 0.29218670699788307,
+      "background_arc": 0.3035173046588928
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_21__equal_arc",
+    "main": {
+      "demand": 0.2405904412106499,
+      "excess": 0.24125150722043429,
+      "background_mass": 0.24022494461034252,
+      "background_arc": 0.24419703639417556
+    },
+    "fine": {
+      "demand": 0.24059220492045616,
+      "excess": 0.24125613807063673,
+      "background_mass": 0.24022512241748137,
+      "background_arc": 0.2441952461069104
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_21__projected_mass",
+    "main": {
+      "demand": 0.22566382162585275,
+      "excess": 0.20825743774337022,
+      "background_mass": 0.23528763231726543,
+      "background_arc": 0.26415493283422214
+    },
+    "fine": {
+      "demand": 0.22566417000046013,
+      "excess": 0.20826284272763165,
+      "background_mass": 0.2352852030346698,
+      "background_arc": 0.26415087123541
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_23__equal_arc",
+    "main": {
+      "demand": 0.20051279020470983,
+      "excess": 0.19991960624761734,
+      "background_mass": 0.20084075551598765,
+      "background_arc": 0.20482278883019336
+    },
+    "fine": {
+      "demand": 0.2005202648335664,
+      "excess": 0.19993925452269257,
+      "background_mass": 0.2008415000650227,
+      "background_arc": 0.20481554423724915
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_75__N_23__projected_mass",
+    "main": {
+      "demand": 0.1851864333706755,
+      "excess": 0.16428280140844034,
+      "background_mass": 0.19674383656973804,
+      "background_arc": 0.22670879892691176
+    },
+    "fine": {
+      "demand": 0.18518507860492098,
+      "excess": 0.1642836050605285,
+      "background_mass": 0.1967413101659617,
+      "background_arc": 0.22670467645576922
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_11__equal_arc",
+    "main": {
+      "demand": 0.29906393088980593,
+      "excess": 0.29898656120785966,
+      "background_mass": 0.29915104304297085,
+      "background_arc": 0.29061601118529423
+    },
+    "fine": {
+      "demand": 0.2990643113247331,
+      "excess": 0.29898682710206015,
+      "background_mass": 0.29915155246299574,
+      "background_arc": 0.290616548917844
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_11__projected_mass",
+    "main": {
+      "demand": 0.2941178153869888,
+      "excess": 0.29163868309673263,
+      "background_mass": 0.296909122606462,
+      "background_arc": 0.3010985345494509
+    },
+    "fine": {
+      "demand": 0.29411334186128885,
+      "excess": 0.2916343957321296,
+      "background_mass": 0.29690444015897727,
+      "background_arc": 0.3010951371057247
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_13__equal_arc",
+    "main": {
+      "demand": 0.21400628723718013,
+      "excess": 0.2138625213069178,
+      "background_mass": 0.2141681563236476,
+      "background_arc": 0.2102513726699661
+    },
+    "fine": {
+      "demand": 0.21400684869112982,
+      "excess": 0.21386370453014306,
+      "background_mass": 0.21416801775380293,
+      "background_arc": 0.21025012666376794
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_13__projected_mass",
+    "main": {
+      "demand": 0.19556490906350105,
+      "excess": 0.17905355577796217,
+      "background_mass": 0.214155389212681,
+      "background_arc": 0.2612126465377044
+    },
+    "fine": {
+      "demand": 0.1955696089569171,
+      "excess": 0.17905716033227903,
+      "background_mass": 0.2141613269070486,
+      "background_arc": 0.26122002754341483
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_15__equal_arc",
+    "main": {
+      "demand": 0.16117063197020867,
+      "excess": 0.1606906747570494,
+      "background_mass": 0.16171102589730782,
+      "background_arc": 0.16456302428361577
+    },
+    "fine": {
+      "demand": 0.16117158041888635,
+      "excess": 0.16069214657316366,
+      "background_mass": 0.16171138520726405,
+      "background_arc": 0.16456207046083418
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_76__N_15__projected_mass",
+    "main": {
+      "demand": 0.14368603757985618,
+      "excess": 0.12005102488226442,
+      "background_mass": 0.1702971957800156,
+      "background_arc": 0.22966667660355236
+    },
+    "fine": {
+      "demand": 0.14368636992298262,
+      "excess": 0.12005006237029556,
+      "background_mass": 0.17029899252012076,
+      "background_arc": 0.2296715820720672
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_13__equal_arc",
+    "main": {
+      "demand": 0.2812561946980507,
+      "excess": 0.2789036925666522,
+      "background_mass": 0.28279801264459176,
+      "background_arc": 0.294378058539592
+    },
+    "fine": {
+      "demand": 0.2812565070003656,
+      "excess": 0.27890426250196315,
+      "background_mass": 0.28279815726764734,
+      "background_arc": 0.2943774323449872
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_13__projected_mass",
+    "main": {
+      "demand": 0.2770786836401297,
+      "excess": 0.26747486250780483,
+      "background_mass": 0.28337297922420496,
+      "background_arc": 0.29777497435750777
+    },
+    "fine": {
+      "demand": 0.27707648327800405,
+      "excess": 0.26747603155021016,
+      "background_mass": 0.28336857535526483,
+      "background_arc": 0.29776784800602973
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_15__equal_arc",
+    "main": {
+      "demand": 0.21104322699259473,
+      "excess": 0.21083520447607265,
+      "background_mass": 0.21117956389319842,
+      "background_arc": 0.20873486852265333
+    },
+    "fine": {
+      "demand": 0.2110436445324311,
+      "excess": 0.2108366925140344,
+      "background_mass": 0.2111792799371232,
+      "background_arc": 0.20873536786279276
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_15__projected_mass",
+    "main": {
+      "demand": 0.19511103290788576,
+      "excess": 0.15848038979162868,
+      "background_mass": 0.21911857032780402,
+      "background_arc": 0.2568060891448303
+    },
+    "fine": {
+      "demand": 0.19510862637910578,
+      "excess": 0.15848323273790924,
+      "background_mass": 0.21911274156976537,
+      "background_arc": 0.2567964199943774
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_17__equal_arc",
+    "main": {
+      "demand": 0.16615334473676258,
+      "excess": 0.1655767625021158,
+      "background_mass": 0.1665312338043941,
+      "background_arc": 0.17021874691022323
+    },
+    "fine": {
+      "demand": 0.16615306183324724,
+      "excess": 0.16557481204486463,
+      "background_mass": 0.16653204409526168,
+      "background_arc": 0.17021885489731128
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_76__N_17__projected_mass",
+    "main": {
+      "demand": 0.15053351493833253,
+      "excess": 0.11905008076358133,
+      "background_mass": 0.17116759776507992,
+      "background_arc": 0.20232429585581208
+    },
+    "fine": {
+      "demand": 0.15052937152637247,
+      "excess": 0.11904701804615338,
+      "background_mass": 0.17116276175872258,
+      "background_arc": 0.20231828516999306
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_19__equal_arc",
+    "main": {
+      "demand": 0.29279613193272225,
+      "excess": 0.2966425737926929,
+      "background_mass": 0.2906802485554136,
+      "background_arc": 0.2995362261303665
+    },
+    "fine": {
+      "demand": 0.29279834216847983,
+      "excess": 0.29664160307391124,
+      "background_mass": 0.29068420536899536,
+      "background_arc": 0.2995353946325403
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_19__projected_mass",
+    "main": {
+      "demand": 0.2868255123243973,
+      "excess": 0.2803691664878503,
+      "background_mass": 0.29037707382747696,
+      "background_arc": 0.3071084679026644
+    },
+    "fine": {
+      "demand": 0.2868258695953189,
+      "excess": 0.28036258337314857,
+      "background_mass": 0.2903812543542823,
+      "background_arc": 0.3071181399204466
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_21__equal_arc",
+    "main": {
+      "demand": 0.23918560260284255,
+      "excess": 0.24037182832603632,
+      "background_mass": 0.2385330734913118,
+      "background_arc": 0.24249817912812932
+    },
+    "fine": {
+      "demand": 0.23918747926265665,
+      "excess": 0.24037690673367101,
+      "background_mass": 0.23853318790730374,
+      "background_arc": 0.24249644684776958
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_21__projected_mass",
+    "main": {
+      "demand": 0.22937987451647499,
+      "excess": 0.2212883727829229,
+      "background_mass": 0.23383091645049192,
+      "background_arc": 0.25348870251928046
+    },
+    "fine": {
+      "demand": 0.22938218965671717,
+      "excess": 0.22129221562131646,
+      "background_mass": 0.23383239801778455,
+      "background_arc": 0.2534879367804344
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_23__equal_arc",
+    "main": {
+      "demand": 0.20008256233823163,
+      "excess": 0.20021097571032329,
+      "background_mass": 0.20001192362086007,
+      "background_arc": 0.20086726795597246
+    },
+    "fine": {
+      "demand": 0.20009088387892715,
+      "excess": 0.20023336271670308,
+      "background_mass": 0.20001250779114596,
+      "background_arc": 0.2008596891130263
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_76__N_23__projected_mass",
+    "main": {
+      "demand": 0.18492695170529339,
+      "excess": 0.1651335024401362,
+      "background_mass": 0.19581510023435206,
+      "background_arc": 0.22537109049716397
+    },
+    "fine": {
+      "demand": 0.18491899318692678,
+      "excess": 0.16511913049824004,
+      "background_mass": 0.1958106862998597,
+      "background_arc": 0.2253660439929657
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_19__equal_arc",
+    "main": {
+      "demand": 0.2920808787383864,
+      "excess": 0.29455206758565966,
+      "background_mass": 0.29071756671067495,
+      "background_arc": 0.2966533459390061
+    },
+    "fine": {
+      "demand": 0.29208353304068674,
+      "excess": 0.29455529139982667,
+      "background_mass": 0.2907199054051413,
+      "background_arc": 0.2966539167255908
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_19__projected_mass",
+    "main": {
+      "demand": 0.2856463050491896,
+      "excess": 0.2783323511940896,
+      "background_mass": 0.2896812865407038,
+      "background_arc": 0.3049292969204804
+    },
+    "fine": {
+      "demand": 0.285654951465601,
+      "excess": 0.2783451784327423,
+      "background_mass": 0.28968763066351416,
+      "background_arc": 0.3049333434560722
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_21__equal_arc",
+    "main": {
+      "demand": 0.2377800230414215,
+      "excess": 0.2390485661986128,
+      "background_mass": 0.2370801897827136,
+      "background_arc": 0.24110731700385696
+    },
+    "fine": {
+      "demand": 0.23778140200954756,
+      "excess": 0.2390522511943601,
+      "background_mass": 0.2370802958263269,
+      "background_arc": 0.24110649597687409
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_21__projected_mass",
+    "main": {
+      "demand": 0.22777431656469782,
+      "excess": 0.21946952659786773,
+      "background_mass": 0.23235592515438092,
+      "background_arc": 0.25562912662531717
+    },
+    "fine": {
+      "demand": 0.22777295854582627,
+      "excess": 0.2194786217042521,
+      "background_mass": 0.23234880508595065,
+      "background_arc": 0.2556213894379511
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_23__equal_arc",
+    "main": {
+      "demand": 0.19944274655604968,
+      "excess": 0.20055273227466416,
+      "background_mass": 0.19883038668624667,
+      "background_arc": 0.20457997440879064
+    },
+    "fine": {
+      "demand": 0.19945119147704016,
+      "excess": 0.200574903280252,
+      "background_mass": 0.19883125851976624,
+      "background_arc": 0.20457235150160377
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_77__N_23__projected_mass",
+    "main": {
+      "demand": 0.18468260473972947,
+      "excess": 0.16106507901798517,
+      "background_mass": 0.19771198406732107,
+      "background_arc": 0.22818931375403756
+    },
+    "fine": {
+      "demand": 0.18467723572190273,
+      "excess": 0.16106256988043788,
+      "background_mass": 0.1977050508505624,
+      "background_arc": 0.22818386698897583
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_11__equal_arc",
+    "main": {
+      "demand": 0.2910836254762489,
+      "excess": 0.2900505378702164,
+      "background_mass": 0.29226450420452915,
+      "background_arc": 0.2848656064280526
+    },
+    "fine": {
+      "demand": 0.29108415432335866,
+      "excess": 0.29004988817167654,
+      "background_mass": 0.2922663799084021,
+      "background_arc": 0.28486667439846036
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_11__projected_mass",
+    "main": {
+      "demand": 0.2832482862756551,
+      "excess": 0.27902971510508123,
+      "background_mass": 0.28807035647568247,
+      "background_arc": 0.30398749082975146
+    },
+    "fine": {
+      "demand": 0.28324571325953396,
+      "excess": 0.2790272018244326,
+      "background_mass": 0.28806771400011993,
+      "background_arc": 0.30398615954965186
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_13__equal_arc",
+    "main": {
+      "demand": 0.20794178874736025,
+      "excess": 0.20761793368206063,
+      "background_mass": 0.20831197376886762,
+      "background_arc": 0.19945300117218748
+    },
+    "fine": {
+      "demand": 0.20794240491887775,
+      "excess": 0.20761904891244873,
+      "background_mass": 0.208312019396985,
+      "background_arc": 0.19945189679277037
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_13__projected_mass",
+    "main": {
+      "demand": 0.18897852139708188,
+      "excess": 0.1712337226171781,
+      "background_mass": 0.20926185002714398,
+      "background_arc": 0.2592774651349565
+    },
+    "fine": {
+      "demand": 0.18897898525264306,
+      "excess": 0.17123561330899,
+      "background_mass": 0.20926067797033246,
+      "background_arc": 0.2592729668772679
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_15__equal_arc",
+    "main": {
+      "demand": 0.1565727855174367,
+      "excess": 0.15653946175654548,
+      "background_mass": 0.15661087649844654,
+      "background_arc": 0.1562993386865647
+    },
+    "fine": {
+      "demand": 0.1565737575527269,
+      "excess": 0.15654091745927395,
+      "background_mass": 0.15661129566478077,
+      "background_arc": 0.15629851540526699
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_78__N_15__projected_mass",
+    "main": {
+      "demand": 0.13891319184250286,
+      "excess": 0.11619870994606901,
+      "background_mass": 0.1648771549553864,
+      "background_arc": 0.21777479347215717
+    },
+    "fine": {
+      "demand": 0.13890797392587714,
+      "excess": 0.11619362548968863,
+      "background_mass": 0.1648717781412362,
+      "background_arc": 0.21777112621217085
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_13__equal_arc",
+    "main": {
+      "demand": 0.28275049477073283,
+      "excess": 0.28101923330664935,
+      "background_mass": 0.28386587355988924,
+      "background_arc": 0.2896592636971319
+    },
+    "fine": {
+      "demand": 0.28275041905295356,
+      "excess": 0.28101872013090723,
+      "background_mass": 0.2838660799945137,
+      "background_arc": 0.28966024120979866
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_13__projected_mass",
+    "main": {
+      "demand": 0.2736664891937536,
+      "excess": 0.26358654322779246,
+      "background_mass": 0.280160573512917,
+      "background_arc": 0.30328171192591263
+    },
+    "fine": {
+      "demand": 0.2736694347196232,
+      "excess": 0.2635881605554864,
+      "background_mass": 0.2801643765844577,
+      "background_arc": 0.30328474198532973
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_15__equal_arc",
+    "main": {
+      "demand": 0.21280133896794257,
+      "excess": 0.21178145322545047,
+      "background_mass": 0.21345840836395139,
+      "background_arc": 0.21161782982099958
+    },
+    "fine": {
+      "demand": 0.21280212521016478,
+      "excess": 0.2117836331327098,
+      "background_mass": 0.213458296912785,
+      "background_arc": 0.21161644033037885
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_15__projected_mass",
+    "main": {
+      "demand": 0.19505957608733251,
+      "excess": 0.1591361502428157,
+      "background_mass": 0.2182035251973081,
+      "background_arc": 0.2524257720368115
+    },
+    "fine": {
+      "demand": 0.19506098437942032,
+      "excess": 0.15913889404557713,
+      "background_mass": 0.21820407964525848,
+      "background_arc": 0.2524256388856829
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_17__equal_arc",
+    "main": {
+      "demand": 0.1649365506603757,
+      "excess": 0.16417026101310597,
+      "background_mass": 0.16543023878123228,
+      "background_arc": 0.16780603600880709
+    },
+    "fine": {
+      "demand": 0.16493633875985156,
+      "excess": 0.16416895653538532,
+      "background_mass": 0.1654307309224758,
+      "background_arc": 0.16780618053214874
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_78__N_17__projected_mass",
+    "main": {
+      "demand": 0.15023597242219158,
+      "excess": 0.11548498723129794,
+      "background_mass": 0.17262456743706042,
+      "background_arc": 0.21052663750020398
+    },
+    "fine": {
+      "demand": 0.15023885288556685,
+      "excess": 0.1154893872615979,
+      "background_mass": 0.1726264752621749,
+      "background_arc": 0.21052697971108364
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_19__equal_arc",
+    "main": {
+      "demand": 0.2907664270175528,
+      "excess": 0.29359197047034463,
+      "background_mass": 0.28921707997175894,
+      "background_arc": 0.2950224104983067
+    },
+    "fine": {
+      "demand": 0.29076931447779664,
+      "excess": 0.2935941909675286,
+      "background_mass": 0.28922033243625056,
+      "background_arc": 0.29502226206594856
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_19__projected_mass",
+    "main": {
+      "demand": 0.28475326255879213,
+      "excess": 0.27927905135643305,
+      "background_mass": 0.28775496934409944,
+      "background_arc": 0.3000104210375469
+    },
+    "fine": {
+      "demand": 0.2847574229004796,
+      "excess": 0.27928178323761715,
+      "background_mass": 0.2877599143490724,
+      "background_arc": 0.30001253133769257
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_21__equal_arc",
+    "main": {
+      "demand": 0.23877129437777064,
+      "excess": 0.2392176268224483,
+      "background_mass": 0.23852655425391237,
+      "background_arc": 0.24095034484741645
+    },
+    "fine": {
+      "demand": 0.23877351957759663,
+      "excess": 0.23922248119360146,
+      "background_mass": 0.23852733767086104,
+      "background_arc": 0.2409486063518487
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_21__projected_mass",
+    "main": {
+      "demand": 0.22658065553517792,
+      "excess": 0.21524103772240066,
+      "background_mass": 0.23279857561044603,
+      "background_arc": 0.2570182176593117
+    },
+    "fine": {
+      "demand": 0.2265861379100407,
+      "excess": 0.21525026091999683,
+      "background_mass": 0.23280200962923908,
+      "background_arc": 0.25701943850340886
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_23__equal_arc",
+    "main": {
+      "demand": 0.1990828760141607,
+      "excess": 0.19958014720437472,
+      "background_mass": 0.19881020434501495,
+      "background_arc": 0.204452202247098
+    },
+    "fine": {
+      "demand": 0.199089725043873,
+      "excess": 0.19959718809806917,
+      "background_mass": 0.19881146468078975,
+      "background_arc": 0.20444587918017817
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_78__N_23__projected_mass",
+    "main": {
+      "demand": 0.1841367091913985,
+      "excess": 0.16435336326092323,
+      "background_mass": 0.19498462892273813,
+      "background_arc": 0.2235224324071466
+    },
+    "fine": {
+      "demand": 0.1841378809698573,
+      "excess": 0.1643607761264761,
+      "background_mass": 0.19498238349855992,
+      "background_arc": 0.22351857376829234
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_11__equal_arc",
+    "main": {
+      "demand": 0.2998465956073191,
+      "excess": 0.3013373302100962,
+      "background_mass": 0.29815343194570637,
+      "background_arc": 0.3052680470384513
+    },
+    "fine": {
+      "demand": 0.2998471049206246,
+      "excess": 0.30133653809018573,
+      "background_mass": 0.29815541914076205,
+      "background_arc": 0.3052691088349293
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_11__projected_mass",
+    "main": {
+      "demand": 0.2950575542559889,
+      "excess": 0.2921705518408093,
+      "background_mass": 0.2983365870035112,
+      "background_arc": 0.32002700934760525
+    },
+    "fine": {
+      "demand": 0.29506000792739917,
+      "excess": 0.2921741421474074,
+      "background_mass": 0.2983377502272044,
+      "background_arc": 0.3200273125545697
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_13__equal_arc",
+    "main": {
+      "demand": 0.21361178819440202,
+      "excess": 0.21327801793000106,
+      "background_mass": 0.21399088161717364,
+      "background_arc": 0.2106093161203914
+    },
+    "fine": {
+      "demand": 0.2136130608326165,
+      "excess": 0.21327990017975104,
+      "background_mass": 0.21399146192531437,
+      "background_arc": 0.21060772802962435
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_13__projected_mass",
+    "main": {
+      "demand": 0.19509828469684856,
+      "excess": 0.17765440566721205,
+      "background_mass": 0.21491089388665993,
+      "background_arc": 0.262193895178014
+    },
+    "fine": {
+      "demand": 0.19510224831642442,
+      "excess": 0.17765775579160234,
+      "background_mass": 0.21491555752979033,
+      "background_arc": 0.2621980603604114
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_15__equal_arc",
+    "main": {
+      "demand": 0.16080677998026616,
+      "excess": 0.16078766397827188,
+      "background_mass": 0.1608284917724737,
+      "background_arc": 0.1561810973558311
+    },
+    "fine": {
+      "demand": 0.16080701846054524,
+      "excess": 0.16078826091944134,
+      "background_mass": 0.16082832311939083,
+      "background_arc": 0.15618213191007202
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_79__N_15__projected_mass",
+    "main": {
+      "demand": 0.14308454049123678,
+      "excess": 0.11748919866703478,
+      "background_mass": 0.17215551167723192,
+      "background_arc": 0.2369784196546151
+    },
+    "fine": {
+      "demand": 0.1430870248116963,
+      "excess": 0.11749058188220206,
+      "background_mass": 0.1721592513498263,
+      "background_arc": 0.23698315409871343
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_13__equal_arc",
+    "main": {
+      "demand": 0.28278669231782644,
+      "excess": 0.2808324290521286,
+      "background_mass": 0.28403653671014106,
+      "background_arc": 0.2943938684431951
+    },
+    "fine": {
+      "demand": 0.2827879144974101,
+      "excess": 0.28083526550380333,
+      "background_mass": 0.28403672731102164,
+      "background_arc": 0.2943919628454053
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_13__projected_mass",
+    "main": {
+      "demand": 0.2765040489930251,
+      "excess": 0.2636224535616843,
+      "background_mass": 0.2847424425076153,
+      "background_arc": 0.30239079769908783
+    },
+    "fine": {
+      "demand": 0.27649965807318233,
+      "excess": 0.2636179533971922,
+      "background_mass": 0.28473812689845895,
+      "background_arc": 0.30238356283811085
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_15__equal_arc",
+    "main": {
+      "demand": 0.2123136068226251,
+      "excess": 0.21209317319882978,
+      "background_mass": 0.21245458461892006,
+      "background_arc": 0.21312125487853006
+    },
+    "fine": {
+      "demand": 0.2123144757707488,
+      "excess": 0.21209553489602423,
+      "background_mass": 0.21245449897546942,
+      "background_arc": 0.21311976244177705
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_15__projected_mass",
+    "main": {
+      "demand": 0.19818318748794525,
+      "excess": 0.16220142485941705,
+      "background_mass": 0.22119523762275778,
+      "background_arc": 0.25452131158378294
+    },
+    "fine": {
+      "demand": 0.19818062810153092,
+      "excess": 0.1621992014703521,
+      "background_mass": 0.2211924785550237,
+      "background_arc": 0.2545197953349802
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_17__equal_arc",
+    "main": {
+      "demand": 0.1664863473533617,
+      "excess": 0.16596238813177336,
+      "background_mass": 0.16682144421896739,
+      "background_arc": 0.16994324030280236
+    },
+    "fine": {
+      "demand": 0.16648660976591775,
+      "excess": 0.16596317451311549,
+      "background_mass": 0.1668213717497335,
+      "background_arc": 0.16994237234260873
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_79__N_17__projected_mass",
+    "main": {
+      "demand": 0.15289714358238654,
+      "excess": 0.12234670514004152,
+      "background_mass": 0.1724356033386173,
+      "background_arc": 0.20124600893850328
+    },
+    "fine": {
+      "demand": 0.15289618258661916,
+      "excess": 0.12234809395573583,
+      "background_mass": 0.1724331524355242,
+      "background_arc": 0.20124361940616678
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_19__equal_arc",
+    "main": {
+      "demand": 0.29262443300548235,
+      "excess": 0.29487783573521087,
+      "background_mass": 0.2913842620186813,
+      "background_arc": 0.2968588919705751
+    },
+    "fine": {
+      "demand": 0.29262731085989885,
+      "excess": 0.2948799249976559,
+      "background_mass": 0.29138757418648437,
+      "background_arc": 0.29685868026961615
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_19__projected_mass",
+    "main": {
+      "demand": 0.28871453697141636,
+      "excess": 0.28716673961081846,
+      "background_mass": 0.2895663746632487,
+      "background_arc": 0.29947671839639334
+    },
+    "fine": {
+      "demand": 0.2887179781928753,
+      "excess": 0.2871759216717359,
+      "background_mass": 0.28956665617535404,
+      "background_arc": 0.2994732762109872
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_21__equal_arc",
+    "main": {
+      "demand": 0.24081788598821371,
+      "excess": 0.24149137061533446,
+      "background_mass": 0.24044723049747854,
+      "background_arc": 0.24375344978064434
+    },
+    "fine": {
+      "demand": 0.24081907762667618,
+      "excess": 0.24149549874239415,
+      "background_mass": 0.24044680611786706,
+      "background_arc": 0.24375209110599863
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_21__projected_mass",
+    "main": {
+      "demand": 0.22926615771873854,
+      "excess": 0.21995544633340627,
+      "background_mass": 0.23439035233083835,
+      "background_arc": 0.25841220776746165
+    },
+    "fine": {
+      "demand": 0.2292813431376927,
+      "excess": 0.2199715013685173,
+      "background_mass": 0.2344050578793684,
+      "background_arc": 0.25842430833491825
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_23__equal_arc",
+    "main": {
+      "demand": 0.20109596931314971,
+      "excess": 0.20122623869528702,
+      "background_mass": 0.20102427493465977,
+      "background_arc": 0.20570158308990605
+    },
+    "fine": {
+      "demand": 0.20110453891836097,
+      "excess": 0.2012492237552839,
+      "background_mass": 0.20102491094505925,
+      "background_arc": 0.20569384325097048
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_79__N_23__projected_mass",
+    "main": {
+      "demand": 0.18602967651624552,
+      "excess": 0.167957262637562,
+      "background_mass": 0.19597591606682155,
+      "background_arc": 0.2223809974150309
+    },
+    "fine": {
+      "demand": 0.18603224193207024,
+      "excess": 0.1679660727486559,
+      "background_mass": 0.195975042214364,
+      "background_arc": 0.2223786210560756
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_11__equal_arc",
+    "main": {
+      "demand": 0.296791778887545,
+      "excess": 0.2971256881800078,
+      "background_mass": 0.2964111059570643,
+      "background_arc": 0.29327885107265345
+    },
+    "fine": {
+      "demand": 0.29679224235443424,
+      "excess": 0.2971250010898318,
+      "background_mass": 0.29641288123145015,
+      "background_arc": 0.29327993429251725
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_11__projected_mass",
+    "main": {
+      "demand": 0.2935751376727028,
+      "excess": 0.2920543522633059,
+      "background_mass": 0.29530890744639593,
+      "background_arc": 0.3015471959289138
+    },
+    "fine": {
+      "demand": 0.2935787446455083,
+      "excess": 0.29205858532320245,
+      "background_mass": 0.2953118001186744,
+      "background_arc": 0.30154970290148103
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_13__equal_arc",
+    "main": {
+      "demand": 0.2122398519366044,
+      "excess": 0.2111862991530724,
+      "background_mass": 0.21344095365667046,
+      "background_arc": 0.2034438132764484
+    },
+    "fine": {
+      "demand": 0.21224071813150697,
+      "excess": 0.21118765062472108,
+      "background_mass": 0.2134412662447668,
+      "background_arc": 0.20344267913474803
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_13__projected_mass",
+    "main": {
+      "demand": 0.19582806004920564,
+      "excess": 0.18267540185966336,
+      "background_mass": 0.21082273390117845,
+      "background_arc": 0.2522555473887569
+    },
+    "fine": {
+      "demand": 0.1958259056467793,
+      "excess": 0.18267349750227282,
+      "background_mass": 0.21082028984433596,
+      "background_arc": 0.2522550108363688
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_15__equal_arc",
+    "main": {
+      "demand": 0.1599045768761765,
+      "excess": 0.15971703406806884,
+      "background_mass": 0.1601183848532661,
+      "background_arc": 0.16678352644658548
+    },
+    "fine": {
+      "demand": 0.15990381700946063,
+      "excess": 0.15971537268198496,
+      "background_mass": 0.16011865269696177,
+      "background_arc": 0.1667845827570486
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_80__N_15__projected_mass",
+    "main": {
+      "demand": 0.14172575263760845,
+      "excess": 0.11743217447736302,
+      "background_mass": 0.16942162034440594,
+      "background_arc": 0.22848055943514536
+    },
+    "fine": {
+      "demand": 0.1417261945052448,
+      "excess": 0.11743335725680333,
+      "background_mass": 0.16942120905693295,
+      "background_arc": 0.2284793994695303
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_13__equal_arc",
+    "main": {
+      "demand": 0.27924642550703244,
+      "excess": 0.27772274975918815,
+      "background_mass": 0.2802217805342555,
+      "background_arc": 0.29390574229020033
+    },
+    "fine": {
+      "demand": 0.2792477582293047,
+      "excess": 0.2777255101788838,
+      "background_mass": 0.28022219896348993,
+      "background_arc": 0.29390392276315963
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_13__projected_mass",
+    "main": {
+      "demand": 0.27134202958104275,
+      "excess": 0.2632073715886118,
+      "background_mass": 0.27654929207037665,
+      "background_arc": 0.2993535385308286
+    },
+    "fine": {
+      "demand": 0.2713377408450211,
+      "excess": 0.2632053597041742,
+      "background_mass": 0.2765435438331543,
+      "background_arc": 0.29934657959753425
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_15__equal_arc",
+    "main": {
+      "demand": 0.21139975329464808,
+      "excess": 0.2108037940343182,
+      "background_mass": 0.21178124644462132,
+      "background_arc": 0.2073601686327889
+    },
+    "fine": {
+      "demand": 0.21140028426826993,
+      "excess": 0.2108047030851248,
+      "background_mass": 0.21178153525112417,
+      "background_arc": 0.20736205589211384
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_15__projected_mass",
+    "main": {
+      "demand": 0.19471115876385992,
+      "excess": 0.15872660887954806,
+      "background_mass": 0.21774605426684177,
+      "background_arc": 0.25079286269144946
+    },
+    "fine": {
+      "demand": 0.19471516098164166,
+      "excess": 0.15873085577296464,
+      "background_mass": 0.21774989095025174,
+      "background_arc": 0.2507967522710962
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_17__equal_arc",
+    "main": {
+      "demand": 0.16421938767803154,
+      "excess": 0.16384950166021803,
+      "background_mass": 0.16445616389993067,
+      "background_arc": 0.16782904928389544
+    },
+    "fine": {
+      "demand": 0.16422003584169267,
+      "excess": 0.16385137701263605,
+      "background_mass": 0.16445602640837487,
+      "background_arc": 0.16782862526946082
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_80__N_17__projected_mass",
+    "main": {
+      "demand": 0.15001894558694237,
+      "excess": 0.11612249845276934,
+      "background_mass": 0.17171717774958584,
+      "background_arc": 0.2085416972233397
+    },
+    "fine": {
+      "demand": 0.15001512465170247,
+      "excess": 0.11612160679631545,
+      "background_mass": 0.17171147329474476,
+      "background_arc": 0.20853301624796955
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_19__equal_arc",
+    "main": {
+      "demand": 0.29241334508502925,
+      "excess": 0.2954802513667718,
+      "background_mass": 0.29072748469818493,
+      "background_arc": 0.29700675966404905
+    },
+    "fine": {
+      "demand": 0.29241618042050715,
+      "excess": 0.2954828467168767,
+      "background_mass": 0.2907304553937269,
+      "background_arc": 0.2970072854601066
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_19__projected_mass",
+    "main": {
+      "demand": 0.2883598961509088,
+      "excess": 0.28670424832070723,
+      "background_mass": 0.2892699960480324,
+      "background_arc": 0.2971172043318944
+    },
+    "fine": {
+      "demand": 0.2883614118361756,
+      "excess": 0.2867070950564491,
+      "background_mass": 0.28927077820613517,
+      "background_arc": 0.29711916046830406
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_21__equal_arc",
+    "main": {
+      "demand": 0.23774855868872533,
+      "excess": 0.23868777889895088,
+      "background_mass": 0.23723227485039322,
+      "background_arc": 0.24115764082647922
+    },
+    "fine": {
+      "demand": 0.23774963587962308,
+      "excess": 0.23869190332069054,
+      "background_mass": 0.237231678053821,
+      "background_arc": 0.24115625829167822
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_21__projected_mass",
+    "main": {
+      "demand": 0.22396848663310703,
+      "excess": 0.2066998995321199,
+      "background_mass": 0.23346092763257045,
+      "background_arc": 0.26195898512691485
+    },
+    "fine": {
+      "demand": 0.22397362721906836,
+      "excess": 0.20670836818353516,
+      "background_mass": 0.23346421942484452,
+      "background_arc": 0.2619586570377153
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_23__equal_arc",
+    "main": {
+      "demand": 0.1995655436066765,
+      "excess": 0.19920849798543666,
+      "background_mass": 0.19976180948957215,
+      "background_arc": 0.20406808249134148
+    },
+    "fine": {
+      "demand": 0.1995737145957775,
+      "excess": 0.1992309598090908,
+      "background_mass": 0.1997621245061256,
+      "background_arc": 0.20406039866621728
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_80__N_23__projected_mass",
+    "main": {
+      "demand": 0.18322231892888285,
+      "excess": 0.1581562864877586,
+      "background_mass": 0.19700096987736754,
+      "background_arc": 0.2287128665634705
+    },
+    "fine": {
+      "demand": 0.18322213001269358,
+      "excess": 0.15815810441661954,
+      "background_mass": 0.1969996496825645,
+      "background_arc": 0.22871158170415057
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_11__equal_arc",
+    "main": {
+      "demand": 0.2999664401729647,
+      "excess": 0.2997514868933368,
+      "background_mass": 0.3002098812276518,
+      "background_arc": 0.29694038699549474
+    },
+    "fine": {
+      "demand": 0.29996676598476835,
+      "excess": 0.2997510655892857,
+      "background_mass": 0.3002110532276063,
+      "background_arc": 0.29694144798605515
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_11__projected_mass",
+    "main": {
+      "demand": 0.294784285363042,
+      "excess": 0.2914479302379632,
+      "background_mass": 0.2985628078953145,
+      "background_arc": 0.3089253064173337
+    },
+    "fine": {
+      "demand": 0.29478960706221474,
+      "excess": 0.2914543599821672,
+      "background_mass": 0.2985668755810987,
+      "background_arc": 0.3089291636176935
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_13__equal_arc",
+    "main": {
+      "demand": 0.2131397536054867,
+      "excess": 0.21245827506428203,
+      "background_mass": 0.21391154855136824,
+      "background_arc": 0.20524461806991542
+    },
+    "fine": {
+      "demand": 0.21314059465567417,
+      "excess": 0.21245959438179263,
+      "background_mass": 0.21391184812929934,
+      "background_arc": 0.20524343597668357
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_13__projected_mass",
+    "main": {
+      "demand": 0.1963375918754488,
+      "excess": 0.18147832333279287,
+      "background_mass": 0.21316616044702258,
+      "background_arc": 0.25766443318885923
+    },
+    "fine": {
+      "demand": 0.19633995545856245,
+      "excess": 0.18148064694183255,
+      "background_mass": 0.21316857322676316,
+      "background_arc": 0.2576664971039234
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_15__equal_arc",
+    "main": {
+      "demand": 0.1611145853873554,
+      "excess": 0.1616390659811173,
+      "background_mass": 0.1605205953392421,
+      "background_arc": 0.15478752681699165
+    },
+    "fine": {
+      "demand": 0.1611142495573382,
+      "excess": 0.16163843601475975,
+      "background_mass": 0.16052059248902428,
+      "background_arc": 0.15478987810949008
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_81__N_15__projected_mass",
+    "main": {
+      "demand": 0.14313424016894236,
+      "excess": 0.11922942759652877,
+      "background_mass": 0.1702071594321389,
+      "background_arc": 0.22605725513530425
+    },
+    "fine": {
+      "demand": 0.14313206387591632,
+      "excess": 0.11922534089299865,
+      "background_mass": 0.17020715305094888,
+      "background_arc": 0.22605966334332953
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_19__equal_arc",
+    "main": {
+      "demand": 0.28830802823387414,
+      "excess": 0.28975738770337817,
+      "background_mass": 0.28750675956851707,
+      "background_arc": 0.29267639297107156
+    },
+    "fine": {
+      "demand": 0.288311470406167,
+      "excess": 0.28976003942915546,
+      "background_mass": 0.2875106370442444,
+      "background_arc": 0.29267629143818663
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_19__projected_mass",
+    "main": {
+      "demand": 0.2833833511537008,
+      "excess": 0.2800281375533843,
+      "background_mass": 0.28523825849731027,
+      "background_arc": 0.2961242825127002
+    },
+    "fine": {
+      "demand": 0.28338795290132623,
+      "excess": 0.28004224273135314,
+      "background_mass": 0.28523761023964894,
+      "background_arc": 0.29611954480383534
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_21__equal_arc",
+    "main": {
+      "demand": 0.23719560149376853,
+      "excess": 0.23722241961989332,
+      "background_mass": 0.23718077527254494,
+      "background_arc": 0.2353671300596808
+    },
+    "fine": {
+      "demand": 0.23719782675777212,
+      "excess": 0.23722721961529863,
+      "background_mass": 0.2371815770792714,
+      "background_arc": 0.23536607302749124
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_21__projected_mass",
+    "main": {
+      "demand": 0.22271386852811897,
+      "excess": 0.2056249270375307,
+      "background_mass": 0.2321613752568757,
+      "background_arc": 0.26003981843989976
+    },
+    "fine": {
+      "demand": 0.22271615514244844,
+      "excess": 0.20562043820182166,
+      "background_mass": 0.23216742757390774,
+      "background_arc": 0.26004875747819084
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_23__equal_arc",
+    "main": {
+      "demand": 0.19720824441812237,
+      "excess": 0.19813684013360944,
+      "background_mass": 0.19669487650266712,
+      "background_arc": 0.19992732606422117
+    },
+    "fine": {
+      "demand": 0.19721452676998885,
+      "excess": 0.1981539684707983,
+      "background_mass": 0.19669516162849396,
+      "background_arc": 0.1999211116267296
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_81__N_23__projected_mass",
+    "main": {
+      "demand": 0.18118587962500177,
+      "excess": 0.15656632845809063,
+      "background_mass": 0.19479663342367706,
+      "background_arc": 0.22706998773499085
+    },
+    "fine": {
+      "demand": 0.18119051288640425,
+      "excess": 0.15656845949231954,
+      "background_mass": 0.19480267874394797,
+      "background_arc": 0.22707435342408008
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_13__equal_arc",
+    "main": {
+      "demand": 0.27640095695112843,
+      "excess": 0.27482758483841224,
+      "background_mass": 0.2774044899159139,
+      "background_arc": 0.28271262884059284
+    },
+    "fine": {
+      "demand": 0.2764018269653173,
+      "excess": 0.27482874395314943,
+      "background_mass": 0.27740517596112557,
+      "background_arc": 0.2827121045024132
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_13__projected_mass",
+    "main": {
+      "demand": 0.26866845640955095,
+      "excess": 0.25416532426385435,
+      "background_mass": 0.27791888806727133,
+      "background_arc": 0.3010782762567275
+    },
+    "fine": {
+      "demand": 0.2686723470624111,
+      "excess": 0.25416903237411587,
+      "background_mass": 0.2779228990776786,
+      "background_arc": 0.30108211692912307
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_15__equal_arc",
+    "main": {
+      "demand": 0.208290592099542,
+      "excess": 0.20758572000231276,
+      "background_mass": 0.208740175754807,
+      "background_arc": 0.2083702940362751
+    },
+    "fine": {
+      "demand": 0.20829125245185862,
+      "excess": 0.2075877137072863,
+      "background_mass": 0.2087399858546217,
+      "background_arc": 0.20836982282183153
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_15__projected_mass",
+    "main": {
+      "demand": 0.19019659795081034,
+      "excess": 0.14353272116002133,
+      "background_mass": 0.21995989313429687,
+      "background_arc": 0.2636104279319517
+    },
+    "fine": {
+      "demand": 0.19019964189305189,
+      "excess": 0.1435369609827166,
+      "background_mass": 0.21996218695326858,
+      "background_arc": 0.2636119966089472
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_17__equal_arc",
+    "main": {
+      "demand": 0.16292141765170468,
+      "excess": 0.16259572898519514,
+      "background_mass": 0.1631291493830972,
+      "background_arc": 0.16540258277178554
+    },
+    "fine": {
+      "demand": 0.16292119276501787,
+      "excess": 0.162595476579677,
+      "background_mass": 0.16312894213676274,
+      "background_arc": 0.16540188001146564
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_82__N_17__projected_mass",
+    "main": {
+      "demand": 0.1483048731767151,
+      "excess": 0.1174626451212309,
+      "background_mass": 0.16797675645909554,
+      "background_arc": 0.1972020131575527
+    },
+    "fine": {
+      "demand": 0.1483005189387779,
+      "excess": 0.117461832008877,
+      "background_mass": 0.1679701519612089,
+      "background_arc": 0.19719393645462882
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_11__equal_arc",
+    "main": {
+      "demand": 0.29040563563496785,
+      "excess": 0.2899259374805845,
+      "background_mass": 0.2909421474909854,
+      "background_arc": 0.28419821367571213
+    },
+    "fine": {
+      "demand": 0.2904052617747374,
+      "excess": 0.2899264533037227,
+      "background_mass": 0.29094077863399675,
+      "background_arc": 0.28419794370955964
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_11__projected_mass",
+    "main": {
+      "demand": 0.28257064937809545,
+      "excess": 0.2787756765124758,
+      "background_mass": 0.2868150850030082,
+      "background_arc": 0.30227834769979517
+    },
+    "fine": {
+      "demand": 0.2825723825520641,
+      "excess": 0.2787778996986028,
+      "background_mass": 0.2868162705849828,
+      "background_arc": 0.30227888856705665
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_13__equal_arc",
+    "main": {
+      "demand": 0.2074095260696044,
+      "excess": 0.2066738295183298,
+      "background_mass": 0.20823235583991562,
+      "background_arc": 0.20581384891410398
+    },
+    "fine": {
+      "demand": 0.20741013896799643,
+      "excess": 0.2066750972083798,
+      "background_mass": 0.2082322364837324,
+      "background_arc": 0.20581383754414073
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_13__projected_mass",
+    "main": {
+      "demand": 0.18922094102530093,
+      "excess": 0.16953842124353297,
+      "background_mass": 0.21123458673713866,
+      "background_arc": 0.262340106969459
+    },
+    "fine": {
+      "demand": 0.18922215494124198,
+      "excess": 0.16953910959989343,
+      "background_mass": 0.21123639082040865,
+      "background_arc": 0.26234378503016903
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_15__equal_arc",
+    "main": {
+      "demand": 0.1561380399607498,
+      "excess": 0.1561648189526814,
+      "background_mass": 0.15610808936258247,
+      "background_arc": 0.15699783817122137
+    },
+    "fine": {
+      "demand": 0.1561390355401499,
+      "excess": 0.15616630161025224,
+      "background_mass": 0.15610854017277553,
+      "background_arc": 0.15699690419420287
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_83__N_15__projected_mass",
+    "main": {
+      "demand": 0.14082793526205334,
+      "excess": 0.11566031771807792,
+      "background_mass": 0.16897631373020602,
+      "background_arc": 0.22741096746028555
+    },
+    "fine": {
+      "demand": 0.14082223185240816,
+      "excess": 0.11565408174102143,
+      "background_mass": 0.16897120898403248,
+      "background_arc": 0.2274095988344003
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_13__equal_arc",
+    "main": {
+      "demand": 0.2796015592772319,
+      "excess": 0.27763208517704985,
+      "background_mass": 0.2808566274004832,
+      "background_arc": 0.2924599708597199
+    },
+    "fine": {
+      "demand": 0.2796024840610464,
+      "excess": 0.2776342391674006,
+      "background_mass": 0.2808567681242077,
+      "background_arc": 0.29245875627173623
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_13__projected_mass",
+    "main": {
+      "demand": 0.27188919578319615,
+      "excess": 0.2590681027479839,
+      "background_mass": 0.28005957241939955,
+      "background_arc": 0.2989805656823072
+    },
+    "fine": {
+      "demand": 0.2718889767665231,
+      "excess": 0.2590686603521075,
+      "background_mass": 0.28005885370368644,
+      "background_arc": 0.29897696603530854
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_15__equal_arc",
+    "main": {
+      "demand": 0.21021865470127385,
+      "excess": 0.20889474869132468,
+      "background_mass": 0.21106232775648917,
+      "background_arc": 0.20775599672496045
+    },
+    "fine": {
+      "demand": 0.21021866895641764,
+      "excess": 0.2088935292609931,
+      "background_mass": 0.21106312769567273,
+      "background_arc": 0.2077592730006688
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_15__projected_mass",
+    "main": {
+      "demand": 0.1935001330700225,
+      "excess": 0.1534033549699575,
+      "background_mass": 0.21905222742547703,
+      "background_arc": 0.25224438193145543
+    },
+    "fine": {
+      "demand": 0.19349982327530896,
+      "excess": 0.15340130175025837,
+      "background_mass": 0.2190530136672007,
+      "background_arc": 0.2522452172431488
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_17__equal_arc",
+    "main": {
+      "demand": 0.16446017725129897,
+      "excess": 0.16384795305693595,
+      "background_mass": 0.16485032357033774,
+      "background_arc": 0.16904196659656825
+    },
+    "fine": {
+      "demand": 0.16446006005282282,
+      "excess": 0.16384778525288016,
+      "background_mass": 0.16485023839207455,
+      "background_arc": 0.16904091654256884
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_83__N_17__projected_mass",
+    "main": {
+      "demand": 0.14976179583129934,
+      "excess": 0.11547766972291564,
+      "background_mass": 0.17160971645548287,
+      "background_arc": 0.20225585395665224
+    },
+    "fine": {
+      "demand": 0.14976054624407772,
+      "excess": 0.11547428632588484,
+      "background_mass": 0.17160981385281326,
+      "background_arc": 0.20225621885011974
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_19__equal_arc",
+    "main": {
+      "demand": 0.29405839386193927,
+      "excess": 0.2959410520029521,
+      "background_mass": 0.29301377594892014,
+      "background_arc": 0.29850159465557335
+    },
+    "fine": {
+      "demand": 0.29406146481120177,
+      "excess": 0.29594330841591876,
+      "background_mass": 0.293017299126403,
+      "background_arc": 0.29850145996114785
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_19__projected_mass",
+    "main": {
+      "demand": 0.2889610609391488,
+      "excess": 0.28344008921680375,
+      "background_mass": 0.29202444554031276,
+      "background_arc": 0.3065047032912827
+    },
+    "fine": {
+      "demand": 0.2889645219315465,
+      "excess": 0.2834483062529088,
+      "background_mass": 0.2920252667815141,
+      "background_arc": 0.3065034871177318
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_21__equal_arc",
+    "main": {
+      "demand": 0.24073474735190686,
+      "excess": 0.24124602016570101,
+      "background_mass": 0.24045106083012452,
+      "background_arc": 0.24395033098795235
+    },
+    "fine": {
+      "demand": 0.24073677954537936,
+      "excess": 0.24125113660187553,
+      "background_mass": 0.24045138176483,
+      "background_arc": 0.24394858767786046
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_21__projected_mass",
+    "main": {
+      "demand": 0.2333760711570354,
+      "excess": 0.23178876909715118,
+      "background_mass": 0.2342568068195574,
+      "background_arc": 0.25294888416736744
+    },
+    "fine": {
+      "demand": 0.233380574139613,
+      "excess": 0.23179381621737033,
+      "background_mass": 0.2342610076508438,
+      "background_arc": 0.2529523886575953
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_23__equal_arc",
+    "main": {
+      "demand": 0.20157971575808367,
+      "excess": 0.20129952387222688,
+      "background_mass": 0.2017351839531173,
+      "background_arc": 0.2062645537186819
+    },
+    "fine": {
+      "demand": 0.20158480913560017,
+      "excess": 0.2013143454112391,
+      "background_mass": 0.20173487949174065,
+      "background_arc": 0.20625937015878704
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_83__N_23__projected_mass",
+    "main": {
+      "demand": 0.1848287694883214,
+      "excess": 0.15722274529842298,
+      "background_mass": 0.20014633923069464,
+      "background_arc": 0.2333793658303823
+    },
+    "fine": {
+      "demand": 0.18481997138970307,
+      "excess": 0.15720948039915014,
+      "background_mass": 0.20014001560619044,
+      "background_arc": 0.2333775066395174
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_11__equal_arc",
+    "main": {
+      "demand": 0.2935956610553802,
+      "excess": 0.2935543609009509,
+      "background_mass": 0.29364248375758706,
+      "background_arc": 0.2921861243621389
+    },
+    "fine": {
+      "demand": 0.29359651520989866,
+      "excess": 0.29355383817210784,
+      "background_mass": 0.29364489889197437,
+      "background_arc": 0.2921871823618508
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_11__projected_mass",
+    "main": {
+      "demand": 0.2875182792911884,
+      "excess": 0.2849581210083475,
+      "background_mass": 0.29042077519068976,
+      "background_arc": 0.3017014642364399
+    },
+    "fine": {
+      "demand": 0.28751932032043304,
+      "excess": 0.2849593969244803,
+      "background_mass": 0.29042154892250055,
+      "background_arc": 0.3017043993993777
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_13__equal_arc",
+    "main": {
+      "demand": 0.20924133044886103,
+      "excess": 0.20853695568522673,
+      "background_mass": 0.21003989234906198,
+      "background_arc": 0.2010590507394404
+    },
+    "fine": {
+      "demand": 0.20924217814539756,
+      "excess": 0.2085383204133158,
+      "background_mass": 0.21004015360242245,
+      "background_arc": 0.20105791514169893
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_13__projected_mass",
+    "main": {
+      "demand": 0.1912898613159214,
+      "excess": 0.17607812735973763,
+      "background_mass": 0.20853566823655306,
+      "background_arc": 0.2570689178371584
+    },
+    "fine": {
+      "demand": 0.19129062566924163,
+      "excess": 0.1760796464767687,
+      "background_mass": 0.20853557094676206,
+      "background_arc": 0.257068232428721
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_15__equal_arc",
+    "main": {
+      "demand": 0.15822219002433258,
+      "excess": 0.15859136710839578,
+      "background_mass": 0.15780364755378878,
+      "background_arc": 0.15185049844378717
+    },
+    "fine": {
+      "demand": 0.15822178031147974,
+      "excess": 0.15859061666053906,
+      "background_mass": 0.15780362428250863,
+      "background_arc": 0.1518528182791268
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_84__N_15__projected_mass",
+    "main": {
+      "demand": 0.1396111558569878,
+      "excess": 0.11557837155305005,
+      "background_mass": 0.16685754072440212,
+      "background_arc": 0.22764402310731996
+    },
+    "fine": {
+      "demand": 0.13960927729694342,
+      "excess": 0.11557600696276113,
+      "background_mass": 0.16685620377738464,
+      "background_arc": 0.22764269228879522
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_13__equal_arc",
+    "main": {
+      "demand": 0.28758052185078614,
+      "excess": 0.2863997690016595,
+      "background_mass": 0.2883381733275354,
+      "background_arc": 0.29948866757306314
+    },
+    "fine": {
+      "demand": 0.2875811665614629,
+      "excess": 0.28639995018889786,
+      "background_mass": 0.28833911498201154,
+      "background_arc": 0.299487629919837
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_13__projected_mass",
+    "main": {
+      "demand": 0.28041312680410174,
+      "excess": 0.2701432413572146,
+      "background_mass": 0.2870029850294155,
+      "background_arc": 0.3029256723962897
+    },
+    "fine": {
+      "demand": 0.2804105643427963,
+      "excess": 0.27013571062720126,
+      "background_mass": 0.28700360633407285,
+      "background_arc": 0.3029277917651621
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_15__equal_arc",
+    "main": {
+      "demand": 0.21340508815976306,
+      "excess": 0.2130011046957904,
+      "background_mass": 0.2136643114750297,
+      "background_arc": 0.21420599752701178
+    },
+    "fine": {
+      "demand": 0.21340398455945317,
+      "excess": 0.2129982085706786,
+      "background_mass": 0.21366435791435362,
+      "background_arc": 0.21420653304264597
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_15__projected_mass",
+    "main": {
+      "demand": 0.19734627305000718,
+      "excess": 0.1547399253329496,
+      "background_mass": 0.22468540866217065,
+      "background_arc": 0.2679863454031412
+    },
+    "fine": {
+      "demand": 0.197342288294478,
+      "excess": 0.1547353596854729,
+      "background_mass": 0.22468177917327636,
+      "background_arc": 0.26798402884740186
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_17__equal_arc",
+    "main": {
+      "demand": 0.16889224138671502,
+      "excess": 0.16815010578976414,
+      "background_mass": 0.1693684461499675,
+      "background_arc": 0.17125061601265282
+    },
+    "fine": {
+      "demand": 0.16889332929209275,
+      "excess": 0.16815294906247166,
+      "background_mass": 0.1693684073884352,
+      "background_arc": 0.17124986844019
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_84__N_17__projected_mass",
+    "main": {
+      "demand": 0.1538253380557471,
+      "excess": 0.12377497631726245,
+      "background_mass": 0.17310769758158115,
+      "background_arc": 0.20369946913660475
+    },
+    "fine": {
+      "demand": 0.1538194324989359,
+      "excess": 0.12376691582596644,
+      "background_mass": 0.17310316245293997,
+      "background_arc": 0.20369699058664828
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_11__equal_arc",
+    "main": {
+      "demand": 0.2951711111496615,
+      "excess": 0.2936297875124861,
+      "background_mass": 0.29690528113911424,
+      "background_arc": 0.3127677672854331
+    },
+    "fine": {
+      "demand": 0.2951707179116559,
+      "excess": 0.29362981024678375,
+      "background_mass": 0.2969044200983923,
+      "background_arc": 0.31276627916609984
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_11__projected_mass",
+    "main": {
+      "demand": 0.29067843720881986,
+      "excess": 0.28778470711897325,
+      "background_mass": 0.2939342231828707,
+      "background_arc": 0.31344449676576913
+    },
+    "fine": {
+      "demand": 0.2906775202087686,
+      "excess": 0.28778405994408496,
+      "background_mass": 0.29393300300145986,
+      "background_arc": 0.3134447754798653
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_13__equal_arc",
+    "main": {
+      "demand": 0.2143939986908109,
+      "excess": 0.21311137095544935,
+      "background_mass": 0.21583710542884818,
+      "background_arc": 0.20668699372579052
+    },
+    "fine": {
+      "demand": 0.21439541019993696,
+      "excess": 0.21311341556305802,
+      "background_mass": 0.21583780480670675,
+      "background_arc": 0.20668530556561795
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_13__projected_mass",
+    "main": {
+      "demand": 0.19808433604343495,
+      "excess": 0.18510159270061846,
+      "background_mass": 0.21269144602530793,
+      "background_arc": 0.2579823054794042
+    },
+    "fine": {
+      "demand": 0.1980863097806831,
+      "excess": 0.1851031174171841,
+      "background_mass": 0.21269392677458543,
+      "background_arc": 0.25798524371045034
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_15__equal_arc",
+    "main": {
+      "demand": 0.16107635019375405,
+      "excess": 0.16083166911955327,
+      "background_mass": 0.161351645119253,
+      "background_arc": 0.15485785236884725
+    },
+    "fine": {
+      "demand": 0.16107615078164092,
+      "excess": 0.16083126318551683,
+      "background_mass": 0.16135167810270207,
+      "background_arc": 0.15485794211655768
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_85__N_15__projected_mass",
+    "main": {
+      "demand": 0.14348893762787251,
+      "excess": 0.11917393746183079,
+      "background_mass": 0.17084616654753326,
+      "background_arc": 0.22961182233084962
+    },
+    "fine": {
+      "demand": 0.14348882043871136,
+      "excess": 0.1191740979565378,
+      "background_mass": 0.17084574032315913,
+      "background_arc": 0.22961115582805586
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_13__equal_arc",
+    "main": {
+      "demand": 0.2845727779589772,
+      "excess": 0.2837354314254871,
+      "background_mass": 0.2850955057044828,
+      "background_arc": 0.2961179160655857
+    },
+    "fine": {
+      "demand": 0.2845734044530852,
+      "excess": 0.28373652534426735,
+      "background_mass": 0.2850958402161535,
+      "background_arc": 0.2961173002146896
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_13__projected_mass",
+    "main": {
+      "demand": 0.2789413902204759,
+      "excess": 0.2724032300470583,
+      "background_mass": 0.28302294736618944,
+      "background_arc": 0.2986181703698433
+    },
+    "fine": {
+      "demand": 0.2789400003184957,
+      "excess": 0.27240628062978306,
+      "background_mass": 0.2830187839746784,
+      "background_arc": 0.29861236030529104
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_15__equal_arc",
+    "main": {
+      "demand": 0.21301362267840088,
+      "excess": 0.21226389224894668,
+      "background_mass": 0.21348165458807153,
+      "background_arc": 0.2141846442517532
+    },
+    "fine": {
+      "demand": 0.21301325387863573,
+      "excess": 0.21226322549324017,
+      "background_mass": 0.2134814716268366,
+      "background_arc": 0.2141852159033438
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_15__projected_mass",
+    "main": {
+      "demand": 0.19882167269813292,
+      "excess": 0.1653620303216093,
+      "background_mass": 0.21970942075150157,
+      "background_arc": 0.2500229659728481
+    },
+    "fine": {
+      "demand": 0.19882545944377067,
+      "excess": 0.16537080196365228,
+      "background_mass": 0.2197100882087349,
+      "background_arc": 0.25002220979476075
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_17__equal_arc",
+    "main": {
+      "demand": 0.16802004433947512,
+      "excess": 0.16790769919742282,
+      "background_mass": 0.16809017769582732,
+      "background_arc": 0.16654838521421889
+    },
+    "fine": {
+      "demand": 0.16802078598020628,
+      "excess": 0.16790984239768425,
+      "background_mass": 0.16809004436481842,
+      "background_arc": 0.16654733306449662
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_85__N_17__projected_mass",
+    "main": {
+      "demand": 0.15274478312859635,
+      "excess": 0.11954489768903882,
+      "background_mass": 0.17347037351771363,
+      "background_arc": 0.20653543485978904
+    },
+    "fine": {
+      "demand": 0.15273776854393287,
+      "excess": 0.11953938663004716,
+      "background_mass": 0.17346241300580004,
+      "background_arc": 0.20652336682745445
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_19__equal_arc",
+    "main": {
+      "demand": 0.2954187302320689,
+      "excess": 0.29804905790416814,
+      "background_mass": 0.2939763648214546,
+      "background_arc": 0.3018983375264733
+    },
+    "fine": {
+      "demand": 0.29542193021943225,
+      "excess": 0.298051337622452,
+      "background_mass": 0.29398006690805145,
+      "background_arc": 0.30189714048795785
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_19__projected_mass",
+    "main": {
+      "demand": 0.291379006899946,
+      "excess": 0.2890133093980786,
+      "background_mass": 0.29267625981822865,
+      "background_arc": 0.3061666876847861
+    },
+    "fine": {
+      "demand": 0.29137519116708205,
+      "excess": 0.28900299533306534,
+      "background_mass": 0.2926760097988966,
+      "background_arc": 0.30616604503323847
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_21__equal_arc",
+    "main": {
+      "demand": 0.24275012531842638,
+      "excess": 0.24629119508744104,
+      "background_mass": 0.24080834574260554,
+      "background_arc": 0.2439349871585716
+    },
+    "fine": {
+      "demand": 0.2427521335376021,
+      "excess": 0.24629475778387339,
+      "background_mass": 0.24080949812825436,
+      "background_arc": 0.24393355195079341
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_21__projected_mass",
+    "main": {
+      "demand": 0.23217917068011032,
+      "excess": 0.22586249719646295,
+      "background_mass": 0.23564297917804042,
+      "background_arc": 0.25889893313199575
+    },
+    "fine": {
+      "demand": 0.23218511220907337,
+      "excess": 0.22587217998128628,
+      "background_mass": 0.23564687524968336,
+      "background_arc": 0.25889799689703935
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_23__equal_arc",
+    "main": {
+      "demand": 0.201440046650159,
+      "excess": 0.20106194867942917,
+      "background_mass": 0.20164738029934243,
+      "background_arc": 0.2032162891011781
+    },
+    "fine": {
+      "demand": 0.20144870811332033,
+      "excess": 0.20108500634906007,
+      "background_mass": 0.2016481478158058,
+      "background_arc": 0.20320845478171048
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_85__N_23__projected_mass",
+    "main": {
+      "demand": 0.18509567985757827,
+      "excess": 0.15888685680661815,
+      "background_mass": 0.19946753938770562,
+      "background_arc": 0.22941512437265438
+    },
+    "fine": {
+      "demand": 0.18508905366936979,
+      "excess": 0.15888448437770628,
+      "background_mass": 0.19945860591479053,
+      "background_arc": 0.2294081359473205
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_11__equal_arc",
+    "main": {
+      "demand": 0.29557337547328894,
+      "excess": 0.2966081566733694,
+      "background_mass": 0.2944039082941441,
+      "background_arc": 0.2889643739618977
+    },
+    "fine": {
+      "demand": 0.2955739252170552,
+      "excess": 0.29660754671332573,
+      "background_mass": 0.29440576849548905,
+      "background_arc": 0.2889654514398315
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_11__projected_mass",
+    "main": {
+      "demand": 0.2903779844481171,
+      "excess": 0.28779346587777377,
+      "background_mass": 0.2932989011034178,
+      "background_arc": 0.30775931020704295
+    },
+    "fine": {
+      "demand": 0.2903818271253688,
+      "excess": 0.2877972875220585,
+      "background_mass": 0.2933027680313532,
+      "background_arc": 0.30776345425823576
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_13__equal_arc",
+    "main": {
+      "demand": 0.21103863041164034,
+      "excess": 0.20972210576902217,
+      "background_mass": 0.21252651244888432,
+      "background_arc": 0.2023086763872477
+    },
+    "fine": {
+      "demand": 0.21103850428372647,
+      "excess": 0.2097218259852092,
+      "background_mass": 0.2125265602211301,
+      "background_arc": 0.20230900769759871
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_13__projected_mass",
+    "main": {
+      "demand": 0.1947215536937553,
+      "excess": 0.18115390433088494,
+      "background_mass": 0.21005515332504907,
+      "background_arc": 0.2520687462033449
+    },
+    "fine": {
+      "demand": 0.19472539232511182,
+      "excess": 0.18115802979315057,
+      "background_mass": 0.21005867031209563,
+      "background_arc": 0.2520710230613648
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_15__equal_arc",
+    "main": {
+      "demand": 0.1588696984113397,
+      "excess": 0.15898385126604783,
+      "background_mass": 0.15874068754703663,
+      "background_arc": 0.1653455418546398
+    },
+    "fine": {
+      "demand": 0.15887007294281505,
+      "excess": 0.1589846895664636,
+      "background_mass": 0.1587405379246276,
+      "background_arc": 0.16534400154350457
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_86__N_15__projected_mass",
+    "main": {
+      "demand": 0.1413911777035307,
+      "excess": 0.11739660995383999,
+      "background_mass": 0.16850885191219508,
+      "background_arc": 0.2308888420552096
+    },
+    "fine": {
+      "demand": 0.1413903282646676,
+      "excess": 0.11739505897188156,
+      "background_mass": 0.168508799785723,
+      "background_arc": 0.230889543830253
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_11__equal_arc",
+    "main": {
+      "demand": 0.29107016761984944,
+      "excess": 0.29122645582652,
+      "background_mass": 0.29089391727224284,
+      "background_arc": 0.30112993401034754
+    },
+    "fine": {
+      "demand": 0.2910708570062318,
+      "excess": 0.2912260136002941,
+      "background_mass": 0.29089588278846507,
+      "background_arc": 0.3011309277180263
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_11__projected_mass",
+    "main": {
+      "demand": 0.2840422711985235,
+      "excess": 0.28129936324619365,
+      "background_mass": 0.2871355211010568,
+      "background_arc": 0.30793139198804215
+    },
+    "fine": {
+      "demand": 0.2840420022828035,
+      "excess": 0.2812979985180653,
+      "background_mass": 0.2871364883095588,
+      "background_arc": 0.3079319189346016
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_13__equal_arc",
+    "main": {
+      "demand": 0.20946754778932342,
+      "excess": 0.2093805866189039,
+      "background_mass": 0.20956561620306507,
+      "background_arc": 0.20838834938464004
+    },
+    "fine": {
+      "demand": 0.20946846198571903,
+      "excess": 0.2093820546164451,
+      "background_mass": 0.20956590587419427,
+      "background_arc": 0.20838714115693655
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_13__projected_mass",
+    "main": {
+      "demand": 0.1912184379079691,
+      "excess": 0.1753112917802736,
+      "background_mass": 0.2091573476578504,
+      "background_arc": 0.2571876205760385
+    },
+    "fine": {
+      "demand": 0.19121917896945048,
+      "excess": 0.17531139173876187,
+      "background_mass": 0.20915881372307032,
+      "background_arc": 0.257190345029671
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_15__equal_arc",
+    "main": {
+      "demand": 0.156393186610561,
+      "excess": 0.15661380102614975,
+      "background_mass": 0.15614439389444462,
+      "background_arc": 0.1646051477130547
+    },
+    "fine": {
+      "demand": 0.15639370393864255,
+      "excess": 0.15661469028501315,
+      "background_mass": 0.1561444917583478,
+      "background_arc": 0.16460437364495267
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_87__N_15__projected_mass",
+    "main": {
+      "demand": 0.14050034558704516,
+      "excess": 0.11500927684700608,
+      "background_mass": 0.16924729855300932,
+      "background_arc": 0.23313902745131343
+    },
+    "fine": {
+      "demand": 0.1405018695510635,
+      "excess": 0.11500986246865755,
+      "background_mass": 0.169249883939439,
+      "background_arc": 0.2331433654491009
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_19__equal_arc",
+    "main": {
+      "demand": 0.29164180900921177,
+      "excess": 0.2926994237693698,
+      "background_mass": 0.29105729792735335,
+      "background_arc": 0.2972058789538292
+    },
+    "fine": {
+      "demand": 0.2916438006841172,
+      "excess": 0.2926990593121349,
+      "background_mass": 0.29106059146516705,
+      "background_arc": 0.29720648209272815
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_19__projected_mass",
+    "main": {
+      "demand": 0.286671028077597,
+      "excess": 0.2789422777346262,
+      "background_mass": 0.29094247018919267,
+      "background_arc": 0.30590459289583855
+    },
+    "fine": {
+      "demand": 0.28667664141332333,
+      "excess": 0.27894659146692674,
+      "background_mass": 0.2909488039637987,
+      "background_arc": 0.30590825722650616
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_21__equal_arc",
+    "main": {
+      "demand": 0.23998536574571688,
+      "excess": 0.24182297909472686,
+      "background_mass": 0.238969773483647,
+      "background_arc": 0.24137881675005599
+    },
+    "fine": {
+      "demand": 0.23998695754272772,
+      "excess": 0.2418283788183205,
+      "background_mass": 0.23896926023575202,
+      "background_arc": 0.24137659572961068
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_21__projected_mass",
+    "main": {
+      "demand": 0.22757790249197793,
+      "excess": 0.21537582278367357,
+      "background_mass": 0.23432161587411607,
+      "background_arc": 0.2598436588903255
+    },
+    "fine": {
+      "demand": 0.22757188115118648,
+      "excess": 0.21536354633795213,
+      "background_mass": 0.23431905499280917,
+      "background_arc": 0.25984364471826465
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_23__equal_arc",
+    "main": {
+      "demand": 0.200548096324885,
+      "excess": 0.20125828557998166,
+      "background_mass": 0.2001555966118905,
+      "background_arc": 0.20531088029827302
+    },
+    "fine": {
+      "demand": 0.20055501257256844,
+      "excess": 0.20127523929206856,
+      "background_mass": 0.20015696525848423,
+      "background_arc": 0.2053045053442646
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_87__N_23__projected_mass",
+    "main": {
+      "demand": 0.18426799125961407,
+      "excess": 0.16074175944636393,
+      "background_mass": 0.1972702144955699,
+      "background_arc": 0.22710687749551922
+    },
+    "fine": {
+      "demand": 0.18426067611454092,
+      "excess": 0.16073131378831806,
+      "background_mass": 0.19726463614891454,
+      "background_arc": 0.22710188125316497
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_11__equal_arc",
+    "main": {
+      "demand": 0.2968146010145477,
+      "excess": 0.2978427570427666,
+      "background_mass": 0.29564616755356854,
+      "background_arc": 0.2929036420653005
+    },
+    "fine": {
+      "demand": 0.2968152621916189,
+      "excess": 0.297842383564824,
+      "background_mass": 0.2956480045884589,
+      "background_arc": 0.29290467313912144
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_11__projected_mass",
+    "main": {
+      "demand": 0.29031753604003313,
+      "excess": 0.2885508121506999,
+      "background_mass": 0.2923253045614945,
+      "background_arc": 0.30401358205131584
+    },
+    "fine": {
+      "demand": 0.2903210174125089,
+      "excess": 0.28855512493509006,
+      "background_mass": 0.2923278410210938,
+      "background_arc": 0.3040147417335206
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_13__equal_arc",
+    "main": {
+      "demand": 0.2121319216241874,
+      "excess": 0.21217711939745038,
+      "background_mass": 0.21208055725030575,
+      "background_arc": 0.20333368363500684
+    },
+    "fine": {
+      "demand": 0.21213312663441142,
+      "excess": 0.21217895542251902,
+      "background_mass": 0.21208104515430812,
+      "background_arc": 0.20333208984576565
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_13__projected_mass",
+    "main": {
+      "demand": 0.19235929393913725,
+      "excess": 0.17519561282709364,
+      "background_mass": 0.2118647179939208,
+      "background_arc": 0.2630493620089013
+    },
+    "fine": {
+      "demand": 0.19236107412302209,
+      "excess": 0.1751970074341974,
+      "background_mass": 0.21186693571478152,
+      "background_arc": 0.2630532088553259
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_15__equal_arc",
+    "main": {
+      "demand": 0.15858300135800263,
+      "excess": 0.1580796148632444,
+      "background_mass": 0.15915506786166317,
+      "background_arc": 0.16664505950987066
+    },
+    "fine": {
+      "demand": 0.15858256407524726,
+      "excess": 0.15807892193265477,
+      "background_mass": 0.15915492108732898,
+      "background_arc": 0.16664475752591162
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_88__N_15__projected_mass",
+    "main": {
+      "demand": 0.14193954316201013,
+      "excess": 0.1189164528057342,
+      "background_mass": 0.1681038104610364,
+      "background_arc": 0.22322929997808874
+    },
+    "fine": {
+      "demand": 0.14193524099909513,
+      "excess": 0.11891234067199175,
+      "background_mass": 0.16809929147518327,
+      "background_arc": 0.2232275377954643
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_19__equal_arc",
+    "main": {
+      "demand": 0.2900698601971064,
+      "excess": 0.29293595667006217,
+      "background_mass": 0.28847335996541174,
+      "background_arc": 0.2956254288559344
+    },
+    "fine": {
+      "demand": 0.2900727454199557,
+      "excess": 0.2929377894162076,
+      "background_mass": 0.2884768277652,
+      "background_arc": 0.2956244259211468
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_19__projected_mass",
+    "main": {
+      "demand": 0.2856691361586005,
+      "excess": 0.28203249364199806,
+      "background_mass": 0.28769485325330774,
+      "background_arc": 0.2977124221243008
+    },
+    "fine": {
+      "demand": 0.2856713740342398,
+      "excess": 0.28203755704355554,
+      "background_mass": 0.2876955218997425,
+      "background_arc": 0.29771162922860583
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_21__equal_arc",
+    "main": {
+      "demand": 0.23872278280362833,
+      "excess": 0.24039226695689356,
+      "background_mass": 0.23779283091169157,
+      "background_arc": 0.24004386038109354
+    },
+    "fine": {
+      "demand": 0.23872505279439232,
+      "excess": 0.24039704267346898,
+      "background_mass": 0.2377937029896138,
+      "background_arc": 0.24004217083200713
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_21__projected_mass",
+    "main": {
+      "demand": 0.22390976211843083,
+      "excess": 0.20576828280273415,
+      "background_mass": 0.23401510093172123,
+      "background_arc": 0.26231718669019205
+    },
+    "fine": {
+      "demand": 0.2239119543487939,
+      "excess": 0.20576763173054127,
+      "background_mass": 0.2340189002937552,
+      "background_arc": 0.26232176440964233
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_23__equal_arc",
+    "main": {
+      "demand": 0.19961001322458782,
+      "excess": 0.19978364000659718,
+      "background_mass": 0.19951329798826484,
+      "background_arc": 0.20447836920855186
+    },
+    "fine": {
+      "demand": 0.19961647036663505,
+      "excess": 0.19980171860679147,
+      "background_mass": 0.19951328139733304,
+      "background_arc": 0.204472103409679
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_88__N_23__projected_mass",
+    "main": {
+      "demand": 0.18255522477734937,
+      "excess": 0.15906451453284773,
+      "background_mass": 0.19564024292028162,
+      "background_arc": 0.22722504781451885
+    },
+    "fine": {
+      "demand": 0.1825646916916132,
+      "excess": 0.15907433349141958,
+      "background_mass": 0.19564954393725745,
+      "background_arc": 0.227232701534388
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_11__equal_arc",
+    "main": {
+      "demand": 0.283229962098351,
+      "excess": 0.2819041496044817,
+      "background_mass": 0.2847135517342052,
+      "background_arc": 0.2819056441935766
+    },
+    "fine": {
+      "demand": 0.28322961348322045,
+      "excess": 0.28190538535277143,
+      "background_mass": 0.28471143001438254,
+      "background_arc": 0.28190450110383053
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_11__projected_mass",
+    "main": {
+      "demand": 0.27688172032799513,
+      "excess": 0.27357773983766537,
+      "background_mass": 0.28057888809129805,
+      "background_arc": 0.2950528570359585
+    },
+    "fine": {
+      "demand": 0.2768775987335736,
+      "excess": 0.2735725362448752,
+      "background_mass": 0.28057597676955126,
+      "background_arc": 0.29505149024898325
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_13__equal_arc",
+    "main": {
+      "demand": 0.20388389135929486,
+      "excess": 0.2035587290838513,
+      "background_mass": 0.2042477492834354,
+      "background_arc": 0.19960360579157294
+    },
+    "fine": {
+      "demand": 0.2038844747791042,
+      "excess": 0.20355981539622303,
+      "background_mass": 0.20424776991646634,
+      "background_arc": 0.19960238984827017
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_13__projected_mass",
+    "main": {
+      "demand": 0.18545179546870158,
+      "excess": 0.1650016796880463,
+      "background_mass": 0.20833555917170815,
+      "background_arc": 0.26128419950284093
+    },
+    "fine": {
+      "demand": 0.18545221516049867,
+      "excess": 0.16500223191715183,
+      "background_mass": 0.20833582753452257,
+      "background_arc": 0.2612828419683507
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_15__equal_arc",
+    "main": {
+      "demand": 0.15293030189280316,
+      "excess": 0.15253638248657111,
+      "background_mass": 0.15337109932920542,
+      "background_arc": 0.16058198945127847
+    },
+    "fine": {
+      "demand": 0.15293030019751933,
+      "excess": 0.1525363189855991,
+      "background_mass": 0.15337116673657447,
+      "background_arc": 0.16058207477011283
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_89__N_15__projected_mass",
+    "main": {
+      "demand": 0.1383185756446574,
+      "excess": 0.11673499437902131,
+      "background_mass": 0.1624706918891372,
+      "background_arc": 0.2099386899880195
+    },
+    "fine": {
+      "demand": 0.13831474493563498,
+      "excess": 0.11673134451655329,
+      "background_mass": 0.16246665562555196,
+      "background_arc": 0.20993326672851156
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_13__equal_arc",
+    "main": {
+      "demand": 0.2790928224218867,
+      "excess": 0.27787315602559703,
+      "background_mass": 0.27987298396547516,
+      "background_arc": 0.2936662579114119
+    },
+    "fine": {
+      "demand": 0.2790937554519807,
+      "excess": 0.27787498819208467,
+      "background_mass": 0.27987334210344506,
+      "background_arc": 0.2936650550312675
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_13__projected_mass",
+    "main": {
+      "demand": 0.2701896804711171,
+      "excess": 0.25853660333321626,
+      "background_mass": 0.2776435897327946,
+      "background_arc": 0.3028594907491337
+    },
+    "fine": {
+      "demand": 0.27019387635558706,
+      "excess": 0.2585427726491116,
+      "background_mass": 0.277646525621184,
+      "background_arc": 0.30286190704857013
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_15__equal_arc",
+    "main": {
+      "demand": 0.21094306118975292,
+      "excess": 0.21032278900101997,
+      "background_mass": 0.21133981927842288,
+      "background_arc": 0.20731658076158033
+    },
+    "fine": {
+      "demand": 0.21094276045511087,
+      "excess": 0.21032103835346994,
+      "background_mass": 0.2113404461062672,
+      "background_arc": 0.2073171784231576
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_15__projected_mass",
+    "main": {
+      "demand": 0.1931685577191119,
+      "excess": 0.1484981217407455,
+      "background_mass": 0.22174207289643497,
+      "background_arc": 0.26282943581197443
+    },
+    "fine": {
+      "demand": 0.19316680630954014,
+      "excess": 0.14849581864075234,
+      "background_mass": 0.22174068324261131,
+      "background_arc": 0.2628286958897174
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_17__equal_arc",
+    "main": {
+      "demand": 0.16442430375775624,
+      "excess": 0.16394421061154096,
+      "background_mass": 0.1647313960996925,
+      "background_arc": 0.16882836156509298
+    },
+    "fine": {
+      "demand": 0.1644250273418067,
+      "excess": 0.16394599095601078,
+      "background_mass": 0.16473144382034274,
+      "background_arc": 0.1688267463891137
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_89__N_17__projected_mass",
+    "main": {
+      "demand": 0.14985986039210603,
+      "excess": 0.11517617172930458,
+      "background_mass": 0.172045336819783,
+      "background_arc": 0.20373058162699445
+    },
+    "fine": {
+      "demand": 0.14985485506244176,
+      "excess": 0.11517214101307344,
+      "background_mass": 0.1720397149607597,
+      "background_arc": 0.20372571017289276
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_19__equal_arc",
+    "main": {
+      "demand": 0.2902149511291636,
+      "excess": 0.29148416301074664,
+      "background_mass": 0.2895065902985111,
+      "background_arc": 0.2907102092107153
+    },
+    "fine": {
+      "demand": 0.2902168166783861,
+      "excess": 0.29148334409278537,
+      "background_mass": 0.289509954257198,
+      "background_arc": 0.29071087845429056
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_19__projected_mass",
+    "main": {
+      "demand": 0.2827335290527008,
+      "excess": 0.27467525604692455,
+      "background_mass": 0.28723093806913447,
+      "background_arc": 0.3019968480497983
+    },
+    "fine": {
+      "demand": 0.28273953905115234,
+      "excess": 0.2746857635998662,
+      "background_mass": 0.28723443679318167,
+      "background_arc": 0.3019958904953398
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_21__equal_arc",
+    "main": {
+      "demand": 0.2372926315619596,
+      "excess": 0.23830363297763107,
+      "background_mass": 0.23672838077531969,
+      "background_arc": 0.23951332343400922
+    },
+    "fine": {
+      "demand": 0.23729521861280953,
+      "excess": 0.23830890701765864,
+      "background_mass": 0.2367294683321321,
+      "background_arc": 0.23951166319627742
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_21__projected_mass",
+    "main": {
+      "demand": 0.22516893076122727,
+      "excess": 0.2141349876155003,
+      "background_mass": 0.23132709335448237,
+      "background_arc": 0.25258244441852673
+    },
+    "fine": {
+      "demand": 0.22517795976719104,
+      "excess": 0.21414664122821447,
+      "background_mass": 0.2313346559766108,
+      "background_arc": 0.2525873160024595
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_23__equal_arc",
+    "main": {
+      "demand": 0.1975420568813659,
+      "excess": 0.19793561045396882,
+      "background_mass": 0.1973224103907834,
+      "background_arc": 0.1978382246179502
+    },
+    "fine": {
+      "demand": 0.19754820364154604,
+      "excess": 0.19795278144834894,
+      "background_mass": 0.19732240446434365,
+      "background_arc": 0.19783319845986927
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_89__N_23__projected_mass",
+    "main": {
+      "demand": 0.1820950203931592,
+      "excess": 0.15694526701526906,
+      "background_mass": 0.19613136881691293,
+      "background_arc": 0.2265227514059919
+    },
+    "fine": {
+      "demand": 0.18208475465953097,
+      "excess": 0.15693598877418433,
+      "background_mass": 0.1961205483908816,
+      "background_arc": 0.22650634320482335
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_11__equal_arc",
+    "main": {
+      "demand": 0.29396346135041806,
+      "excess": 0.2938153312234126,
+      "background_mass": 0.29413181479292577,
+      "background_arc": 0.2882628889757256
+    },
+    "fine": {
+      "demand": 0.2939639583866198,
+      "excess": 0.29381457011627243,
+      "background_mass": 0.2941337416944614,
+      "background_arc": 0.2882639591236397
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_11__projected_mass",
+    "main": {
+      "demand": 0.2901481820703886,
+      "excess": 0.2897942935750822,
+      "background_mass": 0.29055038483395274,
+      "background_arc": 0.29564013040340936
+    },
+    "fine": {
+      "demand": 0.2901517994564502,
+      "excess": 0.2897989816433562,
+      "background_mass": 0.29055278525830264,
+      "background_arc": 0.29564244956969643
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_13__equal_arc",
+    "main": {
+      "demand": 0.21028720764022757,
+      "excess": 0.20967606814679365,
+      "background_mass": 0.210981782333789,
+      "background_arc": 0.20091916472063975
+    },
+    "fine": {
+      "demand": 0.21028797462810866,
+      "excess": 0.20967730299850654,
+      "background_mass": 0.2109820174002609,
+      "background_arc": 0.20091804426539742
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_13__projected_mass",
+    "main": {
+      "demand": 0.19323497467045062,
+      "excess": 0.17920144376001823,
+      "background_mass": 0.20918441916949498,
+      "background_arc": 0.25150231836536163
+    },
+    "fine": {
+      "demand": 0.1932379138338224,
+      "excess": 0.17920429359344092,
+      "background_mass": 0.20918745565437946,
+      "background_arc": 0.2515055630668082
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_15__equal_arc",
+    "main": {
+      "demand": 0.15764941544221983,
+      "excess": 0.15734595430588297,
+      "background_mass": 0.1579943063027248,
+      "background_arc": 0.16449830232672205
+    },
+    "fine": {
+      "demand": 0.15764896670022127,
+      "excess": 0.15734522102069912,
+      "background_mass": 0.15799418085988712,
+      "background_arc": 0.16449805919210161
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_90__N_15__projected_mass",
+    "main": {
+      "demand": 0.14040368401486616,
+      "excess": 0.1165202604979821,
+      "background_mass": 0.16754776772843355,
+      "background_arc": 0.2246126840370124
+    },
+    "fine": {
+      "demand": 0.14040574483201484,
+      "excess": 0.11652230860381277,
+      "background_mass": 0.1675498358374275,
+      "background_arc": 0.22461401544736828
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_19__equal_arc",
+    "main": {
+      "demand": 0.2923314409941401,
+      "excess": 0.294723174541516,
+      "background_mass": 0.29101400941844835,
+      "background_arc": 0.29861274753793704
+    },
+    "fine": {
+      "demand": 0.2923343741482225,
+      "excess": 0.294725499791531,
+      "background_mass": 0.29101727801222527,
+      "background_arc": 0.29861168954645256
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_19__projected_mass",
+    "main": {
+      "demand": 0.28602961538462635,
+      "excess": 0.2796138820373676,
+      "background_mass": 0.2895635749689502,
+      "background_arc": 0.30673862441760363
+    },
+    "fine": {
+      "demand": 0.2860302013503761,
+      "excess": 0.2796173336722366,
+      "background_mass": 0.28956258086509407,
+      "background_arc": 0.3067376123078114
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_21__equal_arc",
+    "main": {
+      "demand": 0.239794725267312,
+      "excess": 0.2421957311048738,
+      "background_mass": 0.23847218626320987,
+      "background_arc": 0.24203767197622525
+    },
+    "fine": {
+      "demand": 0.23979669396095704,
+      "excess": 0.24220043164750985,
+      "background_mass": 0.23847265077327717,
+      "background_arc": 0.24203592130400198
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_21__projected_mass",
+    "main": {
+      "demand": 0.232178073926051,
+      "excess": 0.23060314226145098,
+      "background_mass": 0.23304558891607882,
+      "background_arc": 0.25014404605904567
+    },
+    "fine": {
+      "demand": 0.23218195186260296,
+      "excess": 0.2306102028251662,
+      "background_mass": 0.23304771338783214,
+      "background_arc": 0.2501467648998992
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_23__equal_arc",
+    "main": {
+      "demand": 0.2000367323965321,
+      "excess": 0.20126326593767843,
+      "background_mass": 0.19936112452310317,
+      "background_arc": 0.20556438509376201
+    },
+    "fine": {
+      "demand": 0.2000446677424948,
+      "excess": 0.20128429577130452,
+      "background_mass": 0.19936184737653523,
+      "background_arc": 0.20555720698104388
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_90__N_23__projected_mass",
+    "main": {
+      "demand": 0.18555044217906136,
+      "excess": 0.16145330860722995,
+      "background_mass": 0.19882379559504915,
+      "background_arc": 0.2306066581216075
+    },
+    "fine": {
+      "demand": 0.1855355568046117,
+      "excess": 0.1614315144855035,
+      "background_mass": 0.19881270980125845,
+      "background_arc": 0.23059902506736718
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_11__equal_arc",
+    "main": {
+      "demand": 0.29466834422043203,
+      "excess": 0.29468893302204086,
+      "background_mass": 0.2946450928023271,
+      "background_arc": 0.3106274854237744
+    },
+    "fine": {
+      "demand": 0.29466877019953325,
+      "excess": 0.29468838296951155,
+      "background_mass": 0.2946466210360011,
+      "background_arc": 0.3106280538006416
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_11__projected_mass",
+    "main": {
+      "demand": 0.28886689500925516,
+      "excess": 0.2867060339982607,
+      "background_mass": 0.2913072061933368,
+      "background_arc": 0.3147228494866438
+    },
+    "fine": {
+      "demand": 0.2888684531350544,
+      "excess": 0.28670834437996423,
+      "background_mass": 0.29130791487942614,
+      "background_arc": 0.3147214313976966
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_13__equal_arc",
+    "main": {
+      "demand": 0.2108165098610405,
+      "excess": 0.21079841337376093,
+      "background_mass": 0.21083694664992972,
+      "background_arc": 0.2125494409167805
+    },
+    "fine": {
+      "demand": 0.21081650300693597,
+      "excess": 0.21079837823096076,
+      "background_mass": 0.21083697174375893,
+      "background_arc": 0.21254972536334643
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_13__projected_mass",
+    "main": {
+      "demand": 0.19390631286209747,
+      "excess": 0.17898327127492114,
+      "background_mass": 0.21075925486087152,
+      "background_arc": 0.25607596330957083
+    },
+    "fine": {
+      "demand": 0.19390688510290985,
+      "excess": 0.17898311501778183,
+      "background_mass": 0.21076065050647227,
+      "background_arc": 0.2560781095241705
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_15__equal_arc",
+    "main": {
+      "demand": 0.15813995675573086,
+      "excess": 0.1582889542352112,
+      "background_mass": 0.15797169039629083,
+      "background_arc": 0.1659785312504181
+    },
+    "fine": {
+      "demand": 0.15814096076505632,
+      "excess": 0.15829067039416034,
+      "background_mass": 0.15797189015131857,
+      "background_arc": 0.16597643714364105
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_91__N_15__projected_mass",
+    "main": {
+      "demand": 0.14140819223089118,
+      "excess": 0.11967365129181058,
+      "background_mass": 0.16595352072016287,
+      "background_arc": 0.22661468786536682
+    },
+    "fine": {
+      "demand": 0.14140616353093294,
+      "excess": 0.11967018390959357,
+      "background_mass": 0.1659531177700451,
+      "background_arc": 0.22661581358064614
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_13__equal_arc",
+    "main": {
+      "demand": 0.2790558141098678,
+      "excess": 0.2775060707300329,
+      "background_mass": 0.28005115451558515,
+      "background_arc": 0.28922550323112767
+    },
+    "fine": {
+      "demand": 0.27905725852311225,
+      "excess": 0.277508975761814,
+      "background_mass": 0.2800516613950624,
+      "background_arc": 0.2892237350554602
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_13__projected_mass",
+    "main": {
+      "demand": 0.2719094623254472,
+      "excess": 0.26005147586906396,
+      "background_mass": 0.2795253897132092,
+      "background_arc": 0.2950869247798143
+    },
+    "fine": {
+      "demand": 0.2719063012972607,
+      "excess": 0.26004687905169727,
+      "background_mass": 0.2795231551662321,
+      "background_arc": 0.2950855835833985
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_15__equal_arc",
+    "main": {
+      "demand": 0.20849521571825033,
+      "excess": 0.20679189826254735,
+      "background_mass": 0.20958919083018504,
+      "background_arc": 0.20811962121839872
+    },
+    "fine": {
+      "demand": 0.20849499988971015,
+      "excess": 0.20679039652126616,
+      "background_mass": 0.20958980151605855,
+      "background_arc": 0.20812014742275287
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_15__projected_mass",
+    "main": {
+      "demand": 0.1926253503151298,
+      "excess": 0.15362796498486517,
+      "background_mass": 0.21767186694595225,
+      "background_arc": 0.2528248354450645
+    },
+    "fine": {
+      "demand": 0.19262667670329353,
+      "excess": 0.1536279412153324,
+      "background_mass": 0.21767407472452496,
+      "background_arc": 0.2528274796078551
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_17__equal_arc",
+    "main": {
+      "demand": 0.16287514368781464,
+      "excess": 0.1624624768506731,
+      "background_mass": 0.16314018368246858,
+      "background_arc": 0.1631984541974355
+    },
+    "fine": {
+      "demand": 0.16287522097410478,
+      "excess": 0.16246140898995579,
+      "background_mass": 0.16314099660357703,
+      "background_arc": 0.16319859628052977
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_91__N_17__projected_mass",
+    "main": {
+      "demand": 0.1487891194714365,
+      "excess": 0.1173265107783079,
+      "background_mass": 0.16899633965319416,
+      "background_arc": 0.19745255418425162
+    },
+    "fine": {
+      "demand": 0.14878088370041315,
+      "excess": 0.11731621144810987,
+      "background_mass": 0.168989440712584,
+      "background_arc": 0.19744678921656472
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_19__equal_arc",
+    "main": {
+      "demand": 0.29195388920848714,
+      "excess": 0.29465383464541434,
+      "background_mass": 0.29046320937853876,
+      "background_arc": 0.29853711071038647
+    },
+    "fine": {
+      "demand": 0.2919572721401712,
+      "excess": 0.2946570539721787,
+      "background_mass": 0.29046667912656954,
+      "background_arc": 0.29853662815566984
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_19__projected_mass",
+    "main": {
+      "demand": 0.28645182742211023,
+      "excess": 0.2823964025450392,
+      "background_mass": 0.2886908875095618,
+      "background_arc": 0.30528027953388664
+    },
+    "fine": {
+      "demand": 0.2864612132231988,
+      "excess": 0.2824073840384104,
+      "background_mass": 0.2886993975792614,
+      "background_arc": 0.30528674294811936
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_21__equal_arc",
+    "main": {
+      "demand": 0.23940841371190963,
+      "excess": 0.24106502396039467,
+      "background_mass": 0.23849377467893976,
+      "background_arc": 0.24198336340382112
+    },
+    "fine": {
+      "demand": 0.23941050715172849,
+      "excess": 0.24107036345357022,
+      "background_mass": 0.2384940737652321,
+      "background_arc": 0.24198117476904807
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_21__projected_mass",
+    "main": {
+      "demand": 0.22932018711519556,
+      "excess": 0.22269879363284814,
+      "background_mass": 0.23297595644123056,
+      "background_arc": 0.25581272922009435
+    },
+    "fine": {
+      "demand": 0.2293189182271513,
+      "excess": 0.22270144189740088,
+      "background_mass": 0.23297253344444718,
+      "background_arc": 0.25581116362579287
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_23__equal_arc",
+    "main": {
+      "demand": 0.2006130718728764,
+      "excess": 0.2011401467692744,
+      "background_mass": 0.20032206602283703,
+      "background_arc": 0.20559407531841295
+    },
+    "fine": {
+      "demand": 0.20061950907075987,
+      "excess": 0.2011583558960926,
+      "background_mass": 0.20032200306352627,
+      "background_arc": 0.2055877358344717
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_91__N_23__projected_mass",
+    "main": {
+      "demand": 0.18385447198338045,
+      "excess": 0.15853843995696804,
+      "background_mass": 0.19783182789581996,
+      "background_arc": 0.22925147054614808
+    },
+    "fine": {
+      "demand": 0.1838536367227955,
+      "excess": 0.1585434019412779,
+      "background_mass": 0.19782782481854214,
+      "background_arc": 0.22924840402703103
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_11__equal_arc",
+    "main": {
+      "demand": 0.2964412796289927,
+      "excess": 0.2971430124417307,
+      "background_mass": 0.2956447464929184,
+      "background_arc": 0.297552434020554
+    },
+    "fine": {
+      "demand": 0.29644192391203267,
+      "excess": 0.29714245100794723,
+      "background_mass": 0.2956467593942083,
+      "background_arc": 0.297553489595942
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_11__projected_mass",
+    "main": {
+      "demand": 0.2889391162980318,
+      "excess": 0.28554443506036226,
+      "background_mass": 0.2927924006865197,
+      "background_arc": 0.30731080140002204
+    },
+    "fine": {
+      "demand": 0.2889361503874119,
+      "excess": 0.28554175365733075,
+      "background_mass": 0.2927891117573864,
+      "background_arc": 0.3073099510581286
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_13__equal_arc",
+    "main": {
+      "demand": 0.2124222514630346,
+      "excess": 0.21347904524982134,
+      "background_mass": 0.2112226905277428,
+      "background_arc": 0.22355120364088268
+    },
+    "fine": {
+      "demand": 0.21242297479662436,
+      "excess": 0.21348033718805562,
+      "background_mass": 0.21122276846477614,
+      "background_arc": 0.2235493086026635
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_13__projected_mass",
+    "main": {
+      "demand": 0.1937867559602881,
+      "excess": 0.17719995418638995,
+      "background_mass": 0.21261434531420942,
+      "background_arc": 0.25972990913342947
+    },
+    "fine": {
+      "demand": 0.19379066289733077,
+      "excess": 0.17720378120013688,
+      "background_mass": 0.21261834260290804,
+      "background_arc": 0.25973565360113265
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_15__equal_arc",
+    "main": {
+      "demand": 0.15826828421095254,
+      "excess": 0.15829971588330263,
+      "background_mass": 0.15823260628896485,
+      "background_arc": 0.16637176620517938
+    },
+    "fine": {
+      "demand": 0.15826789533955954,
+      "excess": 0.1582990835737591,
+      "background_mass": 0.15823249374359882,
+      "background_arc": 0.1663714926168855
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_92__N_15__projected_mass",
+    "main": {
+      "demand": 0.14218576737883637,
+      "excess": 0.11727022701217132,
+      "background_mass": 0.17046726304925677,
+      "background_arc": 0.23594298519761195
+    },
+    "fine": {
+      "demand": 0.14218432323412974,
+      "excess": 0.11726886479300876,
+      "background_mass": 0.17046572535725504,
+      "background_arc": 0.23594080384137234
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_19__equal_arc",
+    "main": {
+      "demand": 0.2918917741500227,
+      "excess": 0.29311583807098196,
+      "background_mass": 0.2912164746793952,
+      "background_arc": 0.296908003747144
+    },
+    "fine": {
+      "demand": 0.2918950028852692,
+      "excess": 0.29311894467682903,
+      "background_mass": 0.291219770514708,
+      "background_arc": 0.2969078853654263
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_19__projected_mass",
+    "main": {
+      "demand": 0.288256799671803,
+      "excess": 0.28412426409872366,
+      "background_mass": 0.2905366635229187,
+      "background_arc": 0.29926107068125796
+    },
+    "fine": {
+      "demand": 0.28826507097647025,
+      "excess": 0.284139614966458,
+      "background_mass": 0.29054103006251203,
+      "background_arc": 0.29926718603181923
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_21__equal_arc",
+    "main": {
+      "demand": 0.24082545105531444,
+      "excess": 0.24213784313654524,
+      "background_mass": 0.24010142213612498,
+      "background_arc": 0.23912801168422426
+    },
+    "fine": {
+      "demand": 0.24082707328183992,
+      "excess": 0.24214288631783845,
+      "background_mass": 0.24010115677041796,
+      "background_arc": 0.23912583952377306
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_21__projected_mass",
+    "main": {
+      "demand": 0.2273640722178402,
+      "excess": 0.21461425766817468,
+      "background_mass": 0.23439797205637236,
+      "background_arc": 0.2608118891809454
+    },
+    "fine": {
+      "demand": 0.22736429846397627,
+      "excess": 0.21461445823474415,
+      "background_mass": 0.23439821535580008,
+      "background_arc": 0.2608147850710009
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_23__equal_arc",
+    "main": {
+      "demand": 0.2003592447581556,
+      "excess": 0.20098139511596327,
+      "background_mass": 0.20001601284021053,
+      "background_arc": 0.20567103064858006
+    },
+    "fine": {
+      "demand": 0.20036786595909148,
+      "excess": 0.20100424185578009,
+      "background_mass": 0.20001678586014218,
+      "background_arc": 0.20566347283293612
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_92__N_23__projected_mass",
+    "main": {
+      "demand": 0.18385625153996518,
+      "excess": 0.1634679080203541,
+      "background_mass": 0.19510422425610924,
+      "background_arc": 0.22538508326217427
+    },
+    "fine": {
+      "demand": 0.1838525524316686,
+      "excess": 0.163463434765622,
+      "background_mass": 0.19510095684945689,
+      "background_arc": 0.2253821034871236
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_11__equal_arc",
+    "main": {
+      "demand": 0.29260701434319913,
+      "excess": 0.29227554356327684,
+      "background_mass": 0.2929781461960586,
+      "background_arc": 0.3055080554884205
+    },
+    "fine": {
+      "demand": 0.2926074984548652,
+      "excess": 0.29227516824846905,
+      "background_mass": 0.29297959244003935,
+      "background_arc": 0.30550857039875906
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_11__projected_mass",
+    "main": {
+      "demand": 0.2863072049683662,
+      "excess": 0.28424549269221017,
+      "background_mass": 0.2886156048137229,
+      "background_arc": 0.30691928389526485
+    },
+    "fine": {
+      "demand": 0.28631268478352057,
+      "excess": 0.2842519678178241,
+      "background_mass": 0.28861996944595686,
+      "background_arc": 0.3069224082463431
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_13__equal_arc",
+    "main": {
+      "demand": 0.21100377863124542,
+      "excess": 0.21192749340119973,
+      "background_mass": 0.20996953973342394,
+      "background_arc": 0.21800946189269937
+    },
+    "fine": {
+      "demand": 0.21100442917028217,
+      "excess": 0.21192878581365548,
+      "background_mass": 0.20996947194841267,
+      "background_arc": 0.2180074885846312
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_13__projected_mass",
+    "main": {
+      "demand": 0.1920594289807568,
+      "excess": 0.1765736489754783,
+      "background_mass": 0.2093981103199707,
+      "background_arc": 0.2587522560997159
+    },
+    "fine": {
+      "demand": 0.19206224782135972,
+      "excess": 0.17657644943954032,
+      "background_mass": 0.20940094386100624,
+      "background_arc": 0.25875362075753233
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_15__equal_arc",
+    "main": {
+      "demand": 0.15716691182433887,
+      "excess": 0.15746118344615348,
+      "background_mass": 0.1568374300755294,
+      "background_arc": 0.1656782316542244
+    },
+    "fine": {
+      "demand": 0.15716659129566113,
+      "excess": 0.15746064168927285,
+      "background_mass": 0.1568373573569604,
+      "background_arc": 0.16567788194162344
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_93__N_15__projected_mass",
+    "main": {
+      "demand": 0.1408303186754285,
+      "excess": 0.11745571857522019,
+      "background_mass": 0.16700173157364387,
+      "background_arc": 0.22886068416463903
+    },
+    "fine": {
+      "demand": 0.1408278992476535,
+      "excess": 0.11745319202885944,
+      "background_mass": 0.16699942321365174,
+      "background_arc": 0.22885691742759587
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_13__equal_arc",
+    "main": {
+      "demand": 0.2826416106899734,
+      "excess": 0.2822806055297659,
+      "background_mass": 0.282872700112531,
+      "background_arc": 0.29041515419163844
+    },
+    "fine": {
+      "demand": 0.28264239294208854,
+      "excess": 0.28228233006485987,
+      "background_mass": 0.2828728792632992,
+      "background_arc": 0.29041630802869156
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_13__projected_mass",
+    "main": {
+      "demand": 0.2764048961263242,
+      "excess": 0.2676420453203083,
+      "background_mass": 0.2820142401355805,
+      "background_arc": 0.2966687736756354
+    },
+    "fine": {
+      "demand": 0.27640154747325246,
+      "excess": 0.2676348433656593,
+      "background_mass": 0.28201336003902755,
+      "background_arc": 0.2966707767969171
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_15__equal_arc",
+    "main": {
+      "demand": 0.21299469960955658,
+      "excess": 0.2112807370498568,
+      "background_mass": 0.21409185461415184,
+      "background_arc": 0.21506303986315395
+    },
+    "fine": {
+      "demand": 0.2129944550528728,
+      "excess": 0.2112791718040205,
+      "background_mass": 0.21409245584902556,
+      "background_arc": 0.21506353397841885
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_15__projected_mass",
+    "main": {
+      "demand": 0.19694993600893385,
+      "excess": 0.1573968841497436,
+      "background_mass": 0.22226894227819993,
+      "background_arc": 0.25870554732703804
+    },
+    "fine": {
+      "demand": 0.19694621112921917,
+      "excess": 0.15739070652896694,
+      "background_mass": 0.22226679627010504,
+      "background_arc": 0.25870537534082305
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_17__equal_arc",
+    "main": {
+      "demand": 0.16593736446090382,
+      "excess": 0.1646287296387861,
+      "background_mass": 0.16677505793101405,
+      "background_arc": 0.16762197044819002
+    },
+    "fine": {
+      "demand": 0.16593812808172725,
+      "excess": 0.16463092647678,
+      "background_mass": 0.16677490440069653,
+      "background_arc": 0.1676215271690907
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "tight_u__seed_93__N_17__projected_mass",
+    "main": {
+      "demand": 0.1525304168590795,
+      "excess": 0.12106118055549528,
+      "background_mass": 0.17267474842914346,
+      "background_arc": 0.2011951835712363
+    },
+    "fine": {
+      "demand": 0.1525281700720124,
+      "excess": 0.12105743077057478,
+      "background_mass": 0.17267347075725745,
+      "background_arc": 0.20119515053348422
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_19__equal_arc",
+    "main": {
+      "demand": 0.29159090446743435,
+      "excess": 0.29495735449657906,
+      "background_mass": 0.2897391047273852,
+      "background_arc": 0.2964921950687629
+    },
+    "fine": {
+      "demand": 0.29159259038040697,
+      "excess": 0.29496224390773473,
+      "background_mass": 0.2897390299738556,
+      "background_arc": 0.29649200059146164
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_19__projected_mass",
+    "main": {
+      "demand": 0.28728020828121803,
+      "excess": 0.2877927073488957,
+      "background_mass": 0.2869982953961063,
+      "background_arc": 0.29867058937877383
+    },
+    "fine": {
+      "demand": 0.28728493724441606,
+      "excess": 0.2877896547932837,
+      "background_mass": 0.28700730500196564,
+      "background_arc": 0.29868105495256886
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_21__equal_arc",
+    "main": {
+      "demand": 0.23897675376173363,
+      "excess": 0.2409491174328507,
+      "background_mass": 0.2378918059675182,
+      "background_arc": 0.2407511778529676
+    },
+    "fine": {
+      "demand": 0.23897819818789184,
+      "excess": 0.2409536673441331,
+      "background_mass": 0.2378915430221081,
+      "background_arc": 0.24074984679799966
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_21__projected_mass",
+    "main": {
+      "demand": 0.22626737309356065,
+      "excess": 0.21459276948892886,
+      "background_mass": 0.232689279770645,
+      "background_arc": 0.2582772801599083
+    },
+    "fine": {
+      "demand": 0.2262703884218888,
+      "excess": 0.21459775183176513,
+      "background_mass": 0.2326912079061615,
+      "background_arc": 0.2582770850272712
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_23__equal_arc",
+    "main": {
+      "demand": 0.1989627616065055,
+      "excess": 0.19858267627992715,
+      "background_mass": 0.19917183701319827,
+      "background_arc": 0.20060372910558516
+    },
+    "fine": {
+      "demand": 0.19896874449261812,
+      "excess": 0.1986001460086393,
+      "background_mass": 0.19917150111144466,
+      "background_arc": 0.20059853960593332
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_93__N_23__projected_mass",
+    "main": {
+      "demand": 0.1824650224207877,
+      "excess": 0.1584970482504744,
+      "background_mass": 0.19564920396331584,
+      "background_arc": 0.22755249763933233
+    },
+    "fine": {
+      "demand": 0.1824672099848723,
+      "excess": 0.15849901513196066,
+      "background_mass": 0.19565150226761463,
+      "background_arc": 0.22755065387631984
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_11__equal_arc",
+    "main": {
+      "demand": 0.2865803275919184,
+      "excess": 0.2855871363429626,
+      "background_mass": 0.2877111100853517,
+      "background_arc": 0.2933635127239496
+    },
+    "fine": {
+      "demand": 0.28658021060166844,
+      "excess": 0.28558694146736513,
+      "background_mass": 0.2877110820944042,
+      "background_arc": 0.29336383552048784
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_11__projected_mass",
+    "main": {
+      "demand": 0.2814782655348685,
+      "excess": 0.2796244226341448,
+      "background_mass": 0.2835889296188685,
+      "background_arc": 0.29976640946197985
+    },
+    "fine": {
+      "demand": 0.2814749705877846,
+      "excess": 0.27962052949495003,
+      "background_mass": 0.28358631633932196,
+      "background_arc": 0.29976685324305863
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_13__equal_arc",
+    "main": {
+      "demand": 0.20726757660893913,
+      "excess": 0.20765918548036194,
+      "background_mass": 0.20682171640170938,
+      "background_arc": 0.21295504469253546
+    },
+    "fine": {
+      "demand": 0.20726863724277308,
+      "excess": 0.20766077589817047,
+      "background_mass": 0.2068221737302429,
+      "background_arc": 0.2129533474073934
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_13__projected_mass",
+    "main": {
+      "demand": 0.18786628113442058,
+      "excess": 0.17036550457295194,
+      "background_mass": 0.20779151887489075,
+      "background_arc": 0.25744138239193687
+    },
+    "fine": {
+      "demand": 0.18786724522447415,
+      "excess": 0.17036716429311605,
+      "background_mass": 0.20779169667712385,
+      "background_arc": 0.2574389351173379
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_15__equal_arc",
+    "main": {
+      "demand": 0.15519353606925418,
+      "excess": 0.15498813289346058,
+      "background_mass": 0.15542739466952607,
+      "background_arc": 0.1609623101863737
+    },
+    "fine": {
+      "demand": 0.15519415157350172,
+      "excess": 0.15498920836247193,
+      "background_mass": 0.15542748655490726,
+      "background_arc": 0.1609616241359735
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "elongated__seed_94__N_15__projected_mass",
+    "main": {
+      "demand": 0.13816874118393283,
+      "excess": 0.11316547313288872,
+      "background_mass": 0.16663582425627096,
+      "background_arc": 0.22457058870507238
+    },
+    "fine": {
+      "demand": 0.1381650947083577,
+      "excess": 0.11316198567205939,
+      "background_mass": 0.16663200489654797,
+      "background_arc": 0.22456675662704828
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_19__equal_arc",
+    "main": {
+      "demand": 0.2917288687576855,
+      "excess": 0.29456349493515105,
+      "background_mass": 0.29016285493686333,
+      "background_arc": 0.2959808003407979
+    },
+    "fine": {
+      "demand": 0.29173184570149496,
+      "excess": 0.2945652676290253,
+      "background_mass": 0.2901664962632018,
+      "background_arc": 0.29597979795062906
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_19__projected_mass",
+    "main": {
+      "demand": 0.2874432521973891,
+      "excess": 0.28617464793740904,
+      "background_mass": 0.2881441036253749,
+      "background_arc": 0.2984555826536164
+    },
+    "fine": {
+      "demand": 0.28744594631087117,
+      "excess": 0.2861709896718251,
+      "background_mass": 0.28815030757785637,
+      "background_arc": 0.29846342631025247
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_21__equal_arc",
+    "main": {
+      "demand": 0.23794339609207135,
+      "excess": 0.2390648453974074,
+      "background_mass": 0.23732384169528042,
+      "background_arc": 0.24051176426776102
+    },
+    "fine": {
+      "demand": 0.23794566156050392,
+      "excess": 0.239070295880848,
+      "background_mass": 0.23732434721104864,
+      "background_arc": 0.24050962222380873
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_21__projected_mass",
+    "main": {
+      "demand": 0.22488477907226848,
+      "excess": 0.2144210318916239,
+      "background_mass": 0.23066556697042093,
+      "background_arc": 0.25731029338248756
+    },
+    "fine": {
+      "demand": 0.22489384716001531,
+      "excess": 0.21443168016060485,
+      "background_mass": 0.230673765454828,
+      "background_arc": 0.2573168339189219
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_23__equal_arc",
+    "main": {
+      "demand": 0.19932113012028355,
+      "excess": 0.19980567668054036,
+      "background_mass": 0.19905343816985072,
+      "background_arc": 0.20373012766997817
+    },
+    "fine": {
+      "demand": 0.19932886773821376,
+      "excess": 0.199826019402001,
+      "background_mass": 0.19905421182830693,
+      "background_arc": 0.20372306205235588
+    },
+    "main_matches": true,
+    "fine_matches": true
+  },
+  {
+    "task_id": "wide_u__seed_94__N_23__projected_mass",
+    "main": {
+      "demand": 0.18217879063673226,
+      "excess": 0.15518211314056768,
+      "background_mass": 0.19709333930327774,
+      "background_arc": 0.23004561254820402
+    },
+    "fine": {
+      "demand": 0.18217163383128032,
+      "excess": 0.15516294345084164,
+      "background_mass": 0.1970928278494627,
+      "background_arc": 0.23004789561997027
+    },
+    "main_matches": true,
+    "fine_matches": true
+  }
+]

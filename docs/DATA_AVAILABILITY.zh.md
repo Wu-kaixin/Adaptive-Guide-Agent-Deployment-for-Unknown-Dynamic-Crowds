@@ -53,3 +53,9 @@ python run.py --reevaluate runs/first_run
 ## 本次整合的数据处理
 
 仅更新入口文档、数据说明和审查清单；不生成或复制runs、不新建backups、不升级依赖、不删除历史报告或重跑实验。旧main中的脚本／演示数据清理已发生于研究历史，删除列表、旧Git blob及当前大文件清单见[整合审查说明](STEP1_INTEGRATION_REVIEW.zh.md)。
+
+## 2026-10-20资源响应工件
+
+[资源响应报告](../reports/step1_nonconvex_resource_response_v1/REPORT.zh.md)及360行台账、60条数量诊断、输入／manifest哈希、复判与统计保存在Git。唯一新增Guide初态、184条新增运动、目标、事件和原始状态在本机`runs/step1_nonconvex_resource_response_v1/`；另92条运动只读引用`runs/step1_nonconvex_demand_confirmation_v1/`，不复制原runs。克隆报告不等于取得这些原始轨迹、旧SQLite和全精度输入。
+
+运行前57688a1a、编排审计补充125fd653分别追溯；原52行检查点及两条程序错误不可覆盖或当成重新执行成功。独立物理验收275条通过与完整流程273成功分开记账。当前只读分析入口核验除自身CSV／图例导出层以外的全部执行源码，原执行和重新复判须使用相应冻结提交及经哈希验证的本机依赖；不得改写原锁绕过版本检查。原seed75–94已暴露，本轮资源响应也不提供新的独立人员样本。

@@ -1,0 +1,61 @@
+﻿physical_key,scene,seed,input_status,count,curve_length_m,diagnosis,average_gap_m,planning_limit_m,acceptance_limit_m,minimum_separation_m,planning_average_slack_m,planning_lower,acceptance_lower,necessary_upper,planning_quantity_not_excluded,acceptance_quantity_not_excluded
+elongated__seed_75,elongated,75,BOUNDARY_INVALID,10,,curve unavailable; quantity not evaluated,,,,,,,,,,
+tight_u__seed_75,tight_u,75,ACCEPTED,12,24.029406347819705,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0024505289849754,1.94,2.0,0.75,-0.062450528984975495,13,13,32,False,False
+wide_u__seed_75,wide_u,75,ACCEPTED,18,35.82700126317621,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9903889590653447,1.94,2.0,0.75,-0.050388959065344796,19,18,47,False,True
+elongated__seed_76,elongated,76,ACCEPTED,10,20.887125509355265,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0887125509355267,1.94,2.0,0.75,-0.1487125509355267,11,11,27,False,False
+tight_u__seed_76,tight_u,76,ACCEPTED,12,24.058554947743346,违反规划数量必要条件；不等同于2m要求绝对不可行,2.004879578978612,1.94,2.0,0.75,-0.06487957897861207,13,13,32,False,False
+wide_u__seed_76,wide_u,76,ACCEPTED,18,35.74247220874175,违反规划数量必要条件；不等同于2m要求绝对不可行,1.985692900485653,1.94,2.0,0.75,-0.045692900485653,19,18,47,False,True
+elongated__seed_77,elongated,77,BOUNDARY_INVALID,10,,curve unavailable; quantity not evaluated,,,,,,,,,,
+tight_u__seed_77,tight_u,77,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_77,wide_u,77,ACCEPTED,18,35.655538244088916,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9808632357827176,1.94,2.0,0.75,-0.040863235782717666,19,18,47,False,True
+elongated__seed_78,elongated,78,ACCEPTED,10,20.610328730926916,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0610328730926915,1.94,2.0,0.75,-0.1210328730926915,11,11,27,False,False
+tight_u__seed_78,tight_u,78,ACCEPTED,12,24.080000622762185,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0066667185635154,1.94,2.0,0.75,-0.06666671856351547,13,13,32,False,False
+wide_u__seed_78,wide_u,78,ACCEPTED,18,35.63719765679211,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9798443142662283,1.94,2.0,0.75,-0.039844314266228364,19,18,47,False,True
+elongated__seed_79,elongated,79,ACCEPTED,10,20.89753392354664,违反规划数量必要条件；不等同于2m要求绝对不可行,2.089753392354664,1.94,2.0,0.75,-0.1497533923546639,11,11,27,False,False
+tight_u__seed_79,tight_u,79,ACCEPTED,12,24.10169807388114,违反规划数量必要条件；不等同于2m要求绝对不可行,2.008474839490095,1.94,2.0,0.75,-0.06847483949009492,13,13,32,False,False
+wide_u__seed_79,wide_u,79,ACCEPTED,18,35.76920529343752,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9871780718576402,1.94,2.0,0.75,-0.047178071857640225,19,18,47,False,True
+elongated__seed_80,elongated,80,ACCEPTED,10,20.813889870040143,违反规划数量必要条件；不等同于2m要求绝对不可行,2.081388987004014,1.94,2.0,0.75,-0.14138898700401414,11,11,27,False,False
+tight_u__seed_80,tight_u,80,ACCEPTED,12,23.99201555813157,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9993346298442976,1.94,2.0,0.75,-0.059334629844297604,13,12,31,False,True
+wide_u__seed_80,wide_u,80,ACCEPTED,18,35.65548618528804,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9808603436271133,1.94,2.0,0.75,-0.04086034362711333,19,18,47,False,True
+elongated__seed_81,elongated,81,ACCEPTED,10,20.88960166647437,违反规划数量必要条件；不等同于2m要求绝对不可行,2.088960166647437,1.94,2.0,0.75,-0.14896016664743694,11,11,27,False,False
+tight_u__seed_81,tight_u,81,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_81,wide_u,81,ACCEPTED,18,35.492976177677605,违反规划数量必要条件；不等同于2m要求绝对不可行,1.971832009870978,1.94,2.0,0.75,-0.03183200987097812,19,18,47,False,True
+elongated__seed_82,elongated,82,BOUNDARY_INVALID,10,,curve unavailable; quantity not evaluated,,,,,,,,,,
+tight_u__seed_82,tight_u,82,ACCEPTED,12,23.849368162947584,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9874473469122986,1.94,2.0,0.75,-0.04744734691229868,13,12,31,False,True
+wide_u__seed_82,wide_u,82,BOUNDARY_INVALID,18,,curve unavailable; quantity not evaluated,,,,,,,,,,
+elongated__seed_83,elongated,83,ACCEPTED,10,20.543182979015718,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0543182979015717,1.94,2.0,0.75,-0.11431829790157177,11,11,27,False,False
+tight_u__seed_83,tight_u,83,ACCEPTED,12,23.937458410368695,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9947882008640578,1.94,2.0,0.75,-0.05478820086405789,13,12,31,False,True
+wide_u__seed_83,wide_u,83,ACCEPTED,18,35.85608094025134,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9920044966806298,1.94,2.0,0.75,-0.0520044966806299,19,18,47,False,True
+elongated__seed_84,elongated,84,ACCEPTED,10,20.684398816205917,违反规划数量必要条件；不等同于2m要求绝对不可行,2.068439881620592,1.94,2.0,0.75,-0.12843988162059183,11,11,27,False,False
+tight_u__seed_84,tight_u,84,ACCEPTED,12,24.244836705483934,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0204030587903277,1.94,2.0,0.75,-0.08040305879032772,13,13,32,False,False
+wide_u__seed_84,wide_u,84,BOUNDARY_INVALID,18,,curve unavailable; quantity not evaluated,,,,,,,,,,
+elongated__seed_85,elongated,85,ACCEPTED,10,20.892243530654007,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0892243530654007,1.94,2.0,0.75,-0.14922435306540072,11,11,27,False,False
+tight_u__seed_85,tight_u,85,ACCEPTED,12,24.16072907679159,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0133940897326323,1.94,2.0,0.75,-0.0733940897326324,13,13,32,False,False
+wide_u__seed_85,wide_u,85,ACCEPTED,18,35.907854244912464,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9948807913840259,1.94,2.0,0.75,-0.054880791384025907,19,18,47,False,True
+elongated__seed_86,elongated,86,ACCEPTED,10,20.75865145447149,违反规划数量必要条件；不等同于2m要求绝对不可行,2.075865145447149,1.94,2.0,0.75,-0.1358651454471489,11,11,27,False,False
+tight_u__seed_86,tight_u,86,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_86,wide_u,86,BOUNDARY_INVALID,18,,curve unavailable; quantity not evaluated,,,,,,,,,,
+elongated__seed_87,elongated,87,ACCEPTED,10,20.634995740247174,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0634995740247173,1.94,2.0,0.75,-0.12349957402471734,11,11,27,False,False
+tight_u__seed_87,tight_u,87,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_87,wide_u,87,ACCEPTED,18,35.72837537517414,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9849097430652298,1.94,2.0,0.75,-0.04490974306522988,19,18,47,False,True
+elongated__seed_88,elongated,88,ACCEPTED,10,20.77189930086221,违反规划数量必要条件；不等同于2m要求绝对不可行,2.077189930086221,1.94,2.0,0.75,-0.13718993008622116,11,11,27,False,False
+tight_u__seed_88,tight_u,88,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_88,wide_u,88,ACCEPTED,18,35.63934639466255,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9799636885923642,1.94,2.0,0.75,-0.03996368859236421,19,18,47,False,True
+elongated__seed_89,elongated,89,ACCEPTED,10,20.370225994195557,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0370225994195557,1.94,2.0,0.75,-0.09702259941955571,11,11,27,False,False
+tight_u__seed_89,tight_u,89,ACCEPTED,12,23.981687309050393,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9984739424208662,1.94,2.0,0.75,-0.05847394242086623,13,12,31,False,True
+wide_u__seed_89,wide_u,89,ACCEPTED,18,35.50096581101433,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9722758783896852,1.94,2.0,0.75,-0.032275878389685264,19,18,47,False,True
+elongated__seed_90,elongated,90,ACCEPTED,10,20.687921007253024,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0687921007253025,1.94,2.0,0.75,-0.12879210072530256,11,11,27,False,False
+tight_u__seed_90,tight_u,90,BOUNDARY_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_90,wide_u,90,ACCEPTED,18,35.76178373158646,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9867657628659146,1.94,2.0,0.75,-0.046765762865914606,19,18,47,False,True
+elongated__seed_91,elongated,91,ACCEPTED,10,20.734391808561966,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0734391808561967,1.94,2.0,0.75,-0.13343918085619677,11,11,27,False,False
+tight_u__seed_91,tight_u,91,ACCEPTED,12,23.875842187629996,违反规划数量必要条件；不等同于2m要求绝对不可行,1.989653515635833,1.94,2.0,0.75,-0.04965351563583309,13,12,31,False,True
+wide_u__seed_91,wide_u,91,ACCEPTED,18,35.738202481590555,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9854556934216976,1.94,2.0,0.75,-0.04545569342169764,19,18,47,False,True
+elongated__seed_92,elongated,92,ACCEPTED,10,20.777115190118757,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0777115190118756,1.94,2.0,0.75,-0.13771151901187562,11,11,27,False,False
+tight_u__seed_92,tight_u,92,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_92,wide_u,92,ACCEPTED,18,35.74064553850277,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9855914188057093,1.94,2.0,0.75,-0.04559141880570938,19,18,47,False,True
+elongated__seed_93,elongated,93,ACCEPTED,10,20.69280743315595,违反规划数量必要条件；不等同于2m要求绝对不可行,2.069280743315595,1.94,2.0,0.75,-0.12928074331559491,11,11,27,False,False
+tight_u__seed_93,tight_u,93,ACCEPTED,12,24.102336967284486,违反规划数量必要条件；不等同于2m要求绝对不可行,2.0085280806070407,1.94,2.0,0.75,-0.06852808060704074,13,13,32,False,False
+wide_u__seed_93,wide_u,93,ACCEPTED,18,35.61826886969544,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9787927149830802,1.94,2.0,0.75,-0.038792714983080234,19,18,47,False,True
+elongated__seed_94,elongated,94,ACCEPTED,10,20.54070537665507,违反规划数量必要条件；不等同于2m要求绝对不可行,2.054070537665507,1.94,2.0,0.75,-0.11407053766550712,11,11,27,False,False
+tight_u__seed_94,tight_u,94,INITIALIZATION_INVALID,12,,curve unavailable; quantity not evaluated,,,,,,,,,,
+wide_u__seed_94,wide_u,94,ACCEPTED,18,35.62966855564449,违反规划数量必要条件；不等同于2m要求绝对不可行,1.9794260308691385,1.94,2.0,0.75,-0.03942603086913854,19,18,47,False,True

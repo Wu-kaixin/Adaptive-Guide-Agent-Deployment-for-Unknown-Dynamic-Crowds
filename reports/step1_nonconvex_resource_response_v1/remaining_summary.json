@@ -1,0 +1,12 @@
+{
+  "expected": 354,
+  "completed": 46,
+  "wall_s": 48.15460460000031,
+  "outcomes": {
+    "BOUNDARY_INVALID": 12,
+    "SUCCESS": 26,
+    "INITIALIZATION_INVALID": 6,
+    "EXPERIMENT_ERROR": 2
+  },
+  "stop_task": "wide_u__seed_77__N_21__projected_mass"
+}

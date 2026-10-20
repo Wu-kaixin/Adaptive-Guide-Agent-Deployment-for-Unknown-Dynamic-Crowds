@@ -1,0 +1,3130 @@
+{
+  "elongated__seed_75__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_75__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "44d70d22776677bc2f514ead4bd59cc2c7570fd078f32926dc7259fd51b46e75",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "0681660c1566dad85c3fec126ac59cd9c57b562776c4ba6338f8c2b665b782b4",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "814892cb6e5e53d2bfc26e98efc39ae2c3b3159784510eae89a874190cd71290",
+      "reevaluated_metrics.json": "65ec1af97c00bf7b9038a909babf18d07f25ee15a0e0f9bd54cd129aeef23298",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "449c73b9ad689ea1a176705a9621bf509edb6e59b296e283f58e435704074a17"
+    }
+  },
+  "elongated__seed_75__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_75__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "44d70d22776677bc2f514ead4bd59cc2c7570fd078f32926dc7259fd51b46e75",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "28b3b17082af764ba9932e09af48a2e117fa331f217333aa3c14cecca29571ba",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "82cb78c41682c3393499713af1f5a3ec23306f018ec5220e24b5ec9b8f6ef254",
+      "reevaluated_metrics.json": "65ec1af97c00bf7b9038a909babf18d07f25ee15a0e0f9bd54cd129aeef23298",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "449c73b9ad689ea1a176705a9621bf509edb6e59b296e283f58e435704074a17"
+    }
+  },
+  "tight_u__seed_75__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_75__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "2d8ed8e2ed574e872c0c9355eef9a23873a4fe0e01d97b7c54f7c0bae684dd40",
+      "independent_rejudge.json": "35a1f91ea657bf85985137a8c635c4a77b33c8cd92662ad0bc18da485f896298",
+      "independent_rejudge_final.json": "35a1f91ea657bf85985137a8c635c4a77b33c8cd92662ad0bc18da485f896298",
+      "metrics.json": "12f0fa7c66ab50e4b856e558796568fc55af1ed61018f379256a81ed2beb125f",
+      "planning.json": "9e7671a4158d6e787f5f64676ed5b84b811a1528018cf1054516c87637e63d6d",
+      "protocol_metrics.json": "72670d1ba21ebf1641188188c4ee52e6469cf54c5e676dc1b476da2a5e554d8a",
+      "state.json": "bbf8c5e0271ccbcac9ba19cd2ce1e20a6b51ff8504b95b8500f776e69b569d69",
+      "trajectory.npz": "4c0d55a885400253019198d04a4fb4b24e12752d6b5d3daa0e1b9bb1d461a120"
+    }
+  },
+  "tight_u__seed_75__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_75__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "2d8ed8e2ed574e872c0c9355eef9a23873a4fe0e01d97b7c54f7c0bae684dd40",
+      "independent_rejudge.json": "1cfa8184ee39d36412246cc678b5b4e853b96097c86ef0421bbe9c692fadab54",
+      "independent_rejudge_final.json": "1cfa8184ee39d36412246cc678b5b4e853b96097c86ef0421bbe9c692fadab54",
+      "metrics.json": "2db0e0337b6484c6eb5f184728a1cc151b22c5e4e578975faf79cbf84acfaea4",
+      "planning.json": "a33a5d9e2bb0252e3291b3add286ae0c39d8fdae24218e60d82ff78cea8564e5",
+      "protocol_metrics.json": "b0dd1118747bc3cceddb97ecdbab90da90a6467ca2233486f02feed3dd5be6c2",
+      "state.json": "bbf8c5e0271ccbcac9ba19cd2ce1e20a6b51ff8504b95b8500f776e69b569d69",
+      "trajectory.npz": "8d94c24264759e5662760c1720abdcad37ec5f1c80a2f8e20fd67d10443e5bdd"
+    }
+  },
+  "wide_u__seed_75__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_75__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "f23fd17d38dadcb1fa511312c31db66a27562589aae5795a93c963e7b5bbd4b0",
+      "independent_rejudge.json": "6f126aadee448cd04f66c30b39719aba7319eff8dd83af41bb0b82498cf1dcc0",
+      "independent_rejudge_final.json": "6f126aadee448cd04f66c30b39719aba7319eff8dd83af41bb0b82498cf1dcc0",
+      "metrics.json": "a1ee7c38662a05ad05e2dfb3048c68c6dd44d8153aea055aa5893e593da9fc36",
+      "planning.json": "29656ea680581d254035a78139ac4497429d5ddb1a56ed07848b9984d4fb0759",
+      "protocol_metrics.json": "e0d019235e04a811417a20ac1ff8777349dad7da0cca30c4bffcd0fb0d0a481f",
+      "state.json": "24a1c3e1902596e53e648889ec36dbc17af786d3f66866d2c7ebc52c8b954e30",
+      "trajectory.npz": "2638326622a4ef15c5d2cbb34396d36ecdf441feb4ee1c4630b14a6968395559"
+    }
+  },
+  "wide_u__seed_75__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_75__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "f23fd17d38dadcb1fa511312c31db66a27562589aae5795a93c963e7b5bbd4b0",
+      "independent_rejudge.json": "80e2d2f11fafe181c037dd48d39c543ba68c8243be592e33547958cfca32c0df",
+      "independent_rejudge_final.json": "80e2d2f11fafe181c037dd48d39c543ba68c8243be592e33547958cfca32c0df",
+      "metrics.json": "4bafed4c78330582139b4c54c8dad2b6a54615cea594bd944d44531499461936",
+      "planning.json": "16ac476829f070b863a685bdce81e8fcabde8868dd6c80056751e9c483056c64",
+      "protocol_metrics.json": "71b3a9fefdeed3dab4b031cadb9544ef491db2aecea18feb6bba9bb212ee63b3",
+      "state.json": "24a1c3e1902596e53e648889ec36dbc17af786d3f66866d2c7ebc52c8b954e30",
+      "trajectory.npz": "49c73d392a9e1b0a112426dec55da39fba54fe86e3eb6f4699aa11e273ea46e2"
+    }
+  },
+  "elongated__seed_76__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_76__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "36e873a2ee423b5ffefdbdb6853a49b849312a95b00694c63adc6b18edda29ec",
+      "independent_rejudge.json": "08620ee577856316e70d77bf359e983b681659debe2954bbdb41b9202261bf6f",
+      "independent_rejudge_final.json": "08620ee577856316e70d77bf359e983b681659debe2954bbdb41b9202261bf6f",
+      "metrics.json": "04160bfb30d86d98aaaab4db2c73c8e5bb99ca9c96d2a75bc996e54b96f0c322",
+      "planning.json": "a557ca004c9491f06c256a7b2e8666833c5d4190ae8a44f9f1552beead8c97b9",
+      "protocol_metrics.json": "6b3bdd1f25604e8d241d1965e2e93c848abbb4534e082d5b85f3bb0760e67c20",
+      "state.json": "4c5fabc1994d0bcea32ead44cf33f62249684504170af3577f0145189cbc8707",
+      "trajectory.npz": "abfdd3848dd0838cba9c51b3060920f5293958726db171cd63ae61498c9e1732"
+    }
+  },
+  "elongated__seed_76__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_76__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "36e873a2ee423b5ffefdbdb6853a49b849312a95b00694c63adc6b18edda29ec",
+      "independent_rejudge.json": "9a6a5876de48dd9ee968f99f1474fdd18017c0e63bb77adb191784a463957595",
+      "independent_rejudge_final.json": "9a6a5876de48dd9ee968f99f1474fdd18017c0e63bb77adb191784a463957595",
+      "metrics.json": "bb2730d7f41d80f1db90350bc043334aca1e120041aaf5b453055ada67f8ab30",
+      "planning.json": "f5d659e2335ecc48d97586d357e0a92c61356cbc2e9279cad7f2ff8bff2447fe",
+      "protocol_metrics.json": "283a7ffe1c1202320cd1beab62a3b068abd074547304d231f69c2910e087c2cb",
+      "state.json": "4c5fabc1994d0bcea32ead44cf33f62249684504170af3577f0145189cbc8707",
+      "trajectory.npz": "2fde9bdf4364e7e57f3a4e117f68dd27cad215ccec6e404a44014861baf18226"
+    }
+  },
+  "tight_u__seed_76__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_76__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "99b99d2e703ed788c66faed1c9276918226845d5ae9b0fa6e8d77bef7bb33dcd",
+      "independent_rejudge.json": "5f8f67cffab342aa3b836e5b1b95a680e511b6d211f37c50ec17b547e0e2ed30",
+      "independent_rejudge_final.json": "5f8f67cffab342aa3b836e5b1b95a680e511b6d211f37c50ec17b547e0e2ed30",
+      "metrics.json": "39b63c280f5ac94adc74bdbedfff754b33a0fdb23f1290a4e853d22925e16a4d",
+      "planning.json": "868572c2a4b0444f1bbb60b317ea7da0e19bc2b6e9628af045ff6e2b5900ec8f",
+      "protocol_metrics.json": "b8f0a5e8336f66a7f778037e443ffa0d4a27453e5d023ded03e9f35a123f5573",
+      "state.json": "6dbd229cd7bc690c69576624c7a79f4fc03d94273ba48a238bba23e089e69a5e",
+      "trajectory.npz": "7fb89f5772a78750ef806d11c634bedb2e458124f88d2f54012b534b858b312e"
+    }
+  },
+  "tight_u__seed_76__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_76__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "99b99d2e703ed788c66faed1c9276918226845d5ae9b0fa6e8d77bef7bb33dcd",
+      "independent_rejudge.json": "8de2160d46dda9e661a68aebf8e5b54fef259c96d66017b74decb67dcf37071c",
+      "independent_rejudge_final.json": "8de2160d46dda9e661a68aebf8e5b54fef259c96d66017b74decb67dcf37071c",
+      "metrics.json": "463ea9467bf14fa30e33f476bc11b1a77f577c9587eabe9c71d2e22f5e4bd9c0",
+      "planning.json": "23589c562949bf8a4c3fa385c7811b8528b5fde56fc688761f86b7587b763047",
+      "protocol_metrics.json": "efde18b2a019905eafcfbb4000b11632d66407dc6371ad40ab7193c272a456f7",
+      "state.json": "6dbd229cd7bc690c69576624c7a79f4fc03d94273ba48a238bba23e089e69a5e",
+      "trajectory.npz": "5e91a018866d5d7e90bc96bbf15c2f54c6d3e8b56c1fed09d1125b872fb1a657"
+    }
+  },
+  "wide_u__seed_76__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_76__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "a966a11325f93b4016080763a4d74a0ff72d8148036005bb46429b2b6ff5b484",
+      "independent_rejudge.json": "c176f05202ac84c51e9f2cba75622e789559817187e8f40f351c660a6ae82e76",
+      "independent_rejudge_final.json": "c176f05202ac84c51e9f2cba75622e789559817187e8f40f351c660a6ae82e76",
+      "metrics.json": "d3dce537d427da89217bd4022e3ba312ab56ff7a7c1b6bf2c387581f3beb5f69",
+      "planning.json": "13ce7ab1df93b55022a8ad19d06fd85f9a1b1d521ec797144962f3127343fce3",
+      "protocol_metrics.json": "30144d11b51e529aae6277f83fc3c65b6e537875296cc8ab6f943d0c60125cf6",
+      "state.json": "677b1baec4ab4d7751a782252055cdcb622e30f925ae8af7a4a77730ddbf5748",
+      "trajectory.npz": "f74c53942b70db424cd7a83c4e6f057553135fa51b9a58ae6a720fbe277ce1b0"
+    }
+  },
+  "wide_u__seed_76__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_76__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "a966a11325f93b4016080763a4d74a0ff72d8148036005bb46429b2b6ff5b484",
+      "independent_rejudge.json": "8b4ce0d29af5e88dd26396871a9ada64bec93fcde2a8ac62db9c89d89c2074da",
+      "independent_rejudge_final.json": "8b4ce0d29af5e88dd26396871a9ada64bec93fcde2a8ac62db9c89d89c2074da",
+      "metrics.json": "c54f79ac3f316f3a733dcc900f3c15d8d90df93b41bc4f2e5b850050ed1d88a2",
+      "planning.json": "e17218575606bf02ffd880e95655ed17f26a4318082b469601f7d897ddb562f0",
+      "protocol_metrics.json": "51f7305806c77c4fddc86d615fa6da7793d03d07961562b3e172ff9f91118248",
+      "state.json": "677b1baec4ab4d7751a782252055cdcb622e30f925ae8af7a4a77730ddbf5748",
+      "trajectory.npz": "6a55878ecc234a46a1cf2393b6d97799b082d787afc2c19a7a5c15f44c655ed6"
+    }
+  },
+  "elongated__seed_77__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_77__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "9c8f5854ce73ff7c4037e806aa7c27c2e9bf8d3a2234981db19bbbf654bbf088",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "88461e7755ca03bb5881f18369db886d14979cb4385b783b44636a990bc12c66",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "761f0ea2efd7cd7c1469a598cc41a02c4812813ee77bbaa001ef93099f214d0c",
+      "reevaluated_metrics.json": "1da84d5032c432c1b075049af87f871a36fe0b95fe376a97a7833b822323031a",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "2021faf2d1de4fb76e8cfca25d94d23d166795741a38dea480160afb4a884f39"
+    }
+  },
+  "elongated__seed_77__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_77__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "9c8f5854ce73ff7c4037e806aa7c27c2e9bf8d3a2234981db19bbbf654bbf088",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "63abd23993a651315f73489a0140ecaa87745d2ae3da46df5a9e0fb96d1c0c77",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "8d26096174a4fa14c16d70ed238cb217a5609bba524f52d0053016927ab5d2cc",
+      "reevaluated_metrics.json": "1da84d5032c432c1b075049af87f871a36fe0b95fe376a97a7833b822323031a",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "2021faf2d1de4fb76e8cfca25d94d23d166795741a38dea480160afb4a884f39"
+    }
+  },
+  "tight_u__seed_77__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_77__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "7963f1e5c6da6db2cb135895801fe6909dbf1bbd4c99d827fcbccf2dce6c9695",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "0c44a727ba8e7039367a7900c2a18a6a92ef9f301685f0540b99c65f62432412",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "d2c38393ca0adcdf4ef405e25991e9dcb48cd9e8e170346e74be8af357cfa02e",
+      "reevaluated_metrics.json": "192d9d2da53ca4ee9120c0debf784078bd00a49e478a2816f1eb0b87fcdaf345",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "11569ee68a9830ca47a2bea5be322d106b875d4ca4d6db4b940ee4db02034b21"
+    }
+  },
+  "tight_u__seed_77__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_77__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "7963f1e5c6da6db2cb135895801fe6909dbf1bbd4c99d827fcbccf2dce6c9695",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "67d6835ca54108525a2c5c9517827d298c899283a739b9f09f919ca2e8dbe4f8",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "3491e6c74d205906bb65e866d7d3903052d8337fedfe852d9f33693e06af26c7",
+      "reevaluated_metrics.json": "192d9d2da53ca4ee9120c0debf784078bd00a49e478a2816f1eb0b87fcdaf345",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "11569ee68a9830ca47a2bea5be322d106b875d4ca4d6db4b940ee4db02034b21"
+    }
+  },
+  "wide_u__seed_77__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_77__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "55893f17b060f021d1933f4bb272a2772ebc939f74d53427cc347c5f3eec1e27",
+      "independent_rejudge.json": "0e823c1f4939fdcbc3dce76250a9d10c28cc3b594964f601932e58f71ad0f1f5",
+      "independent_rejudge_final.json": "0e823c1f4939fdcbc3dce76250a9d10c28cc3b594964f601932e58f71ad0f1f5",
+      "metrics.json": "d38c30b9a6a7b085c1d9fab7e4b780f7e48e660483e642bfad8812fa09691f5d",
+      "planning.json": "ab79d2bf8233b5b653490f6c8dc34aa46472b6eae1f8774a5ebc861207aac034",
+      "protocol_metrics.json": "ae68660741f53d8f489217498f1bfdadaf4af73c6d921cf965a98084dbe6de5e",
+      "state.json": "0404df44883be55bd9ea914323a73ae172b306df2aa5c1e4ac1545d4184e18ea",
+      "trajectory.npz": "3528b156e5ce552f67d3954f8a83055c126c0b3a4901df56b8abed17f39cd68b"
+    }
+  },
+  "wide_u__seed_77__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_77__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "55893f17b060f021d1933f4bb272a2772ebc939f74d53427cc347c5f3eec1e27",
+      "independent_rejudge.json": "f562edf0e6380dae5a7e5ae7c39b3079def239a8d8dbe6e4808506e44e462ab1",
+      "independent_rejudge_final.json": "f562edf0e6380dae5a7e5ae7c39b3079def239a8d8dbe6e4808506e44e462ab1",
+      "metrics.json": "9cce79dd9787434cb42809a4edc9fe396b6eebc4010b1f1aa5761278589590a5",
+      "planning.json": "de727fb0fb902509fedded738091c3d2927469434e6d1f734b3b3f1c1ece6e51",
+      "protocol_metrics.json": "f1846015fb0c7152c4e90b3d0941db902c37fccc5b7acad4574e13e18f6597d1",
+      "state.json": "0404df44883be55bd9ea914323a73ae172b306df2aa5c1e4ac1545d4184e18ea",
+      "trajectory.npz": "57556fd40dcde224aeb5d6ec0220946ac314cdbb06fce8ba5b841e56c46eb2bc"
+    }
+  },
+  "elongated__seed_78__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_78__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "8371d598c5122a48b1d665fa10bbe0064e7e2ec71323a6bf9739bf7dd5ac44e9",
+      "independent_rejudge.json": "ddfe1ee737e0ee0ebe26f3cef0dcdb7aa2a6dbc696e94f11700b9a8f8481e740",
+      "independent_rejudge_final.json": "ddfe1ee737e0ee0ebe26f3cef0dcdb7aa2a6dbc696e94f11700b9a8f8481e740",
+      "metrics.json": "a07c4a31373a656f4334d4111179ecd0a7e73c6c332bac9150f6984666288496",
+      "planning.json": "ecd5c02f422b083e7b21fe46a8135d4774afff65a76cdeeb1521bf167208797c",
+      "protocol_metrics.json": "aa6ba17447c1f2d3bb82826812f17fb70695dbed65cde552ca266aa50b108f2a",
+      "state.json": "5ecc5f80d5f6841c8336dc1cd6d259e34262a96462658b1f666e11bece5c700b",
+      "trajectory.npz": "0f41d7811bafb0935f4cd96efd7bc1cb407fc9a9cacba67b9599068de844b4bb"
+    }
+  },
+  "elongated__seed_78__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_78__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "8371d598c5122a48b1d665fa10bbe0064e7e2ec71323a6bf9739bf7dd5ac44e9",
+      "independent_rejudge.json": "8767b01000f312cd2e323af0d4e78ace078d20cf14bfe47846ea61ebdc898fef",
+      "independent_rejudge_final.json": "8767b01000f312cd2e323af0d4e78ace078d20cf14bfe47846ea61ebdc898fef",
+      "metrics.json": "e57ff8834356cd1daaa8a559de12d5efa42d0c60f22c02a4bd273d374feedfd3",
+      "planning.json": "872a0f5a43819f9ff425815dbc0cad1bea5b4eecb616bdeff2fa7223363abc15",
+      "protocol_metrics.json": "23f652f0025d3d8476bc15018028163d524d23a3f0d150b45e740a607aaf2323",
+      "state.json": "5ecc5f80d5f6841c8336dc1cd6d259e34262a96462658b1f666e11bece5c700b",
+      "trajectory.npz": "13705d8b0c4d62c7461b1979a606e15de5ff40b952d8d3c726f370434573def6"
+    }
+  },
+  "tight_u__seed_78__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_78__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "48be1df5c552ec7d9700c22f749c43e7e107f9b787f2caa0ca5c64aadf95f495",
+      "independent_rejudge.json": "6299ad723d7dfea34ca78d9380acb456fb6d27efc12347168c025609f522f54e",
+      "independent_rejudge_final.json": "6299ad723d7dfea34ca78d9380acb456fb6d27efc12347168c025609f522f54e",
+      "metrics.json": "8695b272f46473095786f15c717bdb6b864cc998e244ef8efa257c71913b8253",
+      "planning.json": "7a865c95fe7388444e7c50bc3eabd3d67ae48357d8f4839789849d61b82778d9",
+      "protocol_metrics.json": "d75976b240e30ef842f74ca32edb8906884e0198f7b7c595e41aae0a24051350",
+      "state.json": "84ad92515cb5a9a335bd36578bcbd0678fec8f3de159d5ca55a0c2618a6493c0",
+      "trajectory.npz": "76bb8b1b196d46e78a83d083cb8fe41bebbd95a45e68ce6ef5ac535cd3a1bb4a"
+    }
+  },
+  "tight_u__seed_78__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_78__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "48be1df5c552ec7d9700c22f749c43e7e107f9b787f2caa0ca5c64aadf95f495",
+      "independent_rejudge.json": "7ac9aa5c6f0517e566ec6938c590dc6d51b604fc2379cf47f4f8f6e8efca771b",
+      "independent_rejudge_final.json": "7ac9aa5c6f0517e566ec6938c590dc6d51b604fc2379cf47f4f8f6e8efca771b",
+      "metrics.json": "3f216829d410ce44ef472625b067b3fab073766998f912ad7f51569dc3be2ed6",
+      "planning.json": "c302c8863f7010f8e51866d2bdc3576e7f20f685205736fa4df5e63135a2eb92",
+      "protocol_metrics.json": "4d13bee6a162924d9f0e9893372084acbfd554dde6b08dfd1ec2378c26a1ad71",
+      "state.json": "84ad92515cb5a9a335bd36578bcbd0678fec8f3de159d5ca55a0c2618a6493c0",
+      "trajectory.npz": "af32f88117ffd9d0b35d7bdbfce0e729812e29b74e988bb4cc7f6a54eaf0241d"
+    }
+  },
+  "wide_u__seed_78__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_78__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "44b8e3474f7e1aa63826c6ac3589f6d703c8631a2794bd9e75151a1f4df3919e",
+      "independent_rejudge.json": "0bbd9655b82e47bda8597a0a7b8d291585b73147f6e2f315716fdf2397c59688",
+      "independent_rejudge_final.json": "0bbd9655b82e47bda8597a0a7b8d291585b73147f6e2f315716fdf2397c59688",
+      "metrics.json": "c9cf9f83df28ddd39fe65d7cfc81dfc6f7f14d3836db4cb0abb90e50da173513",
+      "planning.json": "58cab2053bf263104bcd5443abd3792202261221d02acee8467f7e56c21a740d",
+      "protocol_metrics.json": "df1f35a769a37835b69faf48e7969bd0120ff3ed8614c3dfaab5744e4660f3de",
+      "state.json": "2df49a656c20531783fe657135dd66b5eab6c5947a572ff1e8a5e67779665732",
+      "trajectory.npz": "72b7483ca67b05791ea5f2dc7f57c6cbf73464f9dec6f165223f50685f7eb588"
+    }
+  },
+  "wide_u__seed_78__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_78__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "44b8e3474f7e1aa63826c6ac3589f6d703c8631a2794bd9e75151a1f4df3919e",
+      "independent_rejudge.json": "54ce19265361ed5a98b44e0c191a8a12c7c60e727fbd6033a7114bb0f070010d",
+      "independent_rejudge_final.json": "54ce19265361ed5a98b44e0c191a8a12c7c60e727fbd6033a7114bb0f070010d",
+      "metrics.json": "72b5615cad046b5c96a6cdd6354d1a4ad40baaf58551949584a71c2ca30faa4e",
+      "planning.json": "0f8532e712b1f513b316e18712a1d9f30add4eeedab62344d2cb2cfd24d004ec",
+      "protocol_metrics.json": "3f40cbb271dcf62ffcaf1e7ba41e48f96a0e2c75a1f6a2be8a2b9b78e5a63cde",
+      "state.json": "2df49a656c20531783fe657135dd66b5eab6c5947a572ff1e8a5e67779665732",
+      "trajectory.npz": "a8d7d3d766f66ff1a706a5b5c5fc27b91d855e4ae61922a864a6fb1257bcfed1"
+    }
+  },
+  "elongated__seed_79__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_79__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "7ca473d448580df5920b5750def43efe467eaaf30a1e4610e4037ad9230b6462",
+      "independent_rejudge.json": "fa14cb005bda5918fe2cb94855b0e4696fbeb98dba8447a4c706acfe63e73739",
+      "independent_rejudge_final.json": "fa14cb005bda5918fe2cb94855b0e4696fbeb98dba8447a4c706acfe63e73739",
+      "metrics.json": "59cd2437f31eef427270888263c64d6b6e4763f20f6cf33cb0410137330b8eba",
+      "planning.json": "72182a50d48013143439c096d40c9079718c3ae4ba55f1f6eb5935e0caaa81ec",
+      "protocol_metrics.json": "8bb345ec0fab0a90d585535f26ae5feda469d211df30ca378bd39f9ff332d3f6",
+      "state.json": "4b20f4b27f9465176afb953a1916238fb0dbc847629204c05d28879347cd8af9",
+      "trajectory.npz": "239b5538f7c3da5bf5256dfff35e8b5da21d145e57c2b02ddbda1803404b15c6"
+    }
+  },
+  "elongated__seed_79__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_79__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "7ca473d448580df5920b5750def43efe467eaaf30a1e4610e4037ad9230b6462",
+      "independent_rejudge.json": "c38844e2c4bbeb4b2ba5d95f1627918f4f56d803ac2d75514465d814aa56490e",
+      "independent_rejudge_final.json": "c38844e2c4bbeb4b2ba5d95f1627918f4f56d803ac2d75514465d814aa56490e",
+      "metrics.json": "b92865740fd2a95680ecac1e263f035c3f413a607b9cb2d74157efd8f5dc5837",
+      "planning.json": "57a23dc2630104371b0cd3070b58b78abf7a20a25e6f0827279533640d0b2b4d",
+      "protocol_metrics.json": "b535093516fc916858e8b5ded6f17dbb22a77f4817fa207fd606b1640e56c7c9",
+      "state.json": "4b20f4b27f9465176afb953a1916238fb0dbc847629204c05d28879347cd8af9",
+      "trajectory.npz": "872931ef236c9d42d1d47889b285492dfea923f820e812b7d67214d5920f4135"
+    }
+  },
+  "tight_u__seed_79__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_79__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "0992dea3b7e04b982f756694dcd3fe672babb1b5b73aa931ce60633545b2e3ff",
+      "independent_rejudge.json": "8d0fe6ac4a84d85211832b8ec9b20d4210ff26e4cdadf6a5abc01be98e87e353",
+      "independent_rejudge_final.json": "8d0fe6ac4a84d85211832b8ec9b20d4210ff26e4cdadf6a5abc01be98e87e353",
+      "metrics.json": "e64412226eb24873b46e9ab49f777173661929910f205757fbcd1cc284d48582",
+      "planning.json": "4582a7f9ff28e6a964a99a495cb3d18b6a71e68f424be3543c0385ea9e68be46",
+      "protocol_metrics.json": "e4a743f3c655f92cc73c3fc0802361345f7b37031e9b69ec6a5be2398990daac",
+      "state.json": "dfd70949c669b00b7cbcadfa976b6732bca47efe353048801eb585773c801b87",
+      "trajectory.npz": "065ec90d490d8e428875d700d3c37ca511c31846c8334319714463485d2c9332"
+    }
+  },
+  "tight_u__seed_79__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_79__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "0992dea3b7e04b982f756694dcd3fe672babb1b5b73aa931ce60633545b2e3ff",
+      "independent_rejudge.json": "3fe3f116e613322af489a8e56fd23ba7427257f343746f5ce39a2f9ea80e3a11",
+      "independent_rejudge_final.json": "3fe3f116e613322af489a8e56fd23ba7427257f343746f5ce39a2f9ea80e3a11",
+      "metrics.json": "600ecd7582fa8ef0e358f76e7145fbdee72c1fbba5c89980dca493db301d42fd",
+      "planning.json": "f47f163cc327cadffc71f2f64e01437ea311715dee1c8acddc64633bdc9d4ca1",
+      "protocol_metrics.json": "2876b4a12a324e56ff81c2622d7786e31452f2e67aeb0c759ed9278d92b70bd0",
+      "state.json": "dfd70949c669b00b7cbcadfa976b6732bca47efe353048801eb585773c801b87",
+      "trajectory.npz": "8c7aab8ff1c31cb6a2cf94f0774189514c3e4bb5c58e3dab5f54489b2e764e53"
+    }
+  },
+  "wide_u__seed_79__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_79__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "61f3d457e561f8288209182746a1040ae6430b96e3f3df9b5a1ea84565feda05",
+      "independent_rejudge.json": "b203b733c12d5d8b83ceba6b513ecc55ed1dcbf90aaa4759f497895afb3f9aa7",
+      "independent_rejudge_final.json": "b203b733c12d5d8b83ceba6b513ecc55ed1dcbf90aaa4759f497895afb3f9aa7",
+      "metrics.json": "f04e88b45091c46230bcf6c3df4a04226027e9c0348619f4570895fb68875495",
+      "planning.json": "b9e2655b5bfe69445b52ef468c7c2d4fd893f04b0ec571b73e1162cd7013363b",
+      "protocol_metrics.json": "e911b1f9baa0877efdd05c4a6ad6193622082c73b8a49e0c20d975506e2698ba",
+      "state.json": "41cf4e26abcfa776cc142c33c14b31a87e2774c64419c57287a8773765895d00",
+      "trajectory.npz": "8a601daeb592d3e117d1c54af75e786b4c17c74de0cfa21e8be937293b722e02"
+    }
+  },
+  "wide_u__seed_79__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_79__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "61f3d457e561f8288209182746a1040ae6430b96e3f3df9b5a1ea84565feda05",
+      "independent_rejudge.json": "5c7032d9f628c2de294f7823ae05811937c52f3dc298f306c8d473b54fdaf2a6",
+      "independent_rejudge_final.json": "5c7032d9f628c2de294f7823ae05811937c52f3dc298f306c8d473b54fdaf2a6",
+      "metrics.json": "42c729a3d82e7e8c2e6052c57bbdfc799d05c12847a6e0e3e24ba475eca59415",
+      "planning.json": "2e094526f8b2f94ba592fc88546da1c3c99c25ed92cdfc651ef14a9255b0f963",
+      "protocol_metrics.json": "166c0dd93da6feb6beed874fe0e12507299bc63289c26bf2dedbb2c8bf8b7825",
+      "state.json": "41cf4e26abcfa776cc142c33c14b31a87e2774c64419c57287a8773765895d00",
+      "trajectory.npz": "2623fa96fe18da37e774ccc872fae4ccb50d4b8731f39ee1fbe4ee4947ff4a02"
+    }
+  },
+  "elongated__seed_80__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_80__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "1e014c9c3299c730985d1497f37c44d51ccd4e6fc03564a4d2d11ad343bae87a",
+      "independent_rejudge.json": "c0658c5d4d544b3711ef817d5224092eec923d148520e5a621f2302422635c05",
+      "independent_rejudge_final.json": "c0658c5d4d544b3711ef817d5224092eec923d148520e5a621f2302422635c05",
+      "metrics.json": "0aaa0c783e4d60a82613066d534daf4b1d1c6a2495bc38a1c4d06b7270f6c851",
+      "planning.json": "8378490076c961d67f88e5dfc13955ec8e3befed9f9f766162aa3113a2c73a48",
+      "protocol_metrics.json": "d651799b4de5da2a3772d012aa03efccaa13f288e0679df12c47316e62e7bdbf",
+      "state.json": "94a963deda1400098c644fd2f567f6285f61caf98669ea83b151967450ed88e2",
+      "trajectory.npz": "d29c40c9706838f549c100a408645b10f02f405fa9b2d9c17dd814710201e3c4"
+    }
+  },
+  "elongated__seed_80__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_80__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "1e014c9c3299c730985d1497f37c44d51ccd4e6fc03564a4d2d11ad343bae87a",
+      "independent_rejudge.json": "3e80f4e8da70d27cf5c8bb8b1779514574d7a7d16a6ac96d94e89014093614fe",
+      "independent_rejudge_final.json": "3e80f4e8da70d27cf5c8bb8b1779514574d7a7d16a6ac96d94e89014093614fe",
+      "metrics.json": "133007e45e00d049569f28c5336de25b97e6a6b2984383c17dda07a2f1ec3ad6",
+      "planning.json": "bd7e319f7e7a3d92eae9c6d4d807f57411c75ec98d53be5ba9aa478792f6c246",
+      "protocol_metrics.json": "2ea438912b6b1e709bb2d14d0151e2a231946bba98d6a5c1f5b0f2e3f6557333",
+      "state.json": "94a963deda1400098c644fd2f567f6285f61caf98669ea83b151967450ed88e2",
+      "trajectory.npz": "e5513dbb48c6c371ac2ef96bebca532b9d6aca30322a6fcd2b6a2735802168cc"
+    }
+  },
+  "tight_u__seed_80__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_80__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "eecdcb25448a6e0d955c7a45b33dc4b007126c4906ec66904751f796bb4ea299",
+      "independent_rejudge.json": "f1042eccfc717bf141293953cca485a0c6de344dd40ed8ad74a00ac799c3d305",
+      "independent_rejudge_final.json": "f1042eccfc717bf141293953cca485a0c6de344dd40ed8ad74a00ac799c3d305",
+      "metrics.json": "8ea791720a2103cdf895bfbdabb9e3b8cfb74937370887660979b2f9de4bc77b",
+      "planning.json": "c38c91805baf609c8746fb8f8a056c628231c9c1f13a8eae6b48b56b3fa0e0b3",
+      "protocol_metrics.json": "130112675e737a57fe1702bc08be47b4d6c3e61d9e5c46a60863c5d063026699",
+      "state.json": "1a5cfe969e0835a534f2c60454bae580ae3a67a26d2440eacd23a3ea97122c7f",
+      "trajectory.npz": "6662dbebcdcd1bbfb798323a80285186134b226f7f32b4e8a663054035c066a2"
+    }
+  },
+  "tight_u__seed_80__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_80__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "eecdcb25448a6e0d955c7a45b33dc4b007126c4906ec66904751f796bb4ea299",
+      "independent_rejudge.json": "94473e0a945e7c39f26ffcf27fdc7456bf08b29c1178c5cee1717098b903997a",
+      "independent_rejudge_final.json": "94473e0a945e7c39f26ffcf27fdc7456bf08b29c1178c5cee1717098b903997a",
+      "metrics.json": "3a4872f6700bdd370d2fc4fa389b7e8b9b6a319906dffca56d653a8e711ef325",
+      "planning.json": "f4dc03c0bf62ec5bb04d7dfb6bf51b5e5c6e01d5d2d86c83405f0f59b879acf4",
+      "protocol_metrics.json": "990aa1b69d312bcc73dc739f77f465a98ba4ff16f4e08e700f25bdc42af1dae1",
+      "state.json": "1a5cfe969e0835a534f2c60454bae580ae3a67a26d2440eacd23a3ea97122c7f",
+      "trajectory.npz": "103ff86840737f83e79e498dad570378dca6be075a2854c93622e6c6b2f93049"
+    }
+  },
+  "wide_u__seed_80__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_80__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "457d99603e024b385fca312ac1c6a2af9555d4372f2e2e3ed825721384b97908",
+      "independent_rejudge.json": "0a102d1c35c531cc7502348f66f303530c214f0c1b7ace816978911a4d19c410",
+      "independent_rejudge_final.json": "0a102d1c35c531cc7502348f66f303530c214f0c1b7ace816978911a4d19c410",
+      "metrics.json": "d0bba97ad36c36a85774a3a58dd3fa99ac1575e981f4afb60c443fdf3c48daaa",
+      "planning.json": "b0f7562896c09f0d6521d0b83801a197e5ce46a1480a116b0173d80474e97661",
+      "protocol_metrics.json": "16f0edaeb8c66fff7b004252341de201b227db2812e04ee6812082ec36a475a0",
+      "state.json": "d1538a0338704081b910066750204ca2258c671119f927237cab63abdca5a240",
+      "trajectory.npz": "b484011c09c8e327db923feff26d8476c7b4638c069d83f58db580b306f234b3"
+    }
+  },
+  "wide_u__seed_80__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_80__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "457d99603e024b385fca312ac1c6a2af9555d4372f2e2e3ed825721384b97908",
+      "independent_rejudge.json": "0612f964f9a8f167f15d00d139ed6e94ae3d316d571da1e37740aec7ded57371",
+      "independent_rejudge_final.json": "0612f964f9a8f167f15d00d139ed6e94ae3d316d571da1e37740aec7ded57371",
+      "metrics.json": "750f38f50480b17af152b120898cc78024fbb1e83e0bf271bd95dc75519ddceb",
+      "planning.json": "8fb8dcdd963a9b2e603840cedda91fff42f9d271579cf8dce5a50015a1f28337",
+      "protocol_metrics.json": "778f87c38827d27cc67f84f9377af7ac384fa3f561a174682fc968501e003730",
+      "state.json": "d1538a0338704081b910066750204ca2258c671119f927237cab63abdca5a240",
+      "trajectory.npz": "82f6f43842ebe53455def22cc3b3b3c7fb4bafae32020d76e26e372ed3ff3eb3"
+    }
+  },
+  "elongated__seed_81__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_81__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "0a42dc7af79851441d6627b107b842aac38a967fdff392388799c8fb67fcb2a3",
+      "independent_rejudge.json": "a14daaf8de95cd4b44654219eeba57d488b1d4839d47134a1c2b2ed37eccc4b6",
+      "independent_rejudge_final.json": "a14daaf8de95cd4b44654219eeba57d488b1d4839d47134a1c2b2ed37eccc4b6",
+      "metrics.json": "67e1118d389e8a8b1eb831e77766221ea3d2011037ba8268e611667591e6b9be",
+      "planning.json": "ca62de5e9045afe56a854485d89da6c242f46285607182374b2a6d57063150df",
+      "protocol_metrics.json": "9ca373604c3365e6c163dd18bb78862351ec41a45e8534d7072728063b67c5dc",
+      "state.json": "58d0629e6d867e2cc33923f379d48f9b4f603a6175e2eacf980b49ae3fc6e2d3",
+      "trajectory.npz": "7cb1b57a3ea7a8f1db592cc6b4d7c6e11a5b46cced4d45fdc72ca42e000aae49"
+    }
+  },
+  "elongated__seed_81__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_81__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "0a42dc7af79851441d6627b107b842aac38a967fdff392388799c8fb67fcb2a3",
+      "independent_rejudge.json": "be60e97e2cfd9826ca6c0e160299422cdbb980e17e77c00f3e400fbb46cc175f",
+      "independent_rejudge_final.json": "be60e97e2cfd9826ca6c0e160299422cdbb980e17e77c00f3e400fbb46cc175f",
+      "metrics.json": "f634a6393ddbf83c522c02c37532748aa0d972de5fd708bf8fa001862f863eb2",
+      "planning.json": "16adb9bcb5726cd929f4fcc54bd64f8f089518de78ef3779ef427740841d43ba",
+      "protocol_metrics.json": "5a893a80c51400fdefe6247555f87effcf646516b6822ccb89f4dbe04b37fe92",
+      "state.json": "58d0629e6d867e2cc33923f379d48f9b4f603a6175e2eacf980b49ae3fc6e2d3",
+      "trajectory.npz": "05fcc33b7db3d02f5b8ad744e5f47f2733f044bee5e1161f7105f37799c55017"
+    }
+  },
+  "tight_u__seed_81__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_81__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "d95791f53a051b4cbebfeb4f21800db92170a224348abf956d0677c9bd962e18",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "797e4992fe6f6313b615886679ecc22cc5bfc5050559d6eb5f51dadd6a885d1d",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "3b43ad4e7f68401ae913dd357c7416d73a20ed8fd0daf04355e80aa0476d7199",
+      "reevaluated_metrics.json": "3321e32c215d4789192dbf4c22835abf886abb751c3e14978fafd95207ed6848",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "45a19d50eda1452f6f541b74d7e7487ee77317a69cd24925937668bfe222e94f"
+    }
+  },
+  "tight_u__seed_81__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_81__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "d95791f53a051b4cbebfeb4f21800db92170a224348abf956d0677c9bd962e18",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "e15db76136d16dee7e54ef8e05c87bb4552b41963b6b71633264d0d8d5e33f1f",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "4b9105f9a785e7c52496fc9761a891fb5a410ade2b6dba2b1a678dc95128133e",
+      "reevaluated_metrics.json": "3321e32c215d4789192dbf4c22835abf886abb751c3e14978fafd95207ed6848",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "45a19d50eda1452f6f541b74d7e7487ee77317a69cd24925937668bfe222e94f"
+    }
+  },
+  "wide_u__seed_81__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_81__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "c859a6f6f8d15777d83885fa29fb3d3e89a92028c53852bec3eb9dc585070709",
+      "independent_rejudge.json": "792bfccc28ccb8a131b57270a02c7479aa60cd00c0753d8a8d4f24e398da4f9f",
+      "independent_rejudge_final.json": "792bfccc28ccb8a131b57270a02c7479aa60cd00c0753d8a8d4f24e398da4f9f",
+      "metrics.json": "d5d46f2f85ccc9a760848c5cc97d71bd0d7aecd2a3b7ba2a709cbbc22303aaf1",
+      "planning.json": "7eccf6236e8ec451972348ab659faa6f058f23724ba214d10612f03c4cf23cc4",
+      "protocol_metrics.json": "1be84681fb4851b06900dbe21c50d50ebcf2591970f2c530bda9b8acfc60ec2c",
+      "state.json": "528a5239037a46994dc8a246369cb881a7a19627b2c250b8e0dd45978d50858b",
+      "trajectory.npz": "e3259de9517c147c13a1377c4e2f70128453f483c2022343bf405fe5cb89e4af"
+    }
+  },
+  "wide_u__seed_81__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_81__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "c859a6f6f8d15777d83885fa29fb3d3e89a92028c53852bec3eb9dc585070709",
+      "independent_rejudge.json": "2d658d395fb2bca330cd4c68ffa05e75dc91fc1ddb0d3e85c086e13a74824534",
+      "independent_rejudge_final.json": "2d658d395fb2bca330cd4c68ffa05e75dc91fc1ddb0d3e85c086e13a74824534",
+      "metrics.json": "aa8ff870da07230ad43ad34430910b48cf82ccbb1d1d254dae4e3ef16777130c",
+      "planning.json": "e028ec5eee773c701f81565801fc436891f651685e08569977ec2f09de145b24",
+      "protocol_metrics.json": "c9615b98a7f75f39a89e642aaab7c98386f0abca473f1fdd44465f8d4f6820d4",
+      "state.json": "528a5239037a46994dc8a246369cb881a7a19627b2c250b8e0dd45978d50858b",
+      "trajectory.npz": "51245376c35339604a792d5cdc33121cd645d07db3247c3e4cfa92d4f73254ae"
+    }
+  },
+  "elongated__seed_82__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_82__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "31a5d238a64e0af08cf1045fa14440faadd989bb7c04b1f3439c8e1fb6f68e13",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "99fe4afcf38fedb3189052e46750bedac656f54562c7417b8ab30a28b2c7a444",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "563f1d4153922be05bce042f994a280f63a3dcd893290c7149f2f8e191becd4a",
+      "reevaluated_metrics.json": "6f104d92a328dfc08c1824d2596e3bdfec8da98e166f997eb4665fd486eb63d7",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "403d3a2dc4f9b460817a9c6357689c6a15e9668c6df9eebda454dc3474a35f69"
+    }
+  },
+  "elongated__seed_82__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_82__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "31a5d238a64e0af08cf1045fa14440faadd989bb7c04b1f3439c8e1fb6f68e13",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "1fd23841e1cc9ddfcf6491ad0aee99c665e8d76661df8c9451cb68d48ea457f5",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "702a293ce685cf0a28d2996bcd2cbf9c01bd175729a1c85fdaf8cb27c0f1fa4d",
+      "reevaluated_metrics.json": "6f104d92a328dfc08c1824d2596e3bdfec8da98e166f997eb4665fd486eb63d7",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "403d3a2dc4f9b460817a9c6357689c6a15e9668c6df9eebda454dc3474a35f69"
+    }
+  },
+  "tight_u__seed_82__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_82__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "0e0c429cee7dcf2fd81abf9d3422815a2cf84a1a05849283cbb43ec8764fb35b",
+      "independent_rejudge.json": "3efe9c190013c7298d1bd843966f71dcac75be8a3844922f537e1e440749f0cb",
+      "independent_rejudge_final.json": "3efe9c190013c7298d1bd843966f71dcac75be8a3844922f537e1e440749f0cb",
+      "metrics.json": "ac17e66054bb9f624ed47c115d2223951a8655eda3910c7abb1fa9a98380fbc9",
+      "planning.json": "911d099e2cbbd2b7351c082fa3ab06790aba738b94edb8afe8c17e10a0c06008",
+      "protocol_metrics.json": "c34d4db6d9bd9ba526dcb2e3c71f85104ea23bad7e2c105b31747af851c75801",
+      "state.json": "d23572597acc8add4655433f90d027c5ecd48fb0c28353673efb4d1c6f90d098",
+      "trajectory.npz": "fa341ca74005b9c161b64abd759b69cae077ddfcbd769fd8a4ac827b42abf350"
+    }
+  },
+  "tight_u__seed_82__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_82__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "0e0c429cee7dcf2fd81abf9d3422815a2cf84a1a05849283cbb43ec8764fb35b",
+      "independent_rejudge.json": "5c5d78d4fb506ae61d9f92125ae81aeda4d4fc89532dda767ebe91c0d725d64b",
+      "independent_rejudge_final.json": "5c5d78d4fb506ae61d9f92125ae81aeda4d4fc89532dda767ebe91c0d725d64b",
+      "metrics.json": "482b849b69f77d29cd60a41179378cf7c1959aea738cc14f548d3b3613f96d4c",
+      "planning.json": "9c37931f0868c5528ced97cf717900695b2ee3d613eb0e4b5f1aa386f6fee175",
+      "protocol_metrics.json": "2ad2939ae2c35538b8dc13a4194bdcc9a644dfafc266c586062716ec993da4a8",
+      "state.json": "d23572597acc8add4655433f90d027c5ecd48fb0c28353673efb4d1c6f90d098",
+      "trajectory.npz": "32b790df974c970fbc3668d2d8e1c14412f09dd463fbd8964eaff571c0c6bcf6"
+    }
+  },
+  "wide_u__seed_82__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_82__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "87e54441e430f0d8840fc0bb5357b099f0514a5e7b9757d09dc127366fc9bca8",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "81a14c62f2a9f77937343b435ef9f3bfcc4523ee42fc8458d4b0dcacacec1166",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "75cc7b003e093b93059a3f1bebaa1ee9c5e61507beee0b22d71c9d0b9b88e1e2",
+      "reevaluated_metrics.json": "8b72eb47579e71c58b67fe24b8196f2bcda855c013269f261906d984f0b02e43",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "36c84c750bc84b0910fd26e4b81ebe578266b858d0653a0718f668c11fb1bbae"
+    }
+  },
+  "wide_u__seed_82__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_82__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "87e54441e430f0d8840fc0bb5357b099f0514a5e7b9757d09dc127366fc9bca8",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "4ef65b18b4f78e96904a86c706ab7e0a30b9727aff422e888521ffc6f5195bd3",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "949ed9c3e346d2bf65fc910451d087939ae9ab35d6dca31cb01bc0188471f384",
+      "reevaluated_metrics.json": "8b72eb47579e71c58b67fe24b8196f2bcda855c013269f261906d984f0b02e43",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "36c84c750bc84b0910fd26e4b81ebe578266b858d0653a0718f668c11fb1bbae"
+    }
+  },
+  "elongated__seed_83__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_83__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "8755543f8dfcb9d2d493ea29c6295412584cf7b58370db33766ea4a9c955093a",
+      "independent_rejudge.json": "82ca58d9c31c560d0d6cf75186a28970b2363873cd84e2f8e85880b95f6339da",
+      "independent_rejudge_final.json": "82ca58d9c31c560d0d6cf75186a28970b2363873cd84e2f8e85880b95f6339da",
+      "metrics.json": "8b74016c621d7344c6e9eb94173aa740d393c45766ca0d5e14b63d33a87f96ca",
+      "planning.json": "16252ceead866c56a1a1865763517bca0a78548be39c3a2e1fe1dff483f6d4c6",
+      "protocol_metrics.json": "06c293eb596c107c4715fc2ac5666e2156d46cb2712e5c4571dcb982f5c65619",
+      "state.json": "30bb1671cc8dd75129bc7d226d7a060cdd28dfe5f33e615a15ec2f472efb985e",
+      "trajectory.npz": "b62cfb5636cf3bb7c4c1dd456a3852df5b8000124d9f02cc34810021fa3abb7e"
+    }
+  },
+  "elongated__seed_83__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_83__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "8755543f8dfcb9d2d493ea29c6295412584cf7b58370db33766ea4a9c955093a",
+      "independent_rejudge.json": "195ec46e5f3f42cb01758c8089d98af7644977f50c8b0cf61799dab84472abb6",
+      "independent_rejudge_final.json": "195ec46e5f3f42cb01758c8089d98af7644977f50c8b0cf61799dab84472abb6",
+      "metrics.json": "bdc4695827acef657c603500d928b41511d708985fdc27fd9bcfb2c9fe3e1878",
+      "planning.json": "c5d0079dce889dd738838647dfbb88ff1ee7ea9effa588d4f0036346c078ac61",
+      "protocol_metrics.json": "1cb81054de7dc5de7c498b9729a29c3fe3e5537fe346a393468a5a8152a13562",
+      "state.json": "30bb1671cc8dd75129bc7d226d7a060cdd28dfe5f33e615a15ec2f472efb985e",
+      "trajectory.npz": "fc69195d95e62c1387e2a77e014bf865c6034ddb166285a85bcc93dfe0218ed7"
+    }
+  },
+  "tight_u__seed_83__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_83__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "805cd547bd9f5e1490595ae2e4e43d63b403f54cc2fdfed205671de3256b3b8e",
+      "independent_rejudge.json": "3c64acdbe38c1d8549964229c0790b68c301dea925e2d657566ce4816ca91de0",
+      "independent_rejudge_final.json": "3c64acdbe38c1d8549964229c0790b68c301dea925e2d657566ce4816ca91de0",
+      "metrics.json": "9c7a04e4a75f401277e3fbdef1fd44b63b7a8298c89ffd3631314b5783422eaf",
+      "planning.json": "15e392dd93d0aa80a8c072266289a482cbaa70c04e864c40d98e896e18d8b4ba",
+      "protocol_metrics.json": "f25a0ae2111519219f96d2ee9ed20043a6f76d223cc28153759e437c542b118b",
+      "state.json": "0dad19ba532855a28b23155fa075423abc0c1e51c7219a91693ad951b5713a9c",
+      "trajectory.npz": "f156128479865a3a27f15d7ce4fea9d39946745f203745cc664d32d3148e7b55"
+    }
+  },
+  "tight_u__seed_83__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_83__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "805cd547bd9f5e1490595ae2e4e43d63b403f54cc2fdfed205671de3256b3b8e",
+      "independent_rejudge.json": "40bb33eb6a2a5114ddaea1c4c4e99940d9fd0f23804642fe8fd4d75ea6cd0558",
+      "independent_rejudge_final.json": "40bb33eb6a2a5114ddaea1c4c4e99940d9fd0f23804642fe8fd4d75ea6cd0558",
+      "metrics.json": "f0a12fb2fce964b870fae819be6b0a1ff91f19426abd20dd401d2e8262ec598f",
+      "planning.json": "abf2f47ae6766da8cca360b008b01ae980ad21b4d54f41d34cd79d2a46d8ac41",
+      "protocol_metrics.json": "31d174b39c2af174e30aac315d4b8b9cbcf4cbcbc15935f9f2f919d13b9c1af8",
+      "state.json": "0dad19ba532855a28b23155fa075423abc0c1e51c7219a91693ad951b5713a9c",
+      "trajectory.npz": "bb24764f89eab4f5b31312beb45e7ab04cb2c03aa13f65e6d453ac682dc3c58e"
+    }
+  },
+  "wide_u__seed_83__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_83__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "67b9ecbf0c0c59d1893d67aef72123acf1d5d079000bd805fc4707839a3b42b9",
+      "independent_rejudge.json": "8eb2a6f89245a54c5f96a1e822d12d7f4db64dcd51eaf952d5871a589c8d2cec",
+      "independent_rejudge_final.json": "8eb2a6f89245a54c5f96a1e822d12d7f4db64dcd51eaf952d5871a589c8d2cec",
+      "metrics.json": "2157a03a90590d5807a9e396560d79b57876175eb5168386744d9eaf83b2ffad",
+      "planning.json": "b6ca1a35b0affb49a6721f13acf839c7d04db6c0d53f8d0d4894b9efcbdcc794",
+      "protocol_metrics.json": "d22bca7af450430e460f9a27189d8337e0a666e8506414aeea93f8ecd97b5f5c",
+      "state.json": "5a9b0da1d9a9ca6f6c85dcf9662e858ebb9612300945822a99bd36e18b2277c9",
+      "trajectory.npz": "8d93271b4b8069427dde0f481c4ea7b40805f195a4b2ba3093e8a24aa2e7186d"
+    }
+  },
+  "wide_u__seed_83__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_83__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "67b9ecbf0c0c59d1893d67aef72123acf1d5d079000bd805fc4707839a3b42b9",
+      "independent_rejudge.json": "cc8a611dc9c3cf0f246ebda71063f2ec94bff0861dd97dbd75f1eccd1077e761",
+      "independent_rejudge_final.json": "cc8a611dc9c3cf0f246ebda71063f2ec94bff0861dd97dbd75f1eccd1077e761",
+      "metrics.json": "d3f8777c4ba5594e3c83104b5c84b72329cec9a1fd3725cb8246456e4b6708ef",
+      "planning.json": "c3bc1267da81cbe6a46e331fec46e9d038f731ba7e8dc3ccc3d99a86175dbc6a",
+      "protocol_metrics.json": "fbeb7a430728d58341ea9149abf5c298d0743921a7e8f5adf5f435dc94dff464",
+      "state.json": "5a9b0da1d9a9ca6f6c85dcf9662e858ebb9612300945822a99bd36e18b2277c9",
+      "trajectory.npz": "9cd1bbe54a8a1c7ab9bd6c837022618d17911cd55155420a634b3ddeb7487b85"
+    }
+  },
+  "elongated__seed_84__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_84__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "9e031356f33110b2f5ba727bc0b302cb837aaf32caff3deee3b9b24803b39834",
+      "independent_rejudge.json": "1dd7b4809d1bee0a0f072f864606a5fa5acb8942ac1dd5b5d69bc185fc4b79b0",
+      "independent_rejudge_final.json": "1dd7b4809d1bee0a0f072f864606a5fa5acb8942ac1dd5b5d69bc185fc4b79b0",
+      "metrics.json": "ec027834ad631430e318bc94a8e0da791cbb18c05dacdfa200d905590a8765f7",
+      "planning.json": "255b73db4142fb1ee5eb5b021b85e59ffb99cc82e31c2ca02dce97e4cf883e30",
+      "protocol_metrics.json": "19ec92b97ff957eb2a80b6119cb663756608c447f96e272dbbfe4aa13a813125",
+      "state.json": "2763d9a92cd64567a66eb75a70b8757831d24694f9ed8c4ff6bdd8edd202fb69",
+      "trajectory.npz": "77b2c3fb2dee3605491a018c0033174c6e96cd94926a33c0b4c1276a53fde65b"
+    }
+  },
+  "elongated__seed_84__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_84__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "9e031356f33110b2f5ba727bc0b302cb837aaf32caff3deee3b9b24803b39834",
+      "independent_rejudge.json": "3d19dc973b48b38015c03038b76271bd15a7e2cb2a6ed286c07898762b2806d3",
+      "independent_rejudge_final.json": "3d19dc973b48b38015c03038b76271bd15a7e2cb2a6ed286c07898762b2806d3",
+      "metrics.json": "9f70fb7dae2873bc2f97120ed773c7af720debe3980661bab1bf44dec80d9217",
+      "planning.json": "ea7623f683578bf559dd0884e0dc7e9c6fe6a76ceec19fec24500cae15aaf085",
+      "protocol_metrics.json": "d4abf9aa13eb6471b7b5be7bc12d903c997130b3cfb4bc270192a1075f619819",
+      "state.json": "2763d9a92cd64567a66eb75a70b8757831d24694f9ed8c4ff6bdd8edd202fb69",
+      "trajectory.npz": "b8a2ac216053bc69a4df3e32d0b9120cf99e7f288246440dd3a6fef7285743c7"
+    }
+  },
+  "tight_u__seed_84__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_84__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "be764da39425700d9719600ce6a2250c59cfde983d309c680a080d64da20673b",
+      "independent_rejudge.json": "6da93ef3318eaf54c0df611732c889065120277eb5fc404e4adf7a38b999e96b",
+      "independent_rejudge_final.json": "6da93ef3318eaf54c0df611732c889065120277eb5fc404e4adf7a38b999e96b",
+      "metrics.json": "f3fa2d7020a3f9d7b9e0b2d844b7c4a72b98a9a73b1ed185a37ed3147f14513b",
+      "planning.json": "88eb4e72f3977ca65eca244b5e777be5e75de1aafe8c13334b14adb5b2b4fe98",
+      "protocol_metrics.json": "1efbc573e842cd5906feddbe41a34c5fca8bb9e5c1ac201d0527605a3e2e95b7",
+      "state.json": "8567eecbe23c384a447abe580513924cb1c17f98722dd96454a9ca5e0940d6ee",
+      "trajectory.npz": "fe84191059313f30e008e7dd59a673fca53464864e7b309d9451d554dbdc257a"
+    }
+  },
+  "tight_u__seed_84__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_84__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "be764da39425700d9719600ce6a2250c59cfde983d309c680a080d64da20673b",
+      "independent_rejudge.json": "3c65f6d19079475a29492827b56ff85abcfb97757dd8aae50ac80b5c6cddf3f3",
+      "independent_rejudge_final.json": "3c65f6d19079475a29492827b56ff85abcfb97757dd8aae50ac80b5c6cddf3f3",
+      "metrics.json": "fa005beaa7d9421bcee6e723fde3ed60ec06267b7a2aa5c7746be2dcaf8f0168",
+      "planning.json": "62112417442c202491dc97fbfc0781da27589f55388c5e0074d8fa825ed98970",
+      "protocol_metrics.json": "5e31413f04f606c8c6f4a5145ae0a6b9ee41f55e8bf0020e84656f8e8540185c",
+      "state.json": "8567eecbe23c384a447abe580513924cb1c17f98722dd96454a9ca5e0940d6ee",
+      "trajectory.npz": "222a912450e8fb27b7151df65a42696b4a6e2da45c72e563974e7e041c7ad147"
+    }
+  },
+  "wide_u__seed_84__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_84__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "bf8521177ee75fd1af85c9ca803d997437bc645efe57340cfb37a1e7bc12fd7b",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "50f773616cd96021c3bbfc4fa619792518a9c6d5b6bd0205f93b01ea9495d782",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "75a5a99a5893cdeece6203c0472234105972603bef93c3f2bca415c1215c9115",
+      "reevaluated_metrics.json": "ac1de8f49a5a62508389e9ae177518f3de2721e804d0ce5c3c9b407c2005ca31",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "bb80147eab7482150ea09d4f923879a5f49e732da878ab0557721546e5364c77"
+    }
+  },
+  "wide_u__seed_84__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_84__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "bf8521177ee75fd1af85c9ca803d997437bc645efe57340cfb37a1e7bc12fd7b",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "a2be63f0b03dc9e2ab82b65972997a59cddb421a60c84c390d9120db6025f64f",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "ab7303085d31e604ef90d60d0727713127d3601b533d95856ddec25d1a7740d3",
+      "reevaluated_metrics.json": "ac1de8f49a5a62508389e9ae177518f3de2721e804d0ce5c3c9b407c2005ca31",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "bb80147eab7482150ea09d4f923879a5f49e732da878ab0557721546e5364c77"
+    }
+  },
+  "elongated__seed_85__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_85__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "f5fb8e8494594bdc799cc91c69f6cdcc88595dba2481af39a075e60228fc4ac8",
+      "independent_rejudge.json": "4a2e015e0092d75da108fa1a7647183266f69b031d1f8f48d472532787317048",
+      "independent_rejudge_final.json": "4a2e015e0092d75da108fa1a7647183266f69b031d1f8f48d472532787317048",
+      "metrics.json": "f229ce1ab4bc329c1af0a4d3e7beaebd2980cca3860131a341beb2a5b5530f4e",
+      "planning.json": "aa7e47b29a261d80424d8a5396acfb32a91f2b741b9533ad5eaec7ec414ab0c6",
+      "protocol_metrics.json": "1ec3ab61a4b3056e1906f7886cb8910e2fc3ebe80968f18bffdecb8e6178bb65",
+      "state.json": "3eb2d5eda2cd849fb934d07af754296322e64f59d839d44a96191ed33d1044b4",
+      "trajectory.npz": "abfedbd1d5697c28ed65ca5e376acf4070541648ab9ebb6a01c8ad42907c3f0e"
+    }
+  },
+  "elongated__seed_85__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_85__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "f5fb8e8494594bdc799cc91c69f6cdcc88595dba2481af39a075e60228fc4ac8",
+      "independent_rejudge.json": "60b2e4bf30282141a44f62008d26634c69a1ace4b74a3ac820fa52d3c9d3cc4f",
+      "independent_rejudge_final.json": "60b2e4bf30282141a44f62008d26634c69a1ace4b74a3ac820fa52d3c9d3cc4f",
+      "metrics.json": "473d80da37f5eb2eb27b3b3f944600dd218bea5ce33b4ea669eb3f07a46e4fbe",
+      "planning.json": "faeec5049cf36b76edf02d77012ba3a52c48af6845ba4f19e4b9dcc70701e12e",
+      "protocol_metrics.json": "309ff4e5d5393a45c3847d256c24a0f0811e98523d08efa835df01aca5b19ccb",
+      "state.json": "3eb2d5eda2cd849fb934d07af754296322e64f59d839d44a96191ed33d1044b4",
+      "trajectory.npz": "6a321282cdad2e9a0e9bea759fe993758c0cdde1d7655f7999a62c197128e185"
+    }
+  },
+  "tight_u__seed_85__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_85__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "5c020ad85d929838d1485da86d0dab2ac419fe049732940e5edca62414594ba5",
+      "independent_rejudge.json": "d9c7c192498abad646843094e060f6afc4a1e737ec5090fcdb68f47cbdeecfdd",
+      "independent_rejudge_final.json": "d9c7c192498abad646843094e060f6afc4a1e737ec5090fcdb68f47cbdeecfdd",
+      "metrics.json": "c18a8c9f0e97cc606d7b1beda55672df5e1e646b80c907c09937de5136c05935",
+      "planning.json": "fca3f417294207addc300d93134cd835a97f3bb3da04213ed0b906499a7082b1",
+      "protocol_metrics.json": "f22ae473373f624547d4ff4882b46c76deae13c9c3b67b456508594a70f966a0",
+      "state.json": "3940659152909d8558b930b1408dba066f031a503c7239e650d8897618be1b30",
+      "trajectory.npz": "c68950cb1e84a7c03ea037476a5ea410ca6e8341849e8b3ee5df9f9706c084d4"
+    }
+  },
+  "tight_u__seed_85__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_85__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "5c020ad85d929838d1485da86d0dab2ac419fe049732940e5edca62414594ba5",
+      "independent_rejudge.json": "7b4ec3d63b690eaf8391dd96270abc2522ca4ec284a1159e2cdffd7480d14232",
+      "independent_rejudge_final.json": "7b4ec3d63b690eaf8391dd96270abc2522ca4ec284a1159e2cdffd7480d14232",
+      "metrics.json": "187428e02339b2a541c05ac8732d68aebfc8c1409506e413fbe6c3f8d4efc950",
+      "planning.json": "186471703b7cf19dc34ba6c16fae660c681bc009258d8eee38195c8d762568b1",
+      "protocol_metrics.json": "d569352c47074e1e7c8a16cefb116bf328f7f983706b9834776d3bf9635e8646",
+      "state.json": "3940659152909d8558b930b1408dba066f031a503c7239e650d8897618be1b30",
+      "trajectory.npz": "bafa00c05cd3d5d107d12bf9b4618d51b0bb6e5e7307a6a514bffe777e57041a"
+    }
+  },
+  "wide_u__seed_85__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_85__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "973bf94de8100d8bca6ed6dbd07bf976c0bc3a9fa1af26477b60d6237fe94979",
+      "independent_rejudge.json": "bf4d206e6f402cef09da128c56f087205d9f8339fcc2206e8a9e4f55f1d78aff",
+      "independent_rejudge_final.json": "bf4d206e6f402cef09da128c56f087205d9f8339fcc2206e8a9e4f55f1d78aff",
+      "metrics.json": "dc5ac90cb99677f5fa5383451820b717c15a499f31d8d3293c113b970b2ad0ec",
+      "planning.json": "e4b577014174c577688088330e4f1045afd96fd8e3fca90d8d67e692a3aa87fd",
+      "protocol_metrics.json": "0facc8492df733db26535d8f9666da358b90209f38a1b575989b91cdac2d9396",
+      "state.json": "d5838049d0fbfbb2832733e275bd49cf04c7dc9a1ac57b90359634b34dc0d007",
+      "trajectory.npz": "b7e85b9c817beed8c047cc0d87c90b8cb9c6102a620dd2d83436edc7d5741691"
+    }
+  },
+  "wide_u__seed_85__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_85__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "973bf94de8100d8bca6ed6dbd07bf976c0bc3a9fa1af26477b60d6237fe94979",
+      "independent_rejudge.json": "11c1cbc9d23ef7d0e63953477c218e1998488086734e92d85d9fc5804e37be58",
+      "independent_rejudge_final.json": "11c1cbc9d23ef7d0e63953477c218e1998488086734e92d85d9fc5804e37be58",
+      "metrics.json": "057901f02581d522f7e4001ae2d41a1c6a98dd6f892745ce6a89c8af398412f4",
+      "planning.json": "5b9e675e550858d6258cce1f8ab54c702c26c6cc4c2d88bcbe721612189b841b",
+      "protocol_metrics.json": "6df93e44cc545b3066f54e532e6899f4e985506a6d572a2f081d272fd4662950",
+      "state.json": "d5838049d0fbfbb2832733e275bd49cf04c7dc9a1ac57b90359634b34dc0d007",
+      "trajectory.npz": "c32b9b28f0e48ceb75a39b948396a5b8f3f1870065ef6d78a1870f75ca96706f"
+    }
+  },
+  "elongated__seed_86__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_86__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "7d4b4637457db18ad0e8b065ef8b9a7b5a96b11a74e71aa4c734a0a94f4073eb",
+      "independent_rejudge.json": "372468850017a457401ee2a2e4e2409a149c85d5d6f9f8fdd4aab7a173afd573",
+      "independent_rejudge_final.json": "372468850017a457401ee2a2e4e2409a149c85d5d6f9f8fdd4aab7a173afd573",
+      "metrics.json": "db667f0f721e97e9a6dad3d2867cd15342b8765873141cdc784aedf290f6a00c",
+      "planning.json": "90cd23db834c9a57008924594ed8da88939fb87b1fb5254f7feb31b4dc966c78",
+      "protocol_metrics.json": "63a9f2fb5c67860982550cb516ea05ede8e744e0d4b9fa2393d24b854691d832",
+      "state.json": "2dbd50151201e4203029c1a1a8ee2a2998548aed53489c21e326bb0eaeb86d0d",
+      "trajectory.npz": "365fab1e69a8a12204e2619734946f4de66a7fee3ddb4eb805a84da602bd7935"
+    }
+  },
+  "elongated__seed_86__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_86__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "7d4b4637457db18ad0e8b065ef8b9a7b5a96b11a74e71aa4c734a0a94f4073eb",
+      "independent_rejudge.json": "6cc023a8094889c9d22519b41910925bb09804f104359aeab7b3df1b21161436",
+      "independent_rejudge_final.json": "6cc023a8094889c9d22519b41910925bb09804f104359aeab7b3df1b21161436",
+      "metrics.json": "da43482f7fe9cbb913acd975bc0c467c5fc0f6ae9b5578596046a9fa1bd7e2ab",
+      "planning.json": "fbc416e02db8493274167a72e0b3b32da8635663d1b1c5ebf1c1a5db36c8ab70",
+      "protocol_metrics.json": "fbde4a82c8c5fcf167f3fb451ceb77d72e4a15df1c4b72c071f14f6bbb58fa65",
+      "state.json": "2dbd50151201e4203029c1a1a8ee2a2998548aed53489c21e326bb0eaeb86d0d",
+      "trajectory.npz": "13938cc0fd2ae8344cc4ceb218e28739e9f9a2aeb5159a536fd49a9983aa242e"
+    }
+  },
+  "tight_u__seed_86__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_86__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "4a1cbfcc50b2f60c3d2e34cc3c3ebf060c4801dad0fb55ce4f1e92986d23ab17",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "1a0d9a25ae71a22047073abd3c6d4fb309a1d61272056137e053b4c37cd64beb",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "4c7cbe7bf07a2eee81e904c8db0243cd8f01dd094a7653765c8aa558431af833",
+      "reevaluated_metrics.json": "8f2732bac7cbcee338da10e59b5b519ceb1beb43bd083a18c816efc747454fb5",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "bcf5040c71b1266f0b6e1180fb8eb40b98ca64e96ac4791e270ca8f288ca7c71"
+    }
+  },
+  "tight_u__seed_86__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_86__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "4a1cbfcc50b2f60c3d2e34cc3c3ebf060c4801dad0fb55ce4f1e92986d23ab17",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "51b2e06825b059d7297fd77814761d9ff0fe0a60618702371a4c40b79dfec461",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "f2293dc579bc433e19f4411aa60a7d5ada3017a5041e4d72225d292a88baf64f",
+      "reevaluated_metrics.json": "8f2732bac7cbcee338da10e59b5b519ceb1beb43bd083a18c816efc747454fb5",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "bcf5040c71b1266f0b6e1180fb8eb40b98ca64e96ac4791e270ca8f288ca7c71"
+    }
+  },
+  "wide_u__seed_86__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_86__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "1eb44732b2706746d06367109dbbd41132e8ba5f32a95ad28f3638c36282ef2b",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "64a1e598776723f75996bdf14c1b90c30b5c08d369d6c245b5f3e43a8fc00718",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "d50e0d1de901612f945b66333c85ccbe061c7bfec91a7580c7677b93836ace27",
+      "reevaluated_metrics.json": "091464a5db66af9ff4d4ce7f467f566ec061db7a6d87e15723501f870ade5bc6",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "b7fec3a5d2e60dd399ab9df8cf8447592db843df06895fab8f5fdf44cd11678a"
+    }
+  },
+  "wide_u__seed_86__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_86__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "1eb44732b2706746d06367109dbbd41132e8ba5f32a95ad28f3638c36282ef2b",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "5873b89e6cf0552d19821445199db7be918057c64dfff5b44048194479d3f05e",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "d9bc2d107991ebde3da3e47344ed1d616b7c8c67e61fea5fc19d545d703f436f",
+      "reevaluated_metrics.json": "091464a5db66af9ff4d4ce7f467f566ec061db7a6d87e15723501f870ade5bc6",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "b7fec3a5d2e60dd399ab9df8cf8447592db843df06895fab8f5fdf44cd11678a"
+    }
+  },
+  "elongated__seed_87__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_87__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "2abb0bb9e31a86e4c9a78d38f2f7ef89117c95e144f949ca5f7e3b0cf86584d6",
+      "independent_rejudge.json": "f1e9ea14e9a14179ddaa9af21371f71480e51e30591b30724a7648d660b84e2f",
+      "independent_rejudge_final.json": "f1e9ea14e9a14179ddaa9af21371f71480e51e30591b30724a7648d660b84e2f",
+      "metrics.json": "b8537b1ed5ec91f95b0385d28990dfefb5f980057415bf352c044410a28b0db5",
+      "planning.json": "c349a2d505e39cd4103c504e35c5db2c8b3c8843351e572f273b27bad8598627",
+      "protocol_metrics.json": "2b219d1261fa957037928bd4f38d42e1076170ba5dbe02b7e96e00ad39d811bb",
+      "state.json": "fd808474955d99f5e35a82940742337f6e962fd14201a32d44740f63e284ed76",
+      "trajectory.npz": "763faa4158a5c532e60e23e4fa9e9d885b6f0788c42dee4338f2fd0042f0afd9"
+    }
+  },
+  "elongated__seed_87__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_87__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "2abb0bb9e31a86e4c9a78d38f2f7ef89117c95e144f949ca5f7e3b0cf86584d6",
+      "independent_rejudge.json": "58e39270c8500d7016a12571044eb5a95a687d075409526c996a7b25cb9f921d",
+      "independent_rejudge_final.json": "58e39270c8500d7016a12571044eb5a95a687d075409526c996a7b25cb9f921d",
+      "metrics.json": "f969a8e7e74ef0872c6d9c27cbb3e70da334f1f2a680976a846dd572fd82e796",
+      "planning.json": "a70c5ead66b8c04af52249274dc50c5e8905901375301c397a80048f8c6a59b0",
+      "protocol_metrics.json": "45322a074560952c85932075dc4d5c58cd355297f986edfdfef56badc9a44c77",
+      "state.json": "fd808474955d99f5e35a82940742337f6e962fd14201a32d44740f63e284ed76",
+      "trajectory.npz": "8d6eed278e7233f654d0ef64b4ff46ad2910383694e374e2558ad8bde4073563"
+    }
+  },
+  "tight_u__seed_87__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_87__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "79ba6c8ce6d50c42024eed2a0c4279a6ff8eb955f50506b3d8619b7647e5a4e6",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "272ea6ec5c60e66d9285d8b7c2fb91863a12effa0f7bc074b3a67a095fc27a63",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "c727cab956698ae8c42ba26951007a8527c7399d0b756959714030e9a21c19e7",
+      "reevaluated_metrics.json": "b3026d3da8d7562927c322fa20b47a513e1a742e73f914ebc3acd57046cdfcaf",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "adf9990306aa0fa628eefc32076e94231b41b5c6019503e0759271f45ff75faf"
+    }
+  },
+  "tight_u__seed_87__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_87__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "79ba6c8ce6d50c42024eed2a0c4279a6ff8eb955f50506b3d8619b7647e5a4e6",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "984c8be9d4f64dd0987c5d979a256852a90d5d517e36ea4b7476dd9515f67b3c",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "ec3865b63153ac2edb50e70633ea802cd166c94cdf2f1ac5a3405cf47d107e45",
+      "reevaluated_metrics.json": "b3026d3da8d7562927c322fa20b47a513e1a742e73f914ebc3acd57046cdfcaf",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "adf9990306aa0fa628eefc32076e94231b41b5c6019503e0759271f45ff75faf"
+    }
+  },
+  "wide_u__seed_87__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_87__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "caab5951114d074fab98e8b9dfbe77aa960a80c742b03a8ce316e1bb81a4fdfb",
+      "independent_rejudge.json": "a1e5223b5281c586248d4aef7efbff95e876847c2c4ad9de0046341b25480b19",
+      "independent_rejudge_final.json": "a1e5223b5281c586248d4aef7efbff95e876847c2c4ad9de0046341b25480b19",
+      "metrics.json": "ec7b58a2d8d2393446e0de38cc7669fdf70c165af9e9c18cb90e0e9d7cd949b7",
+      "planning.json": "abd5256585bb6cb21174a33c9546022ed7f9ed2e47334bcca0510c16a1471c04",
+      "protocol_metrics.json": "e4de8c8657ca94ea7dd7d4f76f2d396f9c0fa0af559a1a77a14767b317de616f",
+      "state.json": "f7e4ac1a66f58f90412b50a5cf2d6e9efc9694923643f9452e2c903eb4da822b",
+      "trajectory.npz": "1697728c0eeb7129d2de51b7151e3522b097f69ba061c746e6a546105ea0267b"
+    }
+  },
+  "wide_u__seed_87__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_87__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "caab5951114d074fab98e8b9dfbe77aa960a80c742b03a8ce316e1bb81a4fdfb",
+      "independent_rejudge.json": "0028537731bdf1c2a5301f73186ce51df5699a10a9e7d4e15e8bfec7ecd3e138",
+      "independent_rejudge_final.json": "0028537731bdf1c2a5301f73186ce51df5699a10a9e7d4e15e8bfec7ecd3e138",
+      "metrics.json": "265822a5c352f925aa26594800d650d35f899948948ab6a0471ca8b0bb4f6499",
+      "planning.json": "4f991f12f98e24f70f66979a127e06655b9b52c9cd1eb1531a084880d30bdd95",
+      "protocol_metrics.json": "55e71e9b91c49b60916465869ff7c1f7daa9e31b8d374c906268c2476d4008f2",
+      "state.json": "f7e4ac1a66f58f90412b50a5cf2d6e9efc9694923643f9452e2c903eb4da822b",
+      "trajectory.npz": "979b005fb5995ff02778f3a28b00fdd0f227ba558efa0e046c13d755f230a48a"
+    }
+  },
+  "elongated__seed_88__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_88__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "241fbd6a13ff8b223bdcf7362439b35e70ebb8a12e7dbe496a54798ad495dae7",
+      "independent_rejudge.json": "71d2398243983b840897f612167e05f3bfa12babeb07c4381f5bcca4043b2fea",
+      "independent_rejudge_final.json": "71d2398243983b840897f612167e05f3bfa12babeb07c4381f5bcca4043b2fea",
+      "metrics.json": "e9d8d7bf7ee1fcf2e844d4011f6d92b91063b12c89d7624bc39525b705c7e279",
+      "planning.json": "9583495afffbe9e0ea5e2057e0e155fe68eb54b8d353f579796919d3997d8131",
+      "protocol_metrics.json": "af51ee9fc2484fe789087dfea58828e72cd7abd37fb433a693346ee8e629a157",
+      "state.json": "0aad5f697a4e3a955544959eecbedf699c416ef5163af339f9db8b8c46902bde",
+      "trajectory.npz": "296a7d51f4bb9c61bc117fe1805f853768aff719c590cf68a462407332b86991"
+    }
+  },
+  "elongated__seed_88__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_88__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "241fbd6a13ff8b223bdcf7362439b35e70ebb8a12e7dbe496a54798ad495dae7",
+      "independent_rejudge.json": "eb4385dd3296b16130ab7ce812a05c989afeab6bc678d28221ab9a1223ba8ef6",
+      "independent_rejudge_final.json": "eb4385dd3296b16130ab7ce812a05c989afeab6bc678d28221ab9a1223ba8ef6",
+      "metrics.json": "102b7738cf5b4a99b52134fb5df3040f7be79d90bbed60cf154741b1c7123efa",
+      "planning.json": "162db469acd19bb6f0d76c1cbf936a8979175b59b64847279265431734ef424e",
+      "protocol_metrics.json": "4003737cccb49dd03c377c30afd8daf2e51ac136905355ff261fc1a3a83f7c0b",
+      "state.json": "0aad5f697a4e3a955544959eecbedf699c416ef5163af339f9db8b8c46902bde",
+      "trajectory.npz": "3754b5c4fcf1225a0728f9f67e6793f1244c1af57227030ccd8eab52d5c7d12c"
+    }
+  },
+  "tight_u__seed_88__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_88__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "a5b4c145051921bc3f1c3f9ade8de2fc4b6f834ebee1654abd9b054ba9ab71a8",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "9064986c271c8a90549c439619f71c1e2b675a3f0275ac51d0fa2714b93098fe",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "3ce75b57f82831b8b6e92ca723f6671ef6532ede1e8efe23c39d49077385a7e3",
+      "reevaluated_metrics.json": "a310d040fa57da126c52834760bb13643a7950c983133d8e840c726c3461d696",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "3b1f4173bab7dc93bf0fb1c7e98673e9c848374fd329e4827f8936b765cfa153"
+    }
+  },
+  "tight_u__seed_88__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_88__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "a5b4c145051921bc3f1c3f9ade8de2fc4b6f834ebee1654abd9b054ba9ab71a8",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "6a62f9719017fdf7dd6bb2403b10af28cf660d4b51d80dc5811994e1f3d1c2f6",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "5e6f1402e865fdc522af08495637f9881ceef0d6a938865114d524f5b55a1703",
+      "reevaluated_metrics.json": "a310d040fa57da126c52834760bb13643a7950c983133d8e840c726c3461d696",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "3b1f4173bab7dc93bf0fb1c7e98673e9c848374fd329e4827f8936b765cfa153"
+    }
+  },
+  "wide_u__seed_88__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_88__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "006e199a4d0d697c59afc16904fae3c3beff66a7c60b46f22e7c8e781a71b803",
+      "independent_rejudge.json": "33026215387c633518c674e99aa09e0fd38f173dad7e47c11a321982e7c8ac6b",
+      "independent_rejudge_final.json": "33026215387c633518c674e99aa09e0fd38f173dad7e47c11a321982e7c8ac6b",
+      "metrics.json": "2bf4cdce192097ac07caacc1da9c84fce5ca188907ac140a67e627ee5a54370c",
+      "planning.json": "b93823bb7783e3def3582ee7386e0770be7eecef4883a260368e68f72cb01cc8",
+      "protocol_metrics.json": "527e2fca3dd553db856cc88683dc1340572ab2b0277fced5f3b679fd35ec6768",
+      "state.json": "b68eb8094dc2286936b650ac2112a274f3436bfc1d62022e40fe5b30ddc99d40",
+      "trajectory.npz": "294dcbed77f61da3f631017bd1de2de8da489b58eb4597374f46f5b306788ab3"
+    }
+  },
+  "wide_u__seed_88__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_88__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "006e199a4d0d697c59afc16904fae3c3beff66a7c60b46f22e7c8e781a71b803",
+      "independent_rejudge.json": "aa8a4f10e2254735e3431afa0ba01c1a6989c7681e5115f848111b7ee3728298",
+      "independent_rejudge_final.json": "aa8a4f10e2254735e3431afa0ba01c1a6989c7681e5115f848111b7ee3728298",
+      "metrics.json": "70548b202677b24ce74158d46d12525bff0c70cb444813c1f67c93d928cbf799",
+      "planning.json": "b6475d45dbd36067eb9fe9c392b1eab6015064f97f6e610aa72e627f045f340c",
+      "protocol_metrics.json": "0afa10f00baf6767b138bda23acd42c8848964610c5cb44af5d792bd86e33a7b",
+      "state.json": "b68eb8094dc2286936b650ac2112a274f3436bfc1d62022e40fe5b30ddc99d40",
+      "trajectory.npz": "637c6db1c1123e7d22dcc6d13e506ce746ef2d638e512c89782c1d79958dd264"
+    }
+  },
+  "elongated__seed_89__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_89__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "c1c2dd51620226c47a97f1ea45e6d84e37f73fefaf58df8f4bbdf4a1b477d87c",
+      "independent_rejudge.json": "4a4e53ce8a67a4d0553ecf6f7e393c8347956f141fc52760e68b9e16be332251",
+      "independent_rejudge_final.json": "4a4e53ce8a67a4d0553ecf6f7e393c8347956f141fc52760e68b9e16be332251",
+      "metrics.json": "b63405a5489208182a59082102e4b4b7ce7fbd77d1d4bbb362014680d47d6730",
+      "planning.json": "60ee2f0343401cece1fcfca62702bb27c8d7893163bf55c840362e9ebc3bbc13",
+      "protocol_metrics.json": "aa69ae11d5dd5bfbecab15496fa9c1b9bcff50ae0e4d7bc1f83b02ad17a865b2",
+      "state.json": "6ab148bad36857161496a78b7aa01dd8f555324611649f6bd8a322f1f8ed96b3",
+      "trajectory.npz": "1b00746e38543a75de13dc32278d53a14643e1b4b5cb70234bd0b9449d2ad8bb"
+    }
+  },
+  "elongated__seed_89__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_89__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "c1c2dd51620226c47a97f1ea45e6d84e37f73fefaf58df8f4bbdf4a1b477d87c",
+      "independent_rejudge.json": "e35b4b109c9a3d0fd1553697934981e66dfdddb5c4233ae2a9b59d98c8d1c4a4",
+      "independent_rejudge_final.json": "e35b4b109c9a3d0fd1553697934981e66dfdddb5c4233ae2a9b59d98c8d1c4a4",
+      "metrics.json": "02f93e5a7303e76f959cf7f3975e011d187eb17b3f1da8715496550057aec31b",
+      "planning.json": "34c32ca5615314f0f4cb9963c62acce82c510ef4593553d2a47f99a5ae5dced2",
+      "protocol_metrics.json": "9817fb876ea7a9b29f3e65a3e1f53fb9344c6300baa78ee10066094ce6a34554",
+      "state.json": "6ab148bad36857161496a78b7aa01dd8f555324611649f6bd8a322f1f8ed96b3",
+      "trajectory.npz": "fdee64e19baa36d9ede5fdccf93277ee39b11094aaf3d4303dbf23b01c132b58"
+    }
+  },
+  "tight_u__seed_89__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_89__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "e5540300ec08373007ec806580d48d31a96cfa718f9388cfa550179a887d04f9",
+      "independent_rejudge.json": "f3a17544ae9c48e0c68ff94e665e340174db51c48817820016011dc08a57382e",
+      "independent_rejudge_final.json": "f3a17544ae9c48e0c68ff94e665e340174db51c48817820016011dc08a57382e",
+      "metrics.json": "4a4026ebf95e58f48d9b8b32197d709019b0d0e90ea72caf1a3599d642a4744c",
+      "planning.json": "3aeba9131fe80ebc29fc37bb6e164460f2eb559c9c9532a901a0074060456c10",
+      "protocol_metrics.json": "7f8437d0f7673e4c2203ddbf04e6a6ffa339a9809c93b0cc03384b2e37864fb9",
+      "state.json": "877013510689d5d7e350e073d8a9e2c765681e995318210ce4514ee457c948d1",
+      "trajectory.npz": "28409fc335a8821509213f60c7511a22e172b7d34fcc46e6cf08ab26d34544b3"
+    }
+  },
+  "tight_u__seed_89__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_89__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "e5540300ec08373007ec806580d48d31a96cfa718f9388cfa550179a887d04f9",
+      "independent_rejudge.json": "0f8bf586e3a5497d0882dc8255a989cbeb6f75c4bcab1f1a680b0425d42022fc",
+      "independent_rejudge_final.json": "0f8bf586e3a5497d0882dc8255a989cbeb6f75c4bcab1f1a680b0425d42022fc",
+      "metrics.json": "fe3140a1693ad5b9c57ad520a005fa296a1af5d8de17f4f5b0d2f35d598b0914",
+      "planning.json": "692b31a4da15b27e3803901ae991d521b8e17cf093e082a536c581459058df81",
+      "protocol_metrics.json": "7df9b40e7d35446ba959d104f4994144d27efc47f5be7cd33e9e7eaa49a70a9a",
+      "state.json": "877013510689d5d7e350e073d8a9e2c765681e995318210ce4514ee457c948d1",
+      "trajectory.npz": "3542b6849d295fdc2e16ebc478fae348dfcd00289cc29fcc615a1a2bcbc8a552"
+    }
+  },
+  "wide_u__seed_89__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_89__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "da83e43358726d846412f0e85a78894f2e509ac0d45a895a7dbc6c0c7c16f6c9",
+      "independent_rejudge.json": "df62567c3d420bb780bda6b4243b953f4d7eddd02e12e56666d723a0f0128453",
+      "independent_rejudge_final.json": "df62567c3d420bb780bda6b4243b953f4d7eddd02e12e56666d723a0f0128453",
+      "metrics.json": "87ac79dfcdf33bd9946d0646e6d69194c78989666870bc5c4530ce134b8762e3",
+      "planning.json": "b524702556ddaac74dd660d63d3547f31c135489076fa8d45d7e02357e7d1624",
+      "protocol_metrics.json": "4cdc8715a775731e65d842165bca91ed7e85f6199f86fbf3f2833b234b11ce52",
+      "state.json": "e29cd6361ff15f99256411268e78260f714f160fa0dd6cd6b0fd849e65060393",
+      "trajectory.npz": "abc5944f4a4fb89e052a20e92249e70ff5e60e459d7cd6bf4c5c544bad6c62ae"
+    }
+  },
+  "wide_u__seed_89__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_89__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "da83e43358726d846412f0e85a78894f2e509ac0d45a895a7dbc6c0c7c16f6c9",
+      "independent_rejudge.json": "4390adc890316c6a53ca4d6dd7392da51462a40b660e329362634f0bd233cc84",
+      "independent_rejudge_final.json": "4390adc890316c6a53ca4d6dd7392da51462a40b660e329362634f0bd233cc84",
+      "metrics.json": "766457dae708dff4b8e12485c4327fa89520a356b34558d5a3aa08477f4ae871",
+      "planning.json": "832a778a92f7ab78422f7a0e00ae07028b71594a28f4ddc10e9bc1921ad47d64",
+      "protocol_metrics.json": "fd296509be5440ce9a33131cc84fd15494e7c94789b2fe05918f97b1ebbe16a6",
+      "state.json": "e29cd6361ff15f99256411268e78260f714f160fa0dd6cd6b0fd849e65060393",
+      "trajectory.npz": "918eac3e1675417d74fa48cc8bef81004790e7084ea12d307b25ac074e1b8a58"
+    }
+  },
+  "elongated__seed_90__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_90__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "9b7489b1db568c7a10f459992b7e615a0fa7c72a9619691c0fa388cdf6d22077",
+      "independent_rejudge.json": "00c48904a7959666d9fa36287cd18adc77d03a91635cd69a39f182ee314e724b",
+      "independent_rejudge_final.json": "00c48904a7959666d9fa36287cd18adc77d03a91635cd69a39f182ee314e724b",
+      "metrics.json": "f90f20da68c6a56901a35336c0c097ac7ee28be42cd85f1982aa387532ffac7e",
+      "planning.json": "e9703b6dda5b6bd0ad5ce808cf6b5aa3e64a3a97e6b1aac9b09b06e9a3c804f1",
+      "protocol_metrics.json": "4c85ceb459decc10d60439251cc4d7078391f7c37fd3e3e9bfcfbaaa16ad200c",
+      "state.json": "6231db243488da7f8c6fcb3ddf0cf32464dc2b3b5f6490919f472541f006b7ba",
+      "trajectory.npz": "5c008aea22ee84ed1df80a17ecc40ec7412e5480faa5f7bbbf870b03efd7a53c"
+    }
+  },
+  "elongated__seed_90__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_90__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "9b7489b1db568c7a10f459992b7e615a0fa7c72a9619691c0fa388cdf6d22077",
+      "independent_rejudge.json": "2d762499945ddac5b5264ac3ac8e30a07df955c53344349e40bbad5b8c9edd05",
+      "independent_rejudge_final.json": "2d762499945ddac5b5264ac3ac8e30a07df955c53344349e40bbad5b8c9edd05",
+      "metrics.json": "19358416463d7cb63197803d6a3d8a36eb675058334d50b26230b88f3f0f06fb",
+      "planning.json": "788594824b886a7ac1bfc67803715276a2b45231a1bd0f7e30f4ed1f1b1b133b",
+      "protocol_metrics.json": "1308baf7db75dce188d482176c23e08f07e6fb1b370d8ee1d212c3825c1f200c",
+      "state.json": "6231db243488da7f8c6fcb3ddf0cf32464dc2b3b5f6490919f472541f006b7ba",
+      "trajectory.npz": "cc49263159561cb8ff6038f0c12f4d1e43a7f070f0ed24f021df66feb0161920"
+    }
+  },
+  "tight_u__seed_90__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_90__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "ac12cd5c03efb40c5cc3326058939b15afe0a7b34d08e1e6af487e38418ed2a5",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "74a1fd07d51e1f8e75d91a985fcdfe89441458a03cf29f760d22fe913a81890a",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "596e30800b518f5340f80436bc66a37374b8769c450030ecf29f48fc75a34e9d",
+      "reevaluated_metrics.json": "ec20d592e42ef3ab45b1bbe8c0315d570700850c0eeb66609461167d8ae9007a",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "fa9a28e6ef481241bbe7c2e9ee175e3aa740ff05c27627b12e2002ced0b4b15f"
+    }
+  },
+  "tight_u__seed_90__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_90__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "ac12cd5c03efb40c5cc3326058939b15afe0a7b34d08e1e6af487e38418ed2a5",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "b33759f4ac77c564397fd27a0f8baaa7f6e82f80d5aea75ba5a6d51e40bc1c1e",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "c94109e5941df7e6820ddbf1b1231aedf456ceb3db70c70d333e752b34acdbe0",
+      "reevaluated_metrics.json": "ec20d592e42ef3ab45b1bbe8c0315d570700850c0eeb66609461167d8ae9007a",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "fa9a28e6ef481241bbe7c2e9ee175e3aa740ff05c27627b12e2002ced0b4b15f"
+    }
+  },
+  "wide_u__seed_90__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_90__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "9ae218711f350a4ca93885f95451b1ccf085c7ed61b5f6c62cc909792e7f89f8",
+      "independent_rejudge.json": "32ac474416d465d5602d1a696fa95c0990acde0823031ab2a2b8c2931a7b58ca",
+      "independent_rejudge_final.json": "32ac474416d465d5602d1a696fa95c0990acde0823031ab2a2b8c2931a7b58ca",
+      "metrics.json": "b39f7795ae6859608fbc5a7a1f58c2e6fbc1038bc1e850dcabbb71d851d43964",
+      "planning.json": "da67f13a756542c66e4eff6e6526e609c2d29ee5e0df20c024b91ec998156f3a",
+      "protocol_metrics.json": "b1abde10303517b3bb1fb88dbf7d4e90f8d97bd0027eebc6d8c77949c5592459",
+      "state.json": "8fd830c1990af4b7f05cb79ed732fae6c4e1afdc2588841900d989edcc11a19d",
+      "trajectory.npz": "8e51c5ed91435e31a0bb043f05d3e927c38fdb1b1b38615a662c713d69cdf0d6"
+    }
+  },
+  "wide_u__seed_90__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_90__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "9ae218711f350a4ca93885f95451b1ccf085c7ed61b5f6c62cc909792e7f89f8",
+      "independent_rejudge.json": "d1ce754146c74780522b31058f88fc681e2c1b11e4425135389b5a58c735b7f2",
+      "independent_rejudge_final.json": "d1ce754146c74780522b31058f88fc681e2c1b11e4425135389b5a58c735b7f2",
+      "metrics.json": "3f1000bcf43d35cd26cdfa9201c02f19a1e86b7575db14a4fca33fa100e3eb8a",
+      "planning.json": "e10e88fdca6611b4520d1365c67cac6a06952424f7f34ba99a8210899b241e7c",
+      "protocol_metrics.json": "d1f0ce06f9980bafc3ffbc2caf85dae897fb2d87377f8d9ee20e6ee13b412dc1",
+      "state.json": "8fd830c1990af4b7f05cb79ed732fae6c4e1afdc2588841900d989edcc11a19d",
+      "trajectory.npz": "2ba5898b07646bada68f673f12e6e437a301cab993a173de99d3254d7fb9bd33"
+    }
+  },
+  "elongated__seed_91__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_91__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "0989981bb3b0010f51a286f3d4782b402ccd54474c1b8b6d324b40bc3a43c81c",
+      "independent_rejudge.json": "d8e4bbbf6106c9b21a4fe18dd012ccb481ad4d22044363216a738eaa52395f4e",
+      "independent_rejudge_final.json": "d8e4bbbf6106c9b21a4fe18dd012ccb481ad4d22044363216a738eaa52395f4e",
+      "metrics.json": "1cc6b53d75e2a77bc48b1880db6a943ae3d14173ccbc6fbec0af25612a0678ca",
+      "planning.json": "e1b221d16a7cdd358d00457d700c7d3d659e1ce30c532bf89b852caac18588ac",
+      "protocol_metrics.json": "ae003d75cad83f554013921ea9039671759a6e8fd3a29cb6a21f03b28791c748",
+      "state.json": "779ad9dce852908388c682403adcedc947689c2da91a355db412f355214e8335",
+      "trajectory.npz": "55ce3de53c65539541d8068f7ef9654618736b1adc3d6adcb5ccd3fdd1f32035"
+    }
+  },
+  "elongated__seed_91__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_91__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "0989981bb3b0010f51a286f3d4782b402ccd54474c1b8b6d324b40bc3a43c81c",
+      "independent_rejudge.json": "f444e17d6a1f3dc08b465d24df7e3a2a9a22a7c46601cbfee6531522eb06bb98",
+      "independent_rejudge_final.json": "f444e17d6a1f3dc08b465d24df7e3a2a9a22a7c46601cbfee6531522eb06bb98",
+      "metrics.json": "8af6020946431bdcd605c7d23f638620189a40d2ef267987fbf7612121d71b14",
+      "planning.json": "a446b6fc3022448a44ee5688a92879335e56c70c426173bf2b01f7f2e52f5bce",
+      "protocol_metrics.json": "28e9564cef8c357086c152ca41f6805fe961ad6b8a59f99ec2f5b28f36988aef",
+      "state.json": "779ad9dce852908388c682403adcedc947689c2da91a355db412f355214e8335",
+      "trajectory.npz": "faf4a490b461572a9c1cd398eda59c9486aadd83b2730891f7875e6fe6ae1aaa"
+    }
+  },
+  "tight_u__seed_91__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_91__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "1c3c77cbf7b5e2e998eb91749c3a602d9db3dace57288cd668fa80869075c36b",
+      "independent_rejudge.json": "9b7f4347d42ec1fd5ecadfa4c35d020d3f712c33cc4abd02e55b2a060de7854e",
+      "independent_rejudge_final.json": "9b7f4347d42ec1fd5ecadfa4c35d020d3f712c33cc4abd02e55b2a060de7854e",
+      "metrics.json": "26d085d6b3b1693b3e5ad7a5f2948ca208fd2cea3aca025cd0cfda2900685b3b",
+      "planning.json": "16a49f4bd9778b7b7fa6381bd40a4e63fbd24556ab81849bf263fb21e0eacb9b",
+      "protocol_metrics.json": "8ae0979d74d2c95d61357921da3a93413630e4d03d90b548c5f45a70b7b9909e",
+      "state.json": "e71963e528eb638ec8d54c5094df993287cff38aac877266440105fc907934dc",
+      "trajectory.npz": "748f149d68c8e0f74a690264a2bdb9f4338930a9d8365c9d3a3a565d7e4df7e6"
+    }
+  },
+  "tight_u__seed_91__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_91__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "1c3c77cbf7b5e2e998eb91749c3a602d9db3dace57288cd668fa80869075c36b",
+      "independent_rejudge.json": "de85f7373ab934eea72a741cf802217f7a1455149395fb8c0ec8f2349c2514ab",
+      "independent_rejudge_final.json": "de85f7373ab934eea72a741cf802217f7a1455149395fb8c0ec8f2349c2514ab",
+      "metrics.json": "dc8b90f795885f5dfe81d7a85fd4a62f7dd0afa2ee31a001fda6b36ac11556a8",
+      "planning.json": "d1001bfec176703518f5ab9e8170a89eedafe80d1ab7e36d6b907ee4473b49fd",
+      "protocol_metrics.json": "93bc6dd7c729b6204fc9f4e79e70156796a63c25f16cde863fb0607e463cecdf",
+      "state.json": "e71963e528eb638ec8d54c5094df993287cff38aac877266440105fc907934dc",
+      "trajectory.npz": "3b053e3eb9275068f1d23955a018dc047c2836e9dbfdc65a93c570ecf8398194"
+    }
+  },
+  "wide_u__seed_91__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_91__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "302e89801a56bf10212f023d3dfba33bb41a240cce014e68ef3774736c9cbf63",
+      "independent_rejudge.json": "88d49dfbb5d36a554f77b6729e0d53fae3163ce8944b99e628122a71ec3beff3",
+      "independent_rejudge_final.json": "88d49dfbb5d36a554f77b6729e0d53fae3163ce8944b99e628122a71ec3beff3",
+      "metrics.json": "4cfcdd770c5a72e53b71fd691f11894bd77cd9d432c7e45c568a43ebfd87f02b",
+      "planning.json": "21ddb6e5439ecc4946125e825bf55e7ea4053112b5ba37ac065346538f804937",
+      "protocol_metrics.json": "54dde1c0020211f821b8701e190ce774cf286c8e94ac5908453dd2c5a1035426",
+      "state.json": "aa87adcf9360abd325b8af51737c90aad7bc1b80f08a1d422c202a20cbffc83c",
+      "trajectory.npz": "9e78bf7997e1ae0741021a9d0e34941e66e3806dc392a081aabf5c117ac875ef"
+    }
+  },
+  "wide_u__seed_91__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_91__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "302e89801a56bf10212f023d3dfba33bb41a240cce014e68ef3774736c9cbf63",
+      "independent_rejudge.json": "906fa0765425ed4e46515a3c4af02d34a7e31a1eaf28e119b1890e8a8e4f4a8a",
+      "independent_rejudge_final.json": "906fa0765425ed4e46515a3c4af02d34a7e31a1eaf28e119b1890e8a8e4f4a8a",
+      "metrics.json": "db5993b79d9dfba6dfc7f14d5e590917b396d27293f12a388b9e963733f76bd8",
+      "planning.json": "042bf6cdf64727a636a6d0aa809448a9d5ad548893d08cb9cc040a493e6541bb",
+      "protocol_metrics.json": "3d8de4fa781c9b75bb82e49bf1f79f8fd5794f5b83c657984dc7a6982c14fe2a",
+      "state.json": "aa87adcf9360abd325b8af51737c90aad7bc1b80f08a1d422c202a20cbffc83c",
+      "trajectory.npz": "9cc71e2a3a929436e383279146c8bc8c681681af979c65a9b31eda4ab845da95"
+    }
+  },
+  "elongated__seed_92__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_92__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "4842e71580e3bb04bf14729330065e945fe2dc09c52ed2c3e4aa5bcb0e47cdeb",
+      "independent_rejudge.json": "bb62ab0f389d4d167c0f650b31009b4a7969bc6577bca1576675f7ffaebf892d",
+      "independent_rejudge_final.json": "bb62ab0f389d4d167c0f650b31009b4a7969bc6577bca1576675f7ffaebf892d",
+      "metrics.json": "1da73ad328fed0b7221dbea2aafc9533c2cf232bb510b20938cb20983744f68d",
+      "planning.json": "f7e715332a8f8944d3452be00083f8a6f3bcba83bfd153c7b6a01b08535176f3",
+      "protocol_metrics.json": "edec28fc3e8b260a5750f1a81f35b968aab5216a42e8ddaed99a8fa0624dc8f2",
+      "state.json": "6dc8646c1a2ec5eaa9bf47d2f0c8a9ce576fae2c805a27b38107f939efc26951",
+      "trajectory.npz": "a0c7d901142accef90313f2b52d0ff9e4fbec11a2fc8cdf20ecf3f486f667107"
+    }
+  },
+  "elongated__seed_92__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_92__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "4842e71580e3bb04bf14729330065e945fe2dc09c52ed2c3e4aa5bcb0e47cdeb",
+      "independent_rejudge.json": "b83acf98ef3e5c1343f14894b3777e130037412641c3533cc2f21b0fcf50a06a",
+      "independent_rejudge_final.json": "b83acf98ef3e5c1343f14894b3777e130037412641c3533cc2f21b0fcf50a06a",
+      "metrics.json": "9e6d68584f4adf726f490d2bde3bb315bf4fff8a1315b2187c71e56a2afe31ab",
+      "planning.json": "9070222498337fb7778e15dbb5407dd6dbeaf25d0640ea08d77457207021eb47",
+      "protocol_metrics.json": "78339dbb271c0057876542b2e1fc13cae3e3f282bacfbb083d3e479f01047719",
+      "state.json": "6dc8646c1a2ec5eaa9bf47d2f0c8a9ce576fae2c805a27b38107f939efc26951",
+      "trajectory.npz": "08033e370f865b55c9ac4b17f783e492c3add8757c0f204331af612c4054870a"
+    }
+  },
+  "tight_u__seed_92__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_92__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "f09d3012cbc38e8816e5a11a7c5fc0664d80bfcaaee17bc6499b869f8411ac47",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "f0d90b59a01d667b1cee828678066f0c820fdfc8974061b72014f7659f693b4e",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "93a7e0231bce359710dc5d9581d036450b43db08c599802af9c47a14b6437d43",
+      "reevaluated_metrics.json": "f4897b1ca4c0e169550e97abe5f176c5c60c2544c48394ac8bda07e51127a932",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "136f5a027cc1cf473827c632cb39e1a74edfc7a868863c2fc30ade8a30bd9477"
+    }
+  },
+  "tight_u__seed_92__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_92__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "f09d3012cbc38e8816e5a11a7c5fc0664d80bfcaaee17bc6499b869f8411ac47",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "f30658ad3ba7f383999f0f90f48923220ffea49d9e12d0e97458178d7cb08bfc",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "906ce33303464b1b55596fdb2ecef6e10edf086db00ae553563e7a5422e81cb1",
+      "reevaluated_metrics.json": "f4897b1ca4c0e169550e97abe5f176c5c60c2544c48394ac8bda07e51127a932",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "136f5a027cc1cf473827c632cb39e1a74edfc7a868863c2fc30ade8a30bd9477"
+    }
+  },
+  "wide_u__seed_92__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_92__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "517f219925892540f9389243873b88dc7ddb2ad90c1a0ea034646ab691c98f65",
+      "independent_rejudge.json": "46fe73abdc79322b95ca77295dc50b488998bcd1f901ed05099a6dc5fddf1f0a",
+      "independent_rejudge_final.json": "46fe73abdc79322b95ca77295dc50b488998bcd1f901ed05099a6dc5fddf1f0a",
+      "metrics.json": "616d3f6a220990928507016eea518f562b8260c800ef00b4f34ab456ef0ded32",
+      "planning.json": "88c61f685bad87e4b00fc5329cc13cf02e5cea7515294b434f263668c20dc122",
+      "protocol_metrics.json": "8e7abfd1e07a246cd441600f88d1f59b242b306ac561a8d0aa938742fba8bde1",
+      "state.json": "fa00cc1da41e04105d65546f12523a2168a32182a5cf828368d8985a38281065",
+      "trajectory.npz": "757d44bf63b02f1bbbdd466c59193d39bc329a60d4fc2fc8fb965856da87219a"
+    }
+  },
+  "wide_u__seed_92__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_92__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "517f219925892540f9389243873b88dc7ddb2ad90c1a0ea034646ab691c98f65",
+      "independent_rejudge.json": "514f513f0952e1dd4c15da43179832968a80c3f6bc43f6a9c1b4b887d06ff59c",
+      "independent_rejudge_final.json": "514f513f0952e1dd4c15da43179832968a80c3f6bc43f6a9c1b4b887d06ff59c",
+      "metrics.json": "0ae71a27b2b918eacbcc6780bf7928ecefa143ad122dab3166d7d58b38246b52",
+      "planning.json": "9718c0df1d158a8b75328fa282e07cf6b8bd3c1fce90d98fe59df1422112414e",
+      "protocol_metrics.json": "7281c5b6c46baf0bea7be09538bc6a8222ad9dfd57b6210c4bcc97d6373f8c0c",
+      "state.json": "fa00cc1da41e04105d65546f12523a2168a32182a5cf828368d8985a38281065",
+      "trajectory.npz": "95b1b2d4d26c84b652f46cdd3be7eddff358187859c203f367c4adf2f8545763"
+    }
+  },
+  "elongated__seed_93__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_93__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "8fb4d1f11e2a31f3a17ee459d63effd3cb5da6ccfe49d444717252f99c92ff79",
+      "independent_rejudge.json": "57b8bd1a0f7c5e11a1942b19ea547be332e527012e3ad1af16c9ebc80f02973a",
+      "independent_rejudge_final.json": "57b8bd1a0f7c5e11a1942b19ea547be332e527012e3ad1af16c9ebc80f02973a",
+      "metrics.json": "afc5f6d9c6734f50cc05cda305f283d3d63eb911532f61a5008b3129cee18f64",
+      "planning.json": "c121eb28686d81ba896597a70c3c7c171ae8e93e28705ce87b7040251f296bbc",
+      "protocol_metrics.json": "c3fd0e6079af1b12e0102399d9211e64fa0882290bf684d2e49c06ca69ae7ae7",
+      "state.json": "ff3421a1be998dfb4d34523d123fa1c4072c183a223b68abcab6cde8d9e0cccf",
+      "trajectory.npz": "acb121dd90a2382e9f8f593ff811afaa201fcd1bd0eb5707ee0758a6dde441ed"
+    }
+  },
+  "elongated__seed_93__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_93__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "8fb4d1f11e2a31f3a17ee459d63effd3cb5da6ccfe49d444717252f99c92ff79",
+      "independent_rejudge.json": "1e5cde14edc96e63169c4ae306febfab3d26cdb4cdb51d23cc21f66b587af8ff",
+      "independent_rejudge_final.json": "1e5cde14edc96e63169c4ae306febfab3d26cdb4cdb51d23cc21f66b587af8ff",
+      "metrics.json": "673d3dc446d5eb574639b4ae5daf56e922deb19187acc328098ede93bda81466",
+      "planning.json": "2c46ac560875f79fc68a5eaf22915e176960b670f115bb7b6d091e33c2a351ad",
+      "protocol_metrics.json": "8d7c901fd203c9a4977c64c0e94db1aea1de6f7c29d73119eae9702433d03b0f",
+      "state.json": "ff3421a1be998dfb4d34523d123fa1c4072c183a223b68abcab6cde8d9e0cccf",
+      "trajectory.npz": "c2fe3c43d4933b3a825b54e8db958d285b7ea773a2de79903b2edb2b24ab9a51"
+    }
+  },
+  "tight_u__seed_93__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_93__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "a1c1a709cf063478aac7a6a982401a2519319fa22b86d84904a04937880fe4b2",
+      "independent_rejudge.json": "492fd37f1ae4fb56f10c9e772f338e6f0dbc2aaaf74e5fed4ef8584e5a0038a8",
+      "independent_rejudge_final.json": "492fd37f1ae4fb56f10c9e772f338e6f0dbc2aaaf74e5fed4ef8584e5a0038a8",
+      "metrics.json": "09ddb72bd3ab609c945f3ebb5f8274385fd57ba1e939965ed6e3e545c5e9d7f1",
+      "planning.json": "bd4d0627e03ae9f3276e9cde343bf6a4d480a42dcdf775d557a4f8dd2cfa5da6",
+      "protocol_metrics.json": "5f5159011de800b137028b90b13a321e218febd354f31d66c3120b16817d3c34",
+      "state.json": "8cc2014b196207e5db4f4ebc05388feaec278ad3e9c01cb5b80d50644f3f29cf",
+      "trajectory.npz": "a6eff80926318d9a9ecdd4f9fed5424b359af9ab1c4d91c537bab1259550c3a2"
+    }
+  },
+  "tight_u__seed_93__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_93__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "a1c1a709cf063478aac7a6a982401a2519319fa22b86d84904a04937880fe4b2",
+      "independent_rejudge.json": "992ccb45a7d16bfa3b5def13bfe665d6221bc6dcb03ff2da00e1c5835f6402dd",
+      "independent_rejudge_final.json": "992ccb45a7d16bfa3b5def13bfe665d6221bc6dcb03ff2da00e1c5835f6402dd",
+      "metrics.json": "4ed4e9822f9b0f93868ad6c580601b5529aed5d86970279c114817f06cef4895",
+      "planning.json": "89396131da1415c1a339990aae9f0dddfd668d84b27c0128f2a07cc8fd9a437d",
+      "protocol_metrics.json": "32882702d1677ded225c7f341c1c8696e910426ab2cbae32f2e891170624b1a4",
+      "state.json": "8cc2014b196207e5db4f4ebc05388feaec278ad3e9c01cb5b80d50644f3f29cf",
+      "trajectory.npz": "6f23c94780cce5b58584cbb86d3040eab516bf668b7a03d6fdb001c68e74db71"
+    }
+  },
+  "wide_u__seed_93__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_93__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "13f1f9b72c8f5ab0f389df0ca9961e6bea4c83e8a7bef99f8860bcf9dacac3b6",
+      "independent_rejudge.json": "740636d2e14ff71a0c5f5ad09d98a820fa6ed28970ef15dcf4015bfaafa56df3",
+      "independent_rejudge_final.json": "740636d2e14ff71a0c5f5ad09d98a820fa6ed28970ef15dcf4015bfaafa56df3",
+      "metrics.json": "6a2ca98cf389aed5998d3906fd8df7bd0326450f6988ca65e3a84a8f0d6e86fa",
+      "planning.json": "4e51bac9bee8df34defb0f4c1434543cccc926ee402530c3525515fda8a0594c",
+      "protocol_metrics.json": "4f4a7a863b4eeb2e62e3faa2eadf73a9d24877e6367bac3871998c8caf6389f4",
+      "state.json": "3268f3f43bfb43973faf41c3c593798f7897286ecdfeb11ae9c9bb3151a812b3",
+      "trajectory.npz": "19216a2d9e44ca9a475101a29bf94668692882aeb4d958262fa4d97e0a44ece3"
+    }
+  },
+  "wide_u__seed_93__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_93__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "13f1f9b72c8f5ab0f389df0ca9961e6bea4c83e8a7bef99f8860bcf9dacac3b6",
+      "independent_rejudge.json": "2bf40ec37e1045133f87d094330ed60103fbbace14a3b3c568e93c3dce5f6080",
+      "independent_rejudge_final.json": "2bf40ec37e1045133f87d094330ed60103fbbace14a3b3c568e93c3dce5f6080",
+      "metrics.json": "a54a1e29504dbf925173a6ca3ac1e2999d478a2f7a37de101457cb93c6714897",
+      "planning.json": "a24828981801204c85cf45df0fe784623cd9d056edfeb1305de39a5babcde4cc",
+      "protocol_metrics.json": "cfe61e17aad0373cda044a09f0577daf5af0eb3968df72211a1f17e609e85568",
+      "state.json": "3268f3f43bfb43973faf41c3c593798f7897286ecdfeb11ae9c9bb3151a812b3",
+      "trajectory.npz": "cb20c30a64875e18769f7c6f145a7b691d3957c8f5373e46f0a7948c27ce6fa1"
+    }
+  },
+  "elongated__seed_94__N_11__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_94__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "9c0b48a5e7636ed0a843a7b59ec7f70f7b152fb85e15ca4620c4ceedac26fd11",
+      "independent_rejudge.json": "a11d3766d49d7c346accc585d09730ca558255b8af88750e9954ba2baf3d645a",
+      "independent_rejudge_final.json": "a11d3766d49d7c346accc585d09730ca558255b8af88750e9954ba2baf3d645a",
+      "metrics.json": "e88ea5ec13379c41f6f569dc49c38ea18826b65c26a4c853d8a786efe16c61de",
+      "planning.json": "f0e679ba53d3fc2336a301dd100275fb11e4de8b2c6f15ca723ec335975eeeea",
+      "protocol_metrics.json": "d192e40c7cce32ee0cbd309d9f9b0f901ce0681bf97fc6d43c38dfcacbb66dad",
+      "state.json": "05efa6e9c510e345948bef4b1e9a89b25302561d63ca92cf23229cc65732611a",
+      "trajectory.npz": "34acc2e910d15bf4d65729aad57d929d6ff0d0b7a5ae89ac0b5493aaa30ac12d"
+    }
+  },
+  "elongated__seed_94__N_11__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\elongated__seed_94__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "9c0b48a5e7636ed0a843a7b59ec7f70f7b152fb85e15ca4620c4ceedac26fd11",
+      "independent_rejudge.json": "edafa38d5714743389231ac1d660a53148d889296f49a1b98c542a6948fa924b",
+      "independent_rejudge_final.json": "edafa38d5714743389231ac1d660a53148d889296f49a1b98c542a6948fa924b",
+      "metrics.json": "5a6d1ad110128653e7bc3a53146dc4cd9dd33905d3ed46167d80d31dcac99dcb",
+      "planning.json": "a29cdd9f25496d441bb8acebb356e5486b1d0f507755557f80a7b689b1218de1",
+      "protocol_metrics.json": "e5e3cf186b2baba24efb625959fa7d24336f68c475c28d76ee74dfbacc3c7bd1",
+      "state.json": "05efa6e9c510e345948bef4b1e9a89b25302561d63ca92cf23229cc65732611a",
+      "trajectory.npz": "5bfa7ea939ca3e35760bf81dab6e2a19c493b361fb99a1f080dd39f4101d6a50"
+    }
+  },
+  "tight_u__seed_94__N_13__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_94__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "5e9c516323d13629fc5340fa761d9f319fe54bf219fa7dc51a4663f2611c8ec3",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "c5c7e70a949ad1b724221b3b487b64fa09c41843cea100a2eaf1166d4b1ddcec",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "50af9da10d814a07d7fb10ca088ebddf27012cd568353164b58e310b774d3228",
+      "reevaluated_metrics.json": "9faf8bb8cfa7ea0ed7d66435f48716174462bb7b653a07eeba9e8ffb3f8fa208",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "1bfefbfc9be6471ef1c1ddf2378902634a6edaae2e3bd61344ea006bdeac4bae"
+    }
+  },
+  "tight_u__seed_94__N_13__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_94__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "5e9c516323d13629fc5340fa761d9f319fe54bf219fa7dc51a4663f2611c8ec3",
+      "independent_rejudge.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "independent_rejudge_final.json": "021e21e42f26f5f0051efa82c06b0c8c74e8128adf6b89e4889760f43129019d",
+      "metrics.json": "6398bf8e5ae881af0fd8138267f47f8391e68bb42300f1726c11f5fb0782e6d5",
+      "planning.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "protocol_metrics.json": "ffdcbeeb28095615a6d64013a082dcd7e54273acb7de4f7278a361d3d2fd2fc6",
+      "reevaluated_metrics.json": "9faf8bb8cfa7ea0ed7d66435f48716174462bb7b653a07eeba9e8ffb3f8fa208",
+      "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+      "trajectory.npz": "1bfefbfc9be6471ef1c1ddf2378902634a6edaae2e3bd61344ea006bdeac4bae"
+    }
+  },
+  "wide_u__seed_94__N_19__equal_arc": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_94__hotspot5__equal_arc",
+    "hashes": {
+      "config.yaml": "997e2670e7fd5877f73e3365c2dee9e92c94b20fae1b1c8b6aeaa852a159f8f5",
+      "independent_rejudge.json": "35b7dce69ab0f88cab0401dd5913d94ae70bb8f59ee0153b38017643b0bb7114",
+      "independent_rejudge_final.json": "35b7dce69ab0f88cab0401dd5913d94ae70bb8f59ee0153b38017643b0bb7114",
+      "metrics.json": "5964c2f16e6973c4ca84122ad7df0016a3d527d7e1b260734cded7154faf68e2",
+      "planning.json": "fc052ab51ee43c295b76a3f552781d18b49258138edd9717450ee4adc49b2ae8",
+      "protocol_metrics.json": "dae133479ffb82f67caa48015056965fb7063943616d4b7e39f346a3467c44e1",
+      "state.json": "f3400cd0fe803ea3b65ef410b75ffc1f55f0b3597b9958cb289e6d40d8a6d423",
+      "trajectory.npz": "565b19d8cd09078fae9af390d6b170a34f3e633509ba59faa9a1138b327c3af6"
+    }
+  },
+  "wide_u__seed_94__N_19__projected_mass": {
+    "eligible": true,
+    "checks": {
+      "original_input_hash": true,
+      "original_density_hash": true,
+      "execution_source": true,
+      "input_and_initial_exact": true,
+      "count": true,
+      "curve_exact": true,
+      "static_domain_exact": true,
+      "targets_assignment_exact": true,
+      "config_exact": true,
+      "hotspot_exact": true
+    },
+    "reason": null,
+    "reference": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_confirmation_v1\\results\\wide_u__seed_94__hotspot5__projected_mass",
+    "hashes": {
+      "config.yaml": "997e2670e7fd5877f73e3365c2dee9e92c94b20fae1b1c8b6aeaa852a159f8f5",
+      "independent_rejudge.json": "d9e3fd6973de30ebfdad2c4b6e8002ddc91c56372a34a3b7abaa1e6fd5da42d2",
+      "independent_rejudge_final.json": "d9e3fd6973de30ebfdad2c4b6e8002ddc91c56372a34a3b7abaa1e6fd5da42d2",
+      "metrics.json": "18f21974c9582e7e7a05af9da25ac8fd4f59f18226c143dd48b6a21e07c9997c",
+      "planning.json": "ac13de17a9dd5ea9c9f6004aabf4986e7868dc9c457fb80222a0f09186c12acc",
+      "protocol_metrics.json": "d4e793186d6516097a7cb01b13ddea526ac941dbb19d3b075299e71f6926ff7c",
+      "state.json": "f3400cd0fe803ea3b65ef410b75ffc1f55f0b3597b9958cb289e6d40d8a6d423",
+      "trajectory.npz": "c8b1709be82c16c4d667efc4d2b66b455301cfeb4f067fe6041efd6a6cf3b63b"
+    }
+  }
+}

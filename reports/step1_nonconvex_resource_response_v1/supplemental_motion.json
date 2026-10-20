@@ -1,0 +1,187 @@
+{
+  "common_success_physical_keys": [
+    "elongated__seed_76",
+    "elongated__seed_78",
+    "elongated__seed_79",
+    "elongated__seed_80",
+    "elongated__seed_81",
+    "elongated__seed_83",
+    "elongated__seed_84",
+    "elongated__seed_85",
+    "elongated__seed_86",
+    "elongated__seed_87",
+    "elongated__seed_88",
+    "elongated__seed_89",
+    "elongated__seed_90",
+    "elongated__seed_91",
+    "elongated__seed_92",
+    "elongated__seed_93",
+    "elongated__seed_94",
+    "tight_u__seed_75",
+    "tight_u__seed_76",
+    "tight_u__seed_78",
+    "tight_u__seed_79",
+    "tight_u__seed_80",
+    "tight_u__seed_82",
+    "tight_u__seed_83",
+    "tight_u__seed_84",
+    "tight_u__seed_85",
+    "tight_u__seed_89",
+    "tight_u__seed_91",
+    "tight_u__seed_93",
+    "wide_u__seed_75",
+    "wide_u__seed_76",
+    "wide_u__seed_78",
+    "wide_u__seed_79",
+    "wide_u__seed_80",
+    "wide_u__seed_81",
+    "wide_u__seed_83",
+    "wide_u__seed_85",
+    "wide_u__seed_87",
+    "wide_u__seed_88",
+    "wide_u__seed_89",
+    "wide_u__seed_90",
+    "wide_u__seed_91",
+    "wide_u__seed_93",
+    "wide_u__seed_94"
+  ],
+  "motion_common": [
+    {
+      "increment": 0,
+      "method": "equal_arc",
+      "n": 44,
+      "successful_deployment_time_s": 21.045718954248365,
+      "actual_trajectory_length_m": 185.26808252666743,
+      "per_guide_travel_m": 12.921647544728986,
+      "recoveries": 0.5333333333333333
+    },
+    {
+      "increment": 0,
+      "method": "projected_mass",
+      "n": 44,
+      "successful_deployment_time_s": 22.35166666666667,
+      "actual_trajectory_length_m": 185.76677531794664,
+      "per_guide_travel_m": 12.951234001330514,
+      "recoveries": 0.7111111111111111
+    },
+    {
+      "increment": 2,
+      "method": "equal_arc",
+      "n": 44,
+      "successful_deployment_time_s": 22.566732026143786,
+      "actual_trajectory_length_m": 211.1841275420828,
+      "per_guide_travel_m": 12.922916012060304,
+      "recoveries": 0.9333333333333332
+    },
+    {
+      "increment": 2,
+      "method": "projected_mass",
+      "n": 44,
+      "successful_deployment_time_s": 22.95398692810458,
+      "actual_trajectory_length_m": 212.81840357753558,
+      "per_guide_travel_m": 13.012545805105594,
+      "recoveries": 0.9333333333333332
+    },
+    {
+      "increment": 4,
+      "method": "equal_arc",
+      "n": 44,
+      "successful_deployment_time_s": 22.873006535947713,
+      "actual_trajectory_length_m": 238.11912375368834,
+      "per_guide_travel_m": 12.98312151980697,
+      "recoveries": 0.8888888888888888
+    },
+    {
+      "increment": 4,
+      "method": "projected_mass",
+      "n": 44,
+      "successful_deployment_time_s": 23.20274509803922,
+      "actual_trajectory_length_m": 240.3635773164697,
+      "per_guide_travel_m": 13.10115199828288,
+      "recoveries": 0.7777777777777778
+    }
+  ],
+  "same_N_motion_pairs": [
+    {
+      "scene": "elongated",
+      "increment": 0,
+      "n": 17,
+      "successful_deployment_time_s": 0.14117647058823563,
+      "actual_trajectory_length_m": 0.1535861510762686,
+      "per_guide_travel_m": 0.013962377370569504,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "elongated",
+      "increment": 2,
+      "n": 17,
+      "successful_deployment_time_s": 0.21176470588235302,
+      "actual_trajectory_length_m": 0.6820687697073424,
+      "per_guide_travel_m": 0.05246682843902599,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "elongated",
+      "increment": 4,
+      "n": 17,
+      "successful_deployment_time_s": 0.5058823529411772,
+      "actual_trajectory_length_m": 1.7486015674849198,
+      "per_guide_travel_m": 0.11657343783232807,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "tight_u",
+      "increment": 0,
+      "n": 12,
+      "successful_deployment_time_s": -0.016666666666666607,
+      "actual_trajectory_length_m": 0.17040970588416826,
+      "per_guide_travel_m": 0.013108438914166687,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "tight_u",
+      "increment": 2,
+      "n": 12,
+      "successful_deployment_time_s": 0.05000000000000041,
+      "actual_trajectory_length_m": 0.8102855699570005,
+      "per_guide_travel_m": 0.0540190379971334,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "tight_u",
+      "increment": 4,
+      "n": 12,
+      "successful_deployment_time_s": 0.2166666666666659,
+      "actual_trajectory_length_m": 1.3547720008657933,
+      "per_guide_travel_m": 0.07969247063916478,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "wide_u",
+      "increment": 0,
+      "n": 17,
+      "successful_deployment_time_s": 3.7058823529411757,
+      "actual_trajectory_length_m": 1.114290458049876,
+      "per_guide_travel_m": 0.05864686621315114,
+      "recoveries": 0.47058823529411764
+    },
+    {
+      "scene": "wide_u",
+      "increment": 2,
+      "n": 16,
+      "successful_deployment_time_s": 0.7437500000000004,
+      "actual_trajectory_length_m": 3.2010276576191217,
+      "per_guide_travel_m": 0.1524298884580535,
+      "recoveries": 0.0
+    },
+    {
+      "scene": "wide_u",
+      "increment": 4,
+      "n": 16,
+      "successful_deployment_time_s": -0.462500000000001,
+      "actual_trajectory_length_m": 3.392818616871935,
+      "per_guide_travel_m": 0.14751385290747532,
+      "recoveries": -0.375
+    }
+  ]
+}

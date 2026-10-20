@@ -1,0 +1,29 @@
+schema_version: 1
+protocol: step1_nonconvex_demand_pilot_v1
+purpose: paired_development_mechanism_not_independent_confirmation
+generator_spec: configs/step1/nonconvex_execution_confirmation_v3.yaml
+snapshot_root: runs/step1_nonconvex_execution_confirmation_v3/inputs
+units: [[elongated, 36], [elongated, 51], [tight_u, 36], [tight_u, 59], [wide_u, 35], [wide_u, 36]]
+guide_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+methods: [equal_arc, mass_cvt, projected_mass]
+demands: [ones, hotspot5]
+hotspots:
+  elongated: {center: [12.0, 14.75], radius: 1.2, multiplier: 5.0}
+  tight_u: {center: [12.0, 16.4], radius: 1.2, multiplier: 5.0}
+  wide_u: {center: [11.0, 16.4], radius: 1.2, multiplier: 5.0}
+hotspot_basis: fixed_left_end_or_upper_left_arm_of_base_scene_before_targets_no_resampling
+boundary: {offset: 1.3, spacing: 0.1, wall_margin: 0.55, crowd_distance: 0.75, closing_radius: 0.30, quad_segs: 16}
+estimator: disk_union_closed
+density: {mode: mass_cvt, gaussian_bandwidth_m: 1.2, quadrature_samples: 2048, scale: curve_wide_maximum, normalization: integral_mass}
+deployment:
+  phases: [0.0, 0.25, 0.5, 0.75]
+  max_iterations: 300
+  gap_limit_m: 1.94
+  separation_m: 0.75
+  selection: first_geometry_valid_legacy_phase_else_lowest_original_demand_cost_rejected_witness
+  phase_policy: static_domain_phase_v1
+  phase_bins: 256
+  phase_trigger: geometry_pass_and_original_static_domain_invalid_only
+  phase_score: original_gaussian_demand_cost_then_absolute_phase_then_signed_phase
+  label_suffix: +shared_static_domain_phase_v1
+runtime: {first_unit_workers: 1, remaining_workers_max: 2, numerical_threads: 1, priority_stall_counterfactual: 0}

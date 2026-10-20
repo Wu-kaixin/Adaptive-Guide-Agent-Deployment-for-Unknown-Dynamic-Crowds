@@ -845,3 +845,13 @@ udc-summarize --results runs/smoke --output runs/smoke_statistics.json
 Crowd-Management 的非凸估计器比较、完整 4860 任务因子表、动态多人群、crowd–guide 交互、经验证风险模型、
 去中心化部署和 Vadere backend 尚未完成。预留 validation seeds 5000–5029 没有运行。
 360 任务消融只说明间隙投影在这些凸曲线、开发 seed 上恢复了贴近下界时的可行性。它不是正式验证，也不说明浓度调节有贡献。
+
+## 2026-10-20：固定非凸需求开发机制试验
+
+从fetch后与远程研究分支相同的c37a023a开始，沿用笔记本现有Python 3.12.15／uv 0.13.0和科学依赖，未升级。175项基线测试通过；新增原始Gaussian密度、有限相位排序、周期尺度、冻结配对及带需求拒绝工件测试后，完整180 passed／25.70 s，pip check、compileall和diff检查通过。公共算法保持，rejected_result仅增加可选冻结快照／配置参数。
+
+固定disk_union_closed及原安全、覆盖、恢复标准，六个既有开发输入×两需求×三方法共36行全部完成：Equal Arc和projected_mass各12 SUCCESS；Mass CVT共12 PLAN_SEARCH_EXHAUSTED，48个legacy起点均为弧间隙超限，未执行。没有输入替换、预算增加、程序错误或未决行。36行全部独立复判，24条真实执行全部通过，输入／需求／目标／指派不一致为0。首组六行串行、其余最多2 worker，每worker数值线程1，主进程及worker反事实开关均为0。
+
+五输入复用原v3冻结快照且曲线逐数组一致；缺失的tight_u seed59仅在新目录协议重建，逐数组字节哈希匹配旧报告，未称原始文件恢复。热点在目标出现前按场景固定为背景1／盘内5，无重抽。热点条件projected_mass最终总需求代价下降0.907%–3.766%，超额代价下降1.404%–6.123%，背景弧段代价上升0.982%–11.989%；未执行Mass CVT的低代价只作拒绝见证。seed51两行Equal Arc的需求相位选择显著影响比较，A条件最终projected_mass反而高0.065%。不作总体排名或风险改善声明。
+
+执行源码SHA-256为94d5013b85ee917c7feb71a52d5593136074bbe084d7860cea5bba07cdc8ce9e，未改变默认16段严格covers、32段诊断地位或历史拒绝。没有重跑历史整表、使用5000–5029、覆盖精确证明、扩大矩阵或进入Step 2/3。报告、36行台账、来源、需求、冲突证据、离线核查及PowerShell命令见[非凸需求试验](../reports/step1_nonconvex_demand_pilot_v1/REPORT.zh.md)。唯一原始输入／目标／轨迹／事件保存在runs，Git只保存源码、配置、测试与报告；下一轮只优先相位与gap投影的收益归因协议。

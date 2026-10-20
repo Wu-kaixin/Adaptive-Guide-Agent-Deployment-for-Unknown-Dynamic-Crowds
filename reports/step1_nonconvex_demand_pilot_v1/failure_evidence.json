@@ -1,0 +1,1132 @@
+[
+  {
+    "task_id": "elongated__seed_36__ones__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 1,
+    "violating_arc_pairs": [
+      {
+        "i": 0,
+        "j": 1,
+        "gap_m": 2.1161095123554268,
+        "first_arc_m": 0.42908245867713835,
+        "second_arc_m": 2.545191971032565,
+        "first_position": [
+          10.524823245948307,
+          14.409242811201871
+        ],
+        "second_position": [
+          11.805699749198453,
+          12.946640125826782
+        ]
+      },
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 2.1000360943329115,
+        "first_arc_m": 7.591401001277995,
+        "second_arc_m": 9.691437095610906,
+        "first_position": [
+          16.77752969434013,
+          12.96447691247251
+        ],
+        "second_position": [
+          18.254461088061596,
+          14.20987623799953
+        ]
+      },
+      {
+        "i": 5,
+        "j": 6,
+        "gap_m": 2.0967410457255564,
+        "first_arc_m": 9.691437095610906,
+        "second_arc_m": 11.788178141336463,
+        "first_position": [
+          18.254461088061596,
+          14.20987623799953
+        ],
+        "second_position": [
+          17.97366888890901,
+          16.178704690194603
+        ]
+      },
+      {
+        "i": 6,
+        "j": 7,
+        "gap_m": 1.958984151011519,
+        "first_arc_m": 11.788178141336463,
+        "second_arc_m": 13.747162292347982,
+        "first_position": [
+          17.97366888890901,
+          16.178704690194603
+        ],
+        "second_position": [
+          16.1447932144436,
+          16.669362558022026
+        ]
+      },
+      {
+        "i": 10,
+        "j": 0,
+        "gap_m": 2.0071853483143585,
+        "first_arc_m": 18.909781902299795,
+        "second_arc_m": 0.42908245867713835,
+        "first_position": [
+          11.105795489037709,
+          16.244697010323744
+        ],
+        "second_position": [
+          10.524823245948307,
+          14.409242811201871
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.599573135041714,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "elongated__seed_36__hotspot5__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 3,
+    "violating_arc_pairs": [
+      {
+        "i": 3,
+        "j": 4,
+        "gap_m": 2.0859947922323325,
+        "first_arc_m": 5.855399042532498,
+        "second_arc_m": 7.94139383476483,
+        "first_position": [
+          15.063257826755814,
+          12.895277789638929
+        ],
+        "second_position": [
+          17.124306720497625,
+          13.005032527751093
+        ]
+      },
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 2.578615248174878,
+        "first_arc_m": 7.94139383476483,
+        "second_arc_m": 10.520009082939708,
+        "first_position": [
+          17.124306720497625,
+          13.005032527751093
+        ],
+        "second_position": [
+          18.39315806732832,
+          15.022074193021087
+        ]
+      },
+      {
+        "i": 5,
+        "j": 6,
+        "gap_m": 2.8005962414791394,
+        "first_arc_m": 10.520009082939708,
+        "second_arc_m": 13.320605324418848,
+        "first_position": [
+          18.39315806732832,
+          15.022074193021087
+        ],
+        "second_position": [
+          16.566711129562307,
+          16.61694808384472
+        ]
+      },
+      {
+        "i": 6,
+        "j": 7,
+        "gap_m": 2.0694992187481187,
+        "first_arc_m": 13.320605324418848,
+        "second_arc_m": 15.390104543166967,
+        "first_position": [
+          16.566711129562307,
+          16.61694808384472
+        ],
+        "second_position": [
+          14.519123613608052,
+          16.53384826819558
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.3922701676255835,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "elongated__seed_51__ones__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 2,
+    "violating_arc_pairs": [
+      {
+        "i": 0,
+        "j": 1,
+        "gap_m": 2.0916212405310812,
+        "first_arc_m": 1.013927430105914,
+        "second_arc_m": 3.1055486706369955,
+        "first_position": [
+          10.588245990957246,
+          13.820455930080323
+        ],
+        "second_position": [
+          12.32569165678821,
+          12.95118613282385
+        ]
+      },
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 2.162529230168193,
+        "first_arc_m": 8.177961499392442,
+        "second_arc_m": 10.340490729560635,
+        "first_position": [
+          17.329127383544613,
+          12.934985988043067
+        ],
+        "second_position": [
+          18.336054648091967,
+          14.6395442815541
+        ]
+      },
+      {
+        "i": 5,
+        "j": 6,
+        "gap_m": 2.133283358692566,
+        "first_arc_m": 10.340490729560635,
+        "second_arc_m": 12.4737740882532,
+        "first_position": [
+          18.336054648091967,
+          14.6395442815541
+        ],
+        "second_position": [
+          17.534087406399813,
+          16.44795276397633
+        ]
+      },
+      {
+        "i": 9,
+        "j": 10,
+        "gap_m": 2.0753014026424985,
+        "first_arc_m": 17.647946059064573,
+        "second_arc_m": 19.72324746170707,
+        "first_position": [
+          12.432790981615803,
+          16.563043110185227
+        ],
+        "second_position": [
+          10.656636819806621,
+          15.792336666838889
+        ]
+      },
+      {
+        "i": 10,
+        "j": 0,
+        "gap_m": 2.0259309231311278,
+        "first_arc_m": 19.72324746170707,
+        "second_arc_m": 1.013927430105914,
+        "first_position": [
+          10.656636819806621,
+          15.792336666838889
+        ],
+        "second_position": [
+          10.588245990957246,
+          13.820455930080323
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.5735100144567389,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "elongated__seed_51__hotspot5__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 0,
+    "violating_arc_pairs": [
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 2.383391494303617,
+        "first_arc_m": 6.691851601444408,
+        "second_arc_m": 9.075243095748025,
+        "first_position": [
+          15.859716968812334,
+          12.853662763929787
+        ],
+        "second_position": [
+          18.051270162199906,
+          13.445030144479919
+        ]
+      },
+      {
+        "i": 5,
+        "j": 6,
+        "gap_m": 2.4558999189001725,
+        "first_arc_m": 9.075243095748025,
+        "second_arc_m": 11.531143014648197,
+        "first_position": [
+          18.051270162199906,
+          13.445030144479919
+        ],
+        "second_position": [
+          18.196087754308618,
+          15.798987298953149
+        ]
+      },
+      {
+        "i": 6,
+        "j": 7,
+        "gap_m": 2.5363009704763257,
+        "first_arc_m": 11.531143014648197,
+        "second_arc_m": 14.067443985124523,
+        "first_position": [
+          18.196087754308618,
+          15.798987298953149
+        ],
+        "second_position": [
+          15.975665624676697,
+          16.49374738227125
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [
+      0
+    ],
+    "selected_raw_min_pair_m": 1.5126979306210806,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "tight_u__seed_36__ones__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 3,
+    "violating_arc_pairs": [
+      {
+        "i": 8,
+        "j": 9,
+        "gap_m": 2.215938000813324,
+        "first_arc_m": 13.64251591329901,
+        "second_arc_m": 15.858453914112333,
+        "first_position": [
+          16.141963781915674,
+          15.92191081598298
+        ],
+        "second_position": [
+          15.335431319559929,
+          17.77344393799507
+        ]
+      },
+      {
+        "i": 9,
+        "j": 10,
+        "gap_m": 2.245138448699022,
+        "first_arc_m": 15.858453914112333,
+        "second_arc_m": 18.103592362811355,
+        "first_position": [
+          15.335431319559929,
+          17.77344393799507
+        ],
+        "second_position": [
+          13.403091038308546,
+          17.117320961924285
+        ]
+      },
+      {
+        "i": 10,
+        "j": 11,
+        "gap_m": 2.221964300841911,
+        "first_arc_m": 18.103592362811355,
+        "second_arc_m": 20.325556663653266,
+        "first_position": [
+          13.403091038308546,
+          17.117320961924285
+        ],
+        "second_position": [
+          11.512646101524854,
+          17.829821202550804
+        ]
+      },
+      {
+        "i": 11,
+        "j": 12,
+        "gap_m": 2.1763338045449174,
+        "first_arc_m": 20.325556663653266,
+        "second_arc_m": 22.501890468198184,
+        "first_position": [
+          11.512646101524854,
+          17.829821202550804
+        ],
+        "second_position": [
+          10.517218057353995,
+          16.074341679513857
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.560277036479821,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "tight_u__seed_36__hotspot5__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 1,
+    "violating_arc_pairs": [
+      {
+        "i": 1,
+        "j": 2,
+        "gap_m": 2.08975071158758,
+        "first_arc_m": 1.7495283353977,
+        "second_arc_m": 3.83927904698528,
+        "first_position": [
+          10.533215479238097,
+          12.672895012239504
+        ],
+        "second_position": [
+          11.153676241148005,
+          10.80006926567221
+        ]
+      },
+      {
+        "i": 2,
+        "j": 3,
+        "gap_m": 1.9454307800719528,
+        "first_arc_m": 3.83927904698528,
+        "second_arc_m": 5.784709827057233,
+        "first_position": [
+          11.153676241148005,
+          10.80006926567221
+        ],
+        "second_position": [
+          13.029089066584959,
+          10.527200123954914
+        ]
+      },
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 2.135239406132462,
+        "first_arc_m": 7.6376385118423675,
+        "second_arc_m": 9.77287791797483,
+        "first_position": [
+          14.872187256140148,
+          10.550455403269096
+        ],
+        "second_position": [
+          16.07819082875765,
+          12.094205177391123
+        ]
+      },
+      {
+        "i": 7,
+        "j": 8,
+        "gap_m": 2.348623635247444,
+        "first_arc_m": 13.405215577197243,
+        "second_arc_m": 15.753839212444687,
+        "first_position": [
+          16.093342174029754,
+          15.692952097072585
+        ],
+        "second_position": [
+          15.429366094150776,
+          17.727479491610246
+        ]
+      },
+      {
+        "i": 8,
+        "j": 9,
+        "gap_m": 2.237731072091096,
+        "first_arc_m": 15.753839212444687,
+        "second_arc_m": 17.991570284535783,
+        "first_position": [
+          15.429366094150776,
+          17.727479491610246
+        ],
+        "second_position": [
+          13.460007429805477,
+          17.213751744885695
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.3729610556744807,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "tight_u__seed_59__ones__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 0,
+    "violating_arc_pairs": [
+      {
+        "i": 2,
+        "j": 3,
+        "gap_m": 1.9657506078656928,
+        "first_arc_m": 3.7265747333773795,
+        "second_arc_m": 5.692325341243072,
+        "first_position": [
+          10.901958291582522,
+          10.900521148502254
+        ],
+        "second_position": [
+          12.690002465080688,
+          10.512581935083656
+        ]
+      },
+      {
+        "i": 8,
+        "j": 9,
+        "gap_m": 2.170410414266362,
+        "first_arc_m": 14.2044577604444,
+        "second_arc_m": 16.374868174710763,
+        "first_position": [
+          16.12242419799615,
+          16.146368185235744
+        ],
+        "second_position": [
+          15.108039061618685,
+          17.85287085911081
+        ]
+      },
+      {
+        "i": 9,
+        "j": 10,
+        "gap_m": 2.134526611289438,
+        "first_arc_m": 16.374868174710763,
+        "second_arc_m": 18.5093947860002,
+        "first_position": [
+          15.108039061618685,
+          17.85287085911081
+        ],
+        "second_position": [
+          13.277538292945186,
+          17.21662284596242
+        ]
+      },
+      {
+        "i": 10,
+        "j": 11,
+        "gap_m": 2.222785438943447,
+        "first_arc_m": 18.5093947860002,
+        "second_arc_m": 20.732180224943647,
+        "first_position": [
+          13.277538292945186,
+          17.21662284596242
+        ],
+        "second_position": [
+          11.314810065646018,
+          17.71207078325241
+        ]
+      },
+      {
+        "i": 11,
+        "j": 12,
+        "gap_m": 2.0987940973175796,
+        "first_arc_m": 20.732180224943647,
+        "second_arc_m": 22.830974322261227,
+        "first_position": [
+          11.314810065646018,
+          17.71207078325241
+        ],
+        "second_position": [
+          10.480643379177119,
+          15.912143385849143
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.5754515482072362,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "tight_u__seed_59__hotspot5__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 1,
+    "violating_arc_pairs": [
+      {
+        "i": 0,
+        "j": 1,
+        "gap_m": 2.0422154501398775,
+        "first_arc_m": 1.4838836810117697,
+        "second_arc_m": 3.526099131151647,
+        "first_position": [
+          10.575830482726348,
+          13.039135653831758
+        ],
+        "second_position": [
+          10.782825756105028,
+          11.06146821581092
+        ]
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "gap_m": 2.2509507989343884,
+        "first_arc_m": 3.526099131151647,
+        "second_arc_m": 5.777049930086036,
+        "first_position": [
+          10.782825756105028,
+          11.06146821581092
+        ],
+        "second_position": [
+          12.772985175390746,
+          10.529647078047253
+        ]
+      },
+      {
+        "i": 3,
+        "j": 4,
+        "gap_m": 2.26716607979509,
+        "first_arc_m": 7.602760632833731,
+        "second_arc_m": 9.869926712628821,
+        "first_position": [
+          14.5902431580898,
+          10.481545052659643
+        ],
+        "second_position": [
+          16.103882736410778,
+          11.874415384877775
+        ]
+      },
+      {
+        "i": 6,
+        "j": 7,
+        "gap_m": 2.344974009419518,
+        "first_arc_m": 13.577498556697092,
+        "second_arc_m": 15.92247256611661,
+        "first_position": [
+          16.10687775782615,
+          15.533442940011875
+        ],
+        "second_position": [
+          15.511767105875188,
+          17.652722576996318
+        ]
+      },
+      {
+        "i": 7,
+        "j": 8,
+        "gap_m": 2.338869711518221,
+        "first_arc_m": 15.92247256611661,
+        "second_arc_m": 18.26134227763483,
+        "first_position": [
+          15.511767105875188,
+          17.652722576996318
+        ],
+        "second_position": [
+          13.43277308795312,
+          17.301008526595908
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.310110667733089,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "wide_u__seed_35__ones__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 2,
+    "violating_arc_pairs": [
+      {
+        "i": 0,
+        "j": 1,
+        "gap_m": 1.9673750300465331,
+        "first_arc_m": 0.9365687685958342,
+        "second_arc_m": 2.9039437986423673,
+        "first_position": [
+          9.477220874988808,
+          12.581904952357512
+        ],
+        "second_position": [
+          10.080474056948235,
+          10.79663359543446
+        ]
+      },
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 1.9799945914333765,
+        "first_arc_m": 8.306799755207441,
+        "second_arc_m": 10.286794346640818,
+        "first_position": [
+          15.3593451108466,
+          10.514869248618915
+        ],
+        "second_position": [
+          17.12878608203708,
+          11.072263178349376
+        ]
+      },
+      {
+        "i": 8,
+        "j": 9,
+        "gap_m": 2.290031574098693,
+        "first_arc_m": 15.551706618190101,
+        "second_arc_m": 17.841738192288794,
+        "first_position": [
+          17.422090821357983,
+          16.22743219544707
+        ],
+        "second_position": [
+          16.123582497488858,
+          17.84400923473705
+        ]
+      },
+      {
+        "i": 9,
+        "j": 10,
+        "gap_m": 2.3428264133097763,
+        "first_arc_m": 17.841738192288794,
+        "second_arc_m": 20.18456460559857,
+        "first_position": [
+          16.123582497488858,
+          17.84400923473705
+        ],
+        "second_position": [
+          14.443669191826402,
+          16.565292150959465
+        ]
+      },
+      {
+        "i": 15,
+        "j": 16,
+        "gap_m": 2.3874166937405974,
+        "first_arc_m": 28.538411598103533,
+        "second_arc_m": 30.92582829184413,
+        "first_position": [
+          12.41323858269296,
+          16.789733019660112
+        ],
+        "second_position": [
+          10.495052625077463,
+          17.745701473702507
+        ]
+      },
+      {
+        "i": 16,
+        "j": 17,
+        "gap_m": 2.2032600260907635,
+        "first_arc_m": 30.92582829184413,
+        "second_arc_m": 33.129088317934894,
+        "first_position": [
+          10.495052625077463,
+          17.745701473702507
+        ],
+        "second_position": [
+          9.473762163827113,
+          15.981680993073786
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.2923085316341112,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "wide_u__seed_35__hotspot5__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 2,
+    "violating_arc_pairs": [
+      {
+        "i": 0,
+        "j": 1,
+        "gap_m": 2.430940749317645,
+        "first_arc_m": 1.6316226919763261,
+        "second_arc_m": 4.062563441293971,
+        "first_position": [
+          9.507648804635501,
+          11.890010694038194
+        ],
+        "second_position": [
+          11.167433175968632,
+          10.4880231217727
+        ]
+      },
+      {
+        "i": 3,
+        "j": 4,
+        "gap_m": 2.0725472252891084,
+        "first_arc_m": 7.861308105646396,
+        "second_arc_m": 9.933855330935504,
+        "first_position": [
+          14.922506868149672,
+          10.435442269945618
+        ],
+        "second_position": [
+          16.88911063299177,
+          10.814379145020085
+        ]
+      },
+      {
+        "i": 4,
+        "j": 5,
+        "gap_m": 2.1003436512667815,
+        "first_arc_m": 9.933855330935504,
+        "second_arc_m": 12.034198982202286,
+        "first_position": [
+          16.88911063299177,
+          10.814379145020085
+        ],
+        "second_position": [
+          17.384219519577304,
+          12.748097923014864
+        ]
+      },
+      {
+        "i": 6,
+        "j": 7,
+        "gap_m": 1.9693582093957396,
+        "first_arc_m": 13.870147771222223,
+        "second_arc_m": 15.839505980617963,
+        "first_position": [
+          17.361549882089363,
+          14.572351486384967
+        ],
+        "second_position": [
+          17.419294843316287,
+          16.51472745296301
+        ]
+      },
+      {
+        "i": 7,
+        "j": 8,
+        "gap_m": 2.6988147957633384,
+        "first_arc_m": 15.839505980617963,
+        "second_arc_m": 18.5383207763813,
+        "first_position": [
+          17.419294843316287,
+          16.51472745296301
+        ],
+        "second_position": [
+          15.437030283548562,
+          17.77380720235887
+        ]
+      },
+      {
+        "i": 8,
+        "j": 9,
+        "gap_m": 2.450350211987015,
+        "first_arc_m": 18.5383207763813,
+        "second_arc_m": 20.988670988368316,
+        "first_position": [
+          15.437030283548562,
+          17.77380720235887
+        ],
+        "second_position": [
+          14.379476230350202,
+          15.766874310852806
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.0103754230134214,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "wide_u__seed_36__ones__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 3,
+    "violating_arc_pairs": [
+      {
+        "i": 1,
+        "j": 2,
+        "gap_m": 1.940169046167457,
+        "first_arc_m": 3.3572910311396496,
+        "second_arc_m": 5.2974600773071066,
+        "first_position": [
+          9.528090494909486,
+          12.789389989186056
+        ],
+        "second_position": [
+          9.864473721201717,
+          10.96191661325377
+        ]
+      },
+      {
+        "i": 2,
+        "j": 3,
+        "gap_m": 1.9753477597562092,
+        "first_arc_m": 5.2974600773071066,
+        "second_arc_m": 7.272807837063316,
+        "first_position": [
+          9.864473721201717,
+          10.96191661325377
+        ],
+        "second_position": [
+          11.698744741940638,
+          10.45393700657645
+        ]
+      },
+      {
+        "i": 9,
+        "j": 10,
+        "gap_m": 2.2662334513830196,
+        "first_arc_m": 17.932852106949074,
+        "second_arc_m": 20.199085558332094,
+        "first_position": [
+          17.369635931144135,
+          16.02433264319936
+        ],
+        "second_position": [
+          16.363199095676933,
+          17.842657754329664
+        ]
+      },
+      {
+        "i": 10,
+        "j": 11,
+        "gap_m": 2.4569817107859073,
+        "first_arc_m": 20.199085558332094,
+        "second_arc_m": 22.656067269118,
+        "first_position": [
+          16.363199095676933,
+          17.842657754329664
+        ],
+        "second_position": [
+          14.432554259859076,
+          16.807443695251102
+        ]
+      },
+      {
+        "i": 16,
+        "j": 17,
+        "gap_m": 2.3758033996891044,
+        "first_arc_m": 30.924109854829048,
+        "second_arc_m": 33.29991325451815,
+        "first_position": [
+          12.464095714846223,
+          16.518891369575208
+        ],
+        "second_position": [
+          10.796546502469607,
+          17.851480060823135
+        ]
+      },
+      {
+        "i": 17,
+        "j": 18,
+        "gap_m": 2.3260712676886826,
+        "first_arc_m": 33.29991325451815,
+        "second_arc_m": 35.625984522206835,
+        "first_position": [
+          10.796546502469607,
+          17.851480060823135
+        ],
+        "second_position": [
+          9.4805539458749,
+          16.215598604233392
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.260911612192051,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  },
+  {
+    "task_id": "wide_u__seed_36__hotspot5__mass_cvt",
+    "status": "PLAN_SEARCH_EXHAUSTED",
+    "constraint": "max consecutive arc gap <= 1.94 m (including closing seam)",
+    "failed_legacy_phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "selected_raw_attempt": 0,
+    "violating_arc_pairs": [
+      {
+        "i": 2,
+        "j": 3,
+        "gap_m": 2.388279294044268,
+        "first_arc_m": 4.327222245953726,
+        "second_arc_m": 6.715501539997994,
+        "first_position": [
+          9.477852475922422,
+          11.83311206275929
+        ],
+        "second_position": [
+          11.144202101757669,
+          10.47720676582526
+        ]
+      },
+      {
+        "i": 5,
+        "j": 6,
+        "gap_m": 2.0808538478110528,
+        "first_arc_m": 10.55469307910971,
+        "second_arc_m": 12.635546926920762,
+        "first_position": [
+          14.947371864238788,
+          10.574805584311797
+        ],
+        "second_position": [
+          16.926651100824447,
+          10.905611160198323
+        ]
+      },
+      {
+        "i": 6,
+        "j": 7,
+        "gap_m": 2.097831984177967,
+        "first_arc_m": 12.635546926920762,
+        "second_arc_m": 14.733378911098729,
+        "first_position": [
+          16.926651100824447,
+          10.905611160198323
+        ],
+        "second_position": [
+          17.4102112567585,
+          12.85391740557431
+        ]
+      },
+      {
+        "i": 8,
+        "j": 9,
+        "gap_m": 2.024455803145429,
+        "first_arc_m": 16.57858287916907,
+        "second_arc_m": 18.603038682314498,
+        "first_position": [
+          17.434282628777613,
+          14.675728052286498
+        ],
+        "second_position": [
+          17.35646313988421,
+          16.69011918330777
+        ]
+      },
+      {
+        "i": 9,
+        "j": 10,
+        "gap_m": 2.858948405776534,
+        "first_arc_m": 18.603038682314498,
+        "second_arc_m": 21.461987088091032,
+        "first_position": [
+          17.35646313988421,
+          16.69011918330777
+        ],
+        "second_position": [
+          15.143078147885038,
+          17.727326226419873
+        ]
+      },
+      {
+        "i": 10,
+        "j": 11,
+        "gap_m": 2.4299673344277473,
+        "first_arc_m": 21.461987088091032,
+        "second_arc_m": 23.89195442251878,
+        "first_position": [
+          15.143078147885038,
+          17.727326226419873
+        ],
+        "second_position": [
+          14.404033621351038,
+          15.57940845966533
+        ]
+      }
+    ],
+    "selected_raw_domain_invalid_indices": [],
+    "selected_raw_min_pair_m": 1.194153189777181,
+    "not_executed": true,
+    "simulation_time": null,
+    "motion_safety": null
+  }
+]

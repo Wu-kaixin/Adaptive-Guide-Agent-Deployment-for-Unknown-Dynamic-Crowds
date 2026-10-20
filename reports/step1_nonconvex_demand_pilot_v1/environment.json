@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-20 Asia/Tokyo",
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "udc_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel(R) Core(TM) Ultra 7 258V",
+  "physical_cores": 8,
+  "logical_cpus": 8,
+  "memory_total_bytes": 33847832576,
+  "memory_available_at_probe_bytes": 12065693696,
+  "uv": "0.13.0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2",
+    "PedPy": "1.5.1",
+    "PyYAML": "6.0.3",
+    "pytest": "9.1.1",
+    "threadpoolctl": "3.7.0",
+    "matplotlib": "3.11.2",
+    "pandas": "3.0.6"
+  },
+  "baseline_tests": "175 passed in 23.98s",
+  "final_tests": "180 passed in 25.70s",
+  "pip_check": "No broken requirements found",
+  "compiler_check": "compileall src tests passed",
+  "sync_start_head": "c37a023a79159ece268b7862ddffba17c69308f3",
+  "provenance": {
+    "commit": "c37a023a79159ece268b7862ddffba17c69308f3",
+    "dirty": true,
+    "patch_sha256": "d87378963fc8c7e4862bbffc5552b2c8b025f7767b0a893961c86a690d4d7b35",
+    "source_sha256": "94d5013b85ee917c7feb71a52d5593136074bbe084d7860cea5bba07cdc8ce9e",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "9775b2348e67a92f8a41ba5c010c2c4d95b77e0b1dc6f357cda4fb6fa0719009",
+    "task_sha256": "f6f7aec5b7a71e74c97d63fededb24288c9452a320c59673760df16c223eb8aa",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  }
+}

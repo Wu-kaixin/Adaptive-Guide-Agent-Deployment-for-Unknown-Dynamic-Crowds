@@ -198,9 +198,9 @@ def load_plan(directory):
                     info['max_gap'], info['method'], info['iterations'], info['exit_reason'], info['density_total'])
 
 
-def rejected_result(directory, row, cell, status, reason):
+def rejected_result(directory, row, cell, status, reason, *, snapshot=None, config_path=None):
     directory.mkdir(parents=True, exist_ok=False)
-    data = np.load(cell / 'input.npz', allow_pickle=False)
+    data = np.load(cell / 'input.npz', allow_pickle=False) if snapshot is None else snapshot
     metrics = {**row, 'termination_status': status, 'success': False, 'failure_reason': reason,
                'failure_stage': 'initialization' if status == 'INITIALIZATION_INVALID' else 'planning',
                'schema_version': '1.2.0', 'steps': 0, 'executed': False,
@@ -210,7 +210,7 @@ def rejected_result(directory, row, cell, status, reason):
     write(directory / 'metrics.json', metrics)
     write(directory / 'state.json', {'status': 'completed', 'success': False})
     write(directory / 'planning.json', [])
-    _atomic_text(directory / 'config.yaml', (cell / 'input.yaml').read_text(encoding='utf-8'))
+    _atomic_text(directory / 'config.yaml', Path(config_path or cell / 'input.yaml').read_text(encoding='utf-8'))
     _atomic_npz(directory / 'trajectory.npz', positions=data['guides'][None], targets=np.empty((0, 2)),
                 assignment=np.full(row['count'], -1), crowd_positions=data['people'],
                 crowd_radii=data['radii'], crowd_demand=data['demand'], room=data['room'], time=np.array([0.]),

@@ -1,0 +1,218 @@
+[
+  {
+    "task_id": "elongated__seed_36__ones__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\elongated__seed_36__ones__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "d4bd51e30cedc5e1a5480931ab6588bdc093cafe3c2b85245f77f45408e1388d",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_36__ones__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\elongated__seed_36__ones__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "b1654d6dac40bbf156508bc1dc553a3d73c09826efc3b8b16640e150b9f0f14b",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_36__hotspot5__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\elongated__seed_36__hotspot5__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "dd848689b8af4b1d191875eea287d96db8af5048fa35e7f1306891c506f3ddbc",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_36__hotspot5__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\elongated__seed_36__hotspot5__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "73c50300b29789f43d6d205b30cb003a62e1b978d64e12315912812ececfea6e",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_51__ones__equal_arc",
+    "reused": true,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\results\\elongated__seed_51__ones__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "26e5f4d111b28ba54725d401e9f33b97663906358519b77178ec2ccceade2f66",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_51__ones__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\elongated__seed_51__ones__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "491c115c33a7e072b413976f3ce8ceb958407b40a5965232054f2c098f8acb31",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_51__hotspot5__equal_arc",
+    "reused": true,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\results\\elongated__seed_51__hotspot5__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "dc88859235adc1503af68a51e1539a3c183f2b5808d456c83894364c1c9c6995",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "elongated__seed_51__hotspot5__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\elongated__seed_51__hotspot5__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "3abf9818920b78283df89df12766de47e7c82285551b7fa1396e39fcaabf4bc3",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_36__ones__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_36__ones__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "c31bb1437dd7e3b2078b05e975110bb98fa0b74351901ba55ad77dedf65c5b63",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_36__ones__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_36__ones__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "77f665b2d45693def7f5454d05573d87b84bb3bcbaedff8446154fe5e9f3548c",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_36__hotspot5__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_36__hotspot5__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "dee1ce0fa4b31b2899bb778bc5ff8cc31236452035d663bc0975493527943f1c",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_36__hotspot5__projected_mass",
+    "reused": true,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\results\\tight_u__seed_36__hotspot5__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "612522f05777a9553b92d64b2ed5a7d28a49b251f3ba626b86854c7f44e587ed",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_59__ones__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_59__ones__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "d8377105d27859e9763985bc1bf731468e020f0e94772347df97b038a895bced",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_59__ones__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_59__ones__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "19aae6365926c226f95ee30ac367a6a1b798d4582df010296c935140191beb56",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_59__hotspot5__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_59__hotspot5__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "27bd1e7713b34dc2c817c2152e4a9a3e599416e53c42ed74478854cf343aef0b",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "tight_u__seed_59__hotspot5__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\tight_u__seed_59__hotspot5__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "8218afb64292ea6ef8e8967b01563b635988b86bf7809d840e7aa229b07d7d2a",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_35__ones__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_35__ones__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "ebc9f9fc48a818feea20f5faed9b545731307a234d5090cc3ad3d9133128e576",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_35__ones__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_35__ones__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "b50f85012ef6ebf39db0a4de4dd40e1757e8c8d5c160a82830f65b9833e15449",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_35__hotspot5__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_35__hotspot5__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "196358cdc535edd434aa6c7c7055ecaff24743c1dba1e2fff239cc693278bb45",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_35__hotspot5__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_35__hotspot5__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "d0e65ccdb86463a769edfebaa46e52da16ffe6604f40810d5907638535b98ac9",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_36__ones__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_36__ones__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "419b7ba96a1ffaf600bc74a843e7a62cc1ffe338574dac2f05ea560122163db1",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_36__ones__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_36__ones__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "4c0d1dc070e2142af602f22bd0c595a68e3c477c752b5e6563736e8b1951632a",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_36__hotspot5__equal_arc",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_36__hotspot5__equal_arc\\trajectory.npz",
+    "trajectory_sha256": "c9329f1b6c4bb3c5f4ae2986ffe3372904a837a9a92979b8208871ba4edbc670",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  },
+  {
+    "task_id": "wide_u__seed_36__hotspot5__projected_mass",
+    "reused": false,
+    "trajectory_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_phase_attribution_v1\\execution\\wide_u__seed_36__hotspot5__projected_mass\\trajectory.npz",
+    "trajectory_sha256": "7f765155696f9e048be8a64ef0d1c405821a22496c79d2bd4e9356dc65317896",
+    "criteria_consistent": true,
+    "success": true,
+    "interval_safety_ok": true
+  }
+]

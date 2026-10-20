@@ -1,0 +1,2669 @@
+{
+  "physical_inputs": 6,
+  "demand_conditions": 12,
+  "main_policy_rows": 96,
+  "half_P3_sensitivity_rows": 24,
+  "policy_statuses": {
+    "P0": {
+      "PLANNED": 22,
+      "TARGET_DOMAIN_INVALID": 2
+    },
+    "P1": {
+      "PLANNED": 24
+    },
+    "P2": {
+      "PLANNED": 24
+    },
+    "P3": {
+      "PLANNED": 24
+    }
+  },
+  "execution_outcomes": {
+    "SUCCESS": 24
+  },
+  "new_executions": 21,
+  "reused_trajectories": 3,
+  "P2_reproduction_rows": 24,
+  "all_old_references_unchanged": true,
+  "comparisons": [
+    {
+      "condition_key": "elongated__seed_36__ones",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.2865127322997843,
+            "projected": 0.2806201493118407,
+            "difference_equal_minus_projected": 0.005892582987943595,
+            "projected_gain_pct": 2.0566565892708955
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.2865127322997843,
+            "projected": 0.2806201493118407,
+            "difference_equal_minus_projected": 0.005892582987943595,
+            "projected_gain_pct": 2.0566565892708955
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.2865127322997843,
+            "projected": 0.2806201493118407,
+            "difference_equal_minus_projected": 0.005892582987943595,
+            "projected_gain_pct": 2.0566565892708955
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.2854827584685787,
+            "projected": 0.28020144738072145,
+            "difference_equal_minus_projected": 0.005281311087857232,
+            "projected_gain_pct": 1.8499579856198263
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.285481438561936,
+          "projected": 0.2802003646271852,
+          "gain_pct": 1.8498834675043165
+        },
+        "excess": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_mass": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_arc": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.005892582987943595,
+          "G_equal": 0.0010299738312056217,
+          "G_projected": 0.0004187019311192586,
+          "D_all_phase": 0.005281311087857232,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.28548450086660865,
+            "projected": 0.28020124995886664,
+            "gain_pct": 1.8506261782003308
+          },
+          "8192": {
+            "equal": 0.28548464478390057,
+            "projected": 0.28020137127233213,
+            "gain_pct": 1.8506331629736652
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.8499579856198263,
+          "half_gain_pct": 1.8498834675043165,
+          "difference_range_all_grids_and_integrals": [
+            0.005281073934750746,
+            0.0052832735115684315
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -1.3199066427049821e-06,
+            "projected_mass": -1.0827535362190055e-06
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "elongated__seed_36__hotspot5",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.2871823487925957,
+            "projected": 0.27903828392606134,
+            "difference_equal_minus_projected": 0.00814406486653435,
+            "projected_gain_pct": 2.835851472339628
+          },
+          "excess": {
+            "equal": 0.28776901667062454,
+            "projected": 0.2758238519972617,
+            "difference_equal_minus_projected": 0.011945164673362818,
+            "projected_gain_pct": 4.150955794881506
+          },
+          "background_mass": {
+            "equal": 0.2865127322997843,
+            "projected": 0.28270720243200703,
+            "difference_equal_minus_projected": 0.0038055298677772686,
+            "projected_gain_pct": 1.3282236489914392
+          },
+          "background_arc": {
+            "equal": 0.30350473148626117,
+            "projected": 0.31018029189018065,
+            "difference_equal_minus_projected": -0.006675560403919478,
+            "projected_gain_pct": -2.19949137900727
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.2871823487925957,
+            "projected": 0.27903828392606134,
+            "difference_equal_minus_projected": 0.00814406486653435,
+            "projected_gain_pct": 2.835851472339628
+          },
+          "excess": {
+            "equal": 0.28776901667062454,
+            "projected": 0.2758238519972617,
+            "difference_equal_minus_projected": 0.011945164673362818,
+            "projected_gain_pct": 4.150955794881506
+          },
+          "background_mass": {
+            "equal": 0.2865127322997843,
+            "projected": 0.28270720243200703,
+            "difference_equal_minus_projected": 0.0038055298677772686,
+            "projected_gain_pct": 1.3282236489914392
+          },
+          "background_arc": {
+            "equal": 0.30350473148626117,
+            "projected": 0.31018029189018065,
+            "difference_equal_minus_projected": -0.006675560403919478,
+            "projected_gain_pct": -2.19949137900727
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.2871823487925957,
+            "projected": 0.27903828392606134,
+            "difference_equal_minus_projected": 0.00814406486653435,
+            "projected_gain_pct": 2.835851472339628
+          },
+          "excess": {
+            "equal": 0.28776901667062454,
+            "projected": 0.2758238519972617,
+            "difference_equal_minus_projected": 0.011945164673362818,
+            "projected_gain_pct": 4.150955794881506
+          },
+          "background_mass": {
+            "equal": 0.2865127322997843,
+            "projected": 0.28270720243200703,
+            "difference_equal_minus_projected": 0.0038055298677772686,
+            "projected_gain_pct": 1.3282236489914392
+          },
+          "background_arc": {
+            "equal": 0.30350473148626117,
+            "projected": 0.31018029189018065,
+            "difference_equal_minus_projected": -0.006675560403919478,
+            "projected_gain_pct": -2.19949137900727
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.28591853688676694,
+            "projected": 0.2783192116979205,
+            "difference_equal_minus_projected": 0.007599325188846429,
+            "projected_gain_pct": 2.657863764830333
+          },
+          "excess": {
+            "equal": 0.2862736029762397,
+            "projected": 0.27496976059512984,
+            "difference_equal_minus_projected": 0.011303842381109874,
+            "projected_gain_pct": 3.9486149835645437
+          },
+          "background_mass": {
+            "equal": 0.28551326821866146,
+            "projected": 0.28214223965682267,
+            "difference_equal_minus_projected": 0.003371028561838796,
+            "projected_gain_pct": 1.1806906848395853
+          },
+          "background_arc": {
+            "equal": 0.29953518662851336,
+            "projected": 0.304623182809345,
+            "difference_equal_minus_projected": -0.005087996180831611,
+            "projected_gain_pct": -1.6986305475829777
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.2859177327467992,
+          "projected": 0.278315535095046,
+          "gain_pct": 2.6588758866822486
+        },
+        "excess": {
+          "equal": 0.2862703854617445,
+          "projected": 0.2750007131866974,
+          "gain_pct": 3.936723058820598
+        },
+        "background_mass": {
+          "equal": 0.2855152186787791,
+          "projected": 0.2820990376587465,
+          "gain_pct": 1.1964969978976858
+        },
+        "background_arc": {
+          "equal": 0.29934740915037256,
+          "projected": 0.3062008350683678,
+          "gain_pct": -2.289455565173289
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.00814406486653435,
+          "G_equal": 0.001263811905828749,
+          "G_projected": 0.0007190722281408268,
+          "D_all_phase": 0.007599325188846429,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "excess": {
+          "D_raw": 0.011945164673362818,
+          "G_equal": 0.0014954136943848284,
+          "G_projected": 0.0008540914021318846,
+          "D_all_phase": 0.011303842381109874,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_mass": {
+          "D_raw": 0.0038055298677772686,
+          "G_equal": 0.0009994640811228361,
+          "G_projected": 0.0005649627751843633,
+          "D_all_phase": 0.003371028561838796,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_arc": {
+          "D_raw": -0.006675560403919478,
+          "G_equal": 0.003969544857747809,
+          "G_projected": 0.005557109080835676,
+          "D_all_phase": -0.005087996180831611,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.2859180239543388,
+            "projected": 0.27831411237964715,
+            "gain_pct": 2.6594726241903497
+          },
+          "8192": {
+            "equal": 0.28591804889376865,
+            "projected": 0.2783148858228155,
+            "gain_pct": 2.6592106026080473
+          }
+        },
+        "excess": {
+          "4096": {
+            "equal": 0.28627359450954143,
+            "projected": 0.27496369060328557,
+            "gain_pct": 3.950732489188381
+          },
+          "8192": {
+            "equal": 0.28627363338080036,
+            "projected": 0.27496499369159094,
+            "gain_pct": 3.950290341327628
+          }
+        },
+        "background_mass": {
+          "4096": {
+            "equal": 0.2855121794926265,
+            "projected": 0.2821382482717816,
+            "gain_pct": 1.1817118368962902
+          },
+          "8192": {
+            "equal": 0.285512188509833,
+            "projected": 0.28213841737749956,
+            "gain_pct": 1.181655728934758
+          }
+        },
+        "background_arc": {
+          "4096": {
+            "equal": 0.2995342027004573,
+            "projected": 0.30461996677448655,
+            "gain_pct": -1.6978909347174567
+          },
+          "8192": {
+            "equal": 0.2995338662341748,
+            "projected": 0.3046193321316621,
+            "gain_pct": -1.6977932951032368
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 2.657863764830333,
+          "half_gain_pct": 2.6588758866822486,
+          "difference_range_all_grids_and_integrals": [
+            0.007599325188846429,
+            0.007607765205923822
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -8.041399677249927e-07,
+            "projected_mass": -3.6766028745360835e-06
+          }
+        },
+        "excess": {
+          "main_gain_pct": 3.9486149835645437,
+          "half_gain_pct": 3.936723058820598,
+          "difference_range_all_grids_and_integrals": [
+            0.011269672275047105,
+            0.011309903906255858
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -3.2175144952240053e-06,
+            "projected_mass": 3.0952591567545706e-05
+          }
+        },
+        "background_mass": {
+          "main_gain_pct": 1.1806906848395853,
+          "half_gain_pct": 1.1964969978976858,
+          "difference_range_all_grids_and_integrals": [
+            0.003371028561838796,
+            0.0034219753220107174
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 1.950460117638997e-06,
+            "projected_mass": -4.320199807616998e-05
+          }
+        },
+        "background_arc": {
+          "main_gain_pct": -1.6986305475829777,
+          "half_gain_pct": -2.289455565173289,
+          "difference_range_all_grids_and_integrals": [
+            -0.0068534259179952595,
+            -0.005085465897487318
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -0.0001877774781408048,
+            "projected_mass": 0.0015776522590228437
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "elongated__seed_51__ones",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.29848199258070124,
+            "projected": 0.29407113639731847,
+            "difference_equal_minus_projected": 0.004410856183382772,
+            "projected_gain_pct": 1.477762911338847
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.2981801837954654,
+            "projected": 0.29407113639731847,
+            "difference_equal_minus_projected": 0.004109047398146937,
+            "projected_gain_pct": 1.3780417416891488
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.29388138934240465,
+            "projected": 0.29407113639731847,
+            "difference_equal_minus_projected": -0.0001897470549138136,
+            "projected_gain_pct": -0.06456586289400486
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.29388138934240465,
+            "projected": 0.28970199924601936,
+            "difference_equal_minus_projected": 0.004179390096385294,
+            "projected_gain_pct": 1.4221350000206503
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.29388004525500655,
+          "projected": 0.2896880809902386,
+          "gain_pct": 1.4264201780459482
+        },
+        "excess": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_mass": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_arc": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.004410856183382772,
+          "G_equal": 0.004600603238296586,
+          "G_projected": 0.004369137151299107,
+          "D_all_phase": 0.004179390096385294,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.2938820870087522,
+            "projected": 0.28970083237287764,
+            "gain_pct": 1.4227660754804765
+          },
+          "8192": {
+            "equal": 0.29388197002253136,
+            "projected": 0.2897008526087705,
+            "gain_pct": 1.422719948910208
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.4221350000206503,
+          "half_gain_pct": 1.4264201780459482,
+          "difference_range_all_grids_and_integrals": [
+            0.004179390096385294,
+            0.004194571359939281
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -1.3440873981029888e-06,
+            "projected_mass": -1.3918255780787092e-05
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "elongated__seed_51__hotspot5",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.2980148608424242,
+            "projected": 0.2916527965375677,
+            "difference_equal_minus_projected": 0.006362064304856474,
+            "projected_gain_pct": 2.1348144474648953
+          },
+          "excess": {
+            "equal": 0.2976016712829552,
+            "projected": 0.28755778320216807,
+            "difference_equal_minus_projected": 0.010043888080787156,
+            "projected_gain_pct": 3.374943439493516
+          },
+          "background_mass": {
+            "equal": 0.2984819925807014,
+            "projected": 0.29628241665694266,
+            "difference_equal_minus_projected": 0.0021995759237587453,
+            "projected_gain_pct": 0.7369208121203626
+          },
+          "background_arc": {
+            "equal": 0.31289752012653793,
+            "projected": 0.31777716743398926,
+            "difference_equal_minus_projected": -0.004879647307451329,
+            "projected_gain_pct": -1.5595033496839368
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.2976619998703361,
+            "projected": 0.2916527965375677,
+            "difference_equal_minus_projected": 0.006009203332768387,
+            "projected_gain_pct": 2.018800967334105
+          },
+          "excess": {
+            "equal": 0.29720365339073757,
+            "projected": 0.28755778320216807,
+            "difference_equal_minus_projected": 0.009645870188569494,
+            "projected_gain_pct": 3.2455422665642475
+          },
+          "background_mass": {
+            "equal": 0.29818018379546546,
+            "projected": 0.29628241665694266,
+            "difference_equal_minus_projected": 0.001897767138522799,
+            "projected_gain_pct": 0.6364497849476672
+          },
+          "background_arc": {
+            "equal": 0.3116333208885524,
+            "projected": 0.31777716743398926,
+            "difference_equal_minus_projected": -0.006143846545436871,
+            "projected_gain_pct": -1.9714985958237947
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.29432139332844653,
+            "projected": 0.2916527965375677,
+            "difference_equal_minus_projected": 0.00266859679087883,
+            "projected_gain_pct": 0.9066948075707233
+          },
+          "excess": {
+            "equal": 0.29465220371756445,
+            "projected": 0.28755778320216807,
+            "difference_equal_minus_projected": 0.007094420515396382,
+            "projected_gain_pct": 2.407726949226098
+          },
+          "background_mass": {
+            "equal": 0.29394739541739723,
+            "projected": 0.29628241665694266,
+            "difference_equal_minus_projected": -0.0023350212395454317,
+            "projected_gain_pct": -0.7943670452428284
+          },
+          "background_arc": {
+            "equal": 0.28375778195638107,
+            "projected": 0.31777716743398926,
+            "difference_equal_minus_projected": -0.03401938547760819,
+            "projected_gain_pct": -11.988881941161216
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.29432139332844653,
+            "projected": 0.29067312687942776,
+            "difference_equal_minus_projected": 0.0036482664490187777,
+            "projected_gain_pct": 1.2395519088031473
+          },
+          "excess": {
+            "equal": 0.29465220371756445,
+            "projected": 0.2869192923172001,
+            "difference_equal_minus_projected": 0.007732911400364362,
+            "projected_gain_pct": 2.624420012068417
+          },
+          "background_mass": {
+            "equal": 0.29394739541739723,
+            "projected": 0.29491702710408935,
+            "difference_equal_minus_projected": -0.0009696316866921184,
+            "projected_gain_pct": -0.3298657180871659
+          },
+          "background_arc": {
+            "equal": 0.28375778195638107,
+            "projected": 0.30137094305022016,
+            "difference_equal_minus_projected": -0.01761316109383909,
+            "projected_gain_pct": -6.207111210273897
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.29432164342950257,
+          "projected": 0.2906853550499188,
+          "gain_pct": 1.2354811345889767
+        },
+        "excess": {
+          "equal": 0.29465652764031836,
+          "projected": 0.28704881478987815,
+          "gain_pct": 2.5818918424664252
+        },
+        "background_mass": {
+          "equal": 0.29394303985655423,
+          "projected": 0.2947966481212413,
+          "gain_pct": -0.29039920969165356
+        },
+        "background_arc": {
+          "equal": 0.2837175216430959,
+          "projected": 0.29995063641021114,
+          "gain_pct": -5.721576402156718
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.006362064304856474,
+          "G_equal": 0.003693467513977644,
+          "G_projected": 0.0009796696581399478,
+          "D_all_phase": 0.0036482664490187777,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "excess": {
+          "D_raw": 0.010043888080787156,
+          "G_equal": 0.002949467565390773,
+          "G_projected": 0.0006384908849679793,
+          "D_all_phase": 0.007732911400364362,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_mass": {
+          "D_raw": 0.0021995759237587453,
+          "G_equal": 0.004534597163304177,
+          "G_projected": 0.0013653895528533133,
+          "D_all_phase": -0.0009696316866921184,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_arc": {
+          "D_raw": -0.004879647307451329,
+          "G_equal": 0.02913973817015686,
+          "G_projected": 0.016406224383769097,
+          "D_all_phase": -0.01761316109383909,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.2943218378518579,
+            "projected": 0.29067388496777774,
+            "gain_pct": 1.2394434985542222
+          },
+          "8192": {
+            "equal": 0.2943218991221156,
+            "projected": 0.29067426228055904,
+            "gain_pct": 1.239335860646623
+          }
+        },
+        "excess": {
+          "4096": {
+            "equal": 0.2946513990923199,
+            "projected": 0.2869191551423919,
+            "gain_pct": 2.6242006566903617
+          },
+          "8192": {
+            "equal": 0.29465137342556336,
+            "projected": 0.286919953431174,
+            "gain_pct": 2.6239212478480183
+          }
+        },
+        "background_mass": {
+          "4096": {
+            "equal": 0.2939492522649043,
+            "projected": 0.2949187962136592,
+            "gain_pct": -0.3298337863710998
+          },
+          "8192": {
+            "equal": 0.2939494117698486,
+            "projected": 0.29491869818425837,
+            "gain_pct": -0.32974599560303164
+          }
+        },
+        "background_arc": {
+          "4096": {
+            "equal": 0.28375864672109535,
+            "projected": 0.30137461878159716,
+            "gain_pct": -6.208082912735497
+          },
+          "8192": {
+            "equal": 0.28375886291227387,
+            "projected": 0.3013747473773166,
+            "gain_pct": -6.208047313217784
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.2395519088031473,
+          "half_gain_pct": 1.2354811345889767,
+          "difference_range_all_grids_and_integrals": [
+            0.003635233770309776,
+            0.0036482664490187777
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 2.501010560318484e-07,
+            "projected_mass": 1.2228170491068724e-05
+          }
+        },
+        "excess": {
+          "main_gain_pct": 2.624420012068417,
+          "half_gain_pct": 2.5818918424664252,
+          "difference_range_all_grids_and_integrals": [
+            0.007607712850440207,
+            0.007732911400364362
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 4.323922753901588e-06,
+            "projected_mass": 0.0001295224726780564
+          }
+        },
+        "background_mass": {
+          "main_gain_pct": -0.3298657180871659,
+          "half_gain_pct": -0.29039920969165356,
+          "difference_range_all_grids_and_integrals": [
+            -0.0009696316866921184,
+            -0.0008536082646870558
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -4.355560842994599e-06,
+            "projected_mass": -0.00012037898284805726
+          }
+        },
+        "background_arc": {
+          "main_gain_pct": -6.207111210273897,
+          "half_gain_pct": -5.721576402156718,
+          "difference_range_all_grids_and_integrals": [
+            -0.017615972060501806,
+            -0.016233114767115253
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -4.026031328518975e-05,
+            "projected_mass": -0.001420306640009028
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "tight_u__seed_36__ones",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.28643621772399325,
+            "projected": 0.28270168434717186,
+            "difference_equal_minus_projected": 0.0037345333768213917,
+            "projected_gain_pct": 1.3037923089809635
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.28643621772399325,
+            "projected": 0.28270168434717186,
+            "difference_equal_minus_projected": 0.0037345333768213917,
+            "projected_gain_pct": 1.3037923089809635
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.28643621772399325,
+            "projected": 0.28270168434717186,
+            "difference_equal_minus_projected": 0.0037345333768213917,
+            "projected_gain_pct": 1.3037923089809635
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.28624479375642786,
+            "projected": 0.28268524289066255,
+            "difference_equal_minus_projected": 0.003559550865765315,
+            "projected_gain_pct": 1.2435338365644537
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.28624491457773626,
+          "projected": 0.2826555536501723,
+          "gain_pct": 1.2539474920834563
+        },
+        "excess": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_mass": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_arc": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.0037345333768213917,
+          "G_equal": 0.00019142396756538504,
+          "G_projected": 1.6441456509308505e-05,
+          "D_all_phase": 0.003559550865765315,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.28624479589215773,
+            "projected": 0.2826900828407148,
+            "gain_pct": 1.2418437304209298
+          },
+          "8192": {
+            "equal": 0.28624496110306186,
+            "projected": 0.28269016840712574,
+            "gain_pct": 1.2418708375642709
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.2435338365644537,
+          "half_gain_pct": 1.2539474920834563,
+          "difference_range_all_grids_and_integrals": [
+            0.003554713051442948,
+            0.003589360927563956
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 1.2082130840251892e-07,
+            "projected_mass": -2.9689240490238245e-05
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "tight_u__seed_36__hotspot5",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.28650717863274505,
+            "projected": 0.28251916625399465,
+            "difference_equal_minus_projected": 0.003988012378750405,
+            "projected_gain_pct": 1.3919415205516994
+          },
+          "excess": {
+            "equal": 0.28665819526943226,
+            "projected": 0.2787105956259844,
+            "difference_equal_minus_projected": 0.007947599643447878,
+            "projected_gain_pct": 2.7725004115015333
+          },
+          "background_mass": {
+            "equal": 0.28643621772399325,
+            "projected": 0.28430876797429283,
+            "difference_equal_minus_projected": 0.0021274497497004163,
+            "projected_gain_pct": 0.7427307086390881
+          },
+          "background_arc": {
+            "equal": 0.27913547781618836,
+            "projected": 0.2863349599862213,
+            "difference_equal_minus_projected": -0.007199482170032967,
+            "projected_gain_pct": -2.5792071385400352
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.28650717863274505,
+            "projected": 0.28251916625399465,
+            "difference_equal_minus_projected": 0.003988012378750405,
+            "projected_gain_pct": 1.3919415205516994
+          },
+          "excess": {
+            "equal": 0.28665819526943226,
+            "projected": 0.2787105956259844,
+            "difference_equal_minus_projected": 0.007947599643447878,
+            "projected_gain_pct": 2.7725004115015333
+          },
+          "background_mass": {
+            "equal": 0.28643621772399325,
+            "projected": 0.28430876797429283,
+            "difference_equal_minus_projected": 0.0021274497497004163,
+            "projected_gain_pct": 0.7427307086390881
+          },
+          "background_arc": {
+            "equal": 0.27913547781618836,
+            "projected": 0.2863349599862213,
+            "difference_equal_minus_projected": -0.007199482170032967,
+            "projected_gain_pct": -2.5792071385400352
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.28650717863274505,
+            "projected": 0.28251916625399465,
+            "difference_equal_minus_projected": 0.003988012378750405,
+            "projected_gain_pct": 1.3919415205516994
+          },
+          "excess": {
+            "equal": 0.28665819526943226,
+            "projected": 0.2787105956259844,
+            "difference_equal_minus_projected": 0.007947599643447878,
+            "projected_gain_pct": 2.7725004115015333
+          },
+          "background_mass": {
+            "equal": 0.28643621772399325,
+            "projected": 0.28430876797429283,
+            "difference_equal_minus_projected": 0.0021274497497004163,
+            "projected_gain_pct": 0.7427307086390881
+          },
+          "background_arc": {
+            "equal": 0.27913547781618836,
+            "projected": 0.2863349599862213,
+            "difference_equal_minus_projected": -0.007199482170032967,
+            "projected_gain_pct": -2.5792071385400352
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.2855483543858968,
+            "projected": 0.28251916625399465,
+            "difference_equal_minus_projected": 0.003029188131902172,
+            "projected_gain_pct": 1.0608319345480994
+          },
+          "excess": {
+            "equal": 0.283632270236585,
+            "projected": 0.2787105956259844,
+            "difference_equal_minus_projected": 0.004921674610600613,
+            "projected_gain_pct": 1.7352308348042755
+          },
+          "background_mass": {
+            "equal": 0.286448699377434,
+            "projected": 0.28430876797429283,
+            "difference_equal_minus_projected": 0.002139931403141171,
+            "projected_gain_pct": 0.7470557233431626
+          },
+          "background_arc": {
+            "equal": 0.28642939632671766,
+            "projected": 0.2863349599862213,
+            "difference_equal_minus_projected": 9.443634049632887e-05,
+            "projected_gain_pct": 0.03297019848780096
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.28554838661140597,
+          "projected": 0.2825444083912802,
+          "gain_pct": 1.052003219410163
+        },
+        "excess": {
+          "equal": 0.2835560660334848,
+          "projected": 0.27886324484981123,
+          "gain_pct": 1.6549888173153806
+        },
+        "background_mass": {
+          "equal": 0.2864845541876119,
+          "projected": 0.28427414304765275,
+          "gain_pct": 0.7715638095139948
+        },
+        "background_arc": {
+          "equal": 0.2867514454713206,
+          "projected": 0.285831881638852,
+          "gain_pct": 0.3206832422264376
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.003988012378750405,
+          "G_equal": 0.0009588242468482333,
+          "G_projected": 0.0,
+          "D_all_phase": 0.003029188131902172,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "excess": {
+          "D_raw": 0.007947599643447878,
+          "G_equal": 0.0030259250328472653,
+          "G_projected": 0.0,
+          "D_all_phase": 0.004921674610600613,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_mass": {
+          "D_raw": 0.0021274497497004163,
+          "G_equal": -1.2481653440754581e-05,
+          "G_projected": 0.0,
+          "D_all_phase": 0.002139931403141171,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_arc": {
+          "D_raw": -0.007199482170032967,
+          "G_equal": -0.007293918510529296,
+          "G_projected": 0.0,
+          "D_all_phase": 9.443634049632887e-05,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.28554941586347593,
+            "projected": 0.28252215066433134,
+            "gain_pct": 1.060154576044364
+          },
+          "8192": {
+            "equal": 0.28554911664687493,
+            "projected": 0.2825219411012137,
+            "gain_pct": 1.060124290072589
+          }
+        },
+        "excess": {
+          "4096": {
+            "equal": 0.2836337995666302,
+            "projected": 0.2787127303735591,
+            "gain_pct": 1.7350080281652311
+          },
+          "8192": {
+            "equal": 0.283633511330755,
+            "projected": 0.278713494551288,
+            "gain_pct": 1.7346387443370745
+          }
+        },
+        "background_mass": {
+          "4096": {
+            "equal": 0.28644954084042423,
+            "projected": 0.28431215128035453,
+            "gain_pct": 0.7461661672763521
+          },
+          "8192": {
+            "equal": 0.28644923660884897,
+            "projected": 0.2843114844559183,
+            "gain_pct": 0.746293541654571
+          }
+        },
+        "background_arc": {
+          "4096": {
+            "equal": 0.2864293104561053,
+            "projected": 0.286338891781891,
+            "gain_pct": 0.03156753548383398
+          },
+          "8192": {
+            "equal": 0.28642928898845216,
+            "projected": 0.2863383270047741,
+            "gain_pct": 0.03175722147665954
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.0608319345480994,
+          "half_gain_pct": 1.052003219410163,
+          "difference_range_all_grids_and_integrals": [
+            0.003002078589103785,
+            0.003029188131902172
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 3.222550915005229e-08,
+            "projected_mass": 2.524213728555269e-05
+          }
+        },
+        "excess": {
+          "main_gain_pct": 1.7352308348042755,
+          "half_gain_pct": 1.6549888173153806,
+          "difference_range_all_grids_and_integrals": [
+            0.0046923025039160016,
+            0.004921674610600613
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -7.620420310017195e-05,
+            "projected_mass": 0.00015264922382685064
+          }
+        },
+        "background_mass": {
+          "main_gain_pct": 0.7470557233431626,
+          "half_gain_pct": 0.7715638095139948,
+          "difference_range_all_grids_and_integrals": [
+            0.0021373895600697024,
+            0.002210411139959123
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 3.5854810177871066e-05,
+            "projected_mass": -3.46249266400811e-05
+          }
+        },
+        "background_arc": {
+          "main_gain_pct": 0.03297019848780096,
+          "half_gain_pct": 0.3206832422264376,
+          "difference_range_all_grids_and_integrals": [
+            9.041867421433203e-05,
+            0.0009195638324686062
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 0.00032204914460293166,
+            "projected_mass": -0.0005030783473693456
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "tight_u__seed_59__ones",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.28885149134732035,
+            "projected": 0.2821363969859205,
+            "difference_equal_minus_projected": 0.0067150943613998315,
+            "projected_gain_pct": 2.3247566872782657
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.28885149134732035,
+            "projected": 0.2821363969859205,
+            "difference_equal_minus_projected": 0.0067150943613998315,
+            "projected_gain_pct": 2.3247566872782657
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.28885149134732035,
+            "projected": 0.2821363969859205,
+            "difference_equal_minus_projected": 0.0067150943613998315,
+            "projected_gain_pct": 2.3247566872782657
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.2874091291852832,
+            "projected": 0.2817243913246762,
+            "difference_equal_minus_projected": 0.005684737860607025,
+            "projected_gain_pct": 1.9779252930209679
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.28740842862162064,
+          "projected": 0.28169135818656726,
+          "gain_pct": 1.9891798102344518
+        },
+        "excess": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_mass": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_arc": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.0067150943613998315,
+          "G_equal": 0.0014423621620371363,
+          "G_projected": 0.00041200566124433013,
+          "D_all_phase": 0.005684737860607025,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.28740961432922724,
+            "projected": 0.28172022360942434,
+            "gain_pct": 1.9795408490704534
+          },
+          "8192": {
+            "equal": 0.2874098124374965,
+            "projected": 0.28172086920903056,
+            "gain_pct": 1.9793837865932826
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.9779252930209679,
+          "half_gain_pct": 1.9891798102344518,
+          "difference_range_all_grids_and_integrals": [
+            0.005684737860607025,
+            0.005722556283582536
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -7.005636625811995e-07,
+            "projected_mass": -3.303313810892883e-05
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "tight_u__seed_59__hotspot5",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.2878795385628842,
+            "projected": 0.28121553117322223,
+            "difference_equal_minus_projected": 0.006664007389661941,
+            "projected_gain_pct": 2.3148596885103943
+          },
+          "excess": {
+            "equal": 0.2863590430821347,
+            "projected": 0.27481543609128917,
+            "difference_equal_minus_projected": 0.011543606990845556,
+            "projected_gain_pct": 4.031165513964429
+          },
+          "background_mass": {
+            "equal": 0.28885149134732035,
+            "projected": 0.28530669113673285,
+            "difference_equal_minus_projected": 0.0035448002105875065,
+            "projected_gain_pct": 1.2272050921576074
+          },
+          "background_arc": {
+            "equal": 0.2910026184264059,
+            "projected": 0.30018110808712856,
+            "difference_equal_minus_projected": -0.009178489660722655,
+            "projected_gain_pct": -3.154091777715011
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.2878795385628842,
+            "projected": 0.28121553117322223,
+            "difference_equal_minus_projected": 0.006664007389661941,
+            "projected_gain_pct": 2.3148596885103943
+          },
+          "excess": {
+            "equal": 0.2863590430821347,
+            "projected": 0.27481543609128917,
+            "difference_equal_minus_projected": 0.011543606990845556,
+            "projected_gain_pct": 4.031165513964429
+          },
+          "background_mass": {
+            "equal": 0.28885149134732035,
+            "projected": 0.28530669113673285,
+            "difference_equal_minus_projected": 0.0035448002105875065,
+            "projected_gain_pct": 1.2272050921576074
+          },
+          "background_arc": {
+            "equal": 0.2910026184264059,
+            "projected": 0.30018110808712856,
+            "difference_equal_minus_projected": -0.009178489660722655,
+            "projected_gain_pct": -3.154091777715011
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.2878795385628842,
+            "projected": 0.28121553117322223,
+            "difference_equal_minus_projected": 0.006664007389661941,
+            "projected_gain_pct": 2.3148596885103943
+          },
+          "excess": {
+            "equal": 0.2863590430821347,
+            "projected": 0.27481543609128917,
+            "difference_equal_minus_projected": 0.011543606990845556,
+            "projected_gain_pct": 4.031165513964429
+          },
+          "background_mass": {
+            "equal": 0.28885149134732035,
+            "projected": 0.28530669113673285,
+            "difference_equal_minus_projected": 0.0035448002105875065,
+            "projected_gain_pct": 1.2272050921576074
+          },
+          "background_arc": {
+            "equal": 0.2910026184264059,
+            "projected": 0.30018110808712856,
+            "difference_equal_minus_projected": -0.009178489660722655,
+            "projected_gain_pct": -3.154091777715011
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.28613402845662644,
+            "projected": 0.2804833874864329,
+            "difference_equal_minus_projected": 0.005650640970193521,
+            "projected_gain_pct": 1.9748231277043207
+          },
+          "excess": {
+            "equal": 0.284097469752577,
+            "projected": 0.27371206121739655,
+            "difference_equal_minus_projected": 0.01038540853518044,
+            "projected_gain_pct": 3.6555793841547355
+          },
+          "background_mass": {
+            "equal": 0.28743586652726183,
+            "projected": 0.2848118511384732,
+            "difference_equal_minus_projected": 0.0026240153887886475,
+            "projected_gain_pct": 0.9129046491279726
+          },
+          "background_arc": {
+            "equal": 0.30096295216738844,
+            "projected": 0.30535047286423217,
+            "difference_equal_minus_projected": -0.0043875206968437275,
+            "projected_gain_pct": -1.4578275050955416
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.2861334381912113,
+          "projected": 0.2805002969943215,
+          "gain_pct": 1.9687112532179452
+        },
+        "excess": {
+          "equal": 0.2841027906618033,
+          "projected": 0.27374013688801785,
+          "gain_pct": 3.6475015784414295
+        },
+        "background_mass": {
+          "equal": 0.28743149763657283,
+          "projected": 0.28482162285273,
+          "gain_pct": 0.9079988815779511
+        },
+        "background_arc": {
+          "equal": 0.3010150856787364,
+          "projected": 0.3045344041748486,
+          "gain_pct": -1.1691502066006931
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.006664007389661941,
+          "G_equal": 0.0017455101062577305,
+          "G_projected": 0.0007321436867893105,
+          "D_all_phase": 0.005650640970193521,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "excess": {
+          "D_raw": 0.011543606990845556,
+          "G_equal": 0.002261573329557731,
+          "G_projected": 0.0011033748738926152,
+          "D_all_phase": 0.01038540853518044,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_mass": {
+          "D_raw": 0.0035448002105875065,
+          "G_equal": 0.0014156248200585253,
+          "G_projected": 0.0004948399982596663,
+          "D_all_phase": 0.0026240153887886475,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_arc": {
+          "D_raw": -0.009178489660722655,
+          "G_equal": -0.009960333740982541,
+          "G_projected": -0.005169364777103613,
+          "D_all_phase": -0.0043875206968437275,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.286133670567365,
+            "projected": 0.2804780103273792,
+            "gain_pct": 1.9765797673413947
+          },
+          "8192": {
+            "equal": 0.28613430478014146,
+            "projected": 0.28047829071350383,
+            "gain_pct": 1.9766990438226442
+          }
+        },
+        "excess": {
+          "4096": {
+            "equal": 0.2840948451609993,
+            "projected": 0.2737038679878288,
+            "gain_pct": 3.6575732893998247
+          },
+          "8192": {
+            "equal": 0.2840969714242289,
+            "projected": 0.27370513776572425,
+            "gain_pct": 3.657847391476416
+          }
+        },
+        "background_mass": {
+          "4096": {
+            "equal": 0.287436958076407,
+            "projected": 0.28480827571844414,
+            "gain_pct": 0.9145248320030278
+          },
+          "8192": {
+            "equal": 0.28743663797239627,
+            "projected": 0.28480792183376835,
+            "gain_pct": 0.9145376028508809
+          }
+        },
+        "background_arc": {
+          "4096": {
+            "equal": 0.30096277555810375,
+            "projected": 0.3053469186625119,
+            "gain_pct": -1.4567060980475823
+          },
+          "8192": {
+            "equal": 0.30096193805504134,
+            "projected": 0.3053461396288814,
+            "gain_pct": -1.4567295792195023
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.9748231277043207,
+          "half_gain_pct": 1.9687112532179452,
+          "difference_range_all_grids_and_integrals": [
+            0.00563314119688979,
+            0.005656014066637627
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -5.902654151568321e-07,
+            "projected_mass": 1.6909507888573927e-05
+          }
+        },
+        "excess": {
+          "main_gain_pct": 3.6555793841547355,
+          "half_gain_pct": 3.6475015784414295,
+          "difference_range_all_grids_and_integrals": [
+            0.010362653773785424,
+            0.010391833658504657
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 5.320909226280701e-06,
+            "projected_mass": 2.807567062129701e-05
+          }
+        },
+        "background_mass": {
+          "main_gain_pct": 0.9129046491279726,
+          "half_gain_pct": 0.9079988815779511,
+          "difference_range_all_grids_and_integrals": [
+            0.002609874783842836,
+            0.002628716138627918
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -4.368890688999372e-06,
+            "projected_mass": 9.771714256812114e-06
+          }
+        },
+        "background_arc": {
+          "main_gain_pct": -1.4578275050955416,
+          "half_gain_pct": -1.1691502066006931,
+          "difference_range_all_grids_and_integrals": [
+            -0.0043875206968437275,
+            -0.0035155666363406723
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 5.213351134797373e-05,
+            "projected_mass": -0.0008160686893835534
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "wide_u__seed_35__ones",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.29772508642300066,
+            "projected": 0.28731828503192564,
+            "difference_equal_minus_projected": 0.010406801391075027,
+            "projected_gain_pct": 3.495439875795113
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.29772508642300066,
+            "projected": 0.28731828503192564,
+            "difference_equal_minus_projected": 0.010406801391075027,
+            "projected_gain_pct": 3.495439875795113
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.29772508642300066,
+            "projected": 0.28731828503192564,
+            "difference_equal_minus_projected": 0.010406801391075027,
+            "projected_gain_pct": 3.495439875795113
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.28789944947594553,
+            "projected": 0.28394247456875066,
+            "difference_equal_minus_projected": 0.003956974907194877,
+            "projected_gain_pct": 1.3744294802916908
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.2879009028598391,
+          "projected": 0.2839061997530552,
+          "gain_pct": 1.387527120305237
+        },
+        "excess": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_mass": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_arc": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.010406801391075027,
+          "G_equal": 0.009825636947055127,
+          "G_projected": 0.0033758104631749775,
+          "D_all_phase": 0.003956974907194877,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.2879028687769581,
+            "projected": 0.28394148625664817,
+            "gain_pct": 1.375944094318439
+          },
+          "8192": {
+            "equal": 0.28790346303639147,
+            "projected": 0.2839425829982403,
+            "gain_pct": 1.3757667227679324
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.3744294802916908,
+          "half_gain_pct": 1.387527120305237,
+          "difference_range_all_grids_and_integrals": [
+            0.003956974907194877,
+            0.003998611656428341
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 1.4533838935681942e-06,
+            "projected_mass": -3.627481569545843e-05
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "wide_u__seed_35__hotspot5",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.296322327802944,
+            "projected": 0.28516135037835555,
+            "difference_equal_minus_projected": 0.011160977424588436,
+            "projected_gain_pct": 3.766498970003553
+          },
+          "excess": {
+            "equal": 0.2937903524625404,
+            "projected": 0.27580116698692186,
+            "difference_equal_minus_projected": 0.017989185475618563,
+            "projected_gain_pct": 6.1231368984154315
+          },
+          "background_mass": {
+            "equal": 0.29772508642300066,
+            "projected": 0.29034705567655633,
+            "difference_equal_minus_projected": 0.007378030746444331,
+            "projected_gain_pct": 2.4781353950005416
+          },
+          "background_arc": {
+            "equal": 0.290075031927705,
+            "projected": 0.3046670089180838,
+            "difference_equal_minus_projected": -0.014591976990378785,
+            "projected_gain_pct": -5.030414680438792
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.296322327802944,
+            "projected": 0.28516135037835555,
+            "difference_equal_minus_projected": 0.011160977424588436,
+            "projected_gain_pct": 3.766498970003553
+          },
+          "excess": {
+            "equal": 0.2937903524625404,
+            "projected": 0.27580116698692186,
+            "difference_equal_minus_projected": 0.017989185475618563,
+            "projected_gain_pct": 6.1231368984154315
+          },
+          "background_mass": {
+            "equal": 0.29772508642300066,
+            "projected": 0.29034705567655633,
+            "difference_equal_minus_projected": 0.007378030746444331,
+            "projected_gain_pct": 2.4781353950005416
+          },
+          "background_arc": {
+            "equal": 0.290075031927705,
+            "projected": 0.3046670089180838,
+            "difference_equal_minus_projected": -0.014591976990378785,
+            "projected_gain_pct": -5.030414680438792
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.296322327802944,
+            "projected": 0.28516135037835555,
+            "difference_equal_minus_projected": 0.011160977424588436,
+            "projected_gain_pct": 3.766498970003553
+          },
+          "excess": {
+            "equal": 0.2937903524625404,
+            "projected": 0.27580116698692186,
+            "difference_equal_minus_projected": 0.017989185475618563,
+            "projected_gain_pct": 6.1231368984154315
+          },
+          "background_mass": {
+            "equal": 0.29772508642300066,
+            "projected": 0.29034705567655633,
+            "difference_equal_minus_projected": 0.007378030746444331,
+            "projected_gain_pct": 2.4781353950005416
+          },
+          "background_arc": {
+            "equal": 0.290075031927705,
+            "projected": 0.3046670089180838,
+            "difference_equal_minus_projected": -0.014591976990378785,
+            "projected_gain_pct": -5.030414680438792
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.2893098139281197,
+            "projected": 0.28301018512355236,
+            "difference_equal_minus_projected": 0.006299628804567359,
+            "projected_gain_pct": 2.1774680640915034
+          },
+          "excess": {
+            "equal": 0.2914676848024707,
+            "projected": 0.27567293369902096,
+            "difference_equal_minus_projected": 0.015794751103449745,
+            "projected_gain_pct": 5.419040232248709
+          },
+          "background_mass": {
+            "equal": 0.28811431572493323,
+            "projected": 0.28707515073322665,
+            "difference_equal_minus_projected": 0.001039164991706587,
+            "projected_gain_pct": 0.3606780138959469
+          },
+          "background_arc": {
+            "equal": 0.2937202589661286,
+            "projected": 0.3026938248979041,
+            "difference_equal_minus_projected": -0.008973565931775507,
+            "projected_gain_pct": -3.0551402764527475
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.28931088774179375,
+          "projected": 0.28307794128631114,
+          "gain_pct": 2.1544112992544675
+        },
+        "excess": {
+          "equal": 0.2914350691009193,
+          "projected": 0.2757322594879494,
+          "gain_pct": 5.388098852143393
+        },
+        "background_mass": {
+          "equal": 0.28813405411923493,
+          "projected": 0.28714757747052555,
+          "gain_pct": 0.3423672539245072
+        },
+        "background_arc": {
+          "equal": 0.2936120386719848,
+          "projected": 0.30420403221460235,
+          "gain_pct": -3.6074793085887764
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.011160977424588436,
+          "G_equal": 0.007012513874824267,
+          "G_projected": 0.002151165254803189,
+          "D_all_phase": 0.006299628804567359,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "excess": {
+          "D_raw": 0.017989185475618563,
+          "G_equal": 0.0023226676600697216,
+          "G_projected": 0.00012823328790090294,
+          "D_all_phase": 0.015794751103449745,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_mass": {
+          "D_raw": 0.007378030746444331,
+          "G_equal": 0.009610770698067428,
+          "G_projected": 0.0032719049433296843,
+          "D_all_phase": 0.001039164991706587,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_arc": {
+          "D_raw": -0.014591976990378785,
+          "G_equal": -0.0036452270384235708,
+          "G_projected": 0.001973184020179708,
+          "D_all_phase": -0.008973565931775507,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.28931225716984005,
+            "projected": 0.283007862883397,
+            "gain_pct": 2.1790968513103985
+          },
+          "8192": {
+            "equal": 0.28931233947804086,
+            "projected": 0.28300906344438226,
+            "gain_pct": 2.1787097104225057
+          }
+        },
+        "excess": {
+          "4096": {
+            "equal": 0.2914668828646894,
+            "projected": 0.27567398627988526,
+            "gain_pct": 5.418418871325373
+          },
+          "8192": {
+            "equal": 0.29146745726397044,
+            "projected": 0.27567516657165186,
+            "gain_pct": 5.418200316619268
+          }
+        },
+        "background_mass": {
+          "4096": {
+            "equal": 0.28811855716395496,
+            "projected": 0.2870709577242783,
+            "gain_pct": 0.36360012697151545
+          },
+          "8192": {
+            "equal": 0.2881183671476858,
+            "projected": 0.28707216848526973,
+            "gain_pct": 0.3631141855943521
+          }
+        },
+        "background_arc": {
+          "4096": {
+            "equal": 0.29372065578169615,
+            "projected": 0.3026900791826348,
+            "gain_pct": -3.0537257848167982
+          },
+          "8192": {
+            "equal": 0.2937209621429376,
+            "projected": 0.3026902004750979,
+            "gain_pct": -3.0536595913081337
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 2.1774680640915034,
+          "half_gain_pct": 2.1544112992544675,
+          "difference_range_all_grids_and_integrals": [
+            0.006232946455482613,
+            0.006304394286443027
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 1.07381367403514e-06,
+            "projected_mass": 6.775616275878082e-05
+          }
+        },
+        "excess": {
+          "main_gain_pct": 5.419040232248709,
+          "half_gain_pct": 5.388098852143393,
+          "difference_range_all_grids_and_integrals": [
+            0.015702809612969937,
+            0.015794751103449745
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -3.2615701551386156e-05,
+            "projected_mass": 5.932578892842155e-05
+          }
+        },
+        "background_mass": {
+          "main_gain_pct": 0.3606780138959469,
+          "half_gain_pct": 0.3423672539245072,
+          "difference_range_all_grids_and_integrals": [
+            0.000986476648709378,
+            0.0010475994396766386
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 1.9738394301693774e-05,
+            "projected_mass": 7.242673729890292e-05
+          }
+        },
+        "background_arc": {
+          "main_gain_pct": -3.0551402764527475,
+          "half_gain_pct": -3.6074793085887764,
+          "difference_range_all_grids_and_integrals": [
+            -0.010591993542617528,
+            -0.008969238332160345
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -0.00010822029414375711,
+            "projected_mass": 0.0015102073166982644
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "wide_u__seed_36__ones",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.29343146338684295,
+            "projected": 0.28851746319293015,
+            "difference_equal_minus_projected": 0.004914000193912804,
+            "projected_gain_pct": 1.6746671052907753
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.29343146338684295,
+            "projected": 0.28851746319293015,
+            "difference_equal_minus_projected": 0.004914000193912804,
+            "projected_gain_pct": 1.6746671052907753
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.29343146338684295,
+            "projected": 0.28851746319293015,
+            "difference_equal_minus_projected": 0.004914000193912804,
+            "projected_gain_pct": 1.6746671052907753
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.29152269701179506,
+            "projected": 0.287865899175844,
+            "difference_equal_minus_projected": 0.0036567978359510755,
+            "projected_gain_pct": 1.2543784320858973
+          },
+          "excess": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_mass": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          },
+          "background_arc": {
+            "equal": null,
+            "projected": null,
+            "difference_equal_minus_projected": null,
+            "projected_gain_pct": null
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.29152181080088324,
+          "projected": 0.28780803327721055,
+          "gain_pct": 1.273927845559828
+        },
+        "excess": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_mass": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        },
+        "background_arc": {
+          "equal": null,
+          "projected": null,
+          "gain_pct": null
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.004914000193912804,
+          "G_equal": 0.0019087663750478878,
+          "G_projected": 0.0006515640170861592,
+          "D_all_phase": 0.0036567978359510755,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.2915258612963055,
+            "projected": 0.28787955863110337,
+            "gain_pct": 1.2507647345550663
+          },
+          "8192": {
+            "equal": 0.2915264433503083,
+            "projected": 0.28787922909649805,
+            "gain_pct": 1.2510749323098767
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.2543784320858973,
+          "half_gain_pct": 1.273927845559828,
+          "difference_range_all_grids_and_integrals": [
+            0.0036463026652021058,
+            0.00371377752367269
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -8.862109118212835e-07,
+            "projected_mass": -5.786589863343572e-05
+          }
+        }
+      }
+    },
+    {
+      "condition_key": "wide_u__seed_36__hotspot5",
+      "policies": {
+        "P0": {
+          "demand": {
+            "equal": 0.29414953776346997,
+            "projected": 0.2907942587544166,
+            "difference_equal_minus_projected": 0.003355279009053358,
+            "projected_gain_pct": 1.1406711819317519
+          },
+          "excess": {
+            "equal": 0.29544537452668007,
+            "projected": 0.2912980956782562,
+            "difference_equal_minus_projected": 0.004147278848423863,
+            "projected_gain_pct": 1.403737951581755
+          },
+          "background_mass": {
+            "equal": 0.293431463386843,
+            "projected": 0.29051506279758066,
+            "difference_equal_minus_projected": 0.002916400589262347,
+            "projected_gain_pct": 0.9938949816767036
+          },
+          "background_arc": {
+            "equal": 0.29026462887762594,
+            "projected": 0.2931153907932198,
+            "difference_equal_minus_projected": -0.002850761915593858,
+            "projected_gain_pct": -0.9821251478752254
+          }
+        },
+        "P1": {
+          "demand": {
+            "equal": 0.29414953776346997,
+            "projected": 0.2907942587544166,
+            "difference_equal_minus_projected": 0.003355279009053358,
+            "projected_gain_pct": 1.1406711819317519
+          },
+          "excess": {
+            "equal": 0.29544537452668007,
+            "projected": 0.2912980956782562,
+            "difference_equal_minus_projected": 0.004147278848423863,
+            "projected_gain_pct": 1.403737951581755
+          },
+          "background_mass": {
+            "equal": 0.293431463386843,
+            "projected": 0.29051506279758066,
+            "difference_equal_minus_projected": 0.002916400589262347,
+            "projected_gain_pct": 0.9938949816767036
+          },
+          "background_arc": {
+            "equal": 0.29026462887762594,
+            "projected": 0.2931153907932198,
+            "difference_equal_minus_projected": -0.002850761915593858,
+            "projected_gain_pct": -0.9821251478752254
+          }
+        },
+        "P2": {
+          "demand": {
+            "equal": 0.29414953776346997,
+            "projected": 0.2907942587544166,
+            "difference_equal_minus_projected": 0.003355279009053358,
+            "projected_gain_pct": 1.1406711819317519
+          },
+          "excess": {
+            "equal": 0.29544537452668007,
+            "projected": 0.2912980956782562,
+            "difference_equal_minus_projected": 0.004147278848423863,
+            "projected_gain_pct": 1.403737951581755
+          },
+          "background_mass": {
+            "equal": 0.293431463386843,
+            "projected": 0.29051506279758066,
+            "difference_equal_minus_projected": 0.002916400589262347,
+            "projected_gain_pct": 0.9938949816767036
+          },
+          "background_arc": {
+            "equal": 0.29026462887762594,
+            "projected": 0.2931153907932198,
+            "difference_equal_minus_projected": -0.002850761915593858,
+            "projected_gain_pct": -0.9821251478752254
+          }
+        },
+        "P3": {
+          "demand": {
+            "equal": 0.29411879140603775,
+            "projected": 0.2905706430620176,
+            "difference_equal_minus_projected": 0.0035481483440201744,
+            "projected_gain_pct": 1.2063657432625154
+          },
+          "excess": {
+            "equal": 0.29837482378008,
+            "projected": 0.29231313517218155,
+            "difference_equal_minus_projected": 0.006061688607898463,
+            "projected_gain_pct": 2.031568391429127
+          },
+          "background_mass": {
+            "equal": 0.29176035562102176,
+            "projected": 0.28960505930077013,
+            "difference_equal_minus_projected": 0.0021552963202516318,
+            "projected_gain_pct": 0.7387214468065789
+          },
+          "background_arc": {
+            "equal": 0.2957837507185023,
+            "projected": 0.29589401515126385,
+            "difference_equal_minus_projected": -0.00011026443276151987,
+            "projected_gain_pct": -0.03727873234877552
+          }
+        }
+      },
+      "half_P3": {
+        "demand": {
+          "equal": 0.2941191651667761,
+          "projected": 0.29054591946080643,
+          "gain_pct": 1.2148972692559887
+        },
+        "excess": {
+          "equal": 0.29849905234007273,
+          "projected": 0.29269925168780897,
+          "gain_pct": 1.942987961535031
+        },
+        "background_mass": {
+          "equal": 0.29169209654135014,
+          "projected": 0.2893526729497683,
+          "gain_pct": 0.8020181620691291
+        },
+        "background_arc": {
+          "equal": 0.2963312303234494,
+          "projected": 0.29764440629780836,
+          "gain_pct": -0.4431446435549954
+        }
+      },
+      "accounting": {
+        "demand": {
+          "D_raw": 0.003355279009053358,
+          "G_equal": 3.074635743222087e-05,
+          "G_projected": 0.00022361569239903734,
+          "D_all_phase": 0.0035481483440201744,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "excess": {
+          "D_raw": 0.004147278848423863,
+          "G_equal": -0.0029294492533999406,
+          "G_projected": -0.0010150394939253404,
+          "D_all_phase": 0.006061688607898463,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_mass": {
+          "D_raw": 0.002916400589262347,
+          "G_equal": 0.0016711077658212448,
+          "G_projected": 0.0009100034968105297,
+          "D_all_phase": 0.0021552963202516318,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        },
+        "background_arc": {
+          "D_raw": -0.002850761915593858,
+          "G_equal": -0.005519121840876384,
+          "G_projected": -0.002778624358044046,
+          "D_all_phase": -0.00011026443276151987,
+          "identity_residual": 0.0,
+          "scope": "same-score accounting, not causal decomposition"
+        }
+      },
+      "integration": {
+        "demand": {
+          "4096": {
+            "equal": 0.29412210516179876,
+            "projected": 0.29058333774875345,
+            "gain_pct": 1.2031626834367366
+          },
+          "8192": {
+            "equal": 0.29412225720059326,
+            "projected": 0.29058375612506354,
+            "gain_pct": 1.2030715081573853
+          }
+        },
+        "excess": {
+          "4096": {
+            "equal": 0.2983772686585707,
+            "projected": 0.2923298312520722,
+            "gain_pct": 2.026775509302805
+          },
+          "8192": {
+            "equal": 0.2983781319204165,
+            "projected": 0.29233081004473094,
+            "gain_pct": 2.026730925877141
+          }
+        },
+        "background_mass": {
+          "4096": {
+            "equal": 0.29176414803236805,
+            "projected": 0.2896155354984338,
+            "gain_pct": 0.7364210265121109
+          },
+          "8192": {
+            "equal": 0.29176390603987135,
+            "projected": 0.2896156433608178,
+            "gain_pct": 0.7363017270408952
+          }
+        },
+        "background_arc": {
+          "4096": {
+            "equal": 0.2957838476852467,
+            "projected": 0.29590507685379613,
+            "gain_pct": -0.040985729781450604
+          },
+          "8192": {
+            "equal": 0.29578366325314037,
+            "projected": 0.29590518729124254,
+            "gain_pct": -0.04108544629057765
+          }
+        }
+      },
+      "grid": {
+        "demand": {
+          "main_gain_pct": 1.2063657432625154,
+          "half_gain_pct": 1.2148972692559887,
+          "difference_range_all_grids_and_integrals": [
+            0.003538501075529721,
+            0.0035732457059696743
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 3.7376073835915236e-07,
+            "projected_mass": -2.47236012111407e-05
+          }
+        },
+        "excess": {
+          "main_gain_pct": 2.031568391429127,
+          "half_gain_pct": 1.942987961535031,
+          "difference_range_all_grids_and_integrals": [
+            0.005784026426371491,
+            0.006061688607898463
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 0.00012422855999272286,
+            "projected_mass": 0.00038611651562742155
+          }
+        },
+        "background_mass": {
+          "main_gain_pct": 0.7387214468065789,
+          "half_gain_pct": 0.8020181620691291,
+          "difference_range_all_grids_and_integrals": [
+            0.0021482626790535475,
+            0.002339423591581846
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": -6.82590796716176e-05,
+            "projected_mass": -0.00025238635100183204
+          }
+        },
+        "background_arc": {
+          "main_gain_pct": -0.03727873234877552,
+          "half_gain_pct": -0.4431446435549954,
+          "difference_range_all_grids_and_integrals": [
+            -0.0013244355796996343,
+            -0.00011026443276151987
+          ],
+          "sign_stable": true,
+          "main_to_half_cost_change": {
+            "equal_arc": 0.0005474796049470543,
+            "projected_mass": 0.0017503911465445166
+          }
+        }
+      }
+    }
+  ],
+  "offline_wall_s": 28.649311500019394,
+  "execution_wall_s": {
+    "first": 4.2519738000119105,
+    "remaining": 20.454003699996974
+  }
+}

@@ -1,0 +1,34 @@
+schema_version: 1
+protocol: step1_nonconvex_phase_attribution_v1
+source_run: runs/step1_nonconvex_demand_pilot_v1
+source_report: reports/step1_nonconvex_demand_pilot_v1
+baseline_commit: 4b2b199f64dd75d8c14c228f00e6cd347e5a4ef9
+purpose: paired_development_phase_opportunity_and_target_gap_layout_attribution
+methods: [equal_arc, projected_mass]
+policies: [P0, P1, P2, P3]
+main_policy_rows: 96
+phase_bins: 256
+phase_unit: metres_of_original_curve_arc
+grids:
+  main: {offset_bins: 0.0, contains_zero: true}
+  half: {offset_bins: 0.5, contains_zero: false}
+phase_rule: signed_index_times_L_over_256_with_index_le_128_positive
+grid_origin: relative_to_saved_original_sites_no_layout_realignment
+selection:
+  P0: saved_original_no_postprocessing
+  P1: if_original_domain_invalid_min_absolute_shift_then_signed_shift_no_demand_score
+  P2: if_original_domain_invalid_min_original_demand_cost_then_absolute_shift_then_signed_shift
+  P3: always_min_original_demand_cost_then_absolute_shift_then_signed_shift
+half_grid_scope: P3_only_24_offline_rows_not_union_with_main_grid
+gap_limit_m: 1.94
+separation_m: 0.75
+main_quadrature_samples: 2048
+fine_quadrature_samples: [4096, 8192]
+fine_density: same_saved_sampled_rho_and_excess_rho_periodic_linear_interpolation
+fine_window: original_2048_window_as_fixed_arc_bins_no_new_thresholding
+mass_invariance_check_phase_fractions: [0.0, 0.00390625, 0.137, -0.5]
+execute: main_P3_only_maximum_24_rows
+method_label_suffix: +all_phase_256
+path_policy: check_selected_only_no_reselection_after_path_failure
+reuse: exact_targets_input_assignment_config_and_unchanged_execution_source_only
+runtime: {first_physical_input_workers: 1, remaining_workers_max: 2, numerical_threads: 1, priority_stall_counterfactual: 0}

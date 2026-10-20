@@ -1,0 +1,338 @@
+[
+  {
+    "condition_key": "elongated__seed_36__ones",
+    "input_sha256": "fff42ff7b7f6b398ab4b0ddd85280d8e419c06a49fe5d350338a35d591d6ec3b",
+    "physical_sha256": "6703ca80307ac8d0193eb9eb8fbdc32740fd0bd87f75484b82f746da90f85a01",
+    "curve_array_sha256": "d4179757b0521b04a0c5f6fa40942cac63226177098578a2ca5f8bf51c81f15f",
+    "guide_initial_array_sha256": "83463b05375c3cf8d775d49c82ed1132a7312a18178760a5d268666908365a84",
+    "raw_rho_sha256": "89bc8deda819f79e1773e251e9bd45da1b276253a01703e014c63928b3be9fe9",
+    "demand_sha256": "92d94ef15071b3bd1facf58a185452e21786b003cf6e884a02699aa0beb0fe53",
+    "window_sha256": "f421ecfd4eec8429fb8fcdfca39f1d30948c23bd8823cbccd8e5d439e0bfbc88",
+    "domain_sha256": "bdb6481aaf887473fe3e9cb83409f2ad8b1e1afcc923c5459ed3644e51ce65f9",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_36__ones__equal_arc\\original\\targets.npz",
+        "sha256": "459a1c03f16bc7286dbf9d033596ab6bd258ff5fb3033f7814121f6fa294c84c"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_36__ones__projected_mass\\original\\targets.npz",
+        "sha256": "da6de526900660432bd2ac262799948f234f352b47dc86bb9a842b4acba061e2"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_36__ones__mass_cvt\\original\\targets.npz",
+        "sha256": "4e13ee84169ee155af8d7ebf7ba4fac0f714e98ec729ba0070047c8d3f180455"
+      }
+    },
+    "count": 11,
+    "length_m": 20.487884791937013,
+    "person_count": 16
+  },
+  {
+    "condition_key": "elongated__seed_36__hotspot5",
+    "input_sha256": "6e699c8696e35861bb46d9233358b5e46995292a0d21e21aa1ee5d2eea784473",
+    "physical_sha256": "6703ca80307ac8d0193eb9eb8fbdc32740fd0bd87f75484b82f746da90f85a01",
+    "curve_array_sha256": "d4179757b0521b04a0c5f6fa40942cac63226177098578a2ca5f8bf51c81f15f",
+    "guide_initial_array_sha256": "83463b05375c3cf8d775d49c82ed1132a7312a18178760a5d268666908365a84",
+    "raw_rho_sha256": "481c49ef246f759eb8d15d9193390ce36be5bd9283199d1fdb6f26169f17fa48",
+    "demand_sha256": "833bda32f21d968a5f71d6a13296e179dcbfc964ada681a937e58f3c1c3207c3",
+    "window_sha256": "392eba47da62e6ee0614cd607b0217bdfb671ac9cb681b651037927443b39a78",
+    "domain_sha256": "bdb6481aaf887473fe3e9cb83409f2ad8b1e1afcc923c5459ed3644e51ce65f9",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_36__hotspot5__equal_arc\\original\\targets.npz",
+        "sha256": "459a1c03f16bc7286dbf9d033596ab6bd258ff5fb3033f7814121f6fa294c84c"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_36__hotspot5__projected_mass\\original\\targets.npz",
+        "sha256": "f13a673559312109dd27978f7beaa98a5bf0851e5b8c8bdf43b9092e0cff9da6"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_36__hotspot5__mass_cvt\\original\\targets.npz",
+        "sha256": "fdc92fa9eb6cb81d16cf52b2526a9b296bbadab5dc523a87d794fc81a3c61373"
+      }
+    },
+    "count": 11,
+    "length_m": 20.487884791937013,
+    "person_count": 16
+  },
+  {
+    "condition_key": "elongated__seed_51__ones",
+    "input_sha256": "55a4f1f13c8a229fc465669bdcc67c3c0f1993a7faa78ba31aa707619966a1b6",
+    "physical_sha256": "85a0d4c3a32af2974eab542e8032e3878610135f2ae48f410c04fc6471e803dd",
+    "curve_array_sha256": "8bd0eb91a034ad4950bcc87075136642cc50d3fee9aaabf61663d076e3779608",
+    "guide_initial_array_sha256": "bc0b538ccd4c0aab386f8544d4e807de5c766c13044d8b5aa3af3534dcb3e72a",
+    "raw_rho_sha256": "679987d8729b60991cb0ef0c44c3358bfd7678fedcf69d2033a6e95662d5a502",
+    "demand_sha256": "92d94ef15071b3bd1facf58a185452e21786b003cf6e884a02699aa0beb0fe53",
+    "window_sha256": "f421ecfd4eec8429fb8fcdfca39f1d30948c23bd8823cbccd8e5d439e0bfbc88",
+    "domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_51__ones__equal_arc\\original\\targets.npz",
+        "sha256": "953cb3251cc550deb2891cecb98e17dc715c33f62bde490067e31df03b57f9dd"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_51__ones__projected_mass\\original\\targets.npz",
+        "sha256": "53c26726be893324eb60941b1ff68d910a0470bdb3f5c917f7c65e8dbcf536e4"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_51__ones__mass_cvt\\original\\targets.npz",
+        "sha256": "d3909ec11f068bdac64839acc864780ea6e051bddfebf0ad6bfb501efbeb2b97"
+      }
+    },
+    "count": 11,
+    "length_m": 20.735250954732287,
+    "person_count": 16
+  },
+  {
+    "condition_key": "elongated__seed_51__hotspot5",
+    "input_sha256": "713d09f975254de971078eb7be112c6568b4814edf42a279fd883ef0ed8f6a51",
+    "physical_sha256": "85a0d4c3a32af2974eab542e8032e3878610135f2ae48f410c04fc6471e803dd",
+    "curve_array_sha256": "8bd0eb91a034ad4950bcc87075136642cc50d3fee9aaabf61663d076e3779608",
+    "guide_initial_array_sha256": "bc0b538ccd4c0aab386f8544d4e807de5c766c13044d8b5aa3af3534dcb3e72a",
+    "raw_rho_sha256": "265d00d6de387c4ce6de0d46020a0deefe40cc9dd5d37709966d02fc9251b901",
+    "demand_sha256": "833bda32f21d968a5f71d6a13296e179dcbfc964ada681a937e58f3c1c3207c3",
+    "window_sha256": "6459d2961c2396a7e843f07bd520afe036339905a44ef4a9b728eb9ea1bae9c8",
+    "domain_sha256": "126110f56a62cb268f697d98031b4369cf30fa768b32ba1fd0b96ed2575ce40c",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_51__hotspot5__equal_arc\\original\\targets.npz",
+        "sha256": "953cb3251cc550deb2891cecb98e17dc715c33f62bde490067e31df03b57f9dd"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_51__hotspot5__projected_mass\\original\\targets.npz",
+        "sha256": "9b1c08527fba784d4cbd2a98a91fbc0804b6da1657ab299758b3cbdf7a5e69d0"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\elongated__seed_51__hotspot5__mass_cvt\\original\\targets.npz",
+        "sha256": "102a8c7a8d89796b36c0b5b50816c6b514d9f0618bde130641200b04c6a92324"
+      }
+    },
+    "count": 11,
+    "length_m": 20.735250954732287,
+    "person_count": 16
+  },
+  {
+    "condition_key": "tight_u__seed_36__ones",
+    "input_sha256": "d14c18e81b827219a72548297bc1e3d39b16d6d4c1f5d43b087dbc87a37aeefa",
+    "physical_sha256": "4c5f60a784c3bab74c86909c52075090c8127eb06b127ece3f667b00b00fc2ea",
+    "curve_array_sha256": "1459803f272e3d7892adc4ccb04196008c4e4d6cba32c34a76ca3f9b89a9af20",
+    "guide_initial_array_sha256": "1894d027297d875fb2f9d4393670d84d8bd736a1773a7637dae5b8152bd450cd",
+    "raw_rho_sha256": "02cf490d82981cfe60f3e1da39caf329ac6fdd3b6b83de7ad79fe8e0ed8d68f7",
+    "demand_sha256": "153be051a6b2d54e5124e454e2e17bf94896c748ff6268ef34c92fbd88b9666c",
+    "window_sha256": "f421ecfd4eec8429fb8fcdfca39f1d30948c23bd8823cbccd8e5d439e0bfbc88",
+    "domain_sha256": "7ee04c82a4b131c60977dee970b881b790514a1fa528d2f2c0944f43777394f0",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_36__ones__equal_arc\\original\\targets.npz",
+        "sha256": "8c9ff74032643ccb5b6905cd3ac8378854840416c7c6267d99183c5c3508670a"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_36__ones__projected_mass\\original\\targets.npz",
+        "sha256": "0e934a8ae7d14da379def084a1b0a4d935a0e7c8e611947944e99d7ed10a0015"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_36__ones__mass_cvt\\original\\targets.npz",
+        "sha256": "e7785f7d243720d5d6d22b05989edb4627640ab73432e2cd47348c1db11fa7a4"
+      }
+    },
+    "count": 13,
+    "length_m": 24.173036127180048,
+    "person_count": 22
+  },
+  {
+    "condition_key": "tight_u__seed_36__hotspot5",
+    "input_sha256": "7356e37033e23f2ebdbea9b838c076c54cef9a5fb31e92e166f0c4526002e02b",
+    "physical_sha256": "4c5f60a784c3bab74c86909c52075090c8127eb06b127ece3f667b00b00fc2ea",
+    "curve_array_sha256": "1459803f272e3d7892adc4ccb04196008c4e4d6cba32c34a76ca3f9b89a9af20",
+    "guide_initial_array_sha256": "1894d027297d875fb2f9d4393670d84d8bd736a1773a7637dae5b8152bd450cd",
+    "raw_rho_sha256": "baf25de56e17692e152098fc530b6c3cd6eba8f3335d55b218de6b783936ca18",
+    "demand_sha256": "1fbb27400895c9e0dd9faeab0ed5690f420a85a5a88c44895bffea21fa437d7d",
+    "window_sha256": "4577850875a28eb3a85ff0242f43cd5286971dd5dd9a5e1757568b2c09114c59",
+    "domain_sha256": "7ee04c82a4b131c60977dee970b881b790514a1fa528d2f2c0944f43777394f0",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_36__hotspot5__equal_arc\\original\\targets.npz",
+        "sha256": "8c9ff74032643ccb5b6905cd3ac8378854840416c7c6267d99183c5c3508670a"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_36__hotspot5__projected_mass\\original\\targets.npz",
+        "sha256": "d8367219895996e5b24c0ea56beed26ec52f4b75282050cd6efa3bf7fc3748ae"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_36__hotspot5__mass_cvt\\original\\targets.npz",
+        "sha256": "7511de8385b725709f74310e755a2e14a19b786a032a7e7c10acd44c15ff1cbf"
+      }
+    },
+    "count": 13,
+    "length_m": 24.173036127180048,
+    "person_count": 22
+  },
+  {
+    "condition_key": "tight_u__seed_59__ones",
+    "input_sha256": "e81ff3d0cbea1475758f1f204ed9f1778146a2a384a3a97c51f7770a2cc79f99",
+    "physical_sha256": "454c5d292470056272bd0ce04308eb24db70ed4944660782dfc0f2ddff381e69",
+    "curve_array_sha256": "07b3b3787163b8f7587f2641b932189276718d6345bb4933f1e64d05ebe6851b",
+    "guide_initial_array_sha256": "6bb92276ffc7ffd106265609cae03b69b0b1735f6f21ff929e59cf86cc234aa5",
+    "raw_rho_sha256": "939d25ddfe13b6ce5db0db78753cc328aac1d9e1950d0d1ba45c3ad27cde7f64",
+    "demand_sha256": "153be051a6b2d54e5124e454e2e17bf94896c748ff6268ef34c92fbd88b9666c",
+    "window_sha256": "f421ecfd4eec8429fb8fcdfca39f1d30948c23bd8823cbccd8e5d439e0bfbc88",
+    "domain_sha256": "779626badcd72cf6ee894d7c79f219b9e6569b3e95d54295771661a19bae2297",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_59__ones__equal_arc\\original\\targets.npz",
+        "sha256": "e05cd06b3fa69c168076040a3404c3760f441a138ada3a6b4c9acd11e6f0763a"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_59__ones__projected_mass\\original\\targets.npz",
+        "sha256": "dcf594d6c7ce563fa3ff682392e1325cac4feeec05b224172b61f1206be75067"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_59__ones__mass_cvt\\original\\targets.npz",
+        "sha256": "4d1cec68c8c76922cc5592804d85193a1053a4482cc6f1448482208fd9dc4c89"
+      }
+    },
+    "count": 13,
+    "length_m": 24.255261798716337,
+    "person_count": 22
+  },
+  {
+    "condition_key": "tight_u__seed_59__hotspot5",
+    "input_sha256": "f776874daebe6c296961726843015b35e9fcf1e9a7118ccb8601b76588ff5582",
+    "physical_sha256": "454c5d292470056272bd0ce04308eb24db70ed4944660782dfc0f2ddff381e69",
+    "curve_array_sha256": "07b3b3787163b8f7587f2641b932189276718d6345bb4933f1e64d05ebe6851b",
+    "guide_initial_array_sha256": "6bb92276ffc7ffd106265609cae03b69b0b1735f6f21ff929e59cf86cc234aa5",
+    "raw_rho_sha256": "fb272cc178bf6157714b577956d284bcf7d8fde6fc02ff287f85aa11ac4e7aac",
+    "demand_sha256": "63cba8ea8a76efb2c091a423c3d11a615acd9e9ec30c2532cefe86e7497a1d16",
+    "window_sha256": "88101567c392e73c96cdc9ad336d7b1d04a06647b0f30a7635434d5cfa2253e3",
+    "domain_sha256": "779626badcd72cf6ee894d7c79f219b9e6569b3e95d54295771661a19bae2297",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_59__hotspot5__equal_arc\\original\\targets.npz",
+        "sha256": "e05cd06b3fa69c168076040a3404c3760f441a138ada3a6b4c9acd11e6f0763a"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_59__hotspot5__projected_mass\\original\\targets.npz",
+        "sha256": "4765eb580f9a6a7abe5ee193852375c3b26887343d3dffabf10ed99d52571532"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\tight_u__seed_59__hotspot5__mass_cvt\\original\\targets.npz",
+        "sha256": "a886ac552068450b1738fdd379fbd7861eea0d257416bada847e559ce6615f6d"
+      }
+    },
+    "count": 13,
+    "length_m": 24.255261798716337,
+    "person_count": 22
+  },
+  {
+    "condition_key": "wide_u__seed_35__ones",
+    "input_sha256": "55bb49548609666ff59afdd51da40a8bdb1a49d58f798d76e7a6a0f5057de388",
+    "physical_sha256": "36df0dda712d03a869dc97e9bced8ee3b5d92c8a3299f692b9eff2b50a502972",
+    "curve_array_sha256": "c426c323ddf23358e94151aee45129b0d07e1ad305f35b027086f3a8d0190be2",
+    "guide_initial_array_sha256": "146aeb9493da43f5940df6de0fbab3f2ce1bf4333c98ea0a03b339d2218c4c7b",
+    "raw_rho_sha256": "029ea57b3ba5f064b46f0f7fc04e233d8699b6d730ff33477d4f1c91512a0094",
+    "demand_sha256": "7e8994ff68ed7af3ca788137d9890b1e62517efd973e9ddf74f363c5b00f035c",
+    "window_sha256": "f421ecfd4eec8429fb8fcdfca39f1d30948c23bd8823cbccd8e5d439e0bfbc88",
+    "domain_sha256": "081487ebeca3cf30b99c216df6d77311b026219dc7acc7afeb3cdc6ea15d30c6",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_35__ones__equal_arc\\original\\targets.npz",
+        "sha256": "6e98500fbf1e784a9dbeb69371c76494d935ca5d90d5b5c7d57920f67a0a741c"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_35__ones__projected_mass\\original\\targets.npz",
+        "sha256": "1f7a1399f46ba4757e43528554bfff2ae01fbbeb2262b2734c173b4d0de87b0c"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_35__ones__mass_cvt\\original\\targets.npz",
+        "sha256": "95746f13c2e27d8d4cb4e224996719e7ff73b25d1dc7a4e631df2c7b8e81b798"
+      }
+    },
+    "count": 19,
+    "length_m": 35.616713420306645,
+    "person_count": 26
+  },
+  {
+    "condition_key": "wide_u__seed_35__hotspot5",
+    "input_sha256": "8d6f103905471f45fdbfb63da46f99ee01b6978b918ef475f2dce16f6f38b15e",
+    "physical_sha256": "36df0dda712d03a869dc97e9bced8ee3b5d92c8a3299f692b9eff2b50a502972",
+    "curve_array_sha256": "c426c323ddf23358e94151aee45129b0d07e1ad305f35b027086f3a8d0190be2",
+    "guide_initial_array_sha256": "146aeb9493da43f5940df6de0fbab3f2ce1bf4333c98ea0a03b339d2218c4c7b",
+    "raw_rho_sha256": "b7408f92e75ca09db928831bb55e34359c53b2b612743bcb5c717351cb4a80af",
+    "demand_sha256": "0bea4de4f71ba5e83a37d613fae1c5928bfb084d531ff0e1eb2e714da79d1a1a",
+    "window_sha256": "901b45538bb04aee6b255632e93be158a1902ae306687061e6d97e5f6948578e",
+    "domain_sha256": "081487ebeca3cf30b99c216df6d77311b026219dc7acc7afeb3cdc6ea15d30c6",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_35__hotspot5__equal_arc\\original\\targets.npz",
+        "sha256": "6e98500fbf1e784a9dbeb69371c76494d935ca5d90d5b5c7d57920f67a0a741c"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_35__hotspot5__projected_mass\\original\\targets.npz",
+        "sha256": "ee106cf75480b81d0096b96cd06b0fa45e83bb852716264690486ccac591ba45"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_35__hotspot5__mass_cvt\\original\\targets.npz",
+        "sha256": "9ae552c769cf9d2629bf82034b0a0435cd47076f34597f0135e35f2e08113560"
+      }
+    },
+    "count": 19,
+    "length_m": 35.616713420306645,
+    "person_count": 26
+  },
+  {
+    "condition_key": "wide_u__seed_36__ones",
+    "input_sha256": "656f599663d5451524c836c8d90cd501e034edb5aac70496a7ffea7a0548a9dc",
+    "physical_sha256": "9b1183ffe3cad401b417efc6a9e899a186b2fa4d9b8f38a6d074706a0a1ca5f2",
+    "curve_array_sha256": "4571e46768f9ea69b36c224eb019faf2d4661dc75787240c7e6ac81e8af285a3",
+    "guide_initial_array_sha256": "b4925c8569e393d909c7cfa91d41b46e8d0c51f9a40afc0de294a72c8662994f",
+    "raw_rho_sha256": "b53442437917973d2347f2aea8e0f841689aca09afd9d490ae3d95b90364fc96",
+    "demand_sha256": "7e8994ff68ed7af3ca788137d9890b1e62517efd973e9ddf74f363c5b00f035c",
+    "window_sha256": "f421ecfd4eec8429fb8fcdfca39f1d30948c23bd8823cbccd8e5d439e0bfbc88",
+    "domain_sha256": "a6d8c52f8752bf58a13d053cac79375583c87f76f5f5a0e80e6bb0481c0e231e",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_36__ones__equal_arc\\original\\targets.npz",
+        "sha256": "9f3c4788e12bb7b0355100586beda9ea98ac44fa3177250211b2acdb54a29166"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_36__ones__projected_mass\\original\\targets.npz",
+        "sha256": "f920acc5d35a96a4807639d05ff16504a38ba90155ae041876e2d595387c2924"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_36__ones__mass_cvt\\original\\targets.npz",
+        "sha256": "a91475ec8266ad7706e26f1ba1eab4890a32c29d71837256f47e4fd2169e1032"
+      }
+    },
+    "count": 19,
+    "length_m": 35.72381193984236,
+    "person_count": 26
+  },
+  {
+    "condition_key": "wide_u__seed_36__hotspot5",
+    "input_sha256": "087a053bcb5ee0a5c7f796901656a61d6cdc0bc4438e3a689027f5c15d0826bc",
+    "physical_sha256": "9b1183ffe3cad401b417efc6a9e899a186b2fa4d9b8f38a6d074706a0a1ca5f2",
+    "curve_array_sha256": "4571e46768f9ea69b36c224eb019faf2d4661dc75787240c7e6ac81e8af285a3",
+    "guide_initial_array_sha256": "b4925c8569e393d909c7cfa91d41b46e8d0c51f9a40afc0de294a72c8662994f",
+    "raw_rho_sha256": "d85fd443b79c5ae27a13952a2eb69bff9bd5656501a652c6e2b305f12da537d2",
+    "demand_sha256": "0bea4de4f71ba5e83a37d613fae1c5928bfb084d531ff0e1eb2e714da79d1a1a",
+    "window_sha256": "3e6d78fec8e63fff9370ccf860ecc1abe993719e5a3f873bf0d2fddebdebd6c6",
+    "domain_sha256": "a6d8c52f8752bf58a13d053cac79375583c87f76f5f5a0e80e6bb0481c0e231e",
+    "original_target_files": {
+      "equal_arc": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_36__hotspot5__equal_arc\\original\\targets.npz",
+        "sha256": "9f3c4788e12bb7b0355100586beda9ea98ac44fa3177250211b2acdb54a29166"
+      },
+      "projected_mass": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_36__hotspot5__projected_mass\\original\\targets.npz",
+        "sha256": "e79b95adac5497cfc8646cbf2dd07d7ca0a797b5b2f0402bf64701cd263de3d7"
+      },
+      "mass_cvt": {
+        "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\plans\\wide_u__seed_36__hotspot5__mass_cvt\\original\\targets.npz",
+        "sha256": "551935367006979e82e9ac0c701bdd1daadbbdd5f1e2308af86b8a57f0d9d492"
+      }
+    },
+    "count": 19,
+    "length_m": 35.72381193984236,
+    "person_count": 26
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "base_commit": "4b2b199f64dd75d8c14c228f00e6cd347e5a4ef9",
+  "provenance": {
+    "commit": "4b2b199f64dd75d8c14c228f00e6cd347e5a4ef9",
+    "dirty": true,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "f35d6f0744fdf416cbcf1d3eb60a534a293ea69ed6d0895e551d81bbd036c5ea",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "ec6ddde966b9dd1940d7cc1d6afa1232bcebc42673bf61424e35835ca1bcd353",
+    "task_sha256": "b0c21202c8b2f69c7d4da9866ad919d214a552b731db3eb6a283ee8f75032c8c",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "udc_import_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "logical_cpus": 8,
+  "physical_cores": 8,
+  "memory_bytes": 33847832576,
+  "available_memory_at_summary_bytes": 17064300544,
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "jupedsim": "1.4.2",
+    "PedPy": "1.5.1",
+    "pytest": "9.1.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "baseline_tests": "180 passed in 25.34s",
+  "final_tests": "185 passed in 23.28s",
+  "pip_check": "No broken requirements found",
+  "new_source_file_sha256": "fede6ec0fed8a14adf575bcb4af1f74c7f5e0815ec18714548a7153c42a8f94a",
+  "config_sha256": "4409dda0c4b7bce72e89eadc01608695cfd7802431830c341faa0065de080167",
+  "protocol_sha256": "a933760570113232f2db32747f55e7c290f23fd73b804fff92ee94ac722b9c36",
+  "target_freeze_sha256": "58ea8715b2befa3dcfc6228e2b58f51e24897c8ff1142a1aff0f22da5c503b94"
+}

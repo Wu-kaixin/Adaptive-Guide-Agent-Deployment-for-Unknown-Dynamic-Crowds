@@ -889,3 +889,5 @@ wide_u热点条件projected平均多3.7059 s、1.1143 m和0.4706次恢复，最�
 基线194 passed/32.62s，新增首四测试后的完整198 passed/25.02s，最终六项资源测试6 passed/1.70s；pip check通过。首次默认pytest临时目录因沙箱权限产生37项fixture错误（157项通过），改用仓库.tmp下的--basetemp后全部通过，没有修改测试标准。六项新增测试覆盖嵌套弧间隙／ID、规划与验收数量条件区别、自己的及共同目标子集、执行失败仍保留规划代价、差中差、整单元bootstrap缺失相关性和旧拒绝只读复判。
 
 [运行前协议](../reports/step1_nonconvex_resource_response_v1/PROTOCOL.zh.md)与配置预先固定360行主矩阵和60条N0−1共同诊断；人员零新增draw，首个接口物理输入elongated seed76，最多2 worker、各数值线程1，反事实0。此条为运行前验证，不是资源响应结果；不运行保留seed5000–5029。
+
+资源批次在52行时因两条wide_u seed77 N21恢复重指派被编排错误断言而停止。人员、初态、目标和物理安全未改变；只修正编排为连续恢复事件哈希链核对，并防止后续编排异常改写online metrics。原两行EXPERIMENT_ERROR及原停止现场保留，不能恢复成新增成功。补充提交后只继续未开始308行；详见[补充说明](../reports/step1_nonconvex_resource_response_v1/AMENDMENT.zh.md)。

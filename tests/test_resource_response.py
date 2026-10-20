@@ -78,3 +78,20 @@ def test_bootstrap_whole_unit_preserves_correlated_missing_N():
     # Same sampled indices carry all N, so missing-stratum replicates coincide.
     assert len({v['uncalculable'] for v in result['estimates'].values()})==1
     assert result['whole_physical_unit']
+
+
+def test_assignment_audit_allows_only_documented_recovery_transition():
+    import hashlib
+    from udc.experiments.demand_confirmation import assignment_trace_check
+    initial=np.array([0,1,2]); final=np.array([1,0,2]); targets=np.array([[0.,0.],[1.,0.],[2.,0.]])
+    def digest(x,dtype): return hashlib.sha256(np.ascontiguousarray(x,dtype=dtype).tobytes()).hexdigest()
+    h=digest(targets,np.float64)
+    event={'strategy':'reachable_reassignment','accepted':True,'installation_succeeded':True,
+        'before':{'assignment_sha256':digest(initial,np.int64),'targets_sha256':h},
+        'after':{'assignment_sha256':digest(final,np.int64),'targets_sha256':h}}
+    assert assignment_trace_check(initial,final,targets,[event])['accepted']
+    assert not assignment_trace_check(initial,final,targets,[])['accepted']
+    event['strategy']='path_recompute'
+    assert not assignment_trace_check(initial,final,targets,[event])['accepted']
+    event['strategy']='reachable_reassignment'; event['installation_succeeded']=False
+    assert not assignment_trace_check(initial,final,targets,[event])['accepted']

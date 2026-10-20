@@ -7,6 +7,7 @@ from collections import Counter
 from concurrent.futures import ProcessPoolExecutor, wait, FIRST_COMPLETED
 from dataclasses import replace
 import importlib.util
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -279,6 +280,26 @@ def independent_row(root,row):
     return replay
 
 
+def assignment_trace_check(initial, final, targets, events):
+    """Audit the unchanged controller's permitted recovery reassignment chain."""
+    def digest(value,dtype):
+        return hashlib.sha256(np.ascontiguousarray(value,dtype=dtype).tobytes()).hexdigest()
+    current=digest(initial,np.int64); target_hash=digest(targets,np.float64)
+    changes=0; valid=True
+    for event in events:
+        before,after=event['before'],event['after']
+        valid &= before['assignment_sha256']==current
+        valid &= before['targets_sha256']==after['targets_sha256']==target_hash
+        if after['assignment_sha256']!=current:
+            valid &= (event['strategy']=='reachable_reassignment' and event.get('accepted') is True
+                      and event.get('installation_succeeded') is True)
+            changes+=1
+        current=after['assignment_sha256']
+    valid &= current==digest(final,np.int64)
+    return {'accepted':bool(valid),'changes':changes,'events':len(events),
+            'initial_sha256':digest(initial,np.int64),'final_sha256':digest(final,np.int64)}
+
+
 def run_row(task, *, context=None):
     # Resource experiments supply immutable references and extended Guide starts;
     # the original planning, phase, navigation and execution path stays shared.
@@ -365,11 +386,13 @@ def run_row(task, *, context=None):
                 prescribed_boundary=boundary,prescribed_plan=plan,boundary_source='estimated_disk_union',method_label=row['method_label'])
             detail['timing']['runner_s']=perf_counter()-t
             actual=arrays(destination/'trajectory.npz')
+            detail['assignment_trace']=assignment_trace_check(nav.assignment,actual['assignment'],points,result.get('recovery_attempts',[]))
             detail['exact_pairing']=all(np.array_equal(a,v) for a,v in [(actual['positions'][0],data['guides']),
                 (actual['crowd_positions'],data['people']),(actual['crowd_radii'],data['radii']),
                 (actual['crowd_demand'],field['demand']),(actual['crowd_hotspot_mask'],field['hotspot_mask']),
-                (actual['room'],data['room']),(actual['targets'],points),(actual['assignment'],nav.assignment),
+                (actual['room'],data['room']),(actual['targets'],points),
                 (actual['boundary_crowd'],boundary.crowd),(actual['boundary_deployment'],boundary.deployment)])
+            detail['exact_pairing'] &= detail['assignment_trace']['accepted']
             if not detail['exact_pairing']: raise RuntimeError('Actual input/targets/assignment differ from frozen shared fields')
     except Exception as exc:
         status=str(exc).split(':')[0] if isinstance(exc,ValueError) else None
@@ -380,9 +403,8 @@ def run_row(task, *, context=None):
             else:
                 result=read(destination/'metrics.json') if (destination/'metrics.json').exists() else {}
                 result.update(termination_status='EXPERIMENT_ERROR',success=False)
-                write(destination/'metrics.json',result)
             _atomic_text(destination/'runner_error.txt',traceback.format_exc())
-            write(destination/'state.json',{'status':'error','success':False})
+            write(destination/'orchestration_error.json',{'status':'EXPERIMENT_ERROR','success':False})
     t=perf_counter(); replay=independent_row(root,row)
     detail['timing']['independent_rejudge_s']=perf_counter()-t
     write(destination/'independent_rejudge.json',replay)

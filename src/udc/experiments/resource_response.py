@@ -85,13 +85,52 @@ def verify_files(files):
 
 def locked(root,full=False):
     lock=read(root/'protocol.json')
-    if provenance({},None,'fixed_n',None)['source_sha256']!=lock['provenance']['source_sha256']:
+    current=provenance({},None,'fixed_n',None)['source_sha256']
+    amended=(root/'orchestration_amendment.json').exists()
+    amendment=read(root/'orchestration_amendment.json') if amended else None
+    expected=amendment['provenance']['source_sha256'] if amended else lock['provenance']['source_sha256']
+    if current!=expected:
         raise RuntimeError('Resource experiment source changed after freeze')
+    if amended:
+        verify_files(amendment['amendment_files'])
+        if sha(root/'protocol.json')!=amendment['original_protocol_sha256']: raise RuntimeError('Original protocol changed')
+        lock={**lock,'original_provenance':lock['provenance'],'provenance':amendment['provenance']}
     verify_files(lock['protocol_files'])
     if full:
         verify_files(lock['historical_files']); verify_files(read(root/'inputs_frozen.json')['files'])
+        if amended: verify_files(amendment['completed_files'])
         if sha(root/'manifest_360.json')!=lock['manifest_sha256']: raise RuntimeError('Manifest changed')
     return lock
+
+
+def amend(output):
+    """Checkpoint a diagnosed accounting-only correction, never retry old rows."""
+    root=Path(output).resolve(); lock=read(root/'protocol.json')
+    if (root/'orchestration_amendment.json').exists(): raise FileExistsError('Only one explicit amendment')
+    meta=provenance({},None,'fixed_n',None)
+    if meta['dirty']: raise RuntimeError('Commit amendment before continuation')
+    science_files(); verify_files(lock['historical_files']); verify_files(lock['protocol_files'])
+    verify_files(read(root/'inputs_frozen.json')['files'])
+    if sha(root/'manifest_360.json')!=lock['manifest_sha256']: raise RuntimeError('Manifest changed')
+    stopped=read(root/'run_stop.json'); details=[read(p) for p in (root/'results').glob('*/protocol_metrics.json')]
+    errors=[r for r in details if r['status']=='EXPERIMENT_ERROR']
+    if len(details)!=52 or {r['task_id'] for r in errors}!={f'wide_u__seed_77__N_21__{m}' for m in dc.METHODS}:
+        raise RuntimeError('Amendment only applies to the documented 52-row checkpoint')
+    diagnosis=[]
+    for r in errors:
+        d=root/'results'/r['task_id']; m=read(d/'metrics.json'); a=arrays(d/'trajectory.npz')
+        initial=arrays(root/'plans'/r['task_id']/'assignment.npz')['assignment']
+        trace=dc.assignment_trace_check(initial,a['assignment'],a['targets'],m['recovery_attempts'])
+        if not trace['accepted'] or not all(m['criteria'].values()): raise RuntimeError('Unexpected failure; cannot continue')
+        diagnosis.append({'task_id':r['task_id'],'status_retained':'EXPERIMENT_ERROR','no_retry':True,
+            'independent_physical_success':True,'trace':trace,'original_metrics_already_overwritten_by_old_wrapper':True})
+    completed={str(p.resolve()):sha(p) for p in root.rglob('*') if p.is_file()}
+    path='reports/step1_nonconvex_resource_response_v1/AMENDMENT.zh.md'
+    write(root/'orchestration_amendment.json',{'provenance':meta,'original_protocol_sha256':sha(root/'protocol.json'),
+        'original_provenance':lock['provenance'],'stop':stopped,'completed_files':completed,'completed_rows':52,
+        'diagnosis':diagnosis,'amendment_files':{str(Path(path).resolve()):sha(path)},
+        'policy':'no scientific changes, no rerun, original 2 errors retained; continue only unstarted rows'})
+    print(json.dumps({'checkpoint_rows':52,'retained_program_errors':2,'remaining_rows':308}),flush=True)
 
 
 def reuse_check(old,row,data,field,source,old_lock):
@@ -247,13 +286,15 @@ def run_row(task):
 def run(output,stage,workers):
     root=Path(output).resolve(); lock=locked(root,full=True)
     if not 1<=workers<=2 or (stage=='first' and workers!=1): raise ValueError('First unit serial; maximum two workers')
-    if (root/'run_stop.json').exists() or (root/(stage+'_freeze.json')).exists(): raise RuntimeError('Stage already attempted or experiment stopped')
+    if ((root/'run_stop.json').exists() and stage!='continue') or (root/(stage+'_freeze.json')).exists(): raise RuntimeError('Stage already attempted or experiment stopped')
+    if stage=='continue' and not (root/'orchestration_amendment.json').exists(): raise RuntimeError('Explicit committed amendment required')
     if stage=='remaining' and not read(root/'first_gate.json')['passed']: raise RuntimeError('First-unit gate failed')
     dc._official_monitor()
     if any(os.environ.get(k,'1')!='1' for k in ('UDC_COMPLETE_SEGMENT','UDC_VERTEX_ARRIVAL')): raise RuntimeError('Original switches required')
     os.environ.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1')
     rows=read(root/'manifest_360.json')['rows']
-    rows=[r for r in rows if (r['physical_key']==lock['spec']['first_unit'])==(stage=='first')]
+    rows=([r for r in rows if not (root/'results'/r['task_id']/'protocol_metrics.json').exists()] if stage=='continue' else
+          [r for r in rows if (r['physical_key']==lock['spec']['first_unit'])==(stage=='first')])
     write(root/(stage+'_freeze.json'),{'workers':workers,'numerical_threads':1,'counterfactual':os.environ['UDC_PRIORITY_STALL_COUNTERFACTUAL'],
         'tasks':[r['task_id'] for r in rows],'source':lock['provenance']})
     results=[]; stopped=None; start=perf_counter()
@@ -281,7 +322,8 @@ def run(output,stage,workers):
     write(root/(stage+'_summary.json'),{'expected':len(rows),'completed':len(results),'wall_s':perf_counter()-start,
         'outcomes':dict(Counter(r['status'] for r in results)),'stop_task':stopped})
     if stopped:
-        write(root/'run_stop.json',{'trigger':stopped}); raise RuntimeError('Safety/program/rejudge stop; retain all evidence')
+        write(root/('continuation_stop.json' if stage=='continue' else 'run_stop.json'),{'trigger':stopped})
+        raise RuntimeError('Safety/program/rejudge stop; retain all evidence')
     if stage=='first':
         write(root/'first_gate.json',{'passed':len(results)==6 and all(r['offline_consistent'] and r.get('exact_pairing',True) for r in results),
             'main_matrix_rows':6,'new_N_rows':4,'counted_once':True,'ID_mappings_checked_at_freeze':True})
@@ -321,10 +363,11 @@ def rejudge(output):
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__); p.add_argument('--stage',required=True,choices=['freeze','first','remaining','rejudge'])
+    p=argparse.ArgumentParser(description=__doc__); p.add_argument('--stage',required=True,choices=['freeze','first','remaining','amend','continue','rejudge'])
     p.add_argument('--output',default=OUTPUT); p.add_argument('--spec',default=SPEC); p.add_argument('--workers',type=int,default=1)
     a=p.parse_args()
     if a.stage=='freeze': freeze(a.output,a.spec)
+    elif a.stage=='amend': amend(a.output)
     elif a.stage=='rejudge': rejudge(a.output)
     else:
         try: run(a.output,a.stage,a.workers)

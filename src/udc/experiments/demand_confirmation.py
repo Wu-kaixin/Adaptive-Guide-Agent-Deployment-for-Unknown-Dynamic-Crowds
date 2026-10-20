@@ -279,16 +279,23 @@ def independent_row(root,row):
     return replay
 
 
-def run_row(task):
-    root_string,row=task; root=Path(root_string); lock=locked(root)
+def run_row(task, *, context=None):
+    # Resource experiments supply immutable references and extended Guide starts;
+    # the original planning, phase, navigation and execution path stays shared.
+    root_string,row=task; root=Path(root_string)
+    lock=locked(root) if context is None else context['lock']
     _official_monitor(); start=perf_counter()
-    frozen=read(root/'inputs_frozen.json'); source=frozen['sources'][row['physical_key']]
-    physical=root/'physical'/row['physical_key']; condition=root/'conditions'/row['condition_key']
+    frozen=read(root/'inputs_frozen.json') if context is None else context['frozen']
+    source=frozen['sources'][row['physical_key']]
+    physical=root/'physical'/row['physical_key'] if context is None else Path(context['physical'])
+    condition=root/'conditions'/row['condition_key'] if context is None else Path(context['condition'])
     destination=root/'results'/row['task_id']; plans=root/'plans'/row['task_id']
     if destination.exists() or plans.exists(): raise FileExistsError('Never overwrite/retry a confirmation row')
     plans.mkdir(parents=True)
     data=arrays(physical/'input.npz'); field=arrays(condition/'demand.npz'); data['demand']=field['demand']
-    cfgpath=condition/'input.yaml'
+    cfgpath=condition/'input.yaml' if context is None else Path(context['config'])
+    if context is not None:
+        data['guides']=arrays(context['guides'])['guides']
     detail={**row,'stage':'input','target_valid':False,'initial_paths_ok':False,'executed':False,'motion':None,
         'planned_cost':None,'fine_cost':None,'actual_cost':None,'recoveries':None,'timing':{},'phase':None,
         'source_commit':lock['provenance']['commit'],'source_sha256':lock['provenance']['source_sha256']}
@@ -300,11 +307,16 @@ def run_row(task):
                 'thread_environment':{k:os.environ.get(k) for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NUM_THREADS')},
                 'numeric_pools':threadpool_info()}
             # Verify only this row's frozen shared files; complete snapshot is checked before each stage.
-            for p in (physical/'input.npz',condition/'demand.npz',cfgpath):
-                if sha(p)!=frozen['files'][p.relative_to(root).as_posix()]: raise RuntimeError('Frozen shared input changed')
+            paths=(physical/'input.npz',condition/'demand.npz',cfgpath)
+            if context is not None: paths=(*paths,Path(context['guides']))
+            for p in paths:
+                key=p.relative_to(root).as_posix() if context is None else str(p.resolve())
+                if sha(p)!=frozen['files'][key]: raise RuntimeError('Frozen shared input changed')
             if source['status']!='ACCEPTED':
                 detail['stage']='input' if source['status']=='INITIALIZATION_INVALID' else 'boundary'
                 raise ValueError(source['reason'])
+            if context is not None and not context['initialization_accepted']:
+                raise ValueError('INITIALIZATION_INVALID: nested Guide starts fail original safety check')
             boundary=load_boundary(physical); domain=navigation_domain(data['room'],.55,Polygon(boundary.crowd),.55)
             detail['curve_sha256']=source['boundary_sha256']; detail['domain_sha256']=domain.geometry_sha256
             detail['stage']='resource'

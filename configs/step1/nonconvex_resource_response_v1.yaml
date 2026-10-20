@@ -1,0 +1,30 @@
+protocol: step1_nonconvex_resource_response_v1
+purpose: exposed_input_resource_response_development
+baseline_commit: 0dbfc940
+execution_commit: e9fe1bbb
+source_run: runs/step1_nonconvex_demand_confirmation_v1
+source_report: reports/step1_nonconvex_demand_confirmation_v1
+scenes: [elongated, tight_u, wide_u]
+seeds: [75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94]
+base_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+increments: [0, 2, 4]
+diagnostic_increment: -1
+methods: [equal_arc, projected_mass]
+demand: hotspot5
+initialization:
+  policy: nested_largest_periodic_arc_gap_midpoint
+  tie_break: exact_max_gap_then_smallest_start_arc
+  guide_ids: zero_based_original_rows_then_append
+  no_redraw_or_relocation: true
+first_unit: elongated__seed_76
+runtime: {maximum_workers: 2, numerical_threads: 1, counterfactual: 0}
+evaluation:
+  primary_samples: 2048
+  fine_samples: 8192
+  fine_evaluator: reports/step1_nonconvex_phase_attribution_v1/summarize.py
+statistics:
+  scene_weighting: equal
+  pairing: physical_input_all_N_methods_states_together
+  bootstrap_repetitions: 10000
+  bootstrap_rng_seed: 2026102002
+  confidence: 0.95

@@ -1,0 +1,26 @@
+{
+  "all_rows": 360,
+  "rows_identity_checks": 360,
+  "initial_physical_units": 60,
+  "old_60_personnel_hash_overlap": 0,
+  "new_personnel_hash_unique": 60,
+  "executed_rows": 276,
+  "executed_intervals": 62834,
+  "unsafe_intervals": 0,
+  "independent_rows": 360,
+  "integrated_targets": 276,
+  "main_and_fine_integrations_match": true,
+  "all_scientific_and_historical_locks_verified": true,
+  "protected_historical_files": 12788,
+  "frozen_input_files": 1284,
+  "manifest_sha256": "f4b3f991c0eb98e33baf5566093558c54569d00c6aaf29964045bdc3bc998a7f",
+  "protocol_sha256": "a06c11b2d3a056881cf8fbc9bbbe81cdc195776dec0eb61b1f0596dfafd03b43",
+  "inputs_lock_sha256": "4f7fb761035e10088b7f89f6f2c1b4ca7a73c2c83a89ae45118f3429acac93ae",
+  "recoveries": {
+    "0": 198,
+    "3": 76,
+    "2": 2
+  },
+  "failed_queries": 76,
+  "audit_script_sha256": "24e8276695693eb578e03f20c5c0cdbd9bb5c3f39f28dd6c9210e194f6dc0672"
+}

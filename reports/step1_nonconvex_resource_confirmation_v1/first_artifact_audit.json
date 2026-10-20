@@ -1,0 +1,8 @@
+{
+  "rows": 18,
+  "exact_pairing": true,
+  "domains_match_frozen": true,
+  "phase_candidates_256": true,
+  "legal_trace": true,
+  "single_source": true
+}

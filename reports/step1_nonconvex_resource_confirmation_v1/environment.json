@@ -1,0 +1,36 @@
+{
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "udc_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\demand_confirmation.py",
+  "provenance": {
+    "commit": "0433bb194c2d87f8dd61e26fb4d5fd8b6f1d1e0c",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "dcac16daf240271dd34e5694f4f127bbefbe2a9ffe687ab2384dff7327111169",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "5231507ab1c5a80a892e87bf8f6d37ddf1ac2101ef009404ea5f78cd5fd9d6c5",
+    "task_sha256": "2155316b56a57786028c65046b94bf908fba4b1b830d7c351ef64643a6429b7b",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "dependency_upgrade": false,
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "PyYAML": "6.0.3",
+    "jupedsim": "1.4.2",
+    "pedpy": "1.5.1",
+    "threadpoolctl": "3.7.0",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2"
+  }
+}

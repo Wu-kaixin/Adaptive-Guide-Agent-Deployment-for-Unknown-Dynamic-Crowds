@@ -1,0 +1,9 @@
+{
+  "expected": 18,
+  "completed": 18,
+  "wall_s": 46.26485580000008,
+  "outcomes": {
+    "SUCCESS": 18
+  },
+  "stop_task": null
+}

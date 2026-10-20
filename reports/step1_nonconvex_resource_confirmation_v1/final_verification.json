@@ -1,0 +1,24 @@
+{
+  "main_ledger_rows": 360,
+  "quantity_rows": 60,
+  "physical_inputs": 60,
+  "runner_statuses": {
+    "SUCCESS": 275,
+    "INITIALIZATION_INVALID": 78,
+    "BOUNDARY_INVALID": 6,
+    "TIMEOUT": 1
+  },
+  "orchestration_statuses": {
+    "OK": 360
+  },
+  "physical_success": 275,
+  "physical_failure": 1,
+  "executed_intervals": 62834,
+  "unsafe_intervals": 0,
+  "all_276_integrations_match": true,
+  "scientific_and_all_frozen_udc_sources_unchanged": true,
+  "protected_historical_files_verified": 12788,
+  "tests": "212 passed in 29.14s",
+  "pip_check": "No broken requirements found.",
+  "checksums_refreshed_after_all_run_console_files_closed": true
+}

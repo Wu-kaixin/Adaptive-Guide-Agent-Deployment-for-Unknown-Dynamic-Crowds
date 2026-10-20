@@ -1,0 +1,157 @@
+[
+  {
+    "task_id": "wide_u__seed_113__N_21__equal_arc",
+    "runner_status": "TIMEOUT",
+    "orchestration_status": "OK",
+    "physical_success": false,
+    "criteria": {
+      "geometry_ok": true,
+      "resource_ok": true,
+      "plan_ok": true,
+      "path_ok": true,
+      "safety_ok": true,
+      "arrival_ok": false,
+      "curve_ok": false,
+      "gap_ok": false,
+      "coverage_ok": false
+    },
+    "motion": {
+      "executed_intervals": 400,
+      "simulation_time_s": 40.0,
+      "actual_trajectory_length_m": 270.6559361058203,
+      "interval_safety_ok": true,
+      "unsafe_interval_count": 0,
+      "minimum_center_distances_m": {
+        "crowd": 0.7931091889512182,
+        "guides": 0.7500000099972163,
+        "walls": 1.0
+      },
+      "minimum_net_clearances_m": {
+        "crowd": 0.04310918895121818,
+        "guides": 9.997216277035648e-09,
+        "walls": 0.44999999999999996
+      },
+      "terminal_arrival_ok": false,
+      "final_max_target_error_m": 0.5142976514953711
+    },
+    "target_geometry": {
+      "accepted": true,
+      "all_pairs": 210,
+      "curve_error_m": 1.7642492345905585e-15,
+      "min_domain_signed_m": 0.4582512252884398,
+      "min_pair_m": 1.5998144266090772,
+      "min_arc_gap_m": 1.6880805081024413,
+      "max_arc_gap_m": 1.688080508102459,
+      "seam_gap_m": 1.688080508102459,
+      "cyclic_gap_pattern_error_m": 1.0658141036401503e-14,
+      "original_length_m": 35.44969067015136,
+      "evaluated_length_m": 35.44969067015138,
+      "static_domain_sha256": "6cd7748c4626817e04bcff2ebdb754cadabc00918458d44d8866a17723b4827f"
+    },
+    "quantity": {
+      "count": 21,
+      "curve_length_m": 35.44969067015136,
+      "average_gap_m": 1.688080508102446,
+      "planning_limit_m": 1.94,
+      "acceptance_limit_m": 2.0,
+      "minimum_separation_m": 0.75,
+      "planning_average_slack_m": 0.251919491897554,
+      "planning_lower": 19,
+      "acceptance_lower": 18,
+      "necessary_upper": 47,
+      "planning_quantity_not_excluded": true,
+      "acceptance_quantity_not_excluded": true,
+      "diagnosis": "数量条件未排除"
+    },
+    "planned_cost": {
+      "demand": 0.23516961569371736,
+      "excess": 0.23663504384544157,
+      "background_mass": 0.2343552717404119,
+      "background_arc": 0.23755407741852597
+    },
+    "actual_cost": {
+      "demand": 0.24364360821002212,
+      "excess": 0.24087527948708287,
+      "background_mass": 0.24518197892689073,
+      "background_arc": 0.2463676420662804
+    },
+    "assignment_trace": {
+      "accepted": true,
+      "changes": 1,
+      "events": 3,
+      "initial_sha256": "6574736e6ca299946d8a916aae055c1edf5b6bfbd5dab8334f885e1bdc6ed95e",
+      "final_sha256": "d98c507aa7094e98299c75b1c4a218d035c5ae15b3b716dc69b0e87ee9fc3393"
+    },
+    "recovery_events": [
+      {
+        "strategy": "path_recompute",
+        "trigger_reason": "stall_window",
+        "time_s": 14.9,
+        "frame": 149,
+        "accepted": false,
+        "classification": "current_guide_occupation",
+        "error": "PATH_UNREACHABLE: assigned target temporarily occupied by other guides (guide 5 target 19)",
+        "budget_before": 0,
+        "budget_consumed": 1,
+        "budget_remaining": 2,
+        "installation_succeeded": false
+      },
+      {
+        "strategy": "reachable_reassignment",
+        "trigger_reason": "stall_window",
+        "time_s": 14.9,
+        "frame": 149,
+        "accepted": true,
+        "classification": "verified_path_set_installed",
+        "error": null,
+        "budget_before": 1,
+        "budget_consumed": 2,
+        "budget_remaining": 1,
+        "installation_succeeded": true
+      },
+      {
+        "strategy": "priority_yield",
+        "trigger_reason": "stall_window",
+        "time_s": 16.900000000000002,
+        "frame": 169,
+        "accepted": true,
+        "classification": "priority_yield",
+        "error": null,
+        "budget_before": 2,
+        "budget_consumed": 3,
+        "budget_remaining": 0,
+        "installation_succeeded": false
+      }
+    ],
+    "priority_summary": {
+      "activated": true,
+      "steps": 231,
+      "enforce_attempts": 30,
+      "enforce_installed": 28,
+      "enforce_rejected": 2,
+      "exit_reason": null
+    },
+    "files": {
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\results\\wide_u__seed_113__N_21__equal_arc\\trajectory.npz": "788c2651f442df09c416a3b1e5312c69d0cab5f39cd05198b72c30cead24d1f0",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\results\\wide_u__seed_113__N_21__equal_arc\\metrics.json": "2f34d971bc3724c922093bee08bff00020ca3a30fbe171b7c20a1205e35f18ce",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\results\\wide_u__seed_113__N_21__equal_arc\\config.yaml": "bf9652994bc19514213eca21873557948dc32a4f14ff004a0da55dc50f7c8a47",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\assignment.npz": "20d039137a18629753656bcf2fcb59cb9a8a74d14a4dcdb612ac8cc4a7979f07",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\paths.json": "9c74e6c829bc92367af2a53360c233161adc0ced21c7174168abeb057ca9e8a4",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\guides.npz": "e2e84f530cb6eb58708e1c5f53e95f02f1da903119c660e934f68804c8154adb",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\input.yaml": "bf9652994bc19514213eca21873557948dc32a4f14ff004a0da55dc50f7c8a47",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\input.npz": "5b92ec7c3b59b5b89df591a4500c41149e716dcac55ba69d0f1feab734e0850c",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\boundary.npz": "8211c3ca55bfb2015da57c8eace26f9675a57aa47dc045bad75f9654697ed4ec",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\static_domain.json": "f90649b5d7dfa0720280b1126180ab7bd23fc176359a5fe9821a9a0037d6d38a",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\free.wkb": "f5167b99b1518190b7473bff3eb80ceae61c444d9d0769b76207024e962232af",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\conditions\\wide_u__seed_113__hotspot5\\demand.npz": "455ddab7fb26ed6277571e4b0d385d1f3c2b125ef304956601f6162098e803d6",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\mapping.json": "76c19daa9ae0547ab04b88cc69a8df49c107f272c2f1e3deb86ed3aa1ca52aaa",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\manifest_360.json": "f4b3f991c0eb98e33baf5566093558c54569d00c6aaf29964045bdc3bc998a7f",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\inputs_frozen.json": "4f7fb761035e10088b7f89f6f2c1b4ca7a73c2c83a89ae45118f3429acac93ae",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\protocol.json": "a06c11b2d3a056881cf8fbc9bbbe81cdc195776dec0eb61b1f0596dfafd03b43",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\final\\plan.json": "beab7eba4940b2bfac0341e8cb05eb9641d797d8a2486c93db0eb1dad60a7da0",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\final\\solver.json": "4999736eb4a7e4a1d501c98b08291490d3002d8f5126c16b7cc157f4e2f2c870",
+      "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\final\\targets.npz": "5081c51df55e427c26516527f483b52ab305ebeff5364b59da38b84cad7b19a6"
+    },
+    "policy": "frozen observed failure; no rerun, no new target, no diagnosis intervention in this confirmation"
+  }
+]

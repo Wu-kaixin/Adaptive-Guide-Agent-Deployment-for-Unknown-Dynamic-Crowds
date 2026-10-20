@@ -1,0 +1,20 @@
+{
+  "files": {
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\input.yaml": "bf9652994bc19514213eca21873557948dc32a4f14ff004a0da55dc50f7c8a47",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\guides.npz": "e2e84f530cb6eb58708e1c5f53e95f02f1da903119c660e934f68804c8154adb",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\input.npz": "5b92ec7c3b59b5b89df591a4500c41149e716dcac55ba69d0f1feab734e0850c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\boundary.npz": "8211c3ca55bfb2015da57c8eace26f9675a57aa47dc045bad75f9654697ed4ec",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\free.wkb": "f5167b99b1518190b7473bff3eb80ceae61c444d9d0769b76207024e962232af",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\static_domain.json": "f90649b5d7dfa0720280b1126180ab7bd23fc176359a5fe9821a9a0037d6d38a",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\conditions\\wide_u__seed_113__hotspot5\\demand.npz": "455ddab7fb26ed6277571e4b0d385d1f3c2b125ef304956601f6162098e803d6",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\assignment.npz": "20d039137a18629753656bcf2fcb59cb9a8a74d14a4dcdb612ac8cc4a7979f07",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\paths.json": "9c74e6c829bc92367af2a53360c233161adc0ced21c7174168abeb057ca9e8a4",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\results\\wide_u__seed_113__N_21__equal_arc\\trajectory.npz": "788c2651f442df09c416a3b1e5312c69d0cab5f39cd05198b72c30cead24d1f0",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\results\\wide_u__seed_113__N_21__equal_arc\\metrics.json": "2f34d971bc3724c922093bee08bff00020ca3a30fbe171b7c20a1205e35f18ce",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\final\\plan.json": "beab7eba4940b2bfac0341e8cb05eb9641d797d8a2486c93db0eb1dad60a7da0",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\final\\solver.json": "4999736eb4a7e4a1d501c98b08291490d3002d8f5126c16b7cc157f4e2f2c870",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\plans\\wide_u__seed_113__N_21__equal_arc\\final\\targets.npz": "5081c51df55e427c26516527f483b52ab305ebeff5364b59da38b84cad7b19a6"
+  },
+  "original_manifest_sha256": "f4b3f991c0eb98e33baf5566093558c54569d00c6aaf29964045bdc3bc998a7f",
+  "original_failure_index_sha256": "8e59667c87bcb7c43fca9f83e63f35c9e39cb1e0a253a86027e36595d8284c4d"
+}

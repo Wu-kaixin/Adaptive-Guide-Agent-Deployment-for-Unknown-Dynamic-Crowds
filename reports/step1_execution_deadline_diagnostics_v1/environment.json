@@ -1,0 +1,25 @@
+{
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "udc_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\controller\\abcg.py",
+  "source": {
+    "commit": "820a9c5f16d4843a049981cb66810554f5ae3a83",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "bb135b98b2121c90515352ddda0970e02a88bdf9221119ddc2d0116baf10ad88",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "0094a3998067a56bdccd53ab5350a3d7f79f7ecb75a1fe3a8a7d8e2798bd296c",
+    "task_sha256": "597b989f9daf36d2822dbbb265bfe48bf1e5c9393ebd4f99683e2f14a2354793",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "no_dependency_upgrade": true
+}

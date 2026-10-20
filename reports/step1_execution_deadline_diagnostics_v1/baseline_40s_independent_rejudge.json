@@ -1,0 +1,77 @@
+{
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": false,
+    "curve_ok": false,
+    "gap_ok": false,
+    "coverage_ok": false
+  },
+  "diagnostics": {
+    "tracking_rmse": 0.2021507748563729,
+    "max_tracking_error": 0.5142976514953711,
+    "mean_curve_distance": 0.0954707893211715,
+    "max_curve_distance": 0.43479161690499946,
+    "actual_max_gap": 2.05219044694854,
+    "arc_projection_error_max": 0.364109938846088,
+    "projection_valid": true,
+    "order_preserved": true,
+    "target_actual_max_gap": 1.688080508102459,
+    "minimum_center_distances": {
+      "crowd": 0.7931091889512182,
+      "guides": 0.7500000099972163,
+      "walls": 1.0
+    },
+    "minimum_net_clearances": {
+      "crowd": 0.04310918895121818,
+      "guides": 9.997216277035648e-09,
+      "walls": 0.44999999999999996
+    },
+    "most_dangerous_step": {
+      "crowd": 314,
+      "guides": 307,
+      "walls": 0
+    },
+    "coverage_density": "mass_cvt gaussian demand mass, shared by all methods",
+    "hotspot_arc_fraction": 0.20751953125,
+    "hotspot_demand_share": 0.3648998603699042,
+    "planned_demand_weighted_cost": 0.23516961569371736,
+    "planned_uncovered_demand_share": 0.0,
+    "planned_uniform_cost": 0.23746792686950513,
+    "planned_hotspot_guide_fraction": 0.20765832106038293,
+    "planned_hotspot_concentration": 1.0006688036039157,
+    "planned_hotspot_mean_spacing": 1.686952268345742,
+    "planned_hotspot_max_gap": 1.688080508102452,
+    "actual_demand_weighted_cost": 0.2436436082100221,
+    "actual_uncovered_demand_share": 0.003115234764771256,
+    "actual_uniform_cost": 0.24491110752403442,
+    "actual_hotspot_guide_fraction": 0.2130829651448208,
+    "actual_hotspot_concentration": 1.0268092061566894,
+    "actual_hotspot_mean_spacing": 1.644006012003799,
+    "actual_hotspot_max_gap": 1.8575680897043512
+  },
+  "success": false,
+  "criteria_consistent": true,
+  "motion": {
+    "executed_intervals": 400,
+    "simulation_time_s": 40.0,
+    "actual_trajectory_length_m": 270.6559361058203,
+    "interval_safety_ok": true,
+    "unsafe_interval_count": 0,
+    "minimum_center_distances_m": {
+      "crowd": 0.7931091889512182,
+      "guides": 0.7500000099972163,
+      "walls": 1.0
+    },
+    "minimum_net_clearances_m": {
+      "crowd": 0.04310918895121818,
+      "guides": 9.997216277035648e-09,
+      "walls": 0.44999999999999996
+    },
+    "terminal_arrival_ok": false,
+    "final_max_target_error_m": 0.5142976514953711
+  }
+}

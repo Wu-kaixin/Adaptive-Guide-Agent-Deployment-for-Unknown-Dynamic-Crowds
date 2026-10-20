@@ -1,0 +1,42 @@
+{
+  "diagnostics_match_runner": {
+    "actual_max_gap": true,
+    "mean_curve_distance": true,
+    "tracking_rmse": true,
+    "actual_demand_weighted_cost": true,
+    "planned_demand_weighted_cost": true,
+    "actual_hotspot_concentration": true
+  },
+  "same_reference_remaining_reconstructed_from_true_positions": true,
+  "per_frame_target_error_exact": true,
+  "current_priority_active_constraint_records": {
+    "guide_guide": 47,
+    "planning_boundary": 19
+  },
+  "same_object_reference_resets": 7,
+  "unexpected_same_object_reference_resets": [],
+  "same_assignment_arrival_then_loss": [],
+  "identity_changes": [
+    {
+      "frame": 150,
+      "guide": 9,
+      "old_target": 14,
+      "new_target": 15
+    },
+    {
+      "frame": 150,
+      "guide": 10,
+      "old_target": 15,
+      "new_target": 14
+    }
+  ],
+  "after_queue_handoff_push_outside": [],
+  "joint_accepted_velocity_exact": true,
+  "joint_rejected_keeps_projection_exact": true,
+  "original_config_exact": true,
+  "input_targets_exact": true,
+  "recovery_budget_consumed": 3,
+  "physical_interval_safe": true,
+  "criteria_consistent": true,
+  "no_priority_stall_bypass": true
+}

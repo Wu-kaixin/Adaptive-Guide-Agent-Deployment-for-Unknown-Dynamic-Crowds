@@ -1,0 +1,39 @@
+{
+  "classification": "A: safe advancement with late completion under the frozen policy and initialization",
+  "production_scientific_modification": false,
+  "conditional_small_or_full_execution_regression": false,
+  "reason_no_execution_regression": "no demonstrated implementation or monitoring error; original production sources unchanged",
+  "original_protocol_success": false,
+  "original_confirmation_status": "TIMEOUT",
+  "original_confirmation_success_count": 275,
+  "diagnostic_completion_time_s": 43.8,
+  "overrun_s": 3.8,
+  "baseline_exact": true,
+  "continuation": {
+    "full_cutoff_state_exact": true,
+    "original_protocol_success": false,
+    "original_status": "TIMEOUT",
+    "config_steps_still_400": true,
+    "original_prefix_exact": true,
+    "no_fourth_recovery": true,
+    "completion_time_s": 43.800000000000004,
+    "overrun_s": 3.8000000000000043
+  },
+  "criteria_and_diagnostics_consistent": true,
+  "same_true_start_full_path_and_error_checks": true,
+  "39_prefix_checks_with_unchanged_original_evaluator": true,
+  "first_original_criteria_pass_s": {
+    "arrival_ok": 43.800000000000004,
+    "curve_ok": 43.7,
+    "gap_ok": 42.800000000000004,
+    "coverage_ok": 43.7,
+    "all_pass": 43.800000000000004
+  },
+  "all_motion_intervals_checked": 838,
+  "post_40s_unique_intervals": 38,
+  "unsafe_intervals": 0,
+  "protected_files_verified": 20414,
+  "production_files_unchanged": 68,
+  "tests": "218 passed in 25.21s",
+  "environment_unchanged": true
+}

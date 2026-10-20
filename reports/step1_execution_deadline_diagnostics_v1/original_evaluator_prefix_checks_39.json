@@ -1,0 +1,754 @@
+{
+  "source": "unchanged original evaluate on 39 saved trajectory prefixes; no new execution",
+  "first_post_cutoff_s": {
+    "arrival_ok": 43.800000000000004,
+    "curve_ok": 43.7,
+    "gap_ok": 42.800000000000004,
+    "coverage_ok": 43.7,
+    "all_pass": 43.800000000000004
+  },
+  "prefixes": [
+    {
+      "frame": 400,
+      "time_s": 40.0,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.5142976514953711,
+      "max_curve_distance_m": 0.43479161690499946,
+      "max_gap_m": 2.05219044694854
+    },
+    {
+      "frame": 401,
+      "time_s": 40.1,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.5142976514953711,
+      "max_curve_distance_m": 0.43479161690499946,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 402,
+      "time_s": 40.2,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.5142976514953711,
+      "max_curve_distance_m": 0.43479161690499946,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 403,
+      "time_s": 40.300000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.5142976514953711,
+      "max_curve_distance_m": 0.43479161690499946,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 404,
+      "time_s": 40.400000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.5142976514953711,
+      "max_curve_distance_m": 0.43479161690499946,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 405,
+      "time_s": 40.5,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.41429765149537234,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 406,
+      "time_s": 40.6,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 407,
+      "time_s": 40.7,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 408,
+      "time_s": 40.800000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 409,
+      "time_s": 40.900000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 410,
+      "time_s": 41.0,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 411,
+      "time_s": 41.1,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 412,
+      "time_s": 41.2,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 413,
+      "time_s": 41.300000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 414,
+      "time_s": 41.400000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.40282424936722233,
+      "max_curve_distance_m": 0.3970294108036823,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 415,
+      "time_s": 41.5,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.37392590190776703,
+      "max_curve_distance_m": 0.29819897692035174,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 416,
+      "time_s": 41.6,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.37392590190776703,
+      "max_curve_distance_m": 0.2195454694950308,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 417,
+      "time_s": 41.7,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.37392590190776703,
+      "max_curve_distance_m": 0.2195454694950308,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 418,
+      "time_s": 41.800000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.37392590190776703,
+      "max_curve_distance_m": 0.2195454694950308,
+      "max_gap_m": 2.03908649797183
+    },
+    {
+      "frame": 419,
+      "time_s": 41.900000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.27392590190776744,
+      "max_curve_distance_m": 0.15510024177682083,
+      "max_gap_m": 1.9728886781068589
+    },
+    {
+      "frame": 420,
+      "time_s": 42.0,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.1739259019077667,
+      "max_curve_distance_m": 0.12275858683673438,
+      "max_gap_m": 1.893164174545781
+    },
+    {
+      "frame": 421,
+      "time_s": 42.1,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.13619070829103022,
+      "max_curve_distance_m": 0.12275858683673438,
+      "max_gap_m": 1.815869542222611
+    },
+    {
+      "frame": 422,
+      "time_s": 42.2,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.13619070829103022,
+      "max_curve_distance_m": 0.12275858683673438,
+      "max_gap_m": 1.7540336364315579
+    },
+    {
+      "frame": 423,
+      "time_s": 42.300000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.13619070829103022,
+      "max_curve_distance_m": 0.12275858683673438,
+      "max_gap_m": 1.7540336364315579
+    },
+    {
+      "frame": 424,
+      "time_s": 42.400000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.07883243569378232,
+      "max_curve_distance_m": 0.07823903853205547,
+      "max_gap_m": 1.7540336364315579
+    },
+    {
+      "frame": 425,
+      "time_s": 42.5,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.07883243569378232,
+      "max_curve_distance_m": 0.07823903853205547,
+      "max_gap_m": 1.7540336364315579
+    },
+    {
+      "frame": 426,
+      "time_s": 42.6,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.07386123762195396,
+      "max_curve_distance_m": 0.042030258815035054,
+      "max_gap_m": 1.7540336364315579
+    },
+    {
+      "frame": 427,
+      "time_s": 42.7,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": false,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.04528139830351928,
+      "max_curve_distance_m": 0.042030258815035054,
+      "max_gap_m": 1.704928723920844
+    },
+    {
+      "frame": 428,
+      "time_s": 42.800000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.01429765149537497,
+      "max_curve_distance_m": 0.012606301891187431,
+      "max_gap_m": 1.696253295968532
+    },
+    {
+      "frame": 429,
+      "time_s": 42.900000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.012153003771068593,
+      "max_curve_distance_m": 0.010715356607509989,
+      "max_gap_m": 1.695027377788616
+    },
+    {
+      "frame": 430,
+      "time_s": 43.0,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.01033005320540688,
+      "max_curve_distance_m": 0.009108053116383078,
+      "max_gap_m": 1.6939853473356905
+    },
+    {
+      "frame": 431,
+      "time_s": 43.1,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.008780545224595404,
+      "max_curve_distance_m": 0.007741845148925021,
+      "max_gap_m": 1.693099621450699
+    },
+    {
+      "frame": 432,
+      "time_s": 43.2,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.00746346344090788,
+      "max_curve_distance_m": 0.006580568376585662,
+      "max_gap_m": 1.6923467544484616
+    },
+    {
+      "frame": 433,
+      "time_s": 43.300000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.0063439439247724915,
+      "max_curve_distance_m": 0.005593483120098239,
+      "max_gap_m": 1.6917068174965593
+    },
+    {
+      "frame": 434,
+      "time_s": 43.400000000000006,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.0053923523360562145,
+      "max_curve_distance_m": 0.0047544606520843954,
+      "max_gap_m": 1.6911628710874425
+    },
+    {
+      "frame": 435,
+      "time_s": 43.5,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.004583499485646837,
+      "max_curve_distance_m": 0.004041291554271781,
+      "max_gap_m": 1.6907005166396871
+    },
+    {
+      "frame": 436,
+      "time_s": 43.6,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": false,
+        "gap_ok": true,
+        "coverage_ok": false
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.0038959745627996202,
+      "max_curve_distance_m": 0.0034350978211311286,
+      "max_gap_m": 1.6903075153590983
+    },
+    {
+      "frame": 437,
+      "time_s": 43.7,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": false,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "all_pass": false,
+      "max_target_error_m": 0.0033115783783810603,
+      "max_curve_distance_m": 0.0029198331479620677,
+      "max_gap_m": 1.6899734642706044
+    },
+    {
+      "frame": 438,
+      "time_s": 43.800000000000004,
+      "criteria": {
+        "geometry_ok": true,
+        "resource_ok": true,
+        "plan_ok": true,
+        "path_ok": true,
+        "safety_ok": true,
+        "arrival_ok": true,
+        "curve_ok": true,
+        "gap_ok": true,
+        "coverage_ok": true
+      },
+      "all_pass": true,
+      "max_target_error_m": 0.002814841621622511,
+      "max_curve_distance_m": 0.0024818581757668303,
+      "max_gap_m": 1.689689520845377
+    }
+  ],
+  "evaluation_wall_s": 7.28057760000047
+}

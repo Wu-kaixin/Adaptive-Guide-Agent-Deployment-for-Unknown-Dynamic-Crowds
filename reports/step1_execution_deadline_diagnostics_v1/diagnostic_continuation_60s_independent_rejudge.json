@@ -1,0 +1,77 @@
+{
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": true,
+    "curve_ok": true,
+    "gap_ok": true,
+    "coverage_ok": true
+  },
+  "diagnostics": {
+    "tracking_rmse": 0.0009448566081788162,
+    "max_tracking_error": 0.002814841621622511,
+    "mean_curve_distance": 0.0003786962199410156,
+    "max_curve_distance": 0.0024818581757668303,
+    "actual_max_gap": 1.689689520845377,
+    "arc_projection_error_max": 0.0017277456096422839,
+    "projection_valid": true,
+    "order_preserved": true,
+    "target_actual_max_gap": 1.688080508102459,
+    "minimum_center_distances": {
+      "crowd": 0.7931091889512182,
+      "guides": 0.7500000099972163,
+      "walls": 1.0
+    },
+    "minimum_net_clearances": {
+      "crowd": 0.04310918895121818,
+      "guides": 9.997216277035648e-09,
+      "walls": 0.44999999999999996
+    },
+    "most_dangerous_step": {
+      "crowd": 314,
+      "guides": 307,
+      "walls": 0
+    },
+    "coverage_density": "mass_cvt gaussian demand mass, shared by all methods",
+    "hotspot_arc_fraction": 0.20751953125,
+    "hotspot_demand_share": 0.3648998603699042,
+    "planned_demand_weighted_cost": 0.23516961569371736,
+    "planned_uncovered_demand_share": 0.0,
+    "planned_uniform_cost": 0.23746792686950513,
+    "planned_hotspot_guide_fraction": 0.20765832106038293,
+    "planned_hotspot_concentration": 1.0006688036039157,
+    "planned_hotspot_mean_spacing": 1.686952268345742,
+    "planned_hotspot_max_gap": 1.688080508102452,
+    "actual_demand_weighted_cost": 0.2351832686596202,
+    "actual_uncovered_demand_share": 0.0,
+    "actual_uniform_cost": 0.2374685723248714,
+    "actual_hotspot_guide_fraction": 0.20765832106038293,
+    "actual_hotspot_concentration": 1.0006688036039157,
+    "actual_hotspot_mean_spacing": 1.686952268345742,
+    "actual_hotspot_max_gap": 1.689689520845377
+  },
+  "success": true,
+  "criteria_consistent": true,
+  "motion": {
+    "executed_intervals": 438,
+    "simulation_time_s": 43.800000000000004,
+    "actual_trajectory_length_m": 273.2250558857043,
+    "interval_safety_ok": true,
+    "unsafe_interval_count": 0,
+    "minimum_center_distances_m": {
+      "crowd": 0.7931091889512182,
+      "guides": 0.7500000099972163,
+      "walls": 1.0
+    },
+    "minimum_net_clearances_m": {
+      "crowd": 0.04310918895121818,
+      "guides": 9.997216277035648e-09,
+      "walls": 0.44999999999999996
+    },
+    "terminal_arrival_ok": true,
+    "final_max_target_error_m": 0.002814841621622511
+  }
+}

@@ -1,0 +1,2 @@
+﻿frame,time_s,arrival_hold,curve_hold,gap_hold,coverage_hold,all_terminal_conditions,max_error_m,max_curve_distance_m,max_gap_m
+400,40.0,False,False,False,False,False,0.5142976514953711,0.43479161690499946,2.05219044694854

@@ -1,0 +1,126 @@
+{
+  "attempt": "diagnostic_continuation_60s",
+  "status": "SUCCESS",
+  "diagnostic_completion": true,
+  "original_protocol_success": false,
+  "original_confirmation_status": "TIMEOUT",
+  "prefix": {
+    "positions": {
+      "samples": 401,
+      "exact": true,
+      "first_difference": null
+    },
+    "nominal_velocity": {
+      "samples": 400,
+      "exact": true,
+      "first_difference": null
+    },
+    "safe_velocity": {
+      "samples": 400,
+      "exact": true,
+      "first_difference": null
+    },
+    "waypoint_index": {
+      "samples": 400,
+      "exact": true,
+      "first_difference": null
+    }
+  },
+  "baseline_exact": false,
+  "events_exact_excluding_wall_time": true,
+  "coordination_exact_excluding_wall_time": false,
+  "assignment_trace": {
+    "accepted": true,
+    "changes": 1,
+    "events": 3,
+    "initial_sha256": "6574736e6ca299946d8a916aae055c1edf5b6bfbd5dab8334f885e1bdc6ed95e",
+    "final_sha256": "d98c507aa7094e98299c75b1c4a218d035c5ae15b3b716dc69b0e87ee9fc3393"
+  },
+  "motion": {
+    "executed_intervals": 438,
+    "simulation_time_s": 43.800000000000004,
+    "actual_trajectory_length_m": 273.2250558857043,
+    "interval_safety_ok": true,
+    "unsafe_interval_count": 0,
+    "minimum_center_distances_m": {
+      "crowd": 0.7931091889512182,
+      "guides": 0.7500000099972163,
+      "walls": 1.0
+    },
+    "minimum_net_clearances_m": {
+      "crowd": 0.04310918895121818,
+      "guides": 9.997216277035648e-09,
+      "walls": 0.44999999999999996
+    },
+    "terminal_arrival_ok": true,
+    "final_max_target_error_m": 0.002814841621622511
+  },
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": true,
+    "curve_ok": true,
+    "gap_ok": true,
+    "coverage_ok": true
+  },
+  "source": {
+    "commit": "820a9c5f16d4843a049981cb66810554f5ae3a83",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "bb135b98b2121c90515352ddda0970e02a88bdf9221119ddc2d0116baf10ad88",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "6a1b92a12f5f667aa3a30d739b0486166e333fcfe4ac186871eeeaddb69248ec",
+    "task_sha256": "2603e2f9d53beb99108f1a1c3bb0d6913e67e18776d0137803a071f708b9ae42",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "numeric_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "counterfactual": "0",
+  "wall_s": 4.600707300000067,
+  "recoveries": 3,
+  "AST_transform": {
+    "changed_nodes": 1,
+    "change": "step loop upper bound sim['max_steps'] -> 600",
+    "original_AST_sha256": "b9022b80f74baa536c96a9fcb07634f449d3bb02330f1a53c90411d1e0d7cd9f",
+    "diagnostic_AST_sha256": "5162c0e34058f3366a674df2e79a106aa5db0ece093e275334dd5708525f47cd",
+    "restoring_only_bound_reproduces_original_AST": true,
+    "original_source_sha256": "72d1775d7fcbb98544bfc52bb2188c654fd14337d5ae5620994c36f613f85526"
+  },
+  "input_targets_exact": true,
+  "config_exact": true,
+  "diagnostic_label": "diagnostic_continuation_60s",
+  "observed_frame_count": 438,
+  "monitor_frame_count": 437
+}

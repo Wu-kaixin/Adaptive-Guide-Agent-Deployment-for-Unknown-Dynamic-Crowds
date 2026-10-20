@@ -1,0 +1,416 @@
+{
+  "source": {
+    "commit": "820a9c5f16d4843a049981cb66810554f5ae3a83",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "bb135b98b2121c90515352ddda0970e02a88bdf9221119ddc2d0116baf10ad88",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "0094a3998067a56bdccd53ab5350a3d7f79f7ecb75a1fe3a8a7d8e2798bd296c",
+    "task_sha256": "597b989f9daf36d2822dbbb265bfe48bf1e5c9393ebd4f99683e2f14a2354793",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "old_source": {
+    "commit": "0433bb194c2d87f8dd61e26fb4d5fd8b6f1d1e0c",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "dcac16daf240271dd34e5694f4f127bbefbe2a9ffe687ab2384dff7327111169",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "5231507ab1c5a80a892e87bf8f6d37ddf1ac2101ef009404ea5f78cd5fd9d6c5",
+    "task_sha256": "2155316b56a57786028c65046b94bf908fba4b1b830d7c351ef64643a6429b7b",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "row": {
+    "task_id": "wide_u__seed_113__N_21__equal_arc",
+    "physical_key": "wide_u__seed_113",
+    "condition_key": "wide_u__seed_113__hotspot5",
+    "initial_key": "wide_u__seed_113__N_21",
+    "scene": "wide_u",
+    "seed": 113,
+    "increment": 2,
+    "count": 21,
+    "method": "equal_arc",
+    "method_label": "equal_arc+all_phase_256",
+    "demand": "hotspot5",
+    "mode": "new_execution",
+    "input_status": "ACCEPTED",
+    "input_sha256": "5c59bf709091d71182d0409fa81818fb5e2c5b665625f62b12738fba64acff3f",
+    "physical_sha256": "a6bb9deecaa4736a73e2bed76f609e3d4e89181bf9c607bf0229b46a6edf2b60",
+    "density_sha256": "455ddab7fb26ed6277571e4b0d385d1f3c2b125ef304956601f6162098e803d6"
+  },
+  "initial": {
+    "physical_key": "wide_u__seed_113",
+    "scene": "wide_u",
+    "seed": 113,
+    "count": 21,
+    "increment": 2,
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "original_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "appended": [
+      {
+        "id": 19,
+        "arc_m": 74.97602206760445,
+        "gap_start_m": 71.84398273506295,
+        "split_gap_m": 6.264078665082991,
+        "position": [
+          29.0,
+          10.023977932395553
+        ]
+      },
+      {
+        "id": 20,
+        "arc_m": 21.934445613844872,
+        "gap_start_m": 18.809405537711083,
+        "split_gap_m": 6.250080152267575,
+        "position": [
+          1.0,
+          22.934445613844872
+        ]
+      }
+    ],
+    "guides_sha256": "e2e84f530cb6eb58708e1c5f53e95f02f1da903119c660e934f68804c8154adb",
+    "original_prefix_exact": true,
+    "initialization_accepted": true,
+    "clearances_m": {
+      "crowd": 10.026415686137781,
+      "guides": 3.1250400761337858,
+      "walls": 1.0
+    },
+    "quantity": {
+      "count": 21,
+      "curve_length_m": 35.44969067015136,
+      "average_gap_m": 1.688080508102446,
+      "planning_limit_m": 1.94,
+      "acceptance_limit_m": 2.0,
+      "minimum_separation_m": 0.75,
+      "planning_average_slack_m": 0.251919491897554,
+      "planning_lower": 19,
+      "acceptance_lower": 18,
+      "necessary_upper": 47,
+      "planning_quantity_not_excluded": true,
+      "acceptance_quantity_not_excluded": true,
+      "diagnosis": "数量条件未排除"
+    },
+    "physical": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113",
+    "condition": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\conditions\\wide_u__seed_113__hotspot5",
+    "config": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\input.yaml",
+    "guides": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\initials\\wide_u__seed_113__N_21\\guides.npz"
+  },
+  "original_config": {
+    "step": 1,
+    "scene": {
+      "type": "square",
+      "width": 30.0,
+      "height": 30.0,
+      "openings": []
+    },
+    "crowd": {
+      "count": 26,
+      "spawn_vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.0
+        ],
+        [
+          30.0,
+          30.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "spacing": 0.55,
+      "radius": {
+        "mean": 0.2,
+        "std": 0.0,
+        "min": 0.2,
+        "max": 0.2
+      },
+      "demand": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 5.0
+      },
+      "source": "sqlite",
+      "trajectory_file": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_resource_confirmation_v1\\physical\\wide_u__seed_113\\people.sqlite",
+      "demand_region": {
+        "center": [
+          11.0,
+          16.4
+        ],
+        "radius": 1.2,
+        "multiplier": 5.0
+      }
+    },
+    "guides": {
+      "radius": 0.2,
+      "max_speed": 1.0,
+      "initial_inset": 1.0,
+      "count": 21,
+      "initial_positions": [
+        [
+          1.0,
+          2.4908637224579384
+        ],
+        [
+          1.0,
+          7.9153532288405755
+        ],
+        [
+          1.0,
+          14.05934403356576
+        ],
+        [
+          1.0,
+          19.809405537711083
+        ],
+        [
+          1.0,
+          26.059485689978658
+        ],
+        [
+          3.8884333986740387,
+          29.0
+        ],
+        [
+          9.576297938971571,
+          29.0
+        ],
+        [
+          15.427416398174167,
+          29.0
+        ],
+        [
+          21.258888471799537,
+          29.0
+        ],
+        [
+          27.288630900422255,
+          29.0
+        ],
+        [
+          29.0,
+          24.784023537102648
+        ],
+        [
+          29.0,
+          18.977395020800216
+        ],
+        [
+          29.0,
+          13.156017264937049
+        ],
+        [
+          29.0,
+          6.891938599854058
+        ],
+        [
+          29.0,
+          1.3799583284931458
+        ],
+        [
+          23.328353248114297,
+          1.0
+        ],
+        [
+          17.1906032122006,
+          1.0
+        ],
+        [
+          11.65791266118572,
+          1.0
+        ],
+        [
+          5.680205378282139,
+          1.0
+        ],
+        [
+          29.0,
+          10.023977932395553
+        ],
+        [
+          1.0,
+          22.934445613844872
+        ]
+      ]
+    },
+    "controller": {
+      "offset": 1.3,
+      "sample_spacing": 0.1,
+      "budget_gap": 2.0,
+      "max_gap_limit": 2.0,
+      "position_tolerance": 0.03,
+      "speed_tolerance": 0.03,
+      "curve_tolerance": 0.04,
+      "arc_tolerance": 0.03,
+      "safety_numeric_tolerance": 1e-07,
+      "demand_bandwidth": 1.2,
+      "gain": 1.5,
+      "hold_steps": 10,
+      "clearance": 0.35,
+      "waypoint_tolerance": 0.05,
+      "phases": [
+        0.0,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "quadrature_samples": 2048,
+      "planner_max_iterations": 300,
+      "stall_window": 20,
+      "max_replans": 3,
+      "method": "projected_mass"
+    },
+    "simulation": {
+      "dt": 0.1,
+      "max_steps": 400,
+      "seed": 113
+    }
+  },
+  "deadline_transform": {
+    "changed_nodes": 1,
+    "change": "step loop upper bound sim['max_steps'] -> 600",
+    "original_AST_sha256": "b9022b80f74baa536c96a9fcb07634f449d3bb02330f1a53c90411d1e0d7cd9f",
+    "diagnostic_AST_sha256": "5162c0e34058f3366a674df2e79a106aa5db0ece093e275334dd5708525f47cd",
+    "restoring_only_bound_reproduces_original_AST": true,
+    "original_source_sha256": "72d1775d7fcbb98544bfc52bb2188c654fd14337d5ae5620994c36f613f85526"
+  },
+  "production_sources": {
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py": "4c8c1e7d665a9fcdee4181bfcbda81b3ac82faaf82d49d4396c632b5877ce00d",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\__init__.py": "2a940566662101013c7a18b13824f13db8d1f4ff49a337489ef0072727650c5c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\demand_confirmation.py": "889012d554298e4bbd476dbaddb46333fb48916abdefe3e15e97375b1bc5a9cb",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\pedestrian.py": "0010a25e40a1b41bc044c47c41d98b8d028401201ab576119f2a5da3745c5744",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\reanalysis.py": "f138712f970b9688196118b829eab6624b42d0989d10b703663788155ecf49af",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\recovery_diagnostics.py": "88566cf83b379156ee05178bfae794acbf6f42751b4ec54add2da94f0296773c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\resource_confirmation.py": "075d7c8d2bfd7eab7b8f2525de095c8a1e3ae12f0bdaa7b135ac8146dfb9c75a",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\resource_response.py": "b03b649455acdc6f17d3cc05fc88d53df3a8f0bd6a044e7ee48ee184b5ee1a17",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\analysis\\summary.py": "247240cda592c9e2cf2ab7aaab280a8b832f43a85af2696c71de9f44dbf4de02",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\boundary\\__init__.py": "1dadb3e832844bad008241adbad18ba19261830ecfb9917f6d9016beb4aa195c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\boundary\\construction.py": "b6bba7adc05f5166d2e7f0b5bcda94eac6d13e4b3b3e72744a403a636ecbf3cc",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\boundary\\coverage.py": "bf96fa8ea8c43866eb1d3ea157f70034e4a0bf9b4e1daa9a23cfd2c64178c776",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\boundary\\estimate.py": "9fc3b49796e2865c205cb2ecd5bd47beaff87952f48214514fcf9c75e5108dba",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\boundary\\prescribed.py": "97e690802bb54d41fc64b865994384eb8edbdab67b63122150f9dca38b0b31c0",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\controller\\__init__.py": "8784380a8b22a05bf95fad6d58b754360d1ca55bb0b927c274bb96246e0a50e5",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\controller\\abcg.py": "59182e02d927bf04df21247806f2a8248d75146459d2c7bc54a14639931f7f39",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\controller\\progress.py": "be18242c7970827f14f1e6a531280584fee1684599ee79a974ef2b1f57d2efcb",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\crowd\\__init__.py": "30bf2d9d96c3232b7774a6da41b3783a2ac737add4a9cb5fc22b61b889ef4bc1",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\crowd\\sources.py": "7d673798e667c614f2c0e2a9c60934f9addbd2daa36be6d8083105aac7283488",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\__init__.py": "109a4831643d340a214ee8369ad5ff28e04637e4d215d3666ed98be99fc5196c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\admissible.py": "fbc6bed0d44a25382a048c12fcd4c6d5a9e826d046c318eec2f1e04e0f2140b8",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\constrained.py": "36ff4beb4505a5d1406219d0b3ebbedcb69a1ea64e79536fcacf2d260bc7bb59",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\geometry.py": "0209ca6662332539b6ff83dae306d5a34d4209299108b131d3eaa50b8b6b6236",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\planners.py": "0eef6a1f0ec90b16fc4f61e805970bf6eaeb9f55e1b08dc81c9ab5f53e3fd41e",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\reference.py": "352e63427da6713efcc88fdec6248976e8a845e0f0bdc612a2bdc6d006193e2d",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\deployment\\risk_aware.py": "76890cc331ffe0e07a57a7ba791ade1c9940e7829003c7fd0b3b2ae2e5a8b53a",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\environment.py": "f34f5caaf1e1443127969a8cbfbae34d26d1ff95bf03af87aad1e85dc444cc99",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\evaluation\\__init__.py": "b64a1cbb53be72d3d3c1dcc75b261471f1e9ca0c04c4700005f3a016d90c6efe",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\evaluation\\acceptance.py": "e56b1130feeafbd1a4282c3cbcb3217799ba4110d3db56a3d97b9b7eb6baced6",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\evaluation\\comparison.py": "10cf8c438a94e29344d1e2f6c9d9d2114c61d007ad66736a253b45d749572dfd",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\evaluation\\coverage.py": "45a573938cc4741fedffcf8a2a588598ed69e5f263492bcbe63191ffe4fd2955",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\__init__.py": "654c26b1fa35edba8e71bd5184957caf6875ab3ca1285d5547eed292eb46960f",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\boundary_comparison.py": "d8c7e0727bed21d1bb6d6c57ca40126f91a41950c876060bdb79e519dd273bdd",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\comparison.py": "8ceee9537d0afd63450500a44f653b60bcf6ecf60ab7e6a4fdf60195436a5481",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\config.py": "00b2d5253f26726c6ef96606b036faf4d3eec60c8fbad81be2bdcde310f98099",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\corner_handoff.py": "081260cb72b1822042889f815673f5879661779ba25a8e11139fe9d7a986295a",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\coverage_contract.py": "5a69036dfa1559842c82bbe19b8b5f3a82b635de81481ac57d4a86303f4114c1",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\curve_constraints.py": "cd87dbe26d45566f1c7868f25079aac95f6abf396d2c31509af2006c85587af6",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\curve_diagnostics.py": "2717ae0c16f323806827ccde0371e8353f61dbeb2eaa5cbc52c5b9d26f624b22",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\demand_confirmation.py": "fcf032e5db1228cbcdc729169b4f6edd8425c7764c38a21d394119654a438b16",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\demand_pilot.py": "8ddfffbc0df18fac8cdbb518970ffe214614aadf7d5ce224f3b4ed18d28a21af",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\execution_progress.py": "d6747ac96caea729eaba269bf1df4aa8433ff1459a625db7e414ab61ccfa5821",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\joint_progress.py": "dec90461dfef9b2b03e629705d84232eb9da07fcc79e2fc259418af38dacb8ec",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\navigation_consistency.py": "a3a160727f3f22f0ce3b24e7b002b3552bea43b301fb1e42220b5a25b636a068",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\nonconvex_diagnostics.py": "f1a6f62f9c11f2bb614e4d344c1eaa59cb963cc964d9a7a91ef9ad731a08c2df",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\nonconvex_rebuild.py": "bafd2ba450bf7f353593a5295b2348c537149e508d385180cfff3922bf44bcbd",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\phase_attribution.py": "fede6ec0fed8a14adf575bcb4af1f74c7f5e0815ec18714548a7153c42a8f94a",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\priority_progress.py": "accb6a5d4e07d3aed544f4480e77f8b05c7f82241c05c806c8412a181ae1822c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\provenance.py": "ae60c0cc5d9f95c1d6c24d0df6d4e8565f4f666cf1bded2a16d4f9eb2784cef9",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\recovery_diagnostics.py": "db3079147b8344037c107228396bfd1ba245f8b9307b3dea17b7f5be22e1bbc4",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\replan_repair.py": "82f4b40649dfebe44cca4ba35a9139273cb49e463758a80c6cce43b111dbfe21",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\resource_confirmation.py": "7bf981b18b81fd99640264b773f2aae34d162dd6a35bff4468d3bd9580d98e3e",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\resource_response.py": "113f2dc57727990c0fff30f1b33d4eab1ed11170cab10d419b4f5056cab97c3c",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\runner.py": "99bb92ceecebd7d1651675de16a9ceca96b3f84d25e79b10cda84ef38b8db91a",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\scene_closure.py": "54ffa1e22a4cae2b8513bb881c572e437ede72e7051711fd7a309bb2ddc04ab8",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\target_domain.py": "9975586760c07a1a5c4297f1d3c22a3bf01bd4ed8ed2460af7d655f54a498b07",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\target_domain_legacy.py": "c6ce0dc0db3be416139c1837ba4c6fd2537e4d18aacd1a595f9445048719c561",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\experiments\\validation.py": "1786dc6b33d0a5e43e3b7c0497f07fb598da602f6fe099291ca7b76b78c47702",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\interfaces.py": "eb2280e18f80613b593363e93e5b404e79d919f889c3b49c8158b533be7f5f72",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\navigation\\__init__.py": "bc7cec060928e17e76d7930a4c6e7f171aa50fd612983bfc8f65c40817d188f0",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\navigation\\paths.py": "e33658be2399bcb60fdc305c3c856d133d86915ad29dc1ed26a4582b1dd94002",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\safety\\__init__.py": "2768c394e64544aae5350782878a6a0c327c220092d3e576e9fcfe220b9d3fd3",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\safety\\coordinate.py": "4e2ed44de1b1c378b2cc47a27552941a83db788cd0acefc4d7acfc6272dd4120",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\safety\\filter.py": "571521c01a430687bbed0aeea2e1876b0d02a5c86a3bdf2c09037346b03cd1ee",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\scene.py": "4660d1a760a229023f1cd5198822b7033e07fd5c0d98cb144af39dda0a71b97d",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\visualization\\__init__.py": "3ade9a055139fe73d49dd6bde05626c152e252b31bb4eac7188ba4cbd97fe7de",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\visualization\\live.py": "d3d166fcc265954e86d5321b071b8dabc1b612aa5d25fc0939badb7d6699598d",
+    "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\visualization\\plots.py": "d9c5eda4b6f5c27dbab002a507fe2622c01906a2c3f6f5362dfb1929c192e8ff"
+  },
+  "protected_files": 20414,
+  "raw_protocol": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_deadline_diagnostics_v1\\protocol.json",
+  "raw_protocol_sha256": "c9fa148cfd044d73d0d9baff3ec946e00ae10b188af6e814833e6ad3f178e22c"
+}

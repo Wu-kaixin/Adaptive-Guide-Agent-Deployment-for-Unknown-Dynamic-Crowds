@@ -118,9 +118,9 @@ def bootstrap(all_units,settings):
     return {'rng_seed':settings['bootstrap_rng_seed'],'repetitions':reps,'whole_physical_unit':True,'estimates':output}
 
 
-def summarize(output,report):
+def summarize(output,report,*,lock_loader=analysis_locked,scope=None,export_files=None):
     root=Path(output).resolve(); report=Path(report); report.mkdir(parents=True,exist_ok=True)
-    lock=analysis_locked(root); frozen=read(root/'inputs_frozen.json'); manifest=read(root/'manifest_360.json')
+    lock=lock_loader(root); frozen=read(root/'inputs_frozen.json'); manifest=read(root/'manifest_360.json')
     rows=[read(root/'results'/r['task_id']/'protocol_metrics.json') for r in manifest['rows']]
     us=units(rows); contrasts={}; pair_rows=[]; interaction_rows=[]
     for n in (0,2,4):
@@ -138,7 +138,8 @@ def summarize(output,report):
     for r in rows:
         init=frozen['starts'][r['initial_key']]; motion=r.get('motion') or {}; timing=r['timing']
         v={k:r.get(k) for k in ('task_id','physical_key','scene','seed','count','increment','method','mode','input_status',
-            'status','stage','success','target_valid','initial_paths_ok','executed','recoveries','failure_reason','offline_consistent','input_sha256','density_sha256','curve_sha256','domain_sha256')}
+            'status','runner_status','runner_success','orchestration_status','independent_physical_success',
+            'stage','success','target_valid','initial_paths_ok','executed','recoveries','failure_reason','offline_consistent','input_sha256','density_sha256','curve_sha256','domain_sha256')}
         v.update({k:init['quantity'].get(k) for k in ('curve_length_m','average_gap_m','planning_average_slack_m','planning_lower','acceptance_lower','necessary_upper')})
         v['initialization_accepted']=init['initialization_accepted']
         for prefix in ('planned','fine','actual'):
@@ -193,9 +194,10 @@ def summarize(output,report):
             fine.append({'physical_key':u['physical_key'],'scene':u['scene'],'increment':n,'main_delta':x,'fine_delta':y,
                 'sign_changed':bool(np.sign(x)!=np.sign(y)),'absolute_delta_change':abs(y-x)})
     checks=read(root/'all_independent_checks.json'); executed=[r for r in flat if r['executed']]
-    summary={'scope':'exposed inputs; resource response development, not new independent confirmation',
+    summary={'scope':scope or 'exposed inputs; resource response development, not new independent confirmation',
         'source':lock['provenance'],'baseline_source':lock['baseline_source'],'all_rows':len(rows),'physical_units':len(us),
-        'analysis_provenance':lock['analysis_provenance'],'analysis_compatibility':lock['analysis_compatibility'],
+        'analysis_provenance':lock.get('analysis_provenance',provenance({},None,'read_only_analysis',None)),
+        'analysis_compatibility':lock.get('analysis_compatibility',{'all_frozen_execution_sources_unchanged':True}),
         'outcomes':dict(Counter(r['status'] for r in rows)), 'modes':dict(Counter(r['mode'] for r in rows)),
         'executed_rows':len(executed),'new_executed_rows':sum(r['executed'] and r['mode']!='reference' for r in rows),
         'reused_executed_rows':sum(r['executed'] and r['mode']=='reference' for r in rows),
@@ -210,7 +212,7 @@ def summarize(output,report):
         'execution_failures':[r for r in flat if r['executed'] and not r['success']],
         'threads':sorted({p['num_threads'] for r in rows if r['mode']!='reference' for p in r.get('worker',{}).get('numeric_pools',[])}),
         'counterfactual':sorted({r.get('worker',{}).get('counterfactual') for r in rows if r['mode']!='reference'}),
-        'compute':[{ 'increment':n,'method':m,'cost_origin':'historical' if n==0 else 'new',
+        'compute':[{ 'increment':n,'method':m,'cost_origin':'historical' if any(r['mode']=='reference' for r in rows if r['increment']==n) else 'new',
             **{k:{'n':len(v),'mean':float(np.mean(v)) if v else None,'maximum':max(v,default=None)}
                for k in ('original_layout_s','all_phase_s','initial_path_s','runner_s')
                for v in [[r['timing'][k] for r in rows if r['increment']==n and r['method']==m and k in r['timing']]]}}
@@ -221,11 +223,11 @@ def summarize(output,report):
     diagnostics=read(root/'quantity_diagnostics_60.json')
     columns=list(dict.fromkeys(k for r in diagnostics for k in r))
     csv_write(report/'quantity_diagnostics_60.csv',[{k:r.get(k) for k in columns} for r in diagnostics])
-    for name in ('manifest_360.json','inputs_frozen.json','reuse_decisions_120.json','all_independent_checks.json','environment.json','protocol.json'):
+    for name in (export_files if export_files is not None else ('manifest_360.json','inputs_frozen.json','reuse_decisions_120.json','all_independent_checks.json','environment.json','protocol.json')):
         write(report/name,read(root/name))
     write(report/'analysis.json',summary)
     plots(flat,cost_response,report)
-    analysis_locked(root)
+    lock_loader(root)
     write(report/'raw_checksums.json',{'run_files':{p.relative_to(root).as_posix():sha(p) for p in root.rglob('*') if p.is_file()},
         'historical_verified_files':len(lock['historical_files']),'historical_unchanged':True,
         'frozen_input_files':len(frozen['files']),'manifest_sha256':sha(root/'manifest_360.json')})

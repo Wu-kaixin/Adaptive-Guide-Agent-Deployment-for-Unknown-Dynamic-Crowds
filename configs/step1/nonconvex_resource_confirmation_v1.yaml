@@ -1,0 +1,42 @@
+protocol: step1_nonconvex_resource_confirmation_v1
+scientific_baseline: 865e6a48
+dependency_spec: configs/step1/nonconvex_demand_confirmation_v1.yaml
+scenes: [elongated, tight_u, wide_u]
+methods: [equal_arc, projected_mass]
+base_counts: {elongated: 11, tight_u: 13, wide_u: 19}
+increments: [0, 2, 4]
+diagnostic_increment: -1
+seed_selection:
+  start: 95
+  length: 20
+  maximum_seed: 4999
+  rule: first_common_contiguous_unexposed_interval_in_local_metadata
+initialization:
+  policy: nested_largest_periodic_arc_gap_midpoint
+  tie_break: exact_max_gap_then_smallest_start_arc
+  guide_ids: original_zero_based_rows_then_append
+  redraw_or_relocation: false
+demand: hotspot5
+evaluation:
+  primary_samples: 2048
+  fine_samples: 8192
+  fine_evaluator: reports/step1_nonconvex_phase_attribution_v1/summarize.py
+statistics:
+  primary: I2_equals_delta_N2_minus_delta_N0_m2
+  direction: negative
+  primary_subset: four_qualified_targets_at_N0_and_N2_regardless_of_execution
+  scene_weighting: equal_mean_of_three_conditional_within_scene_means
+  sampling_unit: all_N_methods_and_states_of_one_scene_seed
+  bootstrap_repetitions: 10000
+  bootstrap_rng_seed: 2026102003
+  confidence: 0.95
+  minimum_valid_pairs_per_scene_for_interval: 2
+  maximum_uncalculable_bootstrap_share: 0.01
+  secondary: [delta_N0, delta_N2, delta_N4, I4, own_resource_change, excess, background_mass, background_arc, actual_cost, motion]
+runtime:
+  first_seed_workers: 1
+  maximum_workers: 2
+  numerical_threads: 1
+  counterfactual: 0
+  stop_on: [SAFETY_VIOLATION, EXPERIMENT_ERROR, independent_or_pairing_inconsistency]
+  retry_completed_scientific_failure: false

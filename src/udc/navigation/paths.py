@@ -567,6 +567,18 @@ def _boundary_node(point, domain):
         nudged = nearest + BOUNDARY_NODE_NUDGE_M * direction / length
     if domain.free.covers(Point(nudged)) and domain.physical_free.covers(LineString([point, nudged])):
         return nudged
+    # An ulp-sized projection vector can point along/into the obstacle rather
+    # than outward. Preserve every previously accepted node; only a failed
+    # numerical-boundary contact may try the existing outward normal. The
+    # true state is retained and the complete prefix uses the original limits.
+    if length <= ENDPOINT_TOLERANCE_M:
+        outward = _outward_free_direction(nearest, domain)
+        if outward is not None:
+            candidate = nearest + BOUNDARY_NODE_NUDGE_M * outward
+            if (domain.free.covers(Point(candidate))
+                    and domain.physical_free.covers(LineString([point, candidate]))
+                    and segment_in_free(point, candidate, domain)):
+                return candidate
     return None
 
 

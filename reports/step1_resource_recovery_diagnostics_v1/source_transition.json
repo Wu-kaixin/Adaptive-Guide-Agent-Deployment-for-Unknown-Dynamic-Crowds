@@ -1,0 +1,11 @@
+{
+  "path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\navigation\\paths.py",
+  "repository_path": "src/udc/navigation/paths.py",
+  "original_git_ref": "125fd653",
+  "original_raw_sha256": "5ca95b7bdb6e17b0ceb23597da5d21ffd8425983f79c532f5e3a0bef2dae855a",
+  "original_git_blob_sha256": "83b4db24851aeabd08bd22dab83b63bfcc58da40ce4e3a589f467097c7358e0f",
+  "candidate_raw_sha256": "e33658be2399bcb60fdc305c3c856d133d86915ad29dc1ed26a4582b1dd94002",
+  "reason": "intentional single shared navigation repair after isolated B evidence; original code verified through Git, old artifacts remain live-file locked",
+  "no_original_lock_modified": true,
+  "no_small_episode_started_before_this_record": true
+}

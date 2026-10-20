@@ -1,0 +1,18 @@
+{
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "udc_import": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "PyYAML": "6.0.3",
+    "jupedsim": "1.4.2",
+    "pedpy": "1.5.1",
+    "threadpoolctl": "3.7.0",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2"
+  },
+  "no_upgrade": true
+}

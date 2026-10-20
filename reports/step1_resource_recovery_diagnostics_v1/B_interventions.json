@@ -1,0 +1,36 @@
+[
+  {
+    "true_position": [
+      15.51303783646583,
+      17.202662530362915
+    ],
+    "projection": [
+      15.513037836465829,
+      17.202662530362915
+    ],
+    "projection_distance": 1.7763568394002505e-15,
+    "node": [
+      15.5130378375733,
+      17.2026625403014
+    ],
+    "accepted": true,
+    "domain_sha256": "84caf8c54b0940fddfab84feabf2062fada4fe675f0db21fa27e3e9b17a1f705"
+  },
+  {
+    "true_position": [
+      15.51303783646583,
+      17.202662530362915
+    ],
+    "projection": [
+      15.513037836465829,
+      17.202662530362915
+    ],
+    "projection_distance": 1.7763568394002505e-15,
+    "node": [
+      15.5130378375733,
+      17.2026625403014
+    ],
+    "accepted": true,
+    "domain_sha256": "84caf8c54b0940fddfab84feabf2062fada4fe675f0db21fa27e3e9b17a1f705"
+  }
+]

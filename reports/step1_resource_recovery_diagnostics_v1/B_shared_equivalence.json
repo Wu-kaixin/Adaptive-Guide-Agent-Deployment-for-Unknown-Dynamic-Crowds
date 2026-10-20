@@ -1,0 +1,13 @@
+{
+  "all_equal": true,
+  "arrays": {
+    "positions": true,
+    "nominal_velocity": true,
+    "safe_velocity": true,
+    "waypoint_index": true,
+    "targets": true,
+    "assignment": true
+  },
+  "small_rows": 9,
+  "remaining_eight_original_trajectories_exact": true
+}

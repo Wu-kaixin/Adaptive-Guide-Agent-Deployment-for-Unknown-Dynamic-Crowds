@@ -1,0 +1,109 @@
+{
+  "task_id": "wide_u__seed_92__N_23__projected_mass",
+  "scene": "wide_u",
+  "seed": 92,
+  "count": 23,
+  "method": "projected_mass",
+  "original_status": "PATH_UNREACHABLE",
+  "original_physical_success": false,
+  "attempt": "B_navigation_only",
+  "status": "SUCCESS",
+  "success": true,
+  "physical_success": true,
+  "criteria_consistent": true,
+  "assignment_trace": {
+    "accepted": true,
+    "changes": 1,
+    "events": 3,
+    "initial_sha256": "951b02e7a3eca35cbf8817c481cf8c459d304a9e27b0a28d73e02122480f4882",
+    "final_sha256": "4976c0046f7cc00987624b57685b7dd8e9ec3565c9f1e6e6b0b34ca1d7e910ad"
+  },
+  "motion": {
+    "executed_intervals": 381,
+    "simulation_time_s": 38.1,
+    "actual_trajectory_length_m": 306.0392532605744,
+    "interval_safety_ok": true,
+    "unsafe_interval_count": 0,
+    "minimum_center_distances_m": {
+      "crowd": 0.7799925492696403,
+      "guides": 0.750000009938092,
+      "walls": 1.0
+    },
+    "minimum_net_clearances_m": {
+      "crowd": 0.029992549269640345,
+      "guides": 9.93809201599305e-09,
+      "walls": 0.44999999999999996
+    },
+    "terminal_arrival_ok": true,
+    "final_max_target_error_m": 0.0033865391551055044
+  },
+  "first_position_difference_frame": null,
+  "prefix": {
+    "positions": {
+      "common_samples": 207,
+      "exact": true,
+      "first_difference_sample": null
+    },
+    "nominal_velocity": {
+      "common_samples": 206,
+      "exact": true,
+      "first_difference_sample": null
+    },
+    "safe_velocity": {
+      "common_samples": 206,
+      "exact": true,
+      "first_difference_sample": null
+    },
+    "waypoint_index": {
+      "common_samples": 206,
+      "exact": true,
+      "first_difference_sample": null
+    }
+  },
+  "source": {
+    "commit": "f634725fa686e44e199d72572779cce6690abc63",
+    "dirty": true,
+    "patch_sha256": "1ebc6ffa2fdfbffbf50920c7cb91c5d3d601e25cfe500ccd70f20dd4e97e147b",
+    "source_sha256": "4c8cc4ec318a4521a5129b5512d95600601f22a995cc63174bb75512bb58a264",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "0567d3a0cff537105acac6009f9b8916ae69023fd541876c8b9840ded964113b",
+    "task_sha256": "203f27f5dc3e90f8bfa307f8e6d1ed059977b8e4f06decd8088a274eccd9112c",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "numeric_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "counterfactual": "0",
+  "wall_s": 4.149845500000083,
+  "recoveries": 3,
+  "targets_exact": true,
+  "input_exact": true
+}

@@ -1,0 +1,28 @@
+{
+  "expected": 9,
+  "completed": 9,
+  "outcomes": {
+    "SUCCESS": 9
+  },
+  "wall_s": 30.755674,
+  "stop": null,
+  "source": {
+    "commit": "f634725fa686e44e199d72572779cce6690abc63",
+    "dirty": true,
+    "patch_sha256": "796412ec3d64ee15fbadcdad6f49697e91844cb53623a7813688e85d2b2a5a72",
+    "source_sha256": "da1bb96b1dfb16ec91c8163c431be79f153565d5aa806172e2a2b195f56dd189",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "ed00836a2c7927fe5f30a39192321b600e32fa9badf71abc37f0b23e327ba9e4",
+    "task_sha256": "ac92ba869677f91b0a45c16001aedb28777bb538ccc9329faad707c1d7421f3e",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  }
+}

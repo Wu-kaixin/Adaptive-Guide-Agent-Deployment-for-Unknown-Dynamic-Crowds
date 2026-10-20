@@ -1,0 +1,1219 @@
+[
+  {
+    "kind": "source",
+    "id": 0,
+    "position": [
+      9.531625686148523,
+      11.72159529436602
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6531952651570138,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      9.531625686148523,
+      11.72159529436602
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.178695605350692,
+      11.810839756867848
+    ],
+    "projection_delta": [
+      0.6470699192021687,
+      0.08924446250182783
+    ],
+    "projection_delta_norm": 0.6531952651570136,
+    "normal_node": [
+      10.178695595444466,
+      11.810839755501572
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 5
+  },
+  {
+    "kind": "source",
+    "id": 1,
+    "position": [
+      9.536371294079428,
+      13.392156922819575
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6614267965621695,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      9.536371294079428,
+      13.392156922819575
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.191401190505946,
+      13.300389597491014
+    ],
+    "projection_delta": [
+      0.6550298964265178,
+      -0.09176732532856136
+    ],
+    "projection_delta_norm": 0.6614267965621687,
+    "normal_node": [
+      10.191401180602659,
+      13.300389598878429
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 4
+  },
+  {
+    "kind": "source",
+    "id": 2,
+    "position": [
+      9.522953459040222,
+      14.77238849636377
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.659008304737693,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      9.522953459040222,
+      14.77238849636377
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.181794683377358,
+      14.787227189944787
+    ],
+    "projection_delta": [
+      0.6588412243371362,
+      0.01483869358101586
+    ],
+    "projection_delta_norm": 0.6590083047376929,
+    "normal_node": [
+      10.181794673379894,
+      14.78722718971962
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 4
+  },
+  {
+    "kind": "source",
+    "id": 3,
+    "position": [
+      9.818846199694624,
+      17.335203001060027
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6472382299210445,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      9.818846199694624,
+      17.335203001060027
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.384647343616635,
+      17.02089997560868
+    ],
+    "projection_delta": [
+      0.5658011439220108,
+      -0.31430302545134836
+    ],
+    "projection_delta_norm": 0.6472382299210445,
+    "normal_node": [
+      10.384647334684391,
+      17.02089998010479
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 6
+  },
+  {
+    "kind": "source",
+    "id": 4,
+    "position": [
+      12.45979497696339,
+      14.358143594081547
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6407016502704485,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      12.45979497696339,
+      14.358143594081547
+    ],
+    "true_prefix": null,
+    "projection": [
+      11.819184992968493,
+      14.368981170624924
+    ],
+    "projection_delta": [
+      -0.6406099839948975,
+      0.010837576543377025
+    ],
+    "projection_delta_norm": 0.6407016502704488,
+    "normal_node": [
+      11.819185002967062,
+      14.368981170455772
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 8
+  },
+  {
+    "kind": "source",
+    "id": 5,
+    "position": [
+      11.217875879985488,
+      17.887019568192375
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6525698735146818,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      11.217875879985488,
+      17.887019568192375
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.994965496055546,
+      17.273702031711334
+    ],
+    "projection_delta": [
+      -0.22291038392994267,
+      -0.6133175364810413
+    ],
+    "projection_delta_norm": 0.6525698735146818,
+    "normal_node": [
+      10.994965492228712,
+      17.27370204095013
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 10
+  },
+  {
+    "kind": "source",
+    "id": 6,
+    "position": [
+      12.388679476593042,
+      16.956151238851714
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6878104593884825,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      12.388679476593042,
+      16.956151238851714
+    ],
+    "true_prefix": null,
+    "projection": [
+      11.759876444545153,
+      16.67742202450277
+    ],
+    "projection_delta": [
+      -0.6288030320478892,
+      -0.2787292143489424
+    ],
+    "projection_delta_norm": 0.6878104593884841,
+    "normal_node": [
+      11.75987645368725,
+      16.677422028555185
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 10
+  },
+  {
+    "kind": "source",
+    "id": 7,
+    "position": [
+      12.477657638675439,
+      15.620601928632617
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6372070605513245,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      12.477657638675439,
+      15.620601928632617
+    ],
+    "true_prefix": null,
+    "projection": [
+      11.840541744422767,
+      15.631380393601125
+    ],
+    "projection_delta": [
+      -0.6371158942526716,
+      0.010778464968508317
+    ],
+    "projection_delta_norm": 0.637207060551324,
+    "normal_node": [
+      11.840541754421336,
+      15.631380393431973
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 9
+  },
+  {
+    "kind": "source",
+    "id": 8,
+    "position": [
+      15.455260234550284,
+      17.950433756656427
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.7494383883024969,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      15.455260234550284,
+      17.950433756656427
+    ],
+    "true_prefix": null,
+    "projection": [
+      15.510020996009992,
+      17.20299870471827
+    ],
+    "projection_delta": [
+      0.05476076145970765,
+      -0.7474350519381581
+    ],
+    "projection_delta_norm": 0.7494383883024969,
+    "normal_node": [
+      15.51002098852596,
+      17.20299871135071
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 7
+  },
+  {
+    "kind": "source",
+    "id": 9,
+    "position": [
+      15.51303783646583,
+      17.202662530362915
+    ],
+    "physical_free": true,
+    "signed_distance_m": -6.837726719201222e-16,
+    "covered": false,
+    "component": null,
+    "prepared": false,
+    "planner_node": null,
+    "true_prefix": null,
+    "projection": [
+      15.513037836465829,
+      17.202662530362915
+    ],
+    "projection_delta": [
+      -1.7763568394002505e-15,
+      0.0
+    ],
+    "projection_delta_norm": 1.7763568394002505e-15,
+    "normal_node": [
+      15.5130378375733,
+      17.2026625403014
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": null
+  },
+  {
+    "kind": "source",
+    "id": 10,
+    "position": [
+      14.98664452721863,
+      16.612421782314158
+    ],
+    "physical_free": true,
+    "signed_distance_m": -3.03529944071326e-14,
+    "covered": false,
+    "component": null,
+    "prepared": true,
+    "planner_node": [
+      14.986644520147541,
+      16.612421789385248
+    ],
+    "true_prefix": [
+      14.98664452721863,
+      16.612421782314158
+    ],
+    "projection": [
+      14.986644527218608,
+      16.61242178231418
+    ],
+    "projection_delta": [
+      -2.1316282072803006e-14,
+      2.1316282072803006e-14
+    ],
+    "projection_delta_norm": 3.014577520672848e-14,
+    "normal_node": [
+      14.986644519734577,
+      16.61242178894662
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 5
+  },
+  {
+    "kind": "source",
+    "id": 11,
+    "position": [
+      14.34441382285384,
+      14.935541222123
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6299577377051108,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      14.34441382285384,
+      14.935541222123
+    ],
+    "true_prefix": null,
+    "projection": [
+      14.968794139429647,
+      15.019183146821295
+    ],
+    "projection_delta": [
+      0.6243803165758077,
+      0.0836419246982949
+    ],
+    "projection_delta_norm": 0.6299577377051108,
+    "normal_node": [
+      14.968794129518184,
+      15.019183145493557
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 8
+  },
+  {
+    "kind": "source",
+    "id": 12,
+    "position": [
+      17.380437934065114,
+      15.533657490875024
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6775815811185323,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      17.380437934065114,
+      15.533657490875024
+    ],
+    "true_prefix": null,
+    "projection": [
+      16.729678019006894,
+      15.722412178298965
+    ],
+    "projection_delta": [
+      -0.6507599150582202,
+      0.1887546874239412
+    ],
+    "projection_delta_norm": 0.6775815811185334,
+    "normal_node": [
+      16.72967802861105,
+      15.722412175513254
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 5
+  },
+  {
+    "kind": "source",
+    "id": 13,
+    "position": [
+      17.389901510956328,
+      14.12734999148812
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6304124524784238,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      17.389901510956328,
+      14.12734999148812
+    ],
+    "true_prefix": null,
+    "projection": [
+      16.761838040250904,
+      14.072979622670916
+    ],
+    "projection_delta": [
+      -0.628063470705424,
+      -0.054370368817204806
+    ],
+    "projection_delta_norm": 0.6304124524784245,
+    "normal_node": [
+      16.761838050213644,
+      14.072979623533373
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 5
+  },
+  {
+    "kind": "source",
+    "id": 14,
+    "position": [
+      17.36272269423647,
+      12.67780145364265
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6190602659087452,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      17.36272269423647,
+      12.67780145364265
+    ],
+    "true_prefix": null,
+    "projection": [
+      16.74506750580493,
+      12.719486955086222
+    ],
+    "projection_delta": [
+      -0.6176551884315415,
+      0.04168550144357219
+    ],
+    "projection_delta_norm": 0.6190602659087443,
+    "normal_node": [
+      16.74506751578223,
+      12.719486954412854
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 4
+  },
+  {
+    "kind": "source",
+    "id": 15,
+    "position": [
+      17.12209748016319,
+      11.06706856142626
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6291733150365066,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      17.12209748016319,
+      11.06706856142626
+    ],
+    "true_prefix": null,
+    "projection": [
+      16.66254884990157,
+      11.496805826250586
+    ],
+    "projection_delta": [
+      -0.4595486302616223,
+      0.42973726482432717
+    ],
+    "projection_delta_norm": 0.6291733150365066,
+    "normal_node": [
+      16.66254885987887,
+      11.49680582557722
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 6
+  },
+  {
+    "kind": "source",
+    "id": 16,
+    "position": [
+      15.536304045586936,
+      10.47444703594269
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6449865480368702,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      15.536304045586936,
+      10.47444703594269
+    ],
+    "true_prefix": null,
+    "projection": [
+      15.534240554867443,
+      11.11943028313177
+    ],
+    "projection_delta": [
+      -0.0020634907194931884,
+      0.6449832471890797
+    ],
+    "projection_delta_norm": 0.644986548036871,
+    "normal_node": [
+      15.534240554899435,
+      11.11943027313182
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 3
+  },
+  {
+    "kind": "source",
+    "id": 17,
+    "position": [
+      14.019462700390946,
+      10.518877867080036
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.5957031484407341,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      14.019462700390946,
+      10.518877867080036
+    ],
+    "true_prefix": null,
+    "projection": [
+      14.017556880925216,
+      11.114577966890643
+    ],
+    "projection_delta": [
+      -0.0019058194657297634,
+      0.5957000998106068
+    ],
+    "projection_delta_norm": 0.5957031484407337,
+    "normal_node": [
+      14.017556880957208,
+      11.114577956890693
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 3
+  },
+  {
+    "kind": "source",
+    "id": 18,
+    "position": [
+      10.863895633860928,
+      10.500625249848037
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.7008100866791503,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      10.863895633860928,
+      10.500625249848037
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.980940373091839,
+      11.19159218582226
+    ],
+    "projection_delta": [
+      0.11704473923091108,
+      0.6909669359742239
+    ],
+    "projection_delta_norm": 0.700810086679151,
+    "normal_node": [
+      10.980940371421704,
+      11.191592175962715
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 4
+  },
+  {
+    "kind": "source",
+    "id": 19,
+    "position": [
+      17.12532984519645,
+      17.13015365084188
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.649976155801246,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      17.12532984519645,
+      17.13015365084188
+    ],
+    "true_prefix": null,
+    "projection": [
+      16.618843808844588,
+      16.722795211515106
+    ],
+    "projection_delta": [
+      -0.5064860363518626,
+      -0.4073584393267744
+    ],
+    "projection_delta_norm": 0.649976155801246,
+    "normal_node": [
+      16.618843816574692,
+      16.722795217859037
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 6
+  },
+  {
+    "kind": "source",
+    "id": 20,
+    "position": [
+      14.26075488753929,
+      16.42378391229065
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.7354471814866309,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      14.26075488753929,
+      16.42378391229065
+    ],
+    "true_prefix": null,
+    "projection": [
+      14.992235562017878,
+      16.500063527005054
+    ],
+    "projection_delta": [
+      0.731480674478588,
+      0.07627961471440514
+    ],
+    "projection_delta_norm": 0.73544718148663,
+    "normal_node": [
+      14.992235552071811,
+      16.500063525967867
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 10
+  },
+  {
+    "kind": "source",
+    "id": 21,
+    "position": [
+      9.50276573730907,
+      16.01942490038349
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6511117611823527,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      9.50276573730907,
+      16.01942490038349
+    ],
+    "true_prefix": null,
+    "projection": [
+      10.153712420125819,
+      16.034085789846827
+    ],
+    "projection_delta": [
+      0.6509466828167483,
+      0.014660889463335991
+    ],
+    "projection_delta_norm": 0.6511117611823521,
+    "normal_node": [
+      10.153712410128355,
+      16.03408578962166
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 5
+  },
+  {
+    "kind": "source",
+    "id": 22,
+    "position": [
+      12.478287938832732,
+      10.512412043993592
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.5972382932518356,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "planner_node": [
+      12.478287938832732,
+      10.512412043993592
+    ],
+    "true_prefix": null,
+    "projection": [
+      12.476377208013302,
+      11.10964728075889
+    ],
+    "projection_delta": [
+      -0.001910730819430384,
+      0.5972352367652984
+    ],
+    "projection_delta_norm": 0.5972382932518363,
+    "normal_node": [
+      12.476377208045294,
+      11.109647270758941
+    ],
+    "normal_node_covered": true,
+    "normal_prefix_accepted": true,
+    "visible_static_nodes": 3
+  },
+  {
+    "kind": "target",
+    "id": 0,
+    "position": [
+      9.522953459762542,
+      14.772388496438
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6590083040138848,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 2,
+        "distance_m": 7.261239868890241e-10
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 1,
+    "position": [
+      9.536371299737405,
+      13.392156926171324
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6614267914239393,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 1,
+        "distance_m": 6.576239655323398e-09
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 2,
+    "position": [
+      9.53162599924226,
+      11.72159563142626
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6531949089476047,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 0,
+        "distance_m": 4.600405345468652e-07
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 3,
+    "position": [
+      10.86389565283588,
+      10.500625282407382
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.7008100514080406,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 18,
+        "distance_m": 3.7685007936812704e-08
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 4,
+    "position": [
+      12.478287944043101,
+      10.512412056130694
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.5972382811314652,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 22,
+        "distance_m": 1.3208224335473168e-08
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 5,
+    "position": [
+      14.019462701921928,
+      10.518877872778889
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.5957031427468084,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 17,
+        "distance_m": 5.900917677652177e-09
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 6,
+    "position": [
+      15.536304044752514,
+      10.474447040144174
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6449865438327383,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 16,
+        "distance_m": 4.2835411842116846e-09
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 7,
+    "position": [
+      17.122097422964607,
+      11.067068658874508
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6291732066996263,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 15,
+        "distance_m": 1.1299486325880428e-07
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 8,
+    "position": [
+      17.362542270720702,
+      12.677983836371926
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6188679708403818,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 14,
+        "distance_m": 0.00025654649672249036
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 9,
+    "position": [
+      17.389898999122675,
+      14.12735155761015
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6304100850754263,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 13,
+        "distance_m": 2.9600754228378272e-06
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 10,
+    "position": [
+      17.38043775079592,
+      15.53365753745802
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6775813921272623,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 12,
+        "distance_m": 1.8909672860148573e-07
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 11,
+    "position": [
+      17.125329645474885,
+      17.130153823132765
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6499761081502607,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 19,
+        "distance_m": 2.637666638820785e-07
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 12,
+    "position": [
+      15.464762735624566,
+      17.842779934278198
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6413800213838362,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 8,
+        "distance_m": 0.10807239702768662
+      },
+      {
+        "guide": 9,
+        "distance_m": 0.6419351806502557
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 13,
+    "position": [
+      14.324985554591983,
+      16.440470299947993
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6698322412242379,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 10,
+        "distance_m": 0.683637263719051
+      },
+      {
+        "guide": 20,
+        "distance_m": 0.0663627465004652
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 14,
+    "position": [
+      14.342761619786101,
+      14.931997643220212
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6320658074290724,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 11,
+        "distance_m": 0.003909824346096121
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 15,
+    "position": [
+      14.425873983856992,
+      13.535142911020625
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6688699377962755,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": []
+  },
+  {
+    "kind": "target",
+    "id": 16,
+    "position": [
+      13.006685176432606,
+      13.48444268419751
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6784435428369371,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": []
+  },
+  {
+    "kind": "target",
+    "id": 17,
+    "position": [
+      12.468309471713617,
+      14.342984103120724
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6494713521854383,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 4,
+        "distance_m": 0.01738697176172155
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 18,
+    "position": [
+      12.474910662300509,
+      15.621174958896239
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6344507842873626,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 7,
+        "distance_m": 0.0028061081389439426
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 19,
+    "position": [
+      12.388640425217675,
+      16.956133897044996
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6877677306236069,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 6,
+        "distance_m": 4.272877459400582e-05
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 20,
+    "position": [
+      11.217876994815079,
+      17.887017927259272
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6525687120993395,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 5,
+        "distance_m": 1.9838110960406067e-06
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 21,
+    "position": [
+      9.818846201784751,
+      17.335203000401386
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6472382277740618,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 3,
+        "distance_m": 2.1914469631326827e-09
+      }
+    ]
+  },
+  {
+    "kind": "target",
+    "id": 22,
+    "position": [
+      9.502765738021388,
+      16.019424900300898
+    ],
+    "physical_free": true,
+    "signed_distance_m": 0.6511117604720756,
+    "covered": true,
+    "component": 0,
+    "prepared": true,
+    "occupants": [
+      {
+        "guide": 21,
+        "distance_m": 7.170897037427492e-10
+      }
+    ]
+  }
+]

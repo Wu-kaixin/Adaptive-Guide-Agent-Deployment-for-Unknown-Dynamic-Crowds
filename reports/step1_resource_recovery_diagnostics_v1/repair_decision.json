@@ -1,0 +1,14 @@
+{
+  "adopted": "B_navigation_only",
+  "evidence": [
+    "A exact t=0 replay",
+    "A graph: 506 verified edges and 23 unqueried source9 edges; maximum matching22",
+    "same static reassignment geometry; no residual guide obstacles or graph cache",
+    "23 legal installed path suffixes, including source9; normal prefix independently verified",
+    "B graph529 verified edges, complete matching23; B physical success38.1s; same original 3 recoveries"
+  ],
+  "production_change": "fallback for rejected numerical boundary node only; 1e-8 original nudge, original 1e-7 full segment tolerance and physical guards",
+  "C_not_adopted": "original second-query failure short-circuits and rethrows the first error without testing the third strategy; not a physical-safety certificate. B removes the false missing-row result and naturally reaches existing priority_yield at22.6s, so no additional recovery-policy change is necessary in this repair",
+  "D_not_tested": "no independent need for an additional policy patch after B succeeds",
+  "no_budget_or_target_change": true
+}

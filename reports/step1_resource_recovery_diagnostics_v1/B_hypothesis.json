@@ -1,0 +1,19 @@
+{
+  "hypothesis": "a numerical boundary start is omitted because a 1.776e-15 projection vector is treated as a reliable direction",
+  "change": "only when original boundary node fails and contact is within original 1e-7, try the existing outward normal with original 1e-8 node offset",
+  "guards": [
+    "free.covers node",
+    "physical_free.covers full prefix",
+    "original complete segment check"
+  ],
+  "unchanged": [
+    "targets",
+    "initial assignment",
+    "recovery control flow",
+    "budget",
+    "clock",
+    "progress",
+    "safety filter"
+  ],
+  "no_C_or_D": "B has direct omitted-path evidence; first test only the navigation correction"
+}

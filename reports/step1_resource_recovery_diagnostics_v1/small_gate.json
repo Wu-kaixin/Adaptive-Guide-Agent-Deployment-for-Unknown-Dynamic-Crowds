@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "required": 9,
+  "complete_fixed_target_regression_only_if_pass": true
+}

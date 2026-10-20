@@ -1,0 +1,15 @@
+{
+  "first_changed_branch_time_s": 20.6,
+  "branch": "source9 boundary-node admission in reachable_reassignment",
+  "original_common_prefix_exact": true,
+  "original_frames": 207,
+  "B_frames": 382,
+  "first_position_difference_is_right_censored": true,
+  "reason": "baseline ends at frame206; the first additional B position is frame207 and has no original counterpart",
+  "original_status": "PATH_UNREACHABLE",
+  "B_status": "SUCCESS",
+  "B_recoveries": 3,
+  "B_priority_entry_time_s": 22.6,
+  "initial_target_and_assignment_unchanged": true,
+  "legal_reassignment_changes": 1
+}

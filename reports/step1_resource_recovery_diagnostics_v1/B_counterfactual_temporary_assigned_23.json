@@ -1,0 +1,1379 @@
+[
+  {
+    "guide": 0,
+    "target": 2,
+    "geometry": {
+      "wkb_sha256": "ddac2f9d89a5b6af4041b9a0367d9a02223541bda159302f9e73144c79b57ac6",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8170329925188,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        9.531625686148523,
+        11.72159529436602
+      ],
+      [
+        9.53162599924226,
+        11.72159563142626
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4989462096661588,
+            "guides": null,
+            "walls": 9.531625686148523
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 1,
+    "target": 1,
+    "geometry": {
+      "wkb_sha256": "c51eeff30b34504008fad0191f7a9100228fd3ad8f1d782f47831fc52d6418d0",
+      "type": "MultiPolygon",
+      "components": 7,
+      "valid": true,
+      "component_areas": [
+        777.9512446903364,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        9.536371294079428,
+        13.392156922819575
+      ],
+      [
+        9.536371299737405,
+        13.392156926171324
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4989680433530401,
+            "guides": null,
+            "walls": 9.536371294079428
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 2,
+    "target": 0,
+    "geometry": {
+      "wkb_sha256": "26ff01136f6a469dea616da62a315ce5c50e8b89ffe4276fa251523c13e4c38a",
+      "type": "MultiPolygon",
+      "components": 6,
+      "valid": true,
+      "component_areas": [
+        777.9553522401454,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        9.522953459040222,
+        14.77238849636377
+      ],
+      [
+        9.522953459762542,
+        14.772388496438
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4988517619586637,
+            "guides": null,
+            "walls": 9.522953459040222
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 3,
+    "target": 21,
+    "geometry": {
+      "wkb_sha256": "7face4c40a8b5bcdaafc450fcccb0468da73b0ee53af0bc9d6aa87fb2a4d306d",
+      "type": "MultiPolygon",
+      "components": 7,
+      "valid": true,
+      "component_areas": [
+        777.8510981246521,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        9.818846199694624,
+        17.335203001060027
+      ],
+      [
+        9.818846201784751,
+        17.335203000401386
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.49983818267863,
+            "guides": null,
+            "walls": 9.818846199694624
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 4,
+    "target": 17,
+    "geometry": {
+      "wkb_sha256": "bfe2b5f382ad04f6fa683c84522842d6112365e9c94d1ad8e6ec7a2ba51e62d7",
+      "type": "MultiPolygon",
+      "components": 7,
+      "valid": true,
+      "component_areas": [
+        777.814622429682,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        12.45979497696339,
+        14.358143594081547
+      ],
+      [
+        12.468309471713617,
+        14.342984103120724
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4882387380874997,
+            "guides": null,
+            "walls": 12.45979497696339
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 5,
+    "target": 20,
+    "geometry": {
+      "wkb_sha256": "53d8d6c543b5e673e307ee755caa31915bf5503476eb3fd057e5adac40413098",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8242121394389,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        11.217875879985488,
+        17.887019568192375
+      ],
+      [
+        11.217876994815079,
+        17.887017927259272
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4992092696108086,
+            "guides": null,
+            "walls": 11.217875879985488
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 6,
+    "target": 19,
+    "geometry": {
+      "wkb_sha256": "601f2af78ee898ba4a06e1c232a84cf89673bb8ef9438ab869221378d7798610",
+      "type": "MultiPolygon",
+      "components": 7,
+      "valid": true,
+      "component_areas": [
+        777.8738067289917,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        12.388679476593042,
+        16.956151238851714
+      ],
+      [
+        12.388640425217675,
+        16.956133897044996
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4988860342968549,
+            "guides": null,
+            "walls": 12.388640425217675
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 7,
+    "target": 18,
+    "geometry": {
+      "wkb_sha256": "4f6065bb302e15ddb20d0d8a0a706b664658a9dd45ace8394937acbe95159256",
+      "type": "MultiPolygon",
+      "components": 6,
+      "valid": true,
+      "component_areas": [
+        777.8527058685733,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": true,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        12.477657638675439,
+        15.620601928632617
+      ],
+      [
+        12.474910662300509,
+        15.621174958896239
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.499482873064415,
+            "guides": null,
+            "walls": 12.474910662300509
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 8,
+    "target": 12,
+    "geometry": {
+      "wkb_sha256": "ebabc0996d49ed16298553accf4f18466fbba65b60d222930efc4abd12a32c22",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.2553624925722,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": true,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "diagnostic_status": "temporary_target_occupied",
+    "target_occupants": [
+      {
+        "guide": 9,
+        "center_distance_m": 0.6419351806502557,
+        "threshold_m": 0.75
+      }
+    ]
+  },
+  {
+    "guide": 9,
+    "target": 15,
+    "geometry": {
+      "wkb_sha256": "538360124c41d6aa3931611159b40aaf81850c63ae227d48419555d98ef1f119",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        776.4376338917193,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        15.51303783646583,
+        17.202662530362915
+      ],
+      [
+        15.5130378375733,
+        17.2026625403014
+      ],
+      [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      [
+        15.455260234550284,
+        17.200433756656427
+      ],
+      [
+        14.98664452721863,
+        17.362421782314158
+      ],
+      [
+        14.26075488753929,
+        17.17378391229065
+      ],
+      [
+        13.730424801649379,
+        16.95411399818056
+      ],
+      [
+        13.51075488753929,
+        16.42378391229065
+      ],
+      [
+        13.59441382285384,
+        14.935541222123
+      ],
+      [
+        13.814083736963928,
+        14.405211136233088
+      ],
+      [
+        14.425873983856992,
+        13.535142911020625
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 0.8724551889533654,
+            "guides": null,
+            "walls": 12.7973374596986
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 0.8724551978484832,
+            "guides": null,
+            "walls": 12.797001295281731
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 0.8738463236075826,
+            "guides": null,
+            "walls": 12.797001295281731
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 0.8926006606457847,
+            "guides": null,
+            "walls": 12.637578217685842
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.2848930957281215,
+            "guides": null,
+            "walls": 12.637578217685842
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.7493245476488515,
+            "guides": null,
+            "walls": 12.826216087709351
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 2.1682664012244968,
+            "guides": null,
+            "walls": 13.04588600181944
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 2.219220398288941,
+            "guides": null,
+            "walls": 13.51075488753929
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 2.0883986539126833,
+            "guides": null,
+            "walls": 13.59441382285384
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.5011743320043187,
+            "guides": null,
+            "walls": 13.535142911020625
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 10,
+    "target": 16,
+    "geometry": {
+      "wkb_sha256": "989d4c33b2c0f24aa19c1706243c5391fd3e066b6980132fc0b1c76871833ce0",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        776.4110461106491,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        14.98664452721863,
+        16.612421782314158
+      ],
+      [
+        14.986644520147541,
+        16.612421789385248
+      ],
+      [
+        14.7910849734292,
+        16.95411399818056
+      ],
+      [
+        14.26075488753929,
+        17.17378391229065
+      ],
+      [
+        13.730424801649379,
+        16.95411399818056
+      ],
+      [
+        13.51075488753929,
+        16.42378391229065
+      ],
+      [
+        13.20979497696339,
+        14.358143594081547
+      ],
+      [
+        13.006685176432606,
+        13.48444268419751
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 0.8664074053022444,
+            "guides": null,
+            "walls": 13.387578210614752
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 0.866407413968193,
+            "guides": null,
+            "walls": 13.04588600181944
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.1776136507494748,
+            "guides": null,
+            "walls": 12.826216087709351
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.7493245476488515,
+            "guides": null,
+            "walls": 12.826216087709351
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 2.1682664012244968,
+            "guides": null,
+            "walls": 13.04588600181944
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 2.2205689517172305,
+            "guides": null,
+            "walls": 13.20979497696339
+          }
+        },
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4990114773576395,
+            "guides": null,
+            "walls": 13.006685176432606
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 11,
+    "target": 14,
+    "geometry": {
+      "wkb_sha256": "b3280c3d19cf2b9024fd71ede20be7f6c8be5fa2e9cde8099c0e346195cd3ae2",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8016650785602,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        14.34441382285384,
+        14.935541222123
+      ],
+      [
+        14.342761619786101,
+        14.931997643220212
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4965500566591439,
+            "guides": null,
+            "walls": 14.342761619786101
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 12,
+    "target": 10,
+    "geometry": {
+      "wkb_sha256": "6a9412867c68e81e65893878d152474d958db9267fbfe0884c2160770138afed",
+      "type": "MultiPolygon",
+      "components": 7,
+      "valid": true,
+      "component_areas": [
+        778.0081811239636,
+        0.12165853849329086,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        17.380437934065114,
+        15.533657490875024
+      ],
+      [
+        17.38043775079592,
+        15.53365753745802
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4992284070832296,
+            "guides": null,
+            "walls": 12.619562065934886
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 13,
+    "target": 9,
+    "geometry": {
+      "wkb_sha256": "f051789c92d9a62738cb254e4510a477ad53174702c24e1ec029b3f0e389645f",
+      "type": "MultiPolygon",
+      "components": 6,
+      "valid": true,
+      "component_areas": [
+        778.1016034244975,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        17.389901510956328,
+        14.12734999148812
+      ],
+      [
+        17.389898999122675,
+        14.12735155761015
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4989909225541476,
+            "guides": null,
+            "walls": 12.610098489043672
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 14,
+    "target": 8,
+    "geometry": {
+      "wkb_sha256": "7529a77b821ed8448f8d01aeae01cbe838d972eb60fb10ad4408c4891ade8ea5",
+      "type": "MultiPolygon",
+      "components": 7,
+      "valid": true,
+      "component_areas": [
+        777.9136001735826,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        17.36272269423647,
+        12.67780145364265
+      ],
+      [
+        17.362542270720702,
+        12.677983836371926
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.499031295456932,
+            "guides": null,
+            "walls": 12.63727730576353
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 15,
+    "target": 7,
+    "geometry": {
+      "wkb_sha256": "ee836aa9f2b6b9cffcb3b7b1efc9e1d2899b4d62ffd30cccd082de79828385d9",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8209535683092,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        17.12209748016319,
+        11.06706856142626
+      ],
+      [
+        17.122097422964607,
+        11.067068658874508
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.499146951941376,
+            "guides": null,
+            "walls": 11.06706856142626
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 16,
+    "target": 6,
+    "geometry": {
+      "wkb_sha256": "f95fc4eca8072d68a81626e8205805b9428ea7e603c20cffba1e737519d8dbae",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8098490475295,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        15.536304045586936,
+        10.47444703594269
+      ],
+      [
+        15.536304044752514,
+        10.474447040144174
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4995178429356824,
+            "guides": null,
+            "walls": 10.47444703594269
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 17,
+    "target": 5,
+    "geometry": {
+      "wkb_sha256": "ff9b77ece4d6c221b82a5372e7f9190825d8e950f1276a31572a43aa4e83200d",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.7789948955404,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        14.019462700390946,
+        10.518877867080036
+      ],
+      [
+        14.019462701921928,
+        10.518877872778889
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4991932535622818,
+            "guides": null,
+            "walls": 10.518877867080036
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 18,
+    "target": 3,
+    "geometry": {
+      "wkb_sha256": "b22a5dfac72fdec6504a51c00bd7cddcbd7cb49fde4f2b835ba27ef51135c612",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8320162014977,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        10.863895633860928,
+        10.500625249848037
+      ],
+      [
+        10.86389565283588,
+        10.500625282407382
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4993949751863298,
+            "guides": null,
+            "walls": 10.500625249848037
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 19,
+    "target": 11,
+    "geometry": {
+      "wkb_sha256": "6906eeae87faa8708f8b8e7b6f276ff9bce3537a4ca8d841406c192d7641722b",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.8214974953895,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        17.12532984519645,
+        17.13015365084188
+      ],
+      [
+        17.125329645474885,
+        17.130153823132765
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4990942010474737,
+            "guides": null,
+            "walls": 12.869846176867235
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 20,
+    "target": 13,
+    "geometry": {
+      "wkb_sha256": "a8330db1bd82f0dedcd46eb01cfa7798b320ce8e8223dd5e917d850779e47e4e",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.2660114037506,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "diagnostic_status": "temporary_target_occupied",
+    "target_occupants": [
+      {
+        "guide": 10,
+        "center_distance_m": 0.683637263719051,
+        "threshold_m": 0.75
+      }
+    ]
+  },
+  {
+    "guide": 21,
+    "target": 22,
+    "geometry": {
+      "wkb_sha256": "68ba8e99c77f2f45ce11ee0ef695d2aab807f3d1b8c5ce57c739ddab3dab0de0",
+      "type": "MultiPolygon",
+      "components": 6,
+      "valid": true,
+      "component_areas": [
+        777.8480848834707,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        9.50276573730907,
+        16.01942490038349
+      ],
+      [
+        9.502765738021388,
+        16.019424900300898
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4996058589106969,
+            "guides": null,
+            "walls": 9.50276573730907
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  },
+  {
+    "guide": 22,
+    "target": 4,
+    "geometry": {
+      "wkb_sha256": "5fce731cc5ceda51f4847a2dccbaa82242eb857d34ef40ccec6836591db05b13",
+      "type": "MultiPolygon",
+      "components": 8,
+      "valid": true,
+      "component_areas": [
+        777.7801329570565,
+        0.12165853849329086,
+        0.19166316810607192,
+        0.07503637292640629,
+        0.0709643505747329,
+        0.050782374414859645,
+        0.08186344160668958,
+        0.15142754784807816
+      ]
+    },
+    "original_route_loop_entered": false,
+    "original_shortest_queried": false,
+    "static_status": "validated_path",
+    "components": [
+      0,
+      0
+    ],
+    "diagnostic_status": "found_path",
+    "path": [
+      [
+        12.478287938832732,
+        10.512412043993592
+      ],
+      [
+        12.478287944043101,
+        10.512412056130694
+      ]
+    ],
+    "validation": {
+      "accepted": true,
+      "endpoint_match": true,
+      "segments": [
+        {
+          "physical": true,
+          "complete_static_segment": true,
+          "clearances": {
+            "crowd": 1.4992177201591903,
+            "guides": null,
+            "walls": 10.512412043993592
+          }
+        }
+      ]
+    },
+    "target_occupants": []
+  }
+]

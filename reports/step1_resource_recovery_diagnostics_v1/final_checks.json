@@ -1,0 +1,51 @@
+{
+  "all_fixed_target_rows": 276,
+  "readonly_common_rejections": 84,
+  "source_commit_counts": {
+    "865e6a481f3bcc974aa89269eaea666182cc1ade": 276
+  },
+  "source_dirty_rows": 0,
+  "all_target_input_initial_assignment_and_initial_paths_exact": true,
+  "all_reassignment_chains_valid": true,
+  "old_275_trajectories_identical": 275,
+  "old_275_physical_success_degraded": 0,
+  "actual_scientific_failure_resolved": 1,
+  "original_program_errors_new_execution_success": 2,
+  "old_273_accounting_not_rewritten": true,
+  "independent_rows": 360,
+  "independent_executed_rows": 276,
+  "independent_inconsistent": 0,
+  "unsafe_intervals": 0,
+  "complete_motion_intervals": 63604,
+  "maximum_observed_speed_m_s": 1.0000000000000002,
+  "maximum_recoveries": 3,
+  "worker_numeric_pools": [
+    1
+  ],
+  "counterfactual_flags": [
+    "0"
+  ],
+  "tests": "207 passed in 30.37s",
+  "pre_freeze_tests": "207 passed in 29.20s",
+  "specialized_tests": "33 passed in 1.75s",
+  "pip_check": "No broken requirements found",
+  "compileall_passed": true,
+  "protected_entries_verified": 11465,
+  "intentional_source_transition_verified_via_git": true,
+  "manifest_sha256": "81ef1a8a467798ba7c91b944477933844a00aaa954b87e102362d6fe7c9669f6",
+  "protocol_sha256": "77122f12f85f2b681d040d9b0f4c6de225b9231cfde63dd554b5dd41596a5d93",
+  "candidate_freeze_sha256": "559022b3ca06fc80aa31531b832e6bbe48991087003fd5719054bf260b11b7a7",
+  "source_transition_sha256": "ceffec55f359d0aaf5235d0f8bd1461c8560715d571d251fc17ec761e64f57e1",
+  "original_resource_raw_files_verified": 5321,
+  "original_resource_accounting_verified": {
+    "BOUNDARY_INVALID": 42,
+    "SUCCESS": 273,
+    "INITIALIZATION_INVALID": 42,
+    "EXPERIMENT_ERROR": 2,
+    "PATH_UNREACHABLE": 1
+  },
+  "old_275_time_arrays_exact": 275,
+  "stable_person_ids_and_zero_velocity_arrays_exact": true,
+  "no_old_report_or_metrics_overwritten": true,
+  "final_diff_check_passed": true
+}

@@ -1,0 +1,285 @@
+{
+  "source": {
+    "commit": "865e6a481f3bcc974aa89269eaea666182cc1ade",
+    "dirty": false,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_sha256": "12fd97e6f26c28485b7ae306f2163201066f468b33b1a31766788bd8abc0c02a",
+    "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "input_snapshot_sha256": null,
+    "task_request_sha256": "bfa0b07164faf9ab588be25231265b6deadd49fb68b1ccc005f827e41f76e8f9",
+    "task_sha256": "79f707e5e0a07d399b47ea5140f40f71d8dc928b4046f09c17bc064cb3fd22ee",
+    "python": "3.12.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "jupedsim": "1.4.2"
+    }
+  },
+  "original_accounting_unchanged": {
+    "SUCCESS": 273,
+    "common_rejections": 84,
+    "EXPERIMENT_ERROR": 2,
+    "actual_scientific_failure": 1
+  },
+  "all_rows": 360,
+  "fixed_target_executions": 276,
+  "readonly_common_rejections": 84,
+  "new_outcomes": {
+    "READONLY_COMMON_REJECTION": 84,
+    "SUCCESS": 276
+  },
+  "original_physical_success_n": 275,
+  "original_success_degraded": [],
+  "identical_original_success_trajectories": 275,
+  "changed_original_success_trajectories": [],
+  "focal": {
+    "task_id": "wide_u__seed_92__N_23__projected_mass",
+    "scene": "wide_u",
+    "seed": 92,
+    "count": 23,
+    "method": "projected_mass",
+    "original_status": "PATH_UNREACHABLE",
+    "target_valid": true,
+    "new_status": "SUCCESS",
+    "original_physical_success": false,
+    "new_physical_success": true,
+    "executed": true,
+    "original_time_s": 20.6,
+    "new_time_s": 38.1,
+    "cutoff_margin_s": 1.8999999999999986,
+    "total_travel_m": 306.0392532605744,
+    "per_guide_travel_m": 13.306054489590192,
+    "recoveries": 3,
+    "original_recoveries": 2,
+    "trajectory_identical": false,
+    "common_prefix_exact": true,
+    "first_changed_common_position_frame": null,
+    "first_unshared_frame": 207,
+    "targets_exact": true,
+    "input_exact": true,
+    "assignment_trace_ok": true,
+    "minimum_crowd_m": 0.029992549269640345,
+    "minimum_guides_m": 9.93809201599305e-09,
+    "minimum_walls_m": 0.44999999999999996,
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "runner_wall_s": 4.508700200000021,
+    "old_275_success_time_difference_s": null,
+    "old_275_success_travel_difference_m": null
+  },
+  "prior_program_errors": [
+    {
+      "task_id": "wide_u__seed_77__N_21__equal_arc",
+      "scene": "wide_u",
+      "seed": 77,
+      "count": 21,
+      "method": "equal_arc",
+      "original_status": "EXPERIMENT_ERROR",
+      "target_valid": true,
+      "new_status": "SUCCESS",
+      "original_physical_success": true,
+      "new_physical_success": true,
+      "executed": true,
+      "original_time_s": 31.8,
+      "new_time_s": 31.8,
+      "cutoff_margin_s": 8.2,
+      "total_travel_m": 276.76101701184854,
+      "per_guide_travel_m": 13.179096048183263,
+      "recoveries": 3,
+      "original_recoveries": 3,
+      "trajectory_identical": true,
+      "common_prefix_exact": true,
+      "first_changed_common_position_frame": null,
+      "first_unshared_frame": null,
+      "targets_exact": true,
+      "input_exact": true,
+      "assignment_trace_ok": true,
+      "minimum_crowd_m": 0.037414395575113835,
+      "minimum_guides_m": 1.0007419670721163e-08,
+      "minimum_walls_m": 0.44999999999999996,
+      "criteria_consistent": true,
+      "diagnostics_consistent": true,
+      "runner_wall_s": 4.722482099999979,
+      "old_275_success_time_difference_s": 0.0,
+      "old_275_success_travel_difference_m": 0.0
+    },
+    {
+      "task_id": "wide_u__seed_77__N_21__projected_mass",
+      "scene": "wide_u",
+      "seed": 77,
+      "count": 21,
+      "method": "projected_mass",
+      "original_status": "EXPERIMENT_ERROR",
+      "target_valid": true,
+      "new_status": "SUCCESS",
+      "original_physical_success": true,
+      "new_physical_success": true,
+      "executed": true,
+      "original_time_s": 37.5,
+      "new_time_s": 37.5,
+      "cutoff_margin_s": 2.5,
+      "total_travel_m": 282.8213715271359,
+      "per_guide_travel_m": 13.467684358435044,
+      "recoveries": 3,
+      "original_recoveries": 3,
+      "trajectory_identical": true,
+      "common_prefix_exact": true,
+      "first_changed_common_position_frame": null,
+      "first_unshared_frame": null,
+      "targets_exact": true,
+      "input_exact": true,
+      "assignment_trace_ok": true,
+      "minimum_crowd_m": 0.026340240070174548,
+      "minimum_guides_m": 1.000051386146339e-08,
+      "minimum_walls_m": 0.44999999999999996,
+      "criteria_consistent": true,
+      "diagnostics_consistent": true,
+      "runner_wall_s": 5.400612999999794,
+      "old_275_success_time_difference_s": 0.0,
+      "old_275_success_travel_difference_m": 0.0
+    }
+  ],
+  "all_new_targets_exact": true,
+  "all_new_inputs_exact": true,
+  "all_assignment_traces_valid": true,
+  "independent_inconsistent": 0,
+  "unsafe_intervals": 0,
+  "safety_minima": {
+    "crowd": 0.01271584954548488,
+    "guides": 8.8779270601691e-09,
+    "walls": 0.44999999999999996
+  },
+  "recovery_distribution": {
+    "0": 191,
+    "3": 79,
+    "1": 3,
+    "2": 3
+  },
+  "maximum_recoveries": 3,
+  "slowest_success": {
+    "task_id": "wide_u__seed_90__N_23__equal_arc",
+    "scene": "wide_u",
+    "seed": 90,
+    "count": 23,
+    "method": "equal_arc",
+    "original_status": "SUCCESS",
+    "target_valid": true,
+    "new_status": "SUCCESS",
+    "original_physical_success": true,
+    "new_physical_success": true,
+    "executed": true,
+    "original_time_s": 39.2,
+    "new_time_s": 39.2,
+    "cutoff_margin_s": 0.7999999999999972,
+    "total_travel_m": 306.091234359262,
+    "per_guide_travel_m": 13.308314537359218,
+    "recoveries": 3,
+    "original_recoveries": 3,
+    "trajectory_identical": true,
+    "common_prefix_exact": true,
+    "first_changed_common_position_frame": null,
+    "first_unshared_frame": null,
+    "targets_exact": true,
+    "input_exact": true,
+    "assignment_trace_ok": true,
+    "minimum_crowd_m": 0.01271584954548488,
+    "minimum_guides_m": 9.992973781791648e-09,
+    "minimum_walls_m": 0.44999999999999996,
+    "criteria_consistent": true,
+    "diagnostics_consistent": true,
+    "runner_wall_s": 4.151161199999478,
+    "old_275_success_time_difference_s": 0.0,
+    "old_275_success_travel_difference_m": 0.0
+  },
+  "costs": {
+    "new_time_s": {
+      "mean": 23.04492753623188,
+      "minimum": 17.900000000000002,
+      "maximum": 39.2
+    },
+    "total_travel_m": {
+      "mean": 214.76620185047594,
+      "minimum": 143.10331731617651,
+      "maximum": 316.72339152992726
+    },
+    "per_guide_travel_m": {
+      "mean": 13.02147224464375,
+      "minimum": 12.135235132076215,
+      "maximum": 13.77058224043162
+    },
+    "runner_wall_s": {
+      "mean": 1.9238846144927542,
+      "minimum": 0.7829148999990139,
+      "maximum": 5.942264299999806
+    }
+  },
+  "old_275_success_cost_differences": {
+    "old_275_success_time_difference_s": {
+      "mean": 0.0,
+      "maximum_absolute": 0.0
+    },
+    "old_275_success_travel_difference_m": {
+      "mean": 0.0,
+      "maximum_absolute": 0.0
+    }
+  },
+  "full_summary": {
+    "expected": 276,
+    "completed": 276,
+    "outcomes": {
+      "SUCCESS": 276
+    },
+    "wall_s": 358.37114949999886,
+    "stop": null,
+    "source": {
+      "commit": "865e6a481f3bcc974aa89269eaea666182cc1ade",
+      "dirty": false,
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "12fd97e6f26c28485b7ae306f2163201066f468b33b1a31766788bd8abc0c02a",
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "input_snapshot_sha256": null,
+      "task_request_sha256": "bfa0b07164faf9ab588be25231265b6deadd49fb68b1ccc005f827e41f76e8f9",
+      "task_sha256": "79f707e5e0a07d399b47ea5140f40f71d8dc928b4046f09c17bc064cb3fd22ee",
+      "python": "3.12.15",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "dependencies": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "shapely": "2.2.0",
+        "PyYAML": "6.0.3",
+        "jupedsim": "1.4.2"
+      }
+    }
+  },
+  "small_summary": {
+    "expected": 9,
+    "completed": 9,
+    "outcomes": {
+      "SUCCESS": 9
+    },
+    "wall_s": 30.755674,
+    "stop": null,
+    "source": {
+      "commit": "f634725fa686e44e199d72572779cce6690abc63",
+      "dirty": true,
+      "patch_sha256": "796412ec3d64ee15fbadcdad6f49697e91844cb53623a7813688e85d2b2a5a72",
+      "source_sha256": "da1bb96b1dfb16ec91c8163c431be79f153565d5aa806172e2a2b195f56dd189",
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "input_snapshot_sha256": null,
+      "task_request_sha256": "ed00836a2c7927fe5f30a39192321b600e32fa9badf71abc37f0b23e327ba9e4",
+      "task_sha256": "ac92ba869677f91b0a45c16001aedb28777bb538ccc9329faad707c1d7421f3e",
+      "python": "3.12.15",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "dependencies": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "shapely": "2.2.0",
+        "PyYAML": "6.0.3",
+        "jupedsim": "1.4.2"
+      }
+    }
+  }
+}

@@ -1,0 +1,6811 @@
+{
+  "schema_version": "1.2.0",
+  "commit": "f634725fa686e44e199d72572779cce6690abc63",
+  "dirty": false,
+  "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_sha256": "5abe51f49f4e05d22c54cc6fead7c023489cadcf7cbac1d8d6be2f2fb7ef96f6",
+  "input_snapshot_sha256": "d01306c2e636922887bfcede69a7c8f4dd48a2e395f1ed8e7dad3875173068b0",
+  "config_sha256": "85d940142429014899b80afab2f705547014b01680decd33e371eb8dd117ea8c",
+  "task_request_sha256": "e16517101c14b10fd5665ca9b6a2ed37665c3e64b5fef4aede6a985bff574b9f",
+  "task_sha256": "ec15524b03bbfb43f2909540d44ec4b8ced5dac61ab7a9a922b0c2f77f70418b",
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "PyYAML": "6.0.3",
+    "jupedsim": "1.4.2"
+  },
+  "scene": "square",
+  "method": "projected_mass+all_phase_256",
+  "protocol": "fixed_n",
+  "fixed_n": 23,
+  "seed": 92,
+  "termination_status": "PATH_UNREACHABLE",
+  "motion_status": "STOPPED",
+  "failure_reason": "PATH_UNREACHABLE: assigned target temporarily occupied by other guides (guide 8 target 12)",
+  "failure_stage": "execution",
+  "failure_diagnosis": {
+    "kind": "current_guide_occupation",
+    "guide": 8,
+    "target": 12,
+    "query_domain": "static_with_current_guides",
+    "endpoint": "target",
+    "occupants": [
+      {
+        "guide": 9,
+        "center_distance_m": 0.6419351806502557,
+        "threshold_m": 0.75
+      }
+    ],
+    "release_guaranteed": false
+  },
+  "success": false,
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": false,
+    "curve_ok": false,
+    "gap_ok": false,
+    "coverage_ok": false
+  },
+  "stage_diagnosis": "plan_found_execution_failed",
+  "feasibility": {
+    "curve_length": 35.74064553850277,
+    "planned_gap_limit": 1.94,
+    "min_separation": 0.75,
+    "necessary_min_count": 19,
+    "necessary_max_count": 47,
+    "available_guides": 23,
+    "requested_count": 23,
+    "necessary_condition_met": true,
+    "infeasibility_certificate": null
+  },
+  "plan_found": true,
+  "assignment_found": true,
+  "target_domain": {
+    "accepted": true,
+    "invalid_target_indices": [],
+    "query_domain": "static_conservative_navigation",
+    "geometry_sha256": "84caf8c54b0940fddfab84feabf2062fada4fe675f0db21fa27e3e9b17a1f705",
+    "endpoint_tolerance_m": 1e-07,
+    "targets": [
+      {
+        "target": 0,
+        "coordinates": [
+          9.522953459762542,
+          14.772388496438
+        ],
+        "arc_m": 0.9541706222826991,
+        "signed_free_distance_m": 0.6590083040138848,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 1,
+        "coordinates": [
+          9.536371299737405,
+          13.392156926171324
+        ],
+        "arc_m": 2.3454894837076603,
+        "signed_free_distance_m": 0.6614267914239393,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 2,
+        "coordinates": [
+          9.53162599924226,
+          11.72159563142626
+        ],
+        "arc_m": 4.032416036986801,
+        "signed_free_distance_m": 0.6531949089476047,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 3,
+        "coordinates": [
+          10.86389565283588,
+          10.500625282407382
+        ],
+        "arc_m": 5.9724160369868,
+        "signed_free_distance_m": 0.7008100514080406,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 4,
+        "coordinates": [
+          12.478287944043101,
+          10.512412056130694
+        ],
+        "arc_m": 7.5978996061483866,
+        "signed_free_distance_m": 0.5972382811314652,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 5,
+        "coordinates": [
+          14.019462701921928,
+          10.518877872778889
+        ],
+        "arc_m": 9.144254635865975,
+        "signed_free_distance_m": 0.5957031427468084,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 6,
+        "coordinates": [
+          15.536304044752514,
+          10.474447040144174
+        ],
+        "arc_m": 10.668781282977852,
+        "signed_free_distance_m": 0.6449865438327383,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 7,
+        "coordinates": [
+          17.122097422964607,
+          11.067068658874508
+        ],
+        "arc_m": 12.440653130707046,
+        "signed_free_distance_m": 0.6291732066996263,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 8,
+        "coordinates": [
+          17.362542270720702,
+          12.677983836371926
+        ],
+        "arc_m": 14.126721636844088,
+        "signed_free_distance_m": 0.6188679708403818,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 9,
+        "coordinates": [
+          17.389898999122675,
+          14.12735155761015
+        ],
+        "arc_m": 15.591492040144065,
+        "signed_free_distance_m": 0.6304100850754263,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 10,
+        "coordinates": [
+          17.38043775079592,
+          15.53365753745802
+        ],
+        "arc_m": 17.021137782934556,
+        "signed_free_distance_m": 0.6775813921272623,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 11,
+        "coordinates": [
+          17.125329645474885,
+          17.130153823132765
+        ],
+        "arc_m": 18.665501090724806,
+        "signed_free_distance_m": 0.6499761081502607,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 12,
+        "coordinates": [
+          15.464762735624566,
+          17.842779934278198
+        ],
+        "arc_m": 20.605501090724808,
+        "signed_free_distance_m": 0.6413800213838362,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 13,
+        "coordinates": [
+          14.324985554591983,
+          16.440470299947993
+        ],
+        "arc_m": 22.54550109072481,
+        "signed_free_distance_m": 0.6698322412242379,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 14,
+        "coordinates": [
+          14.342761619786101,
+          14.931997643220212
+        ],
+        "arc_m": 24.081841620507365,
+        "signed_free_distance_m": 0.6320658074290724,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 15,
+        "coordinates": [
+          14.425873983856992,
+          13.535142911020625
+        ],
+        "arc_m": 25.492882827720276,
+        "signed_free_distance_m": 0.6688699377962755,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 16,
+        "coordinates": [
+          13.006685176432606,
+          13.48444268419751
+        ],
+        "arc_m": 26.93550230368471,
+        "signed_free_distance_m": 0.6784435428369371,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 17,
+        "coordinates": [
+          12.468309471713617,
+          14.342984103120724
+        ],
+        "arc_m": 28.25758999949043,
+        "signed_free_distance_m": 0.6494713521854383,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 18,
+        "coordinates": [
+          12.474910662300509,
+          15.621174958896239
+        ],
+        "arc_m": 29.550780013790327,
+        "signed_free_distance_m": 0.6344507842873626,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 19,
+        "coordinates": [
+          12.388640425217675,
+          16.956133897044996
+        ],
+        "arc_m": 30.903033296049774,
+        "signed_free_distance_m": 0.6877677306236069,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 20,
+        "coordinates": [
+          11.217876994815079,
+          17.887017927259272
+        ],
+        "arc_m": 32.469474962438966,
+        "signed_free_distance_m": 0.6525687120993395,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 21,
+        "coordinates": [
+          9.818846201784751,
+          17.335203000401386
+        ],
+        "arc_m": 34.04479475506213,
+        "signed_free_distance_m": 0.6472382277740618,
+        "accepted": true,
+        "reason": "covered"
+      },
+      {
+        "target": 22,
+        "coordinates": [
+          9.502765738021388,
+          16.019424900300898
+        ],
+        "arc_m": 35.435568169907604,
+        "signed_free_distance_m": 0.6511117604720756,
+        "accepted": true,
+        "reason": "covered"
+      }
+    ]
+  },
+  "demand_kind": "hotspot",
+  "boundary_source": "estimated_disk_union",
+  "prescribed_plan_installed": true,
+  "demand_region": {
+    "center": [
+      11.0,
+      16.4
+    ],
+    "radius": 1.2,
+    "multiplier": 5.0
+  },
+  "demand_clipped_count": 0,
+  "hotspot_people": 3,
+  "planned_concentration": null,
+  "equal_arc_fallback": null,
+  "adapt_concentration": null,
+  "active_guides": 23,
+  "reserve_guides": 0,
+  "steps": 206,
+  "simulation_time": 20.6,
+  "wall_time": 2.1749766000002637,
+  "curve_length": 35.74064553850277,
+  "planned_max_gap": 1.9400000000000013,
+  "max_gap_limit": 2.0,
+  "target_min_euclidean_distance": 1.0133813534096394,
+  "tracking_rmse": 1.1102981750360572,
+  "max_tracking_error": 3.825261481347374,
+  "mean_curve_distance": 0.06290470287759478,
+  "max_curve_distance": 0.6325584096748958,
+  "actual_max_gap": 4.1916605766420325,
+  "arc_projection_error_max": 4.739503442797666,
+  "projection_valid": true,
+  "order_preserved": false,
+  "target_actual_max_gap": 1.9400000000000013,
+  "minimum_center_distances": {
+    "crowd": 0.7799925492696403,
+    "guides": 0.7500000100004802,
+    "walls": 1.0
+  },
+  "minimum_net_clearances": {
+    "crowd": 0.029992549269640345,
+    "guides": 1.0000480221705743e-08,
+    "walls": 0.44999999999999996
+  },
+  "most_dangerous_step": {
+    "crowd": 167,
+    "guides": 205,
+    "walls": 0
+  },
+  "coverage_density": "mass_cvt gaussian demand mass, shared by all methods",
+  "hotspot_arc_fraction": 0.208984375,
+  "hotspot_demand_share": 0.3646607765755404,
+  "planned_demand_weighted_cost": 0.18385625153996524,
+  "planned_uncovered_demand_share": 0.0,
+  "planned_uniform_cost": 0.2113053443292579,
+  "planned_hotspot_guide_fraction": 0.227116704805492,
+  "planned_hotspot_concentration": 1.0867640454244103,
+  "planned_hotspot_mean_spacing": 1.4298790219571813,
+  "planned_hotspot_max_gap": 1.5753197926231621,
+  "actual_demand_weighted_cost": 0.382433836171901,
+  "actual_uncovered_demand_share": 0.08271340623434544,
+  "actual_uniform_cost": 0.35283127923636315,
+  "actual_hotspot_guide_fraction": 0.22758962623951184,
+  "actual_hotspot_concentration": 1.0890269965853276,
+  "actual_hotspot_mean_spacing": 1.4269077949785525,
+  "actual_hotspot_max_gap": 1.575318478290832,
+  "planning_attempts": [
+    {
+      "n": 23,
+      "phase": null,
+      "max_gap": 1.9400000000000013,
+      "min_separation": 1.0133813534096394,
+      "accepted": true,
+      "supplied_plan": true,
+      "boundary_source": "estimated_disk_union",
+      "target_domain": {
+        "accepted": true,
+        "invalid_target_indices": [],
+        "query_domain": "static_conservative_navigation",
+        "geometry_sha256": "84caf8c54b0940fddfab84feabf2062fada4fe675f0db21fa27e3e9b17a1f705",
+        "endpoint_tolerance_m": 1e-07,
+        "targets": [
+          {
+            "target": 0,
+            "coordinates": [
+              9.522953459762542,
+              14.772388496438
+            ],
+            "arc_m": 0.9541706222826991,
+            "signed_free_distance_m": 0.6590083040138848,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 1,
+            "coordinates": [
+              9.536371299737405,
+              13.392156926171324
+            ],
+            "arc_m": 2.3454894837076603,
+            "signed_free_distance_m": 0.6614267914239393,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 2,
+            "coordinates": [
+              9.53162599924226,
+              11.72159563142626
+            ],
+            "arc_m": 4.032416036986801,
+            "signed_free_distance_m": 0.6531949089476047,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 3,
+            "coordinates": [
+              10.86389565283588,
+              10.500625282407382
+            ],
+            "arc_m": 5.9724160369868,
+            "signed_free_distance_m": 0.7008100514080406,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 4,
+            "coordinates": [
+              12.478287944043101,
+              10.512412056130694
+            ],
+            "arc_m": 7.5978996061483866,
+            "signed_free_distance_m": 0.5972382811314652,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 5,
+            "coordinates": [
+              14.019462701921928,
+              10.518877872778889
+            ],
+            "arc_m": 9.144254635865975,
+            "signed_free_distance_m": 0.5957031427468084,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 6,
+            "coordinates": [
+              15.536304044752514,
+              10.474447040144174
+            ],
+            "arc_m": 10.668781282977852,
+            "signed_free_distance_m": 0.6449865438327383,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 7,
+            "coordinates": [
+              17.122097422964607,
+              11.067068658874508
+            ],
+            "arc_m": 12.440653130707046,
+            "signed_free_distance_m": 0.6291732066996263,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 8,
+            "coordinates": [
+              17.362542270720702,
+              12.677983836371926
+            ],
+            "arc_m": 14.126721636844088,
+            "signed_free_distance_m": 0.6188679708403818,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 9,
+            "coordinates": [
+              17.389898999122675,
+              14.12735155761015
+            ],
+            "arc_m": 15.591492040144065,
+            "signed_free_distance_m": 0.6304100850754263,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 10,
+            "coordinates": [
+              17.38043775079592,
+              15.53365753745802
+            ],
+            "arc_m": 17.021137782934556,
+            "signed_free_distance_m": 0.6775813921272623,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 11,
+            "coordinates": [
+              17.125329645474885,
+              17.130153823132765
+            ],
+            "arc_m": 18.665501090724806,
+            "signed_free_distance_m": 0.6499761081502607,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 12,
+            "coordinates": [
+              15.464762735624566,
+              17.842779934278198
+            ],
+            "arc_m": 20.605501090724808,
+            "signed_free_distance_m": 0.6413800213838362,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 13,
+            "coordinates": [
+              14.324985554591983,
+              16.440470299947993
+            ],
+            "arc_m": 22.54550109072481,
+            "signed_free_distance_m": 0.6698322412242379,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 14,
+            "coordinates": [
+              14.342761619786101,
+              14.931997643220212
+            ],
+            "arc_m": 24.081841620507365,
+            "signed_free_distance_m": 0.6320658074290724,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 15,
+            "coordinates": [
+              14.425873983856992,
+              13.535142911020625
+            ],
+            "arc_m": 25.492882827720276,
+            "signed_free_distance_m": 0.6688699377962755,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 16,
+            "coordinates": [
+              13.006685176432606,
+              13.48444268419751
+            ],
+            "arc_m": 26.93550230368471,
+            "signed_free_distance_m": 0.6784435428369371,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 17,
+            "coordinates": [
+              12.468309471713617,
+              14.342984103120724
+            ],
+            "arc_m": 28.25758999949043,
+            "signed_free_distance_m": 0.6494713521854383,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 18,
+            "coordinates": [
+              12.474910662300509,
+              15.621174958896239
+            ],
+            "arc_m": 29.550780013790327,
+            "signed_free_distance_m": 0.6344507842873626,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 19,
+            "coordinates": [
+              12.388640425217675,
+              16.956133897044996
+            ],
+            "arc_m": 30.903033296049774,
+            "signed_free_distance_m": 0.6877677306236069,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 20,
+            "coordinates": [
+              11.217876994815079,
+              17.887017927259272
+            ],
+            "arc_m": 32.469474962438966,
+            "signed_free_distance_m": 0.6525687120993395,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 21,
+            "coordinates": [
+              9.818846201784751,
+              17.335203000401386
+            ],
+            "arc_m": 34.04479475506213,
+            "signed_free_distance_m": 0.6472382277740618,
+            "accepted": true,
+            "reason": "covered"
+          },
+          {
+            "target": 22,
+            "coordinates": [
+              9.502765738021388,
+              16.019424900300898
+            ],
+            "arc_m": 35.435568169907604,
+            "signed_free_distance_m": 0.6511117604720756,
+            "accepted": true,
+            "reason": "covered"
+          }
+        ]
+      }
+    }
+  ],
+  "total_demand": 38.0,
+  "path_length": 294.20878881086526,
+  "resource_utilization": 1.0,
+  "safety_limits": {
+    "guide_distance": 0.75,
+    "crowd_distance": 0.75,
+    "wall_distance": 0.55,
+    "max_speed": 1.0,
+    "numeric_tolerance": 1e-07
+  },
+  "safety_diagnostics": [
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.0,
+      "solve_time": 0.0030910999994375743,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.068057858823099,
+      "solve_time": 0.00243159999990894,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1361157176461978,
+      "solve_time": 0.00234329999966576,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.2041735764692967,
+      "solve_time": 0.002254700000776211,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.2722314352923956,
+      "solve_time": 0.00276910000047792,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.3402892941154945,
+      "solve_time": 0.0021541999994951766,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.4083471529385934,
+      "solve_time": 0.002646899999490415,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4764050117616923,
+      "solve_time": 0.002122599999893282,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.5444628705847911,
+      "solve_time": 0.0028315999998085317,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.61252072940789,
+      "solve_time": 0.002341300000807678,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.510833468576701e-16,
+      "min_predicted_clearance": 1.680578588230989,
+      "solve_time": 0.0029165000005377806,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 1.7486364470540878,
+      "solve_time": 0.002131299999746261,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.237726045655905e-16,
+      "min_predicted_clearance": 1.8166943058771867,
+      "solve_time": 0.0025045000002137385,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.3766115072321297e-16,
+      "min_predicted_clearance": 1.8847521647002856,
+      "solve_time": 0.0022618999992118916,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.9528100235233845,
+      "solve_time": 0.002285499999743479,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.0208678823464834,
+      "solve_time": 0.002139300000635558,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.0889257411695823,
+      "solve_time": 0.002189800000451214,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.156983599992681,
+      "solve_time": 0.003070799999477458,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.236828524569469e-16,
+      "min_predicted_clearance": 2.22504145881578,
+      "solve_time": 0.002279100000123435,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.293099317638879,
+      "solve_time": 0.0025729999997565756,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.361157176461978,
+      "solve_time": 0.0021333999993657926,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.4292150352850768,
+      "solve_time": 0.002643300000272575,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.4972728941081757,
+      "solve_time": 0.002402799999799754,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.5653307529312745,
+      "solve_time": 0.0026741000001493376,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.557244268705792,
+      "solve_time": 0.002189400000133901,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.5331360991275,
+      "solve_time": 0.0021505000004253816,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.5090279361891965,
+      "solve_time": 0.002812899999298679,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.484919780084142,
+      "solve_time": 0.0023722000005363952,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.460811631013168,
+      "solve_time": 0.0023434999993696692,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.436703489185056,
+      "solve_time": 0.002353699999730452,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.4125953548169305,
+      "solve_time": 0.0023354999993898673,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.3884872281346796,
+      "solve_time": 0.0024548999999751686,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.364379109373415,
+      "solve_time": 0.005458499999804189,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 2.340270998777923,
+      "solve_time": 0.0035654999992402736,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.316162896603193,
+      "solve_time": 0.0024738000001889304,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.29205480311493,
+      "solve_time": 0.0020959000003131223,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.2679467185901507,
+      "solve_time": 0.0031964999998308485,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.2438386433177624,
+      "solve_time": 0.002055599999948754,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.3766115072321297e-16,
+      "min_predicted_clearance": 2.219730577599237,
+      "solve_time": 0.0023472000002584537,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.195622521749274,
+      "solve_time": 0.0020694000004368718,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.171514476096562,
+      "solve_time": 0.0020647000001190463,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.1474064409845335,
+      "solve_time": 0.00255250000009255,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.123298416772235,
+      "solve_time": 0.0021594999998342246,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 2.099190403835191,
+      "solve_time": 0.0023449000000255182,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.0750824025663914,
+      "solve_time": 0.0020946999993611826,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 2.050974413377289,
+      "solve_time": 0.0026686000001063803,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 2.0268664366989233,
+      "solve_time": 0.0020886000002064975,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.9373740229761033e-16,
+      "min_predicted_clearance": 2.002758472983088,
+      "solve_time": 0.002214500000263797,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.9786505227035864,
+      "solve_time": 0.0021212000001469278,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.9545425863575998,
+      "solve_time": 0.002057000000604603,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.7755575615628914e-16,
+      "min_predicted_clearance": 1.9304346644671515,
+      "solve_time": 0.0026044000005640555,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.9063267575806708,
+      "solve_time": 0.002345999999306514,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.8822188662746737,
+      "solve_time": 0.0022219000002223765,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.8581109911556102,
+      "solve_time": 0.0021193000002313056,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.237726045655905e-16,
+      "min_predicted_clearance": 1.8340031328618018,
+      "solve_time": 0.0021357999994506827,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.809895292065595,
+      "solve_time": 0.0020588999996107304,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.7857874694756266,
+      "solve_time": 0.002076100000522274,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.510833468576701e-16,
+      "min_predicted_clearance": 1.7616796658393374,
+      "solve_time": 0.002176599999984319,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.737571881945634,
+      "solve_time": 0.002064200000859273,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.7134641186278354,
+      "solve_time": 0.0022639999997409177,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.689356376766813,
+      "solve_time": 0.002301100000295264,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.6652486572944605,
+      "solve_time": 0.002309900000000198,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.6411409611974126,
+      "solve_time": 0.002618800000163901,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.6170332895211563,
+      "solve_time": 0.0029612999996970757,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.5929256433744523,
+      "solve_time": 0.0025028000000020256,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.5688180239342273,
+      "solve_time": 0.003589399999327725,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.5447104324508625,
+      "solve_time": 0.0025949999999284046,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.520602870254047,
+      "solve_time": 0.0029516000004150555,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.4964953387591353,
+      "solve_time": 0.0020675999994637095,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 1.4723878394741894,
+      "solve_time": 0.004379699999844888,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4482803740076646,
+      "solve_time": 0.0028861000000688364,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.4241729440769362,
+      "solve_time": 0.006914200000210258,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.4000655515176472,
+      "solve_time": 0.002813099999912083,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3759581982940967,
+      "solve_time": 0.0032865000002857414,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.3518508865106824,
+      "solve_time": 0.0025379999997312552,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.327743618424648,
+      "solve_time": 0.0022591000006286777,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 4.775249788392736e-16,
+      "min_predicted_clearance": 1.3036363964601843,
+      "solve_time": 0.0024123000002873596,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.510833468576701e-16,
+      "min_predicted_clearance": 1.2795292232241862,
+      "solve_time": 0.0024982000004456495,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.2554221015237637,
+      "solve_time": 0.0027956000003541703,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.231315034385869,
+      "solve_time": 0.0029109000006428687,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.207208025079217,
+      "solve_time": 0.003971199999796227,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.1831010771389405,
+      "solve_time": 0.0030279000002337852,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.158994194394284,
+      "solve_time": 0.0026579999994282844,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 1.1348873809998283,
+      "solve_time": 0.0032719999999244465,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 3.510833468576701e-16,
+      "min_predicted_clearance": 1.1107806414708168,
+      "solve_time": 0.002292200000738376,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.086673980723128,
+      "solve_time": 0.0020935000002282322,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.0625674041187483,
+      "solve_time": 0.0021445000002131565,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.0384609175175161,
+      "solve_time": 0.0021360000000640866,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 1.014354527336307,
+      "solve_time": 0.003954699999667355,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 0.9902482406167987,
+      "solve_time": 0.002908700000261888,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.9661420651034415,
+      "solve_time": 0.002361199999540986,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.9420360093333381,
+      "solve_time": 0.002159800000299583,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.9179300827403436,
+      "solve_time": 0.0023208000002341578,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 1.5700924586837752e-16,
+      "min_predicted_clearance": 0.8938242957759475,
+      "solve_time": 0.002154499999960535,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.8697186600503161,
+      "solve_time": 0.002239000000372471,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.8456131884973932,
+      "solve_time": 0.002366799999435898,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.821507895569125,
+      "solve_time": 0.003420699999878707,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.797402797464844,
+      "solve_time": 0.0026866000007430557,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7732979124036088,
+      "solve_time": 0.002825700000357756,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.005705428915966874,
+      "min_predicted_clearance": 0.7500001303146808,
+      "solve_time": 0.003078099999584083,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.5612511283791264e-17,
+      "iterations": 1,
+      "correction_norm": 0.17066602013720764,
+      "min_predicted_clearance": 0.7500001020072617,
+      "solve_time": 0.0029059999997116392,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.5052130349130266e-18,
+      "iterations": 1,
+      "correction_norm": 0.17760124744959066,
+      "min_predicted_clearance": 0.7500001050155894,
+      "solve_time": 0.0036912999994456186,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.5344990823027445e-17,
+      "iterations": 1,
+      "correction_norm": 0.18514611505438525,
+      "min_predicted_clearance": 0.7500001016026809,
+      "solve_time": 0.002853300000424497,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.1933873938292458,
+      "min_predicted_clearance": 0.7500000954561342,
+      "solve_time": 0.003862200000185112,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.2024296435898379,
+      "min_predicted_clearance": 0.7500000858903167,
+      "solve_time": 0.002311100000042643,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.683753385137379e-17,
+      "iterations": 1,
+      "correction_norm": 0.2123999891081541,
+      "min_predicted_clearance": 0.7500000722147266,
+      "solve_time": 0.002843600000232982,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.765421556309548e-17,
+      "iterations": 1,
+      "correction_norm": 0.22345462623014228,
+      "min_predicted_clearance": 0.7500000538207406,
+      "solve_time": 0.002390200000263576,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.2357877087501122,
+      "min_predicted_clearance": 0.7500000300853499,
+      "solve_time": 0.0023651000001336797,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.249643676344735,
+      "min_predicted_clearance": 0.7500000114700125,
+      "solve_time": 0.0021004999998694984,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.26533463479277597,
+      "min_predicted_clearance": 0.7500000114230204,
+      "solve_time": 0.002795200000036857,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.2832652649152685,
+      "min_predicted_clearance": 0.750000021159162,
+      "solve_time": 0.0021004999998694984,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.30396908630189895,
+      "min_predicted_clearance": 0.7500001014900816,
+      "solve_time": 0.002875799999856099,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.8163916471489756e-17,
+      "iterations": 1,
+      "correction_norm": 0.3281619347033958,
+      "min_predicted_clearance": 0.7500003463035336,
+      "solve_time": 0.0025828999996519997,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.469446951953614e-18,
+      "iterations": 1,
+      "correction_norm": 0.35682124305205903,
+      "min_predicted_clearance": 0.7500009706152069,
+      "solve_time": 0.0023680999993302976,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.36854033763706906,
+      "min_predicted_clearance": 0.7500027350639152,
+      "solve_time": 0.0021266000003379304,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.4023434466988354,
+      "min_predicted_clearance": 0.7500146418934426,
+      "solve_time": 0.0025445000001127482,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.806255641895632e-17,
+      "iterations": 1,
+      "correction_norm": 0.48948084560120364,
+      "min_predicted_clearance": 0.7500118371616775,
+      "solve_time": 0.002115100000082748,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.4955956627315886,
+      "min_predicted_clearance": 0.7500160151829526,
+      "solve_time": 0.002251599999908649,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.6249280526968732e-11,
+      "iterations": 4,
+      "correction_norm": 0.48484577965168885,
+      "min_predicted_clearance": 0.7500279232892951,
+      "solve_time": 0.0055216000000655185,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.80024933533241e-11,
+      "iterations": 5,
+      "correction_norm": 0.4491549232145102,
+      "min_predicted_clearance": 0.7501228232593867,
+      "solve_time": 0.004195399999844085,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.257495520691549e-10,
+      "iterations": 5,
+      "correction_norm": 0.40164004395576663,
+      "min_predicted_clearance": 0.7504441114471658,
+      "solve_time": 0.003952299999582465,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.486417041846494e-11,
+      "iterations": 6,
+      "correction_norm": 0.3437737065793902,
+      "min_predicted_clearance": 0.7508801784722925,
+      "solve_time": 0.003470999999990454,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.108041767343252e-11,
+      "iterations": 6,
+      "correction_norm": 0.2830387216013885,
+      "min_predicted_clearance": 0.7513818077029647,
+      "solve_time": 0.0028127000005042646,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.2258238868412263e-10,
+      "iterations": 6,
+      "correction_norm": 0.22750778607906394,
+      "min_predicted_clearance": 0.7519133451845998,
+      "solve_time": 0.0026511999994909274,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.33735428181825e-10,
+      "iterations": 6,
+      "correction_norm": 0.1584425103265209,
+      "min_predicted_clearance": 0.7524450611452899,
+      "solve_time": 0.002918300000601448,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 3.904084833195043e-10,
+      "iterations": 6,
+      "correction_norm": 0.07393406204165062,
+      "min_predicted_clearance": 0.7529494341838291,
+      "solve_time": 0.002804900000228372,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7543455912703999,
+      "solve_time": 0.003360900000188849,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7584183575468814,
+      "solve_time": 0.0026211000003968365,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.0,
+      "min_predicted_clearance": 0.7626080256188688,
+      "solve_time": 0.002480000000105065,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.2887833992611187e-16,
+      "min_predicted_clearance": 0.7611186174638158,
+      "solve_time": 0.0027021999994758517,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 2.482534153247273e-16,
+      "min_predicted_clearance": 0.7611186174638158,
+      "solve_time": 0.002394799999819952,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.035880726323373774,
+      "min_predicted_clearance": 0.7522661542616752,
+      "solve_time": 0.002364800000577816,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.210605208701968,
+      "min_predicted_clearance": 0.7515592986521018,
+      "solve_time": 0.0025388000003658817,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.18902006736377877,
+      "min_predicted_clearance": 0.751243661348635,
+      "solve_time": 0.0022105999996711034,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.17208188756144693,
+      "min_predicted_clearance": 0.7509813982831368,
+      "solve_time": 0.002604099999189202,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.15888912529723823,
+      "min_predicted_clearance": 0.7507679030808061,
+      "solve_time": 0.002393800000390911,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.14867288604870574,
+      "min_predicted_clearance": 0.750596854961268,
+      "solve_time": 0.002316899999641464,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.14079681772850458,
+      "min_predicted_clearance": 0.7504614955512531,
+      "solve_time": 0.0024362999993172707,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.163336342344337e-17,
+      "iterations": 1,
+      "correction_norm": 0.13474561551131023,
+      "min_predicted_clearance": 0.7503553936546262,
+      "solve_time": 0.0024125999998432235,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.1301086191686983,
+      "min_predicted_clearance": 0.7502728321804347,
+      "solve_time": 0.002474699999766017,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.460716988123451e-10,
+      "iterations": 21,
+      "correction_norm": 0.1288335359203686,
+      "min_predicted_clearance": 0.7501949447232181,
+      "solve_time": 0.004287099999601196,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.722798020717622e-10,
+      "iterations": 24,
+      "correction_norm": 0.1659021857645438,
+      "min_predicted_clearance": 0.7500886545480641,
+      "solve_time": 0.004688400000304682,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.121298849748324e-10,
+      "iterations": 24,
+      "correction_norm": 0.16528242520635392,
+      "min_predicted_clearance": 0.7500606296537478,
+      "solve_time": 0.004617599999619415,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.601869723983246e-10,
+      "iterations": 24,
+      "correction_norm": 0.164172432782425,
+      "min_predicted_clearance": 0.7500480330687147,
+      "solve_time": 0.004428699999152741,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.149088674165196e-10,
+      "iterations": 24,
+      "correction_norm": 0.1632860128416056,
+      "min_predicted_clearance": 0.7500381237988415,
+      "solve_time": 0.004947299999912502,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.884006254979312e-10,
+      "iterations": 25,
+      "correction_norm": 0.16258089905071393,
+      "min_predicted_clearance": 0.7500302430017677,
+      "solve_time": 0.00436710000030871,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.218535713089281e-10,
+      "iterations": 30,
+      "correction_norm": 0.24271110399628337,
+      "min_predicted_clearance": 0.7500196868958945,
+      "solve_time": 0.00570160000006581,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.339080259656129e-10,
+      "iterations": 31,
+      "correction_norm": 0.7839997905208582,
+      "min_predicted_clearance": 0.7500194738857818,
+      "solve_time": 0.005048500000157219,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.060270410501722e-10,
+      "iterations": 31,
+      "correction_norm": 1.0177417876102268,
+      "min_predicted_clearance": 0.7501448753687374,
+      "solve_time": 0.006194399999913003,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.187722361745585e-10,
+      "iterations": 25,
+      "correction_norm": 0.2847525693263003,
+      "min_predicted_clearance": 0.7501435880182942,
+      "solve_time": 0.004647600000680541,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.926380497456307e-10,
+      "iterations": 21,
+      "correction_norm": 0.38569774461633727,
+      "min_predicted_clearance": 0.7505487596026802,
+      "solve_time": 0.004494400000112364,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.9676024640513e-10,
+      "iterations": 25,
+      "correction_norm": 0.3485813899063516,
+      "min_predicted_clearance": 0.752013526543231,
+      "solve_time": 0.005667899999934889,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.762295350968621e-10,
+      "iterations": 26,
+      "correction_norm": 0.2999768093842638,
+      "min_predicted_clearance": 0.7515088670586448,
+      "solve_time": 0.004776599999786413,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.252036329069117e-10,
+      "iterations": 27,
+      "correction_norm": 0.2583501153778103,
+      "min_predicted_clearance": 0.7512361707862858,
+      "solve_time": 0.004883399999926041,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.072097653248187e-10,
+      "iterations": 27,
+      "correction_norm": 0.2254610728790692,
+      "min_predicted_clearance": 0.7509893927616417,
+      "solve_time": 0.005264499999611871,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.583193654183224e-10,
+      "iterations": 27,
+      "correction_norm": 0.19997289702612642,
+      "min_predicted_clearance": 0.7507739814276282,
+      "solve_time": 0.005309000000124797,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.384795050903903e-10,
+      "iterations": 27,
+      "correction_norm": 0.5465879816091425,
+      "min_predicted_clearance": 0.7501352562693353,
+      "solve_time": 0.006210999999893829,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.203710868214155e-10,
+      "iterations": 26,
+      "correction_norm": 0.7048517070937989,
+      "min_predicted_clearance": 0.7500772686974039,
+      "solve_time": 0.005125499999849126,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.023722971463962e-10,
+      "iterations": 26,
+      "correction_norm": 0.7522703632750805,
+      "min_predicted_clearance": 0.750071332607165,
+      "solve_time": 0.0058598999994501355,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.56904346091536e-10,
+      "iterations": 42,
+      "correction_norm": 0.8586252526479955,
+      "min_predicted_clearance": 0.7501305184146807,
+      "solve_time": 0.007343500000388303,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.80897013719084e-10,
+      "iterations": 44,
+      "correction_norm": 0.8964750464194197,
+      "min_predicted_clearance": 0.7501075463017772,
+      "solve_time": 0.007274800000232062,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.581596656562994e-10,
+      "iterations": 49,
+      "correction_norm": 0.8433600330159741,
+      "min_predicted_clearance": 0.7501368928358897,
+      "solve_time": 0.008060199999817996,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.011393965417057e-10,
+      "iterations": 32,
+      "correction_norm": 0.8790827187102371,
+      "min_predicted_clearance": 0.75000517268693,
+      "solve_time": 0.006693899999845598,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.702958909090341e-10,
+      "iterations": 43,
+      "correction_norm": 0.7263635399673194,
+      "min_predicted_clearance": 0.7500051699026061,
+      "solve_time": 0.006975000000238651,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.107955890539586e-10,
+      "iterations": 10,
+      "correction_norm": 0.5931214418019543,
+      "min_predicted_clearance": 0.7500824649828984,
+      "solve_time": 0.0037732999999207095,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.5071376873607041,
+      "min_predicted_clearance": 0.7521914941650831,
+      "solve_time": 0.0035916999995606602,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.4029499010912761,
+      "min_predicted_clearance": 0.7525977753636063,
+      "solve_time": 0.002339399999982561,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.551115123125783e-17,
+      "iterations": 1,
+      "correction_norm": 0.3117811514672025,
+      "min_predicted_clearance": 0.7521559071289513,
+      "solve_time": 0.0026264999996783445,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.541606062919868e-11,
+      "iterations": 3,
+      "correction_norm": 0.5574012265829492,
+      "min_predicted_clearance": 0.7514120925471032,
+      "solve_time": 0.002421600000161561,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.6670960931203392,
+      "min_predicted_clearance": 0.7511239350302467,
+      "solve_time": 0.0028258000002097106,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.6653345369377348e-16,
+      "iterations": 1,
+      "correction_norm": 0.679779793364122,
+      "min_predicted_clearance": 0.7511200785833486,
+      "solve_time": 0.0022062000007281313,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.6848267658423086,
+      "min_predicted_clearance": 0.7508803171345675,
+      "solve_time": 0.0032693000002836925,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.1102230246251565e-16,
+      "iterations": 1,
+      "correction_norm": 0.6804380558332646,
+      "min_predicted_clearance": 0.7506866214117994,
+      "solve_time": 0.002233800000794872,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 1.3877787807814457e-17,
+      "iterations": 1,
+      "correction_norm": 0.6649446689568407,
+      "min_predicted_clearance": 0.7505323506175137,
+      "solve_time": 0.0033675000004222966,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 2.7755575615628914e-17,
+      "iterations": 1,
+      "correction_norm": 0.6367169471874644,
+      "min_predicted_clearance": 0.7504108238598114,
+      "solve_time": 0.002251800000522053,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 0.0,
+      "iterations": 1,
+      "correction_norm": 0.5942196531392051,
+      "min_predicted_clearance": 0.7503158987259465,
+      "solve_time": 0.0032013000000006286,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.581836686254562e-10,
+      "iterations": 22,
+      "correction_norm": 0.5401250920402625,
+      "min_predicted_clearance": 0.7501921504695414,
+      "solve_time": 0.003962800000408606,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.211652920142587e-10,
+      "iterations": 23,
+      "correction_norm": 0.47519270745737086,
+      "min_predicted_clearance": 0.7501083812466584,
+      "solve_time": 0.004799499999535328,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.80944770120395e-10,
+      "iterations": 24,
+      "correction_norm": 0.3890364837051346,
+      "min_predicted_clearance": 0.7500132162298229,
+      "solve_time": 0.005136100000527222,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.188852347266405e-10,
+      "iterations": 24,
+      "correction_norm": 0.3031637653451808,
+      "min_predicted_clearance": 0.7500008974928002,
+      "solve_time": 0.00571959999979299,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.673311985811893e-10,
+      "iterations": 24,
+      "correction_norm": 0.21658435118127395,
+      "min_predicted_clearance": 0.7500005960921499,
+      "solve_time": 0.004960999999639171,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.222707857831081e-10,
+      "iterations": 24,
+      "correction_norm": 0.18374623102667262,
+      "min_predicted_clearance": 0.750000442619374,
+      "solve_time": 0.004916200000479876,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 4.919235591788196e-10,
+      "iterations": 25,
+      "correction_norm": 0.1831241049638612,
+      "min_predicted_clearance": 0.7500003301510427,
+      "solve_time": 0.004835800000364543,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.66834195900312e-10,
+      "iterations": 25,
+      "correction_norm": 0.38600667961481033,
+      "min_predicted_clearance": 0.750000367521698,
+      "solve_time": 0.004498700000112876,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.405938227788122e-10,
+      "iterations": 25,
+      "correction_norm": 0.26249343677481657,
+      "min_predicted_clearance": 0.7500166048743329,
+      "solve_time": 0.004837700000280165,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 5.57106055731893e-10,
+      "iterations": 26,
+      "correction_norm": 0.3143507632435544,
+      "min_predicted_clearance": 0.7500020391700378,
+      "solve_time": 0.0046639000001960085,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 6.977648146777593e-10,
+      "iterations": 26,
+      "correction_norm": 0.21392507397279656,
+      "min_predicted_clearance": 0.7500002512235039,
+      "solve_time": 0.0054049999998824205,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 7.803425683405862e-10,
+      "iterations": 26,
+      "correction_norm": 0.21228944934609606,
+      "min_predicted_clearance": 0.7500000373668062,
+      "solve_time": 0.0048489999999219435,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.085533406004819e-10,
+      "iterations": 26,
+      "correction_norm": 0.21095372101611062,
+      "min_predicted_clearance": 0.750000012751722,
+      "solve_time": 0.004398500000206695,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.32861371449084e-10,
+      "iterations": 26,
+      "correction_norm": 0.21038605665046214,
+      "min_predicted_clearance": 0.7500000101884895,
+      "solve_time": 0.009472799999457493,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.543955215632032e-10,
+      "iterations": 26,
+      "correction_norm": 0.21013499639756636,
+      "min_predicted_clearance": 0.7500000100006958,
+      "solve_time": 0.004909499999484979,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.734226232889886e-10,
+      "iterations": 26,
+      "correction_norm": 0.21000435609602064,
+      "min_predicted_clearance": 0.7500000100006835,
+      "solve_time": 0.005468299999847659,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 8.902011523759246e-10,
+      "iterations": 26,
+      "correction_norm": 0.2099228891993157,
+      "min_predicted_clearance": 0.7500000100083216,
+      "solve_time": 0.00515949999953591,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.049726096537619e-10,
+      "iterations": 26,
+      "correction_norm": 0.20986439458718517,
+      "min_predicted_clearance": 0.750000010012091,
+      "solve_time": 0.004916599999887694,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.179592421479713e-10,
+      "iterations": 26,
+      "correction_norm": 0.20981868817466653,
+      "min_predicted_clearance": 0.7500000100108948,
+      "solve_time": 0.005035099999986414,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.293633951605249e-10,
+      "iterations": 26,
+      "correction_norm": 0.2097813820160898,
+      "min_predicted_clearance": 0.7500000100086873,
+      "solve_time": 0.005127400000674243,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.39368365320166e-10,
+      "iterations": 26,
+      "correction_norm": 0.20975027200982999,
+      "min_predicted_clearance": 0.7500000100066442,
+      "solve_time": 0.005497799999830022,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.481383888730252e-10,
+      "iterations": 26,
+      "correction_norm": 0.20972404311284468,
+      "min_predicted_clearance": 0.7500000100050036,
+      "solve_time": 0.005106800000248768,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.558204715990476e-10,
+      "iterations": 26,
+      "correction_norm": 0.20970179119259075,
+      "min_predicted_clearance": 0.7500000100037448,
+      "solve_time": 0.005538400000659749,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.62545503642876e-10,
+      "iterations": 26,
+      "correction_norm": 0.20968283572177412,
+      "min_predicted_clearance": 0.7500000100027956,
+      "solve_time": 0.005505199999788601,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.684297687232758e-10,
+      "iterations": 26,
+      "correction_norm": 0.20966663835832683,
+      "min_predicted_clearance": 0.7500000100020847,
+      "solve_time": 0.005124600000272039,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.735760256248012e-10,
+      "iterations": 26,
+      "correction_norm": 0.20965277182215575,
+      "min_predicted_clearance": 0.7500000100015567,
+      "solve_time": 0.004933600000185834,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.780751345010545e-10,
+      "iterations": 26,
+      "correction_norm": 0.20964086140749744,
+      "min_predicted_clearance": 0.7500000100011606,
+      "solve_time": 0.0063536999996358645,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.820071059758132e-10,
+      "iterations": 26,
+      "correction_norm": 0.2096306351335914,
+      "min_predicted_clearance": 0.7500000100008636,
+      "solve_time": 0.004665299999942363,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.854431299834501e-10,
+      "iterations": 26,
+      "correction_norm": 0.20962180669152675,
+      "min_predicted_clearance": 0.7500000100006445,
+      "solve_time": 0.004961600000569888,
+      "fallback_used": false
+    },
+    {
+      "status": "SOLVED",
+      "residual": 9.884443219975413e-10,
+      "iterations": 26,
+      "correction_norm": 0.20961419639982423,
+      "min_predicted_clearance": 0.7500000100004802,
+      "solve_time": 0.00560829999994894,
+      "fallback_used": false
+    }
+  ],
+  "fallback_count": 0,
+  "replan_count": 2,
+  "recovery_attempts": [
+    {
+      "strategy": "path_recompute",
+      "trigger_reason": "stall_window",
+      "positions": [
+        [
+          9.531625686148523,
+          11.72159529436602
+        ],
+        [
+          9.536371294079428,
+          13.392156922819575
+        ],
+        [
+          9.522953459040222,
+          14.77238849636377
+        ],
+        [
+          9.818846199694624,
+          17.335203001060027
+        ],
+        [
+          12.45979497696339,
+          14.358143594081547
+        ],
+        [
+          11.217875879985488,
+          17.887019568192375
+        ],
+        [
+          12.388679476593042,
+          16.956151238851714
+        ],
+        [
+          12.477657638675439,
+          15.620601928632617
+        ],
+        [
+          15.455260234550284,
+          17.950433756656427
+        ],
+        [
+          15.51303783646583,
+          17.202662530362915
+        ],
+        [
+          14.98664452721863,
+          16.612421782314158
+        ],
+        [
+          14.34441382285384,
+          14.935541222123
+        ],
+        [
+          17.380437934065114,
+          15.533657490875024
+        ],
+        [
+          17.389901510956328,
+          14.12734999148812
+        ],
+        [
+          17.36272269423647,
+          12.67780145364265
+        ],
+        [
+          17.12209748016319,
+          11.06706856142626
+        ],
+        [
+          15.536304045586936,
+          10.47444703594269
+        ],
+        [
+          14.019462700390946,
+          10.518877867080036
+        ],
+        [
+          10.863895633860928,
+          10.500625249848037
+        ],
+        [
+          17.12532984519645,
+          17.13015365084188
+        ],
+        [
+          14.26075488753929,
+          16.42378391229065
+        ],
+        [
+          9.50276573730907,
+          16.01942490038349
+        ],
+        [
+          12.478287938832732,
+          10.512412043993592
+        ]
+      ],
+      "targets": [
+        [
+          9.522953459762542,
+          14.772388496438
+        ],
+        [
+          9.536371299737405,
+          13.392156926171324
+        ],
+        [
+          9.53162599924226,
+          11.72159563142626
+        ],
+        [
+          10.86389565283588,
+          10.500625282407382
+        ],
+        [
+          12.478287944043101,
+          10.512412056130694
+        ],
+        [
+          14.019462701921928,
+          10.518877872778889
+        ],
+        [
+          15.536304044752514,
+          10.474447040144174
+        ],
+        [
+          17.122097422964607,
+          11.067068658874508
+        ],
+        [
+          17.362542270720702,
+          12.677983836371926
+        ],
+        [
+          17.389898999122675,
+          14.12735155761015
+        ],
+        [
+          17.38043775079592,
+          15.53365753745802
+        ],
+        [
+          17.125329645474885,
+          17.130153823132765
+        ],
+        [
+          15.464762735624566,
+          17.842779934278198
+        ],
+        [
+          14.324985554591983,
+          16.440470299947993
+        ],
+        [
+          14.342761619786101,
+          14.931997643220212
+        ],
+        [
+          14.425873983856992,
+          13.535142911020625
+        ],
+        [
+          13.006685176432606,
+          13.48444268419751
+        ],
+        [
+          12.468309471713617,
+          14.342984103120724
+        ],
+        [
+          12.474910662300509,
+          15.621174958896239
+        ],
+        [
+          12.388640425217675,
+          16.956133897044996
+        ],
+        [
+          11.217876994815079,
+          17.887017927259272
+        ],
+        [
+          9.818846201784751,
+          17.335203000401386
+        ],
+        [
+          9.502765738021388,
+          16.019424900300898
+        ]
+      ],
+      "assignment": [
+        2,
+        1,
+        0,
+        21,
+        17,
+        20,
+        19,
+        18,
+        12,
+        15,
+        16,
+        14,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        3,
+        11,
+        13,
+        22,
+        4
+      ],
+      "geometry_sha256": "84caf8c54b0940fddfab84feabf2062fada4fe675f0db21fa27e3e9b17a1f705",
+      "query_domain": "static_with_current_guides",
+      "query_succeeded": false,
+      "validation_succeeded": false,
+      "installation_succeeded": false,
+      "budget_before": 0,
+      "budget_limit": 3,
+      "before": {
+        "targets_sha256": "8cf0112c1b7d00fa9e02cca8f2e9cd610deb03e9266bfa9752a0f92e1b289b7f",
+        "assignment_sha256": "951b02e7a3eca35cbf8817c481cf8c459d304a9e27b0a28d73e02122480f4882",
+        "paths_sha256": "64b7311f53e72b8ba434bd787dbb0913476a7dd699b6c85c02bf42f531502d90"
+      },
+      "current_occupations": [
+        {
+          "guide": 8,
+          "target": 12,
+          "occupants": [
+            {
+              "guide": 9,
+              "center_distance_m": 0.6419351806502557,
+              "threshold_m": 0.75
+            }
+          ]
+        },
+        {
+          "guide": 20,
+          "target": 13,
+          "occupants": [
+            {
+              "guide": 10,
+              "center_distance_m": 0.683637263719051,
+              "threshold_m": 0.75
+            }
+          ]
+        }
+      ],
+      "release_guaranteed": false,
+      "guide_center_threshold_m": 0.75,
+      "crowd_center_threshold_m": 0.75,
+      "wall_threshold_m": 0.55,
+      "numeric_tolerance_m": 1e-07,
+      "query_wall_seconds": 0.018410500000754837,
+      "accepted": false,
+      "error": "PATH_UNREACHABLE: assigned target temporarily occupied by other guides (guide 8 target 12)",
+      "classification": "current_guide_occupation",
+      "diagnosis": {
+        "kind": "current_guide_occupation",
+        "guide": 8,
+        "target": 12,
+        "query_domain": "static_with_current_guides",
+        "endpoint": "target",
+        "occupants": [
+          {
+            "guide": 9,
+            "center_distance_m": 0.6419351806502557,
+            "threshold_m": 0.75
+          }
+        ],
+        "release_guaranteed": false
+      },
+      "paths": {
+        "0": [
+          [
+            1.0,
+            2.53689610994756
+          ],
+          [
+            9.53162599924226,
+            11.72159563142626
+          ]
+        ],
+        "1": [
+          [
+            1.0,
+            8.335265459307887
+          ],
+          [
+            9.536371299737405,
+            13.392156926171324
+          ]
+        ],
+        "2": [
+          [
+            1.0,
+            13.896532992963385
+          ],
+          [
+            9.522953459762542,
+            14.772388496438
+          ]
+        ],
+        "3": [
+          [
+            1.0,
+            20.114180873294334
+          ],
+          [
+            9.818846201784751,
+            17.335203000401386
+          ]
+        ],
+        "4": [
+          [
+            1.0,
+            25.792418087515202
+          ],
+          [
+            11.608149296776476,
+            17.019712985225258
+          ],
+          [
+            11.854622229626765,
+            16.463678958235988
+          ],
+          [
+            12.468309471713617,
+            14.342984103120724
+          ]
+        ],
+        "5": [
+          [
+            3.667854872081879,
+            29.0
+          ],
+          [
+            11.217876994815079,
+            17.887017927259272
+          ]
+        ],
+        "6": [
+          [
+            9.42366607212498,
+            29.0
+          ],
+          [
+            12.388640425217675,
+            16.956133897044996
+          ]
+        ],
+        "7": [
+          [
+            15.390205913025689,
+            29.0
+          ],
+          [
+            12.474910662300509,
+            15.621174958896239
+          ]
+        ],
+        "8": [
+          [
+            21.7086897911517,
+            29.0
+          ],
+          [
+            15.464762735624566,
+            17.842779934278198
+          ]
+        ],
+        "9": [
+          [
+            27.131950237820526,
+            29.0
+          ],
+          [
+            15.510020996009992,
+            17.20299870471827
+          ],
+          [
+            14.981163656055971,
+            16.606237178656322
+          ],
+          [
+            14.425873983856992,
+            13.535142911020625
+          ]
+        ],
+        "10": [
+          [
+            29.0,
+            24.800194927264243
+          ],
+          [
+            15.510020996009992,
+            17.20299870471827
+          ],
+          [
+            14.981163656055971,
+            16.606237178656322
+          ],
+          [
+            13.006685176432606,
+            13.48444268419751
+          ]
+        ],
+        "11": [
+          [
+            29.0,
+            18.900120987495683
+          ],
+          [
+            15.510020996009992,
+            17.20299870471827
+          ],
+          [
+            14.981163656055971,
+            16.606237178656322
+          ],
+          [
+            14.342761619786101,
+            14.931997643220212
+          ]
+        ],
+        "12": [
+          [
+            29.0,
+            12.580220544232589
+          ],
+          [
+            17.38043775079592,
+            15.53365753745802
+          ]
+        ],
+        "13": [
+          [
+            29.0,
+            6.8884824934426945
+          ],
+          [
+            17.389898999122675,
+            14.12735155761015
+          ]
+        ],
+        "14": [
+          [
+            28.91507747611702,
+            1.0
+          ],
+          [
+            17.362542270720702,
+            12.677983836371926
+          ]
+        ],
+        "15": [
+          [
+            23.031101329094227,
+            1.0
+          ],
+          [
+            17.122097422964607,
+            11.067068658874508
+          ]
+        ],
+        "16": [
+          [
+            17.41794698264907,
+            1.0
+          ],
+          [
+            15.536304044752514,
+            10.474447040144174
+          ]
+        ],
+        "17": [
+          [
+            11.462240508929952,
+            1.0
+          ],
+          [
+            14.019462701921928,
+            10.518877872778889
+          ]
+        ],
+        "18": [
+          [
+            5.327116020986239,
+            1.0
+          ],
+          [
+            10.86389565283588,
+            10.500625282407382
+          ]
+        ],
+        "19": [
+          [
+            29.0,
+            15.740170765864136
+          ],
+          [
+            17.125329645474885,
+            17.130153823132765
+          ]
+        ],
+        "20": [
+          [
+            18.54944785208869,
+            29.0
+          ],
+          [
+            14.324985554591983,
+            16.440470299947993
+          ]
+        ],
+        "21": [
+          [
+            1.0,
+            17.00535693312886
+          ],
+          [
+            9.502765738021388,
+            16.019424900300898
+          ]
+        ],
+        "22": [
+          [
+            8.394678264958088,
+            1.0
+          ],
+          [
+            12.478287944043101,
+            10.512412056130694
+          ]
+        ]
+      },
+      "waypoints": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 3,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1
+      },
+      "wall_seconds": 0.019094399999630696,
+      "budget_consumed": 1,
+      "budget_remaining": 2,
+      "after": {
+        "targets_sha256": "8cf0112c1b7d00fa9e02cca8f2e9cd610deb03e9266bfa9752a0f92e1b289b7f",
+        "assignment_sha256": "951b02e7a3eca35cbf8817c481cf8c459d304a9e27b0a28d73e02122480f4882",
+        "paths_sha256": "64b7311f53e72b8ba434bd787dbb0913476a7dd699b6c85c02bf42f531502d90"
+      },
+      "frame": 206,
+      "time_s": 20.6
+    },
+    {
+      "strategy": "reachable_reassignment",
+      "trigger_reason": "stall_window",
+      "positions": [
+        [
+          9.531625686148523,
+          11.72159529436602
+        ],
+        [
+          9.536371294079428,
+          13.392156922819575
+        ],
+        [
+          9.522953459040222,
+          14.77238849636377
+        ],
+        [
+          9.818846199694624,
+          17.335203001060027
+        ],
+        [
+          12.45979497696339,
+          14.358143594081547
+        ],
+        [
+          11.217875879985488,
+          17.887019568192375
+        ],
+        [
+          12.388679476593042,
+          16.956151238851714
+        ],
+        [
+          12.477657638675439,
+          15.620601928632617
+        ],
+        [
+          15.455260234550284,
+          17.950433756656427
+        ],
+        [
+          15.51303783646583,
+          17.202662530362915
+        ],
+        [
+          14.98664452721863,
+          16.612421782314158
+        ],
+        [
+          14.34441382285384,
+          14.935541222123
+        ],
+        [
+          17.380437934065114,
+          15.533657490875024
+        ],
+        [
+          17.389901510956328,
+          14.12734999148812
+        ],
+        [
+          17.36272269423647,
+          12.67780145364265
+        ],
+        [
+          17.12209748016319,
+          11.06706856142626
+        ],
+        [
+          15.536304045586936,
+          10.47444703594269
+        ],
+        [
+          14.019462700390946,
+          10.518877867080036
+        ],
+        [
+          10.863895633860928,
+          10.500625249848037
+        ],
+        [
+          17.12532984519645,
+          17.13015365084188
+        ],
+        [
+          14.26075488753929,
+          16.42378391229065
+        ],
+        [
+          9.50276573730907,
+          16.01942490038349
+        ],
+        [
+          12.478287938832732,
+          10.512412043993592
+        ]
+      ],
+      "targets": [
+        [
+          9.522953459762542,
+          14.772388496438
+        ],
+        [
+          9.536371299737405,
+          13.392156926171324
+        ],
+        [
+          9.53162599924226,
+          11.72159563142626
+        ],
+        [
+          10.86389565283588,
+          10.500625282407382
+        ],
+        [
+          12.478287944043101,
+          10.512412056130694
+        ],
+        [
+          14.019462701921928,
+          10.518877872778889
+        ],
+        [
+          15.536304044752514,
+          10.474447040144174
+        ],
+        [
+          17.122097422964607,
+          11.067068658874508
+        ],
+        [
+          17.362542270720702,
+          12.677983836371926
+        ],
+        [
+          17.389898999122675,
+          14.12735155761015
+        ],
+        [
+          17.38043775079592,
+          15.53365753745802
+        ],
+        [
+          17.125329645474885,
+          17.130153823132765
+        ],
+        [
+          15.464762735624566,
+          17.842779934278198
+        ],
+        [
+          14.324985554591983,
+          16.440470299947993
+        ],
+        [
+          14.342761619786101,
+          14.931997643220212
+        ],
+        [
+          14.425873983856992,
+          13.535142911020625
+        ],
+        [
+          13.006685176432606,
+          13.48444268419751
+        ],
+        [
+          12.468309471713617,
+          14.342984103120724
+        ],
+        [
+          12.474910662300509,
+          15.621174958896239
+        ],
+        [
+          12.388640425217675,
+          16.956133897044996
+        ],
+        [
+          11.217876994815079,
+          17.887017927259272
+        ],
+        [
+          9.818846201784751,
+          17.335203000401386
+        ],
+        [
+          9.502765738021388,
+          16.019424900300898
+        ]
+      ],
+      "assignment": [
+        2,
+        1,
+        0,
+        21,
+        17,
+        20,
+        19,
+        18,
+        12,
+        15,
+        16,
+        14,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        3,
+        11,
+        13,
+        22,
+        4
+      ],
+      "geometry_sha256": "84caf8c54b0940fddfab84feabf2062fada4fe675f0db21fa27e3e9b17a1f705",
+      "query_domain": "static",
+      "query_succeeded": false,
+      "validation_succeeded": false,
+      "installation_succeeded": false,
+      "budget_before": 1,
+      "budget_limit": 3,
+      "before": {
+        "targets_sha256": "8cf0112c1b7d00fa9e02cca8f2e9cd610deb03e9266bfa9752a0f92e1b289b7f",
+        "assignment_sha256": "951b02e7a3eca35cbf8817c481cf8c459d304a9e27b0a28d73e02122480f4882",
+        "paths_sha256": "64b7311f53e72b8ba434bd787dbb0913476a7dd699b6c85c02bf42f531502d90"
+      },
+      "current_occupations": [
+        {
+          "guide": 8,
+          "target": 12,
+          "occupants": [
+            {
+              "guide": 9,
+              "center_distance_m": 0.6419351806502557,
+              "threshold_m": 0.75
+            }
+          ]
+        },
+        {
+          "guide": 20,
+          "target": 13,
+          "occupants": [
+            {
+              "guide": 10,
+              "center_distance_m": 0.683637263719051,
+              "threshold_m": 0.75
+            }
+          ]
+        }
+      ],
+      "release_guaranteed": false,
+      "guide_center_threshold_m": 0.75,
+      "crowd_center_threshold_m": 0.75,
+      "wall_threshold_m": 0.55,
+      "numeric_tolerance_m": 1e-07,
+      "query_wall_seconds": 0.21185919999970793,
+      "accepted": false,
+      "error": "PATH_UNREACHABLE: reachable bipartite matching does not exist",
+      "classification": "search_not_found",
+      "diagnosis": {
+        "kind": "search_not_found",
+        "infeasibility_proven": false
+      },
+      "paths": {
+        "0": [
+          [
+            1.0,
+            2.53689610994756
+          ],
+          [
+            9.53162599924226,
+            11.72159563142626
+          ]
+        ],
+        "1": [
+          [
+            1.0,
+            8.335265459307887
+          ],
+          [
+            9.536371299737405,
+            13.392156926171324
+          ]
+        ],
+        "2": [
+          [
+            1.0,
+            13.896532992963385
+          ],
+          [
+            9.522953459762542,
+            14.772388496438
+          ]
+        ],
+        "3": [
+          [
+            1.0,
+            20.114180873294334
+          ],
+          [
+            9.818846201784751,
+            17.335203000401386
+          ]
+        ],
+        "4": [
+          [
+            1.0,
+            25.792418087515202
+          ],
+          [
+            11.608149296776476,
+            17.019712985225258
+          ],
+          [
+            11.854622229626765,
+            16.463678958235988
+          ],
+          [
+            12.468309471713617,
+            14.342984103120724
+          ]
+        ],
+        "5": [
+          [
+            3.667854872081879,
+            29.0
+          ],
+          [
+            11.217876994815079,
+            17.887017927259272
+          ]
+        ],
+        "6": [
+          [
+            9.42366607212498,
+            29.0
+          ],
+          [
+            12.388640425217675,
+            16.956133897044996
+          ]
+        ],
+        "7": [
+          [
+            15.390205913025689,
+            29.0
+          ],
+          [
+            12.474910662300509,
+            15.621174958896239
+          ]
+        ],
+        "8": [
+          [
+            21.7086897911517,
+            29.0
+          ],
+          [
+            15.464762735624566,
+            17.842779934278198
+          ]
+        ],
+        "9": [
+          [
+            27.131950237820526,
+            29.0
+          ],
+          [
+            15.510020996009992,
+            17.20299870471827
+          ],
+          [
+            14.981163656055971,
+            16.606237178656322
+          ],
+          [
+            14.425873983856992,
+            13.535142911020625
+          ]
+        ],
+        "10": [
+          [
+            29.0,
+            24.800194927264243
+          ],
+          [
+            15.510020996009992,
+            17.20299870471827
+          ],
+          [
+            14.981163656055971,
+            16.606237178656322
+          ],
+          [
+            13.006685176432606,
+            13.48444268419751
+          ]
+        ],
+        "11": [
+          [
+            29.0,
+            18.900120987495683
+          ],
+          [
+            15.510020996009992,
+            17.20299870471827
+          ],
+          [
+            14.981163656055971,
+            16.606237178656322
+          ],
+          [
+            14.342761619786101,
+            14.931997643220212
+          ]
+        ],
+        "12": [
+          [
+            29.0,
+            12.580220544232589
+          ],
+          [
+            17.38043775079592,
+            15.53365753745802
+          ]
+        ],
+        "13": [
+          [
+            29.0,
+            6.8884824934426945
+          ],
+          [
+            17.389898999122675,
+            14.12735155761015
+          ]
+        ],
+        "14": [
+          [
+            28.91507747611702,
+            1.0
+          ],
+          [
+            17.362542270720702,
+            12.677983836371926
+          ]
+        ],
+        "15": [
+          [
+            23.031101329094227,
+            1.0
+          ],
+          [
+            17.122097422964607,
+            11.067068658874508
+          ]
+        ],
+        "16": [
+          [
+            17.41794698264907,
+            1.0
+          ],
+          [
+            15.536304044752514,
+            10.474447040144174
+          ]
+        ],
+        "17": [
+          [
+            11.462240508929952,
+            1.0
+          ],
+          [
+            14.019462701921928,
+            10.518877872778889
+          ]
+        ],
+        "18": [
+          [
+            5.327116020986239,
+            1.0
+          ],
+          [
+            10.86389565283588,
+            10.500625282407382
+          ]
+        ],
+        "19": [
+          [
+            29.0,
+            15.740170765864136
+          ],
+          [
+            17.125329645474885,
+            17.130153823132765
+          ]
+        ],
+        "20": [
+          [
+            18.54944785208869,
+            29.0
+          ],
+          [
+            14.324985554591983,
+            16.440470299947993
+          ]
+        ],
+        "21": [
+          [
+            1.0,
+            17.00535693312886
+          ],
+          [
+            9.502765738021388,
+            16.019424900300898
+          ]
+        ],
+        "22": [
+          [
+            8.394678264958088,
+            1.0
+          ],
+          [
+            12.478287944043101,
+            10.512412056130694
+          ]
+        ]
+      },
+      "waypoints": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 3,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1
+      },
+      "wall_seconds": 0.21236820000012813,
+      "budget_consumed": 2,
+      "budget_remaining": 1,
+      "after": {
+        "targets_sha256": "8cf0112c1b7d00fa9e02cca8f2e9cd610deb03e9266bfa9752a0f92e1b289b7f",
+        "assignment_sha256": "951b02e7a3eca35cbf8817c481cf8c459d304a9e27b0a28d73e02122480f4882",
+        "paths_sha256": "64b7311f53e72b8ba434bd787dbb0913476a7dd699b6c85c02bf42f531502d90"
+      },
+      "frame": 206,
+      "time_s": 20.6
+    }
+  ],
+  "coordination": {
+    "law": "along_current_legal_segment",
+    "activated": false,
+    "order": [],
+    "steps": 0,
+    "illegal_aim_steps": 0,
+    "fallback_steps": 0,
+    "enforce_attempts": 0,
+    "enforce_installed": 0,
+    "enforce_rejected": 0,
+    "max_other_filtered_speed_m_s": 0.0,
+    "filter_seconds": 0.0,
+    "enforce_seconds": 0.0,
+    "exit_step": null,
+    "exit_reason": null,
+    "exit_outside_tolerance": [],
+    "progress_decisions": [],
+    "progress_reference_changes": []
+  },
+  "segment_disagreement_count": 231,
+  "segment_disagreements": [
+    {
+      "start": [
+        27.131950237820526,
+        29.0
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020832950343560547,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        27.06177012996485,
+        28.928762703157926
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02082691557988635,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.991590022109172,
+        28.85752540631585
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02082081060181465,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.921409914253495,
+        28.786288109473777
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.0208146341767617,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.851229806397818,
+        28.715050812631702
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020808385043118587,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.78104969854214,
+        28.643813515789628
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02080206190940505,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.710869590686464,
+        28.572576218947553
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02079566345336568,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.640689482830787,
+        28.50133892210548
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020789188321053188,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.57050937497511,
+        28.430101625263404
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020782635125882257,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.500329267119433,
+        28.35886432842133
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020776002447626236,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.430149159263756,
+        28.287627031579255
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020769288831393992,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.35996905140808,
+        28.21638973473718
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02076249278658058,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.289788943552402,
+        28.145152437895106
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020755612785732232,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.219608835696725,
+        28.073915141053032
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020748647263441333,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.149428727841048,
+        28.002677844210957
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020741594615132,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.07924861998537,
+        27.931440547368883
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020734453195829065,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        26.009068512129694,
+        27.86020325052681
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02072722131889679,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.938888404274017,
+        27.788965953684734
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020719897254685243,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.86870829641834,
+        27.71772865684266
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020712479229175757,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.798528188562663,
+        27.646491360000585
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.02070496542253071,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.728348080706986,
+        27.57525406315851
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020697353967620367,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.65816797285131,
+        27.504016766316436
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020689642948459958,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.587987864995632,
+        27.43277946947436
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020681830398608925,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    },
+    {
+      "start": [
+        25.517807757139956,
+        27.361542172632287
+      ],
+      "end": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "sampled": true,
+      "complete": false,
+      "sample_penetration_m": 0.0,
+      "witness_penetration_m": 0.020673914299501026,
+      "tolerance_m": 1e-07,
+      "reason": "five_samples_within_tolerance_but_segment_penetrates"
+    }
+  ],
+  "vertex_arrival_events": [
+    {
+      "vertex_index": 1,
+      "vertex": [
+        11.608149296776476,
+        17.019712985225258
+      ],
+      "next_waypoint": [
+        11.854622229626765,
+        16.463678958235988
+      ],
+      "distance_m": 0.049425414610084144,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        0.3808843646237747,
+        -0.3149829546547167
+      ],
+      "nominal_speed_m_s": 0.49425414610084134,
+      "signed_free_distance_m": 0.014524816890701064,
+      "guide": 4,
+      "step": 148,
+      "position": [
+        11.570060860314099,
+        17.05121128069073
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        0.3808843646237747,
+        -0.3149829546547167
+      ],
+      "filtered_speed_m_s": 0.49425414610084134,
+      "predicted_distance_to_vertex_m": 0.0,
+      "filter_reached_vertex": true,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 4,
+          "other_guide": null,
+          "slack_m_s": 4.243827511629661e-14,
+          "bound_m_s": -0.14524816890701064
+        }
+      ]
+    },
+    {
+      "guide": 4,
+      "step": 149,
+      "handoff": true,
+      "waypoint_before": 1,
+      "waypoint_after": 2,
+      "position": [
+        11.608149296776476,
+        17.019712985225258
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.00903633607580987,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.0898075011158994,
+        0.010007482741229977
+      ],
+      "nominal_speed_m_s": 0.09036336075809867,
+      "signed_free_distance_m": -4.339326571800775e-14,
+      "guide": 11,
+      "step": 149,
+      "position": [
+        15.519001746121582,
+        17.201997956444146
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.5061804566870374,
+        0.05640500093022105
+      ],
+      "filtered_speed_m_s": 0.5093134387210256,
+      "predicted_distance_to_vertex_m": 0.04189500779629344,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 11,
+          "other_guide": 8,
+          "slack_m_s": -6.060270410501722e-10,
+          "bound_m_s": -0.015200470262942689
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 11,
+          "other_guide": 10,
+          "slack_m_s": -4.4448422720222425e-10,
+          "bound_m_s": -0.004542924192749709
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 11,
+          "other_guide": null,
+          "slack_m_s": -9.951975037326426e-17,
+          "bound_m_s": -4.340531940292942e-13
+        }
+      ]
+    },
+    {
+      "guide": 11,
+      "step": 150,
+      "handoff": true,
+      "waypoint_before": 1,
+      "waypoint_after": 2,
+      "position": [
+        15.468383700452877,
+        17.20763845653717
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.04426109395527059,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.43988827006852915,
+        0.04901789130354217
+      ],
+      "nominal_speed_m_s": 0.4426109395527059,
+      "signed_free_distance_m": -6.347007618249809e-11,
+      "guide": 10,
+      "step": 162,
+      "position": [
+        15.554009823016845,
+        17.198096915587914
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.4842160318774735,
+        0.053957447567293315
+      ],
+      "filtered_speed_m_s": 0.4872130659938664,
+      "predicted_distance_to_vertex_m": 0.004460212644116702,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 10,
+          "other_guide": 8,
+          "slack_m_s": -4.681932480599116e-10,
+          "bound_m_s": -0.005991387057021624
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 10,
+          "other_guide": 9,
+          "slack_m_s": -6.581596656562994e-10,
+          "bound_m_s": -0.0061395225098204165
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": 9.002845238672737e-11,
+          "bound_m_s": -6.347008220934054e-10
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 11,
+          "other_guide": 10,
+          "slack_m_s": -5.017800064344158e-11,
+          "bound_m_s": -0.007854419618140707
+        }
+      ]
+    },
+    {
+      "guide": 10,
+      "step": 163,
+      "handoff": true,
+      "waypoint_before": 1,
+      "waypoint_after": 2,
+      "position": [
+        15.505588219829097,
+        17.203492660344644
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        14.342761619786101,
+        14.931997643220212
+      ],
+      "distance_m": 0.043468662830696614,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.288303314639311,
+        -0.32532086252938797
+      ],
+      "nominal_speed_m_s": 0.4346866283069661,
+      "signed_free_distance_m": -3.0139966510605477e-12,
+      "guide": 11,
+      "step": 163,
+      "position": [
+        15.009993987519902,
+        16.63876926490926
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.3942007942478185,
+        -0.44481535941175065
+      ],
+      "filtered_speed_m_s": 0.5943525638492828,
+      "predicted_distance_to_vertex_m": 0.015966593554230024,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 11,
+          "other_guide": 10,
+          "slack_m_s": -3.477766963300155e-10,
+          "bound_m_s": -0.013495467644981662
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 11,
+          "other_guide": null,
+          "slack_m_s": -2.1946571495669188e-10,
+          "bound_m_s": -3.014001002120526e-11
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 11,
+          "slack_m_s": -1.249000902703301e-16,
+          "bound_m_s": -0.002531390346888207
+        }
+      ]
+    },
+    {
+      "guide": 11,
+      "step": 164,
+      "handoff": true,
+      "waypoint_before": 2,
+      "waypoint_after": 3,
+      "position": [
+        14.97057390809512,
+        16.594287728968087
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        11.854622229626765,
+        16.463678958235988
+      ],
+      "next_waypoint": [
+        12.468309471713617,
+        14.342984103120724
+      ],
+      "distance_m": 0.04970870629889531,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        0.20144015072776963,
+        -0.4544418707224906
+      ],
+      "nominal_speed_m_s": 0.4970870629889531,
+      "signed_free_distance_m": 6.984473245462336e-09,
+      "guide": 4,
+      "step": 165,
+      "position": [
+        11.834478214553988,
+        16.509123145308237
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        0.20144015072776963,
+        -0.4544418707224906
+      ],
+      "filtered_speed_m_s": 0.4970870629889531,
+      "predicted_distance_to_vertex_m": 0.0,
+      "filter_reached_vertex": true,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 4,
+          "other_guide": null,
+          "slack_m_s": 1.8716315817576064e-08,
+          "bound_m_s": -6.984473254018832e-08
+        }
+      ]
+    },
+    {
+      "guide": 4,
+      "step": 166,
+      "handoff": true,
+      "waypoint_before": 2,
+      "waypoint_after": 3,
+      "position": [
+        11.854622229626765,
+        16.463678958235988
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.048477988365712245,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.3215273675711039,
+        -0.36281081502817614
+      ],
+      "nominal_speed_m_s": 0.4847798836571225,
+      "signed_free_distance_m": -7.58824860178315e-15,
+      "guide": 10,
+      "step": 184,
+      "position": [
+        15.013316392813081,
+        16.64251826015914
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.17149408506750458,
+        -0.19351357007627024
+      ],
+      "filtered_speed_m_s": 0.2585686040817873,
+      "predicted_distance_to_vertex_m": 0.02262112795753486,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -3.4242030240125285e-17,
+          "bound_m_s": -7.64046132152019e-14
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 5.898059818321144e-17,
+          "bound_m_s": -3.5778656692908584e-06
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.02262112795753486,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.15003328250360326,
+        -0.16929724495192033
+      ],
+      "nominal_speed_m_s": 0.22621127957534862,
+      "signed_free_distance_m": -1.461956152637121e-14,
+      "guide": 10,
+      "step": 185,
+      "position": [
+        14.996166984306331,
+        16.623166903151514
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.06203929415312362,
+        -0.07000501091269606
+      ],
+      "filtered_speed_m_s": 0.09353916597823872,
+      "predicted_distance_to_vertex_m": 0.013267211359711319,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": 1.4876008277205768e-17,
+          "bound_m_s": -1.462173705636025e-13
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 2.5153490401663703e-17,
+          "bound_m_s": -0.0012081533996322058
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.049677134095927916,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.4937155101723256,
+        0.05501599961611703
+      ],
+      "nominal_speed_m_s": 0.4967713409592791,
+      "signed_free_distance_m": -5.838366660241043e-15,
+      "guide": 9,
+      "step": 186,
+      "position": [
+        15.559392547027224,
+        17.197497104756657
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.4222091499388474,
+        0.047047860462790414
+      ],
+      "filtered_speed_m_s": 0.4248223952032311,
+      "predicted_distance_to_vertex_m": 0.007194894575604073,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -5.57106055731893e-10,
+          "bound_m_s": -0.00021757360162188988
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 4.0347549303500115e-17,
+          "bound_m_s": -5.836175081164375e-14
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.013267211359711319,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.08799398835048321,
+        -0.09929223403922548
+      ],
+      "nominal_speed_m_s": 0.13267211359711317,
+      "signed_free_distance_m": -2.9447973931690574e-14,
+      "guide": 10,
+      "step": 186,
+      "position": [
+        14.98996305489102,
+        16.616166402060244
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0216144285037964,
+        -0.024389676316562896
+      ],
+      "filtered_speed_m_s": 0.03258895258170221,
+      "predicted_distance_to_vertex_m": 0.010008316101542476,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.487740717687077e-18,
+          "bound_m_s": -2.942839416178918e-13
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -2.233456475320139e-17,
+          "bound_m_s": -0.00016594874332809262
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.007194894575604073,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.0715063602334709,
+        0.007968139153327058
+      ],
+      "nominal_speed_m_s": 0.07194894575604073,
+      "signed_free_distance_m": -1.179946174877544e-14,
+      "guide": 9,
+      "step": 187,
+      "position": [
+        15.517171632033339,
+        17.202201890802936
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.03701490323123794,
+        0.004124666655071968
+      ],
+      "filtered_speed_m_s": 0.037244005373125104,
+      "predicted_distance_to_vertex_m": 0.0034704940382913494,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -6.977648146777593e-10,
+          "bound_m_s": -0.012242837429738973
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 1.0861417352283906e-17,
+          "bound_m_s": -1.1794256748468356e-13
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.010008316101542476,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.06637955984668764,
+        -0.07490255772268029
+      ],
+      "nominal_speed_m_s": 0.10008316101542476,
+      "signed_free_distance_m": -5.778207650899095e-14,
+      "guide": 10,
+      "step": 187,
+      "position": [
+        14.98780161204064,
+        16.61372743442859
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.007535416636287165,
+        -0.008502948512040535
+      ],
+      "filtered_speed_m_s": 0.011361454012618531,
+      "predicted_distance_to_vertex_m": 0.008872170700279998,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": 1.3784790404590907e-18,
+          "bound_m_s": -5.774509249917721e-13
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 3.252606517456513e-17,
+          "bound_m_s": -2.02917003777614e-05
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0034704940382913494,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.034491457002232544,
+        0.0038434724982394637
+      ],
+      "nominal_speed_m_s": 0.03470494038291349,
+      "signed_free_distance_m": -2.2038519194963936e-14,
+      "guide": 9,
+      "step": 188,
+      "position": [
+        15.513470141710215,
+        17.202614357468445
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0006295167182630429,
+        7.014868017554687e-05
+      ],
+      "filtered_speed_m_s": 0.0006334130847267385,
+      "predicted_distance_to_vertex_m": 0.0034071527298193513,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -7.803425683405862e-10,
+          "bound_m_s": -0.00026275626621719006
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 1.2062719707805079e-17,
+          "bound_m_s": -2.203879314234852e-13
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008872170700279998,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.058844143210396986,
+        -0.06639960921063447
+      ],
+      "nominal_speed_m_s": 0.08872170700279995,
+      "signed_free_distance_m": -1.155641530179819e-13,
+      "guide": 10,
+      "step": 188,
+      "position": [
+        14.98704807037701,
+        16.612877139577385
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.002629139080687515,
+        -0.0029667150900811873
+      ],
+      "filtered_speed_m_s": 0.003964059879884992,
+      "predicted_distance_to_vertex_m": 0.00847576471229104,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -8.668624746312245e-18,
+          "bound_m_s": -1.155782939629107e-12
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 3.7947076036992655e-18,
+          "bound_m_s": -2.4122350383848357e-06
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0034071527298193513,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.033861940283976814,
+        0.0037733238180592816
+      ],
+      "nominal_speed_m_s": 0.03407152729819351,
+      "signed_free_distance_m": -4.3533526778914443e-14,
+      "guide": 9,
+      "step": 189,
+      "position": [
+        15.51340719003839,
+        17.202621372336463
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0004920864306416917,
+        5.483446662135627e-05
+      ],
+      "filtered_speed_m_s": 0.0004951321782628646,
+      "predicted_distance_to_vertex_m": 0.003357639511992699,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -8.085533406004819e-10,
+          "bound_m_s": -3.9846766106688136e-05
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 1.5445860971970352e-17,
+          "bound_m_s": -4.3534759542145064e-13
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.00847576471229104,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.056215004129711574,
+        -0.06343289412054531
+      ],
+      "nominal_speed_m_s": 0.0847576471229104,
+      "signed_free_distance_m": -2.318940925921071e-13,
+      "guide": 10,
+      "step": 189,
+      "position": [
+        14.986785156468942,
+        16.612580468068376
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0009174137075666916,
+        -0.0010352077292789946
+      ],
+      "filtered_speed_m_s": 0.001383221946612414,
+      "predicted_distance_to_vertex_m": 0.00833744251762999,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -2.6086557559477573e-18,
+          "bound_m_s": -2.3184459928485634e-12
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -5.976664475826343e-18,
+          "bound_m_s": -2.7366806154560663e-07
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.003357639511992699,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03336985385333335,
+        0.003718489351420828
+      ],
+      "nominal_speed_m_s": 0.03357639511992699,
+      "signed_free_distance_m": -8.540145345956192e-14,
+      "guide": 9,
+      "step": 190,
+      "position": [
+        15.513357981395325,
+        17.202626855783127
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0004558195499445965,
+        5.0793153635791954e-05
+      ],
+      "filtered_speed_m_s": 0.000458640825230336,
+      "predicted_distance_to_vertex_m": 0.003311775429469506,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -8.32861371449084e-10,
+          "bound_m_s": -3.0154114643021757e-05
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -4.307144953747494e-18,
+          "bound_m_s": -8.538844095879421e-13
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.00833744251762999,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05529759042214976,
+        -0.06239768639126453
+      ],
+      "nominal_speed_m_s": 0.08337442517629988,
+      "signed_free_distance_m": -4.642058869421104e-13,
+      "guide": 10,
+      "step": 190,
+      "position": [
+        14.986693415098186,
+        16.61247694729545
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0003199761229849274,
+        -0.0003610604008515775
+      ],
+      "filtered_speed_m_s": 0.0004824410143671112,
+      "predicted_distance_to_vertex_m": 0.008289198416193536,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.0414089706995917e-17,
+          "bound_m_s": -4.641727101097776e-12
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 4.525188817411374e-17,
+          "bound_m_s": -2.751721961402609e-08
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.003311775429469506,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03291403430338846,
+        0.003667696197773296
+      ],
+      "nominal_speed_m_s": 0.03311775429469506,
+      "signed_free_distance_m": -1.6961068790141697e-13,
+      "guide": 9,
+      "step": 191,
+      "position": [
+        15.51331239944033,
+        17.20263193509849
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00039802894477132186,
+        4.4353395789564765e-05
+      ],
+      "filtered_speed_m_s": 0.00040049252751310824,
+      "predicted_distance_to_vertex_m": 0.0032717261767179584,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -8.543955215632032e-10,
+          "bound_m_s": -2.3001033947478433e-05
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -1.374107344453423e-17,
+          "bound_m_s": -1.6961370132264736e-12
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008289198416193536,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05497761429916537,
+        -0.06203662599041593
+      ],
+      "nominal_speed_m_s": 0.08289198416193536,
+      "signed_free_distance_m": -9.282029230052728e-13,
+      "guide": 10,
+      "step": 191,
+      "position": [
+        14.986661417485887,
+        16.612440841255363
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00011144475632385298,
+        -0.00012575404600113221
+      ],
+      "filtered_speed_m_s": 0.0001680298003264238,
+      "predicted_distance_to_vertex_m": 0.008272395436160927,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.2794911948355347e-18,
+          "bound_m_s": -9.28188782060344e-12
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 3.2390539903004445e-18,
+          "bound_m_s": -1.884894462733655e-09
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0032717261767179584,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.032516005358615985,
+        0.00362334280197274
+      ],
+      "nominal_speed_m_s": 0.03271726176717959,
+      "signed_free_distance_m": -3.381518852134204e-13,
+      "guide": 9,
+      "step": 192,
+      "position": [
+        15.513272596545853,
+        17.20263637043807
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0003464065393067907,
+        3.860097558416875e-05
+      ],
+      "filtered_speed_m_s": 0.00034855060721587723,
+      "predicted_distance_to_vertex_m": 0.0032368711159960865,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -8.734226232889886e-10,
+          "bound_m_s": -1.7497228117502317e-05
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 2.6705829804636186e-17,
+          "bound_m_s": -3.3814921422642073e-12
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008272395436160927,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05486616954284428,
+        -0.0619108719444128
+      ],
+      "nominal_speed_m_s": 0.08272395436160927,
+      "signed_free_distance_m": -1.856684313849143e-12,
+      "guide": 10,
+      "step": 192,
+      "position": [
+        14.986650273010255,
+        16.612428265850763
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -3.8675685462313814e-05,
+        -4.3641591293948345e-05
+      ],
+      "filtered_speed_m_s": 5.831292426767723e-05,
+      "predicted_distance_to_vertex_m": 0.008266564143734926,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -9.104435205525955e-18,
+          "bound_m_s": -1.8567174906814758e-11
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -5.037135530731873e-17,
+          "bound_m_s": -6.957767695325856e-12
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0032368711159960865,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03216959881930492,
+        0.0035847418264012276
+      ],
+      "nominal_speed_m_s": 0.032368711159960865,
+      "signed_free_distance_m": -6.775836526076144e-13,
+      "guide": 9,
+      "step": 193,
+      "position": [
+        15.513237955891922,
+        17.20264023053563
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00030152573489809417,
+        3.3599787747140564e-05
+      ],
+      "filtered_speed_m_s": 0.00030339201463204117,
+      "predicted_distance_to_vertex_m": 0.003206531914532355,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -8.902011523759246e-10,
+          "bound_m_s": -1.3308073063544867e-05
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 7.221106724329189e-18,
+          "bound_m_s": -6.776009797796892e-12
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008266564143734926,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.054827493857381164,
+        -0.06186723035312979
+      ],
+      "nominal_speed_m_s": 0.08266564143734925,
+      "signed_free_distance_m": -3.712602841142143e-12,
+      "guide": 10,
+      "step": 193,
+      "position": [
+        14.986646405441709,
+        16.612423901691635
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -1.3300606413524374e-05,
+        -1.5008432681477835e-05
+      ],
+      "filtered_speed_m_s": 2.0053906914163575e-05,
+      "predicted_distance_to_vertex_m": 0.008264558753043489,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -8.065682384555471e-18,
+          "bound_m_s": -3.712649615036908e-11
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -3.561604136614882e-17,
+          "bound_m_s": -9.784950627533817e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.003206531914532355,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03186807308440009,
+        0.0035511420386669097
+      ],
+      "nominal_speed_m_s": 0.03206531914532355,
+      "signed_free_distance_m": -1.3565523831916824e-12,
+      "guide": 9,
+      "step": 194,
+      "position": [
+        15.513207803318432,
+        17.202643590514402
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0002625345556458089,
+        2.9254892698449275e-05
+      ],
+      "filtered_speed_m_s": 0.00026415950040636454,
+      "predicted_distance_to_vertex_m": 0.0031801159644921618,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.049726096537619e-10,
+          "bound_m_s": -1.0121792249906392e-05
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -1.5604884252028522e-17,
+          "bound_m_s": -1.3565501916126057e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008264558753043489,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05481419325096936,
+        -0.061852221920446475
+      ],
+      "nominal_speed_m_s": 0.08264558753043488,
+      "signed_free_distance_m": -7.425553767082533e-12,
+      "guide": 10,
+      "step": 194,
+      "position": [
+        14.986645075381068,
+        16.612422400848367
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -4.468535306612065e-06,
+        -5.042397934591769e-06
+      ],
+      "filtered_speed_m_s": 6.737476138526497e-06,
+      "predicted_distance_to_vertex_m": 0.00826388500543032,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -6.011065418237563e-18,
+          "bound_m_s": -7.425551047670048e-11
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 1.1621292036329e-18,
+          "bound_m_s": -1.6354473331148256e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0031801159644921618,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03160553852875836,
+        0.0035218871459719026
+      ],
+      "nominal_speed_m_s": 0.03180115964492162,
+      "signed_free_distance_m": -2.7134028211377913e-12,
+      "guide": 9,
+      "step": 195,
+      "position": [
+        15.513181549862868,
+        17.20264651600367
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00022864185322658825,
+        2.5478127323869115e-05
+      ],
+      "filtered_speed_m_s": 0.00023005701906010173,
+      "predicted_distance_to_vertex_m": 0.0031571102625866784,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.179592421479713e-10,
+          "bound_m_s": -7.698372189723912e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -2.2943458664117406e-18,
+          "bound_m_s": -2.7133989173875607e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.00826388500543032,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480972471566758,
+        -0.061847179522516164
+      ],
+      "nominal_speed_m_s": 0.08263885005430317,
+      "signed_free_distance_m": -1.4851177151124715e-11,
+      "guide": 10,
+      "step": 195,
+      "position": [
+        14.986644628527538,
+        16.612421896608573
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -1.4086804696333832e-06,
+        -1.5897760389654847e-06
+      ],
+      "filtered_speed_m_s": 2.1240923990248907e-06,
+      "predicted_distance_to_vertex_m": 0.008263672596192439,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -3.2320802890499513e-18,
+          "bound_m_s": -1.4851179870537202e-10
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -4.827071359812807e-17,
+          "bound_m_s": -1.5683898624274661e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0031571102625866784,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.031376896675538994,
+        0.0034964090186306853
+      ],
+      "nominal_speed_m_s": 0.03157110262586677,
+      "signed_free_distance_m": -5.424999781116409e-12,
+      "guide": 9,
+      "step": 196,
+      "position": [
+        15.513158685677546,
+        17.202649063816406
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00019916600693304157,
+        2.219353004995206e-05
+      ],
+      "filtered_speed_m_s": 0.00020039873026975617,
+      "predicted_distance_to_vertex_m": 0.0031370703895591636,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.293633951605249e-10,
+          "bound_m_s": -5.855157816370138e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -1.662175012279127e-17,
+          "bound_m_s": -5.424993891247641e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263672596192439,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480831603520641,
+        -0.06184558974648979
+      ],
+      "nominal_speed_m_s": 0.08263672596192438,
+      "signed_free_distance_m": -2.9702145451370484e-11,
+      "guide": 10,
+      "step": 196,
+      "position": [
+        14.986644487659492,
+        16.61242173763097
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -3.6091880266375664e-07,
+        -4.0770786027127803e-07
+      ],
+      "filtered_speed_m_s": 5.445071913604297e-07,
+      "predicted_distance_to_vertex_m": 0.008263618145481901,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.1387070624306994e-17,
+          "bound_m_s": -2.970215904843291e-10
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 1.81214228735585e-17,
+          "bound_m_s": -1.2838952123672698e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0031370703895591636,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03117773066859897,
+        0.003474215488594723
+      ],
+      "nominal_speed_m_s": 0.031370703895591635,
+      "signed_free_distance_m": -1.0851454770739726e-11,
+      "guide": 9,
+      "step": 197,
+      "position": [
+        15.513138769076852,
+        17.20265128316941
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00017352049844952463,
+        1.933572993448318e-05
+      ],
+      "filtered_speed_m_s": 0.0001745944839743534,
+      "predicted_distance_to_vertex_m": 0.0031196109411618144,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.39368365320166e-10,
+          "bound_m_s": -4.453228638068296e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 1.945849979446939e-17,
+          "bound_m_s": -1.085145716777934e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263618145481901,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480795511640934,
+        -0.06184518203863121
+      ],
+      "nominal_speed_m_s": 0.082636181454819,
+      "signed_free_distance_m": -5.940463898753921e-11,
+      "guide": 10,
+      "step": 197,
+      "position": [
+        14.986644451567612,
+        16.612421696860185
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        -1.2795240159069188e-08,
+        -1.5333790175098283e-08
+      ],
+      "filtered_speed_m_s": 1.997106136043344e-08,
+      "predicted_distance_to_vertex_m": 0.00826361614925898,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -5.777476385793854e-18,
+          "bound_m_s": -5.940462593435929e-10
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 1.572770776461785e-17,
+          "bound_m_s": -9.925504862451362e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0031196109411618144,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03100421017014909,
+        0.00345487975867087
+      ],
+      "nominal_speed_m_s": 0.03119610941161814,
+      "signed_free_distance_m": -2.1703979032068865e-11,
+      "guide": 9,
+      "step": 198,
+      "position": [
+        15.513121417027007,
+        17.2026532167424
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.000151199631189234,
+        1.6848348615677855e-05
+      ],
+      "filtered_speed_m_s": 0.00015213545057887,
+      "predicted_distance_to_vertex_m": 0.0031043973961032787,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.481383888730252e-10,
+          "bound_m_s": -3.3869289983723405e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 2.3984815304253364e-17,
+          "bound_m_s": -2.170397273127902e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.00826361614925898,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.054807942321168916,
+        -0.06184516670483474
+      ],
+      "nominal_speed_m_s": 0.08263616149258977,
+      "signed_free_distance_m": -1.1880962605987666e-10,
+      "guide": 10,
+      "step": 198,
+      "position": [
+        14.986644450288088,
+        16.612421695326805
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        9.363411976326397e-08,
+        1.0386520524902076e-07
+      ],
+      "filtered_speed_m_s": 1.3984037058468655e-07,
+      "predicted_distance_to_vertex_m": 0.00826363013279193,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -4.313649700742064e-18,
+          "bound_m_s": -1.1880964890294156e-09
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -1.6093625997831706e-19,
+          "bound_m_s": -7.505995824885758e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0031043973961032787,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03085301053895151,
+        0.0034380314100701526
+      ],
+      "nominal_speed_m_s": 0.03104397396103279,
+      "signed_free_distance_m": -4.340951846844032e-11,
+      "guide": 9,
+      "step": 199,
+      "position": [
+        15.513106297063887,
+        17.20265490157726
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.0001317666021877946,
+        1.4682657400760801e-05
+      ],
+      "filtered_speed_m_s": 0.00013258211749879632,
+      "predicted_distance_to_vertex_m": 0.003091139184354193,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.558204715990476e-10,
+          "bound_m_s": -2.575902342538683e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -8.434685019177175e-18,
+          "bound_m_s": -4.340952244067739e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.00826363013279193,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480803595528271,
+        -0.061845270570053394
+      ],
+      "nominal_speed_m_s": 0.08263630132791928,
+      "signed_free_distance_m": -2.3761792939752004e-10,
+      "guide": 10,
+      "step": 199,
+      "position": [
+        14.9866444596515,
+        16.612421705713327
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        1.1808396936652255e-07,
+        1.296630436076196e-07
+      ],
+      "filtered_speed_m_s": 1.7537482344665467e-07,
+      "predicted_distance_to_vertex_m": 0.008263647668664453,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.5562576044572663e-19,
+          "bound_m_s": -2.3761796311823486e-09
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -1.981125360333083e-17,
+          "bound_m_s": -5.6281646010347686e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.003091139184354193,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.030721243936771003,
+        0.003423348752669142
+      ],
+      "nominal_speed_m_s": 0.030911391843541927,
+      "signed_free_distance_m": -8.681894927371757e-11,
+      "guide": 9,
+      "step": 200,
+      "position": [
+        15.513093120403669,
+        17.202656369843
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00011484355048841863,
+        1.2796441083567922e-05
+      ],
+      "filtered_speed_m_s": 0.00011555427293350594,
+      "predicted_distance_to_vertex_m": 0.003079583757060695,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.62545503642876e-10,
+          "bound_m_s": -1.9590326139073966e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -1.011980929805923e-18,
+          "bound_m_s": -8.681894016496703e-10
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263647668664453,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480815403926087,
+        -0.06184540023308926
+      ],
+      "nominal_speed_m_s": 0.08263647668664453,
+      "signed_free_distance_m": -4.752371119003137e-10,
+      "guide": 10,
+      "step": 200,
+      "position": [
+        14.986644471459897,
+        16.61242171867963
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        1.1633719219916738e-07,
+        1.241093035841967e-07
+      ],
+      "filtered_speed_m_s": 1.70110145273409e-07,
+      "predicted_distance_to_vertex_m": 0.008263664673038846,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -8.169351534859459e-19,
+          "bound_m_s": -4.752370972154863e-09
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -3.957253226277366e-17,
+          "bound_m_s": -4.204414594255468e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.003079583757060695,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.030606400386279375,
+        0.0034105523115712795
+      ],
+      "nominal_speed_m_s": 0.03079583757060695,
+      "signed_free_distance_m": -1.7363649593682607e-10,
+      "guide": 9,
+      "step": 201,
+      "position": [
+        15.51308163604862,
+        17.20265764948711
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -0.00010010320573286546,
+        1.1153012693304598e-05
+      ],
+      "filtered_speed_m_s": 0.00010072259672056416,
+      "predicted_distance_to_vertex_m": 0.0030695114973908946,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.684297687232758e-10,
+          "bound_m_s": -1.4898369438132164e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 2.8121957276780954e-17,
+          "bound_m_s": -1.7363649532044445e-09
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263664673038846,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480827037645852,
+        -0.061845524342381
+      ],
+      "nominal_speed_m_s": 0.08263664673038845,
+      "signed_free_distance_m": -9.504754072889414e-10,
+      "guide": 10,
+      "step": 201,
+      "position": [
+        14.986644483093617,
+        16.61242173109056
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        1.0823106084967282e-07,
+        1.077970008464546e-07
+      ],
+      "filtered_speed_m_s": 1.5275521570190693e-07,
+      "predicted_distance_to_vertex_m": 0.008263679918961979,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -5.279728413803465e-20,
+          "bound_m_s": -9.504753887969367e-09
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -1.3079882771500906e-17,
+          "bound_m_s": -3.136380044566067e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0030695114973908946,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.030506297180554753,
+        0.0033993992988712307
+      ],
+      "nominal_speed_m_s": 0.030695114973908942,
+      "signed_free_distance_m": -3.472722379704498e-10,
+      "guide": 9,
+      "step": 202,
+      "position": [
+        15.513071625728047,
+        17.20265876478838
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -8.726184694045347e-05,
+        9.720319677997136e-06
+      ],
+      "filtered_speed_m_s": 8.780156346046228e-05,
+      "predicted_distance_to_vertex_m": 0.0030607313410520743,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.735760256248012e-10,
+          "bound_m_s": -1.132961622296591e-06
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -3.4033009993214744e-17,
+          "bound_m_s": -3.4727222625919904e-09
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263679918961979,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480837860751819,
+        -0.06184563213938787
+      ],
+      "nominal_speed_m_s": 0.08263679918961978,
+      "signed_free_distance_m": -1.9009502576422057e-09,
+      "guide": 10,
+      "step": 202,
+      "position": [
+        14.986644493916723,
+        16.61242174187026
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        8.320543611051168e-08,
+        1.2255021090978868e-07
+      ],
+      "filtered_speed_m_s": 1.481273060322577e-07,
+      "predicted_distance_to_vertex_m": 0.008263694609210694,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": 2.8439958384675687e-18,
+          "bound_m_s": 1.900950289731273e-08
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 1.8616937147702267e-17,
+          "bound_m_s": -2.3376856006507296e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0030607313410520743,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03041903533361534,
+        0.0033896789792109416
+      ],
+      "nominal_speed_m_s": 0.030607313410520746,
+      "signed_free_distance_m": -6.945461941388956e-10,
+      "guide": 9,
+      "step": 203,
+      "position": [
+        15.513062899543353,
+        17.202659736820348
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -7.607335160568843e-05,
+        8.470062394377864e-06
+      ],
+      "filtered_speed_m_s": 7.654343068799146e-05,
+      "predicted_distance_to_vertex_m": 0.003053076998015369,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.780751345010545e-10,
+          "bound_m_s": -8.615172775172653e-07
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -1.321974495101321e-17,
+          "bound_m_s": -6.945462042749488e-09
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263694609210694,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.05480846181296072,
+        -0.06184575468960673
+      ],
+      "nominal_speed_m_s": 0.08263694609210692,
+      "signed_free_distance_m": -2.0188918298322144e-15,
+      "guide": 10,
+      "step": 203,
+      "position": [
+        14.986644502237267,
+        16.612421754125283
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        7.484224397169559e-08,
+        8.445180258581653e-08
+      ],
+      "filtered_speed_m_s": 1.1284267119628342e-07,
+      "predicted_distance_to_vertex_m": 0.0082637058934783,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -7.604415617754962e-18,
+          "bound_m_s": -2.0129091223623448e-14
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -7.701223556436099e-18,
+          "bound_m_s": -1.748934330692009e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.003053076998015369,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.030342961982015023,
+        0.0033812089167994937
+      ],
+      "nominal_speed_m_s": 0.030530769980153683,
+      "signed_free_distance_m": -1.3890906525471625e-09,
+      "guide": 9,
+      "step": 204,
+      "position": [
+        15.513055292208193,
+        17.20266058382659
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -6.630839484479331e-05,
+        7.402896692043637e-06
+      ],
+      "filtered_speed_m_s": 6.672035751047863e-05,
+      "predicted_distance_to_vertex_m": 0.0030464049624087134,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.820071059758132e-10,
+          "bound_m_s": -6.550521824966182e-07
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 5.38198448112727e-19,
+          "bound_m_s": 1.3890906539168992e-08
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.0082637058934783,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.054808536655208684,
+        -0.06184583914141228
+      ],
+      "nominal_speed_m_s": 0.08263705893478299,
+      "signed_free_distance_m": -4.107400619313815e-15,
+      "guide": 10,
+      "step": 204,
+      "position": [
+        14.986644509721492,
+        16.612421762570463
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        6.651027904813755e-08,
+        7.504999875729279e-08
+      ],
+      "filtered_speed_m_s": 1.0028020508819663e-07,
+      "predicted_distance_to_vertex_m": 0.008263715921499876,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.0786571420814369e-18,
+          "bound_m_s": -4.128068154209726e-14
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -3.467498776174929e-17,
+          "bound_m_s": -1.2995160503237457e-11
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0030464049624087134,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03027665358716902,
+        0.003373806020121606
+      ],
+      "nominal_speed_m_s": 0.030464049624087133,
+      "signed_free_distance_m": 3.382746136417138e-13,
+      "guide": 9,
+      "step": 205,
+      "position": [
+        15.513048661368709,
+        17.202661324116256
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -5.7832417947410036e-05,
+        6.444412900985519e-06
+      ],
+      "filtered_speed_m_s": 5.8190368818923146e-05,
+      "predicted_distance_to_vertex_m": 0.0030405859255268224,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.854431299834501e-10,
+          "bound_m_s": -4.980046630631563e-07
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": -4.782166629344528e-19,
+          "bound_m_s": -3.382681073913299e-12
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263715921499876,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.054808603165490404,
+        -0.06184591419142293
+      ],
+      "nominal_speed_m_s": 0.08263715921499874,
+      "signed_free_distance_m": -7.657865561432537e-15,
+      "guide": 10,
+      "step": 205,
+      "position": [
+        14.98664451637252,
+        16.612421770075464
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        5.808352181169152e-08,
+        6.554120998703006e-08
+      ],
+      "filtered_speed_m_s": 8.757480067127309e-08,
+      "predicted_distance_to_vertex_m": 0.008263724678980278,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -4.9660992331882225e-18,
+          "bound_m_s": -7.667655446383231e-14
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": 1.2896076621946723e-18,
+          "bound_m_s": -9.685585666829866e-12
+        }
+      ]
+    },
+    {
+      "vertex_index": 1,
+      "vertex": [
+        15.510020996009992,
+        17.20299870471827
+      ],
+      "next_waypoint": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "distance_m": 0.0030405859255268224,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.03021882116922114,
+        0.0033673616072249497
+      ],
+      "nominal_speed_m_s": 0.030405859255268227,
+      "signed_free_distance_m": -4.383158153334116e-16,
+      "guide": 9,
+      "step": 206,
+      "position": [
+        15.513042878126914,
+        17.202661968557546
+      ],
+      "waypoint_before": 1,
+      "waypoint_after": 1,
+      "handoff": false,
+      "filtered_velocity": [
+        -5.041661082842708e-05,
+        5.618053682071578e-06
+      ],
+      "filtered_speed_m_s": 5.0728662259118455e-05,
+      "predicted_distance_to_vertex_m": 0.003035513059300447,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "guide_guide",
+          "guide": 9,
+          "other_guide": 8,
+          "slack_m_s": -9.884443219975413e-10,
+          "bound_m_s": -3.7856302537164765e-07
+        },
+        {
+          "kind": "planning_boundary",
+          "guide": 9,
+          "other_guide": null,
+          "slack_m_s": 7.236871141444128e-18,
+          "bound_m_s": -4.355763414875778e-15
+        }
+      ]
+    },
+    {
+      "vertex_index": 2,
+      "vertex": [
+        14.981163656055971,
+        16.606237178656322
+      ],
+      "next_waypoint": [
+        13.006685176432606,
+        13.48444268419751
+      ],
+      "distance_m": 0.008263724678980278,
+      "connection_legal": true,
+      "immediate_step_legal": true,
+      "next_edge_from_vertex_legal": true,
+      "next_edge_from_here_legal": false,
+      "nominal_velocity": [
+        -0.0548086612490195,
+        -0.06184597973263095
+      ],
+      "nominal_speed_m_s": 0.08263724678980278,
+      "signed_free_distance_m": -1.601190071935894e-14,
+      "guide": 10,
+      "step": 206,
+      "position": [
+        14.986644522180873,
+        16.612421776629585
+      ],
+      "waypoint_before": 2,
+      "waypoint_after": 2,
+      "handoff": false,
+      "filtered_velocity": [
+        5.037757722092806e-08,
+        5.684571226238777e-08
+      ],
+      "filtered_speed_m_s": 7.595614056328002e-08,
+      "predicted_distance_to_vertex_m": 0.008263732274594962,
+      "filter_reached_vertex": false,
+      "active_constraints": [
+        {
+          "kind": "planning_boundary",
+          "guide": 10,
+          "other_guide": null,
+          "slack_m_s": -1.396913552115688e-17,
+          "bound_m_s": -1.601190071935894e-13
+        },
+        {
+          "kind": "guide_guide",
+          "guide": 20,
+          "other_guide": 10,
+          "slack_m_s": -2.8833001524536384e-17,
+          "bound_m_s": -7.2308825593836445e-12
+        }
+      ]
+    }
+  ],
+  "initial_navigation_wall_seconds": 0.1674892999999429,
+  "planning_margin_connections": [],
+  "deadlock_events": [],
+  "diagnostic_priority_stall_counterfactual": false,
+  "priority_stall_suppressed_events": [],
+  "crowd_static": true
+}

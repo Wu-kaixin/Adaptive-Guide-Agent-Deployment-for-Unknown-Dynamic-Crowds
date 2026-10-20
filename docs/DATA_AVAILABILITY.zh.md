@@ -59,3 +59,9 @@ python run.py --reevaluate runs/first_run
 [资源响应报告](../reports/step1_nonconvex_resource_response_v1/REPORT.zh.md)及360行台账、60条数量诊断、输入／manifest哈希、复判与统计保存在Git。唯一新增Guide初态、184条新增运动、目标、事件和原始状态在本机`runs/step1_nonconvex_resource_response_v1/`；另92条运动只读引用`runs/step1_nonconvex_demand_confirmation_v1/`，不复制原runs。克隆报告不等于取得这些原始轨迹、旧SQLite和全精度输入。
 
 运行前57688a1a、编排审计补充125fd653分别追溯；原52行检查点及两条程序错误不可覆盖或当成重新执行成功。独立物理验收275条通过与完整流程273成功分开记账。当前只读分析入口核验除自身CSV／图例导出层以外的全部执行源码，原执行和重新复判须使用相应冻结提交及经哈希验证的本机依赖；不得改写原锁绕过版本检查。原seed75–94已暴露，本轮资源响应也不提供新的独立人员样本。
+
+## 固定资源恢复诊断与新开发回归
+
+[恢复诊断报告](../reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md)保存23×23查询状态、端点／域／后缀／匹配证据、新旧分开台账和独立复判；唯一原始A／B、小回归及276条完整固定目标新执行在`runs/step1_resource_recovery_diagnostics_v1/`。这些运行继续引用原资源输入、目标和SQLite，不复制整个旧runs。新批次276物理成功不改写旧资源273成功会计结果；原275物理成功轨迹全部不变，唯一科学失败在新批次解决。
+
+原科学重放协议f634725f，生产候选及完整回归源码865e6a48；B与小回归是有声明变更的开发dirty运行，不能冒充冻结clean执行。共享导航12行修复只处理数值边界节点。新source_transition.json单列旧源码125fd653 Git对象／原字节哈希到候选源码哈希，旧报告／输入／轨迹仍逐文件保护，原锁未修改。新克隆需要原机器经哈希核对的runs依赖才能从t=0重放；Git内的派生测试几何不是完整原始人群或轨迹替代品。

@@ -1,0 +1,19 @@
+protocol: step1_resource_recovery_diagnostics_v1
+baseline_commit: 85277cfd
+original_execution_commit: 125fd653
+resource_run: runs/step1_nonconvex_resource_response_v1
+resource_report: reports/step1_nonconvex_resource_response_v1
+focal: wide_u__seed_92__N_23__projected_mass
+small_regression:
+  - wide_u__seed_92__N_23__projected_mass
+  - wide_u__seed_92__N_23__equal_arc
+  - wide_u__seed_92__N_21__projected_mass
+  - wide_u__seed_92__N_19__projected_mass
+  - wide_u__seed_90__N_23__equal_arc
+  - wide_u__seed_77__N_21__equal_arc
+  - wide_u__seed_77__N_21__projected_mass
+  - elongated__seed_76__N_15__projected_mass
+  - tight_u__seed_76__N_17__projected_mass
+runtime: {workers_max: 2, numerical_threads: 1, counterfactual: 0}
+constraints: {maximum_steps: 400, dt: 0.1, recovery_budget: 3}
+policy: fixed_targets_no_reoptimization_no_retry

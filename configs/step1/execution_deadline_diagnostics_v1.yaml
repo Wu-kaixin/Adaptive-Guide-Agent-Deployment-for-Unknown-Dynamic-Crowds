@@ -1,0 +1,24 @@
+protocol: step1_execution_deadline_diagnostics_v1
+confirmation_run: runs/step1_nonconvex_resource_confirmation_v1
+confirmation_report: reports/step1_nonconvex_resource_confirmation_v1
+execution_commit: 0433bb19
+delivery_commit: efc9694e
+scientific_candidate: 865e6a48
+focal: wide_u__seed_113__N_21__equal_arc
+attempts: [baseline_40s, diagnostic_continuation_60s]
+continuation:
+  production_steps: 400
+  hard_limit_steps: 600
+  dt_s: 0.1
+  mechanism: isolated_original_runner_AST_only_loop_upper_bound
+  original_config_unchanged: true
+  reset_state: false
+  new_recoveries: false
+  stop_on_original_non_time_exits: true
+runtime: {workers: 1, numerical_threads: 1, priority_stall_counterfactual: 0}
+policy:
+  baseline_exact_required_before_continuation: true
+  continuation_attempts: 1
+  no_second_extension: true
+  repair_only_on_observed_implementation_error: true
+  full_regression_only_after_scientific_repair_and_small_gate: true

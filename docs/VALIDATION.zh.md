@@ -953,3 +953,11 @@ wide_u热点条件projected平均多3.7059 s、1.1143 m和0.4706次恢复，最�
 全360行统一独立复判，276轨迹共62,834个完整区间，criteria／diagnostics／success不一致0、安全违反0；最小人／Guide／墙净裕量0.01270941595m／8.2926037e−9m／0.45m。全部276合格目标从保存坐标独立2048／8192积分核验匹配，方法差符号变化0，最大单目标积分变化1.4244407e−5m²、配对差变化2.0840356e−5m²；不重选相位。最慢成功wide_u seed95 N23 projected 39.5s、余0.5s、3次恢复，不称预算宽裕或噪声鲁棒。运动报告各N双方成功46/45/46及全六共同成功45两子集，总路程与每Guide量并列。
 
 最终212 passed/29.14s，pip check无冲突，compileall与diff检查通过，环境依赖未升级。12,788项历史引用与1,284新输入文件哈希通过，360身份／配置／静态域／相位预算／合法指派事件链、60嵌套ID检查通过，实际runner全部clean冻结提交。完整主台账、数量诊断、bootstrap、四张图、失败固定引用、环境、源码和PowerShell命令见[新输入确认报告](../reports/step1_nonconvex_resource_confirmation_v1/REPORT.zh.md)及[一页研究主线](../reports/step1_nonconvex_resource_confirmation_v1/RESEARCH_NOTE.zh.md)。本轮支持预定规划资源交互，仍保留40秒执行边界；不称N₀+2通用最优、完整RA-ABDC或真实风险／containment证明。
+
+## 2026-10-20：固定超时截止诊断运行前协议
+
+接续efc9694e干净研究分支，解释器为仓库.venv、udc导入本仓库src，完整包源码SHA与确认执行相同。原68份Python源码逐文件匹配0433bb19规范化Git内容；本轮只新增实验观测／隔离延时入口和分析，不改生产runner、控制、监测、导航或安全。原确认360行、275成功、84拒绝和TIMEOUT及I₂保留，不将重放算新人员样本。
+
+预定一次40秒从t=0重放，逐位核对通过才做一次diagnostic_continuation_60s从t=0自然延续。后者直接编译原runner AST，仅改原step循环上界为600，还原该节点必须得到完全相同AST，原config仍400步／dt0.1／恢复3。所有其他break、成功、安全、停滞和预算出口保留，生产反事实0；拒绝resume／规划模式，600步硬终止。保存400步队列、窗口、路径、恢复计数及runner hold／progress的一致性，不只比较位置。未出现实现错误时不做科学修复或条件性大型回归。
+
+基线212 passed/26.17s；新增观测／AST五项后完整217 passed/26.58s，pip check无冲突。随后补诊断入口拒绝resume和planning-only的第六项守卫测试，冻结前完整218 passed/30.21s、pip check无冲突。一次专项测试因新增测试插入位置错误出现NameError，发生在任何实验前，已修正测试结构，不涉及科学代码或原工件。协议和代码先提交，干净后冻结，未预记诊断结果。

@@ -1,0 +1,20 @@
+{
+  "raw_files_hash_verified": 4711,
+  "protected_baseline_files_hash_verified": 1385,
+  "frozen_input_files_hash_verified": 700,
+  "all_240_execution_source_matches_clean_precommit": true,
+  "execution_commit": "e9fe1bbbf04cc6d026684ac2f8adceff09026d57",
+  "scientific_source_sha256": "cf925d3e1fa9b137e2782cb7409a29fc13b9dc86e17303078cd9e94e5d4e5d14",
+  "nonexecuted_rows_with_null_motion": 56,
+  "fine_pairs": 92,
+  "fine_sign_changes": 0,
+  "maximum_pair_delta_change_m2": 1.1333998397033973e-05,
+  "tests": {
+    "baseline": "185 passed, 22.75 s",
+    "precommit": "194 passed, 27.64 s",
+    "final": "194 passed, 24.63 s"
+  },
+  "pip_check": "No broken requirements found.",
+  "compileall_src_tests": "passed",
+  "git_diff_check": "passed"
+}

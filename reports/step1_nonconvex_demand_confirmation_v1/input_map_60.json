@@ -1,0 +1,5503 @@
+{
+  "elongated__seed_75": {
+    "scene": "elongated",
+    "seed": 75,
+    "count": 11,
+    "physical_sha256": "f51bffbed22e8ca4b6fb157481dce67ae89704f60a7a17de000ca5660e7f0965",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5518703412704552
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        75
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.03070629999274388,
+      "description_seconds": 0.017851100012194365,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.222005897278998,
+      "occupied_perimeter_m": 17.352692355733247,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.2121939568279645,
+      "concavity_area_m2": 1.9295445058086476,
+      "area_over_convex_hull_area": 0.6863320009797608,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "44447938c6bae2b1bc83c22a52f222a366f28bd3a08d0e618edbee8a671c88f9",
+      "reference_wkb_sha256": "d8fa28948b89c549004909de434700b2bdb517649051901957c7d897934ae3d4"
+    },
+    "input_sha256": "ee21a665ac4a7c59321ba360ec5bcc80e37f0cb4cad23ae1e2b942dc65395b25",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "838f9bde9fa04a37184be269d42f09d23381339e8a8b450a1534ed62bb2c85b0"
+  },
+  "tight_u__seed_75": {
+    "scene": "tight_u",
+    "seed": 75,
+    "count": 13,
+    "physical_sha256": "01bd4b7bbb5f833960618e5fd20f7824e2568d9e14c18a4d0103d1f6832de7e7",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4736157423362373
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        75
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.05835180002031848,
+      "description_seconds": 0.029533199965953827,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.8102810652796317,
+      "occupied_perimeter_m": 25.055334316875395,
+      "observed_disk_union_area_m2": 2.763491418120179,
+      "extra_envelope_area_m2": 1.0467896471594642,
+      "concavity_area_m2": 10.808661970809489,
+      "area_over_convex_hull_area": 0.26063998305988084,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0467896471594642,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.029406347819705,
+      "curve_area_m2": 38.8862690867558,
+      "sample_count": 241,
+      "occupied_wkb_sha256": "e25337fa6dd7aa64bf3612b95a52a1dd0a71171a0e8faece316caa73f07f0bc7",
+      "reference_wkb_sha256": "53166246e5cdde7d60c30201f994a6a661104889adf20ad5708b824d46826e8a"
+    },
+    "input_sha256": "125d3a34d73c8b537bcfda178203b33b3cc985fce1250cb0cd4bf6a80f694d7e",
+    "boundary_sha256": "92f5132675a751402352578970e11cd8829534df0d47383d08bf8de8acc35fe7",
+    "guide_initial_sha256": "36e994b46a1dc9a6061af3962be833bbd60af3d949ceb0fd592734bbb74d0176"
+  },
+  "wide_u__seed_75": {
+    "scene": "wide_u",
+    "seed": 75,
+    "count": 19,
+    "physical_sha256": "de30c7a1327bb3b3168d8f29a4f9326d00e99e8d68ca2223f85a1847a993d4d1",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.43314068277401685
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        75
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06536200002301484,
+      "description_seconds": 0.0420464999624528,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.465726105663827,
+      "occupied_perimeter_m": 30.286143599097215,
+      "observed_disk_union_area_m2": 3.26594440323294,
+      "extra_envelope_area_m2": 1.199781702430865,
+      "concavity_area_m2": 21.800511930217926,
+      "area_over_convex_hull_area": 0.17001772768385373,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.1997817024308655,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.82700126317621,
+      "curve_area_m2": 47.56234055813293,
+      "sample_count": 360,
+      "occupied_wkb_sha256": "5c705c38c8aaee0222aed79ba74a78848652e2654ad10fd60089c1ecea07a0c4",
+      "reference_wkb_sha256": "49ba51c742cc7fed6962e6541f53692e1619fe94e270437afb936c60108c8d8f"
+    },
+    "input_sha256": "a922bf5ead095ccc7abe47eba70d190f1a0103a67ce5a20fb782f8e317162283",
+    "boundary_sha256": "d0e27aaf0a36a962df280e7433e41385ad5c449c09f24268449ea80c54ef3053",
+    "guide_initial_sha256": "9d5fc842cff84eb089688153a188e9f8f74d6db3dfab5ecc5fdf377fe10cf13a"
+  },
+  "elongated__seed_76": {
+    "scene": "elongated",
+    "seed": 76,
+    "count": 11,
+    "physical_sha256": "c109bdae5794a261893f26c5b546366522ffd77b6f9894e45f8e7c8d2004400c",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.598020178613009
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        76
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.03026630001841113,
+      "description_seconds": 0.02061499998671934,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.039894775131735,
+      "occupied_perimeter_m": 19.41728397671263,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.0300828346806825,
+      "concavity_area_m2": 2.349583684580529,
+      "area_over_convex_hull_area": 0.6322730095428901,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.3422294240403145,
+      "controller_filled_hole_area_m2": 0.31214658935962625,
+      "curve_valid": true,
+      "curve_length_m": 20.887125509355265,
+      "curve_area_m2": 27.56767787891077,
+      "sample_count": 210,
+      "occupied_wkb_sha256": "67c6ee81556c169bae299c12a35f249f12a911c9fe8b761dc1b5a87899f59340",
+      "reference_wkb_sha256": "e362e62a5da574d7042f1d11f295a77730518eef70ac334ae0d8698e45c088cc"
+    },
+    "input_sha256": "790787e9a7c4ba81223bd9af936899dd3d519e864a42ecf92662eec0b8c064ab",
+    "boundary_sha256": "9abe3256719fb4b632aec32016fbbe85242d6a8f587c80c87371b5bb8a944d6b",
+    "guide_initial_sha256": "6a52a799ec49878ebb6690bb449a1624e9de3ce0ea619295603ec963c1f78769"
+  },
+  "tight_u__seed_76": {
+    "scene": "tight_u",
+    "seed": 76,
+    "count": 13,
+    "physical_sha256": "6329b2f57cc8eae9a279d3e087dbb4ac7424a7916087c023dc76c5f9723cd385",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40210036611794836
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        76
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.046942399989347905,
+      "description_seconds": 0.03650039999047294,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7882424372616645,
+      "occupied_perimeter_m": 24.899179170918185,
+      "observed_disk_union_area_m2": 2.76349141812018,
+      "extra_envelope_area_m2": 1.024751019141488,
+      "concavity_area_m2": 10.972612265181166,
+      "area_over_convex_hull_area": 0.256641130451256,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0247510191414881,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.058554947743346,
+      "curve_area_m2": 38.77981039142957,
+      "sample_count": 242,
+      "occupied_wkb_sha256": "6fa063b8e270581d011daed4a85fddaeeb183179039db334de9b5c31021b96e5",
+      "reference_wkb_sha256": "e1927d2f3821a2793750c0fc239c03f26492e3a0a7f41d2f80f043bc9b06dcad"
+    },
+    "input_sha256": "7bfdef464916061d2bb2d1ccad396ce799aa85c858d73ccda60d131525aefca1",
+    "boundary_sha256": "0a1a783e9492ab49cf7f5b3ed491173edf699a62eadb561aeb0a5282e06aa083",
+    "guide_initial_sha256": "2640e9731bec8170874ce372eb57e31b8bf89675cf01f0bf2e5c4e87ed0fde7c"
+  },
+  "wide_u__seed_76": {
+    "scene": "wide_u",
+    "seed": 76,
+    "count": 19,
+    "physical_sha256": "17ce8e96815dbd212e4e2a5add4238fd6c8c53a936dc380cfd65af521e76f730",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45685796806997253
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        76
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.09552010003244504,
+      "description_seconds": 0.03802729997551069,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.5094859848806115,
+      "occupied_perimeter_m": 29.8620519987014,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.2435415816476674,
+      "concavity_area_m2": 21.386217658024858,
+      "area_over_convex_hull_area": 0.17414031482075779,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.2435415816476676,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.74247220874175,
+      "curve_area_m2": 47.15144859226571,
+      "sample_count": 359,
+      "occupied_wkb_sha256": "d9c2f140de4365246a897e8ad538b6b8b5d18bc203e74bce5bdf624f9c9720e9",
+      "reference_wkb_sha256": "e2acac8e38d440251970b4735868970364b1a22bef9b464b5ed8d3881af00a69"
+    },
+    "input_sha256": "7988cb9fa5acbd6216f41a1556c2070a03ffa03c7bcf2da1e05ed1d7e7dc84af",
+    "boundary_sha256": "9faafc5703c8527b8f33c1467f7879e192fb522ff5f4c80bf3b3471eaf4f934c",
+    "guide_initial_sha256": "31e34b69990111168c0a5ca8b51f274790fa1f04c8d7e7eb01b08b538521eab0"
+  },
+  "elongated__seed_77": {
+    "scene": "elongated",
+    "seed": 77,
+    "count": 11,
+    "physical_sha256": "b602618b1dfcd72396c4ade6406970caae90ad931f5637693263decd94b6cd84",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6163498760143801
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: disk union is MultiPolygon at this closing radius",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        77
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: disk union is MultiPolygon at this closing radius",
+      "construction_seconds": 0.025571600010152906,
+      "description_seconds": 0.020671800011768937,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "MultiPolygon",
+      "component_count": 2,
+      "occupied_holes": 2,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7277145587849705,
+      "occupied_perimeter_m": 21.818059394627532,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 1.7179026183339363,
+      "concavity_area_m2": 2.651982338302007,
+      "area_over_convex_hull_area": 0.5843090383317542,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "3e2384321911f1ec372db95472b5cb6dcb223783450bc6238516ff46591d902d",
+      "reference_wkb_sha256": "4f801f92ed2ab5262dda08a1581926ad48f10e9877ee37f1bb2914aaeb8aeb5b"
+    },
+    "input_sha256": "9fe0990c0a2d55e14a3ca1c1253b67ecce5da6995f999d90f5cac5ed7adf63c9",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "8f41a347b276aecdc27650546c57fde47723e22b5eab77c9b1d0d50d4f1d3dae"
+  },
+  "tight_u__seed_77": {
+    "scene": "tight_u",
+    "seed": 77,
+    "count": 13,
+    "physical_sha256": "4a9a302395bd65c98e663f2dd62144b7d0c07318d409dde94b9cf289b21fe34f",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3559437028254303
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        77
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "7f77a4673fd336eadd1a6588ab3e6041bc98bd6998da2835991ac6db8d7d329e",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "2f34bcad2091290d5e51ecb397c5ce006b11fc19d8e0c79808a1653ff351b1fd"
+  },
+  "wide_u__seed_77": {
+    "scene": "wide_u",
+    "seed": 77,
+    "count": 19,
+    "physical_sha256": "c915dd72427a4b21915bf1aba3e1b74ac8dace56f44fd4f57d1ecd8fc0bf6f5a",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40432238137414245
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        77
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.061254800006281585,
+      "description_seconds": 0.040150800021365285,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.441508048977395,
+      "occupied_perimeter_m": 29.971520205400036,
+      "observed_disk_union_area_m2": 3.265944403232942,
+      "extra_envelope_area_m2": 1.1755636457444532,
+      "concavity_area_m2": 21.457731473176867,
+      "area_over_convex_hull_area": 0.17149183261454945,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.1755636457444532,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.655538244088916,
+      "curve_area_m2": 47.14371175725905,
+      "sample_count": 358,
+      "occupied_wkb_sha256": "edaa5733af2d0d3c8ae3dda1759ddd037fe3f40728f2a88b573abb053177eab4",
+      "reference_wkb_sha256": "4db306ab2d04cac327d361dedcf821b89d5294ff4a7b433d135cb080c1293558"
+    },
+    "input_sha256": "5ab0f8791aeefa9a6dbd242a299e1ce3599c6e9167fa23e8a5bb59136654019f",
+    "boundary_sha256": "c98b05d3fd8366099093a9d8c7f93989417343d5a4740e17829918da433aa1c5",
+    "guide_initial_sha256": "e33c906e205ea2c67e34b85fa4c0054c2ce54cad44000d62fa89ec21af798008"
+  },
+  "elongated__seed_78": {
+    "scene": "elongated",
+    "seed": 78,
+    "count": 11,
+    "physical_sha256": "46b858f02065a81d0179b2770116c4e3519f0c1edf15ebd4a76cc596dbcddac8",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5320050727909585
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        78
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.028213399986270815,
+      "description_seconds": 0.019488600024487823,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.566375961404756,
+      "occupied_perimeter_m": 15.725679626256863,
+      "observed_disk_union_area_m2": 2.009811940451038,
+      "extra_envelope_area_m2": 2.5565640209537333,
+      "concavity_area_m2": 1.4571977590506497,
+      "area_over_convex_hull_area": 0.7580841827996274,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.9230076485263794,
+      "controller_filled_hole_area_m2": 0.3664436275726479,
+      "curve_valid": true,
+      "curve_length_m": 20.610328730926916,
+      "curve_area_m2": 27.01115531528381,
+      "sample_count": 207,
+      "occupied_wkb_sha256": "dd48443e260d7917f1fb257046d0fb7c50cdc5dcf56102cce01b48c17d940aec",
+      "reference_wkb_sha256": "b9d08616154ba8edf5d654ef0a5aac79f003099224e6be3234543ceddd7b6398"
+    },
+    "input_sha256": "2697b34089d5aaced18a7a5dda578a11301ba1a3ea82baab8e1710d14f1ebda8",
+    "boundary_sha256": "ae18d97570f17beaf151b96651ae8624527f544f4103225c0de6c2282d9e744d",
+    "guide_initial_sha256": "aa1a54b34718e9f6dc64c4b98bd0e4536c06a2daf84680dca273a00fd86f7e34"
+  },
+  "tight_u__seed_78": {
+    "scene": "tight_u",
+    "seed": 78,
+    "count": 13,
+    "physical_sha256": "1a805138daf62835dfd28cc5f31e954e36493d7275a35c967554e6a8dd113836",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4220449781300344
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        78
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06320859998231754,
+      "description_seconds": 0.03672450000885874,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7851374381267617,
+      "occupied_perimeter_m": 25.139020308911757,
+      "observed_disk_union_area_m2": 2.7634914181201795,
+      "extra_envelope_area_m2": 1.0216460200065773,
+      "concavity_area_m2": 11.053990212263699,
+      "area_over_convex_hull_area": 0.2550781641147998,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0216460200065771,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.080000622762185,
+      "curve_area_m2": 39.051897447059694,
+      "sample_count": 242,
+      "occupied_wkb_sha256": "09817f26fbf0d23df02417c5d2d6ab752001ceacc0734c46bc491c2379a8474f",
+      "reference_wkb_sha256": "af9041f2a4feeb1386191807b2af035c87f2c596975c20ecf6d7f78cb84d3a9f"
+    },
+    "input_sha256": "bb39ab7363828cfe80269f4ad045837304032693dd19009cbed18645e92853d4",
+    "boundary_sha256": "fe41c0adad1d626fc62a93cdc9b6be32a2c6a060efb40ef0bde226468c628597",
+    "guide_initial_sha256": "6de890e70865417e89bbae85af5122c61b44fef6f89166735ca648b4b6dc5391"
+  },
+  "wide_u__seed_78": {
+    "scene": "wide_u",
+    "seed": 78,
+    "count": 19,
+    "physical_sha256": "a6acacef10a8d110ca8e3d62c5735dff664d27fb757127dff4cf0a3629da7e96",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.44796987305859803
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        78
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06238909997045994,
+      "description_seconds": 0.0384862000355497,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.466850924091811,
+      "occupied_perimeter_m": 29.75415208616296,
+      "observed_disk_union_area_m2": 3.2659444032329406,
+      "extra_envelope_area_m2": 1.2009065208588279,
+      "concavity_area_m2": 21.33572595962725,
+      "area_over_convex_hull_area": 0.1731164660112036,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.2009065208588279,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.63719765679211,
+      "curve_area_m2": 46.929655142695474,
+      "sample_count": 357,
+      "occupied_wkb_sha256": "6f68d9bf3ee473883ffca178e6cdec93a9223f68cb4ad93c29c42965ce04da19",
+      "reference_wkb_sha256": "d9677fda93385f5ea29f71e5714f1df308d27a6d97dd0ee918e3aaa755a34410"
+    },
+    "input_sha256": "966d7e741087050bc910fd1e339a0779971cf151c437985243a816fa8add3e99",
+    "boundary_sha256": "ae7f7e4643f92fd813c20294beb5159c366975dcbfa1f10a640f7164c90e9562",
+    "guide_initial_sha256": "0aeb933359d25a57720a58de71e78522bc0dbce45c802c5312d139fa4518c2aa"
+  },
+  "elongated__seed_79": {
+    "scene": "elongated",
+    "seed": 79,
+    "count": 11,
+    "physical_sha256": "f7bf1404bfeb23a5a98848b161ac02207867ab338967102246f672a07acde947",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6075668264908421
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        79
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.02959490002831444,
+      "description_seconds": 0.021716699993703514,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.2228087315924405,
+      "occupied_perimeter_m": 17.65846816567916,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.2129967911413964,
+      "concavity_area_m2": 1.974853618075925,
+      "area_over_convex_hull_area": 0.6813550808908462,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.521759457729486,
+      "controller_filled_hole_area_m2": 0.30876266658809026,
+      "curve_valid": true,
+      "curve_length_m": 20.89753392354664,
+      "curve_area_m2": 27.410277936582773,
+      "sample_count": 210,
+      "occupied_wkb_sha256": "c19f5689fdb236d3469c870322a7ff338e64d1be427e708499526d110fbf3b80",
+      "reference_wkb_sha256": "d3dba5a44d9572a847e6d04521da2b57cd044a53061880277824b57061a08564"
+    },
+    "input_sha256": "282c37a410edaf30e90c5a3b74e5ec12955090fcece000b94f18917e1266edc6",
+    "boundary_sha256": "8d86423ad3bf3404db306d2db3527b3a67b7c8eb43682ef944a41611c8bbd14d",
+    "guide_initial_sha256": "47d02aaacf57453a327c0fda3071555d3d07b95c487ba293b995906b96572a47"
+  },
+  "tight_u__seed_79": {
+    "scene": "tight_u",
+    "seed": 79,
+    "count": 13,
+    "physical_sha256": "abe30dd856c0e1e11f15b3d799f269c96c23176b49a907d1e27bb9823b39e2fa",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.40612722964285997
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        79
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.056157699960749596,
+      "description_seconds": 0.03689030004898086,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7975849622348417,
+      "occupied_perimeter_m": 25.342389582410338,
+      "observed_disk_union_area_m2": 2.7634914181201795,
+      "extra_envelope_area_m2": 1.0340935441146475,
+      "concavity_area_m2": 11.14205168821817,
+      "area_over_convex_hull_area": 0.2541952693420887,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0340935441146473,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.10169807388114,
+      "curve_area_m2": 39.189891319968936,
+      "sample_count": 242,
+      "occupied_wkb_sha256": "4fed1369f75c7ce57a7296fa3e51611b05e75e2d813d4043733d6710ffa29a8a",
+      "reference_wkb_sha256": "0ac4bcdf76ee01a754ad1697c20c24ec70e14123c312b92a07dda28f72c01e43"
+    },
+    "input_sha256": "f95b945b4fdb1ddcbc1b5b4d19b7e3fc443a0b3e9ac5b49ee175433bc6b53ebe",
+    "boundary_sha256": "c57c692a0ef58d134b1ed0e5694e737f0264b5cfe687bd6d6971ac8879d9e9d8",
+    "guide_initial_sha256": "bf8127d3477e6a560c101ae4a892e03f2b8da2c54e1596b72a55db0e556baf6b"
+  },
+  "wide_u__seed_79": {
+    "scene": "wide_u",
+    "seed": 79,
+    "count": 19,
+    "physical_sha256": "3286567c631e47b3713e947c13f92031639ab80511b8fe383fbc39684125ab53",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45879500149060404
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        79
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06237230001715943,
+      "description_seconds": 0.04096379998372868,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.4950388449886765,
+      "occupied_perimeter_m": 30.07510103482586,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.2290944417557281,
+      "concavity_area_m2": 21.433053372048043,
+      "area_over_convex_hull_area": 0.1733655838370978,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.2290944417557284,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.76920529343752,
+      "curve_area_m2": 47.29894910135161,
+      "sample_count": 359,
+      "occupied_wkb_sha256": "471fc3df177ffed0e32a3648f6c57ca9ba04ac92d87de3b5d58821c198c7690b",
+      "reference_wkb_sha256": "04040db9cafc356faadfe1ba1c890fd03eac09ce1f26c44b53260920f8769079"
+    },
+    "input_sha256": "bcd9887b569894eaf62e973578041181be8deb75d90f77183f02c0a4ce9019b6",
+    "boundary_sha256": "88eacfe68a6e7311802ed0c0586b8eca5a627c6b7113415391389e1c1a8e196d",
+    "guide_initial_sha256": "32f171130d16bdb046d8d2409416708da3f95dea7c984899437fc6de27d6cc3c"
+  },
+  "elongated__seed_80": {
+    "scene": "elongated",
+    "seed": 80,
+    "count": 11,
+    "physical_sha256": "79dd7343914fff50d74fa28ed7cdd44d08fde2c6a9556aa27ea961475be475a5",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.621297754716933
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        80
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.029168800043407828,
+      "description_seconds": 0.022400699963327497,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.9763632727405644,
+      "occupied_perimeter_m": 19.744408944683496,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 1.9665513322895312,
+      "concavity_area_m2": 2.291767208872254,
+      "area_over_convex_hull_area": 0.6343778714251374,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.3260574551128443,
+      "controller_filled_hole_area_m2": 0.35950612282331246,
+      "curve_valid": true,
+      "curve_length_m": 20.813889870040143,
+      "curve_area_m2": 27.45509818357556,
+      "sample_count": 209,
+      "occupied_wkb_sha256": "3ee2bf8b58fc02d1bd191e2bb7e81855b4095ba294d795179a493c3ef9a08ab7",
+      "reference_wkb_sha256": "ac15d03efb720aa9fc188eceae61b05832b15821d38d2647f793bf87e718abc7"
+    },
+    "input_sha256": "700b08314e7a1c256f455d7651f210925632ec498556c28c329a3dccf7ee2278",
+    "boundary_sha256": "21100e08c4c5e3e8e4961aed404f84bb96afbeacbaf7f19b9c78492f56885c7a",
+    "guide_initial_sha256": "8258dd052172dae321e2f40e7cb73b3a0b3676aa66d0d327e58a3c41866e025d"
+  },
+  "tight_u__seed_80": {
+    "scene": "tight_u",
+    "seed": 80,
+    "count": 13,
+    "physical_sha256": "8aa58c4a3a4e5251af0e3dd62095c8c65188cadf320187d5287f412d4ee37f84",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.46411326561842947
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        80
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.05010009999386966,
+      "description_seconds": 0.03523709997534752,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.8267673574749006,
+      "occupied_perimeter_m": 25.12703986927111,
+      "observed_disk_union_area_m2": 2.763491418120179,
+      "extra_envelope_area_m2": 1.063275939354708,
+      "concavity_area_m2": 10.82677249451496,
+      "area_over_convex_hull_area": 0.261149687797468,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0632759393547084,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 23.99201555813157,
+      "curve_area_m2": 39.02379635644382,
+      "sample_count": 241,
+      "occupied_wkb_sha256": "59759cef7ab1fa9bb5ef28235c29e2f5c696619e93f76169a30cf0c80366bac8",
+      "reference_wkb_sha256": "6a9f99fd81510b680cbac5b3938bb9cc349fdc3533fa8443d5c99594838015c1"
+    },
+    "input_sha256": "b1315749d397c25ea0c945830e2ce1e66217d8c9886ccb572a3a3337b2b9735f",
+    "boundary_sha256": "792395cc6098ab01592b6f45efb7fffbb299f11bdd381e3d4fb925f9aa924a05",
+    "guide_initial_sha256": "8582b7bc1553cb7480ee17e09fc85383c36ba2f4ffdd05cafe7640b3e365e6e5"
+  },
+  "wide_u__seed_80": {
+    "scene": "wide_u",
+    "seed": 80,
+    "count": 19,
+    "physical_sha256": "bd345e58f376171abbf39669f8803c3e72de6347946a1731d53f043f0dd7fba0",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.43614771680642317
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        80
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.07103099999949336,
+      "description_seconds": 0.03867610002635047,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.4759182426817485,
+      "occupied_perimeter_m": 29.94501797675193,
+      "observed_disk_union_area_m2": 3.26594440323294,
+      "extra_envelope_area_m2": 1.2099738394488178,
+      "concavity_area_m2": 21.36665948197158,
+      "area_over_convex_hull_area": 0.17319937238349906,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.209973839448817,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.65548618528804,
+      "curve_area_m2": 47.17152563473326,
+      "sample_count": 358,
+      "occupied_wkb_sha256": "6af718b88e2193f30c83009c0cfac455c2e06ca15d21f1020a6662955513914f",
+      "reference_wkb_sha256": "a30e054b626af19fb8586459a964b76dc5098ebb139cc53da352c103c2d830c3"
+    },
+    "input_sha256": "216026640b48612467023e603c6a2e6f9a4f54e48772f65e41b66c6c8b644359",
+    "boundary_sha256": "7212397d61354a22185275972c6a184d02d6bb8a44a2b17ca463417e10407c36",
+    "guide_initial_sha256": "96627101d6cceb3102e307daadef663e63c0e69fbdc6588a1fce29f37a2e0deb"
+  },
+  "elongated__seed_81": {
+    "scene": "elongated",
+    "seed": 81,
+    "count": 11,
+    "physical_sha256": "8e241895c35859c5ccb4c9c743588368568e4ff1822c7f603de6794ffa55a085",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6442061726368585
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        81
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.033895600005052984,
+      "description_seconds": 0.023317100014537573,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.637003675047833,
+      "occupied_perimeter_m": 15.943260390785195,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.6271917345967988,
+      "concavity_area_m2": 1.469353633364126,
+      "area_over_convex_hull_area": 0.7593731321061106,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.9443246461958563,
+      "controller_filled_hole_area_m2": 0.31713291159905843,
+      "curve_valid": true,
+      "curve_length_m": 20.88960166647437,
+      "curve_area_m2": 27.446785212098458,
+      "sample_count": 210,
+      "occupied_wkb_sha256": "44b41a04ab28652204d3307a25ee0cfafcf22c51c04d4754f93a4bbab959b85a",
+      "reference_wkb_sha256": "d883d6ff57953823ede488b9733e85be33ff53bfc700f1c0ce930af5fc1a289d"
+    },
+    "input_sha256": "9dd48e55a2d57e7d7bb8d4ba545cba0bbc78ae0382c1ef6718d554980975ee7b",
+    "boundary_sha256": "e1a9642aee657c9034a01b8fd4fb50d40e9016e4d400fdfc28a1272ad0fd9a39",
+    "guide_initial_sha256": "1b69aa3a5f34e6157cfa9a63abea8b86fa757cabf1bbe09c0750abf118737150"
+  },
+  "tight_u__seed_81": {
+    "scene": "tight_u",
+    "seed": 81,
+    "count": 13,
+    "physical_sha256": "e90265c2a2a070fd4e25bc174bf998d45261e05d520f9078cf5def30d1c0b592",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3887128929937679
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        81
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "231d33b4776707c37faa922ea80d36f1e21663db41746401083cbc51e68f38ca",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "5ed19d56b26ca458368d0b7155af221e37f68874b486025876a2dcad7950f531"
+  },
+  "wide_u__seed_81": {
+    "scene": "wide_u",
+    "seed": 81,
+    "count": 19,
+    "physical_sha256": "bf185e6cbc730159f2f1a81e5f0b3d384afba18cc2fd71bf6e3dfdeb30a2dde4",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4541489991342024
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        81
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06398200005060062,
+      "description_seconds": 0.03772660001413897,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.443344422868876,
+      "occupied_perimeter_m": 29.878391397493502,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.177400019635935,
+      "concavity_area_m2": 21.193888088636438,
+      "area_over_convex_hull_area": 0.1733160714938642,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.1774000196359349,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.492976177677605,
+      "curve_area_m2": 46.85506192056352,
+      "sample_count": 356,
+      "occupied_wkb_sha256": "d1f863aeec008b92c222a2ff5b7e3f87a272660be41d2451f5d563af04910c6f",
+      "reference_wkb_sha256": "fecebe6fd175730646205b209b79a913e6cbd50d2960c0845bec0cbe410527cf"
+    },
+    "input_sha256": "35b4c2725c2bfe315f95f6c96ac5c001f65a3962f76c5247cd70105764f599ee",
+    "boundary_sha256": "e51155369d19fc33c88fff1184e6903c7810aed27de4fe97710008b0f6ac3e4c",
+    "guide_initial_sha256": "a3d2af4065d09000192dd42a2ed016104ccdf862fcc9e66bb027b6232c37210d"
+  },
+  "elongated__seed_82": {
+    "scene": "elongated",
+    "seed": 82,
+    "count": 11,
+    "physical_sha256": "dc5754d1631d844e1eebca4b502ef1b675c04f0045e96fc91c2950bde9cded63",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5882687845398838
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        82
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.029119899962097406,
+      "description_seconds": 0.020744800043758005,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 2,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.6742567152881667,
+      "occupied_perimeter_m": 21.365442348962514,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 1.6644447748371236,
+      "concavity_area_m2": 2.523136347609994,
+      "area_over_convex_hull_area": 0.5928713376733815,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "6e6f6e735dbd7d482444fa92e2bf0ebf4d9f6ae88a6566a1c172b614e3ad0c85",
+      "reference_wkb_sha256": "ad99235d8f30825f18e66709b4ca3e809aaebb3cacea281947b14f14dff59a75"
+    },
+    "input_sha256": "018c52b712927b573f6167e49a43f779277e2d473e9dd4a1567be1c218aacc4e",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "2a942629c5907937eb69a487cca1a949a2461476a7ef417a4fbe64c7109f310e"
+  },
+  "tight_u__seed_82": {
+    "scene": "tight_u",
+    "seed": 82,
+    "count": 13,
+    "physical_sha256": "547d8982fb458351c37a54fa95540c5ab8500960f7096d9c35cfdb5ad51017c6",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4370216577897014
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        82
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06252710003172979,
+      "description_seconds": 0.03940780000993982,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.756323486657814,
+      "occupied_perimeter_m": 24.9799824153085,
+      "observed_disk_union_area_m2": 2.7634914181201795,
+      "extra_envelope_area_m2": 0.99283206853763,
+      "concavity_area_m2": 10.951450093834275,
+      "area_over_convex_hull_area": 0.25539715213185493,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 0.99283206853763,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 23.849368162947584,
+      "curve_area_m2": 38.817759494530364,
+      "sample_count": 239,
+      "occupied_wkb_sha256": "00a3b3adde7b2a1ea84ca8d2b60a0d9c284c7d9813fcf702aec67c67e1006b86",
+      "reference_wkb_sha256": "8760c8dd4dfe454b18acfefaea207490e6442b8921976d6e2a640e45573af836"
+    },
+    "input_sha256": "af002d420e0d82b90cdbe9255db6fa5f0f999e2f0375f09c747e6e756eb56304",
+    "boundary_sha256": "692d40bbdf73bfe0b4f874a29b9d1a6db0fa2fce479eccb46675626bb87232cd",
+    "guide_initial_sha256": "0edd9ab569aef43a091a057ec7d77006c3dbae73b803feea840b45554fb8a2dc"
+  },
+  "wide_u__seed_82": {
+    "scene": "wide_u",
+    "seed": 82,
+    "count": 19,
+    "physical_sha256": "5d8fe741b43118a0898b34c4a39a15f50c3d5a57195284bc3a77f6db598acd37",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.428632405167117
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        82
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.05764080001972616,
+      "description_seconds": 0.036049499991349876,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.479843761142627,
+      "occupied_perimeter_m": 29.758686618025312,
+      "observed_disk_union_area_m2": 3.26594440323294,
+      "extra_envelope_area_m2": 1.2138993579096768,
+      "concavity_area_m2": 21.270047810194754,
+      "area_over_convex_hull_area": 0.17397524757460445,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "4874745ab8292c27e682c08bb149635779f0e1421703bd3ec98617a77eff6f0b",
+      "reference_wkb_sha256": "6c333ba7feac293bad533d175d029e1ac3899e026db812e3bf6da3cf80585ebc"
+    },
+    "input_sha256": "4592f55ef0466a2f7a489794ba5241e6d0b4bd4744de8f9130ddb08c92fe3ed6",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "6558c174990779d9830055359f4ceb0679ddccbdf03b38f9564051ac10d214d8"
+  },
+  "elongated__seed_83": {
+    "scene": "elongated",
+    "seed": 83,
+    "count": 11,
+    "physical_sha256": "ae8dd11675db87f6e968468d796de3563628c7e35d5da690b48e4627312f181c",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5759722622327345
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        83
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.0271177000249736,
+      "description_seconds": 0.021798300032969564,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.129195162469243,
+      "occupied_perimeter_m": 17.609032890343187,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.1193832220182034,
+      "concavity_area_m2": 1.8269548439285375,
+      "area_over_convex_hull_area": 0.6932658106383958,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.4866585708597473,
+      "controller_filled_hole_area_m2": 0.3672753488415422,
+      "curve_valid": true,
+      "curve_length_m": 20.543182979015718,
+      "curve_area_m2": 26.82633532731139,
+      "sample_count": 206,
+      "occupied_wkb_sha256": "718977b4f81e2be6ed8d4d9d31a70c510c5695c0991df05065d9e56cbab4668e",
+      "reference_wkb_sha256": "f9b5620aead95f8943c3f5599d88f2ccb5a15d36ea0291f01e68cddb100edaaf"
+    },
+    "input_sha256": "6794bda7175ba0afb3cb508693f74d58ba43cdd927d962d962a04f5da0e447c3",
+    "boundary_sha256": "53e5c6ee9f24739486513673e0db3dfbff853c8b4bf17a8d3ca99169a2b47aef",
+    "guide_initial_sha256": "5a50488685d8184e35d35813ad311385188e54baf136a03e33e909cd25512359"
+  },
+  "tight_u__seed_83": {
+    "scene": "tight_u",
+    "seed": 83,
+    "count": 13,
+    "physical_sha256": "b6275d277cc5825867f8bd2318b9e8db59a42b3339230a16c459612fb0b2efda",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4254739472914518
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        83
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06887000001734123,
+      "description_seconds": 0.042786499951034784,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7395722480285056,
+      "occupied_perimeter_m": 24.97214935031605,
+      "observed_disk_union_area_m2": 2.7634914181201795,
+      "extra_envelope_area_m2": 0.9760808299083338,
+      "concavity_area_m2": 10.837143912627964,
+      "area_over_convex_hull_area": 0.2565442179715253,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 0.9760808299083338,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 23.937458410368695,
+      "curve_area_m2": 38.735763831975376,
+      "sample_count": 241,
+      "occupied_wkb_sha256": "251579f507da64c73cd842830b144e119ba4d0f49d150a7cde5e991a558c6b9b",
+      "reference_wkb_sha256": "2b96cff6e1f39b6429ee5a1f726df981d3450cac0653ebfba9ee389e33fa7c7e"
+    },
+    "input_sha256": "89f6edf209b7aa4789a74650ae49fe9ec2dc9735f00d81eea388fad2d9e2ebd4",
+    "boundary_sha256": "7154c5b30110f377cab62c1fa3741fa573c7a58386eff8fe7b8e4c8f6fdb74d7",
+    "guide_initial_sha256": "ed242c1cbf58f3c0a8395dc00776779f21e9aa3c7f5b7975283d2f3b164a76cb"
+  },
+  "wide_u__seed_83": {
+    "scene": "wide_u",
+    "seed": 83,
+    "count": 19,
+    "physical_sha256": "2ce61edc93c013d671d2cdb3847f6010f5156597efeae897e11abd67a763bb3c",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4093895202505967
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        83
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.07082689995877445,
+      "description_seconds": 0.0460806000046432,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.51106334842702,
+      "occupied_perimeter_m": 30.279512610086982,
+      "observed_disk_union_area_m2": 3.2659444032329414,
+      "extra_envelope_area_m2": 1.245118945194087,
+      "concavity_area_m2": 21.502320432210297,
+      "area_over_convex_hull_area": 0.17341317017683655,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.245118945194087,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.85608094025134,
+      "curve_area_m2": 47.4812002028792,
+      "sample_count": 360,
+      "occupied_wkb_sha256": "4eec92fbb98a66776eba06197f5c0865082526d68d912a0a7ff66662e9e66af8",
+      "reference_wkb_sha256": "572cde087748e3df78ca2189659dd4d928f11c3fdd02e87dbcb05af00e040277"
+    },
+    "input_sha256": "9ab0f7e576f8b8e89f99924ec9df4ed9404a06456b6cadaa24947a2d694daa1f",
+    "boundary_sha256": "6d4fad44e8d705eb5bb51ab1e1667de1d1361393e19b95a4edddf8eca1f10076",
+    "guide_initial_sha256": "73c6d8a9646b16cb2cb19ba5291057cf4c4cc28bc01d6be8bead22870a74c212"
+  },
+  "elongated__seed_84": {
+    "scene": "elongated",
+    "seed": 84,
+    "count": 11,
+    "physical_sha256": "81411d2502258f2a00191c4f5bbaf562bdf1046298600788561f54e1c92c0abe",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6018811506345849
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        84
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.030717900022864342,
+      "description_seconds": 0.019261899986304343,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.470545628754008,
+      "occupied_perimeter_m": 15.52389918926209,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.460733688302984,
+      "concavity_area_m2": 1.3810388671216831,
+      "area_over_convex_hull_area": 0.7639889045274716,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.4607336883029856,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 20.684398816205917,
+      "curve_area_m2": 27.006145755801445,
+      "sample_count": 208,
+      "occupied_wkb_sha256": "e628dba44aa8e719e0046698a47e802326ef2e6df873c0036ed836fc75454ae0",
+      "reference_wkb_sha256": "00743c66af49bc3b7e5aa98e323a7f524041fcbc52dba4394acc199cffd14261"
+    },
+    "input_sha256": "cecca56dec90127092354a671792389cbc7688b6afb1f21e881aad120fdada5b",
+    "boundary_sha256": "d2f0d96cba0e8fd9b7e070c66426a4e4a5919936dd0a7b873e89d7713ff8fda2",
+    "guide_initial_sha256": "ffb2d17c5e130dda8f501899d59601e1cd8e781a68c01b0558cc38ebf6eafdc9"
+  },
+  "tight_u__seed_84": {
+    "scene": "tight_u",
+    "seed": 84,
+    "count": 13,
+    "physical_sha256": "47de9e9ce6265afd8a1c60da22fdfcd51644b37e1e6d3a82c0e0d1101e76f278",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4177465656268179
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        84
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06859480001730844,
+      "description_seconds": 0.03836259996751323,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.8034969634978903,
+      "occupied_perimeter_m": 25.035420662663228,
+      "observed_disk_union_area_m2": 2.763491418120179,
+      "extra_envelope_area_m2": 1.0400055453777146,
+      "concavity_area_m2": 11.05855361831343,
+      "area_over_convex_hull_area": 0.2559200658456069,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0400055453777144,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.244836705483934,
+      "curve_area_m2": 39.154296613231914,
+      "sample_count": 244,
+      "occupied_wkb_sha256": "ba5a83361b5d072c60deb26dc461532995cd9be74009dcb997edbf7d0a0a92f4",
+      "reference_wkb_sha256": "e08aea5ad8e25a907efce84d54160d625c7aa95378372a1e115c683e81dd008d"
+    },
+    "input_sha256": "2b12a110982294290848e3c8b6a283cbcdd5d79fba1429d45e09a6c4be890e1a",
+    "boundary_sha256": "2fcb08512dd18daf49d5db6303f3007ab7d905e560e2f1870a62ecb1418d3b76",
+    "guide_initial_sha256": "6e700b514d98df5a7fd0533a4123ad97549aebc05fef4689eac6fac5e29ac20e"
+  },
+  "wide_u__seed_84": {
+    "scene": "wide_u",
+    "seed": 84,
+    "count": 19,
+    "physical_sha256": "b97d0e2df2387611989ab267c5fd1a59a06496c4d981faa5a623cac83ef49818",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4286003370525986
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        84
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.06158310000319034,
+      "description_seconds": 0.04789480002364144,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.4985797486557315,
+      "occupied_perimeter_m": 30.3334035034346,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.2326353454228363,
+      "concavity_area_m2": 21.764844334831835,
+      "area_over_convex_hull_area": 0.1712868715958513,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "22afbbf96399e73d05d462a3e337271ecc5cdcd635500ad40f1af4cdd905481c",
+      "reference_wkb_sha256": "b7dd2530018bc1c987adb3d2731bff1cde74f82272c0d2230430e69cdd172e72"
+    },
+    "input_sha256": "65240d643f65b7114407dbf758dba1024c9a48f32e979abba7c7d49fd256988e",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "6d5463ace718fa640d41636501ac1446c41af38f1748aa15a07be99e96c24a52"
+  },
+  "elongated__seed_85": {
+    "scene": "elongated",
+    "seed": 85,
+    "count": 11,
+    "physical_sha256": "ddeac813a16679867bbcb0e15f14173c614562eccfe10839eb2e29470e156b07",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5628923312501827
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        85
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.02578600001288578,
+      "description_seconds": 0.019033199991099536,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.7926429020327035,
+      "occupied_perimeter_m": 13.990402115793934,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.78283096158167,
+      "concavity_area_m2": 1.327052088565981,
+      "area_over_convex_hull_area": 0.7831506160675238,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.78283096158166,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 20.892243530654007,
+      "curve_area_m2": 27.308156105184246,
+      "sample_count": 210,
+      "occupied_wkb_sha256": "b0595f86f90516c67fccc2d39b590d4421cb2668ba2764aeac28c11719ba931b",
+      "reference_wkb_sha256": "fa7e0c62099f67a0e539f5a5736166438744c0194445038db054aebcf3ac9988"
+    },
+    "input_sha256": "fa0f5bc8a94267e773edfc496464f2bd873ca11fc07398b5022b925453744879",
+    "boundary_sha256": "60e031b289aea8ad660234c92f48e42041804f4abe50ac9afdc74d286d143bdf",
+    "guide_initial_sha256": "921424983f517b90b6878caa48d50eb46c02616f442e4d173091ecdb1d718cd5"
+  },
+  "tight_u__seed_85": {
+    "scene": "tight_u",
+    "seed": 85,
+    "count": 13,
+    "physical_sha256": "28b651a2cfe9f39dc460334c4d3bf61c75328f7104b5c51627fb69f64fc2add5",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.48137311588161996
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        85
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.056000799988396466,
+      "description_seconds": 0.04022540000732988,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.840292121180567,
+      "occupied_perimeter_m": 25.312242970158856,
+      "observed_disk_union_area_m2": 2.76349141812018,
+      "extra_envelope_area_m2": 1.0768007030603939,
+      "concavity_area_m2": 11.198343245588704,
+      "area_over_convex_hull_area": 0.2553617417752163,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.0768007030603939,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.16072907679159,
+      "curve_area_m2": 39.36115145982952,
+      "sample_count": 243,
+      "occupied_wkb_sha256": "d9049546491c3ae2d48e4ca5204799fbd792c854f9d004b1bd38182ad09bac90",
+      "reference_wkb_sha256": "bd4fbe422158b037cee1e06f5ba53975ad287c2116e8cb7793c559ab50e3317e"
+    },
+    "input_sha256": "5a0163551ca18534273cbbefc10d226ffe3a3dbb013a29ee49be19352e3783fd",
+    "boundary_sha256": "1f25278aa399efd4513a437267f8a77964e115b11585e2b83d6e978a9c3fc3ba",
+    "guide_initial_sha256": "8fb7db3d5c0296450cbdfb6e600fb7104bd797d435569226a5cb821f1af5b3e3"
+  },
+  "wide_u__seed_85": {
+    "scene": "wide_u",
+    "seed": 85,
+    "count": 19,
+    "physical_sha256": "770b5f3ec3a1672471c61fff4783f8675717fe1b681dfcbf570bccf3d9b27fbd",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.47984809883310414
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        85
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.12034709996078163,
+      "description_seconds": 0.042222000018227845,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.504955243760098,
+      "occupied_perimeter_m": 30.249106146926817,
+      "observed_disk_union_area_m2": 3.265944403232942,
+      "extra_envelope_area_m2": 1.239010840527181,
+      "concavity_area_m2": 21.591748539659978,
+      "area_over_convex_hull_area": 0.17262545036903154,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.239010840527181,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.907854244912464,
+      "curve_area_m2": 47.495066266702494,
+      "sample_count": 361,
+      "occupied_wkb_sha256": "893a0a294450c260e2ea10a99d4d469ffc7920c7e08f03d95a36fa7caa9a79ff",
+      "reference_wkb_sha256": "fb89f280a25ac4afcc8fe5a4d94be0279d993e21ee78718e07e531f8e966d4d5"
+    },
+    "input_sha256": "5dd2b8d6489cd662acf12f087512f3c8f2a46d69ead49ff4447b9998225cac53",
+    "boundary_sha256": "35488cdbb282a81bb01f7a75317716541c1e96a3feebf09102bc61d6ad4e17e4",
+    "guide_initial_sha256": "d39c4a0bcc74957463c34da90d3cf5330314d6e1b698622274cb11284f22dbb3"
+  },
+  "elongated__seed_86": {
+    "scene": "elongated",
+    "seed": 86,
+    "count": 11,
+    "physical_sha256": "56b9f8ea52ed7ef05c0bb7878f04ab360ed0380be64740a48d13181ed688d6e4",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6003138372632001
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        86
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.02861580002354458,
+      "description_seconds": 0.02343449997715652,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.80819068974008,
+      "occupied_perimeter_m": 13.787045646601221,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.798378749289054,
+      "concavity_area_m2": 1.252877945489017,
+      "area_over_convex_hull_area": 0.7932909160264485,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.798378749289055,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 20.75865145447149,
+      "curve_area_m2": 27.114865223237747,
+      "sample_count": 208,
+      "occupied_wkb_sha256": "d74fec9ce2470b3fd849321d2572a02dda69a7c06840daf201883a22adfdcd74",
+      "reference_wkb_sha256": "8994578bb15ea860f128b4d19a19aee687ca2f2ff15a0bbc2ce67654fe5e1b12"
+    },
+    "input_sha256": "f8502db4cc4be275cfa9880764b7ad30e712c54460a63eaa13146967fb45a014",
+    "boundary_sha256": "0c8d3a2d35b11dfc22456e67d15b83693083a34b10896e0c421957f8d1fa96e7",
+    "guide_initial_sha256": "fac5d6394afe7cba17276877f92003925d41dcccec127b46e3fd7924d9e28f64"
+  },
+  "tight_u__seed_86": {
+    "scene": "tight_u",
+    "seed": 86,
+    "count": 13,
+    "physical_sha256": "f3678496d37a58961bb0efd0d1ad747bd220de45027c2e933dfe0cca5e6a6619",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3972253025291831
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        86
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "f996ffbe59a9f1f7ac61548817398242a47fb1106b87cd24b083b31559e6cddb",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "b2123aa679072fc83e698e189c04d83758fbe103a0760a9d8faab549aa9acd1b"
+  },
+  "wide_u__seed_86": {
+    "scene": "wide_u",
+    "seed": 86,
+    "count": 19,
+    "physical_sha256": "f4623509fe4a62639834b0f254a778134e841936a3eae451161422480e69ecd6",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4512323838666304
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        86
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.07197129999985918,
+      "description_seconds": 0.040811299986671656,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.42675670632968,
+      "occupied_perimeter_m": 30.053518508008416,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.160812303096745,
+      "concavity_area_m2": 21.480647396525054,
+      "area_over_convex_hull_area": 0.17086840073806922,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "114d97837e7475b049c7d4f9b70c501008f761acf0337a48997b74d01ca5dd98",
+      "reference_wkb_sha256": "969257e74c1c76c1d5bb7e686dfe362ac95b3f3bcf9347fce05eb015142550b6"
+    },
+    "input_sha256": "3401670a72a48ab5fc646dedd2ea30de5564e1fbb3e0ecdd25f33c3d5b608c1a",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "e4f4aba41b2bcccc669601b2ffd03b503777e8c09cfccd53553bfb31b4a237d2"
+  },
+  "elongated__seed_87": {
+    "scene": "elongated",
+    "seed": 87,
+    "count": 11,
+    "physical_sha256": "6dd8793b9d503a889fea6ea1e700d4786235de23868ce33875c06f7cb3c646e1",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6248469723163319
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        87
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.03080240002600476,
+      "description_seconds": 0.021586599992588162,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.5349930613247595,
+      "occupied_perimeter_m": 15.585495081019435,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.5251811208737216,
+      "concavity_area_m2": 1.4254155946560214,
+      "area_over_convex_hull_area": 0.7608527070999176,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.842149979590681,
+      "controller_filled_hole_area_m2": 0.31696885871695696,
+      "curve_valid": true,
+      "curve_length_m": 20.634995740247174,
+      "curve_area_m2": 26.95684713331256,
+      "sample_count": 207,
+      "occupied_wkb_sha256": "ef370a62d65e4acb647a0554982ff00ebfaf888fa91639f60c61ff51de8bbc21",
+      "reference_wkb_sha256": "0ec2ee343e8f058c33b6441ae5bafff0592684083a5195eb6063efe96bea23d0"
+    },
+    "input_sha256": "768cb33eba240841b84519f65e2c6445ef07637ddd1f5e718232a740f61b69bc",
+    "boundary_sha256": "62ce4a90ad8761f664877951b1d143c77b3c3046ac6adc6cd24efdccb60d9573",
+    "guide_initial_sha256": "a2a4526ca5d5194b51c6673447b63957bb19498dcbe4e6f15902efc1fad9f3e9"
+  },
+  "tight_u__seed_87": {
+    "scene": "tight_u",
+    "seed": 87,
+    "count": 13,
+    "physical_sha256": "1c4770048ca60dd1f6fa9b2de559296c2779ae06f1c22e87cc8c64607f34e3f8",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3777271412796393
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        87
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "1d8c1327cfbd80d527077911871bb6543e021b0db45e77b647951ed0ef5725f6",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "231a942dab8a96e7068630429a17e35861f2fe76cc15c8a49da61d3172d89d09"
+  },
+  "wide_u__seed_87": {
+    "scene": "wide_u",
+    "seed": 87,
+    "count": 19,
+    "physical_sha256": "2bde137f3a1c71aa0ff3f10a00c43050fbd75b1fded20d9f140b02c0b145c546",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4309309202941766
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        87
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.0831336000119336,
+      "description_seconds": 0.040617199963890016,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.431902181303645,
+      "occupied_perimeter_m": 30.137699249274952,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.1659577780706978,
+      "concavity_area_m2": 21.493468514666155,
+      "area_over_convex_hull_area": 0.17094845945607262,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.1659577780706982,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.72837537517414,
+      "curve_area_m2": 47.285552312757645,
+      "sample_count": 359,
+      "occupied_wkb_sha256": "a591e1b4391c3a62af82b4544760c2cf8ddbe8cca069f83e88a1c3f02c174184",
+      "reference_wkb_sha256": "6c89b2ca10b4b75c8ee3c771d03d63bfb7179a55b65cfc960d6c0e68f5131e17"
+    },
+    "input_sha256": "a54d97834e5c4477ba5d4b3f1b23757c7a5a50234bdddd4e987d14a37fcc55fe",
+    "boundary_sha256": "b437710ba8a6e4e71459a3e02c61e58299475c07d009c9e2888f4cade318aaf9",
+    "guide_initial_sha256": "3d7a73790aaad1b420894bffea4f2f42da66ea6ca7314e14dcaf282201d30791"
+  },
+  "elongated__seed_88": {
+    "scene": "elongated",
+    "seed": 88,
+    "count": 11,
+    "physical_sha256": "9b2c45fa257a2e13ee1381cd5072e79a33bfc144d13fa10a4c8a6e0d6b6da1c8",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6390356814939934
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        88
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.03252569999312982,
+      "description_seconds": 0.020734700025059283,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.635517199000935,
+      "occupied_perimeter_m": 15.765049963323081,
+      "observed_disk_union_area_m2": 2.009811940451038,
+      "extra_envelope_area_m2": 2.625705258549896,
+      "concavity_area_m2": 1.6115741201862657,
+      "area_over_convex_hull_area": 0.7420280834959935,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.9358250883995556,
+      "controller_filled_hole_area_m2": 0.3101198298496504,
+      "curve_valid": true,
+      "curve_length_m": 20.77189930086221,
+      "curve_area_m2": 27.267006836535288,
+      "sample_count": 209,
+      "occupied_wkb_sha256": "862639ab6d0d2e1c12b095064a6f1e68300d5f2412fa15757bf67b65f0cdbd3f",
+      "reference_wkb_sha256": "ddaa86718c9cd4fc83e397c2d78693ddf14fadecf041410a1bb2b0aa202a8937"
+    },
+    "input_sha256": "15fc1c049a71a354b8851229945efddc98fa92851c390b9cef20b79e0e75a647",
+    "boundary_sha256": "16d2ae922048758f809256caaa0337238446f1c9dc39f9c07293efcdce774116",
+    "guide_initial_sha256": "79b26a529c4b76910d7c38b9481d1512208d4820264a9f71a20d17618087c419"
+  },
+  "tight_u__seed_88": {
+    "scene": "tight_u",
+    "seed": 88,
+    "count": 13,
+    "physical_sha256": "4b5a97dcd413d57b747fa9b897a0fd3a6e2b0a4093b4a921c08e6baad93d9687",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.397669787535877
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        88
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "740774691e213b60fb859aa0ad8e597beac1b57e3ef9cbd68435d4ccc3c2299d",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "6f32ea1579f81f17dd2f44a7e72bd16459c63fcb2784e7370c491000391b8053"
+  },
+  "wide_u__seed_88": {
+    "scene": "wide_u",
+    "seed": 88,
+    "count": 19,
+    "physical_sha256": "0e6b76d317acf0262badc0eceef693bd1d2ccb83759a826d16a333c7f24fa222",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.41968262711490034
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        88
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06699349998962134,
+      "description_seconds": 0.046097900019958615,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.509389090199652,
+      "occupied_perimeter_m": 29.877601152935327,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.2434446869667,
+      "concavity_area_m2": 21.29242403209386,
+      "area_over_convex_hull_area": 0.1747702407124023,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.2434446869667,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.63934639466255,
+      "curve_area_m2": 47.21198877670116,
+      "sample_count": 358,
+      "occupied_wkb_sha256": "828b98e88dbe6982b9788f2b02dcc05aa31c1f6f5995d17765a974bc6358e367",
+      "reference_wkb_sha256": "faf6d9d8c34d1e4c6249292b282d662e835f463958bd6cec9af80023ea06cfa5"
+    },
+    "input_sha256": "6fe62b4409a04cbb778ea89d4d2cacc716e3ad928e4b9b312b0271151aa3c99c",
+    "boundary_sha256": "3252cf38e4de60fb17372e3c004a3dfbeaebe9d5441c6d3f2a5f280f80f38e72",
+    "guide_initial_sha256": "36da3dd26ca32bcec614082385957efd9b024b5256333de9bf8c3b61f2034ac0"
+  },
+  "elongated__seed_89": {
+    "scene": "elongated",
+    "seed": 89,
+    "count": 11,
+    "physical_sha256": "2ff8c9b4e114f6ff3ca2c7a05a8d7bc417189a5f03dde678d41dafe6a29bea18",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5858667175191146
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        89
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.03256890003103763,
+      "description_seconds": 0.021407199965324253,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 2,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.173679594272468,
+      "occupied_perimeter_m": 17.482341442976523,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.1638676538214217,
+      "concavity_area_m2": 1.778201120980824,
+      "area_over_convex_hull_area": 0.7012371036899813,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.873361127868269,
+      "controller_filled_hole_area_m2": 0.7094934740468484,
+      "curve_valid": true,
+      "curve_length_m": 20.370225994195557,
+      "curve_area_m2": 26.61146819567359,
+      "sample_count": 204,
+      "occupied_wkb_sha256": "7bad49d0af6fa1ca2b12c6c48faa5d3f3b137155cf3f10ef76c3af2a2dc74d06",
+      "reference_wkb_sha256": "eefd57fc57a83ccf7878d7b08c14a4f4d745d52cd82a983af1483c0c6f13e72c"
+    },
+    "input_sha256": "3fb5bed192447740bd098a50d80899511fcae1fae69acecd52d58641892512f1",
+    "boundary_sha256": "1fcc29675b68b847bf064ff0284dbf308ec594347a83417590fd0b5ccff423c5",
+    "guide_initial_sha256": "63df0ee2b8b34a5c9f01f1eaa7fbb95f881af11420ca2233bda52004777e4266"
+  },
+  "tight_u__seed_89": {
+    "scene": "tight_u",
+    "seed": 89,
+    "count": 13,
+    "physical_sha256": "bb1ee69462775299baea48502ff5daee2e78e76f8d758488393f26a7a3e6310a",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4593493083536519
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        89
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.07745250000152737,
+      "description_seconds": 0.0636044000275433,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7629148151341134,
+      "occupied_perimeter_m": 24.959816487574415,
+      "observed_disk_union_area_m2": 2.7634914181201786,
+      "extra_envelope_area_m2": 0.9994233970139466,
+      "concavity_area_m2": 11.059169795917935,
+      "area_over_convex_hull_area": 0.2538721720916575,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 0.9994233970139466,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 23.981687309050393,
+      "curve_area_m2": 38.952854929635386,
+      "sample_count": 241,
+      "occupied_wkb_sha256": "e36aef7095bb00315dfd8d2d1d1375ecc43c355b9bd9b67dd0000ceb4fe4b2a5",
+      "reference_wkb_sha256": "de24a9e15f32fcad613047b8a8158eb1314e5281b4c68bc5cd64e10ed379fa3c"
+    },
+    "input_sha256": "478a9249190583f323ca577afd041e95b44fe8cd3228e74efefc9adf19cc1aa6",
+    "boundary_sha256": "779bfbf7d9cd20b014de02bc26c988929eae937a87384b744ea2bb06e3bfe162",
+    "guide_initial_sha256": "764108dc741d5459ac943d7b9a853b93568e5ebacbb866469b8c6dced73f1101"
+  },
+  "wide_u__seed_89": {
+    "scene": "wide_u",
+    "seed": 89,
+    "count": 19,
+    "physical_sha256": "fb2c70851367689b75c3df9ff66f7227e98950af0398a7a806ae4b5f3a8fd05e",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4592823601566824
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        89
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06641919998219237,
+      "description_seconds": 0.04269120004028082,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.4480102439624165,
+      "occupied_perimeter_m": 29.835768715268475,
+      "observed_disk_union_area_m2": 3.26594440323294,
+      "extra_envelope_area_m2": 1.182065840729458,
+      "concavity_area_m2": 21.302422230443707,
+      "area_over_convex_hull_area": 0.17273536078989699,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.1820658407294584,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.50096581101433,
+      "curve_area_m2": 47.01823616239371,
+      "sample_count": 357,
+      "occupied_wkb_sha256": "78e9dbc1210588e6db151f45183190e5cdc9c40ff27012d21cde9c4d3d559b62",
+      "reference_wkb_sha256": "62ffe4e123629be8ccee11689a2ef089f995a96c03a52ada7f0ad8753217e80e"
+    },
+    "input_sha256": "d6bf19006b562276ce8155766654ad73a3b567f431d8ec18c301a51f869b31fb",
+    "boundary_sha256": "1cd274850fe03aff8c414b449dc14be99a793746c88c491ec33b121deeaa06e3",
+    "guide_initial_sha256": "d9b04d98c0f6f9f0df5d8d4834ce34734b935d3af44aa315f3053cd6fa7f70d9"
+  },
+  "elongated__seed_90": {
+    "scene": "elongated",
+    "seed": 90,
+    "count": 11,
+    "physical_sha256": "a8a704ffa4e3b885d6b5c2d7a2e172c9ae98b31b366f658bfcba9c495fef9bf9",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6129936449162916
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        90
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.033160299994051456,
+      "description_seconds": 0.021737199975177646,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.265960387996506,
+      "occupied_perimeter_m": 17.384804732842404,
+      "observed_disk_union_area_m2": 2.009811940451039,
+      "extra_envelope_area_m2": 2.2561484475454563,
+      "concavity_area_m2": 1.836729413291377,
+      "area_over_convex_hull_area": 0.6990295307318828,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.5856369933058456,
+      "controller_filled_hole_area_m2": 0.3294885457603909,
+      "curve_valid": true,
+      "curve_length_m": 20.687921007253024,
+      "curve_area_m2": 27.109070624590018,
+      "sample_count": 208,
+      "occupied_wkb_sha256": "49bd38009f2c4b8c93806896e97c7956bcb8bf1b58068853067ffdfff61a332d",
+      "reference_wkb_sha256": "c85f0957d102e98d31d43b20f2c1f6aa37d10f75c922cbfb0532c47bdf276521"
+    },
+    "input_sha256": "a422e7021c956e3043c5b74abf754359c95c6652273acad58d9948661c1cf550",
+    "boundary_sha256": "1e1db0c85129dc2da34e9ebc2ef383582d3e19f9c2f2d2375fcd89fcc4fa0573",
+    "guide_initial_sha256": "3313bc631082c3b0b743a79e413d24f063b3ee9c8a9fa8fb6af1d599acbfb64b"
+  },
+  "tight_u__seed_90": {
+    "scene": "tight_u",
+    "seed": 90,
+    "count": 13,
+    "physical_sha256": "0c7a61740e09468c1239f8c103a321b321d6833f0911af2a502c64f0340e77c7",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4035041069024441
+    },
+    "status": "BOUNDARY_INVALID",
+    "reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        90
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "BOUNDARY_INVALID",
+      "failure_reason": "BOUNDARY_INVALID: occupied ring does not cover the observed disks",
+      "construction_seconds": 0.05499550001695752,
+      "description_seconds": 0.03913809999357909,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7487753309007563,
+      "occupied_perimeter_m": 25.09576250584342,
+      "observed_disk_union_area_m2": 2.7634914181201795,
+      "extra_envelope_area_m2": 0.9852839127805681,
+      "concavity_area_m2": 10.953841901292982,
+      "area_over_convex_hull_area": 0.2549733337743573,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": null,
+      "controller_extra_area_m2": null,
+      "controller_filled_hole_area_m2": null,
+      "curve_valid": false,
+      "curve_length_m": null,
+      "curve_area_m2": null,
+      "sample_count": null,
+      "occupied_wkb_sha256": "658d7b1702fe6d374651ab4880b33c33a29f4b65be86bacb5953cd5adbfd13b1",
+      "reference_wkb_sha256": "2e3c62d9bc6c9697e4ba60d540090f8764041437b18d0b25b199dfe98fefd2b6"
+    },
+    "input_sha256": "1a1d6b1a86eb9c49c4c8bdd132e23b43039681f48253197585d6076641774a31",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "2842381611509b959c67bcc4626e08adff613ba17da9fd76abdeb981dcffd703"
+  },
+  "wide_u__seed_90": {
+    "scene": "wide_u",
+    "seed": 90,
+    "count": 19,
+    "physical_sha256": "ceea61c791e6619ae9332841fcada6c7c4add14cac8bbacad8d728f570052e3a",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.44470127032905643
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        90
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.07158150000032037,
+      "description_seconds": 0.04097570001613349,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.482265885963617,
+      "occupied_perimeter_m": 30.111995126934197,
+      "observed_disk_union_area_m2": 3.265944403232942,
+      "extra_envelope_area_m2": 1.2163214827306383,
+      "concavity_area_m2": 21.51595975341845,
+      "area_over_convex_hull_area": 0.17240660759455423,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.2163214827306381,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.76178373158646,
+      "curve_area_m2": 47.2594569838203,
+      "sample_count": 359,
+      "occupied_wkb_sha256": "7c71da4724d479f25d105994e2e5a404e6fdb616423dccfe1084b3e9bc8d6865",
+      "reference_wkb_sha256": "b2d361da894be8fc837017e398804ae54e04771462cca226b4ac699f60e8aa41"
+    },
+    "input_sha256": "eb87e0317ed696e1990073a1c1f68d6598a976d6ffadaa1f81a4d01aba7e2e54",
+    "boundary_sha256": "ab4aafca7fb7633c784f739d00a6e816dda5807ea4d153286a84b9db2d237049",
+    "guide_initial_sha256": "1a6d6f8d6b118609f22556208a1de46e11f8d08e5d5affa680f65140838313e6"
+  },
+  "elongated__seed_91": {
+    "scene": "elongated",
+    "seed": 91,
+    "count": 11,
+    "physical_sha256": "e977a37fb8c119b53b8edea7987c0883410d543de813facab74bf0fcb9155719",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6105847481028756
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        91
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.030540800013113767,
+      "description_seconds": 0.02015709999250248,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 1,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.215805259386535,
+      "occupied_perimeter_m": 17.225070474359363,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.2059933189355023,
+      "concavity_area_m2": 1.7161224183817825,
+      "area_over_convex_hull_area": 0.7106973463595186,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.5020846371404817,
+      "controller_filled_hole_area_m2": 0.29609131820498147,
+      "curve_valid": true,
+      "curve_length_m": 20.734391808561966,
+      "curve_area_m2": 27.063797030164064,
+      "sample_count": 208,
+      "occupied_wkb_sha256": "edbb24d53c88938ee338a76b2f6eb9d04aec5f77b0c86a8ae9317e4fb395a9ac",
+      "reference_wkb_sha256": "5e6ad0de404fbc86900b1beae21dc8f4c6488e5a8897e3bb6dcaa123fcb16cf3"
+    },
+    "input_sha256": "97c67d6179500178246b57b9298141016eb8893e361b7d76f8b500b49052bb4a",
+    "boundary_sha256": "a4bd10870adc31752aa72f270c01b42b35977bbc409a3e2b1660f5031f2a7570",
+    "guide_initial_sha256": "7f01dec4eeec371d5e84889fd568c92c8350706df8b2ae95c65097afb51ad372"
+  },
+  "tight_u__seed_91": {
+    "scene": "tight_u",
+    "seed": 91,
+    "count": 13,
+    "physical_sha256": "554a8c84598543f29d5574f201ddb2f3e02f369e6fd41d5ed881b1fbddfa7204",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4013479073367378
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        91
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.06072639999911189,
+      "description_seconds": 0.04274610005086288,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.7160088980523884,
+      "occupied_perimeter_m": 24.81664544919858,
+      "observed_disk_union_area_m2": 2.763491418120179,
+      "extra_envelope_area_m2": 0.9525174799322111,
+      "concavity_area_m2": 10.803961593465718,
+      "area_over_convex_hull_area": 0.2559239979325791,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 0.9525174799322108,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 23.875842187629996,
+      "curve_area_m2": 38.4483171698209,
+      "sample_count": 240,
+      "occupied_wkb_sha256": "d084bf82accbc2a57e6683dffe3d80189901e986f9756d29fc018ec62c089966",
+      "reference_wkb_sha256": "4a1c38d163cfbb63e859081907534ddebe6798cbc760a464345ba82d15777bfc"
+    },
+    "input_sha256": "d55d8e280c7e460e0b408f3fee49c69541b42696adc0b34119c9d945aa881d49",
+    "boundary_sha256": "4cd9e7cb432c5442aadb84fd509a8f4fa19b3c6fcd2e328e0c11a3ad69c57707",
+    "guide_initial_sha256": "845bc646baf9f65ab55ef462dbccd534e49f3f4ce386278b5a734a3ee56047ef"
+  },
+  "wide_u__seed_91": {
+    "scene": "wide_u",
+    "seed": 91,
+    "count": 19,
+    "physical_sha256": "209525fece8a7aef543b16be82acc643410855f868159f8932f2c910a498375f",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4564168989362761
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        91
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.05995159997837618,
+      "description_seconds": 0.0387330999947153,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.499282063366536,
+      "occupied_perimeter_m": 29.94553998302233,
+      "observed_disk_union_area_m2": 3.265944403232941,
+      "extra_envelope_area_m2": 1.2333376601336117,
+      "concavity_area_m2": 21.43215554204461,
+      "area_over_convex_hull_area": 0.17350685032702004,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.233337660133612,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.738202481590555,
+      "curve_area_m2": 47.23276291071767,
+      "sample_count": 359,
+      "occupied_wkb_sha256": "1c14c2e8e36257bead30770d4670e3a6896d8bc7b4675697c2eb88bcea219844",
+      "reference_wkb_sha256": "7053f398d0f22a59e1bf6dfd36a53a16ee63499abab4f6aadc24c99387aff02f"
+    },
+    "input_sha256": "c09519a915a7e09ec66ec5746548b5cf599e0afdeb46288bf3c18ffdb57c0d82",
+    "boundary_sha256": "056ca1cac12742dfe4277fdb2b268a90f8acc0ea6f4ec91e4c60138aaf0e7b18",
+    "guide_initial_sha256": "289a968b27b54a75af1e259e737c07252ca84601b6f66c05a6e966da0c6fb3ba"
+  },
+  "elongated__seed_92": {
+    "scene": "elongated",
+    "seed": 92,
+    "count": 11,
+    "physical_sha256": "34b728a860d171518ea071a86b87f5cf1b2470374c54ceb6a030441276531832",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.6248402323412948
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        92
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.026601799996569753,
+      "description_seconds": 0.021386700042057782,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 3,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.125568392788764,
+      "occupied_perimeter_m": 19.617539102541635,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.1157564523377292,
+      "concavity_area_m2": 2.0224409286644938,
+      "area_over_convex_hull_area": 0.6710413366474143,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 3.013361358566309,
+      "controller_filled_hole_area_m2": 0.897604906228582,
+      "curve_valid": true,
+      "curve_length_m": 20.777115190118757,
+      "curve_area_m2": 27.346602664301596,
+      "sample_count": 209,
+      "occupied_wkb_sha256": "40795e4568998dba9744537bcf3263360013229f04bb94665493bea12e36a0c3",
+      "reference_wkb_sha256": "252fe93b0b38e84c62ecbd409f000866d15ceb61dfe0950247cc70fe528d0f0e"
+    },
+    "input_sha256": "bc1fce5e0af623871338530d679f1384cbd568a3eb80785df7ea11fc9f132490",
+    "boundary_sha256": "c7f9e84dacf61f9dd5107f2893d5f5d003598edf3e53125b507da5f0b13c89cf",
+    "guide_initial_sha256": "bfa590e771f004ff8d4b270bc94a652b917a169d7872163d60e78afb2419e86a"
+  },
+  "tight_u__seed_92": {
+    "scene": "tight_u",
+    "seed": 92,
+    "count": 13,
+    "physical_sha256": "f5647fb0777bfd598b7c14a176de59edb2303947bb7e5d3ba7ea1f510a0c2afd",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3880538336010641
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        92
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "dcd019a4ede2f9d61c957cbe9bb94db9c90b80fc162ab8d53ce3fd5bdffb2cc8",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "c5ebc2dfda83ee04ccd11d32e41257905d70c2efa036222e6bca29c4837fd769"
+  },
+  "wide_u__seed_92": {
+    "scene": "wide_u",
+    "seed": 92,
+    "count": 19,
+    "physical_sha256": "0de325769ca122302fccc97e0335c3fc0fb20bbfee43eb9f00ebdb60ea7db0b8",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.49628525537272233
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        92
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.060657599999103695,
+      "description_seconds": 0.03698469995288178,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.5058422420420285,
+      "occupied_perimeter_m": 30.067683289558033,
+      "observed_disk_union_area_m2": 3.2659444032329406,
+      "extra_envelope_area_m2": 1.2398978388091277,
+      "concavity_area_m2": 21.353433413253054,
+      "area_over_convex_hull_area": 0.17424471984849957,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.239897838809128,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.74064553850277,
+      "curve_area_m2": 47.25666540954001,
+      "sample_count": 359,
+      "occupied_wkb_sha256": "72dce0d2961b6ed53f91861aca41759d990e9bd6827898882685e108fb88ed30",
+      "reference_wkb_sha256": "b575543bf4cb39f9b71ff611166dcd4c8919291b33358802c4cd6caa040bda9d"
+    },
+    "input_sha256": "eef3684832d91a9184119b6541f813c11c8e69fdf62b9b2c50f70e9bd36effad",
+    "boundary_sha256": "0f9d10112fe7d3a2940771b8a43fb402912db38efc6bcb864d8a488578a3652b",
+    "guide_initial_sha256": "2a5038589002a2d4ca9a7b1602c51d1a28cf4561d220ca97079a9eb5cf68634b"
+  },
+  "elongated__seed_93": {
+    "scene": "elongated",
+    "seed": 93,
+    "count": 11,
+    "physical_sha256": "2c6b3f0692cbe61ed2b3d32a2bb08921b52bf6bd3f9d5b2aab07d7ba2bdbbb92",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5529075320936281
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        93
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.031890699989162385,
+      "description_seconds": 0.02032010001130402,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.306790719319602,
+      "occupied_perimeter_m": 15.525717012670524,
+      "observed_disk_union_area_m2": 2.009811940451038,
+      "extra_envelope_area_m2": 2.296978778868562,
+      "concavity_area_m2": 1.588572700012112,
+      "area_over_convex_hull_area": 0.7305386306121576,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.29697877886857,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 20.69280743315595,
+      "curve_area_m2": 26.828714472070057,
+      "sample_count": 208,
+      "occupied_wkb_sha256": "78d4010f7c967849334095ccc577d5c64142792eb7165533d48e156d7a45eb85",
+      "reference_wkb_sha256": "74aadaa91f92a5a1751c2927353a9c685b99b13cb4d6adcfc8896c58efd23b13"
+    },
+    "input_sha256": "399019130fe96a89a1efa46fc5fddead99a8da59dd6ab26d6dc7a84b585fa815",
+    "boundary_sha256": "5fb910d7eaf31b60e68ca8a3e697ba41ab17f0f8bc21b6c2b39e21c699172b3b",
+    "guide_initial_sha256": "8cf78ba492fa4ac562b999229eeabe05d94326ef0d6d26a2bc3677e4e725c33e"
+  },
+  "tight_u__seed_93": {
+    "scene": "tight_u",
+    "seed": 93,
+    "count": 13,
+    "physical_sha256": "296512631bf51d392f12d7340c797fab5abd8057ec8c75a08675c252c82361a9",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.44320480845259264
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        93
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.050126300018746406,
+      "description_seconds": 0.036625900014769286,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 3.813664395868942,
+      "occupied_perimeter_m": 25.09799027595826,
+      "observed_disk_union_area_m2": 2.7634914181201795,
+      "extra_envelope_area_m2": 1.0501729777487772,
+      "concavity_area_m2": 11.023961018084526,
+      "area_over_convex_hull_area": 0.25702659889786206,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.050172977748777,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 24.102336967284486,
+      "curve_area_m2": 39.06951697835313,
+      "sample_count": 242,
+      "occupied_wkb_sha256": "036f65085076b2d294a44cbf109278e3baa47b44c9c7388ac658c6e55644a14e",
+      "reference_wkb_sha256": "844b79ec2aa195578782dc527a147d3a747a85794b6b3d88ababa2f474c67433"
+    },
+    "input_sha256": "cd23056cb5aa3dd2e20a0d6a112efc0038f1e438f783d2b0ce77dc07e4716648",
+    "boundary_sha256": "28bcfa176e9f3cb0196c4aa14768129cad109393903e51cc2444b91f75129aac",
+    "guide_initial_sha256": "9401a276c118f995f685341cffeb75c404132af00cfcb0ee31e1840ee4165703"
+  },
+  "wide_u__seed_93": {
+    "scene": "wide_u",
+    "seed": 93,
+    "count": 19,
+    "physical_sha256": "a82bde28a5ad1f4dcd6419354209a1bc321731320edd20a27185f9353182b177",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.45808509255523694
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        93
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.065136999997776,
+      "description_seconds": 0.039571399975102395,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.456808071136001,
+      "occupied_perimeter_m": 29.859885132946747,
+      "observed_disk_union_area_m2": 3.265944403232942,
+      "extra_envelope_area_m2": 1.190863667903086,
+      "concavity_area_m2": 21.34468444061907,
+      "area_over_convex_hull_area": 0.17273450631220222,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.1908636679030855,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.61826886969544,
+      "curve_area_m2": 46.993833446459504,
+      "sample_count": 357,
+      "occupied_wkb_sha256": "7ae1693cfb3c63defefb3ad2f4d5968a41ff94c4b6b559323d8ddc30fef39fc6",
+      "reference_wkb_sha256": "be148495ed2493f44cabd50f44f4bbdd538372dc1c46c93f3e78e5a0268bbf0c"
+    },
+    "input_sha256": "a446a25cb3a642f72a4cd62cc7b34d7f35e466d0201f88496395839fdcdaf7f2",
+    "boundary_sha256": "bcf357643e6e2b299ee6f0b372e9633ed58b89bf7b04c44af361cfdb4039ffee",
+    "guide_initial_sha256": "2a5f96d11ea238156e558ca5dd071a8a17b6a4d5b2d7e6cb92b2667de43d89d3"
+  },
+  "elongated__seed_94": {
+    "scene": "elongated",
+    "seed": 94,
+    "count": 11,
+    "physical_sha256": "05e4b32754db62cc52e2a1480a5dbd2eb57fe4364e2198d267da7f3ea942d827",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.5795179464587291
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        0,
+        94
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.032748600002378225,
+      "description_seconds": 0.020709200005512685,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.795119508456749,
+      "occupied_perimeter_m": 13.498260274577696,
+      "observed_disk_union_area_m2": 2.0098119404510384,
+      "extra_envelope_area_m2": 2.7853075680057033,
+      "concavity_area_m2": 1.1181872370017565,
+      "area_over_convex_hull_area": 0.8109032246871797,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 2.7853075680057096,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 20.54070537665507,
+      "curve_area_m2": 26.78615662225474,
+      "sample_count": 206,
+      "occupied_wkb_sha256": "9a6b1b1d3710ee25027f05e68eb3e6bec66493c816e7884d4e28cd2dccbe7a29",
+      "reference_wkb_sha256": "1b1d94e903022de21983dbb8eb5acce24391dff51dffc7f87927790ba0fbca87"
+    },
+    "input_sha256": "f51a93b1c790532c62d6fac1f4b5f1b50483f6b9b95a190d70bb6dce4d85d3ec",
+    "boundary_sha256": "5af34a7608f638689aa31683175b47c71f994efe560b297eed654b3045b1d1ab",
+    "guide_initial_sha256": "8fefc9cea11986bddc4794323f5c02022d3fbdeba1a07e272884eb14423db9df"
+  },
+  "tight_u__seed_94": {
+    "scene": "tight_u",
+    "seed": 94,
+    "count": 13,
+    "physical_sha256": "b6064b815a9e786002b63e944812f5d6654e6a61dbd89325f0b04ae2380ffe8a",
+    "people_quality": {
+      "accepted": false,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": false,
+      "minimum_person_center_distance_m": 0.3710179875318715
+    },
+    "status": "INITIALIZATION_INVALID",
+    "reason": "INITIALIZATION_INVALID: one-draw personnel/room constraints failed",
+    "streams": {
+      "entropy": [
+        20261019,
+        1,
+        94
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": null,
+    "input_sha256": "3b0f00a2d58c14dfa7a42a80653fe8a1d2f8c16a6a8879458f4444ce8a68a6d6",
+    "boundary_sha256": null,
+    "guide_initial_sha256": "93a421289965e00026f733878cfff07520e259d7c71781635a03ef963a8454ce"
+  },
+  "wide_u__seed_94": {
+    "scene": "wide_u",
+    "seed": 94,
+    "count": 19,
+    "physical_sha256": "262318f8ea1adf78a30c2761a46284c5c333a8132b1b441f18226d61315add40",
+    "people_quality": {
+      "accepted": true,
+      "finite": true,
+      "people_disks_inside_room": true,
+      "nonoverlapping_person_disks": true,
+      "minimum_person_center_distance_m": 0.4484858970733727
+    },
+    "status": "ACCEPTED",
+    "reason": "",
+    "streams": {
+      "entropy": [
+        20261019,
+        2,
+        94
+      ],
+      "people_spawn_key": [
+        0
+      ],
+      "guides_spawn_key": [
+        1
+      ],
+      "optimizer_spawn_key": [
+        2
+      ],
+      "optimizer_uses_randomness": false,
+      "inset_line": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          29.0
+        ],
+        [
+          29.0,
+          29.0
+        ],
+        [
+          29.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "inset_line_length_m": 112.0
+    },
+    "boundary_description": {
+      "estimator": "disk_union_closed",
+      "implementation": "estimate_disk_union",
+      "boundary_source": "estimated_disk_union",
+      "status": "ACCEPTED",
+      "failure_reason": null,
+      "construction_seconds": 0.060124500014353544,
+      "description_seconds": 0.03971600002842024,
+      "input_semantics": "observed centres plus per-person physical radii",
+      "disk_quad_segs_effective": 32,
+      "disk_quad_segs_configured": 16,
+      "closing_radius_m": 0.3,
+      "offset_m": 1.3,
+      "offset_quad_segs": 32,
+      "offset_join": "round",
+      "sample_spacing_m": 0.1,
+      "occupied_type": "Polygon",
+      "component_count": 1,
+      "occupied_holes": 0,
+      "occupied_valid": true,
+      "occupied_area_m2": 4.484500766506176,
+      "occupied_perimeter_m": 29.760078204951363,
+      "observed_disk_union_area_m2": 3.2659444032329397,
+      "extra_envelope_area_m2": 1.2185563632731917,
+      "concavity_area_m2": 21.29946564655986,
+      "area_over_convex_hull_area": 0.1739259466392129,
+      "covers_observed_disks_32_strict": false,
+      "uncovered_disk_area_m2": 0.0,
+      "controller_covers_acceptance_disks_16": true,
+      "controller_extra_area_m2": 1.2185563632731922,
+      "controller_filled_hole_area_m2": 0.0,
+      "curve_valid": true,
+      "curve_length_m": 35.62966855564449,
+      "curve_area_m2": 47.016001692083044,
+      "sample_count": 358,
+      "occupied_wkb_sha256": "90caa3544e06ae1fd474c222d9785e0d915aa0e125651decd2c83532f12284d1",
+      "reference_wkb_sha256": "bf55a2716ba5f45dca250d69292be16d48996f01518655dffa580ad58103b84c"
+    },
+    "input_sha256": "d7a392dfe283e2f24e1a8a86ae5b233faebd6746a3beab7106edc4cd396e95f1",
+    "boundary_sha256": "4652e8c31cb0df60f4029f8840f96ea12581d524e465fe96dcaa95902dd55fe5",
+    "guide_initial_sha256": "6a5f2a84d3e46a56f0939b648ee413a932435efa1bd6e3570c247e62760478e1"
+  }
+}

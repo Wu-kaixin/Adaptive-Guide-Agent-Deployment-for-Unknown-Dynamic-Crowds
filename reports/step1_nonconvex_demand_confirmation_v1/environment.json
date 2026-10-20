@@ -1,0 +1,27 @@
+{
+  "python": "3.12.15 (main, Oct  9 2026, 15:21:55) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "udc_import_path": "C:\\Users\\kai\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\src\\udc\\__init__.py",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel Core Ultra 7 258V",
+  "physical_cores": 8,
+  "logical_cores": 8,
+  "ram_bytes": 33847832576,
+  "initial_available_ram_bytes": 17678737408,
+  "uv": "0.13.0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0",
+    "PyYAML": "6.0.3",
+    "jupedsim": "1.4.2",
+    "pedpy": "1.5.1",
+    "pytest": "9.1.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "dependencies_upgraded": false,
+  "workers_first": 1,
+  "workers_remaining": 2,
+  "numerical_threads_per_worker": 1,
+  "UDC_PRIORITY_STALL_COUNTERFACTUAL": "0"
+}

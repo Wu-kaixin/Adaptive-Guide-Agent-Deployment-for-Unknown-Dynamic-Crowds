@@ -1,5 +1,16 @@
 # 框架逻辑与代码位置
 
+## 2026-10-23 本地重建后的入口
+
+活动环境统一为根目录 `.venv`，独立CPython3.12.15，每个项目独立安装，不使用Conda。
+环境设置在 `scripts/setup_env.ps1`，完整Windows依赖锁在 `requirements/locks/windows-py312.txt`。
+需求／资源／截止诊断模块已合并到 `src/udc/experiments/`，统计位于 `src/udc/analysis/`，
+协议位于 `configs/step1/`。最新研究入口为[证据图谱](STEP1_EVIDENCE_MAP.zh.md)。
+
+维护编排 `scripts/rebuild_missing_data.py` 调用已有生成器、规划器、runner和独立验收，
+输出在 `runs/reconstructed_20261023/`，历史源码快照在其 `sources/`。
+报告分析脚本与既有协议保留证据路径。原件、重建数据及缺口见[重建日志](PROJECT_REBUILD.zh.md)。
+
 ## 当前研究契约
 
 Step 1：单一静态人群、已知封闭场地、全局观测、无限通信、无 crowd–guide 动力学交互。
@@ -80,7 +91,7 @@ NPZ 禁用 pickle；人群行索引是冻结快照中的稳定人员身份，SQL
 本次未迁入 Crowd-Management 的双环、未闭合 safe-geodesic、简化 gather 模型和静态多群实验。
 Step 2 再加入动态群体 ID、分裂／合并、跨群分配和 crowd–guide 响应；Step 3 才限制感知与通信。
 Vadere 后续先接离线轨迹，实时交互需要另建 backend 适配。
-`projected_mass` 是固定浓度 1 的间隙投影。RA-ABDC 在此之上才减半浓度。本轮凸曲线上两者目标相同。demand 仍不是经验证风险。
+`projected_mass` 是固定浓度1的间隙投影，RA-ABDC兼容入口在此之上包含浓度减半。历史凸曲线消融里两者目标相同；后续需求与资源实验的当前结论见证据图谱，不能用旧消融概括所有非凸输入。demand仍不是经验证风险。
 
 2026-10-20固定资源恢复诊断发现一种数值边界起点：最近投影差仅约一个ulp，却大于旧方向选择阈值，1e−8m规划节点可能因此指向保守障碍内部，整行路径查询被遗漏。`_boundary_node`现仅在原节点失败且属于原1e−7m端点接触范围时，尝试既有外法向的同一1e−8m节点；保留真实起点，要求完整前缀物理入域及原完整线段检查。既有已接纳节点不变，不增加buffer或安全容差。这是导航／执行表示一致性修复，不是新部署规划方法。恢复策略顺序、失败传播、预算和进展监测未改变。
 

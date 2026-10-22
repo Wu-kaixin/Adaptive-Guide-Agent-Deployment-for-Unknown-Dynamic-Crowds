@@ -1,67 +1,56 @@
-# 数据可用性与复现范围
+# 数据可用性、跨机整合和重建范围
 
-本仓库同时保存可运行的Step 1代码和多轮研究记录。代码版本、依赖环境、冻结输入、实际轨迹和报告摘要分别追溯；克隆仓库不等于取得全部历史原始数据。
+## 当前本地项目（2026-10-23）
 
-## 新克隆可直接开展的检查
+本文件夹已合并当前电脑与转移电脑的代码、配置、报告和可用运行数据。全部转移文件均保存完整归档和逐文件SHA-256；冲突旧件保留。从Git恢复37个转移时丢失的跟踪文件，并依据历史哈希找回883个相同字节的文件。去向与校验见 [重建日志](PROJECT_REBUILD.zh.md) 和 [整合清单](../reports/project_rebuild_20261023/merge_manifest.json)。
 
-安装Python3.12及项目依赖后，可运行测试、自带网格／JuPedSim场景和新输出的独立复判：
+用户已授权重新运行缺失实验。**已有原件、字节一致的找回文件、2026-10-23重新生成的数据分别追溯。** 重建数据位于 `runs/reconstructed_20261023/`，不能冒充历史原始工件，也不增加独立确认样本。每批保留源码快照、输入、完整结果、复判、失败和来源标签。
+
+两份项目及本机既有备份并不包含所有历史工件。整合后的初次审计覆盖252份历史JSON中的32,001个路径／哈希组合：9,668匹配，93为所引版本不同，22,240个runs路径缺失。只统计带哈希的明确引用，不把目录存在当作数据完整；详见 [引用审计](../reports/project_rebuild_20261023/data_reference_audit.json)。重建后的实际完成范围另记，不篡改旧清单的缺失事实。
+
+## 文件位置
+
+| 数据层 | 本地位置与使用范围 |
+|---|---|
+| 可安装框架、场景、协议与测试 | `src/udc/`、`configs/`、`experiments/`、`tests/`，可开展新开发运行 |
+| 两台电脑已有原始工件 | `runs/`内各历史目录；有些只有部分数据，先读哈希审计 |
+| 历史报告、汇总、图表与校验清单 | `reports/`，保存冻结结论及引用；报告存在不保证全部所引轨迹在本机 |
+| 9份既有历史NPZ例外 | `reports/step1_wide_u_replan_cases/`，保留原位置和原版本 |
+| 本次重建 | `runs/reconstructed_20261023/`，各批的 `reconstruction.json` 与 `reconstruction_summary.json` 标明完成范围 |
+| 旧转移项目完整快照 | `backups/project_rebuild_20261023/incoming_snapshot.zip`，含旧Git、虚拟环境和缓存 |
+| 43个冲突的当前旧件 | `backups/project_rebuild_20261023/previous_conflicts/` |
+| 旧Conda来源虚拟环境 | `backups/project_rebuild_20261023/previous_environment/`，仅作归档 |
+
+当前本地运行环境唯一入口为根目录 `.venv`，使用独立CPython3.12.15。一个项目一个环境，不采用Conda，不复制另一台机器的环境。新机器按 [README](../README.md) 创建环境。
+
+## 可从源码开始的检查
 
 ```powershell
-python -m pip install -e ".[dev,analysis]"
-python -m pytest -q
-python -m pip check
-# 首次运行使用尚不存在的输出目录。
-python run.py --config configs/step1/static_50.yaml --output runs/first_run --no-plots
-python run.py --reevaluate runs/first_run
+./scripts/setup_env.ps1
+./.venv/Scripts/python.exe -m pytest -q
+./.venv/Scripts/python.exe -m pip check
+./.venv/Scripts/python.exe run.py --config configs/step1/static_50.yaml --output runs/first_run
+./.venv/Scripts/python.exe run.py --reevaluate runs/first_run
 ```
 
-50人示例的人员网格与Guide初态来自配置，不需要历史SQLite。其配置参数是示例自己的参数，不与非凸比较的1.3 m偏移混用。Linux／Windows CI均执行安装、测试、依赖检查及该示例与复判。包依赖范围见pyproject，历史固定版本见各报告；“当前安装能运行”不等于恢复某轮依赖和逐坐标结果。
+50人示例不需要历史SQLite。配置的偏移和初态属于该示例，不与1.3m非凸实验混用。132任务development smoke使用新的独立输出；正式5000–5029不用于开发。
 
-本仓库不分发虚拟环境。已有合适uv环境可沿用，不能复制另一台机器的venv，也不需要为阅读报告升级科学依赖。
+## 原始路径和版本
 
-## Git中有什么
+旧工件含 `C:/Users/kai/...`、`E:/...` 等路径。审计按已知项目根和明确包内路径解析至本地位置，保留原路径和预期哈希；没有批量改写旧YAML、provenance或锁。源码的历史版本与当前活动版本不同不等于文件损坏，应按对应Git引用阅读。转移历史可用 `refs/remotes/transfer/20261023` 访问。
 
-| 内容 | 新克隆可做什么 | 范围限制 |
-|---|---|---|
-| `src/udc`、配置、测试、CLI、CI | 安装、运行自带示例、验证实现 | 受Step 1静态单群／已知封闭场地等条件限制 |
-| `reports`的报告、JSON／CSV、图像和哈希清单 | 阅读冻结结论、状态、配对统计、来源与失败证据 | 汇总及哈希清单不包含其引用的每条原始轨迹 |
-| `reports/step1_wide_u_replan_cases`的9份历史NPZ及记录 | 检查这9份原数组和指标 | 历史例外，不代表全部runs；某些配置／回放仍引用旧主机绝对路径 |
-| `configs/step1/*`、`experiments/*`的历史协议 | 检查冻结因子和生成规则 | 配置存在不表示数据已随Git发布，也不授权重新使用已消费seed提供独立确认 |
+读取旧轨迹与重新运行是不同操作。原协议的prepare／freeze入口要求未使用种子、干净冻结源码或完整原数据；本次重建用独立维护编排调用已有科学生成器、规划器、runner和独立验收，另建重建锁，不伪造旧clean状态或关闭原锁检查。旧dirty源码若没有完整对应字节，只能使用已注明的冻结版本近邻，不能宣称原样重放。
 
-新实验的唯一原始数据保存在被Git忽略的 `runs/`。已跟踪的少量历史NPZ保留其既有位置以保持证据和路径引用，不在本次整合中再次复制或迁移。`.venv/`、`results/`、`backups/`也不是本次新建的数据分发渠道。
+## Git和可携带性
 
-## 历史实验需要哪些本机工件
+`runs/`、`backups/`和`.venv/`被Git忽略，因此完整本地项目不等于Git克隆含所有数据。搬迁本项目时应保留runs、reports和backups；到新机器重新创建`.venv`。依赖锁描述本次Windows环境，历史冻结版本仍以各报告为准。
 
-| 记录 | Git中的依据 | 额外数据与版本要求 |
-|---|---|---|
-| seed55–74，60输入／120行边界比较 | [完整报告](../reports/step1_boundary_estimator_comparison_v1/REPORT.zh.md)、120行表、60输入哈希映射 | 本机 `runs/step1_boundary_estimator_protocol/future_inputs` 与 `future`，包括NPZ、SQLite、原目标、WKB、轨迹和事件；执行源码为3220233，算法历史基线为0ef6e1f |
-| 覆盖几何契约，102份几何／408项检查 | [契约报告](../reports/step1_coverage_geometry_contract/REPORT.zh.md)及精确证书 | 原比较的完整保存几何／输入，以及本机 `runs/step1_coverage_geometry_contract/audit_v1`；只做诊断，不新增部署 |
-| v3目标域修复开发回归 | [报告](../reports/step1_target_domain_consistency/REPORT.zh.md)、141／33／6和哈希对照 | 本机协议重建输入与原曲线／目标；缺少原v3原始输入，不能称作原180行独立确认的复判 |
-| 更早完整73任务 | 各轮来源说明及19任务补充核验 | 完整原输入未迁入，不宣称73/73重现 |
-| 正式凸曲线1620任务 | [冻结摘要](../reports/formal_step1_summary.json)、校验清单及[验证记录](VALIDATION.zh.md) | 原冻结版本f5b5d9c及对应原始工件；不是当前源码的全量回归，不在开发中重跑5000–5029 |
+历史seed55–74边界比较、覆盖契约、v3重建及原正式1620任务结论保持原样。正式实验仍属于原冻结版本f5b5d9c；本次不重新使用5000–5029。更多科学边界见 [证据图谱](STEP1_EVIDENCE_MAP.zh.md) 和 [实验协议](EXPERIMENT_PROTOCOL.zh.md)。
 
-以上路径说明本机数据布局，不表示新克隆自动带有这些目录。原记录可能包含 `E:\...` 或其他主机绝对路径；原始路径、配置和文件哈希都是来源证据，不能为了让命令通过而改写旧配置、删除锁检查或填造新哈希。异机逐轨迹复核需要另行明确经哈希校验的数据读取／路径映射方案，本次只记录需求，不执行迁移。
+## 重建完成后的数据范围
 
-## 三类操作不可混同
+本次1,699行／次记录已全部完成；31,305个重建文件与各批完整配置、轨迹、状态和复判已独立保存。8,974个新NPZ均可禁用pickle读取；11,599个与历史预期字节相同的重建文件已补回原缺失路径。
 
-1. **阅读摘要**：可直接打开Git中的Markdown、CSV和JSON，不生成输入或运行控制器。
-2. **读取原工件再汇总／复判**：需要对应原始文件和兼容的读取环境。先核对版本、路径与哈希；需要派生输出时使用新目录，不覆盖Git中的冻结报告。部分报告脚本是Windows主机工具，并非通用迁移入口。
-3. **重新生成或执行实验**：是新的操作，不能称为读取旧数据。`--prepare`会建协议目录，`--freeze-future`会生成输入，`--run-future`会执行任务；120行已完成，seed55–74已消费，不再次调用这些入口来制造新确认。
+**审计中的8,393个NPZ／SQLite／WKB引用全部哈希匹配，原始数组、轨迹、数据库和几何在此审计范围内没有缺口。** 仍缺10,641个旧JSON／YAML／TXT版本，它们涉及旧主机元数据和中间运行记录；新完整元数据位于重建目录，不冒充旧版本。此结论只覆盖明确抽取的哈希引用，不声称找回所有未记录的历史文件。
 
-边界比较的 `protocol.json` 准备provenance、`baseline_commit`和实际执行提交各有含义，保留原记录。当前新增覆盖诊断后的完整源码哈希不同于原比较，旧执行入口会按锁拒绝版本串用；不能因此改写原锁。16行开发检查、重建v3开发回归和完整新seed比较分别记账，不合并样本或追认历史结论。
-
-## 本次整合的数据处理
-
-仅更新入口文档、数据说明和审查清单；不生成或复制runs、不新建backups、不升级依赖、不删除历史报告或重跑实验。旧main中的脚本／演示数据清理已发生于研究历史，删除列表、旧Git blob及当前大文件清单见[整合审查说明](STEP1_INTEGRATION_REVIEW.zh.md)。
-
-## 2026-10-20资源响应工件
-
-[资源响应报告](../reports/step1_nonconvex_resource_response_v1/REPORT.zh.md)及360行台账、60条数量诊断、输入／manifest哈希、复判与统计保存在Git。唯一新增Guide初态、184条新增运动、目标、事件和原始状态在本机`runs/step1_nonconvex_resource_response_v1/`；另92条运动只读引用`runs/step1_nonconvex_demand_confirmation_v1/`，不复制原runs。克隆报告不等于取得这些原始轨迹、旧SQLite和全精度输入。
-
-运行前57688a1a、编排审计补充125fd653分别追溯；原52行检查点及两条程序错误不可覆盖或当成重新执行成功。独立物理验收275条通过与完整流程273成功分开记账。当前只读分析入口核验除自身CSV／图例导出层以外的全部执行源码，原执行和重新复判须使用相应冻结提交及经哈希验证的本机依赖；不得改写原锁绕过版本检查。原seed75–94已暴露，本轮资源响应也不提供新的独立人员样本。
-
-## 固定资源恢复诊断与新开发回归
-
-[恢复诊断报告](../reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md)保存23×23查询状态、端点／域／后缀／匹配证据、新旧分开台账和独立复判；唯一原始A／B、小回归及276条完整固定目标新执行在`runs/step1_resource_recovery_diagnostics_v1/`。这些运行继续引用原资源输入、目标和SQLite，不复制整个旧runs。新批次276物理成功不改写旧资源273成功会计结果；原275物理成功轨迹全部不变，唯一科学失败在新批次解决。
-
-原科学重放协议f634725f，生产候选及完整回归源码865e6a48；B与小回归是有声明变更的开发dirty运行，不能冒充冻结clean执行。共享导航12行修复只处理数值边界节点。新source_transition.json单列旧源码125fd653 Git对象／原字节哈希到候选源码哈希，旧报告／输入／轨迹仍逐文件保护，原锁未修改。新克隆需要原机器经哈希核对的runs依赖才能从t=0重放；Git内的派生测试几何不是完整原始人群或轨迹替代品。
+[重建统计](../reports/project_rebuild_20261023/reconstruction/REPORT.zh.md)、[完整核验](../reports/project_rebuild_20261023/reconstruction_verification.json)、[最终历史引用摘要](../reports/project_rebuild_20261023/historical_references_after_reconstruction_summary.json)分别说明新结果、工件完整性和旧版本差异。2次文件写入中断均从保存工件复判恢复，未重跑科学执行；对应错误日志保留。

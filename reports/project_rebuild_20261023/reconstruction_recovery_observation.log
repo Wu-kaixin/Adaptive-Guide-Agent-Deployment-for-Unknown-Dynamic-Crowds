@@ -1,0 +1,8 @@
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"task": "wide_u__seed_92__hotspot5__N_23__projected_mass", "attempt": "A_baseline", "status": "PATH_UNREACHABLE", "time": 20.6, "first_difference": null}
+Traceback (most recent call last):
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_diagnostics.py", line 103, in <module>
+    globals()[args.stage]()
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_diagnostics.py", line 63, in recovery
+    from udc.analysis.recovery_diagnostics import matrix
+ModuleNotFoundError: No module named 'udc.analysis.recovery_diagnostics'

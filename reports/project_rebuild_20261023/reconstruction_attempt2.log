@@ -1,0 +1,555 @@
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"frozen_tasks": 45, "input_status_rows": {"ACCEPTED": 36, "INITIALIZATION_INVALID": 9}}
+{"suite": "record_v1", "tasks": 45, "pending": 45, "source": "2c12886c"}
+{"suite": "record_v1", "completed": 1, "task_id": "elongated__seed_20__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 2, "task_id": "elongated__seed_20__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 3, "task_id": "elongated__seed_21__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 4, "task_id": "elongated__seed_21__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 5, "task_id": "elongated__seed_20__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 6, "task_id": "elongated__seed_22__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 7, "task_id": "elongated__seed_22__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 8, "task_id": "elongated__seed_21__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 9, "task_id": "elongated__seed_23__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 10, "task_id": "elongated__seed_23__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 11, "task_id": "elongated__seed_22__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 12, "task_id": "elongated__seed_24__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 13, "task_id": "elongated__seed_24__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 14, "task_id": "elongated__seed_23__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 15, "task_id": "tight_u__seed_20__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 16, "task_id": "elongated__seed_24__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 17, "task_id": "tight_u__seed_20__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 18, "task_id": "tight_u__seed_21__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 19, "task_id": "tight_u__seed_21__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 20, "task_id": "tight_u__seed_21__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 21, "task_id": "tight_u__seed_22__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 22, "task_id": "tight_u__seed_22__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 23, "task_id": "tight_u__seed_22__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 24, "task_id": "tight_u__seed_23__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 25, "task_id": "tight_u__seed_23__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 26, "task_id": "tight_u__seed_20__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 27, "task_id": "tight_u__seed_24__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 28, "task_id": "tight_u__seed_24__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 29, "task_id": "tight_u__seed_23__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 30, "task_id": "wide_u__seed_20__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 31, "task_id": "tight_u__seed_24__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 32, "task_id": "wide_u__seed_20__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 33, "task_id": "wide_u__seed_21__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 34, "task_id": "wide_u__seed_21__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 35, "task_id": "wide_u__seed_20__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 36, "task_id": "wide_u__seed_22__equal_arc", "status": "PATH_UNREACHABLE", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 37, "task_id": "wide_u__seed_22__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 38, "task_id": "wide_u__seed_21__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 39, "task_id": "wide_u__seed_23__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 40, "task_id": "wide_u__seed_23__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 41, "task_id": "wide_u__seed_22__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "completed": 42, "task_id": "wide_u__seed_24__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 43, "task_id": "wide_u__seed_24__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 44, "task_id": "wide_u__seed_24__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "record_v1", "completed": 45, "task_id": "wide_u__seed_23__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "record_v1", "tasks": 45, "completed": 45, "statuses": {"SUCCESS": 35, "INITIALIZATION_INVALID": 9, "PATH_UNREACHABLE": 1}, "successes": 35, "wall_s": 67.57635340001434, "workers": 2, "original_historical_data": false, "independent_confirmation": false}
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"frozen_tasks": 90, "input_status_rows": {"ACCEPTED": 63, "INITIALIZATION_INVALID": 27}}
+{"suite": "confirmation_v2", "tasks": 90, "pending": 90, "source": "a0781c56"}
+{"suite": "confirmation_v2", "completed": 1, "task_id": "elongated__seed_25__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 2, "task_id": "elongated__seed_25__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 3, "task_id": "elongated__seed_26__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 4, "task_id": "elongated__seed_26__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 5, "task_id": "elongated__seed_25__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 6, "task_id": "elongated__seed_27__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 7, "task_id": "elongated__seed_27__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 8, "task_id": "elongated__seed_26__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 9, "task_id": "elongated__seed_28__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 10, "task_id": "elongated__seed_28__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 11, "task_id": "elongated__seed_27__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 12, "task_id": "elongated__seed_29__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 13, "task_id": "elongated__seed_29__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 14, "task_id": "elongated__seed_28__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 15, "task_id": "elongated__seed_30__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 16, "task_id": "elongated__seed_30__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 17, "task_id": "elongated__seed_29__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 18, "task_id": "elongated__seed_31__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 19, "task_id": "elongated__seed_31__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 20, "task_id": "elongated__seed_30__pairwise_euclidean", "status": "REPLAN_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 21, "task_id": "elongated__seed_32__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 22, "task_id": "elongated__seed_32__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 23, "task_id": "elongated__seed_31__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 24, "task_id": "elongated__seed_33__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 25, "task_id": "elongated__seed_33__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 26, "task_id": "elongated__seed_32__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 27, "task_id": "elongated__seed_34__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 28, "task_id": "elongated__seed_34__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 29, "task_id": "elongated__seed_33__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 30, "task_id": "tight_u__seed_25__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 31, "task_id": "tight_u__seed_25__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 32, "task_id": "tight_u__seed_25__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 33, "task_id": "tight_u__seed_26__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 34, "task_id": "tight_u__seed_26__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 35, "task_id": "tight_u__seed_26__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 36, "task_id": "tight_u__seed_27__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 37, "task_id": "tight_u__seed_27__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 38, "task_id": "tight_u__seed_27__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 39, "task_id": "tight_u__seed_28__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 40, "task_id": "tight_u__seed_28__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 41, "task_id": "tight_u__seed_28__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 42, "task_id": "elongated__seed_34__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 43, "task_id": "tight_u__seed_29__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 44, "task_id": "tight_u__seed_29__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 45, "task_id": "tight_u__seed_30__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 46, "task_id": "tight_u__seed_30__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 47, "task_id": "tight_u__seed_29__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 48, "task_id": "tight_u__seed_31__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 49, "task_id": "tight_u__seed_31__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 50, "task_id": "tight_u__seed_31__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 51, "task_id": "tight_u__seed_32__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 52, "task_id": "tight_u__seed_32__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 53, "task_id": "tight_u__seed_32__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 54, "task_id": "tight_u__seed_33__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 55, "task_id": "tight_u__seed_33__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 56, "task_id": "tight_u__seed_30__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 57, "task_id": "tight_u__seed_33__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 58, "task_id": "tight_u__seed_34__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 59, "task_id": "tight_u__seed_34__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 60, "task_id": "wide_u__seed_25__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 61, "task_id": "wide_u__seed_25__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 62, "task_id": "wide_u__seed_25__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 63, "task_id": "wide_u__seed_26__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 64, "task_id": "tight_u__seed_34__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 65, "task_id": "wide_u__seed_26__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 66, "task_id": "wide_u__seed_27__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 67, "task_id": "wide_u__seed_27__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 68, "task_id": "wide_u__seed_26__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 69, "task_id": "wide_u__seed_28__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 70, "task_id": "wide_u__seed_27__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 71, "task_id": "wide_u__seed_28__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 72, "task_id": "wide_u__seed_29__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 73, "task_id": "wide_u__seed_29__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 74, "task_id": "wide_u__seed_28__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 75, "task_id": "wide_u__seed_30__equal_arc", "status": "REPLAN_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 76, "task_id": "wide_u__seed_29__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 77, "task_id": "wide_u__seed_30__projected_mass", "status": "REPLAN_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 78, "task_id": "wide_u__seed_31__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 79, "task_id": "wide_u__seed_31__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 80, "task_id": "wide_u__seed_30__pairwise_euclidean", "status": "REPLAN_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 81, "task_id": "wide_u__seed_32__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 82, "task_id": "wide_u__seed_32__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 83, "task_id": "wide_u__seed_32__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 84, "task_id": "wide_u__seed_33__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 85, "task_id": "wide_u__seed_31__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 86, "task_id": "wide_u__seed_33__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 87, "task_id": "wide_u__seed_34__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 88, "task_id": "wide_u__seed_34__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 89, "task_id": "wide_u__seed_33__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "completed": 90, "task_id": "wide_u__seed_34__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v2", "tasks": 90, "completed": 90, "statuses": {"SUCCESS": 59, "REPLAN_EXHAUSTED": 4, "INITIALIZATION_INVALID": 27}, "successes": 59, "wall_s": 106.26797060004901, "workers": 2, "original_historical_data": false, "independent_confirmation": false}
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"frozen_tasks": 180, "input_status_rows": {"BOUNDARY_INVALID": 6, "ACCEPTED": 141, "INITIALIZATION_INVALID": 33}}
+{"suite": "confirmation_v3", "tasks": 180, "pending": 180, "source": "9427a2e9"}
+{"suite": "confirmation_v3", "completed": 1, "task_id": "elongated__seed_35__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 2, "task_id": "elongated__seed_35__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 3, "task_id": "elongated__seed_35__pairwise_euclidean", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 4, "task_id": "elongated__seed_36__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 5, "task_id": "elongated__seed_36__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 6, "task_id": "elongated__seed_37__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 7, "task_id": "elongated__seed_37__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 8, "task_id": "elongated__seed_36__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 9, "task_id": "elongated__seed_38__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 10, "task_id": "elongated__seed_38__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 11, "task_id": "elongated__seed_37__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 12, "task_id": "elongated__seed_39__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 13, "task_id": "elongated__seed_39__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 14, "task_id": "elongated__seed_38__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 15, "task_id": "elongated__seed_40__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 16, "task_id": "elongated__seed_40__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 17, "task_id": "elongated__seed_39__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 18, "task_id": "elongated__seed_41__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 19, "task_id": "elongated__seed_41__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 20, "task_id": "elongated__seed_40__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 21, "task_id": "elongated__seed_42__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 22, "task_id": "elongated__seed_41__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 23, "task_id": "elongated__seed_42__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 24, "task_id": "elongated__seed_43__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 25, "task_id": "elongated__seed_43__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 26, "task_id": "elongated__seed_42__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 27, "task_id": "elongated__seed_44__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 28, "task_id": "elongated__seed_44__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 29, "task_id": "elongated__seed_43__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 30, "task_id": "elongated__seed_45__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 31, "task_id": "elongated__seed_45__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 32, "task_id": "elongated__seed_44__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 33, "task_id": "elongated__seed_46__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 34, "task_id": "elongated__seed_46__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 35, "task_id": "elongated__seed_45__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 36, "task_id": "elongated__seed_47__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 37, "task_id": "elongated__seed_47__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 38, "task_id": "elongated__seed_46__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 39, "task_id": "elongated__seed_48__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 40, "task_id": "elongated__seed_48__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 41, "task_id": "elongated__seed_47__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 42, "task_id": "elongated__seed_49__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 43, "task_id": "elongated__seed_49__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 44, "task_id": "elongated__seed_48__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 45, "task_id": "elongated__seed_50__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 46, "task_id": "elongated__seed_50__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 47, "task_id": "elongated__seed_49__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 48, "task_id": "elongated__seed_51__equal_arc", "status": "PATH_UNREACHABLE", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 49, "task_id": "elongated__seed_51__projected_mass", "status": "PATH_UNREACHABLE", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 50, "task_id": "elongated__seed_50__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 51, "task_id": "elongated__seed_51__pairwise_euclidean", "status": "PATH_UNREACHABLE", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 52, "task_id": "elongated__seed_52__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 53, "task_id": "elongated__seed_52__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 54, "task_id": "elongated__seed_53__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 55, "task_id": "elongated__seed_53__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 56, "task_id": "elongated__seed_52__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 57, "task_id": "elongated__seed_54__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 58, "task_id": "elongated__seed_54__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 59, "task_id": "elongated__seed_53__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 60, "task_id": "tight_u__seed_35__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 61, "task_id": "tight_u__seed_35__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 62, "task_id": "tight_u__seed_35__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 63, "task_id": "tight_u__seed_36__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 64, "task_id": "elongated__seed_54__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 65, "task_id": "tight_u__seed_36__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 66, "task_id": "tight_u__seed_37__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 67, "task_id": "tight_u__seed_37__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 68, "task_id": "tight_u__seed_37__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 69, "task_id": "tight_u__seed_38__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 70, "task_id": "tight_u__seed_38__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 71, "task_id": "tight_u__seed_36__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 72, "task_id": "tight_u__seed_39__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 73, "task_id": "tight_u__seed_39__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 74, "task_id": "tight_u__seed_38__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 75, "task_id": "tight_u__seed_40__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 76, "task_id": "tight_u__seed_40__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 77, "task_id": "tight_u__seed_40__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 78, "task_id": "tight_u__seed_41__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 79, "task_id": "tight_u__seed_41__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 80, "task_id": "tight_u__seed_41__pairwise_euclidean", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 81, "task_id": "tight_u__seed_42__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 82, "task_id": "tight_u__seed_42__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 83, "task_id": "tight_u__seed_39__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 84, "task_id": "tight_u__seed_43__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 85, "task_id": "tight_u__seed_43__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 86, "task_id": "tight_u__seed_42__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 87, "task_id": "tight_u__seed_44__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 88, "task_id": "tight_u__seed_44__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 89, "task_id": "tight_u__seed_44__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 90, "task_id": "tight_u__seed_45__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 91, "task_id": "tight_u__seed_45__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 92, "task_id": "tight_u__seed_43__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 93, "task_id": "tight_u__seed_46__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 94, "task_id": "tight_u__seed_46__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 95, "task_id": "tight_u__seed_46__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 96, "task_id": "tight_u__seed_47__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 97, "task_id": "tight_u__seed_47__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 98, "task_id": "tight_u__seed_45__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 99, "task_id": "tight_u__seed_48__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 100, "task_id": "tight_u__seed_48__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 101, "task_id": "tight_u__seed_48__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 102, "task_id": "tight_u__seed_49__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 103, "task_id": "tight_u__seed_49__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 104, "task_id": "tight_u__seed_49__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 105, "task_id": "tight_u__seed_50__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 106, "task_id": "tight_u__seed_50__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 107, "task_id": "tight_u__seed_50__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 108, "task_id": "tight_u__seed_51__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 109, "task_id": "tight_u__seed_51__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 110, "task_id": "tight_u__seed_47__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 111, "task_id": "tight_u__seed_51__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 112, "task_id": "tight_u__seed_52__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 113, "task_id": "tight_u__seed_52__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 114, "task_id": "tight_u__seed_53__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 115, "task_id": "tight_u__seed_53__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 116, "task_id": "tight_u__seed_52__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 117, "task_id": "tight_u__seed_54__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 118, "task_id": "tight_u__seed_54__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 119, "task_id": "tight_u__seed_53__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 120, "task_id": "wide_u__seed_35__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 121, "task_id": "tight_u__seed_54__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 122, "task_id": "wide_u__seed_35__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 123, "task_id": "wide_u__seed_36__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 124, "task_id": "wide_u__seed_36__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 125, "task_id": "wide_u__seed_35__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 126, "task_id": "wide_u__seed_37__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 127, "task_id": "wide_u__seed_37__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 128, "task_id": "wide_u__seed_36__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 129, "task_id": "wide_u__seed_38__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 130, "task_id": "wide_u__seed_38__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 131, "task_id": "wide_u__seed_38__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 132, "task_id": "wide_u__seed_39__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 133, "task_id": "wide_u__seed_39__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 134, "task_id": "wide_u__seed_37__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 135, "task_id": "wide_u__seed_40__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 136, "task_id": "wide_u__seed_40__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 137, "task_id": "wide_u__seed_39__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 138, "task_id": "wide_u__seed_41__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 139, "task_id": "wide_u__seed_41__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 140, "task_id": "wide_u__seed_40__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 141, "task_id": "wide_u__seed_42__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 142, "task_id": "wide_u__seed_42__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 143, "task_id": "wide_u__seed_41__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 144, "task_id": "wide_u__seed_43__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 145, "task_id": "wide_u__seed_43__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 146, "task_id": "wide_u__seed_42__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 147, "task_id": "wide_u__seed_44__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 148, "task_id": "wide_u__seed_44__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 149, "task_id": "wide_u__seed_44__pairwise_euclidean", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 150, "task_id": "wide_u__seed_45__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 151, "task_id": "wide_u__seed_45__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 152, "task_id": "wide_u__seed_43__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 153, "task_id": "wide_u__seed_46__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 154, "task_id": "wide_u__seed_46__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 155, "task_id": "wide_u__seed_45__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 156, "task_id": "wide_u__seed_47__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 157, "task_id": "wide_u__seed_47__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 158, "task_id": "wide_u__seed_46__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 159, "task_id": "wide_u__seed_48__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 160, "task_id": "wide_u__seed_48__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 161, "task_id": "wide_u__seed_47__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 162, "task_id": "wide_u__seed_49__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 163, "task_id": "wide_u__seed_49__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 164, "task_id": "wide_u__seed_48__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 165, "task_id": "wide_u__seed_50__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 166, "task_id": "wide_u__seed_50__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 167, "task_id": "wide_u__seed_49__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 168, "task_id": "wide_u__seed_51__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 169, "task_id": "wide_u__seed_51__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 170, "task_id": "wide_u__seed_50__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 171, "task_id": "wide_u__seed_52__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 172, "task_id": "wide_u__seed_52__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 173, "task_id": "wide_u__seed_51__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 174, "task_id": "wide_u__seed_53__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 175, "task_id": "wide_u__seed_53__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 176, "task_id": "wide_u__seed_52__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 177, "task_id": "wide_u__seed_54__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 178, "task_id": "wide_u__seed_54__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 179, "task_id": "wide_u__seed_53__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "completed": 180, "task_id": "wide_u__seed_54__pairwise_euclidean", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "confirmation_v3", "tasks": 180, "completed": 180, "statuses": {"BOUNDARY_INVALID": 6, "SUCCESS": 138, "PATH_UNREACHABLE": 3, "INITIALIZATION_INVALID": 33}, "successes": 138, "wall_s": 248.454156300053, "workers": 2, "original_historical_data": false, "independent_confirmation": false}
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"frozen_rows": 36, "input_status": {"elongated__seed_36": "ACCEPTED", "elongated__seed_51": "ACCEPTED", "tight_u__seed_36": "ACCEPTED", "tight_u__seed_59": "ACCEPTED", "wide_u__seed_35": "ACCEPTED", "wide_u__seed_36": "ACCEPTED"}}
+{"suite": "demand_pilot", "tasks": 36, "pending": 36, "source": "4b2b199f"}
+{"suite": "demand_pilot", "completed": 1, "task_id": "elongated__seed_36__ones__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 2, "task_id": "elongated__seed_36__ones__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 3, "task_id": "elongated__seed_36__ones__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 4, "task_id": "elongated__seed_36__hotspot5__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 5, "task_id": "elongated__seed_36__hotspot5__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 6, "task_id": "elongated__seed_36__hotspot5__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 7, "task_id": "elongated__seed_51__ones__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 8, "task_id": "elongated__seed_51__ones__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 9, "task_id": "elongated__seed_51__ones__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 10, "task_id": "elongated__seed_51__hotspot5__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 11, "task_id": "elongated__seed_51__hotspot5__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 12, "task_id": "elongated__seed_51__hotspot5__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 13, "task_id": "tight_u__seed_36__ones__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 14, "task_id": "tight_u__seed_36__ones__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 15, "task_id": "tight_u__seed_36__ones__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 16, "task_id": "tight_u__seed_36__hotspot5__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 17, "task_id": "tight_u__seed_36__hotspot5__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 18, "task_id": "tight_u__seed_36__hotspot5__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 19, "task_id": "tight_u__seed_59__ones__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 20, "task_id": "tight_u__seed_59__ones__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 21, "task_id": "tight_u__seed_59__ones__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 22, "task_id": "tight_u__seed_59__hotspot5__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 23, "task_id": "tight_u__seed_59__hotspot5__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 24, "task_id": "tight_u__seed_59__hotspot5__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 25, "task_id": "wide_u__seed_35__ones__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 26, "task_id": "wide_u__seed_35__ones__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 27, "task_id": "wide_u__seed_35__ones__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 28, "task_id": "wide_u__seed_35__hotspot5__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 29, "task_id": "wide_u__seed_35__hotspot5__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 30, "task_id": "wide_u__seed_35__hotspot5__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 31, "task_id": "wide_u__seed_36__ones__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 32, "task_id": "wide_u__seed_36__ones__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 33, "task_id": "wide_u__seed_36__ones__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 34, "task_id": "wide_u__seed_36__hotspot5__mass_cvt", "status": "PLAN_SEARCH_EXHAUSTED", "success": false, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 35, "task_id": "wide_u__seed_36__hotspot5__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "completed": 36, "task_id": "wide_u__seed_36__hotspot5__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_pilot", "tasks": 36, "completed": 36, "statuses": {"SUCCESS": 24, "PLAN_SEARCH_EXHAUSTED": 12}, "successes": 24, "wall_s": 27.611860499950126, "workers": 2, "original_historical_data": false, "independent_confirmation": false}
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"suite": "demand_confirmation", "tasks": 240, "pending": 240, "source": "125fd653"}
+{"suite": "demand_confirmation", "completed": 1, "task_id": "elongated__seed_75__ones__N_11__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 2, "task_id": "elongated__seed_75__ones__N_11__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 3, "task_id": "elongated__seed_75__hotspot5__N_11__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 4, "task_id": "elongated__seed_75__hotspot5__N_11__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 5, "task_id": "tight_u__seed_75__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 6, "task_id": "tight_u__seed_75__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 7, "task_id": "tight_u__seed_75__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 8, "task_id": "tight_u__seed_75__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 9, "task_id": "wide_u__seed_75__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 10, "task_id": "wide_u__seed_75__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 11, "task_id": "wide_u__seed_75__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 12, "task_id": "wide_u__seed_75__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 13, "task_id": "elongated__seed_76__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 14, "task_id": "elongated__seed_76__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 15, "task_id": "elongated__seed_76__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 16, "task_id": "elongated__seed_76__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 17, "task_id": "tight_u__seed_76__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 18, "task_id": "tight_u__seed_76__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 19, "task_id": "tight_u__seed_76__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 20, "task_id": "tight_u__seed_76__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 21, "task_id": "wide_u__seed_76__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 22, "task_id": "wide_u__seed_76__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 23, "task_id": "wide_u__seed_76__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 24, "task_id": "elongated__seed_77__ones__N_11__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 25, "task_id": "elongated__seed_77__ones__N_11__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 26, "task_id": "elongated__seed_77__hotspot5__N_11__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 27, "task_id": "elongated__seed_77__hotspot5__N_11__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 28, "task_id": "tight_u__seed_77__ones__N_13__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 29, "task_id": "tight_u__seed_77__ones__N_13__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 30, "task_id": "tight_u__seed_77__hotspot5__N_13__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 31, "task_id": "tight_u__seed_77__hotspot5__N_13__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 32, "task_id": "wide_u__seed_76__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 33, "task_id": "wide_u__seed_77__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 34, "task_id": "wide_u__seed_77__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 35, "task_id": "wide_u__seed_77__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 36, "task_id": "wide_u__seed_77__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 37, "task_id": "elongated__seed_78__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 38, "task_id": "elongated__seed_78__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 39, "task_id": "elongated__seed_78__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 40, "task_id": "elongated__seed_78__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 41, "task_id": "tight_u__seed_78__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 42, "task_id": "tight_u__seed_78__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 43, "task_id": "tight_u__seed_78__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 44, "task_id": "tight_u__seed_78__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 45, "task_id": "wide_u__seed_78__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 46, "task_id": "wide_u__seed_78__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 47, "task_id": "wide_u__seed_78__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 48, "task_id": "elongated__seed_79__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 49, "task_id": "wide_u__seed_78__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 50, "task_id": "elongated__seed_79__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 51, "task_id": "elongated__seed_79__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 52, "task_id": "elongated__seed_79__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 53, "task_id": "tight_u__seed_79__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 54, "task_id": "tight_u__seed_79__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 55, "task_id": "tight_u__seed_79__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 56, "task_id": "tight_u__seed_79__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 57, "task_id": "wide_u__seed_79__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 58, "task_id": "wide_u__seed_79__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 59, "task_id": "wide_u__seed_79__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 60, "task_id": "wide_u__seed_79__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 61, "task_id": "elongated__seed_80__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 62, "task_id": "elongated__seed_80__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 63, "task_id": "elongated__seed_80__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 64, "task_id": "elongated__seed_80__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 65, "task_id": "tight_u__seed_80__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 66, "task_id": "tight_u__seed_80__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 67, "task_id": "tight_u__seed_80__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 68, "task_id": "tight_u__seed_80__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 69, "task_id": "wide_u__seed_80__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 70, "task_id": "wide_u__seed_80__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 71, "task_id": "wide_u__seed_80__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 72, "task_id": "elongated__seed_81__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 73, "task_id": "wide_u__seed_80__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 74, "task_id": "elongated__seed_81__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 75, "task_id": "elongated__seed_81__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 76, "task_id": "tight_u__seed_81__ones__N_13__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 77, "task_id": "tight_u__seed_81__ones__N_13__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 78, "task_id": "elongated__seed_81__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 79, "task_id": "tight_u__seed_81__hotspot5__N_13__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 80, "task_id": "tight_u__seed_81__hotspot5__N_13__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 81, "task_id": "wide_u__seed_81__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 82, "task_id": "wide_u__seed_81__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 83, "task_id": "wide_u__seed_81__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 84, "task_id": "elongated__seed_82__ones__N_11__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 85, "task_id": "elongated__seed_82__ones__N_11__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 86, "task_id": "elongated__seed_82__hotspot5__N_11__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 87, "task_id": "elongated__seed_82__hotspot5__N_11__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 88, "task_id": "wide_u__seed_81__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 89, "task_id": "tight_u__seed_82__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 90, "task_id": "tight_u__seed_82__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 91, "task_id": "tight_u__seed_82__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 92, "task_id": "wide_u__seed_82__ones__N_19__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 93, "task_id": "wide_u__seed_82__ones__N_19__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 94, "task_id": "wide_u__seed_82__hotspot5__N_19__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 95, "task_id": "tight_u__seed_82__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 96, "task_id": "wide_u__seed_82__hotspot5__N_19__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 97, "task_id": "elongated__seed_83__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 98, "task_id": "elongated__seed_83__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 99, "task_id": "elongated__seed_83__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 100, "task_id": "elongated__seed_83__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 101, "task_id": "tight_u__seed_83__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 102, "task_id": "tight_u__seed_83__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 103, "task_id": "tight_u__seed_83__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 104, "task_id": "tight_u__seed_83__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 105, "task_id": "wide_u__seed_83__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 106, "task_id": "wide_u__seed_83__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 107, "task_id": "wide_u__seed_83__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 108, "task_id": "elongated__seed_84__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 109, "task_id": "elongated__seed_84__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 110, "task_id": "wide_u__seed_83__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 111, "task_id": "elongated__seed_84__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 112, "task_id": "elongated__seed_84__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 113, "task_id": "tight_u__seed_84__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 114, "task_id": "tight_u__seed_84__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 115, "task_id": "tight_u__seed_84__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 116, "task_id": "wide_u__seed_84__ones__N_19__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 117, "task_id": "tight_u__seed_84__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 118, "task_id": "wide_u__seed_84__ones__N_19__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 119, "task_id": "wide_u__seed_84__hotspot5__N_19__equal_arc", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 120, "task_id": "wide_u__seed_84__hotspot5__N_19__projected_mass", "status": "BOUNDARY_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 121, "task_id": "elongated__seed_85__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 122, "task_id": "elongated__seed_85__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 123, "task_id": "elongated__seed_85__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 124, "task_id": "elongated__seed_85__hotspot5__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 125, "task_id": "tight_u__seed_85__ones__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 126, "task_id": "tight_u__seed_85__ones__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 127, "task_id": "tight_u__seed_85__hotspot5__N_13__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 128, "task_id": "tight_u__seed_85__hotspot5__N_13__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 129, "task_id": "wide_u__seed_85__ones__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 130, "task_id": "wide_u__seed_85__ones__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 131, "task_id": "wide_u__seed_85__hotspot5__N_19__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 132, "task_id": "elongated__seed_86__ones__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 133, "task_id": "wide_u__seed_85__hotspot5__N_19__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 134, "task_id": "elongated__seed_86__ones__N_11__projected_mass", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 135, "task_id": "elongated__seed_86__hotspot5__N_11__equal_arc", "status": "SUCCESS", "success": true, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 136, "task_id": "tight_u__seed_86__ones__N_13__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 137, "task_id": "tight_u__seed_86__ones__N_13__projected_mass", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+{"suite": "demand_confirmation", "completed": 138, "task_id": "tight_u__seed_86__hotspot5__N_13__equal_arc", "status": "INITIALIZATION_INVALID", "success": false, "offline_consistent": true}
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\concurrent\futures\process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 161, in worker
+    result = run_row((root_string, row), context=context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\runs\reconstructed_20261023\sources\125fd653\src\udc\experiments\demand_confirmation.py", line 408, in run_row
+    t=perf_counter(); replay=independent_row(root,row)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\runs\reconstructed_20261023\sources\125fd653\src\udc\experiments\demand_confirmation.py", line 269, in independent_row
+    replay=reevaluate_result(directory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\runs\reconstructed_20261023\sources\125fd653\src\udc\experiments\runner.py", line 533, in reevaluate_result
+    _atomic_text(result_dir / 'reevaluated_metrics.json', json.dumps(
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\runs\reconstructed_20261023\sources\125fd653\src\udc\experiments\runner.py", line 59, in _atomic_text
+    os.replace(temporary, path)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_86__hotspot5__N_13__projected_mass\\tmp5kvwtabb' -> 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_86__hotspot5__N_13__projected_mass\\reevaluated_metrics.json'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 227, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 225, in main
+    run_suite(args.suite, args.workers)
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 205, in run_suite
+    for future in as_completed(futures): accept(future.result())
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+PermissionError: [WinError None] �ܾ����ʡ�: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_86__hotspot5__N_13__projected_mass\\tmp5kvwtabb' -> 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_demand_confirmation_v1\\results\\tight_u__seed_86__hotspot5__N_13__projected_mass\\reevaluated_metrics.json'
+Traceback (most recent call last):
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 227, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 222, in main
+    subprocess.run([sys.executable, str(Path(__file__).resolve()), '--suite', suite, '--workers', str(args.workers)], cwd=PROJECT, check=True)
+  File "C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe', 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\scripts\\rebuild_missing_data.py', '--suite', 'demand_confirmation', '--workers', '2']' returned non-zero exit status 1.

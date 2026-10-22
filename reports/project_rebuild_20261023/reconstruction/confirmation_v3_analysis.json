@@ -1,0 +1,12 @@
+{
+  "label": "reconstructed development data, not independent new confirmation",
+  "suite": "confirmation_v3",
+  "statuses": {
+    "BOUNDARY_INVALID": 6,
+    "SUCCESS": 138,
+    "PATH_UNREACHABLE": 3,
+    "INITIALIZATION_INVALID": 33
+  },
+  "tasks": 180,
+  "source_ref": "9427a2e9"
+}

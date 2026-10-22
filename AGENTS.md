@@ -20,12 +20,23 @@ relax safety or success thresholds to make migration pass. Do not reuse historic
 validation percentages as evidence for the current code. Validation seeds
 5000–5029 are reserved: do not run them during development.
 
-Setup: `python -m pip install -e ".[dev,analysis]"`.
-Checks: `python -m pytest -q`, `python -m pip check`.
-Small smoke: `python experiments/validation_runner.py --phase development --smoke
+Environment: one environment per project, always `<repo>/.venv`, created from
+standalone CPython 3.12 (currently 3.12.15). Do not use Conda, a Conda-backed
+venv, a shared environment, or a copied environment from another machine.
+Windows setup: `./scripts/setup_env.ps1` (or pass `-Python <standalone-python>`).
+Use `.venv/Scripts/python.exe` explicitly on Windows and `.venv/bin/python`
+on Linux/macOS. Install with that interpreter using
+`-m pip install -e ".[dev,analysis,notebooks]"`; the measured Windows environment
+is pinned in `requirements/locks/windows-py312.txt`.
+Checks: `.venv/Scripts/python.exe -m pytest -q`,
+`.venv/Scripts/python.exe -m pip check`.
+Small smoke: `.venv/Scripts/python.exe experiments/validation_runner.py --phase development --smoke
 --workers 4 --output runs/smoke`.
-Replay: `python experiments/validation_runner.py --reevaluate --output runs/smoke`.
+Replay: `.venv/Scripts/python.exe experiments/validation_runner.py --reevaluate --output runs/smoke`.
 Use process parallelism across episodes and cap numerical threads within workers.
 
 New experiments use `configs/`, `src/udc/`, and `runs/`.
 After changes, document measured checks and limits in `docs/VALIDATION.zh.md`.
+Keep original experiment files and their hash locks unchanged during machine
+migration. Record path mappings, conflict copies and missing data explicitly.
+The 2026-10-23 consolidation manifest is in `reports/project_rebuild_20261023/`.

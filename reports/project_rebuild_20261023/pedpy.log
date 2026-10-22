@@ -1,0 +1,16 @@
+{
+  "source_kind": "frozen_snapshot",
+  "pedpy_version": "1.5.1",
+  "pedestrians": 50,
+  "frames": 1,
+  "frame_rate": 10.0,
+  "measurement_bounds": [
+    15.0,
+    17.0,
+    23.75,
+    22.0
+  ],
+  "voronoi_cutoff_radius": 1.0,
+  "mean_voronoi_density": 1.1428571428571428,
+  "mean_classic_density": 1.1428571428571428
+}

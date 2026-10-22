@@ -1,0 +1,28 @@
+{
+  "initial_reference_count": 32001,
+  "initial_status_counts": {
+    "matching": 9668,
+    "different_version": 93,
+    "missing": 22240
+  },
+  "post_reconstruction_status_counts": {
+    "matching_bytes": 21266,
+    "different_historical_version": 94,
+    "missing_historical_original": 10641
+  },
+  "exact_reconstructed_files_materialized": 11599,
+  "remaining_historical_missing_paths": 10641,
+  "original_hash_locks_modified": false,
+  "reconstruction_is_new_independent_confirmation": false,
+  "all_new_reconstruction_data_root": "runs/reconstructed_20261023",
+  "meaning": "Exact-byte recreations are separately attributed. Nonmatching metadata and unavailable historical dirty variants stay historical gaps; new complete datasets are catalogued independently.",
+  "raw_data_reference_count": 8393,
+  "raw_data_reference_statuses": {
+    "matching_bytes": 8393
+  },
+  "remaining_missing_extension_counts": {
+    ".json": 8785,
+    ".yaml": 1854,
+    ".txt": 2
+  }
+}

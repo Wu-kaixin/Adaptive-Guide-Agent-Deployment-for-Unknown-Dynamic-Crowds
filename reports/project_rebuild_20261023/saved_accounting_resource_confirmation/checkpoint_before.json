@@ -1,0 +1,1762 @@
+{
+  "rows": [
+    {
+      "task_id": "elongated__seed_95__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_95__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_95__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_95__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_95__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_95__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_95__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_95__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_95__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_95__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_95__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_95__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_95__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_95__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_95__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_95__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_95__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_96__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_95__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_96__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_96__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_96__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_96__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_96__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_96__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_96__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_96__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_96__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_96__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_96__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_96__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_96__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_96__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_96__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_96__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_96__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_97__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_97__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_97__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_97__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_97__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_97__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_97__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_97__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_97__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_97__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_97__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_97__hotspot5__N_19__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_97__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_97__hotspot5__N_19__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_97__hotspot5__N_21__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_97__hotspot5__N_21__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_97__hotspot5__N_23__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_97__hotspot5__N_23__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_98__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_98__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_98__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_98__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_98__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_98__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_98__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_98__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_98__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_98__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_98__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_98__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_98__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_98__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_98__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_98__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_98__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_98__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_99__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_99__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_99__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_99__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_99__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_99__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_99__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_99__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_99__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_99__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_99__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_99__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_99__hotspot5__N_19__equal_arc",
+      "status": "BOUNDARY_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_99__hotspot5__N_19__projected_mass",
+      "status": "BOUNDARY_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_99__hotspot5__N_21__equal_arc",
+      "status": "BOUNDARY_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_99__hotspot5__N_21__projected_mass",
+      "status": "BOUNDARY_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_99__hotspot5__N_23__equal_arc",
+      "status": "BOUNDARY_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_99__hotspot5__N_23__projected_mass",
+      "status": "BOUNDARY_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_100__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_100__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_100__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_100__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_100__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_100__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_100__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_100__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_100__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_100__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_100__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_100__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_100__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_100__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_100__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_100__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_100__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_100__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_101__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_101__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_101__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_101__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_101__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_101__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_101__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_101__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_101__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_101__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_101__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_101__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_101__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_101__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_101__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_101__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_101__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_101__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_102__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_102__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_102__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_102__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_102__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_102__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_102__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_102__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_102__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_102__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_102__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_102__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_102__hotspot5__N_19__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_102__hotspot5__N_21__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_102__hotspot5__N_19__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_102__hotspot5__N_21__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_102__hotspot5__N_23__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_102__hotspot5__N_23__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_103__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_103__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_103__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_103__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_103__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_103__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_103__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_103__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_103__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_103__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_103__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_103__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_103__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_103__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_103__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_103__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_103__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_103__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_104__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_104__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_104__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_104__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_104__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_104__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_104__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_104__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_104__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_104__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_104__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_104__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_104__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_104__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_104__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_104__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_104__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_104__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_105__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_105__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_105__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_105__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_105__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_105__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_105__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_105__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_105__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_105__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_105__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_105__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_105__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_105__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_105__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_105__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_105__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_106__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_106__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_105__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_106__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_106__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_106__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_106__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_106__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_106__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_106__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_106__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_106__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_106__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_106__hotspot5__N_19__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_106__hotspot5__N_19__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_106__hotspot5__N_21__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_106__hotspot5__N_21__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_106__hotspot5__N_23__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_106__hotspot5__N_23__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_107__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_107__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_107__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_107__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_107__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_107__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_107__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_107__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_107__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_107__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_107__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_107__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_107__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_107__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_107__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_107__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_107__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_107__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_108__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_108__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_108__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_108__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_108__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_108__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_108__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_108__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_108__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_108__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_108__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_108__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_108__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_108__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_108__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_108__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_108__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_108__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_109__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_109__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_109__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_109__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_109__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_109__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_109__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_109__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_109__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_109__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_109__hotspot5__N_17__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_109__hotspot5__N_17__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_109__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_109__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_109__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_109__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_109__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_110__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_109__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_110__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_110__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_110__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_110__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_110__hotspot5__N_13__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_110__hotspot5__N_13__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_110__hotspot5__N_15__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_110__hotspot5__N_15__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_110__hotspot5__N_17__equal_arc",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_110__hotspot5__N_15__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "tight_u__seed_110__hotspot5__N_17__projected_mass",
+      "status": "INITIALIZATION_INVALID",
+      "success": false,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_110__hotspot5__N_19__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_110__hotspot5__N_19__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_110__hotspot5__N_21__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_110__hotspot5__N_21__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_110__hotspot5__N_23__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "wide_u__seed_110__hotspot5__N_23__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_111__hotspot5__N_11__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_111__hotspot5__N_11__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_111__hotspot5__N_13__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_111__hotspot5__N_13__projected_mass",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    },
+    {
+      "task_id": "elongated__seed_111__hotspot5__N_15__equal_arc",
+      "status": "SUCCESS",
+      "success": true,
+      "offline_consistent": true
+    }
+  ]
+}

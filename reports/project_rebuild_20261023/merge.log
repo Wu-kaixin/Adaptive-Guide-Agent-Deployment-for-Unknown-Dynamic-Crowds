@@ -1,0 +1,14 @@
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+Archiving all 18719 incoming files
+archive 0/18719
+archive 3000/18719
+archive 6000/18719
+archive 9000/18719
+archive 12000/18719
+archive 15000/18719
+archive 18000/18719
+Checking every archived byte
+Installing project files and retaining previous conflicts
+{"source_files": 18719, "classification_counts": {"runtime_archive": 16717, "identical": 254, "conflict": 43, "new": 1705}, "source_bytes": 1598108502, "archive": "backups\\project_rebuild_20261023\\incoming_snapshot.zip", "archive_sha256": "376df624e66ea77a5f3e0a366960fa6f57591f079bd56b97dcf04fd2e659da5c", "verified_archive_files": 18719, "transfer_deleted": false}
+Recovered 37 tracked files from incoming Git objects

@@ -1,0 +1,3 @@
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{'attempt': 'baseline_40s', 'status': 'TIMEOUT', 'baseline_exact': True, 'recoveries': 3, 'observed_frame_count': 400}
+{'attempt': 'diagnostic_continuation_60s', 'status': 'SUCCESS', 'baseline_exact': False, 'recoveries': 3, 'observed_frame_count': 438}

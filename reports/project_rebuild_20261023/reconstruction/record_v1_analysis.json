@@ -1,0 +1,11 @@
+{
+  "label": "reconstructed development data, not independent new confirmation",
+  "suite": "record_v1",
+  "statuses": {
+    "SUCCESS": 35,
+    "INITIALIZATION_INVALID": 9,
+    "PATH_UNREACHABLE": 1
+  },
+  "tasks": 45,
+  "source_ref": "2c12886c"
+}

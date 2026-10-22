@@ -1,0 +1,798 @@
+{
+  "runs": 132,
+  "consistent": 132,
+  "results": [
+    {
+      "path": "concave_points\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "concave_points\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\distmesh\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "ellipse\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "elongated\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "high_demand_side\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\average_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\equal_arc\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\projected_mass\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "insufficient_guides\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\distmesh\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_feasible\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\average_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\equal_arc\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\projected_mass\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "near_wall_invalid\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\distmesh\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "off_center\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\distmesh\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "opposite_side\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "rectangle\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\average_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\average_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\distmesh\\adaptive_resource\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "square\\distmesh\\fixed_n\\seed_0",
+      "original_success": false,
+      "reevaluated_success": false,
+      "consistent": true
+    },
+    {
+      "path": "square\\equal_arc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\equal_arc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\mass_cvt\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\mass_cvt\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\projected_mass\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\projected_mass\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\ra_abdc\\adaptive_resource\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    },
+    {
+      "path": "square\\ra_abdc\\fixed_n\\seed_0",
+      "original_success": true,
+      "reevaluated_success": true,
+      "consistent": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "label": "reconstructed development data, not independent new confirmation",
+  "suite": "confirmation_v2",
+  "statuses": {
+    "SUCCESS": 59,
+    "REPLAN_EXHAUSTED": 4,
+    "INITIALIZATION_INVALID": 27
+  },
+  "tasks": 90,
+  "source_ref": "a0781c56"
+}

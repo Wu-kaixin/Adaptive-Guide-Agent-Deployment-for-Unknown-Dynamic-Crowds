@@ -1,0 +1,2 @@
+254 JSON files; 32079 unique path/hash references
+{"scope": "hash-bearing file references in historical reports and run protocol.json; not a claim about unreferenced historical data", "json_files_read": 254, "parse_errors": [], "unique_path_hash_references": 32079, "status_counts": {"matching": 9728, "missing": 22259, "different_version": 92}, "byte_identical_files_recovered": 883}

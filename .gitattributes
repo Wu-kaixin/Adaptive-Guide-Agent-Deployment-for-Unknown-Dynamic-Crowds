@@ -1,0 +1,3 @@
+# Preserve captured failure logs; Python's traceback header ends with a space.
+reports/project_rebuild_20261023/reconstruction_attempt2.log whitespace=-blank-at-eol
+reports/project_rebuild_20261023/reconstruction_resources.log whitespace=-blank-at-eol

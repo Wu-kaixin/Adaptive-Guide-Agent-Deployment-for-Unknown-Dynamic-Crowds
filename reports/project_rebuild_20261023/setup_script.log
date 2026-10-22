@@ -1,0 +1,86 @@
+E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\.venv\Scripts\python.exe
+Obtaining file:///E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: asttokens==3.0.2 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 4)) (3.0.2)
+Requirement already satisfied: colorama==0.4.6 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 5)) (0.4.6)
+Requirement already satisfied: comm==0.2.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 6)) (0.2.3)
+Requirement already satisfied: contourpy==1.4.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 7)) (1.4.0)
+Requirement already satisfied: cycler==0.12.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 8)) (0.12.1)
+Requirement already satisfied: debugpy==1.8.22 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 9)) (1.8.22)
+Requirement already satisfied: Deprecated==1.2.18 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 10)) (1.2.18)
+Requirement already satisfied: executing==2.3.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 11)) (2.3.0)
+Requirement already satisfied: fonttools==4.67.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 12)) (4.67.0)
+Requirement already satisfied: h5py==3.16.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 13)) (3.16.0)
+Requirement already satisfied: iniconfig==2.3.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 14)) (2.3.1)
+Requirement already satisfied: ipykernel==7.4.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 15)) (7.4.0)
+Requirement already satisfied: ipython==9.17.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 16)) (9.17.1)
+Requirement already satisfied: ipython_pygments_lexers==1.1.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 17)) (1.1.1)
+Requirement already satisfied: ipywidgets==8.1.9 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 18)) (8.1.9)
+Requirement already satisfied: jedi==0.20.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 19)) (0.20.1)
+Requirement already satisfied: jupedsim==1.4.2 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 20)) (1.4.2)
+Requirement already satisfied: jupyter_client==8.10.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 21)) (8.10.0)
+Requirement already satisfied: jupyter_core==5.9.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 22)) (5.9.1)
+Requirement already satisfied: jupyterlab_widgets==3.0.17 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 23)) (3.0.17)
+Requirement already satisfied: kiwisolver==1.5.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 24)) (1.5.1)
+Requirement already satisfied: matplotlib==3.11.2 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 25)) (3.11.2)
+Requirement already satisfied: matplotlib-inline==0.2.2 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 26)) (0.2.2)
+Requirement already satisfied: narwhals==2.27.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 27)) (2.27.1)
+Requirement already satisfied: nest-asyncio2==1.7.4 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 28)) (1.7.4)
+Requirement already satisfied: numpy==2.5.4 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 29)) (2.5.4)
+Requirement already satisfied: packaging==26.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 30)) (26.3)
+Requirement already satisfied: pandas==3.0.6 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 31)) (3.0.6)
+Requirement already satisfied: parso==0.8.7 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 32)) (0.8.7)
+Requirement already satisfied: PedPy==1.5.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 33)) (1.5.1)
+Requirement already satisfied: pillow==12.3.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 34)) (12.3.0)
+Requirement already satisfied: platformdirs==4.13.5 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 35)) (4.13.5)
+Requirement already satisfied: plotly==7.1.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 36)) (7.1.0)
+Requirement already satisfied: pluggy==1.7.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 37)) (1.7.0)
+Requirement already satisfied: prompt_toolkit==3.0.53 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 38)) (3.0.53)
+Requirement already satisfied: psutil==7.2.2 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 39)) (7.2.2)
+Requirement already satisfied: pure_eval==0.2.4 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 40)) (0.2.4)
+Requirement already satisfied: Pygments==2.21.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 41)) (2.21.0)
+Requirement already satisfied: pyparsing==3.3.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 42)) (3.3.3)
+Requirement already satisfied: PySide6==6.12.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 43)) (6.12.0)
+Requirement already satisfied: PySide6_Addons==6.12.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 44)) (6.12.0)
+Requirement already satisfied: PySide6_Essentials==6.12.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 45)) (6.12.0)
+Requirement already satisfied: PySide6_Pdf==6.12.0.140 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 46)) (6.12.0.140)
+Requirement already satisfied: PySide6_WebEngine==6.12.0.140 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 47)) (6.12.0.140)
+Requirement already satisfied: pytest==9.1.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 48)) (9.1.1)
+Requirement already satisfied: python-dateutil==3.0.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 49)) (3.0.0)
+Requirement already satisfied: PyYAML==6.0.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 50)) (6.0.3)
+Requirement already satisfied: pyzmq==27.2.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 51)) (27.2.0)
+Requirement already satisfied: scipy==1.18.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 52)) (1.18.1)
+Requirement already satisfied: shapely==2.2.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 53)) (2.2.0)
+Requirement already satisfied: shiboken6==6.12.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 54)) (6.12.0)
+Requirement already satisfied: six==1.17.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 55)) (1.17.0)
+Requirement already satisfied: stack-data==0.6.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 56)) (0.6.3)
+Requirement already satisfied: threadpoolctl==3.7.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 57)) (3.7.0)
+Requirement already satisfied: tornado==6.6 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 58)) (6.6)
+Requirement already satisfied: traitlets==5.16.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 59)) (5.16.1)
+Requirement already satisfied: typing_extensions==4.16.0 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 60)) (4.16.0)
+Requirement already satisfied: tzdata==2026.5 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 61)) (2026.5)
+Requirement already satisfied: vtk==9.7.1 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 62)) (9.7.1)
+Requirement already satisfied: wcwidth==0.9.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 63)) (0.9.3)
+Requirement already satisfied: widgetsnbextension==4.0.16 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 64)) (4.0.16)
+Requirement already satisfied: wrapt==1.17.3 in e:\adaptive-guide-agent-deployment-for-unknown-dynamic-crowds\.venv\lib\site-packages (from -r requirements/locks/windows-py312.txt (line 65)) (1.17.3)
+Building wheels for collected packages: udc-guide-deployment
+  Building editable for udc-guide-deployment (pyproject.toml): started
+  Building editable for udc-guide-deployment (pyproject.toml): finished with status 'done'
+  Created wheel for udc-guide-deployment: filename=udc_guide_deployment-0.1.0-0.editable-py3-none-any.whl size=10531 sha256=ee3ab6a1f31837ef66804e6c7ef390e186d639078fbe1d964c94fab99be68cfd
+  Stored in directory: C:\Users\kai\AppData\Local\Temp\pip-ephem-wheel-cache-trwwikgs\wheels\2e\6e\aa\0bcbc9064a958b175c86274cf250c62d09cd84b573548ded01
+Successfully built udc-guide-deployment
+Installing collected packages: udc-guide-deployment
+  Attempting uninstall: udc-guide-deployment
+    Found existing installation: udc-guide-deployment 0.1.0
+    Uninstalling udc-guide-deployment-0.1.0:
+      Successfully uninstalled udc-guide-deployment-0.1.0
+Successfully installed udc-guide-deployment-0.1.0
+No broken requirements found.
+Project environment ready: E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\.venv\Scripts\python.exe

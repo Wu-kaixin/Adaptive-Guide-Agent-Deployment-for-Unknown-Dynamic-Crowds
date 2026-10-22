@@ -1,0 +1,8 @@
+{'variant': 'A', 'statuses': {'validated_path': 506, 'start_not_entered': 23}, 'matching': {'maximum_size': 22, 'source_to_target': [0, 1, 2, 3, 4, 5, 6, 7, 8, -1, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21], 'unmatched_sources': [9], 'unmatched_targets': [22], 'hungarian_rows': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], 'hungarian_targets': [2, 1, 0, 21, 17, 20, 19, 18, 12, 16, 15, 14, 10, 9, 8, 7, 6, 5, 3, 11, 13, 22, 4], 'hungarian_all_finite': False, 'hall_witness': {'sources': [9], 'neighbors': [], 'deficit': 1, 'scope': 'this finite verified-query graph only; no continuous-environment impossibility claim'}}, 'all_installed_suffixes_valid': True, 'actual_reassignment_static_graph_verified': True}
+Traceback (most recent call last):
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_diagnostics.py", line 127, in <module>
+    globals()[args.stage]()
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_diagnostics.py", line 89, in recovery_finish
+    rd.boundary_contact_counterfactual(root)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'udc.experiments.recovery_diagnostics' has no attribute 'boundary_contact_counterfactual'

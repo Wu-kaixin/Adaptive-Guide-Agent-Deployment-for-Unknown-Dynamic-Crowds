@@ -84,7 +84,13 @@ def test_kernel_scale_normalization_and_periodic_seam(seed51):
 
 def test_freeze_36_pairs_windows_before_targets_and_detect_mutation(tmp_path):
     root=tmp_path/'pilot'
-    pilot.freeze(root)
+    # Use an isolated snapshot root: archived runs may be absent or partial on
+    # either a fresh clone or a host holding reconstructed historical raw files.
+    spec=yaml.safe_load(Path(pilot.SPEC).read_text(encoding='utf-8'))
+    spec['snapshot_root']=str(tmp_path/'absent_historical_inputs')
+    spec_path=tmp_path/'pilot_spec.yaml'
+    spec_path.write_text(yaml.safe_dump(spec,sort_keys=False),encoding='utf-8')
+    pilot.freeze(root,spec_path)
     lock=pilot.locked(root)
     rows=pilot.read(root/'manifest.json')['tasks']
     assert len(rows)==36 and len({r['physical_key'] for r in rows})==6

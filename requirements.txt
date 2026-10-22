@@ -1,5 +1,6 @@
-# Python 3.12 (tested with 3.12.15; JuPedSim requires >=3.10,<3.15, PedPy requires >=3.11)
-# Versions match the project .venv.
+# Standalone CPython 3.12; each project uses its own .venv, never Conda.
+# Scientific direct dependencies retained from the transferred environment.
+# Full measured Windows/Python 3.12 lock: requirements/locks/windows-py312.txt.
 
 # Install the unified framework and its configuration/analysis dependencies.
 -e .[analysis]

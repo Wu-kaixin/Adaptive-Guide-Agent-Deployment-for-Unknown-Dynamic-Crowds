@@ -1,0 +1,23 @@
+{
+  "operation": "saved artifact read and independent rejudge only",
+  "execution_retries": 0,
+  "interruption": "PermissionError replacing reevaluated_metrics.json; original process log retained",
+  "recovered_rows": [
+    {
+      "task_id": "tight_u__seed_86__hotspot5__N_13__projected_mass",
+      "protected_sha256_before_and_after": {
+        "config.yaml": "4285d7e43d0a061cc9f50f653652129d00b4d364674002d06681dcaa4973dedb",
+        "metrics.json": "967a1bd78bcc21fc4ba4a973af2d92a96e4c5ce0b6330b312551cbaa5e48d8a8",
+        "state.json": "8922bec4b31bd608d979af4386f965a2ae2be587fa6bbf7ce3bfbcb2d0a6a5cf",
+        "trajectory.npz": "bcf5040c71b1266f0b6e1180fb8eb40b98ca64e96ac4791e270ca8f288ca7c71"
+      },
+      "reevaluation": {
+        "criteria_consistent": true,
+        "diagnostics_consistent": true,
+        "success": false,
+        "motion": null,
+        "executed": false
+      }
+    }
+  ]
+}

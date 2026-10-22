@@ -1,0 +1,12 @@
+warning: in the working copy of 'configs/step1/nonconvex_confirmation_v2.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'configs/step1/nonconvex_record_rebuild_v1.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_nonconvex_confirmation_v2/REPORT.zh.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_nonconvex_confirmation_v2/pre_freeze_audit.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_nonconvex_confirmation_v2/summary.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_nonconvex_record_rebuild_v1/diagnostics.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_nonconvex_record_rebuild_v1/seed20_source_delta.patch', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_nonconvex_record_rebuild_v1/tasks_45.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'reports/step1_reachability_audit.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/udc/experiments/nonconvex_diagnostics.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/udc/experiments/nonconvex_rebuild.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_nonconvex_rebuild.py', LF will be replaced by CRLF the next time Git touches it

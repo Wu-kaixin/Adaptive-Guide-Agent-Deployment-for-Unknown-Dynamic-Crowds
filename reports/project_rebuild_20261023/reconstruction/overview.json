@@ -1,0 +1,100 @@
+[
+  {
+    "suite": "record_v1",
+    "rows": 45,
+    "successes": 35,
+    "statuses": {
+      "SUCCESS": 35,
+      "INITIALIZATION_INVALID": 9,
+      "PATH_UNREACHABLE": 1
+    },
+    "code_ref": "2c12886c",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_record_rebuild_v1"
+  },
+  {
+    "suite": "confirmation_v2",
+    "rows": 90,
+    "successes": 59,
+    "statuses": {
+      "SUCCESS": 59,
+      "REPLAN_EXHAUSTED": 4,
+      "INITIALIZATION_INVALID": 27
+    },
+    "code_ref": "a0781c56",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_confirmation_v2"
+  },
+  {
+    "suite": "confirmation_v3",
+    "rows": 180,
+    "successes": 138,
+    "statuses": {
+      "BOUNDARY_INVALID": 6,
+      "SUCCESS": 138,
+      "PATH_UNREACHABLE": 3,
+      "INITIALIZATION_INVALID": 33
+    },
+    "code_ref": "9427a2e9",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_execution_confirmation_v3"
+  },
+  {
+    "suite": "demand_pilot",
+    "rows": 36,
+    "successes": 24,
+    "statuses": {
+      "SUCCESS": 24,
+      "PLAN_SEARCH_EXHAUSTED": 12
+    },
+    "code_ref": "4b2b199f",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_demand_pilot_v1"
+  },
+  {
+    "suite": "demand_confirmation",
+    "rows": 240,
+    "successes": 184,
+    "statuses": {
+      "BOUNDARY_INVALID": 28,
+      "SUCCESS": 184,
+      "INITIALIZATION_INVALID": 28
+    },
+    "code_ref": "125fd653",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_demand_confirmation_v1"
+  },
+  {
+    "suite": "resource_response",
+    "rows": 360,
+    "successes": 275,
+    "statuses": {
+      "BOUNDARY_INVALID": 42,
+      "SUCCESS": 275,
+      "INITIALIZATION_INVALID": 42,
+      "PATH_UNREACHABLE": 1
+    },
+    "code_ref": "125fd653",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_resource_response_v1"
+  },
+  {
+    "suite": "resource_confirmation",
+    "rows": 360,
+    "successes": 275,
+    "statuses": {
+      "SUCCESS": 275,
+      "INITIALIZATION_INVALID": 78,
+      "BOUNDARY_INVALID": 6,
+      "TIMEOUT": 1
+    },
+    "code_ref": "0433bb19",
+    "data": "runs/reconstructed_20261023/step1_nonconvex_resource_confirmation_v1"
+  },
+  {
+    "suite": "recovery_regression",
+    "rows": 360,
+    "successes": 276,
+    "statuses": {
+      "BOUNDARY_INVALID": 42,
+      "SUCCESS": 276,
+      "INITIALIZATION_INVALID": 42
+    },
+    "code_ref": "865e6a48",
+    "data": "runs/reconstructed_20261023/step1_resource_recovery_diagnostics_v1"
+  }
+]

@@ -1,5 +1,56 @@
 # 验证记录
 
+## 2026-10-23 GitHub三分支统一发布检查
+
+远程实际进度核对与分支历史处理见[同步说明](REPOSITORY_SYNC.zh.md)。科学生产源码和协议采用最新c807c85；本轮新增仓库健康检查、跨平台独立`.venv` CI和维护文档，修复需求pilot测试依赖本机历史目录的问题。
+
+- 修复前217 passed / 1 failed：旧原始输入路径有NPZ但缺历史YAML，测试误用了本机部分原件。测试现将snapshot_root指向独立临时目录，保持六个既定单元和36行冻结／篡改检测；不修改科研生成器、控制算法或历史数据。
+- 修复后全量218 passed / 35.49 s，工作区内basetemp、禁用cacheprovider；数值线程上限1。
+- pip check通过；wheel构建通过。首次wheel因系统pip缓存写权限失败，使用`--no-cache-dir`后通过，未更换环境或依赖。
+- 新development smoke：4进程、132完成、0程序错误、132预期匹配；93 SUCCESS、15 PLAN_SEARCH_EXHAUSTED、12 CAPACITY_SHORTFALL、12 OFFSET_INVALID；离线复判132/132一致。结果在`runs/github_sync_20261023/smoke/`。
+- 健康工具核验623个项目文件，JSON／YAML／Python／Notebook可解析，相对文档链接无缺失；31,305个重建文件与8,393条历史NPZ／SQLite／WKB引用哈希通过。
+- Git bundle校验和`git fsck --full --strict`通过；悬空对象保留，不视为损坏或删除。
+- diff空白检查通过；两份原始失败日志的Python traceback标题自带尾空格，仅对这两文件声明空白检查例外，保留捕获字节。
+
+本轮只运行开发检查，不使用5000–5029，不重跑历史确认矩阵。CI增加Ubuntu／Windows各自项目`.venv`，并执行安装、全量测试、pip check、50人示例、复判及工作区健康检查。发布后的每分支CI须另按最终提交核实，旧提交绿灯不算本轮结果；实际最终状态存于本机`runs/github_sync_20261023/final_health.json`及GitHub Actions。
+
+## 2026-10-23 缺失数据重建最终核验
+
+- 八个主批次1,671行全部完成，1,266成功、405科学拒绝／失败；独立派生的相位执行24行、恢复A/B两次、截止诊断两次另列，共1,699行或次。
+- 31,305个新文件哈希编目，8,974个NPZ禁用pickle读取；必需工件、配对、复判、源码快照和截止前缀核验通过。
+- 11,599个重建文件与历史预期字节相同，补回原缺失路径；全部8,393个NPZ／SQLite／WKB哈希引用匹配。
+- 10,641个旧JSON／YAML／TXT版本继续标明历史缺失，新完整指标、配置和日志在独立重建目录；不伪造旧dirty状态、墙钟或来源。
+- 两次Windows文件替换中断从保存工件复判恢复，科学执行重试0次；原错误保留。恢复A的分析导出用已声明的后续适配器续办，未重跑A。
+- 40秒原超时逐位重放；独立延续43.8秒通过，完整截止状态及原400步前缀一致，仍三次恢复；原确认不改写。
+- Notebook环境初始化、全部代码语法和历史输出保留检查通过；文档链接、编译和diff检查通过。
+
+完整结果及限制见[重建结果](../reports/project_rebuild_20261023/reconstruction/REPORT.zh.md)、[核验摘要](../reports/project_rebuild_20261023/reconstruction_verification.json)和[重建日志](PROJECT_REBUILD.zh.md)。所有当前科学检查和重建范围分开，不以旧百分比作当前性能证据；5000–5029未运行。
+
+## 2026-10-23 跨机整合、独立 .venv 与开发检查
+
+合并当前项目与转移项目后，生产科学源码采用转移提交c807c85的字节；本轮维护入口不改变安全、覆盖、控制或需求定义。
+旧Conda来源环境归档，新建独立CPython3.12.15的项目 `.venv`。科学直接依赖保持原版本，完整62项依赖锁另存。
+
+| 本轮实测检查 | 结果 |
+|---|---|
+| 全量pytest，项目内basetemp，禁用cacheprovider | 218 passed / 22.68 s |
+| pip check与实际包导入 | 通过；udc从本项目src导入，Python基础路径不含Conda |
+| 环境设置脚本幂等安装 | 通过，使用项目 `.venv` 与完整版本锁 |
+| development smoke，4进程，每进程数值线程1 | 132完成，0程序错误，132预期匹配；93 SUCCESS，15 PLAN_SEARCH_EXHAUSTED，12 CAPACITY_SHORTFALL，12 OFFSET_INVALID |
+| smoke离线复判 | 132/132一致 |
+| 50人CLI示例及独立复判 | SUCCESS，全部原验收通过 |
+| PedPy冻结快照分析 | 50人／1帧，密度和邻域工件生成 |
+| 转移完整ZIP | 18,719项逐项读取并通过原SHA-256核对 |
+| 转移时缺失跟踪文件／历史重复原件 | 从Git恢复37个，按哈希找回883个 |
+
+输出与日志在 `runs/project_rebuild_20261023/` 和 `reports/project_rebuild_20261023/`。
+首次pytest因自选basetemp父目录未创建出现39个夹具错误，创建后218项全通过；原失败日志保留。
+本轮没有使用5000–5029，亦未将历史CI或历史成功率冒充当前检查。
+
+用户追加授权重新生成缺失实验数据，新结果位于 `runs/reconstructed_20261023/`，
+各批按历史源码快照独立记录，拒绝与科学失败完整保留，不覆盖原报告或锁。
+最终批次会计及原dirty源码可恢复限制见[重建日志](PROJECT_REBUILD.zh.md)。
+
 ## 2026-10-19 Step 1基线合并准备
 
 从干净研究分支f9743ab整理面向main的PR：更新README、路线图、协议入口与数据可用性，明确120行已完成、覆盖契约仅诊断、研究候选不提升为通用默认。只改Markdown和审查元数据，科学源码／配置／测试／依赖／CI工作流保持原样，复用175 passed /24.34 s本机记录，不重跑120、180、1620或历史矩阵。f9743ab的GitHub Actions run39255838311已在Ubuntu与Windows全部通过安装、测试、pip check、50人示例及复判；新PR头与合并测试的CI另行核对，不能沿用旧绿灯当作新提交状态。

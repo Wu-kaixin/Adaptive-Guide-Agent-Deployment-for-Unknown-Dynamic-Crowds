@@ -1,0 +1,1 @@
+{'suite': 'demand_confirmation', 'tasks': 240, 'completed': 240, 'statuses': {'BOUNDARY_INVALID': 28, 'SUCCESS': 184, 'INITIALIZATION_INVALID': 28}, 'successes': 184, 'workers': 2, 'original_historical_data': False, 'independent_confirmation': False, 'infrastructure_interruptions': 1, 'execution_retries': 0}

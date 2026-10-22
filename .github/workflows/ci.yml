@@ -2,9 +2,18 @@ name: Step 1 framework
 on: [push, pull_request]
 jobs:
   test:
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        include:
+          - os: ubuntu-latest
+            python: .venv/bin/python
+          - os: windows-latest
+            python: .venv/Scripts/python.exe
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -12,8 +21,12 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - run: python -m pip install -e ".[dev,analysis]"
-      - run: python -m pytest -q
-      - run: python -m pip check
-      - run: python run.py --config configs/step1/static_50.yaml --output runs/ci50 --no-plots
-      - run: python run.py --reevaluate runs/ci50
+      - name: Create project environment
+        run: python -m venv .venv
+      - run: ${{ matrix.python }} -m pip install -e ".[dev,analysis]"
+      - run: ${{ matrix.python }} -m pytest -q
+      - run: ${{ matrix.python }} -m pip check
+      - run: ${{ matrix.python }} run.py --config configs/step1/static_50.yaml --output runs/ci50 --no-plots
+      - run: ${{ matrix.python }} run.py --reevaluate runs/ci50
+      - name: Repository health
+        run: ${{ matrix.python }} scripts/check_repository_health.py --require-clean --output runs/repository_health.json

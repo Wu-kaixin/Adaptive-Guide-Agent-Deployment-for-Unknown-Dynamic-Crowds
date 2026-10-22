@@ -1,0 +1,167 @@
+{
+  "completed_main_rows": 1671,
+  "completed_phase_executions": 24,
+  "completed_observation_and_deadline_runs": 4,
+  "total_completed_rows_or_runs": 1699,
+  "offline_policy_rows": 120,
+  "main_suites": [
+    {
+      "suite": "record_v1",
+      "tasks": 45,
+      "completed": 45,
+      "statuses": {
+        "SUCCESS": 35,
+        "INITIALIZATION_INVALID": 9,
+        "PATH_UNREACHABLE": 1
+      },
+      "successes": 35,
+      "wall_s": 67.57635340001434,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false
+    },
+    {
+      "suite": "confirmation_v2",
+      "tasks": 90,
+      "completed": 90,
+      "statuses": {
+        "SUCCESS": 59,
+        "REPLAN_EXHAUSTED": 4,
+        "INITIALIZATION_INVALID": 27
+      },
+      "successes": 59,
+      "wall_s": 106.26797060004901,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false
+    },
+    {
+      "suite": "confirmation_v3",
+      "tasks": 180,
+      "completed": 180,
+      "statuses": {
+        "BOUNDARY_INVALID": 6,
+        "SUCCESS": 138,
+        "PATH_UNREACHABLE": 3,
+        "INITIALIZATION_INVALID": 33
+      },
+      "successes": 138,
+      "wall_s": 248.454156300053,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false
+    },
+    {
+      "suite": "demand_pilot",
+      "tasks": 36,
+      "completed": 36,
+      "statuses": {
+        "SUCCESS": 24,
+        "PLAN_SEARCH_EXHAUSTED": 12
+      },
+      "successes": 24,
+      "wall_s": 27.611860499950126,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false
+    },
+    {
+      "suite": "demand_confirmation",
+      "tasks": 240,
+      "completed": 240,
+      "statuses": {
+        "BOUNDARY_INVALID": 28,
+        "SUCCESS": 184,
+        "INITIALIZATION_INVALID": 28
+      },
+      "successes": 184,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false,
+      "infrastructure_interruptions": 1,
+      "execution_retries": 0
+    },
+    {
+      "suite": "resource_response",
+      "tasks": 360,
+      "completed": 360,
+      "statuses": {
+        "BOUNDARY_INVALID": 42,
+        "SUCCESS": 275,
+        "INITIALIZATION_INVALID": 42,
+        "PATH_UNREACHABLE": 1
+      },
+      "successes": 275,
+      "wall_s": 350.2920846999623,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false
+    },
+    {
+      "suite": "resource_confirmation",
+      "tasks": 360,
+      "completed": 360,
+      "statuses": {
+        "SUCCESS": 275,
+        "INITIALIZATION_INVALID": 78,
+        "BOUNDARY_INVALID": 6,
+        "TIMEOUT": 1
+      },
+      "successes": 275,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false,
+      "infrastructure_interruptions": 1,
+      "execution_retries": 0
+    },
+    {
+      "suite": "recovery_regression",
+      "tasks": 360,
+      "completed": 360,
+      "statuses": {
+        "BOUNDARY_INVALID": 42,
+        "SUCCESS": 276,
+        "INITIALIZATION_INVALID": 42
+      },
+      "successes": 276,
+      "wall_s": 514.620434600045,
+      "workers": 2,
+      "original_historical_data": false,
+      "independent_confirmation": false
+    }
+  ],
+  "main_statuses": {
+    "SUCCESS": 1266,
+    "INITIALIZATION_INVALID": 259,
+    "PATH_UNREACHABLE": 5,
+    "REPLAN_EXHAUSTED": 4,
+    "BOUNDARY_INVALID": 124,
+    "PLAN_SEARCH_EXHAUSTED": 12,
+    "TIMEOUT": 1
+  },
+  "npz_opened_without_pickle": 8974,
+  "files_hashed": 31305,
+  "bytes": 821009796,
+  "validation_seeds_5000_5029_used": false,
+  "independent_new_confirmation": false,
+  "historical_originals_replaced": false,
+  "all_scientific_thresholds_inherited_from_snapshots": true,
+  "resolved_infrastructure_interruptions": 2,
+  "phase": {
+    "policy_rows": 96,
+    "half_grid_rows": 24,
+    "completed": 24,
+    "successes": 24,
+    "historical_original": false
+  },
+  "deadline_continuation": {
+    "full_cutoff_state_exact": true,
+    "original_protocol_success": false,
+    "original_status": "TIMEOUT",
+    "config_steps_still_400": true,
+    "original_prefix_exact": true,
+    "no_fourth_recovery": true,
+    "completion_time_s": 43.800000000000004,
+    "overrun_s": 3.8000000000000043
+  }
+}

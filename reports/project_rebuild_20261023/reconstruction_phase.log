@@ -1,0 +1,50 @@
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+{"layout": "elongated__seed_36__ones__equal_arc", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_36__ones__projected_mass", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_36__hotspot5__equal_arc", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_36__hotspot5__projected_mass", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_51__ones__equal_arc", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_51__ones__projected_mass", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_51__hotspot5__equal_arc", "main_and_half_candidates": 512}
+{"layout": "elongated__seed_51__hotspot5__projected_mass", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_36__ones__equal_arc", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_36__ones__projected_mass", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_36__hotspot5__equal_arc", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_36__hotspot5__projected_mass", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_59__ones__equal_arc", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_59__ones__projected_mass", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_59__hotspot5__equal_arc", "main_and_half_candidates": 512}
+{"layout": "tight_u__seed_59__hotspot5__projected_mass", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_35__ones__equal_arc", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_35__ones__projected_mass", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_35__hotspot5__equal_arc", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_35__hotspot5__projected_mass", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_36__ones__equal_arc", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_36__ones__projected_mass", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_36__hotspot5__equal_arc", "main_and_half_candidates": 512}
+{"layout": "wide_u__seed_36__hotspot5__projected_mass", "main_and_half_candidates": 512}
+{"main_rows": 96, "half_P3_rows": 24, "reused_trajectories": 3, "new_execution_eligible": 21}
+{"task": "elongated__seed_36__ones__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "elongated__seed_36__ones__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "elongated__seed_36__hotspot5__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "elongated__seed_36__hotspot5__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "elongated__seed_51__ones__equal_arc", "status": "SUCCESS", "reused": true}
+{"task": "elongated__seed_51__ones__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "elongated__seed_51__hotspot5__equal_arc", "status": "SUCCESS", "reused": true}
+{"task": "elongated__seed_51__hotspot5__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_36__ones__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_36__ones__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_36__hotspot5__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_36__hotspot5__projected_mass", "status": "SUCCESS", "reused": true}
+{"task": "tight_u__seed_59__ones__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_59__ones__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_59__hotspot5__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "tight_u__seed_59__hotspot5__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_35__ones__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_35__ones__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_35__hotspot5__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_35__hotspot5__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_36__ones__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_36__ones__projected_mass", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_36__hotspot5__equal_arc", "status": "SUCCESS", "reused": false}
+{"task": "wide_u__seed_36__hotspot5__projected_mass", "status": "SUCCESS", "reused": false}

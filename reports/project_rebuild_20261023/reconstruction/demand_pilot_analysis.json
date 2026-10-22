@@ -1,0 +1,10 @@
+{
+  "label": "reconstructed development data, not independent new confirmation",
+  "suite": "demand_pilot",
+  "statuses": {
+    "SUCCESS": 24,
+    "PLAN_SEARCH_EXHAUSTED": 12
+  },
+  "tasks": 36,
+  "source_ref": "4b2b199f"
+}

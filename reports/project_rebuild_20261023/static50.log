@@ -1,0 +1,20 @@
+{
+  "termination_status": "SUCCESS",
+  "success": true,
+  "method": "equal_arc",
+  "protocol": "adaptive_resource",
+  "active_guides": 8,
+  "simulation_time": 23.0,
+  "failure_reason": "",
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": true,
+    "curve_ok": true,
+    "gap_ok": true,
+    "coverage_ok": true
+  }
+}

@@ -1,0 +1,592 @@
+.............E.EEE.......................................E.....E....E... [ 33%]
+....E......E....EE..........EEEE..........EEE.E.................E....... [ 66%]
+..................E....E...........E......EE........E....EEEEEEEEEEE...E [ 99%]
+.E                                                                       [100%]
+=================================== ERRORS ====================================
+___ ERROR at setup of test_manifest_keeps_deterministic_fixture_seed_fixed ____
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_invalid_common_input_rejects_both_before_estimator __
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_real_estimator_acceptance_and_phase_policies_share_input[35] _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_real_estimator_acceptance_and_phase_policies_share_input[51] _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_____ ERROR at setup of test_saved_float64_round_trip_and_arc_projection ______
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_prescribed_curve_is_not_read_by_the_convex_estimator _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_planning_task_is_not_a_deployment_success_and_leaves_safety_empty _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_seed_audit_excludes_actual_same_generator_and_keeps_other_protocol_distinct _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_stage_rejection_has_independent_artifacts_and_null_motion _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_freeze_36_pairs_windows_before_targets_and_detect_mutation _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_rejected_demand_snapshot_has_no_fabricated_motion ___
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_50_person_case_is_frozen_and_independently_accepted __
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_sqlite_source_reads_first_frame_without_mutating_database _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_failures_and_program_errors_stay_in_summary_denominator _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_invalid_configuration_failure_can_be_reevaluated ___
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_explicit_guide_snapshot_keeps_full_precision_and_does_not_alias _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_rejected_input_keeps_artifacts_and_three_failure_rows _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_existing_evidence_is_not_overwritten_when_source_changes _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_explicit_interruption_resume_restarts_only_identical_inputs _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_orchestration_error_keeps_original_runner_metrics ___
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_rejected_reference_rejudge_is_read_only_and_keeps_null_motion _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_certified_infeasible_fixed_n_keeps_status_and_adds_stage_label _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_plan_only_then_resume_executes_without_changing_the_task _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_____ ERROR at setup of test_spatial_hotspot_scenario_freezes_a_side_disk _____
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_ra_abdc_run_saves_adjustments_and_reevaluation_matches_online_diagnostics _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_demand_region_is_a_planning_weight_not_a_new_threshold _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+______________ ERROR at setup of test_default_scene_runs[square] ______________
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+____________ ERROR at setup of test_default_scene_runs[rectangle] _____________
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_failure_states_remain_failures[capacity-CAPACITY_SHORTFALL] _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_failure_states_remain_failures[offset-OFFSET_INVALID] _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_failure_states_remain_failures[timeout-TIMEOUT] ____
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_configuration_rejects_unsupported_scope_and_typo ___
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_________ ERROR at setup of test_repeatability_and_output_protection __________
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_________ ERROR at setup of test_initialization_failure_is_structured _________
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_jupedsim_capacity_failure_is_not_an_experiment_error _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+______ ERROR at setup of test_stall_runs_all_recovery_stages_then_stops _______
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_fixed_n_resume_hash_and_saved_trajectory_reevaluation _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_static_rejection_has_original_targets_and_failure_artifacts _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_original_planner_exhaustion_keeps_scientific_failure_accounting _
+
+self = WindowsPath('E:/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/runs/project_rebuild_20261023/pytest_tmp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp'
+
+C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\pathlib.py:1311: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/test_acceptance.py::test_manifest_keeps_deterministic_fixture_seed_fixed
+ERROR tests/test_boundary_comparison.py::test_invalid_common_input_rejects_both_before_estimator
+ERROR tests/test_boundary_comparison.py::test_real_estimator_acceptance_and_phase_policies_share_input[35]
+ERROR tests/test_boundary_comparison.py::test_real_estimator_acceptance_and_phase_policies_share_input[51]
+ERROR tests/test_curve_constraints.py::test_saved_float64_round_trip_and_arc_projection
+ERROR tests/test_curve_diagnostics.py::test_prescribed_curve_is_not_read_by_the_convex_estimator
+ERROR tests/test_curve_diagnostics.py::test_planning_task_is_not_a_deployment_success_and_leaves_safety_empty
+ERROR tests/test_demand_confirmation.py::test_seed_audit_excludes_actual_same_generator_and_keeps_other_protocol_distinct
+ERROR tests/test_demand_confirmation.py::test_stage_rejection_has_independent_artifacts_and_null_motion
+ERROR tests/test_demand_pilot.py::test_freeze_36_pairs_windows_before_targets_and_detect_mutation
+ERROR tests/test_demand_pilot.py::test_rejected_demand_snapshot_has_no_fabricated_motion
+ERROR tests/test_integration.py::test_50_person_case_is_frozen_and_independently_accepted
+ERROR tests/test_integration.py::test_sqlite_source_reads_first_frame_without_mutating_database
+ERROR tests/test_integration.py::test_failures_and_program_errors_stay_in_summary_denominator
+ERROR tests/test_integration.py::test_invalid_configuration_failure_can_be_reevaluated
+ERROR tests/test_nonconvex_rebuild.py::test_explicit_guide_snapshot_keeps_full_precision_and_does_not_alias
+ERROR tests/test_nonconvex_rebuild.py::test_rejected_input_keeps_artifacts_and_three_failure_rows
+ERROR tests/test_nonconvex_rebuild.py::test_existing_evidence_is_not_overwritten_when_source_changes
+ERROR tests/test_nonconvex_rebuild.py::test_explicit_interruption_resume_restarts_only_identical_inputs
+ERROR tests/test_recovery_diagnostics.py::test_orchestration_error_keeps_original_runner_metrics
+ERROR tests/test_resource_response.py::test_rejected_reference_rejudge_is_read_only_and_keeps_null_motion
+ERROR tests/test_risk_aware.py::test_certified_infeasible_fixed_n_keeps_status_and_adds_stage_label
+ERROR tests/test_risk_aware.py::test_plan_only_then_resume_executes_without_changing_the_task
+ERROR tests/test_risk_aware.py::test_spatial_hotspot_scenario_freezes_a_side_disk
+ERROR tests/test_risk_aware.py::test_ra_abdc_run_saves_adjustments_and_reevaluation_matches_online_diagnostics
+ERROR tests/test_step1.py::test_demand_region_is_a_planning_weight_not_a_new_threshold
+ERROR tests/test_step1.py::test_default_scene_runs[square] - FileNotFoundErro...
+ERROR tests/test_step1.py::test_default_scene_runs[rectangle] - FileNotFoundE...
+ERROR tests/test_step1.py::test_failure_states_remain_failures[capacity-CAPACITY_SHORTFALL]
+ERROR tests/test_step1.py::test_failure_states_remain_failures[offset-OFFSET_INVALID]
+ERROR tests/test_step1.py::test_failure_states_remain_failures[timeout-TIMEOUT]
+ERROR tests/test_step1.py::test_configuration_rejects_unsupported_scope_and_typo
+ERROR tests/test_step1.py::test_repeatability_and_output_protection - FileNot...
+ERROR tests/test_step1.py::test_initialization_failure_is_structured - FileNo...
+ERROR tests/test_step1.py::test_jupedsim_capacity_failure_is_not_an_experiment_error
+ERROR tests/test_step1.py::test_stall_runs_all_recovery_stages_then_stops - F...
+ERROR tests/test_step1.py::test_fixed_n_resume_hash_and_saved_trajectory_reevaluation
+ERROR tests/test_target_domain.py::test_static_rejection_has_original_targets_and_failure_artifacts
+ERROR tests/test_target_domain.py::test_original_planner_exhaustion_keeps_scientific_failure_accounting
+179 passed, 39 errors in 7.24s

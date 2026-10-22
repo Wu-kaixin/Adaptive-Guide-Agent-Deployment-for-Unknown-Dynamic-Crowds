@@ -1,0 +1,19 @@
+warning: unable to access 'C:\Users\kai/.config/git/ignore': Permission denied
+Traceback (most recent call last):
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 227, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 225, in main
+    run_suite(args.suite, args.workers)
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 173, in run_suite
+    from udc.experiments.nonconvex_rebuild import freeze
+ModuleNotFoundError: No module named 'udc.experiments.nonconvex_rebuild'
+Traceback (most recent call last):
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 227, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "E:\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\scripts\rebuild_missing_data.py", line 222, in main
+    subprocess.run([sys.executable, str(Path(__file__).resolve()), '--suite', suite, '--workers', str(args.workers)], cwd=PROJECT, check=True)
+  File "C:\Users\kai\AppData\Roaming\uv\python\cpython-3.12.15-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe', 'E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\scripts\\rebuild_missing_data.py', '--suite', 'record_v1', '--workers', '2']' returned non-zero exit status 1.

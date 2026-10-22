@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.2.0",
+  "source_task_sha256": "ff85c30472281bfa89aaf42e4f2dff408d45ae2695cd8c511c81d017347ce690",
+  "criteria": {
+    "geometry_ok": true,
+    "resource_ok": true,
+    "plan_ok": true,
+    "path_ok": true,
+    "safety_ok": true,
+    "arrival_ok": true,
+    "curve_ok": true,
+    "gap_ok": true,
+    "coverage_ok": true
+  },
+  "diagnostics": {
+    "tracking_rmse": 0.004157670749618352,
+    "max_tracking_error": 0.01101588083179778,
+    "mean_curve_distance": 0.0017144826012010991,
+    "max_curve_distance": 0.007412418700449356,
+    "actual_max_gap": 3.741146283388993,
+    "arc_projection_error_max": 0.008148968002736012,
+    "projection_valid": true,
+    "order_preserved": true,
+    "target_actual_max_gap": 3.733001154377824,
+    "minimum_center_distances": {
+      "crowd": 1.6500925227467307,
+      "guides": 3.2433876535071713,
+      "walls": 2.0
+    },
+    "minimum_net_clearances": {
+      "crowd": 0.20009252274673073,
+      "guides": 1.7433876535071713,
+      "walls": 0.75
+    },
+    "most_dangerous_step": {
+      "crowd": 229,
+      "guides": 229,
+      "walls": 0
+    },
+    "coverage_density": "mass_cvt gaussian demand mass, shared by all methods",
+    "hotspot_arc_fraction": null,
+    "hotspot_demand_share": null,
+    "planned_demand_weighted_cost": 1.160450637603897,
+    "planned_uncovered_demand_share": 0.0,
+    "planned_uniform_cost": 1.1612570819016064,
+    "planned_hotspot_guide_fraction": null,
+    "planned_hotspot_concentration": null,
+    "planned_hotspot_mean_spacing": null,
+    "planned_hotspot_max_gap": null,
+    "actual_demand_weighted_cost": 1.161130653317019,
+    "actual_uncovered_demand_share": 0.0,
+    "actual_uniform_cost": 1.1612656326347346,
+    "actual_hotspot_guide_fraction": null,
+    "actual_hotspot_concentration": null,
+    "actual_hotspot_mean_spacing": null,
+    "actual_hotspot_max_gap": null
+  },
+  "success": true,
+  "criteria_consistent": true,
+  "diagnostics_consistent": {
+    "actual_max_gap": true,
+    "mean_curve_distance": true,
+    "tracking_rmse": true,
+    "actual_demand_weighted_cost": true,
+    "actual_hotspot_concentration": true,
+    "planned_demand_weighted_cost": true
+  }
+}

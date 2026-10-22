@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "phase": "development",
+  "generated_at": "2026-10-22T15:31:42.276475+00:00",
+  "manifest_sha256": "d03cd10077cd42983eddef819b7e6d8659cc4546dea3ed24e06828e0398b2583",
+  "workers": 4,
+  "tasks": 132,
+  "completed": 132,
+  "experiment_errors": 0,
+  "expectations_met": 132,
+  "successful": 93,
+  "termination_counts": {
+    "CAPACITY_SHORTFALL": 12,
+    "OFFSET_INVALID": 12,
+    "PLAN_SEARCH_EXHAUSTED": 15,
+    "SUCCESS": 93
+  }
+}

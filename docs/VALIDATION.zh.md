@@ -1026,3 +1026,70 @@ wide_u热点条件projected平均多3.7059 s、1.1143 m和0.4706次恢复，最�
 全438个诊断区间（含40秒后38个）安全，A400＋B438合计838个重复条件区间不算独立样本。净裕量最小人员0.043109189m、Guide9.9972163e−9m、墙0.45m，诊断真实总路程273.225055886m；0–40s原总路程270.655936106m。末态目标误差0.002814842m、贴线距离0.002481858m、gap1.689689521m。诊断与原预算成功分开，不推荐统一改60秒、不证明40秒物理不可行或一般收敛。
 
 本案归A类当前策略和初始化下的时间边界，无明确实现／监测错误；未修改生产科学代码、未形成修复候选，因此未触发十案例或276执行回归。最终218 passed/25.21s、pip check无冲突、compileall和diff通过；原停滞、预算、安全／原子安装测试仍通过。详见[截止诊断报告](../reports/step1_execution_deadline_diagnostics_v1/REPORT.zh.md)和[Step 1一页证据图谱](STEP1_EVIDENCE_MAP.zh.md)。允许进入论文证据整合，保持原完整失败分母，不再为100%成功无限修补；本轮无新seed／N／方法／几何／规模／噪声或Step2/3实验。
+
+## 2026-10-23：Step 1 会计收官与 Step 2a 协议
+
+分支 `Major-Research-Branches`，起点 `dc94b827`。解释器为本仓库 `.venv` 的 CPython 3.12.15。没有提交、推送或改写历史报告、哈希锁和旧工件。没有运行 5000–5029，也没有启动 4860 整表。安全、覆盖、截止和成功阈值未改。
+
+`runs/summary-error-audit-94tjgmgt/audit_result.json` 存在，且 `scientific_episodes_run=0`。它先保存 `SUCCESS` metrics，再记录程序异常。旧批次汇总是 1 次 `EXPERIMENT_ERROR`、成功 0；旧目录汇总是 1 次 `SUCCESS`，并把 1.0 秒计入成功耗时。该目录字节未改。
+
+新规则在 `src/udc/experiments/accounting.py`：一个目录一行。metrics 已声明 `EXPERIMENT_ERROR` 时吸收错误现场，不另计、不改成功标志。未吸收现场记 `EXPERIMENT_ERROR`，物理成功留在 metrics，不进成功次数或成功耗时。`orchestration_error.json` 不覆盖 runner metrics。拒绝进入已有目录不新写错误现场。`--resume` 不把未吸收现场当成成功。复判仍只比较物理准则。
+
+对本机 `runs/` 的只读审计见 `runs/step1-closeout-accounting-audit/audit.json`：11,128 个任务目录。未吸收冲突只有上述合成目录。已吸收的程序错误是资源响应的 wide_u seed77 N21 Equal Arc 与 projected_mass，均为 `EXPERIMENT_ERROR` 且 `success=false`。没有 `EXPERIMENT_ERROR` 同时 `success=true` 的行。历史确认批次的成功计数不被这条规则改写。
+
+测试临时目录为 `.tmp/pytest-step1-closeout`。`pytest -q` 为 229 passed／27.30 s。`pip check` 无损坏依赖。development smoke 使用新目录 `runs/step1-closeout-smoke`、4 个 worker、约 59.0 s：132 行全部完成，程序错误 0，拒绝进入 0，期望 132/132，成功 93，另有 12 `CAPACITY_SHORTFALL`、12 `OFFSET_INVALID`、15 `PLAN_SEARCH_EXHAUSTED`。离线复判 132/132 一致，流程错误 0，约 10.0 s。对同一目录再跑 `summarize_results` 得到 132 行、93 次台账成功、流程错误 0。这是开发冒烟，不是新的确认样本。
+
+Step 2a 只增加 `docs/STEP2A_PROTOCOL.zh.md` 和 `configs/step2a/static_two_groups.yaml`。`ResourceAllocator` 仍是 `allocate(groups, guide_count)`，runner 不调用它。没有两群实验。
+
+限制：审计只覆盖本机 `runs/`，不证明其他磁盘上的副本没有冲突。约 10,641 个旧 JSON／YAML／TXT 版本仍然缺失。1620 任务仍属于 `f5b5d9c`。smoke 的 93/132 不能写入论文成功率。当时 Step 2a 只有协议，分配器尚未实现。
+
+## 2026-10-23：Step 2a 纯分配
+
+上一节的 Step 1 收官改动仍未提交，本轮没有 reset 或覆盖那些文件。解释器仍是 `.venv` 的 CPython 3.12.15。没有两群 runner、确认矩阵或 5000–5029。没有生成人群，也没有执行部署或运动。现有执行路径未改，因此没有补 development smoke。安全、覆盖、截止和成功阈值未改。
+
+`independent_ceil` 改为下界政策 `curve_ceil`，不是第三条分配基线。已实现的策略只有 `floor_then_size` 和 `frozen_initial_split`。固定映射在预算足够时低于下界记 `FROZEN_FLOOR_VIOLATION`，与 `BUDGET_SHORTFALL` 和输入错误分开。`ResourceAllocator` 未改，`runner` 不导入 `udc.allocation`。
+
+测试临时目录 `.tmp/pytest-step2a-allocation`。先跑 `tests/test_step2a_allocation.py` 与 `tests/test_step1_delivery_index.py`，13 passed／0.14 s。随后全量 `pytest -q` 为 240 passed／26.79 s。`pip check` 无损坏依赖。
+
+限制：纯分配通过只表示身份满足所给下界。两群几何、全局导航、群级／系统级验收和跨群调配都未接入。因此 Step 2a 实验仍不能启动。
+
+## 2026-10-23：Step 2a 规划预检
+
+起点仍是未提交的 `dc94b827` 工作区，Step 1 收官和纯分配文件没有 reset。解释器是 `.venv` 的 CPython 3.12.15。没有随机人群、两群运动、确认矩阵或 5000–5029。阈值和历史报告未改。
+
+预检链路在 `src/udc/preflight/`。接线基线是凸包 `estimate_boundary` 与 Equal Arc、相位 0。共同域是两群占据多边形的并集，不是共同凸包。可见图对单个多边形仍只使用原来的外环；`MultiPolygon` 的每个分量都进入节点。同群匹配使用 `assign_within_groups`，不调用会跨群交换目标的 `navigate_and_assign`。接受状态是 `PREFLIGHT_ACCEPTED`，`deployment_success` 保持 null，不写 `metrics.json`。
+
+手写演示在 `runs/step2a-preflight-demo`：`PREFLIGHT_ACCEPTED`，离线复判 consistent，运动未执行。临时目录 `.tmp/pytest-step2a-preflight`。全量 `pytest -q` 为 248 passed／30.23 s。`pip check` 无损坏依赖。
+
+因为共享导航的可见图节点枚举有扩展，另跑 development smoke 到新目录 `runs/step1-smoke-after-preflight`，4 个 worker，约 54.1 s：132 行完成，程序错误 0，成功 93，12 `CAPACITY_SHORTFALL`、12 `OFFSET_INVALID`、15 `PLAN_SEARCH_EXHAUSTED`。离线复判 132/132 一致，流程错误 0，约 8.0 s。与上一轮 smoke 的终止计数相同。这仍是开发冒烟，不是新确认样本。
+
+限制：预检通过只说明静态目标、间距和同群路径。它不是资源分配通过的同义词，也不是完整部署成功。当时到达、保持、动态安全和实际路程仍未执行。
+
+## 2026-10-23：Step 2a 固定路径开发执行
+
+未提交工作区仍从 `dc94b827` 继续，没有 reset。解释器是 `.venv` 的 CPython 3.12.15。没有随机确认输入、5000–5029、算法比较或运行中跨群调配。共享跟踪、安全和导航源码本轮未改，因此没有另跑 development smoke。阈值和历史报告未改。
+
+政策 `fixed_paths_no_recovery_v1` 写在 `configs/step2a/fixed_paths_no_recovery_v1.yaml`。它只读已复判合格的预检，沿保存的同群路径跟踪，每步对全体 Guide 调用一次现有联合安全过滤，再重查区间安全和共同域线段。`recovery_policy=disabled`，停滞记为 `STALL`，不记成 `REPLAN_EXHAUSTED`。截止仍是 400 步／40 秒。这不是 Step 1 三次恢复的等价政策。
+
+手写紧凑案例预检在 `runs/step2a-compact-preflight`，执行为 `runs/step2a-compact-execution`：46 步，真实路程 34.64937619426802 m，`deployment_success=true`，离线复判 consistent，位移与速度一致。预检目录字节未被执行改写。该成功只属于这个手写案例。
+
+临时目录 `.tmp/pytest-step2a-execution`。全量 `pytest -q` 为 255 passed／28.80 s。`pip check` 无损坏依赖。测试还覆盖跨群间隔才暴露的碰撞、离开共同域的候选拒绝、不重叠的保持窗口、先到达后被推离、缩短循环后的超时、零跟踪下的停滞、非法初态、执行中程序错误、哈希不符和轨迹篡改。缩短循环只用于观察 `TIMEOUT` 分支，政策常量仍是 400 步。
+
+科研实验仍然关闭。启动确认矩阵之前还要另定样本单位、种子和失败分母，并且不能把本政策说成带恢复的 Step 1 控制器。
+
+## 2026-10-23：预检与执行证据加固
+
+工作区基线不是父提交的干净树。git rev-parse HEAD 仍是 dc94b827b2fd4c1ef45de962af6b0a0cfc6da355，但 Step 2a 源码是未提交的工作区文件。记录里的 working_tree_source_sha256 哈希这些磁盘文件，不用该提交冒充当前源码。git_dirty 与 git_head 分开保存。
+
+有效配置改为读取 configs/step2a/static_two_groups.yaml 的 effective_wiring 和 configs/step2a/fixed_paths_no_recovery_v1.yaml。运行前写入 effective_config.json。在线循环和离线复判都用这份快照。当前模块常量被改掉时，旧任务仍按快照复判。YAML 与内存配置不一致时记 CONFIG_MISMATCH，不启动运动。没有快照的旧预检不能自动补默认值后宣称完全复现；
+uns/step2a-compact-preflight 与 
+uns/step2a-compact-execution 属于加锁前的手写演示，本轮不改写它们。
+
+PREFLIGHT_ACCEPTED 现在要求固定文件清单，并重算下界、群体归属、目标一一对应和路径端点。长度不一致不再被 zip 截掉。执行复判比较已评价的群级和系统级准则，位移只用保存的绝对容差 1e-8 m，不用 
+p.allclose 的相对容差。第 k 步异常时，已完成的 k 个区间写入轨迹，deployment_success 仍为 false。
+
+临时目录 .tmp/pytest-step2a-evidence。全量 pytest -q 为 264 passed／36.36 s。pip check 无损坏依赖。
+avigation_domain 只增加了默认等于原常量的可选边距参数，Step 1 调用点未改，因此没有另跑 smoke。
+
+开发试点草案在 docs/STEP2A_DEV_PILOT.zh.md，计划 24 行，上限 36。本轮没有抽种子 100–105，也没有运行。启动该试点仍被阻断：种子尚未审计，输入尚未生成，experiments_open 与 
+un_in_this_round 仍为 false。

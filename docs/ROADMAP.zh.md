@@ -9,9 +9,9 @@
 | 需求与资源 | 需求pilot、相位归因、seed75–94需求确认及资源开发、seed95–114资源确认已完成 | 只支持冻结模板和初始化条件；热点／背景取舍、规划收益和执行成本分别报告 |
 | 执行边界 | 数值边界节点修复与固定目标回归；40秒超时精确重放及43.8秒诊断晚到 | 不放宽生产截止，不改写275成功／84拒绝／1超时；不声称噪声鲁棒或一般收敛 |
 | 数据重建 | 独立`.venv`，1,699行／次重建记录；明确审计的8,393个NPZ／SQLite／WKB引用全部匹配 | 重建不增加独立样本；旧主机元数据版本缺口继续公开 |
-| Step 2 | 尚未实现；ResourceAllocator目前只是接口 | 先两个静态人群，再逐项引入移动、扩散、分裂／合并、跨群分配和交互 |
+| Step 2 | 纯分配、规划预检和 `fixed_paths_no_recovery_v1` 开发执行已接入；科研实验关闭 | 见 [Step 2a 协议](STEP2A_PROTOCOL.zh.md)。开发案例成功不是方法优势。移动、扩散、分裂／合并和交互仍是后续独立协议 |
 | Step 3 | 尚未实现；LocalPolicy目前只是接口 | 局部感知、有限通信、搜索、延迟和去中心化策略另立协议 |
 
 近期工作是将方法、配对统计、完整失败分母和适用范围整理为论文证据链。完整4860任务因子表、其他生成分布、规模外推、第三估计器、动态响应和Vadere实时backend均未完成，不自动开启新矩阵或使用5000–5029开发种子。
 
-[证据图谱](STEP1_EVIDENCE_MAP.zh.md)说明现有结果；[重建日志](PROJECT_REBUILD.zh.md)和[数据可用性](DATA_AVAILABILITY.zh.md)说明原件与重建边界；[验证记录](VALIDATION.zh.md)记录本机与跨平台检查；[同步说明](REPOSITORY_SYNC.zh.md)记录分支策略。
+[证据图谱](STEP1_EVIDENCE_MAP.zh.md)说明现有结果；[收官对照](STEP1_CLOSEOUT.zh.md)和[交付索引](STEP1_DELIVERY_INDEX.zh.md)是 Step 1 的审查入口；[重建日志](PROJECT_REBUILD.zh.md)和[数据可用性](DATA_AVAILABILITY.zh.md)说明原件与重建边界；[验证记录](VALIDATION.zh.md)记录本机与跨平台检查；[同步说明](REPOSITORY_SYNC.zh.md)记录分支策略。

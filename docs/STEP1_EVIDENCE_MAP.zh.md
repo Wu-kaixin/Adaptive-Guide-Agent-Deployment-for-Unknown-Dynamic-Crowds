@@ -20,4 +20,4 @@
 
 尚未验证：任意非凸几何、其他人员生成／初始化政策、噪声／局部观测、有限通信、大规模外推、动态人群响应、风险改善、containment和完整RA-ABDC／Step2/3。有限搜索、一次安全晚到或单步非零速度均不证明一般可行性／全局收敛。
 
-来源：[新输入资源确认](../reports/step1_nonconvex_resource_confirmation_v1/REPORT.zh.md)、[固定资源恢复诊断](../reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md)、[本次截止诊断](../reports/step1_execution_deadline_diagnostics_v1/REPORT.zh.md)。历史台账与报告只读，新结论和开发工件各自保存。
+来源：[新输入资源确认](../reports/step1_nonconvex_resource_confirmation_v1/REPORT.zh.md)、[固定资源恢复诊断](../reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md)、[本次截止诊断](../reports/step1_execution_deadline_diagnostics_v1/REPORT.zh.md)。历史台账与报告只读，新结论和开发工件各自保存。收官对照、交付入口和尚未启动的两群协议见[收官报告](STEP1_CLOSEOUT.zh.md)、[交付索引](STEP1_DELIVERY_INDEX.zh.md)和[Step 2a 协议](STEP2A_PROTOCOL.zh.md)。

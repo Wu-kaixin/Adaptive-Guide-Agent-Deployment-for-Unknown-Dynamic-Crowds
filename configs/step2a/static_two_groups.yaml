@@ -1,0 +1,147 @@
+# Step 2a protocol. Pure allocation is implemented; no runner imports this file.
+schema_version: 1
+protocol: step2a_static_two_groups
+implementation_status: development_execution_wired
+execution_policy: fixed_paths_no_recovery_v1
+execution_wired: true
+motion_wired: true
+recovery_policy: disabled
+experiments_open: false
+run_in_this_round: false
+execution_entry: experiments/step2a_execute.py
+
+scope:
+  groups: 2
+  population: fixed_total
+  guide_budget: fixed_shared_identities
+  observation: exact_global
+  communication: unlimited
+  crowd_guide_interaction: none
+  crowd_motion: static
+  excluded:
+    - motion
+    - diffusion
+    - split_merge
+    - crowd_guide_dynamics
+    - cross_group_transfer_execution
+
+identity:
+  group_id: stable nonempty string, not a row index
+  member_ids: stable person IDs from PedestrianState.ids, not Observation rows
+  row_map: row k has stable id int(PedestrianState.ids[k]); Observation drops ids
+  partition_check: validate_member_partition before allocate; allocate does not see the population
+  geometry: later harness indexes the frozen observation by that row map
+  spawn_polygon_visible_to_allocator: false
+  guide_id: nonnegative integer
+  guides_created_during_run: 0
+
+floor_policies:
+  declared:
+    role: caller-supplied nonnegative integer
+    is_allocation_baseline: false
+  curve_ceil:
+    role: floor policy
+    former_name: independent_ceil
+    rule: ceil(L/H_p)
+    trace: [curve_length_m, planning_gap_m]
+    is_allocation_baseline: false
+fair_comparison: shared floor policy and the same numeric floors; a floor-policy change is not a method effect
+
+allocation_strategies:
+  floor_then_size:
+    implemented: true
+    remainder: floor(R * n_g / N); leftover seats go to larger n_g, then lexicographically smaller group_id
+    guide_order: smallest remaining guide IDs, groups in lexicographic group_id order
+  frozen_initial_split:
+    implemented: true
+    requires: explicit sequence of (guide_id, group_id) pairs
+    below_floor_status: FROZEN_FLOOR_VIOLATION
+
+resource:
+  floor_unit: guides
+  floor_is_demand_total: false
+  shortfall_status: BUDGET_SHORTFALL
+  shortfall_action: empty assignment, feasible false; do not redraw or lower a floor
+  transfer_execution: not_implemented
+
+effective_wiring:
+  boundary_policy: convex_hull
+  estimator: estimate_boundary
+  deployment_method: equal_arc
+  phase: 0.0
+  phase_policy: single_fixed_phase_0
+  offset_m: 1.3
+  sample_spacing_m: 0.1
+  wall_margin_m: 0.55
+  crowd_margin_m: 0.55
+  crowd_distance_m: 0.75
+  max_gap_limit_m: 2.0
+  arc_tolerance_m: 0.03
+  planning_gap_m: 1.94
+  demand_bandwidth_m: 1.2
+  guide_radius_m: 0.20
+  clearance_m: 0.35
+  guide_separation_m: 0.75
+  numeric_tolerance_m: 1.0e-7
+  quadrature_samples: 2048
+  planner_max_iterations: 300
+  simplify_m: 0.10
+  planning_margin_m: 0.11
+  path_start_atol_m: 1.0e-6
+  path_end_atol_m: 1.0e-5
+
+preflight:
+  schema: step2a_preflight_v1
+  status_when_accepted: PREFLIGHT_ACCEPTED
+  deployment_success: null
+  motion_executed: false
+  boundary_policy: convex_hull
+  deployment_method: equal_arc
+  phase: 0.0
+  shared_domain: unary_union of per-group occupied hulls
+  assignment: within group ids only
+
+acceptance:
+  allocation_feasible_means: shared identities meet the supplied floors
+  allocation_feasible_does_not_mean: [target geometry, paths, joint safety, deadline]
+  safety: global center-distance checks against every person, guide and wall
+  group_level: each group meets the Step 1 curve, gap and arrival-hold checks for its own targets
+  system_level: both groups pass, the shared assignment is a partition, and the budget is not exceeded
+  success_requires: [group_level, system_level]
+  thresholds_relative_to_step1: unchanged
+  execution_wired: false
+
+denominator:
+  unit: one manifest row
+  retains:
+    - BUDGET_SHORTFALL
+    - FROZEN_FLOOR_VIOLATION
+    - MEMBERSHIP_INVALID
+    - GEOMETRY_REJECTED
+    - PLAN_REJECTED
+    - TARGET_DOMAIN_INVALID
+    - TARGET_SEPARATION_INVALID
+    - group planning or geometry rejection
+    - TIMEOUT
+    - REPLAN_EXHAUSTED
+    - PATH_UNREACHABLE
+    - SAFETY_VIOLATION
+    - group pass with system failure
+    - EXPERIMENT_ERROR
+  input_errors_are_not_scientific_statuses: true
+  program_error_rule: step1 closeout ledger; one directory, one row
+
+current_interface:
+  type: udc.interfaces.ResourceAllocator
+  allocate_parameters: [groups, guide_count]
+  group_fields: [group_id, pedestrian_ids, demand_total]
+  decision_fields: [guides_per_group]
+  sufficient_for_step2a: false
+  modify_in_this_round: false
+
+proposed_interface:
+  type: udc.allocation.allocate
+  allocate_parameters: [groups, floors, guides, strategy, mapping]
+  decision_fields: [strategy, floor_policy, assignment, feasible, reason]
+  implemented: true
+  execution_wired: false

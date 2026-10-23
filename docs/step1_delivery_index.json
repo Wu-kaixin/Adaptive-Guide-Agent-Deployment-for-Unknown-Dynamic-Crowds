@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "purpose": "Step 1 review entry points. Reconstructed files are not originals.",
+  "minimal_reproduction": [
+    "./.venv/Scripts/python.exe -m pytest -q --basetemp .tmp/pytest",
+    "./.venv/Scripts/python.exe -m pip check",
+    "./.venv/Scripts/python.exe experiments/validation_runner.py --phase development --smoke --workers 4 --output runs/step1-closeout-smoke",
+    "./.venv/Scripts/python.exe experiments/validation_runner.py --reevaluate --output runs/step1-closeout-smoke",
+    "./.venv/Scripts/python.exe run.py --config configs/step1/static_50.yaml --output runs/step1-closeout-static50 --no-plots",
+    "./.venv/Scripts/python.exe run.py --reevaluate runs/step1-closeout-static50"
+  ],
+  "minimal_data": [
+    "src/udc",
+    "configs/step1/static_50.yaml",
+    "experiments/acceptance_manifest.yaml",
+    "experiments/validation_runner.py",
+    "run.py",
+    "pyproject.toml",
+    ".venv/Scripts/python.exe"
+  ],
+  "entries": [
+    {"id": "source", "role": "source", "path": "src/udc", "kind": "directory", "availability": "present", "required": true},
+    {"id": "runner-cli", "role": "source", "path": "experiments/validation_runner.py", "kind": "file", "availability": "present", "required": true},
+    {"id": "run-cli", "role": "source", "path": "run.py", "kind": "file", "availability": "present", "required": true},
+    {"id": "environment-lock", "role": "environment", "path": "requirements/locks/windows-py312.txt", "kind": "file", "availability": "present", "required": true},
+    {"id": "environment-setup", "role": "environment", "path": "scripts/setup_env.ps1", "kind": "file", "availability": "present", "required": true},
+    {"id": "interpreter", "role": "environment", "path": ".venv/Scripts/python.exe", "kind": "file", "availability": "present", "required": true},
+    {"id": "theory", "role": "protocol", "path": "docs/STEP1_THEORY.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "protocol", "role": "protocol", "path": "docs/EXPERIMENT_PROTOCOL.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "evidence", "role": "protocol", "path": "docs/STEP1_EVIDENCE_MAP.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "closeout", "role": "protocol", "path": "docs/STEP1_CLOSEOUT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "acceptance-manifest", "role": "protocol", "path": "experiments/acceptance_manifest.yaml", "kind": "file", "availability": "present", "required": true},
+    {"id": "static50-config", "role": "input", "path": "configs/step1/static_50.yaml", "kind": "file", "availability": "present", "required": true},
+    {"id": "resource-confirmation-config", "role": "input", "path": "configs/step1/nonconvex_resource_confirmation_v1.yaml", "kind": "file", "availability": "present", "required": true},
+    {"id": "deadline-config", "role": "input", "path": "configs/step1/execution_deadline_diagnostics_v1.yaml", "kind": "file", "availability": "present", "required": true},
+    {"id": "resource-confirmation-report", "role": "result", "path": "reports/step1_nonconvex_resource_confirmation_v1/REPORT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "resource-response-report", "role": "result", "path": "reports/step1_nonconvex_resource_response_v1/REPORT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "recovery-report", "role": "result", "path": "reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "deadline-report", "role": "failure-ledger", "path": "reports/step1_execution_deadline_diagnostics_v1/REPORT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "demand-confirmation-report", "role": "result", "path": "reports/step1_nonconvex_demand_confirmation_v1/REPORT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "rebuild-report", "role": "provenance", "path": "reports/project_rebuild_20261023/reconstruction/REPORT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "rebuild-summary", "role": "provenance", "path": "reports/project_rebuild_20261023/historical_references_after_reconstruction_summary.json", "kind": "file", "availability": "present", "required": true},
+    {"id": "data-availability", "role": "provenance", "path": "docs/DATA_AVAILABILITY.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "coverage-contract", "role": "protocol", "path": "docs/COVERAGE_GEOMETRY_CONTRACT.zh.md", "kind": "file", "availability": "present", "required": true},
+    {"id": "resource-confirmation-runs", "role": "result", "path": "runs/step1_nonconvex_resource_confirmation_v1", "kind": "directory", "availability": "local_gitignored", "required": false},
+    {"id": "deadline-runs", "role": "failure-ledger", "path": "runs/step1_execution_deadline_diagnostics_v1", "kind": "directory", "availability": "local_gitignored", "required": false},
+    {"id": "reconstructed-runs", "role": "reconstruction", "path": "runs/reconstructed_20261023", "kind": "directory", "availability": "local_gitignored", "required": false},
+    {"id": "synthetic-accounting-audit", "role": "failure-ledger", "path": "runs/summary-error-audit-94tjgmgt/audit_result.json", "kind": "file", "availability": "local_gitignored", "required": false},
+    {"id": "closeout-accounting-audit", "role": "failure-ledger", "path": "runs/step1-closeout-accounting-audit/audit.json", "kind": "file", "availability": "local_gitignored", "required": false}
+  ],
+  "unrecoverable": [
+    {
+      "id": "historical-metadata-versions",
+      "role": "provenance",
+      "required": false,
+      "availability": "unrecoverable",
+      "reason": "After reconstruction, about 10641 old JSON/YAML/TXT versions cited by historical metadata remain absent. NPZ, SQLite and WKB references in that audit matched. Reconstruction metadata must not be labeled as those missing originals."
+    },
+    {
+      "id": "historical-1620-as-current-code",
+      "role": "result",
+      "required": false,
+      "availability": "unrecoverable",
+      "reason": "The 1620-task convex formal result belongs to frozen revision f5b5d9c. This index does not supply it as a current-code artifact."
+    },
+    {
+      "id": "full-4860-factorial",
+      "role": "result",
+      "required": false,
+      "availability": "unrecoverable",
+      "reason": "The 4860-task factor table has not been run."
+    }
+  ]
+}

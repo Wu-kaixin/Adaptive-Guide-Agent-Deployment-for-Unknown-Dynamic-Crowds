@@ -44,7 +44,10 @@ def manage(runtime, runner_pid, count):
                 compute_pids = []
                 for process in processes:
                     process.cpu_affinity([row['cpu']])
-                    process.nice(psutil.NORMAL_PRIORITY_CLASS)
+                    # Priority classes are Windows-only. On POSIX retain the
+                    # inherited nice value rather than requesting elevation.
+                    if hasattr(psutil, 'NORMAL_PRIORITY_CLASS'):
+                        process.nice(psutil.NORMAL_PRIORITY_CLASS)
                     if process.pid != pid:
                         compute_pids.append(process.pid)
                 row['compute_pids'] = compute_pids

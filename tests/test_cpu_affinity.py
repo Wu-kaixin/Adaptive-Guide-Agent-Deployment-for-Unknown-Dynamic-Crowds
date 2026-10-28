@@ -63,6 +63,14 @@ def test_affinity_never_changes_unrelated_reused_pid(monkeypatch, tmp_path):
     assert wrapper.pins == [] and compute.pins == []
 
 
+def test_affinity_without_windows_priority_classes(monkeypatch, tmp_path):
+    monkeypatch.delattr(cpu_affinity.psutil, 'NORMAL_PRIORITY_CLASS', raising=False)
+    wrapper, compute, _ = configure(monkeypatch, tmp_path)
+    cpu_affinity.manage(tmp_path, 7, 2)
+    assert wrapper.pins == [[0]] and compute.pins == [[0]]
+    assert wrapper.priorities == [] and compute.priorities == []
+
+
 def test_all_core_policy_requires_matching_allowed_cpu_count(monkeypatch, tmp_path):
     configure(monkeypatch, tmp_path)
     with pytest.raises(ValueError, match='allowed logical CPUs'):

@@ -1,0 +1,28 @@
+{
+  "recorded": 8640,
+  "scheduled": 8640,
+  "stopped": false,
+  "missing": 0,
+  "new_independent_samples": 320,
+  "statuses": {
+    "PARTIAL_SERVICE": 5361,
+    "FULL_SUCCESS": 3134,
+    "PATH_NOT_FOUND": 145
+  },
+  "by_policy": {
+    "verified_q4_forward": {
+      "PARTIAL_SERVICE": 1720,
+      "FULL_SUCCESS": 1044,
+      "PATH_NOT_FOUND": 116
+    },
+    "adaptive_forward": {
+      "PARTIAL_SERVICE": 1806,
+      "FULL_SUCCESS": 1045,
+      "PATH_NOT_FOUND": 29
+    },
+    "adaptive_reverse": {
+      "PARTIAL_SERVICE": 1835,
+      "FULL_SUCCESS": 1045
+    }
+  }
+}

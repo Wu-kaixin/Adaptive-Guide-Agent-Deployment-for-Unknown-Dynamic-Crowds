@@ -1,0 +1,33 @@
+schema_version: 1
+protocol: static_mechanism_v2
+evidence: development
+namespace: 2026102705
+base_protocol: configs/step1/static_multigroup_v2.yaml
+design_reason: distinguish_within_group_demand_shape_from_groupwise_scaling_that_cancels_in_normalized_unmet_fraction
+group_counts: [2, 5]
+shapes: [concave]
+seeds: {start: 1800, count: 20}
+size_patterns:
+  equal: [1, 1, 1, 1, 1]
+  heterogeneous: [1, 1.35, 1.7, 1.15, 1.5]
+demand_patterns:
+  equal: [1, 1, 1, 1, 1]
+  hotspot: [1, 1, 1, 1, 1]
+demand_fields:
+  equal: uniform
+  hotspot: upper_x_quartile_12x_normalized_group_mean
+budget_per_group: [3, 5, 7]
+error_bound_m: 0.12
+measurement_model: bounded_disk
+layout: projected_mass
+allocators: [perimeter, demand, minimax, total]
+motion: false
+truth_reused_between_demand_conditions: true
+same_normalized_noise_between_demand_conditions: true
+group_id_demand_multiplier_removed: true
+mean_demand_per_person_fixed_between_demand_conditions: true
+claim: within_group_demand_shape_and_geometry_effects_at_fixed_K_planning_only
+primary_metric: continuous_exact_reference_worst_and_weighted_uncovered
+inference: exploratory_paired_effects_by_condition_no_confirmatory_claim
+scientific_retries: 0
+reserved_seeds: [5000, 5029]

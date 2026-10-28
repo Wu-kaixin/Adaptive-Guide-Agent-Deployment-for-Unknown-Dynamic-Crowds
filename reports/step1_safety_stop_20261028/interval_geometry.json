@@ -1,0 +1,115 @@
+{
+  "task_id": "K5_irregular_s2004_e0.12_insufficient_projected_mass_perimeter",
+  "source_receipt_sha256": "48dad000804314646dea2fdf58674cb627ce8586d5ea97d413352bdcdb978fae",
+  "threshold_m": 0.75,
+  "violating_intervals": [
+    {
+      "interval": 1032,
+      "simulation_start_s": 206.4,
+      "pair": [
+        20,
+        24
+      ],
+      "moving_guides": [
+        24
+      ],
+      "start": [
+        21.96297872300922,
+        7.4167191652670175
+      ],
+      "end": [
+        22.02870866807229,
+        7.601727554607001
+      ],
+      "blocker": 20,
+      "blocker_position": [
+        22.757533170976306,
+        7.492582622108118
+      ],
+      "closest_fraction": 1.0,
+      "center_distance_m": 0.7369516757043638,
+      "net_clearance_m": -0.013048324295636182,
+      "free_valid": true,
+      "domain_free_valid": true,
+      "stationary_valid": true,
+      "free_covers_segment": false,
+      "segment_disk_distance_m": 0.7369516757043638,
+      "stationary_intersection_length_m": 0.09609109161178318,
+      "free_wkb_sha256": "5dd59125b7cbda8eff710064101f5f9f468bc6172392bb0aa5a123ee0ab7ab71",
+      "prepared_free_covers_segment": false,
+      "unprepared_free_covers_segment": false
+    },
+    {
+      "interval": 1033,
+      "simulation_start_s": 206.60000000000002,
+      "pair": [
+        20,
+        24
+      ],
+      "moving_guides": [
+        24
+      ],
+      "start": [
+        22.02870866807229,
+        7.601727554607001
+      ],
+      "end": [
+        22.09443861313536,
+        7.786735943946983
+      ],
+      "blocker": 20,
+      "blocker_position": [
+        22.757533170976306,
+        7.492582622108118
+      ],
+      "closest_fraction": 0.7189085163829845,
+      "center_distance_m": 0.7233082031032873,
+      "net_clearance_m": -0.02669179689671275,
+      "free_valid": true,
+      "domain_free_valid": true,
+      "stationary_valid": true,
+      "free_covers_segment": false,
+      "segment_disk_distance_m": 0.7233082031032873,
+      "stationary_intersection_length_m": 0.19633779514950384,
+      "free_wkb_sha256": "5dd59125b7cbda8eff710064101f5f9f468bc6172392bb0aa5a123ee0ab7ab71",
+      "prepared_free_covers_segment": false,
+      "unprepared_free_covers_segment": false
+    },
+    {
+      "interval": 1034,
+      "simulation_start_s": 206.8,
+      "pair": [
+        20,
+        24
+      ],
+      "moving_guides": [
+        24
+      ],
+      "start": [
+        22.09443861313536,
+        7.786735943946983
+      ],
+      "end": [
+        22.160168558198432,
+        7.971744333286966
+      ],
+      "blocker": 20,
+      "blocker_position": [
+        22.757533170976306,
+        7.492582622108118
+      ],
+      "closest_fraction": 0.0,
+      "center_distance_m": 0.725410621225743,
+      "net_clearance_m": -0.024589378774257042,
+      "free_valid": true,
+      "domain_free_valid": true,
+      "stationary_valid": true,
+      "free_covers_segment": false,
+      "segment_disk_distance_m": 0.725410621225743,
+      "stationary_intersection_length_m": 0.14372358019572934,
+      "free_wkb_sha256": "5dd59125b7cbda8eff710064101f5f9f468bc6172392bb0aa5a123ee0ab7ab71",
+      "prepared_free_covers_segment": false,
+      "unprepared_free_covers_segment": false
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "evidence": "development",
+  "scheduled_tasks": 8,
+  "recorded_tasks": 8,
+  "not_yet_recorded": 0,
+  "statuses": {
+    "PARTIAL_SERVICE": 4,
+    "FULL_SUCCESS": 4
+  },
+  "full_successes": 4,
+  "deployment_completed": 8,
+  "motion_tasks": 8,
+  "executed_intervals": 22365,
+  "unsafe_intervals": 0,
+  "partition_mismatch_task_ids": [],
+  "error_bound_violation_task_ids": [],
+  "finite_catalog_dominance_failures": [],
+  "paired_common_reference_differences": [
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1201,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.023544756906972587
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1201,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1201,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.02609192433995448
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1201,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    }
+  ],
+  "limits": [
+    "development is not prospective confirmation",
+    "finite catalog, not continuous optimality",
+    "separated static components",
+    "serial fixed assignment is not complete MAPF",
+    "geometric service is not demonstrated crowd influence"
+  ],
+  "primary_analysis": {
+    "estimand": "planned_common_reference_worst_group_uncovered_minimax_minus_perimeter",
+    "evidence": "development",
+    "strata": [],
+    "equal_stratum_mean_delta": null,
+    "paired_stratified_95_interval": null,
+    "uncalculable_bootstrap_share": null,
+    "independent_unit": "group_count_shape_seed_with_all_errors_resources_and_methods_together",
+    "interpretation": "conditional on both methods producing planned targets; full failure ledger retained",
+    "supports_preregistered_negative_direction": false,
+    "prospective_confirmation_completed": false
+  },
+  "stopped_on_error_or_safety": false
+}

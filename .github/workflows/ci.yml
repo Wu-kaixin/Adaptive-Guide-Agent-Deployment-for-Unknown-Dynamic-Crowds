@@ -26,6 +26,8 @@ jobs:
       - run: ${{ matrix.python }} -m pip install -e ".[dev,analysis]"
       - run: ${{ matrix.python }} -m pytest -q
       - run: ${{ matrix.python }} -m pip check
+      - name: Verify published Step 1 evidence
+        run: ${{ matrix.python }} scripts/package_step1_review.py
       - run: ${{ matrix.python }} run.py --config configs/step1/static_50.yaml --output runs/ci50 --no-plots
       - run: ${{ matrix.python }} run.py --reevaluate runs/ci50
       - name: Repository health

@@ -1,0 +1,13 @@
+schema_version: 1
+protocol: phase_retention_witness_execution_v1
+evidence: posthoc_descriptive_execution_witness
+parent_study: runs/static_phase_retention_20261027/main_v1
+case_selection: reports/static_phase_retention_20261027/true_service_witness.json
+selection_rule: largest_true_worst_service_loss_in_completed_30mm_primary_policy_pairs
+methods: [continuous_euclidean_greedy, euclidean_retain_0.002]
+actions: reuse_parent_frozen_targets_without_reoptimization
+starting_state: reuse_parent_successful_nominal_deployment_final_robots
+truth_and_observation: reuse_parent_exact_files
+scientific_retries: 0
+inference: falsification_witness_only_not_new_independent_repetitions_or_a_success_rate
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION]

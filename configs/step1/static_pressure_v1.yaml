@@ -1,0 +1,23 @@
+schema_version: 1
+protocol: static_pressure_v1
+evidence: development
+namespace: 2026102703
+base_protocol: configs/step1/static_multigroup_v2.yaml
+group_count: 2
+shape: concave
+seeds: {start: 1600, count: 20}
+cases: [baseline, near_wall, close_groups]
+translations_m:
+  baseline: [[0, 0], [0, 0]]
+  near_wall: [[-9.5, 0], [0, 0]]
+  close_groups: [[4.5, 0], [-4.5, 0]]
+error_bound_m: 0.12
+measurement_model: bounded_disk
+budget: 10
+layout: projected_mass
+allocator: minimax
+motion: true
+claim: declared_static_admission_and_execution_pressure_cases_not_random_environment_success_rate
+scientific_retries: 0
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION]
+reserved_seeds: [5000, 5029]

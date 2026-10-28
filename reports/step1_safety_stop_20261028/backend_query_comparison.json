@@ -1,0 +1,48 @@
+{
+  "original_graph_seconds": 1.408008600003086,
+  "original_query_seconds": 1.4240938000002643,
+  "lazy_query_seconds": 0.7097492000029888,
+  "original_path_matches_saved_bitwise": true,
+  "lazy_path_matches_saved_bitwise": true,
+  "original_lazy_path_bitwise_equal": true,
+  "original_length": 13.525057447028896,
+  "lazy_length": 13.525057447028896,
+  "original_path": [
+    [
+      14.974399999999997,
+      1.1
+    ],
+    [
+      20.94153535740238,
+      4.292786670087254
+    ],
+    [
+      21.18961974088372,
+      4.458551355530867
+    ],
+    [
+      21.355384426327333,
+      4.70663573901221
+    ],
+    [
+      22.036080661603116,
+      6.722458008050028
+    ],
+    [
+      21.96297872300922,
+      7.4167191652670175
+    ],
+    [
+      22.423088338450714,
+      8.711777890646898
+    ],
+    [
+      22.209536327459475,
+      10.660707961036048
+    ]
+  ],
+  "backend_sha256": "b53a6ee0189daeee5f2eafe2eed4c8be14279cd299f85b64012a24b1bbd47657",
+  "shapely": "2.2.0",
+  "geos": "3.14.1",
+  "mode": "fixed query diagnostic; not a new scientific episode or retry"
+}

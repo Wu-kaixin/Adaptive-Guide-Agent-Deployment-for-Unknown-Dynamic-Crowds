@@ -1,0 +1,21 @@
+{
+  "recorded_rows": 96,
+  "scheduled_rows": 96,
+  "stopped": false,
+  "statuses": {
+    "PARTIAL_SERVICE": 48,
+    "FULL_SUCCESS": 48
+  },
+  "by_admission": {
+    "euclidean_original": {
+      "PARTIAL_SERVICE": 24,
+      "FULL_SUCCESS": 24
+    },
+    "serial_polygon_consistent": {
+      "PARTIAL_SERVICE": 24,
+      "FULL_SUCCESS": 24
+    }
+  },
+  "independent_physical_blocks": 12,
+  "inference": "three-seed development only"
+}

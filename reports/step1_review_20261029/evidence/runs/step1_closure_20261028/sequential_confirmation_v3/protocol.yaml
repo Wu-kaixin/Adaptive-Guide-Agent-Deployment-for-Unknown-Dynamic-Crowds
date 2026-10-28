@@ -1,0 +1,73 @@
+protocol: sequential_deployment_confirmation_v3
+evidence: prospective_confirmation
+base_protocol: configs/step1/static_multigroup_v2.yaml
+namespace: 2026102825
+seeds:
+  start: 3300
+  count: 20
+group_counts:
+- 2
+- 5
+shapes:
+- concave
+- ellipse
+resources:
+- insufficient
+- moderate
+- sufficient
+patterns:
+- independent_jitter
+- slow_common_bias
+- oscillatory_shape_bias
+methods:
+- recompute_all
+- phase_guard
+- counts_phase_guard
+steps: 50
+base_actual_error_m: 0.04
+perturbation_amplitude_m: 0.03
+declared_error_m: 0.12
+observation_release: accept_next_frame_only_after_previous_deployment_completed
+failure_policy: end_affected_method_episode_and_keep_unexecuted_tail_without_reset
+initial_state: one_shared_nominal_deployment_per_physical_input_and_resource
+state_protocol: each_method_keeps_own_actual_state_within_the_sequence
+candidate_protocol: same_base_catalog_and_same_own_incumbent_anchor_formula_for_every_method
+model:
+  support_closing_enclosure: round_buffer_sagitta
+  true_service_delta: 0.002
+  tracking_bound_m: 1.0e-10
+  routing_sides:
+  - 16
+  - 32
+  - 64
+  routing_pad_m: 1.0e-09
+  routing_interior_margin_m: 1.0e-06
+  routing_max_vertices: 20000
+  support_conditional_identity: false
+maximum_workers: 32
+numerical_threads: 1
+scientific_retries: 0
+checkpoint_steps: 5
+stop_on:
+- EXPERIMENT_ERROR
+- SAFETY_VIOLATION
+- MODEL_BOUND_VIOLATION
+statistics:
+  primary: total_50_step_travel_counts_phase_guard_minus_recompute_all
+  primary_resource: sufficient
+  primary_pattern: independent_jitter
+  direction: negative
+  independent_block: K_shape_seed
+  weighting: equal_mean_4_K_shape_strata
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 202610282501
+  incomplete_sequences: retain_in_full_ledger_and_bound_missing_travel_no_redraw
+  secondary:
+  - count_switches
+  - intergroup_transfers
+  - actual_worst_and_weighted_service
+  - all_resources_patterns
+  - certificate_coverage_and_fallback
+  - full_task_success
+  - safety
+split_pattern_workers: false

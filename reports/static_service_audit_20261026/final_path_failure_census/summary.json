@@ -1,0 +1,15 @@
+{
+  "cases": 640,
+  "scheduled_cases": 640,
+  "categories": {
+    "analytic_clearance_passed_circumscribed_polygon_rejected": 447,
+    "strictly_separated_serial_components": 193
+  },
+  "original_reasons": {
+    "fixed_endpoint_occupied": 447,
+    "finite_visibility_graph": 193
+  },
+  "new_robot_executions": 0,
+  "new_independent_scenes": 0,
+  "scope": "Controller-geometry diagnoses of a fixed checkpoint, not global physical infeasibility proofs."
+}

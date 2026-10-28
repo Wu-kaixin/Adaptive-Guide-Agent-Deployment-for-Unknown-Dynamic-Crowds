@@ -1,0 +1,8 @@
+{
+  "closed_at": "2026-10-28T23:51:48.411546+09:00",
+  "automation_id": "step1",
+  "delete_status": "deleted_confirmed_by_app",
+  "live_closure_pipeline_processes": [],
+  "assessment": "reports/step1_closure_20261028/ASSESSMENT.zh.md",
+  "scope": "Finished preplanned batches and independent replay, preserving scientific limitations and original stopped confirmation"
+}

@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-10-27T23:12:41+09:00",
+  "pytest": {
+    "passed": 282,
+    "seconds": 64.43
+  },
+  "pip_check": "passed",
+  "frozen_source_environment_protocol_inputs_verification": "passed after restart",
+  "tracked_diff_whitespace_check": "passed",
+  "changed_python_ast_parsed": 7,
+  "preserved_complete_rows_at_takeover": 13928,
+  "incomplete_task_directories_at_takeover": 0,
+  "runtime_status": {
+    "phase": "running",
+    "updated_at": "2026-10-27T23:12:33+09:00",
+    "runner_pid": 4832,
+    "workers": 32,
+    "numerical_threads_per_worker": 1,
+    "recorded_rows": 14167,
+    "scheduled_rows": 17280,
+    "by_K": {
+      "1": 4320,
+      "2": 4320,
+      "3": 4320,
+      "5": 1207
+    },
+    "in_flight_units": 32,
+    "completed_resumed_units": 0,
+    "remaining_units_at_start": 188,
+    "initial_preserved_rows": 13928,
+    "elapsed_seconds": 503.7,
+    "runtime_amendment": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\reports\\static_service_audit_20261026\\runtime_amendment.json",
+    "scientific_retries": 0,
+    "operational_restart": true,
+    "stopped_on_error_or_safety": false
+  },
+  "all_core_measurement": {
+    "active_compute_processes": 32,
+    "machine_cpu_percent": 100.0,
+    "per_logical_cpu_percent": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ]
+  },
+  "psutil_version": "7.2.2",
+  "dispatch_source_sha256": {
+    "src/udc/experiments/frozen_resume.py": "997f9658ba74cce0958340bf8d53f4288ce08f7f1b7ae77a50304a2b611c592c",
+    "src/udc/experiments/cpu_affinity.py": "8c57b7831122619c6d0f5ddfb5fdb54dc5c4bc6ae573d52b139aeafee20d557c",
+    "scripts/frozen_unit_worker.py": "0cd7cd5a2847ae83384f2338d475ba655dc71dee6987f45d278a9060dd4d6a74",
+    "src/udc/analysis/confirmation_followthrough.py": "47bdf90844e269e451543951db4e5e435a4682a41d3f47168ddf362b3e655f6f",
+    "src/udc/analysis/static_confirmation_report.py": "20c3be7e9a1a53fec5f3ef61eddcd9c1f436fbb8c772a78aed3596b57837df08",
+    "tests/test_frozen_resume.py": "ab333404f20bf042c027252ac2325a704b4268f24cbff343ffb6b70d5b92f275",
+    "tests/test_cpu_affinity.py": "ac2762d7958464e83bb36aaad7b9413aa9e4c7aaf50015520e9ea9ecf904ff37"
+  },
+  "artifact_sha256": {
+    "reports\\runtime_all_cores_20261027\\REPORT.zh.md": "0e0816d08af0d277cced646a9578743b5ea903fa6da73ea8dfa30b10ca180081",
+    "reports\\static_service_audit_20261026\\runtime_amendment.json": "587e5478fcffb3d9154d945302d61971b909562016ba72df12e9df024e902382",
+    "runs\\runtime_all_cores_20261027\\takeover_inventory.json": "bd80a8ec576da17ad5c5e85530d23aa58443ee1d05282b851ac80b41475cf08a",
+    "runs\\runtime_all_cores_20261027\\resume_v1\\preserved_receipts.json": "31aff713cde2bdba7c195043932144600ea4aaaa63e820b4035c9ad3bed00170",
+    "runs\\runtime_all_cores_20261027\\health_all_cores.json": "4d2bb0b131ec198324a6bf3a32b8297db36579b782209a64b48f4cfd7de8bd2d"
+  }
+}

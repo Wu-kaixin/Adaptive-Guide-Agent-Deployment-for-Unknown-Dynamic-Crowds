@@ -1,0 +1,102 @@
+{
+  "strata": [
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "pairs": 20,
+      "weighted_mean_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "pairs": 20,
+      "weighted_mean_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "pairs": 20,
+      "weighted_mean_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "pairs": 20,
+      "weighted_mean_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "pairs": 20,
+      "weighted_mean_delta": 0.0033422881695951727
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "pairs": 20,
+      "weighted_mean_delta": -0.0023048276243568615
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "pairs": 20,
+      "weighted_mean_delta": -0.0030630398483237065
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "pairs": 20,
+      "weighted_mean_delta": 0.005473858050826277
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "pairs": 20,
+      "weighted_mean_delta": 0.06524355133288537
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "pairs": 20,
+      "weighted_mean_delta": 0.055138548360188853
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "pairs": 20,
+      "weighted_mean_delta": 0.05345631880388387
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "pairs": 20,
+      "weighted_mean_delta": 0.060835510391278116
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "pairs": 20,
+      "weighted_mean_delta": 0.05393759762513937
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "pairs": 20,
+      "weighted_mean_delta": 0.038549201356825956
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "pairs": 20,
+      "weighted_mean_delta": 0.028290717651549457
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "pairs": 4,
+      "weighted_mean_delta": 0.040186991854195775
+    }
+  ],
+  "equal_stratum_mean_delta": 0.024942919757730476,
+  "scope": "secondary planned common-reference total unmet; conditional pairs"
+}

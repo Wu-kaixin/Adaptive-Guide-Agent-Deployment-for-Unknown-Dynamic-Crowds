@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "evidence": "supplementary development experiments; confirmation accounted separately",
+  "python": "3.12.15",
+  "environment": "project-root .venv",
+  "pytest": {"passed": 266, "seconds": 22.25, "basetemp": "runs/static_service_audit_20261026/tests_final", "cacheprovider": false},
+  "pip_check": "passed",
+  "git_diff_whitespace_check": "passed",
+  "python_compile_check": "passed",
+  "document_links": "no missing relative links in reviewed README, architecture, validation, Step1 documents and development report",
+  "plots": "three scientific PNG figures visually inspected; contrast-adjusted mechanism labels regenerated",
+  "verified_new_task_receipts": 4222,
+  "verified_new_trajectory_npz_without_pickle": 4222,
+  "offline_replay": {
+    "mechanism_v1": {"recomputed": 1920, "mismatches": 0},
+    "mechanism_v2": {"recomputed": 1920, "mismatches": 0},
+    "stability_v1": {"recomputed": 320, "mismatches": 0},
+    "pressure_v1": {"recomputed": 2, "mismatches": 0},
+    "pressure_v2": {"recomputed": 41, "mismatches": 0, "nonexecuted_admission_rejections": 19}
+  },
+  "fixed_action_audit": {"rows": 172, "pairs": 86, "planner_reconstruction_max_error": 0.0, "source_files_preserved_after_matching_pre_recorded_hashes": 84},
+  "target_jump": {"additional_error_bound_m": 0.001, "matched_rms_m": 1.5519749873919053, "counts_unchanged": true, "grouping_certified_unchanged": true, "saved_targets_reconstructed_bitwise": true},
+  "pressure_v1": {"scheduled": 60, "recorded": 2, "not_executed": 58, "stopped_on": "SAFETY_VIOLATION", "cause": "unsafe initial guide-human geometry before motion", "net_clearance_m": -0.43108916635863725},
+  "pressure_v2": {"scheduled": 60, "recorded": 60, "safely_completed_partial_service": 41, "group_separation_invalid": 19, "full_success": 0, "executed_intervals": 31694, "unsafe_intervals": 0},
+  "confirmation_manifest_unchanged_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+  "limits": ["ordinary float64 analytic service on declared polyline and density", "planning-only mechanisms and perturbations", "integer and phase changes can cause target jumps", "no universal true-boundary coverage bound", "no dynamic stability proof", "concurrent batches; no wall-clock efficiency comparison", "reserved seeds 5000-5029 not executed"]
+}

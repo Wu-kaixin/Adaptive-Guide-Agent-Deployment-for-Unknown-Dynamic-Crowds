@@ -1,0 +1,24 @@
+{
+  "evidence": "development_pressure",
+  "scheduled": 60,
+  "recorded": 60,
+  "statuses": {
+    "PARTIAL_SERVICE": 41,
+    "GROUP_SEPARATION_INVALID": 19
+  },
+  "by_case": {
+    "baseline": {
+      "PARTIAL_SERVICE": 20
+    },
+    "near_wall": {
+      "PARTIAL_SERVICE": 20
+    },
+    "close_groups": {
+      "GROUP_SEPARATION_INVALID": 19,
+      "PARTIAL_SERVICE": 1
+    }
+  },
+  "executed_intervals": 31694,
+  "unsafe_intervals": 0,
+  "scientific_retries": 0
+}

@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-10-27T19:56:17+09:00",
+  "scope": "Read-only status and saved-artifact audit plus guidance; no new deployment or scientific retry",
+  "latest_status": {
+    "phase": "confirmation_running",
+    "supervisor_pid": 37860,
+    "runner_pid": 15632,
+    "supervisor_started_at": "2026-10-27T00:54:56+09:00",
+    "updated_at": "2026-10-27T19:56:02+09:00",
+    "recorded_rows": 13820,
+    "scheduled_rows": 17280,
+    "by_K": {
+      "K1": 4320,
+      "K2": 4320,
+      "K3": 4320,
+      "K5": 860
+    },
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen",
+    "scientific_retries": 0,
+    "confirmation_complete": false,
+    "runner_alive": true
+  },
+  "diagnostic_source_artifacts": [
+    {
+      "task_id": "K2_circle_s2000_e0.04_sufficient_projected_mass_demand",
+      "source_artifacts_match": {
+        "config.json": true,
+        "planning.json": true,
+        "metrics.json": true,
+        "state.json": true,
+        "trajectory.npz": true
+      },
+      "original_diagnostic_receipt_check": true
+    },
+    {
+      "task_id": "K2_concave_s2003_e0.00_sufficient_projected_mass_demand",
+      "source_artifacts_match": {
+        "config.json": true,
+        "planning.json": true,
+        "metrics.json": true,
+        "state.json": true,
+        "trajectory.npz": true
+      },
+      "original_diagnostic_receipt_check": true
+    }
+  ],
+  "guide_links_missing": [],
+  "diagnostic_script_syntax": "AST parse passed",
+  "previous_phase_report_hashed_artifacts_checked": 11,
+  "previous_phase_report_hashed_artifacts_all_match": true,
+  "new_full_test_run": false,
+  "tracked_diff_whitespace_check": "passed",
+  "artifacts_sha256": {
+    "GUIDE.zh.md": "ab854e0ff9f8116b5e023c171ffaac324bb31948c741bc888f4dce3abb513554",
+    "inspect_path_failure_examples.py": "5881824b7b194f42b5e98d4a0daa43ea1ccc5b2bda7e0dad3e83b593fe90fff7",
+    "path_failure_examples.json": "e202b8ada30c11eb51cd29d5335169fcb0d5be8277cbac12176d6815424a4448",
+    "status_snapshot_194828.json": "b7980703b7b772df7efe0f25c59b7f0c60581990a8322f4b19cbe7441ef34c75"
+  },
+  "guide_review": "Mathematical and denominator review completed; same group/weight, fallback, all-block analysis, and planned-vs-actual scope clarified."
+}

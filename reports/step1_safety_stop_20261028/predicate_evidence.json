@@ -1,0 +1,18 @@
+{
+  "free_covers_whole_edge": true,
+  "free_covers_closest_point": false,
+  "closest_point": [
+    22.07596248535952,
+    7.734731661305819
+  ],
+  "disk_contains_closest_point": true,
+  "stationary_contains_closest_point": true,
+  "whole_edge_outside_free_length_m": 0.4361524669570085,
+  "intersection_free_stationary_area_m2": 7.995376987184513e-16,
+  "free_valid": true,
+  "stationary_valid": true,
+  "free_covers_first_half": false,
+  "free_covers_second_half": false,
+  "free_boundary_distance_closest_m": 0.19891246232438786,
+  "obstacle_crosses_edge": false
+}

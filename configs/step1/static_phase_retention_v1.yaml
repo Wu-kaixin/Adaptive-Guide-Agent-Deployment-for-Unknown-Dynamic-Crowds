@@ -1,0 +1,51 @@
+schema_version: 1
+protocol: static_phase_retention_v1
+evidence: development_new_method
+namespace: 2026102706
+base_protocol: configs/step1/static_multigroup_v2.yaml
+group_counts: [2, 5]
+shapes: [concave, ellipse]
+seeds: {start: 2200, count: 20}
+base_measurement_models: [bounded_disk, common_bias]
+base_actual_error_bound_m: 0.08
+declared_error_bound_m: 0.12
+additional_perturbation_m: [0, 0.001, 0.01, 0.03]
+observation_design: independent_reobservations_of_one_frozen_truth_from_the_same_nominal_observation
+perturbation_direction_coupled_between_magnitudes: true
+layout_generator: original_projected_mass_256_nodes_8_phases
+budget_per_group: 5
+allocation: original_observation_minimax_once_at_nominal_then_fixed_counts
+candidate_pool: original_8_phases_plus_projections_of_all_3_nominal_greedy_layouts_shared_by_every_method
+methods:
+  - sampled_arc_greedy
+  - continuous_arc_greedy
+  - continuous_euclidean_greedy
+  - euclidean_retain_0.002
+  - euclidean_retain_0.005
+primary_retention_uncovered_tolerance: 0.002
+sensitivity_retention_uncovered_tolerance: 0.005
+retention_rule: keep_projected_nominal_euclidean_layout_only_if_admissible_and_local_U_le_best_pool_U_plus_tolerance
+safety_thresholds: unchanged
+truth_used_for_choice: false
+motion_subset:
+  base_measurement_model: bounded_disk
+  perturbation_m: 0.001
+  methods: [continuous_euclidean_greedy, euclidean_retain_0.002]
+  initial_state: common_saved_successful_nominal_euclidean_deployment_final_state
+  baseline_failures: retain_and_do_not_redraw
+statistics:
+  primary: retention_minus_euclidean_greedy_matched_target_RMS_at_1mm
+  independent_block: K_shape_seed_with_both_base_measurement_models_together
+  weighting: equal_mean_of_4_K_shape_strata_after_averaging_the_2_models_within_each_seed
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 2026102707
+  missing_pair_rms_effect_bounds_m: [-50, 50]
+  primary_service_guard: assigned_observed_continuous_U_slack_le_0.002_per_group
+  secondary: [true_reference_worst_U, true_reference_weighted_U, actual_redeployment_safety, actual_travel, failures, retained_groups]
+  inference: development_only_no_confirmatory_claim
+runtime:
+  workers: 1
+  numerical_threads: 1
+  scientific_retries: 0
+  stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION]
+reserved_seeds: [5000, 5029]

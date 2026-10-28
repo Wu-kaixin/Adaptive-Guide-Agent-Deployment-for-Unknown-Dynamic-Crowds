@@ -1,0 +1,10 @@
+{
+  "fixed_observation": "K2_ellipse_s3220",
+  "original_source_sha256": "355271ac346b95076facff8aa1ca7a92babbcb002680636eef4b3100151e2403",
+  "new_source_sha256": "f963215a899b10929df698042ad7c31b508299786c8de2448060ec3eb2a1f534",
+  "original_three_pools_s": 0.13770829999702983,
+  "cached_base_plus_three_pools_s": 0.0476349999953527,
+  "every_option_field_bitwise_equal": true,
+  "scope": "one fixed component microbenchmark, not whole-experiment speedup",
+  "scientific_samples_added": 0
+}

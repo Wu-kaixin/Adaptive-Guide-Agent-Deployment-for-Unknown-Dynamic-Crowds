@@ -1,0 +1,61 @@
+{
+  "rows": 172,
+  "pairs": 86,
+  "stages": [
+    "original_observed_arc_256",
+    "observed_observed_arc_assigned_projected_continuous",
+    "observed_observed_euclidean_assigned_continuous",
+    "exact_reference_observed_euclidean_assigned_continuous",
+    "exact_reference_exact_euclidean_assigned_continuous",
+    "exact_reference_exact_euclidean_all_continuous",
+    "exact_reference_exact_euclidean_all_2048"
+  ],
+  "concave_20seed_means": {
+    "2": [
+      -0.0014005003401197536,
+      -0.0011072970772729451,
+      0.0007379353709573988,
+      0.0018312828827859173,
+      0.0014401368812191728,
+      0.0014401368812191728,
+      0.0015159528991459752
+    ],
+    "5": [
+      -0.025237138746639114,
+      -0.023434303215185037,
+      -0.026156764382359005,
+      -0.022031936406462345,
+      -0.021662739872289494,
+      -0.021662739872289494,
+      -0.021952472072652718
+    ]
+  },
+  "max_planner_reconstruction_error": 0.0,
+  "max_sampled_2048_minus_continuous_worst_abs": 0.0016756629537205137,
+  "maximum_cross_group_service_gain": 0.0,
+  "adverse_ellipse": {
+    "unit": "K5_ellipse_s1200_e0.12",
+    "group_count": 5,
+    "shape": "ellipse",
+    "seed": 1200,
+    "error_bound_m": 0.12,
+    "stage_deltas": [
+      -0.019559332033791232,
+      -0.00442016436315984,
+      -0.0011465586114913773,
+      0.014336615566341249,
+      0.012026665855189966,
+      0.012026665855189966,
+      0.012161251700610332
+    ],
+    "stage_delta_changes": [
+      0.015139167670631393,
+      0.0032736057516684625,
+      0.015483174177832626,
+      -0.0023099497111512823,
+      0.0,
+      0.00013458584542036522
+    ]
+  },
+  "sampled_full_but_continuous_gap_count": 0
+}

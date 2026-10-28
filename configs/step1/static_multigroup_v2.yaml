@@ -1,0 +1,75 @@
+schema_version: 1
+protocol: static_multigroup_bounded_observation_v2
+namespace: 2026102603
+scope: static_global_observation_unlimited_communication_no_crowd_response
+design_reason: explicit_between_group_geometry_and_within_group_demand_heterogeneity_after_null_v1_development
+group_counts: [1, 2, 3, 5]
+shapes: [circle, ellipse, concave, irregular]
+group_size_multipliers: [1.0, 1.35, 1.7, 1.15, 1.5]
+group_hotspot_multipliers: [1.0, 2.0, 8.0, 4.0, 12.0]
+error_bounds_m: [0.0, 0.04, 0.12]
+measurement_model: bounded_disk
+resources: {insufficient: 5, moderate: 11, sufficient: 16}
+resource_rule: fixed_available_guides_per_requested_group_not_a_feasibility_certificate
+layouts: [equal_arc, projected_mass]
+allocators: [perimeter, demand, minimax]
+confirmation_seeds: {start: 2000, count: 20}
+development_seeds: [1200, 1201, 1202]
+room_m: [40.0, 30.0]
+model:
+  group_link_m: 0.95
+  closing_radius_m: 0.40
+  construction_margin_m: 0.005
+  offset_m: 1.30
+  sample_spacing_m: 0.12
+  guide_radius_m: 0.20
+  clearance_m: 0.35
+  guide_distance_m: 0.75
+  wall_distance_m: 0.55
+  planned_gap_m: 1.94
+  max_gap_m: 2.0
+  bandwidth_m: 1.2
+  planning_samples: 256
+  evaluation_samples: 2048
+  phase_bins: 8
+  lloyd_iterations: 32
+  dt_s: 0.2
+  max_speed_m_s: 1.0
+  deadline_s: 1800.0
+  hold_steps: 10
+  position_tolerance_m: 0.03
+  curve_tolerance_m: 0.04
+  speed_tolerance_m_s: 0.03
+  numeric_tolerance_m: 1.0e-7
+assumptions:
+  all_people_detected: true
+  exact_radii_demand_robot_pose: true
+  observation_drawn_once_and_frozen: true
+  grouping: observed_center_connected_components_without_true_group_count
+  geometry: external_envelope_of_circumscribed_uncertainty_disks_with_closing_and_filled_holes
+  separability: deployment_rings_separated_by_guide_distance_otherwise_explicit_rejection
+  execution: fixed_euclidean_assignment_serial_guide_id_order_no_reassignment
+  full_success: observed_gap_and_curve_and_sampled_common_reference_service_and_safe_arrival_hold
+  partial_service_is_full_success: false
+  finite_catalog_optimum_is_continuous_optimum: false
+  new_serial_deadline_replaces_legacy_40s_result: false
+statistics:
+  primary: planned_common_reference_worst_group_uncovered_minimax_minus_perimeter
+  primary_layout: projected_mass
+  primary_resource: insufficient
+  primary_error_bound_m: 0.12
+  direction: negative
+  weighting: equal_mean_of_16_group_count_shape_conditional_paired_means
+  independent_unit: group_count_shape_seed_with_all_errors_resources_and_methods_together
+  failed_units: retain_in_full_denominator_and_as_missing_pairs_without_redraw
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 2026102604
+  confidence: 0.95
+  secondary: [weighted_uncovered, observed_objective, actual_common_service, full_success, stage_failures, safety, time, travel]
+runtime:
+  maximum_workers: 2
+  numerical_threads: 1
+  scientific_retries: 0
+  reserved_seeds: [5000, 5029]
+  confirmation_motion: all
+  stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION]

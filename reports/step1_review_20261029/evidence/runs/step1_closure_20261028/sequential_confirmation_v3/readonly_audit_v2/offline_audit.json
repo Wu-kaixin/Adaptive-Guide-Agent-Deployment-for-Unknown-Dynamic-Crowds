@@ -1,0 +1,50 @@
+{
+  "manifest_sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+  "checked_step_records": 108240,
+  "scheduled_step_records": 108240,
+  "mismatches": [],
+  "all_match": true,
+  "certificate_frames": 13286,
+  "independent_physical_blocks": 80,
+  "evidence": "prospective_confirmation",
+  "by_method": {
+    "recompute_all": {
+      "episodes": 720,
+      "completed_episodes": 688,
+      "accepted_frames": 0,
+      "fallback_frames": 0,
+      "count_switch_events": 2791,
+      "nontrivial_hold_frames": 0
+    },
+    "phase_guard": {
+      "episodes": 720,
+      "completed_episodes": 702,
+      "accepted_frames": 6436,
+      "fallback_frames": 29088,
+      "count_switch_events": 2880,
+      "nontrivial_hold_frames": 0
+    },
+    "counts_phase_guard": {
+      "episodes": 720,
+      "completed_episodes": 702,
+      "accepted_frames": 6850,
+      "fallback_frames": 28672,
+      "count_switch_events": 2586,
+      "nontrivial_hold_frames": 5651
+    }
+  },
+  "primary_joint_completed_pairs": 47,
+  "primary_scheduled_pairs": 80,
+  "primary_conditional_travel_difference": {
+    "estimate": -144.8835022217224,
+    "ci_95": [
+      -215.96677313496434,
+      -84.34275977200032
+    ],
+    "blocks": 47
+  },
+  "full_ledger_travel_identification_range_m": [
+    -2970075.550503868,
+    2969924.449496132
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "confirmation_complete": false,
+  "recorded_rows": 16474,
+  "primary_delta_pp": -0.8198744492572053,
+  "primary_interval_pp": null,
+  "report": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\reports\\static_service_audit_20261026\\REPORT.zh.md",
+  "verified": {
+    "output": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\reports\\static_service_audit_20261026\\confirmation",
+    "confirmation_included": true,
+    "verified_task_receipts": 20696,
+    "trajectories_opened": 20696
+  }
+}

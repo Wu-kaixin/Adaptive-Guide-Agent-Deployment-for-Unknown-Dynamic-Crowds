@@ -1,6 +1,7 @@
 """The Step 1 index and the Step 2a protocol stay reviewable and unimplemented."""
 import inspect
 import json
+import sys
 from pathlib import Path
 
 import yaml
@@ -12,7 +13,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_delivery_index_paths_match_this_checkout():
     index = json.loads((ROOT / 'docs' / 'step1_delivery_index.json').read_text(encoding='utf-8'))
-    runs_present = (ROOT / 'runs').is_dir()
     for entry in index['entries']:
         path = ROOT / entry['path']
         availability = entry['availability']
@@ -21,9 +21,16 @@ def test_delivery_index_paths_match_this_checkout():
         elif availability == 'absent':
             assert not path.exists(), entry['id']
         elif availability == 'local_gitignored':
-            if runs_present:
-                assert path.exists(), entry['id']
+            # A checkout can contain unrelated new runs without the originating
+            # machine's optional evidence. Missing data must not be fabricated.
             assert entry['required'] is False
+            assert entry['path'].startswith('runs/')
+            assert entry['reason']
+            assert isinstance(entry['local_presence_at_export_20261029'], bool)
+        elif availability == 'runtime_environment':
+            key = 'win32' if sys.platform == 'win32' else 'posix'
+            assert (ROOT / entry['platform_paths'][key]).is_file(), entry['id']
+            assert Path(sys.prefix).resolve() == (ROOT / '.venv').resolve()
         else:
             raise AssertionError(f"Unknown availability for {entry['id']}")
     for entry in index['unrecoverable']:
@@ -31,8 +38,6 @@ def test_delivery_index_paths_match_this_checkout():
         assert entry['availability'] == 'unrecoverable'
         assert entry['reason']
     for relative in index['minimal_data']:
-        if relative.startswith('.venv') and not runs_present and not (ROOT / relative).exists():
-            continue
         assert (ROOT / relative).exists(), relative
 
 

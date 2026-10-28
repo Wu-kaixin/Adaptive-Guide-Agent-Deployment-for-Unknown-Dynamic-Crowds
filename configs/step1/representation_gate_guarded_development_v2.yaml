@@ -1,0 +1,52 @@
+schema_version: 1
+protocol: representation_gate_guarded_development_v2
+evidence: development_new_method
+namespace: 2026102808
+base_protocol: configs/step1/static_multigroup_v2.yaml
+group_counts:
+- 2
+- 5
+shapes:
+- concave
+- ellipse
+seeds:
+  start: 2410
+  count: 3
+error_bound_m: 0.12
+measurement_model: bounded_disk
+resources:
+- moderate
+- sufficient
+layout: projected_mass
+allocators:
+- perimeter
+- minimax
+admissions:
+- euclidean_original
+- serial_polygon_consistent
+candidate_rule: same_eight_phases_and_original_lloyd_only_add_explicit_pair_polygon_admission
+full_target_check: same_admission_on_all_selected_targets_before_execution
+execution: same_fixed_assignment_serial_order_with_audited_implicit_graph_backend
+thresholds: unchanged
+primary: complete_target_arrival_and_path_failure_by_admission_with_full_denominator
+secondary:
+- planned_and_actual_continuous_true_service
+- selected_counts
+- observed_objective
+- full_success
+- travel_on_joint_completions
+- safety
+inference: development_only_12_physical_blocks_not_96_independent_samples
+runtime:
+  maximum_workers: 32
+  numerical_threads: 1
+  scientific_retries: 0
+stop_on:
+- EXPERIMENT_ERROR
+- SAFETY_VIOLATION
+reserved_seeds:
+- 5000
+- 5029
+independent_segment_gate: true
+safety_version: independent_segment_gate_after_original_seed2004_safety_stop
+original_confirmation_policy: stopped_record_preserved_no_completion_or_retry_under_old_protocol

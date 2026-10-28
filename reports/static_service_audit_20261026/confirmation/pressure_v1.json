@@ -1,0 +1,21 @@
+{
+  "evidence": "development_pressure",
+  "scheduled": 60,
+  "recorded": 2,
+  "statuses": {
+    "PARTIAL_SERVICE": 1,
+    "SAFETY_VIOLATION": 1
+  },
+  "by_case": {
+    "baseline": {
+      "PARTIAL_SERVICE": 1
+    },
+    "near_wall": {
+      "SAFETY_VIOLATION": 1
+    },
+    "close_groups": {}
+  },
+  "executed_intervals": 638,
+  "unsafe_intervals": 0,
+  "scientific_retries": 0
+}

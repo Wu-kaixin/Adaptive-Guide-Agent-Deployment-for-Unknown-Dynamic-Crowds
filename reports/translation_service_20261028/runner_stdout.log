@@ -1,0 +1,13 @@
+{
+  "recorded_rows": 384,
+  "scheduled_rows": 384,
+  "stopped": false,
+  "not_recorded_rows": 0,
+  "statuses": {
+    "PARTIAL_SERVICE": 96,
+    "PLANNED": 288
+  },
+  "independent_physical_blocks": 12,
+  "reference_scope": "anchored_quantized_external_v1",
+  "original_world_reference_also_saved": true
+}

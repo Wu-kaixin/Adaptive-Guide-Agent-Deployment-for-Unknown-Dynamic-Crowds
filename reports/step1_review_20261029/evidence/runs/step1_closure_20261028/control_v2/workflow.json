@@ -1,0 +1,110 @@
+{
+  "prepared_at": "2026-10-28T18:21:14.435226+09:00",
+  "stages": [
+    {
+      "name": "routing_confirmation_v2",
+      "kind": "routing",
+      "study": "runs/step1_closure_20261028/deployment_confirmation_v2",
+      "manifest_sha256": "c1322a6bfa077b51e064fa7f3afc3413595d27897f12da62fd12c0da84b5e802",
+      "module": "udc.experiments.deployment_recovery",
+      "workers": 32,
+      "activation_gate": false
+    },
+    {
+      "name": "sequence_development_v3",
+      "kind": "sequential",
+      "study": "runs/step1_closure_20261028/sequential_development_v3",
+      "manifest_sha256": "30e56ec340d2b73bbd95b64193933817ceba4a123f31314f7bc2d609dbfc4ea6",
+      "module": "udc.experiments.sequential_deployment",
+      "workers": 32,
+      "activation_gate": true
+    },
+    {
+      "name": "sequence_confirmation_v3",
+      "kind": "sequential",
+      "study": "runs/step1_closure_20261028/sequential_confirmation_v3",
+      "manifest_sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+      "module": "udc.experiments.sequential_deployment",
+      "workers": 32,
+      "activation_gate": false
+    }
+  ],
+  "existing_gates": [
+    {
+      "path": "runs/step1_closure_20261028/recovery_cohort_v2/offline_replay.json",
+      "stderr": "runs/step1_closure_20261028/recovery_cohort_v2/parallel_replay_stderr.log"
+    },
+    {
+      "path": "runs/step1_closure_20261028/deployment_development_v2/offline_replay.json",
+      "stderr": "runs/step1_closure_20261028/deployment_development_v2/runner_stderr.log"
+    },
+    {
+      "path": "runs/step1_closure_20261028/sequential_smoke_v3/offline_audit.json",
+      "stderr": "runs/step1_closure_20261028/sequential_smoke_v3/runner_stderr.log"
+    }
+  ],
+  "existing_reports": [
+    {
+      "study": "runs/step1_closure_20261028/recovery_cohort_v2",
+      "name": "recovery_cohort_v2_results"
+    },
+    {
+      "study": "runs/step1_closure_20261028/deployment_development_v2",
+      "name": "deployment_development_v2_results"
+    }
+  ],
+  "support_source_study": "runs/step1_closure_20261028/sequential_development_v3",
+  "support_audit_output": "reports/step1_closure_20261028/general_support_old_actions_strict_v2",
+  "sealed_files": {
+    "engine_snapshot/audit_sequential_study.py": "61a358b4fa87de96c1c9cbf0484919fd15907777b9449165d343ad6ed5c7f00e",
+    "engine_snapshot/closure_reports.py": "82223a2effa44f3e0293aee7c5679ab1fbf2ce7cf9bcbdeaa4c8b52e11902b5b",
+    "engine_snapshot/report_closure_study.py": "603517beb2c4e61e348fa704f503a7aefec102f7e5ff961f6ba8248fcda69904",
+    "engine_snapshot/sequential_audit.py": "aec0d4acbbb568d9c67269005ed41a5da743eb435493cd81a8224cb9d5c7228d",
+    "engine_snapshot/step1_closure_flow.py": "ff38a89b6a6077c7900098934ae07e139b3b5670cb6d18b9e0f854e472854199"
+  },
+  "tests": {
+    "passed": 348,
+    "duration_s": 30.19,
+    "pip_check": "PASS",
+    "temporary_directory": "project-local .tmp/pytest-step1-audit-v2/session1",
+    "initial_test_attempt": "290 passed,58 tmp_path setup permission errors; subsequent full run with local basetemp passed"
+  },
+  "phase_cache_parity_benchmark": "reports/step1_closure_20261028/phase_cache_benchmark.json",
+  "original_confirmation_806_missing": "preserved_not_restarted",
+  "scientific_retries": 0,
+  "maximum_compute_workers": 32,
+  "numerical_threads_per_worker": 1,
+  "reference_guarantee_scope": "original reference support dominance with directly observation-certified group identity; no anchored-reference substitution",
+  "future_scope": "no dynamic crowd or restricted communication experiment; no unconditional convergence claim",
+  "sequential_analysis_source": "engine_snapshot/sequential_audit.py",
+  "sequential_audit_directory": "readonly_audit_v2",
+  "predecessor_control": "runs/step1_closure_20261028/control_v1",
+  "predecessor_failure": "Readonly builtin sum vs repeated += mismatch; no scientific task rerun.",
+  "readonly_repair_diagnosis": "reports/step1_closure_20261028/readonly_audit_repair_v2/summation_diagnosis.json",
+  "preserved_predecessor_sha256": {
+    "workflow.json": "8754afe359a6c9c0c6c08d9405015c6adfc9ce8a514e3c2de9d8f04b7ce2245c",
+    "runner.lock": "34fff3315be23065c492fdd658839c235c927e4debd7f9c7e1ff04b85328d587",
+    "error.json": "0ba9e8e6a15a4a02fbdbc01e97e36d39bb1f9fbb6059981155fc564a97b9b235",
+    "sequence_development_v3_audit_stderr.log": "7d95ec507483eb078977170ba20af3c8dc6848700fcee7cf55602a1517da8ed8"
+  },
+  "frozen_study_verifications": [
+    {
+      "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\deployment_confirmation_v2",
+      "manifest_sha256": "c1322a6bfa077b51e064fa7f3afc3413595d27897f12da62fd12c0da84b5e802",
+      "source": "own unchanged frozen source_snapshot",
+      "verified": true
+    },
+    {
+      "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_development_v3",
+      "manifest_sha256": "30e56ec340d2b73bbd95b64193933817ceba4a123f31314f7bc2d609dbfc4ea6",
+      "source": "own unchanged frozen source_snapshot",
+      "verified": true
+    },
+    {
+      "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_confirmation_v3",
+      "manifest_sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+      "source": "own unchanged frozen source_snapshot",
+      "verified": true
+    }
+  ]
+}

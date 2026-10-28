@@ -1,0 +1,60 @@
+schema_version: 1
+protocol: representation_gate_confirmation_v2
+evidence: prospective_confirmation
+namespace: 2026102810
+base_protocol: configs/step1/static_multigroup_v2.yaml
+group_counts:
+- 2
+- 5
+shapes:
+- concave
+- ellipse
+seeds:
+  start: 2600
+  count: 20
+error_bound_m: 0.12
+measurement_model: bounded_disk
+resources:
+- moderate
+- sufficient
+layout: projected_mass
+allocators:
+- perimeter
+- minimax
+admissions:
+- euclidean_original
+- serial_polygon_consistent
+candidate_rule: unchanged_eight_phases_and_lloyd_only_explicit_pair_polygon_admission
+full_target_check: same_admission_on_all_selected_targets_before_execution
+execution: same_fixed_assignment_serial_order_with_audited_implicit_graph_backend
+thresholds: unchanged
+statistics:
+  primary: safely_completed_indicator_consistent_minus_original
+  direction: positive
+  independent_block: K_shape_seed_with_resources_and_allocators_together
+  within_block: equal_mean_of_4_resource_allocator_pairs
+  weighting: equal_mean_of_4_K_shape_strata
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 2026102804
+  failure_indicator: zero_for_recorded_scientific_failure_not_for_unexecuted_missing_rows
+  incomplete_batch: no_confirmatory_effect_claim
+  secondary:
+  - full_success
+  - path_failure_causes
+  - continuous_true_service
+  - selected_counts
+  - joint_completion_travel
+  - safety
+runtime:
+  maximum_workers: 32
+  numerical_threads: 1
+  scientific_retries: 0
+stop_on:
+- EXPERIMENT_ERROR
+- SAFETY_VIOLATION
+reserved_seeds:
+- 5000
+- 5029
+independent_segment_gate: true
+safety_version: independent_segment_gate_after_original_seed2004_safety_stop
+original_confirmation_policy: stopped_record_preserved_no_completion_or_retry_under_old_protocol

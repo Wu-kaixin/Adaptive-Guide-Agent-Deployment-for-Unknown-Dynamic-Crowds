@@ -1,0 +1,37 @@
+[
+  {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\mechanism_v1",
+    "manifest_sha256": "291e02a078733013bf8076f9d6219499842fd0f6d90bb8d7595972f8f55754e0",
+    "verified_inputs": 320,
+    "verified_receipts": 1920,
+    "trajectories_opened_without_pickle": 1920
+  },
+  {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\mechanism_v2",
+    "manifest_sha256": "a320257d326aa35cfade132bd53260b173edf1a374dcfec69b588705623d02c4",
+    "verified_inputs": 320,
+    "verified_receipts": 1920,
+    "trajectories_opened_without_pickle": 1920
+  },
+  {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\stability_v1",
+    "manifest_sha256": "70b24f30aab9f408b22f3730776b532d1bbffec923b5eac9354ee368fbc0d7c6",
+    "verified_inputs": 360,
+    "verified_receipts": 320,
+    "trajectories_opened_without_pickle": 320
+  },
+  {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\pressure_v1",
+    "manifest_sha256": "6ea3ee3950876321d8b04f45801be85764bda961671095bb7d5e95d2f9cba20a",
+    "verified_inputs": 120,
+    "verified_receipts": 2,
+    "trajectories_opened_without_pickle": 2
+  },
+  {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\pressure_v2",
+    "manifest_sha256": "92d9e25f2c0737d51065c0e212260196eea5c971a30d3fd25124c29f82b7c49f",
+    "verified_inputs": 120,
+    "verified_receipts": 60,
+    "trajectories_opened_without_pickle": 60
+  }
+]

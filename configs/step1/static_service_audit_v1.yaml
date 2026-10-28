@@ -1,0 +1,30 @@
+schema_version: 1
+protocol: static_service_audit_v1
+evidence: development_mechanism_audit
+date: '2026-10-26'
+source_studies:
+  - runs/static_multigroup_20261026/planning_grid_v2
+  - runs/static_multigroup_20261026/heterogeneous_20seed_v2
+selection:
+  resource: insufficient
+  layout: projected_mass
+  allocators: [perimeter, minimax]
+quadrature_samples: [256, 2048, 8192]
+evaluation:
+  geometry: [observed, exact_reference]
+  demand_source: [observed, exact]
+  distance_and_provider: [arc_assigned_projected, euclidean_assigned, euclidean_all]
+  fixed_targets: true
+  exact_arc_projection: diagnostic_only_nearest_polyline_projection
+  continuous_service: analytic_disk_segment_intersections_and_piecewise_linear_density_integral
+  floating_point_certificate: false
+  truth_used_for_control: false
+statistics:
+  report_all_selected_pairs: true
+  decomposition: sequential_telescoping_with_declared_order_not_unique_causal_attribution
+  missing_pair_effect_range: [-1, 1]
+  confirmatory_inference: false
+confirmation:
+  study: runs/static_multigroup_20261026/confirmation_v2_frozen
+  retain_original_estimand_and_locks: true
+  run_from_frozen_source_snapshot: true

@@ -1,6 +1,10 @@
 # Step 1 可复核交付索引
 
-机器可读清单是 [step1_delivery_index.json](step1_delivery_index.json)。`present` 必须能在仓库里打开。`local_gitignored` 在本机 `runs/` 存在时必须能打开，但不进入 Git。`absent` 必须仍然不存在。`unrecoverable` 是明确无法恢复的内容，不能用重建文件顶替。
+机器可读清单是 [step1_delivery_index.json](step1_delivery_index.json)。`present` 必须是可交付文件。
+`runtime_environment` 按Windows/Linux选择本项目的`.venv`解释器；环境本身不进入Git。
+`local_gitignored` 是原机器的可选本地工件，是否存在不能由`runs/`根目录推断；`local_presence_at_export_20261029`记录本次实际检查，不代表其他机器可用。
+`absent` 必须仍然不存在。`unrecoverable` 是明确无法恢复的内容，不能用重建文件顶替。
+原远端索引字节见[28f57b9快照](../reports/step1_review_20261029/upstream_delivery_index_28f57b9.json)。最新扩展结果另见[Step 1审查入口](../reports/step1_review_20261029/README.md)。
 
 不要复制整个 `runs/`，不要重写历史哈希锁，也不要把 `runs/reconstructed_20261023/` 称作原始数据。
 
@@ -42,4 +46,5 @@
 
 历史 1620 任务属于 `f5b5d9c`，本索引不把它的轨迹当作当前代码产物。完整 4860 因子表没有结果目录。5000–5029 没有开发运行。
 
-`runs/summary-error-audit-94tjgmgt/audit_result.json` 存在，而且只含合成任务。它不是科研批次。
+原远端记录`runs/summary-error-audit-94tjgmgt/audit_result.json`为合成会计审计，它不是科研批次。
+该文件及`runs/step1-closeout-accounting-audit/audit.json`在本次机器上缺失，未为发布重建，不作为本轮新验证证据。

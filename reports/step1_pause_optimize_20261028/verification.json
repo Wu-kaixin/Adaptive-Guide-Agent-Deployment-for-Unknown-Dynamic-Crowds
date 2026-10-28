@@ -1,0 +1,140 @@
+{
+  "checked_at": "2026-10-28T01:34:04+09:00",
+  "pytest": {
+    "passed": 305,
+    "seconds": 59.4
+  },
+  "pip_check": "passed",
+  "preservation": {
+    "started_at": "2026-10-28T00:49:05+09:00",
+    "saved_at": "2026-10-28T00:50:18+09:00",
+    "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+    "complete_tasks": 14864,
+    "scheduled_tasks": 17280,
+    "unrecorded_tasks": 2416,
+    "incomplete_directories": [],
+    "statuses": {
+      "PARTIAL_SERVICE": 8095,
+      "FULL_SUCCESS": 6306,
+      "PATH_NOT_FOUND": 463
+    },
+    "files_verified_and_archived": 90548,
+    "uncompressed_bytes": 2668452667,
+    "archive": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\checkpoint\\frozen_study_preserved.zip",
+    "archive_sha256": "1b84399eb69820681071d45f2bdf2f59fef078b8013150ff0bbcbdc098fd26e1",
+    "archive_crc_verified": true,
+    "file_index_sha256": "53aa1b6654cdc019494629526d905b7e764f8fb920813464476eb724b3e252ce",
+    "receipt_index_sha256": "370c7bbc86e5c73d5ec0d60147b6e9a77bac7bfcfeb26211470d55beccf7f5c0",
+    "original_artifacts_modified": false,
+    "in_flight_process_memory": "Retained in suspended processes, not serialized to disk."
+  },
+  "backend_policy": {
+    "created_at": "2026-10-28T01:13:18+09:00",
+    "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+    "backend": "implicit_complete_visibility_strict_relax_v2",
+    "backend_source": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\engine_snapshot\\accelerated_execution.py",
+    "backend_sha256": "b53a6ee0189daeee5f2eafe2eed4c8be14279cd299f85b64012a24b1bbd47657",
+    "worker_entrypoint": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\engine_snapshot\\frozen_unit_worker.py",
+    "worker_entrypoint_sha256": "d46abf300fffbc4f934e41a6c3bda8b705dd2e743c9ec020f50a1e20b3f41582",
+    "scientific_semantics": "Same complete finite graph, coordinates, predicate direction, edge arithmetic, strict relaxation, tie order and original execution policy. Geometry indexing and visibility are evaluated on demand.",
+    "gate": {
+      "cases": 10,
+      "all_saved_execution_and_metrics_match": true,
+      "summary": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\performance\\matrix_v2\\summary.json",
+      "summary_sha256": "bd043ae229e290d68723239cda245b50e0d5d21388d3e8d32f4636574e2b000d",
+      "full_tests_passed": 303
+    },
+    "provenance": "Original snapshot remains unchanged on disk. Newly executed tasks use this separately sealed backend; unit-level receipts list new task IDs."
+  },
+  "fixed_case_parity": {
+    "cases": 10,
+    "all_match": true
+  },
+  "failure_census": {
+    "cases": 463,
+    "scheduled_cases": 463,
+    "categories": {
+      "analytic_clearance_passed_circumscribed_polygon_rejected": 358,
+      "strictly_separated_serial_components": 105
+    },
+    "original_reasons": {
+      "fixed_endpoint_occupied": 358,
+      "finite_visibility_graph": 105
+    },
+    "new_robot_executions": 0,
+    "new_independent_scenes": 0,
+    "scope": "Controller-geometry diagnoses of a fixed checkpoint, not global physical infeasibility proofs."
+  },
+  "offline_original_evaluator_smoke": {
+    "checked": 18,
+    "mismatches": 0
+  },
+  "runtime_status": {
+    "phase": "running",
+    "updated_at": "2026-10-28T01:34:01+09:00",
+    "runner_pid": 40236,
+    "workers": 32,
+    "numerical_threads_per_worker": 1,
+    "recorded_rows": 15203,
+    "scheduled_rows": 17280,
+    "by_K": {
+      "1": 4320,
+      "2": 4320,
+      "3": 4320,
+      "5": 2243
+    },
+    "in_flight_units": 32,
+    "completed_resumed_units": 18,
+    "remaining_units_at_start": 155,
+    "initial_preserved_rows": 14864,
+    "elapsed_seconds": 1155.9,
+    "runtime_amendment": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\reports\\static_service_audit_20261026\\runtime_backend_amendment_20261028.json",
+    "scientific_retries": 0,
+    "operational_restart": true,
+    "stopped_on_error_or_safety": false,
+    "backend_policy": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\backend_policy.json"
+  },
+  "source_sha256": {
+    "src/udc/multigroup/accelerated_execution.py": "b53a6ee0189daeee5f2eafe2eed4c8be14279cd299f85b64012a24b1bbd47657",
+    "src/udc/analysis/performance_profile.py": "f360ab9daf651c53c63ce416a033d9bfed4584220abee07ea2ae9dd561047ed1",
+    "src/udc/analysis/performance_matrix.py": "1659745c4b0909210001c2904566418a39a0961ffb8c087c1a13f2b3066a565f",
+    "src/udc/experiments/preservation.py": "4869a717486633cc7aca336b7bfb73781a32305498e0346d32bb258dd1721867",
+    "src/udc/experiments/frozen_resume.py": "66e40b24dfd271a4d6a5f2c26efd7d8acd376f441200fa25e122bda84c2e1e38",
+    "src/udc/analysis/parallel_frozen_replay.py": "81c078269182186f6a3d33561fcdfb0f3d7dc828b10f8f2dd187ca06862234f3",
+    "src/udc/analysis/frozen_replay_worker.py": "222e69661c0e89b3abf264b945ec2bdd56ef3de8514066598e80441704431d73",
+    "src/udc/analysis/path_failure_census.py": "0b3610e99f25e060114f0907ab447a7a913a2a832d3f0b81b8a5e9a76334cb95",
+    "src/udc/analysis/confirmation_followthrough.py": "5c4e9b01a9b62322c928673cb328b93700cf4626afabfe5a9102fe68b42b52ad",
+    "src/udc/analysis/static_confirmation_report.py": "04145dd95d0ec34dedb858eaf47b923b259b950d64d52bc32babc2886e7cfd7a",
+    "scripts/frozen_unit_worker.py": "d46abf300fffbc4f934e41a6c3bda8b705dd2e743c9ec020f50a1e20b3f41582",
+    "scripts/benchmark_frozen_execution.py": "aca55b7e68a95f1701f23fd35d8fb314bc91964e82fed99d16707f46b324750d",
+    "scripts/replay_frozen_unit.py": "90d4aebf71a52fbcd04863012324d34fad5c0f354d3dd153fec1bd2b8945ac38",
+    "scripts/inspect_frozen_failures.py": "7c7f4328c27dccfe4ceafe3cd1d694873b386ab603762d9643b31ed8fe76172f",
+    "tests/test_accelerated_execution.py": "11e708ce9dd8c2c9d1e1b0b74ad25fa55b50eb657753de7fdb8683a075c2010e",
+    "tests/test_path_failure_census.py": "cf56490d080afdfaeaba843f9f0991bcb859acd6eaaec923d38267bafc7ffd9b"
+  },
+  "artifact_sha256": {
+    "runs/step1_pause_optimize_20261028/checkpoint/checkpoint.json": "0727950efd3e2f66810b67f111ac34b4f354eab3d48004fa83da5c40d4cb5cc4",
+    "runs/step1_pause_optimize_20261028/checkpoint/pause_receipt.json": "9d77fc9ce2bee5264559ce10f1edf2b8d7c68a89da752958697dd61d1a57b693",
+    "runs/step1_pause_optimize_20261028/checkpoint/retirement_receipt.json": "7576b4c689b4a0c3658f79096630eb455eb244e538a352886fbb5fc56efcace4",
+    "runs/step1_pause_optimize_20261028/backend_policy.json": "fb988e2af2fddef08f10c9d12455adfb674def6f6e3f0512cdfadf57964c2a83",
+    "runs/step1_pause_optimize_20261028/performance/matrix_v1/summary.json": "1d164e16feb764f8f152892eb9fd1113ec4d7dd7f2627efe9f76f4cdce578665",
+    "runs/step1_pause_optimize_20261028/performance/matrix_v2/summary.json": "bd043ae229e290d68723239cda245b50e0d5d21388d3e8d32f4636574e2b000d",
+    "runs/step1_pause_optimize_20261028/failure_census/cohort.json": "4d9f43d55b2b1c03944e3b2c542a736904dcc34e9a6703a74b4e274c6c6f9648",
+    "runs/step1_pause_optimize_20261028/failure_census/records.json": "ea80b08b47a62510e4eaae9a5e970a2dd0076df04f3b2f34a583bd1811cd96c9",
+    "runs/step1_pause_optimize_20261028/failure_census/summary.json": "bef75aa19a0b32e9f0bfda1c29bc1dc53d2380ae74a266ff9a9df2fa506b73ce",
+    "runs/step1_pause_optimize_20261028/failure_census/source_snapshot.py": "c3ac9f2eecc740eb39ce30228324aa581589f162c3808651a246fccb9d88c408",
+    "runs/step1_pause_optimize_20261028/sealed_worker_smoke.json": "d9305ac4dc1ca2c02aabbe43b95eec7a131c9c4c368d06b64056efc1f459080c",
+    "runs/step1_pause_optimize_20261028/health_after_resume.json": "fe5adc6332583f78f2b83ce1e318cfd1fd55f7398832e18f3b21d7464a2d069c",
+    "reports/step1_pause_optimize_20261028/REPORT.zh.md": "c1bcb44c767388624803cd9c9fa133fa7d7dbca1c10e347eaff5504b306e2969"
+  },
+  "original_manifest_unchanged": true,
+  "sealed_backend_matches_policy": true,
+  "limits": [
+    "In-flight work was retained in RAM during audit, then interrupted and recalculated at backend handoff.",
+    "Fixed-action diagnostics are not new independent confirmation.",
+    "Full confirmation and its independent replay are still pending.",
+    "No true-service bound or dynamic safety claim from this performance work."
+  ],
+  "missing_report_links": [],
+  "tracked_diff_whitespace_check": "passed"
+}

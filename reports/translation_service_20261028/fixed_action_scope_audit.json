@@ -1,0 +1,116 @@
+{
+  "old_manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+  "fixed_planning_records": 3200,
+  "retention_greedy_pairs": 640,
+  "unsupported_pairs_rejected": 640,
+  "maximum_original_true_loss": 0.011346670485246846,
+  "seed2210_30mm_witnesses": [
+    {
+      "task_id": "K2_concave_s2210_bounded_disk_p0.03_euclidean_retain_0.002",
+      "loss": 0.00043490360562981056,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "8646205ecfb597c5c63d8487035786c3a39ddb45ca40d814a34b56f68c1fea48",
+      "maximum_person_error_m": 0.10327510328914741,
+      "maximum_residual_from_first_person_bias_m": 0.16651975838333924
+    },
+    {
+      "task_id": "K2_concave_s2210_common_bias_p0.03_euclidean_retain_0.002",
+      "loss": 0.0,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "02bed1aff8d3bb02c56e07fb4b52730d6eb5e0b200e336aec9a3f90ee8cf4351",
+      "maximum_person_error_m": 0.10483141675364058,
+      "maximum_residual_from_first_person_bias_m": 0.0384699136483789
+    },
+    {
+      "task_id": "K2_ellipse_s2210_bounded_disk_p0.03_euclidean_retain_0.002",
+      "loss": 0.0010180668782785451,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "0b2562b4ee6ce871f970cd945c44c513827171e9508273a805f06afbf5870c41",
+      "maximum_person_error_m": 0.09639127698017706,
+      "maximum_residual_from_first_person_bias_m": 0.17449625499370314
+    },
+    {
+      "task_id": "K2_ellipse_s2210_common_bias_p0.03_euclidean_retain_0.002",
+      "loss": 0.0015567387892673201,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "727ab5b4b06cd01f6ed8e158e69303135fba24ec9473c91bc2a67266367b1fc6",
+      "maximum_person_error_m": 0.10741349684689279,
+      "maximum_residual_from_first_person_bias_m": 0.05173046870910378
+    },
+    {
+      "task_id": "K5_concave_s2210_bounded_disk_p0.03_euclidean_retain_0.002",
+      "loss": 0.011346670485246846,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "61fa9688e6ec8072efebbedca4c7cce101083f8177c9f51de451c539dc0ec4fd",
+      "maximum_person_error_m": 0.10121614242567314,
+      "maximum_residual_from_first_person_bias_m": 0.15397632879585582
+    },
+    {
+      "task_id": "K5_concave_s2210_common_bias_p0.03_euclidean_retain_0.002",
+      "loss": 6.306325068206053e-05,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "a445e2e87557888bd8e33c4b9b4ae34bbeba5cdf392820899102f41aa0fa4140",
+      "maximum_person_error_m": 0.10738503917869603,
+      "maximum_residual_from_first_person_bias_m": 0.03937623210348261
+    },
+    {
+      "task_id": "K5_ellipse_s2210_bounded_disk_p0.03_euclidean_retain_0.002",
+      "loss": 0.0,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "72da49d0c62cf9544b9994afc51d1110ac98106fc2b1abf4a164fb47d7ded60d",
+      "maximum_person_error_m": 0.10350225989147838,
+      "maximum_residual_from_first_person_bias_m": 0.16729681173116231
+    },
+    {
+      "task_id": "K5_ellipse_s2210_common_bias_p0.03_euclidean_retain_0.002",
+      "loss": 0.0,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "unsupported_error_model"
+      },
+      "metric": "original continuous world-reference worst-group gap",
+      "original_receipt_sha256": "39fa948423e8f3f79b27c0cc5c29dc6d6fdfe725fafc96880271b2edbf3005c7",
+      "maximum_person_error_m": 0.10971143114156107,
+      "maximum_residual_from_first_person_bias_m": 0.043711104268482584
+    }
+  ],
+  "source_actions_reoptimized": false,
+  "new_independent_samples": 0,
+  "limit": "Conservative rejection regression; does not solve original general-error service bound"
+}

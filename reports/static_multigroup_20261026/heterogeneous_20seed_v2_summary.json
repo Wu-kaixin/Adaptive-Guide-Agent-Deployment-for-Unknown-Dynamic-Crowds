@@ -1,0 +1,465 @@
+{
+  "evidence": "development",
+  "scheduled_tasks": 80,
+  "recorded_tasks": 80,
+  "not_yet_recorded": 0,
+  "statuses": {
+    "PARTIAL_SERVICE": 80
+  },
+  "full_successes": 0,
+  "deployment_completed": 80,
+  "motion_tasks": 80,
+  "executed_intervals": 65023,
+  "unsafe_intervals": 0,
+  "partition_mismatch_task_ids": [],
+  "error_bound_violation_task_ids": [],
+  "finite_catalog_dominance_failures": [],
+  "paired_common_reference_differences": [
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1201,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1202,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1203,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1205,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1204,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1207,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.002069123097715231
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1206,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1208,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1209,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1210,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1211,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.017196566500460975
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1212,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1213,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.006064450951806022
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1214,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1215,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1216,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1217,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1218,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1219,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.00912716362836774
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.030364597253481396
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1201,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03439439467715849
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1202,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.025245968297262555
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1203,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03627734331884652
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1204,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.040750517093087024
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1205,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.025503603375989725
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1206,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.008754540472047712
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1207,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.033039880334934435
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1208,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.001375374685699593
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1209,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.022542302268417802
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1210,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1211,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.021404977662998592
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1212,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.037808893592523485
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1213,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.009920249919438295
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1214,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03863865039764458
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1215,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.036441621231364074
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1217,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0025582189010418532
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1216,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1219,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.015496053771203944
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1218,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.023648692001997984
+    }
+  ],
+  "limits": [
+    "development is not prospective confirmation",
+    "finite catalog, not continuous optimality",
+    "separated static components",
+    "serial fixed assignment is not complete MAPF",
+    "geometric service is not demonstrated crowd influence"
+  ],
+  "primary_analysis": {
+    "estimand": "planned_common_reference_worst_group_uncovered_minimax_minus_perimeter",
+    "evidence": "development",
+    "strata": [
+      {
+        "group_count": 2,
+        "shape": "concave",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0015159528991459752,
+        "negative": 1,
+        "zero": 16,
+        "positive": 3
+      },
+      {
+        "group_count": 5,
+        "shape": "concave",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.021952472072652718,
+        "negative": 17,
+        "zero": 2,
+        "positive": 1
+      }
+    ],
+    "equal_stratum_mean_delta": -0.010218259586753372,
+    "paired_stratified_95_interval": [
+      -0.013386943609573399,
+      -0.0068680480116487756
+    ],
+    "uncalculable_bootstrap_share": 0.0,
+    "independent_unit": "group_count_shape_seed_with_all_errors_resources_and_methods_together",
+    "interpretation": "conditional on both methods producing planned targets; full failure ledger retained",
+    "supports_preregistered_negative_direction": true,
+    "prospective_confirmation_completed": false
+  },
+  "stopped_on_error_or_safety": false
+}

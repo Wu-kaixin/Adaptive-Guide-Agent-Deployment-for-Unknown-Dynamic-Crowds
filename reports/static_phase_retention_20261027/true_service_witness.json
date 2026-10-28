@@ -1,0 +1,55 @@
+{
+  "selection": "descriptive largest true worst-group loss among all completed 30mm primary-policy pairs",
+  "sequence_id": "K5_concave_s2210_bounded_disk",
+  "group_count": 5,
+  "shape": "concave",
+  "seed": 2210,
+  "base_measurement_model": "bounded_disk",
+  "max_actual_person_position_error_m": 0.10121614242567314,
+  "declared_person_position_error_bound_m": 0.12,
+  "observed_per_group_budget": 0.002,
+  "observed_worst_delta": 0.0018544135533689055,
+  "observed_weighted_delta": 0.0010980491072832832,
+  "max_assigned_observed_slack": 0.0018544135533689055,
+  "true_worst_delta": 0.011346670485246846,
+  "true_weighted_delta": 0.00442820020606971,
+  "counts": [
+    5,
+    6,
+    5,
+    5,
+    4
+  ],
+  "retained_groups": 4,
+  "observed_group_loss_vector": [
+    0.0,
+    0.0,
+    0.0006558215094828457,
+    0.0011364337490820109,
+    0.0018544135533689055
+  ],
+  "true_greedy_group_uncovered": [
+    0.44632037220670107,
+    0.3994278837590075,
+    0.4633695720910478,
+    0.42485523789471724,
+    0.47300047609399254
+  ],
+  "true_retained_group_uncovered": [
+    0.44632037220670107,
+    0.3994278837590075,
+    0.463472636969976,
+    0.42602550894096103,
+    0.4843471465792394
+  ],
+  "task_ids": [
+    "K5_concave_s2210_bounded_disk_p0.03_continuous_euclidean_greedy",
+    "K5_concave_s2210_bounded_disk_p0.03_euclidean_retain_0.002"
+  ],
+  "source_receipts": {
+    "K5_concave_s2210_bounded_disk_p0.03_continuous_euclidean_greedy": "7c73696e8ce142c3b72a6eecba752de3fb8cfb9161228b28200ba4d531c8b478",
+    "K5_concave_s2210_bounded_disk_p0.03_euclidean_retain_0.002": "61fa9688e6ec8072efebbedca4c7cce101083f8177c9f51de451c539dc0ec4fd"
+  },
+  "motion_evidence": null,
+  "interpretation": "observed-model bound holds; extending that bound to true-reference coverage is falsified by this planning witness"
+}

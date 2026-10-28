@@ -1,3 +1,12 @@
 # Preserve captured failure logs; Python's traceback header ends with a space.
 reports/project_rebuild_20261023/reconstruction_attempt2.log whitespace=-blank-at-eol
 reports/project_rebuild_20261023/reconstruction_resources.log whitespace=-blank-at-eol
+
+# Captured scientific evidence must keep its original bytes and SHA-256.
+reports/** -text whitespace=cr-at-eol
+reports/**/*.log whitespace=cr-at-eol,-blank-at-eol
+# Matplotlib emits spaces in SVG path data; retain generated originals.
+reports/**/*.svg whitespace=cr-at-eol,-blank-at-eol
+# Collapse generated receipts/metrics in GitHub; keep prose visible for review.
+reports/** linguist-generated=true
+reports/**/*.md linguist-generated=false

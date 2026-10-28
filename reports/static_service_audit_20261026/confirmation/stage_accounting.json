@@ -1,0 +1,134 @@
+[
+  {
+    "group_count": 1,
+    "resource": "insufficient",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 1440
+    },
+    "safely_completed": 1440,
+    "full_success": 0
+  },
+  {
+    "group_count": 1,
+    "resource": "moderate",
+    "recorded": 1440,
+    "statuses": {
+      "FULL_SUCCESS": 1440
+    },
+    "safely_completed": 1440,
+    "full_success": 1440
+  },
+  {
+    "group_count": 1,
+    "resource": "sufficient",
+    "recorded": 1440,
+    "statuses": {
+      "FULL_SUCCESS": 1440
+    },
+    "safely_completed": 1440,
+    "full_success": 1440
+  },
+  {
+    "group_count": 2,
+    "resource": "insufficient",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 1440
+    },
+    "safely_completed": 1440,
+    "full_success": 0
+  },
+  {
+    "group_count": 2,
+    "resource": "moderate",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 697,
+      "FULL_SUCCESS": 743
+    },
+    "safely_completed": 1440,
+    "full_success": 743
+  },
+  {
+    "group_count": 2,
+    "resource": "sufficient",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 389,
+      "FULL_SUCCESS": 958,
+      "PATH_NOT_FOUND": 93
+    },
+    "safely_completed": 1347,
+    "full_success": 958
+  },
+  {
+    "group_count": 3,
+    "resource": "insufficient",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 1440
+    },
+    "safely_completed": 1440,
+    "full_success": 0
+  },
+  {
+    "group_count": 3,
+    "resource": "moderate",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 1092,
+      "FULL_SUCCESS": 303,
+      "PATH_NOT_FOUND": 45
+    },
+    "safely_completed": 1395,
+    "full_success": 303
+  },
+  {
+    "group_count": 3,
+    "resource": "sufficient",
+    "recorded": 1440,
+    "statuses": {
+      "PARTIAL_SERVICE": 288,
+      "FULL_SUCCESS": 934,
+      "PATH_NOT_FOUND": 218
+    },
+    "safely_completed": 1222,
+    "full_success": 934
+  },
+  {
+    "group_count": 5,
+    "resource": "insufficient",
+    "recorded": 1174,
+    "statuses": {
+      "PARTIAL_SERVICE": 1173,
+      "SAFETY_VIOLATION": 1
+    },
+    "safely_completed": 1173,
+    "full_success": 0
+  },
+  {
+    "group_count": 5,
+    "resource": "moderate",
+    "recorded": 1170,
+    "statuses": {
+      "PARTIAL_SERVICE": 959,
+      "FULL_SUCCESS": 181,
+      "PATH_NOT_FOUND": 30
+    },
+    "safely_completed": 1140,
+    "full_success": 181
+  },
+  {
+    "group_count": 5,
+    "resource": "sufficient",
+    "recorded": 1170,
+    "statuses": {
+      "PARTIAL_SERVICE": 156,
+      "FULL_SUCCESS": 760,
+      "PATH_NOT_FOUND": 254
+    },
+    "safely_completed": 916,
+    "full_success": 760
+  }
+]

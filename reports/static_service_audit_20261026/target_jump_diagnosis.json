@@ -1,0 +1,136 @@
+{
+  "selection": "largest matched RMS among all completed 1mm same-count perturbations; descriptive extreme",
+  "additional_perturbation_bound_m": 0.001,
+  "matched_target_rms_m": 1.5519749873919053,
+  "target_hausdorff_m": 1.9052847183362684,
+  "continuous_worst_delta": -0.004731901682125339,
+  "partition_stability_certificate": {
+    "certified": true,
+    "within_groups_connected_at_reduced_link": true,
+    "cross_groups_separated_at_expanded_link": true,
+    "minimum_cross_distance_m": 12.117649733486987,
+    "perturbation_bound_m": 0.001,
+    "scope": "every point moves at most eta in Euclidean distance; grouping only, not target continuity"
+  },
+  "pair": [
+    {
+      "task_id": "K2_s1515_bounded_disk_p0",
+      "counts": [
+        5,
+        5
+      ],
+      "selected_phases": [
+        2,
+        5
+      ],
+      "targets": [
+        [
+          8.737075985855107,
+          15.716762983619171
+        ],
+        [
+          10.33912909484635,
+          12.54692508209165
+        ],
+        [
+          14.059736575098071,
+          13.009803943002254
+        ],
+        [
+          14.425328140112894,
+          16.8577255587503
+        ],
+        [
+          10.966609698560118,
+          18.080976091652666
+        ],
+        [
+          25.91304160394167,
+          12.605127578433496
+        ],
+        [
+          29.2310081976889,
+          11.82025262364126
+        ],
+        [
+          31.356015867019128,
+          14.80864676618478
+        ],
+        [
+          28.82959384780736,
+          17.754544583627098
+        ],
+        [
+          24.787947286320342,
+          16.28393025741763
+        ]
+      ],
+      "planning_objective": [
+        0.49623587622768933,
+        0.49033799611309437,
+        0.003071399021705019
+      ],
+      "source_metrics_sha256": "6f7fce389dc4acbcab21a1e0d62f1bc9ed7691594f2a0cc4ec4bfdfb66d81d66"
+    },
+    {
+      "task_id": "K2_s1515_bounded_disk_p0.001",
+      "counts": [
+        5,
+        5
+      ],
+      "selected_phases": [
+        1,
+        1
+      ],
+      "targets": [
+        [
+          10.156019124479638,
+          12.73924008782315
+        ],
+        [
+          13.96573567877712,
+          12.839789834412512
+        ],
+        [
+          14.669585777984969,
+          16.631878869475216
+        ],
+        [
+          11.658359598315391,
+          18.45864385694553
+        ],
+        [
+          9.186647297243955,
+          16.218010390657575
+        ],
+        [
+          27.53553718275371,
+          12.253778043702933
+        ],
+        [
+          31.096655791835637,
+          13.860885126342122
+        ],
+        [
+          30.189107285931588,
+          17.318805428318235
+        ],
+        [
+          26.986927978708735,
+          18.23899515157467
+        ],
+        [
+          24.535354019761193,
+          15.266295796199042
+        ]
+      ],
+      "planning_objective": [
+        0.4969391958880642,
+        0.49048622214103466,
+        0.003098428045455137
+      ],
+      "source_metrics_sha256": "09e02f4cd2833da23e70351de62130d01c6fe0c55ffe82193038fea902d27614"
+    }
+  ],
+  "interpretation": "phase/optimization selection can switch despite certified unchanged grouping; not dynamic execution"
+}

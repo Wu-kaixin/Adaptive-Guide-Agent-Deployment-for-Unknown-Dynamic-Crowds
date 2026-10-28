@@ -1,0 +1,36 @@
+{
+  "old_manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+  "fixed_pairs": 640,
+  "accepted": 0,
+  "violations": [],
+  "seed2210_counterexample_regressions": [
+    {
+      "sequence_id": "K5_concave_s2210_bounded_disk",
+      "seed": 2210,
+      "perturbation_m": 0.03,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "reason": "group_identity_not_certified",
+        "groups": []
+      },
+      "original_true_worst_loss": 0.011346670485246846,
+      "conditional_partition_certificate": {
+        "certified": false,
+        "within_groups_connected_at_reduced_link": false,
+        "cross_groups_separated_at_expanded_link": true,
+        "minimum_cross_distance_m": 8.310967753839947,
+        "perturbation_bound_m": 0.12,
+        "scope": "every point moves at most eta in Euclidean distance; grouping only, not target continuity",
+        "identity_given_original_reference_defined": true,
+        "split_distance_upper_m": 1.19,
+        "two_reference_core_diameters_m": 2.8868681861334484
+      },
+      "actual_partition_matches": true
+    }
+  ],
+  "source_actions_reoptimized": false,
+  "new_independent_samples": 0,
+  "reference": "original_world_reference",
+  "condition": "original reference is defined; float64 geometry audit, not formal machine intervals"
+}

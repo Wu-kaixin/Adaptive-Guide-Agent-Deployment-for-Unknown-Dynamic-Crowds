@@ -19,6 +19,7 @@ from udc.safety import Safety, is_safe, path_clearances
 from udc.environment import Environment
 from udc.navigation.paths import target_domain_check
 from udc.evaluation.acceptance import diagnose_stages, evaluate
+from .accounting import unabsorbed_program_error
 from .config import demand_kind, load_config, METHODS, PROTOCOLS
 from .provenance import provenance as _provenance
 
@@ -92,6 +93,8 @@ def _resume_result(output, task_hash):
     except (OSError, ValueError):
         return None
     if state.get('status') == 'completed' and metrics.get('task_sha256') == task_hash:
+        if unabsorbed_program_error(output):
+            return None
         return metrics
     return None
 
@@ -107,6 +110,8 @@ def _resume_initialization_failure(output, request_hash):
     if (state.get('status') == 'completed'
             and metrics.get('failure_stage') == 'initialization'
             and metrics.get('task_request_sha256') == request_hash):
+        if unabsorbed_program_error(output):
+            return None
         return metrics
     return None
 

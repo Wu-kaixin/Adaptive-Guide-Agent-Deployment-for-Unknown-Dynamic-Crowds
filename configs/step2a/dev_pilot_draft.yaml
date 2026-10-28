@@ -1,0 +1,48 @@
+# Draft only. Do not draw seeds or run this file in the current round.
+schema_version: 1
+protocol: step2a_dev_pilot_draft
+experiments_open: false
+run_in_this_round: false
+evidence_class: development_not_confirmation
+max_rows: 36
+scheduled_rows: 24
+question: >
+  On two frozen static groups with one shared guide pool and curve_ceil floors,
+  how do floor_then_size and an independently declared frozen split differ in
+  preflight acceptance and fixed-path execution, without claiming a method ranking.
+population:
+  total_people: 24
+  splits: [{group_a: 12, group_b: 12}, {group_a: 8, group_b: 16}]
+layouts: [separated_blobs]
+draws: 6
+seed_namespace: step2a-dev-pilot-20261023
+seed_start: 100
+seed_stop: 105
+reserved_confirmation_seeds: [5000, 5029]
+seed_audit_required_before_any_draw: true
+draw_this_round: false
+strategies: [floor_then_size, frozen_initial_split]
+shared_across_strategy_pair:
+  - people
+  - membership
+  - curve_ceil_floors
+  - guide_ids
+  - guide_initial_positions
+floor_policy: curve_ceil
+boundary_policy: convex_hull
+deployment_method: equal_arc
+phase: 0.0
+execution_policy: fixed_paths_no_recovery_v1
+frozen_mapping_rule: >
+  Sort guide ids and alternate them across lexicographic group ids.
+  Do not copy or repair the mapping from a floor_then_size result.
+guide_initial_rule: >
+  Draw each guide position once from the pilot seed before either strategy runs.
+  Do not move guides after seeing targets or the other strategy.
+denominator: every scheduled row
+stop_on: [EXPERIMENT_ERROR, artifact_hash_mismatch]
+redraw_on_failure: false
+retune_in_batch: false
+cherry_pick_rerun: false
+success_requires: [group_acceptance, system_acceptance, orchestration_ok]
+motion_subset_is_not_the_full_denominator: true

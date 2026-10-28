@@ -7,3 +7,6 @@ reports/** -text whitespace=cr-at-eol
 reports/**/*.log whitespace=cr-at-eol,-blank-at-eol
 # Matplotlib emits spaces in SVG path data; retain generated originals.
 reports/**/*.svg whitespace=cr-at-eol,-blank-at-eol
+# Collapse generated receipts/metrics in GitHub; keep prose visible for review.
+reports/** linguist-generated=true
+reports/**/*.md linguist-generated=false

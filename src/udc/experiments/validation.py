@@ -15,6 +15,7 @@ import yaml
 
 ROOT = Path.cwd()
 
+from udc.experiments.accounting import ledger_row, read_metrics, record_process_error
 from udc.experiments.runner import METHODS, PROTOCOLS, _atomic_text, experiment, reevaluate_result
 
 
@@ -78,59 +79,93 @@ def build_tasks(manifest, output, phase, smoke=False):
     return tasks
 
 
+def _metric_view(metrics):
+    if not isinstance(metrics, dict):
+        return {
+            'active_guides': None, 'planned_max_gap': None, 'actual_max_gap': None,
+            'max_gap_limit': None, 'max_tracking_error': None,
+            'minimum_net_clearance': None, 'wall_time': None, 'task_sha256': None,
+        }
+    clearances = metrics.get('minimum_net_clearances') or {}
+    return {
+        'active_guides': metrics.get('active_guides'),
+        'planned_max_gap': metrics.get('planned_max_gap'),
+        'actual_max_gap': metrics.get('actual_max_gap'),
+        'max_gap_limit': metrics.get('max_gap_limit'),
+        'max_tracking_error': metrics.get('max_tracking_error'),
+        'minimum_net_clearance': min(
+            (value for value in clearances.values() if value is not None), default=None,
+        ),
+        'wall_time': metrics.get('wall_time'),
+        'task_sha256': metrics.get('task_sha256'),
+    }
+
+
+def _batch_row(task, metrics, ledger, refusal, error_text):
+    """Ledger status is authoritative. A refusal does not rewrite saved files."""
+    process_failed = bool(ledger['unabsorbed_program_error'] or (
+        error_text is not None and not refusal))
+    no_saved_task = (not ledger['has_metrics']) and error_text is not None
+    finished_record = bool(ledger['has_metrics'] and not ledger['unabsorbed_program_error'])
+    completed = bool(finished_record and (error_text is None or refusal) and not process_failed)
+    if process_failed or no_saved_task:
+        success = False
+        status = 'EXPERIMENT_ERROR'
+    else:
+        success = bool(ledger['success'])
+        status = ledger['termination_status']
+    if process_failed or refusal or error_text is not None:
+        expectation_met = False
+    else:
+        expected = task['expected_statuses']
+        expectation_met = True if expected is None else status in expected
+    # Process errors do not contribute a batch time. Scientific failures keep
+    # the saved time for inspection; success-only plots still ignore it.
+    reported_time = None if process_failed or not ledger['has_metrics'] else ledger['physical_simulation_time']
+    return {
+        **{key: task[key] for key in [
+            'scenario', 'seed', 'method', 'protocol', 'fixed_n', 'output'
+        ]},
+        'completed': completed,
+        'expectation_met': expectation_met,
+        'success': success,
+        'termination_status': status,
+        **_metric_view(metrics if ledger['has_metrics'] else None),
+        'simulation_time': reported_time,
+        'physical_success': ledger['physical_success'],
+        'physical_termination_status': ledger['physical_termination_status'],
+        'physical_simulation_time': ledger['physical_simulation_time'],
+        'process_error': bool(ledger['process_error'] or process_failed),
+        'output_refusal': bool(refusal),
+        'error': None if not error_text else error_text.strip().splitlines()[-1],
+    }
+
+
 def _run_task(task, resume):
+    directory = Path(task['output'])
+    identity = {
+        'scenario': task['scenario'], 'method': task['method'], 'protocol': task['protocol'],
+    }
+    error_text = None
+    refusal = False
     try:
         from threadpoolctl import threadpool_limits
         with threadpool_limits(limits=1):
-            metrics = experiment(
+            experiment(
                 task['config'], task['output'], task['seed'], False,
                 task['protocol'], task['fixed_n'], resume, task['method'],
             )
-        expected = task['expected_statuses']
-        expectation_met = (True if expected is None
-                           else metrics['termination_status'] in expected)
-        return {
-            **{key: task[key] for key in [
-                'scenario', 'seed', 'method', 'protocol', 'fixed_n', 'output'
-            ]},
-            'completed': True, 'expectation_met': expectation_met,
-            'success': metrics['success'],
-            'termination_status': metrics['termination_status'],
-            'active_guides': metrics['active_guides'],
-            'planned_max_gap': metrics['planned_max_gap'],
-            'actual_max_gap': metrics.get('actual_max_gap'),
-            'max_gap_limit': metrics.get('max_gap_limit'),
-            'max_tracking_error': metrics.get('max_tracking_error'),
-            'minimum_net_clearance': min(
-                (value for value in metrics.get('minimum_net_clearances', {}).values()
-                 if value is not None), default=None,
-            ),
-            'simulation_time': metrics['simulation_time'],
-            'wall_time': metrics['wall_time'],
-            'task_sha256': metrics.get('task_sha256'),
-            'error': None,
-        }
-    except Exception:
-        error = traceback.format_exc()
-        directory = Path(task['output'])
-        directory.mkdir(parents=True, exist_ok=True)
-        _atomic_text(directory / 'runner_error.txt', error)
-        _atomic_text(directory / 'state.json', json.dumps({
-            'status': 'failed', 'error': error.splitlines()[-1],
-            'scene': task['scenario'], 'method': task['method'], 'protocol': task['protocol'],
-        }, indent=2) + '\n')
-        return {
-            **{key: task[key] for key in [
-                'scenario', 'seed', 'method', 'protocol', 'fixed_n', 'output'
-            ]},
-            'completed': False, 'expectation_met': False, 'success': False,
-            'termination_status': 'EXPERIMENT_ERROR', 'active_guides': None,
-            'planned_max_gap': None, 'actual_max_gap': None,
-            'max_gap_limit': None,
-            'max_tracking_error': None, 'minimum_net_clearance': None,
-            'simulation_time': None, 'wall_time': None, 'task_sha256': None,
-            'error': error.splitlines()[-1],
-        }
+    except Exception as exc:
+        error_text = traceback.format_exc()
+        refusal = isinstance(exc, FileExistsError)
+        # Refusing to enter an existing directory must not plant an error scene
+        # on a saved result. A real exception records the scene once and leaves
+        # metrics and any earlier state in place.
+        if not refusal:
+            record_process_error(directory, error_text, identity)
+    metrics, _readable = read_metrics(directory)
+    ledger = ledger_row(directory, identity)
+    return _batch_row(task, metrics, ledger, refusal, error_text)
 
 
 def summarize(rows, output, manifest_hash, phase, workers):
@@ -157,6 +192,7 @@ def summarize(rows, output, manifest_hash, phase, workers):
         'manifest_sha256': manifest_hash, 'workers': workers,
         'tasks': len(rows), 'completed': sum(row['completed'] for row in rows),
         'experiment_errors': sum(not row['completed'] for row in rows),
+        'output_refusals': sum(bool(row.get('output_refusal')) for row in rows),
         'expectations_met': sum(row['expectation_met'] for row in rows),
         'successful': sum(row['success'] for row in rows),
         'termination_counts': {
@@ -218,22 +254,33 @@ def plot_summary(summary_path):
 
 
 def reevaluate_tree(output):
+    """Recompute physical criteria. This does not clear a program-error scene.
+
+    ``consistent`` compares the saved metrics success flag with the recomputed
+    criteria. It does not promote a process error to a ledger success.
+    """
     rows = []
-    for metrics in sorted(Path(output).rglob('metrics.json')):
+    for metrics_path in sorted(Path(output).rglob('metrics.json')):
         try:
-            result = reevaluate_result(metrics.parent)
-            original = json.loads(metrics.read_text(encoding='utf-8'))
+            result = reevaluate_result(metrics_path.parent)
+            original = json.loads(metrics_path.read_text(encoding='utf-8'))
+            ledger = ledger_row(metrics_path.parent)
             rows.append({
-                'path': str(metrics.parent.relative_to(output)),
+                'path': str(metrics_path.parent.relative_to(output)),
                 'original_success': original['success'],
                 'reevaluated_success': result['success'],
                 'consistent': original['success'] == result['success'],
+                'ledger_success': ledger['success'],
+                'ledger_status': ledger['termination_status'],
+                'process_error': ledger['process_error'],
+                'unabsorbed_program_error': ledger['unabsorbed_program_error'],
             })
         except Exception as error:
-            rows.append({'path': str(metrics.parent.relative_to(output)),
+            rows.append({'path': str(metrics_path.parent.relative_to(output)),
                          'original_success': None, 'reevaluated_success': None,
                          'consistent': False, 'error': repr(error)})
     report = {'runs': len(rows), 'consistent': sum(row['consistent'] for row in rows),
+              'process_errors': sum(bool(row.get('process_error')) for row in rows),
               'results': rows}
     _atomic_text(Path(output) / 'reevaluation_summary.json', json.dumps(
         report, indent=2
@@ -294,7 +341,8 @@ def main():
     summary = summarize(rows, output, manifest_hash, args.phase, workers)
     plot_summary(output / 'summary.json')
     print(json.dumps({key: value for key, value in summary.items() if key != 'groups'}, indent=2))
-    if summary['experiment_errors'] or summary['expectations_met'] != summary['tasks']:
+    if (summary['experiment_errors'] or summary['output_refusals']
+            or summary['expectations_met'] != summary['tasks']):
         raise SystemExit(1)
 
 

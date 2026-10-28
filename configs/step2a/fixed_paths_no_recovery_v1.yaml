@@ -1,0 +1,28 @@
+# Development execution policy. Not a Step 1 recovery equivalent.
+schema_version: 1
+policy: fixed_paths_no_recovery_v1
+recovery_policy: disabled
+experiments_open: false
+run_in_this_round: false
+source: saved_preflight_directory
+replanning: false
+rematching: false
+guide_creation: false
+group_transfer: false
+deadline_s: 40.0
+dt_s: 0.1
+max_steps: 400
+gain: 1.5
+max_speed_m_s: 1.0
+position_tolerance_m: 0.03
+speed_tolerance_m_s: 0.03
+curve_tolerance_m: 0.04
+waypoint_tolerance_m: 0.05
+hold_steps: 10
+stall_window: 20
+max_gap_limit_m: 2.0
+displacement_atol_m: 1.0e-8
+equivalent_to_step1_recovery: false
+stall_status: STALL
+stall_means: progress stopped under this policy; recovery was not called
+not_equivalent_to: step1_three_recovery_budget

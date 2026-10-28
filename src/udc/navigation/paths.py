@@ -93,22 +93,31 @@ class NavigationDomain:
         return None
 
 
-def navigation_domain(room, wall_margin, crowd_polygon, crowd_margin):
-    """Build the conservative free space used by planning and replanning."""
+def navigation_domain(room, wall_margin, crowd_polygon, crowd_margin,
+                      simplify_m=None, planning_margin_m=None):
+    """Build the conservative free space used by planning and replanning.
+
+    Omitted margins keep the module constants, so existing callers are unchanged.
+    A saved task passes the margins from its effective-config snapshot.
+    """
+    if simplify_m is None:
+        simplify_m = SIMPLIFY_TOLERANCE_M
+    if planning_margin_m is None:
+        planning_margin_m = PLANNING_MARGIN_M
     room = np.asarray(room, dtype=float)
     room_poly = Polygon([(0, 0), (room[0], 0), (room[0], room[1]), (0, room[1])]).buffer(-float(wall_margin))
     physical = crowd_polygon.buffer(float(crowd_margin), join_style='mitre')
-    conservative = physical.simplify(SIMPLIFY_TOLERANCE_M, preserve_topology=True).buffer(
-        PLANNING_MARGIN_M, join_style='mitre')
+    conservative = physical.simplify(float(simplify_m), preserve_topology=True).buffer(
+        float(planning_margin_m), join_style='mitre')
     free = room_poly.difference(conservative)
     physical_free = room_poly.difference(physical)
     identity = hashlib.sha256()
-    identity.update(np.asarray([wall_margin, crowd_margin, SIMPLIFY_TOLERANCE_M, PLANNING_MARGIN_M], dtype=np.float64).tobytes())
+    identity.update(np.asarray([wall_margin, crowd_margin, simplify_m, planning_margin_m], dtype=np.float64).tobytes())
     for geometry in (physical, conservative, free):
         identity.update(_coordinate_bytes(geometry))
     return NavigationDomain(
         room_poly, physical, conservative, free, physical_free,
-        float(wall_margin), float(crowd_margin), SIMPLIFY_TOLERANCE_M, PLANNING_MARGIN_M,
+        float(wall_margin), float(crowd_margin), float(simplify_m), float(planning_margin_m),
         identity.hexdigest(),
     )
 
@@ -205,11 +214,32 @@ def _other_guide_space(domain, guides, index, radius):
     return free, nodes
 
 
+def _obstacle_graph_nodes(obstacle):
+    """Vertices used by the static visibility graph.
+
+    A single polygon keeps the existing exterior ring, without its repeated
+    closing coordinate. A multipolygon contributes every component. No
+    component is dropped and the largest one is not selected.
+    """
+    if obstacle is None or obstacle.is_empty:
+        return []
+    if obstacle.geom_type == 'Polygon':
+        return [np.asarray(point) for point in obstacle.exterior.coords[:-1]]
+    if obstacle.geom_type == 'MultiPolygon':
+        polygons = list(obstacle.geoms)
+    else:
+        polygons = [piece for piece in getattr(obstacle, 'geoms', []) if piece.geom_type == 'Polygon']
+    nodes = []
+    for polygon in polygons:
+        nodes.extend(np.asarray(point) for point in polygon.exterior.coords[:-1])
+        for ring in polygon.interiors:
+            nodes.extend(np.asarray(point) for point in ring.coords[:-1])
+    return nodes
+
+
 def _visibility_graph(free, obstacle, extra_nodes=()):
     """Build static edges once for all guide–target queries on this exact domain."""
-    nodes=[]
-    if obstacle is not None and not obstacle.is_empty and obstacle.geom_type == 'Polygon':
-        nodes.extend(np.asarray(p) for p in obstacle.exterior.coords[:-1])
+    nodes=list(_obstacle_graph_nodes(obstacle))
     nodes.extend(np.asarray(point, dtype=float) for point in extra_nodes)
     edges=[[] for _ in nodes]
     for i in range(len(nodes)):
@@ -319,6 +349,95 @@ def navigate_and_assign(guides, targets, room, wall_margin, crowd_polygon, crowd
     assignment=np.full(len(guides),-1,dtype=int); assignment[rows]=cols
     ordered=tuple(paths[i,j] for i,j in zip(rows,cols))
     return NavigationResult(assignment,ordered,cost[rows,cols],finite)
+
+
+def assign_within_groups(guides, guide_group_ids, targets, target_group_ids, domain, room,
+                         people=None, limits=None):
+    """Match each guide only to targets that carry the same group id.
+
+    ``guides`` and ``targets`` use global row order. Labels are parallel to
+    those rows and are not array indices. The shared domain already contains
+    every group obstacle. Start preparation receives every guide, so a margin
+    prefix is not checked against only one group. This is a static path
+    preflight, not a joint collision-free execution plan.
+    """
+    guides = np.asarray(guides, dtype=float)
+    targets = np.asarray(targets, dtype=float)
+    guide_group_ids = tuple(guide_group_ids)
+    target_group_ids = tuple(target_group_ids)
+    if guides.ndim != 2 or guides.shape[1] != 2 or len(guide_group_ids) != len(guides):
+        raise ValueError('PATH_UNREACHABLE: guide rows and group labels disagree')
+    if targets.ndim != 2 or targets.shape[1] != 2 or len(target_group_ids) != len(targets):
+        raise ValueError('PATH_UNREACHABLE: target rows and group labels disagree')
+    domain_report = target_domain_check(domain, targets)
+    free, obstacle = domain.free, domain.conservative_obstacle
+    graph = _visibility_graph(free, obstacle)
+    results = []
+    for group in sorted(set(guide_group_ids) | set(target_group_ids)):
+        guide_rows = [i for i, name in enumerate(guide_group_ids) if name == group]
+        target_rows = [j for j, name in enumerate(target_group_ids) if name == group]
+        entry = {'group_id': group, 'guide_rows': guide_rows, 'target_rows': target_rows,
+                 'matched': False, 'pairs': [], 'reason': None}
+        if len(guide_rows) != len(target_rows) or len(guide_rows) == 0:
+            entry['reason'] = 'count_mismatch'
+            results.append(entry)
+            continue
+        cost = np.full((len(guide_rows), len(target_rows)), np.inf)
+        found = {}
+        for row_i, guide_row in enumerate(guide_rows):
+            prepared = _prepare_start(guides[guide_row], domain, guides, guide_row, people, limits, room)
+            if prepared is None:
+                continue
+            planner_start, prefix = prepared
+            for row_j, target_row in enumerate(target_rows):
+                target_ready = _prepare_start(targets[target_row], domain)
+                if target_ready is None:
+                    continue
+                path, length = _shortest(planner_start, target_ready[0], free, obstacle, graph=graph)
+                if path is None:
+                    continue
+                if prefix is not None:
+                    path = np.vstack([prefix, path])
+                    length = float(length + np.linalg.norm(path[1] - path[0]))
+                if not all(segment_in_free(path[k], path[k + 1], domain) for k in range(len(path) - 1)):
+                    continue
+                found[row_i, row_j] = path
+                cost[row_i, row_j] = length
+        finite = np.isfinite(cost)
+        if not finite.any() or np.any(~finite.any(axis=0)):
+            entry['reason'] = 'PATH_UNREACHABLE'
+            results.append(entry)
+            continue
+        penalty = np.where(finite, cost, 1e12)
+        rows, cols = linear_sum_assignment(penalty)
+        keep = cols < len(target_rows)
+        rows, cols = rows[keep], cols[keep]
+        if len(set(cols)) != len(target_rows) or np.any(~finite[rows, cols]):
+            entry['reason'] = 'PATH_UNREACHABLE'
+            results.append(entry)
+            continue
+        pairs = []
+        for row_i, row_j in zip(rows, cols):
+            guide_row = guide_rows[int(row_i)]
+            target_row = target_rows[int(row_j)]
+            if guide_group_ids[guide_row] != target_group_ids[target_row]:
+                entry['reason'] = 'cross_group_assignment'
+                pairs = []
+                break
+            pairs.append({
+                'guide_row': guide_row,
+                'target_row': target_row,
+                'group_id': group,
+                'length_m': float(cost[row_i, row_j]),
+                'path': found[int(row_i), int(row_j)],
+            })
+        if entry['reason'] == 'cross_group_assignment':
+            results.append(entry)
+            continue
+        entry['matched'] = True
+        entry['pairs'] = pairs
+        results.append(entry)
+    return {'domain_accepted': bool(domain_report['accepted']), 'domain': domain_report, 'groups': results}
 
 
 def segment_in_free_sampled(start, end, domain):

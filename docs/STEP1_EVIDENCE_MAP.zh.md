@@ -1,5 +1,9 @@
 # Step 1证据图谱：需求、资源与执行边界
 
+2026-10-29：[本轮静态多群审查入口](../reports/step1_review_20261029/README.md)汇总安全路径、原参考充分服务界及50步连续更新。
+路线确认8,640条、连续确认108,240条均完成记账和复判；连续部署失败、低资源全回退及主比较选择限制仍保留。
+详见[科学评估](../reports/step1_closure_20261028/ASSESSMENT.zh.md)。本次不启动下一轮独立研究。
+
 2026-10-27 补充[连续评分与布局保留](../reports/static_phase_retention_20261027/ASSESSMENT.zh.md)：
 80物理块、3,200规划、240次主运动及2次事后见证动作；固定数量，不能替代资源切换或动态稳定性证明。
 1mm下减少目标跳变，但30mm下真实服务损失可超过观察预算，反例已经实际执行复核。
@@ -32,4 +36,4 @@
 
 尚未验证：任意非凸几何、其他人员生成／初始化政策、噪声／局部观测、有限通信、大规模外推、动态人群响应、风险改善、containment和完整RA-ABDC／Step2/3。有限搜索、一次安全晚到或单步非零速度均不证明一般可行性／全局收敛。
 
-来源：[新输入资源确认](../reports/step1_nonconvex_resource_confirmation_v1/REPORT.zh.md)、[固定资源恢复诊断](../reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md)、[本次截止诊断](../reports/step1_execution_deadline_diagnostics_v1/REPORT.zh.md)。历史台账与报告只读，新结论和开发工件各自保存。
+来源：[新输入资源确认](../reports/step1_nonconvex_resource_confirmation_v1/REPORT.zh.md)、[固定资源恢复诊断](../reports/step1_resource_recovery_diagnostics_v1/REPORT.zh.md)、[本次截止诊断](../reports/step1_execution_deadline_diagnostics_v1/REPORT.zh.md)。历史台账与报告只读，新结论和开发工件各自保存。收官对照、交付入口和尚未启动的两群协议见[收官报告](STEP1_CLOSEOUT.zh.md)、[交付索引](STEP1_DELIVERY_INDEX.zh.md)和[Step 2a 协议](STEP2A_PROTOCOL.zh.md)。

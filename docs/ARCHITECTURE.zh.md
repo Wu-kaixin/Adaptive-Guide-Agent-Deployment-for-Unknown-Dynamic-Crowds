@@ -1,5 +1,12 @@
 # 框架逻辑与代码位置
 
+## 2026-10-29 审查交付范围
+
+本次静态多群扩展的预定实验与离线复判已完成，入口见[审查包](../reports/step1_review_20261029/README.md)。
+历史章节中的“运行中”描述保留其当时语境；当前原确认已经安全停止，新确认已完成记账。
+下文单群基线、`multigroup/`静态扩展和远端已有的Step 2a模块属于不同协议，不能混用证据。
+整合远端代码不重写各实验的冻结源码；公开证据包另存原科学快照和修复后的只读分析快照。
+
 ## 2026-10-28 未完成阶段的新版本
 
 `multigroup/safe_routing.py`提供逐边/逐实际区间独立验证、端点支撑外接圆盘和反向装配串行部署；
@@ -109,7 +116,10 @@ PedPy 负责人群密度等分析，专用 evaluator 负责 Guide 的覆盖、�
 | 路径与指派 | `src/udc/navigation/` | 初态、目标、障碍 → 同一套保守自由空间上的可见图；重算时其他 Guide 是障碍，自身不是 |
 | 安全 | `src/udc/safety/` | 当前状态、速度 → 过滤速度、整段距离，以及不进入保守规划障碍的半平面 |
 | 总控制器 | `src/udc/controller/abcg.py` | 观测、Guide 状态 → 期望速度、安全速度与恢复状态 |
-| 资源分配接口 | `interfaces.ResourceAllocator` | Step 2 类型缝；Step 1 不调用，没有分配算法 |
+| 资源分配接口 | `interfaces.ResourceAllocator` | Step 1 类型缝；Step 1 不调用，没有分配算法 |
+| Step 2a 纯分配 | `src/udc/allocation/` | 已确定的两群成员和下界 → 一次性 Guide 身份分配；不读出生多边形，不调用部署 |
+| Step 2a 规划预检 | `src/udc/preflight/` | 冻结身份、各群凸包、下界、纯分配、共同静态域和同群路径。入口 `experiments/step2a_preflight.py` 只转发 |
+| Step 2a 开发执行 | `src/udc/execution/` | `fixed_paths_no_recovery_v1`：只读预检、固定路径、一次联合安全过滤、群级与系统级验收。入口 `experiments/step2a_execute.py` 只转发 |
 | 实验编排 | `src/udc/experiments/runner.py` | 完整配置 → 执行、结果、resume、离线复判 |
 | 公平比较 | `src/udc/experiments/comparison.py` | 因子表 → 仅方法不同的 fixed-N 任务 |
 | 来源追溯 | `src/udc/experiments/provenance.py` | 代码、配置、输入 → commit 和 SHA-256 |
@@ -131,8 +141,11 @@ NPZ 禁用 pickle；人群行索引是冻结快照中的稳定人员身份，SQL
 `ceil(L/H_p)` 只是数量下界；满足它不能证明存在可行方案。搜索耗尽记录为未找到方案，除非下界或间距上界被违反。
 
 资源不足、非法偏移、路径不可达、超时、恢复预算耗尽是科学失败。
-程序异常保存 `runner_error.txt`，单独记为 `EXPERIMENT_ERROR`，不会被删除。
-统计时间时注明仅成功任务，成功率的分母保留全部任务。
+程序异常保存 `runner_error.txt`，不删除、不覆盖已经写好的 `metrics.json`。
+同一目录只记一次：metrics 若已声明 `EXPERIMENT_ERROR`，错误现场被该声明吸收；
+若 metrics 仍是其他结果，或还没有可读 metrics，台账记 `EXPERIMENT_ERROR`，
+不把其中的物理成功计入成功次数或成功耗时。物理验收仍以保存的 metrics 和离线复判为准。
+拒绝进入已有输出目录不会新写错误现场。统计时间只含台账成功任务，分母保留全部任务。
 
 ## 现有示例与后续阶段
 

@@ -1,0 +1,16 @@
+protocol: deployment_recovery_development_v1
+evidence: development_new_inputs
+base_protocol: configs/step1/static_multigroup_v2.yaml
+namespace: 2026102820
+seeds: {start: 3000, count: 3}
+group_counts: [1, 2, 3, 5]
+shapes: [circle, ellipse, concave, irregular]
+error_bound_m: 0.12
+resources: [insufficient, moderate, sufficient]
+allocators: [perimeter, minimax]
+policies: [verified_q4_forward, adaptive_forward, adaptive_reverse]
+routing: {routing_sides: [16, 32, 64], routing_pad_m: 1.0e-9, routing_interior_margin_m: 1.0e-6, routing_max_vertices: 20000}
+maximum_workers: 32
+numerical_threads: 1
+scientific_retries: 0
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION, MODEL_BOUND_VIOLATION]

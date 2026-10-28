@@ -1,0 +1,60 @@
+protocol: deployment_recovery_confirmation_v2
+evidence: prospective_confirmation
+base_protocol: configs/step1/static_multigroup_v2.yaml
+namespace: 2026102821
+seeds:
+  start: 3100
+  count: 20
+group_counts:
+- 1
+- 2
+- 3
+- 5
+shapes:
+- circle
+- ellipse
+- concave
+- irregular
+error_bound_m: 0.12
+resources:
+- insufficient
+- moderate
+- sufficient
+allocators:
+- perimeter
+- demand
+- minimax
+policies:
+- verified_q4_forward
+- adaptive_forward
+- adaptive_reverse
+routing:
+  routing_sides:
+  - 16
+  - 32
+  - 64
+  routing_pad_m: 1.0e-09
+  routing_interior_margin_m: 1.0e-06
+  routing_max_vertices: 20000
+maximum_workers: 32
+numerical_threads: 1
+scientific_retries: 0
+stop_on:
+- EXPERIMENT_ERROR
+- SAFETY_VIOLATION
+- MODEL_BOUND_VIOLATION
+statistics:
+  primary: safely_completed_adaptive_reverse_minus_verified_q4_forward
+  direction: positive
+  within_block: equal_mean_9_resource_allocator_pairs
+  independent_block: K_shape_seed
+  weighting: equal_mean_16_K_shape_strata
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 202610282101
+  failures: recorded_scientific_failure_is_zero_missing_is_unknown
+  secondary:
+  - adaptive_forward_contrast
+  - full_success
+  - actual_original_reference_service
+  - travel_on_joint_completion
+  - all_failures_and_safety

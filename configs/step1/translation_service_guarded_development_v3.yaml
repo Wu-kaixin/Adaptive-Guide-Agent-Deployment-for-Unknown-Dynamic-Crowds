@@ -1,0 +1,59 @@
+schema_version: 1
+protocol: translation_service_guarded_development_v3
+evidence: development_new_reference_contract
+namespace: 2026102809
+base_protocol: configs/step1/static_multigroup_v2.yaml
+group_counts:
+- 2
+- 5
+shapes:
+- concave
+- ellipse
+seeds:
+  start: 2520
+  count: 3
+models:
+- bounded_disk
+- pure_common_translation
+base_actual_error_m: 0.08
+declared_error_m: 0.12
+perturbations_m:
+- 0
+- 0.001
+- 0.01
+- 0.03
+motion_perturbation_m: 0.03
+budget_per_group: 5
+methods:
+- greedy
+- observed_retain
+- translation_guard
+observed_retention_delta: 0.002
+true_model_loss_delta: 0.002
+reference: anchored_quantized_external_v1
+reference_quantum_m: 1.0e-08
+coordinate_rounding_bound_m: 1.0e-12
+reference_status: explicit_new_contract_not_silently_original_world_reference
+original_world_reference: retained_as_separate_secondary_metric_without_this_guarantee
+allocation: original_nominal_minimax_once_then_fixed_counts
+candidate_pool: original_8_phases_plus_all_3_nominal_anchors_shared
+unsupported_model: UNCERTIFIED_and_same_greedy_fallback
+statistics: development_12_physical_blocks_with_models_and_perturbations_paired
+runtime:
+  maximum_workers: 32
+  numerical_threads: 1
+  scientific_retries: 0
+stop_on:
+- EXPERIMENT_ERROR
+- SAFETY_VIOLATION
+- MODEL_BOUND_VIOLATION
+reserved_seeds:
+- 5000
+- 5029
+tracking_bound_m: 1.0e-10
+motion_perturbations_m:
+- 0.001
+- 0.03
+independent_segment_gate: true
+safety_version: independent_segment_gate_after_original_seed2004_safety_stop
+original_confirmation_policy: stopped_record_preserved_no_completion_or_retry_under_old_protocol

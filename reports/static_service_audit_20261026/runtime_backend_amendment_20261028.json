@@ -1,0 +1,22 @@
+{
+  "authorized_at": "2026-10-28T01:13:18+09:00",
+  "authorization": "User: 参考和利用这些对话内容，先暂停所有，然后保存。然后继续实验。",
+  "user_authorized_all_cores": true,
+  "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+  "old_workers": 32,
+  "new_workers": 32,
+  "numerical_threads_per_worker": 1,
+  "operational_restart": true,
+  "scientific_failure_retries": 0,
+  "old_backend": "frozen eager complete visibility graph",
+  "new_backend": "implicit_complete_visibility_strict_relax_v2",
+  "backend_policy": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\backend_policy.json",
+  "backend_policy_sha256": "fb988e2af2fddef08f10c9d12455adfb674def6f6e3f0512cdfadf57964c2a83",
+  "preservation_checkpoint": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\checkpoint\\checkpoint.json",
+  "checkpoint_sha256": "0727950efd3e2f66810b67f111ac34b4f354eab3d48004fa83da5c40d4cb5cc4",
+  "preserved_complete_tasks": 14864,
+  "remaining_tasks": 2416,
+  "in_flight_work": "Previously suspended unreceipted calculations will be interrupted and recalculated under the audited backend; no completed result is replaced.",
+  "stop_policy": "Same scientific error/safety stop triggers; bounded 32 in-flight units drain.",
+  "protocol_deviation": "Separately sealed equivalent-computation backend and operational restart; original manifest, samples, inputs and thresholds unchanged. Do not claim all rows ran on an identical implementation."
+}

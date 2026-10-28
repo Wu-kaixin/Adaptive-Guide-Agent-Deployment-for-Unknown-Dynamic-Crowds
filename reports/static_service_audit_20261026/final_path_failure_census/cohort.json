@@ -1,0 +1,2132 @@
+{
+  "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+  "units": {
+    "K2_circle_s2000_e0.04": [
+      "K2_circle_s2000_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2002_e0.04": [
+      "K2_circle_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2003_e0.00": [
+      "K2_circle_s2003_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2003_e0.12": [
+      "K2_circle_s2003_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2004_e0.00": [
+      "K2_circle_s2004_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2005_e0.12": [
+      "K2_circle_s2005_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2006_e0.04": [
+      "K2_circle_s2006_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2007_e0.12": [
+      "K2_circle_s2007_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2011_e0.00": [
+      "K2_circle_s2011_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2013_e0.04": [
+      "K2_circle_s2013_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2013_e0.12": [
+      "K2_circle_s2013_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2014_e0.00": [
+      "K2_circle_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2014_e0.04": [
+      "K2_circle_s2014_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2016_e0.00": [
+      "K2_circle_s2016_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2016_e0.04": [
+      "K2_circle_s2016_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2017_e0.00": [
+      "K2_circle_s2017_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2018_e0.00": [
+      "K2_circle_s2018_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2018_e0.04": [
+      "K2_circle_s2018_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_circle_s2019_e0.04": [
+      "K2_circle_s2019_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2000_e0.04": [
+      "K2_ellipse_s2000_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2001_e0.00": [
+      "K2_ellipse_s2001_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2002_e0.12": [
+      "K2_ellipse_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2005_e0.04": [
+      "K2_ellipse_s2005_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2007_e0.00": [
+      "K2_ellipse_s2007_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2007_e0.04": [
+      "K2_ellipse_s2007_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2008_e0.12": [
+      "K2_ellipse_s2008_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2009_e0.04": [
+      "K2_ellipse_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2010_e0.04": [
+      "K2_ellipse_s2010_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2011_e0.12": [
+      "K2_ellipse_s2011_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2013_e0.12": [
+      "K2_ellipse_s2013_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2014_e0.00": [
+      "K2_ellipse_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2016_e0.04": [
+      "K2_ellipse_s2016_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2017_e0.00": [
+      "K2_ellipse_s2017_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2017_e0.04": [
+      "K2_ellipse_s2017_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_ellipse_s2019_e0.12": [
+      "K2_ellipse_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_concave_s2000_e0.00": [
+      "K2_concave_s2000_e0.00_sufficient_projected_mass_minimax"
+    ],
+    "K2_concave_s2003_e0.00": [
+      "K2_concave_s2003_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_concave_s2004_e0.12": [
+      "K2_concave_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_concave_s2009_e0.00": [
+      "K2_concave_s2009_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_concave_s2010_e0.12": [
+      "K2_concave_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_concave_s2011_e0.00": [
+      "K2_concave_s2011_e0.00_sufficient_projected_mass_minimax"
+    ],
+    "K2_concave_s2014_e0.00": [
+      "K2_concave_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_concave_s2018_e0.00": [
+      "K2_concave_s2018_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2000_e0.00": [
+      "K2_irregular_s2000_e0.00_sufficient_equal_arc_demand",
+      "K2_irregular_s2000_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2000_e0.04": [
+      "K2_irregular_s2000_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2000_e0.12": [
+      "K2_irregular_s2000_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2001_e0.00": [
+      "K2_irregular_s2001_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2001_e0.04": [
+      "K2_irregular_s2001_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2001_e0.12": [
+      "K2_irregular_s2001_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2002_e0.00": [
+      "K2_irregular_s2002_e0.00_sufficient_equal_arc_demand",
+      "K2_irregular_s2002_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2002_e0.04": [
+      "K2_irregular_s2002_e0.04_sufficient_equal_arc_demand",
+      "K2_irregular_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2002_e0.12": [
+      "K2_irregular_s2002_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2003_e0.00": [
+      "K2_irregular_s2003_e0.00_sufficient_equal_arc_demand",
+      "K2_irregular_s2003_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2003_e0.04": [
+      "K2_irregular_s2003_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2004_e0.00": [
+      "K2_irregular_s2004_e0.00_sufficient_equal_arc_demand",
+      "K2_irregular_s2004_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2004_e0.04": [
+      "K2_irregular_s2004_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2005_e0.00": [
+      "K2_irregular_s2005_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2005_e0.04": [
+      "K2_irregular_s2005_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2006_e0.04": [
+      "K2_irregular_s2006_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2006_e0.12": [
+      "K2_irregular_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2007_e0.00": [
+      "K2_irregular_s2007_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2007_e0.04": [
+      "K2_irregular_s2007_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2007_e0.12": [
+      "K2_irregular_s2007_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2008_e0.00": [
+      "K2_irregular_s2008_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2008_e0.04": [
+      "K2_irregular_s2008_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2009_e0.00": [
+      "K2_irregular_s2009_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2010_e0.00": [
+      "K2_irregular_s2010_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2010_e0.04": [
+      "K2_irregular_s2010_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2011_e0.00": [
+      "K2_irregular_s2011_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2012_e0.00": [
+      "K2_irregular_s2012_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2012_e0.12": [
+      "K2_irregular_s2012_e0.12_sufficient_equal_arc_demand",
+      "K2_irregular_s2012_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2013_e0.00": [
+      "K2_irregular_s2013_e0.00_sufficient_equal_arc_demand",
+      "K2_irregular_s2013_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2013_e0.12": [
+      "K2_irregular_s2013_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2014_e0.00": [
+      "K2_irregular_s2014_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2014_e0.04": [
+      "K2_irregular_s2014_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2015_e0.12": [
+      "K2_irregular_s2015_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2016_e0.04": [
+      "K2_irregular_s2016_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2017_e0.00": [
+      "K2_irregular_s2017_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K2_irregular_s2017_e0.04": [
+      "K2_irregular_s2017_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2017_e0.12": [
+      "K2_irregular_s2017_e0.12_sufficient_equal_arc_demand",
+      "K2_irregular_s2017_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2018_e0.00": [
+      "K2_irregular_s2018_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2018_e0.12": [
+      "K2_irregular_s2018_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2019_e0.04": [
+      "K2_irregular_s2019_e0.04_sufficient_equal_arc_demand",
+      "K2_irregular_s2019_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K2_irregular_s2019_e0.12": [
+      "K2_irregular_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2000_e0.12": [
+      "K3_circle_s2000_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2000_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2001_e0.04": [
+      "K3_circle_s2001_e0.04_moderate_projected_mass_demand",
+      "K3_circle_s2001_e0.04_sufficient_equal_arc_demand",
+      "K3_circle_s2001_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2002_e0.04": [
+      "K3_circle_s2002_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2003_e0.04": [
+      "K3_circle_s2003_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2003_e0.12": [
+      "K3_circle_s2003_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2004_e0.00": [
+      "K3_circle_s2004_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2004_e0.04": [
+      "K3_circle_s2004_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2004_e0.12": [
+      "K3_circle_s2004_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2005_e0.00": [
+      "K3_circle_s2005_e0.00_moderate_projected_mass_demand",
+      "K3_circle_s2005_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2005_e0.04": [
+      "K3_circle_s2005_e0.04_moderate_projected_mass_demand",
+      "K3_circle_s2005_e0.04_sufficient_equal_arc_demand",
+      "K3_circle_s2005_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2006_e0.00": [
+      "K3_circle_s2006_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2006_e0.04": [
+      "K3_circle_s2006_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2006_e0.12": [
+      "K3_circle_s2006_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2007_e0.00": [
+      "K3_circle_s2007_e0.00_moderate_projected_mass_demand",
+      "K3_circle_s2007_e0.00_sufficient_equal_arc_demand",
+      "K3_circle_s2007_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2008_e0.00": [
+      "K3_circle_s2008_e0.00_moderate_projected_mass_demand",
+      "K3_circle_s2008_e0.00_sufficient_equal_arc_demand",
+      "K3_circle_s2008_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2008_e0.04": [
+      "K3_circle_s2008_e0.04_moderate_projected_mass_demand",
+      "K3_circle_s2008_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2008_e0.12": [
+      "K3_circle_s2008_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2009_e0.00": [
+      "K3_circle_s2009_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2009_e0.04": [
+      "K3_circle_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2010_e0.00": [
+      "K3_circle_s2010_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2010_e0.12": [
+      "K3_circle_s2010_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2011_e0.04": [
+      "K3_circle_s2011_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2011_e0.12": [
+      "K3_circle_s2011_e0.12_moderate_projected_mass_demand",
+      "K3_circle_s2011_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2012_e0.00": [
+      "K3_circle_s2012_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2012_e0.04": [
+      "K3_circle_s2012_e0.04_sufficient_equal_arc_demand",
+      "K3_circle_s2012_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2012_e0.12": [
+      "K3_circle_s2012_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2012_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2013_e0.00": [
+      "K3_circle_s2013_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2013_e0.12": [
+      "K3_circle_s2013_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2014_e0.00": [
+      "K3_circle_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2014_e0.04": [
+      "K3_circle_s2014_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2015_e0.00": [
+      "K3_circle_s2015_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2015_e0.12": [
+      "K3_circle_s2015_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2016_e0.04": [
+      "K3_circle_s2016_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2016_e0.12": [
+      "K3_circle_s2016_e0.12_moderate_projected_mass_demand",
+      "K3_circle_s2016_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2016_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2017_e0.00": [
+      "K3_circle_s2017_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2017_e0.12": [
+      "K3_circle_s2017_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2018_e0.00": [
+      "K3_circle_s2018_e0.00_sufficient_equal_arc_demand",
+      "K3_circle_s2018_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_circle_s2019_e0.04": [
+      "K3_circle_s2019_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_circle_s2019_e0.12": [
+      "K3_circle_s2019_e0.12_sufficient_equal_arc_demand",
+      "K3_circle_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2000_e0.00": [
+      "K3_ellipse_s2000_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2000_e0.12": [
+      "K3_ellipse_s2000_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2002_e0.04": [
+      "K3_ellipse_s2002_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2003_e0.00": [
+      "K3_ellipse_s2003_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2003_e0.12": [
+      "K3_ellipse_s2003_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2004_e0.00": [
+      "K3_ellipse_s2004_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2004_e0.12": [
+      "K3_ellipse_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2005_e0.00": [
+      "K3_ellipse_s2005_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2005_e0.04": [
+      "K3_ellipse_s2005_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2006_e0.00": [
+      "K3_ellipse_s2006_e0.00_sufficient_equal_arc_demand",
+      "K3_ellipse_s2006_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2006_e0.12": [
+      "K3_ellipse_s2006_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2008_e0.00": [
+      "K3_ellipse_s2008_e0.00_sufficient_equal_arc_demand",
+      "K3_ellipse_s2008_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2009_e0.00": [
+      "K3_ellipse_s2009_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2009_e0.04": [
+      "K3_ellipse_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2010_e0.04": [
+      "K3_ellipse_s2010_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2010_e0.12": [
+      "K3_ellipse_s2010_e0.12_sufficient_equal_arc_demand",
+      "K3_ellipse_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2011_e0.00": [
+      "K3_ellipse_s2011_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2011_e0.04": [
+      "K3_ellipse_s2011_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2011_e0.12": [
+      "K3_ellipse_s2011_e0.12_sufficient_equal_arc_demand",
+      "K3_ellipse_s2011_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2012_e0.12": [
+      "K3_ellipse_s2012_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2013_e0.04": [
+      "K3_ellipse_s2013_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2013_e0.12": [
+      "K3_ellipse_s2013_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2014_e0.00": [
+      "K3_ellipse_s2014_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2014_e0.12": [
+      "K3_ellipse_s2014_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2015_e0.00": [
+      "K3_ellipse_s2015_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2016_e0.00": [
+      "K3_ellipse_s2016_e0.00_sufficient_equal_arc_demand",
+      "K3_ellipse_s2016_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2016_e0.04": [
+      "K3_ellipse_s2016_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2017_e0.00": [
+      "K3_ellipse_s2017_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2017_e0.12": [
+      "K3_ellipse_s2017_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2018_e0.12": [
+      "K3_ellipse_s2018_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_ellipse_s2019_e0.00": [
+      "K3_ellipse_s2019_e0.00_sufficient_equal_arc_demand",
+      "K3_ellipse_s2019_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_ellipse_s2019_e0.12": [
+      "K3_ellipse_s2019_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2000_e0.00": [
+      "K3_concave_s2000_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2000_e0.04": [
+      "K3_concave_s2000_e0.04_sufficient_equal_arc_demand",
+      "K3_concave_s2000_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2000_e0.12": [
+      "K3_concave_s2000_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2001_e0.00": [
+      "K3_concave_s2001_e0.00_moderate_equal_arc_demand",
+      "K3_concave_s2001_e0.00_moderate_projected_mass_demand"
+    ],
+    "K3_concave_s2001_e0.04": [
+      "K3_concave_s2001_e0.04_sufficient_projected_mass_demand",
+      "K3_concave_s2001_e0.04_sufficient_projected_mass_minimax"
+    ],
+    "K3_concave_s2002_e0.00": [
+      "K3_concave_s2002_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2002_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2002_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2002_e0.04": [
+      "K3_concave_s2002_e0.04_sufficient_equal_arc_demand",
+      "K3_concave_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2002_e0.12": [
+      "K3_concave_s2002_e0.12_sufficient_equal_arc_demand",
+      "K3_concave_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2003_e0.00": [
+      "K3_concave_s2003_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2003_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2003_e0.04": [
+      "K3_concave_s2003_e0.04_moderate_equal_arc_demand",
+      "K3_concave_s2003_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2003_e0.12": [
+      "K3_concave_s2003_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2004_e0.00": [
+      "K3_concave_s2004_e0.00_moderate_equal_arc_demand",
+      "K3_concave_s2004_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2004_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2004_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2004_e0.04": [
+      "K3_concave_s2004_e0.04_moderate_projected_mass_demand",
+      "K3_concave_s2004_e0.04_sufficient_equal_arc_demand",
+      "K3_concave_s2004_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2004_e0.12": [
+      "K3_concave_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2005_e0.00": [
+      "K3_concave_s2005_e0.00_moderate_equal_arc_demand",
+      "K3_concave_s2005_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2005_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2005_e0.04": [
+      "K3_concave_s2005_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2005_e0.12": [
+      "K3_concave_s2005_e0.12_sufficient_equal_arc_demand",
+      "K3_concave_s2005_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2006_e0.00": [
+      "K3_concave_s2006_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2006_e0.04": [
+      "K3_concave_s2006_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2006_e0.12": [
+      "K3_concave_s2006_e0.12_sufficient_equal_arc_demand",
+      "K3_concave_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2007_e0.00": [
+      "K3_concave_s2007_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2007_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2007_e0.04": [
+      "K3_concave_s2007_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2007_e0.12": [
+      "K3_concave_s2007_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2008_e0.00": [
+      "K3_concave_s2008_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2008_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2008_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2008_e0.04": [
+      "K3_concave_s2008_e0.04_moderate_projected_mass_demand",
+      "K3_concave_s2008_e0.04_sufficient_equal_arc_demand",
+      "K3_concave_s2008_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2008_e0.12": [
+      "K3_concave_s2008_e0.12_moderate_projected_mass_demand",
+      "K3_concave_s2008_e0.12_sufficient_equal_arc_demand",
+      "K3_concave_s2008_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2009_e0.04": [
+      "K3_concave_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2009_e0.12": [
+      "K3_concave_s2009_e0.12_moderate_projected_mass_demand"
+    ],
+    "K3_concave_s2010_e0.04": [
+      "K3_concave_s2010_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2011_e0.00": [
+      "K3_concave_s2011_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2012_e0.00": [
+      "K3_concave_s2012_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2012_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2012_e0.04": [
+      "K3_concave_s2012_e0.04_moderate_projected_mass_demand",
+      "K3_concave_s2012_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2012_e0.12": [
+      "K3_concave_s2012_e0.12_moderate_projected_mass_demand"
+    ],
+    "K3_concave_s2013_e0.00": [
+      "K3_concave_s2013_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2013_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2013_e0.00_sufficient_projected_mass_demand",
+      "K3_concave_s2013_e0.00_sufficient_projected_mass_minimax"
+    ],
+    "K3_concave_s2013_e0.04": [
+      "K3_concave_s2013_e0.04_moderate_projected_mass_demand"
+    ],
+    "K3_concave_s2013_e0.12": [
+      "K3_concave_s2013_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2014_e0.00": [
+      "K3_concave_s2014_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2014_e0.04": [
+      "K3_concave_s2014_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2014_e0.12": [
+      "K3_concave_s2014_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2015_e0.00": [
+      "K3_concave_s2015_e0.00_moderate_equal_arc_demand",
+      "K3_concave_s2015_e0.00_moderate_projected_mass_demand"
+    ],
+    "K3_concave_s2015_e0.04": [
+      "K3_concave_s2015_e0.04_moderate_equal_arc_demand",
+      "K3_concave_s2015_e0.04_moderate_projected_mass_demand"
+    ],
+    "K3_concave_s2015_e0.12": [
+      "K3_concave_s2015_e0.12_moderate_projected_mass_demand",
+      "K3_concave_s2015_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2016_e0.00": [
+      "K3_concave_s2016_e0.00_moderate_projected_mass_demand",
+      "K3_concave_s2016_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2016_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2016_e0.04": [
+      "K3_concave_s2016_e0.04_sufficient_equal_arc_demand",
+      "K3_concave_s2016_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2016_e0.12": [
+      "K3_concave_s2016_e0.12_sufficient_equal_arc_demand",
+      "K3_concave_s2016_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2017_e0.00": [
+      "K3_concave_s2017_e0.00_sufficient_equal_arc_demand",
+      "K3_concave_s2017_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2017_e0.04": [
+      "K3_concave_s2017_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2017_e0.12": [
+      "K3_concave_s2017_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2018_e0.00": [
+      "K3_concave_s2018_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2018_e0.12": [
+      "K3_concave_s2018_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2019_e0.00": [
+      "K3_concave_s2019_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_concave_s2019_e0.04": [
+      "K3_concave_s2019_e0.04_sufficient_equal_arc_demand",
+      "K3_concave_s2019_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_concave_s2019_e0.12": [
+      "K3_concave_s2019_e0.12_moderate_equal_arc_demand",
+      "K3_concave_s2019_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2000_e0.00": [
+      "K3_irregular_s2000_e0.00_moderate_projected_mass_demand",
+      "K3_irregular_s2000_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2000_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2000_e0.04": [
+      "K3_irregular_s2000_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2001_e0.00": [
+      "K3_irregular_s2001_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2001_e0.04": [
+      "K3_irregular_s2001_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2001_e0.12": [
+      "K3_irregular_s2001_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2002_e0.00": [
+      "K3_irregular_s2002_e0.00_moderate_projected_mass_demand"
+    ],
+    "K3_irregular_s2002_e0.04": [
+      "K3_irregular_s2002_e0.04_moderate_projected_mass_demand",
+      "K3_irregular_s2002_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2002_e0.12": [
+      "K3_irregular_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2004_e0.00": [
+      "K3_irregular_s2004_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2004_e0.04": [
+      "K3_irregular_s2004_e0.04_moderate_projected_mass_demand",
+      "K3_irregular_s2004_e0.04_sufficient_equal_arc_demand",
+      "K3_irregular_s2004_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2004_e0.12": [
+      "K3_irregular_s2004_e0.12_sufficient_equal_arc_demand",
+      "K3_irregular_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2005_e0.00": [
+      "K3_irregular_s2005_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2005_e0.04": [
+      "K3_irregular_s2005_e0.04_moderate_projected_mass_demand",
+      "K3_irregular_s2005_e0.04_sufficient_projected_mass_demand",
+      "K3_irregular_s2005_e0.04_sufficient_projected_mass_minimax"
+    ],
+    "K3_irregular_s2005_e0.12": [
+      "K3_irregular_s2005_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2006_e0.00": [
+      "K3_irregular_s2006_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2006_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2006_e0.04": [
+      "K3_irregular_s2006_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2006_e0.12": [
+      "K3_irregular_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2007_e0.00": [
+      "K3_irregular_s2007_e0.00_moderate_projected_mass_demand",
+      "K3_irregular_s2007_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2007_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2007_e0.04": [
+      "K3_irregular_s2007_e0.04_moderate_projected_mass_demand",
+      "K3_irregular_s2007_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2007_e0.12": [
+      "K3_irregular_s2007_e0.12_moderate_projected_mass_demand",
+      "K3_irregular_s2007_e0.12_sufficient_equal_arc_demand",
+      "K3_irregular_s2007_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2008_e0.00": [
+      "K3_irregular_s2008_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2008_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2009_e0.00": [
+      "K3_irregular_s2009_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2009_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2009_e0.04": [
+      "K3_irregular_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2010_e0.00": [
+      "K3_irregular_s2010_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2010_e0.04": [
+      "K3_irregular_s2010_e0.04_sufficient_equal_arc_demand",
+      "K3_irregular_s2010_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2010_e0.12": [
+      "K3_irregular_s2010_e0.12_sufficient_equal_arc_demand",
+      "K3_irregular_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2011_e0.04": [
+      "K3_irregular_s2011_e0.04_moderate_projected_mass_demand",
+      "K3_irregular_s2011_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2011_e0.12": [
+      "K3_irregular_s2011_e0.12_moderate_projected_mass_demand"
+    ],
+    "K3_irregular_s2013_e0.00": [
+      "K3_irregular_s2013_e0.00_moderate_projected_mass_demand"
+    ],
+    "K3_irregular_s2013_e0.12": [
+      "K3_irregular_s2013_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2014_e0.04": [
+      "K3_irregular_s2014_e0.04_sufficient_equal_arc_demand",
+      "K3_irregular_s2014_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2014_e0.12": [
+      "K3_irregular_s2014_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2015_e0.00": [
+      "K3_irregular_s2015_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2015_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2015_e0.04": [
+      "K3_irregular_s2015_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2015_e0.12": [
+      "K3_irregular_s2015_e0.12_sufficient_equal_arc_demand",
+      "K3_irregular_s2015_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2016_e0.00": [
+      "K3_irregular_s2016_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2016_e0.04": [
+      "K3_irregular_s2016_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2016_e0.12": [
+      "K3_irregular_s2016_e0.12_sufficient_equal_arc_demand",
+      "K3_irregular_s2016_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2017_e0.00": [
+      "K3_irregular_s2017_e0.00_moderate_projected_mass_demand",
+      "K3_irregular_s2017_e0.00_sufficient_equal_arc_demand",
+      "K3_irregular_s2017_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2017_e0.12": [
+      "K3_irregular_s2017_e0.12_sufficient_equal_arc_demand",
+      "K3_irregular_s2017_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2018_e0.00": [
+      "K3_irregular_s2018_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2018_e0.04": [
+      "K3_irregular_s2018_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K3_irregular_s2019_e0.00": [
+      "K3_irregular_s2019_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2019_e0.04": [
+      "K3_irregular_s2019_e0.04_sufficient_equal_arc_demand",
+      "K3_irregular_s2019_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K3_irregular_s2019_e0.12": [
+      "K3_irregular_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2000_e0.00": [
+      "K5_circle_s2000_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2000_e0.04": [
+      "K5_circle_s2000_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2000_e0.12": [
+      "K5_circle_s2000_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2000_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2001_e0.00": [
+      "K5_circle_s2001_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2001_e0.12": [
+      "K5_circle_s2001_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2002_e0.00": [
+      "K5_circle_s2002_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2002_e0.04": [
+      "K5_circle_s2002_e0.04_sufficient_equal_arc_demand",
+      "K5_circle_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2002_e0.12": [
+      "K5_circle_s2002_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2003_e0.00": [
+      "K5_circle_s2003_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2003_e0.12": [
+      "K5_circle_s2003_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2004_e0.00": [
+      "K5_circle_s2004_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2004_e0.04": [
+      "K5_circle_s2004_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2004_e0.12": [
+      "K5_circle_s2004_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2005_e0.00": [
+      "K5_circle_s2005_e0.00_sufficient_equal_arc_demand",
+      "K5_circle_s2005_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2005_e0.04": [
+      "K5_circle_s2005_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2005_e0.12": [
+      "K5_circle_s2005_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2005_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2006_e0.04": [
+      "K5_circle_s2006_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2006_e0.12": [
+      "K5_circle_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2007_e0.00": [
+      "K5_circle_s2007_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2007_e0.04": [
+      "K5_circle_s2007_e0.04_sufficient_equal_arc_demand",
+      "K5_circle_s2007_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2007_e0.12": [
+      "K5_circle_s2007_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2007_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2008_e0.00": [
+      "K5_circle_s2008_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2008_e0.04": [
+      "K5_circle_s2008_e0.04_sufficient_equal_arc_demand",
+      "K5_circle_s2008_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2009_e0.00": [
+      "K5_circle_s2009_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2009_e0.04": [
+      "K5_circle_s2009_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2009_e0.12": [
+      "K5_circle_s2009_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2010_e0.00": [
+      "K5_circle_s2010_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2010_e0.12": [
+      "K5_circle_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2011_e0.00": [
+      "K5_circle_s2011_e0.00_sufficient_equal_arc_demand",
+      "K5_circle_s2011_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2011_e0.04": [
+      "K5_circle_s2011_e0.04_sufficient_equal_arc_demand",
+      "K5_circle_s2011_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2011_e0.12": [
+      "K5_circle_s2011_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2011_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2012_e0.00": [
+      "K5_circle_s2012_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2012_e0.12": [
+      "K5_circle_s2012_e0.12_moderate_projected_mass_demand",
+      "K5_circle_s2012_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2013_e0.00": [
+      "K5_circle_s2013_e0.00_sufficient_equal_arc_demand",
+      "K5_circle_s2013_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2013_e0.04": [
+      "K5_circle_s2013_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2013_e0.12": [
+      "K5_circle_s2013_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2014_e0.00": [
+      "K5_circle_s2014_e0.00_sufficient_equal_arc_demand",
+      "K5_circle_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2014_e0.04": [
+      "K5_circle_s2014_e0.04_sufficient_equal_arc_demand",
+      "K5_circle_s2014_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2014_e0.12": [
+      "K5_circle_s2014_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2015_e0.00": [
+      "K5_circle_s2015_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2015_e0.04": [
+      "K5_circle_s2015_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2015_e0.12": [
+      "K5_circle_s2015_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2015_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2016_e0.00": [
+      "K5_circle_s2016_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2016_e0.12": [
+      "K5_circle_s2016_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2016_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2017_e0.00": [
+      "K5_circle_s2017_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2017_e0.12": [
+      "K5_circle_s2017_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2017_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2018_e0.00": [
+      "K5_circle_s2018_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_circle_s2018_e0.04": [
+      "K5_circle_s2018_e0.04_sufficient_equal_arc_demand",
+      "K5_circle_s2018_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2018_e0.12": [
+      "K5_circle_s2018_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2019_e0.00": [
+      "K5_circle_s2019_e0.00_sufficient_equal_arc_demand",
+      "K5_circle_s2019_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_circle_s2019_e0.12": [
+      "K5_circle_s2019_e0.12_sufficient_equal_arc_demand",
+      "K5_circle_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2000_e0.00": [
+      "K5_ellipse_s2000_e0.00_sufficient_equal_arc_demand",
+      "K5_ellipse_s2000_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2000_e0.04": [
+      "K5_ellipse_s2000_e0.04_sufficient_equal_arc_demand",
+      "K5_ellipse_s2000_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2000_e0.12": [
+      "K5_ellipse_s2000_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2000_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2001_e0.00": [
+      "K5_ellipse_s2001_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2001_e0.12": [
+      "K5_ellipse_s2001_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2002_e0.04": [
+      "K5_ellipse_s2002_e0.04_sufficient_equal_arc_demand",
+      "K5_ellipse_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2002_e0.12": [
+      "K5_ellipse_s2002_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2003_e0.00": [
+      "K5_ellipse_s2003_e0.00_sufficient_equal_arc_demand",
+      "K5_ellipse_s2003_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2003_e0.04": [
+      "K5_ellipse_s2003_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2003_e0.12": [
+      "K5_ellipse_s2003_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2003_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2004_e0.00": [
+      "K5_ellipse_s2004_e0.00_sufficient_equal_arc_demand",
+      "K5_ellipse_s2004_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2004_e0.12": [
+      "K5_ellipse_s2004_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2005_e0.00": [
+      "K5_ellipse_s2005_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2006_e0.00": [
+      "K5_ellipse_s2006_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2006_e0.04": [
+      "K5_ellipse_s2006_e0.04_sufficient_equal_arc_demand",
+      "K5_ellipse_s2006_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2006_e0.12": [
+      "K5_ellipse_s2006_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2007_e0.00": [
+      "K5_ellipse_s2007_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2007_e0.04": [
+      "K5_ellipse_s2007_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2007_e0.12": [
+      "K5_ellipse_s2007_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2008_e0.00": [
+      "K5_ellipse_s2008_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2008_e0.04": [
+      "K5_ellipse_s2008_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2008_e0.12": [
+      "K5_ellipse_s2008_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2009_e0.00": [
+      "K5_ellipse_s2009_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2009_e0.04": [
+      "K5_ellipse_s2009_e0.04_sufficient_equal_arc_demand",
+      "K5_ellipse_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2010_e0.00": [
+      "K5_ellipse_s2010_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2010_e0.12": [
+      "K5_ellipse_s2010_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2011_e0.00": [
+      "K5_ellipse_s2011_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2011_e0.12": [
+      "K5_ellipse_s2011_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2012_e0.04": [
+      "K5_ellipse_s2012_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2012_e0.12": [
+      "K5_ellipse_s2012_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2013_e0.04": [
+      "K5_ellipse_s2013_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2013_e0.12": [
+      "K5_ellipse_s2013_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2014_e0.00": [
+      "K5_ellipse_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2015_e0.00": [
+      "K5_ellipse_s2015_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2015_e0.04": [
+      "K5_ellipse_s2015_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2016_e0.00": [
+      "K5_ellipse_s2016_e0.00_sufficient_equal_arc_demand",
+      "K5_ellipse_s2016_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2016_e0.04": [
+      "K5_ellipse_s2016_e0.04_sufficient_equal_arc_demand",
+      "K5_ellipse_s2016_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2017_e0.00": [
+      "K5_ellipse_s2017_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2017_e0.04": [
+      "K5_ellipse_s2017_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2017_e0.12": [
+      "K5_ellipse_s2017_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2018_e0.00": [
+      "K5_ellipse_s2018_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2018_e0.04": [
+      "K5_ellipse_s2018_e0.04_sufficient_equal_arc_demand",
+      "K5_ellipse_s2018_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2018_e0.12": [
+      "K5_ellipse_s2018_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2019_e0.00": [
+      "K5_ellipse_s2019_e0.00_sufficient_equal_arc_demand",
+      "K5_ellipse_s2019_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_ellipse_s2019_e0.04": [
+      "K5_ellipse_s2019_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_ellipse_s2019_e0.12": [
+      "K5_ellipse_s2019_e0.12_sufficient_equal_arc_demand",
+      "K5_ellipse_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2000_e0.00": [
+      "K5_concave_s2000_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2000_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2000_e0.04": [
+      "K5_concave_s2000_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2000_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2000_e0.12": [
+      "K5_concave_s2000_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2000_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2001_e0.00": [
+      "K5_concave_s2001_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2001_e0.00_sufficient_projected_mass_demand",
+      "K5_concave_s2001_e0.00_sufficient_projected_mass_minimax"
+    ],
+    "K5_concave_s2001_e0.04": [
+      "K5_concave_s2001_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2001_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2001_e0.12": [
+      "K5_concave_s2001_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2001_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2002_e0.00": [
+      "K5_concave_s2002_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2002_e0.04": [
+      "K5_concave_s2002_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2002_e0.12": [
+      "K5_concave_s2002_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2003_e0.00": [
+      "K5_concave_s2003_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2003_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2003_e0.00_sufficient_projected_mass_demand",
+      "K5_concave_s2003_e0.00_sufficient_projected_mass_minimax"
+    ],
+    "K5_concave_s2003_e0.04": [
+      "K5_concave_s2003_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2003_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2003_e0.12": [
+      "K5_concave_s2003_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2004_e0.00": [
+      "K5_concave_s2004_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2004_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2004_e0.04": [
+      "K5_concave_s2004_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2004_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2004_e0.12": [
+      "K5_concave_s2004_e0.12_moderate_projected_mass_demand",
+      "K5_concave_s2004_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2005_e0.04": [
+      "K5_concave_s2005_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2005_e0.12": [
+      "K5_concave_s2005_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2006_e0.00": [
+      "K5_concave_s2006_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2006_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2006_e0.04": [
+      "K5_concave_s2006_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2006_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2006_e0.12": [
+      "K5_concave_s2006_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2006_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2007_e0.00": [
+      "K5_concave_s2007_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2007_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2007_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2007_e0.04": [
+      "K5_concave_s2007_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2007_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2007_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2007_e0.12": [
+      "K5_concave_s2007_e0.12_moderate_projected_mass_demand",
+      "K5_concave_s2007_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2007_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2008_e0.04": [
+      "K5_concave_s2008_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2008_e0.12": [
+      "K5_concave_s2008_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2008_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2009_e0.00": [
+      "K5_concave_s2009_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2009_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2009_e0.04": [
+      "K5_concave_s2009_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2009_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2009_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2009_e0.12": [
+      "K5_concave_s2009_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2010_e0.00": [
+      "K5_concave_s2010_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2010_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2010_e0.04": [
+      "K5_concave_s2010_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2010_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2010_e0.12": [
+      "K5_concave_s2010_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2010_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2011_e0.00": [
+      "K5_concave_s2011_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2011_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2011_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2011_e0.04": [
+      "K5_concave_s2011_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2011_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2011_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2011_e0.12": [
+      "K5_concave_s2011_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2012_e0.00": [
+      "K5_concave_s2012_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2012_e0.00_sufficient_projected_mass_minimax"
+    ],
+    "K5_concave_s2012_e0.04": [
+      "K5_concave_s2012_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_concave_s2012_e0.12": [
+      "K5_concave_s2012_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2012_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2013_e0.00": [
+      "K5_concave_s2013_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2013_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2013_e0.04": [
+      "K5_concave_s2013_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2013_e0.12": [
+      "K5_concave_s2013_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2014_e0.00": [
+      "K5_concave_s2014_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2014_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2014_e0.04": [
+      "K5_concave_s2014_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2014_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2014_e0.12": [
+      "K5_concave_s2014_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2014_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2015_e0.00": [
+      "K5_concave_s2015_e0.00_moderate_equal_arc_demand",
+      "K5_concave_s2015_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2015_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2015_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2015_e0.04": [
+      "K5_concave_s2015_e0.04_moderate_equal_arc_demand",
+      "K5_concave_s2015_e0.04_moderate_projected_mass_demand"
+    ],
+    "K5_concave_s2015_e0.12": [
+      "K5_concave_s2015_e0.12_moderate_equal_arc_demand",
+      "K5_concave_s2015_e0.12_moderate_projected_mass_demand",
+      "K5_concave_s2015_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_concave_s2016_e0.00": [
+      "K5_concave_s2016_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2016_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2016_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2016_e0.04": [
+      "K5_concave_s2016_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2016_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2016_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2016_e0.12": [
+      "K5_concave_s2016_e0.12_moderate_projected_mass_demand",
+      "K5_concave_s2016_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2016_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2017_e0.04": [
+      "K5_concave_s2017_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2017_e0.04_sufficient_projected_mass_demand",
+      "K5_concave_s2017_e0.04_sufficient_projected_mass_minimax"
+    ],
+    "K5_concave_s2017_e0.12": [
+      "K5_concave_s2017_e0.12_moderate_projected_mass_demand",
+      "K5_concave_s2017_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2017_e0.12_sufficient_projected_mass_minimax"
+    ],
+    "K5_concave_s2018_e0.00": [
+      "K5_concave_s2018_e0.00_moderate_projected_mass_demand",
+      "K5_concave_s2018_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_concave_s2018_e0.04": [
+      "K5_concave_s2018_e0.04_moderate_projected_mass_demand"
+    ],
+    "K5_concave_s2018_e0.12": [
+      "K5_concave_s2018_e0.12_moderate_projected_mass_demand"
+    ],
+    "K5_concave_s2019_e0.00": [
+      "K5_concave_s2019_e0.00_sufficient_equal_arc_demand",
+      "K5_concave_s2019_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2019_e0.04": [
+      "K5_concave_s2019_e0.04_moderate_projected_mass_demand",
+      "K5_concave_s2019_e0.04_sufficient_equal_arc_demand",
+      "K5_concave_s2019_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_concave_s2019_e0.12": [
+      "K5_concave_s2019_e0.12_sufficient_equal_arc_demand",
+      "K5_concave_s2019_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2000_e0.00": [
+      "K5_irregular_s2000_e0.00_sufficient_equal_arc_demand",
+      "K5_irregular_s2000_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2000_e0.04": [
+      "K5_irregular_s2000_e0.04_sufficient_equal_arc_demand",
+      "K5_irregular_s2000_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2000_e0.12": [
+      "K5_irregular_s2000_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2001_e0.00": [
+      "K5_irregular_s2001_e0.00_sufficient_equal_arc_demand",
+      "K5_irregular_s2001_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2001_e0.04": [
+      "K5_irregular_s2001_e0.04_sufficient_equal_arc_demand",
+      "K5_irregular_s2001_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2001_e0.12": [
+      "K5_irregular_s2001_e0.12_sufficient_equal_arc_demand",
+      "K5_irregular_s2001_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2002_e0.00": [
+      "K5_irregular_s2002_e0.00_moderate_projected_mass_demand",
+      "K5_irregular_s2002_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_irregular_s2002_e0.04": [
+      "K5_irregular_s2002_e0.04_sufficient_equal_arc_demand",
+      "K5_irregular_s2002_e0.04_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2002_e0.12": [
+      "K5_irregular_s2002_e0.12_sufficient_equal_arc_demand",
+      "K5_irregular_s2002_e0.12_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2003_e0.00": [
+      "K5_irregular_s2003_e0.00_moderate_projected_mass_demand",
+      "K5_irregular_s2003_e0.00_sufficient_equal_arc_demand"
+    ],
+    "K5_irregular_s2003_e0.04": [
+      "K5_irregular_s2003_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_irregular_s2003_e0.12": [
+      "K5_irregular_s2003_e0.12_moderate_projected_mass_demand",
+      "K5_irregular_s2003_e0.12_sufficient_equal_arc_demand"
+    ],
+    "K5_irregular_s2004_e0.00": [
+      "K5_irregular_s2004_e0.00_sufficient_equal_arc_demand",
+      "K5_irregular_s2004_e0.00_sufficient_projected_mass_demand"
+    ],
+    "K5_irregular_s2004_e0.04": [
+      "K5_irregular_s2004_e0.04_sufficient_equal_arc_demand"
+    ],
+    "K5_irregular_s2005_e0.00": [
+      "K5_irregular_s2005_e0.00_sufficient_equal_arc_demand",
+      "K5_irregular_s2005_e0.00_sufficient_projected_mass_demand"
+    ]
+  },
+  "receipt_sha256": {
+    "K2_circle_s2000_e0.04_sufficient_projected_mass_demand": "197aa9474f1df972d4480a920e2d758bbcff09afcb7129222121136ddedbb0e7",
+    "K2_circle_s2002_e0.04_sufficient_projected_mass_demand": "9736ec7eb75028faf20030a4905a6c9c11cf1810f4e07ada6404c286a117648b",
+    "K2_circle_s2003_e0.00_sufficient_projected_mass_demand": "44777303cd2bb97fe8d70934a5fe6e5956445fc55e5a505fcf9190048d7510b5",
+    "K2_circle_s2003_e0.12_sufficient_projected_mass_demand": "c72b8f94cda86cfcfebdf849ce512c2e62437cf6c6967a478910bc2ed55db499",
+    "K2_circle_s2004_e0.00_sufficient_projected_mass_demand": "88edd1ef5cda080348a33e3c30abb18c1ab1eb45e3caf4331b9cfc97bc58776e",
+    "K2_circle_s2005_e0.12_sufficient_projected_mass_demand": "db27de08fc4cf0dfa3995fe8edf1aa508084752cad79b801a3790e04296b1e67",
+    "K2_circle_s2006_e0.04_sufficient_projected_mass_demand": "3f4f343506c6c3326f25f47c26494f9e155a1b780fe71101dbd5911ed05ee08f",
+    "K2_circle_s2007_e0.12_sufficient_projected_mass_demand": "ece12e13742c4fd8e90997cde2e6cb20c98f5879faf6dd0e45961004b1406ff6",
+    "K2_circle_s2011_e0.00_sufficient_projected_mass_demand": "1aced3e1bb108236bc2ef2fe38be38cb8bf920628b212d4249edbd67ade2c2ce",
+    "K2_circle_s2013_e0.04_sufficient_projected_mass_demand": "09cf010a32c6f1f44b5762cfc506d86478dccf58551d36d554ff97eb84211a39",
+    "K2_circle_s2013_e0.12_sufficient_projected_mass_demand": "1303abc6dd1136a3c9dd85a7423afa8643bb9154e14d7d711116710acc004538",
+    "K2_circle_s2014_e0.00_sufficient_projected_mass_demand": "4b17fa2125c4b4928c493721d7fb525724f513069ad8a404f7cf1179437fa3b9",
+    "K2_circle_s2014_e0.04_sufficient_projected_mass_demand": "a77d60b1549486f7c290acc72a1214a6feb5c3a5e39f48bdc883a77ce5df4630",
+    "K2_circle_s2016_e0.00_sufficient_projected_mass_demand": "be1fe56c1cd2f2f0a8bc04bcd407716eadaea0010a8645860c9fada4bfc24ba4",
+    "K2_circle_s2016_e0.04_sufficient_projected_mass_demand": "9446d1db794745312953672407c0c4679d4c285dc84caa0e154c38c5f3672301",
+    "K2_circle_s2017_e0.00_sufficient_projected_mass_demand": "82e3f24df96d932825847377b19227d01e23464be645dc03bff51eb807df96cd",
+    "K2_circle_s2018_e0.00_sufficient_projected_mass_demand": "7611f2a1c74e8dc06866bc37eeeaef2b29893fd6c26cb079f60686e052fff724",
+    "K2_circle_s2018_e0.04_sufficient_projected_mass_demand": "69c4c9b96d46c5237fa8d5540d06a34c9d15b98c026d884402a421ed8df25247",
+    "K2_circle_s2019_e0.04_sufficient_projected_mass_demand": "00afe4510ce371240a98a9fe6bbb348f4b79f2cbf3d00033c23659f853364692",
+    "K2_ellipse_s2000_e0.04_sufficient_projected_mass_demand": "6814863723dec7367eb6fe2340c0f52f00c87fe343d20aa49e599299ab5b0818",
+    "K2_ellipse_s2001_e0.00_sufficient_projected_mass_demand": "90b7bd167829078e7b826844768a42f37a15d5113d1dcc24fa11ccdea9055b01",
+    "K2_ellipse_s2002_e0.12_sufficient_projected_mass_demand": "deff20ec833fe26d309af345753ea38dccb88aff53942a7c09581a9cda744ba2",
+    "K2_ellipse_s2005_e0.04_sufficient_projected_mass_demand": "616b71aa24f304db1a288b31ab418196e2a8edd984f24021a32a5770eadf5151",
+    "K2_ellipse_s2007_e0.00_sufficient_projected_mass_demand": "b34226615a9fc98166845eda843f7e11119222a03a24c129ac62ca4e670cd541",
+    "K2_ellipse_s2007_e0.04_sufficient_projected_mass_demand": "c75414057f1327992b999cd24b21a7cec4f05dbce72f368eaee4d01499a099be",
+    "K2_ellipse_s2008_e0.12_sufficient_projected_mass_demand": "6f25b8f5bf1a0bd498453296215d8182b6e751258d62091ecc08fa145dd18f4e",
+    "K2_ellipse_s2009_e0.04_sufficient_projected_mass_demand": "6789ea1ef1bf16edf0a8a15c05bc0af093f352f655a3f1a23183a6c70ed23466",
+    "K2_ellipse_s2010_e0.04_sufficient_projected_mass_demand": "374d00dbc7f2f70933c6538042e4689f729495d4966efb8a394c0a15a13add86",
+    "K2_ellipse_s2011_e0.12_sufficient_projected_mass_demand": "b2b4bc8d0d6fe5d547930a035f8efdc48c6018e0ce77f0c730c8c6ac5358f097",
+    "K2_ellipse_s2013_e0.12_sufficient_projected_mass_demand": "e53602c7f5e58e2aea2f2262ec8f8dd8d6b5cd9948c95b2f6ca87b30f75daee7",
+    "K2_ellipse_s2014_e0.00_sufficient_projected_mass_demand": "8453051b47c0cd44434c70d0d5d05af2ab433453934ddd7f15c8530d5d86c584",
+    "K2_ellipse_s2016_e0.04_sufficient_projected_mass_demand": "89d796bda7011d24f0070d83cea6c097b5c23d8aae371feee3d7293602be43ee",
+    "K2_ellipse_s2017_e0.00_sufficient_projected_mass_demand": "4e083f5111d06058d3fb3bfd6bc58a4b29c099b9a50629f38013a9e68c2fcedc",
+    "K2_ellipse_s2017_e0.04_sufficient_projected_mass_demand": "2a57e2c82aeb9af8c4e29ba73561b6eb4021a7f62b9c571566b1248205666faa",
+    "K2_ellipse_s2019_e0.12_sufficient_projected_mass_demand": "fc6704cd14c1d161faa9238fa041e05a17f821eef4db9af6d3667bcd83f5279d",
+    "K2_concave_s2000_e0.00_sufficient_projected_mass_minimax": "ae9f7bf22753ffd2e2c3f24012aed33380bd0371ef0a040147ef56226f6b9103",
+    "K2_concave_s2003_e0.00_sufficient_projected_mass_demand": "2b489e3df6dd2cf063101aaf3c26e1a197fafb8576233d437c7679a10e796808",
+    "K2_concave_s2004_e0.12_sufficient_projected_mass_demand": "479018af9dfd540c4897acd2aecc8c5c93c48b93630356f4ea541d2e7eb4516b",
+    "K2_concave_s2009_e0.00_sufficient_projected_mass_demand": "1ca03f965c782902041f89bea97d1882fb2a594c58a26a5ec6e137b7a5b3beed",
+    "K2_concave_s2010_e0.12_sufficient_projected_mass_demand": "eb9a3589c2825ddbbeca953d0a85abec007218d17b33ee001abf809da7e3a084",
+    "K2_concave_s2011_e0.00_sufficient_projected_mass_minimax": "fab3a240fd99873197289739902eacd1589702be14c54a8dc9b55f5d1a6de327",
+    "K2_concave_s2014_e0.00_sufficient_projected_mass_demand": "5c907989d68472cf87648bf7d51df66d3d76b4091d6dc90600447561052674c8",
+    "K2_concave_s2018_e0.00_sufficient_projected_mass_demand": "b7257265e41c52823aaaaa88233d6e68cc926f37e8fad21e1c6ebfa41d12c7a0",
+    "K2_irregular_s2000_e0.00_sufficient_equal_arc_demand": "81d5d1f7361b00beffc0f3d9d978434be1f89f39b8909ac5b1b72b341af36a37",
+    "K2_irregular_s2000_e0.00_sufficient_projected_mass_demand": "0c114b4b612193b1d41feed687e1f105d2fabd4360eac1a9c18375bda3995533",
+    "K2_irregular_s2000_e0.04_sufficient_equal_arc_demand": "d5d6ea65e31daaeb29f7aa6379898762988e0fcad45ec72872e97310c1b649c9",
+    "K2_irregular_s2000_e0.12_sufficient_equal_arc_demand": "a1a1aeba1decceb5ec05b5a7697e9d8283139ea34a8a16eee7f95e9dbd01afd5",
+    "K2_irregular_s2001_e0.00_sufficient_projected_mass_demand": "42a22f54ba2d4602f7a93155eedbf4846e9bfe3403839e60629f52340a5dccb6",
+    "K2_irregular_s2001_e0.04_sufficient_projected_mass_demand": "029586aab42c2ef650f4acc446b8aecf8bb7b6a9f672c67d6d480caa3e9ec653",
+    "K2_irregular_s2001_e0.12_sufficient_equal_arc_demand": "c8b80fd6fc1796f09f79aa448daebbe3b17def396c03d1db6cb07dd39aad8879",
+    "K2_irregular_s2002_e0.00_sufficient_equal_arc_demand": "eb5cb1e4c1cd6b7cd8c892c050c6923ca05dfbfd226ee739e3a8510fec3e7d30",
+    "K2_irregular_s2002_e0.00_sufficient_projected_mass_demand": "6b6f782d3c5f55d818852d8fc79729bbdd20384eed7bf25c9e3df206c34116b5",
+    "K2_irregular_s2002_e0.04_sufficient_equal_arc_demand": "5ec2e8b7a649dc4017603bc68d5301f8d2625e45ae14f56ed714a861ca27678a",
+    "K2_irregular_s2002_e0.04_sufficient_projected_mass_demand": "45aca9ca72ba1a90a9e79e701f74a9886c3edb674cae3cd75bb7ea13754b8dd0",
+    "K2_irregular_s2002_e0.12_sufficient_equal_arc_demand": "b63eb52a76f7fa3e4121dafe97277aeef5427871855e03de3c50895a3b5884b8",
+    "K2_irregular_s2003_e0.00_sufficient_equal_arc_demand": "9786a470fb2a60e725f4b150cbcb61eac8b141dae7c40b6dbb4f8316ff44ac22",
+    "K2_irregular_s2003_e0.00_sufficient_projected_mass_demand": "207bbcc56a1834aef273023e941020f0b88d0d6934be9623526f0b347f556185",
+    "K2_irregular_s2003_e0.04_sufficient_projected_mass_demand": "1151d7dd70b3bed70849ad3109d53d7fad52efd7bd002d788082c25ae8d92bba",
+    "K2_irregular_s2004_e0.00_sufficient_equal_arc_demand": "7db05f8ddb38422e374bee3431412db3df2acb388e0e95f61141aa789d4ebe23",
+    "K2_irregular_s2004_e0.00_sufficient_projected_mass_demand": "7f37e2ea35206703c21f00e34deafc5e0cd5200433bf6d7890dda97e98b2d2f1",
+    "K2_irregular_s2004_e0.04_sufficient_projected_mass_demand": "42b2d96dcd71b1ae7a8ea248079678168696acc6a743ebfd79d285a4b760031d",
+    "K2_irregular_s2005_e0.00_sufficient_projected_mass_demand": "1bfb4166ad0d9ff2f2f170af4f293676152fa0cd0541e59c7db9b5a1501c55d4",
+    "K2_irregular_s2005_e0.04_sufficient_projected_mass_demand": "7986145859055720212fa6a936b9c8a93f96d168f1700c81b22496c4af73307c",
+    "K2_irregular_s2006_e0.04_sufficient_equal_arc_demand": "615cec6c7e7dc21114f95fba287ba5c04d9bf190b2b18f45e511af210d7de96a",
+    "K2_irregular_s2006_e0.12_sufficient_projected_mass_demand": "171162046aa32a4130ac3cd38f3e2c5f44f936e4294306381022e6ec6eb1609e",
+    "K2_irregular_s2007_e0.00_sufficient_equal_arc_demand": "f1baf62b171ed179b6dcd82cac8d7e8d487d10efa72496a50a7205231f2813a2",
+    "K2_irregular_s2007_e0.04_sufficient_projected_mass_demand": "2c3d9652883b71c50dfe5d9532a70653d53b0ab5fd20d14675f2d8263f9becb3",
+    "K2_irregular_s2007_e0.12_sufficient_projected_mass_demand": "def33443eafa14e6cd40acb5768f309c16946083842dcdd631fd080b4bc41147",
+    "K2_irregular_s2008_e0.00_sufficient_equal_arc_demand": "6aaf2c861978d664f154ad9941c69db037001df734da883b74a52f5fe9dcd9dd",
+    "K2_irregular_s2008_e0.04_sufficient_projected_mass_demand": "a44dd1ca3cb0ab2f0cd36084547e30ad08f39620b124279016cfa08d920b5121",
+    "K2_irregular_s2009_e0.00_sufficient_equal_arc_demand": "a61405168ad7fed80188b4ddbd93634da482de60fb8b163075dcf89187910593",
+    "K2_irregular_s2010_e0.00_sufficient_projected_mass_demand": "5a487a5c792ebcad711d54a230fe8ed4742d89623cf684bd4da68a0a8aede900",
+    "K2_irregular_s2010_e0.04_sufficient_equal_arc_demand": "77cdaf810566b7460816b4a810ca8aec2bfbc184fbc30b6348cbb62cfec566f7",
+    "K2_irregular_s2011_e0.00_sufficient_projected_mass_demand": "900e5296e0e26a6c430744230e5c9833a71525474e35d617584bab2059504c69",
+    "K2_irregular_s2012_e0.00_sufficient_equal_arc_demand": "6c63b3d7d4fb7b6db2543b1fede25d8007dd2d37f159c0eaa1539d28f8245089",
+    "K2_irregular_s2012_e0.12_sufficient_equal_arc_demand": "413fe6aad7417e4e7c7d509a06dc93d9f2a084bf7ade57c5f4fe3e90489eaf75",
+    "K2_irregular_s2012_e0.12_sufficient_projected_mass_demand": "6974279c712132a1ba84ee114eb9fd17a54fcf4b4c2c269651a251b9e7bfb395",
+    "K2_irregular_s2013_e0.00_sufficient_equal_arc_demand": "3105fbe3311085026c6b91a13369fe71f50e615fb61518afd87e5bc08421e434",
+    "K2_irregular_s2013_e0.00_sufficient_projected_mass_demand": "1e503f2faa8c51e61894fa4a168978b638aea09175879bc8640e822c7d6d897f",
+    "K2_irregular_s2013_e0.12_sufficient_equal_arc_demand": "0765c13db90695d4b2df8f794f4edb0730f4e2162ba96356edd132ff7ba9fd51",
+    "K2_irregular_s2014_e0.00_sufficient_equal_arc_demand": "e25ae013ad5b4e9887c2a1b0814b8b01ff6ff74ca9aae8fd70607521a82d86df",
+    "K2_irregular_s2014_e0.04_sufficient_equal_arc_demand": "6728b87176a2df0f539d36c9123fb54641ec75d53cb4345d7c351584c52fa1c8",
+    "K2_irregular_s2015_e0.12_sufficient_projected_mass_demand": "db36aabcb4eb215a742b5d562ef79fe235d6983474ad2ce3e30465f6cdbb16e2",
+    "K2_irregular_s2016_e0.04_sufficient_equal_arc_demand": "8aec4a99df612814bbb186606edae08c58fda7c83819ddcd2ec41b71638b1afb",
+    "K2_irregular_s2017_e0.00_sufficient_equal_arc_demand": "c1d77a7cc8a7779e2c82eadd2a7f232018088dc8cf15d8026b0faeb9953d85e9",
+    "K2_irregular_s2017_e0.04_sufficient_projected_mass_demand": "03ce7a25a096749c349349b52fd6e9992cf74ef479f53e6a27b3f7698d98a8dc",
+    "K2_irregular_s2017_e0.12_sufficient_equal_arc_demand": "c3ea3717a8619b8ce333341ef8b2b388e61c7cde75a747c70a92cdeae50c7128",
+    "K2_irregular_s2017_e0.12_sufficient_projected_mass_demand": "664d5454a68864fb818bb6f63732ddaef25fc89aaf4f38a061bd453eceb981aa",
+    "K2_irregular_s2018_e0.00_sufficient_projected_mass_demand": "f00e4c15c9dde62501d08cecba3da4964b571f3ae05b14a8cae34bd47be15641",
+    "K2_irregular_s2018_e0.12_sufficient_projected_mass_demand": "b9cef1195542ec3fb98ada1481a6b6bc0a02e92f71d8417e1239d423e3d65170",
+    "K2_irregular_s2019_e0.04_sufficient_equal_arc_demand": "8a3ef4f18d06e4ae1f55e9b560b7c73e257f2767179f6537e396ae19510a685f",
+    "K2_irregular_s2019_e0.04_sufficient_projected_mass_demand": "7939b02816a09d2018cef84eab2b7d03dc0d999a7a82aa9edc3eed6d3c8d5cdb",
+    "K2_irregular_s2019_e0.12_sufficient_projected_mass_demand": "b0b26fe4dd3eea2946bfc645634bd2f57c98a347f5a96a278d2e84c406b9492a",
+    "K3_circle_s2000_e0.12_sufficient_equal_arc_demand": "47fb71a2e0a8a0d58916c643455bdcb0043144fdbfffb6c9bfea33d13dc8a02c",
+    "K3_circle_s2000_e0.12_sufficient_projected_mass_demand": "4b296c52425b2bd5e1759ed20edf4a4a70d9e8f9dfeaedd2a93d494192b40fa5",
+    "K3_circle_s2001_e0.04_moderate_projected_mass_demand": "ec0a52650243de6e1de37bcc2be3aa17c61f3909ccd254e9fe5e066767e2fccf",
+    "K3_circle_s2001_e0.04_sufficient_equal_arc_demand": "128c54fcb79d75155843ddf69af3000ad003ae1799abd61922cf2f474c9d15b8",
+    "K3_circle_s2001_e0.04_sufficient_projected_mass_demand": "9b1c2e78b21608c1292bacc4c04e0c6fd4e6796394fdb1369fc532fbfc735f2e",
+    "K3_circle_s2002_e0.04_sufficient_equal_arc_demand": "404886146c9ddebe0862942d4ffbf4820e5ffdd1377abce41632e78d3237d7c3",
+    "K3_circle_s2003_e0.04_sufficient_equal_arc_demand": "41317765a3386440f5fc3e5f257ce49ba66e9415f56b145d4ce4b6a9e53ae5fb",
+    "K3_circle_s2003_e0.12_sufficient_equal_arc_demand": "23a02df93bc76c0d21a9467a061f3dc372388b5b717cfd57ccfddc38bd6fdacf",
+    "K3_circle_s2004_e0.00_sufficient_equal_arc_demand": "b50c863558e9f721932acfc2570772a4699cfce5fa6da34267170055091627fa",
+    "K3_circle_s2004_e0.04_sufficient_equal_arc_demand": "5e4c4bbf56c3465f1b17b6e193a73a8199c5dfd6f900ad524557719b4aa5548d",
+    "K3_circle_s2004_e0.12_sufficient_equal_arc_demand": "7862215aba0e3725e5ed287bead89eee4d3a540bc97c38148ceecf86a71c19dc",
+    "K3_circle_s2004_e0.12_sufficient_projected_mass_demand": "d09d991f98982aaab8888e77f0f369a37769867a534908b8bea3c6c0205a687c",
+    "K3_circle_s2005_e0.00_moderate_projected_mass_demand": "f8cc7a69ecd8df27f2aa5d88a8f0ef26ee434e9c12b5728522b89164c5faae48",
+    "K3_circle_s2005_e0.00_sufficient_projected_mass_demand": "17ffcae57ce1ef9d7de4abc044a218b5abb279cfbc65d38a17f2c0557d4b0526",
+    "K3_circle_s2005_e0.04_moderate_projected_mass_demand": "f1f2cef4a07410bc14b591a8c44a12c6dd724eab48a2723364237467ffb36210",
+    "K3_circle_s2005_e0.04_sufficient_equal_arc_demand": "349182ee789831f2e51a420382ed3ed21f4bbf7a179918f1a013c737084cef00",
+    "K3_circle_s2005_e0.04_sufficient_projected_mass_demand": "0bcf242a63d7156549386645a44dac7e66ceefbcbf0734018dca5a3188969d1f",
+    "K3_circle_s2006_e0.00_sufficient_equal_arc_demand": "44003c4b720cc4b4451b649238e017dc5f273a227c09aa67599be97a1c01eb30",
+    "K3_circle_s2006_e0.04_sufficient_equal_arc_demand": "e4d7a42486a61e4604ee67fdb210c149fd9ccdd155ce0c50d66d6ea9d80530fa",
+    "K3_circle_s2006_e0.12_sufficient_equal_arc_demand": "54fda0c2718562a80415ad8b17674737fa0c9f9c835afee3761fe2214bd7f97b",
+    "K3_circle_s2006_e0.12_sufficient_projected_mass_demand": "5b72aa67eb8a9604b2cda6f7044053c5c6bd4fe097a8b09eea5746d162925072",
+    "K3_circle_s2007_e0.00_moderate_projected_mass_demand": "0ad6310719af21fa898f0c4403c0e897b409dadec11a886ba2ad66a140cca848",
+    "K3_circle_s2007_e0.00_sufficient_equal_arc_demand": "13b2155a724741623916ac62e452eeefb01b2681cf34df9945b679e6520308ba",
+    "K3_circle_s2007_e0.00_sufficient_projected_mass_demand": "71f77fdcba0c231eecebebb493c50674881af25c8981fa91eab8511401bb028c",
+    "K3_circle_s2008_e0.00_moderate_projected_mass_demand": "11e736796f01368c92fd14c91251985dfbbad190f2b8be87ca91bfc7ee694168",
+    "K3_circle_s2008_e0.00_sufficient_equal_arc_demand": "00fb00724f6aab5b7c8241af2d81f46ad42b54cb921063daa0887421ede48439",
+    "K3_circle_s2008_e0.00_sufficient_projected_mass_demand": "ff29f49c0615063ac43faea304fffe7b1cf54e635dad8bbfe45934513219d22d",
+    "K3_circle_s2008_e0.04_moderate_projected_mass_demand": "f4e47997aef7e9316dfdfc7a72346122aa525674734be9e0f763792290d74060",
+    "K3_circle_s2008_e0.04_sufficient_equal_arc_demand": "c69e576828c863e4be0eeb2e81720a3c8e2b8286b3b1b371205996d588eed6ba",
+    "K3_circle_s2008_e0.12_sufficient_equal_arc_demand": "b98581d8f16342df88f04246d4cf2a2db0703dd1ffe0425c4b77a6b41f3f0980",
+    "K3_circle_s2009_e0.00_sufficient_projected_mass_demand": "86a95d20d85de8e04e30db147e96ec496ee18b44a731b7fcc9a8d426ce343210",
+    "K3_circle_s2009_e0.04_sufficient_projected_mass_demand": "5b11ad85eacb68874a6fec43b69d802637f9f72d309ac669ee318c2c6445ad70",
+    "K3_circle_s2010_e0.00_sufficient_equal_arc_demand": "87b5cf0a40741bf777354b47baed329b8dcacbab62a0245a3f416a55fb2d4590",
+    "K3_circle_s2010_e0.12_sufficient_equal_arc_demand": "4449a439ea5622959db1e5ba39f18c021b57a4981489a26d785b9209ea59e6b2",
+    "K3_circle_s2010_e0.12_sufficient_projected_mass_demand": "b854645b6715b53e9d47526b3f45af78fc88cd22924419624d69aa164a3af625",
+    "K3_circle_s2011_e0.04_sufficient_equal_arc_demand": "92e698a04085020e861eb938fa983025e0f4783782058b1a7ce72c4397ac8818",
+    "K3_circle_s2011_e0.12_moderate_projected_mass_demand": "baef0ff38b93c9404edcefc12e3360525d9ad85bdeeb47090cf6bbbaa9fc2d97",
+    "K3_circle_s2011_e0.12_sufficient_projected_mass_demand": "5d930471ce7fd9b5e1ead8788734d28a8f7958b946d020b10753b12db7352603",
+    "K3_circle_s2012_e0.00_sufficient_equal_arc_demand": "26aa56e331ffc6031d46e9b546103cef0333c97188f2dc001340523349d9814e",
+    "K3_circle_s2012_e0.04_sufficient_equal_arc_demand": "e854e22326d586ef9e01414f8995242fb28c76bdcccca8312b694452a2109465",
+    "K3_circle_s2012_e0.04_sufficient_projected_mass_demand": "b1db421545241f2bb29cc9a514fcfb1d007f2ff7095a7ca643448a2891e1aa98",
+    "K3_circle_s2012_e0.12_sufficient_equal_arc_demand": "7fa19a0b1fb21458333eb5181927cfd042b16972f2988b45e6ff92d049c77ccb",
+    "K3_circle_s2012_e0.12_sufficient_projected_mass_demand": "5c9dd55a50d61c76195107701e3d3958e75eb9a1528ecd4cef2191d280d2c9cc",
+    "K3_circle_s2013_e0.00_sufficient_equal_arc_demand": "bd01eafbe420c6dddabcb86aecb1515026e58298c879d6c3245837967ad5d0c7",
+    "K3_circle_s2013_e0.12_sufficient_equal_arc_demand": "b57a17d250dea4706054e2ae230fac4e9974206b7b43ac3af8008c7e162de9ff",
+    "K3_circle_s2014_e0.00_sufficient_projected_mass_demand": "f4591775ed2b3104d1b0d185d3b2353255f5c2f27c621a3ae45ad6131e78a9cd",
+    "K3_circle_s2014_e0.04_sufficient_projected_mass_demand": "0ddaefe54e2ff1926bef558d76a9b671ccdfdd35cf91460abd236210102b89e4",
+    "K3_circle_s2015_e0.00_sufficient_equal_arc_demand": "239d5491484030a0fb87e4ed9263d4fe90cacee11d2514171e7b2dca8d70d8df",
+    "K3_circle_s2015_e0.12_sufficient_equal_arc_demand": "1b31c0f1d274911c778ddf5fef59d19dfaf78f1e3b938692dc87c035a80296ae",
+    "K3_circle_s2016_e0.04_sufficient_equal_arc_demand": "aed6308fa7788d40552ae1cb81be2a56829e9edfb8beb92242ebf32ff7ae5012",
+    "K3_circle_s2016_e0.12_moderate_projected_mass_demand": "371c5321e9cc6dec90c6988a4748f956667c8e567361ca746225b72ee535049a",
+    "K3_circle_s2016_e0.12_sufficient_equal_arc_demand": "1da13eaf0fa555fd25dab54898fc8ccd20eb4abe580586e80ba4e93893a5b647",
+    "K3_circle_s2016_e0.12_sufficient_projected_mass_demand": "234acfbe16a8328a37764b2fec686221f578f3c65c522c7ff32489b360fb1896",
+    "K3_circle_s2017_e0.00_sufficient_equal_arc_demand": "f51cef58a8557aadf17525b0bf5da78acff567a642a799134462c38459ada386",
+    "K3_circle_s2017_e0.12_sufficient_equal_arc_demand": "bad716a11b6fc199e07f90e18ed448f3e7f6708e9c206e637a2ac1e023e255a0",
+    "K3_circle_s2018_e0.00_sufficient_equal_arc_demand": "5861dbaf51d3bd037e0256a1130f2de5c813ff8f4cef3dca047ab4faa3342277",
+    "K3_circle_s2018_e0.00_sufficient_projected_mass_demand": "2780d07f0687fd837e2b71e42f9cca582ff111d8d99d4907ae31374f6a5df2ed",
+    "K3_circle_s2019_e0.04_sufficient_equal_arc_demand": "7fdeee7f5d742a08d594d34c0ffa2de5cb37747ec58362edf14c44999fb6944f",
+    "K3_circle_s2019_e0.12_sufficient_equal_arc_demand": "dda1ac4ed29880377b543816ad087a13b288daeb82e684c0d2d40995dcb33b09",
+    "K3_circle_s2019_e0.12_sufficient_projected_mass_demand": "2e7384e5343173ed6e2d205559ff2cd3542f38a1fb0115112f3c68ebc648afb7",
+    "K3_ellipse_s2000_e0.00_sufficient_equal_arc_demand": "39bd86eac8bbc0f1afd0d63aded9a67c26ea9910342779667dda2cb051dd076d",
+    "K3_ellipse_s2000_e0.12_sufficient_equal_arc_demand": "fb21f789f41eb02cf743632b2f5afada5c24ee3ce10c88cfa983e25abf49e138",
+    "K3_ellipse_s2002_e0.04_sufficient_equal_arc_demand": "0a283b8a78b88c8537c7460635e543cdc00d5672ebbd840af989db6ca87fb047",
+    "K3_ellipse_s2003_e0.00_sufficient_projected_mass_demand": "ff92f7c4afc169dd0e171eef54213ac4614fdd0f43d2691b1a89f988a795a6c9",
+    "K3_ellipse_s2003_e0.12_sufficient_projected_mass_demand": "464607c2d66da50ea995190a93159da82dab4ef3b9d9b11ad4a1dc8ec7ba7bfd",
+    "K3_ellipse_s2004_e0.00_sufficient_equal_arc_demand": "5a391161cb16b18cecffea4fc1206ec3646263c7792c41ee6d7e1879b10eb79d",
+    "K3_ellipse_s2004_e0.12_sufficient_projected_mass_demand": "7a3df0da5b697a2ef6e9819c9d122dfc8489d97ca9c27674025c1ab179f5992d",
+    "K3_ellipse_s2005_e0.00_sufficient_projected_mass_demand": "7cc2fa177795ad6330984394a64e659e3c7c892d04230a8f834627d48489d6fb",
+    "K3_ellipse_s2005_e0.04_sufficient_projected_mass_demand": "6b5d18d2a2e003edae1ca267fa83db51a6bda8f57906d4ca82d1c68bfa8d6faa",
+    "K3_ellipse_s2006_e0.00_sufficient_equal_arc_demand": "5ca7b8da0c8f1a70ea727286dd4314d10f648c7f4a6fb72c7f590938bc6fe627",
+    "K3_ellipse_s2006_e0.00_sufficient_projected_mass_demand": "375f5ea2bca9f2ebb19f14207af68f4c1fc7de0413382f7534b6c34c3bcab6ac",
+    "K3_ellipse_s2006_e0.12_sufficient_equal_arc_demand": "364d31ee6b44f4e9080df31c079e1c70777f761f678d499110d93f60e6cfba61",
+    "K3_ellipse_s2008_e0.00_sufficient_equal_arc_demand": "b8aed556415247cfa54275c66ce1958e4cbb3ba7b405f629f40f1052109fb0cc",
+    "K3_ellipse_s2008_e0.00_sufficient_projected_mass_demand": "ce9ed40243ae327ec98ee3cf17ea9c9a149a6075e1a374954b80d2464e4da8bf",
+    "K3_ellipse_s2009_e0.00_sufficient_equal_arc_demand": "41fb99f84b18795b6e24d13cc9d1da7afca4901fea402700ea522b6a19d2ebfd",
+    "K3_ellipse_s2009_e0.04_sufficient_projected_mass_demand": "481aa7677df65d836d7d54b14814bb145bc6a082cf9165728e6042499f812463",
+    "K3_ellipse_s2010_e0.04_sufficient_equal_arc_demand": "aa28a3b9e436331aa7813b69a2dd1ad390b474b923a7e99b506917db9baec43c",
+    "K3_ellipse_s2010_e0.12_sufficient_equal_arc_demand": "61cd089e80481d022dbd1846c2a3da1eebf9057076336c08f296a14ebda50ea5",
+    "K3_ellipse_s2010_e0.12_sufficient_projected_mass_demand": "dab38fda620c5a9dc80c45716ff047aec43d021e91887250704ae556f44556ee",
+    "K3_ellipse_s2011_e0.00_sufficient_projected_mass_demand": "f314b8925c696bf7b9ffb57d320dfc4543fda6b553985e273959c9d1b71ece58",
+    "K3_ellipse_s2011_e0.04_sufficient_equal_arc_demand": "fe0e2c185298c1c0e31950f2c88a10de6f580253e4a467c388036e0c3eb2b2d8",
+    "K3_ellipse_s2011_e0.12_sufficient_equal_arc_demand": "9e417b9df19abbac3bd1f6bd0ee9070cd505bfd0e23c10e5e9da34dd42893750",
+    "K3_ellipse_s2011_e0.12_sufficient_projected_mass_demand": "04216ec3b1e159ab02152b271417777906f4bf91c5d6900ffe44e7569f0be3f6",
+    "K3_ellipse_s2012_e0.12_sufficient_projected_mass_demand": "97329172602f99e4c26230ab767886c50a3713506158d379577f210f96456bed",
+    "K3_ellipse_s2013_e0.04_sufficient_equal_arc_demand": "f3cddf5eae090691cd390de5ed4c098c11ef28a845ffc567ff7e5bbf8a1a4847",
+    "K3_ellipse_s2013_e0.12_sufficient_equal_arc_demand": "fe1d20f60f49d48db53c51f7be9c6537fa7e316805b596818265c722c47150dc",
+    "K3_ellipse_s2014_e0.00_sufficient_equal_arc_demand": "6c18f54f5af41e94f834ef6a4e028d1d67e48f5f816451ad4d1c525ee57b21bb",
+    "K3_ellipse_s2014_e0.12_sufficient_projected_mass_demand": "5992f70be5e98973318b5c0109b7fa00293303c8c1e1b8f3b8288bbeda218afb",
+    "K3_ellipse_s2015_e0.00_sufficient_projected_mass_demand": "fe5f622874a1c4cada5306c20d8022f12591c97cb1860615c8bc346cad5b8fe5",
+    "K3_ellipse_s2016_e0.00_sufficient_equal_arc_demand": "38ab076d8a6a4ae90e823d7728d0769c51c3df89f30102561dcd7f777e73677e",
+    "K3_ellipse_s2016_e0.00_sufficient_projected_mass_demand": "dd73a954b1aa00170f5ecfc8f00091ab71c463a0c10a46b4123878d6926cc8ec",
+    "K3_ellipse_s2016_e0.04_sufficient_equal_arc_demand": "8a7fe40163128c659d48b48a8688dc49b0ac614253a82886340f2b1b82a6179b",
+    "K3_ellipse_s2017_e0.00_sufficient_projected_mass_demand": "62c1b4cbd326416fdb0c9c0a4be4fec6fbed5f51887d7d5e9353ddf36660e5af",
+    "K3_ellipse_s2017_e0.12_sufficient_equal_arc_demand": "c8c76733fbe45c870fa75892c8fac2fbaf2a0ec45f1ad3f437a8ca3343f98c5f",
+    "K3_ellipse_s2018_e0.12_sufficient_equal_arc_demand": "b98e7b216a1e776d897628c3a2af6d4e0da4c238ce6b8e1ef620b251186c0aa6",
+    "K3_ellipse_s2019_e0.00_sufficient_equal_arc_demand": "c36b0ac72fa4fd2b337fefcfc0bce7c51a04fc0bef6595751c3a10a83be1d2cc",
+    "K3_ellipse_s2019_e0.00_sufficient_projected_mass_demand": "510d4a021b6edbb75adb285bbfa38edf5cd3a42511ab07162c72a6f1cb5b2aa7",
+    "K3_ellipse_s2019_e0.12_sufficient_equal_arc_demand": "6b3d3a3eb9b6551eb5ed0d9328a0cad080508ef9dbddf0a53a924b4b79e6d696",
+    "K3_concave_s2000_e0.00_sufficient_equal_arc_demand": "7207dc6ae2adb4512c84998d2a53d0020534818afe3c33f1cce5e4a4e0b40313",
+    "K3_concave_s2000_e0.04_sufficient_equal_arc_demand": "2b4b256330180a782feb0e6abd12179244c371e1b70ab2ee2d712dcdb0d626e4",
+    "K3_concave_s2000_e0.04_sufficient_projected_mass_demand": "dae08a24cb95c44c96bc2a2f80c313088dc813eaf2ca5bf0fbe6f9b1a6bded95",
+    "K3_concave_s2000_e0.12_sufficient_equal_arc_demand": "c5341c4e165a81622a81306913a29f261ab8839d4ecee255f617546a23450e26",
+    "K3_concave_s2001_e0.00_moderate_equal_arc_demand": "b7fdd22c0ba68955c8936ed7ae2b9c8e5b22796954b65ca93eb6a0d088e10212",
+    "K3_concave_s2001_e0.00_moderate_projected_mass_demand": "b51ac22bbfcc9dcb71eaf8900453583abab5f420687ff15828c7169e0d0d59df",
+    "K3_concave_s2001_e0.04_sufficient_projected_mass_demand": "a501cb1d81a0b5b7f356524123e5d97d049a187ab54cc51a640d8c0e54e8df88",
+    "K3_concave_s2001_e0.04_sufficient_projected_mass_minimax": "0d8a81bd0edf6c99f52b13bac98a4cce3b4f45eefbece30fcb661f767e766af6",
+    "K3_concave_s2002_e0.00_moderate_projected_mass_demand": "e0930b08661e8ec34559d280920181c78bc72f56a0272ca7785a2f77f8118c36",
+    "K3_concave_s2002_e0.00_sufficient_equal_arc_demand": "cae6b2e81f2c343fbc3c262d4b461d37d517873b0af18f4960015c5624f14002",
+    "K3_concave_s2002_e0.00_sufficient_projected_mass_demand": "68547e1a5290541bc2f0c112957e725a2c44fc42a02a5f9697612f087c85fb8a",
+    "K3_concave_s2002_e0.04_sufficient_equal_arc_demand": "3b5d004ffaf5d39ebd0c36c2f6bcbe85702ae16fd2ec398ea8bf331f7ee41d1c",
+    "K3_concave_s2002_e0.04_sufficient_projected_mass_demand": "37824a8eb2ebd475851d2d739e7f506de70be8304e2d5dec72cdbf0342b9b67a",
+    "K3_concave_s2002_e0.12_sufficient_equal_arc_demand": "3c20d59b153af3f279eb112262ec9c3f866190c1827b4c44f01bcce0d1d1d371",
+    "K3_concave_s2002_e0.12_sufficient_projected_mass_demand": "97827bc9dff558c48ec001f7aac75c04d2e14da3a76b3cc0093e399ec161ed92",
+    "K3_concave_s2003_e0.00_sufficient_equal_arc_demand": "d714439385760db47e42cddbd24e58dbd35572dd2ef0887ccdb51ca32b9e9512",
+    "K3_concave_s2003_e0.00_sufficient_projected_mass_demand": "9a3a38b733a27cfa8fd09c7c17fd475ec7da4d0f7d46db8112a88c7ccf4c99a8",
+    "K3_concave_s2003_e0.04_moderate_equal_arc_demand": "70316fdb712f14572e8f278c9c5b8c46c1f6685547b7dbfe5c1e3d55dc71d54d",
+    "K3_concave_s2003_e0.04_sufficient_projected_mass_demand": "144e8a8f7a767f6552842685d806d0b160b2f912e8d7d5d2ced95ce7b72cb299",
+    "K3_concave_s2003_e0.12_sufficient_projected_mass_demand": "301c9fabb4f48f293501949459e42bd10947dcabec8078b6136bbd803b0e0563",
+    "K3_concave_s2004_e0.00_moderate_equal_arc_demand": "312043a659176e5d52117f18fd7dc805889698a402cd9a087de1e969ddbc6e51",
+    "K3_concave_s2004_e0.00_moderate_projected_mass_demand": "14c09ae03331d0c580644dff268c1bca9b1e6c7711e901ac97cd2e6347cfd604",
+    "K3_concave_s2004_e0.00_sufficient_equal_arc_demand": "ef416917b886a046843569fe067d4175986fcadd81586722687d532031486190",
+    "K3_concave_s2004_e0.00_sufficient_projected_mass_demand": "63d702b68ccb80de2042d144e82a073af3237c17390985a19406165628519cc6",
+    "K3_concave_s2004_e0.04_moderate_projected_mass_demand": "4bb658d162cb6580f3667464f9f9c2e0cffab8d6786a1adbc6652a374d3a1dcf",
+    "K3_concave_s2004_e0.04_sufficient_equal_arc_demand": "54de71e6b54dc9d98c68d3adf084d2b8b348e6fe4d1f3b209b0200d0ec8213e4",
+    "K3_concave_s2004_e0.04_sufficient_projected_mass_demand": "d62cc5e40c7995bbc148a74ec44bf80d6c61917a05f4331615dc4ab008545ad7",
+    "K3_concave_s2004_e0.12_sufficient_projected_mass_demand": "d9c662d23083df84df089536513bb666a1d8ee334b9867a7511f4c9d89dbfa78",
+    "K3_concave_s2005_e0.00_moderate_equal_arc_demand": "59a68eeeab09ff9c763c9762ac1e1d564b7e491c1fcbd09d853c7fbddff8eef2",
+    "K3_concave_s2005_e0.00_moderate_projected_mass_demand": "7a0d124de6f3cf357909783ddccd0ca22c684550bdb49445c9ac5b4ac25f5785",
+    "K3_concave_s2005_e0.00_sufficient_equal_arc_demand": "c9c8b92f29b98e2190e829ba7d4e8059e41e5648cd4f92631cc67800f3c0ca1c",
+    "K3_concave_s2005_e0.04_sufficient_equal_arc_demand": "b0bf25d089281452fd04f0b98c7156e9fc82e97d504ff08f5ce92d477ad95050",
+    "K3_concave_s2005_e0.12_sufficient_equal_arc_demand": "a159da574b6aaa3c446a444ce3a9774b76593f2a758794cdccd67b1c5267cbae",
+    "K3_concave_s2005_e0.12_sufficient_projected_mass_demand": "f17ead5ae15f0b867fcb6bbf0386561ec2496bb63934a3e97dbf54e5b8b1494c",
+    "K3_concave_s2006_e0.00_sufficient_projected_mass_demand": "3e8e347dc38b379f6b81df51c297d8ca3a2f29731306e73bfeee80514861c5b3",
+    "K3_concave_s2006_e0.04_sufficient_equal_arc_demand": "b9a591e2f1f00619ba02ef0d6e16bbed25a5042a3ffa701c97e3154a3f4678cb",
+    "K3_concave_s2006_e0.12_sufficient_equal_arc_demand": "5d44cdbf34000c7141f5211eddae52df365c4878ea5693431046029e17997bd3",
+    "K3_concave_s2006_e0.12_sufficient_projected_mass_demand": "8b9a02254d8141222cf795bcb7204e6e82d58d5596767738a339c7caccddf576",
+    "K3_concave_s2007_e0.00_sufficient_equal_arc_demand": "b33e4a29e134b82d4e3ef942c80117b40e4dd3223a084a420e06bf1d37c0d822",
+    "K3_concave_s2007_e0.00_sufficient_projected_mass_demand": "969daa556fbfe20e654accebf1503e5ec38a1ccdd8186de05b1b9e7566be355b",
+    "K3_concave_s2007_e0.04_sufficient_equal_arc_demand": "d2ec87f19cf6ef562504095eed156dc38d389ec8c24a2f41fec62a312aadaab2",
+    "K3_concave_s2007_e0.12_sufficient_equal_arc_demand": "5354d11b7e9f832a199f3c08da3475a0e20c0fc5890f0efbd8c07b4d3a43171f",
+    "K3_concave_s2008_e0.00_moderate_projected_mass_demand": "0f6620c425da51af3691d036b2ef0a9930bd58f61915f04439ba9e9b83af23e2",
+    "K3_concave_s2008_e0.00_sufficient_equal_arc_demand": "c143c8acfd50b35cbdaecb6485c9ea13bfb941be96296e16446ae78f7cb43c4d",
+    "K3_concave_s2008_e0.00_sufficient_projected_mass_demand": "3633b8177ac214f4e6aca2bb6a5274752d40c60f7c56914091bd3995a4dfd477",
+    "K3_concave_s2008_e0.04_moderate_projected_mass_demand": "24d7ddc83d638a3e42a9c333290e135242bcb2f7a262e1bddcb2c2f841721683",
+    "K3_concave_s2008_e0.04_sufficient_equal_arc_demand": "c6b8aa38eecaf7135dd21179ac197462de7bb453d3c459fbb0285411b8708e6e",
+    "K3_concave_s2008_e0.04_sufficient_projected_mass_demand": "1b34cab9a2d1ee7b6d0218bb9c343339b78c543496ef9f2fecf9e55fdee2c80d",
+    "K3_concave_s2008_e0.12_moderate_projected_mass_demand": "b008b40a2857f72ca77e5fc744779658a614c74c202061698cda98c932a9de86",
+    "K3_concave_s2008_e0.12_sufficient_equal_arc_demand": "d93507bca036cbf8d6bc17564de8f0ff590d5262f9687942525d76ea9bd6d5b0",
+    "K3_concave_s2008_e0.12_sufficient_projected_mass_demand": "6eb02c7e0088a0a493465fabe549680c644e3e87159e92c8cb6789ca8d3b70d9",
+    "K3_concave_s2009_e0.04_sufficient_projected_mass_demand": "b0e685f56f114b9178c4bfd02771927a1bad135f256982aafe7380e1ecd99b35",
+    "K3_concave_s2009_e0.12_moderate_projected_mass_demand": "e88ee85a46193f0b8844c2f0580a4dc71b1d67b3971c76b4e60085348de49b13",
+    "K3_concave_s2010_e0.04_sufficient_projected_mass_demand": "0b1bf7e9fcc5c9b445943bc3cc353c53f62f28c6b85f6733f45b40765813b223",
+    "K3_concave_s2011_e0.00_sufficient_equal_arc_demand": "796ebe51b9b16b2afafa504326b3ccb3255f2aa68218255bfa3c408ecaabaa43",
+    "K3_concave_s2012_e0.00_moderate_projected_mass_demand": "b324b548c636cd6e234a9c28fa2559d395a6853471bf948d366edb4ed57c0c0b",
+    "K3_concave_s2012_e0.00_sufficient_projected_mass_demand": "dd864b3a4c9a9d6a5cc81738149730606785ab43bb6f32578502ccf2badfa014",
+    "K3_concave_s2012_e0.04_moderate_projected_mass_demand": "417415ac83066de1663e9acf969b027f2c87900596592590e4a4fa04e88945e7",
+    "K3_concave_s2012_e0.04_sufficient_projected_mass_demand": "ee3bcaeb70d3567dbff8904ccbf2d12b8b273335ba00c5cc3f94512f05c59c26",
+    "K3_concave_s2012_e0.12_moderate_projected_mass_demand": "0bc6791d90cf9879ac8b687f52f2c0aab7aa5aef4819e1b2729ed8f3b60230fd",
+    "K3_concave_s2013_e0.00_moderate_projected_mass_demand": "458f90800d25bba42c5e9fb24b476fd3a84981b94d27f7eca4d51d620cf64b01",
+    "K3_concave_s2013_e0.00_sufficient_equal_arc_demand": "8606cb9211b380bbddbe8c8e5b8a17cc8a76761a4f00121c2ff934db93a64dc2",
+    "K3_concave_s2013_e0.00_sufficient_projected_mass_demand": "a0b5a0cc9b52fcda993b6df26035603d7d935e1165581605bc24e5b33b6b645a",
+    "K3_concave_s2013_e0.00_sufficient_projected_mass_minimax": "bade789eceb4bae29ae5b01db09d780080280749ea993d99b438a7c754ba40a7",
+    "K3_concave_s2013_e0.04_moderate_projected_mass_demand": "fe3a2ce73f60d937dec1dc10e81c06333eff248709cdea591c603776d20c8fbc",
+    "K3_concave_s2013_e0.12_sufficient_projected_mass_demand": "ba74ab6dcd996dd7605a552e1e589ceb3079bb78467bd49b68aebf21da17d8b5",
+    "K3_concave_s2014_e0.00_sufficient_equal_arc_demand": "b329e5a9b0923f535e3759a42fe2360606b9d1a5058715d6a637713ad32f811d",
+    "K3_concave_s2014_e0.04_sufficient_equal_arc_demand": "5a062220ba40dcc30f459c913c88cf9399a2e6b717a2784884c439ad9c6ac85d",
+    "K3_concave_s2014_e0.12_sufficient_equal_arc_demand": "e60aff56f412454bdd5945604834c313b3838c9562e4d4b4e0e558c30629849e",
+    "K3_concave_s2015_e0.00_moderate_equal_arc_demand": "63d40da533a3391e8436151b34d25e4a71e0f317c5800b1b370191b7ddc19d2c",
+    "K3_concave_s2015_e0.00_moderate_projected_mass_demand": "595949256d410b36f519f56789bdd638676346df2025341bb748f15bef064b3e",
+    "K3_concave_s2015_e0.04_moderate_equal_arc_demand": "a8134073bc25e242b2b03385bc6715ad6cdd4f5feee70b253a8c0b285cf4b820",
+    "K3_concave_s2015_e0.04_moderate_projected_mass_demand": "7a8d5370d189795ea9e53bbeac2da35006a6b168f275c180f113b0006536325b",
+    "K3_concave_s2015_e0.12_moderate_projected_mass_demand": "5ba9e0cb7d60c0ce3e35a29ad74ea2b6ecbd80e226606ed1ee3a0f780408907c",
+    "K3_concave_s2015_e0.12_sufficient_equal_arc_demand": "4a3e0facb5965455c494a0d0d0b69ad478d7026f6ad5b4824ccfb2b9683ed297",
+    "K3_concave_s2016_e0.00_moderate_projected_mass_demand": "25f83897ce261666384e389e1a6be830c668bcb335e4db0e3f6cdb26d20fce59",
+    "K3_concave_s2016_e0.00_sufficient_equal_arc_demand": "39672908f10d895108692cbe365fbca2e480417c2ee4bbdd61e043998eb1ec63",
+    "K3_concave_s2016_e0.00_sufficient_projected_mass_demand": "548c98f0a13c19fb3aa24cdeade68fef9f6977932fea1816c1eb18187d63dc71",
+    "K3_concave_s2016_e0.04_sufficient_equal_arc_demand": "fecd232ed9e8291d9dc0a42bd22a340c9fba6f237c39cb9af1c3968d64cb901c",
+    "K3_concave_s2016_e0.04_sufficient_projected_mass_demand": "97878978d93c13cf17e6bc25654c90c45936a9c12254c7c6f7028be2a3fb5a76",
+    "K3_concave_s2016_e0.12_sufficient_equal_arc_demand": "0ef77d6c4b615f41f1e0850b79ed916f675cb4c57608e28fe3e21104c20422d5",
+    "K3_concave_s2016_e0.12_sufficient_projected_mass_demand": "ad0536eefae8dfbfe15a5aac7d304cb63854292cd3defb6ea92400701136da7e",
+    "K3_concave_s2017_e0.00_sufficient_equal_arc_demand": "1ec4f7232b44e9fc462fe99076a85c0992a63efc70c80f38f1baa166929091eb",
+    "K3_concave_s2017_e0.00_sufficient_projected_mass_demand": "41ed7ce95c8060d0d65fc11e6f7850b5d70f9fa81a8721e7492f1be341148c4a",
+    "K3_concave_s2017_e0.04_sufficient_projected_mass_demand": "c3cc5706a50edcb537a200b1b16fc9be3b3e658756e31fc76aa4c9762ab3658e",
+    "K3_concave_s2017_e0.12_sufficient_projected_mass_demand": "4b6e01614832cb7a102ebd304b216af430c81492ac251cde1f2e787d13a67049",
+    "K3_concave_s2018_e0.00_sufficient_equal_arc_demand": "4efa131f82e99e151b9854c9c1f039aec806ef20ad3f85258b347946065890d4",
+    "K3_concave_s2018_e0.12_sufficient_equal_arc_demand": "e8e72dec51e698fc729f904702fb60bf2b6399bd4e4354a9840c5de860e846d6",
+    "K3_concave_s2019_e0.00_sufficient_equal_arc_demand": "af49ca84bb79c993faff377a4b9f641f34038cb46e971c5429328e7054e8f868",
+    "K3_concave_s2019_e0.04_sufficient_equal_arc_demand": "f1bf260e84520d61938a63ce410dce7cc385bcbf58d9d7741aa7306748acbe8f",
+    "K3_concave_s2019_e0.04_sufficient_projected_mass_demand": "2ab990760b70b8eac57b2a6040697114673d65a2b688c1a4405743bad2128d43",
+    "K3_concave_s2019_e0.12_moderate_equal_arc_demand": "88a9879e8c20bbd65811aa11115697c5e093925446de2c78ee15226d654647b4",
+    "K3_concave_s2019_e0.12_sufficient_equal_arc_demand": "88d756523a87f8789545b529c06fb38451a5aba63a31342283d89b23d1aece1c",
+    "K3_irregular_s2000_e0.00_moderate_projected_mass_demand": "3fa008edebccddaea09b524675a633b789e2cf6ec099c299f0484943de06bfe4",
+    "K3_irregular_s2000_e0.00_sufficient_equal_arc_demand": "4b771f5a09c35385affbfd0515bd1896b702f431b5ae62bc62c131dcc9454f80",
+    "K3_irregular_s2000_e0.00_sufficient_projected_mass_demand": "43bc456f41f879591670e59199b5fbcc00e9a8b39c2b9b33187ed56f5fa86a64",
+    "K3_irregular_s2000_e0.04_sufficient_equal_arc_demand": "8de3ba34adb9138ac66ab7b42347fc953e13b077358c19471c3491cc6b712db8",
+    "K3_irregular_s2001_e0.00_sufficient_equal_arc_demand": "6839a0ef37714456f0708bcce1ae3c7e549c211f1f6b5207f593a8513e4f0954",
+    "K3_irregular_s2001_e0.04_sufficient_equal_arc_demand": "e55c5502d1b1da3ed92cb4003eeefe9851e47dfb018b62dfa0bb8d5a043abd65",
+    "K3_irregular_s2001_e0.12_sufficient_equal_arc_demand": "3115d71eb65f44d74d8e8f043d13807d8311292b727198db1b7e9a10294fafb6",
+    "K3_irregular_s2002_e0.00_moderate_projected_mass_demand": "032fec6c0e99fd04cc703dbe0caaea899d53b08352a3557a6aefcdec512e6091",
+    "K3_irregular_s2002_e0.04_moderate_projected_mass_demand": "fe8f217e52f8d26ddd808db38ab99b489e2acdc6d1143d0fb7d43b816dc5b926",
+    "K3_irregular_s2002_e0.04_sufficient_equal_arc_demand": "586efa403ddcac6e1096383105c5a4a7518170c9b56d75d667c8793b256c9d54",
+    "K3_irregular_s2002_e0.12_sufficient_projected_mass_demand": "c95979074a4ddd29e9820291cd39395b8b6e66bbae3627daefdd8f88c2131e52",
+    "K3_irregular_s2004_e0.00_sufficient_equal_arc_demand": "83a9c95841a63a60a375d5480d43e8d639cbb4db69fd4bf4ff18f35ffee8ee0e",
+    "K3_irregular_s2004_e0.04_moderate_projected_mass_demand": "58303fda28106bd0ca8ec4dc2905a0543409e6cea72303bf0b6338ce4438305f",
+    "K3_irregular_s2004_e0.04_sufficient_equal_arc_demand": "da1f1fa98e251498ad51fe3f8ba2b46a3161a65b36d648875bbf5296e9e17524",
+    "K3_irregular_s2004_e0.04_sufficient_projected_mass_demand": "c67d8fb7cbe0c7622ff59fc484f13c098a16a49047759d2c279eedb0e53bed73",
+    "K3_irregular_s2004_e0.12_sufficient_equal_arc_demand": "952b982cbeb95c0ba7af3840ff46e56dc79b2d1e1f8b09131b6a145d164405e2",
+    "K3_irregular_s2004_e0.12_sufficient_projected_mass_demand": "91f9882ca5d17f354dc52bbe60734552a88f0609a25f286c7e20feaa339ed72d",
+    "K3_irregular_s2005_e0.00_sufficient_equal_arc_demand": "b48641c2789996e02f9a1b0e6663e5ca059129555f9149f516b9e3feb7785d5b",
+    "K3_irregular_s2005_e0.04_moderate_projected_mass_demand": "6dfe1db825ac9393c14322cac2dd8d9bc0a8cb3e6d2e77f92164cf1bbf3a9298",
+    "K3_irregular_s2005_e0.04_sufficient_projected_mass_demand": "ce823bd8f1a7010ca472a7c9b446f88cca38ad6ada2e4185e1894ee2487531c7",
+    "K3_irregular_s2005_e0.04_sufficient_projected_mass_minimax": "6caf471053a50c18859de89e36111e42cd330eb6db9be16da19037f9c9438650",
+    "K3_irregular_s2005_e0.12_sufficient_projected_mass_demand": "bdb0cb80d27688d0798e152d06beb378a41c5ffd6f5b46cf0714d05661f08ad2",
+    "K3_irregular_s2006_e0.00_sufficient_equal_arc_demand": "7ad0a7a05ddcde1d51de3c4e13e50a1bd779908d1d11ed2a94fc1899abcd08d7",
+    "K3_irregular_s2006_e0.00_sufficient_projected_mass_demand": "0392902f3a39124b63fdc7ab34bb51fcef2e32d91c0b0a78a4dc301b7e50e9eb",
+    "K3_irregular_s2006_e0.04_sufficient_projected_mass_demand": "420c373fc45f6ec388189cacc9167efedc520cc2435366d68be5e459fd0cac15",
+    "K3_irregular_s2006_e0.12_sufficient_projected_mass_demand": "aa0399614560fa2cd40ebbd08423ce379439a22ce4cfed4a57d38a656f9986a7",
+    "K3_irregular_s2007_e0.00_moderate_projected_mass_demand": "25a1998bef9a4caa555daaf43dee24404f9431f5abc04e7b6bb09eb2472ce27a",
+    "K3_irregular_s2007_e0.00_sufficient_equal_arc_demand": "97ace14bf0ad945f2c5f20aeadd1b0b851918c1995312f8e8de4f39d122bf3cb",
+    "K3_irregular_s2007_e0.00_sufficient_projected_mass_demand": "3222b1b3d4789521b0753a891e0e307747de3607fcdcd7b1c29a2e41b0b34124",
+    "K3_irregular_s2007_e0.04_moderate_projected_mass_demand": "a28061a4ffc3fb5e36acce659722d0b2d7b7e58ca13b050698c69b9570d197f0",
+    "K3_irregular_s2007_e0.04_sufficient_projected_mass_demand": "df4627efa6ccedf2dd0137c1a01845189217187dbba5755fbe7fa1b8b915234b",
+    "K3_irregular_s2007_e0.12_moderate_projected_mass_demand": "5011dec2edae6ff8ee5b42604d6139973296e5c08753a871cf4789d11fc70a7b",
+    "K3_irregular_s2007_e0.12_sufficient_equal_arc_demand": "0b85527b748aeb4c3e11588e1e625be58d689c46d312d64af6a9117c98453aea",
+    "K3_irregular_s2007_e0.12_sufficient_projected_mass_demand": "a5bee5667d94533e5dc9fe489683b83479868a3985680e3aac712af660d40002",
+    "K3_irregular_s2008_e0.00_sufficient_equal_arc_demand": "315c92964c38cb3adc329254048464f3b400322427e0b69c283da4642b631ecb",
+    "K3_irregular_s2008_e0.00_sufficient_projected_mass_demand": "35cf8a078a5a483cf30579871dbe37ddc35133fc74e8386e5ae6878600c68d5a",
+    "K3_irregular_s2009_e0.00_sufficient_equal_arc_demand": "b6c1672385ae1df5aa367e59ee7527c1aa15b70b6127bb8489e74446e0617bc8",
+    "K3_irregular_s2009_e0.00_sufficient_projected_mass_demand": "08f56594e86d661b0c0fa687391b47f45e6c05bbea2b1e39a6c25dbf9cc096fd",
+    "K3_irregular_s2009_e0.04_sufficient_projected_mass_demand": "cec753e3e58d6d4296a99091c1020e7431675a920038cee9fb11350d2273c838",
+    "K3_irregular_s2010_e0.00_sufficient_equal_arc_demand": "b758d2c1ac4ed592a7180968fb007e2ea2702b41bc0cdee2f04b8655786e03e4",
+    "K3_irregular_s2010_e0.04_sufficient_equal_arc_demand": "76f284a4b556b629b7dc9ac02b2060806ca07d882776502dbcc292f2e1ee1be4",
+    "K3_irregular_s2010_e0.04_sufficient_projected_mass_demand": "c40fcc475aa65d52bd1d8cc2861def223045ee53f19a7dda8f0ec37d70b2483b",
+    "K3_irregular_s2010_e0.12_sufficient_equal_arc_demand": "8fb2e35317f1da75d437ecfb544eb53c3e7dfa0aaebde9657ecd22012e2800d7",
+    "K3_irregular_s2010_e0.12_sufficient_projected_mass_demand": "2529edfe1253e4c46dde5bd5f2ca3901596bc7d6351ee649192c5136dad6a9c7",
+    "K3_irregular_s2011_e0.04_moderate_projected_mass_demand": "1558588555dd5befe6b1971a8ac4e6fec1dd12e981d3e16c4a408dcfe3639ad6",
+    "K3_irregular_s2011_e0.04_sufficient_equal_arc_demand": "fa07abcffcf61215f5900d4dd58f9955e839a51128503748d39159ca3522130b",
+    "K3_irregular_s2011_e0.12_moderate_projected_mass_demand": "4eb7ac863f12d4a4eebd863ae3f9a80a293a14beb2f3a93fac50f4338baf9779",
+    "K3_irregular_s2013_e0.00_moderate_projected_mass_demand": "a7bb37c2434659372bdeb07ad5013a81873eb459b95a70540a255b2968ffba3a",
+    "K3_irregular_s2013_e0.12_sufficient_equal_arc_demand": "a80b046f036cb9f418dc496316674538a8321348b95503c86ab1038609523968",
+    "K3_irregular_s2014_e0.04_sufficient_equal_arc_demand": "e9d351382c395ebe6a7c5969068328828afb1095dbd6df9bb1e55c7c580b0677",
+    "K3_irregular_s2014_e0.04_sufficient_projected_mass_demand": "315418d5007595413a6dfe021a90d31cc3401793e935f365cb34e26bb5de9080",
+    "K3_irregular_s2014_e0.12_sufficient_equal_arc_demand": "8d4703c3b372526ddf9ef2842ae11c9cbd6eb6269d4d21450af9eaccc5d08f60",
+    "K3_irregular_s2015_e0.00_sufficient_equal_arc_demand": "df32eba1f68ce9c3188a61a3e99dfca0a7ec0ce6cf76badff226c0ff09660678",
+    "K3_irregular_s2015_e0.00_sufficient_projected_mass_demand": "3a3a1122c5c35fdbc156143fc1c2991a70e7d20c3c965fd264f9f8d58855903c",
+    "K3_irregular_s2015_e0.04_sufficient_projected_mass_demand": "fc358b37499a13f63760306c12d6f17cb269d4c5bf9183cc7e10f43c0665789a",
+    "K3_irregular_s2015_e0.12_sufficient_equal_arc_demand": "5b0b16bdd1ffe5e106c99e47a98e1f5a122f448ec3f3817c8f1489e8984c31d8",
+    "K3_irregular_s2015_e0.12_sufficient_projected_mass_demand": "a8616b5d3007269365590c38a7b344e7372558aa56566602feaf7b921e371f6b",
+    "K3_irregular_s2016_e0.00_sufficient_equal_arc_demand": "4da5aceea1b82f8ffa91bd8b8053a7a79f293bbbd85974485c548f7b9e2ca9e0",
+    "K3_irregular_s2016_e0.04_sufficient_equal_arc_demand": "a0214d79e0ccbe67f82698d203f06e14fc88a10a167a2a61cc31e76ba4713b9b",
+    "K3_irregular_s2016_e0.12_sufficient_equal_arc_demand": "b4e5178cf893a101fc8eb98f0c98292eb8586a5e1340dbd43da6fca8a31949c2",
+    "K3_irregular_s2016_e0.12_sufficient_projected_mass_demand": "bae5bb739422942a2e19899ac5f1f0c8dd2e0543fb11c96ec88c0e4e4c87dce9",
+    "K3_irregular_s2017_e0.00_moderate_projected_mass_demand": "44346d1d4db76ae62f8c25613c0951958a01507307a876216669cd898a02394d",
+    "K3_irregular_s2017_e0.00_sufficient_equal_arc_demand": "78076ae071801aed0c24cbe108e5c7a7e1b752d1d9f0d89982ce909689e5e5a1",
+    "K3_irregular_s2017_e0.00_sufficient_projected_mass_demand": "af03710dbb0768141ef4bd1fcaa60f4655dfee13733faba36a398a4fa319ec04",
+    "K3_irregular_s2017_e0.12_sufficient_equal_arc_demand": "bc36b940e28e8f0efbe76f4ac20436b331c7bf6e230229b17fef4411de6461d2",
+    "K3_irregular_s2017_e0.12_sufficient_projected_mass_demand": "936981d52f1e09e5babca135a9f77115133bc9656abfaaa25312b87ea7c6cfdd",
+    "K3_irregular_s2018_e0.00_sufficient_equal_arc_demand": "85796c2e03f5552dcf463198bf77d8d7ae6f9f8bd883e6ebd340a5db4505bd17",
+    "K3_irregular_s2018_e0.04_sufficient_equal_arc_demand": "8b79e3a6d1b3673f23f32742035183f67ae3d34fee74ba96dbd666705718a0d5",
+    "K3_irregular_s2019_e0.00_sufficient_projected_mass_demand": "18ff0bee254fcf62eeb17de3d9542a8f3cad7a0ddd44792905862d45213b9ef5",
+    "K3_irregular_s2019_e0.04_sufficient_equal_arc_demand": "7b1a022de9dd353d0519bb6e42575ba6737217151feb8251a4bd6770f6d607df",
+    "K3_irregular_s2019_e0.04_sufficient_projected_mass_demand": "69fd03b34cac8dbee8c3a1de58c774743de5a039a5467e0ae7d8028465527639",
+    "K3_irregular_s2019_e0.12_sufficient_projected_mass_demand": "080205e811d03e382814931f9bb85b56965f19b96296012a83fbb6d1fc417bc6",
+    "K5_circle_s2000_e0.00_sufficient_projected_mass_demand": "8d0786d1fdc12beac59372a42ab1c71f98607ddf16372af17d18edf8887e3116",
+    "K5_circle_s2000_e0.04_sufficient_equal_arc_demand": "563626876c3ad9d938aa1fcf4bfeae767bf4763ccee9f398ae8210972e7881ec",
+    "K5_circle_s2000_e0.12_sufficient_equal_arc_demand": "e6b5991ab1f9c0f32dc6d1c762e08fcb7025e83fc5a0792bf3a5fe6caca7d838",
+    "K5_circle_s2000_e0.12_sufficient_projected_mass_demand": "4d0b821ebc4111a0698a90b31e6359a2179cecbd86eb97f67aac38a257a75b67",
+    "K5_circle_s2001_e0.00_sufficient_equal_arc_demand": "9daf16b52bc66ac9a6831c5bff31893da766696c8fdba35f38299707847ea5a8",
+    "K5_circle_s2001_e0.12_sufficient_equal_arc_demand": "95c7af804ac349f9693a854963ec9b8ac436fa469a697ce07caea8c703f69402",
+    "K5_circle_s2002_e0.00_sufficient_equal_arc_demand": "66b1136988ffc0f63f454a110dd17d1dbe7233c4747361e1b11a0ec66f74d21c",
+    "K5_circle_s2002_e0.04_sufficient_equal_arc_demand": "cd31cb704c468626a99d6e339200cdd9a5d950c8266b95068056287374eb4ce5",
+    "K5_circle_s2002_e0.04_sufficient_projected_mass_demand": "529dc22c62d24d2b8c61ecf570458e25208757b99bfeaab381d2746f818e831c",
+    "K5_circle_s2002_e0.12_sufficient_equal_arc_demand": "c225260b77a23c3b7d78ecb9188c3dc8b18d0b9199a803681e18072543e05323",
+    "K5_circle_s2002_e0.12_sufficient_projected_mass_demand": "382dd4e9a72d50a4071e42579ef58fab948e87f4bcab9e24f6946b62f2870bd1",
+    "K5_circle_s2003_e0.00_sufficient_equal_arc_demand": "4b76ac3aeb2b6541b711b847ae3fca094dfb49ba0943b2d0fb3bea2204f8fb9b",
+    "K5_circle_s2003_e0.12_sufficient_equal_arc_demand": "a01aa3f1d8bc98771b6c22a1aba0a87e9dc12c16e9c2088764f3275f0cbf3a21",
+    "K5_circle_s2004_e0.00_sufficient_equal_arc_demand": "b244131fa59526b2d95bfc2d3839c57054a50c5031bc1bef1bc87cbfba91b1b8",
+    "K5_circle_s2004_e0.04_sufficient_equal_arc_demand": "d73e8884e12206d5e590b03368b5d6af38c50edf369e7a60f22f7c36bf9e3cbf",
+    "K5_circle_s2004_e0.12_sufficient_equal_arc_demand": "55b0d7eb4c2dc327d347ab23029cf7546db61f37bf0ff789ba4d126bef28e8cc",
+    "K5_circle_s2004_e0.12_sufficient_projected_mass_demand": "846db0814f8e7ac8691de979fc934055e6957468939715009125a5672a1099fc",
+    "K5_circle_s2005_e0.00_sufficient_equal_arc_demand": "e8b63f0688e385df74cdb6726ef858a88511c01de032addf1e04351678997a4e",
+    "K5_circle_s2005_e0.00_sufficient_projected_mass_demand": "e8d927e6cf2d596e32c19a70abd627ef9cb55ef687af6b982a39bc62da25ef85",
+    "K5_circle_s2005_e0.04_sufficient_equal_arc_demand": "df049f15588f16513547cfaa66d542062485fe35b00a60aa9109c694c0aedc0e",
+    "K5_circle_s2005_e0.12_sufficient_equal_arc_demand": "fd059f19efde0e2387872d8dfe9849755969516031672d4e2b7a00bfd4d762fa",
+    "K5_circle_s2005_e0.12_sufficient_projected_mass_demand": "ed7a796b2eedf324dd4ecab5ec94a2f416c5b6c6e654d93438224832f0eb91ef",
+    "K5_circle_s2006_e0.04_sufficient_equal_arc_demand": "5e2f27f89466760d3cb63a69c84ad58263121cc270b18c3ce3e5c2c2c6efca3e",
+    "K5_circle_s2006_e0.12_sufficient_projected_mass_demand": "3fb4c96c70054043c16b2429a14ebcb2c4d7a5602adeb4d1c47ad1bacde497aa",
+    "K5_circle_s2007_e0.00_sufficient_equal_arc_demand": "eb340b9cdf9edeeaa2fa1bc5fb010ab244923dbf88908db9fe3ecf257ff739e5",
+    "K5_circle_s2007_e0.04_sufficient_equal_arc_demand": "7fac4c80ee2fce24e77443043d4d0f204e5ead4c69f2756ccb1f8f24cedf6af8",
+    "K5_circle_s2007_e0.04_sufficient_projected_mass_demand": "d86555cb8701a9611751589066820d13a501d86c81f5ba61bb5a28ef4631e829",
+    "K5_circle_s2007_e0.12_sufficient_equal_arc_demand": "334b20885004133f00327654d5022ed5c3af3287b54d69e21b3bdb463e5a5651",
+    "K5_circle_s2007_e0.12_sufficient_projected_mass_demand": "11ddf91144f17715d35a7ce1f52bb3371b68d336432a7cd17eef2522df1de7f3",
+    "K5_circle_s2008_e0.00_sufficient_projected_mass_demand": "3e87bc9fed32a7aafb955f79e78bd3046c875d8cefe15c6c003036249a9512eb",
+    "K5_circle_s2008_e0.04_sufficient_equal_arc_demand": "5ca842c9d7d91bc508d192a3dc33f566fbe3c43305f13d0d8619649fc2e3bc6e",
+    "K5_circle_s2008_e0.04_sufficient_projected_mass_demand": "96db629a55601980d52a30dbb6ec875d11ce25b2f8b0d96f473585841146fdc7",
+    "K5_circle_s2009_e0.00_sufficient_equal_arc_demand": "d0217e0632f6083cac4c7c7bbe5e06c2654825490e3fbd00ccab1614115dbad5",
+    "K5_circle_s2009_e0.04_sufficient_equal_arc_demand": "c97ea57bc904978182f877366dbb48af1ca9e020114fc2ef0f177ee1fb55be79",
+    "K5_circle_s2009_e0.12_sufficient_projected_mass_demand": "527af482194f59eabaed0c5b3b956330b48d8bb2c045f4aa678a74c761cd5a29",
+    "K5_circle_s2010_e0.00_sufficient_equal_arc_demand": "90efb7d3bb17ed1ef48ac74dd0d0103066863a59da76ea7ea1587d154d178af3",
+    "K5_circle_s2010_e0.12_sufficient_projected_mass_demand": "a04708d6592741d9d66cf1f3d95ccc984f7dba2da84a0af91bb32097aa19e3c0",
+    "K5_circle_s2011_e0.00_sufficient_equal_arc_demand": "f2541c7f0cc9ccd8ba877a2d3a67eca7a6982f8c1573819214f4dd1097ff5cf1",
+    "K5_circle_s2011_e0.00_sufficient_projected_mass_demand": "3ee4dcc1c97da3bf0d1dd162e5e9ed1d93d19860f869066223c51591d12aba06",
+    "K5_circle_s2011_e0.04_sufficient_equal_arc_demand": "fae767a24421f9103f5672360c502c2fc2d72273b0623bf0558b3a1584347fb6",
+    "K5_circle_s2011_e0.04_sufficient_projected_mass_demand": "6fb72eba93c07739e1ce793806b55282624264416eacd8f577ef056c61a9f0d3",
+    "K5_circle_s2011_e0.12_sufficient_equal_arc_demand": "18db55fc4e62c0531e813c75077fd31453e0b0a2d335d76cf33569dcbda74b3c",
+    "K5_circle_s2011_e0.12_sufficient_projected_mass_demand": "ad9ec2fcbdb804ddbc37dd8dd56e8f20923fb6b99fe6ac275d3b05b516249e0a",
+    "K5_circle_s2012_e0.00_sufficient_equal_arc_demand": "6a225af04c9c96404ffab99c7d03aa2053b18537956fcef9ac01431385d3ddad",
+    "K5_circle_s2012_e0.12_moderate_projected_mass_demand": "68ce5269b14b824da433f406169399d048caa853075bc2a37d167f46ec2b29fd",
+    "K5_circle_s2012_e0.12_sufficient_equal_arc_demand": "35b663ae02113ee1ddf5aa89ae1b4a57da07eb201677eee6d16bfb4592431fc8",
+    "K5_circle_s2013_e0.00_sufficient_equal_arc_demand": "25405f2cfc33b92b76966f02ceaba715801ee2ccb2fd786847e12086d76a42e5",
+    "K5_circle_s2013_e0.00_sufficient_projected_mass_demand": "d591e6bd065baabd7fcd7927a8493679ecfd16d546f814f9655570e902622e6b",
+    "K5_circle_s2013_e0.04_sufficient_projected_mass_demand": "d4fc247b1b7cb521cbc54c19631dd1e6280e6da92dd436f741cc516cb15626b5",
+    "K5_circle_s2013_e0.12_sufficient_equal_arc_demand": "5b7e1e7bb1ec3d0d9ab42d2bd70d647012296644d779df993bf44c000804620b",
+    "K5_circle_s2014_e0.00_sufficient_equal_arc_demand": "73e414884d90658d49a6b7de146423531302f45c4447a0fc25443a126dd8a72a",
+    "K5_circle_s2014_e0.00_sufficient_projected_mass_demand": "d360cf658eb62ea69fe536cb377edfe01e1d34097185cacbbf7ae6658880aba2",
+    "K5_circle_s2014_e0.04_sufficient_equal_arc_demand": "c57b994e6b863ea6a59dfa5194efb560c5ecc1a8f1c425394334ed626aa8d2d8",
+    "K5_circle_s2014_e0.04_sufficient_projected_mass_demand": "d36ca27f7af397471ec9e311d0ce1e31000d76204d7166e49e4532ab61de2465",
+    "K5_circle_s2014_e0.12_sufficient_equal_arc_demand": "ab05df4f2a0a36207ae07a37b4e8a82b0ef2da5ca5d42370301bd1d03a57e506",
+    "K5_circle_s2015_e0.00_sufficient_equal_arc_demand": "fcb3ddb988703d180e8e865fc3d29db204f0d7d18636e8d0c85f5cc705364232",
+    "K5_circle_s2015_e0.04_sufficient_equal_arc_demand": "919d6b252b796a899e2419f082e8ab03528f72c10b7e8476de83e6c913b7e9d7",
+    "K5_circle_s2015_e0.12_sufficient_equal_arc_demand": "0fe371656cb2d99ae4d00a6143b1214503a8f04df46ae2dd7cc1fb86c1191864",
+    "K5_circle_s2015_e0.12_sufficient_projected_mass_demand": "4e2f323b4585e3b7b9d58506ea8a9a95b00aafc6f49ceefe2a9d249b0b93499c",
+    "K5_circle_s2016_e0.00_sufficient_equal_arc_demand": "2b0cc8103ed0a86d4fd21bbba951b37dae79c2071c0edad8832e2c1cb323c7af",
+    "K5_circle_s2016_e0.12_sufficient_equal_arc_demand": "f502103c5cae4e52af9af5bdd4657feffb37437ba973f252ef0ac20bc96924d6",
+    "K5_circle_s2016_e0.12_sufficient_projected_mass_demand": "2e05940561ff7a2e7d9cb4625c27fff9bb72e138e7e42113e276af19e978444b",
+    "K5_circle_s2017_e0.00_sufficient_equal_arc_demand": "bcf2075554c984b283e42e253b5681b0a286d72672c460c7f77bf84023f8db52",
+    "K5_circle_s2017_e0.12_sufficient_equal_arc_demand": "ce743da4fdf76414aee4c3101188e94c3032f7d392ef170712bdc174c9a12bd9",
+    "K5_circle_s2017_e0.12_sufficient_projected_mass_demand": "c43b4d1790014d2d66bbfd9c29b9bffb33ffae9bf366e210ce2b5df38c78876a",
+    "K5_circle_s2018_e0.00_sufficient_equal_arc_demand": "8bb344254ccb3cd65b3aed3454111b10ff9ebb7a2c14512b02cc7cce6b8d9134",
+    "K5_circle_s2018_e0.04_sufficient_equal_arc_demand": "30cb79b4a795367fe6c7612369400a1d0a947c6c89a717ebcf45b479daa0036d",
+    "K5_circle_s2018_e0.04_sufficient_projected_mass_demand": "246985d14bb9a445532c31d20ffb674fba612b7f9fa759d6a3419089f792ad6a",
+    "K5_circle_s2018_e0.12_sufficient_projected_mass_demand": "b108d8827596227f814816a8a991ed093ab9a261c9e2cdd81da55a09e429c48a",
+    "K5_circle_s2019_e0.00_sufficient_equal_arc_demand": "822e31693a78ecf7ad526b432abb9a13f27e22e195fa246d40ccb006a13d7d3b",
+    "K5_circle_s2019_e0.00_sufficient_projected_mass_demand": "29feb52f6d059f4f29097e5c3b54036e66c66cbf8dcf5984c67e356adbff6be2",
+    "K5_circle_s2019_e0.12_sufficient_equal_arc_demand": "9ba5eaeaca83ea1158d2e55ce9b63bbb441563b97be1ae2b0d7823562e7d0ed9",
+    "K5_circle_s2019_e0.12_sufficient_projected_mass_demand": "58c9deba365654357523fc07a8724d0993d04c6ba4556ec71fc3ffaad7c091f8",
+    "K5_ellipse_s2000_e0.00_sufficient_equal_arc_demand": "f7a63c0cbfad1d7142980c423e2120bd2e73c2e3a6a907441ffd37bbcbf28ea1",
+    "K5_ellipse_s2000_e0.00_sufficient_projected_mass_demand": "50b344000d2290aeaa0f73fbda1a30704abdf112a0db20ddece4f3e06c6f46d8",
+    "K5_ellipse_s2000_e0.04_sufficient_equal_arc_demand": "827abc164c8ab295ca545c36dadb271bfb97ae1b843c7c123d4d577f3d317728",
+    "K5_ellipse_s2000_e0.04_sufficient_projected_mass_demand": "5a9a07b6bae077ae09372561d7b596405b74d354e2438dfa9f2293567f24e56d",
+    "K5_ellipse_s2000_e0.12_sufficient_equal_arc_demand": "a96d9c1eb5b2c97fa8866cdad3d869af3a3a987488e2d093df0cc0784642320f",
+    "K5_ellipse_s2000_e0.12_sufficient_projected_mass_demand": "ce77fd3a5e8948edf19238f2b1f98b087d1c18ffac2581b825269753b9a47833",
+    "K5_ellipse_s2001_e0.00_sufficient_equal_arc_demand": "34d906580bde35e065a78c973bb3d90d0d6d0993fa81fbd491469a77c184f6e9",
+    "K5_ellipse_s2001_e0.12_sufficient_equal_arc_demand": "f51717dae5c69f3f5162bad4aa414f376097bc3690fb1eee85222b69644466ed",
+    "K5_ellipse_s2002_e0.04_sufficient_equal_arc_demand": "573447bed075faf89ab8cb7ac12db1d5254cec5c4e7f06c2522a6cd8d053d894",
+    "K5_ellipse_s2002_e0.04_sufficient_projected_mass_demand": "908acdf726ffb828fa909609a9425b0a77658b641de179b1baf64e25a07c6003",
+    "K5_ellipse_s2002_e0.12_sufficient_equal_arc_demand": "a2bb4c1ca88ca433734d19694ded4baf59a7c3c4b468a9a14b23ee0b0fa4a9d9",
+    "K5_ellipse_s2002_e0.12_sufficient_projected_mass_demand": "b3c75bcfa755552973fc6cc405828f6b3617ec09f795dde0a19699ea498047ba",
+    "K5_ellipse_s2003_e0.00_sufficient_equal_arc_demand": "38988e63aa39cfa34e3571415091f65c0376dfcd476531f2af901d5c7f782be6",
+    "K5_ellipse_s2003_e0.00_sufficient_projected_mass_demand": "a464e84beb3f4abd7cedf913139373cf5b13baaa81738c49830b223c0c0fa19b",
+    "K5_ellipse_s2003_e0.04_sufficient_equal_arc_demand": "bd57244e9bf28a6ee435908fb9c0decba372a0912c630a3571db4c6218aee119",
+    "K5_ellipse_s2003_e0.12_sufficient_equal_arc_demand": "e6dc53f794f820606a4b8c85d5475a1b67b2b7ad20f99342c503b1f288bacc3d",
+    "K5_ellipse_s2003_e0.12_sufficient_projected_mass_demand": "e91960c50b017e58eb2d30d0404d1d670fd8c4b27fb081a03d1116d0071fd194",
+    "K5_ellipse_s2004_e0.00_sufficient_equal_arc_demand": "4451fe9dcc15fef7ce7306407d3a22e392d2fd6cf7e5d9638ccf595bdd7f8d58",
+    "K5_ellipse_s2004_e0.00_sufficient_projected_mass_demand": "3e660a9c979d95dde8e6981297beed6a0e1eea0f472f18a6b451fc800abbc2fe",
+    "K5_ellipse_s2004_e0.12_sufficient_equal_arc_demand": "751bd735cd9a0db64258fc4d6bec6ecdc286f735a760157bf8074938c64f660f",
+    "K5_ellipse_s2004_e0.12_sufficient_projected_mass_demand": "c23e894fadeea8f01a1a06d86791c1f2430d43b1f78c1cdb290d2314c0980d39",
+    "K5_ellipse_s2005_e0.00_sufficient_projected_mass_demand": "8fc2890db51b09145fd885368547bf2bc4e7dbf931bb637068bb01b1c85a885c",
+    "K5_ellipse_s2006_e0.00_sufficient_equal_arc_demand": "72812c8ad6ffd0fb99736a15c13d101991ffd97d81272fc1d03c8030c73dad82",
+    "K5_ellipse_s2006_e0.04_sufficient_equal_arc_demand": "289a3e7560de1445636a21de93ce3b33bd30ff4f073811e820a51db79771887a",
+    "K5_ellipse_s2006_e0.04_sufficient_projected_mass_demand": "7bef968e9b80868971d6fe5279e18fd044dd0795942e3dc00fd7de1332adcb00",
+    "K5_ellipse_s2006_e0.12_sufficient_equal_arc_demand": "c8861beee772d799d7fb8e2cf991e6db23d1b2f7c3bcc1b0cd1224f0e6772947",
+    "K5_ellipse_s2006_e0.12_sufficient_projected_mass_demand": "135f6e5b4af50cf4ff76266ee2ee4a9dbff63f34c9f9903c211f09ccd6983731",
+    "K5_ellipse_s2007_e0.00_sufficient_equal_arc_demand": "a2ddff5c9f89ac6ec51a525ca75307149579e84527fe6e9353df37349def1b0d",
+    "K5_ellipse_s2007_e0.04_sufficient_equal_arc_demand": "794d8e4d0491ed503fb6ccc67de3bda8f1767bf380d04a2f1ce39fc84bb97e11",
+    "K5_ellipse_s2007_e0.12_sufficient_equal_arc_demand": "09639cf366fa3f3f5484e08310a49075e09aecdc2851a91271e56d870a059d56",
+    "K5_ellipse_s2008_e0.00_sufficient_projected_mass_demand": "1f1b821233cb7a20e11c80a04c306f521061a45a837b9dc264217a02306abd2c",
+    "K5_ellipse_s2008_e0.04_sufficient_projected_mass_demand": "990586bed61aa8d2ed51cbf05f2018c65d1062c53cf8d063b3e971fb7a375cac",
+    "K5_ellipse_s2008_e0.12_sufficient_projected_mass_demand": "5629fed1d2a65232fe9bce3ea1a96bf92a7940fba419bf45c5c403111f393826",
+    "K5_ellipse_s2009_e0.00_sufficient_projected_mass_demand": "0edd55730f3ff56f7c8cf97afb5a9eb025d34bf0a9e826eca1523a4bb632c07e",
+    "K5_ellipse_s2009_e0.04_sufficient_equal_arc_demand": "f9460b1dabe0b62fd42dc3cd4a10bd9ff3f793cc337d6b97adb09bbfad11cd41",
+    "K5_ellipse_s2009_e0.04_sufficient_projected_mass_demand": "831c7f643a446d8c10e08e5cbd4aa3f7dc6aef6c56513b2c985f42adfd219a3b",
+    "K5_ellipse_s2010_e0.00_sufficient_equal_arc_demand": "cd63efef9ca616f52286cd0cc84155adfefc208783b472767af19a1901d36d43",
+    "K5_ellipse_s2010_e0.12_sufficient_equal_arc_demand": "b8b991c7ec8017fcef191a2dbc18cf2694a566be50d858f2d2388d63571e24f5",
+    "K5_ellipse_s2010_e0.12_sufficient_projected_mass_demand": "1362d63c2e75745eb96266317ad3b9c034949df098adcca53fa8b78652c7c792",
+    "K5_ellipse_s2011_e0.00_sufficient_projected_mass_demand": "961608a7f1a5b6fa01dc690938e1ee5222a9c88e02f6e8c29879b21d88a6dd1b",
+    "K5_ellipse_s2011_e0.12_sufficient_projected_mass_demand": "d910ed3e8d642fcc99ba48853635272432eb65a17a74ff5dc02011c4db082cb5",
+    "K5_ellipse_s2012_e0.04_sufficient_projected_mass_demand": "846a4a4771f763021086ea467c66a1a314765bf0d16338f3ef36f6514ba77e63",
+    "K5_ellipse_s2012_e0.12_sufficient_equal_arc_demand": "8939f9fc7b4d930cfbe098bdc998c11eabe76fd3263f6ed5254025d0d98be369",
+    "K5_ellipse_s2013_e0.04_sufficient_projected_mass_demand": "090ea927e6b4b63389d316dd9381cc18c66743c3132f96e86c294f419a69c9cb",
+    "K5_ellipse_s2013_e0.12_sufficient_projected_mass_demand": "954c036a9425b59c43bf01075367874afa385d5a36a3f44917d951fc244fa275",
+    "K5_ellipse_s2014_e0.00_sufficient_projected_mass_demand": "a21a899fcefc5811cc9ecb9c7a8da430f9847bd9420bf2a03752f81aeabaeef5",
+    "K5_ellipse_s2015_e0.00_sufficient_equal_arc_demand": "60e0ada96c5d4d718333a940629a72b8381b514cfb5c4144caa1ee69ee33a258",
+    "K5_ellipse_s2015_e0.04_sufficient_equal_arc_demand": "3306be94cbd60e74400505b9bee33a02eade909008af0c4b7aa64276d09fc686",
+    "K5_ellipse_s2016_e0.00_sufficient_equal_arc_demand": "686a55353677ff0a9f1891c129fe1ee78bc23451ba4c89a1cab8490532aa0b4b",
+    "K5_ellipse_s2016_e0.00_sufficient_projected_mass_demand": "d77df1c4932a4d9890a3c8beba5ee9eba00e818539cb62dccfdef8a4fe2c9a97",
+    "K5_ellipse_s2016_e0.04_sufficient_equal_arc_demand": "d838b2b7237c3f8755380eb675efa49c1a778118591905e074db2b2b155e6a8c",
+    "K5_ellipse_s2016_e0.04_sufficient_projected_mass_demand": "08aecae8ccddd8550fadbce071d04610f6f76ed23ddd06f69b9623efdff48c47",
+    "K5_ellipse_s2017_e0.00_sufficient_projected_mass_demand": "7cf06f3cb472ec4b9a8938e46d640f25b1bbdde288a5433d971507e0ee86d4a7",
+    "K5_ellipse_s2017_e0.04_sufficient_projected_mass_demand": "c0c4660aefd820d05d1eb1be7437f749c68f941071e47924170e7392e27075fc",
+    "K5_ellipse_s2017_e0.12_sufficient_equal_arc_demand": "6a55d2eda1305b074e49c8b47da52ab01c13d0c28f98c22488cea3284206e3d6",
+    "K5_ellipse_s2018_e0.00_sufficient_projected_mass_demand": "f72dd4245cc5285d5de04bfa352677d3b164ca3602bd3f434f92f79ae407b20f",
+    "K5_ellipse_s2018_e0.04_sufficient_equal_arc_demand": "6351156c4ba11b410f2c0c61da01e3c55b053eb4fd33fd076ba7c8a6f07beef9",
+    "K5_ellipse_s2018_e0.04_sufficient_projected_mass_demand": "7d2c3fcb99f18656f6cb458cec5310c2384267d118f48b9616a0b989fa2d02fd",
+    "K5_ellipse_s2018_e0.12_sufficient_projected_mass_demand": "a8262857411b1fe566ce4d1ae07ef836eea006332e05dcb051d0376a2cb140ee",
+    "K5_ellipse_s2019_e0.00_sufficient_equal_arc_demand": "06e73c0cfbd3116dc0d908617fe01b90ac41af9e9dcb7668de55e6c2d611ee01",
+    "K5_ellipse_s2019_e0.00_sufficient_projected_mass_demand": "71b86f78bff01c33f297617d7124b8807c69cc82d308bb116adb2b2b9096ed37",
+    "K5_ellipse_s2019_e0.04_sufficient_equal_arc_demand": "94eafdf72af426d1dc3cb4984a1814f904a3947c39154b3c567c292de0ca5956",
+    "K5_ellipse_s2019_e0.12_sufficient_equal_arc_demand": "6c1c499ebb6a32beb7a2daf76447ba435bc03505ef470487ab20e7b0b4e67f0a",
+    "K5_ellipse_s2019_e0.12_sufficient_projected_mass_demand": "41363c2dbeb71823717a29b784bf8036a531d72c44beb95f081f03bf4cd959f1",
+    "K5_concave_s2000_e0.00_sufficient_equal_arc_demand": "a976062bbb3e79d2448753824cfc4057094ffa870d7fbf54f0197e0d67d489ee",
+    "K5_concave_s2000_e0.00_sufficient_projected_mass_demand": "3a5a1f32f2db3d9bc69cc4a74553422fc2feef482e789a0f9f737b60e2f93482",
+    "K5_concave_s2000_e0.04_sufficient_equal_arc_demand": "817c4933997293559bb568f4e264490852f56d22f5875c90ddddc91df81bbc7d",
+    "K5_concave_s2000_e0.04_sufficient_projected_mass_demand": "f68dea381ea1aa12edd7796b9f35261b191fe09a9d1f48b4c472da3082683c64",
+    "K5_concave_s2000_e0.12_sufficient_equal_arc_demand": "c10e24d4d434a9ebad8eee25230a6f6256051bbe03b538152c6532b4215d8441",
+    "K5_concave_s2000_e0.12_sufficient_projected_mass_demand": "bc274e67d026a24e60610b2f6de9df07eafec3b94c84f6a764b4df1d7f79f2a2",
+    "K5_concave_s2001_e0.00_sufficient_equal_arc_demand": "69b8cc8c81302fc05753a67b47c1256e25195b44d76258d07a850e3e2650e662",
+    "K5_concave_s2001_e0.00_sufficient_projected_mass_demand": "bc406678c25994cc2acf3b6101bb7accfa72df4100d0c8aea509e720bfd41fde",
+    "K5_concave_s2001_e0.00_sufficient_projected_mass_minimax": "427fab0f745d86249907f75bfbaefd290b267bb4d30ba151061366c4d0b55432",
+    "K5_concave_s2001_e0.04_sufficient_equal_arc_demand": "90096c9a692db5879879f6c215965fef8b59f357e780bc63f013a8614efb0312",
+    "K5_concave_s2001_e0.04_sufficient_projected_mass_demand": "0563fd9fb404feb191668e160faf4aefefe98859f36b7e156e7aecb56b6497ad",
+    "K5_concave_s2001_e0.12_sufficient_equal_arc_demand": "9bdb25bfd9fca308ba2a01d61ad98c2e6f4a2d9a5975634572e73fdfadbdfc46",
+    "K5_concave_s2001_e0.12_sufficient_projected_mass_demand": "2a0a757f7e8f5d789b517598df46c6d37d5a89f20ce20029fdad12bb7720b325",
+    "K5_concave_s2002_e0.00_sufficient_projected_mass_demand": "78e50837c053a0209afc3d4a53b52a7d5d66dd9c183f9079cf76c508001c557f",
+    "K5_concave_s2002_e0.04_sufficient_equal_arc_demand": "63fb243ecb1b765ba61d1ae35113605e437d582cd4c00a501b9ee99cddd14dd9",
+    "K5_concave_s2002_e0.04_sufficient_projected_mass_demand": "29e30400e2b86ff992cf99b2799e5acfe4870c9222e2f327d343ee0b647a399b",
+    "K5_concave_s2002_e0.12_sufficient_equal_arc_demand": "4ceb3c6599ea7205d8222e5889d86422ff3f519ac81625bfab847a5b7a414ec2",
+    "K5_concave_s2002_e0.12_sufficient_projected_mass_demand": "a342fd84393058cd6e4ee7a5cf1317a0ae683df89e650f24cd86b7e7ef701a94",
+    "K5_concave_s2003_e0.00_moderate_projected_mass_demand": "b35811f42bf8497a43769ed72425e67cfca71bd5ad499489014dcd310363e9b9",
+    "K5_concave_s2003_e0.00_sufficient_equal_arc_demand": "a7da72c56cf0de0849c619aa13383d40dfec0963e55f0c639db0dc3f61ca1487",
+    "K5_concave_s2003_e0.00_sufficient_projected_mass_demand": "e8065d57eee366f38cda51c9db84979e8a4aecf2fe597d1f565c0ed91e28e474",
+    "K5_concave_s2003_e0.00_sufficient_projected_mass_minimax": "7a353078445ab6e2a95dfcea2edf75f46084d884e3d468018a93c03d3202eddb",
+    "K5_concave_s2003_e0.04_moderate_projected_mass_demand": "ba687f45997e3ebb55044278e1d67ee5e6cb11925a69a21b8ef7570883e55eca",
+    "K5_concave_s2003_e0.04_sufficient_projected_mass_demand": "602f47cd1073743dd1d182e1eaa888de16b25a613c7a9c8a45beb3e24b60449f",
+    "K5_concave_s2003_e0.12_sufficient_projected_mass_demand": "6ec2f32aaea3c5da6fde28e5e2e0755f1a01c11177bbced791305b76bbabf14d",
+    "K5_concave_s2004_e0.00_moderate_projected_mass_demand": "dc55ceab036d400c98723e25f0a53269b5721c6c1bee0a690f891cbe4bb2ed8f",
+    "K5_concave_s2004_e0.00_sufficient_projected_mass_demand": "4e5cb0a5bf5cab452bb66a63247cf5871d379561ba19bd07abda102cda12f286",
+    "K5_concave_s2004_e0.04_moderate_projected_mass_demand": "1118bf44a9ae9fe8b4fc20b054fbe60c5637edbe8f2d5bfdd236b71595c944be",
+    "K5_concave_s2004_e0.04_sufficient_projected_mass_demand": "21baac473063df30da6e8ca4ed972c25baf5ebe3170f875dbf46f576db42c7a5",
+    "K5_concave_s2004_e0.12_moderate_projected_mass_demand": "2e95219b32d8f5991815c38e63406c0d11d425e90d59d72c9d5e81a581b9d535",
+    "K5_concave_s2004_e0.12_sufficient_projected_mass_demand": "32d30e8036a2f00e12fb7a56efede9a6bd5ee837c05290cc1632a56d9aac6fdc",
+    "K5_concave_s2005_e0.04_sufficient_projected_mass_demand": "7d9713ecb19652f0f1c3dfb041044c34959006c016e5daa56c99e9a7fe5e027b",
+    "K5_concave_s2005_e0.12_sufficient_projected_mass_demand": "43362d2fd45b4eb459e8fb35594203ba9882b021d91f87fb669deccf9f47b54c",
+    "K5_concave_s2006_e0.00_sufficient_equal_arc_demand": "791ee32c65ca0380921157032d4dae7df9a6e8cd021ac43305f5eefde4a1e3eb",
+    "K5_concave_s2006_e0.00_sufficient_projected_mass_demand": "f15888f7c88e2f27f8d249638a7b54fe67bef48eb6a0bfcac971f7293c7538f4",
+    "K5_concave_s2006_e0.04_sufficient_equal_arc_demand": "e0b1042dbf122155d1c66311e7a36a873a7cbf3b10c38f9a6c350aed62de769e",
+    "K5_concave_s2006_e0.04_sufficient_projected_mass_demand": "bbefd96f30dfa99f3b08929af340e799ddfb0141307ecde38edee62ef57164f8",
+    "K5_concave_s2006_e0.12_sufficient_equal_arc_demand": "4ba184f2a54271230a96cffc5454f9dc7d0d3982158d9486d1fff3b2151f2c08",
+    "K5_concave_s2006_e0.12_sufficient_projected_mass_demand": "ba7334961e5552c154922539aa835921a0013e7475f1ba2d5ed340e8577fdc83",
+    "K5_concave_s2007_e0.00_moderate_projected_mass_demand": "5309bdef6e0850fa07cc92582ef21948ab51be8dfc88a177de4332d66cd04a07",
+    "K5_concave_s2007_e0.00_sufficient_equal_arc_demand": "6d742c4ccd7bcaef0d50887563e35d72006be0ee503fc34cad440c137e1ed5b3",
+    "K5_concave_s2007_e0.00_sufficient_projected_mass_demand": "f30b8f4618f8fa039d0340c87c7ecf8a7632139bfe61c9106da0555b47f013b9",
+    "K5_concave_s2007_e0.04_moderate_projected_mass_demand": "b9ec9ad703bac905557584a6a2c0042103be14ed0e2ba0ac35aab07efc67101b",
+    "K5_concave_s2007_e0.04_sufficient_equal_arc_demand": "0e4637181df2d8dda810438187b35412ac8f5812f4f3db041d14678644d5d8e7",
+    "K5_concave_s2007_e0.04_sufficient_projected_mass_demand": "183d97c22418388928a6cdedc204d8620b0f10622240d0ea7d9f255cf13a19b6",
+    "K5_concave_s2007_e0.12_moderate_projected_mass_demand": "c332863df1c8b0bc29baf993bc2187da52a9e42fe1f2b147984ef1385d04a301",
+    "K5_concave_s2007_e0.12_sufficient_equal_arc_demand": "bb6c55568031ecbe8e9cb845a29c6ae8270f74645e787392923b522ca7a9469b",
+    "K5_concave_s2007_e0.12_sufficient_projected_mass_demand": "73976c8a197de20e0128b1e5e58988113eba6681ff347295d4ccf1c85e1dcf30",
+    "K5_concave_s2008_e0.04_sufficient_projected_mass_demand": "e7dfd4f1e0251f2af0be2cc1301947c2189ddf39132bd4b64693998dca79e447",
+    "K5_concave_s2008_e0.12_sufficient_equal_arc_demand": "cbd3acd94f6bfb410f7761db1cbb34572e8f67c35ed5cc5b73de0ea7f0eaecd0",
+    "K5_concave_s2008_e0.12_sufficient_projected_mass_demand": "e5ff702ed385fcfd946a83bff8626f0b4db481dfdf6856704bda6ed988fc7511",
+    "K5_concave_s2009_e0.00_moderate_projected_mass_demand": "667cd3e271816c98c66fe2f900b33bba29cf4299503e83cf70425c3ee77840c3",
+    "K5_concave_s2009_e0.00_sufficient_projected_mass_demand": "a49d249a041738783a98bb81f7ebd36a7509113fe0c8c73569662fb805032197",
+    "K5_concave_s2009_e0.04_moderate_projected_mass_demand": "830d6449514ef23cb136a682a5da0f22ed72ac50a538ce5de2db55edfbe13d37",
+    "K5_concave_s2009_e0.04_sufficient_equal_arc_demand": "ff86992c433d5b1526470268226844d634b7ea6fc2fffb8d82661c00d5a5dae4",
+    "K5_concave_s2009_e0.04_sufficient_projected_mass_demand": "2525e45a80f040d73d18dec8868edba1ec283d088bb4a89a5d700854b08af7ad",
+    "K5_concave_s2009_e0.12_sufficient_projected_mass_demand": "c79a458f34f63f6cae67078a68a8e14c9b4ed88e668dd5f99775f44bbd184906",
+    "K5_concave_s2010_e0.00_sufficient_equal_arc_demand": "b06012937e7e9107d02151fef057a6813528f71dd83191266b5bebaaf422262f",
+    "K5_concave_s2010_e0.00_sufficient_projected_mass_demand": "2b47d16dfe7b112d7be903474cf1f8da04e3119bf17b700d0cfab2acce468441",
+    "K5_concave_s2010_e0.04_sufficient_equal_arc_demand": "6ccf5534367bd7e09bbc3cda1eb78754327ae336b510549f4afdf63911390c81",
+    "K5_concave_s2010_e0.04_sufficient_projected_mass_demand": "931e9232e1f6416b407465eda01713db2c88d9e6167dec2dcced2ce05670c73f",
+    "K5_concave_s2010_e0.12_sufficient_equal_arc_demand": "0918366f0401dac6f5fd061081760bdeea3ad677f960f0b61ab13cc64cf67ae2",
+    "K5_concave_s2010_e0.12_sufficient_projected_mass_demand": "f0cc994bc967d0cb4f4a02f1f133760b2cfaaf9169465cbaf7bbd5f7c6fb6ffe",
+    "K5_concave_s2011_e0.00_moderate_projected_mass_demand": "f6719bf4456c547c471c4b87a26e1252d36001c059744e59252a67da955434a7",
+    "K5_concave_s2011_e0.00_sufficient_equal_arc_demand": "50a3002de309ec88925679193d154cbf9514db81c7d37363a53d4bc899074d01",
+    "K5_concave_s2011_e0.00_sufficient_projected_mass_demand": "acefebb4a13fc1849f5321ad658a0fde495357cbf408e9542efc25824998326e",
+    "K5_concave_s2011_e0.04_moderate_projected_mass_demand": "9e7d0d408abe6986fe819e651026305e755eed11cc7f7d39c9307892bad4b0ab",
+    "K5_concave_s2011_e0.04_sufficient_equal_arc_demand": "eaeaba916a21b7ed0dcb3f107f333174941e606cfbbcee4d539604c0c3337637",
+    "K5_concave_s2011_e0.04_sufficient_projected_mass_demand": "3451192ab63972de73a3577c8d8f3cefe5da3a73e1d63cc2877038a4abc60646",
+    "K5_concave_s2011_e0.12_sufficient_projected_mass_demand": "1c94b22ee9162e0727328738ec367f9c0458d5e95a1a549581c78634f1ecd4c5",
+    "K5_concave_s2012_e0.00_sufficient_equal_arc_demand": "412e5effd04d0444d2e304954492723aba49cf32fc6ab665c4339ce337dca10f",
+    "K5_concave_s2012_e0.00_sufficient_projected_mass_minimax": "47e9514afd807b5985c13e24c3bf1c7138c32beb02042069613733bcee3a534e",
+    "K5_concave_s2012_e0.04_sufficient_equal_arc_demand": "9f04235ef5e12ab4314be8ca300e56ac8a3d9bbaf24edf2e75843686141f5ac1",
+    "K5_concave_s2012_e0.12_sufficient_equal_arc_demand": "0565cd6051976ad23c71d0a0971d067e1c4aef399b4dc07320dac10ed33aa20c",
+    "K5_concave_s2012_e0.12_sufficient_projected_mass_demand": "6e17140645e9434e4f435396b76a0b9c6ec9cea9a2d91708aa120ebbae478c2d",
+    "K5_concave_s2013_e0.00_sufficient_equal_arc_demand": "2ce33abd5168f75c39500b669df5a23bd4423b93d3d62905495575abbdef05c9",
+    "K5_concave_s2013_e0.00_sufficient_projected_mass_demand": "a9b63463d0428adf954eb2cff20914d3c28fb038555aa3125c91bfd7e4ebbd15",
+    "K5_concave_s2013_e0.04_sufficient_projected_mass_demand": "185768ac9aa322a507c94d1d03b9849fbb36ce5cc1924b995ea2fdbd48c8dcd9",
+    "K5_concave_s2013_e0.12_sufficient_projected_mass_demand": "eb761d7b4d5649e1abdc87f7806fb8f99f5f8a3a6dd6e8043cc508354b498e5c",
+    "K5_concave_s2014_e0.00_sufficient_equal_arc_demand": "fbdcd377535011045d594afe7bf1e3f516dbabce9c16cc2e4b595d0c17bcb821",
+    "K5_concave_s2014_e0.00_sufficient_projected_mass_demand": "f9314b7fcfbe3bb89de0dd80559f6d7f8749cd856f31b718e3d8d3f3168288dc",
+    "K5_concave_s2014_e0.04_sufficient_equal_arc_demand": "06c26743945d97275a19be3dc42cd8532f8b471d5060e9c4b817a97c2cb87e5b",
+    "K5_concave_s2014_e0.04_sufficient_projected_mass_demand": "1ee52554633addf37afd5b5fedad31dab8d06da96c8a954b42d9707fbc60f4da",
+    "K5_concave_s2014_e0.12_sufficient_equal_arc_demand": "1d81721de837ead003f8fddedd16c124070cdf758d0b13631a69a0d2ffd2b189",
+    "K5_concave_s2014_e0.12_sufficient_projected_mass_demand": "685cada6a229794ae385305cb3c6c1f652ebd947e850890b962cfd83c950f44e",
+    "K5_concave_s2015_e0.00_moderate_equal_arc_demand": "eaf273136b430a3090fa5e9723aaa6e6603d2fc137c5de80d8364d63701021ff",
+    "K5_concave_s2015_e0.00_moderate_projected_mass_demand": "9a4ef8e6f1fea2d4cdf3d1c710645efd8d62c06a8e3c37f375ba8b119f5a6a3a",
+    "K5_concave_s2015_e0.00_sufficient_equal_arc_demand": "6275cede707530a219bc8691ff30e2150523c377b65c1d7444e49d3574876e35",
+    "K5_concave_s2015_e0.00_sufficient_projected_mass_demand": "b395dece3b0d831fb423b79e1f960fe802cd205632284a64e6a2cd382fe6a51a",
+    "K5_concave_s2015_e0.04_moderate_equal_arc_demand": "60c06ae40cb796c1c89f11c8ea3d1e7c16f96863cfe38e9aeaa2cfffa2794902",
+    "K5_concave_s2015_e0.04_moderate_projected_mass_demand": "df1c1fb127f3e5ed985ea5a4f836a572d2b083e0b50a3beef9be5d8ad7fe8555",
+    "K5_concave_s2015_e0.12_moderate_equal_arc_demand": "4d0f6087c9263fdd74282871361ec32ad544850bbd1d60cea7bef9da968b5c6b",
+    "K5_concave_s2015_e0.12_moderate_projected_mass_demand": "2c45bfc6a83c0c9c32036a06f43e30f2450e9c1e11087c56be2dcae71ff51413",
+    "K5_concave_s2015_e0.12_sufficient_equal_arc_demand": "47feaf75c3aa45ad3bb7b622493d3363a26f69b1a1af9ad3a535cd9dccb78300",
+    "K5_concave_s2016_e0.00_moderate_projected_mass_demand": "37fc6e4d2abe71ead63d0a12f48d283740f6fffc56fcd7bc670c0209bcbeb391",
+    "K5_concave_s2016_e0.00_sufficient_equal_arc_demand": "b0eb4c41b056c3d0cbdbfc461db012cde146fd73afe385705ac8d8f9780cf7f2",
+    "K5_concave_s2016_e0.00_sufficient_projected_mass_demand": "0515132741c8254bd25377e9d6fc3bd28c9d5801a85f7cee4daa07710b3fa444",
+    "K5_concave_s2016_e0.04_moderate_projected_mass_demand": "2c42fe8ede9e36dc923ab73525c9075b9ed9b0fc73c2b300d4e2316e5bb5ac48",
+    "K5_concave_s2016_e0.04_sufficient_equal_arc_demand": "1a47dea8848e0b01fcaddd5783bcb05763dd4b9fcf090a66140f1ecb30728aa8",
+    "K5_concave_s2016_e0.04_sufficient_projected_mass_demand": "2b43e4f7416f002368744e3df5b643e8a2c57748c443d919b8464f0f1e106abe",
+    "K5_concave_s2016_e0.12_moderate_projected_mass_demand": "cfd76f6a8ba12fbfe248138687c85337c4d7b5132b3bd0a3c216d3f605309836",
+    "K5_concave_s2016_e0.12_sufficient_equal_arc_demand": "f6ea5e4b3a550217f534ca124722712529cdb2c75aca6bbf4c8dd49c75614f40",
+    "K5_concave_s2016_e0.12_sufficient_projected_mass_demand": "d868233f4cdddef3aba16e8744971b509972cc6450bcce3173624abe354999aa",
+    "K5_concave_s2017_e0.04_sufficient_equal_arc_demand": "01cdec9f6e00fa57795ee36c0c27c8aeab5361f64ec069a1c77bb46edd3a8c66",
+    "K5_concave_s2017_e0.04_sufficient_projected_mass_demand": "b588beafda513aa7698a55ca7750dd7ab12589b8ef9a60a3ee92f38c1f40cabd",
+    "K5_concave_s2017_e0.04_sufficient_projected_mass_minimax": "ae7f97838d3af6ea9ecd76e1c36fe13c3dfbe0e366f5832d2ee1441ca9b2761e",
+    "K5_concave_s2017_e0.12_moderate_projected_mass_demand": "79cb94681fa8f94f06a6e3651a4bdcb6be8ab4b4f76c471a3ddb8a1ab265f6e6",
+    "K5_concave_s2017_e0.12_sufficient_equal_arc_demand": "4924b2e097702ca03bc4457fe7dd957a1596c1c897df4724eab29e09863e07c9",
+    "K5_concave_s2017_e0.12_sufficient_projected_mass_minimax": "35e0f00d3022e84cc8f305bffec0eb7b1624f85cff5d595d6ef58d66ae5c7258",
+    "K5_concave_s2018_e0.00_moderate_projected_mass_demand": "59b899efa1ccee95328326f0048a56561cac9e0915dae334de11218453ab65b0",
+    "K5_concave_s2018_e0.00_sufficient_equal_arc_demand": "138d53bcd41189213f3b448dc5511b5d70d6bfa20025b9a5042174fd3b6ac4b4",
+    "K5_concave_s2018_e0.04_moderate_projected_mass_demand": "bddd3f724cf8cdcfb11d8f6faccc5780207193a8b98095014f3fd18ca3ecec5f",
+    "K5_concave_s2018_e0.12_moderate_projected_mass_demand": "cef2c4608a84b779f56535d13e8a22687c4f6994528df672f85fa2cc5b8a0a5b",
+    "K5_concave_s2019_e0.00_sufficient_equal_arc_demand": "a705fc1c615ba46b6edbd44060130630cf9602795d315df343d3dab7714adcf2",
+    "K5_concave_s2019_e0.00_sufficient_projected_mass_demand": "ae19c307cf62694ea995a649ff0cb934c21f4cd35d93e0476c06fa658968c6b2",
+    "K5_concave_s2019_e0.04_moderate_projected_mass_demand": "9a19304dc82debe535a9e3b6deab78a83bf4333a56710face5a0c559a0180481",
+    "K5_concave_s2019_e0.04_sufficient_equal_arc_demand": "6ebf253732c20628b95d79466d760f36bab12e23ddd8c9f597314ef0b0f7e99c",
+    "K5_concave_s2019_e0.04_sufficient_projected_mass_demand": "43611ac5ba0b208ef9dbf369d8de689c85997d04657c7d6d83cf077df4c80a47",
+    "K5_concave_s2019_e0.12_sufficient_equal_arc_demand": "ef9eb60c1e8c2cc93d43916bc558597875ba9b94cfaf215138bd5768e9099f6e",
+    "K5_concave_s2019_e0.12_sufficient_projected_mass_demand": "e00723094abda448eb4c48d1e9d30d126a937692dd4e87ec913f62a1dbe0392f",
+    "K5_irregular_s2000_e0.00_sufficient_equal_arc_demand": "5b6a4744a96805dbb5b67910480119e0f57a9bc39600bd8f068e2fd4d3545b3f",
+    "K5_irregular_s2000_e0.00_sufficient_projected_mass_demand": "7eca0fa47125628b1ae02cb4ae52a23285cd647fb3f6d0f5d50c27e17693ea80",
+    "K5_irregular_s2000_e0.04_sufficient_equal_arc_demand": "03e3cce0c3e8af5988f280c2272834b48cee3f9ef2332297c88f27dfb411a6aa",
+    "K5_irregular_s2000_e0.04_sufficient_projected_mass_demand": "77833588ee389ccd17ef2d830525bdfcb636740aca884bbef775d791e03dbecc",
+    "K5_irregular_s2000_e0.12_sufficient_projected_mass_demand": "0bf97208fb79dc672e04d8754ab6a775199fb00e69fed41500c8a187dbc92cda",
+    "K5_irregular_s2001_e0.00_sufficient_equal_arc_demand": "045c8171077d5006d59d1948604767d28884725f5de21a0308362a1a885571ba",
+    "K5_irregular_s2001_e0.00_sufficient_projected_mass_demand": "83d616f04a0fec43035ab09ba966a8d66b9e2f4f0758be92d2abf1427b09d503",
+    "K5_irregular_s2001_e0.04_sufficient_equal_arc_demand": "cb6b8c7235f14cdd03200635ca5f99b0ced38b2d31512bd1527703b46101e63b",
+    "K5_irregular_s2001_e0.04_sufficient_projected_mass_demand": "8b04a9af4f30e50d9f9a1ab58a72af8132188739b6ebfa51d7502db6b5c0e6fd",
+    "K5_irregular_s2001_e0.12_sufficient_equal_arc_demand": "cef10fcdaca3cb230ba46d03601a1f5121a88f76afcdcab9797a1cb390f281a2",
+    "K5_irregular_s2001_e0.12_sufficient_projected_mass_demand": "2f9f2f590728a9adfadbb590a68c70777e11fe4d94c2bcee215a3aca54969863",
+    "K5_irregular_s2002_e0.00_moderate_projected_mass_demand": "3dc0fb247c0f21f86cf60646a3be7ce44631c0bc06faab06de220c9109b0b992",
+    "K5_irregular_s2002_e0.00_sufficient_equal_arc_demand": "5c391e2530bdd99a0298a81f53849af53bef32340dcbedb0e041d79ab8902f4e",
+    "K5_irregular_s2002_e0.04_sufficient_equal_arc_demand": "44ff1120bc9735b21ae76fd2604991a4273c8101facace655c4fc69a7b248f88",
+    "K5_irregular_s2002_e0.04_sufficient_projected_mass_demand": "0ebf04e8792bc6b791a947a8350c09f36a3ace3cfb11149ab99786723f54a1e7",
+    "K5_irregular_s2002_e0.12_sufficient_equal_arc_demand": "0dbcc6c891ebf74140144b1018a7bf0c32caf192ecae3056a4e4f2a3cdbd078e",
+    "K5_irregular_s2002_e0.12_sufficient_projected_mass_demand": "5c5b0fb2172d6e1236b15c0415bce6ebceed85810974b096ee7067790067655a",
+    "K5_irregular_s2003_e0.00_moderate_projected_mass_demand": "7dca874b8c38913cd82361988bcb32f17fcb7ea1902dda5b9be6b971cf9f1f0b",
+    "K5_irregular_s2003_e0.00_sufficient_equal_arc_demand": "3ea9e157d3af89e7fb1e984d55a0b10b5b8301a8954ee7a419d88e8a37f33344",
+    "K5_irregular_s2003_e0.04_sufficient_equal_arc_demand": "a74da735d9baba231255eae949cbc1d5b43cc053327273a0aeefd34d8f91c798",
+    "K5_irregular_s2003_e0.12_moderate_projected_mass_demand": "c3fb2aaeb731bac8952c251dd712851275b6a00c880f45ccbb3b40163f538bd1",
+    "K5_irregular_s2003_e0.12_sufficient_equal_arc_demand": "63ffa6f2e9e4245e89f66958ef06297045f4130e4cf0f37f0c97d05f62da3755",
+    "K5_irregular_s2004_e0.00_sufficient_equal_arc_demand": "54bc33cfe7b04f2f8e2cf17c7ce572cedae275164e5e8c79e70b6eec32627c49",
+    "K5_irregular_s2004_e0.00_sufficient_projected_mass_demand": "919ea39410910e5b1e24422153e90524c3756ac4ac9e7882e19727d8799b73ba",
+    "K5_irregular_s2004_e0.04_sufficient_equal_arc_demand": "5fc7da932ee31e992596b430e7bca7d559714fedd7af8ef8ce328ce51c18dde2",
+    "K5_irregular_s2005_e0.00_sufficient_equal_arc_demand": "fdcd6cf5d85ea81c894922ce53299fe503f4b057d93584e1a44d8c7f6a68f13a",
+    "K5_irregular_s2005_e0.00_sufficient_projected_mass_demand": "c6a190cea344d9dff67eee624fe98a227efec72d2810bc3b5f4b6410ce987379"
+  },
+  "selection": "All recorded PATH_NOT_FOUND rows at final report time; no favorable-case selection."
+}

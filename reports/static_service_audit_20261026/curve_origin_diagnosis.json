@@ -1,0 +1,28 @@
+{
+  "pair": [
+    "K2_s1515_bounded_disk_p0",
+    "K2_s1515_bounded_disk_p0.001"
+  ],
+  "groups": [
+    {
+      "group_id": 0,
+      "deployment_polyline_hausdorff_m": 0.0024441933402849446,
+      "origin_euclidean_shift_m": 0.0037352684765950893,
+      "new_origin_projected_to_old_arc_m": 20.799130536025476,
+      "shortest_origin_arc_shift_m": 0.0036444354856506322,
+      "old_length_m": 20.802774971511127,
+      "new_length_m": 20.801895218199018
+    },
+    {
+      "group_id": 1,
+      "deployment_polyline_hausdorff_m": 0.002687592711429341,
+      "origin_euclidean_shift_m": 0.0013323032166636902,
+      "new_origin_projected_to_old_arc_m": 22.59616176170586,
+      "shortest_origin_arc_shift_m": 0.0013102084713807471,
+      "old_length_m": 22.597471970177242,
+      "new_length_m": 22.590831711409827
+    }
+  ],
+  "target_jump_diagnosis_sha256": "e42680cf9e9270ff84876e8c3c52cdd18102c0bad0682ff82ff86fda1d898470",
+  "interpretation": "phase indices depend on curve origins; geometric and parameterization changes must be distinguished"
+}

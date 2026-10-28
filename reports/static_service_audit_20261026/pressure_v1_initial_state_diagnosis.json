@@ -1,0 +1,18 @@
+{
+  "guide_index": 7,
+  "human_index": 18,
+  "guide_position_m": [
+    1.1,
+    15.925599999999996
+  ],
+  "human_position_m": [
+    1.3321816002470026,
+    15.706977438674386
+  ],
+  "center_distance_m": 0.31891083364136275,
+  "required_center_distance_m": 0.75,
+  "net_clearance_m": -0.43108916635863725,
+  "executed_intervals": 0,
+  "source_metrics_sha256": "dd787dfd25af10b38adb29bd21dd9dd01c57a571f7b93ed35b1f6d9d765a649a",
+  "interpretation": "unsafe initial state before motion; not a controller-created collision"
+}

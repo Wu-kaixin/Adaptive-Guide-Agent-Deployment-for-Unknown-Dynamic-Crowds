@@ -1,0 +1,105 @@
+{
+  "old_manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+  "fixed_pairs": 640,
+  "accepted": 0,
+  "violations": [],
+  "seed2210_counterexample_regressions": [
+    {
+      "sequence_id": "K5_concave_s2210_bounded_disk",
+      "seed": 2210,
+      "perturbation_m": 0.03,
+      "certificate": {
+        "status": "UNCERTIFIED",
+        "accept_retained": false,
+        "groups": [
+          {
+            "retained_interval": [
+              0.0,
+              1.0
+            ],
+            "greedy_interval": [
+              0.0,
+              1.0
+            ],
+            "upper_loss": 1.0,
+            "loss_region_area_m2": 0.0009878575654028948,
+            "loss_region_empty": false
+          },
+          {
+            "retained_interval": [
+              0.0,
+              1.0
+            ],
+            "greedy_interval": [
+              0.0,
+              1.0
+            ],
+            "upper_loss": 1.0,
+            "loss_region_area_m2": 0.001382132097833567,
+            "loss_region_empty": false
+          },
+          {
+            "retained_interval": [
+              0.0,
+              1.0
+            ],
+            "greedy_interval": [
+              0.0,
+              1.0
+            ],
+            "upper_loss": 1.0,
+            "loss_region_area_m2": 0.04174032782756954,
+            "loss_region_empty": false
+          },
+          {
+            "retained_interval": [
+              0.0,
+              1.0
+            ],
+            "greedy_interval": [
+              0.0,
+              1.0
+            ],
+            "upper_loss": 1.0,
+            "loss_region_area_m2": 0.07805952733686525,
+            "loss_region_empty": false
+          },
+          {
+            "retained_interval": [
+              0.0,
+              1.0
+            ],
+            "greedy_interval": [
+              0.0,
+              1.0
+            ],
+            "upper_loss": 1.0,
+            "loss_region_area_m2": 0.8284379363337804,
+            "loss_region_empty": false
+          }
+        ],
+        "delta": 0.002,
+        "tracking_bound_m": 1e-10,
+        "reason": "support_enclosure_too_wide",
+        "scope": "original reference, arbitrary bounded independent errors, defined reference and stable groups; float64 audit"
+      },
+      "original_true_worst_loss": 0.011346670485246846,
+      "conditional_partition_certificate": {
+        "certified": false,
+        "within_groups_connected_at_reduced_link": false,
+        "cross_groups_separated_at_expanded_link": true,
+        "minimum_cross_distance_m": 8.310967753839947,
+        "perturbation_bound_m": 0.12,
+        "scope": "every point moves at most eta in Euclidean distance; grouping only, not target continuity",
+        "identity_given_original_reference_defined": true,
+        "split_distance_upper_m": 1.19,
+        "two_reference_core_diameters_m": 2.8868681861334484
+      },
+      "actual_partition_matches": true
+    }
+  ],
+  "source_actions_reoptimized": false,
+  "new_independent_samples": 0,
+  "reference": "original_world_reference",
+  "condition": "original reference is defined; float64 geometry audit, not formal machine intervals"
+}

@@ -1,0 +1,62 @@
+{
+  "authorized_at": "2026-10-27T23:02:03+09:00",
+  "authorization": "User: 我怀疑卡住了，你重新跑一下，用全部性能跑 全核。怎么可能那么卡 跑了一天了",
+  "user_authorized_all_cores": true,
+  "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+  "old_workers": 2,
+  "new_workers": 32,
+  "physical_cores": 24,
+  "numerical_threads_per_worker": 1,
+  "memory_available_before_bytes": 50242846720,
+  "action": "Operational interruption and resume of unreceipted work only; preserve all completed scientific outcomes.",
+  "scientific_sources": "Original source_snapshot; unchanged algorithms, observations, targets, thresholds, samples and seeds.",
+  "runtime_protocol_deviation": "Frozen maximum_workers=2 is superseded by this explicit user-authorized operational amendment, without rewriting the frozen protocol.",
+  "scientific_failure_retries": 0,
+  "operational_restart": true,
+  "bounded_inflight_units": 32,
+  "stop_policy": "Stop further scheduling on EXPERIMENT_ERROR or SAFETY_VIOLATION; drain at most new_workers already-in-flight units.",
+  "prior_processes": [
+    {
+      "pid": 15632,
+      "created": 1793026752.539981,
+      "cpu_seconds": 1.0625,
+      "memory_bytes": 175960064,
+      "executable": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe"
+    },
+    {
+      "pid": 22848,
+      "created": 1793026753.5032864,
+      "cpu_seconds": 82535.4375,
+      "memory_bytes": 130076672,
+      "executable": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe"
+    },
+    {
+      "pid": 34400,
+      "created": 1793026753.508328,
+      "cpu_seconds": 82535.390625,
+      "memory_bytes": 139526144,
+      "executable": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe"
+    },
+    {
+      "pid": 37860,
+      "created": 1793030096.2687447,
+      "cpu_seconds": 1817.59375,
+      "memory_bytes": 106266624,
+      "executable": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe"
+    },
+    {
+      "pid": 7360,
+      "created": 1793026752.5274005,
+      "cpu_seconds": 0.0,
+      "memory_bytes": 4468736,
+      "executable": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "pid": 28796,
+      "created": 1793030096.2268357,
+      "cpu_seconds": 0.015625,
+      "memory_bytes": 4460544,
+      "executable": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe"
+    }
+  ]
+}

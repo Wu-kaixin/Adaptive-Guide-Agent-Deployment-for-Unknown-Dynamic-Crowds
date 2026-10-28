@@ -1,0 +1,25 @@
+{
+  "phase": "protocol_stopped_and_reported",
+  "supervisor_pid": 27056,
+  "runner_pid": 40236,
+  "supervisor_started_at": "2026-10-28T01:24:44+09:00",
+  "updated_at": "2026-10-28T03:05:02+09:00",
+  "recorded_rows": 16474,
+  "scheduled_rows": 17280,
+  "by_K": {
+    "K1": 4320,
+    "K2": 4320,
+    "K3": 4320,
+    "K5": 3514
+  },
+  "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen",
+  "scientific_retries": 0,
+  "confirmation_complete": false,
+  "workers": 32,
+  "runtime_amendment": "reports/static_service_audit_20261026/runtime_backend_amendment_20261028.json",
+  "operational_restart": true,
+  "execution_backend": "implicit_complete_visibility_strict_relax_v2",
+  "replay_checked": 16474,
+  "replay_mismatches": 0,
+  "report": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\reports\\static_service_audit_20261026\\REPORT.zh.md"
+}

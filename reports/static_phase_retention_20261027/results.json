@@ -1,0 +1,208 @@
+{
+  "evidence": "development_new_method",
+  "complete": true,
+  "primary": {
+    "evidence": "development_only",
+    "strata": [
+      {
+        "group_count": 2,
+        "shape": "concave",
+        "scheduled_blocks": 20,
+        "valid_blocks": 20,
+        "missing_blocks": 0,
+        "mean_rms_delta_m": -0.0008457161141035804,
+        "mean_greedy_rms_m": 0.0013317472894275168,
+        "mean_retained_rms_m": 0.0004860311753239363,
+        "full_denominator_mean_bounds_m": [
+          -0.0008457161141035806,
+          -0.0008457161141035806
+        ]
+      },
+      {
+        "group_count": 2,
+        "shape": "ellipse",
+        "scheduled_blocks": 20,
+        "valid_blocks": 20,
+        "missing_blocks": 0,
+        "mean_rms_delta_m": -0.04683203708426607,
+        "mean_greedy_rms_m": 0.04737407869463406,
+        "mean_retained_rms_m": 0.00054204161036798,
+        "full_denominator_mean_bounds_m": [
+          -0.04683203708426607,
+          -0.04683203708426607
+        ]
+      },
+      {
+        "group_count": 5,
+        "shape": "concave",
+        "scheduled_blocks": 20,
+        "valid_blocks": 20,
+        "missing_blocks": 0,
+        "mean_rms_delta_m": -0.004044725361665556,
+        "mean_greedy_rms_m": 0.004664254923657503,
+        "mean_retained_rms_m": 0.0006195295619919478,
+        "full_denominator_mean_bounds_m": [
+          -0.004044725361665556,
+          -0.004044725361665556
+        ]
+      },
+      {
+        "group_count": 5,
+        "shape": "ellipse",
+        "scheduled_blocks": 20,
+        "valid_blocks": 20,
+        "missing_blocks": 0,
+        "mean_rms_delta_m": -0.03253381223361952,
+        "mean_greedy_rms_m": 0.03303819454543987,
+        "mean_retained_rms_m": 0.0005043823118203521,
+        "full_denominator_mean_bounds_m": [
+          -0.03253381223361952,
+          -0.03253381223361952
+        ]
+      }
+    ],
+    "equal_stratum_mean_delta_m": -0.021064072698413684,
+    "paired_physical_block_bootstrap_95_interval_m": [
+      -0.038100705049125466,
+      -0.00793262869934875
+    ],
+    "uncalculable_bootstrap_share": 0.0,
+    "full_denominator_mean_bounds_m": [
+      -0.021064072698413684,
+      -0.021064072698413684
+    ],
+    "independent_unit": "K_shape_seed_with_both_models_together",
+    "scheduled_independent_blocks": 80,
+    "interpretation": "conditional point estimate; full-denominator bounds are sensitivity ranges, not confidence intervals"
+  },
+  "service_at_1mm": [
+    {
+      "treatment": "continuous_arc_greedy",
+      "control": "sampled_arc_greedy",
+      "valid_pairs": 160,
+      "mean_true_worst_delta": -0.0015363536084796764,
+      "mean_true_weighted_delta": -0.001576263497448322,
+      "true_worst_loss_above_proxy_budget_count": 0,
+      "maximum_true_worst_loss": 0.004699717996310637
+    },
+    {
+      "treatment": "continuous_euclidean_greedy",
+      "control": "continuous_arc_greedy",
+      "valid_pairs": 160,
+      "mean_true_worst_delta": 2.8410235138964798e-05,
+      "mean_true_weighted_delta": -0.00016018191338199736,
+      "true_worst_loss_above_proxy_budget_count": 0,
+      "maximum_true_worst_loss": 0.007146024715720456
+    },
+    {
+      "treatment": "euclidean_retain_0.002",
+      "control": "continuous_euclidean_greedy",
+      "valid_pairs": 160,
+      "mean_true_worst_delta": 2.7734755269705205e-05,
+      "mean_true_weighted_delta": 0.0001244719223370671,
+      "true_worst_loss_above_proxy_budget_count": 0,
+      "maximum_true_worst_loss": 0.0018073119278433358
+    }
+  ],
+  "service_cost_by_noise": [
+    {
+      "perturbation_m": 0.001,
+      "valid_pairs": 160,
+      "mean_true_worst_delta": 2.7734755269705205e-05,
+      "mean_true_weighted_delta": 0.0001244719223370671,
+      "maximum_true_worst_loss": 0.0018073119278433358,
+      "true_loss_above_proxy_budget_count": 0
+    },
+    {
+      "perturbation_m": 0.01,
+      "valid_pairs": 160,
+      "mean_true_worst_delta": 0.00022083476496847986,
+      "mean_true_weighted_delta": 0.0002495388386653599,
+      "maximum_true_worst_loss": 0.006952194483486163,
+      "true_loss_above_proxy_budget_count": 7
+    },
+    {
+      "perturbation_m": 0.03,
+      "valid_pairs": 160,
+      "mean_true_worst_delta": 0.00036195825168242187,
+      "mean_true_weighted_delta": 0.00035474121338490425,
+      "maximum_true_worst_loss": 0.011346670485246846,
+      "true_loss_above_proxy_budget_count": 7
+    }
+  ],
+  "rms_view_quantiles_at_1mm": {
+    "continuous_euclidean_greedy": {
+      "views": 160,
+      "median_m": 0.0011207877484154932,
+      "p95_m": 0.10576336125277314,
+      "maximum_m": 1.0345071656201161
+    },
+    "euclidean_retain_0.002": {
+      "views": 160,
+      "median_m": 0.0005101463562794288,
+      "p95_m": 0.0006870531108846871,
+      "maximum_m": 0.002171015464081699
+    }
+  },
+  "actual_redeployment_valid_pairs": 80,
+  "mean_actual_greedy_travel_m": 0.17003489095245317,
+  "mean_actual_retained_travel_m": 0.007868651868140723,
+  "motion": {
+    "nominal_deployment": {
+      "recorded": 80,
+      "statuses": {
+        "PARTIAL_SERVICE": 80
+      },
+      "safely_completed": 80,
+      "executed_intervals": 64928,
+      "unsafe_intervals": 0
+    },
+    "redeployment": {
+      "recorded": 160,
+      "statuses": {
+        "PARTIAL_SERVICE": 160
+      },
+      "safely_completed": 160,
+      "executed_intervals": 4441,
+      "unsafe_intervals": 0
+    }
+  },
+  "replay": {
+    "manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+    "verified_inputs": 720,
+    "verified_receipts": 3440,
+    "opened_trajectories_without_pickle": 3440,
+    "reconstructed_planning_rows": 3200,
+    "recomputed_motion_rows": 240,
+    "mismatches": [],
+    "all_match": true,
+    "mode": "offline reconstruction and saved-trajectory replay; no scientific retry"
+  },
+  "report_sha256": "c84713ea1ea2b391497b8ec9891dde9ad84456112d63c2c03343cfa3333c5d36",
+  "manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+  "selected_witness_execution": {
+    "evidence": "posthoc_descriptive_execution_witness",
+    "scheduled": 2,
+    "recorded": 2,
+    "statuses": {
+      "PARTIAL_SERVICE": 2
+    },
+    "both_safely_completed": true,
+    "unsafe_intervals": 0,
+    "executed_intervals": 121,
+    "actual_true_worst_delta": 0.011346670485246846,
+    "interpretation": "selected descriptive fixed-action witness; not a population success-rate estimate"
+  },
+  "selected_witness_replay": {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\witness_execution_v1",
+    "manifest_sha256": "71adfce067decaeb080303adf9ca16001bfe0b8cd00ff52af08e05c04440d6e4",
+    "verified_inputs": 2,
+    "verified_receipts": 2,
+    "trajectories_opened_without_pickle": 2,
+    "recomputed_rows": 2,
+    "mismatches": [],
+    "identical_initial_robot_states": true,
+    "all_match": true,
+    "mode": "offline interval and service validation, no scientific retry"
+  }
+}

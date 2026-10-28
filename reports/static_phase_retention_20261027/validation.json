@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Tokyo",
+  "python": "3.12.15",
+  "environment": {
+    "python": "3.12.15",
+    "implementation": "CPython",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "PyYAML": "6.0.3",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "pytest": {
+    "passed": 274,
+    "seconds": 23.56,
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp runs/static_phase_retention_20261027/tests_final -p no:cacheprovider"
+  },
+  "pip_check": "passed",
+  "tracked_diff_whitespace_check": "passed",
+  "plots": "both PNG figures visually inspected",
+  "source_snapshots_and_input_hashes": "verified by offline replay",
+  "main_manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+  "witness_manifest_sha256": "71adfce067decaeb080303adf9ca16001bfe0b8cd00ff52af08e05c04440d6e4",
+  "main_replay": {
+    "manifest_sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+    "verified_inputs": 720,
+    "verified_receipts": 3440,
+    "opened_trajectories_without_pickle": 3440,
+    "reconstructed_planning_rows": 3200,
+    "recomputed_motion_rows": 240,
+    "mismatches": [],
+    "all_match": true,
+    "mode": "offline reconstruction and saved-trajectory replay; no scientific retry"
+  },
+  "witness_replay": {
+    "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\witness_execution_v1",
+    "manifest_sha256": "71adfce067decaeb080303adf9ca16001bfe0b8cd00ff52af08e05c04440d6e4",
+    "verified_inputs": 2,
+    "verified_receipts": 2,
+    "trajectories_opened_without_pickle": 2,
+    "recomputed_rows": 2,
+    "mismatches": [],
+    "identical_initial_robot_states": true,
+    "all_match": true,
+    "mode": "offline interval and service validation, no scientific retry"
+  },
+  "verified_task_receipts": 3442,
+  "opened_trajectory_npz_without_pickle": 3442,
+  "raw_artifacts_modified": false,
+  "scientific_retries": 0,
+  "reserved_seeds_5000_5029_executed": false,
+  "report_artifact_sha256": {
+    "REPORT.zh.md": "c84713ea1ea2b391497b8ec9891dde9ad84456112d63c2c03343cfa3333c5d36",
+    "ASSESSMENT.zh.md": "dc4b6d5ddcae520a88819bed0372880ef59fde0814a5ca64c48d092566ea1ca9",
+    "PLAN.zh.md": "7a5c6a9c40be252b68cf29674d3bb24af5f7dec47c4c9e6da4e69c48d86d1de3",
+    "results.json": "ed402f93bea8249286d420cc28700db6209a4bc4ce80387dfff1e4a5cbdabe03",
+    "analysis/analysis.json": "be874740460734a2978cf0dd5597575ac82ab43f7293a9cdb6b701f9786992f5",
+    "true_service_witness.json": "a413e429dc8b64c489fc586e7ffa605f41b038623be02b08dd96ddf0a14ec853",
+    "original_v2_interim.json": "bf566a328ab2565abc7291ecc524ba79404baf598861a941c7453b507291741c",
+    "layout_response.png": "4a4dbb852fe64173a25d5a1f2283c5d7ec569781121b14bfe090f825a26824b7",
+    "layout_response.svg": "6b6ce53eaf9ea3a1cee0fdf64e3bd5d4c7d958d28fd00cf6043bcdd26247d8f9",
+    "actual_redeployment.png": "6e595aa7557e915e7cc7d25b61de76abb588a2b283f9376a0cffd80de3f5eb3a",
+    "actual_redeployment.svg": "4b767d11e3152650d617534c816edb8ee15c186073989b5c44dddf05c92bc0df"
+  }
+}

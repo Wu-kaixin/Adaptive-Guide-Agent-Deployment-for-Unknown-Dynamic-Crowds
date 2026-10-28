@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26",
+  "python": "3.12.15",
+  "base_git_commit": "dc94b827b2fd4c1ef45de962af6b0a0cfc6da355",
+  "pytest": {
+    "passed": 249,
+    "seconds": 20.87,
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp runs/static_multigroup_20261026/tests/final -p no:cacheprovider"
+  },
+  "pip_check": "passed",
+  "tracked_diff_whitespace_check": "passed",
+  "new_python_parse_and_whitespace_check": "10 files, passed",
+  "artifact_receipts_verified": 1912,
+  "trajectory_npz_opened_without_pickle": 1912,
+  "offline_replay": [
+    {
+      "study": "planning_grid_v2",
+      "checked": 864,
+      "mismatches": 0,
+      "source": "current"
+    },
+    {
+      "study": "heterogeneous_20seed_v2",
+      "checked": 80,
+      "mismatches": 0,
+      "source": "current"
+    },
+    {
+      "study": "capacity_smoke_v2",
+      "checked": 8,
+      "mismatches": 0,
+      "source": "current"
+    },
+    {
+      "study": "motion_grid_v1",
+      "checked": 96,
+      "mismatches": 0,
+      "source": "saved source_snapshot/src"
+    }
+  ],
+  "confirmation": {
+    "tasks": 17280,
+    "physical_units": 320,
+    "measurements": 960,
+    "executed": 0,
+    "verified": true,
+    "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f"
+  },
+  "evidence_scope": "development; no new prospective confirmation results; reserved 5000-5029 never executed"
+}

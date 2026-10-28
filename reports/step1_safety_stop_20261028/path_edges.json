@@ -1,0 +1,156 @@
+{
+  "task_id": "K5_irregular_s2004_e0.12_insufficient_projected_mass_perimeter",
+  "path": {
+    "guide": 24,
+    "target": 7,
+    "points": [
+      [
+        14.974399999999997,
+        1.1
+      ],
+      [
+        20.94153535740238,
+        4.292786670087254
+      ],
+      [
+        21.18961974088372,
+        4.458551355530867
+      ],
+      [
+        21.355384426327333,
+        4.70663573901221
+      ],
+      [
+        22.036080661603116,
+        6.722458008050028
+      ],
+      [
+        21.96297872300922,
+        7.4167191652670175
+      ],
+      [
+        22.423088338450714,
+        8.711777890646898
+      ],
+      [
+        22.209536327459475,
+        10.660707961036048
+      ]
+    ],
+    "length_m": 13.525057447028896
+  },
+  "edges": [
+    {
+      "edge": 0,
+      "a": [
+        14.974399999999997,
+        1.1
+      ],
+      "b": [
+        20.94153535740238,
+        4.292786670087254
+      ],
+      "center_distance_to_20_m": 3.679204016288631,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.0,
+      "relation": "102F01FF2"
+    },
+    {
+      "edge": 1,
+      "a": [
+        20.94153535740238,
+        4.292786670087254
+      ],
+      "b": [
+        21.18961974088372,
+        4.458551355530867
+      ],
+      "center_distance_to_20_m": 3.415215696091984,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.2983685510698761,
+      "relation": "FF2101FF2"
+    },
+    {
+      "edge": 2,
+      "a": [
+        21.18961974088372,
+        4.458551355530867
+      ],
+      "b": [
+        21.355384426327333,
+        4.70663573901221
+      ],
+      "center_distance_to_20_m": 3.1188974233777707,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.2983685510698771,
+      "relation": "FF2101FF2"
+    },
+    {
+      "edge": 3,
+      "a": [
+        21.355384426327333,
+        4.70663573901221
+      ],
+      "b": [
+        22.036080661603116,
+        6.722458008050028
+      ],
+      "center_distance_to_20_m": 1.055265674822694,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.0,
+      "relation": "1F2F01FF2"
+    },
+    {
+      "edge": 4,
+      "a": [
+        22.036080661603116,
+        6.722458008050028
+      ],
+      "b": [
+        21.96297872300922,
+        7.4167191652670175
+      ],
+      "center_distance_to_20_m": 0.7981302401092799,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.0,
+      "relation": "FF2101FF2"
+    },
+    {
+      "edge": 5,
+      "a": [
+        21.96297872300922,
+        7.4167191652670175
+      ],
+      "b": [
+        22.423088338450714,
+        8.711777890646898
+      ],
+      "center_distance_to_20_m": 0.7233082031032874,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.4361524669570085,
+      "relation": "1F2001FF2"
+    },
+    {
+      "edge": 6,
+      "a": [
+        22.423088338450714,
+        8.711777890646898
+      ],
+      "b": [
+        22.209536327459475,
+        10.660707961036048
+      ],
+      "center_distance_to_20_m": 1.2642351240297105,
+      "unprepared_free_covers": true,
+      "prepared_free_covers": true,
+      "stationary_intersection_length_m": 0.0,
+      "relation": "102F01FF2"
+    }
+  ]
+}

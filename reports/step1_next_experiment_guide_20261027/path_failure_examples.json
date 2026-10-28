@@ -1,0 +1,436 @@
+{
+  "captured_at": "2026-10-27T19:50:58+09:00",
+  "scope": "Two selected existing failures, read-only diagnosis; no new experiment or population attribution.",
+  "selection": "First encountered saved example of each failure reason during bounded artifact search, not random sampling.",
+  "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+  "python": "3.12.15",
+  "python_executable": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+  "dependency_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "shapely": "2.2.0"
+  },
+  "loaded_geometry_module": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\source_snapshot\\src\\udc\\multigroup\\geometry.py",
+  "frozen_source_sha256": {
+    "src/udc/multigroup/geometry.py": "f89875ac5f08c658d45a271f17e8a388db13ac94776ead9b1f7336eac2e8d07b",
+    "src/udc/multigroup/execution.py": "a7b5f91c754fa7166b5717f58af03c18984a0ce693f89fa4499fa4ebe3e15c32",
+    "src/udc/multigroup/observation.py": "17fda87a8ce688d0941b3af771e1dfda904bf71a2df100604a8902bc5dbaadb5",
+    "src/udc/navigation/paths.py": "e33658be2399bcb60fdc305c3c856d133d86915ad29dc1ed26a4582b1dd94002"
+  },
+  "diagnostic_script_sha256": "5881824b7b194f42b5e98d4a0daa43ea1ccc5b2bda7e0dad3e83b593fe90fff7",
+  "reconstructed_examples": [
+    {
+      "task_id": "K2_circle_s2000_e0.04_sufficient_projected_mass_demand",
+      "failure": {
+        "guide": 29,
+        "reason": "fixed_endpoint_occupied"
+      },
+      "source_folder": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\results\\K2_circle_s2000_e0.04_sufficient_projected_mass_demand",
+      "receipt_sha256": "197aa9474f1df972d4480a920e2d758bbcff09afcb7129222121136ddedbb0e7",
+      "artifact_sha256": {
+        "config.json": "43d9ce507549a48413d9d245afeefb5fb6cbf26f48d273c31e947503c3aed32e",
+        "planning.json": "a2bb5cb8b281c5451ffc22a4d314bb84f5fbec2e854aab460a3514e6c408eddf",
+        "metrics.json": "69e8f6a738dbde107d42d430c23ccdc6112e4825eaca352d0fb9b4e0f8800a13",
+        "state.json": "d85cf185be5111664ee84ba586eec332512304cc683d3e12a15021daf53d0819",
+        "trajectory.npz": "0236f161510feb65bffbfed70564e17f04868deb4f5e0bb12def5c78e5be199c"
+      },
+      "all_receipt_hashes_match": true,
+      "frozen_inputs": {
+        "observation": {
+          "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\inputs\\K2_circle_s2000\\observation_e0.04.npz",
+          "sha256": "fec4a84acb509da7f076fb97118a75ed7026cd1830c4278a3d4848b12e271a3a"
+        },
+        "truth": {
+          "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\inputs\\K2_circle_s2000\\truth.npz",
+          "sha256": "b1eaf9c0298df314587aad5ef3745f7747428d8c8cdd3c0671cb84a025301274"
+        }
+      },
+      "truth_use": "Only hashed for provenance; not loaded or used in geometric reconstruction.",
+      "completed_serial_paths": 29,
+      "robot_count": 32,
+      "target_count": 32,
+      "observed_group_count": 2,
+      "minimum_target_pair_distance_m": 0.7580699617070125,
+      "guide_distance_threshold_m": 0.75,
+      "stationary_disk_quad_segs": 4,
+      "stationary_polygon_circumradius_m": 0.7646933686572387,
+      "endpoint_details": [
+        {
+          "endpoint": "start",
+          "position_m": [
+            8.625599999999999,
+            28.9
+          ],
+          "static_free_covers": true,
+          "serial_free_covers": true,
+          "serial_free_endpoint_relate": "0F2FF1FF2",
+          "stationary_blockers": []
+        },
+        {
+          "endpoint": "target",
+          "position_m": [
+            24.958819001405253,
+            16.169071232607045
+          ],
+          "static_free_covers": true,
+          "serial_free_covers": false,
+          "serial_free_endpoint_relate": "FF2FF10F2",
+          "stationary_blockers": [
+            {
+              "guide": 13,
+              "position_m": [
+                25.22097728952298,
+                16.88036800527908
+              ],
+              "assignment": 28,
+              "distance_m": 0.7580699617070125,
+              "analytic_clearance_m": 0.008069961707012463,
+              "polygon_contains_endpoint": true,
+              "polygon_boundary_distance_m": 0.001226050517839596,
+              "polygon_endpoint_relate": "0F2FF1FF2",
+              "polygon_wkb_sha256": "fba0bf47efbf0f475d5305a57e2fc24a7cdf4bdfdccf76bcc773216338fc8530",
+              "at_own_target_bitwise": true
+            }
+          ]
+        }
+      ],
+      "serial_free_geometry_type": "MultiPolygon",
+      "serial_free_valid": true,
+      "serial_free_component_count": 14,
+      "component_pair_distances_m": [
+        [
+          0.0,
+          1.2312604130132923,
+          1.276538844555477,
+          1.3009772136077382,
+          1.2590198237878345,
+          1.4178682313874384,
+          1.2454278762612148,
+          1.0871871790708352,
+          1.216553259689653,
+          1.4497921238292821,
+          1.2586073975689303,
+          0.9194423346706113,
+          1.1268655111610981,
+          0.30519270830175177
+        ],
+        [
+          1.2312604130132923,
+          0.0,
+          0.927932088825479,
+          2.7418101578745566,
+          3.8317168396381076,
+          4.308857786988704,
+          4.904685503025705,
+          4.886858400081771,
+          4.85008708081699,
+          4.074699003273573,
+          4.054000550949107,
+          3.8095553626347547,
+          0.465354232048963,
+          14.604788508750472
+        ],
+        [
+          1.276538844555477,
+          0.927932088825479,
+          0.0,
+          1.3243721604107683,
+          2.457786847331212,
+          3.1666690617694,
+          4.108124916428961,
+          4.186488495900335,
+          4.8555314203285205,
+          4.289268837048655,
+          4.420160779232052,
+          4.307353576053492,
+          1.3019880034916436,
+          15.378690693381365
+        ],
+        [
+          1.3009772136077382,
+          2.7418101578745566,
+          1.3243721604107683,
+          0.0,
+          0.672264227926841,
+          1.7202443825861606,
+          2.9768312742958165,
+          3.277410623934035,
+          5.003980946070783,
+          4.7926641321387615,
+          5.133349290170935,
+          5.205314308912597,
+          3.0133432013375616,
+          17.156765032164266
+        ],
+        [
+          1.2590198237878345,
+          3.8317168396381076,
+          2.457786847331212,
+          0.672264227926841,
+          0.0,
+          1.2207318307367216,
+          2.65518488331182,
+          3.1035396186378166,
+          5.265041944868815,
+          5.204743501627771,
+          5.610650227568478,
+          5.739801700366659,
+          4.045320305465045,
+          18.31451684544357
+        ],
+        [
+          1.4178682313874384,
+          4.308857786988704,
+          3.1666690617694,
+          1.7202443825861606,
+          1.2207318307367216,
+          0.0,
+          1.2960633724595532,
+          1.8127330461379247,
+          4.3195440363500515,
+          4.474659321244811,
+          4.972221046810213,
+          5.1963528635666,
+          4.313606106970252,
+          18.924508690187494
+        ],
+        [
+          1.2454278762612148,
+          4.904685503025705,
+          4.108124916428961,
+          2.9768312742958165,
+          2.65518488331182,
+          1.2960633724595532,
+          0.0,
+          0.1527779253034259,
+          2.9979180135603962,
+          3.4550712154641343,
+          4.051517992866971,
+          4.390868191007299,
+          4.609616563429923,
+          19.280893728302857
+        ],
+        [
+          1.0871871790708352,
+          4.886858400081771,
+          4.186488495900335,
+          3.277410623934035,
+          3.1035396186378166,
+          1.8127330461379247,
+          0.1527779253034259,
+          0.0,
+          2.8056202246847395,
+          3.2814949168462593,
+          3.884555976047534,
+          4.231918692423316,
+          4.5602300418709545,
+          19.208683522919035
+        ],
+        [
+          1.216553259689653,
+          4.85008708081699,
+          4.8555314203285205,
+          5.003980946070783,
+          5.265041944868815,
+          4.3195440363500515,
+          2.9979180135603962,
+          2.8056202246847395,
+          0.0,
+          0.9231390957983255,
+          1.5289596140566644,
+          1.9874391454499338,
+          4.100222726722434,
+          17.76692266862478
+        ],
+        [
+          1.4497921238292821,
+          4.074699003273573,
+          4.289268837048655,
+          4.7926641321387615,
+          5.204743501627771,
+          4.474659321244811,
+          3.4550712154641343,
+          3.2814949168462593,
+          0.9231390957983255,
+          0.0,
+          0.48838342508198035,
+          0.9164188633716567,
+          3.231677619121016,
+          16.66960662085614
+        ],
+        [
+          1.2586073975689303,
+          4.054000550949107,
+          4.420160779232052,
+          5.133349290170935,
+          5.610650227568478,
+          4.972221046810213,
+          4.051517992866971,
+          3.884555976047534,
+          1.5289596140566644,
+          0.48838342508198035,
+          0.0,
+          0.4578097552180166,
+          3.159029398761271,
+          16.248930960924866
+        ],
+        [
+          0.9194423346706113,
+          3.8095553626347547,
+          4.307353576053492,
+          5.205314308912597,
+          5.739801700366659,
+          5.1963528635666,
+          4.390868191007299,
+          4.231918692423316,
+          1.9874391454499338,
+          0.9164188633716567,
+          0.4578097552180166,
+          0.0,
+          2.8798832590247,
+          15.725312041763216
+        ],
+        [
+          1.1268655111610981,
+          0.465354232048963,
+          1.3019880034916436,
+          3.0133432013375616,
+          4.045320305465045,
+          4.313606106970252,
+          4.609616563429923,
+          4.5602300418709545,
+          4.100222726722434,
+          3.231677619121016,
+          3.159029398761271,
+          2.8798832590247,
+          0.0,
+          14.503102037007814
+        ],
+        [
+          0.30519270830175177,
+          14.604788508750472,
+          15.378690693381365,
+          17.156765032164266,
+          18.31451684544357,
+          18.924508690187494,
+          19.280893728302857,
+          19.208683522919035,
+          17.76692266862478,
+          16.66960662085614,
+          16.248930960924866,
+          15.725312041763216,
+          14.503102037007814,
+          0.0
+        ]
+      ],
+      "start_components": [
+        0
+      ],
+      "target_components": [],
+      "static_free_wkb_sha256": "c0afd51fe589c6e63e61f889bd2445d04b807864e10019c2bdc7db32c8fa55ae",
+      "serial_free_wkb_sha256": "7c0ca935a2944dea2fe916af9d9db86e72457eb382b97b824dd5edf08111fe5a"
+    },
+    {
+      "task_id": "K2_concave_s2003_e0.00_sufficient_projected_mass_demand",
+      "failure": {
+        "guide": 18,
+        "reason": "finite_visibility_graph"
+      },
+      "source_folder": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\results\\K2_concave_s2003_e0.00_sufficient_projected_mass_demand",
+      "receipt_sha256": "2b489e3df6dd2cf063101aaf3c26e1a197fafb8576233d437c7679a10e796808",
+      "artifact_sha256": {
+        "config.json": "f97e0c3be6477d082bd7579e57a89eeb1f6e6030cd374d14f5dee05f8976d0b4",
+        "planning.json": "d1a9704aa01fd118475f89b63373c55518cd91c0270b0f087237a622fd1a4792",
+        "metrics.json": "0b48685d2692a47cd57e2ee7536fc8bab29fa0a6983774d6c68de1ea982543ce",
+        "state.json": "3323c3f1745b1a4edd2f7c0f11d2360fb7e0cfc0dfb2acd5aadb207d3dfe59ec",
+        "trajectory.npz": "9883db5dd595fe9ba852d05ea0883149162b7083bafa28d214e21c2e2e36dd9a"
+      },
+      "all_receipt_hashes_match": true,
+      "frozen_inputs": {
+        "observation": {
+          "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\inputs\\K2_concave_s2003\\observation_e0.00.npz",
+          "sha256": "43cb4c8f181d03a4ea016f2e37d65c126a7e79eae1fe420a1393ddbacf784e80"
+        },
+        "truth": {
+          "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\inputs\\K2_concave_s2003\\truth.npz",
+          "sha256": "69314822c7ab3d68bc48635cf3edbcbc7d623f1123f978192425251191429817"
+        }
+      },
+      "truth_use": "Only hashed for provenance; not loaded or used in geometric reconstruction.",
+      "completed_serial_paths": 18,
+      "robot_count": 32,
+      "target_count": 32,
+      "observed_group_count": 2,
+      "minimum_target_pair_distance_m": 0.7728075321731097,
+      "guide_distance_threshold_m": 0.75,
+      "stationary_disk_quad_segs": 4,
+      "stationary_polygon_circumradius_m": 0.7646933686572387,
+      "endpoint_details": [
+        {
+          "endpoint": "start",
+          "position_m": [
+            38.9,
+            1.7743999999999986
+          ],
+          "static_free_covers": true,
+          "serial_free_covers": true,
+          "serial_free_endpoint_relate": "0F2FF1FF2",
+          "stationary_blockers": []
+        },
+        {
+          "endpoint": "target",
+          "position_m": [
+            29.67478839652785,
+            12.682422217733931
+          ],
+          "static_free_covers": true,
+          "serial_free_covers": true,
+          "serial_free_endpoint_relate": "0F2FF1FF2",
+          "stationary_blockers": []
+        }
+      ],
+      "serial_free_geometry_type": "MultiPolygon",
+      "serial_free_valid": true,
+      "serial_free_component_count": 4,
+      "component_pair_distances_m": [
+        [
+          0.0,
+          0.6487459272313358,
+          0.2022186322162022,
+          0.7847020771479787
+        ],
+        [
+          0.6487459272313358,
+          0.0,
+          1.9734497881465591,
+          4.050700240238076
+        ],
+        [
+          0.2022186322162022,
+          1.9734497881465591,
+          0.0,
+          2.0280859158137607
+        ],
+        [
+          0.7847020771479787,
+          4.050700240238076,
+          2.0280859158137607,
+          0.0
+        ]
+      ],
+      "start_components": [
+        0
+      ],
+      "target_components": [
+        2
+      ],
+      "static_free_wkb_sha256": "8b2176641e6c45503f93a8fde5dc413ab579c1308199f6fd7be2d6b2126b18dc",
+      "serial_free_wkb_sha256": "907e0df297e9052dd5858328c54aa1ba74dc7e537207138c091ddd6e2110703e"
+    }
+  ],
+  "interpretations": [
+    "First example: a final target is physically separated by more than 0.75 m from an already arrived robot, but lies strictly inside its conservative circumscribed 16-sided obstacle. This is an observed target-admission/execution-representation mismatch for this pair, not an assumed floating-point error.",
+    "Second example: accepted start and goal belong to different components of the current conservative serial free space. Adding graph nodes alone cannot connect them without changing that free space. This does not prove global physical infeasibility or failure under a different execution order.",
+    "No claim that these two mechanisms explain all PATH_NOT_FOUND rows. No assignment, order, geometry, threshold, trajectory or old artifact was changed."
+  ]
+}

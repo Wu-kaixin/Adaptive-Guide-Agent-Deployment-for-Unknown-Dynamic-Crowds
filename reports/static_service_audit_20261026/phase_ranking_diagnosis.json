@@ -1,0 +1,261 @@
+{
+  "rows": [
+    {
+      "task_id": "K2_s1515_bounded_disk_p0",
+      "group_id": 0,
+      "selected_phase": 2,
+      "second_minus_winner_U_margin": 0.001407722669250988,
+      "ranked_phases": [
+        {
+          "phase": 2,
+          "admissible": true,
+          "uncovered_256": 0.47629542441167794,
+          "normalized_cost": 0.0031128483992034638,
+          "continuous_arc_uncovered": 0.4753571061820189
+        },
+        {
+          "phase": 4,
+          "admissible": true,
+          "uncovered_256": 0.4777031470809289,
+          "normalized_cost": 0.003152646648539181,
+          "continuous_arc_uncovered": 0.48079528662304416
+        },
+        {
+          "phase": 1,
+          "admissible": true,
+          "uncovered_256": 0.4789606921909036,
+          "normalized_cost": 0.0031262693812249697,
+          "continuous_arc_uncovered": 0.4794878926460445
+        },
+        {
+          "phase": 7,
+          "admissible": true,
+          "uncovered_256": 0.4805225464383117,
+          "normalized_cost": 0.0031339586138366287,
+          "continuous_arc_uncovered": 0.4810663628049281
+        },
+        {
+          "phase": 6,
+          "admissible": true,
+          "uncovered_256": 0.4821695345214185,
+          "normalized_cost": 0.0031518259941614693,
+          "continuous_arc_uncovered": 0.4817833470854541
+        },
+        {
+          "phase": 0,
+          "admissible": true,
+          "uncovered_256": 0.48327429582681924,
+          "normalized_cost": 0.0031341284104113897,
+          "continuous_arc_uncovered": 0.4786701701009888
+        },
+        {
+          "phase": 5,
+          "admissible": true,
+          "uncovered_256": 0.4836644980636777,
+          "normalized_cost": 0.0031541925011888978,
+          "continuous_arc_uncovered": 0.48403925605933684
+        },
+        {
+          "phase": 3,
+          "admissible": true,
+          "uncovered_256": 0.48410151115035704,
+          "normalized_cost": 0.0031313089687574572,
+          "continuous_arc_uncovered": 0.4799186377056923
+        }
+      ]
+    },
+    {
+      "task_id": "K2_s1515_bounded_disk_p0",
+      "group_id": 1,
+      "selected_phase": 5,
+      "second_minus_winner_U_margin": 0.0005213405494491896,
+      "ranked_phases": [
+        {
+          "phase": 5,
+          "admissible": true,
+          "uncovered_256": 0.49623587622768933,
+          "normalized_cost": 0.0030539902831556724,
+          "continuous_arc_uncovered": 0.5025614089010674
+        },
+        {
+          "phase": 1,
+          "admissible": true,
+          "uncovered_256": 0.4967572167771385,
+          "normalized_cost": 0.003085817567442398,
+          "continuous_arc_uncovered": 0.5040142048326357
+        },
+        {
+          "phase": 3,
+          "admissible": true,
+          "uncovered_256": 0.5020133544540052,
+          "normalized_cost": 0.003065778001734003,
+          "continuous_arc_uncovered": 0.5047216351799412
+        },
+        {
+          "phase": 6,
+          "admissible": true,
+          "uncovered_256": 0.5041361976828811,
+          "normalized_cost": 0.0030602842373063125,
+          "continuous_arc_uncovered": 0.5029959357222882
+        },
+        {
+          "phase": 0,
+          "admissible": true,
+          "uncovered_256": 0.5055482473393732,
+          "normalized_cost": 0.003083164197498529,
+          "continuous_arc_uncovered": 0.5040955676898311
+        },
+        {
+          "phase": 4,
+          "admissible": true,
+          "uncovered_256": 0.507330155300683,
+          "normalized_cost": 0.0030622785015832505,
+          "continuous_arc_uncovered": 0.505919283027184
+        },
+        {
+          "phase": 7,
+          "admissible": true,
+          "uncovered_256": 0.5077684513790777,
+          "normalized_cost": 0.003093114158852807,
+          "continuous_arc_uncovered": 0.5069052362238686
+        },
+        {
+          "phase": 2,
+          "admissible": true,
+          "uncovered_256": 0.5174862695508484,
+          "normalized_cost": 0.0031531085949872105,
+          "continuous_arc_uncovered": 0.5200699258735799
+        }
+      ]
+    },
+    {
+      "task_id": "K2_s1515_bounded_disk_p0.001",
+      "group_id": 0,
+      "selected_phase": 1,
+      "second_minus_winner_U_margin": 0.0012802995378637938,
+      "ranked_phases": [
+        {
+          "phase": 1,
+          "admissible": true,
+          "uncovered_256": 0.4751219989338214,
+          "normalized_cost": 0.0031262473073710648,
+          "continuous_arc_uncovered": 0.47946874240939596
+        },
+        {
+          "phase": 2,
+          "admissible": true,
+          "uncovered_256": 0.4764022984716852,
+          "normalized_cost": 0.003113426437862931,
+          "continuous_arc_uncovered": 0.4754486225158615
+        },
+        {
+          "phase": 7,
+          "admissible": true,
+          "uncovered_256": 0.477514118528782,
+          "normalized_cost": 0.003133606742389198,
+          "continuous_arc_uncovered": 0.48103943462573284
+        },
+        {
+          "phase": 4,
+          "admissible": true,
+          "uncovered_256": 0.4777279522225976,
+          "normalized_cost": 0.0031527492789061133,
+          "continuous_arc_uncovered": 0.48079306216905293
+        },
+        {
+          "phase": 6,
+          "admissible": true,
+          "uncovered_256": 0.47821945078590605,
+          "normalized_cost": 0.003151376002738027,
+          "continuous_arc_uncovered": 0.48169200234721676
+        },
+        {
+          "phase": 0,
+          "admissible": true,
+          "uncovered_256": 0.48316011864331354,
+          "normalized_cost": 0.0031336855928799203,
+          "continuous_arc_uncovered": 0.478535840519247
+        },
+        {
+          "phase": 5,
+          "admissible": true,
+          "uncovered_256": 0.48366265162446254,
+          "normalized_cost": 0.0031540993900846023,
+          "continuous_arc_uncovered": 0.4840149191823415
+        },
+        {
+          "phase": 3,
+          "admissible": true,
+          "uncovered_256": 0.48419004785796665,
+          "normalized_cost": 0.003131898818144023,
+          "continuous_arc_uncovered": 0.4799946297349236
+        }
+      ]
+    },
+    {
+      "task_id": "K2_s1515_bounded_disk_p0.001",
+      "group_id": 1,
+      "selected_phase": 1,
+      "second_minus_winner_U_margin": 0.005098394631271208,
+      "ranked_phases": [
+        {
+          "phase": 1,
+          "admissible": true,
+          "uncovered_256": 0.4969391958880642,
+          "normalized_cost": 0.0030867439554504474,
+          "continuous_arc_uncovered": 0.5040562464723368
+        },
+        {
+          "phase": 3,
+          "admissible": true,
+          "uncovered_256": 0.5020375905193354,
+          "normalized_cost": 0.0030661608407816163,
+          "continuous_arc_uncovered": 0.5046412901649386
+        },
+        {
+          "phase": 0,
+          "admissible": true,
+          "uncovered_256": 0.5035599042938833,
+          "normalized_cost": 0.0030830877946660335,
+          "continuous_arc_uncovered": 0.5028087930477629
+        },
+        {
+          "phase": 6,
+          "admissible": true,
+          "uncovered_256": 0.5040475519366762,
+          "normalized_cost": 0.003060237817227335,
+          "continuous_arc_uncovered": 0.5028035070340777
+        },
+        {
+          "phase": 5,
+          "admissible": true,
+          "uncovered_256": 0.5065311842675005,
+          "normalized_cost": 0.00305532669476571,
+          "continuous_arc_uncovered": 0.5034632452577874
+        },
+        {
+          "phase": 4,
+          "admissible": true,
+          "uncovered_256": 0.5073302541853331,
+          "normalized_cost": 0.003062552483227284,
+          "continuous_arc_uncovered": 0.5058243865768911
+        },
+        {
+          "phase": 7,
+          "admissible": true,
+          "uncovered_256": 0.5079736014636084,
+          "normalized_cost": 0.00309424285213558,
+          "continuous_arc_uncovered": 0.5069868191131901
+        },
+        {
+          "phase": 2,
+          "admissible": true,
+          "uncovered_256": 0.5176164861109841,
+          "normalized_cost": 0.003153793067699533,
+          "continuous_arc_uncovered": 0.520054339301153
+        }
+      ]
+    }
+  ],
+  "interpretation": "fixed-count reconstruction of the original 256-node finite-phase decision; descriptive diagnosis"
+}

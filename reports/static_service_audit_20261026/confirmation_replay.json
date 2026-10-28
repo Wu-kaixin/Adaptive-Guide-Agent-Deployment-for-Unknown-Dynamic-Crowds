@@ -1,0 +1,16 @@
+{
+  "checked": 16474,
+  "mismatches": [],
+  "all_match": true,
+  "verified_receipts": 16474,
+  "replay_workers": 32,
+  "independent_units": 960,
+  "implementation": "Original frozen evaluator and exact original saved-metric comparisons; process dispatch only.",
+  "frozen_verification": {
+    "verified": true,
+    "units": 960,
+    "tasks": 17280,
+    "manifest_sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+    "source": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\source_snapshot\\src\\udc\\experiments\\static_multigroup.py"
+  }
+}

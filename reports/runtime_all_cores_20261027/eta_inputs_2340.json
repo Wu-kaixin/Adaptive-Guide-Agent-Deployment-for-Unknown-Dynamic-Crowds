@@ -1,0 +1,357 @@
+{
+  "at": "2026-10-27T23:41:01+09:00",
+  "new_completed_by_resource": {
+    "sufficient": 54,
+    "insufficient": 192,
+    "moderate": 187
+  },
+  "new_completed_by_shape": {
+    "circle": 90,
+    "ellipse": 343
+  },
+  "remaining_by_resource": {
+    "sufficient": 1066,
+    "moderate": 929,
+    "insufficient": 924
+  },
+  "last_minutes_by_resource": {
+    "10": {
+      "sufficient": 37,
+      "moderate": 3,
+      "insufficient": 6
+    },
+    "20": {
+      "sufficient": 52,
+      "moderate": 29,
+      "insufficient": 6
+    },
+    "30": {
+      "sufficient": 54,
+      "moderate": 151,
+      "insufficient": 12
+    }
+  },
+  "units": [
+    {
+      "unit": "K5_circle_s2017_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 6
+      },
+      "result": {
+        "unit_id": "K5_circle_s2017_e0.04",
+        "records": 18,
+        "pid": 39328,
+        "stopped_on_error_or_safety": false,
+        "source": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\source_snapshot\\src\\udc\\experiments\\static_multigroup.py"
+      },
+      "duration_minutes": 12.22
+    },
+    {
+      "unit": "K5_circle_s2017_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 6
+      },
+      "result": {
+        "unit_id": "K5_circle_s2017_e0.12",
+        "records": 18,
+        "pid": 34104,
+        "stopped_on_error_or_safety": false,
+        "source": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\source_snapshot\\src\\udc\\experiments\\static_multigroup.py"
+      },
+      "duration_minutes": 30.49
+    },
+    {
+      "unit": "K5_circle_s2018_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_circle_s2018_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_circle_s2018_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_circle_s2019_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 3
+      }
+    },
+    {
+      "unit": "K5_circle_s2019_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_circle_s2019_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 3
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2000_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2000_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2000_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2001_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2001_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2001_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2002_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2002_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2002_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2003_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2003_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2003_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2004_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2004_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2004_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2005_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2005_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2005_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2006_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2006_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2006_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2007_e0.00",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 1
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2007_e0.04",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2007_e0.12",
+      "elapsed_minutes": 36.9,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6,
+        "sufficient": 2
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2008_e0.00",
+      "elapsed_minutes": 24.7,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 6
+      }
+    },
+    {
+      "unit": "K5_ellipse_s2008_e0.04",
+      "elapsed_minutes": 6.4,
+      "progress": {
+        "insufficient": 6,
+        "moderate": 1
+      }
+    }
+  ],
+  "cpu_percent": 100.0
+}

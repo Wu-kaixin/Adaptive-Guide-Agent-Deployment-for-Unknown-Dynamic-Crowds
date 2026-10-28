@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-28T00:39:17+09:00",
+  "local_links_checked": 4,
+  "missing_links": [],
+  "scope": "Read-only ledger inspection and proposed next steps; no process pause, new performance measurement or scientific experiment.",
+  "artifact_sha256": {
+    "PLAN.zh.md": "0bc8a2fd7d7029bf720768ca55072445b9621cd501d8fa8d04ab4ab2f348f632",
+    "status_snapshot.json": "ab0602187cea3f12d6d6f0436075582b3d1513b69e4d9a10bda2329eac4f94aa"
+  },
+  "original_guide_sha256": "ab854e0ff9f8116b5e023c171ffaac324bb31948c741bc888f4dce3abb513554"
+}

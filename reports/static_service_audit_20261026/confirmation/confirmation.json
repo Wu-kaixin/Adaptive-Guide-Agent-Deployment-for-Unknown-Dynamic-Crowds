@@ -1,0 +1,217 @@
+{
+  "evidence": "prospective_confirmation",
+  "scheduled_tasks": 17280,
+  "recorded_tasks": 16474,
+  "not_yet_recorded": 806,
+  "statuses": {
+    "PARTIAL_SERVICE": 9074,
+    "FULL_SUCCESS": 6759,
+    "PATH_NOT_FOUND": 640,
+    "SAFETY_VIOLATION": 1
+  },
+  "full_successes": 6759,
+  "deployment_completed": 15833,
+  "motion_tasks": 16474,
+  "executed_intervals": 25106098,
+  "unsafe_intervals": 3,
+  "partition_mismatch_task_ids": [],
+  "error_bound_violation_task_ids": [],
+  "finite_catalog_dominance_failures": [],
+  "limits": [
+    "development is not prospective confirmation",
+    "finite catalog, not continuous optimality",
+    "separated static components",
+    "serial fixed assignment is not complete MAPF",
+    "geometric service is not demonstrated crowd influence"
+  ],
+  "primary_analysis": {
+    "estimand": "planned_common_reference_worst_group_uncovered_minimax_minus_perimeter",
+    "evidence": "prospective_confirmation",
+    "strata": [
+      {
+        "group_count": 1,
+        "shape": "circle",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group_count": 1,
+        "shape": "concave",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group_count": 1,
+        "shape": "ellipse",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group_count": 1,
+        "shape": "irregular",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group_count": 2,
+        "shape": "circle",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.0002531338612224043,
+        "negative": 1,
+        "zero": 19,
+        "positive": 0
+      },
+      {
+        "group_count": 2,
+        "shape": "concave",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0002964217980750472,
+        "negative": 0,
+        "zero": 19,
+        "positive": 1
+      },
+      {
+        "group_count": 2,
+        "shape": "ellipse",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": 0.0005839518066859895,
+        "negative": 2,
+        "zero": 15,
+        "positive": 3
+      },
+      {
+        "group_count": 2,
+        "shape": "irregular",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.0016410490325564798,
+        "negative": 2,
+        "zero": 18,
+        "positive": 0
+      },
+      {
+        "group_count": 3,
+        "shape": "circle",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.030150458902781348,
+        "negative": 16,
+        "zero": 4,
+        "positive": 0
+      },
+      {
+        "group_count": 3,
+        "shape": "concave",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.013240740270608444,
+        "negative": 13,
+        "zero": 6,
+        "positive": 1
+      },
+      {
+        "group_count": 3,
+        "shape": "ellipse",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.009917980933595905,
+        "negative": 12,
+        "zero": 6,
+        "positive": 2
+      },
+      {
+        "group_count": 3,
+        "shape": "irregular",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.011452925076837808,
+        "negative": 13,
+        "zero": 5,
+        "positive": 2
+      },
+      {
+        "group_count": 5,
+        "shape": "circle",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.021145494386607587,
+        "negative": 18,
+        "zero": 2,
+        "positive": 0
+      },
+      {
+        "group_count": 5,
+        "shape": "concave",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.015148535128896037,
+        "negative": 16,
+        "zero": 1,
+        "positive": 3
+      },
+      {
+        "group_count": 5,
+        "shape": "ellipse",
+        "draws": 20,
+        "valid_pairs": 20,
+        "missing_pairs": 0,
+        "mean_delta": -0.0068483610276888485,
+        "negative": 13,
+        "zero": 7,
+        "positive": 0
+      },
+      {
+        "group_count": 5,
+        "shape": "irregular",
+        "draws": 20,
+        "valid_pairs": 4,
+        "missing_pairs": 16,
+        "mean_delta": -0.02226160686511902,
+        "negative": 4,
+        "zero": 0,
+        "positive": 0
+      }
+    ],
+    "equal_stratum_mean_delta": -0.008198744492572053,
+    "paired_stratified_95_interval": null,
+    "uncalculable_bootstrap_share": 0.0124,
+    "independent_unit": "group_count_shape_seed_with_all_errors_resources_and_methods_together",
+    "interpretation": "conditional on both methods producing planned targets; full failure ledger retained",
+    "supports_preregistered_negative_direction": false,
+    "prospective_confirmation_completed": false
+  },
+  "stopped_on_error_or_safety": true
+}

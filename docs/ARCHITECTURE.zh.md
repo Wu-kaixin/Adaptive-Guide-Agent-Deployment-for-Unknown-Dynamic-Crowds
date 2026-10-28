@@ -1,5 +1,62 @@
 # 框架逻辑与代码位置
 
+## 2026-10-28 未完成阶段的新版本
+
+`multigroup/safe_routing.py`提供逐边/逐实际区间独立验证、端点支撑外接圆盘和反向装配串行部署；
+`multigroup/reference_support.py`对原世界参考构造一般有界误差下的支持域充分界，不使用锚定参考替代原指标。
+`multigroup/stable_update.py`实现仅相位与数量/相位联合门控，控制器仍只读观测、当前机器人和已知几何。
+`experiments/recovery_study.py`区分旧动作开发；`deployment_recovery.py`冻结独立新输入；
+`sequential_deployment.py`保持连续实际状态，`episode_artifacts.py`每5步写不可覆盖chunk。
+`analysis/sequential_audit.py`重建观测决策与全部保存区间，`closure_reports.py`按完整分母报告。
+新协议和原停止确认分开，旧输入/源码/失败不变。推导与队列见[继续实验计划](../reports/step1_closure_20261028/PLAN.zh.md)。
+
+## 2026-10-28 保存与等价计算后端
+
+按用户请求先暂停并核验存档，再使用独立封存的`multigroup/accelerated_execution.py`后端。
+该后端索引原自由空间、按需计算同一有限图的可见边，保持原边权/严格松弛/破同分与原执行政策。
+原科学源码快照文件不修改，实际后端版本由`backend_policy.json`及单元receipt明确绑定。
+`analysis/parallel_frozen_replay.py`只并行调度原验收函数；
+`analysis/path_failure_census.py`负责旧工件的只读几何分类，不执行新动作。
+保存与等价性条件、测量范围见[后端契约](STEP1_ACCELERATED_EXECUTION.zh.md)。
+
+## 2026-10-27 用户授权的全核运行修订
+
+原多群确认因固定2进程而推进缓慢。按用户全核请求，`experiments/frozen_resume.py`
+保留完整receipt，跳过完整单元，以32个独立进程调用原快照的`_unit_worker`；
+`scripts/frozen_unit_worker.py`是薄进程入口，科学计算仍全部来自原封存源码。
+`experiments/cpu_affinity.py`把工作进程分配至32个逻辑处理器，避免Windows把后台计算集中在部分核心。
+原协议/清单不改写；并行度修订及中断恢复单独记录，不声称始终保持原2进程配置。
+当前路径见[运行修订](../reports/static_service_audit_20261026/runtime_amendment.json)，
+测量与限制见[验证记录](VALIDATION.zh.md)。
+
+## 2026-10-27 连续评分与布局保留
+
+`multigroup/phase_retention.py`在相同候选、固定数量下比较三种服务评分，
+并提供有显式观察服务预算的名义布局保留。`experiments/static_phase_retention.py`
+独立封存静态重观测输入与实际重部署；新分析/复判位于`analysis/phase_retention_*`。
+原Step 1单次冻结观测及原v2确认不调用该模块。
+范围、界和限制见[方法契约](STEP1_PHASE_RETENTION.zh.md)，
+实测见[科研评估](../reports/static_phase_retention_20261027/ASSESSMENT.zh.md)。
+
+## 2026-10-27 服务机制与静态扰动
+
+`multigroup/service.py`提供声明折线/分段线性需求的连续服务积分，
+`total_allocation.py`提供同候选目录上的总需求比较器，
+`partition_stability.py`提供观测连通分群的充分稳定证书。
+独立实验入口为`experiments.service_audit`、`static_mechanism`、`static_stability`和`static_pressure`；
+新统计、完整账本识别界和离线复判位于`analysis/service_audit*`。
+详见[服务契约](STEP1_SERVICE_AUDIT.zh.md)与[开发报告](../reports/static_service_audit_20261026/DEVELOPMENT.zh.md)。
+原v2确认继续使用其封存源码快照；新增方法不进入原冻结清单。
+
+## 2026-10-26 显式扩展版 Step 1
+
+静态多群、有界位置误差与固定资源预算现在使用独立入口
+`python -m udc.experiments.static_multigroup`，协议为 `configs/step1/static_multigroup_v2.yaml`。
+真实状态与冻结观测分离；观测连通分群、保守边界、有限候选目录和不足资源 minimax 分配位于
+`src/udc/multigroup/`。真值评价与完整任务成功不使用部分服务结果替代。
+详见[扩展契约](STEP1_MULTIGROUP.zh.md)。以下原有章节仍描述单群集成基线；
+原控制器及历史协议没有被静态多群入口替换。旧 `ResourceAllocator` 类型缝仍未被原循环调用。
+
 ## 2026-10-23 本地重建后的入口
 
 活动环境统一为根目录 `.venv`，独立CPython3.12.15，每个项目独立安装，不使用Conda。

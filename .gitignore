@@ -10,3 +10,10 @@ runs/
 results/
 backups/
 .ipynb_checkpoints/
+
+# Local development output; retain on disk, do not publish with the review.
+/tmp/
+/output/
+# Per-unit replay receipts are archived in the Step 1 review evidence bundle.
+/reports/static_service_audit_20261026/final_path_failure_census/units/
+/reports/static_service_audit_20261026/parallel_frozen_replay/*/

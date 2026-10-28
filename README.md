@@ -1,6 +1,20 @@
 # Adaptive Guide-Agent Deployment for Unknown Dynamic Crowds
 
-围绕未知人群的 Guide 自适应部署研究框架。当前实现 **Step 1：静态单人群、已知封闭方形／矩形场地、全局观测、无限通信，无 crowd–guide 动力学交互**。动态多群、分裂／合并和有限感知／通信属于后续阶段。
+围绕未知人群的 Guide 自适应部署研究框架。集成基线实现 **Step 1：静态单人群、已知封闭方形／矩形场地、全局观测、无限通信，无 crowd–guide 动力学交互**。动态多群、分裂／合并和有限感知／通信属于后续阶段。
+
+**2026-10-29 审查版本：**静态多群扩展的安全替代路径、原参考服务充分界和50步连续重观测实验已完成。
+从[审查入口与证据包](reports/step1_review_20261029/README.md)阅读源码、协议、结果和限制。
+路线独立确认8,640条、连续确认108,240条全部记账并完成离线复判；连续实验仍有68次部署失败，
+主路程比较仅47/80对共同完成，不能宣称完整分母上的普遍节省运动。原确认因安全违反停在16,474/17,280，806条未执行，未补跑。
+本版本整理已有成果，后续独立研究暂不开展。原轨迹保留本地，Git包含摘要、封印和可核验源码快照。
+
+2026-10-26 新增独立的[静态多群扩展](docs/STEP1_MULTIGROUP.zh.md)：分离真实状态与有界误差观测，按有限候选目录分配机器人，并在资源不足时明确评价部分服务。首轮开发证据见[实现评估](reports/static_multigroup_20261026/REPORT.zh.md)。2026-10-27 的[服务机制与扰动实验](reports/static_service_audit_20261026/DEVELOPMENT.zh.md)补充连续服务积分、目标退化分解、独立机制实验与近墙压力测试；原20-seed确认使用封存源码另行执行。
+
+原确认的停止及复判结论见[原报告](reports/static_service_audit_20261026/REPORT.zh.md)；新批次结论见[本轮评估](reports/step1_closure_20261028/ASSESSMENT.zh.md)。
+
+2026-10-27 新增[连续评分与布局保留实验评估](reports/static_phase_retention_20261027/ASSESSMENT.zh.md)：
+固定每群数量，完成3,200条规划、80次名义部署和160次重部署，并对真实服务代价反例另作固定动作执行。
+该模块减少小幅重观测引起的布局跳变；其观察模型代价界不等于真实服务保证。
 
 2026-10-23 已合并两台电脑的项目文件，采用转移项目的后续代码，保留两边数据和冲突原件。缺失数据按授权重新执行，并明确标记为重建数据。见 [重建日志](docs/PROJECT_REBUILD.zh.md)。
 
@@ -34,6 +48,7 @@ Linux/macOS 使用独立 `python3.12 -m venv .venv`，随后 `.venv/bin/python -
 | `src/udc/boundary/`、`deployment/` | 观测边界、Guide 数量和部署规划 |
 | `src/udc/navigation/`、`controller/`、`safety/` | 路径指派、执行反馈、恢复和安全过滤 |
 | `src/udc/crowd/`、`environment.py`、`interfaces.py`、`scene.py` | 冻结人群源、观测与已知场地 |
+| `src/udc/multigroup/` | 显式静态多群扩展：误差观测、分群、候选布局、资源分配和真值评价 |
 | `src/udc/experiments/`、`evaluation/` | 编排、来源追溯和独立验收 |
 | `src/udc/analysis/`、`visualization/` | 配对统计、PedPy、图像与回放 |
 | `configs/step1/` | 场景和实验协议配置 |
@@ -73,7 +88,7 @@ Linux/macOS 使用独立 `python3.12 -m venv .venv`，随后 `.venv/bin/python -
 ./.venv/Scripts/python.exe experiments/validation_runner.py --reevaluate --output runs/my_smoke
 ```
 
-本次实测 **218 项测试通过**；development smoke **132/132 完成、0 程序错误、132 预期匹配、93 实际成功**；132 条复判与在线结果一致。完整测量见 [本次审计](reports/project_rebuild_20261023/README.md)。科学失败保留在分母，这些检查不替代历史矩阵。
+2026-10-23重建版本实测 **218 项测试通过**；development smoke **132/132 完成、0 程序错误、132 预期匹配、93 实际成功**；132 条复判与在线结果一致。该历史测量见 [重建审计](reports/project_rebuild_20261023/README.md)，当前审查版本检查另见[验证日志](docs/VALIDATION.zh.md)。科学失败保留在分母，这些检查不替代历史矩阵。
 
 运行保存 `config.yaml`、`trajectory.npz`、`planning.json`、`metrics.json` 和 `state.json`；程序异常另存 traceback。
 
@@ -84,4 +99,6 @@ Linux/macOS 使用独立 `python3.12 -m venv .venv`，随后 `.venv/bin/python -
 
 重建维护入口：`./.venv/Scripts/python.exe scripts/rebuild_missing_data.py --suite all --workers 2`。输出只写独立重建目录，完成任务通过检查点读取，不覆盖或自动重试已完成的科学失败。历史种子再次执行属于重建／开发回归；**5000–5029 禁止用于开发重跑**。
 
-三个分支 `main`、`Major-Research-Branches`、`integration/step1-framework` 同步发布同一份完整项目；分支比较和健康检查见 [同步说明](docs/REPOSITORY_SYNC.zh.md)。`.venv/`、`runs/`、`backups/` 是本地环境与数据，Git同步针对跟踪文件。实时跨平台 CI 以 [GitHub Actions](https://github.com/Wu-kaixin/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/actions/workflows/ci.yml) 为准。采用 MIT License，来源与提交见架构文档。
+2026-10-23的三个分支同步记录见[同步说明](docs/REPOSITORY_SYNC.zh.md)，不是当前分支始终相同的承诺。
+本次通过 `codex/step1-closure` 向 `Major-Research-Branches` 提交独立审查，不直接更新 `main`。
+`.venv/`、`runs/`、`backups/` 是本地环境与数据，Git同步针对跟踪文件。实时跨平台 CI 以 [GitHub Actions](https://github.com/Wu-kaixin/Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds/actions/workflows/ci.yml) 为准。采用 MIT License，来源与提交见架构文档。

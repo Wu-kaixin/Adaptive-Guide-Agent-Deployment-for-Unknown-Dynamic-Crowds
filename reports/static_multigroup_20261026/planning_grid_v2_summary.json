@@ -1,0 +1,5976 @@
+{
+  "evidence": "development",
+  "scheduled_tasks": 864,
+  "recorded_tasks": 864,
+  "not_yet_recorded": 0,
+  "statuses": {
+    "NOT_EXECUTED": 864
+  },
+  "full_successes": 0,
+  "deployment_completed": 0,
+  "motion_tasks": 0,
+  "executed_intervals": 0,
+  "unsafe_intervals": 0,
+  "partition_mismatch_task_ids": [],
+  "error_bound_violation_task_ids": [],
+  "finite_catalog_dominance_failures": [],
+  "paired_common_reference_differences": [
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 1,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.24637430101559554
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2704199685557157
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5355389539393243
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5355912466967664
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.22215489137611535
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.221813525129746
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.014773827744325896
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.22863166528343726
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2635361217005774
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5373105070201974
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5368367894965198
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.22735662756765748
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2279359133610514
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.00757428071923838
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2277961273123913
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.25473821482625636
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5414324429279678
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5413716763393593
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2414672398093184
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2401389133568591
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2367081634503556
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.30046811095532944
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6589746775133578
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6419410576941016
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4419501114539253
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.41756570418787875
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.23558985905606544
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.30005373629182897
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6628903557603859
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6512813894310362
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4483360315614974
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4215874333504882
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2312953962479265
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2903111143461058
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6593713209568215
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6526916743603847
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4605689797563277
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4327754166766104
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.020839407673065302
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.18732083640558955
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.23108667226140672
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3808727794240057
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.34053126526284444
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.1723491143803174
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.14799112753132285
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.018484290895812938
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.1862193722625366
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.22491047662514746
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.38784902825224826
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.344240911317231
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.1793989827511038
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.15468122573783183
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.23874557301049898
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.26509709917748886
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5841181636598889
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5803739242401723
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3731392226934515
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.13886767420613116
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.023318908273657457
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.1960969108367686
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2281879006230797
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.38671844547804307
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3554702411485352
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.19640455839854326
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.17761544882596875
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.23675315085489085
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2645293869827658
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5880338352834596
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5816875969686407
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.37699017532146833
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.25510221057626126
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.012096542029785828
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.22557476317506975
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.01760655571835601
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2643169032086446
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5973546302470797
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5862833482423606
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3849546848091705
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 2,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.27200100076055844
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3603334680136967
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.032008358040298335
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.38627832486655733
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8796921612165709
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8821877031927542
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.18790223660302693
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.18731139794820806
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.007936837343559322
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3636584209425394
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.027109392272584187
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.38299588025625536
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8791369380952834
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.0027439174336447054
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8792738043540782
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.19317552920599826
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.19213710616454863
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.002534552176611915
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.35006881445405147
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.017730665162893455
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3620364389529187
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8794225599154093
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8771366046518185
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3151261932353908
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.21199034019289756
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4552732282729991
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5000237852819549
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8514091868722541
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8613009522029197
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4968437674831431
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4856220602881604
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4537413458134255
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.011254821211174826
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4926355242198216
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8480768214884697
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8617546163530962
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4992611270115016
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4870241025963946
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4474253110409684
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.49010795949765007
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8307624151727608
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.00838166634992734
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8539929254404056
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6604851236290542
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.49491755222730155
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.3460254611959642
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.0363479033761282
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.43382005722652767
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0005517462154826791
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6485093536780961
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.029173279647506038
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.7803494780531787
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5112949953530096
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4486267873090104
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.34518777155124514
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.02425511592100199
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4224938843933243
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6434057531977067
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03138665641970371
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.7818456342392481
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5106069544067126
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.45339826791769167
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5072329585258086
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.021259132382132784
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5396031857456299
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8575900447878597
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8612983569733127
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.16210569943561962
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.05045404399379135
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.33337268640412066
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03480975981783141
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.43118782630999897
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0018132161508151584
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6265931878392994
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.037001364968488326
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.7044715487858461
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5124121254755392
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5076296070338313
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.501863163301236
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.033905363875485095
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5423405262938357
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8599136811055126
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8669750211363128
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.16812536447949727
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.055346809958452016
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.47966853418673117
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03788702662502863
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5319138221253914
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8595241583932429
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.010915967292295003
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8637907125229439
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.30283105190386705
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 3,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.17004149662749024
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.005370030502044099
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.479736637348976
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.04187746492368072
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5171484884921116
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8804207136886029
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.880257069375727
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.31076939355820593
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.1952495042092558
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.0025560853522377247
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.47654006110619784
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.037894487627311124
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5118251760391441
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.879889633415625
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8814332127281055
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.31761705732409096
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.20466765031839526
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.47038681995956877
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03165127609173979
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5030405929378678
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8809445791430052
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8812503836602766
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.443615314998758
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "circle",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.33538722072659444
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.43562006592095626
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5053025645729585
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8410341602573447
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.009773669980498546
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8621033422208692
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6665253156103859
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6624974845679703
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4330257256467813
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.49821931225644833
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8355806329190483
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.007454857379712
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.859671072538722
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6709983268944061
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6667027635025707
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.43147866053846495
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.012161251700610332
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4713743887679559
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.817346502311093
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.0022170539996579294
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8390176940108688
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.7488192400048235
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "ellipse",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6677759975937707
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.002133039388709901
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.46460473177689743
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.031116329623098515
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5365889023870527
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.816507582420123
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.02746468480274389
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8727028829328094
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6848775312573201
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.43979512917831304
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.003277570427119292
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4667556064267149
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.02994117855347156
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5365956618078678
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.0001407785280386209
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8072709919058475
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.033070449572162104
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8770584825652972
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6859426947405348
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.43757989474942005
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.48145821733558536
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.036947254607601177
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5608906226711807
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8354478569718542
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8503650237994314
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4839019557044456
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.0,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.2464230190001792
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.45613485800713827
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.030364597253481396
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5337792135025021
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.7995846741845185
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.027629151072396566
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8796425295658585
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.6877802517640277
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "concave",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.4965853837509792
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.47856365222114194
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.034959867320912885
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5601643882277816
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8354899381100586
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8507723729441509
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.48949383072159924
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.04,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.24971959261150034
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.46593117046002896
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": -0.03198104604650781
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "insufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5475133094534446
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0018293525734542628
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8363964903183592
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "moderate",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.8447789231447684
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "equal_arc",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.5020604881958715
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "perimeter",
+      "worst_uncovered_delta": 0.0
+    },
+    {
+      "group_count": 5,
+      "shape": "irregular",
+      "seed": 1200,
+      "error_bound_m": 0.12,
+      "resource": "sufficient",
+      "layout": "projected_mass",
+      "baseline": "demand",
+      "worst_uncovered_delta": -0.37832922284172266
+    }
+  ],
+  "limits": [
+    "development is not prospective confirmation",
+    "finite catalog, not continuous optimality",
+    "separated static components",
+    "serial fixed assignment is not complete MAPF",
+    "geometric service is not demonstrated crowd influence"
+  ],
+  "primary_analysis": {
+    "estimand": "planned_common_reference_worst_group_uncovered_minimax_minus_perimeter",
+    "evidence": "development",
+    "strata": [
+      {
+        "group_count": 1,
+        "shape": "circle",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 1,
+        "shape": "concave",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 1,
+        "shape": "ellipse",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 1,
+        "shape": "irregular",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 2,
+        "shape": "circle",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 2,
+        "shape": "concave",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 2,
+        "shape": "ellipse",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 2,
+        "shape": "irregular",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.01760655571835601,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group_count": 3,
+        "shape": "circle",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.017730665162893455,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group_count": 3,
+        "shape": "concave",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.03480975981783141,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group_count": 3,
+        "shape": "ellipse",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.0,
+        "negative": 0,
+        "zero": 1,
+        "positive": 0
+      },
+      {
+        "group_count": 3,
+        "shape": "irregular",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.03788702662502863,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group_count": 5,
+        "shape": "circle",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.03165127609173979,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group_count": 5,
+        "shape": "concave",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.030364597253481396,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group_count": 5,
+        "shape": "ellipse",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": 0.012161251700610332,
+        "negative": 0,
+        "zero": 0,
+        "positive": 1
+      },
+      {
+        "group_count": 5,
+        "shape": "irregular",
+        "draws": 1,
+        "valid_pairs": 1,
+        "missing_pairs": 0,
+        "mean_delta": -0.03198104604650781,
+        "negative": 1,
+        "zero": 0,
+        "positive": 0
+      }
+    ],
+    "equal_stratum_mean_delta": -0.01186685468845176,
+    "paired_stratified_95_interval": null,
+    "uncalculable_bootstrap_share": null,
+    "independent_unit": "group_count_shape_seed_with_all_errors_resources_and_methods_together",
+    "interpretation": "conditional on both methods producing planned targets; full failure ledger retained",
+    "supports_preregistered_negative_direction": false,
+    "prospective_confirmation_completed": false
+  },
+  "stopped_on_error_or_safety": false
+}

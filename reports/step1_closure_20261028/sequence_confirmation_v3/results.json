@@ -1,0 +1,406 @@
+{
+  "manifest_sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+  "summary": {
+    "stopped": false,
+    "completed_units": 80,
+    "scheduled_units": 80,
+    "recorded_step_records": 108240,
+    "scheduled_step_records": 108240,
+    "not_recorded_steps": 0,
+    "statuses": {
+      "PARTIAL_SERVICE": 71268,
+      "FULL_SUCCESS": 34866,
+      "SERIAL_ASSEMBLY_UNRESOLVED": 68,
+      "NOT_EXECUTED_PRIOR_DEPLOYMENT_FAILURE": 2038
+    },
+    "orchestration_error_units": 0,
+    "sequence_completed": 2092,
+    "episodes_recorded": 2160,
+    "independent_physical_blocks": 80
+  },
+  "audit": {
+    "manifest_sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+    "checked_step_records": 108240,
+    "scheduled_step_records": 108240,
+    "mismatches": [],
+    "all_match": true,
+    "certificate_frames": 13286,
+    "independent_physical_blocks": 80,
+    "evidence": "prospective_confirmation",
+    "by_method": {
+      "recompute_all": {
+        "episodes": 720,
+        "completed_episodes": 688,
+        "accepted_frames": 0,
+        "fallback_frames": 0,
+        "count_switch_events": 2791,
+        "nontrivial_hold_frames": 0
+      },
+      "phase_guard": {
+        "episodes": 720,
+        "completed_episodes": 702,
+        "accepted_frames": 6436,
+        "fallback_frames": 29088,
+        "count_switch_events": 2880,
+        "nontrivial_hold_frames": 0
+      },
+      "counts_phase_guard": {
+        "episodes": 720,
+        "completed_episodes": 702,
+        "accepted_frames": 6850,
+        "fallback_frames": 28672,
+        "count_switch_events": 2586,
+        "nontrivial_hold_frames": 5651
+      }
+    },
+    "primary_joint_completed_pairs": 47,
+    "primary_scheduled_pairs": 80,
+    "primary_conditional_travel_difference": {
+      "estimate": -144.8835022217224,
+      "ci_95": [
+        -215.96677313496434,
+        -84.34275977200032
+      ],
+      "blocks": 47
+    },
+    "full_ledger_travel_identification_range_m": [
+      -2970075.550503868,
+      2969924.449496132
+    ]
+  },
+  "resource_pattern_method_cells": [
+    {
+      "resource": "insufficient",
+      "pattern": "independent_jitter",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 213.58802407027036,
+      "conditional_mean_event_worst_uncovered": 0.4867273885513296,
+      "count_switch_events_all_recorded": 485,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "independent_jitter",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 213.58802407027036,
+      "conditional_mean_event_worst_uncovered": 0.4867273885513296,
+      "count_switch_events_all_recorded": 485,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 4000
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "independent_jitter",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 213.58802407027036,
+      "conditional_mean_event_worst_uncovered": 0.4867273885513296,
+      "count_switch_events_all_recorded": 485,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 4000
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "slow_common_bias",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 0.4394851576027593,
+      "conditional_mean_event_worst_uncovered": 0.48788310818123926,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "slow_common_bias",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 0.4394851576027593,
+      "conditional_mean_event_worst_uncovered": 0.48788310818123926,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 4000
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "slow_common_bias",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 0.4394851576027593,
+      "conditional_mean_event_worst_uncovered": 0.48788310818123926,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 4000
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "oscillatory_shape_bias",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 132.72019465539265,
+      "conditional_mean_event_worst_uncovered": 0.4871527865018322,
+      "count_switch_events_all_recorded": 360,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "oscillatory_shape_bias",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 132.72019465539265,
+      "conditional_mean_event_worst_uncovered": 0.4871527865018322,
+      "count_switch_events_all_recorded": 360,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 4000
+    },
+    {
+      "resource": "insufficient",
+      "pattern": "oscillatory_shape_bias",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 132.72019465539265,
+      "conditional_mean_event_worst_uncovered": 0.4871527865018322,
+      "count_switch_events_all_recorded": 360,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 4000
+    },
+    {
+      "resource": "moderate",
+      "pattern": "independent_jitter",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 230.70529397086602,
+      "conditional_mean_event_worst_uncovered": 0.023413818347215988,
+      "count_switch_events_all_recorded": 483,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "moderate",
+      "pattern": "independent_jitter",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 228.99130065536912,
+      "conditional_mean_event_worst_uncovered": 0.023413818347215988,
+      "count_switch_events_all_recorded": 483,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 3841
+    },
+    {
+      "resource": "moderate",
+      "pattern": "independent_jitter",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 228.22539433263873,
+      "conditional_mean_event_worst_uncovered": 0.02341314022192171,
+      "count_switch_events_all_recorded": 483,
+      "nontrivial_hold_frames": 123,
+      "fallback_frames": 3834
+    },
+    {
+      "resource": "moderate",
+      "pattern": "slow_common_bias",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 1.046716995096248,
+      "conditional_mean_event_worst_uncovered": 0.02444122130595486,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "moderate",
+      "pattern": "slow_common_bias",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 1.03563675619684,
+      "conditional_mean_event_worst_uncovered": 0.02444122130595486,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 3850
+    },
+    {
+      "resource": "moderate",
+      "pattern": "slow_common_bias",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 1.0197648151429974,
+      "conditional_mean_event_worst_uncovered": 0.02444122130595486,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 150,
+      "fallback_frames": 3850
+    },
+    {
+      "resource": "moderate",
+      "pattern": "oscillatory_shape_bias",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 170.45393313387518,
+      "conditional_mean_event_worst_uncovered": 0.02383405606418701,
+      "count_switch_events_all_recorded": 240,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "moderate",
+      "pattern": "oscillatory_shape_bias",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 169.99856482767473,
+      "conditional_mean_event_worst_uncovered": 0.02383405606418701,
+      "count_switch_events_all_recorded": 240,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 3836
+    },
+    {
+      "resource": "moderate",
+      "pattern": "oscillatory_shape_bias",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 168.4561405073438,
+      "conditional_mean_event_worst_uncovered": 0.023813039777574093,
+      "count_switch_events_all_recorded": 240,
+      "nontrivial_hold_frames": 283,
+      "fallback_frames": 3709
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "independent_jitter",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 48,
+      "conditional_mean_total_travel_m": 625.6100702883285,
+      "conditional_mean_event_worst_uncovered": 3.469446951953614e-16,
+      "count_switch_events_all_recorded": 803,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "independent_jitter",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 62,
+      "conditional_mean_total_travel_m": 456.90832987171996,
+      "conditional_mean_event_worst_uncovered": 3.169507667075044e-16,
+      "count_switch_events_all_recorded": 892,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 1779
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "independent_jitter",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 62,
+      "conditional_mean_total_travel_m": 408.64617884443135,
+      "conditional_mean_event_worst_uncovered": 3.169507667075044e-16,
+      "count_switch_events_all_recorded": 788,
+      "nontrivial_hold_frames": 714,
+      "fallback_frames": 1757
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "slow_common_bias",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 1.6531331407742254,
+      "conditional_mean_event_worst_uncovered": 3.3861802251067273e-16,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "slow_common_bias",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 1.371426857463216,
+      "conditional_mean_event_worst_uncovered": 3.3861802251067273e-16,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 1887
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "slow_common_bias",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 0.871035228953825,
+      "conditional_mean_event_worst_uncovered": 3.3861802251067273e-16,
+      "count_switch_events_all_recorded": 0,
+      "nontrivial_hold_frames": 2148,
+      "fallback_frames": 1850
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "oscillatory_shape_bias",
+      "method": "recompute_all",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 261.61471128083474,
+      "conditional_mean_event_worst_uncovered": 3.3861802251067273e-16,
+      "count_switch_events_all_recorded": 420,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 0
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "oscillatory_shape_bias",
+      "method": "phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 249.8141985204581,
+      "conditional_mean_event_worst_uncovered": 3.3861802251067273e-16,
+      "count_switch_events_all_recorded": 420,
+      "nontrivial_hold_frames": 0,
+      "fallback_frames": 1895
+    },
+    {
+      "resource": "sufficient",
+      "pattern": "oscillatory_shape_bias",
+      "method": "counts_phase_guard",
+      "scheduled_sequences": 80,
+      "complete_sequences": 80,
+      "conditional_mean_total_travel_m": 140.98595817329675,
+      "conditional_mean_event_worst_uncovered": 3.3861802251067273e-16,
+      "count_switch_events_all_recorded": 230,
+      "nontrivial_hold_frames": 2233,
+      "fallback_frames": 1672
+    }
+  ],
+  "cross_method_original_service_comparison": {
+    "joint_complete_sequences": 687,
+    "mean_event_worst_gap_difference": -2.5262779513471887e-06,
+    "maximum_event_worst_gap_difference": 0.00013644988219640997,
+    "scope": "empirical comparison with external recompute method; certificate compares own-state greedy, not a different counterfactual history"
+  },
+  "reference": "ORIGINAL_WORLD_REFERENCE",
+  "general_error_model": "arbitrary bounded independent or correlated person error; observation-certified group identity",
+  "scope": "50 accepted observation indices; no reset within sequence; not asymptotic stability or dynamic-crowd proof"
+}

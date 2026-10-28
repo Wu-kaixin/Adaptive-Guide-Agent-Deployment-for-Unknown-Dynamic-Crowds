@@ -1,0 +1,13 @@
+protocol: recovery_fixed_witness_v2
+original_study: runs/static_multigroup_20261026/confirmation_v2_frozen
+failure_census: reports/static_service_audit_20261026/final_path_failure_census
+unsafe_witness: K5_irregular_s2004_e0.12_insufficient_projected_mass_perimeter
+selection: first_per_mechanism_plus_safety
+policies: [verified_q4_forward, adaptive_forward, adaptive_reverse]
+routing: {routing_sides: [16, 32, 64], routing_pad_m: 1.0e-9, routing_interior_margin_m: 1.0e-6, routing_max_vertices: 20000}
+maximum_workers: 32
+numerical_threads: 1
+scientific_retries: 0
+evidence: new_version_fixed_old_action_development_only
+previous_version: recovery_witness_v1_retained_with_safe_rejections
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION, MODEL_BOUND_VIOLATION]

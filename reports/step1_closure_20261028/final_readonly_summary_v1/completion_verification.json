@@ -1,0 +1,52 @@
+{
+  "verified_at": "2026-10-28T23:51:03.976296+09:00",
+  "checks": {
+    "workflow_engine_hashes": true,
+    "predecessor_locks_error_preserved": true,
+    "routing_confirmation_v2_manifest_seal": true,
+    "routing_confirmation_v2_all_replay_match": true,
+    "routing_confirmation_v2_completion_report_match": true,
+    "sequence_development_v3_manifest_seal": true,
+    "sequence_development_v3_all_replay_match": true,
+    "sequence_development_v3_completion_report_match": true,
+    "sequence_confirmation_v3_manifest_seal": true,
+    "sequence_confirmation_v3_all_replay_match": true,
+    "sequence_confirmation_v3_completion_report_match": true,
+    "original_report_sha256": true,
+    "original_stop_16474_of_17280_preserved": true,
+    "fixed_pair_model_audit": true,
+    "recovery_cohort_v2_saved_audit": true,
+    "deployment_development_v2_saved_audit": true,
+    "sequential_smoke_v3_saved_audit": true
+  },
+  "artifact_sha256": {
+    "runs/step1_closure_20261028/deployment_confirmation_v2/manifest.json": "c1322a6bfa077b51e064fa7f3afc3413595d27897f12da62fd12c0da84b5e802",
+    "runs/step1_closure_20261028/deployment_confirmation_v2/seal.json": "b409d4d6c4e28048da9f2ba7080a51865935b147ef64d1d50a4fe31de049a515",
+    "runs/step1_closure_20261028/deployment_confirmation_v2/offline_replay.json": "ec5d9b76ad091cb358f61d607d1666deb6dbe32a7191192692ad471a05a4e05b",
+    "reports/step1_closure_20261028/routing_confirmation_v2/results.json": "5fc95c73b10f0cedff09e58d26b1cb844b394df7ca77c210fb25516b8d1455bc",
+    "reports/step1_closure_20261028/routing_confirmation_v2/REPORT.zh.md": "705d92be8d2ef3a2ac7f35e029c4e30c3c447431478dc6995e2daf64f71c02e2",
+    "runs/step1_closure_20261028/sequential_development_v3/manifest.json": "30e56ec340d2b73bbd95b64193933817ceba4a123f31314f7bc2d609dbfc4ea6",
+    "runs/step1_closure_20261028/sequential_development_v3/seal.json": "527983674e74690a8e92e26b614ffe67450a6f12c95c4e7e3471fc48da06c13a",
+    "runs/step1_closure_20261028/sequential_development_v3/readonly_audit_v2/offline_audit.json": "a640102242354ed7a27a65165130488112e86514bf6ba14100e47f4a86d7cc55",
+    "reports/step1_closure_20261028/sequence_development_v3/results.json": "0528c484d9e966fbbc8d89cbdeb68e9865537b59f2086c785ccc684e6862d194",
+    "reports/step1_closure_20261028/sequence_development_v3/REPORT.zh.md": "eba68a59a6779e31fca6b2e9c2af976f147c659750d3bc54c364937bb7c81916",
+    "runs/step1_closure_20261028/sequential_confirmation_v3/manifest.json": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+    "runs/step1_closure_20261028/sequential_confirmation_v3/seal.json": "8f18e08a036eccadfe8bc011f3909e22fe7f677d408cf96277320f6250cad4e1",
+    "runs/step1_closure_20261028/sequential_confirmation_v3/readonly_audit_v2/offline_audit.json": "6624a3f5f9fc8251fe8e4ad8aec2d9e909dfc16c39b4d881a850b2303c21117a",
+    "reports/step1_closure_20261028/sequence_confirmation_v3/results.json": "bdf7b4b5ad2396d828e59cec89069663c68e96049e550b28392d71567f7cfdf8",
+    "reports/step1_closure_20261028/sequence_confirmation_v3/REPORT.zh.md": "a79fff534c5a09da8ab6a47d2a7483b6928681c1bad746503e855121a0f00f1f",
+    "runs/step1_closure_20261028/control_v2/workflow.json": "f9a947cf7fdfe9ed7cfce7416599392cd0cf852a1bcc998cc04ba352275329b1",
+    "runs/step1_closure_20261028/control_v2/completion.json": "52abf73c98f6895dd8553ab7e574b800903c530c7f96adef88949484ee3f02fb",
+    "reports/static_service_audit_20261026/REPORT.zh.md": "d9f16a8e1561aafad6f3650d79f3ae25cc2705bf164265cf0f581e6283b1ca3e",
+    "reports/static_service_audit_20261026/completion_receipt.json": "d1db9f30095a6f671cc7c6fd609b8b69abe5bdb5a6d7cb00790158c5a2acb25f",
+    "reports/step1_closure_20261028/ASSESSMENT.zh.md": "97abfbb7e6baa1363dff02c2fce57f0e8d2abef2015887b7000f4dcab07bc2bf",
+    "reports/step1_closure_20261028/final_readonly_summary_v1/results.json": "ed80c376aae3ebc249800bf9368879fbd9168467195c8c0053626c85d17bfcde"
+  },
+  "scientific_retries": 0,
+  "new_scientific_executions_during_finalization": 0,
+  "independent_confirmation_blocks": {
+    "routing": 320,
+    "sequential": 80
+  },
+  "limitations": "Planned batches complete; original stopped confirmation remains incomplete; sequence failures and conditional primary inference remain."
+}

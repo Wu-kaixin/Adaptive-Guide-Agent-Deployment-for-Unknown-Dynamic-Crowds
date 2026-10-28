@@ -1,0 +1,37 @@
+{
+  "manifest_sha256": "f88f9e154f948c5d106747e4f1f2edd984b0e62bea241104867d4efd183e18d1",
+  "recorded": 1923,
+  "scheduled": 1923,
+  "evidence": "fixed_old_action_development_not_independent_confirmation",
+  "all_replay_match": true,
+  "new_independent_samples": 0,
+  "by_policy": {
+    "verified_q4_forward": {
+      "statuses": {
+        "PATH_NOT_FOUND": 640,
+        "PARTIAL_SERVICE": 1
+      },
+      "safe_deployments_completed": 1,
+      "full_task_success": 0
+    },
+    "adaptive_forward": {
+      "statuses": {
+        "PARTIAL_SERVICE": 404,
+        "FULL_SUCCESS": 6,
+        "PATH_NOT_FOUND": 231
+      },
+      "safe_deployments_completed": 410,
+      "full_task_success": 6
+    },
+    "adaptive_reverse": {
+      "statuses": {
+        "PARTIAL_SERVICE": 631,
+        "FULL_SUCCESS": 10
+      },
+      "safe_deployments_completed": 641,
+      "full_task_success": 10
+    }
+  },
+  "safety_violations": 0,
+  "program_errors": 0
+}

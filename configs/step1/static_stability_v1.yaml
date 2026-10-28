@@ -1,0 +1,25 @@
+schema_version: 1
+protocol: static_stability_v1
+evidence: development
+namespace: 2026102702
+base_protocol: configs/step1/static_multigroup_v2.yaml
+group_counts: [2, 5]
+shape: concave
+seeds: {start: 1500, count: 20}
+measurement_models: [bounded_disk, common_bias]
+base_actual_error_bound_m: 0.08
+declared_error_bound_m: 0.12
+additional_perturbation_m: [0, 0.001, 0.01, 0.03]
+same_normalized_perturbation_direction_across_magnitudes: true
+layout: projected_mass
+allocator: minimax
+budget_per_group: 5
+motion: false
+metrics: [partition, counts_l1, target_hausdorff, matched_target_rms, actual_reference_service]
+threshold_counterexample:
+  positions: [[10, 10], [10.62, 10], [11.58, 10], [12.2, 10]]
+  group_shifts_m: [[0.01, 0], [-0.01, 0]]
+  expected_group_counts: [2, 1]
+  purpose: sufficient_certificate_failure_does_not_imply_impossibility_or_stability
+scientific_retries: 0
+reserved_seeds: [5000, 5029]

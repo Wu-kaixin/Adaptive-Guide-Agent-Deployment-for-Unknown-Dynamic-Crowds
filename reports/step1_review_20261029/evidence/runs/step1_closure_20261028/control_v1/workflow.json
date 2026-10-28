@@ -1,0 +1,76 @@
+{
+  "prepared_at": "2026-10-28T15:43:57.682399+09:00",
+  "stages": [
+    {
+      "name": "routing_confirmation_v2",
+      "kind": "routing",
+      "study": "runs/step1_closure_20261028/deployment_confirmation_v2",
+      "manifest_sha256": "c1322a6bfa077b51e064fa7f3afc3413595d27897f12da62fd12c0da84b5e802",
+      "module": "udc.experiments.deployment_recovery",
+      "workers": 32,
+      "activation_gate": false
+    },
+    {
+      "name": "sequence_development_v3",
+      "kind": "sequential",
+      "study": "runs/step1_closure_20261028/sequential_development_v3",
+      "manifest_sha256": "30e56ec340d2b73bbd95b64193933817ceba4a123f31314f7bc2d609dbfc4ea6",
+      "module": "udc.experiments.sequential_deployment",
+      "workers": 32,
+      "activation_gate": true
+    },
+    {
+      "name": "sequence_confirmation_v3",
+      "kind": "sequential",
+      "study": "runs/step1_closure_20261028/sequential_confirmation_v3",
+      "manifest_sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+      "module": "udc.experiments.sequential_deployment",
+      "workers": 32,
+      "activation_gate": false
+    }
+  ],
+  "existing_gates": [
+    {
+      "path": "runs/step1_closure_20261028/recovery_cohort_v2/offline_replay.json",
+      "stderr": "runs/step1_closure_20261028/recovery_cohort_v2/parallel_replay_stderr.log"
+    },
+    {
+      "path": "runs/step1_closure_20261028/deployment_development_v2/offline_replay.json",
+      "stderr": "runs/step1_closure_20261028/deployment_development_v2/runner_stderr.log"
+    },
+    {
+      "path": "runs/step1_closure_20261028/sequential_smoke_v3/offline_audit.json",
+      "stderr": "runs/step1_closure_20261028/sequential_smoke_v3/runner_stderr.log"
+    }
+  ],
+  "existing_reports": [
+    {
+      "study": "runs/step1_closure_20261028/recovery_cohort_v2",
+      "name": "recovery_cohort_v2_results"
+    },
+    {
+      "study": "runs/step1_closure_20261028/deployment_development_v2",
+      "name": "deployment_development_v2_results"
+    }
+  ],
+  "support_source_study": "runs/step1_closure_20261028/sequential_development_v3",
+  "support_audit_output": "reports/step1_closure_20261028/general_support_old_actions_strict_v2",
+  "sealed_files": {
+    "engine_snapshot/audit_sequential_study.py": "4f84c2fa4647c7adeffd5f5fbd7a241f592281c84a5adcb699cbc82a70094665",
+    "engine_snapshot/closure_reports.py": "d20d5071357eb9f3e917eb081148782673d48e687fcdb182c3bb9d35da80a944",
+    "engine_snapshot/report_closure_study.py": "0853f9454ed168639048ac169c47279a6f375727f69fa7bfa029596442e0a7d0",
+    "engine_snapshot/step1_closure_flow.py": "1c4ff9462fe7bbf96f9e4417933273add6f66f8bfcebf5a1e7a3278b94d97ed3"
+  },
+  "tests": {
+    "passed": 347,
+    "duration_s": 29.15,
+    "pip_check": "PASS"
+  },
+  "phase_cache_parity_benchmark": "reports/step1_closure_20261028/phase_cache_benchmark.json",
+  "original_confirmation_806_missing": "preserved_not_restarted",
+  "scientific_retries": 0,
+  "maximum_compute_workers": 32,
+  "numerical_threads_per_worker": 1,
+  "reference_guarantee_scope": "original reference support dominance with directly observation-certified group identity; no anchored-reference substitution",
+  "future_scope": "no dynamic crowd or restricted communication experiment; no unconditional convergence claim"
+}

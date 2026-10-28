@@ -1,0 +1,26 @@
+{
+  "durable_step_records": 48,
+  "scheduled_step_records": 453,
+  "not_recorded_steps": 405,
+  "statuses": {
+    "FULL_SUCCESS": 48
+  },
+  "receipt_sha256": {
+    "results/K2_ellipse_s3220_nominal_sufficient/receipt.json": "0b28403a066b76e043d43eedf69f6edecc0ff37a13c12b44d748f23073f1065a",
+    "results/K2_ellipse_s3221_nominal_sufficient/receipt.json": "3535bce5322f27f29d33c2be79b7327125477446a476a3d3fa64b5618694118c",
+    "results/K2_ellipse_s3222_nominal_sufficient/receipt.json": "7d62d3fac24c99300cd700d1c0ef17917a4a03654f0e2fb8d592b8e438877f28",
+    "results/K2_ellipse_s3220_sufficient_slow_common_bias_counts_phase_guard/chunk_0000/receipt.json": "c8260f8adfd63bc408417e10ed2b8a9d02000abbfbd0b1d112e10ba5ee8b198e",
+    "results/K2_ellipse_s3220_sufficient_slow_common_bias_phase_guard/chunk_0000/receipt.json": "0dbc0f958717eb8e45bfb1600221b18ae7657e5e2146052e345e6ed84eb97e29",
+    "results/K2_ellipse_s3220_sufficient_slow_common_bias_recompute_all/chunk_0000/receipt.json": "3f12ed41389b67abf4f35d5ffde25eafc0151d1ea301fc2f0053d6831284f92c",
+    "results/K2_ellipse_s3221_sufficient_slow_common_bias_counts_phase_guard/chunk_0000/receipt.json": "d8c755a43e66a8f732bd975048bebb5e2875920ee44723d97442bd3455bd54e2",
+    "results/K2_ellipse_s3221_sufficient_slow_common_bias_phase_guard/chunk_0000/receipt.json": "ece6b99a27feeca3693b0b896868154fca57f3039cbcc1007f8ccb3fe74106c3",
+    "results/K2_ellipse_s3221_sufficient_slow_common_bias_recompute_all/chunk_0000/receipt.json": "2d0fbd6419d663636fa1fcac7c7adc4c63b1b1e8b868b3925669ac695e651eac",
+    "results/K2_ellipse_s3222_sufficient_slow_common_bias_counts_phase_guard/chunk_0000/receipt.json": "f492f36ccd4a00fb8486f759211a4a534dfdafbc9086a94cb6b3473e0979d3a9",
+    "results/K2_ellipse_s3222_sufficient_slow_common_bias_phase_guard/chunk_0000/receipt.json": "7f99be31d16f76f46acbcc37e96d771a071356099adc96e641f335dac8092a64",
+    "results/K2_ellipse_s3222_sufficient_slow_common_bias_recompute_all/chunk_0000/receipt.json": "0a404eec712230d5370d03f5d6994f8b83092ab30e502eff5850413612755f43"
+  },
+  "reason": "checkpoint_progress_parent_directory_missing",
+  "scientific_retries": 0,
+  "frozen_sources_unchanged": true,
+  "new_version_required": true
+}

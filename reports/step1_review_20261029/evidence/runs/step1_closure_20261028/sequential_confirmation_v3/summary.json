@@ -1,0 +1,18 @@
+{
+  "stopped": false,
+  "completed_units": 80,
+  "scheduled_units": 80,
+  "recorded_step_records": 108240,
+  "scheduled_step_records": 108240,
+  "not_recorded_steps": 0,
+  "statuses": {
+    "PARTIAL_SERVICE": 71268,
+    "FULL_SUCCESS": 34866,
+    "SERIAL_ASSEMBLY_UNRESOLVED": 68,
+    "NOT_EXECUTED_PRIOR_DEPLOYMENT_FAILURE": 2038
+  },
+  "orchestration_error_units": 0,
+  "sequence_completed": 2092,
+  "episodes_recorded": 2160,
+  "independent_physical_blocks": 80
+}

@@ -1,0 +1,16 @@
+protocol: local_offset_interval_development_v2
+source_study: runs/step1_foundation_20261029/convex_support_transfer_development_v3
+source_geometry: inputs/input_0000/group_000.npz
+uniform_edge_count: 32
+include_targeted_edges: [103,104]
+intersection_vertices: [103,104,105]
+coordinate_uncertainty_m: [0, 0.000000000001, 0.001, 0.12]
+offset_distance_m: 0.4
+side: -1
+interval_precision_bits: 160
+tighten_normal: true
+workers: 8
+numerical_threads: 1
+scope: dependency_aware_analytic_normal_cap_local_primitives_not_GEOS_whole_kernel_or_runtime_service
+new_independent_samples: 0
+new_motion_executions: 0

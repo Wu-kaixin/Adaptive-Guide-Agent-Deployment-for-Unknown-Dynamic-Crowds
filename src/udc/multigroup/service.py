@@ -90,3 +90,62 @@ def continuous_arc_service(boundary, density, sites, radius):
     return {'uncovered': float(np.clip(1 - covered / total, 0, 1)),
             'uncovered_length_m': float(max(0, length - sum(right - left for left, right in intervals))),
             'full_curve_covered': bool(len(intervals) == 1 and intervals[0] == [0., length])}
+
+
+def continuous_service_exchange(boundary, density, greedy, retained, radius):
+    """Integrate lost AND gained service on a declared fixed original polyline.
+
+    Evaluator diagnostic only: this needs the reference curve and its nodal
+    density. It is not an observation-only uncertainty certificate.
+    """
+    points, rho, lengths, total = _model(boundary, density)
+    first, second = (np.asarray(q, float).reshape(-1, 2) for q in (greedy, retained))
+    if not np.isfinite(radius) or radius < 0 or not np.isfinite(first).all() or not np.isfinite(second).all():
+        raise ValueError('Finite service layouts and nonnegative radius required')
+
+    def covered(point, direction, length, robots):
+        relative = point - robots
+        a = length * length
+        b = 2 * (relative @ direction)
+        c = np.sum(relative * relative, axis=1) - radius * radius
+        discriminant = b * b - 4 * a * c
+        valid = discriminant >= 0
+        roots = np.sqrt(np.maximum(discriminant[valid], 0))
+        low = np.maximum(0., (-b[valid] - roots) / (2 * a))
+        high = np.minimum(1., (-b[valid] + roots) / (2 * a))
+        return _union(zip(low, high))
+
+    def subtract(left, right):
+        result = []
+        for low, high in left:
+            cursor = low
+            for a, b in right:
+                if b <= cursor:
+                    continue
+                if a >= high:
+                    break
+                if a > cursor:
+                    result.append((cursor, min(a, high)))
+                cursor = max(cursor, b)
+                if cursor >= high:
+                    break
+            if cursor < high:
+                result.append((cursor, high))
+        return result
+
+    lost, gained = 0., 0.
+    for index, (point, length) in enumerate(zip(points, lengths)):
+        direction = points[(index + 1) % len(points)] - point
+        a = covered(point, direction, length, first)
+        b = covered(point, direction, length, second)
+        def mass(intervals):
+            return sum(length * (rho[index] * (high - low)
+                + (rho[(index + 1) % len(rho)] - rho[index]) * (high ** 2 - low ** 2) / 2)
+                for low, high in intervals)
+        lost += mass(subtract(a, b))
+        gained += mass(subtract(b, a))
+    return {'lost_mass_fraction': float(np.clip(lost / total, 0., 1.)),
+            'gained_mass_fraction': float(np.clip(gained / total, 0., 1.)),
+            'net_uncovered_difference': float((lost - gained) / total),
+            'scope': 'fixed_declared_polyline_and_piecewise_linear_density_evaluator_only',
+            'uncertainty_certificate': False}

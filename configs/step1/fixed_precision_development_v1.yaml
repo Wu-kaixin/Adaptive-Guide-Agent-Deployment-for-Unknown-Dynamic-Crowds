@@ -1,0 +1,26 @@
+protocol: fixed_precision_development_v1
+parent: runs/step1_foundation_20261029/native_intersector_development_v1
+source_cache: .tmp/geos_3141_sources
+coordinate_uncertainty_m: [0,0.001,0.12]
+models:
+  - {name: floating, grid: 0}
+  - {name: fine_10, grid: 0.0000000001}
+  - {name: fine_8, grid: 0.00000001}
+  - {name: fine_6, grid: 0.000001}
+  - {name: fine_4, grid: 0.0001}
+  - {name: tenth, grid: 0.1}
+  - {name: unit, grid: 1}
+  - {name: near_unit, grid: 1.00000001}
+  - {name: coarse_near_integer, grid: 2.00000001}
+  - {name: near_integer_scale, grid_via_scale: 10000.000009}
+half_tie_integers: [-3,-2,-1,0,1,2]
+axis_closure_max_steps: 8
+include_scaled_noder_map: true
+overlay_fixture_names: [cross,endpoint,overlap,disjoint,parallel,almost_parallel,translated]
+naive_half_requested_grid_is_contract: false
+stop_naive_diagnostic_after_first_counterexample_per_case: true
+workers: 4
+numerical_threads: 1
+new_independent_samples: 0
+new_motion_executions: 0
+scope: fixed_scalar_quantization_and_conditional_axis_closure_not_all_buffer_fallbacks_or_service

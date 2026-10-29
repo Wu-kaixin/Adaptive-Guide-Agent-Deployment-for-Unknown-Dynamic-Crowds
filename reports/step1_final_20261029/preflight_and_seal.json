@@ -1,0 +1,23 @@
+{
+  "study": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_final_evaluation_20261029",
+  "manifest_sha256": "19e83e2738fdd89903d62ab894c19c70dc1ff49d3bf73d23b27f68a92b8b7a21",
+  "protocol_sha256": "e3d514aa025adea699d3dc77ae8f29acdaf3964e68378cccdca1e73ac843bced",
+  "input_overlap_sha256": "6cb8a05f6296b8751b85bb001c13f8f12ebd71826f8e15f0ea803e89558aadf5",
+  "preregistration_sha256": "2ec575a82715f6354fb3859244eda8768fb9b572515f473c2a4e7656a44915c9",
+  "checks": {
+    "pytest": {
+      "passed": 554,
+      "skipped": 1,
+      "seconds": 84.69,
+      "command": ".venv/Scripts/python.exe -m pytest -q -p no:cacheprovider --basetemp runs/pytest_final_preflight"
+    },
+    "pip_check": "No broken requirements found.",
+    "historic_review_verifier": {
+      "files": 61,
+      "archived_members": 3177,
+      "verified": true
+    },
+    "git_diff_check_exit_code": 0
+  },
+  "scope": "pre-execution seal and measured engineering checks; not final scientific outcome"
+}

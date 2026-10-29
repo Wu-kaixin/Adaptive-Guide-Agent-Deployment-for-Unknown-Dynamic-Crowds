@@ -1,0 +1,152 @@
+{
+  "evidence": "fixed_old_action_development_not_independent_confirmation",
+  "new_independent_samples": 0,
+  "batches": {
+    "v1": {
+      "summary": {
+        "recorded": 68,
+        "scheduled": 68,
+        "stopped": false,
+        "missing": 0,
+        "new_independent_samples": 0,
+        "statuses": {
+          "FULL_SUCCESS": 62,
+          "JOINT_CANDIDATE_REJECTED": 3,
+          "PARTIAL_SERVICE": 3
+        },
+        "by_policy": {
+          "verified_synchronous_linear_v1": {
+            "FULL_SUCCESS": 62,
+            "JOINT_CANDIDATE_REJECTED": 3,
+            "PARTIAL_SERVICE": 3
+          }
+        }
+      },
+      "seal": {
+        "manifest_sha256": "0fd518ba6c3464258d8f54288bb39cf49eefb528fb7adabc31588571349a2671"
+      },
+      "offline_replay": {
+        "checked": 68,
+        "scheduled": 68,
+        "mismatches": [],
+        "all_match": true,
+        "new_independent_samples": 0
+      },
+      "executed_intervals": 953,
+      "unsafe_intervals": 0,
+      "minimum_clearances": {
+        "human": 0.7235731988619629,
+        "guide": 0.06916879421285793,
+        "wall": 2.4540519289011167
+      }
+    },
+    "v2": {
+      "summary": {
+        "recorded": 6,
+        "scheduled": 6,
+        "stopped": false,
+        "missing": 0,
+        "new_independent_samples": 0,
+        "statuses": {
+          "JOINT_CANDIDATE_REJECTED": 3,
+          "PATH_NOT_FOUND": 3
+        },
+        "by_policy": {
+          "verified_synchronous_geodesic_v2": {
+            "JOINT_CANDIDATE_REJECTED": 3
+          },
+          "adaptive_forward": {
+            "PATH_NOT_FOUND": 3
+          }
+        }
+      },
+      "seal": {
+        "manifest_sha256": "2cfc926c58d1d3622b2e63572294dd96b415ee899476cded6168cfb1982d9630"
+      },
+      "offline_replay": {
+        "checked": 6,
+        "scheduled": 6,
+        "mismatches": [],
+        "all_match": true,
+        "new_independent_samples": 0
+      },
+      "executed_intervals": 6,
+      "unsafe_intervals": 0,
+      "minimum_clearances": {
+        "human": 0.827526902624762,
+        "guide": 0.17541560713434412,
+        "wall": 2.925706059219121
+      }
+    },
+    "v3": {
+      "summary": {
+        "recorded": 3,
+        "scheduled": 3,
+        "stopped": false,
+        "missing": 0,
+        "new_independent_samples": 0,
+        "statuses": {
+          "FULL_SUCCESS": 3
+        },
+        "by_policy": {
+          "verified_synchronous_reassigned_v3": {
+            "FULL_SUCCESS": 3
+          }
+        }
+      },
+      "seal": {
+        "manifest_sha256": "4134b09e414733e64afe5bf9da9569e1daac67f5f341784b023e3359770b6a64"
+      },
+      "offline_replay": {
+        "checked": 3,
+        "scheduled": 3,
+        "mismatches": [],
+        "all_match": true,
+        "new_independent_samples": 0
+      },
+      "executed_intervals": 171,
+      "unsafe_intervals": 0,
+      "minimum_clearances": {
+        "human": 0.7261941758083506,
+        "guide": 0.014712578263078924,
+        "wall": 2.925706059219121
+      }
+    },
+    "v4": {
+      "summary": {
+        "recorded": 68,
+        "scheduled": 68,
+        "stopped": false,
+        "missing": 0,
+        "new_independent_samples": 0,
+        "statuses": {
+          "FULL_SUCCESS": 65,
+          "PARTIAL_SERVICE": 3
+        },
+        "by_policy": {
+          "joint_reassigned_then_reverse_v1": {
+            "FULL_SUCCESS": 65,
+            "PARTIAL_SERVICE": 3
+          }
+        }
+      },
+      "seal": {
+        "manifest_sha256": "b7450c06f0167f09f70d94ec2365a059289ab3b7e43e5bac605dfb35e5fe6a21"
+      },
+      "executed_intervals": 1124,
+      "unsafe_intervals": 0,
+      "minimum_clearances": {
+        "human": 0.7235731988619629,
+        "guide": 0.014712578263078924,
+        "wall": 2.4540519289011167
+      },
+      "offline_replay": {
+        "checked": 68,
+        "scheduled": 68,
+        "mismatches": [],
+        "all_match": true,
+        "new_independent_samples": 0
+      }
+    }
+  }
+}

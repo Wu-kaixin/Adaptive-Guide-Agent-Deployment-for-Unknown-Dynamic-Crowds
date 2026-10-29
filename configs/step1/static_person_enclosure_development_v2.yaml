@@ -1,0 +1,12 @@
+protocol: static_person_enclosure_development_v2
+parent: runs/step1_foundation_20261029/feasible_world_development_v2
+parent_audit: runs/step1_foundation_20261029/feasible_world_development_v2_audit/results/audit.json
+max_sweeps: 8
+use_pairwise_lenses: true
+workers: 4
+numerical_threads: 1
+use_all_parent_pairs_and_worlds: true
+new_independent_samples: 0
+new_motion_executions: 0
+runtime_service_gate_changed: false
+scope: retrospective_observation_history_person_location_outer_boxes_not_reference_curve_or_service_certificate

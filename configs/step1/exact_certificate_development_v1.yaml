@@ -1,0 +1,16 @@
+protocol: exact_observation_quantitative_development_v1
+evidence: exact_sensing_fixed_old_action_development_not_general_error_confirmation
+original: runs/static_phase_retention_20261027/main_v1
+selection: first_two_sequences_all_four_frames_plus_two_preserved_seed2210_over_budget_pairs
+observation_condition: new_simulated_perfect_observation_of_each_frozen_existing_truth
+declared_error_m: 0.0
+delta: 0.002
+tracking_bound_m: 1.0e-10
+max_cells_per_group: 4096
+max_depth: 18
+workers: 4
+numerical_threads: 1
+new_independent_samples: 0
+new_motion_executions: 0
+source_layouts_reoptimized: false
+general_nonzero_error_goal_complete: false

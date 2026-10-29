@@ -1,0 +1,74 @@
+{
+  "captured_at": "2026-10-29T14:44:03.041017+09:00",
+  "inspection": {
+    "manifest_sha256": "e6f0cc4476c57f1a5e016d884a6778b3c39dfbfb032118883444946009004bca",
+    "source_level_theorems": [
+      "For valid finite input segment strings including all preexisting nodes in box B: direct SnapRoundingNoder output XY lies in componentwise Q_point(B)",
+      "For zero-offset ScaledNoder wrapping unit SnapRoundingNoder, scale S>0: output XY lies in componentwise Q_scaled(B); for S!=1 scaled input has integral extrema fixed by unit rounding",
+      "These are one-invocation image bounds; no iterative quantizer closure assumption or uniform local displacement theorem is required"
+    ],
+    "coordinate_producers_reviewed": [
+      "unrounded LineIntersector envelope/endpoint contract",
+      "near-vertex input copy",
+      "HotPixelIndex makePrecise then HotPixel originalPt copy",
+      "rounded noded coordinate sequence",
+      "snapSegment pixel-center copy",
+      "snapVertexNode copy",
+      "SegmentNode constructor copy",
+      "SegmentNodeList endpoints/collapse/split copies",
+      "zero-offset scaling and rescaling",
+      "BufferOp unit inner noder construction"
+    ],
+    "independent_endpoint_conditions": 189,
+    "direct_and_scaled_boxes_checked": 378,
+    "coordinate_extrema_checked": 1512,
+    "all_arithmetic_match": true,
+    "actual_native_noder_calls": 0,
+    "native_path_instrumented": false,
+    "compiler_binary_semantics_formally_verified": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "runtime_certificate_restored": false,
+    "goal_complete": false,
+    "unresolved": [
+      "person-world/raw curve/offset input boxes",
+      "all admissible BufferOp fallback scales",
+      "coordinate-generation paths outside the reviewed noder",
+      "original-reference signed demand mass",
+      "broad closure/novelty/release"
+    ]
+  },
+  "process": {
+    "record": {
+      "pid": 18780,
+      "create_time": 1793252487.5185158,
+      "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+      "cmdline": [
+        "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "-"
+      ]
+    },
+    "inspection": {
+      "state": "missing",
+      "alive": false
+    }
+  },
+  "provenance_verified": true,
+  "engineering": {
+    "pytest_passed": 517,
+    "pytest_skipped": 1,
+    "elapsed_s": 62.47,
+    "pip_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177
+  },
+  "goal_complete": false,
+  "runtime_certificate_restored": false,
+  "artifacts": {
+    "runs/step1_foundation_20261029/snapround_coordinate_source_audit_v1/manifest.json": "e6f0cc4476c57f1a5e016d884a6778b3c39dfbfb032118883444946009004bca",
+    "runs/step1_foundation_20261029/snapround_coordinate_source_audit_v1/seal.json": "07584d84db9e4100f0ec6f3788d4a32cf465db7a371732f8eb17a984e0d7f48f",
+    "runs/step1_foundation_20261029/snapround_coordinate_source_audit_v1/inspection.json": "40cb7fb58da9e6e6890668830d241fdf4ef0d5583b58e2a80a10e4a217c91bdf",
+    "runs/step1_foundation_20261029/snapround_coordinate_source_audit_v1/range_checks.json": "b8b93424373237163d3db5fb3a800ad7971baa94dc60f19fff2fb8040f6583a1",
+    "runs/step1_foundation_20261029/snapround_source_pytest.log": "a75babe497384a37104f7499501e9a554875d02e69e22439ded3f3e3c29912aa"
+  }
+}

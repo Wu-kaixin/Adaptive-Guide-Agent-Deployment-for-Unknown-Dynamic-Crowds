@@ -1,0 +1,8 @@
+{
+  "tool": "get_goal",
+  "result": {"goal": null, "remainingTokens": null, "completionBudgetReport": null},
+  "meaning": "No current goal returned; supersedes the initial paused fallback observation",
+  "cause_of_state_transition": "Not inferred",
+  "whole_research_goal_marked_complete": false,
+  "remaining_authorization": "Finish the one final frozen experiment and its predeclared audits only"
+}

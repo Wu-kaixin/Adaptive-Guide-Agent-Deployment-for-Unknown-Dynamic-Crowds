@@ -1,0 +1,58 @@
+protocol: final_static_step1_evaluation_v1
+evidence: final_independent_evaluation_not_release_confirmation
+base_protocol: configs/step1/static_multigroup_v2.yaml
+namespace: 2026102999
+seeds: {start: 4100, count: 3}
+group_counts: [1, 2, 3, 5]
+shapes: [circle, ellipse, concave, irregular]
+resources: [insufficient, moderate, sufficient]
+patterns: [independent_jitter, slow_common_bias, oscillatory_shape_bias]
+methods: [recompute_all, phase_guard, counts_phase_guard]
+steps: 50
+base_actual_error_m: 0.04
+perturbation_amplitude_m: 0.03
+declared_error_m: 0.12
+observation_release: accept_next_frame_only_after_previous_deployment_completed
+failure_policy: preserve_failures_and_unexecuted_tails_without_redraw_or_retry
+initial_state: one_shared_nominal_deployment_per_physical_input_and_resource
+state_protocol: each_method_keeps_own_actual_state_within_the_sequence
+candidate_protocol: unchanged_current_planner_and_hybrid_executor_with_support_gate_quarantined
+pre_execution_input_overlap: input_overlap.json
+model:
+  execution_policy: joint_reassigned_then_reverse_v1
+  joint_assignment_candidates: 64
+  support_closing_enclosure: round_buffer_sagitta
+  true_service_delta: 0.002
+  tracking_bound_m: 1.0e-10
+  routing_sides: [16, 32, 64]
+  routing_pad_m: 1.0e-09
+  routing_interior_margin_m: 1.0e-06
+  routing_max_vertices: 20000
+  support_conditional_identity: false
+maximum_workers: 24
+numerical_threads: 1
+scientific_retries: 0
+checkpoint_steps: 5
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION, MODEL_BOUND_VIOLATION]
+statistics: final_stratified_physical_block_metrics_v1
+final_assessment:
+  single_final_experiment: true
+  no_followup_experiments_or_automatic_retries: true
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 202610299901
+  api_subset_seed: 4100
+  api_patterns: [independent_jitter]
+  api_restart_after_updates: [1, 17, 33, 49]
+  api_workers: 8
+  expected_physical_blocks: 48
+  expected_sequences: 1296
+  expected_step_records_including_nominal: 64944
+  expected_api_sessions: 144
+  expected_api_events: 7344
+  expected_event_boundary_restores: 576
+  required_safety_program_model_violations: 0
+  required_independent_reconstruction_mismatches: 0
+  full_success_kept_distinct_from_partial_service: true
+  general_error_service_certificate_required_for_whole_goal: true
+  baselines_and_contribution_attribution_required_for_whole_goal: true
+  stage2_3_dynamic_or_distributed_stability_claim: false

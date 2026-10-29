@@ -1,0 +1,29 @@
+protocol: universal_precision_development_v1
+parent: runs/step1_foundation_20261029/circle_source_development_v1
+parent_audit: runs/step1_foundation_20261029/circle_source_development_v1_audit/results/audit.json
+source_cache: .tmp/geos_3141_sources
+grid_paths:
+  - [0.0]
+  - [1.0e-300]
+  - [1.0e-150]
+  - [1.0e-8]
+  - [0.1]
+  - [1.0]
+  - [1.00000001]
+  - [2.0]
+  - [2.00000001]
+  - [1.0e4]
+  - [1.0e150]
+  - [1.0e300]
+  - [2.0,4.0]
+  - [2.0,2.0]
+  - [1.0e-8,1.0e-8]
+  - [1.0e300,1.0e-300]
+input_x_hex: ["0x0.0p+0","0x0.0000000000001p-1022","0x1.0p-1022","0x1.0p-500","0x1.fffffffffffffp-2","0x1.0p-1","0x1.0000000000001p-1","0x1.0p+0","0x1.0000000000001p+0","0x1.0p+500","0x1.fffffffffffffp+1023"]
+path_admission: all_basic_operations_prevalidated_finite_in_the_pinned_scalar_model_before_any_native_call
+expected_domain_refusal_is_native_failure: false
+composition_unknown_quantizer_stages: 2
+numerical_threads: 1
+new_independent_samples: 0
+new_motion_executions: 0
+runtime_service_gate_changed: false

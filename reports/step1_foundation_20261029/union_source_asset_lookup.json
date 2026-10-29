@@ -1,0 +1,131 @@
+[
+  {
+    "source": "src/operation/overlayng/OverlayNGRobust.cpp",
+    "local": ".tmp\\geos_3141_sources\\OverlayNGRobust.cpp",
+    "status": 200,
+    "bytes": 9288
+  },
+  {
+    "source": "include/geos/operation/overlayng/OverlayNGRobust.h",
+    "local": ".tmp\\geos_3141_sources\\OverlayNGRobust.h",
+    "status": 200,
+    "bytes": 5445
+  },
+  {
+    "source": "src/operation/union/UnaryUnionOp.cpp",
+    "local": ".tmp\\geos_3141_sources\\UnaryUnionOp.cpp",
+    "status": 200,
+    "bytes": 3587
+  },
+  {
+    "source": "include/geos/operation/union/UnaryUnionOp.h",
+    "local": ".tmp\\geos_3141_sources\\UnaryUnionOp.h",
+    "status": 200,
+    "bytes": 7016
+  },
+  {
+    "source": "src/operation/union/CascadedPolygonUnion.cpp",
+    "local": ".tmp\\geos_3141_sources\\CascadedPolygonUnion.cpp",
+    "status": 200,
+    "bytes": 7064
+  },
+  {
+    "source": "include/geos/operation/union/CascadedPolygonUnion.h",
+    "local": ".tmp\\geos_3141_sources\\CascadedPolygonUnion.h",
+    "status": 200,
+    "bytes": 8262
+  },
+  {
+    "source": "src/noding/snap/SnappingNoder.cpp",
+    "local": ".tmp\\geos_3141_sources\\SnappingNoder.cpp",
+    "status": 200,
+    "bytes": 4204
+  },
+  {
+    "source": "src/noding/snap/SnappingIntersectionAdder.cpp",
+    "local": ".tmp\\geos_3141_sources\\SnappingIntersectionAdder.cpp",
+    "status": 200,
+    "bytes": 4642
+  },
+  {
+    "source": "include/geos/noding/snap/SnappingPointIndex.h",
+    "local": ".tmp\\geos_3141_sources\\SnappingPointIndex.h",
+    "status": 200,
+    "bytes": 1558
+  },
+  {
+    "source": "src/index/kdtree/KdTree.cpp",
+    "local": ".tmp\\geos_3141_sources\\KdTree.cpp",
+    "status": 200,
+    "bytes": 8709
+  },
+  {
+    "source": "include/geos/index/kdtree/KdNode.h",
+    "local": ".tmp\\geos_3141_sources\\KdNode.h",
+    "status": 200,
+    "bytes": 1709
+  },
+  {
+    "source": "src/operation/overlayng/OverlayNG.cpp",
+    "local": ".tmp\\geos_3141_sources\\OverlayNG.cpp",
+    "status": 200,
+    "bytes": 11361
+  },
+  {
+    "source": "src/operation/overlayng/EdgeNodingBuilder.cpp",
+    "local": ".tmp\\geos_3141_sources\\EdgeNodingBuilder.cpp",
+    "status": 200,
+    "bytes": 12225
+  },
+  {
+    "source": "src/operation/overlayng/PolygonBuilder.cpp",
+    "local": ".tmp\\geos_3141_sources\\PolygonBuilder.cpp",
+    "status": "existing_cache"
+  },
+  {
+    "source": "src/operation/overlayng/OverlayEdgeRing.cpp",
+    "local": ".tmp\\geos_3141_sources\\OverlayEdgeRing.cpp",
+    "status": 200,
+    "bytes": 7678
+  },
+  {
+    "source": "src/geom/Geometry.cpp",
+    "local": ".tmp\\geos_3141_sources\\Geometry.cpp",
+    "status": 200,
+    "bytes": 19957
+  },
+  {
+    "source": "capi/geos_ts_c.cpp",
+    "local": ".tmp\\geos_3141_sources\\geos_ts_c.cpp",
+    "status": "existing_cache"
+  },
+  {
+    "source": "src/linearref/LengthIndexedLine.cpp",
+    "local": ".tmp\\geos_3141_sources\\LengthIndexedLine.cpp",
+    "status": 200,
+    "bytes": 4649
+  },
+  {
+    "source": "src/linearref/LengthLocationMap.cpp",
+    "local": ".tmp\\geos_3141_sources\\LengthLocationMap.cpp",
+    "status": 200,
+    "bytes": 5075
+  },
+  {
+    "source": "src/linearref/LinearLocation.cpp",
+    "local": ".tmp\\geos_3141_sources\\LinearLocation.cpp",
+    "status": 200,
+    "bytes": 10951
+  },
+  {
+    "source": "src/geom/LineSegment.cpp",
+    "local": ".tmp\\geos_3141_sources\\LineSegment.cpp",
+    "status": "existing_cache"
+  },
+  {
+    "source": "src/operation/overlayng/PrecisionUtil.cpp",
+    "local": ".tmp\\geos_3141_sources\\PrecisionUtil.cpp",
+    "status": 200,
+    "bytes": 4949
+  }
+]

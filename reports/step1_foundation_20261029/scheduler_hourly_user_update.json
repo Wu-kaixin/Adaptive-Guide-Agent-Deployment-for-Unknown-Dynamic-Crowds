@@ -1,0 +1,25 @@
+{
+  "reason": "User explicitly edited active goal to check processes every 1 hour; this supersedes prior 45-minute cadence",
+  "before": {
+    "id": "step-1-25",
+    "name": "Step 1 闭环研究每45分钟推进",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=45",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+    "updated_at": 1793265599135
+  },
+  "after": {
+    "id": "step-1-25",
+    "name": "Step 1 闭环研究每小时推进",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=60",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+    "updated_at": 1793266706402
+  },
+  "prompt_unchanged": true,
+  "target_thread_unchanged": true,
+  "new_automation_created": false,
+  "verified_persisted_after_update": true
+}

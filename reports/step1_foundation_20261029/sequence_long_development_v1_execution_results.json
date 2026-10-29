@@ -1,0 +1,27 @@
+{
+  "evidence": "development_long_horizon_execution_complete_audit_pending",
+  "goal_complete": false,
+  "summary": {
+    "stopped": false,
+    "completed_units": 36,
+    "scheduled_units": 36,
+    "recorded_step_records": 64908,
+    "scheduled_step_records": 64908,
+    "not_recorded_steps": 0,
+    "statuses": {
+      "PARTIAL_SERVICE": 32513,
+      "FULL_SUCCESS": 32395
+    },
+    "orchestration_error_units": 0,
+    "sequence_completed": 324,
+    "episodes_recorded": 324,
+    "independent_physical_blocks": 12
+  },
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_long_development_v1\\manifest.json": "2fc274e7030f943cce8792d7959cf919856a5c4f3e13b4c61d79ff6b63219716",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_long_development_v1\\seal.json": "30250dec45768ba1f3413e4c65877a3bd494290f68b13d89ad9a68cd754eff1b",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_long_development_v1\\summary.json": "a78941e875a575353c8d68a4bf9cd15610fa3acbe400ea7ddcc9145d972a6f86",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_long_development_v1\\input_overlap.json": "c1bd45498af2307f3bd8c3b67d6aff5fed24fe4d6c3124692faf05ed1a60592a"
+  },
+  "independent_replay_claimed_complete": false
+}

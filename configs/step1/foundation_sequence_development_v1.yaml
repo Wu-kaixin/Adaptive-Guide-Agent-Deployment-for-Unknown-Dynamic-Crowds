@@ -1,0 +1,37 @@
+protocol: foundation_sequence_development_v1
+evidence: development_reused_inputs_not_new_independent_confirmation
+base_protocol: configs/step1/static_multigroup_v2.yaml
+namespace: 2026102826
+seeds: {start: 3240, count: 3}
+group_counts: [2, 5]
+shapes: [concave, ellipse]
+resources: [insufficient, moderate, sufficient]
+patterns: [independent_jitter, slow_common_bias, oscillatory_shape_bias]
+methods: [recompute_all, phase_guard, counts_phase_guard]
+steps: 50
+base_actual_error_m: 0.04
+perturbation_amplitude_m: 0.03
+declared_error_m: 0.12
+observation_release: accept_next_frame_only_after_previous_deployment_completed
+failure_policy: end_affected_method_episode_and_keep_unexecuted_tail_without_reset
+initial_state: one_shared_nominal_deployment_per_physical_input_and_resource
+state_protocol: each_method_keeps_own_actual_state_within_the_sequence
+candidate_protocol: same_base_catalog_and_same_own_incumbent_anchor_formula_for_every_method
+model:
+  execution_policy: joint_reassigned_then_reverse_v1
+  joint_assignment_candidates: 64
+  support_closing_enclosure: round_buffer_sagitta
+  true_service_delta: 0.002
+  tracking_bound_m: 1.0e-10
+  routing_sides: [16, 32, 64]
+  routing_pad_m: 1.0e-09
+  routing_interior_margin_m: 1.0e-06
+  routing_max_vertices: 20000
+  support_conditional_identity: false
+maximum_workers: 16
+numerical_threads: 1
+scientific_retries: 0
+checkpoint_steps: 5
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION, MODEL_BOUND_VIOLATION]
+statistics: development_only_all_patterns_and_resources_retained
+split_pattern_workers: true

@@ -1,0 +1,181 @@
+{
+  "captured_at": "2026-10-29T18:19:06.669625+09:00",
+  "branch": "Major-Research-Branches",
+  "head": "4bd8321400ed1f9b4c9492a4213788086d9fe484",
+  "summary": {
+    "scheduled_scalar_paths": 176,
+    "admitted_native_paths": 169,
+    "uncertified_finite_domain_paths": 7,
+    "actual_native_point_calls": 211,
+    "maximum_observed_path_amplification_fraction": "4",
+    "initial_circle_source_boxes_composed": 2894,
+    "width_inflation_range": [
+      44.23134783386965,
+      171.18526511659533
+    ],
+    "new_native_circle_calls": 0,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "runtime_service_gate_changed": false,
+    "whole_geometry_pipeline_proved": false,
+    "goal_complete": false
+  },
+  "audit": {
+    "study_manifest_sha256": "9991eda5f1c4e9ff2ce8804228b8b945e9c67832fe7548845971a7cdba92d803",
+    "scalar_paths_checked": 176,
+    "finite_domain_refusals_reproduced": 7,
+    "native_point_calls_replayed": 211,
+    "coordinate_gain_sign_branch_checks": 422,
+    "closed_form_source_compositions_checked": 2894,
+    "all_match": true,
+    "whole_geometry_pipeline_proved": false,
+    "runtime_service_gate_changed": false,
+    "new_native_circle_calls": 0,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "scope": "conditional scalar theorem and source-level default Point.buffer composition; not library binary verification or service mass"
+  },
+  "parent_source_binding": {
+    "study_manifest_sha256": "9991eda5f1c4e9ff2ce8804228b8b945e9c67832fe7548845971a7cdba92d803",
+    "parent_manifest_sha256": "07d81f9f5cabb9d4f5c4366c5fc8cedb29176ab5865360aa1effdcf8119638f0",
+    "all_parent_case_receipts_and_payloads_verified": true,
+    "source_coordinate_records_anchored": 2894,
+    "no_missing_or_duplicated_person_cases": true,
+    "center_boxes_raw_source_boxes_and_actual_distances_all_match_parent": true,
+    "scope": "Additional read-only parent binding check for the independently verified closed-form composition; no new geometry calls"
+  },
+  "native_binary_identity_rechecked": {
+    "c_api_version": "3.14.1-CAPI-1.20.5",
+    "shapely_version": "2.2.0",
+    "binaries": {
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos_c-6dd9fd915eef8a7928285416bef1e666.dll": "6e65985b30831761887de3217853a720147626b18cb41668cd2bdc43d1bcded1",
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll": "0948bdb5c70b82e5055b55e9419b78d68372b1d0ec877277fa6e79276f6299b9"
+    }
+  },
+  "processes": {
+    "study": {
+      "process": {
+        "record": {
+          "pid": 31416,
+          "create_time": 1793264958.8990664,
+          "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "cmdline": [
+            "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+            "-m",
+            "udc.experiments.universal_precision_study",
+            "--protocol",
+            "configs/step1/universal_precision_development_v1.yaml",
+            "--study",
+            "runs/step1_foundation_20261029/universal_precision_development_v1"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      },
+      "worker_process": {
+        "record": {
+          "pid": 29760,
+          "create_time": 1793264959.8388147,
+          "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "cmdline": [
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+            "-c",
+            "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.universal_precision_study import execute;execute(p)",
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\universal_precision_development_v1"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      }
+    },
+    "audit": {
+      "process": {
+        "record": {
+          "pid": 34988,
+          "create_time": 1793265024.2009075,
+          "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "cmdline": [
+            "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+            "-m",
+            "udc.experiments.universal_precision_study",
+            "--audit-of",
+            "runs/step1_foundation_20261029/universal_precision_development_v1",
+            "--study",
+            "runs/step1_foundation_20261029/universal_precision_development_v1_audit"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      },
+      "worker_process": {
+        "record": {
+          "pid": 40612,
+          "create_time": 1793265025.1253588,
+          "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "cmdline": [
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+            "-c",
+            "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.universal_precision_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\universal_precision_development_v1_audit"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      }
+    }
+  },
+  "engineering": {
+    "pytest_passed": 536,
+    "pytest_skipped": 1,
+    "elapsed_s": 88.98,
+    "pytest_log": "runs/step1_foundation_20261029/universal_precision_pytest.log",
+    "pytest_log_sha256": "9e6ac34baf402de3958aec1bbcac9380f59a593f42a21aaed68423d2cf4d7a5a",
+    "pip_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177,
+    "formal_batch_program_errors": 0
+  },
+  "source_review_upstream_files": 34,
+  "scheduler_checked": {
+    "id": "step-1-25",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=55",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc"
+  },
+  "artifacts": {
+    "runs/step1_foundation_20261029/universal_precision_development_v1/manifest.json": "9991eda5f1c4e9ff2ce8804228b8b945e9c67832fe7548845971a7cdba92d803",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/seal.json": "42dabe9e426d935445dcea348b66106c294d14a0774534e601fc407d5681f55e",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/receipt.json": "af6c75d54019b42ada1e2952afc5b46700452bc3d3d9ca19b01f0cbff7255b8a",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/summary.json": "429b58a7ca01930bb9802aa683dd7b39e98a34868f63b1482790c66100f4594d",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/scalar_results.json": "99d4190193c077965c459a5b9b1cbd0c65ba455a605a5786012e3fd5b572d989",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/compositions.json": "11fc82976b577ec248c590467a65d03004efd2c3ac82c569a07a83659984c6b2",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/protocol.yaml": "1f4c65a68cac9d09ff177e342d70a1ad2fc17854d6fcd4f6b8f9fa2e3651c07c",
+    "runs/step1_foundation_20261029/universal_precision_development_v1/source_binding_audit.json": "344b5f036ae8d2f498bf52e6321634dbae0d926902507bd33730de8998a5b578",
+    "runs/step1_foundation_20261029/universal_precision_development_v1_audit/manifest.json": "442b13c4d64e20035f2303be3b03609f85ce7f15e88e9b6b2c729b06c6c0f985",
+    "runs/step1_foundation_20261029/universal_precision_development_v1_audit/seal.json": "70a01ca9951b14ab81da72423ee59c380b86f7bb67fc57a4e3e165debb4f6a31",
+    "runs/step1_foundation_20261029/universal_precision_development_v1_audit/results/audit.json": "550047874cff05058352b153715eeb669cfe73937e88c0643cda3a162cab51cb",
+    "runs/step1_foundation_20261029/universal_precision_pytest.log": "9e6ac34baf402de3958aec1bbcac9380f59a593f42a21aaed68423d2cf4d7a5a"
+  },
+  "goal_complete": false,
+  "runtime_service_gate_changed": false,
+  "conditional_default_point_source_flow_enclosure": true,
+  "all_library_paths_or_binary_formally_verified": false,
+  "original_reference_signed_mass_bound_implemented": false,
+  "original_reference_or_thresholds_changed": false,
+  "limits": [
+    "All scalar bounds require the declared finite arithmetic and positive-parameter source contract",
+    "Seven prevalidated finite-domain refusals were never sent to native Point API and are not observed native failures",
+    "Different-grid fourfold amplification is not a necessity claim for shared BufferOp scale",
+    "44-171 times source-width inflation is not a usable low-resource service guarantee",
+    "Remaining unions/offsets, precision coupling, original-reference signed mass, novelty and final independent validation remain open"
+  ]
+}

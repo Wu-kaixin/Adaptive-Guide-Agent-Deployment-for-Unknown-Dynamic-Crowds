@@ -1,0 +1,9 @@
+protocol: convex_support_transfer_development_v1
+original: runs/static_phase_retention_20261027/main_v1
+workers: 8
+numerical_threads: 1
+stop_on_first_refuted_stage: true
+directions: [[1,0],[2,1],[1,1],[1,2],[0,1],[-1,2],[-1,1],[-2,1],[-1,0],[-2,-1],[-1,-1],[-1,-2],[0,-1],[1,-2],[1,-1],[2,-1]]
+new_independent_samples: 0
+new_motion_executions: 0
+scope: exact_finite_direction_binary_coordinate_support_tests_not_universal_enclosure_proof

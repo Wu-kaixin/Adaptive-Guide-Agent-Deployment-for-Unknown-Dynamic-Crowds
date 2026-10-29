@@ -1,0 +1,29 @@
+{
+  "reason": "Live schedule was 60 minutes despite active goal requiring 45; repaired existing heartbeat via app tool",
+  "before": {
+    "id": "step-1-25",
+    "kind": "heartbeat",
+    "name": "Step 1 闭环研究每45分钟推进",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=60",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+    "created_at": 1793208066961,
+    "updated_at": 1793257885913
+  },
+  "after": {
+    "id": "step-1-25",
+    "kind": "heartbeat",
+    "name": "Step 1 闭环研究每45分钟推进",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=45",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+    "created_at": 1793208066961,
+    "updated_at": 1793264096385
+  },
+  "prompt_unchanged": true,
+  "thread_unchanged": true,
+  "duplicated_automation_created": false,
+  "drift_cause_known": false,
+  "verification": "Read persisted TOML after successful automation_update; actual interval is 45 minutes",
+  "official_documentation_consulted": "https://learn.chatgpt.com/docs/automations"
+}

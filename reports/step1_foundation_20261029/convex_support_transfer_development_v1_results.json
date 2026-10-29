@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "status": "HYPOTHESIS_REFUTED_BATCH_STOPPED",
+    "scheduled_inputs": 720,
+    "completed_inputs": 8,
+    "not_executed_inputs": 712,
+    "scheduled_groups": 2520,
+    "checked_groups": 15,
+    "not_checked_groups": 2505,
+    "refuted_inputs": 1,
+    "tested_stage_groups": 60,
+    "counterexample_stage_groups": 1,
+    "stopped_on_first_refutation": true,
+    "cancelled_before_execution": [],
+    "runtime_certificate_restored": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "scope": "exact finite-direction tests of ideal convex support lemmas on actual GEOS stage coordinates",
+    "goal_complete": false
+  },
+  "arithmetic_replay": {
+    "study_manifest_sha256": "6f51031df95c502117b83241b497f280181fd7c686100bcdfecc4945bb1d0bef",
+    "inputs_replayed": 8,
+    "groups_replayed": 15,
+    "stage_groups_replayed": 60,
+    "exact_directional_checks": 960,
+    "counterexample_stage_groups": 1,
+    "all_match": true,
+    "scope": "all saved stage coordinate hashes and independent exact arithmetic replay; not kernel regeneration or universal geometric proof",
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "runtime_certificate_restored": false
+  },
+  "processes": {
+    "study": {
+      "process": {
+        "state": "missing",
+        "alive": false
+      },
+      "worker_process": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "audit": {
+      "process": {
+        "state": "missing",
+        "alive": false
+      },
+      "worker_process": {
+        "state": "missing",
+        "alive": false
+      }
+    }
+  },
+  "same_source_task_list_as_v1": true,
+  "original_reference_or_thresholds_changed": false,
+  "runtime_certificate_restored": false,
+  "goal_complete": false,
+  "artifacts": {
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/manifest.json": "6f51031df95c502117b83241b497f280181fd7c686100bcdfecc4945bb1d0bef",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/seal.json": "a4173f3160b54d03bd82eb297063f18839839286cc9bca54e2017e18b7821ce4",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/summary.json": "24c37f03abf426855502d46cc6a740b8fe36c14091161cfff5ae313d0cb3c4de",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/results.json": "a06f3a1a12d6f7ba71c4642e199fd11251e7e7baccf9677b900e0d0f6c2ec1ca",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/protocol.yaml": "ecb589b69ae60f2dda60f3fafabfe7d6121ae19f4eb26515bf5ad3e759561c0d",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/manifest.json": "574f6df57cd7be0f71582389182c58b6a8ffe17bddd3f2b041e35a1d9fad26f2",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/seal.json": "e346f145d66b05c3efa7b6292f740c34df84f8b8a6134f0e8b80148e168cf451",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/audit.json": "cbd748eb14d102e80d847737b15f9b6e0005a6c4960aad68231ea69ef9ea1264",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0000/receipt.json": "72c281ae5c58ce0632280e595cb9345c9d331858f486c7ead890f48f53dc2864",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0001/receipt.json": "3f8c7eeb61d3a3a99a905dfbabb51fff2370e4b77532eec8a409afa5231699cc",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0002/receipt.json": "ea655176610a80860f7efdd3cb6965397c281f8c7314fddacc506fe8e0880506",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0003/receipt.json": "bb2d15b62f828aaf05e05374363f497ac01d01ab3a26bc8a6232de6ec3191e44",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0004/receipt.json": "fdbee99d3d920adccd1b92f6d80a06387464e3ad78c544e9fdab47f86127ccc4",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0005/receipt.json": "995c7dabf39f560d46f703d5e90138d2d9956fe47a4434eacc0eeabae92906c7",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0006/receipt.json": "dc809b1daf412d1479ee4ec85234a074d420c8e5c3d2d76f2192adead6c0eac3",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1/inputs/input_0007/receipt.json": "0365c8073a63d3e7a23c981f3df2ee852fcf570802e1f8bf87f7576d15ccf16b",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0000.json": "391b53d96ebbb5ded9643b228935d5420c11ccdde25318ea27c32b7fe4c1bc5a",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0001.json": "d1784439cf763383c42b8e988ca925161058504f1cacb4bdfe6eb2f878156cbf",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0002.json": "e74b761f0a9716524098af9066e659f651f9d7b37045b485c5d4db7c0e644dea",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0003.json": "3c42a3fd1e285311d392c2cff77d020559abe29d9bd9771dca15dd4d427f5d68",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0004.json": "0506b068873ce8f4ed794b508bb0fbb65c430ea3a5891cbbd81f9d4bb735ad02",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0005.json": "0088ded65ff6bdb262772605acd1a13deb4067d8974e914c995c324ea429dc38",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0006.json": "2066ab99e4301b053952912d7633c7935a7d024bc8c9be4ffdd0863fcd81afa1",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v1_audit/results/input_0007.json": "70e65999068d4e914e4c51d45574dc1e6b8c97325f6eab610f9b282cc98a9872",
+    "runs/step1_foundation_20261029/convex_support_transfer_v1_diagnosis.json": "fa6316a268112fee30cd3ad2b10d3a2f965221a1e947621d022cf4901ef3e5fd"
+  },
+  "interpretation": "diagnostic proposal refutation or finite probe; not current controller failure accounting or universal support proof"
+}

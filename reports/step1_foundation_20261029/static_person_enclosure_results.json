@@ -1,0 +1,336 @@
+{
+  "captured_at": "2026-10-29T17:29:37.582161+09:00",
+  "branch": "Major-Research-Branches",
+  "head": "4bd8321400ed1f9b4c9492a4213788086d9fe484",
+  "versions": {
+    "v1": {
+      "summary": {
+        "scheduled_pairs": 20,
+        "completed_pairs": 20,
+        "people": 2894,
+        "worlds_checked": 4116,
+        "person_world_memberships": 633966,
+        "witness_worlds_preserved": 188,
+        "strictly_tighter_person_boxes": 2894,
+        "propagation_trace_steps": 0,
+        "sum_coordinate_width_reduction_range": [
+          0.04983276529675683,
+          0.057499747008003546
+        ],
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "runtime_service_gate_changed": false,
+        "original_reference_enclosed": false,
+        "service_certificate": false,
+        "goal_complete": false
+      },
+      "audit": {
+        "pairs_replayed": 20,
+        "worlds_checked": 4116,
+        "person_world_memberships": 633966,
+        "witness_worlds_preserved": 188,
+        "necessary_contractions_checked": 0,
+        "study_manifest_sha256": "d2e1838fc15eef3ee1d89e1aba62a4f9bcc7c862ad8edb90cbed7f0a38a01f77",
+        "all_match": true,
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "service_certificate": false,
+        "scope": "direct rational trace implications and exact old-world membership; not exhaustive feasible-world search or reference-curve proof"
+      },
+      "processes": {
+        "study": {
+          "process": {
+            "record": {
+              "pid": 10192,
+              "create_time": 1793261841.528422,
+              "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+              "cmdline": [
+                "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+                "-m",
+                "udc.experiments.static_person_enclosure_study",
+                "--protocol",
+                "configs/step1/static_person_enclosure_development_v1.yaml",
+                "--study",
+                "runs/step1_foundation_20261029/static_person_enclosure_development_v1"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          },
+          "worker_process": {
+            "record": {
+              "pid": 19520,
+              "create_time": 1793261844.4995725,
+              "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+              "cmdline": [
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+                "-c",
+                "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.static_person_enclosure_study import execute;execute(p)",
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\static_person_enclosure_development_v1"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          }
+        },
+        "audit": {
+          "process": {
+            "record": {
+              "pid": 6016,
+              "create_time": 1793261978.8787837,
+              "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+              "cmdline": [
+                "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+                "-m",
+                "udc.experiments.static_person_enclosure_study",
+                "--audit-of",
+                "runs/step1_foundation_20261029/static_person_enclosure_development_v1",
+                "--study",
+                "runs/step1_foundation_20261029/static_person_enclosure_development_v1_audit"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          },
+          "worker_process": {
+            "record": {
+              "pid": 24400,
+              "create_time": 1793261979.73205,
+              "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+              "cmdline": [
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+                "-c",
+                "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.static_person_enclosure_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\static_person_enclosure_development_v1_audit"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          }
+        }
+      }
+    },
+    "v2": {
+      "summary": {
+        "scheduled_pairs": 20,
+        "completed_pairs": 20,
+        "people": 2894,
+        "worlds_checked": 4116,
+        "person_world_memberships": 633966,
+        "witness_worlds_preserved": 188,
+        "strictly_tighter_person_boxes": 2894,
+        "propagation_trace_steps": 459,
+        "disk_pair_tightening_steps": 459,
+        "single_disk_tightening_steps": 0,
+        "sum_coordinate_width_reduction_range": [
+          0.049944512893867574,
+          0.057594114737284735
+        ],
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "runtime_service_gate_changed": false,
+        "original_reference_enclosed": false,
+        "service_certificate": false,
+        "goal_complete": false
+      },
+      "audit": {
+        "pairs_replayed": 20,
+        "worlds_checked": 4116,
+        "person_world_memberships": 633966,
+        "witness_worlds_preserved": 188,
+        "necessary_contractions_checked": 459,
+        "study_manifest_sha256": "569d9ad015eda94ee950b6bacdf12dee83f26d0aff889df69ea28c49186fbfed",
+        "all_match": true,
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "service_certificate": false,
+        "scope": "direct rational trace implications and exact old-world membership; not exhaustive feasible-world search or reference-curve proof"
+      },
+      "processes": {
+        "study": {
+          "process": {
+            "record": {
+              "pid": 26828,
+              "create_time": 1793262176.4789572,
+              "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+              "cmdline": [
+                "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+                "-m",
+                "udc.experiments.static_person_enclosure_study",
+                "--protocol",
+                "configs/step1/static_person_enclosure_development_v2.yaml",
+                "--study",
+                "runs/step1_foundation_20261029/static_person_enclosure_development_v2"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          },
+          "worker_process": {
+            "record": {
+              "pid": 40136,
+              "create_time": 1793262178.0286512,
+              "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+              "cmdline": [
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+                "-c",
+                "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.static_person_enclosure_study import execute;execute(p)",
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\static_person_enclosure_development_v2"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          }
+        },
+        "audit": {
+          "process": {
+            "record": {
+              "pid": 29520,
+              "create_time": 1793262218.1416018,
+              "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+              "cmdline": [
+                "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+                "-m",
+                "udc.experiments.static_person_enclosure_study",
+                "--audit-of",
+                "runs/step1_foundation_20261029/static_person_enclosure_development_v2",
+                "--study",
+                "runs/step1_foundation_20261029/static_person_enclosure_development_v2_audit"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          },
+          "worker_process": {
+            "record": {
+              "pid": 27904,
+              "create_time": 1793262218.994346,
+              "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+              "cmdline": [
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+                "-c",
+                "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.static_person_enclosure_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+                "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\static_person_enclosure_development_v2_audit"
+              ]
+            },
+            "inspection": {
+              "state": "missing",
+              "alive": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "comparison": {
+    "strictly_tighter_person_cases": 336,
+    "changed_selected_pair_cases": 20,
+    "all_subset_of_v1": true,
+    "all_first_frame_bytes_identical": true,
+    "same_parent_manifest": true,
+    "sum_coordinate_widths_v1_m_fraction": "1481593209180697359/1125899906842624",
+    "sum_coordinate_widths_v2_m_fraction": "1082568918810351767542101921168065704657540716557933797939244472659/822752278660603021077484591278675252491367932816789931674304512",
+    "additional_relative_width_reduction_fraction": "106531727616300202264025498706704834675438533923376651714127533/1082675450537968067744365946666772409492216155091857174590958600192",
+    "additional_relative_width_reduction": 9.839673335473332e-05,
+    "unique_observation_histories": 18,
+    "unique_original_person_fingerprints": 16,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0
+  },
+  "engineering": {
+    "pytest_passed": 526,
+    "pytest_skipped": 1,
+    "elapsed_s": 85.76,
+    "pytest_log": "runs/step1_foundation_20261029/static_person_enclosure_pytest.log",
+    "pytest_log_sha256": "e93c46cbcf95de0a0a7af7edb3191c91293e02a4b6d3bc55cf75e04b8020dbe4",
+    "pip_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177,
+    "non_scientific_reporting_errors": 1
+  },
+  "artifacts": {
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/manifest.json": "d2e1838fc15eef3ee1d89e1aba62a4f9bcc7c862ad8edb90cbed7f0a38a01f77",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/seal.json": "1f828fe7ca4329234fc8e69e4c704a22988372a6e37fca5aff159fe2e90f0f6c",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/summary.json": "c4c4ab019587c659f1035a6e07ce5c5ef067b12560f97cbace491e08b03009bf",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/results.json": "04cb49ca04e011c05929bb1327ca6c2d99e3df28eb4242957222a42fdebfd5d8",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/protocol.yaml": "0d0c3a4da7a3a0611f9a6ac6e56a8fb5bbd4f9a5d4a21db30a93b02be5c7a5dd",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1_audit/manifest.json": "c557cd4b1ca507353ebdab146e70b7183a3ee3537eeadfbaf4a55781d0abea7b",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1_audit/seal.json": "1da352fd07cdd1efb3f1f57031ac2aed6fb0d5b7548f18cd0c7aeb176587d15d",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1_audit/results/audit.json": "d4ccc3092dc3559b5ad3269d688c7638cbb123c243719b52378b0173503e0f82",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/000/receipt.json": "0010504cb906a43133bb8154d8b269f9562533838c503ba692a1a5fec75a7058",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/001/receipt.json": "aff4e9c8c0f6570faf8107c86527096f6da87a486fa5d7d912de673d60e427be",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/002/receipt.json": "5392a195d4dbf74087d6452437578587413882ed8304ee16d9cf41dda3f9e78e",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/003/receipt.json": "4ee5045446e4c508366a6e994e756ab094625f278341523525d156ce1e3fa582",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/004/receipt.json": "fa804e9fffcb9a034582d5fb5af059b3d4cc6417686294ef3a60e6200b349018",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/005/receipt.json": "fc862598931735847f32d5adeeb15b43c3c3816d03366ceacb7474f363b5dc3a",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/006/receipt.json": "21c21ac4abdd69adc7d3953c282169f692aa77b1c737fb0a1167648ea3294cbc",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/007/receipt.json": "5c924f06c967bfd0eb1d8920a0c8823957fca55d57acddf085bd4db389e922b8",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/008/receipt.json": "3552b9a2ec780fd4c802f89c25dc5ca9337b494596da24dee1515b1f2b3c8895",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/009/receipt.json": "98c092afe7b960fd09536849664e3baf8d303090aea3dd87179e03b18e2ee14d",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/010/receipt.json": "212f4a85f1431fbf8764c83911a2c3ced0d9aeaf417eb2218c7cd771d4dfc930",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/011/receipt.json": "80470de5bcee942c7cc266b6e5bf77cbdd8dbfe422b93d352d433ad9722a8d6f",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/012/receipt.json": "48120382ea2c448033488ca452ccf017d12002e359bcc7ebba080651fe845fbb",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/013/receipt.json": "9e267d7b8eceb8fd21f5d41308d9e0b86cba12b3a08e6f77278bb38299915ced",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/014/receipt.json": "b9a4e830496d8d4f6a3153cab4a5dfae1fd485106887db4c2d2f21449d989fe7",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/015/receipt.json": "6c12da4b46bd5011498f2a41d18d64a2e99705deabd4a28b6a2005e29c7022bc",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/016/receipt.json": "14433193571e2355140098491bf9edf44464b190bcc9db3f9a61358528c298b8",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/017/receipt.json": "c977ab0772daf6bcebc88f62dfe1b18d632b45cff7801800988c432c87d8b9e0",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/018/receipt.json": "227c2451795ca6cc8d397a8c75c392d227d55de9266396e2e69a6703f90829fc",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v1/cases/019/receipt.json": "06d297695712e079ee8569b3c0a4e01065b7d3214aa67a46c284798b2e16a929",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/manifest.json": "569d9ad015eda94ee950b6bacdf12dee83f26d0aff889df69ea28c49186fbfed",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/seal.json": "4827accec9ed31dc775facae24deba5e79c73c6c5001b479692dcd85894d6983",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/summary.json": "42c343eae68442044d0edd5015020cdb626b084b98bcea66bdd293e5f09e9d87",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/results.json": "dbde804c786bd4d764f2fbb28a2fc9a3b830a35a77bd0413414669daef4158a8",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/protocol.yaml": "9851556c96f7f05d96e235be94ad6f84bd40401a1909acd40199985f23209052",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2_audit/manifest.json": "48e3b10cbd5497cbeb1dc16b2827268b3f8aeeef53a6367b8817135b6a496e60",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2_audit/seal.json": "d9084ab1f958171237f0500917851b235108ebc9f12a21d73bee2fa79478fde2",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2_audit/results/audit.json": "de4d23cf914c13f57ad73c15e52c7a0e482ace395ee05127c47ada6f7daee115",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/000/receipt.json": "7cad32ab7c7c5029944df2dd30fa314549518ce7d316a67bcf3c64ca54cf3dbd",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/001/receipt.json": "52cf0ea66659bb7345a5e2969eccc72ce9ef7d510c63014ddd7cbc27ab8d8e96",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/002/receipt.json": "56dae049e99b69ab79230785cfe2d2dfd79053c0f529a77e1250cd1035ca4565",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/003/receipt.json": "06263cac74dd51eb186044c767963bc0e2b467eacedecd8db890ec5e4548a474",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/004/receipt.json": "d5e685eb0ccda485fcdb897195bd83468fc16f01a1b9a52735779c84a2692d54",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/005/receipt.json": "75ba2013f015674f3874cdf832276d26aa2c6902dfb006730329cb319177a720",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/006/receipt.json": "3d0499a865bde5a8475c41690d803ec40d8e90588efcd4aedfb6c6647b06293b",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/007/receipt.json": "77218f7ba66848e5cddd334e4760e8bbca5e63dd76993c1efcbf65458091ea11",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/008/receipt.json": "d2021afb3d299eac12673a55bacf712b7c7f3c2c2dcf37a526c3891d454152e9",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/009/receipt.json": "b55c5fcdd8ddbd0e2b3722db665f66a987eb225ab65f342dc6f9437be4078b29",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/010/receipt.json": "75db62886884e19660f5270244084490be1cfc44877fc6f8d72f3670c52f57e1",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/011/receipt.json": "5cc04c0d0605afce75dbefa7a639549b9e08d6e3a93b028454ef7512600bc9b8",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/012/receipt.json": "15f586deab19941663d5b38bac78c9516addcd9ec5eaa4431d0067b0b7e672c3",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/013/receipt.json": "24c37a29464607d2b729dc25d652b6214cf608ba24643c7bd8a4da623484b045",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/014/receipt.json": "989c111f62c44d154295c87eb7a431701857abe7bf6e55370e3facea0688e60e",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/015/receipt.json": "6c7b4895947ebac473375cef9f5bc5ff0afdd0da765c9b7f7c63f450da2934d6",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/016/receipt.json": "6f8d1d688d834625217e9dbab45db63f7dc39101b40e8ba4615435372b7949c7",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/017/receipt.json": "f4745d6cc6e685326432111dae52d057c81517eb85ceb30624cf75b63bed04b5",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/018/receipt.json": "d4c233383424d7c85f73375933a1b89b9b006cf9e096f2f3df8be2f2c265e80a",
+    "runs/step1_foundation_20261029/static_person_enclosure_development_v2/cases/019/receipt.json": "723f59fb639720127367a0c61b8d4898381075156843cc06ba97e68c67efce00",
+    "runs/step1_foundation_20261029/static_person_enclosure_pytest.log": "e93c46cbcf95de0a0a7af7edb3191c91293e02a4b6d3bc55cf75e04b8020dbe4",
+    "runs/step1_foundation_20261029/static_person_enclosure_reporting_error_1.json": "9c1635b9a46c43e3d12022cc32994ce809b6dfa94e741710d63d4233e14531ac"
+  },
+  "goal_complete": false,
+  "runtime_service_gate_changed": false,
+  "original_reference_enclosed": false,
+  "person_enclosure_is_feasibility_proof": false,
+  "full_pipeline_formal_proof": false,
+  "limits": [
+    "Retrospective old histories, not online future input or new prospective confirmation",
+    "Stable legacy row IDs assumed; no new tracking evaluation",
+    "All 188 previous service-budget witnesses remain possible",
+    "No raw-curve, offset-vertex or original-reference signed mass bound; runtime quarantine remains"
+  ]
+}

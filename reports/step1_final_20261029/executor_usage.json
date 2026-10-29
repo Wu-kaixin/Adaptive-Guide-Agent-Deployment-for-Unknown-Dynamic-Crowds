@@ -1,0 +1,12 @@
+{
+  "scope": "Post-execution descriptive counts of saved states only; not an executor ablation or new experiment",
+  "saved_records": 64944,
+  "routing_policies": {
+    "verified_synchronous_linear_v1": 60585,
+    "verified_synchronous_reassigned_v3": 1332,
+    "adaptive_reverse": 3027
+  },
+  "execution_statuses": {
+    "ARRIVED": 64944
+  }
+}

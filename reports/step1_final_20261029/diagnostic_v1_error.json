@@ -1,0 +1,10 @@
+{
+  "stage": "post_execution_read_only_summary_helper_v1",
+  "error": "KeyError: group_count",
+  "cause": "Shared nominal metrics omit group_count; the unit manifest is the authoritative metadata source",
+  "scientific_source_snapshot_changed": false,
+  "new_motion_or_geometry_calls": 0,
+  "formal_frozen_execution_program_error": false,
+  "affected_read_only_helper_stopped": true,
+  "repair": "Separate helper v2 reads group_count from frozen unit metadata; no scientific execution or replay restart"
+}

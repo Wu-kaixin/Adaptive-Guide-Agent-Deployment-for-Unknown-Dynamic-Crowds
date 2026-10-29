@@ -1,0 +1,29 @@
+{
+  "reason": "Persisted interval read as 55 minutes while active user goal remains 45; repaired via app tool",
+  "before": {
+    "id": "step-1-25",
+    "kind": "heartbeat",
+    "name": "Step 1 闭环研究每45分钟推进",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=55",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+    "created_at": 1793208066961,
+    "updated_at": 1793264479493
+  },
+  "after": {
+    "id": "step-1-25",
+    "kind": "heartbeat",
+    "name": "Step 1 闭环研究每45分钟推进",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=45",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+    "created_at": 1793208066961,
+    "updated_at": 1793265599135
+  },
+  "prompt_unchanged": true,
+  "target_thread_unchanged": true,
+  "created_at_unchanged": true,
+  "cause_of_drift_known": false,
+  "new_automation_created": false,
+  "verified_persisted_after_update": true
+}

@@ -1,0 +1,34 @@
+protocol: method_contribution_protocol_v1
+status: specification_only_not_deployment_runner_input
+stage: extended_static_step1
+literature_review: reports/step1_foundation_20261029/LITERATURE_AND_BASELINES.zh.md
+readiness_requirements:
+  - prove_observation_to_original_reference_mass_enclosure
+  - bind_same_world_signed_cells_and_total_mass
+  - validate_candidate_in_development_and_independent_replay
+  - audit_unexposed_inputs_and_freeze_source_configuration_before_confirmation
+primary_comparison_unit: independent_physical_input_block
+paired_initial_states_and_observation_prefixes: true
+reserved_development_seed_range_inclusive: [5000, 5029]
+service_loss_budget_binary64_hex: '0x1.0624dd2f1a9fcp-9'
+service_loss_budget_exact_binary_rational: '1152921504606847/576460752303423488'
+service_loss_budget_frozen_source: configs/step1/foundation_sequence_confirmation_v1.yaml
+threshold_changes_allowed: false
+shared_contracts: [original_reference, demand, guide_resource, observation_error, safety, deadline]
+runtime_support_gate: quarantined_pending_proof
+comparisons:
+  - recompute_every_frame_current_version
+  - observation_displacement_trigger_heuristic
+  - one_sided_loss_mass
+  - signed_mass_separate_extrema
+  - signed_mass_common_total
+  - current_frame_vs_legal_history_prefix
+  - serial_vs_hybrid_executor
+external_paper_reimplementations_completed: false
+new_confirmation_executed_by_this_specification: false
+accounting:
+  keep_all_initialization_program_safety_model_failures: true
+  keep_all_unexecuted_tails: true
+  include_enclosure_and_gate_computation_cost: true
+  conditional_acceptance_is_population_success: false
+novelty_claim: false

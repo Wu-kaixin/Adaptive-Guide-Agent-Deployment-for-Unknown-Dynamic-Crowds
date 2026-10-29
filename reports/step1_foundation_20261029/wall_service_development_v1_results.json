@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "scene_conditions": 72,
+    "positive_wall_obstruction_scenes": 48,
+    "by_wall_condition": {
+      "None": {
+        "scenes": 24,
+        "positive_bound_scenes": 0,
+        "minimum_max_group_bound": 0.0,
+        "maximum_max_group_bound": 0.0
+      },
+      "0.8": {
+        "scenes": 24,
+        "positive_bound_scenes": 24,
+        "minimum_max_group_bound": 0.08831194043374091,
+        "maximum_max_group_bound": 0.12378207465991574
+      },
+      "0.02": {
+        "scenes": 24,
+        "positive_bound_scenes": 24,
+        "minimum_max_group_bound": 0.11737581943515894,
+        "maximum_max_group_bound": 0.18999141542003609
+      }
+    },
+    "violations": [],
+    "all_observed_service_above_bound": true,
+    "new_motion_executions": 0,
+    "new_independent_samples": 0,
+    "runtime_uncertainty_certificate": false,
+    "scope": "necessary geometric obstruction for original true reference, any number of wall-admissible guide centres; float64 integration"
+  },
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\wall_service_development_v1\\manifest.json": "f4ad972e8a1493c1adfe5fa5dac0b12b8a09bec43b21ec14b5c7a2463b1936b2",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\wall_service_development_v1\\seal.json": "b406519bf4a0d8b5dd552cad150d6150a043a1d9d69f2ba3f4cd6ab2640b7e56",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\wall_service_development_v1\\summary.json": "a64c91085e6d3d176131c7214e2cc122bb1e752f6c96a70512efab147cbfef54",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\wall_service_development_v1\\rows.json": "09cfdab6b81a00360896b3cc85031fe807937937380815e154c919912b8b22a0"
+  },
+  "goal_complete": false
+}

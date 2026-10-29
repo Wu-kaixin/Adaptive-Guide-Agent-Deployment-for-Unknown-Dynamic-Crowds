@@ -50,7 +50,7 @@ def load_task(folder):
     return result,q,ids,read(folder/'metrics.json')
 
 
-def load_episode(folder):
+def load_episode(folder,expected_steps=50):
     completion=read(folder/'completion.json')
     if digest(folder/'config.json')!=completion['config_sha256']:raise ValueError('Episode config changed')
     rows=[]
@@ -65,7 +65,7 @@ def load_episode(folder):
                 a,b=data['position_offsets'][i:i+2];c,d=data['velocity_offsets'][i:i+2];n=int(data['target_counts'][i])
                 execution=Execution(data['positions'][a:b].copy(),data['velocities'][c:d].copy(),data['assignment'][i].copy(),state['execution_status'],(),state['evidence'])
                 rows.append((m,state,execution,data['targets'][i,:n].copy(),data['target_groups'][i,:n].copy()))
-    if len(rows)!=50:raise ValueError('Incomplete 50-frame episode')
+    if len(rows)!=expected_steps:raise ValueError('Incomplete protocol-frozen episode')
     summary=completion['summary']
     recomputed={'sequence_completed':all(r[0].get('deployment_completed',False) for r in rows),
         'actual_total_travel_m':sequential_total((r[0].get('motion',{}).get('travel_m') or 0.) for r in rows),
@@ -121,11 +121,11 @@ def worker(argument):
                 q,g=actual_targets(result,ids) if saved.get('deployment_completed') else (np.empty((0,2)),np.empty(0,int))
                 for method in design['methods']:
                     task_id=f'{unit["unit_id"]}_{resource}_{pattern}_{method}'
-                    records,summary=load_episode(study/'results'/task_id);loaded[resource,method]=records
+                    records,summary=load_episode(study/'results'/task_id,design['steps']);loaded[resource,method]=records
                     episodes.append({'physical_id':unit.get('physical_id',unit['unit_id']),'group_count':unit['group_count'],'shape':unit['shape'],'seed':unit['seed'],
                                      'resource':resource,'pattern':pattern,'method':method,**summary})
                     states[resource,method]={'positions':result.positions[-1].copy(),'points':q.copy(),'ids':g.copy()}
-            for frame in range(1,51):
+            for frame in range(1,design['steps']+1):
                 obs=BoundedMeasurement(Observation(positions[frame],truth.radii,truth.demand),design['declared_error_m'],'frozen_bounded_reobservation')
                 current_groups,domain=construct_groups(obs,base['room_m'],config)
                 catalogs=build_catalog(current_groups,obs,domain,maximum,'projected_mass',config)
@@ -196,7 +196,7 @@ def audit(study,workers,output=None):
                      if p['counts_phase_guard']['sequence_completed'] and p['recompute_all']['sequence_completed']}
         result['primary_joint_completed_pairs']=len(differences);result['primary_scheduled_pairs']=len(pairs)
         result['primary_conditional_travel_difference']=bootstrap(differences,stat['bootstrap_seed']) if differences else None
-        bound=50*max(manifest['spec']['resources'].values())*max(manifest['design']['group_counts'])*manifest['spec']['model']['max_speed_m_s']*manifest['spec']['model']['deadline_s']
+        bound=manifest['design']['steps']*max(manifest['spec']['resources'].values())*max(manifest['design']['group_counts'])*manifest['spec']['model']['max_speed_m_s']*manifest['spec']['model']['deadline_s']
         lower={k:differences.get(k,-bound) for k in pairs};upper={k:differences.get(k,bound) for k in pairs}
         result['full_ledger_travel_identification_range_m']=[bootstrap(v,0,1)['estimate'] for v in (lower,upper)]
     write_json(output/'offline_audit.json',result);write_json(output/'episode_summaries.json',episodes)

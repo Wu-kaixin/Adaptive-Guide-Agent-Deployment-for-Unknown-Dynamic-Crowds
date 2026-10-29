@@ -1,0 +1,1690 @@
+{
+  "summary": {
+    "stopped": false,
+    "completed_units": 9,
+    "scheduled_units": 9,
+    "recorded_step_records": 4077,
+    "scheduled_step_records": 4077,
+    "not_recorded_steps": 0,
+    "statuses": {
+      "PARTIAL_SERVICE": 2718,
+      "FULL_SUCCESS": 1359
+    },
+    "orchestration_error_units": 0,
+    "sequence_completed": 81,
+    "episodes_recorded": 81,
+    "independent_physical_blocks": 3
+  },
+  "audit": {
+    "manifest_sha256": "ecabda9a50e0b3ddfbab1cfcbc40958085dde4c1a245b256ae9affad2f871cf4",
+    "checked_step_records": 4077,
+    "scheduled_step_records": 4077,
+    "mismatches": [],
+    "all_match": true,
+    "certificate_frames": 0,
+    "independent_physical_blocks": 3,
+    "evidence": "development_reused_inputs_after_buffer_proof_quarantine",
+    "by_method": {
+      "recompute_all": {
+        "episodes": 27,
+        "completed_episodes": 27,
+        "accepted_frames": 0,
+        "fallback_frames": 0,
+        "count_switch_events": 41,
+        "nontrivial_hold_frames": 0
+      },
+      "phase_guard": {
+        "episodes": 27,
+        "completed_episodes": 27,
+        "accepted_frames": 0,
+        "fallback_frames": 1350,
+        "count_switch_events": 41,
+        "nontrivial_hold_frames": 0
+      },
+      "counts_phase_guard": {
+        "episodes": 27,
+        "completed_episodes": 27,
+        "accepted_frames": 0,
+        "fallback_frames": 1350,
+        "count_switch_events": 41,
+        "nontrivial_hold_frames": 0
+      }
+    }
+  },
+  "matched_trajectory_chunks": 270,
+  "all_three_method_trajectory_bytes_equal": true,
+  "trajectory_comparisons": [
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3240__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3241__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_independent_jitter",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_slow_common_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "insufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "moderate",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0000",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0001",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0002",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0003",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0004",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0005",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0006",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0007",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0008",
+      "all_method_trajectory_bytes_equal": true
+    },
+    {
+      "unit": "K2_concave_s3242__pattern_oscillatory_shape_bias",
+      "resource": "sufficient",
+      "chunk": "chunk_0009",
+      "all_method_trajectory_bytes_equal": true
+    }
+  ],
+  "new_independent_samples": 0,
+  "goal_complete": false,
+  "current_retention_benefit_claimed": false,
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\manifest.json": "ecabda9a50e0b3ddfbab1cfcbc40958085dde4c1a245b256ae9affad2f871cf4",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\seal.json": "b2a67e7eac7d1516ec369c251539851e15bf0c572b7f973d08b716c717f37fd8",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\summary.json": "a5d371919641101c978d4a1d1753c5772138eb13e30c0c1989867a6112840ed4",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\input_reuse.json": "66946e3fa723eb5fd336424d8514465a6dc3890edbc945e815bc8b9088dfe67c",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\readonly_audit\\offline_audit.json": "337e883b68cde368fd549391524016067d19597b439d8e91ab51265c3fdbe963",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\readonly_audit\\episode_summaries.json": "3d2b9d91cb8b001d063840bc96eda7e9a47007b5471aee3600281dfb9148a453",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_quarantine_development_v1\\control\\completion.json": "27f3606d7b5898768c657887763625f3c02e9c7db3a7ef3e15e240c6a6c42f43"
+  }
+}

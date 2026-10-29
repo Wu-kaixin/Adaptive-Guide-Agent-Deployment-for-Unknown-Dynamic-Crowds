@@ -1,0 +1,10 @@
+protocol: mass_ambiguity_development_v1
+dimensions: [1, 2, 3, 4, 5]
+budgets: ['0', '1/500', '1']
+interval_families: 4
+total_ranges_per_family: 5
+oracle: exact_box_corners_and_total_hyperplane_vertices
+original_reference_enclosed: false
+runtime_service_gate_changed: false
+new_independent_crowd_inputs: 0
+new_motion_executions: 0

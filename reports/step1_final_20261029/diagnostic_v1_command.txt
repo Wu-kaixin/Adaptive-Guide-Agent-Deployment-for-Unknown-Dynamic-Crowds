@@ -1,0 +1,44 @@
+.venv/Scripts/python.exe -c 'from pathlib import Path
+import json,hashlib
+from collections import Counter
+import numpy as np
+s=Path("runs/step1_final_evaluation_20261029"); m=json.loads((s/"manifest.json").read_text())
+out={"scope":"Read-only diagnostics of the single final experiment; no new geometry, motion or scientific inputs","partial_service_overlapping_flags":{},"full_success_with_continuous_interval_coverage_false":0,"full_success_positive_stored_mass_residual":0,"largest_stored_mass_residual_among_full_success":0.,"method_trajectory_chunk_triplets":0,"method_trajectory_byte_mismatches":[],"by_K_resource":{}}
+flags=Counter()
+people_counts=[]
+for u in m["units"]:
+ with np.load(s/u["truth"],allow_pickle=False) as data:people_counts.append(len(data["positions"]))
+out["people_count_range_per_physical_input"]=[min(people_counts),max(people_counts)]
+out["people_total_across_physical_inputs"]=sum(people_counts)
+out["maximum_available_guides"]=max(m["spec"]["resources"].values())*max(m["design"]["group_counts"])
+for receipt in (s/"results").rglob("receipt.json"):
+ lock=json.loads(receipt.read_text())
+ for name,h in lock.items():
+  if name!="metrics.json":continue
+  if hashlib.sha256((receipt.parent/name).read_bytes()).hexdigest()!=h:raise ValueError("artifact changed")
+ rows=json.loads((receipt.parent/"metrics.json").read_text()); rows=rows if isinstance(rows,list) else [rows]
+ for r in rows:
+  key=str(r["group_count"])+"|"+r["resource"]; c=out["by_K_resource"].setdefault(key,dict(records=0,full_success=0,partial_service=0))
+  c["records"]+=1;c["full_success"]+=r["status"]=="FULL_SUCCESS";c["partial_service"]+=r["status"]=="PARTIAL_SERVICE"
+  if r["status"]=="PARTIAL_SERVICE":
+   for field in ("observed_full_coverage","reference_full_coverage","group_partition_matches_truth","error_bound_respected"):
+    if not r.get(field):flags[r["resource"]+"|"+field]+=1
+  v=r.get("continuous_actual_service")
+  if r["status"]=="FULL_SUCCESS" and v:
+   out["full_success_with_continuous_interval_coverage_false"]+=not v["all_curves_covered"]
+   if v["worst_group_uncovered"]>0:
+    out["full_success_positive_stored_mass_residual"]+=1
+    out["largest_stored_mass_residual_among_full_success"]=max(out["largest_stored_mass_residual_among_full_success"],v["worst_group_uncovered"])
+out["partial_service_overlapping_flags"]=dict(flags)
+for u in m["units"]:
+ for resource in m["design"]["resources"]:
+  for pattern in m["design"]["patterns"]:
+   folders=[s/"results"/(u["unit_id"]+"_"+resource+"_"+pattern+"_"+method) for method in m["design"]["methods"]]
+   for chunk in sorted(folders[0].glob("chunk_*/receipt.json")):
+    hashes=[json.loads((f/chunk.relative_to(folders[0])).read_text())["trajectory.npz"] for f in folders]
+    out["method_trajectory_chunk_triplets"]+=1
+    if len(set(hashes))!=1:out["method_trajectory_byte_mismatches"].append(str(chunk))
+p=Path("reports/step1_final_20261029/service_and_method_diagnostics.json")
+if p.exists():raise FileExistsError(p)
+p.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+print(json.dumps(out,ensure_ascii=False))'

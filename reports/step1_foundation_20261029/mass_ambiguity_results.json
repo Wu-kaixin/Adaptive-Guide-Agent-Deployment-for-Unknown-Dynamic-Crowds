@@ -1,0 +1,306 @@
+{
+  "captured_at": "2026-10-29T10:25:45.703675+00:00",
+  "goal_complete": false,
+  "batches": {
+    "mass_ambiguity_development_v1": {
+      "summary": {
+        "counts": {
+          "conditions": 21780,
+          "NO_POSITIVE_TOTAL_LOWER": 4374,
+          "OPTIMAL_DECLARED_SET": 10872,
+          "exact_vertex_objective_checks": 259452,
+          "budget_holds": 5818,
+          "EMPTY_DECLARED_SET": 6534
+        },
+        "all_match": true,
+        "stopped": false,
+        "coupling_fixture": {
+          "separate_numerator_denominator_bound": "1/100",
+          "exact_max_normalized_loss": "0",
+          "joint_budget_result": {
+            "original_reference_enclosed": false,
+            "runtime_service_certificate": false,
+            "budget_holds_for_declared_mass_set": true,
+            "feasible_total_interval": [
+              "100",
+              "100"
+            ],
+            "status": "OPTIMAL_DECLARED_SET",
+            "max_budget_residual": "-1/5",
+            "maximizing_masses": [
+              "1",
+              "1",
+              "98"
+            ]
+          }
+        },
+        "new_independent_crowd_inputs": 0,
+        "new_motion_executions": 0,
+        "original_reference_enclosed": false,
+        "runtime_service_gate_changed": false,
+        "novelty_claim": false,
+        "finished_at": "2026-10-29T10:14:41.756857+00:00"
+      },
+      "receipt_sha256": "6c0a7b49eb78289c6e1695c20287c53d9644441d9d4b38b3c73b84dd8f7ab884",
+      "verified_files": {
+        "manifest.json": "58b860b84e43994ce6ea5a123c1466b492e32e17a1b77c6f7508637273d78c0c",
+        "cases.jsonl": "c4fa4094997c8e43faec0dfa76d2b65e39c3467232e7d1d36b455dfc892ede1b",
+        "summary.json": "9018f6fbb30beb08b5c898f2c7eff065dd5da0eac3eab1aeebf3641f38fed5b0"
+      },
+      "coupling_fixture_budget_exact": "1/500",
+      "source_snapshot_and_current_sources_match": true
+    },
+    "mass_ambiguity_runtime_budget_development_v1": {
+      "summary": {
+        "counts": {
+          "conditions": 7260,
+          "NO_POSITIVE_TOTAL_LOWER": 1458,
+          "OPTIMAL_DECLARED_SET": 3624,
+          "exact_vertex_objective_checks": 86484,
+          "budget_holds": 1097,
+          "EMPTY_DECLARED_SET": 2178
+        },
+        "all_match": true,
+        "stopped": false,
+        "coupling_fixture": {
+          "separate_numerator_denominator_bound": "1/100",
+          "exact_max_normalized_loss": "0",
+          "joint_budget_result": {
+            "original_reference_enclosed": false,
+            "runtime_service_certificate": false,
+            "budget_holds_for_declared_mass_set": true,
+            "feasible_total_interval": [
+              "100",
+              "100"
+            ],
+            "status": "OPTIMAL_DECLARED_SET",
+            "max_budget_residual": "-1/5",
+            "maximizing_masses": [
+              "1",
+              "1",
+              "98"
+            ]
+          }
+        },
+        "new_independent_crowd_inputs": 0,
+        "new_motion_executions": 0,
+        "original_reference_enclosed": false,
+        "runtime_service_gate_changed": false,
+        "novelty_claim": false,
+        "finished_at": "2026-10-29T10:19:34.896970+00:00"
+      },
+      "receipt_sha256": "58dd94f238cdfed8a5f8532338837ef62d243a6a2e83f7a806ea57de36a57e8b",
+      "verified_files": {
+        "manifest.json": "0207322184d3c2c5503eafbfb635639d2c94e9186bdb2f979098f5aa6f01e3dc",
+        "cases.jsonl": "be926e35410e11b7b1a96a81a2772564271c93a4ec9ec6892cbed00602d3e630",
+        "summary.json": "2dc7f215c99b4c207013935c45fbc6b2ae2c0caf7d9b17d53aa9cadad1c36401"
+      },
+      "coupling_fixture_budget_exact": "1/500",
+      "source_snapshot_and_current_sources_match": true
+    }
+  },
+  "runtime_budget_binding": {
+    "source": "configs\\step1\\foundation_sequence_confirmation_v1.yaml",
+    "sha256": "878515797976d838216542f6ad3211b88188bacf2600815a026d0127981cac9e",
+    "binary64_hex": "0x1.0624dd2f1a9fcp-9",
+    "exact_binary_rational": "1152921504606847/576460752303423488",
+    "threshold_changed": false
+  },
+  "engineering": {
+    "pytest_passed": 545,
+    "pytest_skipped": 1,
+    "elapsed_s": 89.43,
+    "pytest_log": "runs\\step1_foundation_20261029\\mass_ambiguity_pytest.log",
+    "pytest_log_sha256": "a5f0b2979274bef9ec5d021720c952b1a8b94b186a1dc716474f01759dbaa8bf",
+    "pip_check": true,
+    "diff_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177,
+    "old_review_hash_verifier_pass": true
+  },
+  "process_identity_checks": {
+    "runs\\step1_foundation_20261029\\round_buffer_source_development_v1\\process.json": {
+      "record": {
+        "pid": 41564,
+        "create_time": 1793267627.6068969,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.round_buffer_source_study",
+          "--protocol",
+          "configs/step1/round_buffer_source_development_v1.yaml",
+          "--study",
+          "runs/step1_foundation_20261029/round_buffer_source_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\round_buffer_source_development_v1\\worker_process.json": {
+      "record": {
+        "pid": 8432,
+        "create_time": 1793267628.9492853,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.round_buffer_source_study import execute;execute(p)",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\round_buffer_source_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\round_buffer_source_development_v1_audit\\process.json": {
+      "record": {
+        "pid": 40904,
+        "create_time": 1793267726.679057,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.round_buffer_source_study",
+          "--audit-of",
+          "runs/step1_foundation_20261029/round_buffer_source_development_v1",
+          "--study",
+          "runs/step1_foundation_20261029/round_buffer_source_development_v1_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\round_buffer_source_development_v1_audit\\worker_process.json": {
+      "record": {
+        "pid": 23912,
+        "create_time": 1793267727.628039,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.round_buffer_source_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\round_buffer_source_development_v1_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\mass_ambiguity_development_v1\\process.json": {
+      "record": {
+        "pid": 31600,
+        "create_time": 1793268874.8230987,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.analysis.mass_ambiguity_audit",
+          "--protocol",
+          "configs/step1/mass_ambiguity_development_v1.yaml",
+          "--output",
+          "runs/step1_foundation_20261029/mass_ambiguity_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\mass_ambiguity_runtime_budget_development_v1\\process.json": {
+      "record": {
+        "pid": 38292,
+        "create_time": 1793269172.7477648,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.analysis.mass_ambiguity_audit",
+          "--protocol",
+          "configs/step1/mass_ambiguity_runtime_budget_development_v1.yaml",
+          "--output",
+          "runs/step1_foundation_20261029/mass_ambiguity_runtime_budget_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\mass_ambiguity_dual_audit_v1\\process.json": {
+      "record": {
+        "pid": 37416,
+        "create_time": 1793269473.6557047,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.analysis.mass_budget_dual_audit",
+          "--studies",
+          "runs/step1_foundation_20261029/mass_ambiguity_development_v1",
+          "runs/step1_foundation_20261029/mass_ambiguity_runtime_budget_development_v1",
+          "--output",
+          "runs/step1_foundation_20261029/mass_ambiguity_dual_audit_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    }
+  },
+  "literature_primary_sources": 6,
+  "literature_exhaustive": false,
+  "novelty_established": false,
+  "external_method_comparisons_executed": 0,
+  "new_independent_crowd_inputs": 0,
+  "new_native_geometry_calls": 0,
+  "new_motion_executions": 0,
+  "original_reference_enclosed": false,
+  "runtime_service_gate_changed": false,
+  "files": {
+    "src\\udc\\multigroup\\mass_ambiguity.py": "15cf4bf3e6ed974969d3910ae22c4a0175bcf6459324c98099a63983115300e2",
+    "src\\udc\\analysis\\mass_ambiguity_audit.py": "0257b08e828991fd87cf21794fb8e2eb8376f7c5de108a89622b75680f3656e4",
+    "tests\\test_mass_ambiguity.py": "d744244cec61db588291519f39495a44915ebacd2f5c27920cf0b80d1c148577",
+    "configs\\step1\\method_contribution_protocol_v1.yaml": "546423e2438c81545408f4607ee0409ca2b09902aa6910b5e443c87e5a195273",
+    "docs\\STEP1_MASS_AMBIGUITY.zh.md": "4c512e3de51bd0c565a7b7fd0751f65b89c414c411b4f66b79fde07445d44cb4",
+    "reports\\step1_foundation_20261029\\LITERATURE_AND_BASELINES.zh.md": "193af17921de2ea38ef73ff62ec4d4a52c862a76a36be8840fb0050e85b90997",
+    "reports\\step1_foundation_20261029\\literature_source_ledger_v1.json": "4436ca83ef103f7d7b26cc274c1f1c1f645f670068921260584d8a16f40fb02b",
+    "src/udc/analysis/mass_budget_dual_audit.py": "3ee8c00bb92b75131abc2221bdedc9550422aca624534626e40b2e865c2bcdc4"
+  },
+  "dual_readonly_audit": {
+    "audit": {
+      "all_match": true,
+      "counts": {
+        "runs\\step1_foundation_20261029\\mass_ambiguity_development_v1": {
+          "conditions": 21780,
+          "NO_POSITIVE_TOTAL_LOWER": 4374,
+          "OPTIMAL_DECLARED_SET": 10872,
+          "dual_upper_bound_evaluations": 31928,
+          "primal_dual_equalities": 10872,
+          "EMPTY_DECLARED_SET": 6534
+        },
+        "runs\\step1_foundation_20261029\\mass_ambiguity_runtime_budget_development_v1": {
+          "conditions": 7260,
+          "NO_POSITIVE_TOTAL_LOWER": 1458,
+          "OPTIMAL_DECLARED_SET": 3624,
+          "dual_upper_bound_evaluations": 12648,
+          "primal_dual_equalities": 3624,
+          "EMPTY_DECLARED_SET": 2178
+        }
+      },
+      "solver_imported": false,
+      "vertex_enumerator_imported": false,
+      "new_geometry_or_crowd_or_motion_executions": 0,
+      "finished_at": "2026-10-29T10:24:35.514067+00:00"
+    },
+    "receipt_sha256": "d65322a675619bf4fdcdf60ba8ec6ea1d1dfc570cd6a05104579edf6f0d612ec",
+    "input_and_source_hashes_verified": true
+  }
+}

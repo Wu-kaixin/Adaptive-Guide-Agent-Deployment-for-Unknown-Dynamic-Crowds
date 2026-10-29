@@ -1,0 +1,118 @@
+{
+  "summary": {
+    "scheduled_cases": 13,
+    "completed_cases": 13,
+    "native_calls": 269,
+    "native_point_outputs": 167,
+    "native_empty_outputs": 102,
+    "bounded_returned_point_families": 12,
+    "upstream_uncertified_families": 1,
+    "postcondition_violations": 0,
+    "topology_disagreements": 0,
+    "not_correctly_rounded_exact_point": 0,
+    "runtime_certificate_restored": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "goal_complete": false
+  },
+  "native_replay": {
+    "study_manifest_sha256": "cc53dd812f4424994cda7991e0ad9733a2f818015ca0b3d582c74135a9e7a891",
+    "cases_replayed": 13,
+    "actual_native_calls_replayed": 269,
+    "native_point_outputs": 167,
+    "native_empty_outputs": 102,
+    "bounded_returned_point_families": 12,
+    "upstream_uncertified_families": 1,
+    "all_match": true,
+    "scope": "actual C API replay and exact XY postcondition checks; not full-kernel binary verification or service certification",
+    "runtime_certificate_restored": false,
+    "new_motion_executions": 0,
+    "new_independent_samples": 0
+  },
+  "processes": {
+    "study": {
+      "process": {
+        "state": "missing",
+        "alive": false
+      },
+      "worker_process": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "audit": {
+      "process": {
+        "state": "missing",
+        "alive": false
+      },
+      "worker_process": {
+        "state": "missing",
+        "alive": false
+      }
+    }
+  },
+  "native_binary_identity": {
+    "c_api_version": "3.14.1-CAPI-1.20.5",
+    "shapely_version": "2.2.0",
+    "binaries": {
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos_c-6dd9fd915eef8a7928285416bef1e666.dll": "6e65985b30831761887de3217853a720147626b18cb41668cd2bdc43d1bcded1",
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll": "0948bdb5c70b82e5055b55e9419b78d68372b1d0ec877277fa6e79276f6299b9"
+    }
+  },
+  "compared_unique_exact_point_outputs": 166,
+  "source_precision_inspection": {
+    "source_version": "3.14.1",
+    "sources": {
+      "src/operation/buffer/BufferOp.cpp": {
+        "sha256": "3c5d203a8737cbe358d8625e2e7f5bd91fc9414880fba0a671ea01e94b60d4b8",
+        "url": "https://raw.githubusercontent.com/libgeos/geos/3.14.1/src/operation/buffer/BufferOp.cpp"
+      },
+      "src/geom/PrecisionModel.cpp": {
+        "sha256": "c3ab3d1d1ef98fbb048e581c980a0a649c79f752af243afb5d12aecbe8e564cf",
+        "url": "https://raw.githubusercontent.com/libgeos/geos/3.14.1/src/geom/PrecisionModel.cpp"
+      },
+      "COPYING": {
+        "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+        "url": "https://raw.githubusercontent.com/libgeos/geos/3.14.1/COPYING"
+      }
+    },
+    "source_has_original_to_reduced_fixed_precision_fallback": true,
+    "source_has_snap_rounding_noder_path": true,
+    "original_batches_observed_using_this_fallback": false,
+    "buffer_calls_executed_in_this_source_audit": 0,
+    "new_motion_executions": 0,
+    "inspection_is_whole_kernel_proof": false,
+    "next_obligation": "Bound fixed precision/snap-rounding before applying floating-only intersector contract to all buffers"
+  },
+  "goal_complete": false,
+  "runtime_certificate_restored": false,
+  "original_reference_or_thresholds_changed": false,
+  "person_observation_error_certificate_claimed": false,
+  "artifacts": {
+    "runs/step1_foundation_20261029/native_intersector_development_v1/manifest.json": "cc53dd812f4424994cda7991e0ad9733a2f818015ca0b3d582c74135a9e7a891",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/seal.json": "1eb1e4dc88f22009ed635f555d539312a564e5e268f11917d3c6627c02ab9482",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/summary.json": "2dce6a46ae6eeda01113d886249a7053206accb4c9b9d8ed5ac5ba9a7d6aca84",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/results.json": "6991141da11821f0439bf0ea1a36f7d0cb1f38f02b5081b9f0cc7d62e1dd2867",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/protocol.yaml": "64e6ab03b0b1e514525487c4a5833aec327db2a0cd0e3447b6cc6ddc7fed6ba1",
+    "runs/step1_foundation_20261029/native_intersector_development_v1_audit/manifest.json": "49e7374efe90ccfde1311a9a8390fb67e9d9a1383b4475fb5ea70e6ccb795da9",
+    "runs/step1_foundation_20261029/native_intersector_development_v1_audit/seal.json": "ec2c13af1960919d7482a199742c21c694e5e217a9043d5f446bbcd3b4cbe3c2",
+    "runs/step1_foundation_20261029/native_intersector_development_v1_audit/results/audit.json": "a69452429cf398ba6891b4c5211d3ccde11404e51cf688e98730f6949ee02f53",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_almost_parallel/receipt.json": "7fcd1c95a57ff599ceede51648f247add7191985b7c3384b7cbfd4222ce574c9",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_cross/receipt.json": "d6e938a0aaad3b56492dc1c09a5f6ab812bf4bcad7076e19b46930104ea41ad6",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_disjoint/receipt.json": "bb6acc2baf93d0ce8c28c3bfffc584a6bd19b80ecc404167920675ce235a9511",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_endpoint/receipt.json": "125986275148dc247998aadcac0594a216e9b585aec2223b39af7030374ebd7f",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_overlap/receipt.json": "e96bbeb76dca0906f7661a8530e68b2b65954605811b414ae7732418f0dd9071",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_parallel/receipt.json": "9fcca230be484bfcf229a60764814e810c590260514eb1f9e264d0c938c0d1d1",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_translated/receipt.json": "65203af83a7138f58f015afa834d085f9e7fe58d3e06ee6731a6e24741f099f2",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_zero_off_segment/receipt.json": "a47a4627fee331ecd22297ab970ac8c56531880542ab0643453679651887c81a",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/fixture_zero_on_segment/receipt.json": "d5cce3a1ba1ed75434eef772fb396e01b5bd80fd38c975fbad33185a95f5bccd",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/old_intersection_e0/receipt.json": "4c87219ffd27d20117a2c0d58a6c46f3ea593712e4054bfce87487933b379324",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/old_intersection_e1/receipt.json": "3a5c2b04e107d48490742d0054a4c0f05e9462d3fa5d133bfbaf1f3f48d40c94",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/old_intersection_e2/receipt.json": "29d31ebcee874590f9ff2710a4f7798977fe11085927fc425df9d00334980e61",
+    "runs/step1_foundation_20261029/native_intersector_development_v1/cases/old_intersection_e3/receipt.json": "9add93a2b0f457cf9f428f1de4f41b7babb94ee90b9d69c60d6f6bf955ce514a",
+    "runs/step1_foundation_20261029/buffer_precision_source_audit_v1/inspection.json": "9805aa2c45bddd124e5c13adc79492b0eafb3bcb36498411b2a2040b462990fe",
+    "runs/step1_foundation_20261029/buffer_precision_source_audit_v1/src/operation/buffer/BufferOp.cpp": "3c5d203a8737cbe358d8625e2e7f5bd91fc9414880fba0a671ea01e94b60d4b8",
+    "runs/step1_foundation_20261029/buffer_precision_source_audit_v1/src/geom/PrecisionModel.cpp": "c3ab3d1d1ef98fbb048e581c980a0a649c79f752af243afb5d12aecbe8e564cf",
+    "runs/step1_foundation_20261029/buffer_precision_source_audit_v1/COPYING": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+  }
+}

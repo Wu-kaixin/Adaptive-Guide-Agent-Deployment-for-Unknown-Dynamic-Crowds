@@ -1,0 +1,13 @@
+protocol: mass_ambiguity_runtime_budget_development_v1
+dimensions: [1, 2, 3, 4, 5]
+budgets: ['1152921504606847/576460752303423488']
+budget_source: configs/step1/foundation_sequence_confirmation_v1.yaml
+budget_binary64_hex: '0x1.0624dd2f1a9fcp-9'
+interval_families: 4
+total_ranges_per_family: 5
+oracle: exact_box_corners_and_total_hyperplane_vertices
+reuses_same_artificial_mass_sets_as: mass_ambiguity_development_v1
+original_reference_enclosed: false
+runtime_service_gate_changed: false
+new_independent_crowd_inputs: 0
+new_motion_executions: 0

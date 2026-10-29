@@ -1,0 +1,13 @@
+{
+  "automation_id": "step-1-25",
+  "kind": "heartbeat",
+  "name": "Step 1 闭环研究每45分钟推进",
+  "interval_minutes": 45,
+  "status": "ACTIVE",
+  "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc",
+  "updated_at": 1793248164824,
+  "source_config_sha256": "e7111f21ae4aef8423c5a9a436f1f81e128eb695c114dea6dd433df158086627",
+  "same_existing_automation": true,
+  "new_automation_created": false,
+  "prompt_research_constraints_preserved": true
+}

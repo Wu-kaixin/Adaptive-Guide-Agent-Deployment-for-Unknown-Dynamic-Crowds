@@ -1,0 +1,98 @@
+{
+  "reviewed_on_utc": "2026-10-29",
+  "review_status": "initial_targeted_primary_source_review",
+  "exhaustive": false,
+  "novelty_established": false,
+  "external_method_reimplementations_executed": 0,
+  "selected_query_terms_from_issued_queries": [
+    "guaranteed Voronoi coverage control uncertain positions robots paper Papatheodorou Stergiopoulos Tzes",
+    "self triggered deployment robotic networks optimal coverage performance guarantees Nowzari Cortes paper",
+    "coverage control distributionally robust",
+    "Data-Driven Distributionally Robust Coverage Control by Mobile Robots pdf",
+    "Multi-agent Coverage Control Doubling Zhang Ma Li 2024",
+    "coverage control uncertainty 2026 boundary",
+    "coverage control robust 2025 density",
+    "coverage control event-triggered 2026 performance"
+  ],
+  "sources": [
+    {
+      "id": "cortes2004",
+      "title": "Coverage control for mobile sensing networks",
+      "authors": ["Jorge Cortes", "Sonia Martinez", "Timur Karatas", "Francesco Bullo"],
+      "publication_year": 2004,
+      "version": "author PDF, minor corrections generated 2008-04-24",
+      "primary_url": "https://motion.me.ucsb.edu/pdf/2002j-cmkb.pdf",
+      "doi": "10.1109/TRA.2004.824698",
+      "reviewed_location": "PDF pp.1-5, Sections II-III, equations (1)-(5), Lloyd discussion",
+      "supports": "Known convex domain and density, Voronoi/Lloyd locational optimization and convergence to CVT critical configurations.",
+      "project_inference": "CVT is an existing ingredient; this area distance objective is not the frozen original-curve signed service metric."
+    },
+    {
+      "id": "nowzari2012",
+      "title": "Self-triggered coordination of robotic networks for optimal deployment",
+      "authors": ["Cameron Nowzari", "Jorge Cortes"],
+      "publication_year": 2012,
+      "version": "Automatica 48, 1077-1087; not counted again as its 2011 conference precursor",
+      "primary_url": "https://mason.gmu.edu/~cnowzari/papers/jp01.pdf",
+      "doi": "10.1016/j.automatica.2012.03.009",
+      "reviewed_location": "Sections 3-7, Proposition 6.1, Remark 6.4",
+      "supports": "Guaranteed/dual guaranteed Voronoi sets permit self-triggered information updates with CVT convergence in the stated model.",
+      "project_inference": "Triggered updates under uncertain information are prior art; convergence does not establish the project's per-frame relative service budget."
+    },
+    {
+      "id": "papatheodorou2018",
+      "title": "Distributed area coverage control with imprecise robot localization: Simulation and experimental studies",
+      "authors": ["Sotiris Papatheodorou", "Anthony Tzes", "Konstantinos Giannousakis", "Yiannis Stergiopoulos"],
+      "publication_year": 2018,
+      "primary_url": "https://journals.sagepub.com/doi/10.1177/1729881418797494",
+      "doi": "10.1177/1729881418797494",
+      "reviewed_location": "Equations (2)-(9), Theorem 1, collision avoidance, simplified control law and Case Study I",
+      "supports": "Robot-location uncertainty disks, guaranteed sensing regions and AWGV partitions define a guaranteed area objective; the complete law and simplified experimental law have different guarantee scopes.",
+      "project_inference": "Uncertain robot locations differ from uncertain people generating an endogenous curve."
+    },
+    {
+      "id": "boskos2023",
+      "title": "Data-Driven Distributionally Robust Coverage Control by Mobile Robots",
+      "authors": ["Dimitris Boskos", "Jorge Cortes", "Sonia Martinez"],
+      "publication_year": 2023,
+      "version": "CDC 2023 final published version, pp.2030-2035 with repository cover",
+      "primary_url": "https://pure.tudelft.nl/ws/portalfiles/portal/178399033/Data-Driven_Distributionally_Robust_Coverage_Control_by_Mobile_Robots.pdf",
+      "metadata_url": "https://research.tudelft.nl/en/publications/data-driven-distributionally-robust-coverage-control-by-mobile-ro/",
+      "doi": "10.1109/CDC49753.2023.10384225",
+      "reviewed_location": "Sections III-V, Assumption 3.1, equations (3)-(9), especially projection statement following (8)",
+      "supports": "Haar-wavelet density ambiguity sets incorporate unit mass and density bounds; independent data control probabilistic inclusion of the finite-resolution true-density projection.",
+      "project_inference": "Mass ambiguity optimization is prior art. Probability/projection guarantees cannot be silently substituted for all bounded-error static worlds.",
+      "access_note": "research.tudelft.nl PDF open returned 403; same institutional pure.tudelft.nl PDF full text was accessible."
+    },
+    {
+      "id": "zhang2024",
+      "title": "Multi-agent coverage control with transient behavior consideration",
+      "authors": ["Runyu Zhang", "Haitong Ma", "Na Li"],
+      "publication_year": 2024,
+      "version": "PMLR 242, 1464-1476",
+      "primary_url": "https://proceedings.mlr.press/v242/zhang24e/zhang24e.pdf",
+      "metadata_url": "https://proceedings.mlr.press/v242/zhang24e.html",
+      "reviewed_location": "Sections 2-4, Theorem 1, Section 5.2 and conclusion",
+      "supports": "GP/graph coverage with an approximate oracle has high-probability approximate regret including travel transients; the conclusion explicitly excludes safety from the current theoretical analysis.",
+      "project_inference": "Accounting for travel is established work; long-horizon regret is different from a per-frame signed original-reference service guarantee."
+    },
+    {
+      "id": "zhu2026v1",
+      "title": "Adaptive Event-Triggered Model Predictive Coverage Control with Average Update-Rate Regulation",
+      "authors": ["Pengbo Zhu", "Jicheng Shi", "Colin N. Jones", "Andreas A. Malikopoulos"],
+      "publication_year": 2026,
+      "version": "arXiv:2610.15325v1, submitted 2026-10-11; submitted to ACC 2027, acceptance not established",
+      "primary_url": "https://arxiv.org/html/2610.15325v1",
+      "metadata_url": "https://arxiv.org/abs/2610.15325",
+      "reviewed_location": "Section III, Assumption 1, Theorem 1, Remarks 1-2",
+      "supports": "Bounded trigger values and continuously executable plans yield empirical average update-period guarantees; the inner MPC retains responsibility for feasibility and stability.",
+      "project_inference": "Average computational update budget differs from insufficient guide count and from pointwise service/safety requirements."
+    }
+  ],
+  "remaining_review": [
+    "boundary and perimeter coverage with unknown or uncertain target geometry",
+    "deterministic decision-specific signed measure bounds",
+    "assignment and coordinated reconfiguration prior art",
+    "citation chaining and broader 2025-2026 review before any novelty claim"
+  ]
+}

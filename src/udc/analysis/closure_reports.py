@@ -81,12 +81,12 @@ def sequential(study,output,audit_output=None):
             'maximum_event_worst_gap_difference':float(np.max(service_loss)) if service_loss else None,
             'scope':'empirical comparison with external recompute method; certificate compares own-state greedy, not a different counterfactual history'},
         'reference':'ORIGINAL_WORLD_REFERENCE','general_error_model':'arbitrary bounded independent or correlated person error; observation-certified group identity',
-        'scope':'50 accepted observation indices; no reset within sequence; not asymptotic stability or dynamic-crowd proof'}
+        'scope':str(manifest['design']['steps'])+' accepted observation indices; no reset within sequence; not asymptotic stability or dynamic-crowd proof'}
     output.mkdir(parents=True,exist_ok=False);write_json(output/'results.json',result)
-    text=['# 50次静态重观测：数量与相位切换','',f"记录：{summary['recorded_step_records']}/{summary['scheduled_step_records']}；全部保存轨迹和决策重建一致。",'',
+    text=[f"# {manifest['design']['steps']}次静态重观测：数量与相位切换",'',f"记录：{summary['recorded_step_records']}/{summary['scheduled_step_records']}；全部保存轨迹和决策重建一致。",'',
         '每个方法沿自己的实际状态连续推进。普通部署失败结束受影响序列，其余帧明确未执行，不重置、不补抽。', '',
-        '服务门控使用原参考支持域，任意独立/相关有界误差下仅在充分条件通过时认证；不能认证回退贪心。', '',
-        '主指标/完整分母界及按资源/扰动模式统计见下方；短路程必须与50步完整交付共同解释。', '',
+        '门控结果只属于本批冻结源码及声明前提；有限复判不证明支持域包含。当前活动版本和证明修订见docs/STEP1_BUFFER_ENCLOSURE_AUDIT.zh.md。', '',
+        '主指标/完整分母界及按资源/扰动模式统计见下方；短路程必须与声明全部更新完成共同解释。', '',
         '```json',json.dumps(result,ensure_ascii=False,indent=2),'```', '',
-        '有限50步结果不是任意时间的收敛或受限通信稳定性证明。Step2/3仍需独立动力学与信息年龄条件。']
+        '有限序列结果不是任意时间的收敛或受限通信稳定性证明。Step2/3仍需独立动力学与信息年龄条件。']
     (output/'REPORT.zh.md').write_text('\n'.join(text),encoding='utf-8');return result

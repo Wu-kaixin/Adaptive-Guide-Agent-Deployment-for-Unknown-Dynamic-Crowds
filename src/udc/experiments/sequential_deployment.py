@@ -1,4 +1,4 @@
-"""Fifty frozen reobservations, continuous method-specific actual robot states."""
+"""Protocol-frozen reobservations, continuous method-specific actual states."""
 import argparse
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor,wait,FIRST_COMPLETED
@@ -37,7 +37,11 @@ def prepare(protocol,study):
     design=yaml.safe_load(Path(protocol).read_text(encoding='utf-8'))
     base=yaml.safe_load((ROOT/design['base_protocol']).read_text(encoding='utf-8'))
     expected=20 if design['evidence']=='prospective_confirmation' else 3
-    if design['seeds']['count']!=expected or design['steps']!=50 or design['methods']!=list(METHODS):raise ValueError('Frozen 50-step design required')
+    long_development=(design['protocol']=='foundation_sequence_long_development_v1'
+                      and design['evidence']=='development_long_horizon_not_confirmation')
+    horizon=200 if long_development else 50
+    if design['seeds']['count']!=expected or design['steps']!=horizon or design['methods']!=list(METHODS):
+        raise ValueError('Frozen protocol horizon, seed count and methods required')
     if design['base_actual_error_m']+design['perturbation_amplitude_m']>design['declared_error_m']:raise ValueError('Error bound exceeded by generator')
     study.mkdir(parents=True,exist_ok=False);shutil.copyfile(protocol,study/'protocol.yaml')
     units,tasks=[],[]
@@ -74,7 +78,7 @@ def prepare(protocol,study):
         for resource in design['resources']:
             tasks.append({'task_id':name+'_nominal_'+resource,'unit_id':name,'kind':'nominal','resource':resource})
             for pattern,method in itertools.product(design['patterns'],design['methods']):
-                tasks.append({'task_id':f'{name}_{resource}_{pattern}_{method}','unit_id':name,'kind':'episode','resource':resource,'pattern':pattern,'method':method,'steps':50})
+                tasks.append({'task_id':f'{name}_{resource}_{pattern}_{method}','unit_id':name,'kind':'episode','resource':resource,'pattern':pattern,'method':method,'steps':design['steps']})
     work_items=units
     if design.get('split_pattern_workers',False):
         work_items=[u|{'unit_id':u['unit_id']+'__pattern_'+pattern,'physical_id':u['unit_id'],'only_pattern':pattern}
@@ -85,13 +89,13 @@ def prepare(protocol,study):
                 tasks.append({'task_id':unit['unit_id']+'_nominal_'+resource,'unit_id':unit['unit_id'],'physical_id':unit['physical_id'],'kind':'nominal','resource':resource})
                 for method in design['methods']:
                     tasks.append({'task_id':f'{unit["unit_id"]}_{resource}_{unit["only_pattern"]}_{method}','unit_id':unit['unit_id'],'physical_id':unit['physical_id'],
-                        'kind':'episode','resource':resource,'pattern':unit['only_pattern'],'method':method,'steps':50})
+                        'kind':'episode','resource':resource,'pattern':unit['only_pattern'],'method':method,'steps':design['steps']})
     sources=scientific_sources()
     for relative in sources:
         target=study/'source_snapshot'/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/relative,target)
     manifest={'protocol':design['protocol'],'evidence':design['evidence'],'design':design,'spec':base,'units':units,'tasks':tasks,
         'sources':sources,'environment':environment_record(),'protocol_sha256':digest(study/'protocol.yaml'),'work_items':work_items,
-        'prepared_before_method_evaluation':True,'scheduled_step_records':sum(1 if t['kind']=='nominal' else 50 for t in tasks),
+        'prepared_before_method_evaluation':True,'scheduled_step_records':sum(1 if t['kind']=='nominal' else t['steps'] for t in tasks),
         'independent_physical_blocks':len(units),'checkpoint_boundary':'every 5 completed step records per episode'}
     write_json(study/'manifest.json',manifest);write_json(study/'seal.json',{'manifest_sha256':digest(study/'manifest.json')})
     return {'physical_blocks':len(units),'tasks':len(tasks),'step_records':manifest['scheduled_step_records'],'manifest_sha256':digest(study/'manifest.json')}
@@ -100,7 +104,14 @@ def prepare(protocol,study):
 def _perform(guides,q,ids,groups,domain,obs,truth,reference,base,config,task,planning):
     result=_blank_execution(guides,'NOT_EXECUTED');metrics=dict(task)
     try:
-        result=execute(guides,q,domain,base['room_m'],config,obs,'adaptive_reverse')
+        policy=config.get('execution_policy','adaptive_reverse')
+        if policy=='joint_reassigned_then_reverse_v1':
+            from udc.multigroup.joint_reconfiguration import execute_hybrid
+            result=execute_hybrid(guides,q,domain,base['room_m'],config,obs)
+        elif policy=='adaptive_reverse':
+            result=execute(guides,q,domain,base['room_m'],config,obs,'adaptive_reverse')
+        else:
+            raise ValueError('Unknown versioned sequential execution policy')
         metrics.update(evaluate(result,q,ids,groups,obs,truth,base['room_m'],config))
         metrics['continuous_actual_service']=continuous_summary(reference,truth,result.positions[-1][result.assignment>=0],config) if len(result.velocities) else None
         if not metrics['motion']['initial_safety_ok'] or metrics['motion']['interval_safety_ok'] is False:metrics['status']='SAFETY_VIOLATION'
@@ -167,7 +178,7 @@ def worker(argument):
                 summaries[key]={'task_id':task['task_id'],'sequence_completed':True,'actual_total_travel_m':0.,'count_switch_events':0,
                     'counts_l1_total':0,'delivered_intergroup_transfers':0,'accepted_frames':0,'fallback_frames':0,'nontrivial_hold_frames':0,
                     'deployment_event_times_s':[],'event_worst_uncovered':[],'event_weighted_uncovered':[],'statuses':Counter()}
-            for step in range(1,51):
+            for step in range(1,design['steps']+1):
                 obs=BoundedMeasurement(Observation(observations[step],truth.radii,truth.demand),design['declared_error_m'],'frozen_bounded_reobservation')
                 setup=None
                 phase_cache={}

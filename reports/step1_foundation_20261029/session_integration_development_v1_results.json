@@ -1,0 +1,161 @@
+{
+  "completion.json": {
+    "all_match": true,
+    "cases": 18,
+    "actual_events": 72,
+    "new_independent_samples": 0,
+    "results": [
+      {
+        "case_id": "K2_concave_s3240_insufficient_recompute_all",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K2_concave_s3240_insufficient_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K2_concave_s3240_insufficient_counts_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K2_concave_s3240_moderate_recompute_all",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K2_concave_s3240_moderate_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K2_concave_s3240_moderate_counts_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K2_concave_s3240_sufficient_recompute_all",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 4
+      },
+      {
+        "case_id": "K2_concave_s3240_sufficient_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 4
+      },
+      {
+        "case_id": "K2_concave_s3240_sufficient_counts_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 4
+      },
+      {
+        "case_id": "K5_ellipse_s3240_insufficient_recompute_all",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K5_ellipse_s3240_insufficient_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K5_ellipse_s3240_insufficient_counts_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K5_ellipse_s3240_moderate_recompute_all",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K5_ellipse_s3240_moderate_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K5_ellipse_s3240_moderate_counts_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 0
+      },
+      {
+        "case_id": "K5_ellipse_s3240_sufficient_recompute_all",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 4
+      },
+      {
+        "case_id": "K5_ellipse_s3240_sufficient_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 4
+      },
+      {
+        "case_id": "K5_ellipse_s3240_sufficient_counts_phase_guard",
+        "mismatches": [],
+        "physical_audit_all_match": true,
+        "events": 4,
+        "delivered": 4,
+        "full_success": 4
+      }
+    ],
+    "scope": "Three updates on selected original development inputs, all resources/methods; not a new 50-step confirmation"
+  },
+  "artifact_sha256": {
+    "manifest.json": "374270938170a9296b5ae3bb191bbeda00ce4475b4c0ca67ae41e48c7f81f37a",
+    "seal.json": "e106a68564ac468d9be4caa5b4a473c9b47b9c0fb56768ae7aa0d2ab80045cbb",
+    "completion.json": "fc800708e99cbbc36563a93ef1907c5f8e7f00db1d2dec6384d285f1dce79c80"
+  },
+  "new_independent_samples": 0
+}

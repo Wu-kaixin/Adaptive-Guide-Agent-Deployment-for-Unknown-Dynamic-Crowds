@@ -1,5 +1,8 @@
 # Step 1 理论—实现对应
 
+当前研究版本入口为[最终发布](../reports/step1_release_20261030/README.zh.md)。本文以下主要描述单群集成基线；静态多群扩展见[扩展契约](STEP1_MULTIGROUP.zh.md)。
+后续实现前提审查发现通用buffer包络缺口，当前服务门控隔离，条件原型与旧数值审计不能作为已完成的一般误差原参考服务保证，见[实现审计](STEP1_BUFFER_ENCLOSURE_AUDIT.zh.md)。
+
 本文描述当前代码，不把旧报告里的口号改写成新算法。Step 1 仍是单一静态人群、已知封闭方形或矩形、精确全局观测、无限通信、无 crowd–guide 动力学交互。需求权重是规划输入，不是已验证的行为风险。生成多边形对控制器不可见。
 
 普通入口和显式非凸协议是两条路。`ABCGController.prepare` 只调用 `estimate_boundary`，边界来源记为 `estimated_convex_offset`。圆盘并集闭运算不在这条路上。它由调用者先执行 `estimate_disk_union` 或 `construct_boundary(..., 'disk_union_closed')`，再经 `prepare_prescribed` 安装，来源记为 `estimated_disk_union`。给定诊断曲线使用 `prescribed_diagnostic`，人员可以缺席；那时只评价曲线和目标，人员、墙和路径保持未评价。

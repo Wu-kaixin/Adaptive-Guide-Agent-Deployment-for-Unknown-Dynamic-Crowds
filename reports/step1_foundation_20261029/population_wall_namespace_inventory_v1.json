@@ -1,0 +1,1404 @@
+{
+  "local_manifest_inventory_complete": true,
+  "inventory_backend": "python_walk_after_rg_unavailable",
+  "manifest_count": 216,
+  "proposed_namespace": 2026102912,
+  "proposed_seeds": [
+    3700,
+    3701
+  ],
+  "reserved_seeds_used": false,
+  "namespace_already_exposed": [],
+  "namespace_available_in_indexed_local_manifests": true,
+  "inventory": [
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\github_sync_20261023\\pytest_tmp\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\github_sync_20261023\\pytest_tmp\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\project_rebuild_20261023\\pytest_tmp\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_confirmation_v2\\manifest.json",
+      "sha256": "17b123b73451e6f19a1cd559826992f8044d926ce9cd5cb38536807449552ca1",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_demand_confirmation_v1\\manifest.json",
+      "sha256": "918a2863afdc9635f49f3a7a0d2fbe69691f57f034fdd4188272f243f67066f4",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_demand_pilot_v1\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_execution_confirmation_v3\\manifest.json",
+      "sha256": "34aa668c05c64cf0cad77af17e8abc76959f1ec0fe0e98cd9b858b008d011323",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_record_rebuild_v1\\manifest.json",
+      "sha256": "9d5f998dedc688b4141f06a03ce18a8111d20d55f3fba6fad164844a2bb97204",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_resource_confirmation_v1\\manifest.json",
+      "sha256": "454fbcd4799b7df0c801433a1f2a7d2ee7f28f5657e4906cf5ecff6a9467d610",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_nonconvex_resource_response_v1\\manifest.json",
+      "sha256": "2966be9c881b2fe276cbf2ab2459f57fc1ac2b7ccb1a4f284e10c0456524f6c0",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\reconstructed_20261023\\step1_resource_recovery_diagnostics_v1\\manifest.json",
+      "sha256": "2966be9c881b2fe276cbf2ab2459f57fc1ac2b7ccb1a4f284e10c0456524f6c0",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\representation_gate_20261028\\confirmation_v2\\manifest.json",
+      "sha256": "99bcc4333c1aca2cbdcf865df68899d10bb1be2e1f2924ac35aecc7e9f7fc18e",
+      "namespaces": [
+        2026102603,
+        2026102810
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\representation_gate_20261028\\development_v1\\manifest.json",
+      "sha256": "314838bd7d72c68c85b10a4d934f8de682e112af6ff2a926a23d4a1cc423a003",
+      "namespaces": [
+        2026102603,
+        2026102801
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\representation_gate_20261028\\guarded_development_v2\\manifest.json",
+      "sha256": "f7aff920430881f815351eb48f1b98e76a7538625a0e581d42730db711f5dbdc",
+      "namespaces": [
+        2026102603,
+        2026102808
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_checked\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "f2ed1fd906a0e56813c71f3f3ab52ea2c67128efdae8e8cf48c26e3a68f5a26e",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "f2ed1fd906a0e56813c71f3f3ab52ea2c67128efdae8e8cf48c26e3a68f5a26e",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "73dbd1d8575c431a042bdc737ee30ebf62eef74dd6d89e279af6f9c845e3fe57",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "f2ed1fd906a0e56813c71f3f3ab52ea2c67128efdae8e8cf48c26e3a68f5a26e",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "0f67bb2e029716c6992b9771e40a3f23ec4817c82cb403456acdb31bae145bde",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_final_all\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "03e86f80d82194f452d251f89976eccb37303765117b1f4e449ac2fe523cb983",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "03e86f80d82194f452d251f89976eccb37303765117b1f4e449ac2fe523cb983",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "6025283cc2cb949c083a190734d5376cbc47405c100a373161ab13a1effe0a1f",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "03e86f80d82194f452d251f89976eccb37303765117b1f4e449ac2fe523cb983",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "e0d5e828909d441a19acf8818124c2d837afec23b7f19b74281a46339a1d75c9",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\runtime_all_cores_20261027\\tests_full\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\capacity_smoke_v2\\manifest.json",
+      "sha256": "6465cbe13c53ea0d3b2abff4113ab2065191c02723b0bbccfcd54383bcd00809",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\confirmation_v2_frozen\\manifest.json",
+      "sha256": "8c19566718cae9a9a05a3904f321f24b2ced4ea9f8c6d6d53c48597163e7ea8f",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\heterogeneous_20seed_v2\\manifest.json",
+      "sha256": "c9cf6391c57b8f71edfd1f41dd830841c967df3a93c4f24c97a636977c4f051f",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\motion_grid_v1\\manifest.json",
+      "sha256": "3914a87834304ee49322ae8fc6956fa611ed3120d7bb6781422d527970f85afb",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\planning_grid_v1\\manifest.json",
+      "sha256": "1f80ce31c6e024f3db80d7f059d3266a7c7334fc92efe943f0d60d67c4986afc",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\planning_grid_v2\\manifest.json",
+      "sha256": "caf9421bcde62b0cfb6f1c9be1ae8853e977c1ebf9448962eaff668364e387b5",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\final\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "d52041b13790624a10bc9b5615d1ec37fc9b584a608e1e913d58063a5aa7b2e3",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\final\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\final\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "d52041b13790624a10bc9b5615d1ec37fc9b584a608e1e913d58063a5aa7b2e3",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\final\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "d52041b13790624a10bc9b5615d1ec37fc9b584a608e1e913d58063a5aa7b2e3",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\final\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "5e0e2b7e56eadf530c57f828fc00be6f7eed8e8ec709036e3d5696066b9cb1c5",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\final\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\first\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "d1f652c64d5874779c3d5bc08d60e40677723f3aed3645b051ae599ab35ab6f7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\first\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "d1f652c64d5874779c3d5bc08d60e40677723f3aed3645b051ae599ab35ab6f7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\first\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "e90146f00b2b287fc61dd412bc4594d71216cf4467cbd46dcbc3a5d4cc34ae00",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\full\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "b02945602aa21852fef87fdec8a7c61dbbc863d53ef43479776d95a84618ea37",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\full\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\full\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "b02945602aa21852fef87fdec8a7c61dbbc863d53ef43479776d95a84618ea37",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\full\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "cb40a70da8b885db19c37df2540b2830cbbd7a5529e4fc65532fca72a02c3a09",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\full\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\second\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "b02945602aa21852fef87fdec8a7c61dbbc863d53ef43479776d95a84618ea37",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\second\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "b02945602aa21852fef87fdec8a7c61dbbc863d53ef43479776d95a84618ea37",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_multigroup_20261026\\tests\\second\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "cb40a70da8b885db19c37df2540b2830cbbd7a5529e4fc65532fca72a02c3a09",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\main_v1\\manifest.json",
+      "sha256": "ea5a37da07c57b83e9229387f1da0fa2ae5be2f7f80b86d2e137af9be1d7bb32",
+      "namespaces": [
+        2026102603,
+        2026102706
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "8f2bab437f20c513d412ae0cd00030cadc14f456fda04ccb50c74fcf7125868b",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "8f2bab437f20c513d412ae0cd00030cadc14f456fda04ccb50c74fcf7125868b",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "e1c154dcf79c32a6db347c6c47fef79a3adfc00d03fa54fb2d50337d6df522a4",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "8f2bab437f20c513d412ae0cd00030cadc14f456fda04ccb50c74fcf7125868b",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "06f01190ee78531b8114185698adcb3a3b6a53a69589c3c07ff456af5f5c3cc8",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_final\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "d3b56d7da9129cb3a51bc75bcfbc5e4bb4bcde0e3528e44a3aeb4cf678cbdadc",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "d3b56d7da9129cb3a51bc75bcfbc5e4bb4bcde0e3528e44a3aeb4cf678cbdadc",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "9e68336e26bc7511196a3cac095ac3a3203caff5f1c726a428e58d0064788c7b",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "d3b56d7da9129cb3a51bc75bcfbc5e4bb4bcde0e3528e44a3aeb4cf678cbdadc",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "ee19d6e29b0118aeaac1fae98db013afea9a28b4892ea468957250c9dbd3f842",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\tests_full\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_phase_retention_20261027\\witness_execution_v1\\manifest.json",
+      "sha256": "71adfce067decaeb080303adf9ca16001bfe0b8cd00ff52af08e05c04440d6e4",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\fixed_action_v1\\manifest.json",
+      "sha256": "6a3aed316f15faa695cee1d44e78c3d1cd8523aa8dab6be41373af3400df2fb5",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\mechanism_v1\\manifest.json",
+      "sha256": "291e02a078733013bf8076f9d6219499842fd0f6d90bb8d7595972f8f55754e0",
+      "namespaces": [
+        2026102603,
+        2026102701
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\mechanism_v2\\manifest.json",
+      "sha256": "a320257d326aa35cfade132bd53260b173edf1a374dcfec69b588705623d02c4",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\pressure_v1\\manifest.json",
+      "sha256": "6ea3ee3950876321d8b04f45801be85764bda961671095bb7d5e95d2f9cba20a",
+      "namespaces": [
+        2026102603,
+        2026102703
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\pressure_v2\\manifest.json",
+      "sha256": "92d9e25f2c0737d51065c0e212260196eea5c971a30d3fd25124c29f82b7c49f",
+      "namespaces": [
+        2026102603,
+        2026102704
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\stability_v1\\manifest.json",
+      "sha256": "70b24f30aab9f408b22f3730776b532d1bbffec923b5eac9354ee368fbc0d7c6",
+      "namespaces": [
+        2026102603,
+        2026102702
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "f0396353858af129903329113adf4d75c0cc55e39c8085e52561c592ea7bdbe5",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "f0396353858af129903329113adf4d75c0cc55e39c8085e52561c592ea7bdbe5",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "de3aeeba8ec4faba0f3f1a550b2ac9865e5897d2ea611f9992a0040193fbdbec",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "f0396353858af129903329113adf4d75c0cc55e39c8085e52561c592ea7bdbe5",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "029af3dbda546395290314737b1c71eb0d23af134f3d453c81ebbcc4230adf6e",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_final\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_full\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "7b98079eadac0e9b2572e8e6cb59afbae55e5c7d72c1015cd21121702ccf2ca7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_full\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_full\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "7b98079eadac0e9b2572e8e6cb59afbae55e5c7d72c1015cd21121702ccf2ca7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_full\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "7b98079eadac0e9b2572e8e6cb59afbae55e5c7d72c1015cd21121702ccf2ca7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_full\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "3829fbdb3dd1b4c3ad36f23586b0c075347c10c368de0fa83120b6b009d699a7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_full\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\static_service_audit_20261026\\tests_inputs\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "c95f95905da735adf9b6dac84c5d7f101f9c421145c0441e71f2444448644a19",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\deployment_confirmation_v2\\manifest.json",
+      "sha256": "c1322a6bfa077b51e064fa7f3afc3413595d27897f12da62fd12c0da84b5e802",
+      "namespaces": [
+        2026102603,
+        2026102821
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\deployment_development_v1\\manifest.json",
+      "sha256": "bc4ec504a10a4829ef467617ed583c1fe33206e4e681ba664e88d0a4a314b9be",
+      "namespaces": [
+        2026102603,
+        2026102820
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\deployment_development_v2\\manifest.json",
+      "sha256": "d999dfd998a57b1ada084033bab11639b922baa1287522def0742bc82a2a88fa",
+      "namespaces": [
+        2026102603,
+        2026102820
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\recovery_cohort_v2\\manifest.json",
+      "sha256": "f88f9e154f948c5d106747e4f1f2edd984b0e62bea241104867d4efd183e18d1",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\recovery_witness_v1\\manifest.json",
+      "sha256": "d83874a1a0af23aacf249f6fe0b150fe3c54f90380d63646e48eab5f0fd2dfd9",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\recovery_witness_v2\\manifest.json",
+      "sha256": "d73558c6f9e0be22caa0e8bfbffe06fc34e9d3b96bb9c3e74687ccedbe149c9a",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_confirmation_v3\\manifest.json",
+      "sha256": "0a10a92652cad03f558224b7129522cb2581805886b2982e7c9e38237cf562ea",
+      "namespaces": [
+        2026102603,
+        2026102825
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_development_v1\\manifest.json",
+      "sha256": "0f0036a4af1b8a8a4acc18fb95e102fda05a4cdb0700e3d6a899edcf43cf8273",
+      "namespaces": [
+        2026102603,
+        2026102822
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_development_v3\\manifest.json",
+      "sha256": "30e56ec340d2b73bbd95b64193933817ceba4a123f31314f7bc2d609dbfc4ea6",
+      "namespaces": [
+        2026102603,
+        2026102826
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_smoke_v2\\manifest.json",
+      "sha256": "c1e9982b6b91c67aed97b5a1dbbededaccc4ce72eba2dc1dc1ebc441bf17dd07",
+      "namespaces": [
+        2026102603,
+        2026102824
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\sequential_smoke_v3\\manifest.json",
+      "sha256": "6c2789ae5ef6f85b7fa2eceafd417d69b9ef7dd23ce4b29d2c2d91c58e3b5911",
+      "namespaces": [
+        2026102603,
+        2026102824
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "b38144ea1dceff623407aa1c657bfaa96b25f104feda83eb4dc16c2ac35b90c9",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "b38144ea1dceff623407aa1c657bfaa96b25f104feda83eb4dc16c2ac35b90c9",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "dbd07b78d0849733fbefbe665c94b8662955c365ffa8148cae9248a4fd4e3831",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_parallel_pattern_jobs_do_0\\study\\manifest.json",
+      "sha256": "060d46df21c8f47c8a44653dcbfe1f694a60dacbabd3abd52eed6d9d3daaa350",
+      "namespaces": [
+        90171,
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "b38144ea1dceff623407aa1c657bfaa96b25f104feda83eb4dc16c2ac35b90c9",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "eb42877ff0a754e9d88ebf44cdb2584a9c73cb63bbf700428ccacce8078472c5",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_sequence_failure_keeps_ar0\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_cached\\test_sequence_failure_keeps_ar1\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "3991b9875fe4c0c32f2e50d444753e53cff2a7b4001f04dbdb70829abdc15e74",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "3991b9875fe4c0c32f2e50d444753e53cff2a7b4001f04dbdb70829abdc15e74",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "6986f8d12a615b203d1e49a53cd34bac14aba2d782716edd9d210b4fdf24c252",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_parallel_pattern_jobs_do_0\\study\\manifest.json",
+      "sha256": "04c5845092c954e0bb877e100da685e432f653497136ec0d350619cbe9353c44",
+      "namespaces": [
+        90171,
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "3991b9875fe4c0c32f2e50d444753e53cff2a7b4001f04dbdb70829abdc15e74",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "fbefa179ba6569dc3278a0ca99c1fa9296e255c199ccb10494e700b780c0b3b6",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_sequence_failure_keeps_ar0\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_final_closure_v3\\test_sequence_failure_keeps_ar1\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "6ee983a1ba9d1a6a5f2edb20e22ebe4ace3b7b98c295ee98622e0e90c294d0ec",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "6ee983a1ba9d1a6a5f2edb20e22ebe4ace3b7b98c295ee98622e0e90c294d0ec",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "6fa6db32b60339c130ffd2de9c91c91e3f5424f2e9b586819b6a11214707ef8b",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "6ee983a1ba9d1a6a5f2edb20e22ebe4ace3b7b98c295ee98622e0e90c294d0ec",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "aaffe9cb79c96fa612ce20ecb44e779974a9f3c4ae5acc545314634b3b1e1494",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_sequence_failure_keeps_ar0\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_closure_20261028\\tests_full_v1\\test_sequence_failure_keeps_ar1\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "aff1712a29da69b9fbf7aeaca75eb2214db3384d40da1c5693835e45f24dc53b",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "aff1712a29da69b9fbf7aeaca75eb2214db3384d40da1c5693835e45f24dc53b",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "e8f7f91afb6d1717275503f116705de833d126e2119f2fe04b9be4e5ad68b8b1",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "aff1712a29da69b9fbf7aeaca75eb2214db3384d40da1c5693835e45f24dc53b",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "d7f6f236030d2fbca9860d27d171a9eee3b5b02d1651d0a7437f09506f4e8c1d",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_sequence_failure_keeps_ar0\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_final\\test_sequence_failure_keeps_ar1\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "c6411da12490a4af554a23386a64b12b985c29934d63ae2a8016984093536410",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "c6411da12490a4af554a23386a64b12b985c29934d63ae2a8016984093536410",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "f353ef1217a7363e925be33c713a4a3ca0d5e1b5b0416b7635c5a642de250174",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "c6411da12490a4af554a23386a64b12b985c29934d63ae2a8016984093536410",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "88407e118a4cc983aacbb6bd26b0d901801fde8b79f0bc3e5067dbf681a69745",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_sequence_failure_keeps_ar0\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_guard_final\\test_sequence_failure_keeps_ar1\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_safety_gate\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "f025681641afb7ccd8cec748ac9187d1948888c1ec2f27e3755c226e32bb1244",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_safety_gate\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "f025681641afb7ccd8cec748ac9187d1948888c1ec2f27e3755c226e32bb1244",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_safety_gate\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "f025681641afb7ccd8cec748ac9187d1948888c1ec2f27e3755c226e32bb1244",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_safety_gate\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "3c19ffc5af976177bbc31f01a02fec40eb757f7c17e59c9d6e7bcbc002a94dcd",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_safety_gate\\test_sequence_failure_keeps_ar0\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_execution_20261028\\tests_safety_gate\\test_sequence_failure_keeps_ar1\\manifest.json",
+      "sha256": "cceb6c919f90dd30cd3cad4ce94c37ec759f33bb07582f02cac0eebac308b687",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\continuous_recovery_development_v1\\manifest.json",
+      "sha256": "0fd518ba6c3464258d8f54288bb39cf49eefb528fb7adabc31588571349a2671",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\continuous_recovery_development_v2\\manifest.json",
+      "sha256": "2cfc926c58d1d3622b2e63572294dd96b415ee899476cded6168cfb1982d9630",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\continuous_recovery_development_v3\\manifest.json",
+      "sha256": "4134b09e414733e64afe5bf9da9569e1daac67f5f341784b023e3359770b6a64",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\continuous_recovery_development_v4\\manifest.json",
+      "sha256": "b7450c06f0167f09f70d94ec2365a059289ab3b7e43e5bac605dfb35e5fe6a21",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1\\manifest.json",
+      "sha256": "1f0bbc2615f02980baca8a3da27fe140f27d8a7c20d589b3f18d681066a20f27",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1_audit\\manifest.json",
+      "sha256": "7b139d906f412febc5a2cee54be40e326c8788d4b90db3b3b79fe1438743d4d9",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_confirmation_v1\\manifest.json",
+      "sha256": "f887bf841fbaa314f2ff2c6bc7910c8c902a00ea449249bab082832ce7ebfe73",
+      "namespaces": [
+        2026102603,
+        2026102910
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_development_v1\\manifest.json",
+      "sha256": "268bc7875110ffbbaf06cc63c7ee629534fa0b7cae054519c57860ccbf1936f5",
+      "namespaces": [
+        2026102603,
+        2026102826
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\sequence_long_development_v1\\manifest.json",
+      "sha256": "2fc274e7030f943cce8792d7959cf919856a5c4f3e13b4c61d79ff6b63219716",
+      "namespaces": [
+        2026102603,
+        2026102911
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\service_exchange_development_v1\\manifest.json",
+      "sha256": "3b6e6319637a297e5233465d0562bda3b1fd4438c192b671b9e6d7b3cbba56f9",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\session_integration_development_v1\\manifest.json",
+      "sha256": "374270938170a9296b5ae3bb191bbeda00ce4475b4c0ca67ae41e48c7f81f37a",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\session_integration_development_v2\\manifest.json",
+      "sha256": "37e86e110ad23c9da42d6388776d6175e9128c0710afe058c6571260f1fd1920",
+      "namespaces": [
+        2026102603
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\session_public_development_v1\\manifest.json",
+      "sha256": "e7b6b65833100391d9f2607f63042e449704ad8414ca5e766bdd57090cf37f1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\session_recovery_development_v1\\manifest.json",
+      "sha256": "6549c9600cc27b9559f701031558792033760ef0495807ce9003644232269e6c",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\session_recovery_development_v2\\manifest.json",
+      "sha256": "67b07dbff1b161e1401b53cf14b460f4b14b8d5033e5d2c01c4e1b1a8f2bd87d",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_refinement_development_v1\\manifest.json",
+      "sha256": "b12606b6fb812b75ddfc2c9d3f62727629ac3c51ce960e113e2bf288233dfc2a",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\support_refinement_development_v2\\manifest.json",
+      "sha256": "4c5f9e5ba0b25f3a1089a2f38e72c9a3c34061e1afac0ac45d77a610fee3cbcd",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_confirmation_v2\\manifest.json",
+      "sha256": "17b123b73451e6f19a1cd559826992f8044d926ce9cd5cb38536807449552ca1",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_demand_pilot_v1\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_execution_confirmation_v3\\manifest.json",
+      "sha256": "34aa668c05c64cf0cad77af17e8abc76959f1ec0fe0e98cd9b858b008d011323",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_nonconvex_record_rebuild_v1\\manifest.json",
+      "sha256": "9d5f998dedc688b4141f06a03ce18a8111d20d55f3fba6fad164844a2bb97204",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "bbb55e016ae50ab097f42210d5cf108bb5b510cee16f3542532ec878e37d55c7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "bbb55e016ae50ab097f42210d5cf108bb5b510cee16f3542532ec878e37d55c7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "3bedf49801e59bf5a68ab1beef93fc5f9d7d8b8fa8746e85deb8fe8b06041623",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "bbb55e016ae50ab097f42210d5cf108bb5b510cee16f3542532ec878e37d55c7",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "8601ef169f23d882ef41de99d38ff209152ca52982f3f3d24c07717014a2a349",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_305\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "b9d1e136d46c627a477bcd0b34bc25d046d8c96cf5ce5942dd702ba249df1baf",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "b9d1e136d46c627a477bcd0b34bc25d046d8c96cf5ce5942dd702ba249df1baf",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "9e9ea6ac1c36837b5f9c79daaeef840d805e4472382ed0bba8cefea607297377",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "b9d1e136d46c627a477bcd0b34bc25d046d8c96cf5ce5942dd702ba249df1baf",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "fc2cf08fb5d3043bd9838895da5da94f14772dfd75cf94a141e49cdb588e52af",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\final_all\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "1b094d9b8f2be0ea02c0130b22fdf4aded688a3b844fba77144a0cd2e1b12a91",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_freeze_36_pairs_windows_b0\\pilot\\manifest.json",
+      "sha256": "17ac20c51be8c211f4a8afe7b390724105b7cd0310a567b07d8e905d04d81b18",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "1b094d9b8f2be0ea02c0130b22fdf4aded688a3b844fba77144a0cd2e1b12a91",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_hotspot_changes_spatial_d0\\study\\manifest.json",
+      "sha256": "0d15d8c678a84a655eaaf2f1f23be24631cd9b4988d75fa51d8d54979f33a1b1",
+      "namespaces": [
+        2026102603,
+        2026102705
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "1b094d9b8f2be0ea02c0130b22fdf4aded688a3b844fba77144a0cd2e1b12a91",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_runtime_amendment_must_bi0\\manifest.json",
+      "sha256": "2f057bef3b56b4458275a4a6aa796c052d309f3316ed28d6767cc5644a9f0b1b",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "d16769969bc7685d1d8e4ef8b43dbbf8bb1bf43eca735cb065522a2696c27ea5",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\full_v2\\test_seed_audit_excludes_actua0\\runs\\step1_nonconvex_old\\manifest.json",
+      "sha256": "8034f7df1f2c38848d3a92da409949aa4630b1b65db33939850aab4334bc74aa",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\representation\\test_failure_artifacts_and_mis0\\expected-failure\\manifest.json",
+      "sha256": "25d85f134f2332d4513c65fda6cafa650af660a1316d35c8069eadc988eace3f",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\representation\\test_frozen_manifest_separates0\\frozen\\manifest.json",
+      "sha256": "25d85f134f2332d4513c65fda6cafa650af660a1316d35c8069eadc988eace3f",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\representation\\test_program_error_is_saved_an0\\program-error\\manifest.json",
+      "sha256": "25d85f134f2332d4513c65fda6cafa650af660a1316d35c8069eadc988eace3f",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_pause_optimize_20261028\\tests\\representation\\test_saved_run_replays_and_ret0\\execution\\manifest.json",
+      "sha256": "d110aa84cd6672e404564570d6e91c57bb8bebb240768b632c7a4fa7eb42d801",
+      "namespaces": [
+        2026102601
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_target_domain_consistency\\legacy_supplement\\nonconvex_confirmation_v2\\reconstructed\\manifest.json",
+      "sha256": "58fbca8b1e215d6d12a51eb410fc8239bfa1d76f7036e65944ba0070bbd6058d",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_target_domain_consistency\\legacy_supplement\\nonconvex_record_rebuild_v1\\reconstructed\\manifest.json",
+      "sha256": "5bf567246a896cbb88aac7782a31f3ba1b79d61371b4b69842e654649aa33f39",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_target_domain_consistency\\reconstructed_v3\\manifest.json",
+      "sha256": "34aa668c05c64cf0cad77af17e8abc76959f1ec0fe0e98cd9b858b008d011323",
+      "namespaces": []
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\translation_service_20261028\\confirmation_v2\\manifest.json",
+      "sha256": "530ecc00d8b3def099cf39b584489be1eebd3b9a0a8cb0d6dfcb62cd9107f066",
+      "namespaces": [
+        2026102603,
+        2026102811
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\translation_service_20261028\\development_v1\\manifest.json",
+      "sha256": "e5fa72eabd30e3c13d00dda2bec6d0d3e8b644f15d302d92d64c3dd332756717",
+      "namespaces": [
+        2026102603,
+        2026102802
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\translation_service_20261028\\guarded_development_v3\\manifest.json",
+      "sha256": "15f5e1d5598e2c575d9f1e761a6979cbb101184db44ef499d1676e2abd3c1ecf",
+      "namespaces": [
+        2026102603,
+        2026102809
+      ]
+    },
+    {
+      "path": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\translation_service_20261028\\tracking_development_v2\\manifest.json",
+      "sha256": "0539654bf2160965e57aebe10777aec8304fcb3b134d290cf643428aa60b7006",
+      "namespaces": [
+        2026102603,
+        2026102807
+      ]
+    }
+  ],
+  "scope": "local indexed manifests only; not other machines or all unindexed history",
+  "input_content_overlap_checked": false,
+  "method_outcomes_generated": false
+}

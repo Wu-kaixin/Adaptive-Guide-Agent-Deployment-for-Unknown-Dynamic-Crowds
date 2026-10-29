@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "generic_polygon_inner_bound_refuted": true,
+    "true_physical_inputs": 80,
+    "old_observation_frames": 640,
+    "groups_scanned": 2520,
+    "maximum_source_turn_ratio": 27.65393544113779,
+    "groups_above_1_01_nominal_turn": 2519,
+    "actual_source_family_witnesses": 0,
+    "new_motion_executions": 0,
+    "new_independent_samples": 0,
+    "scope": "generic counterexample and finite original occupied-polygon family scan; no global bound repaired or certificate validated",
+    "restricted_family_proof_from_no_witness": false,
+    "controller_thresholds_changed": false
+  },
+  "generic_witness": {
+    "witness": {
+      "source_vertex": [
+        20.0,
+        10.0
+      ],
+      "source_vertex_index": 1,
+      "turn_angle_rad": 0.14628040793277478,
+      "nominal_quantum_rad": 0.09817477042468103,
+      "fillet_segments": 1,
+      "actual_increment_rad": 0.14628040793277478,
+      "claimed_inner_radius_m": 0.9987954562051724,
+      "local_chord_radius_m": 0.9973264474458289,
+      "point": [
+        20.072933314981636,
+        9.004607416581472
+      ],
+      "exact_inside_claimed_disk": true,
+      "exact_outside_buffer_polygon": true,
+      "squared_point_vertex_distance_fraction": "78921205957067801821457052869/79228162514264337593543950336",
+      "claimed_squared_radius_fraction": "20233576930657650115690985431681/20282409603651670423947251286016",
+      "shapely_covers_point": false,
+      "distance_outside_actual_buffer_m": 0.0007345043796711271
+    },
+    "shapely": "2.2.0",
+    "geos": "3.14.1"
+  },
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\buffer_bound_development_v1\\manifest.json": "13ecea127f56202fec6b381fda795096a3b5150e45b05063fcb2e1a5ab16fae9",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\buffer_bound_development_v1\\seal.json": "b859d85cf19ec23cb7de317cc709c35ae29dff86a184ab63ba8e8e5b37eff790",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\buffer_bound_development_v1\\summary.json": "b211e58b21cb866c0388f234ca87e23191b290096c68eacbee1f8037c47b258c",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\buffer_bound_development_v1\\records.json": "cd3101f5edfdcf07295d5d25640289db1d06edaba20ec351a934c66ae1b0c288",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\buffer_bound_development_v1\\generic_witness.json": "9d3f3800465c0780964a1ac32a021d59ea1261ea1b6701d59821397fa98d9c53",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\buffer_bound_development_v1\\generic_witness.npz": "6b5366397338cd8706844db0e6804cf6433f1dbac4a11e7285c8d33b5dd93e62"
+  },
+  "actual_source_family_refutation_claimed": false,
+  "general_model_proof_repaired": false,
+  "goal_complete": false
+}

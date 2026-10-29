@@ -1,9 +1,10 @@
-"""Observation-only support enclosure for the ORIGINAL external reference.
+"""Observation-only candidate supports for the ORIGINAL external reference.
 
-Unlike the anchored translation model, this supports independent bounded person
-errors. Bounds are deliberately distribution-free and may be uninformative.
-The theorem is geometric; this implementation uses ordinary float64 geometry,
-not a formally verified interval kernel.
+Current round-buffer transfer premises require a restricted-family proof.
+A generic polygon counterexample is recorded by buffer_bound_development_v1.
+Builders are therefore quarantined from runtime service certification; frozen
+older experiments preserve their source and empirical outcomes unchanged.
+Dominance remains a conditional theorem for a correctly supplied support set.
 """
 from dataclasses import dataclass
 
@@ -25,7 +26,11 @@ class ReferenceSupport:
 
 
 def build_support(measurement, groups, config):
-    """Enclose every admissible true resampled reference, when it is defined.
+    """Build an experimental support, retaining its unproved transfer status.
+
+    The following construction rationale is conditional on buffer inclusions
+    that are not established for every generated source polygon. Empirical
+    containment tests do not discharge this mathematical proof obligation.
 
     Outer: every construction disk is inside its observation-centred envelope;
     closing is a subset of positive dilation, and hole filling a subset of its
@@ -38,6 +43,12 @@ def build_support(measurement, groups, config):
     obs, epsilon = measurement.observation, measurement.position_error_bound_m
     rows = tuple(g.rows for g in groups)
     grouping = partition_stability_certificate(obs, rows, config['group_link_m'], epsilon)
+    identity_method = config.get('support_identity', 'reduced_link_v1')
+    if identity_method == 'collective_coverage_v1':
+        from .collective_identity import certificate as identity_certificate
+        grouping = identity_certificate(obs, rows, config['group_link_m'], epsilon, grouping)
+    elif identity_method != 'reduced_link_v1':
+        raise ValueError('Unknown observable identity certificate')
     cosine = np.cos(np.pi / 64)
     # A true split of an observed connected component has an observed link
     # across the split. Its true endpoints are at most link+2*eps apart.
@@ -76,17 +87,52 @@ def build_support(measurement, groups, config):
         details.append({'outer_area_m2': outer.area, 'support_area_m2': region.area,
                         'inner_disk_count': len(inner), 'closing_enclosure': closing_mode,
                         'closing_outer_error_m': closing_reach})
+    enclosure = config.get('support_enclosure', 'convex_outer_individual_inner_v1')
+    if enclosure == 'monotone_sandwich_v1':
+        from .sandwich_reference_support import group_enclosure
+        for index, group_rows in enumerate(rows):
+            sandwich, evidence = group_enclosure(measurement, group_rows, config)
+            original = regions[index]
+            original_area = original.area
+            candidate = original.intersection(sandwich)
+            if candidate.is_empty or not candidate.is_valid:
+                raise ValueError('Invalid intersection of original-reference enclosures')
+            outside = candidate.difference(original)
+            if outside.is_empty:
+                regions[index] = candidate
+                evidence['strict_subset_check'] = 'passed'
+            else:
+                # An overlay result need not preserve strict finite-coordinate
+                # containment. Reject this tightening rather than waive it.
+                evidence.update(strict_subset_check='rejected_use_original',
+                    rejected_difference_wkb_hex=outside.wkb_hex,
+                    rejected_difference_area_m2=outside.area,
+                    rejected_difference_length_m=outside.length)
+            details[index]['monotone_sandwich'] = evidence
+            details[index]['base_support_area_m2'] = original_area
+            details[index]['support_area_m2'] = regions[index].area
+    elif enclosure != 'convex_outer_individual_inner_v1':
+        raise ValueError('Unknown original-reference support enclosure')
     return ReferenceSupport(tuple(regions), rows, grouping, epsilon,
                             {'groups': details, 'numeric_construction_pad_m': pad,
                              'allow_conditional_identity': bool(config.get('support_conditional_identity',False)),
+                             'enclosure': enclosure,
                              'reference': 'original_world_external_resampled_curve_and_any_nonnegative_demand',
-                             'condition': 'original reference construction is defined and group identity is stable'})
+                             'condition': 'original reference construction is defined and group identity is stable',
+                             'enclosure_transfer_status': 'UNPROVEN_GENERIC_BUFFER_BOUND',
+                             'runtime_certification_quarantined': True,
+                             'proof_gap_evidence': 'runs/step1_foundation_20261029/buffer_bound_development_v1'})
 
 
 def certificate(support, retained, greedy, radius, delta=.002, tracking_bound=1e-10):
     retained, greedy = np.asarray(retained, float).reshape(-1, 2), np.asarray(greedy, float).reshape(-1, 2)
     if not np.isfinite(retained).all() or not np.isfinite(greedy).all() or not np.isfinite([radius, delta, tracking_bound]).all() or radius <= tracking_bound or tracking_bound < 0 or delta < 0:
         raise ValueError('Invalid support certificate inputs')
+    if support.evidence.get('runtime_certification_quarantined', False):
+        return {'status': 'UNCERTIFIED', 'accept_retained': False,
+                'reason': 'support_enclosure_transfer_unproven', 'groups': [],
+                'enclosure_transfer_status': support.evidence['enclosure_transfer_status'],
+                'scope': 'candidate geometry may be audited, but empirical tests do not establish all-world containment'}
     if not (support.grouping_certificate['certified'] or (support.evidence.get('allow_conditional_identity',False) and support.grouping_certificate.get('identity_given_original_reference_defined'))):
         return {'status': 'UNCERTIFIED', 'accept_retained': False, 'reason': 'group_identity_not_certified', 'groups': []}
     def covered(robots, outward):

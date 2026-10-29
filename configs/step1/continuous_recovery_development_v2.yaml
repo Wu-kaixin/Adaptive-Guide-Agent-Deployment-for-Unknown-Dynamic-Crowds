@@ -1,0 +1,14 @@
+protocol: continuous_recovery_development_v2
+original_study: runs/step1_closure_20261028/sequential_confirmation_v3
+previous_study: runs/step1_foundation_20261029/continuous_recovery_development_v1
+selection: unresolved_v1_actions_development_only
+expected_actions: 3
+policies: [verified_synchronous_geodesic_v2, adaptive_forward]
+routing: {}
+maximum_workers: 3
+numerical_threads: 1
+evidence: selected_development_actions_not_independent_confirmation
+scientific_retries: 0
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION, MODEL_BOUND_VIOLATION]
+primary: fixed_action_safe_deployment_completion
+limitations: three_method_actions_share_one_physical_input_and_may_share_exact_state

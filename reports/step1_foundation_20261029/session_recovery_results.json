@@ -1,0 +1,62 @@
+{
+  "v1": {
+    "completion": {
+      "comparisons": {
+        "positions": true,
+        "velocities": true,
+        "assignment": true,
+        "targets": true,
+        "target_groups": true,
+        "metrics": true,
+        "original_event_preserved": true
+      },
+      "all_match": true,
+      "new_independent_samples": 0,
+      "physical_audits_all_match": true,
+      "physical_events": 4,
+      "accounted_deliveries": 4,
+      "full_task_success": 0,
+      "expected_refusals": 3,
+      "original_event_receipt_sha256": "511816203903455f734a9b8670e3c70a742d1be958295d6be7218ce4bee284fb",
+      "limits": "Completed-event logical simulation restart only; not arbitrary power loss or live actuator recovery"
+    },
+    "artifact_sha256": {
+      "manifest.json": "6549c9600cc27b9559f701031558792033760ef0495807ce9003644232269e6c",
+      "seal.json": "9a7312c0b20da10535822eb5e1d6ff0babbca1bed42268b1d23a5de05c945cc4",
+      "completion.json": "3404f245b9860ae037024ead085c0f1ec842e956e652464bd781a0c1866a64da",
+      "uninterrupted_physical_audit.json": "ead28c38a8fa712d7c18e8d38d7d6ec4db0241ef3201b151fa11f0bd4170a518",
+      "interrupted_physical_audit.json": "ead28c38a8fa712d7c18e8d38d7d6ec4db0241ef3201b151fa11f0bd4170a518",
+      "rejection_receipts.json": "dfa288ee617350b01459d4a4607c4d0e1f2abfed643e4178fe457e5c04dec44b"
+    }
+  },
+  "v2": {
+    "completion": {
+      "comparisons": {
+        "positions": true,
+        "velocities": true,
+        "assignment": true,
+        "targets": true,
+        "target_groups": true,
+        "metrics": true,
+        "original_event_preserved": true
+      },
+      "all_match": true,
+      "new_independent_samples": 0,
+      "physical_audits_all_match": true,
+      "physical_events": 4,
+      "accounted_deliveries": 4,
+      "full_task_success": 0,
+      "expected_refusals": 4,
+      "original_event_receipt_sha256": "d0de33350e37c51de5452a0957f28dfdae0559e81bd3a7a9a936421dff783a07",
+      "limits": "Completed-event logical simulation restart only; not arbitrary power loss or live actuator recovery"
+    },
+    "artifact_sha256": {
+      "manifest.json": "67b07dbff1b161e1401b53cf14b460f4b14b8d5033e5d2c01c4e1b1a8f2bd87d",
+      "seal.json": "fdc9b1565b6f02d22238a4a5f3e6cc7058751e080c9ea7893fe6fd717c1dfc30",
+      "completion.json": "2e9a4fa04a1f93b3744d69903458de5ef689ed70475c129ccd9f7c3283d4e522",
+      "uninterrupted_physical_audit.json": "cb2d3de7b589e416506dc5bd0c6509035fe86b548b97d49e30649e1825d8ca0f",
+      "interrupted_physical_audit.json": "cb2d3de7b589e416506dc5bd0c6509035fe86b548b97d49e30649e1825d8ca0f",
+      "rejection_receipts.json": "fb3a37db532870e4f821964325eab2b639fc80cc3c8951e8cd830462629afb49"
+    }
+  }
+}

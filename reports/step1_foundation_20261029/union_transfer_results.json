@@ -1,0 +1,309 @@
+{
+  "captured_at": "2026-10-29T13:23:56.439383+00:00",
+  "goal_complete": false,
+  "versions": {
+    "v1": {
+      "study": "runs\\step1_foundation_20261029\\union_transfer_development_v1",
+      "manifest_sha256": "75db95a7d2404936c1224c131d67f16f9e91211d8f0de185c4585b889eb4451e",
+      "completion_sha256": "2a8e3cbb7ffcc4d17dfae946bbfff7a485c4fd6642a6ed512c532591c1145d80",
+      "summary": {
+        "recorded_inputs": 720,
+        "scheduled_inputs": 720,
+        "not_executed_inputs": 0,
+        "groups_checked": 2520,
+        "disks_coordinates_checked": 4014943,
+        "reference_coordinates_checked": 481186,
+        "refuted_inputs": 0,
+        "stopped": false,
+        "union_width_inflation_range": [
+          30022.622987118633,
+          331656.70841099083
+        ],
+        "new_native_geometry_calls": 0,
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "component_limit_proved": false,
+        "original_reference_enclosed": false,
+        "service_certificate": false,
+        "goal_complete": false,
+        "not_checked_groups": 0
+      },
+      "summary_sha256": "4429d4729ae310cf98bc8b62bea9ee84e46fe9e2a3f7cb738694e1be4b0a8dc6",
+      "audit": {
+        "all_match": true,
+        "inputs_checked": 720,
+        "people_source_formulas": 79560,
+        "groups_checked": 2520,
+        "disks_coordinates_checked": 4014943,
+        "reference_coordinates_checked": 481186,
+        "new_native_geometry_calls": 0,
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "component_limit_proved": false,
+        "original_reference_enclosed": false,
+        "service_certificate": false
+      },
+      "audit_manifest_sha256": "573038ae1606a1db3908651c32fc9d8054121c76bbaa76bab4f2dfc9744367a8",
+      "audit_result_sha256": "683a49266bc7d5bda9f8bd31f32ee1b2c00e283ba397a683cf200f779b69eb32",
+      "upstream_files": 67,
+      "constructor_source_matches_parent": true,
+      "all_output_receipts_and_snapshots_verified": true
+    },
+    "v2": {
+      "study": "runs\\step1_foundation_20261029\\union_transfer_development_v2",
+      "manifest_sha256": "8d1b16ddfbb4e4da8a9f667389befba4f273552519dd2afad473d257051551b4",
+      "completion_sha256": "82a194ff41da81b2d57ec230d805db1b5dbe28b5514e6e4bad3e3727e90b9a80",
+      "summary": {
+        "recorded_inputs": 720,
+        "scheduled_inputs": 720,
+        "not_executed_inputs": 0,
+        "groups_checked": 2520,
+        "disks_coordinates_checked": 4014943,
+        "reference_coordinates_checked": 481186,
+        "refuted_inputs": 0,
+        "stopped": false,
+        "union_width_inflation_range": [
+          469.103484173728,
+          1295.5340172304307
+        ],
+        "new_native_geometry_calls": 0,
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "component_limit_proved": false,
+        "original_reference_enclosed": false,
+        "service_certificate": false,
+        "goal_complete": false,
+        "not_checked_groups": 0
+      },
+      "summary_sha256": "79f1186bd96a4cc5680bd7f674b4ff8ce49a6da768703229d1b989690b7340e6",
+      "audit": {
+        "all_match": true,
+        "inputs_checked": 720,
+        "people_source_formulas": 79560,
+        "groups_checked": 2520,
+        "disks_coordinates_checked": 4014943,
+        "reference_coordinates_checked": 481186,
+        "new_native_geometry_calls": 0,
+        "new_independent_samples": 0,
+        "new_motion_executions": 0,
+        "component_limit_proved": false,
+        "original_reference_enclosed": false,
+        "service_certificate": false
+      },
+      "audit_manifest_sha256": "4919c744b77238109f1ad8e27c8a4e1970020b2ba34f5de7e55d620030007509",
+      "audit_result_sha256": "683a49266bc7d5bda9f8bd31f32ee1b2c00e283ba397a683cf200f779b69eb32",
+      "upstream_files": 67,
+      "constructor_source_matches_parent": true,
+      "all_output_receipts_and_snapshots_verified": true
+    }
+  },
+  "comparison": {
+    "same_inputs": true,
+    "same_source_person_enclosures": true,
+    "strict_subsets": 720,
+    "width_sum_reduction_range": [
+      64.00000000000009,
+      256.00000000000045
+    ],
+    "cascade_depths": [
+      6,
+      8
+    ]
+  },
+  "process_identity_checks": {
+    "runs\\step1_foundation_20261029\\union_transfer_development_v1\\process.json": {
+      "record": {
+        "pid": 23640,
+        "create_time": 1793270450.066738,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.union_transfer_study",
+          "--protocol",
+          "configs/step1/union_transfer_development_v1.yaml",
+          "--study",
+          "runs/step1_foundation_20261029/union_transfer_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v1\\worker_process.json": {
+      "record": {
+        "pid": 9280,
+        "create_time": 1793270451.1096528,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.union_transfer_study import execute;execute(p)",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\union_transfer_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v1_audit\\process.json": {
+      "record": {
+        "pid": 33364,
+        "create_time": 1793270568.1429212,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.union_transfer_study",
+          "--audit-of",
+          "runs/step1_foundation_20261029/union_transfer_development_v1",
+          "--study",
+          "runs/step1_foundation_20261029/union_transfer_development_v1_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v1_audit\\worker_process.json": {
+      "record": {
+        "pid": 10564,
+        "create_time": 1793270569.0841162,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.union_transfer_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\union_transfer_development_v1_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v2\\process.json": {
+      "record": {
+        "pid": 35024,
+        "create_time": 1793270656.2803724,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.union_transfer_study",
+          "--protocol",
+          "configs/step1/union_transfer_development_v2.yaml",
+          "--study",
+          "runs/step1_foundation_20261029/union_transfer_development_v2"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v2\\worker_process.json": {
+      "record": {
+        "pid": 7728,
+        "create_time": 1793270657.3691916,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.union_transfer_study import execute;execute(p)",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\union_transfer_development_v2"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v2_audit\\process.json": {
+      "record": {
+        "pid": 25944,
+        "create_time": 1793270700.3940775,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.union_transfer_study",
+          "--audit-of",
+          "runs/step1_foundation_20261029/union_transfer_development_v2",
+          "--study",
+          "runs/step1_foundation_20261029/union_transfer_development_v2_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\union_transfer_development_v2_audit\\worker_process.json": {
+      "record": {
+        "pid": 4240,
+        "create_time": 1793270701.4074657,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.union_transfer_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\union_transfer_development_v2_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    }
+  },
+  "source_preparation": {
+    "flat_cache_conflicts": [
+      "src/operation/overlayng/PolygonBuilder.cpp"
+    ],
+    "fixed_before_experiment_freeze": true,
+    "full_paths_preserved": true,
+    "old_cache_and_locks_unchanged": true,
+    "new_inventory_items": 36,
+    "lookup_failures": 0
+  },
+  "engineering": {
+    "pytest_passed": 548,
+    "pytest_skipped": 1,
+    "elapsed_s": 95.15,
+    "pytest_log": "runs\\step1_foundation_20261029\\union_transfer_pytest.log",
+    "pytest_log_sha256": "1934e7c8c3185bd0a94fbd7cf02350691c249abce5162eb4ff4f4fa202fd2a15",
+    "pip_check": true,
+    "diff_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177,
+    "old_review_hash_verifier_pass": true
+  },
+  "component_limit_proved": false,
+  "all_inputs_defined": false,
+  "original_reference_enclosed": false,
+  "runtime_service_gate_changed": false,
+  "new_native_geometry_calls": 0,
+  "new_independent_samples": 0,
+  "new_motion_executions": 0,
+  "files": {
+    "docs/STEP1_UNION_COORDINATE_ENCLOSURE.zh.md": "7654df1a54064484b43c11ea9b0864791918bc06d26b68b7ff59acfb9a2b33bd",
+    "src/udc/multigroup/union_coordinate_enclosure.py": "a7d7843cab6980df50bf542f402f294d7676bf448da0530344ca150b956b5276",
+    "src/udc/analysis/union_transfer_audit.py": "cecb57085b448f29f1315840971b8b2be9743fa5dc95505634480f80c34f91c8",
+    "src/udc/experiments/union_transfer_study.py": "9cf3f9c34780ef71b4bdfedffb1bdafc885ddaa277d1d437d81b3eeb9ad8d60f",
+    "tests/test_union_coordinate_enclosure.py": "5d0f0d5434f813d09572c3767b80f3fa0b69da0e49fb4c3e617a0e79821f0cbb",
+    "reports/step1_foundation_20261029/union_source_asset_lookup.json": "b3296d4cae81ae2aeb6d500281a6dfa4fea9297ad12b68781cccd1f8d6e5d0e5",
+    "reports/step1_foundation_20261029/union_source_asset_lookup_v2.json": "aa2fcea94efafe9d59091a40fcadc888a81f2ec98159b496fcb036df5432f792"
+  },
+  "scheduler_verified": {
+    "id": "step-1-25",
+    "name": "Step 1 闭环研究每小时推进",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=60",
+    "target_thread_id": "01a18381-34af-7891-ab55-65f5f544e4dc"
+  }
+}

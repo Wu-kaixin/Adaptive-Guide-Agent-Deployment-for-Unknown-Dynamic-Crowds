@@ -1,0 +1,44 @@
+{
+  "evidence": "posthoc_fixed_old_action_feasible_world_development",
+  "new_independent_samples": 0,
+  "new_motion_executions": 0,
+  "controller_certificate_implemented": false,
+  "summary": {
+    "evidence": "posthoc_fixed_old_action_feasible_world_development",
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "selected_pairs": 20,
+    "tested_candidates": 640,
+    "admissible_reference_candidates": 640,
+    "witness_pairs": 5,
+    "witness_candidates": 25,
+    "delta": 0.002,
+    "witness_margin": 1e-05,
+    "selection": "20 nearest-budget net-qualified nonidentical nonzero-perturbation old pairs; posthoc development, not random sampling",
+    "same_all_four_observations_and_fixed_layouts": true,
+    "controller_certificate_implemented": false,
+    "finite_search_failure_is_certificate": false,
+    "scope": "float64 terminal-service model witness; not interval proof, motion/recovery validation or independent confirmation"
+  },
+  "audit": {
+    "study_manifest_sha256": "1f0bbc2615f02980baca8a3da27fe140f27d8a7c20d589b3f18d681066a20f27",
+    "worlds_reconstructed": 660,
+    "witness_pairs": 5,
+    "witness_candidates": 25,
+    "max_cross_integrator_mass_balance_residual": 4.388850394221322e-16,
+    "mismatches": [],
+    "all_match": true,
+    "scope": "float64 reconstruction and separate service integration; not formal interval proof",
+    "new_independent_samples": 0,
+    "new_motion_executions": 0
+  },
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1\\manifest.json": "1f0bbc2615f02980baca8a3da27fe140f27d8a7c20d589b3f18d681066a20f27",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1\\seal.json": "7920d24a6829c117d5ef701fcd146345890a12e22c0a00c8aa7986e9277ceed0",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1\\summary.json": "7899b39889fefe8577bae4b62328a21ff1ff2c9b156cb1e4498aafd3afd9a934",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1\\results.json": "ec43b4aed3eac08ad0e76783d3b5bbc5ea391f31b818c18f0ad9375037c1510c",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1_audit\\manifest.json": "7b139d906f412febc5a2cee54be40e326c8788d4b90db3b3b79fe1438743d4d9",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1_audit\\seal.json": "c0459aabaa3682d1f8da26fb3928aa70cd3f639c02e28025727f6ed0c6556a72",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\feasible_world_development_v1_audit\\results\\audit.json": "77d784034f5c696b4a63bfd652aacd9145d92f6a5a2022912fcd94b20155fcf9"
+  }
+}

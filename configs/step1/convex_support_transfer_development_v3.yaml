@@ -1,0 +1,11 @@
+protocol: convex_support_transfer_development_v3
+original: runs/static_phase_retention_20261027/main_v1
+workers: 8
+numerical_threads: 1
+stop_on_first_refuted_stage: true
+directions: [[1,0],[2,1],[1,1],[1,2],[0,1],[-1,2],[-1,1],[-2,1],[-1,0],[-2,-1],[-1,-1],[-1,-2],[0,-1],[1,-2],[1,-1],[2,-1]]
+direction_mode: all_source_hull_facets
+interpolation_enclosure: rational_binary64_v1
+new_independent_samples: 0
+new_motion_executions: 0
+scope: all_exact_source_hull_facet_planes_offset_tests_are_necessary_not_sufficient_for_round_dilation

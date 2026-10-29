@@ -1,5 +1,7 @@
 # Step 1 可复核交付索引
 
+2026-10-30当前工程基线与新数据获取／验证见[研究版本发布](../reports/step1_release_20261030/README.zh.md)。下文旧交付清单和索引快照保留原版本语义，不覆盖新最终实验。
+
 机器可读清单是 [step1_delivery_index.json](step1_delivery_index.json)。`present` 必须是可交付文件。
 `runtime_environment` 按Windows/Linux选择本项目的`.venv`解释器；环境本身不进入Git。
 `local_gitignored` 是原机器的可选本地工件，是否存在不能由`runs/`根目录推断；`local_presence_at_export_20261029`记录本次实际检查，不代表其他机器可用。

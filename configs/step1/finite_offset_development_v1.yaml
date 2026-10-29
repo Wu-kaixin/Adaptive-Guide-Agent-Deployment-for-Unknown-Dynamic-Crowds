@@ -1,0 +1,16 @@
+protocol: finite_offset_development_v1
+parent: runs/step1_foundation_20261029/local_offset_interval_development_v2
+parent_audit: runs/step1_foundation_20261029/local_offset_interval_development_v2_audit/results/audit.json
+source_cache: .tmp/geos_3141_sources
+include_all_parent_offset_cases: true
+include_parent_zero_length_witnesses: true
+fixture_edge_exponents: [-600,-540,-538,-537,-536,-500,0,500,600]
+include_tiny_unit_normal_refutation_fixture: true
+include_coincident_fixture: true
+offset_distance_m: 0.4
+side: -1
+association: separate_binary64_basic_operations_correctly_rounded_sqrt
+new_native_geometry_calls: 0
+new_independent_samples: 0
+new_motion_executions: 0
+runtime_service_gate_changed: false

@@ -1,0 +1,18 @@
+protocol: round_buffer_source_development_v1
+parent: runs/step1_foundation_20261029/convex_support_transfer_development_v2
+parent_audit: runs/step1_foundation_20261029/convex_support_transfer_development_v2_audit/results/audit.json
+source_cache: .tmp/geos_3141_sources
+stages:
+  - {name: closing_positive, source: disks, target: closing_positive, distance_field: closing_radius_m, sign: 1}
+  - {name: closing_negative, source: closing_positive, target: closed, distance_field: closing_radius_m, sign: -1}
+  - {name: deployment_offset, source: occupied, target: offset, distance_field: offset_m, sign: 1}
+closing_factors: [1,80]
+weighted_identity_probe_values: [0.1,0.7]
+workers: 4
+numerical_threads: 1
+raw_floating_box_is_all_precision_contract: false
+unknown_precision_stages: 2
+new_native_geometry_calls: 0
+new_independent_samples: 0
+new_motion_executions: 0
+runtime_service_gate_changed: false

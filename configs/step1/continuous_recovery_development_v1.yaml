@@ -1,0 +1,14 @@
+protocol: continuous_recovery_development_v1
+original_study: runs/step1_closure_20261028/sequential_confirmation_v3
+selection: all_serial_assembly_unresolved
+expected_actions: 68
+policies: [verified_synchronous_linear_v1]
+routing: {}
+maximum_workers: 16
+numerical_threads: 1
+evidence: fixed_failed_action_development_not_independent_confirmation
+scientific_retries: 0
+stop_on: [EXPERIMENT_ERROR, SAFETY_VIOLATION, MODEL_BOUND_VIOLATION]
+primary: fixed_action_safe_deployment_completion
+secondary: [rejection_reason, interval_safety, full_task_success, travel_m, simulation_time_s]
+limitations: old_failed_actions_are_development_only_and_not_a_full_sequence_evaluation

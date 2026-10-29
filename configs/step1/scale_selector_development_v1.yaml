@@ -1,0 +1,17 @@
+protocol: scale_selector_development_v1
+parent: runs/step1_foundation_20261029/round_buffer_source_development_v1
+parent_audit: runs/step1_foundation_20261029/round_buffer_source_development_v1_audit/results/audit.json
+coordinate_parent: runs/step1_foundation_20261029/convex_support_transfer_development_v2
+source_cache: .tmp/geos_3141_union_flow_sources
+buffer_precision_digits: [12, 11, 10, 9, 8, 7, 6]
+calibration_decimal_exponents: [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]
+calibration_distances: [-0.4, 0.0, 1.3]
+power_table_exponents: [-20, 24]
+quantizer_stages: 2
+workers: 4
+numerical_threads: 1
+scale_floor_scope: measured_exact_old_source_envelopes_only
+all_admissible_world_scales_proved: false
+runtime_service_gate_changed: false
+new_independent_crowd_inputs: 0
+new_motion_executions: 0

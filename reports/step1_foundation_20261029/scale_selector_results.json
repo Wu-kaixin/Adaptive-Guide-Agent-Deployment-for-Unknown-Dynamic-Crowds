@@ -1,0 +1,197 @@
+{
+  "captured_at": "2026-10-29T13:42:45.695094+00:00",
+  "summary": {
+    "recorded_inputs": 720,
+    "scheduled_inputs": 720,
+    "not_executed_inputs": 0,
+    "stage_transfers": 7560,
+    "saved_output_coordinates": 4705946,
+    "native_point_creations": 7560,
+    "native_selector_calls": 120960,
+    "stopped": false,
+    "refuted_inputs": 0,
+    "minimum_measured_internal_scale": 10000.0,
+    "width_inflation_range": [
+      1.000004116276122,
+      1.0000520095959926
+    ],
+    "calibration_point_creations": 117,
+    "calibration_selector_calls": 1917,
+    "calibration_decimal_comment_differences": 40,
+    "full_native_buffer_or_overlay_calls": 0,
+    "new_independent_crowd_inputs": 0,
+    "new_motion_executions": 0,
+    "all_admissible_world_scales_proved": false,
+    "original_reference_enclosed": false,
+    "service_certificate": false,
+    "goal_complete": false,
+    "not_checked_stage_transfers": 0
+  },
+  "audit": {
+    "all_match": true,
+    "inputs_checked": 720,
+    "stage_transfers": 7560,
+    "saved_output_coordinates": 4705946,
+    "native_point_creations": 7677,
+    "native_selector_calls": 122877,
+    "calibration_comment_vs_truncation": 32,
+    "calibration_native_vs_exact_truncation": 22,
+    "full_native_buffer_or_overlay_calls": 0,
+    "new_independent_crowd_inputs": 0,
+    "new_motion_executions": 0,
+    "all_admissible_world_scales_proved": false,
+    "service_certificate": false
+  },
+  "manifest_sha256": "15c523762520c720158d90e50d16ecd4ab5d9be4970a447e234b321c95db28ba",
+  "completion_sha256": "ac10f0144372d0f613c3bcf2f3b2aec7acc860700730d0a28533ef7a72af0a02",
+  "summary_sha256": "9f5f4bd37bf8bca430453a4267a8dced129b09411a5fdcae5dcfb4dadf974a2a",
+  "audit_manifest_sha256": "4cfbef3e2688609535662c37d2a4bc9644b40e31e25b1b0b684d9ed8b82ba32c",
+  "audit_result_sha256": "8d7d09d55ddc4e4eb9ecae384967684b4ead3f8db61c78ffa937b1f828eff48f",
+  "calibration_sha256": "14953c85ae083d1d457723a72d618eaed4a4512d9bc17f75748e26236678a3ef",
+  "calibration_diagnoses_sha256": "7368a807097852e8709cd52fdec54361afcef0a7d975530dd62539f97a1060a4",
+  "native_identity": {
+    "c_api_version": "3.14.1-CAPI-1.20.5",
+    "shapely_version": "2.2.0",
+    "binaries": {
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos_c-6dd9fd915eef8a7928285416bef1e666.dll": "6e65985b30831761887de3217853a720147626b18cb41668cd2bdc43d1bcded1",
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll": "0948bdb5c70b82e5055b55e9419b78d68372b1d0ec877277fa6e79276f6299b9"
+    },
+    "selector_symbols": [
+      "?precisionScale@PrecisionUtil@overlayng@operation@geos@@CANNH@Z",
+      "?safeScale@PrecisionUtil@overlayng@operation@geos@@SANN@Z",
+      "?precisionScaleFactor@BufferOp@buffer@operation@geos@@CANPEBVGeometry@geom@4@NH@Z"
+    ]
+  },
+  "measured_scale_families": [
+    {
+      "scales_hex": [
+        "0x1.2a05f20000000p+33",
+        "0x1.dcd6500000000p+29",
+        "0x1.7d78400000000p+26",
+        "0x1.312d000000000p+23",
+        "0x1.e848000000000p+19",
+        "0x1.86a0000000000p+16",
+        "0x1.3880000000000p+13"
+      ],
+      "count": 7551
+    },
+    {
+      "scales_hex": [
+        "0x1.74876e8000000p+36",
+        "0x1.2a05f20000000p+33",
+        "0x1.dcd6500000000p+29",
+        "0x1.7d78400000000p+26",
+        "0x1.312d000000000p+23",
+        "0x1.e848000000000p+19",
+        "0x1.86a0000000000p+16"
+      ],
+      "count": 9
+    }
+  ],
+  "subsets_of_parent_unknown_precision_boxes": 7560,
+  "process_identity_checks": {
+    "runs\\step1_foundation_20261029\\scale_selector_development_v1\\process.json": {
+      "record": {
+        "pid": 30684,
+        "create_time": 1793280859.1327877,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.scale_selector_study",
+          "--protocol",
+          "configs/step1/scale_selector_development_v1.yaml",
+          "--study",
+          "runs/step1_foundation_20261029/scale_selector_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\scale_selector_development_v1\\worker_process.json": {
+      "record": {
+        "pid": 20224,
+        "create_time": 1793280860.3484704,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.scale_selector_study import execute;execute(p)",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\scale_selector_development_v1"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\scale_selector_development_v1_audit\\process.json": {
+      "record": {
+        "pid": 16988,
+        "create_time": 1793280950.3116856,
+        "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+        "cmdline": [
+          "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "-m",
+          "udc.experiments.scale_selector_study",
+          "--audit-of",
+          "runs/step1_foundation_20261029/scale_selector_development_v1",
+          "--study",
+          "runs/step1_foundation_20261029/scale_selector_development_v1_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "runs\\step1_foundation_20261029\\scale_selector_development_v1_audit\\worker_process.json": {
+      "record": {
+        "pid": 32472,
+        "create_time": 1793280951.3904176,
+        "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+        "cmdline": [
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "-c",
+          "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.scale_selector_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+          "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\scale_selector_development_v1_audit"
+        ]
+      },
+      "current": {
+        "state": "missing",
+        "alive": false
+      }
+    }
+  },
+  "output_receipts_source_snapshots_and_upstream_files_verified": true,
+  "formal_batch_program_errors": 0,
+  "pre_scientific_export_lookup_errors": 1,
+  "native_point_creations_including_calibration_per_study": 7677,
+  "native_selector_calls_including_calibration_per_study": 122877,
+  "all_admissible_world_scales_proved": false,
+  "runtime_service_gate_changed": false,
+  "goal_complete": false,
+  "engineering": {
+    "pytest_passed": 551,
+    "pytest_skipped": 1,
+    "elapsed_s": 67.95,
+    "pytest_log": "runs\\step1_foundation_20261029\\scale_selector_pytest.log",
+    "pytest_log_sha256": "195269cf59fff3771a9b4bc8646463765c79ea49772d7d4242e867b21d6d22ca",
+    "pip_check": true,
+    "diff_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177,
+    "old_review_hash_verifier_pass": true
+  },
+  "files": {
+    "src/udc/multigroup/lower_scale_enclosure.py": "c30320acc9a75db61f96b1603af3550c606b1b1bb444c962e8a7f7a1020fbb8d",
+    "src/udc/analysis/native_precision_selectors.py": "4d296d942e37047c2501aa97c71b3b96d95da1712304dfdd3a03debb5d66ffd5",
+    "src/udc/analysis/scale_selector_audit.py": "25e4787a05d7b1a3b36a242f77f82613f23aafa7a04645aa2d53cd844287163a",
+    "src/udc/experiments/scale_selector_study.py": "187615f97d161798b143f625771104156ca57a738669803ea9b418b3f373b715",
+    "tests/test_lower_scale_enclosure.py": "a6335d167856ef77375002a4bcd1aa46c7750567f053a9e54868eb137d46aa82",
+    "docs/STEP1_SCALE_SELECTOR.zh.md": "8538581a1bc8791ecfac3215604fdbd8a2ae1bffaf2bed133321f3a6a96d1eeb",
+    "reports/step1_foundation_20261029/scale_selector_export_lookup.json": "ce906a9b68ea6a12346ed54753f603c9f67aa5c4bffd1ffa60da0efde5bfa723"
+  }
+}

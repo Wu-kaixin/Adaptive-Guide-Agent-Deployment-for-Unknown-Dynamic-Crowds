@@ -1,0 +1,204 @@
+{
+  "captured_at": "2026-10-29T17:53:29.847584+09:00",
+  "branch": "Major-Research-Branches",
+  "head": "4bd8321400ed1f9b4c9492a4213788086d9fe484",
+  "summary": {
+    "status": "FINITE_NATIVE_PROBE_COMPLETED",
+    "scheduled_cases": 20,
+    "recorded_cases": 20,
+    "not_executed_cases": 0,
+    "worlds_checked": 4116,
+    "person_world_memberships": 633966,
+    "native_circle_calls": 257868,
+    "stored_circle_coordinate_pairs": 16761420,
+    "witness_worlds_preserved": 188,
+    "captured_radius_expressions": 20,
+    "not_checked_worlds": 0,
+    "not_checked_person_world_memberships": 0,
+    "refuted_cases": 0,
+    "cancelled_before_execution": [],
+    "whole_buffer_transfer_proved": false,
+    "runtime_service_gate_changed": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "goal_complete": false
+  },
+  "audit": {
+    "cases_replayed": 20,
+    "worlds_checked": 4116,
+    "person_world_memberships": 633966,
+    "actual_native_circle_calls_replayed": 257868,
+    "coordinate_pairs_bit_replayed": 16761420,
+    "direct_source_coordinate_ranges_checked": 5788,
+    "witness_worlds_preserved": 188,
+    "transfer_counterexamples_replayed": 0,
+    "study_manifest_sha256": "07d81f9f5cabb9d4f5c4366c5fc8cedb29176ab5865360aa1effdcf8119638f0",
+    "all_match": true,
+    "whole_buffer_transfer_proved": false,
+    "runtime_service_gate_changed": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "scope": "bit replay of native Point.buffer calls plus direct conditional raw-source formula and rational extrema membership; not all BufferOp paths or service proof"
+  },
+  "processes": {
+    "study": {
+      "process": {
+        "record": {
+          "pid": 19876,
+          "create_time": 1793263407.4268937,
+          "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "cmdline": [
+            "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+            "-m",
+            "udc.experiments.circle_source_study",
+            "--protocol",
+            "configs/step1/circle_source_development_v1.yaml",
+            "--study",
+            "runs/step1_foundation_20261029/circle_source_development_v1"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      },
+      "worker_process": {
+        "record": {
+          "pid": 35508,
+          "create_time": 1793263408.296327,
+          "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "cmdline": [
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+            "-c",
+            "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.circle_source_study import execute;execute(p)",
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\circle_source_development_v1"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      }
+    },
+    "audit": {
+      "process": {
+        "record": {
+          "pid": 29300,
+          "create_time": 1793263611.8211992,
+          "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "cmdline": [
+            "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+            "-m",
+            "udc.experiments.circle_source_study",
+            "--audit-of",
+            "runs/step1_foundation_20261029/circle_source_development_v1",
+            "--study",
+            "runs/step1_foundation_20261029/circle_source_development_v1_audit"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      },
+      "worker_process": {
+        "record": {
+          "pid": 26232,
+          "create_time": 1793263612.6797323,
+          "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "cmdline": [
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+            "-c",
+            "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.circle_source_audit import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\circle_source_development_v1_audit"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      }
+    }
+  },
+  "actual_native_binary_identity_rechecked": {
+    "c_api_version": "3.14.1-CAPI-1.20.5",
+    "shapely_version": "2.2.0",
+    "binaries": {
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos_c-6dd9fd915eef8a7928285416bef1e666.dll": "6e65985b30831761887de3217853a720147626b18cb41668cd2bdc43d1bcded1",
+      "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Lib\\site-packages\\shapely.libs\\geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll": "0948bdb5c70b82e5055b55e9419b78d68372b1d0ec877277fa6e79276f6299b9"
+    }
+  },
+  "positive_witness_original_artifact_sets_hash_verified": 188,
+  "coverage": {
+    "actual_radius_arguments": [
+      0.20500000000000002
+    ],
+    "actual_native_distances": [
+      0.2052472292774305
+    ],
+    "quad_segs": 16,
+    "coordinate_pairs_per_circle": [
+      65
+    ],
+    "global_unique_exact_input_triples": 222705,
+    "duplicates_across_selected_cases": 35163,
+    "archived_native_npz_bytes": 155627594,
+    "unique_old_observation_histories": 18,
+    "unique_old_person_fingerprints": 16
+  },
+  "engineering": {
+    "pytest_passed": 532,
+    "pytest_skipped": 1,
+    "elapsed_s": 87.2,
+    "pytest_log": "runs/step1_foundation_20261029/circle_source_pytest.log",
+    "pytest_log_sha256": "648d5a047bc00aa04850926612e2eab30852e20c9db0a8d67fb13b06c7379e4f",
+    "pip_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177,
+    "formal_batch_program_errors": 0,
+    "source_inventory_http_404": 1
+  },
+  "artifacts": {
+    "runs/step1_foundation_20261029/circle_source_development_v1/manifest.json": "07d81f9f5cabb9d4f5c4366c5fc8cedb29176ab5865360aa1effdcf8119638f0",
+    "runs/step1_foundation_20261029/circle_source_development_v1/seal.json": "3def4ab99a175c994c3d46a223e1a1d89d1f2139c4494483477b780435905ad0",
+    "runs/step1_foundation_20261029/circle_source_development_v1/summary.json": "391201dee7399700da8b18d59846b8f422411fc9193f80b243ffb0d118b26832",
+    "runs/step1_foundation_20261029/circle_source_development_v1/results.json": "04126141cbbd72064137c0e3cab0305556fa6a7f9f4869eec0cf7efc4efc416d",
+    "runs/step1_foundation_20261029/circle_source_development_v1/protocol.yaml": "ac175f2d24d1bedbe4c5c7c519140382977d262b79ad0fd9ea8080c21abb7160",
+    "runs/step1_foundation_20261029/circle_source_development_v1_audit/manifest.json": "e1e8a3dcc823e31bcf78f4ee4013544e734da67b6e8b2ca810cb4ee9893ee5ce",
+    "runs/step1_foundation_20261029/circle_source_development_v1_audit/seal.json": "2f8cdd8a1fe3ebce566e43aee7d762d5a2367542fb01709e1daf74a469781033",
+    "runs/step1_foundation_20261029/circle_source_development_v1_audit/results/audit.json": "7416875f1f4545aa01b2ea98bb10e613e89527223bd9cb987793a6743e1b563b",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/000/receipt.json": "2835a8712c54978c4b82ea0890ce96d792b86da105b8965377a566e595c35bc7",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/001/receipt.json": "ca5e82c8766624256aebc89841c1ef8243fc4cab463bbcd7981271381d7bd626",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/002/receipt.json": "0d6bfb6f86ee760b5caf4a0795db4a7a0d587aabad82962c2adbe7291010acaa",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/003/receipt.json": "d7e69cb4bc0ab39bd868c8168c8680adafb113296a8e590cd9d868959e30fd70",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/004/receipt.json": "4e6dc57490e26fec004453bfdb51adbb8c2903795e4157237010659a01cca8ec",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/005/receipt.json": "4362fc73752233b070ba79184a618db13e12aad46abde712ad7f03ab48651389",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/006/receipt.json": "b447a84608de84ab7712a97f5c3db9c481c9016f64a6d3319dfff1b65cf89a0e",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/007/receipt.json": "6ab72fb78d5b34e4e4ff997a963dc974302eeeaf9dd0000b2f2cac28ad7cbb65",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/008/receipt.json": "b9fc76a010bd476acede3cfc39fb39c0bbb083a08be1e0fa099e1ee0808f556c",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/009/receipt.json": "20463dd49dccc19b63c8218d868c6b297a2b46ec33c3f49d30104de7ed40f11e",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/010/receipt.json": "8c389fe8e572f7b486322a269bcd44197da10fabc089042c72a62c32b1c0a161",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/011/receipt.json": "521b239163d64666eb66ccafdb96ac5e23f900e5ff52f4c589a03a96fc02599e",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/012/receipt.json": "34ebc2c994640d5ad439e4167fe49dec0c14311591eb647afb83a7ae372785fa",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/013/receipt.json": "f5aa1b0be667287cca07995599fc98a3edae5962d47312b34b0164ffa479d9e0",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/014/receipt.json": "fa88152739587e92f51e46d821684f8d5e8457693868a15195e0fd5616f2c111",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/015/receipt.json": "2db3fcd9d460996546267531badfb7f336f1f866d5c6b9a65ff9a2968cae99fa",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/016/receipt.json": "38f02a32165e9162f8e0552d87e7d2fe80f4a2735a912dbc04a14bf34f8734a5",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/017/receipt.json": "a2a6aef27e13994a962c7070e72dad8243c952e656afaa37411cc269937a9824",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/018/receipt.json": "7d5962707a4ed6daad5a374871a148f9f47311f201eb0e9469d72893bb7a1ee7",
+    "runs/step1_foundation_20261029/circle_source_development_v1/cases/019/receipt.json": "4647fb5d305ff5c238fd91b9d6ce051342c36a10ba2bf0ef84584aea7e06164e",
+    "runs/step1_foundation_20261029/circle_source_pytest.log": "648d5a047bc00aa04850926612e2eab30852e20c9db0a8d67fb13b06c7379e4f",
+    "runs/step1_foundation_20261029/circle_source_asset_lookup.json": "880e0ebe9f735d04c0d49c6d513af02f1b28884f77b0067d41ffa4a72a7ecaac"
+  },
+  "whole_buffer_transfer_proved": false,
+  "runtime_service_gate_changed": false,
+  "goal_complete": false,
+  "original_reference_or_thresholds_changed": false,
+  "service_integrals_recomputed": false,
+  "limits": [
+    "Conditional source trig range, finite binary64 arithmetic and explicit precision contract only",
+    "No instrumentation proving original/fallback branch coverage",
+    "Single radius and q16 finite native sample coverage",
+    "Unions, later offsets, all admissible fallback scales and original-reference signed mass remain open"
+  ]
+}

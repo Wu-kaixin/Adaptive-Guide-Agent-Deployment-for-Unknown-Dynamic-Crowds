@@ -1,0 +1,63 @@
+{
+  "evidence": "development_reused_inputs_not_new_independent_confirmation",
+  "new_independent_samples": 0,
+  "summary": {
+    "stopped": false,
+    "completed_units": 36,
+    "scheduled_units": 36,
+    "recorded_step_records": 16308,
+    "scheduled_step_records": 16308,
+    "not_recorded_steps": 0,
+    "statuses": {
+      "PARTIAL_SERVICE": 10652,
+      "FULL_SUCCESS": 5656
+    },
+    "orchestration_error_units": 0,
+    "sequence_completed": 324,
+    "episodes_recorded": 324,
+    "independent_physical_blocks": 12
+  },
+  "audit": {
+    "manifest_sha256": "268bc7875110ffbbaf06cc63c7ee629534fa0b7cae054519c57860ccbf1936f5",
+    "checked_step_records": 16308,
+    "scheduled_step_records": 16308,
+    "mismatches": [],
+    "all_match": true,
+    "certificate_frames": 2164,
+    "independent_physical_blocks": 12,
+    "evidence": "development_reused_inputs_not_new_independent_confirmation",
+    "by_method": {
+      "recompute_all": {
+        "episodes": 108,
+        "completed_episodes": 108,
+        "accepted_frames": 0,
+        "fallback_frames": 0,
+        "count_switch_events": 412,
+        "nontrivial_hold_frames": 0
+      },
+      "phase_guard": {
+        "episodes": 108,
+        "completed_episodes": 108,
+        "accepted_frames": 1059,
+        "fallback_frames": 4341,
+        "count_switch_events": 412,
+        "nontrivial_hold_frames": 0
+      },
+      "counts_phase_guard": {
+        "episodes": 108,
+        "completed_episodes": 108,
+        "accepted_frames": 1105,
+        "fallback_frames": 4295,
+        "count_switch_events": 321,
+        "nontrivial_hold_frames": 985
+      }
+    }
+  },
+  "artifact_sha256": {
+    "manifest.json": "268bc7875110ffbbaf06cc63c7ee629534fa0b7cae054519c57860ccbf1936f5",
+    "seal.json": "42177941b75a5f692bc85d4c58175d78a39c01434f3919afaabd95230a91e6cd",
+    "summary.json": "0fa104abdef0308a5acf348744d614ba57cf4978c9013db9340b2cebda8e2c78",
+    "readonly_audit/offline_audit.json": "2e359c8aa4be22b3a655d7204b426da2d4488195f3e32d00939e6fd03b9d8993",
+    "control/completion.json": "27f3606d7b5898768c657887763625f3c02e9c7db3a7ef3e15e240c6a6c42f43"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "historic_review": {
+    "verified": true,
+    "files": 61,
+    "archived_members": 3177,
+    "new_scientific_executions": 0
+  },
+  "tested_workspace": {
+    "current_source_environment_and_inputs_match_frozen_manifest": true,
+    "scientific_source_files": 227,
+    "manifest_sha256": "19e83e2738fdd89903d62ab894c19c70dc1ff49d3bf73d23b27f68a92b8b7a21",
+    "branch": "Major-Research-Branches",
+    "HEAD": "4bd8321400ed1f9b4c9492a4213788086d9fe484",
+    "new_scientific_calls": 0
+  },
+  "scope": "Read-only post-execution preservation check during the predeclared API phase; no new scientific execution"
+}

@@ -19,12 +19,13 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
-def audit(study, output):
+def audit(study, output, enclosure='convex_outer_individual_inner_v1', identity='reduced_link_v1'):
     manifest = read(study / 'manifest.json')
     if digest(study / 'manifest.json') != read(study / 'seal.json')['manifest_sha256']:
         raise ValueError('Old manifest changed')
     base = manifest['base_spec']
-    config = base['model'] | {'support_closing_enclosure': 'round_buffer_sagitta'}
+    config = base['model'] | {'support_closing_enclosure': 'round_buffer_sagitta', 'support_enclosure': enclosure,
+                             'support_identity': identity}
     checked, pairs, violations, witnesses = 0, [], [], []
     with threadpool_limits(limits=1):
         for sequence in manifest['sequences']:
@@ -42,7 +43,7 @@ def audit(study, output):
                 groups, _ = construct_groups(measurement, base['room_m'], config)
                 support = build_support(measurement, groups, config)
                 identity = tuple(g.rows for g in reference) == support.rows
-                if support.grouping_certificate['identity_given_original_reference_defined'] and not identity:
+                if (support.grouping_certificate['certified'] or support.grouping_certificate['identity_given_original_reference_defined']) and not identity:
                     violations.append({'sequence': sequence['sequence_id'], 'frame': frame['perturbation_m'], 'kind': 'conditional_identity_false'})
                 if identity:
                     for index, group in enumerate(reference):
@@ -67,7 +68,8 @@ def audit(study, output):
                 loss = retained['continuous_common_service']['worst_group_uncovered'] - greedy['continuous_common_service']['worst_group_uncovered']
                 row = {'sequence_id': sequence['sequence_id'], 'seed': sequence['seed'], 'perturbation_m': frame['perturbation_m'],
                        'certificate': cert, 'original_true_worst_loss': loss,
-                       'conditional_partition_certificate': support.grouping_certificate, 'actual_partition_matches': identity}
+                       'conditional_partition_certificate': support.grouping_certificate, 'actual_partition_matches': identity,
+                       'support_geometry': support.evidence['groups']}
                 if cert['accept_retained'] and loss > .002:
                     violations.append({'sequence': sequence['sequence_id'], 'frame': frame['perturbation_m'], 'kind': 'true_loss_exceeds_declared_budget', 'loss': loss})
                 pairs.append(row)
@@ -79,7 +81,12 @@ def audit(study, output):
               'accepted': sum(p['certificate']['accept_retained'] for p in pairs), 'violations': violations,
               'seed2210_counterexample_regressions': witnesses, 'source_actions_reoptimized': False,
               'new_independent_samples': 0, 'reference': 'original_world_reference',
-              'condition': 'original reference is defined; float64 geometry audit, not formal machine intervals'}
+              'condition': 'original reference is defined; float64 geometry audit, not formal machine intervals',
+              'support_enclosure': enclosure,
+              'support_identity': identity,
+              'support_area_sum_m2': sum(g['support_area_m2'] for p in pairs for g in p['support_geometry']),
+              'base_support_area_sum_m2': sum(g.get('base_support_area_m2',g['support_area_m2']) for p in pairs for g in p['support_geometry']),
+              'subset_tightening_rejections': sum(g.get('monotone_sandwich',{}).get('strict_subset_check')=='rejected_use_original' for p in pairs for g in p['support_geometry'])}
     write_json(output / 'summary.json', result)
     write_json(output / 'pairs.json', pairs)
     return result

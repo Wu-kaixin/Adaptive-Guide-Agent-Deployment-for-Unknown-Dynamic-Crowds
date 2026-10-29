@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "pairs": 10,
+    "accepted_exact_sensing": 8,
+    "nonidentical_pairs": 3,
+    "accepted_nonidentical_pairs": 1,
+    "numeric_crosscheck_violations": 0,
+    "nonzero_error_accepted": 0,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "general_nonzero_error_goal_complete": false,
+    "scope": "new exact-observation input condition on old fixed layouts; no general nonzero-error claim"
+  },
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\manifest.json": "f3b085eeb86076f87d8a322d9da71e6686267283b6bfb3a5806ec81640770480",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\seal.json": "e8a1c4388edc6b56911404fa732cda7dd54f978fb7a752f174e0e52c9861fa44",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\summary.json": "df559ff088ecaf7c2bbaa67680ef20ebccd9480a42a2ff479198a7213e48d738",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\protocol.yaml": "1854dc1fedfd4c192eb84aa8a8ef3bcf43f1e1882672ffc714681b6e1dad224f",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\000.json": "46f93428ee47bc52d6db5627afed0eeb3818a8777404c00979ae52f122a8323a",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\001.json": "6ac00d151bc65dd124aa1b549bd5e4bc463558c35bff8c58ee9b1dcd9d99ce0d",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\002.json": "5782b31945c6c61ac9be74edbad7308488e1a2fa0cff927422bcfeffc5ef2027",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\003.json": "a7e6cb3eb5f0c4bf8c3305816b08c7714d3c0721ddfc203aaed6621bd9dbc99c",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\004.json": "0769cd186fff15716cb56be5f8575c0d83368ad36deba791fb3bcf5e53010f80",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\005.json": "cb52f8835fec8cb48145f8482dc08d5ba0f83172eb930e75cfd82653b657e00d",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\006.json": "0840985dd130e4dcc7a272f89d908aff40323bdb484c5af06ef5dfee7c7eeb18",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\007.json": "a8d297aae7aa4bd17f7b6b6a79ee5b93add73a382a48aef58abd6a1a2f59d647",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\008.json": "351fff1f0b8feeec8977249ec4eb0861bb288e4be83cd2e872ce31bbc684f76c",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\exact_certificate_development_v1\\results\\009.json": "a704638e430effc70c6c232ff9ac323d0d2aa546ac0c6d32df1a2cc9661427b8"
+  },
+  "general_nonzero_error_goal_complete": false,
+  "old_noisy_protocol_result_improved_claimed": false,
+  "new_condition": "exact sensing on fixed old layouts, not the old bounded-error observation"
+}

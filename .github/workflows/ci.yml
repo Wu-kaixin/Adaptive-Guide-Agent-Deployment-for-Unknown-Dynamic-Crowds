@@ -28,6 +28,8 @@ jobs:
       - run: ${{ matrix.python }} -m pip check
       - name: Verify published Step 1 evidence
         run: ${{ matrix.python }} scripts/package_step1_review.py
+      - name: Verify final Step 1 public evidence
+        run: ${{ matrix.python }} scripts/package_step1_final.py
       - run: ${{ matrix.python }} run.py --config configs/step1/static_50.yaml --output runs/ci50 --no-plots
       - run: ${{ matrix.python }} run.py --reevaluate runs/ci50
       - name: Repository health

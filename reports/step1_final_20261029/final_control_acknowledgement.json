@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-10-30T02:18:53.515556+09:00",
+  "goal_tool_observation": {
+    "goal": null,
+    "remainingTokens": null,
+    "completionBudgetReport": null
+  },
+  "scheduler_deleted": "step-1-25",
+  "scientific_driver_exit_code": 0,
+  "process_records_missing": [
+    1856,
+    11024,
+    9588,
+    32980
+  ],
+  "no_further_experiments": true
+}

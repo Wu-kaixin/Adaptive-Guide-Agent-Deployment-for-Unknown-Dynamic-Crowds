@@ -1,0 +1,13 @@
+{
+  "independent_generator_blocks": 24,
+  "scene_conditions": 72,
+  "scheduled_deployments": 216,
+  "evidence": "controlled_development_not_confirmation",
+  "new_independent_confirmation_samples": 0,
+  "artifacts": {
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\population_wall_development_v1\\manifest.json": "83746e010b614df4b349f679cb3cc579213dd819ac3f7f2fcc11cf49202a374d",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\population_wall_development_v1\\seal.json": "7680fba47370be8318b31f27f41220b01d53bff3ad639f5af18bd847dae2b1fe",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\population_wall_development_v1\\input_overlap.json": "5dee8c5f4d8b008d3cbf19d47b924bf3c3a0adf1d6911e5987e1843ff54a465e",
+    "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\population_wall_development_v1\\protocol.yaml": "d03945cf9dfcf289ac258de471750c096db3fd8fe0fd92caded737e33d32eeda"
+  }
+}

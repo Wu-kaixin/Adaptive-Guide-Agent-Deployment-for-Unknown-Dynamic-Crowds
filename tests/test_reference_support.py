@@ -32,7 +32,7 @@ def test_original_true_reference_is_enclosed_under_independent_errors(shape, clo
             assert curve.difference(region).is_empty
 
 
-def test_nontrivial_retention_can_certify_original_reference_without_common_translation():
+def test_generated_support_cannot_certify_while_buffer_transfer_is_unproven():
     config_value=config()
     observation=Observation(np.array([[10.,10.]]),np.array([.2]),np.array([1.]))
     obs=BoundedMeasurement(observation,.12,'independent_bounded')
@@ -42,17 +42,27 @@ def test_nontrivial_retention_can_certify_original_reference_without_common_tran
     greedy=np.array([10.,10.])+1.6*np.c_[np.cos(angles),np.sin(angles)]
     retained=greedy+np.array([.01,-.01])
     cert=certificate(support,retained,greedy,1.)
-    assert cert['accept_retained'] and cert['status']=='ORIGINAL_REFERENCE_SUPPORT_DOMINANCE'
-    assert cert['groups'][0]['retained_interval']==[0.,0.]
+    assert not cert['accept_retained'] and cert['status']=='UNCERTIFIED'
+    assert cert['reason']=='support_enclosure_transfer_unproven'
+    assert support.evidence['runtime_certification_quarantined']
 
 
 def test_general_bound_refuses_a_potentially_lost_service_region():
-    config_value=config()
-    obs=BoundedMeasurement(Observation(np.array([[10.,10.]]),np.array([.2]),np.array([1.])),.12,'independent_bounded')
-    groups,_=construct_groups(obs,[40,30],config_value)
-    support=build_support(obs,groups,config_value)
+    from shapely.geometry import box
+    from udc.multigroup.reference_support import ReferenceSupport
+    # A supplied set tests the conditional dominance calculation, independently
+    # of the quarantined geometric builder.
+    support=ReferenceSupport((box(11.5,9.9,11.7,10.1),),((0,),),{'certified':True},.12,{})
     cert=certificate(support,[[20,20]],[[11.6,10]],1.)
     assert not cert['accept_retained'] and cert['groups'][0]['upper_loss']==1
+
+
+def test_conditional_dominance_remains_valid_for_an_explicit_supplied_region():
+    from shapely.geometry import box
+    from udc.multigroup.reference_support import ReferenceSupport
+    support=ReferenceSupport((box(-.1,-.1,.1,.1),),((0,),),{'certified':True},.12,{})
+    cert=certificate(support,[[.01,0]],[[0,0]],1.)
+    assert cert['accept_retained'] and cert['groups'][0]['retained_interval']==[0.,0.]
 
 
 def test_conditional_identity_is_not_a_hidden_default_gate():

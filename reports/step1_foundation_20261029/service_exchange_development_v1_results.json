@@ -1,0 +1,168 @@
+{
+  "summary.json": {
+    "evidence": "fixed_old_action_evaluator_development_not_a_certificate",
+    "new_independent_samples": 0,
+    "source_actions_reoptimized": false,
+    "new_motion_executions": 0,
+    "delta": 0.002,
+    "all_pairs": {
+      "pairs": 640,
+      "evaluable": 640,
+      "not_evaluable": 0,
+      "net_within_budget": 593,
+      "gross_loss_within_budget": 375,
+      "net_within_but_gross_outside": 218,
+      "max_numeric_mass_balance_residual": 4.001790218643997e-16,
+      "maximum_net_group_loss": 0.03537713440730261,
+      "maximum_gross_lost_mass": 0.34253537920552113,
+      "median_directed_layout_displacement_m": 0.0026850974224875055
+    },
+    "by_perturbation": {
+      "0": {
+        "pairs": 160,
+        "evaluable": 160,
+        "not_evaluable": 0,
+        "net_within_budget": 160,
+        "gross_loss_within_budget": 160,
+        "net_within_but_gross_outside": 0,
+        "max_numeric_mass_balance_residual": 0.0,
+        "maximum_net_group_loss": 0.0,
+        "maximum_gross_lost_mass": 0.0,
+        "median_directed_layout_displacement_m": 0.0
+      },
+      "0.001": {
+        "pairs": 160,
+        "evaluable": 160,
+        "not_evaluable": 0,
+        "net_within_budget": 154,
+        "gross_loss_within_budget": 141,
+        "net_within_but_gross_outside": 13,
+        "max_numeric_mass_balance_residual": 2.9402885291449077e-16,
+        "maximum_net_group_loss": 0.013882771021534124,
+        "maximum_gross_lost_mass": 0.3251212916915301,
+        "median_directed_layout_displacement_m": 0.002084168217428923
+      },
+      "0.01": {
+        "pairs": 160,
+        "evaluable": 160,
+        "not_evaluable": 0,
+        "net_within_budget": 142,
+        "gross_loss_within_budget": 45,
+        "net_within_but_gross_outside": 97,
+        "max_numeric_mass_balance_residual": 4.001790218643997e-16,
+        "maximum_net_group_loss": 0.03537713440730261,
+        "maximum_gross_lost_mass": 0.32523893390231756,
+        "median_directed_layout_displacement_m": 0.0360163969366489
+      },
+      "0.03": {
+        "pairs": 160,
+        "evaluable": 160,
+        "not_evaluable": 0,
+        "net_within_budget": 137,
+        "gross_loss_within_budget": 29,
+        "net_within_but_gross_outside": 108,
+        "max_numeric_mass_balance_residual": 3.451286565564482e-16,
+        "maximum_net_group_loss": 0.011346670485246846,
+        "maximum_gross_lost_mass": 0.34253537920552113,
+        "median_directed_layout_displacement_m": 0.09774615695732702
+      }
+    },
+    "controller_may_use_truth_oracle_to_accept": false,
+    "seed2210_over_budget": [
+      {
+        "sequence_id": "K2_concave_s2210_common_bias",
+        "seed": 2210,
+        "perturbation_m": 0.03,
+        "evaluator_only": true,
+        "evaluable": true,
+        "group_exchange": [
+          {
+            "lost_mass_fraction": 0.021553377032735528,
+            "gained_mass_fraction": 0.01939360486398317,
+            "net_uncovered_difference": 0.0021597721687523575,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          },
+          {
+            "lost_mass_fraction": 0.0,
+            "gained_mass_fraction": 0.0,
+            "net_uncovered_difference": 0.0,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          }
+        ],
+        "stored_original_group_net_losses": [
+          0.002159772168752405,
+          0.0
+        ],
+        "max_group_net_loss": 0.002159772168752405,
+        "max_group_lost_mass": 0.021553377032735528,
+        "max_numeric_mass_balance_residual": 4.7704895589362195e-17,
+        "directed_layout_displacement_m": 0.1397628070351414
+      },
+      {
+        "sequence_id": "K5_concave_s2210_bounded_disk",
+        "seed": 2210,
+        "perturbation_m": 0.03,
+        "evaluator_only": true,
+        "evaluable": true,
+        "group_exchange": [
+          {
+            "lost_mass_fraction": 0.0,
+            "gained_mass_fraction": 0.0,
+            "net_uncovered_difference": 0.0,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          },
+          {
+            "lost_mass_fraction": 0.0,
+            "gained_mass_fraction": 0.0,
+            "net_uncovered_difference": 0.0,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          },
+          {
+            "lost_mass_fraction": 0.00427959653860678,
+            "gained_mass_fraction": 0.00417653165967861,
+            "net_uncovered_difference": 0.00010306487892816941,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          },
+          {
+            "lost_mass_fraction": 0.014401646191217995,
+            "gained_mass_fraction": 0.013231375144974142,
+            "net_uncovered_difference": 0.001170271046243853,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          },
+          {
+            "lost_mass_fraction": 0.17894214189191948,
+            "gained_mass_fraction": 0.16759547140667266,
+            "net_uncovered_difference": 0.011346670485246837,
+            "scope": "fixed_declared_polyline_and_piecewise_linear_density_evaluator_only",
+            "uncertainty_certificate": false
+          }
+        ],
+        "stored_original_group_net_losses": [
+          0.0,
+          0.0,
+          0.00010306487892819405,
+          0.001170271046243787,
+          0.011346670485246846
+        ],
+        "max_group_net_loss": 0.011346670485246846,
+        "max_group_lost_mass": 0.17894214189191948,
+        "max_numeric_mass_balance_residual": 6.591949208711867e-17,
+        "directed_layout_displacement_m": 0.8219637834157197
+      }
+    ],
+    "scope": "Original fixed polyline and nodal density; numeric mass-balance residual reported without changing scientific thresholds"
+  },
+  "artifact_sha256": {
+    "manifest.json": "3b6e6319637a297e5233465d0562bda3b1fd4438c192b671b9e6d7b3cbba56f9",
+    "seal.json": "12104448883c9a7273c5f9114482b67f1bfa44322dc0c7c8c88f815ee4350b94",
+    "summary.json": "f2eebb0afeb6f41deec6321d623b2cd475575f4a9d4a8ea8647336db2cb37017",
+    "pairs.json": "2b897606be4ec7af3b81742f87a1e24782d16d1326d8c78aad757153a1b12d1a"
+  },
+  "new_independent_samples": 0
+}

@@ -1,0 +1,20 @@
+{
+  "user_request": "删除进行中的目标，最后参考目标内容，进行最后一次实验。",
+  "scheduler": {
+    "automationId": "step-1-25",
+    "mode": "delete",
+    "deleteStatus": "deleted"
+  },
+  "goal": {
+    "requested": "delete",
+    "actual_status": "paused",
+    "delete_tool_available": false,
+    "marked_complete": false
+  },
+  "final_experiment": {
+    "protocol": "configs/step1/final_evaluation_v1.yaml",
+    "followup_experiments": false,
+    "automatic_retries": 0
+  },
+  "captured_at": "2026-10-29T13:59:04.152209+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "scope": "Read-only diagnostics of the single final experiment; no new geometry, motion or scientific inputs",
+  "partial_service_overlapping_flags": {
+    "insufficient|observed_full_coverage": 21648,
+    "insufficient|reference_full_coverage": 21648,
+    "moderate|observed_full_coverage": 12411,
+    "moderate|reference_full_coverage": 12105,
+    "sufficient|observed_full_coverage": 360
+  },
+  "full_success_with_continuous_interval_coverage_false": 0,
+  "full_success_positive_stored_mass_residual": 16342,
+  "largest_stored_mass_residual_among_full_success": 1.1102230246251565e-15,
+  "method_trajectory_chunk_triplets": 4320,
+  "method_trajectory_byte_mismatches": [],
+  "by_K_resource": {
+    "1|insufficient": {
+      "records": 5412,
+      "full_success": 0,
+      "partial_service": 5412
+    },
+    "1|moderate": {
+      "records": 5412,
+      "full_success": 5307,
+      "partial_service": 105
+    },
+    "1|sufficient": {
+      "records": 5412,
+      "full_success": 5412,
+      "partial_service": 0
+    },
+    "2|insufficient": {
+      "records": 5412,
+      "full_success": 0,
+      "partial_service": 5412
+    },
+    "2|moderate": {
+      "records": 5412,
+      "full_success": 2754,
+      "partial_service": 2658
+    },
+    "2|sufficient": {
+      "records": 5412,
+      "full_success": 5412,
+      "partial_service": 0
+    },
+    "3|insufficient": {
+      "records": 5412,
+      "full_success": 0,
+      "partial_service": 5412
+    },
+    "3|moderate": {
+      "records": 5412,
+      "full_success": 427,
+      "partial_service": 4985
+    },
+    "3|sufficient": {
+      "records": 5412,
+      "full_success": 5277,
+      "partial_service": 135
+    },
+    "5|insufficient": {
+      "records": 5412,
+      "full_success": 0,
+      "partial_service": 5412
+    },
+    "5|moderate": {
+      "records": 5412,
+      "full_success": 749,
+      "partial_service": 4663
+    },
+    "5|sufficient": {
+      "records": 5412,
+      "full_success": 5187,
+      "partial_service": 225
+    }
+  },
+  "helper_version": 2,
+  "helper_v1_error_preserved": "diagnostic_v1_error.json",
+  "people_count_range_per_physical_input": [
+    15,
+    195
+  ],
+  "people_total_across_physical_inputs": 3894,
+  "maximum_available_guides": 80
+}

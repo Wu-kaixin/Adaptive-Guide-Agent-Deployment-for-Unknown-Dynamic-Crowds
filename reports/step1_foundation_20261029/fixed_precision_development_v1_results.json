@@ -1,0 +1,284 @@
+{
+  "captured_at": "2026-10-29T14:36:52.273125+09:00",
+  "branch": "Major-Research-Branches",
+  "head": "4bd8321400ed1f9b4c9492a4213788086d9fe484",
+  "summary": {
+    "scheduled_cases": 30,
+    "completed_cases": 30,
+    "native_point_calls": 16650,
+    "coordinate_range_and_drift_checks": 33300,
+    "native_overlay_calls": 210,
+    "native_overlay_empty": 57,
+    "overlay_with_verified_axis_closure": 210,
+    "overlay_axis_closure_uncertified": 0,
+    "cases_with_naive_half_grid_counterexample": 17,
+    "runtime_certificate_restored": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "goal_complete": false
+  },
+  "native_replay": {
+    "study_manifest_sha256": "1b2efcd904650940413ffda846d29c0fe5c019772ba6e39f65b99beeb3e10b0c",
+    "cases_replayed": 30,
+    "actual_native_point_calls_replayed": 16650,
+    "coordinate_range_and_drift_checks": 33300,
+    "native_overlay_calls_replayed": 210,
+    "directly_verified_quantizer_closed_boxes": 210,
+    "naive_half_grid_counterexamples_replayed": 17,
+    "parent_native_strict_bit_replay_calls": 269,
+    "all_match": true,
+    "runtime_certificate_restored": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "scope": "native replay, independent scalar source expression and closure postcondition; not all BufferOp paths or original-reference service proof"
+  },
+  "processes": {
+    "study": {
+      "process": {
+        "record": {
+          "pid": 25088,
+          "create_time": 1793251517.4635773,
+          "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "cmdline": [
+            "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+            "-m",
+            "udc.experiments.fixed_precision_study",
+            "--protocol",
+            "configs/step1/fixed_precision_development_v1.yaml",
+            "--study",
+            "runs/step1_foundation_20261029/fixed_precision_development_v1"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      },
+      "worker_process": {
+        "record": {
+          "pid": 21896,
+          "create_time": 1793251518.3887491,
+          "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "cmdline": [
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+            "-c",
+            "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.experiments.fixed_precision_study import execute;execute(p)",
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\fixed_precision_development_v1"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      }
+    },
+    "audit": {
+      "process": {
+        "record": {
+          "pid": 15940,
+          "create_time": 1793251725.2570708,
+          "exe": "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+          "cmdline": [
+            "C:\\Users\\kai\\AppData\\Roaming\\uv\\python\\cpython-3.12.15-windows-x86_64-none\\python.exe",
+            "-m",
+            "udc.experiments.fixed_precision_study",
+            "--audit-of",
+            "runs/step1_foundation_20261029/fixed_precision_development_v1",
+            "--study",
+            "runs/step1_foundation_20261029/fixed_precision_development_v1_audit"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      },
+      "worker_process": {
+        "record": {
+          "pid": 2200,
+          "create_time": 1793251726.1325512,
+          "exe": "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+          "cmdline": [
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\.venv\\Scripts\\python.exe",
+            "-c",
+            "import sys;from pathlib import Path;p=Path(sys.argv[1]);sys.path.insert(0,str(p/'source_snapshot/src'));from udc.analysis.feasible_world_witness import read,checked;from udc.analysis.fixed_precision_diagnostic import audit;m=read(p/'manifest.json');checked(p/'manifest.json',read(p/'seal.json')['manifest_sha256']);[checked(p/'source_snapshot'/n,s) for n,s in m['sources'].items()];checked(Path(m['study'])/'manifest.json',m['study_manifest_sha256']);audit(m['study'],p/'results')",
+            "E:\\Adaptive-Guide-Agent-Deployment-for-Unknown-Dynamic-Crowds\\runs\\step1_foundation_20261029\\fixed_precision_development_v1_audit"
+          ]
+        },
+        "inspection": {
+          "state": "missing",
+          "alive": false
+        }
+      }
+    }
+  },
+  "models": [
+    {
+      "scale_fraction": "0",
+      "actual_grid_fraction": "0",
+      "requested_grid_fraction": "0",
+      "reported_grid_fraction": "0",
+      "branch": "floating",
+      "name": "floating",
+      "requested_grid": 0.0
+    },
+    {
+      "scale_fraction": "10000000000",
+      "actual_grid_fraction": "7737125245533627/77371252455336267181195264",
+      "requested_grid_fraction": "7737125245533627/77371252455336267181195264",
+      "reported_grid_fraction": "7737125245533627/77371252455336267181195264",
+      "branch": "scaled_fine",
+      "name": "fine_10",
+      "requested_grid": 1e-10
+    },
+    {
+      "scale_fraction": "100000000",
+      "actual_grid_fraction": "3022314549036573/302231454903657293676544",
+      "requested_grid_fraction": "3022314549036573/302231454903657293676544",
+      "reported_grid_fraction": "3022314549036573/302231454903657293676544",
+      "branch": "scaled_fine",
+      "name": "fine_8",
+      "requested_grid": 1e-08
+    },
+    {
+      "scale_fraction": "1000000",
+      "actual_grid_fraction": "4722366482869645/4722366482869645213696",
+      "requested_grid_fraction": "4722366482869645/4722366482869645213696",
+      "reported_grid_fraction": "4722366482869645/4722366482869645213696",
+      "branch": "scaled_fine",
+      "name": "fine_6",
+      "requested_grid": 1e-06
+    },
+    {
+      "scale_fraction": "10000",
+      "actual_grid_fraction": "7378697629483821/73786976294838206464",
+      "requested_grid_fraction": "7378697629483821/73786976294838206464",
+      "reported_grid_fraction": "7378697629483821/73786976294838206464",
+      "branch": "scaled_fine",
+      "name": "fine_4",
+      "requested_grid": 0.0001
+    },
+    {
+      "scale_fraction": "10",
+      "actual_grid_fraction": "3602879701896397/36028797018963968",
+      "requested_grid_fraction": "3602879701896397/36028797018963968",
+      "reported_grid_fraction": "3602879701896397/36028797018963968",
+      "branch": "scaled_fine",
+      "name": "tenth",
+      "requested_grid": 0.1
+    },
+    {
+      "scale_fraction": "1",
+      "actual_grid_fraction": "1",
+      "requested_grid_fraction": "1",
+      "reported_grid_fraction": "1",
+      "branch": "scaled_fine",
+      "name": "unit",
+      "requested_grid": 1.0
+    },
+    {
+      "scale_fraction": "9007199164669001/9007199254740992",
+      "actual_grid_fraction": "1",
+      "requested_grid_fraction": "1125899918101623/1125899906842624",
+      "reported_grid_fraction": "1125899918101623/1125899906842624",
+      "branch": "scaled_fine",
+      "name": "near_unit",
+      "requested_grid": 1.00000001
+    },
+    {
+      "scale_fraction": "2251799802426249/4503599627370496",
+      "actual_grid_fraction": "2",
+      "requested_grid_fraction": "2251799824944247/1125899906842624",
+      "reported_grid_fraction": "2251799824944247/1125899906842624",
+      "branch": "coarse_grid",
+      "name": "coarse_near_integer",
+      "requested_grid": 2.00000001
+    },
+    {
+      "scale_fraction": "10000",
+      "actual_grid_fraction": "7378697629483821/73786976294838206464",
+      "requested_grid_fraction": "7378697622842993/73786976294838206464",
+      "reported_grid_fraction": "7378697629483821/73786976294838206464",
+      "branch": "scaled_fine",
+      "name": "near_integer_scale",
+      "requested_grid": 9.999999991e-05
+    }
+  ],
+  "overlay_unique_nominal_model_fixture_inputs": 70,
+  "overlay_unique_nominal_empty_results": 19,
+  "closure_check_steps_counts": {
+    "2": 57,
+    "3": 4,
+    "1": 149
+  },
+  "half_requested_grid_counterexample": {
+    "input": [
+      5e-05,
+      -5e-05
+    ],
+    "native_output": [
+      0.0001,
+      -0.0
+    ],
+    "requested_grid": 9.999999991e-05,
+    "excess_fraction": "1660207/36893488147419103232"
+  },
+  "engineering": {
+    "pytest_passed": 514,
+    "pytest_skipped": 1,
+    "elapsed_s": 63.18,
+    "pip_check": true,
+    "old_review_package_files": 61,
+    "old_review_archived_members": 3177
+  },
+  "runtime_certificate_restored": false,
+  "goal_complete": false,
+  "person_observation_error_certificate_claimed": false,
+  "original_reference_or_thresholds_changed": false,
+  "limitations": [
+    "Declared scalar maps and proven axis-preserving operations only; not all SnapRoundingNoder or BufferOp paths",
+    "No admissible-person-world to curve box mapping, no complete fallback scale set, no original-reference signed mass bound",
+    "No new independent person samples, no new motion executions, no current-runtime retention benefit claim"
+  ],
+  "artifacts": {
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/manifest.json": "1b2efcd904650940413ffda846d29c0fe5c019772ba6e39f65b99beeb3e10b0c",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/seal.json": "dbc72f52944e4cde0069301b985dc0ff52d332749d15eec9c149259ea901f3fa",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/summary.json": "84a5763ed9aa6b687154125adfa15afed4f8630a580bdd857de933ffd1316ca0",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/results.json": "b06b39263acf6484932cb713cbce20528fcd75eb306ae0d712b2fd040e42e9db",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/protocol.yaml": "2eef88c97b4ccb74808e51167680aca6b0c6d78ffd4d0e8b0ae976196cc989ed",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1_audit/manifest.json": "eb405479c0b5a36f88460f709a2f7cbc1a98f87534d0f2c8fc4937cc3b6b6929",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1_audit/seal.json": "16d1b5df4f98642907f057c86a852fc9a458fb26250bf3283756ad19891efbf8",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1_audit/results/audit.json": "fc54574db254c32ae614bc2f11d946cc0b6b3123699a124c5c23ed3db3717597",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/coarse_near_integer_e0/receipt.json": "7a3a21b4711730115a22c6508fa1bdaab14b0c374a5a681a3e769592b72b0649",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/coarse_near_integer_e1/receipt.json": "4fca5d7eb4b2ef07e3317c7f25bddadbcf998e59002e0d33e653bb1b8039092f",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/coarse_near_integer_e2/receipt.json": "c299614e8a395bb1f96cd1945f11b07326525d05c0f7e72fa331184f70fbf979",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_10_e0/receipt.json": "e973d96da8100e2e7130cc6f50018733cdb8d25ecab01b5811d4603f0725e114",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_10_e1/receipt.json": "05972338d64778336417913d272c6fa9781353550931414e4e4274fba3d860d5",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_10_e2/receipt.json": "0fb20a2955fd3ed5c8feccb51afe0550134aa3afb273be524d5fbd7fb63871ba",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_4_e0/receipt.json": "a45be559dd587a3f77aec1d180041c443498c70ee3fa9cc032cf9d379103683e",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_4_e1/receipt.json": "3c6ec69ba4a9349f98c2a9df0cedad731365b2c0fa7ea602000ef1cab048eaba",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_4_e2/receipt.json": "2c3c0e8f0edb38b17b19457b1fe3178e8704a2ff212f1f339cdb3f8315ae4fe5",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_6_e0/receipt.json": "5070442e7600dbe653718b79aabb078fb33b4ad97b4920e6bb26bfdd65116ba3",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_6_e1/receipt.json": "7d3cef5aa41878f858ef858ee1e20dac3e812121088d4e1c59ab6d6b8008bfbb",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_6_e2/receipt.json": "e60950a85ee4105a1ae0ea3de2683fe6b5364de328f3282dbc3487dc17f9c8c7",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_8_e0/receipt.json": "e014c84f7c3821ab407e49c12c59723314fcf660d934d550db0238737902168d",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_8_e1/receipt.json": "22f91b406ccf1200af821390f072c98eeec56330cf36e2ff368ca2f9f25d495a",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/fine_8_e2/receipt.json": "42196a5f821e745b72a8cee7330f043d9165b0e6f6ac915c6c4addc65455f3dc",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/floating_e0/receipt.json": "254fcc0b14bba1f1ebf90ef3d845220dacda46f80b05f89475f41de9b0a3745d",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/floating_e1/receipt.json": "db34b9a988c5df68239bce8e346afefb0ccb8af215e14b65e4bb9e2a61fdc4e1",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/floating_e2/receipt.json": "a7f7047af4e7c155a1773699d83ac17b7a98638e6a51b2c8bc890a56ce3a4d97",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/near_integer_scale_e0/receipt.json": "c70515b400fd5389a0136963fd15a3f2f0a2ff41f6e115d752e594e22687e7ec",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/near_integer_scale_e1/receipt.json": "6cfaa2d42bbe5a33f8daa5382613f2077beb699a49e9a64d8b97b41f62cdfaad",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/near_integer_scale_e2/receipt.json": "7bf739b3a514f311b0c54623bc1b0b07188cb335b324d3671c2ab086abe8f6b9",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/near_unit_e0/receipt.json": "60d9079efc0bb626dc3cf51d020150966acd38de9ae88d8f3d17954850032849",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/near_unit_e1/receipt.json": "db689de6341d0bceceb435c7d0c4e1b66dc84cfdb02b57dccdc11e0f6fd42521",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/near_unit_e2/receipt.json": "a555e09b0d485dc23f8f46af3ca6ff9c5d24741b2d2c64ec0fc4a5585101f4ec",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/tenth_e0/receipt.json": "82e41f0924b4850812c3dd3fe702b0ca98ca8bd6f1a320f18555b9c05e230521",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/tenth_e1/receipt.json": "7eff8c6194f4cddc5aae501a1179a44e8167256843a0d3e959fd6766cb2d9c7a",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/tenth_e2/receipt.json": "7b17129489fbc7423a181d5e5aa2c1b3ce4eee7f3143b7fcbe0b95cb044fa763",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/unit_e0/receipt.json": "04e8b47950a762b1bf7e88cb562be1e098fab64489d34b92a708e0fbe9418d37",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/unit_e1/receipt.json": "34b814b99b47814ad918051d1f7b22fa84c29e686964609d20768a6e74f128fd",
+    "runs/step1_foundation_20261029/fixed_precision_development_v1/cases/unit_e2/receipt.json": "081982fbf253c7e4a13e2daac543874c4af9f25324540644865168c0c013662c",
+    "runs/step1_foundation_20261029/fixed_precision_pytest.log": "8bf31967043839ddf66cd42aca4f5e7053f3e2a4d3d742587a4a55e6d30ea10f"
+  }
+}

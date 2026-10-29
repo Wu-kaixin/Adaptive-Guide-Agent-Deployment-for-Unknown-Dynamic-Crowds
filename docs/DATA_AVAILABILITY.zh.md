@@ -1,5 +1,19 @@
 # 数据可用性、跨机整合和重建范围
 
+## 2026-10-30 最终静态工程基线：公开与完整数据
+
+当前入口为[研究版本发布](../reports/step1_release_20261030/README.zh.md)。Git内新公开归档保存最后实验的原字节元数据、封存输入／观测序列、源码和复判凭据。
+完整运行目录约1.54GB，另有维护者本地`backups/step1_publish_20261030/step1_final_raw_20261029.tar.gz`；当前没有公开原始轨迹下载URL，需向维护者索取该归档。
+两种归档的SHA-256和规模在[发布清单](../reports/step1_release_20261030/publication_manifest.json)。
+
+`scripts/package_step1_final.py`默认验证Git公开子集，明确报告完整数据未验证；不会把缺失轨迹静默当成功。
+获得完整归档后，使用`--restore-raw <archive> --destination <new-directory>`恢复，再用`--full-local --data-root <directory>`核验全部receipt链接和封存输入／源码。
+`--data-root`是包含`runs/`的仓库式数据根；原件就在当前项目时使用`--full-local`即可。
+恢复不覆盖已有目录，不重写最终封印或历史绝对路径。完整模式是字节完整性检查；科学复判仍须使用原冻结源码和环境，详见发布入口。
+
+最后实验的48个物理输入、64944记录和API复用事件各按原证据解释；发布、复制和恢复不增加独立样本。
+下文的旧审查包与跨机重建记录继续作为历史版本保留，不改写其原停止、失败和缺失账目。
+
 ## 2026-10-29 静态多群审查包
 
 [公开审查包](../reports/step1_review_20261029/README.md)包含已完成批次的原字节清单、封印、摘要、复判凭据、

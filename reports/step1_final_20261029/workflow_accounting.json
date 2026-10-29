@@ -1,0 +1,14 @@
+{
+  "formal_frozen_batch_program_errors": 0,
+  "formal_frozen_batch_safety_violations": 0,
+  "formal_frozen_batch_model_bound_violations": 0,
+  "post_execution_read_only_helper_errors": 1,
+  "helper_error_artifact": "diagnostic_v1_error.json",
+  "repair_output": "service_and_method_diagnostics_v2.json",
+  "scientific_retries": 0,
+  "additional_independent_experiments": 0,
+  "goal_current": null,
+  "scheduler": "step-1-25 deleted",
+  "all_required_process_records_missing_at_completion": true,
+  "whole_research_goal_achieved": false
+}

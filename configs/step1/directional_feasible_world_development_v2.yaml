@@ -1,0 +1,15 @@
+protocol: directional_feasible_world_development_v2
+parent: runs/step1_foundation_20261029/feasible_world_development_v1
+parent_audit: runs/step1_foundation_20261029/feasible_world_development_v1_audit/results/audit.json
+directions: 16
+scales: [0.5, 0.9]
+include_parent_triangle_grid: true
+translation_modes: [all_people_rigid, each_group_rigid]
+delta: 0.002
+witness_margin: 0.00001
+workers: 8
+numerical_threads: 1
+new_independent_samples: 0
+new_motion_executions: 0
+scientific_scope: same_observation_history_and_layouts_counterfactual_static_worlds_not_a_certificate
+verification: exact_error_ball_constraints_and_separate_service_integrator_for_each_best_witness

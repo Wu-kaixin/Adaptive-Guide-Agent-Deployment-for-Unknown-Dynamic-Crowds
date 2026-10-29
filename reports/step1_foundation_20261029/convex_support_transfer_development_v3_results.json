@@ -1,0 +1,165 @@
+{
+  "summary": {
+    "status": "HYPOTHESIS_REFUTED_BATCH_STOPPED",
+    "scheduled_inputs": 720,
+    "completed_inputs": 8,
+    "not_executed_inputs": 712,
+    "scheduled_groups": 2520,
+    "checked_groups": 8,
+    "not_checked_groups": 2512,
+    "refuted_inputs": 8,
+    "tested_stage_groups": 8,
+    "counterexample_stage_groups": 8,
+    "stopped_on_first_refutation": true,
+    "cancelled_before_execution": [],
+    "runtime_certificate_restored": false,
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "scope": "exact finite-direction tests of ideal convex support lemmas on actual GEOS stage coordinates",
+    "goal_complete": false
+  },
+  "independent_arithmetic_replay": {
+    "study_manifest_sha256": "6e7e787273e763d3c7cbc58a7c96df972856df707220bddc1420df0241005fb5",
+    "inputs_replayed": 8,
+    "groups_replayed": 8,
+    "stage_groups_replayed": 8,
+    "exact_directional_checks": 569,
+    "counterexample_stage_groups": 8,
+    "all_match": true,
+    "scope": "all saved stage coordinate hashes and independent exact arithmetic replay; not kernel regeneration or universal geometric proof",
+    "new_independent_samples": 0,
+    "new_motion_executions": 0,
+    "runtime_certificate_restored": false
+  },
+  "processes": {
+    "study": {
+      "process": {
+        "state": "missing",
+        "alive": false
+      },
+      "worker_process": {
+        "state": "missing",
+        "alive": false
+      }
+    },
+    "audit": {
+      "process": {
+        "state": "missing",
+        "alive": false
+      },
+      "worker_process": {
+        "state": "missing",
+        "alive": false
+      }
+    }
+  },
+  "unique_reused_physical_truth_fingerprints": 1,
+  "stage_comparisons": [
+    {
+      "task_id": "input_0007",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "fca1d22164c292265f8e02d670f9c957e37babb9961a2b250497aff22264976f",
+      "previous_v2_geometry_sha256": "fca1d22164c292265f8e02d670f9c957e37babb9961a2b250497aff22264976f"
+    },
+    {
+      "task_id": "input_0006",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "4bbcefd0c8a4a997b3eca63b788b916d117d344a01bbc60fccb00276e8736523",
+      "previous_v2_geometry_sha256": "4bbcefd0c8a4a997b3eca63b788b916d117d344a01bbc60fccb00276e8736523"
+    },
+    {
+      "task_id": "input_0002",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "5e16c7fd1e72b723f86b35344ae7c91c81b4dd7356bb65870d9f780f70cff647",
+      "previous_v2_geometry_sha256": "5e16c7fd1e72b723f86b35344ae7c91c81b4dd7356bb65870d9f780f70cff647"
+    },
+    {
+      "task_id": "input_0004",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "750f08b5ac9309713a00191a498e9dd33e1c2592c0f4cd9ddc3d7f1ae6508df8",
+      "previous_v2_geometry_sha256": "750f08b5ac9309713a00191a498e9dd33e1c2592c0f4cd9ddc3d7f1ae6508df8"
+    },
+    {
+      "task_id": "input_0001",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "be563ff98aab5db514cbd00efd2dcc5c97143a5e575a80e125e3864cf2770fee",
+      "previous_v2_geometry_sha256": "be563ff98aab5db514cbd00efd2dcc5c97143a5e575a80e125e3864cf2770fee"
+    },
+    {
+      "task_id": "input_0003",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "d0ac10660afb3eb034e51c5af5c91b6ea2cae13cff831f46a3a997073a4585d3",
+      "previous_v2_geometry_sha256": "d0ac10660afb3eb034e51c5af5c91b6ea2cae13cff831f46a3a997073a4585d3"
+    },
+    {
+      "task_id": "input_0005",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "892292336567052470015409/400040287214262751596075180131651547286516988899229696",
+      "strongest_unit_normal_excess_approx_m": 1.4934879273752877e-15,
+      "current_geometry_sha256": "d20a021066d1abe9a6cb7cf5ebf72c1d2911e4cebc51566dd488ccbb74820e7f",
+      "previous_v2_geometry_sha256": "d20a021066d1abe9a6cb7cf5ebf72c1d2911e4cebc51566dd488ccbb74820e7f"
+    },
+    {
+      "task_id": "input_0000",
+      "all_stage_arrays_bitwise_same_as_v2": true,
+      "old_16_direction_checks_miss_closing_violation": true,
+      "strongest_unit_normal_excess_squared_fraction": "993164243372855991797481/282958147664820893143054906310295395983653526285844480",
+      "strongest_unit_normal_excess_approx_m": 1.873481615855563e-15,
+      "current_geometry_sha256": "b271689f82a8dfd7e73abc2da0246450c3dfc82de463fe4e141b8fa6da40c882",
+      "previous_v2_geometry_sha256": "b271689f82a8dfd7e73abc2da0246450c3dfc82de463fe4e141b8fa6da40c882"
+    }
+  ],
+  "strict_separating_facet_count": 378,
+  "diagnosis_posthoc_on_preserved_counterexample": true,
+  "goal_complete": false,
+  "runtime_certificate_restored": false,
+  "controller_safety_or_service_violation_inferred": false,
+  "original_reference_or_thresholds_changed": false,
+  "artifacts": {
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/manifest.json": "6e7e787273e763d3c7cbc58a7c96df972856df707220bddc1420df0241005fb5",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/seal.json": "a0c69e40c04a9e54c3f08a4466ff9556d65884d265ab7a391feec1f6430a8255",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/summary.json": "f34a7d222e4c9dbb42c3a3ae1195175b03f06581516ff16308b9ca37b1d33a44",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/results.json": "444133b8c718a669c53a4f21922827b5f7686bee2adb0c8d18a8228a11373132",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/protocol.yaml": "29a571daca326fc5fa5b5f7ccaab8a8ef5e73139517d96c23eae32cc71901fc3",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/manifest.json": "b41cd4b17e3e8fa6614ba9e4af534f56698bfa2c8e12a85468b67e458b5ae829",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/seal.json": "8a154f78eba2d2b0ee7b095c08ae379008df3f1d60058b203d42a109cd8e602c",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/audit.json": "cc8d6a94c615b06bf269611b2f9eb84073f92bdf3c644f08e760e438f841d78b",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0000/receipt.json": "a8c28cc534554f8ae13d1460777da50fb3689d8978fec6012371835e74a6c41b",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0001/receipt.json": "218ab8399f9b4946d108e7a5d9c910c985660ad664af296e7bffe77e2f692bac",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0002/receipt.json": "bdac6d62209c36fab1fe78918981970601ef06036018bf08c8511c907ca7e02e",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0003/receipt.json": "3c3263dad129d2b705cf2454f7968a66732b9235d0dd04b179030d6d76ad4cf4",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0004/receipt.json": "1745a5722472a4bf793cf5c027e0953b01208dad7f097b0219aea1dc8a5e274b",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0005/receipt.json": "7863d853ba3a294c63130cf4bc15ae9e58cd9cf7db2868344585be6597123741",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0006/receipt.json": "6a1e25888c23639a27373284e5b535ddfa44f65d08203825aa7d2b3f95fa9991",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3/inputs/input_0007/receipt.json": "47d613dc1511cd4901f08c2843645e7dd0bc5cc22882b3bfbfb051f8e2d1477f",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0000.json": "a0ddecba04a782ab8fee28e41d0917e6ec5c4f45287f5a4127805e75ae2c1565",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0001.json": "8c333877a1014aafacdbafb8eab2e0ce7e9aa60dc5f6982d32bf397a823b05de",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0002.json": "cab3eb2ec57208d29e9fd49afc63fa259c99f4ce3edffd921b692727908dade9",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0003.json": "a245dab263565b5d592479c5dc0991185c6eee33bcffb5be80dc40c963bb62a5",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0004.json": "523785c5d7ab7932520ff00633f9b6476464e630cb2d75e412a4ba377b2f4e76",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0005.json": "37fc9d9da7bcb70ada72cc7d66b461b5cd22b2b2b27cb0413191d004afe61cac",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0006.json": "dcfaac29e0ac7de5cde47612b299bfeac719faf7740b4dcff0bac5f19d44274a",
+    "runs/step1_foundation_20261029/convex_support_transfer_development_v3_audit/results/input_0007.json": "734e66d5e5b536a6f40c5141efa9120e65abee9a8022b4846e03b0c379cd0cdb",
+    "runs/step1_foundation_20261029/convex_support_transfer_v3_diagnosis.json": "f2a56b8ad3e7fd0498dbea545644101ea7829ff19e8249f733e89f6b6670c545",
+    "src/udc/analysis/closing_witness_diagnosis.py": "26bc9fe4329de6a6abb65cf6e5b3dba84eea0b161329c1e501d0bb474b2000cd"
+  }
+}

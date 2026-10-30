@@ -6,6 +6,8 @@ from pathlib import Path
 
 import numpy as np
 
+from udc.experiments.accounting import ledger_row
+
 
 def wilson_interval(successes, total):
     if total == 0:
@@ -18,29 +20,51 @@ def wilson_interval(successes, total):
     return [max(0., center-half), min(1., center+half)]
 
 
+def _new_group():
+    return {
+        'tasks': 0, 'successful': 0, 'statuses': {}, 'times': [],
+        'process_errors': 0, 'physical_success_excluded': 0,
+    }
+
+
+def _accumulate(groups, row):
+    group = groups.setdefault(row['group_key'], _new_group())
+    group['tasks'] += 1
+    group['successful'] += int(row['success'])
+    status = row['termination_status']
+    group['statuses'][status] = group['statuses'].get(status, 0) + 1
+    if row['success'] and row['simulation_time'] is not None:
+        group['times'].append(row['simulation_time'])
+    group['process_errors'] += int(row['process_error'])
+    if row['physical_success'] and not row['success']:
+        group['physical_success_excluded'] += 1
+
+
 def summarize_results(root):
+    """One directory, one ledger row.
+
+    An unabsorbed ``runner_error.txt`` counts as ``EXPERIMENT_ERROR`` even
+    when metrics.json still records a physical success. That physical success
+    stays in the file and is reported as ``physical_success_excluded``; it
+    does not enter the success numerator or the successful-time statistics.
+    Metrics that already say ``EXPERIMENT_ERROR`` absorb the scene, so the
+    scene is not a second task. Their stored success flag is left as written.
+    """
     groups = {}
-    paths = sorted(Path(root).rglob('metrics.json'))
-    for path in paths:
-        row = json.loads(path.read_text(encoding='utf-8'))
-        key = '|'.join(str(row.get(name)) for name in ['scene', 'method', 'protocol'])
-        group = groups.setdefault(key, {'tasks': 0, 'successful': 0, 'statuses': {}, 'times': []})
-        group['tasks'] += 1
-        group['successful'] += int(row['success'])
-        status = row['termination_status']
-        group['statuses'][status] = group['statuses'].get(status, 0)+1
-        if row['success']:
-            group['times'].append(row['simulation_time'])
-    errors = list(Path(root).rglob('runner_error.txt'))
-    for path in errors:
-        if not (path.parent/'metrics.json').exists():
-            state_file = path.parent/'state.json'
-            state = json.loads(state_file.read_text()) if state_file.exists() else {}
-            key = ('|'.join(str(state[name]) for name in ['scene', 'method', 'protocol'])
-                   if all(name in state for name in ['scene', 'method', 'protocol']) else 'EXPERIMENT_ERROR')
-            group = groups.setdefault(key, {'tasks': 0, 'successful': 0, 'statuses': {}, 'times': []})
-            group['tasks'] += 1
-            group['statuses']['EXPERIMENT_ERROR'] = group['statuses'].get('EXPERIMENT_ERROR', 0)+1
+    seen = set()
+    root = Path(root)
+    for path in sorted(root.rglob('metrics.json')):
+        directory = path.parent.resolve()
+        if directory in seen:
+            continue
+        seen.add(directory)
+        _accumulate(groups, ledger_row(directory))
+    for path in sorted(root.rglob('runner_error.txt')):
+        directory = path.parent.resolve()
+        if directory in seen or (path.parent / 'metrics.json').exists():
+            continue
+        seen.add(directory)
+        _accumulate(groups, ledger_row(directory))
     for group in groups.values():
         times = group.pop('times')
         group['success_rate'] = group['successful']/group['tasks']
@@ -50,12 +74,20 @@ def summarize_results(root):
         group['successful_time_median'] = float(np.median(times)) if times else None
     total = sum(g['tasks'] for g in groups.values())
     successful = sum(g['successful'] for g in groups.values())
+    excluded = sum(g['physical_success_excluded'] for g in groups.values())
     return {
         'tasks': total, 'successful': successful,
         'success_rate': successful/total if total else None,
         'success_rate_ci95_wilson': wilson_interval(successful, total),
+        'process_errors': sum(g['process_errors'] for g in groups.values()),
+        'physical_success_excluded': excluded,
         'groups': groups,
-        'time_statistics_scope': 'successful tasks only; failures retained in success rates',
+        'time_statistics_scope': 'ledger successes only; failures and program errors retained in the denominator',
+        'accounting_rule': (
+            'one directory is one task; an unabsorbed runner_error.txt is EXPERIMENT_ERROR '
+            'and is excluded from successful times; metrics that already declare '
+            'EXPERIMENT_ERROR absorb that scene; physical success remains in the saved metrics'
+        ),
         'interval_scope': 'binomial Wilson intervals assume independent sampled trials; deterministic repeats are not new evidence',
     }
 

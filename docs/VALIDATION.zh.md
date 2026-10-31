@@ -1069,3 +1069,8 @@ PDF 只读整理额外使用 `requirements/maintenance.txt` 中固定的 pypdf�
 两者是本次工程验证，不重跑历史实验、不添加论文样本，也不构成动态 Step 2/3 的验证。
 本机日志与机器可读回执在 `research/project-management/repository_rebuild_20261031/`。
 历史资产分卷、恢复和来源退役的完成状态另见该目录 `mission_state.json`；本节测试通过不能替代数据删除门禁。
+
+实际恢复 PC2 的 Git 元数据时发现 Windows 深层路径创建失败，首轮失败工件和日志已保留。
+恢复工具现对目录创建和回执写入统一使用 Windows 扩展路径；没有修改科研计算。
+针对性测试 `tests/test_research_assets.py` 为 16 通过、1 跳过，包含超过 300 字符的文件、空目录和独立文件恢复。
+清理工具最终隔离测试为 9 通过；真实 Windows junction 防护测试另有 1 通过。

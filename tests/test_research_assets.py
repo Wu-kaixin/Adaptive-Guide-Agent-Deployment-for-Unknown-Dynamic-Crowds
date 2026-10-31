@@ -8,7 +8,7 @@ import zipfile
 
 import pytest
 
-from udc.assets import Catalogue, relative_name, stream_member, verify_archive
+from udc.assets import Catalogue, native, relative_name, stream_member, verify_archive
 
 
 @pytest.fixture
@@ -57,6 +57,27 @@ def test_restore_empty_directory_and_identity_prefix(preserved,tmp_path):
         assert (tmp_path/'restored/batch/empty').is_dir()
         assert (tmp_path/'restored/batch/result.bin').read_bytes()==payload
         with pytest.raises(ValueError):c.restore_tree('PC2','bat',tmp_path/'nomatch')
+    finally:c.close()
+
+
+def test_restore_long_paths_including_empty_directories(preserved,tmp_path):
+    root,_,_,payload=preserved
+    nested='/'.join(['original-metadata-segment-0123456789']*8)
+    with sqlite3.connect(root/'catalog.sqlite') as db:
+        db.execute("UPDATE sources SET relative_path=? WHERE source_id='one'",('batch/'+nested+'/result.bin',))
+        db.execute("UPDATE sources SET relative_path=? WHERE source_id='empty'",('batch/'+nested+'/empty',))
+    c=Catalogue(root/'catalog.sqlite')
+    try:
+        destination=tmp_path/'long-tree'
+        receipt=c.restore_tree('PC2','batch',destination)
+        target=destination/'batch'/nested/'result.bin'
+        assert len(str(target))>300 and receipt['files']==1
+        assert Path(native(target)).read_bytes()==payload
+        assert Path(native(target.parent/'empty')).is_dir()
+        assert Path(native(target)).stat().st_mtime_ns==1700000000000000000
+        direct=tmp_path/'long-file'/nested/'result.bin'
+        c.restore_file('one',direct)
+        assert Path(native(direct)).read_bytes()==payload
     finally:c.close()
 
 

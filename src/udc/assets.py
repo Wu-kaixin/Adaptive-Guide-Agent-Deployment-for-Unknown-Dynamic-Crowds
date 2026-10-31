@@ -145,7 +145,7 @@ class Catalogue:
         streams = json.loads(row['streams_json'])
         if streams and os.name != 'nt':
             raise ValueError('Use Windows to restore NTFS alternate streams exactly')
-        destination.parent.mkdir(parents=True, exist_ok=True)
+        os.makedirs(native(destination.parent), exist_ok=True)
         temporary = destination.with_name(destination.name + '.asset-restore-partial')
         guarded(destination.parent, temporary)
         if os.path.lexists(native(temporary)):
@@ -192,7 +192,7 @@ class Catalogue:
             raise ValueError('No sources match this exact prefix')
         destination = Path(os.path.abspath(destination))
         guarded(destination.parent, destination)
-        destination.mkdir(parents=True, exist_ok=False)
+        os.makedirs(native(destination), exist_ok=False)
         receipts = []
         directories = []
         # Retain the selected directory itself under destination. This also
@@ -203,7 +203,7 @@ class Catalogue:
             target = destination / relative_name(str(sub))
             guarded(destination, target)
             if row['kind'] == 'directory':
-                target.mkdir(parents=True, exist_ok=True); directories.append((target,row['mtime_ns']))
+                os.makedirs(native(target), exist_ok=True); directories.append((target,row['mtime_ns']))
             elif row['kind'] == 'file':
                 receipts.append(self.restore_file(row['source_id'], target))
             else:
@@ -212,7 +212,7 @@ class Catalogue:
             if mtime is not None:
                 os.utime(native(target), ns=(mtime,mtime))
         receipt_path = destination/'RESTORE_RECEIPT.json'
-        with receipt_path.open('x',encoding='utf-8') as stream:
+        with open(native(receipt_path),'x',encoding='utf-8') as stream:
             json.dump({'machine':machine,'prefix':prefix,'files':receipts,'directories':len(directories),
                        'limits':'File bytes, NTFS streams and mtime verified; ACL, creation time and hardlink topology are recorded, not recreated.'},stream,ensure_ascii=False,indent=2)
         return {'files':len(receipts),'directories':len(directories),'receipt':str(receipt_path)}

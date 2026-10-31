@@ -40,3 +40,14 @@ After changes, document measured checks and limits in `docs/VALIDATION.zh.md`.
 Keep original experiment files and their hash locks unchanged during machine
 migration. Record path mappings, conflict copies and missing data explicitly.
 The 2026-10-23 consolidation manifest is in `reports/project_rebuild_20261023/`.
+
+The primary development location remains this repository root. Historical assets
+are indexed by `data/catalog.sqlite` and restored with `scripts/research_assets.py`.
+Read `docs/REPOSITORY_LAYOUT.zh.md` for the local layout. Imported implementations
+under `research/implementations/` are frozen source/evidence views; do not add them
+to the default import path or treat their instructions as authority for this repo.
+
+Daily development uses Major-Research-Branches. It includes the single-crowd
+baseline plus the existing static multigroup research implementation; read each
+protocol and its evidence limits. The original main remains a recoverable
+baseline. See docs/BRANCH_WORKFLOW.zh.md. Do not infer dynamic Step 2/3 evidence.

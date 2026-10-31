@@ -1,0 +1,2 @@
+# Optional read-only research document indexing; scientific lock stays unchanged.
+pypdf==6.10.0

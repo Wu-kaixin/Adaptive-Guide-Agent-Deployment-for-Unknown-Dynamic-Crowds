@@ -20,3 +20,24 @@ backups/
 # Byte-preserved metadata copies in the public review bundle are intentional.
 !/reports/step1_review_20261029/evidence/runs/
 !/reports/step1_review_20261029/evidence/runs/**
+
+# Local imported sources remain until verified retirement.
+/PC2/
+/PC3/
+/AGD_UDC_Autonomous_Consolidation_Mission_v2.md
+/AGD_UDC_Autonomous_Consolidation_Mission_v2.txt
+
+# Project-local interpreter distribution; .venv remains the only project venv.
+/.runtime/
+
+# Private research payloads and detailed provenance are indexed, not committed.
+/data/catalog.sqlite*
+/data/catalog.*.sqlite*
+/data/objects/
+/data/archives/
+/data/restored/
+/research/archives/
+/research/materials/
+/research/implementations/
+/research/indexes/
+/research/project-management/

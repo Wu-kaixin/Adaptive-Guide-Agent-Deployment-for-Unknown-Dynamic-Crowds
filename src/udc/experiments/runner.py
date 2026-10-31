@@ -7,7 +7,7 @@ import tempfile
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import asdict
 from pathlib import Path
-from time import perf_counter
+from time import perf_counter, sleep
 
 import numpy as np
 import yaml
@@ -50,6 +50,23 @@ def _priority_stall_counterfactual():
 
 
 
+def _atomic_replace(temporary, path):
+    """Retry only transient Windows publication failures, at most three times.
+
+    Contents remain in the closed temporary file until atomic publication.
+    Persistent permission errors still propagate to program-error accounting.
+    """
+    for delay in (0.0, 0.05, 0.2):
+        if delay:
+            sleep(delay)
+        try:
+            os.replace(temporary, path)
+            return
+        except PermissionError as error:
+            if getattr(error, 'winerror', None) not in (5, 32) or delay == 0.2:
+                raise
+
+
 def _atomic_text(path, text):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -57,7 +74,7 @@ def _atomic_text(path, text):
                                      dir=path.parent, delete=False) as stream:
         stream.write(text)
         temporary = Path(stream.name)
-    os.replace(temporary, path)
+    _atomic_replace(temporary, path)
 
 
 def _atomic_npz(path, **arrays):
@@ -65,7 +82,7 @@ def _atomic_npz(path, **arrays):
     with tempfile.NamedTemporaryFile('wb', dir=path.parent, delete=False) as stream:
         np.savez_compressed(stream, **arrays)
         temporary = Path(stream.name)
-    os.replace(temporary, path)
+    _atomic_replace(temporary, path)
 
 
 def _status_from_error(error, stage):

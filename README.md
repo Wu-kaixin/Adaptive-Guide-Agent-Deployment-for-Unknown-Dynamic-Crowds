@@ -5,6 +5,9 @@
 围绕未知人群边界的 Guide 机器人部署研究框架，连接**观测、资源分配、部署规划、安全执行与独立评价**。
 本分支包含单群集成基线，以及静态多群、有界人员位置误差和固定资源预算下的 Step 1 扩展。
 
+**本地主开发入口：本项目根目录，日常分支为 `Major-Research-Branches`。** 本分支已吸收主仓库重建的资产索引、恢复工具、环境配置与 Windows 文件发布保护。代码、历史数据和科研材料集中在此目录；旧工作区保留。
+先读[目录与使用说明](docs/REPOSITORY_LAYOUT.zh.md)、[分支与恢复记录](docs/BRANCH_WORKFLOW.zh.md)，资料见[研究索引](research/RESEARCH_INDEX.md)，历史数据见[数据恢复入口](data/README.md)。
+
 **阅读当前研究版本：**[发布与数据获取](reports/step1_release_20261030/README.zh.md) · [最终评估](reports/step1_final_20261029/REPORT.zh.md) · [逐项验收](reports/step1_final_20261029/REQUIREMENTS.zh.md) · [Step 2/3接口交接](docs/STEP1_FINAL_HANDOFF.zh.md)
 
 本次发布定位为**静态扩展Step 1工程基线与研究结果**。声明协议内的执行、复判和完整事件边界恢复通过；一般误差原参考服务证书与学术独特性仍未闭合，当前服务门控保持隔离回退。
@@ -101,12 +104,14 @@ python3.12 -m venv .venv
 | `reports/step1_review_20261029/` | 审查导航、哈希清单及原字节证据副本 |
 | `reports/step1_release_20261030/`、`reports/step1_final_20261029/` | 当前发布／数据验证入口及原字节最终评估 |
 | `docs/`、`reports/` | 方法契约、历史报告和科学边界 |
+| `data/`、`research/` | 历史资产恢复、科研资料、固定版本与来源索引 |
+| `runs/`、`requirements/` | 新运行输出、依赖规格与环境锁 |
 
 科学算法位于 `src/udc/`。各研究的冻结快照与当前活动代码分开保存；历史结果按对应版本解释。
 
 ## 数据与复现
 
-Git 包含源码、配置、报告和校验清单；完整运行数据位于本地 `runs/`，环境与备份分别位于 `.venv/`、`backups/`。
+Git 包含源码、配置、报告和校验清单。新开发运行写入本地 `runs/`；历史资产在 `data/archives/`，由 `data/catalog.sqlite` 关联原来源与路径；科研资料在 `research/`，唯一活动环境为根目录 `.venv`。这些大型本地资产不纳入 Git。
 **克隆仓库不等于取得全部实验数据。** 原始工件、重建数据和新增开发运行分别追溯，重建不增加独立确认样本。
 本次Git提供封存输入／源码／元数据公开包；完整最终轨迹另有维护者本地归档，当前无公开原始轨迹下载URL。
 获取、恢复及公开／完整两级验证命令见[新数据说明](reports/step1_release_20261030/README.zh.md)。

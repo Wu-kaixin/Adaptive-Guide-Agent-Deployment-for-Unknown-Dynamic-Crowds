@@ -1048,3 +1048,24 @@ wide_u热点条件projected平均多3.7059 s、1.1143 m和0.4706次恢复，最�
 workspace_assets定位/恢复测试5项通过；复制工具21个独立情形中20通过、1个符号链接权限受限跳过，包含线程池与真实小DB在日志屏障失败后的恢复。它们不能替代科研项目回归或全量数据校验。保存轨迹已独立读入并绘图；代码与演示材料已恢复到新的隔离位置并核对哈希。
 
 详细命令、退出码、失败历史、源哈希与持续数据整合状态保存在外置资料区project-management/consolidation的任务控制目录。PC2/PC3来源保留，无独立备份；批量资料整合和最终清理状态不由本代码检查点宣告完成。使用说明见[外置工作区](WORKSPACE.zh.md)。
+# 2026-10-31 主仓库位置重建实测
+
+原项目根目录重新作为开发入口，活动科学实现沿用前轮已验证的工程提交 `3457944`。
+本轮新增资产定位与恢复模块、目录说明和环境路径适配，未修改科学算法或评价阈值。
+独立 CPython 3.12.15 发行版已核验后置于 `.runtime/`，根目录 `.venv` 为新建，按原 Windows 锁安装。
+PDF 只读整理额外使用 `requirements/maintenance.txt` 中固定的 pypdf；原科学锁不变。
+
+| 实际检查 | 结果与范围 |
+|---|---|
+| `.venv/Scripts/python.exe -m pytest -q --basetemp=.tmp/repository-rebuild_20261031/pytest-full` | 251 通过、1 跳过，371.11 秒；跳过是本机无符号链接创建权限 |
+| `.venv/Scripts/python.exe -m pip check` | 退出 0，无依赖冲突 |
+| development smoke，4 worker | 132/132 完成；93 成功；12 CAPACITY_SHORTFALL、12 OFFSET_INVALID、15 PLAN_SEARCH_EXHAUSTED；程序错误 0 |
+| 保存轨迹独立复判 | 132/132 一致，程序错误 0 |
+| PC3 固定源码的小型静态双群夹具 | 46 步 SUCCESS，预检输入字节不变，轨迹复判与速度积分一致，未重新规划 |
+| 维护工具隔离测试 | 分卷工具 5 通过；Windows 文件/备用流清理 5 通过；清理门禁、被篡改归档、新文件保护及恢复续作 3 通过 |
+
+单群检查输出为 `runs/maintenance_20261031_main_smoke`，全部 seed 为 0；
+静态双群输出为 `runs/maintenance_20261031_static_groups`，使用既有手写近目标夹具，不使用随机种子。
+两者是本次工程验证，不重跑历史实验、不添加论文样本，也不构成动态 Step 2/3 的验证。
+本机日志与机器可读回执在 `research/project-management/repository_rebuild_20261031/`。
+历史资产分卷、恢复和来源退役的完成状态另见该目录 `mission_state.json`；本节测试通过不能替代数据删除门禁。

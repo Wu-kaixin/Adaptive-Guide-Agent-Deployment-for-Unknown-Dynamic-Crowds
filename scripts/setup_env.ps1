@@ -2,8 +2,17 @@ param([string]$Python)
 
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
+$previousTemp = $env:TEMP
+$previousTmp = $env:TMP
+$previousPipCache = $env:PIP_CACHE_DIR
 Push-Location -LiteralPath $projectRoot
 try {
+    # Keep build paths short enough for Windows editable-wheel staging.
+    $projectTemp = Join-Path $projectRoot '.tmp/t'
+    New-Item -ItemType Directory -Path $projectTemp -Force | Out-Null
+    $env:TEMP = $projectTemp
+    $env:TMP = $projectTemp
+    $env:PIP_CACHE_DIR = Join-Path $projectRoot '.tmp/pip-cache'
     $projectPython = Join-Path $projectRoot '.venv/Scripts/python.exe'
     $checkPython = @'
 import pathlib, sys
@@ -17,7 +26,11 @@ print(sys.executable)
             throw 'An incomplete .venv exists. Archive it before creating a replacement.'
         }
         if (-not $Python) {
-            if (Get-Command py -ErrorAction SilentlyContinue) {
+            $localRuntime = Join-Path $projectRoot '.runtime/cpython-3.12.15/python.exe'
+            if (Test-Path -LiteralPath $localRuntime) {
+                $Python = $localRuntime
+            }
+            if (-not $Python -and (Get-Command py -ErrorAction SilentlyContinue)) {
                 $Python = & py -3.12 -c 'import sys; print(sys.executable)' 2>$null
                 if ($LASTEXITCODE -ne 0) { $Python = $null }
             }
@@ -42,5 +55,8 @@ print(sys.executable)
     if ($LASTEXITCODE -ne 0) { throw 'Dependency consistency check failed.' }
     Write-Output "Project environment ready: $projectPython"
 } finally {
+    $env:TEMP = $previousTemp
+    $env:TMP = $previousTmp
+    $env:PIP_CACHE_DIR = $previousPipCache
     Pop-Location
 }
